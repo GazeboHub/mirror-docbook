@@ -49,7 +49,7 @@
 <xsl:template name="home.navhead">
   <xsl:text>&#160;</xsl:text>
   <a href="http://docbook.org/wiki/moin.cgi/DocBook" target="_top">
-    <img src="created-with-docbook-green.png"
+    <img src="./graphics/created-with-docbook-green.png"
         alt="DocBook" border="0"/>
   </a>
   <xsl:text>&#160;</xsl:text>
