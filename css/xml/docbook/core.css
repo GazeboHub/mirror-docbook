@@ -42,7 +42,7 @@ mediaobject, mediaobjectco, msg, msgentry, msgexplan, msgmain, msgset, note,
 orderedlist, para, part, partintro, personblurb, preface, primaryie,
 printhistory, procedure, productionset, programlistingco, qandadiv, qandaentry,
 qandaset, question, refentry, refentrytitle, reference, refnamediv, refsect1,
-refsect2, refsect3, refsection, refsynopsisdiv, revhistory, screenco,
+refsect2, refsect3, refsection, refsynopsisdiv, screenco,
 screenshot, secondaryie, sect2, sect3, sect4, sect5, section, seealsoie, seeie,
 set, setindex, sidebar, simpara, simplemsgentry, simplesect, step, substeps, 
 subtitle, synopfragment, synopfragmentref, table, term, tertiaryie, tip, 
@@ -56,9 +56,9 @@ appendixinfo, area, areaset, areaspec, articleinfo, bibliographyinfo,
 blockinfo, bookinfo, chapterinfo, colspec, glossaryinfo, indexinfo, indexterm,
 itermset, modespec, objectinfo, partinfo, prefaceinfo, primary, refentryinfo, 
 referenceinfo, refmeta, refsect1info, refsect2info, refsect3info, 
-refsectioninfo, refsynopsisdivinfo, screeninfo, secondary, sect1info, 
-sect2info, sect3info, sect4info, sect5info, sectioninfo, see, seealso, 
-setindexinfo, setinfo, sidebarinfo, spanspec, tertiary {
+refsectioninfo, refsynopsisdivinfo, revhistory, screeninfo, secondary,
+sect1info, sect2info, sect3info, sect4info, sect5info, sectioninfo, see,
+seealso, setindexinfo, setinfo, sidebarinfo, spanspec, tertiary {
 	display:none;
 }
 
