@@ -26,7 +26,6 @@
 
     <xsl:if test="not(fn:empty($verso))">
       <xsl:call-template name="titlepage">
-	<xsl:with-param name="side" select="'verso'"/>
 	<xsl:with-param name="content" select="$verso"/>
       </xsl:call-template>
     </xsl:if>

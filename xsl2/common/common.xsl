@@ -28,14 +28,14 @@
 
   <xsl:choose>
     <!-- the personname element is a specialcase -->
-    <xsl:when test="$node/personname">
+    <xsl:when test="$node/self::db:personname">
       <xsl:call-template name="person.name">
-        <xsl:with-param name="node" select="$node/personname"/>
+        <xsl:with-param name="node" select="$node/db:personname"/>
       </xsl:call-template>
     </xsl:when>
 
     <!-- handle corpauthor as a special case...-->
-    <xsl:when test="name($node)='corpauthor'">
+    <xsl:when test="$node/self::db:corpauthor">
       <xsl:apply-templates select="$node"/>
     </xsl:when>
 
@@ -66,13 +66,13 @@
 
   <!-- The family-given style applies a convention for identifying given -->
   <!-- and family names in locales where it may be ambiguous -->
-  <xsl:apply-templates select="$node//surname[1]"/>
+  <xsl:apply-templates select="$node//db:surname[1]"/>
 
-  <xsl:if test="$node//surname and $node//firstname">
+  <xsl:if test="$node//db:surname and $node//db:firstname">
     <xsl:text> </xsl:text>
   </xsl:if>
 
-  <xsl:apply-templates select="$node//firstname[1]"/>
+  <xsl:apply-templates select="$node//db:firstname[1]"/>
 
   <xsl:text> [FAMILY Given]</xsl:text>
 </xsl:template>
@@ -80,48 +80,48 @@
 <xsl:template name="person.name.last-first">
   <xsl:param name="node" select="."/>
 
-  <xsl:apply-templates select="$node//surname[1]"/>
+  <xsl:apply-templates select="$node//db:surname[1]"/>
 
-  <xsl:if test="$node//surname and $node//firstname">
+  <xsl:if test="$node//db:surname and $node//db:firstname">
     <xsl:text>, </xsl:text>
   </xsl:if>
 
-  <xsl:apply-templates select="$node//firstname[1]"/>
+  <xsl:apply-templates select="$node//db:firstname[1]"/>
 </xsl:template>
 
 <xsl:template name="person.name.first-last">
   <xsl:param name="node" select="."/>
 
-  <xsl:if test="$node//honorific">
-    <xsl:apply-templates select="$node//honorific[1]"/>
+  <xsl:if test="$node//db:honorific">
+    <xsl:apply-templates select="$node//db:honorific[1]"/>
     <xsl:value-of select="$punct.honorific"/>
   </xsl:if>
 
-  <xsl:if test="$node//firstname">
-    <xsl:if test="$node//honorific">
+  <xsl:if test="$node//db:firstname">
+    <xsl:if test="$node//db:honorific">
       <xsl:text> </xsl:text>
     </xsl:if>
-    <xsl:apply-templates select="$node//firstname[1]"/>
+    <xsl:apply-templates select="$node//db:firstname[1]"/>
   </xsl:if>
 
-  <xsl:if test="$node//othername and $author.othername.in.middle != 0">
-    <xsl:if test="$node//honorific or $node//firstname">
+  <xsl:if test="$node//db:othername and $author.othername.in.middle != 0">
+    <xsl:if test="$node//db:honorific or $node//db:firstname">
       <xsl:text> </xsl:text>
     </xsl:if>
-    <xsl:apply-templates select="$node//othername[1]"/>
+    <xsl:apply-templates select="$node//db:othername[1]"/>
   </xsl:if>
 
-  <xsl:if test="$node//surname">
-    <xsl:if test="$node//honorific or $node//firstname
-                  or ($node//othername and $author.othername.in.middle != 0)">
+  <xsl:if test="$node//db:surname">
+    <xsl:if test="$node//db:honorific or $node//db:firstname
+                  or ($node//db:othername and $author.othername.in.middle != 0)">
       <xsl:text> </xsl:text>
     </xsl:if>
-    <xsl:apply-templates select="$node//surname[1]"/>
+    <xsl:apply-templates select="$node//db:surname[1]"/>
   </xsl:if>
 
-  <xsl:if test="$node//lineage">
+  <xsl:if test="$node//db:lineage">
     <xsl:text>, </xsl:text>
-    <xsl:apply-templates select="$node//lineage[1]"/>
+    <xsl:apply-templates select="$node//db:lineage[1]"/>
   </xsl:if>
 </xsl:template>
 
@@ -137,7 +137,7 @@
        John Doe, Jane Doe, and A. Nonymous
   -->
   <xsl:param name="person.list"
-             select="author|corpauthor|othercredit|editor"/>
+             select="db:author|db:corpauthor|db:othercredit|db:editor"/>
   <xsl:param name="person.count" select="count($person.list)"/>
   <xsl:param name="count" select="1"/>
 

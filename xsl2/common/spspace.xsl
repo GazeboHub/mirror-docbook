@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
+		xmlns:h="http://www.w3.org/1999/xhtml"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
 		xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
 		xmlns:db="http://docbook.org/docbook-ng"
-		exclude-result-prefixes="f m fn"
+		xmlns:t="http://docbook.org/xslt/ns/template"
+		exclude-result-prefixes="f h m fn t"
                 version="2.0">
 
 <xsl:preserve-space elements="*"/>

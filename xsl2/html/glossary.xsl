@@ -30,7 +30,6 @@
 
     <xsl:if test="not(fn:empty($verso))">
       <xsl:call-template name="titlepage">
-	<xsl:with-param name="side" select="'verso'"/>
 	<xsl:with-param name="content" select="$verso"/>
       </xsl:call-template>
     </xsl:if>
@@ -66,7 +65,6 @@
 
     <xsl:if test="not(fn:empty($verso))">
       <xsl:call-template name="titlepage">
-	<xsl:with-param name="side" select="'verso'"/>
 	<xsl:with-param name="content" select="$verso"/>
       </xsl:call-template>
     </xsl:if>
@@ -98,7 +96,6 @@
 
       <xsl:if test="not(fn:empty($verso))">
 	<xsl:call-template name="titlepage">
-	  <xsl:with-param name="side" select="'verso'"/>
 	  <xsl:with-param name="content" select="$verso"/>
 	</xsl:call-template>
       </xsl:if>
@@ -123,8 +120,7 @@ GlossEntry ::=
 <xsl:template match="db:glossentry">
   <dt>
     <xsl:call-template name="id">
-      <xsl:with-param name="conditional"
-		      select="if ($glossterm.auto.link != 0) then 0 else 1"/>
+      <xsl:with-param name="force" select="$glossterm.auto.link"/>
     </xsl:call-template>
     <xsl:call-template name="class"/>
     
@@ -162,7 +158,9 @@ GlossEntry ::=
 
 <xsl:template match="db:glossentry/db:glossterm">
   <span class="{local-name(.)}">
-    <xsl:call-template name="id"/>
+    <xsl:call-template name="id">
+      <xsl:with-param name="force" select="$glossterm.auto.link"/>
+    </xsl:call-template>
     <xsl:apply-templates/>
   </span>
   <xsl:if test="following-sibling::db:glossterm">, </xsl:if>

@@ -370,12 +370,22 @@
 </xsl:template>
 
 <xsl:template match="db:productname">
-  <xsl:call-template name="inline.charseq"/>
-  <xsl:if test="@class">
-    <xsl:call-template name="dingbat">
-      <xsl:with-param name="dingbat" select="@class"/>
-    </xsl:call-template>
-  </xsl:if>
+  <xsl:call-template name="inline.charseq">
+    <xsl:with-param name="content">
+      <xsl:apply-templates/>
+      <xsl:choose>
+	<xsl:when test="@class = 'copyright'">&#x00A9;</xsl:when>
+	<xsl:when test="@class = 'registered'">&#x00AE;</xsl:when>
+	<xsl:when test="@class = 'service'">
+	  <sup>SM</sup>
+	</xsl:when>
+	<xsl:when test="@class = 'trade'">&#x2122;</xsl:when>
+	<xsl:otherwise>
+	  <!-- nop -->
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:with-param>
+  </xsl:call-template>
 </xsl:template>
 
 <xsl:template match="db:productnumber">

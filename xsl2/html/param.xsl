@@ -10,11 +10,14 @@
 		exclude-result-prefixes="h f m fn db t"
                 version="2.0">
 
+<xsl:param name="persistent.generated.ids" select="1"/>
+
 <xsl:param name="glossary.collection"
 	   select="'/sourceforge/docbook/xsl2/gloss.xml'"/>
 
 <xsl:param name="glossentry.show.acronym" select="'primary'"/>
 <xsl:param name="glossterm.auto.link" select="1"/>
+<xsl:param name="firstterm.only.link" select="0"/>
 
 <xsl:param name="inline.style.attribute" select="1"/>
 

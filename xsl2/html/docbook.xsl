@@ -35,38 +35,42 @@
   <xsl:include href="xref.xsl"/>
   <xsl:include href="html.xsl"/>
 
-  <xsl:output method="xhtml" encoding="utf-8" indent="yes"/>
+  <xsl:output method="xml" encoding="utf-8" indent="no"/>
+  <xsl:output name="final" method="xhtml" encoding="utf-8" indent="no"/>
 
   <xsl:template match="*" mode="m:root">
     <xsl:result-document href="normalized.xml">
       <xsl:copy-of select="."/>
     </xsl:result-document>
-
+    <!--
     <xsl:result-document href="normalized-glossary.xml">
       <xsl:copy-of select="$external.glossary"/>
     </xsl:result-document>
+    -->
 
-    <html>
-      <head>
-	<title>
-	  <xsl:choose>
-	    <xsl:when test="db:info/db:title">
-	      <xsl:value-of select="db:info/db:title"/>
-	    </xsl:when>
-	    <xsl:otherwise>
-	      <xsl:text>???</xsl:text>
-	      <xsl:message>
-		<xsl:text>Warning: no title for root element: </xsl:text>
-		<xsl:value-of select="local-name(.)"/>
-	      </xsl:message>
-	    </xsl:otherwise>
-	  </xsl:choose>
-	</title>
-      </head>
-      <body>
-	<xsl:apply-templates select="."/>
-      </body>
-    </html>
+    <xsl:result-document format="final">
+      <html>
+	<head>
+	  <title>
+	    <xsl:choose>
+	      <xsl:when test="db:info/db:title">
+		<xsl:value-of select="db:info/db:title"/>
+	      </xsl:when>
+	      <xsl:otherwise>
+		<xsl:text>???</xsl:text>
+		<xsl:message>
+		  <xsl:text>Warning: no title for root element: </xsl:text>
+		  <xsl:value-of select="local-name(.)"/>
+		</xsl:message>
+	      </xsl:otherwise>
+	    </xsl:choose>
+	  </title>
+	</head>
+	<body>
+	  <xsl:apply-templates select="."/>
+	</body>
+      </html>
+    </xsl:result-document>
   </xsl:template>
 
   <xsl:template match="*">

@@ -18,10 +18,12 @@
 </xsl:template>
   
 <xsl:template match="/" mode="m:cleanup">
+  <!--
   <xsl:message>
     <xsl:text>Cleaning up </xsl:text>
     <xsl:value-of select="fn:base-uri(.)"/>
   </xsl:message>
+  -->
 
   <xsl:variable name="fixedns">
     <xsl:apply-templates mode="m:fixnamespace"/>

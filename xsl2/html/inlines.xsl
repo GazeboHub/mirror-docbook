@@ -336,20 +336,12 @@
     <xsl:with-param name="content">
       <xsl:apply-templates/>
       <xsl:choose>
-	<xsl:when test="@class = 'copyright'
-			or @class = 'registered'">
-	  <xsl:call-template name="dingbat">
-	    <xsl:with-param name="dingbat" select="@class"/>
-	  </xsl:call-template>
-	</xsl:when>
+	<xsl:when test="@class = 'copyright'">&#x00A9;</xsl:when>
+	<xsl:when test="@class = 'registered'">&#x00AE;</xsl:when>
 	<xsl:when test="@class = 'service'">
 	  <sup>SM</sup>
 	</xsl:when>
-	<xsl:otherwise>
-	  <xsl:call-template name="dingbat">
-	    <xsl:with-param name="dingbat" select="'trademark'"/>
-	  </xsl:call-template>
-	</xsl:otherwise>
+	<xsl:otherwise>&#x2122;</xsl:otherwise>
       </xsl:choose>
     </xsl:with-param>
   </xsl:call-template>
@@ -361,10 +353,76 @@
   </xsl:call-template>
 </xsl:template>
 
-<xsl:template match="db:glossterm" name="glossterm">
+<xsl:template match="glossterm" name="glossterm">
   <xsl:param name="firstterm" select="0"/>
 
-  <xsl:call-template name="inline.italicseq"/>
+  <em class="{if ($firstterm != 0) then 'firstterm' else 'glossterm'}">
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+    <xsl:if test="db:alt">
+      <xsl:attribute name="title">
+	<xsl:value-of select="db:alt"/>
+      </xsl:attribute>
+    </xsl:if>
+    <xsl:if test="@dir">
+      <xsl:attribute name="dir">
+	<xsl:value-of select="@dir"/>
+      </xsl:attribute>
+    </xsl:if>
+
+    <xsl:choose>
+      <xsl:when test="($firstterm.only.link = 0 or $firstterm = 1) and @linkend">
+	<xsl:variable name="target" select="key('id',@linkend)[1]"/>
+
+	<a href="{f:href($target)}">
+	  <xsl:apply-templates/>
+	</a>
+      </xsl:when>
+
+      <xsl:when test="not(@linkend)
+		      and ($firstterm.only.link = 0 or $firstterm = 1)
+		      and $glossterm.auto.link != 0">
+	<xsl:variable name="term">
+	  <xsl:choose>
+	    <xsl:when test="@baseform">
+	      <xsl:value-of select="normalize-space(@baseform)"/>
+	    </xsl:when>
+	    <xsl:otherwise>
+	      <xsl:value-of select="normalize-space(.)"/>
+	    </xsl:otherwise>
+	  </xsl:choose>
+	</xsl:variable>
+
+	<xsl:variable name="targets"
+		      select="//db:glossentry
+			        [normalize-space(db:glossterm) = $term
+			         or normalize-space(db:glossterm/@baseform)
+				    = $term]"/>
+
+	<xsl:variable name="target" select="$targets[1]"/>
+
+	<xsl:choose>
+	  <xsl:when test="count($targets)=0">
+	    <xsl:message>
+	      <xsl:text>Error: no glossentry for glossterm: </xsl:text>
+	      <xsl:value-of select="."/>
+	      <xsl:text>.</xsl:text>
+	    </xsl:message>
+	    <xsl:apply-templates/>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <a href="{f:href($target)}">
+	      <xsl:apply-templates/>
+	    </a>
+	  </xsl:otherwise>
+	</xsl:choose>
+      </xsl:when>
+
+      <xsl:otherwise>
+	<xsl:apply-templates/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </em>
 </xsl:template>
 
 <xsl:template match="db:email">

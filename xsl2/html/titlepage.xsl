@@ -39,6 +39,23 @@
   </h1>
 </xsl:template>
 
+<xsl:template match="db:dedication/db:info/db:title"
+	      mode="m:titlepage-mode"
+	      priority="100">
+  <h2>
+    <xsl:next-match/>
+  </h2>
+</xsl:template>
+
+<xsl:template match="db:preface/db:info/db:title"
+	      mode="m:titlepage-mode"
+	      priority="100">
+  <h2>
+    <xsl:next-match/>
+  </h2>
+</xsl:template>
+
+
 <xsl:template match="db:chapter/db:info/db:title"
 	      mode="m:titlepage-mode"
 	      priority="100">
@@ -55,7 +72,15 @@
   </h2>
 </xsl:template>
 
-<xsl:template match="db:preface/db:info/db:title"
+<xsl:template match="db:colophon/db:info/db:title"
+	      mode="m:titlepage-mode"
+	      priority="100">
+  <h2>
+    <xsl:next-match/>
+  </h2>
+</xsl:template>
+
+<xsl:template match="db:article/db:info/db:title"
 	      mode="m:titlepage-mode"
 	      priority="100">
   <h2>
@@ -142,6 +167,12 @@
 
 <xsl:template match="*" mode="m:titlepage-mode">
   <xsl:apply-templates select="."/>
+</xsl:template>
+
+<xsl:template match="db:info/db:author" mode="m:titlepage-mode">
+  <h3>
+    <xsl:apply-templates select="."/>
+  </h3>
 </xsl:template>
 
 </xsl:stylesheet>

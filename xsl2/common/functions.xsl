@@ -77,14 +77,49 @@ node does not have an ID, the XSLT
   <xsl:param name="node" as="node()"/>
   
   <xsl:choose>
-    <xsl:when test="$node/@id">
-      <xsl:value-of select="$node/@id"/>
-    </xsl:when>
     <xsl:when test="$node/@xml:id">
       <xsl:value-of select="$node/@xml:id"/>
     </xsl:when>
+    <xsl:when test="$node/@id">
+      <xsl:value-of select="$node/@id"/>
+    </xsl:when>
+    <xsl:when test="$persistent.generated.ids != 0">
+      <xsl:variable name="xpid" select="f:xptr-id($node)"/>
+      <xsl:choose>
+	<xsl:when test="$xpid = '' or $node/key('id', $xpid)">
+	  <xsl:value-of select="generate-id($node)"/>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:value-of select="$xpid"/>
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:when>
     <xsl:otherwise>
       <xsl:value-of select="generate-id($node)"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
+<xsl:function name="f:xptr-id" as="xs:string">
+  <xsl:param name="node" as="element()"/>
+
+  <xsl:choose>
+    <xsl:when test="$node/@xml:id">
+      <xsl:value-of select="$node/@xml:id"/>
+    </xsl:when>
+    <xsl:when test="$node/@id">
+      <xsl:value-of select="$node/@id"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:value-of>
+	<xsl:choose>
+	  <xsl:when test="not($node/parent::*)">R.</xsl:when>
+	  <xsl:otherwise>
+	    <xsl:value-of select="concat(f:xptr-id($node/parent::*), '.')"/>
+	  </xsl:otherwise>
+	</xsl:choose>
+	<xsl:value-of select="count($node/preceding-sibling::*)+1"/>
+      </xsl:value-of>
     </xsl:otherwise>
   </xsl:choose>
 </xsl:function>

@@ -10,7 +10,9 @@
 		exclude-result-prefixes="h f m fn db t"
                 version="2.0">
 
-<xsl:template match="db:dedication|db:preface|db:chapter|db:appendix
+<xsl:template match="db:dedication
+		     |db:preface|db:chapter|db:appendix
+		     |db:colophon|db:article
 		     |db:index">
   <xsl:variable name="recto"
 		select="$titlepages/*[fn:node-name(.) = fn:node-name(current())
@@ -27,7 +29,6 @@
 
     <xsl:if test="not(fn:empty($verso))">
       <xsl:call-template name="titlepage">
-	<xsl:with-param name="side" select="'verso'"/>
 	<xsl:with-param name="content" select="$verso"/>
       </xsl:call-template>
     </xsl:if>

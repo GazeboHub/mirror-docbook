@@ -3,6 +3,24 @@
 	      xmlns="http://www.w3.org/1999/xhtml"
 	      xmlns:db="http://docbook.org/docbook-ng">
 
+<db:article t:side="recto">
+  <div class="article-titlepage">
+    <db:title/>
+    <db:subtitle/>
+    <db:corpauthor/>
+    <db:authorgroup/>
+    <db:author/>
+    <db:othercredit/>
+    <db:releaseinfo/>
+    <db:copyright/>
+    <db:legalnotice/>
+    <db:pubdate/>
+    <db:revision/>
+    <db:revhistory/>
+    <db:abstract/>
+  </div>
+</db:article>
+
 <db:book t:side="recto">
   <div class="book-titlepage">
     <db:title/>
