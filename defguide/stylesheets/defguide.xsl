@@ -47,35 +47,36 @@
 </xsl:template>
 
 <xsl:template name="revision.graphic">
+  <xsl:param name="node" select="."/>
   <xsl:param name="large" select="'0'"/>
 
-  <xsl:if test="@revision">
+  <xsl:if test="$node/@revision">
     <xsl:choose>
-      <xsl:when test="@revision='5.0'">
+      <xsl:when test="$node/@revision='5.0'">
         <img src="figures/rev_5.0.png" alt="[5.0]" align="absbottom"/>
       </xsl:when>
-      <xsl:when test="@revision='4.0'">
+      <xsl:when test="$node/@revision='4.0'">
         <img src="figures/rev_4.0.png" alt="[4.0]" align="absbottom"/>
       </xsl:when>
-      <xsl:when test="@revision='3.1'">
+      <xsl:when test="$node/@revision='3.1'">
         <!-- nop; 3.1 isn't interesting anymore -->
       </xsl:when>
-      <xsl:when test="@revision='EBNF'">
+      <xsl:when test="$node/@revision='EBNF'">
         <img src="figures/rev_ebnf.png" alt="[EBNF]" align="absbottom"/>
       </xsl:when>
-      <xsl:when test="@revision='SVG'">
+      <xsl:when test="$node/@revision='SVG'">
         <img src="figures/rev_svg.png" alt="[SVG]" align="absbottom"/>
       </xsl:when>
-      <xsl:when test="@revision='MathML'">
+      <xsl:when test="$node/@revision='MathML'">
         <img src="figures/rev_mathml.png" alt="[MathML]" align="absbottom"/>
       </xsl:when>
-      <xsl:when test="@revision='HTMLForms'">
+      <xsl:when test="$node/@revision='HTMLForms'">
         <img src="figures/rev_htmlforms.png" alt="[HTML Forms]" align="absbottom"/>
       </xsl:when>
       <xsl:otherwise>
         <xsl:message>
           <xsl:text>Unexpected revision '</xsl:text>
-          <xsl:value-of select="@revision"/>
+          <xsl:value-of select="$node/@revision"/>
           <xsl:text>' on </xsl:text>
           <xsl:value-of select="local-name(.)"/>
         </xsl:message>
@@ -540,6 +541,20 @@
       <xsl:apply-imports/>
     </xsl:otherwise>
   </xsl:choose>
+</xsl:template>
+
+<!-- ============================================================ -->
+
+<xsl:template match="refsect2/title">
+  <h3>
+    <xsl:if test="parent::refsect2/@role = 'fu'">
+      <xsl:call-template name="revision.graphic">
+        <xsl:with-param name="node" select="parent::refsect2"/>
+      </xsl:call-template>
+      <xsl:text> </xsl:text>
+    </xsl:if>
+    <xsl:apply-templates/>
+  </h3>
 </xsl:template>
 
 <!-- ============================================================ -->
