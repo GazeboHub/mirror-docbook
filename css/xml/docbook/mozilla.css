@@ -1,6 +1,8 @@
 /* make <ulink>s clickable */
 ulink {
-	-moz-binding:url('db-bindings.xml#ulink');
+	/* This causes a crash, unfortunately,
+	-moz-binding:url('db-bindings.xml#ulink');*/
+	cursor: pointer;
 	-moz-user-focus: normal;
 }
 
@@ -19,8 +21,11 @@ book>title, article>title {
 }
 */
 
-/* doesn't work
 imagedata {
 	-moz-binding:url('db-bindings.xml#image');
 }
-*/
+
+
+guimenu, guimenuitem, guisubmenu {
+	font: menu;
+}
