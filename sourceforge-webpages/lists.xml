@@ -1,0 +1,44 @@
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
+                  "file:/share/doctypes/website-pages/website.dtd">
+<webpage id="lists">
+<config param="desc" value="Mailing Lists"/>
+<config param="rcsdate" value="$Date$"/>
+<config param="footer" value="lists.xml" altval="XML Source"/>
+<head>
+<title>Mailing Lists</title>
+<summary>Open discussion and progress notification</summary>
+<keywords>DocBook, SourceForge, mailing lists</keywords>
+</head>
+
+<para>Please use the
+<ulink url="http://www.oasis-open.org/docbook/mailinglist/">OASIS
+DocBook Lists</ulink> for general DocBook and DocBook tools discussions.
+Read the
+<ulink url="http://www.oasis-open.org/docbook/mailinglist/guidelines.html">guidelines</ulink> for information about which list is appropriate for your
+posting.</para>
+
+<section>
+<title>Project Notification</title>
+
+<para>There are
+<ulink url="http://sourceforge.net/mail/?group_id=21935">two read-only lists</ulink>
+at SourceForge:</para>
+
+<variablelist>
+<varlistentry>
+<term><ulink url="http://www.geocrawler.com/redir-sf.php3?list=docbook-tracker">docbook-tracker</ulink></term>
+<listitem><para>Provides automated notification of submissions to the
+bug/issue tracking system.
+</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><ulink url="http://www.geocrawler.com/redir-sf.php3?list=docbook-checkins">docbook-checkins</ulink></term>
+<listitem><para>Provides automated notification of CVS commits (published
+changes to the files hosted in the DocBook project).
+</para></listitem>
+</varlistentry>
+</variablelist>
+
+</section>
+
+</webpage>

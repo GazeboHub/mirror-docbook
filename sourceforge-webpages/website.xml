@@ -11,11 +11,16 @@
 <keywords>DocBook, SourceForge</keywords>
 </head>
 
+<para>This is the homepage for the
+<ulink url="http://sourceforge.net/projects/docbook/">DocBook Open
+Repository</ulink> project at
+<ulink url="http://sourceforge.net/">SourceForge</ulink>.</para>
+
 <para>This project is still in the early planning stages. It will
 eventually contain a number of DocBook-related schemas and stylesheets.</para>
 
 <para>Check back in a few weeks to see if any progress has been
-made. Announcements will be go out when we've go anything useful set
+made. Announcements will be go out when we've got anything useful set
 up.</para>
 
 <webtoc/>

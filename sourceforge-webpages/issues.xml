@@ -3,7 +3,7 @@
 <webpage id="issues">
 <config param="desc" value="Issue Tracking"/>
 <config param="rcsdate" value="$Date$"/>
-<config param="footer" value="projects.xml" altval="XML Source"/>
+<config param="footer" value="issues.xml" altval="XML Source"/>
 <head>
 <title>Issue Tracking</title>
 <summary>Bug reports and enhancement requests</summary>
@@ -14,5 +14,8 @@
 <ulink url="http://sourceforge.net/tracker/?group_id=21935">tracking
 system</ulink> for reporting bugs and enhancement requests.
 </para>
+
+
+
 
 </webpage>

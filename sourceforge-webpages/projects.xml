@@ -5,7 +5,7 @@
 <webpage id="projects">
 <config param="desc" value="DocBook Projects"/>
 <config param="rcsdate" value="$Date$"/>
-<config param="footer" value="projects.xml" altval="XML Source"/>
+<config param="footer" value="../projects.xml" altval="XML Source"/>
 <head>
 <title>DocBook Projects</title>
 <titleabbrev>Projects</titleabbrev>
@@ -28,6 +28,12 @@ CVS tree or to build a new release.
 <varlistentry>
 <term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/docbook/?cvsroot=docbook">docbook</ulink></term>
 <listitem><para>The DocBook DTD.
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/dsssl/?cvsroot=docbook">dsssl</ulink></term>
+<listitem><para>DocBook DSSSL Stylesheets.
 </para></listitem>
 </varlistentry>
 

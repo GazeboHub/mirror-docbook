@@ -1,0 +1,17 @@
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
+                  "file:/share/doctypes/website-pages/website.dtd">
+<webpage id="releases">
+<config param="desc" value="Issue Tracking"/>
+<config param="rcsdate" value="$Date$"/>
+<config param="footer" value="releases.xml" altval="XML Source"/>
+<head>
+<title>Releases</title>
+<summary>Software releases from this project</summary>
+<keywords>DocBook, SourceForge, releases</keywords>
+</head>
+
+<para>A history of <ulink url="http://sourceforge.net/project/showfiles.php?group_id=21935">project releases</ulink> is maintained on SourceForge.</para>
+
+<para>No packages have been released yet.</para>
+
+</webpage>

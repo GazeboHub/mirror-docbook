@@ -1,0 +1,15 @@
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
+                  "file:/share/doctypes/website-pages/website.dtd">
+<webpage id="p.xmlcharent">
+<config param="desc" value="XML Character Entities"/>
+<config param="rcsdate" value="$Date$"/>
+<config param="footer" value="xmlcharent.xml" altval="XML Source"/>
+<head>
+<title>XML Character Entities</title>
+<summary>XML versions of the ISO Character Entities</summary>
+<keywords>DocBook, SourceForge, XML character entities</keywords>
+</head>
+
+<para>T.B.A.</para>
+
+</webpage>

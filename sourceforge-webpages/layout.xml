@@ -20,9 +20,20 @@
   <style src="odr.css" type="text/css"/>
 
   <toc page="website.xml" filename="index.html">
-    <tocentry page="projects.xml" filename="projects.html"/>
+    <tocentry page="projects.xml" dir="projects" filename="index.html">
+      <tocentry page="projects/cvstools.xml" filename="cvstools.html"/>
+      <tocentry page="projects/docbook.xml" filename="docbook.html"/>
+      <tocentry page="projects/dsssl.xml" filename="dsssl.html"/>
+      <tocentry page="projects/gentext.xml" filename="gentext.html"/>
+      <tocentry page="projects/sourceforge-webpages.xml" filename="sourceforge-webpages.html"/>
+      <tocentry page="projects/testdocs.xml" filename="testdocs.html"/>
+      <tocentry page="projects/xmlcharent.xml" filename="xmlcharent.html"/>
+      <tocentry page="projects/xsl.xml" filename="xsl.html"/>
+    </tocentry>
+    <tocentry page="lists.xml" filename="lists.html"/>
     <tocentry page="issues.xml" filename="issues.html"/>
     <tocentry page="cvs.xml" filename="cvs.html"/>
+    <tocentry page="releases.xml" filename="releases.html"/>
   </toc>
 
   <notoc page="about.xml" filename="about.html"/>

@@ -1,0 +1,15 @@
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
+                  "file:/share/doctypes/website-pages/website.dtd">
+<webpage id="p.gentext">
+<config param="desc" value="Generated text"/>
+<config param="rcsdate" value="$Date$"/>
+<config param="footer" value="gentext.xml" altval="XML Source"/>
+<head>
+<title>Generated Text</title>
+<summary>Localization/Internationalization data</summary>
+<keywords>DocBook, SourceForge, gentext, I18N, L10N</keywords>
+</head>
+
+<para>T.B.A.</para>
+
+</webpage>

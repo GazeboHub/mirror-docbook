@@ -1,0 +1,15 @@
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
+                  "file:/share/doctypes/website-pages/website.dtd">
+<webpage id="p.sourceforge-webpages">
+<config param="desc" value="SourceForge Webpages"/>
+<config param="rcsdate" value="$Date$"/>
+<config param="footer" value="sourceforge-webpages.xml" altval="XML Source"/>
+<head>
+<title>SourceForge Webpages</title>
+<summary>Webpage source for this website</summary>
+<keywords>DocBook, SourceForge, Webpages</keywords>
+</head>
+
+<para>T.B.A.</para>
+
+</webpage>
