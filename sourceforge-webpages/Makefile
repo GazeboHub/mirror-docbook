@@ -51,7 +51,7 @@ TIDYFLAGS=-iq -latin1 -mn
 BASEDIR=$(shell (pwd | $(PERL) -p -e "s|.*/([^/]*)$$|\1|g"))
 SITEUMASK=002
 
-.PHONY : website graphics dist install clean distclean
+.PHONY : website graphics dist install clean distclean Changes
 
 all: autolayout.xml website
 
