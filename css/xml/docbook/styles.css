@@ -694,3 +694,10 @@ remark:before {
 remark:after {
 	content: "]";
 }
+
+superscript {
+	vertical-align: super;
+}
+subscript {
+	vertical-align: sub;
+}    
