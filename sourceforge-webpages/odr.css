@@ -51,3 +51,5 @@ span.footcopy          { color: black;
                          font-size: 70%;
                          font-family: Arial, sans-serif;
                        }
+p.navtoc               { margin-top: 0pt;
+                       }
