@@ -11,6 +11,7 @@
 
 /* Generated content for English documents */
 
+/* TODO: should take into account <label> and defaultlabel=".." */
 question:before {
 	content: "Q: ";
 }
