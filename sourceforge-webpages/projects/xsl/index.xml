@@ -20,8 +20,11 @@ stylesheet language for both print and online rendering. For more
 information about XSL, see the
 <ulink url="http://www.w3.org/Style/XSL/">XSL page</ulink> at the W3C.</para>
 
-
 <itemizedlist>
+<listitem>
+<para>The <ulink url="http://sourceforge.net/project/showfiles.php?group_id=21935">XSL Stylesheet distribution</ulink>.
+</para>
+</listitem>
 <listitem>
 <para>The <ulink url="doc/">XSL Stylesheet documentation</ulink>.
 </para>

@@ -1,0 +1,18 @@
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
+          "http://docbook.sourceforge.net/release/website/snapshot/website.dtd">
+<webpage id="contrib-tools">
+<config param="desc" value="Contributed Tools"/>
+<config param="rcsdate" value="$Date$"/>
+<config param="footer" value="index.xml" altval="XML Source"/>
+<head>
+<title>Contributed Tools</title>
+<titleabbrev>Tools</titleabbrev>
+<keywords>DocBook, SourceForge, projects, contrib, tools</keywords>
+</head>
+
+<para>These pages are for contributed tools and customizations for
+tools.</para>
+
+<webtoc/>
+
+</webpage>
