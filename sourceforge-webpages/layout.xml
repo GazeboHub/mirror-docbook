@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<!DOCTYPE layout PUBLIC "-//Norman Walsh//DTD Website Layout V1.0//EN"
-                        "layout.dtd">
+<!DOCTYPE layout PUBLIC "-//Norman Walsh//DTD Website Layout V2.4.0//EN"
+                        "http://docbook.sourceforge.net/release/website/2.4.1/schema/dtd/layout.dtd">
 <layout>
   <config param="homebanner-tabular" value="graphics/duckbanner.png"
 	  altval="Home Banner"/>

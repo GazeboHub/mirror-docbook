@@ -162,3 +162,5 @@ clean:
 
 distclean: clean
 	rm -vf autolayout.xml .depends.tabular .depends.textonly $(BASEDIR).tar.gz $(BASEDIR).zip
+
+# $Id$
