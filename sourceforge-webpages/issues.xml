@@ -1,0 +1,18 @@
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
+                  "file:/share/doctypes/website-pages/website.dtd">
+<webpage id="issues">
+<config param="desc" value="Issue Tracking"/>
+<config param="rcsdate" value="$Date$"/>
+<config param="footer" value="projects.xml" altval="XML Source"/>
+<head>
+<title>Issue Tracking</title>
+<summary>Bug reports and enhancement requests</summary>
+<keywords>DocBook, SourceForge, tracking, issues</keywords>
+</head>
+
+<para>SourceForge offers a
+<ulink url="http://sourceforge.net/tracker/?group_id=21935">tracking
+system</ulink> for reporting bugs and enhancement requests.
+</para>
+
+</webpage>

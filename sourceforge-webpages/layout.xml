@@ -21,6 +21,8 @@
 
   <toc page="website.xml" filename="index.html">
     <tocentry page="projects.xml" filename="projects.html"/>
+    <tocentry page="issues.xml" filename="issues.html"/>
+    <tocentry page="cvs.xml" filename="cvs.html"/>
   </toc>
 
   <notoc page="about.xml" filename="about.html"/>

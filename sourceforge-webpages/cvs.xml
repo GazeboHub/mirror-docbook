@@ -1,0 +1,20 @@
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
+                  "file:/share/doctypes/website-pages/website.dtd">
+<webpage id="cvs">
+<config param="desc" value="CVS Repository"/>
+<config param="rcsdate" value="$Date$"/>
+<config param="footer" value="projects.xml" altval="XML Source"/>
+<head>
+<title>CVS Repository</title>
+<titleabbrev>CVS</titleabbrev>
+<summary>Source code control for the various packages</summary>
+<keywords>DocBook, SourceForge, CVS, projects</keywords>
+</head>
+
+<para>Anyone is free to checkout individual projects from the
+<ulink url="http://sourceforge.net/cvs/?group_id=21935">CVS
+Repository</ulink>. SourceForge also provides a web interface to
+<ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/?cvsroot=docbook">browsing it</ulink>.
+</para>
+
+</webpage>

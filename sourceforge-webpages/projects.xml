@@ -1,5 +1,7 @@
 <!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
-                  "file:/share/doctypes/website-pages/website.dtd">
+                  "file:/share/doctypes/website-pages/website.dtd" [
+<!ENTITY cvs.xml SYSTEM "cvs.xml" NDATA SGML>
+]>
 <webpage id="projects">
 <config param="desc" value="DocBook Projects"/>
 <config param="rcsdate" value="$Date$"/>
@@ -11,22 +13,30 @@
 <keywords>DocBook, SourceForge, projects</keywords>
 </head>
 
-<para>This page describes all of the distributions contained in this
-project.</para>
+<para>This page describes all of the packages contained in this
+project. These are available <olink targetdocent="cvs.xml">via CVS</olink>.
+</para>
 
 <variablelist>
-<varlistentry><term>gentext</term>
+<varlistentry>
+<term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/docbook/?cvsroot=docbook">docbook</ulink></term>
+<listitem><para>The DocBook DTD.
+</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/xmlcharent/?cvsroot=docbook">xmlcharent</ulink></term>
+<listitem><para>The XML version of the ISO character entity sets.
+</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/gentext/?cvsroot=docbook">gentext</ulink></term>
 <listitem><para>The localization text for the DSSSL and XSL Stylesheets.
 </para></listitem>
 </varlistentry>
-<varlistentry><term>sourceforge-webpages</term>
+<varlistentry>
+<term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/sourceforge-webpages/?cvsroot=docbook">sourceforge-webpages</ulink></term>
 <listitem><para>The XML sources for the web pages at
 <ulink url="http://docbook.sourceforge.net/"/>. (These very pages!)
-</para></listitem>
-</varlistentry>
-<varlistentry><term>T.B.A.</term>
-<listitem><para>A whole bunch of other projects are being added as
-construction continues.
 </para></listitem>
 </varlistentry>
 <!--
@@ -35,6 +45,11 @@ construction continues.
 </para></listitem>
 </varlistentry>
 -->
+<varlistentry><term>T.B.A.</term>
+<listitem><para>A whole bunch of other projects are being added as
+construction continues.
+</para></listitem>
+</varlistentry>
 </variablelist>
 
 <webtoc/>
