@@ -1,0 +1,42 @@
+
+tgroup {
+	display: table;
+}
+
+row {
+	display: table-row;
+}
+
+thead {
+	display: table-header-group;
+}
+
+tbody {
+	display: table-row-group;
+}
+
+entry, entrytbl {
+	display: table-cell;
+}
+
+/*
+ * CSS can't generate the indended formatting for segmented lists, so we turn
+ * them into tables instead.
+ *
+ * TODO: seems to break formatting when nested in a table entry
+ */
+segmentedlist {
+	display: table;
+}
+
+seglistitem {
+	display: table-row;
+}
+
+seg, segtitle {
+	display: table-cell;
+}
+
+segmentedlist>title {
+	display: table-caption;
+}
