@@ -21,10 +21,10 @@
 <indexterm><primary>Модульные таблицы стилей DocBook</primary></indexterm>
 <indexterm><primary>Linux Documentation Project</primary></indexterm>
 
-Есть много программ (как проприетарных так и свободных) для публикации документов &SGML;. В этой главе, мы проведём обзор таких средств и остановимся более подробно лишь на одном: <ulink url=\"http://www.jclark.com/jade/\">Jade</ulink> и <ulink url=\"http://nwalsh.com/docbook/dsssl/\">Модульные таблицы стилей DocBook.</ulink>. Jjade используется для создания этой книги как в печатном варианте, так и в электронном. Дальнейшее его развитие - <ulink url=\"http://www.sgmltools.org/\"><literal>&lt;SGML&gt;&amp;tools;</literal>,</ulink> 
+Есть много программ (как проприетарных так и свободных) для публикации документов &SGML;. В этой главе, мы проведём обзор таких средств и остановимся более подробно лишь на одном: <ulink url="http://www.jclark.com/jade/">Jade</ulink> и <ulink url="http://nwalsh.com/docbook/dsssl/">Модульные таблицы стилей DocBook.</ulink>. Jjade используется для создания этой книги как в печатном варианте, так и в электронном. Дальнейшее его развитие - <ulink url="http://www.sgmltools.org/"><literal>&lt;SGML&gt;&amp;tools;</literal>,</ulink> 
 используемые в Linux Documentation Project.</para>
 <para>
-Краткий обзор других средств: <xref linkend=\"app-resources\"/>.
+Краткий обзор других средств: <xref linkend="app-resources"/>.
 </para>
 <section><title>Обзор языков таблиц стилей</title>
 <para>
