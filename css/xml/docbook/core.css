@@ -43,8 +43,8 @@ sect1 {
 }
 
 appendixinfo, area, areaset, areaspec, articleinfo, bibliographyinfo, 
-blockinfo, bookinfo, chapterinfo, colspec, glossaryinfo, indexinfo, itermset, 
-modespec, objectinfo, partinfo, prefaceinfo, primary, refentryinfo, 
+blockinfo, bookinfo, chapterinfo, colspec, glossaryinfo, indexinfo, indexterm,
+itermset, modespec, objectinfo, partinfo, prefaceinfo, primary, refentryinfo, 
 referenceinfo, refmeta, refsect1info, refsect2info, refsect3info, 
 refsectioninfo, refsynopsisdivinfo, screeninfo, secondary, sect1info, 
 sect2info, sect3info, sect4info, sect5info, sectioninfo, see, seealso, 
