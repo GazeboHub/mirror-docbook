@@ -25,10 +25,10 @@
 article, book {
 	margin:.5em;
 }
-title, subtitle {
+title, subtitle, bridgehead {
 	font-family:sans-serif;
 }
-title {
+title, bridgehead {
 	font-weight:bolder;
 	margin-bottom:.5em;
 }
