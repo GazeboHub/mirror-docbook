@@ -70,11 +70,23 @@
 </xsl:template>
 
 <xsl:template match="db:attribution">
-  <span class="{local-name(.)}"><xsl:apply-templates/></span>
+  <div class="{local-name(.)}"><xsl:apply-templates/></div>
 </xsl:template>
 
 <xsl:template match="db:ackno">
   <div class="{local-name(.)}"><xsl:apply-templates/></div>
+</xsl:template>
+
+<xsl:template match="db:blockquote">
+  <blockquote>
+    <xsl:if test="db:info/db:title">
+      <h3>
+	<xsl:apply-templates select="db:info/db:title/node()"/>
+      </h3>
+    </xsl:if>
+    <xsl:apply-templates select="* except (db:info|db:attribution)"/>
+    <xsl:apply-templates select="db:attribution"/>
+  </blockquote>
 </xsl:template>
 
 </xsl:stylesheet>
