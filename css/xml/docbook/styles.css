@@ -7,6 +7,21 @@
  * This file placed in the public domain		-- David Holroyd 2002
  */
 
+/*
+ * TODO:
+ *
+ *  - Localisation of generated content?
+ *
+ *  - <imagedata>: currently, the best I can seem to do is specify a size
+ *    for a box and show an image using the CSS background-image attribute.
+ *    This only worked when I specified a file: URL with a fully specified path.
+ *    The fileref attribute value is usually just going to be a relative path
+ *    without any URL scheme, though.
+ *
+ *  - do I remember correctly that <abstract> be hidden for screen media?
+ */
+
+
 article, book {
 	margin:.5em;
 }
@@ -15,14 +30,29 @@ title, subtitle {
 }
 title {
 	font-weight:bolder;
-	margin-top:1em;
 	margin-bottom:.5em;
 }
-section>*,chapter>* {
+
+/*
+ * Sectioning elements that may contain paragraph-level elements get left/right
+ * margins
+ */
+section>*, chapter>*, bibliography>*, appendix>*, glossary>*, preface>*,
+dedication>*, colophon>*, sect1>*, sect2>*, sect3>*, sect4>*, sect5>*,
+bibliodiv>* {
 	margin-left:10%;
 	margin-right:10%;
 }
-section>section, section>title, chapter>section, chapter>title {
+
+/*
+ * Remove any margin defined be the previous rule when the child in question
+ * is a section or title.  Titles should be allowed to take up the maximum
+ * available width, as they're usually is larger type.  Sections must not
+ * be given margins because, the *contents* of the section will alreay have
+ * them; we don't want to recursively increase margins with the nesting depth
+ * of the document.
+ */
+section, title, sect1, sect2, sect3, sect4, sect5, bibliodiv {
 	margin-left:0;
 	margin-right:0;
 }
@@ -33,41 +63,94 @@ book>title, article>title {
 	border-bottom-style:solid;
 }
 
-chapter>title {
+appendix>title, bibliography>title, chapter>title, colophon>title, dedication>title, glossary>title, part>title, preface>title {
 	font-size:xx-large;
 	text-align:center;
 }
 
-section>title {
+section>title, sect1>title, bibliodiv>title {
 	font-size:xx-large;
 }
 
-section>section>title {
+section>section>title, sect2>title {
 	font-size:x-large;
 	margin-left:5%;
 }
 
-section>section>section>title {
+section>section>section>title, sect3>title {
 	font-size:large;
 	margin-left:7.5%;
 }
 
-section>section>section>section>title {
+section>section>section>section>title, sect4>title {
+	font-size:large;
 	margin-left:10%;
 }
 
-section>section>section>section>section>title {
-	font-size:normal;
+section>section>section>section>section>title, sect5>title {
+	font-size:inherit;
 	margin-left:10%;
 }
 
+biblioentry > title {
+	display: inline;
+}
 
-*+para {
+/* Give vertical spacing between compoments of the document */
+
+*+section, *+chapter, *+bibliography, *+bibliodiv, *+appendix, *+glossary {
+	margin-top: 3em;
+}
+section>*+section {
+	margin-top: 2em;
+}
+section>section>*+section {
+	margin-top: 1em;
+}
+
+
+/*
+ * Give paragraph-level elements some leading space when they aren't the first
+ * item in their containing block.
+ */
+*+para, *+formalpara, *+blockquote, *+glossentry, *+table, *+variablelist,
+*+example, *+informalexample, *+programlisting, *+cmdsynopsis,
+*+orderedlist, *+itemizedlist, *+figure,
+*>warning, *>caution, *>tip, *>note {
 	margin-top:.5em;
 }
 
-example, informalexample {
-	background-color:#dddddd;
+
+/*
+ * BiblioEntry blocks need a bit more space, since they may contain multiple
+ * paragraphs, and so need greater-then-paragraph spacing to make it clear
+ * which gap is the end just of a paragraph, and which gap is the end of the
+ * entry
+ */
+*+biblioentry {
+	margin-top: 1em;
+}
+
+/*
+ * REVISIT: I think this is the proper way; but deson't work in Firefox 0.8
+
+formalpara > title {
+	display: run-in;
+}
+
+ * Make all children of formalpara inline, instead...
+ */
+
+formalpara > * {
+	display: inline;
+}
+
+formalpara > title:after {
+	content: ".";
+}
+
+para, formalpara {
+	text-align: justify;
 }
 
 quote:before {
@@ -121,6 +204,14 @@ emphasis>emphasis {
 	font-weight:bolder;
 }
 
+foreignphrase, wordasword {
+	font-style:italic;
+}
+
+replaceable {
+	font-style:italic;
+}
+
 sgmltag[class="starttag"]:before {
 	content: "<"
 }
@@ -137,35 +228,183 @@ sgmltag[class="endtag"]:after {
 	content: ">"
 }
 
-keycap+keycap:before {
-	content:"-"
+application, keycap, guimenu, guimenuitem, guisubmenu {
+	font-family: sans-serif;
 }
 
-ulink {
+/*
+ * ensure there's some whitespace between elements of an author's name
+ */
+author>* + *:before {
+	content: " ";
+}
+
+/* give keycaps a '3D' shaded look */
+keycap {
+	padding: .1em;
+	border: 2px solid;
+	border-top-color: #eeeeee;
+	border-left-color: #eeeeee;
+	border-right-color: #999999;
+	border-bottom-color: #999999;
+	background-color: #dddddd;
+}
+
+keycombo>keycap+keycap:before {
+	/* FIXME: this appears inside the second keycap's 3D boarder, but
+	 * ideally, we'd like it to appear inbetween the two keycaps */
+	content: "-";
+}
+
+guimenu+guimenuitem:before, guimenuitem+guimenuitem:before,
+guimenuitem+guisubmenu:before {
+	/*content: "->";*/
+	/* a 'proper' left-arrow character */
+	content: "\2192";
+}
+
+/* render link-like elements per HTML's normal styling */
+link, ulink, email {
+	/* When ulink contains no body text, the url should be rendered
+	 * at this point in the document.  Can't see how to do this with CSS */
 	color:#0000ff;
 	text-decoration:underline;
 }
-ulink:hover {
-	cursor:pointer;
+
+/*ulink:after {
+	content: " <" attr(url) ">";
+}*/
+
+email:before {
+	content: "<";
+}
+email:after {
+	content: ">";
+}
+
+citation:before {
+	content: "[";
+}
+citation:after {
+	content: "]";
+}
+
+xref:after {
+	/* simple symbol - content: "#" attr(linkend);*/
+	/* 'section' symbol */
+	content: "\00a7" attr(linkend);
+	color:#0000ff;
+	text-decoration: underline;
 }
 
 blockquote {
 	padding-left:3em;
+	position: relative;
+	padding-bottom: 1em;
 }
 
-attribution {
+blockquote>attribution {
 	text-align:right;
+	font-style: italic;
 }
-attribution:before {
-	content:"--"
+blockquote>attribution:after {
+	/* I've tried various things to position the attribution after the
+	 * other blockquote content (e.g. relative/absolute positioning), but
+	 * none of the things I tried produced satisfactory results (e.g. the
+	 * attribution appears at the bottom of the containing block, but it
+	 * overlaps preceeding content). */
+	content:":"
 }
+
+/* lists */
+
+itemizedlist {
+        padding-left: 1em;
+        list-style-type: disc;
+}
+
+listitem+listitem {
+	padding-top: .5em;
+}
+
+/* 2 deep nested lists */
+itemizedlist itemizedlist {
+        list-style-type: circle;
+}
+
+/* 3 or more deep nested lists */
+itemizedlist itemizedlist itemizedlist {
+        list-style-type: square;
+}
+
 
 itemizedlist>listitem {
 	display:list-item;
 }
 
-filename, literal {
-	font-family:monospace;
+orderedlist {
+        padding-left: 1.5em;
+	list-style-type: decimal;
+}
+
+orderedlist>listitem {
+	display:list-item;
+}
+
+/*
+ * We've got no way of properly implementing call-out lists with CSS, so just
+ * present as a list of bullet points.
+ */
+calloutlist {
+        padding-left: 1em;
+        list-style-type: disc;
+}
+calloutlist>callout {
+	display:list-item;
+}
+
+
+
+/*
+ * The list of possible mark names is not defined by Docbook, but "opencircle"
+ * and "bullet" are used in T.D.G. example
+ */
+itemizedlist[mark="opencircle"], listitem[override="opencircle"] {
+        list-style-type: circle;
+}
+
+itemizedlist[mark="bullet"], listitem[override="bullet"] {
+        list-style-type: disc;
+}
+
+
+varlistentry>listitem {
+	margin-left: 2em;
+}
+varlistentry+varlistentry {
+	margin-top: .5em;
+}
+
+simplelist[type=horiz] {
+	display: block;
+}
+
+simplelist[type=inline]>member+member:before {
+	/* typically, we end up with unwanted whitespace before the comma
+	 * (i.e. whitespace between <member> elements).  I see no way of
+	 * suppressing this with CSS.
+	 * TODO: try a combination of :after and :first-child instead to
+	 * avoid the above issue */
+	content: ", ";
+}
+
+cmdsynopsis, code, command, computeroutput, envar, filename, keycode, keysym,
+literal, option, parameter, systemitem {
+	font-family: monospace;
+}
+
+filename[class=directory]:after {
+	content: "/";
 }
 
 trademark:after {
@@ -179,4 +418,167 @@ trademark[class="registered"]:after {
 }
 trademark[class="service"]:after {
 	content: "\2120"
+}
+
+example, informalexample, programlisting  {
+	background-color:#dddddd;
+	padding: .5em;
+	border: 1px dashed black;
+}
+
+example > title:before {
+	content: "Example: ";
+}
+
+
+example programlisting, informalexample programlisting {
+	background-color: none;
+	padding: 0;
+	border: none;
+}
+
+/* admonitions */
+
+warning, caution, tip, note {
+	border: 1px dashed gray;
+	padding: .5em;
+}
+
+/* Have admonition titles appear inline with generated content ("Note:" etc.) */
+warning>title, caution>title, tip>title, note>title {
+	display: inline;
+	
+}
+
+warning:before, caution:before, tip:before, note:before {
+	/* Match the style of <title> */
+	font-weight: bolder;
+	font-family: sans-serif;
+}
+
+/* FIXME: background colours are cheezy :S ... */
+
+warning:before {
+	background-color: red;
+	content: "Warning: ";
+}
+
+caution:before {
+	background-color: yellow;
+	content: "Caution: ";
+}
+
+tip:before {
+	background-color: #aaaddd;
+	content: "Tip: ";
+}
+
+note:before {
+	background-color: #dddddd;
+	content: "Note: ";
+}
+
+/* Tables */
+
+thead > row > entry {
+	/* FIXME: will under-rule every row in the <thead>, not just the last
+	 * (I tried adding this style to <thead> itself, but this doesn't
+	 * appear to work in combination with display:table-header-group, as
+	 * defined in tables.css) */
+	border-bottom: 2px solid black;
+}
+
+thead {
+	font-weight: bolder;
+}
+
+entry {
+	padding: .2em;
+}
+
+
+/* Footnotes */
+
+
+/*
+ * Attempt to display footnotes on-mouseover.  This may well break if a
+ * footnote element has multiple children (I think the children will end up
+ * stacked on top of each other).
+ */
+
+footnote {
+	position: relative;
+}
+footnote:hover {
+}
+footnote>* {
+	display: none;
+	z-index: 100;
+}
+footnote:hover>* {
+	display: block;
+	position: fixed;
+	border: 2px dotted black;
+	background-color: #ffeeaa;
+	padding: .5em;
+	left: 0px;
+	bottom: 0px;
+}
+footnote:before {
+	content: "?";
+	background-color: #ffeeaa;
+	border: 2px dotted black;
+	font-size: smaller;
+}
+
+
+/*
+
+Attempting to format <footnote> as a sitebar, floating it to the right.
+Sometimes works for footnotes in the 'main body' of some text, but works badly
+when the containing block is, for instance, a table cell.
+
+footnote:before {
+	content: "*";
+	display: block;
+	border: 2px dotted black;
+}
+
+footnote>* {
+	display: block;
+	float: right;
+	border: 2px dotted black;
+	padding: .5em;
+	width: 25%;
+	top: -1em;
+}
+
+footnote>*:before {
+	content: "*Footnote";
+	display: block;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+*/
+
+glossentry>glossterm {
+	font-weight: bolder;
+	font-style: italic;
+}
+
+
+userinput {
+	font-weight: bolder;
+}
+
+figure {
+	text-align: center;
+}
+
+imageobject {
+	display: block;
+}
+
+mediaobject>textobject {
+	font-size: smaller;
 }
