@@ -657,10 +657,6 @@ figure {
 	text-align: center;
 }
 
-imageobject {
-	display: block;
-}
-
 mediaobject>textobject {
 	font-size: smaller;
 }
