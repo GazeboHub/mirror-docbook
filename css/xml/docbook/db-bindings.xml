@@ -23,10 +23,9 @@
 	var file = this.getAttribute("fileref");
 	// HACK: using img.src=file 'inline' doesn't seem to work
 	//       but it does when called from a setTimeout()
-	var f = function () { img.src = file; }
+	var f = function() { img.src = file; }
 	setTimeout(f, 0);
       </constructor>
     </implementation>
   </binding>
-
 </bindings>
