@@ -5,9 +5,7 @@
                 exclude-result-prefixes="html cvs"
                 version='1.0'>
 
-<xsl:import href="../../website/xsl/chunk-website.xsl"/>
-
-<xsl:param name="filename-prefix" select="'txt'"/>
+<xsl:import href="http://docbook.sourceforge.net/release/website/2.4.1/xsl/chunk-website.xsl"/>
 
 <!-- ==================================================================== -->
 
