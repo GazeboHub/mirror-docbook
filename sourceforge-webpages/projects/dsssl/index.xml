@@ -1,5 +1,5 @@
 <!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
-          "http://docbook.sf.net/release/website/snapshot/website.dtd">
+          "http://docbook.sourceforge.net/release/website/snapshot/website.dtd">
 <webpage id="p.dsssl">
 <config param="desc" value="DSSSL Stylesheets"/>
 <config param="rcsdate" value="$Date$"/>

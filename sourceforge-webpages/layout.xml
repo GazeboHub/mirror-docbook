@@ -35,6 +35,7 @@
     <tocentry page="contrib/index.xml" dir="contrib">
       <tocentry page="contrib/css/index.xml" dir="css">
         <tocentry page="contrib/css/adicarlo/index.xml" dir="adicarlo"/>
+        <tocentry page="contrib/css/godoy/index.xml" dir="godoy"/>
       </tocentry>
     </tocentry>
     <tocentry page="lists.xml" filename="lists.html"/>

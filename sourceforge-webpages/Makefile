@@ -1,12 +1,13 @@
 PROC=saxon
-PROCOPT=-q
+PROCOPT=
 TABSTYLE=.stylesheets/tabular.xsl
 WEBSTYLE=.stylesheets/textonly.xsl
-AUTOSTYLE=/share/doctypes/website-pages/xsl/autolayout.xsl
-DEPSTYLE=/share/doctypes/website-pages/xsl/makefile-dep.xsl
+AUTOSTYLE=/sourceforge/docbook/website/xsl/autolayout.xsl
+DEPSTYLE=/sourceforge/docbook/website/xsl/makefile-dep.xsl
 AUTOLAYOUT-FILE=/sourceforge/docbook/sourceforge-webpages/autolayout.xml
 DESTPATH=.
 TEXTONLY=0
+USETIDY=1
 
 ifeq ($(TEXTONLY),0)
 STYLESHEET=$(TABSTYLE)
@@ -26,12 +27,14 @@ autolayout.xml: layout.xml
 	make depends
 
 chunk: autolayout.xml
-	$(PROC) $(PROCOPT) autolayout.xml $(STYLESHEET) - output-root=$(DESTPATH)
+	$(PROC) $(PROCOPT) autolayout.xml $(STYLESHEET) -
 
 %.html: autolayout.xml
 	xjparse $(filter-out autolayout.xml,$^)
-	$(PROC) $(PROCOPT) $(filter-out autolayout.xml,$^) $(STYLESHEET) $@  autolayout-file=$(AUTOLAYOUT-FILE)
+	$(PROC) $(PROCOPT) $(filter-out autolayout.xml,$^) $(STYLESHEET) $@ autolayout-file=$(AUTOLAYOUT-FILE)
+ifeq ($(USETIDY),1)
 	tidy -iq -latin1 -mn $@
+endif
 
 depends: autolayout.xml
 	xjparse $<

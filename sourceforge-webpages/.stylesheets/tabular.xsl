@@ -1,8 +1,9 @@
 <?xml version='1.0'?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:html='http://www.w3.org/1999/xhtml'
-                xmlns:cvs="http://nwalsh.com/xslt/ext/com.nwalsh.saxon.CVS"
-                exclude-result-prefixes="html cvs"
+                xmlns:scvs="http://nwalsh.com/xslt/ext/com.nwalsh.saxon.CVS"
+                xmlns:xcvs="com.nwalsh.xalan.CVS"
+                exclude-result-prefixes="html scvs xcvs"
                 version='1.0'>
 
 <xsl:import href="../../website/xsl/chunk-tabular.xsl"/>
@@ -47,8 +48,9 @@
     <img src="graphics/oreilly.png" alt="O'Reilly &amp; Associates" border="0"/>
   </a>
   <xsl:text>&#160;</xsl:text>
+  <!-- Yes, the ampersand is double escaped in the URL below -->
   <a href="http://sourceforge.net" target="_top">
-    <img src="http://sourceforge.net/sflogo.php?group_id=21935&amp;type=1"
+    <img src="http://sourceforge.net/sflogo.php?group_id=21935&amp;amp;type=1"
          height="31" width="88" alt="SourceForge" border="0"/>
   </a>
 </xsl:template>
@@ -82,7 +84,20 @@
       <span class="footdate">
         <!-- rcsdate = "$Date$" -->
         <!-- timeString = "dow mon dd hh:mm:ss TZN yyyy" -->
-        <xsl:variable name="timeString" select="cvs:localTime($rcsdate)"/>
+        <xsl:variable name="timeString">
+          <xsl:choose>
+            <xsl:when test="function-available('scvs:localTime')">
+              <xsl:value-of select="scvs:localTime($rcsdate)"/>
+            </xsl:when>
+            <xsl:when test="function-available('xcvs:localTime')">
+              <xsl:value-of select="xcvs:localTime($rcsdate)"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="$rcsdate"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
+
         <xsl:text>Updated: </xsl:text>
         <xsl:value-of select="substring($timeString, 1, 3)"/>
         <xsl:text>, </xsl:text>
