@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<t:titlepages xmlns:t="http://docbook.org/xslt/ns/template"
+	      xmlns="http://www.w3.org/1999/xhtml"
+	      xmlns:db="http://docbook.org/docbook-ng">
+
+<db:book t:side="recto">
+  <div class="book-titlepage">
+    <db:title/>
+    <db:subtitle/>
+    <db:corpauthor/>
+    <db:authorgroup/>
+    <db:author/>
+    <db:othercredit/>
+    <db:releaseinfo/>
+    <db:copyright/>
+    <db:legalnotice/>
+    <db:pubdate/>
+    <db:revision/>
+    <db:revhistory/>
+    <db:abstract/>
+  </div>
+  <hr/>
+</db:book>
+
+<db:chapter t:side="recto">
+  <div class="chapter-titlepage">
+    <db:title/>
+    <db:subtitle/>
+    <db:corpauthor/>
+    <db:authorgroup/>
+    <db:author/>
+    <db:othercredit/>
+    <db:releaseinfo/>
+    <db:copyright/>
+    <db:legalnotice/>
+    <db:pubdate/>
+    <db:revision/>
+    <db:revhistory/>
+    <db:abstract/>
+  </div>
+</db:chapter>
+
+<db:bibliography t:side="recto">
+  <div class="bibliography-titlepage">
+    <db:title/>
+    <db:subtitle/>
+  </div>
+  <hr/>
+</db:bibliography>
+
+<db:bibliography t:side="verso"/>
+
+<db:glossary t:side="recto">
+  <div class="glossary-titlepage">
+    <db:title/>
+    <db:subtitle/>
+  </div>
+  <hr/>
+</db:glossary>
+
+<db:index t:side="recto">
+  <div class="index-titlepage">
+    <db:title/>
+    <db:subtitle/>
+  </div>
+  <hr/>
+</db:index>
+
+<db:section t:side="recto">
+  <div class="section-titlepage">
+    <db:title/>
+    <db:subtitle/>
+  </div>
+</db:section>
+
+<db:glossdiv t:side="recto">
+  <div class="glossdiv-titlepage">
+    <db:title/>
+    <db:subtitle/>
+  </div>
+</db:glossdiv>
+
+<db:itemizedlist>
+  <db:title/>
+</db:itemizedlist>
+
+<db:orderedlist>
+  <db:title/>
+</db:orderedlist>
+
+<db:variablelist>
+  <db:title/>
+</db:variablelist>
+
+<db:figure>
+  <db:title/>
+</db:figure>
+
+</t:titlepages>
+
