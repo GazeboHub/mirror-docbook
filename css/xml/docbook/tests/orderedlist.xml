@@ -48,4 +48,73 @@
     </para>
   </section>
 
+  <section>
+    <title><sgmltag>numeration</sgmltag> Attribute</title>
+
+    <para>
+      <orderedlist numeration="arabic">
+	<title>numeration="arabic"</title>
+        <listitem><para>One</para></listitem>
+        <listitem><para>Two</para></listitem>
+        <listitem><para>Three</para></listitem>
+      </orderedlist>
+    </para>
+
+    <para>
+      <orderedlist numeration="loweralpha">
+	<title>numeration="loweralpha"</title>
+        <listitem><para>One</para></listitem>
+        <listitem><para>Two</para></listitem>
+        <listitem><para>Three</para></listitem>
+      </orderedlist>
+    </para>
+
+    <para>
+      <orderedlist numeration="lowerroman">
+	<title>numeration="lowerroman"</title>
+        <listitem><para>One</para></listitem>
+        <listitem><para>Two</para></listitem>
+        <listitem><para>Three</para></listitem>
+      </orderedlist>
+    </para>
+
+    <para>
+      <orderedlist numeration="upperalpha">
+	<title>numeration="upperalpha"</title>
+        <listitem><para>One</para></listitem>
+        <listitem><para>Two</para></listitem>
+        <listitem><para>Three</para></listitem>
+      </orderedlist>
+    </para>
+
+    <para>
+      <orderedlist numeration="upperroman">
+	<title>numeration="upperroman"</title>
+        <listitem><para>One</para></listitem>
+        <listitem><para>Two</para></listitem>
+        <listitem><para>Three</para></listitem>
+      </orderedlist>
+    </para>
+  </section>
+
+  <section>
+    <title><sgmltag>continuation</sgmltag> attribute</title>
+
+    <para>In the second of the following lists, the counter should continue
+    where the last list left off (i.e. 'Alpha' should be numbered '4').  This
+    doesn't work with the current stylesheet.</para>
+    <para>
+      <orderedlist>
+        <listitem><para>One</para></listitem>
+        <listitem><para>Two</para></listitem>
+        <listitem><para>Three</para></listitem>
+      </orderedlist>
+      <orderedlist continuation="continues">
+        <listitem><para>Alpha</para></listitem>
+        <listitem><para>Beta</para></listitem>
+        <listitem><para>Gamma</para></listitem>
+      </orderedlist>
+    </para>
+  </section>
+
 </section>

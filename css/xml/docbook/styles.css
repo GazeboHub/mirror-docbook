@@ -422,6 +422,19 @@ orderedlist {
 	list-style-type: decimal;
 }
 
+orderedlist[numeration=loweralpha] {
+	list-style-type: lower-alpha;
+}
+orderedlist[numeration=upperalpha] {
+	list-style-type: upper-alpha;
+}
+orderedlist[numeration=lowerroman] {
+	list-style-type: lower-roman;
+}
+orderedlist[numeration=upperroman] {
+	list-style-type: upper-roman;
+}
+
 orderedlist>listitem {
 	display:list-item;
 }
