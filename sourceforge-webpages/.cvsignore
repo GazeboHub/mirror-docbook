@@ -1,3 +1,4 @@
 autolayout.xml
-Makefile.dep
+depends.tabular
+depends.textonly
 *.html
