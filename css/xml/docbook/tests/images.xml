@@ -1,0 +1,23 @@
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<?xml-stylesheet href="../driver.css" type="text/css"?>
+<section>
+  <title>Images</title>
+
+  <para>As used in <citation>Dockbook, The Definative Guide</citation>:</para>
+  <mediaobject>
+    <imageobject>
+       <imagedata fileref="eiffeltower.eps" format="EPS"/>
+    </imageobject>
+    <imageobject>
+       <imagedata fileref="eiffeltower.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+       <phrase>The Eiffel Tower</phrase>
+    </textobject>
+    <caption>
+      <para>Designed by Gustave Eiffel in 1889, The Eiffel Tower is one of the
+      most widely recognized buildings in the world.</para>
+    </caption>
+  </mediaobject>
+</section>

@@ -1,0 +1,10 @@
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<?xml-stylesheet href="../driver.css" type="text/css"?>
+<section>
+  <title><sgmltag class="starttag">footnote</sgmltag></title>
+
+  <para>This is some body text<footnote><para>This is some footnote text.  Its
+  styling removes it from the normal flow of the document.</para></footnote>.
+  Can you see the footnote associated with the previous sentence?</para>
+</section>

@@ -1,0 +1,94 @@
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<?xml-stylesheet href="../driver.css" type="text/css"?>
+<section>
+  <title>Tables</title>
+
+  <section>
+    <title>A very simple table</title>
+    <table>
+      <title>foo</title>
+      <tgroup cols="1">
+        <tbody>
+          <row>
+            <entry>I am a table cell.</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </section>
+
+  <section>
+    <title>A 2x2 table with headers</title>
+    <table>
+      <title>foo</title>
+      <tgroup cols="2">
+        <thead>
+          <row>
+            <entry>Column 1</entry>
+            <entry>Second Column</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>I'm a cell</entry>
+            <entry>I'm another</entry>
+          </row>
+          <row>
+            <entry>Second row</entry>
+            <entry>More data</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </section>
+
+  <section>
+    <title>A 2x2 table nested in a 2x2 table</title>
+    <table>
+      <title>foo</title>
+      <tgroup cols="2">
+        <thead>
+          <row>
+            <entry>Column 1</entry>
+            <entry>Second Column</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>I'm a cell</entry>
+            <entry>I'm another</entry>
+          </row>
+          <row>
+            <entry>Second row</entry>
+            <entry>
+	      <para>
+                <table>
+                  <title>foo</title>
+                  <tgroup cols="2">
+                    <thead>
+                      <row>
+                        <entry>Column 1</entry>
+                        <entry>Second Column</entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row>
+                        <entry>I'm a cell</entry>
+                        <entry>I'm another</entry>
+                      </row>
+                      <row>
+                        <entry>Second row</entry>
+                        <entry>More data</entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </table>
+	      </para>
+           </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </section>
+</section>

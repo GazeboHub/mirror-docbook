@@ -1,0 +1,121 @@
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<?xml-stylesheet href="../driver.css" type="text/css"?>
+
+<book>
+  <title>Book</title>
+  <subtitle>I'm the book's subtitle</subtitle>
+
+  <dedication>
+    <title>Dedication</title>
+    <para>A Dedication is a section at the very beginning of a book (before
+    any other body matter) containing a tribute to something (frequently
+    someone) in connection with the writing or publication of the Book.</para>
+  </dedication>
+
+  <preface>
+    <title>Preface with a very long title that will need to wrap, I expect</title>
+
+    <para>Preface is a preface or forward in a Book.  The Preface element may
+    appear more than once and should be used for all introductory chapter-like
+    material.  For example, a Book might have both a Foreward and an
+    Introduction.  Both should be tagged as Prefaces in DocBook.</para>
+  </preface>
+
+  <chapter>
+    <title>Chapter</title>
+
+    <section>
+      <title>Section Level 1</title>
+      <para>A section directly inside a chapter.</para>
+
+      <formalpara>
+        <title>FormalPara</title>
+
+	<para><sgmltag class="starttag">formalpara</sgmltag> elements describe
+	a paragraph that has a title.</para>
+      </formalpara>
+
+      <section>
+        <title>Section Level 2</title>
+        <para>A section nested within 1 other section.</para>
+
+        <section>
+          <title>Section Level 3</title>
+          <para>A section nested 2 deep within other sections.</para>
+
+          <section>
+            <title>Section Level 4</title>
+            <para>A section nested 3 deep within other sections.</para>
+
+            <section>
+              <title>Section Level 5</title>
+              <para>A section nested 4 deep within other sections.</para>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+   <title>Another Chapter</title>
+
+    <sect1>
+      <title>Sect1</title>
+      <para>A sect1 directly inside a chapter.</para>
+
+      <sect2>
+        <title>Sect2</title>
+        <para>A sect2 nested in a sect1.</para>
+
+        <sect3>
+          <title>Sect3</title>
+          <para>A sect3 nested in a sect2.</para>
+
+          <sect4>
+            <title>Sect4</title>
+            <para>A sect4 nested in a sect3.</para>
+
+            <sect5>
+              <title>Sect5</title>
+              <para>A sect5 nested in a sect4.</para>
+            </sect5>
+          </sect4>
+        </sect3>
+      </sect2>
+    </sect1>
+  </chapter>
+
+  <part>
+    <title>Part</title>
+
+    <preface>
+      <title>Preface to an Empty Part</title>
+      <para>This book 'part' doesn't actually contain any chapters.</para>
+    </preface>
+  </part>
+
+  <glossary>
+    <title>Glossary</title>
+
+    <para>A Glossary contains a collection of terms and brief descriptions or
+    definitions of those terms.</para>
+
+    <glossentry>
+      <glossterm>Term</glossterm>
+      <glossdef>
+        <para>A Glossary must have some content</para>
+      </glossdef>
+    </glossentry>
+  </glossary>
+
+  <colophon>
+    <title>Colophon</title>
+
+    <para>A Colophon, if present, almost always occurs at the very end of a
+    book.  It contains factual information about the book, especially about
+    its production, and includes details about typographic style, the fonts
+    used, the paper used, and perhaps the binding method of the book.</para>
+  </colophon>
+</book>

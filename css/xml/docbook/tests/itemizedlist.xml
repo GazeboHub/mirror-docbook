@@ -1,0 +1,60 @@
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<?xml-stylesheet href="../driver.css" type="text/css"?>
+<section>
+  <title><sgmltag class="starttag">itemisedlist</sgmltag></title>
+
+  <section>
+  <title>Controlling Marks With <code>mark</code> and
+  <code>override</code>.</title>
+
+  <para>
+    <itemizedlist mark='opencircle'>
+      <listitem>
+        <para>TeX and LaTeX</para>
+      </listitem>
+      <listitem override='bullet'>
+        <para>Troff</para>
+      </listitem>
+      <listitem>
+        <para>Lout</para>
+      </listitem>
+    </itemizedlist>
+  </para>
+  </section>
+
+  <section>
+  <title>Default Mark Styles in Nested Lists.</title>
+
+  <para>
+    <itemizedlist>
+      <listitem>
+        <para>Level 1</para>
+      </listitem>
+      <listitem>
+        <para>First nested list:
+          <itemizedlist>
+          <listitem>
+            <para>Level 2</para>
+          </listitem>
+          <listitem>
+            <para>Second nested list:
+              <itemizedlist>
+              <listitem>
+                <para>Level 3</para>
+              </listitem>
+            </itemizedlist></para>
+          </listitem>
+          <listitem>
+            <para>Level 2</para>
+          </listitem>
+        </itemizedlist></para>
+      </listitem>
+      <listitem>
+        <para>Level 1</para>
+      </listitem>
+    </itemizedlist>
+  </para>
+  </section>
+
+</section>
