@@ -27,7 +27,7 @@
   <para>See the <ulink url="./README" >README</ulink> file for
     information about how the site is built. Along with the XML source
     files that provide the actual content for the site, there are several
-    important pieces used to put it all togetherf:</para>
+    important pieces used to put it all together:</para>
   <itemizedlist>
     <listitem>
       <para><ulink url="./Makefile">Makefile</ulink>
