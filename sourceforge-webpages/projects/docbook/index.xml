@@ -6,13 +6,14 @@
 <config param="footer" value="docbook.xml" altval="XML Source"/>
 <head>
 <title>DocBook DTD</title>
-<summary></summary>
+<summary>SGML and XML</summary>
 <keywords>DocBook, SourceForge, DTD</keywords>
 </head>
 
-<para>The DocBook DTD is available in both SGML and XML variations.
-Official distributions are made from the
-<ulink url="http://www.oasis-open.org/docbook/">OASIS DocBook pages</ulink>.</para>
+  <para>The DocBook DTD is available in both SGML and XML variations.
+    Official distributions are made from the <ulink
+      url="http://www.oasis-open.org/docbook/" >OASIS DocBook
+      pages</ulink>.</para>
 
   <itemizedlist>
     <listitem>
