@@ -350,7 +350,7 @@
 </xsl:template>
 
 <xsl:template match="db:sgmltag|db:tag">
-  <xsl:call-template name="format-sgmltag"/>
+  <xsl:call-template name="format-tag"/>
 </xsl:template>
 
 <xsl:template match="db:keycombo">
