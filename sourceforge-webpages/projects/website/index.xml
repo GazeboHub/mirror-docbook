@@ -2,7 +2,7 @@
                   "/usr/share/sgml/docbook/custom/website/2.0b1/website.dtd">
 <webpage id="p.website">
 <config param="rcsdate" value="$Date$"/>
-<config param="footer" value="docbook.xml" altval="XML Source"/>
+<config param="footer" value="index.xml" altval="XML Source"/>
 <head>
 <title>Website</title>
 <summary>The Website doctype</summary>
@@ -19,7 +19,7 @@
       </para>
     </listitem>
     <listitem>
-      <para>An<ulink
+      <para>An <ulink
           url="http://docbook.org/wiki/moin.cgi/WebsiteDoctype"
           >annotated example</ulink> of a site generated using the
         Website doctype is available.
