@@ -42,6 +42,11 @@
     <tocentry page="issues.xml" filename="issues.html"/>
     <tocentry page="cvs.xml" filename="cvs.html"/>
     <tocentry page="releases.xml" filename="releases.html"/>
+    <tocentry page="links.xml" filename="links.html">
+      <tocentry id="docbookhowto.link" href="http://www.ibiblio.org/godoy/sgml/docbook/howto/index.html">
+        <title>DocBook HOWTO</title>
+      </tocentry>
+    </tocentry>
   </toc>
 
   <notoc page="about.xml" filename="about.html"/>
