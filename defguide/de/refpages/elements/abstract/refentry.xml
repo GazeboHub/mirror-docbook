@@ -1,0 +1,49 @@
+<refentry id="abstract.element">
+<?dbhtml filename="abstract.html"?>
+<refentryinfo>
+<pubdate>$Date$</pubdate>
+<releaseinfo>$Revision$</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<indexterm><primary>Elemente</primary>
+<secondary>abstract</secondary></indexterm>
+<refentrytitle>abstract</refentrytitle>
+<refmiscinfo>Element</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>abstract</refname>
+<refpurpose>&abstract.purpose;</refpurpose>
+</refnamediv>
+
+&abstract.synopsis.gen;
+<refsect1 condition='ref.description'><title>Beschreibung</title>
+
+<para>
+Ein abstract kann in den meisten DocBook-Komponenten vorkommen. Der abstract sollte eine Art
+Zusammenfassung des Inhalts enthalten, mit dem es (durch Enthaltung) in Zusammenhang steht. 
+</para>
+
+<refsect2><title>Verarbeitungserwartungen</title>
+<para>
+&format.block; &format.csuppress; H&auml;ufig im Wechsel verwendet.
+</para>
+</refsect2>
+
+
+&abstract.parents.gen;
+&abstract.children.gen;
+</refsect1>
+<refsect1 condition='ref.elem.seealso'><title>Siehe auch</title>
+&abstract.seealso.gen;
+</refsect1>
+<refsect1><title>Beispiele</title>
+
+<informalexample role="example-source">
+<programlisting>&abstract.example.1.txt;</programlisting>
+</informalexample>
+
+&abstract.example.seealso.gen;
+</refsect1>
+</refentry>
+

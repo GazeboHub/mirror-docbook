@@ -1,0 +1,987 @@
+<partintro>
+<!-- this can't actually go here...
+<pubdate>$Date$</pubdate>
+<releaseinfo>$Revision$</releaseinfo>
+</docinfo>
+-->
+<para>
+<indexterm id="elementsref" class='startofrange'>
+  <primary>elements</primary>
+  <secondary>reference</secondary>
+</indexterm>In dieser Referenz wird jedes Element der DocBook
+&DTD; beschrieben.</para>
+
+<para>In der im Februar 1999 eingef&uuml;hrten DocBook Version 3.1 wurde DocBook um folgende
+Elemente erg&auml;nzt:
+<simplelist type='inline'>
+<member><sgmltag>answer</sgmltag></member>
+<member><sgmltag>audiodata</sgmltag></member>
+<member><sgmltag>audioobject</sgmltag></member>
+<member><sgmltag>caption</sgmltag></member>
+<member><sgmltag>colophon</sgmltag></member>
+<member><sgmltag>constant</sgmltag></member>
+<member><sgmltag>imagedata</sgmltag></member>
+<member><sgmltag>imageobject</sgmltag></member>
+<member><sgmltag>imageobjectco</sgmltag></member>
+<member><sgmltag>informalfigure</sgmltag></member>
+<member><sgmltag>inlinemediaobject</sgmltag></member>
+<member><sgmltag>mediaobject</sgmltag></member>
+<member><sgmltag>mediaobjectco</sgmltag></member>
+<member><sgmltag>objectinfo</sgmltag></member>
+<member><sgmltag>qandadiv</sgmltag></member>
+<member><sgmltag>qandaentry</sgmltag></member>
+<member><sgmltag>qandaset</sgmltag></member>
+<member><sgmltag>question</sgmltag></member>
+<member><sgmltag>section</sgmltag></member>
+<member><sgmltag>sectioninfo</sgmltag></member>
+<member><sgmltag>textobject</sgmltag></member>
+<member><sgmltag>varname</sgmltag></member>
+<member><sgmltag>videodata</sgmltag></member>
+<member><sgmltag>videoobject</sgmltag></member>
+</simplelist>.</para>
+
+<para>In der im Januar 2001 eingef&uuml;hrten DocBook Version 4.0 wurden folgende Elemente
+hinzugef&uuml;gt:
+<simplelist type='inline'>
+<member><sgmltag>appendixinfo</sgmltag></member>
+<member><sgmltag>articleinfo</sgmltag></member>
+<member><sgmltag>bibliographyinfo</sgmltag></member>
+<member><sgmltag>chapterinfo</sgmltag></member>
+<member><sgmltag>classsynopsis</sgmltag></member>
+<member><sgmltag>classsynopsisinfo</sgmltag></member>
+<member><sgmltag>constructorsynopsis</sgmltag></member>
+<member><sgmltag>destructorsynopsis</sgmltag></member>
+<member><sgmltag>exceptionname</sgmltag></member>
+<member><sgmltag>fieldsynopsis</sgmltag></member>
+<member><sgmltag>glossaryinfo</sgmltag></member>
+<member><sgmltag>indexinfo</sgmltag></member>
+<member><sgmltag>initializer</sgmltag></member>
+<member><sgmltag>interfacename</sgmltag></member>
+<member><sgmltag>methodname</sgmltag></member>
+<member><sgmltag>methodparam</sgmltag></member>
+<member><sgmltag>methodsynopsis</sgmltag></member>
+<member><sgmltag>modifier</sgmltag></member>
+<member><sgmltag>ooclass</sgmltag></member>
+<member><sgmltag>ooexception</sgmltag></member>
+<member><sgmltag>oointerface</sgmltag></member>
+<member><sgmltag>partinfo</sgmltag></member>
+<member><sgmltag>prefaceinfo</sgmltag></member>
+<member><sgmltag>refentryinfo</sgmltag></member>
+<member><sgmltag>referenceinfo</sgmltag></member>
+<member><sgmltag>remark</sgmltag></member>
+<member><sgmltag>revdescription</sgmltag></member>
+<member><sgmltag>setindexinfo</sgmltag></member>
+<member><sgmltag>sidebarinfo</sgmltag></member>
+<member><sgmltag>simplemsgentry</sgmltag></member>
+</simplelist>.</para>
+
+<para>Folgende zus&auml;tzliche &Auml;nderungen wurde in DocBook 4.0 durchgef&uuml;hrt:
+<sgmltag>artheader</sgmltag> wurde umbenannt in <sgmltag>articleinfo</sgmltag>;
+<sgmltag>comment</sgmltag> wurde umbenannt in <sgmltag>remark</sgmltag>;
+<sgmltag>docinfo</sgmltag> wurde auf verschiedene andere Informationselemente verteilt;
+und <sgmltag>bookbiblio</sgmltag>, <sgmltag>interfacedefinition</sgmltag>,
+und <sgmltag>seriesinfo</sgmltag> wurden entfernt.</para>
+
+<para>In der im FIXME April 2002 eingef&uuml;hrten Version DocBook 4.2 wurden folgende Elemente erg&auml;nzt:
+<simplelist type='inline'>
+<member><sgmltag>bibliocoverage</sgmltag></member>
+<member><sgmltag>biblioid</sgmltag></member>
+<member><sgmltag>bibliorelation</sgmltag></member>
+<member><sgmltag>bibliosource</sgmltag></member>
+<member><sgmltag>blockinfo</sgmltag></member>
+<member><sgmltag>citebiblioid</sgmltag></member>
+<member><sgmltag>coref</sgmltag></member>
+<member><sgmltag>errortext</sgmltag></member>
+<member><sgmltag>personblurb</sgmltag></member>
+<member><sgmltag>personname</sgmltag></member>
+<member><sgmltag>refsection</sgmltag></member>
+<member><sgmltag>refsectioninfo</sgmltag></member>
+<member><sgmltag>textdata</sgmltag></member>
+</simplelist>.</para>
+
+<para>Eine Zusammenfassung der &uuml;brigen &Auml;nderungen, die in DocBook 4.2 vorgenommen wurden, befindet sich unter:
+<ulink url="http://www.oasis-open.org/docbook/specs/docbook-4.2.html">DocBook V4.2-Spezifikation</ulink>.</para>
+
+<sect1>
+<title>Anordnung der Referenzseiten</title>
+<para>Die Beschreibung jedes in dieser Referenz beschriebenen Elements gliedert sich in folgende Abschnitte:</para>
+<variablelist>
+
+<varlistentry><term>&Uuml;bersicht</term>
+<listitem>
+<para>
+<indexterm><primary>Elemente</primary>
+  <secondary>Referenz</secondary>
+    <tertiary>&Uuml;bersichten</tertiary></indexterm>
+<indexterm><primary>&Uuml;bersichten</primary>
+  <secondary>Elemente (Referenzseiten)</secondary></indexterm>
+<indexterm><primary>Inhaltsmodelle</primary>
+  <secondary>Elemente, Referenz</secondary></indexterm>
+
+Beinhaltet eine kurze &Uuml;bersicht &uuml;ber das Element. Der Inhalt der tabellenartigen Zusammenfassung variiert je 
+nach Art des beschriebenen Elements. Einige oder alle der folgenden Abschnitte k&ouml;nnen darin vorkommen:
+</para>
+<variablelist>
+<varlistentry><term>Inhaltsmodell oder deklarierter Inhalt</term>
+<listitem>
+<para>Beschreibt den Inhaltsmodell des Elements in &SGML;/&XML;- bzw. &DTD;-Terminologie, vgl. <xref linkend="s2-cmintro"/>.&rdquo;</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term>Einbettungen</term>
+<listitem>
+<para>
+<indexterm><primary>Einbettungen</primary>
+  <secondary>Elemente</secondary></indexterm>
+
+F&uuml;hrt die <quote>Einbettungen</quote> auf. Einbettungen sind ein Merkmal von &SGML;.
+Eingebettete Elemente k&ouml;nnen an einer beliebigen Stelle innerhalb des Elements auftreten, das sie enth&auml;lt. Das bezieht 
+sich sogar auf Stellen, an denen sie normalerweise nicht g&uuml;ltig sind. Beispielsweise enth&auml;lt <sgmltag>Chapter</sgmltag> das Element
+ <sgmltag>IndexTerm</sgmltag>. Das hat zur Folge, dass innerhalb eines <sgmltag>Chapter</sgmltag>s das Element <sgmltag>IndexTerm</sgmltag> 
+ zum Beispiel innerhalb von <sgmltag>Emphasis</sgmltag> auftreten darf, obwohl das Inhaltsmodell von <sgmltag>Emphasis</sgmltag> das Element
+<sgmltag>IndexTerm</sgmltag> nicht explizit erlaubt.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term>Ausschl&uuml;sse</term>
+<listitem>
+<para>
+<indexterm><primary>Ausschl&uuml;sse</primary>
+  <secondary>Elemente</secondary></indexterm>
+<indexterm><primary>Verschachtelung</primary>
+  <secondary>Elemente</secondary></indexterm>
+<indexterm><primary>Elemente</primary>
+  <secondary>Verschachtelung</secondary></indexterm>
+F&uuml;hrt <quote>Ausschl&uuml;sse</quote> auf. Ausschl&uuml;sse sind ein Merkmal von &SGML;.
+Ausgeschlossene Elemente d&uuml;rfen innerhalb des Elements, das sie ausschlie&szlig;t, nicht auftreten, nicht einmal an Stellen, 
+an denen sie eigentlich g&uuml;ltig w&auml;ren. Beispielsweise schlie&szlig;t 
+<sgmltag>Footnote</sgmltag> das Element <sgmltag>Footnote</sgmltag> aus. Das hat zur Folge, dass eine
+ <sgmltag>Footnote</sgmltag> nicht innerhalb des <sgmltag>Para</sgmltag>-Elements innerhalb einer <sgmltag>Footnote</sgmltag>
+auftreten darf, obwohl das Element <sgmltag>Footnote</sgmltag> im Inhaltsmodell von <sgmltag>Para</sgmltag>
+aufgef&uuml;hrt wird.
+</para>
+<indexterm><primary>Listen</primary>
+  <secondary>Elemente</secondary>
+    <tertiary>Ausschl&uuml;sse</tertiary></indexterm>
+
+<para>F&uuml;hrt Elemente auf, deren Auftreten auf einer beliebigen Ebene unterhalb des beschriebenen Elements ausgeschlossen ist.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term>Attribute</term>
+<listitem>
+<para>
+<indexterm><primary>Attribute</primary>
+  <secondary>Elemente, referenzieren</secondary></indexterm>
+
+Beinhaltet eine Zusammenfassung der Attribute des Elements. Der K&uuml;rze halber sind 
+die allgemeingebr&auml;uchlichen Attribute nur einmal <link linkend="common.attributes">in dieser
+Einf&uuml;hrung</link> beschrieben.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term>Tag-Reduzierung</term>
+<listitem>
+<para>
+<indexterm><primary>Tags</primary>
+  <secondary>Reduzierung</secondary></indexterm>
+<indexterm><primary>Start-Tags</primary>
+  <secondary>auslassen</secondary></indexterm>
+<indexterm><primary>End-Tags</primary>
+  <secondary>auslassen</secondary></indexterm>
+<indexterm><primary>Markup</primary>
+  <secondary>Reduzierung</secondary></indexterm>
+<indexterm><primary>Reduzierung</primary>
+  <secondary>Markup</secondary>
+    <tertiary>Start- und End-Tags</tertiary></indexterm>
+
+
+Gibt an, ob Start- oder End-Tags ausgelassen werden d&uuml;rfen. Ob Tags ausgelassen werden d&uuml;rfen, ist sowohl von 
+der &DTD; als auch von Ihrer &SGML;-Deklaration abh&auml;ngig. Wenn ein Tag hier als auslassbar aufgef&uuml;hrt wird, darf 
+es ausgelassen werden, wenn Ihre Deklaration das Auslassen von Tags zul&auml;&szlig;t. Bei der Standard-DocBook-Deklaration ist 
+das nicht der Fall.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term>Parameter-Entities</term>
+<listitem>
+<para>
+<indexterm><primary>Parameter-Entities</primary>
+  <secondary>Elemente</secondary></indexterm>
+
+F&uuml;hrt die Parameter-Entities auf, innerhalb derer das beschriebene Element auftritt. 
+Parameter-Entities sind dann von Bedeutung, wenn Sie die &DTD; <link linkend="app-customizing">
+anpassen.</link>.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</listitem>
+</varlistentry>
+
+<varlistentry><term>Beschreibung</term>
+<listitem>
+<para>
+<indexterm><primary>Elemente</primary>
+  <secondary>Beschreibung, Semantik</secondary></indexterm>
+<indexterm><primary>Semantik (Elemente), beschreiben</primary></indexterm>
+
+Bietet eine detaillierte Beschreibung der Semantik des Elements
+</para>
+<variablelist>
+<varlistentry><term>Verarbeitungserwartungen</term>
+<listitem>
+<para>
+<indexterm><primary>Formattierung</primary>
+  <secondary>Elemente</secondary></indexterm>
+<indexterm><primary>Elemente</primary>
+  <secondary>Attribute</secondary>
+    <tertiary>Verarbeitungserwartungen, Auswirkungen auf</tertiary></indexterm>
+Fasst die Erwartungen an die Formatierung des Elements zusammen. Viele Verarbeitungserwartungen 
+werden von Attributwerten beeinflusst. Lesen Sie daher auf jeden Fall auch die Beschreibung 
+der Attributwerte.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>Zuk&uuml;nftige &Auml;nderungen</term>
+<listitem>
+<para>
+<indexterm><primary>DocBook DTD</primary>
+  <secondary>&Auml;nderungen, zuk&uuml;nftige Versionen</secondary></indexterm>
+<indexterm><primary>Kompatibilit&auml;t, DocBook-Versionen</primary></indexterm>
+<indexterm><primary>Versionen</primary>
+  <secondary>DocBook DTD</secondary>
+    <tertiary>zuk&uuml;nftige &auml;nderungen</tertiary></indexterm>
+
+Weist auf &Auml;nderungen hin, die f&uuml;r zuk&uuml;nftige Versionen der 
+&DTD; geplant sind. Diese &Auml;nderungen werden hervorgehoben, weil sie eine 
+R&uuml;ckw&auml;rts-Inkompatibilit&auml;t hervorrufen k&ouml;nnen, bei der aktuelle g&uuml;ltige DocBook-Dokumente 
+in einer neuen Version nicht mehr g&uuml;ltig sind.
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</listitem>
+</varlistentry>
+
+<varlistentry><term>Attribute</term>
+<listitem>
+<para>
+<indexterm><primary>Attribute</primary>
+  <secondary>Semantik</secondary></indexterm>
+
+Beschreibt detailliert die Semantik jedes Attributs.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term>Vgl. auch</term>
+<listitem>
+<para>F&uuml;hrt &auml;hnliche oder verwandte Elemente auf.
+<indexterm><primary>Querverweise</primary>
+  <secondary>Elemente</secondary></indexterm>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term>Beispiele</term>
+<listitem>
+
+<para>
+<indexterm><primary>Beispiele</primary>
+  <secondary>richtige Verwendung, Beispiele</secondary></indexterm>
+Beinhaltet Beispiele f&uuml;r die richtige Verwendung des Elements. Im allgemeinen wird 
+das kleinste Beispiel verwendet, mit dem die Verwendungsweise des Elements ausreichend 
+demonstriert werden kann. In vielen F&auml;llen wird auch eine formattierte Version des 
+Beispiels dargestellt.
+</para>
+<para>
+Alle Beispiel in der gedruckten Ausgabe dieses Buches basieren auf der 
+&SGML;-Version von DocBook.  Die <link linkend="app-cdrom"><acronym>CD-ROM</acronym></link> enth&auml;lt vollst&auml;ndig 
+alle Beispiele.
+</para>
+<para>Formattierte Beispiele werden durch eine vertikale Markierung gekennzeichnet.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+<sect2 id="s2-cmintro">
+<title>Inhaltsmodelle verstehen</title>
+<para>
+<indexterm><primary>Inhaltsmodelle</primary>
+  <secondary>&Uuml;berblick</secondary></indexterm>
+
+Jede Zusammenfassung eines Elements beginnt mit einer knappen Beschreibung der Elemente, 
+die es enthalten kann. Diese Beschreibung ist in der &DTD;-
+&ldquo;Inhaltsmodell&rdquo;-Syntax verfasst, wobei alle Parameter-Entities ausf&uuml;hrlich aufgef&uuml;hrt werden.
+</para>
+<para>
+DTDs beschreiben den Namen, die Zahl und die Reihenfolge der anderen Elemente, die innerhalb eines Elements verwendet werden d&uuml;fen, 
+mit Hilfe von Inhaltsmodellen. Die Syntax von Inhaltsmodellen zeichnet sich in erster Linie durch ihre Knappheit aus. Allerdings 
+muss man f&uuml;r die Knappheit mit der Leserlichkeit bezahlen, bis man sich mit der Syntax vertraut gemacht hat.
+</para>
+<para>
+<indexterm><primary>Syntax</primary>
+  <secondary>Inhaltsmodelle</secondary></indexterm>
+<indexterm><primary>Schlagw&ouml;rter</primary>
+  <secondary>Syntax von Inhaltsmodellen</secondary></indexterm>
+<indexterm><primary>sequences</primary>
+  <secondary>Syntax von Inhaltsmodellen</secondary></indexterm>
+<indexterm><primary>Alternativen (Syntax von Inhaltsmodellen)</primary></indexterm>
+<indexterm><primary>Gruppen</primary>
+  <secondary>Syntax von Inhaltsmodellen</secondary></indexterm>
+
+Die Syntax von Inhaltsmodellen besteht aus sechs Komponenten: <firstterm>Elementnamen</firstterm>, 
+<firstterm>Schl&uuml;sselw&ouml;rtern</firstterm>,
+<firstterm>Wiederholungen</firstterm>, <firstterm>Folgen</firstterm>,
+<firstterm>Alternativen</firstterm> und
+<firstterm>Gruppen</firstterm>.
+</para>
+
+<variablelist>
+<varlistentry><term>Elementnamen</term>
+<listitem><para>
+<indexterm><primary>Elemente</primary>
+  <secondary>Namen in Inhaltsmodellen</secondary></indexterm>
+
+Steht der Name eines Elements in einem Inhaltsmodell, gibt er an, dass ein Element dieses Typs an dieser Position 
+stehen darf (oder muss).
+</para>
+<para>
+<indexterm><primary>Para-Element</primary></indexterm>
+Ein Inhaltsmodell von<literal>Para</literal> legt fest, 
+dass das Element einen einzelnen Absatz enthalten muss.
+</para></listitem>
+</varlistentry>
+<varlistentry><term>Schl&uuml;sselw&ouml;rter</term>
+<listitem><para>
+<indexterm><primary>leere Elemente</primary></indexterm>
+<indexterm><primary>Elemente</primary>
+  <secondary>leer</secondary><see>leere Elemente</see></indexterm>
+Es gibt zwei Schlagw&ouml;rter, die in den DocBook-Inhaltsmodellen vorkommen:
+ <literal>EMPTY</literal> und <literal>#PCDATA</literal>.
+</para>
+<para>
+Ein Inhaltsmodell, das allein aus dem Schl&uuml;sselwort <literal>EMPTY</literal>
+besteht, kennzeichnet ein Element als ein leeres Element. Leere Elemente d&uuml;rfen keinen 
+Inhalt haben. Damit das Wort &ldquo;EMPTY&rdquo; diese spezielle Bedeutung annimmt, 
+muss es das erste und einzige Wort in diesem Inhaltsmodell sein. An einer anderen 
+Stelle wird das Wort &ldquo;EMPTY&rdquo; als Elementname behandelt.
+</para>
+<para>
+<indexterm><primary>#PCDATA Schl&uuml;sselwort</primary></indexterm>
+<indexterm><primary>Text</primary>
+  <secondary>#PCDATA Schl&uuml;sselwort</secondary></indexterm>
+<indexterm><primary>Zeichen</primary>
+  <secondary>Zeichens&auml;tze</secondary>
+    <tertiary>SGML- und XML-Dokumente</tertiary></indexterm>
+Das Schl&uuml;sselwort <literal>#PCDATA</literal> zeigt an, dass an dieser Stelle Text vorkommen 
+darf. Der Text kann aus Entityreferenzen und beliegen Zeichen bestehen, die laut Zeichensatz des 
+Dokuments erlaubt sind. XML-Dokumente verwenden immer den Unicode-Zeichensatz. In SGML kann die 
+Deklaration hingegen Zeichens&auml;tze und Bereiche identifizieren, die erlaubt sind. DocBook-SGML-Dokumente 
+verwenden den <acronym>ISO</acronym> Latin 1 Zeichensatz.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>Wiederholungen</term>
+<listitem><para>
+<indexterm><primary>Wiederholungen (Inhaltsmodell Syntax)</primary></indexterm>
+
+Einfache Elementnamen ohne weitere Angaben legen fest, dass ein Element genau einmal an dieser Stelle 
+vorkommen muss. Inhaltsmodelle k&ouml;nnen aber auch angeben, dass ein Element kein oder mehrmal, 
+ein oder mehrmal, oder genau kein oder einmal vorkommen darf. Das erreicht man dadurch, dass 
+eines der folgenden Zeichen auf den Elementnamen folgt: <literal>*</literal> f&uuml;r kein oder mehrmal,
+<literal>+</literal> f&uuml;r ein oder mehrmal und <literal>?</literal> f&uuml;r genau kein oder einmal
+</para>
+<para>
+Ein Inhaltsmodell wie <literal>Para+</literal> weist darauf hin, dass
+dieses Element mindestens einen Paragraphen enthalten muss und weitere enthalten 
+kann.
+</para></listitem>
+</varlistentry>
+<varlistentry><term>Reihenfolgen</term>
+<listitem><para>
+<indexterm><primary>Reihenfolgen</primary>
+  <secondary>Inhaltsmodell Syntax</secondary></indexterm>
+Wenn die Elementnamen innerhalb eines Inhaltsmodells durch Kommata getrennt sind, 
+m&uuml;ssen sie in dieser Reihenfolge auftreten.
+</para>
+<para>
+Ein Inhaltsmodell wie <literal>Title, Para</literal> gibt an, dass 
+das Element genau einen Titel gefolgt von genau einem Paragraphen enthalten muss.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>Alternativen</term>
+<listitem><para>
+<indexterm><primary>Alternativen (Inhaltsmodell Syntax)</primary></indexterm>
+Wenn Elementnamen innerhalb eines Inhaltsmodells durch senkrechte Striche (|) getrennt werden, 
+geben Sie Alternativen an. Manchmal bezeichnet man sie auch als &ldquo;Oder-
+Gruppen&rdquo;, weil sie die Auswahl des eines oder anderen Elements erforderlich machen.
+</para>
+<para>
+Ein Inhaltsmodell wie <literal>Phrase | Para</literal> gibt an, dass das Element
+entweder genau einen Phrase oder genauen einen Paragraphen enthalen muss. 
+</para>
+<para>
+
+<indexterm><primary>Verbinder (SGML)</primary></indexterm>
+<indexterm><primary>DocBook DTD</primary>
+  <secondary>Ampersand (&amp;)-Verbinder</secondary></indexterm>
+
+In &SGML; gibt es einen weiteren Verbinder: das Ampersand (&amp;). Das
+Ampersand stellt eine Kombination von Alternative und Reihenfolge dar, das bedeutet, 
+dass alle Elemente vorkommen m&uuml;ssen, allerdings d&uuml;rfen sie in beliebiger Reihenfolge 
+auftreten. Der Ampersand-Konnektor wird in keinem Docbook-Inhaltsmodell verwendet.
+&XML; l&auml;&szlig;t das nicht zu.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>Gruppen</term>
+<listitem><para>
+<indexterm><primary>Gruppen</primary>
+  <secondary>Inhaltsmodell Syntax</secondary></indexterm>
+
+Schlie&szlig;lich k&ouml;nnen Klammern um Bestandteile eines Inhaltsmodells gesetzt werden. Eine 
+Gruppen, die auf diesem Weg festgelegt wird, kann &uuml;ber Wiederholungsindikatoren verf&uuml;gen 
+und Teil einer Reihenfolge sein.
+</para>
+<para>
+Ein Inhaltsmodell wie <literal>(Literal | Replaceable)+</literal>
+legt fest, dass entweder <sgmltag>Literal</sgmltag> oder <sgmltag>Replaceable</sgmltag>
+vorkommen muss und dass sie beliebig oft wiederholt (und vermischt) werden k&ouml;nnen.
+</para></listitem>
+</varlistentry>
+</variablelist>
+<sect3><title>Inhaltsmodelle und G&uuml;ltigkeit</title>
+<para>
+<indexterm><primary>Parser</primary>
+  <secondary>Inhaltsmodelle, &Uuml;bereinstimmung von Elementen</secondary></indexterm>
+<indexterm><primary>Elemente</primary>
+  <secondary>parsen</secondary></indexterm>
+
+Parser benutzen Inhaltsmodelle dazu festzustellen, ob ein gegebenes Dokument g&uuml;ltig ist.
+Damit ein Dokument g&uuml;ltig ist, muss der Inhalts jedes Elements, das im Dokument vorkommt, 
+mit dem Inhaltsmodell dieses Elements <quote>&uuml;bereinstimmen</quote>.
+</para>
+<para>
+Praktisch gesehen bedeutet &Uuml;bereinstimmen, dass es m&ouml;glich sein muss, das Inhaltsmodell 
+so zu erweitern, dass es exakt mit der Reihenfolge der Elemente in dem Dokument 
+&uuml;bereinstimmt.
+</para>
+<para>
+Betrachen wir zum Beispiel das Inhaltsmodell des Elements <sgmltag>Epigraph</sgmltag>:
+<literal>Attribution?, (FormalPara | Para | SimPara)+</literal>.
+Es gibt an, dass der folgende Auszug aus einem Dokument g&uuml;ltig ist:
+<indexterm><primary>Inhaltsmodelle</primary>
+  <secondary>Beispiele</secondary></indexterm>
+
+<screen>
+<![CDATA[
+<epigraph>
+<para>Irgendein Text</para>
+</epigraph>
+]]>
+</screen>
+</para>
+<para>
+Es ist deswegen g&uuml;ltig, weil die folgende Erweiterung des Inhaltsmodells 
+exakt mit dem tats&auml;chlichen Inhalt &uuml;bereinstimmt: Auswahl von null Vorkommen von 
+<sgmltag>Attribution</sgmltag>, Auswahl der Alternative <sgmltag>Para</sgmltag> aus der Gruppe
+und Auswahl, dass &ldquo;+&rdquo; einmal vorkommt.
+</para>
+<para>
+Nach der gleichen Argument ist das folgende Beispiel nicht g&uuml;ltig,
+weil es keine Erweiterung des Inhaltsmodell gibt, die damit &uuml;bereinstimmt:
+<screen>
+<![CDATA[
+<epigraph>
+<para>Irgendein Text</para>
+<attribution>John Doe</attribution>
+</epigraph>
+]]>
+</screen>
+</para>
+<para>
+<indexterm><primary>Zweideutigkeit, Inhaltsmodelle</primary></indexterm>
+
+Es gibt eine weitere Einschr&auml;nkung bez&uuml;glich der M&ouml;glichkeit des Parsers, 
+&Uuml;bereinstimmungen ausfindig zu machen: es ist ihm nicht gestattet 
+ <quote>vorauszuschauen.</quote> Das bedeutet, dass es viele n&uuml;tzliche 
+Inhaltsmodelle gibt, die zweideutig sind.
+</para>
+</sect3>
+<sect3><title>Zweideutigkeit</title>
+<para>
+Zweideutigkeit ist nicht erlaubt. Der Parser muss immer f&auml;hig sein, exakt 
+herauszufinden, was genau auf Grundlage der n&auml;chsten Eingabe &uuml;bereinstimmen 
+muss. 
+Betrachen wir zum Beispiel das folgende Inhaltsmodell:
+<literal>Meta*, Title?, Meta*</literal>.
+</para>
+<para>
+Die Absicht ist eindeutig: es sollen einige Metainformationen und ein einzelnes, 
+optinales <sgmltag>Title</sgmltag>-Element erlaubt sein. Allerdings ist dieses 
+Inhaltsmodell aus folgendem Grund zweideutig: wenn das Dokument mit einem 
+<sgmltag>Meta</sgmltag>-Element anf&auml;ngt, ist es unm&ouml;glich herauszufinden, ob 
+dieses Element mit dem <sgmltag>Meta</sgmltag> vor oder nach dem <sgmltag>Title</sgmltag>
+&uuml;bereinstimmt, ohne vorauszuschauen .
+</para>
+<para>
+Zweideutige Inhaltsmodelle werden vom Parser beim Lesen der 
+&DTD; entdeckt. Es reicht auch nicht aus, wenn Ihr Dokument einfach nur nicht zweideutig ist;
+es darf vielmehr nicht m&ouml;glich sein, irgendein zweideutiges Dokument daraus zu konstruieren.
+</para>
+</sect3>
+<sect3><title>#PCDATA und Wiederholung</title>
+<para>
+<indexterm><primary>#PCDATA Schl&uuml;sselwort</primary>
+  <secondary>Wiederholung und</secondary></indexterm>
+<indexterm><primary>leere Elemente</primary>
+  <secondary>PCDATA-Schl&uuml;sselwort und</secondary></indexterm>
+
+Das Schl&uuml;sselwort &PCDATA; stimmt immer mit dem leeren String &uuml;berein. 
+Dadurch wird es unm&ouml;glich zu erzwingen, dass ein Element, das Zeichen enthalten darf, nicht 
+leer ist. Mit anderen Worten wird durch das folgende Inhaltsmodell <emphasis>nicht</emphasis> garantiert, dass 
+dieses Element nicht leer ist:
+ <literal>(#PCDATA)+</literal>.
+</para>
+<para>
+<indexterm><primary>Gruppen</primary>
+  <secondary>PCDATA-Schl&uuml;sselwort</secondary></indexterm>
+
+In &XML; ist das Schl&uuml;sselwort &PCDATA; nur in optionalen, wiederholbaren 
+<quote>Oder-Gruppen</quote> erlaubt; und zwar muss es das erste Mitglied dieser 
+Gruppe sein.
+</para>
+</sect3>
+</sect2>
+</sect1>
+<sect1 id="common.attributes">
+<title>Allgemein verwendete Attribute</title>
+<para>
+<indexterm><primary>Attribute</primary>
+  <secondary>allgemein verwendete</secondary></indexterm>
+<indexterm><primary>Allgemein verwendete Attribute</primary></indexterm>
+
+
+Die folgende Attribute k&ouml;nnen zu allen Elementen verwendet werden. Sie werden 
+hier zum einen der K&uuml;rze wegen zusammengefasst, zum anderen um sie von den 
+zus&auml;tzlichen Attributen, die zu vielen Elementen verwendet werden k&ouml;nnen,
+hervorzuheben.
+</para>
+
+<informaltable pgwide="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="1" colname="C1"/>
+<colspec colnum="2" colname="C2"/>
+<colspec colnum="3" colname="C3"/>
+<spanspec namest="C1" nameend="C3" spanname="C1C3"/>
+<thead>
+<row><entry><para>Name</para></entry><entry>Typ</entry><entry>Default</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><sgmltag class="attribute">Arch</sgmltag></entry>
+<entry>&AT.CDATA;</entry>
+<entry><emphasis>Keiner</emphasis></entry>
+</row>
+<row>
+<entry revision="4.0"><sgmltag class="attribute">Condition</sgmltag></entry>
+<entry>&AT.CDATA;</entry>
+<entry><emphasis>Keiner</emphasis></entry>
+</row>
+<row>
+<entry><sgmltag class="attribute">Conformance</sgmltag></entry>
+<entry>&AT.NMTOKENS;</entry>
+<entry><emphasis>Keiner</emphasis></entry>
+</row>
+<row>
+<entry><sgmltag class="attribute">ID</sgmltag></entry>
+<entry>&AT.ID;</entry>
+<entry><para><emphasis>Keiner/Erforderlich</emphasis><footnote><para>Bei einigen 
+wenigen Elementen ist eine <sgmltag class="attribute">ID</sgmltag> vorgeschrieben,
+bei den meisten aber nicht.</para></footnote></para></entry>
+</row>
+<row>
+<entry><sgmltag class="attribute">Lang</sgmltag></entry>
+<entry>&AT.CDATA;</entry>
+<entry><emphasis>Keiner</emphasis></entry>
+</row>
+<row>
+<entry><sgmltag class="attribute">OS</sgmltag></entry>
+<entry>&AT.CDATA;</entry>
+<entry><emphasis>Keiner</emphasis></entry>
+</row>
+<row>
+<entry><sgmltag class="attribute">Remap</sgmltag></entry>
+<entry>&AT.CDATA;</entry>
+<entry><emphasis>Keiner</emphasis></entry>
+</row>
+<row>
+<entry><sgmltag class="attribute">Role</sgmltag></entry>
+<entry>&AT.CDATA;</entry>
+<entry><emphasis>Keiner</emphasis></entry>
+</row>
+<row>
+<entry><sgmltag class="attribute">Revision</sgmltag></entry>
+<entry>&AT.CDATA;</entry>
+<entry><emphasis>Keiner</emphasis></entry>
+</row>
+<row>
+<entry valign="top"><sgmltag class="attribute">RevisionFlag</sgmltag></entry>
+<entry><simplelist>
+<member><emphasis>Aufz&auml;hlung:</emphasis></member>
+<member>Changed</member>
+<member>Added</member>
+<member>Deleted</member>
+<member>Off</member>
+</simplelist></entry>
+<entry><emphasis>Keiner</emphasis></entry>
+</row>
+<row>
+<entry revision="4.0"><sgmltag class="attribute">Security</sgmltag></entry>
+<entry>&AT.CDATA;</entry>
+<entry><emphasis>Keiner</emphasis></entry>
+</row>
+<row>
+<entry><sgmltag class="attribute">UserLevel</sgmltag></entry>
+<entry>&AT.CDATA;</entry>
+<entry><emphasis>Keiner</emphasis></entry>
+</row>
+<row>
+<entry><sgmltag class="attribute">Vendor</sgmltag></entry>
+<entry>&AT.CDATA;</entry>
+<entry><emphasis>Keiner</emphasis></entry>
+</row>
+<row>
+<entry><sgmltag class="attribute">XrefLabel</sgmltag></entry>
+<entry>&AT.CDATA;</entry>
+<entry><emphasis>Keiner</emphasis></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<variablelist>
+<varlistentry><term><sgmltag class="attribute">Arch</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>Arch-Attribut</primary></indexterm>
+<indexterm><primary>Architektur</primary>
+  <secondary>Computer oder Chip</secondary></indexterm>
+<indexterm><primary>Computerarchitektur (Elemente)</primary></indexterm>
+<indexterm><primary>Chiparchitektur (Elemente)</primary></indexterm>
+
+<sgmltag class="attribute">Arch</sgmltag> bezeichnet die Computer- oder 
+Chiparchitektur, auf die sich das Element bezieht.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term><sgmltag class="attribute">Condition</sgmltag></term>
+<listitem>
+<para revision="4.0">
+<indexterm><primary>Condition-Attribut</primary></indexterm>
+
+<sgmltag class="attribute">Condition</sgmltag> ist ein Attribut f&uuml;r die allgemeine 
+Verwendung mit keiner speziellen Semantik. Viele Docbook-Benutzer haben die Erfahrung 
+gemacht, dass sie die Semantik eines der vorhandenen Attribute <quote>mi&szlig;brauchen</quote>
+oder ein eigenes Attribut erg&auml;nzen mu&szlig;ten, um eine Funktionalit&auml;tsbeschreibung, die 
+sich auf ihre jeweilige Umgebung bezieht, unterzubringen. Dadurch wurde ihre 
+benutzerspezifische Anpassung zu <link linkend="s-notdocbook">einer Erweiterung anstatt zu einer 
+Teilmenge</link>.</para>
+
+<para>Das Attribut <sgmltag class="attribute">Condition</sgmltag> bietet eine 
+Standardm&ouml;glichkeit f&uuml;r die Beschreibung von anwendungsspezifischer Funktionalit&auml;t.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term><sgmltag class="attribute">Conformance</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>Conformance-Attribut</primary></indexterm>
+
+<sgmltag class="attribute">Conformance</sgmltag> weist auf die Einhaltung 
+von allgemeinen Standards durch das Element, das beschrieben wird, hin. Diese 
+Eigenschaften sind anwendungsspezifisch. DocBook sieht keine Standardwerte 
+vor.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term><sgmltag class="attribute">ID</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>ID-Attribut</primary></indexterm>
+
+<sgmltag class="attribute">ID</sgmltag> ist ein String, der das Element 
+identifiziert. Er muss zumindest innerhalb des Dokuemnts eindeutig sein und 
+mit einem Buchstaben beginnen.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term><sgmltag class="attribute">Lang</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>Lang-Attribut</primary></indexterm>
+<indexterm><primary>L&auml;nderkennzeichen</primary></indexterm>
+<indexterm><primary>Sprachen</primary>
+  <secondary>Kennzeichen</secondary></indexterm>
+<indexterm><primary>ISO-Standards</primary>
+  <secondary>Sprachkennzeichen</secondary></indexterm>
+<indexterm><primary>ISO-Standards</primary>
+  <secondary>L&auml;nderkennzeichen</secondary></indexterm>
+
+<sgmltag class="attribute">Lang</sgmltag> sollte ein Sprachkennzeichen aus 
+<acronym>ISO</acronym> 639 (unter Umst&auml;nden erg&auml;nzt um ein L&auml;nderkennzeichen 
+aus <acronym>ISO</acronym> 3166, wie zum Beispiel
+<literal>en-US</literal>) sein. Benutzen Sie es, wenn Sie ihrer Anwendung 
+mitteilen m&ouml;chten, dass Silbentrennung und andere Anzeigemerkmale ge&auml;ndert 
+werden sollen.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term><sgmltag class="attribute">OS</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>OS-Attribut</primary></indexterm>
+<indexterm><primary>Betriebssysteme</primary>
+  <secondary>Elemente</secondary></indexterm>
+
+<sgmltag class="attribute">OS</sgmltag> gibt das Betriebssystem an, 
+auf das sich das Element bezieht.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term><sgmltag class="attribute">Remap</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>Remap-Attribut</primary></indexterm>
+<indexterm><primary>Markup</primary>
+  <secondary>fr&uuml;here Schemen, identifizieren</secondary></indexterm>
+
+<sgmltag class="attribute">Remap</sgmltag> enth&auml;lt den Namen eines Elements 
+oder eines &auml;hnlichen semantischen Bezeichners, der dem Inhalt in einem fr&uuml;heren 
+Markup-Schema zugeordnet ist.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term><sgmltag class="attribute">Role</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>Role-Attribut</primary></indexterm>
+<indexterm><primary>Elemente</primary>
+  <secondary>klassifizieren oder unterklassifizieren</secondary></indexterm>
+<indexterm><primary>Parameter-Entities</primary>
+  <secondary>Role-Attribut</secondary></indexterm>
+
+<sgmltag class="attribute">Role</sgmltag> beinhaltet einen String, der 
+ein Element klassifiziert oder unterklassifiziert.</para>
+<para>Obgleich Role ein allgemein verwendetes Attribut in dem Sinne ist, dass es 
+bei fast allen Elementen vorkommt, ist es kein Teil irgeneiner Parameter-Entity der 
+allgemein verwendeten Attribute (<sgmltag class="paramentity">common.attrib</sgmltag> 
+oder <sgmltag class="paramentity">idreq.common.attrib</sgmltag>). Es wird 
+anders parametrisiert, weil es n&uuml;tzlich ist, 
+<sgmltag class="attribute">Role</sgmltag> unabh&auml;ngig von anderen Elementen
+ unterklassifizieren zu k&ouml;nnen.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term><sgmltag class="attribute">Revision</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>Revision-Attribut</primary></indexterm>
+
+<sgmltag class="attribute">Revision</sgmltag> gibt die Version 
+an, der das Element zugeordnet ist.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term><sgmltag class="attribute">RevisionFlag</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>RevisionFlag-Attribut</primary></indexterm>
+<indexterm><primary>Versionen</primary>
+  <secondary>Versionskontrolle, Dokumente</secondary></indexterm>
+
+<sgmltag class="attribute">RevisionFlag</sgmltag> gibt den Pr&uuml;fstatus des 
+Elements an; der Default gibt an, dass das Element nicht &uuml;berpr&uuml;ft wurde. 
+<sgmltag class="attribute">RevisionFlag</sgmltag> ist nur f&uuml;r 
+einfache Versionskontrolle gedacht: verwenden Sie ein richtiges Versions
+kontrollsystem, um die ganze Geschichte des Dokument festzuhalten.  Benutzen Sie 
+<sgmltag class="attribute">RevisionFlag</sgmltag>, um &auml;nderungen von einer 
+Version zur n&auml;chsten zu dokumentieren, nicht mehr.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term><sgmltag class="attribute">Security</sgmltag></term>
+<listitem>
+<para revision="4.0">
+<indexterm><primary>Security-Attribut</primary></indexterm>
+
+<sgmltag class="attribute">Security</sgmltag> beinhaltet Informationen &uuml;ber 
+die Berechtigungsstufe, die mit dem Element, auf das es sich bezieht, verkn&uuml;pft ist.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term><sgmltag class="attribute">UserLevel</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>UserLevel-Attribut</primary></indexterm>
+<indexterm><primary>Kenntniseinstufung (Benutzer)</primary></indexterm>
+
+<sgmltag class="attribute">UserLevel</sgmltag> gibt die Kenntnisstufe der 
+Benutzer an, auf die sich das Element bezieht.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term><sgmltag class="attribute">Vendor</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>Vendor-Attribut</primary></indexterm>
+<indexterm><primary>Computeranbieter</primary></indexterm>
+
+<sgmltag class="attribute">Vendor</sgmltag> weist auf den Computeranbieter hin,
+ auf den sich das Element bezieht.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term><sgmltag class="attribute">XrefLabel</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>XrefLabel-Attribut</primary></indexterm>
+<indexterm><primary>Querverweis</primary>
+  <secondary>XrefLabel-Attribut</secondary></indexterm>
+<sgmltag class="attribute">XrefLabel</sgmltag> enth&auml;lt den Text, der 
+benutzt wird, um einen Querverweis (<sgmltag>XRef</sgmltag>) zu diesem Element 
+herzustellen.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+<sect1>
+<title>Attributtypen</title>
+<para>
+<indexterm><primary>Typen (Attribute)</primary></indexterm>
+<indexterm><primary>Attribute</primary>
+  <secondary>Typen</secondary></indexterm>
+
+&SGML; bietet eine kleine Auswahl von Attributtypen. (&XML;
+wiederum bietet eine Teilmenge davon.) Der Bequemlichkeit halber finden Sie hier 
+eine kurze Beschreibung jedes dieser Typen:</para>
+<variablelist>
+<varlistentry id="AT.CDATA"><term><sgmltag class="attribute">&AT.CDATA;</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>Zeichen</primary>
+  <secondary>strings (CDATA-Attribut)</secondary></indexterm>
+<indexterm><primary>strings (Zeichen)</primary></indexterm>
+<indexterm><primary>CDATA</primary></indexterm>
+
+Ein string von Zeichen.</para>
+</listitem>
+</varlistentry>
+<varlistentry id="AT.NUMBER"><term><sgmltag class="attribute">&AT.NUMBER;</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>Zahlen (Attribute)</primary></indexterm>
+<indexterm><primary>Bindestriche (-), Zahlen </primary></indexterm>
+<indexterm><primary>Dezimalpunkte (.), Zahlen</primary></indexterm>
+Eine Zahl. Zahlen m&uuml;ssen mit einem Bindestrich oder einer Ziffer beginnen 
+und k&ouml;nnen den Dezimalpunkt beinhalten.</para>
+</listitem>
+</varlistentry>
+<varlistentry id="AT.NMTOKEN"><term><sgmltag class="attribute">&AT.NMTOKEN;</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>NMTOKEN(S)-Attribut</primary></indexterm>
+<indexterm><primary>Namen</primary>
+  <secondary>NMTOKEN-Attribut</secondary></indexterm>
+<indexterm><primary>Attribute</primary>
+  <secondary>Namen</secondary></indexterm>
+<indexterm><primary>Zeichen</primary>
+  <secondary>Namen</secondary></indexterm>
+
+Eine Abfolge von Namenszeichen (Buchstaben, Ziffern, Bindestrichen und Punkten). 
+Es unterscheidet sich von einem <sgmltag class="attribute">&AT.CDATA;</sgmltag>-Attribut darin, dass 
+es keine Leerzeichen, Zeichensetzung oder anderen nicht bedeutungstragenden Zeichen enthalten kann.</para>
+</listitem>
+</varlistentry>
+<varlistentry id="AT.NMTOKENS"><term><sgmltag class="attribute">&AT.NMTOKENS;</sgmltag></term>
+<listitem>
+<para>Eine Abfolge von einem oder mehreren durch Leerzeichen unterteilten 
+<sgmltag class="attribute">&AT.NMTOKEN;</sgmltag>-Werten.</para>
+</listitem>
+</varlistentry>
+<varlistentry id="AT.NUTOKEN"><term><sgmltag class="attribute">&AT.NUTOKEN;</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>NUTOKEN-Attribut</primary></indexterm>
+<indexterm><primary>Ziffern</primary>
+  <secondary>Zahlen</secondary></indexterm>
+<indexterm><primary>Dezimalpunkte (.), Zahlen</primary></indexterm>
+
+Eine Abfolge von Zahlzeichen (Ziffern, Bindestriche und Punkte). Es unterscheidet sich 
+von einem <sgmltag class="attribute">&AT.NUMBER;</sgmltag>-Feld, weil es nicht mit einer 
+Ziffern oder einem Bindestrich beginnen muss.</para>
+</listitem>
+</varlistentry>
+<varlistentry id="AT.ENTITY"><term><sgmltag class="attribute">&AT.ENTITY;</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>ENTITY-Attribut</primary></indexterm>
+
+Der Name einer Entity. Der Wert eines <sgmltag class="attribute">&AT.ENTITY;</sgmltag>-Attributs muss 
+der Name einer deklarierten Entity sein.</para>
+</listitem>
+</varlistentry>
+<varlistentry id="AT.NAME"><term><sgmltag class="attribute">&AT.NAME;</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>NAME-Attribut</primary></indexterm>
+<indexterm><primary>Ziffern</primary>
+  <secondary>Namen</secondary></indexterm>
+<indexterm><primary>Punkte (.), Namen</primary></indexterm>
+<indexterm><primary>NAMES-Attribut</primary></indexterm>
+
+Ein Name. Ein Name muss mit einem Buchstaben beginnen und kann aus 
+Buchstaben, Ziffern, Bindestrichen und Punkten bestehen. 
+</para>
+</listitem>
+</varlistentry>
+<varlistentry id="AT.NAMES"><term><sgmltag class="attribute">&AT.NAMES;</sgmltag></term>
+<listitem>
+<para>Eine Abfolge von einem oder mehreren durch Leerzeichen unterteilten 
+<sgmltag class="attribute">&AT.NAME;</sgmltag>-Werten.</para>
+</listitem>
+</varlistentry>
+<varlistentry id="AT.ID"><term><sgmltag class="attribute">&AT.ID;</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>ID-Attribut</primary></indexterm>
+<indexterm><primary>Eindeutigkeit</primary>
+  <secondary>ID-Attribute</secondary></indexterm>
+
+Eine <acronym>ID</acronym>.  <acronym>ID</acronym>s sind Namen, die innerhalb 
+des Dokuments eindeutig sein m&uuml;ssen. Das <sgmltag class="attribute">&AT.ID;</sgmltag>-Attribut 
+deklariert die
+<acronym>ID</acronym>.</para>
+</listitem>
+</varlistentry>
+<varlistentry id="AT.IDREF"><term><sgmltag class="attribute">&AT.IDREF;</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>IDREF-Attribut</primary></indexterm>
+Eine einzelne <acronym>ID</acronym>.  <acronym>ID</acronym>s sind Namen, die 
+innerhalb des Dokuments eindeutig sein m&uuml;ssen. Der Wert eines
+<sgmltag class="attribute">&AT.IDREF;</sgmltag>-Attributs muss der Name 
+eines <sgmltag class="attribute">&AT.ID;</sgmltag>-Attributs sein, das in dem Dokument 
+definiert ist.</para>
+</listitem>
+</varlistentry>
+<varlistentry id="AT.IDREFS"><term><sgmltag class="attribute">&AT.IDREFS;</sgmltag></term>
+<listitem>
+<para>
+<indexterm><primary>IDREFS-Attribut</primary></indexterm>
+
+Eine Abfolge von einem oder mehreren durch Leerzeichen unterteilten 
+<sgmltag class="attribute">&AT.ID;</sgmltag>-werten.
+<indexterm startref="elementsref" class='endofrange'/>
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1><?Pub Caret1?>
+</partintro>
+

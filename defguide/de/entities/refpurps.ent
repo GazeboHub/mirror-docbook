@@ -1,0 +1,431 @@
+<!-- $Id$ -->
+
+<!-- Refpurposes for all the elements. Edit the entities with care. -->
+<!-- They are used in several places. And beware of single/double   -->
+<!-- quote nesting. -->
+<!-- Working draft of a German translation -->
+
+<!-- Neu in 4.2 -->
+
+<!ENTITY bibliocoverage.purpose "R&auml;umlicher oder zeitlicher Bezug des Inhalts eines Dokuments">
+<!ENTITY biblioid.purpose "Eine Kennzeichnung eines Dokument">
+<!ENTITY bibliorelation.purpose "Eine Beziehung zwischen einem Dokument und einem anderen">
+<!ENTITY bibliosource.purpose "Quelle eines Dokuments">
+<!ENTITY blockinfo.purpose "Meta-Informationen &uuml;ber ein Blockelement">
+<!ENTITY citebiblioid.purpose "Angabe einer bibliographischen Kennzeichnung">
+<!ENTITY coref.purpose "Ein Querverweis auf ein <sgmltag>co</sgmltag>">
+<!ENTITY errortext.purpose "Eine Fehlermeldung">
+<!ENTITY personblurb.purpose "Eine Kurzbeschreibung oder Bemerkung &uuml;ber eine Person">
+<!ENTITY personname.purpose "Der pers&ouml;nliche Name eines Individuums">
+<!ENTITY refsection.purpose "Ein rekursiver Abschnitt in einem <sgmltag>refentry</sgmltag>">
+<!ENTITY refsectioninfo.purpose "Meta-Informationen &uuml;ber eine <sgmltag>refsection</sgmltag>">
+<!ENTITY textdata.purpose "Hinweis auf externe Textdaten">
+
+<!-- /Neu in 4.2 -->
+
+<!ENTITY mml-math.purpose "Eine MathML-Gleichung">
+<!ENTITY html-form.purpose "Ein HTML-Formular">
+<!ENTITY svg-svg.purpose "Eine SVG-Grafik">
+
+<!-- Neu in EBNF -->
+
+<!ENTITY productionset.purpose "Eine Menge von EBNF-Produktionen">
+<!ENTITY production.purpose "Eine Produktion innerhalb einer Menge von EBNF-Produktionen">
+<!ENTITY lhs.purpose "Die linke Seite einer EBNF-Produktion">
+<!ENTITY rhs.purpose "Die rechte Seite einer EBNF-Produktion">
+<!ENTITY nonterminal.purpose "Ein Nichtterminale in einer EBNF-Produktion">
+<!ENTITY constraint.purpose "Eine Beschr&auml;nkung in einer EBNF-Produktion">
+<!ENTITY productionrecap.purpose "Ein Querverweis auf eine EBNF-Produktion">
+<!ENTITY constraintdef.purpose "Die Definition einer Beschr&auml;nkung in einer EBNF-Produktion">
+
+<!-- Neu in 4.0 -->
+
+<!ENTITY appendixinfo.purpose "Meta-Informationen &uuml;ber einen <sgmltag>Appendix</sgmltag>">
+<!ENTITY articleinfo.purpose "Meta-Informationen &uuml;ber einen <sgmltag>Article</sgmltag>">
+<!ENTITY bibliographyinfo.purpose "Meta-Informationen &uuml;ber eine <sgmltag>Bibliography</sgmltag>">
+<!ENTITY chapterinfo.purpose "Meta-Informationen &uuml;ber ein <sgmltag>Chapter</sgmltag>">
+<!ENTITY classsynopsis.purpose "Zusammenfassung der Syntax zur Definition einer Klasse">
+<!ENTITY classsynopsisinfo.purpose "Informationen, die den Inhalt einer <sgmltag>ClassSynopsis</sgmltag> erg&auml;nzen">
+<!ENTITY constructorsynopsis.purpose "Zusammenfassung der Syntax eines Konstruktors">
+<!ENTITY destructorsynopsis.purpose "Zusammenfassung der Syntax eines Destruktors">
+<!ENTITY exceptionname.purpose "Der Name einer Exception">
+<!ENTITY fieldsynopsis.purpose "Der Name eines Felds in der Definition einer Klasse">
+<!ENTITY glossaryinfo.purpose "Meta-Informationen &uuml;ber ein <sgmltag>Glossary</sgmltag>">
+<!ENTITY indexinfo.purpose "Meta-Informationen &uuml;ber einen <sgmltag>Index</sgmltag>">
+<!ENTITY initializer.purpose "Die Initialisierung einer <sgmltag>FieldSynopsis</sgmltag>">
+<!ENTITY interfacename.purpose "Der Name einer Schnittstelle">
+<!ENTITY methodname.purpose "Der Name einer Methode">
+<!ENTITY methodparam.purpose "Parameter einer Methode">
+<!ENTITY methodsynopsis.purpose "Zusammenfassung der Syntax einer Methode">
+<!ENTITY modifier.purpose "Modifikatoren in einer &Uuml;bersicht">
+<!ENTITY ooclass.purpose "Eine Klasse in einer objektorientierten Programmiersprache">
+<!ENTITY ooexception.purpose "Eine Exception in einer objektorientierten Programmiersprache">
+<!ENTITY oointerface.purpose "Eine Schnittstelle in einer objektorientierten Programmiersprache">
+<!ENTITY partinfo.purpose "Meta-Informationen &uuml;ber einen <sgmltag>Part</sgmltag>">
+<!ENTITY prefaceinfo.purpose "Meta-Informationen &uuml;ber ein <sgmltag>Preface</sgmltag>">
+<!ENTITY refentryinfo.purpose "Meta-Informationen &uuml;ber einen <sgmltag>Refentry</sgmltag>">
+<!ENTITY referenceinfo.purpose "Meta-Informationen &uuml;ber eine <sgmltag>Reference</sgmltag>">
+<!ENTITY remark.purpose "Eine Bemerkerung (oder ein Kommentar), die zur Anzeige in einem Entwurf gedacht ist">
+<!ENTITY revdescription.purpose "Ausf&uuml;hrliche Beschreibung zur &uuml;berarbeiteten Fassung eines Dokuments">
+<!ENTITY setindexinfo.purpose "Meta-Informationen &uuml;ber einen <sgmltag>SetIndex</sgmltag>">
+<!ENTITY sidebarinfo.purpose "Meta-Informationen &uuml;ber eine <sgmltag>Sidebar</sgmltag>">
+<!ENTITY simplemsgentry.purpose "Ein Wrapper f&uuml;r einen einfacheren Eintrag in einer Menge von Meldungen">
+
+<!-- /Neu in 4.0 -->
+
+<!-- Neu in 3.1 -->
+
+<!ENTITY mediaobject.purpose	"Ein dargestelltes Medienobjekt (Video, Audio, Bild, usw.)">
+<!ENTITY mediaobjectco.purpose	"Ein Medienobjekt, das Callouts enth&auml;lt">
+<!ENTITY inlinemediaobject.purpose	"Ein Inline-Medienobjekt (Video, Audio, Bild, usw.)">
+<!ENTITY videoobject.purpose	"Ein Wrapper f&uuml;r Videodaten und die damit zusammenh&auml;ngenden Meta-Informationen">
+<!ENTITY audioobject.purpose	"Ein Wrapper f&uuml;r Audiodaten und die damit zusammenh&auml;ngenden Meta-Informationen">
+<!ENTITY imageobject.purpose	"Ein Wrapper f&uuml;r Bilddaten und die damit zusammenh&auml;ngenden Meta-Informationen">
+<!ENTITY imageobjectco.purpose	"Ein Wrapper f&uuml;r ein Bildobjekt mit callouts">
+<!ENTITY textobject.purpose	"Ein Wrapper f&uuml;r eine textliche Beschreibung eines Objekts und die damit zusammenh&auml;ngenden Meta-Informationen">
+<!ENTITY objectinfo.purpose	"Meta-Informationen &uuml;ber ein Objekt">
+<!ENTITY videodata.purpose	"Verweis auf externe Videodaten">
+<!ENTITY audiodata.purpose	"Verweis auf externe Audiodaten">
+<!ENTITY imagedata.purpose	"Verweis auf externe Bilddaten">
+<!ENTITY caption.purpose	"Eine Erkl&auml;rung">
+<!ENTITY informalfigure.purpose	"Eine Abbildung ohne &Uuml;berschrift">
+<!ENTITY colophon.purpose	"Text auf der R&uuml;ckseite eines Buches, der Informationen &uuml;ber seine Herstellung enth&auml;lt">
+<!ENTITY section.purpose	"Ein rekursiver Abschnitt">
+<!ENTITY sectioninfo.purpose	"Meta-informationen &uuml;ber einen rekursiven Abschnitt">
+<!ENTITY qandaset.purpose	"Eine Menge von Fragen und Antworten">
+<!ENTITY qandadiv.purpose	"Ein Abschnitt mit einer &Uuml;berschrift in einem <sgmltag>QandASet</sgmltag>">
+<!ENTITY qandaentry.purpose	"Ein Frage/Antwort-Eintrag innerhalb eines <sgmltag>QandASet</sgmltag>">
+<!ENTITY question.purpose	"Eine Frage in einem <sgmltag>QandASet</sgmltag>">
+<!ENTITY answer.purpose		"Eine Antwort auf eine Frage in einem <sgmltag>QandASet</sgmltag>">
+<!ENTITY constant.purpose	"Eine Programm- oder Sytemkonstante">
+<!ENTITY varname.purpose	"Der Name einer Variable">
+
+<!-- /Neu in 3.1 -->
+
+<!ENTITY abbrev.purpose         "Eine Abk&uuml;rzung, insbesondere eine, die durch einen nachstehenden Punkt hervorgehoben wird">
+<!ENTITY abstract.purpose       "Eine Zusammenfassung">
+<!ENTITY accel.purpose          "Tastaturk&uuml;rzel in einer Grafischen Benutzeroberfl&auml;che (GUI)">
+<!ENTITY ackno.purpose          "Danksagungen in einem <sgmltag>Article</sgmltag>">
+<!ENTITY acronym.purpose        "Ein h&auml;ufig aussprechbares Wort, das sich aus den Anfangsbuchstaben (oder ausgew&auml;hlten Buchstaben) eines Names oder Ausdrucks zusammensetzt">
+<!ENTITY action.purpose         "Eine Reaktion auf ein Ereignis, das durch einen Benutzer ausgel&ouml;st wird">
+<!ENTITY address.purpose        "Eine echte Adresse, im allgemeinen eine Postanschrift">
+<!ENTITY affiliation.purpose    "Zuordnung eines Individuums zu einer Institution">
+<!ENTITY alt.purpose            "Textliche Beschreibung eines grafischen Elements">
+<!ENTITY anchor.purpose         "Eine Stelle in einem Dokument">
+<!ENTITY appendix.purpose       "Ein Anhang in einem <sgmltag>Book</sgmltag> oder einem <sgmltag>Article</sgmltag>">
+<!ENTITY application.purpose    "Der Name eines Softwareprogramms">
+<!ENTITY area.purpose           "Ein Bereich, der f&uuml;r einen <sgmltag>Callout</sgmltag> in einer Grafik oder einem Codebeispiel festgelegt wird">
+<!ENTITY areaset.purpose        "Eine Menge von zusammenh&auml;ngenden Bereichen in einer Grafik oder codebeispiel">
+<!ENTITY areaspec.purpose       "Eine Ansammlung von Bereichen in einer Grafik oder Codebeispiel">
+<!ENTITY arg.purpose            "Ein Argument in einer <sgmltag>CmdSynopsis</sgmltag>">
+<!ENTITY artheader.purpose      "Meta-Informationen &uuml;ber einen <sgmltag>Article</sgmltag>">
+<!ENTITY article.purpose        "Ein Artikel">
+<!ENTITY artpagenums.purpose    "Die Seitenzahlen eines Artikels bei der Ver&ouml;ffentlichung">
+<!ENTITY attribution.purpose    "Die Quelle eines Zitats oder eines Epigraph">
+<!ENTITY author.purpose         "Der Name eines individuellen Autors">
+<!ENTITY authorblurb.purpose    "Eine Kurzbeschreibung oder Anmerkung &uuml;ber einen Autor">
+<!ENTITY authorgroup.purpose    "Wrapper f&uuml;r Informationen &uuml;ber die Autoren, wenn ein Dokument von mehreren Autoren oder Mitarbeitern erstellt wurde">
+<!ENTITY authorinitials.purpose "Die Initialen oder anderen K&uuml;rzel eines Autors">
+<!ENTITY beginpage.purpose      "Die Position eines Seitenumbruchs in der gedruckten Ausgabe des Dokuments">
+<!ENTITY bibliodiv.purpose      "Ein Abschnitt einer <sgmltag>Bibliography</sgmltag>">
+<!ENTITY biblioentry.purpose    "Ein Eintrag in einer <sgmltag>Bibliography</sgmltag>">
+<!ENTITY bibliography.purpose   "Eine Bibliographie">
+<!ENTITY bibliomisc.purpose     "Unklassifizierte bibliographische Informationen">
+<!ENTITY bibliomixed.purpose    "Ein Eintrag in einer <sgmltag>Bibliography</sgmltag>">
+<!ENTITY bibliomset.purpose     "Ein <quote>aufbereiteter</quote> Container f&uuml;r dazugeh&ouml;rige bibliographische Angaben">
+<!ENTITY biblioset.purpose      "Ein <quote>roher</quote> Container f&uuml;r dazugeh&ouml;rige bibliographische Angaben">
+<!ENTITY blockquote.purpose     "Ein vom Haupttext abgehobenes Zitat">
+<!ENTITY book.purpose           "Ein Buch">
+<!ENTITY bookbiblio.purpose     "Meta-Informationen &uuml;ber ein Buch, die in einer Literaturangabe verwendet werden">
+<!ENTITY bookinfo.purpose       "Meta-Informationen &uuml;ber ein Buch">
+<!ENTITY bridgehead.purpose     "Eine freistehende &Uuml;berschrift">
+<!ENTITY callout.purpose        "Eine &ldquo;called out&rdquo;-Beschreibung einer gekennzeichneten <sgmltag>Area</sgmltag>">
+<!ENTITY calloutlist.purpose    "Eine Liste von <sgmltag>Callout</sgmltag>s">
+<!ENTITY caution.purpose        "Ein Warnhinweis">
+<!ENTITY chapter.purpose        "Ein Kapitel, in einem Buch">
+<!ENTITY citation.purpose       "Eine Inline-Referenz auf ein anderes ver&ouml;ffentlichtes Werk">
+<!ENTITY citerefentry.purpose   "Ein Zitat einer Referenzseite">
+<!ENTITY citetitle.purpose      "Der Titel eines zitierten Werks">
+<!ENTITY city.purpose           "Der Name einer Stadt in einer Adressangabe">
+<!ENTITY classname.purpose      "Der Name einer Klasse, im Sinne der objektorientierten Programmierung">
+<!ENTITY cmdsynopsis.purpose    "Eine Zusammenfassung der Syntax eines Softwarekommandos">
+<!ENTITY co.purpose             "Die Position eines im Text eingebetteten Callouts">
+<!ENTITY collab.purpose         "Kennzeichnet einen Mitarbeiter">
+<!ENTITY collabname.purpose     "Der Name eines Mitarbeiters">
+<!ENTITY colspec.purpose        "Angaben zu einer Spalte in einer Tabelle">
+<!ENTITY command.purpose        "Der Name eines ausf&uuml;hrbaren Programms oder eines Softwarekommandos">
+<!ENTITY comment.purpose        "Ein Kommentar, der zur Anzeige in einem Entwurf bestimmt ist">
+<!ENTITY computeroutput.purpose "Daten, normalerweise Text, die von einem Computer ausgegeben oder dargestellt werden">
+<!ENTITY confdates.purpose      "Die Daten der Konferenz, f&uuml;r die ein Dokument erstellt wurde">
+<!ENTITY confgroup.purpose      "Ein Wrapper f&uuml;r Meta-Informationen in einem Dokument &uuml;ber eine Konferenz">
+<!ENTITY confnum.purpose        "Eine Kennzeichnung, h&auml;ufig nummerisch, die mit der Konferenz, f&uuml;r die das Dokument erstellt wurde, in Verbindung steht">
+<!ENTITY confsponsor.purpose    "Der sponsor einer Konferenz, f&uuml;r die ein Dokument erstellt wurde">
+<!ENTITY conftitle.purpose      "Der Titel einer Konferenz, f&uuml;r die ein Dokument erstellt wurde">
+<!ENTITY contractnum.purpose    "Die Vertragsnummer eines Dokuments">
+<!ENTITY contractsponsor.purpose "Der Sponsor eines Vertrages">
+<!ENTITY contrib.purpose        "Eine Zusammenfassung der Beitr&auml;ge zu einem Dokument, die von einer aufgef&uuml;hrten Quelle erbracht wurden">
+<!ENTITY copyright.purpose      "Copyright-Informationen zu einem Dokument">
+<!ENTITY corpauthor.purpose     "Eine K&ouml;rperschaft als Autor, im Gegensatz zu einem Individuum">
+<!ENTITY corpname.purpose       "Der Name einer Firma">
+<!ENTITY country.purpose        "Der Name eines Landes">
+<!ENTITY database.purpose       "Der Name einer Datenbank oder eines Teils einer Datenbank">
+<!ENTITY date.purpose           "Das Ver&ouml;ffentlichungsdatum oder das Datum der Neubearbeitung eines Dokuments">
+<!ENTITY dedication.purpose     "Ein Wrapper f&uuml;r die Widmung in einem Buch">
+<!ENTITY docinfo.purpose        "Meta-Daten &uuml;ber einen Teil eines Buches">
+<!ENTITY edition.purpose        "Name oder Nummerierung zur Kennzeichnung der Auflage eines Dokuments">
+<!ENTITY editor.purpose         "Der Name des Herausgebers eines Dokuments">
+<!ENTITY email.purpose          "Eine Email-Adresse">
+<!ENTITY emphasis.purpose       "Hervorgehobener Text">
+<!ENTITY entry.purpose          "Eine Zelle in einer Tabelle">
+<!ENTITY entrytbl.purpose       "Eine eingebettete Tabelle, die anstelle eines <sgmltag>Entry</sgmltag> in einer Tabelle auftritt">
+<!ENTITY envar.purpose          "Eine Software-Umgebungsvariable">
+<!ENTITY epigraph.purpose       "Eine kurze Inschrift zu Beginn eines Dokuments oder eines Dokumentteils">
+<!ENTITY equation.purpose       "Eine aufgef&uuml;hrte mathematische Gleichung">
+<!ENTITY errorcode.purpose      "Ein Fehlercode">
+<!ENTITY errorname.purpose      "Ein Fehlername">
+<!ENTITY errortype.purpose      "Die Klassifikation einer Fehlermeldung">
+<!ENTITY example.purpose        "Ein formelles Beispiel, mit einer &Uuml;berschrift">
+<!ENTITY fax.purpose            "Eine Faxnummer">
+<!ENTITY figure.purpose         "Eine formelle Abbildung, im allgemeinen eine Grafik, mit einer &Uuml;berschrift">
+<!ENTITY filename.purpose       "Der Name einer Datei">
+<!ENTITY firstname.purpose      "Der Vorname einer Person">
+<!ENTITY firstterm.purpose      "Das erste Vorkommen eines Begriffs">
+<!ENTITY footnote.purpose       "Eine Fu&szlig;note">
+<!ENTITY footnoteref.purpose    "Ein Querverweis auf eine Fu&szlig;note (eine Markierung, die auf eine Fu&szlig;note hinweist)">
+<!ENTITY foreignphrase.purpose  "Ein Wort oder ein Ausdruck in einer anderen Sprache als der, in der das Dokument verfasst ist">
+<!ENTITY formalpara.purpose     "Ein Absatz mit einer &Uuml;berschrift">
+<!ENTITY funcdef.purpose        "Name einer Funktion (Subroutine) und ihr R&uuml;ckgabetyp">
+<!ENTITY funcparams.purpose     "Parameter einer Funktion, auf die durch einen Funktionsverweis in einer &Uuml;bersicht hingewiesen wird">
+<!ENTITY funcprototype.purpose  "Der Prototyp einer Funktion">
+<!ENTITY funcsynopsis.purpose   "Die Zusammenfassung der Syntax im Rahmen der Definition einer Funktion">
+<!ENTITY funcsynopsisinfo.purpose "Angaben, die die <sgmltag>FuncDefs</sgmltag> in einer <sgmltag>FuncSynopsis</sgmltag> erg&auml;nzen">
+<!ENTITY function.purpose       "Der Name einer Funktion oder einer Subroutine in einer Programmiersprache">
+<!ENTITY glossary.purpose       "Ein Glossar">
+<!ENTITY glossdef.purpose       "Eine Definition in einem <sgmltag>GlossEntry</sgmltag>">
+<!ENTITY glossdiv.purpose       "Eine Unterteilung in einem <sgmltag>Glossary</sgmltag>">
+<!ENTITY glossentry.purpose     "Ein Eintrag in einem <sgmltag>Glossary</sgmltag> oder einer <sgmltag>GlossList</sgmltag>">
+<!ENTITY glosslist.purpose      "Ein Wrapper f&uuml;r eine Menge von <sgmltag>GlossEntry</sgmltag>s">
+<!ENTITY glosssee.purpose       "Ein Querverweis aus einem <sgmltag>GlossEntry</sgmltag> auf einen anderen">
+<!ENTITY glossseealso.purpose   "Ein Querverweis aus einem <sgmltag>GlossEntry</sgmltag> auf einen anderen">
+<!ENTITY glossterm.purpose      "Begriff in einem Glossar">
+<!ENTITY graphic.purpose        "Ein dargestelltes graphisches Objekt (kein Inline-Objekt)">
+<!ENTITY graphicco.purpose      "Eine Graphik, die Callouts enth&auml;lt">
+<!ENTITY group.purpose          "Eine Gruppe von Elementen in einer <sgmltag>CmdSynopsis</sgmltag>">
+<!ENTITY guibutton.purpose      "Der Text auf einer Schaltfl&auml;che in einer GUI">
+<!ENTITY guiicon.purpose        "Graphik oder Text, die als Icon in einer GUI verwendet werden">
+<!ENTITY guilabel.purpose       "Der Text auf einem Label in einer GUI">
+<!ENTITY guimenu.purpose        "Der Name eines Men&uuml;s in einer GUI">
+<!ENTITY guimenuitem.purpose    "Der Name eines Terminalmen&uuml;eintrags in einer GUI">
+<!ENTITY guisubmenu.purpose     "Der Name eines Untermen&uuml;eintrags in einer GUI">
+<!ENTITY hardware.purpose       "Physikalischer Teil eines Computersystems">
+<!ENTITY highlights.purpose     "Eine Zusammenfassung der Hauptpunkte, die in einem Teil des Dokuments behandelt werden">
+<!ENTITY holder.purpose         "Der Name eines Individuums oder einer Organisation, die das Copyright innehaben">
+<!ENTITY honorific.purpose      "Der Titel einer Person">
+<!ENTITY important.purpose      "Ein Hinweis, der vom Text abgehoben ist">
+<!ENTITY index.purpose          "Ein Index">
+<!ENTITY indexdiv.purpose       "Eine Unterteilung in einem Index">
+<!ENTITY indexentry.purpose     "Ein Eintrag in einem Index">
+<!ENTITY indexterm.purpose      "Ein Wrapper f&uuml;r Begriffe, die in einen Index integriert werden">
+<!ENTITY informalequation.purpose "Eine aufgef&uuml;hrte mathematische Gleichung ohne eine &Uuml;berschrift">
+<!ENTITY informalexample.purpose "Ein aufgef&uuml;hrtes Beispiel ohne &Uuml;berschrift">
+<!ENTITY informaltable.purpose  "Eine Tabelle ohne eine &Uuml;berschrift">
+<!ENTITY inlineequation.purpose "Eine mathematische Gleichung oder ein mathematischer Ausdruck, der inline aufgef&uuml;hrt wird">
+<!ENTITY inlinegraphic.purpose  "Ein Objekt, das graphische Daten enth&auml;lt oder darauf verweist, die inline erzeugt werden sollen">
+<!ENTITY interface.purpose      "Ein Element einer GUI">
+<!ENTITY interfacedefinition.purpose "Der Name einer formalen Spezifikation einer GUI">
+<!ENTITY invpartnumber.purpose  "Eine Teilnummer in einem Inventar">
+<!ENTITY isbn.purpose           "ISBN (International Standard Book Number) eines Dokuments">
+<!ENTITY issn.purpose           "ISSN (International Standard Serial Number) eines Periodikums">
+<!ENTITY issuenum.purpose       "Die Ausgabe (Nummer) einer Zeitschrift">
+<!ENTITY itemizedlist.purpose   "Eine LIste, in der jeder Eintrag durch einen Spiegelstrich oder ein anderes graphisches Zeichen gekennzeichnet wird">
+<!ENTITY itermset.purpose       "Eine Menge von <sgmltag>indexterm</sgmltag>s in den Meta-Informationen eines Dokuments">
+<!ENTITY jobtitle.purpose       "Position eines Individuums innerhalb einer Organisation">
+<!ENTITY keycap.purpose         "Text, der auf einer Taste einer Tastatur aufgedruckt ist">
+<!ENTITY keycode.purpose        "Die interne, h&auml;ufig nummerische Kennzeichnung f&uuml;r eine Taste einer Tastatur">
+<!ENTITY keycombo.purpose       "Eine Kombination von Eingabeaktionen">
+<!ENTITY keysym.purpose         "Der symbolische Name einer Taste einer Tastatur">
+<!ENTITY keyword.purpose        "Eines der Schlagw&ouml;rter, das zur Beschreibung des Inhalts eines Dokuments dient">
+<!ENTITY keywordset.purpose     "Eine Menge von Schlagw&ouml;rtern, die zur Beschreibung des Inhalts eines Dokuments dienen">
+<!ENTITY label.purpose          "Beschriftung f&uuml;r eine <sgmltag>Question</sgmltag> oder eine <sgmltag>Answer</sgmltag>">
+<!ENTITY legalnotice.purpose    "Eine Darstellung von Rechten oder Pflichten">
+<!ENTITY lineage.purpose        "Der Teil des Namens einer Person, der eine Beziehung zu seinen Vorfahren herstellt">
+<!ENTITY lineannotation.purpose "Ein Kommentar zu einer Zeile in einer exakten Zeile-f&uuml;r-Zeile-Angabe">
+<!ENTITY link.purpose           "Ein Hypertext-Link">
+<!ENTITY listitem.purpose       "Ein Wrapper f&uuml;r die Elemente eines Aufz&auml;hlungspunkts">
+<!ENTITY literal.purpose        "Inline-Text, der buchstabengetreu wiedergegeben wird">
+<!ENTITY literallayout.purpose  "Ein Textblock, der mit allen Zielenumbr&uuml;chen und Leerr&auml;umen dargestellt werden soll">
+<!ENTITY lot.purpose            "Eine Liste mit den &Uuml;berschriften der formellen Objekte (z.B. Tabellen oder Abbidlungen) in einem Dokument">
+<!ENTITY lotentry.purpose       "Ein Eintrag in einer &Uuml;berschriftenliste">
+<!ENTITY manvolnum.purpose      "Bandnummer einer Referenz">
+<!ENTITY markup.purpose         "Ein String, der Markup enth&auml;lt, das buchst&auml;blich wiedergegeben werden soll">
+<!ENTITY medialabel.purpose     "Name des physikalischen Mediums, auf dem sich Informationen befinden">
+<!ENTITY member.purpose         "Ein Punkt einer <sgmltag>simplelist</sgmltag>">
+<!ENTITY menuchoice.purpose     "Auswahl eines Men&uuml;eintrags oder Angabe der Auswahlschritte">
+<!ENTITY modespec.purpose       "Anwendungsspezifische Informationen, die zur Vervollst&auml;ndigung eines Olinks erforderlich sind">
+<!ENTITY mousebutton.purpose    "Der konventionelle Name einer Maustaste">
+<!ENTITY msg.purpose            "Ein Meldungstext in einem <sgmltag>msgset</sgmltag>">
+<!ENTITY msgaud.purpose         "Zielgruppe, f&uuml;r die ein Meldungstext in einem <sgmltag>msgset</sgmltag> relevant ist">
+<!ENTITY msgentry.purpose       "Ein Wrapper f&uuml;r einen Eintrag in einem <sgmltag>msgset</sgmltag>">
+<!ENTITY msgexplan.purpose      "Erg&auml;nzende Informationen zu einem Meldungstext in einem <sgmltag>msgset</sgmltag>">
+<!ENTITY msginfo.purpose        "Informationen &uuml;ber ein Meldungstext in einem <sgmltag>msgset</sgmltag>">
+<!ENTITY msglevel.purpose       "Einstufung der Bedeutung bzw. Gewichtung einer Nachricht in einem <sgmltag>msgset</sgmltag>">
+<!ENTITY msgmain.purpose        "Hauptbestandteil einer Nachricht in einem <sgmltag>msgset</sgmltag>">
+<!ENTITY msgorig.purpose        "Ursprung einer Meldung in einem <sgmltag>msgset</sgmltag>">
+<!ENTITY msgrel.purpose         "Komponente, mit der ein Meldungstext in einem <sgmltag>msgset</sgmltag> in Zusammenhang steht">
+<!ENTITY msgset.purpose         "Eine Menge von einzelnen Meldungstexten, gew&ouml;hnlich Fehlermeldungen">
+<!ENTITY msgsub.purpose         "Eine Untergliederung eines Meldungstextes in einem <sgmltag>msgset</sgmltag>">
+<!ENTITY msgtext.purpose        "Der eigentliche Text einer Meldung in einem <sgmltag>msgset</sgmltag>">
+<!ENTITY note.purpose           "Eine vom Text abgesetzte Mitteilung">
+<!ENTITY olink.purpose          "Ein Link, der indirekt, durch eine Entity, auf sein Ziel verweist">
+<!ENTITY option.purpose         "Eine Option in einem Softwarekommando">
+<!ENTITY optional.purpose       "Optionale Informationen">
+<!ENTITY orderedlist.purpose    "Eine Liste, in der jeder Eintrag aufeinander folgend gekennzeichnet wird">
+<!ENTITY orgdiv.purpose         "Ein Teil einer Organisation">
+<!ENTITY orgname.purpose        "Der Name einer Organisation im Unterschied zu einer Firma">
+<!ENTITY otheraddr.purpose      "Unklassifizierte Adressbestandteile">
+<!ENTITY othercredit.purpose    "Eine Person oder eine Entit&auml;t, die in einem Dokument gew&uuml;rdigt wird, und nicht der Autor oder Herausgeber ist">
+<!ENTITY othername.purpose      "Ein anderer Bestandteil eines Personennamens als Vorname, Nachname oder <sgmltag>lineage</sgmltag>">
+<!ENTITY pagenums.purpose       "Seitenanzahl in einem Buch, zur Verwendung in einer Bibliographie">
+<!ENTITY para.purpose           "Ein Absatz">
+<!ENTITY paramdef.purpose       "Informationen &uuml;ber einen Funktionsparameter in einer Programmiersprache">
+<!ENTITY parameter.purpose      "Ein Wert oder ein symbolicher Verweis auf einen Wert">
+<!ENTITY part.purpose           "Ein Teil eines Buches">
+<!ENTITY partintro.purpose      "Eine Einf&uuml;hrung in den Inhalt eines Buchteils">
+<!ENTITY phone.purpose          "Eine Telefonnummer">
+<!ENTITY phrase.purpose         "Ein Ausdruck bzw. eine Textspanne">
+<!ENTITY pob.purpose            "Ein Postfach in einer Adressangabe">
+<!ENTITY postcode.purpose       "Ein Postleitzahl in einer Adressangabe">
+<!ENTITY preface.purpose        "Einleitung, die dem ersten Kapitel eines Buches vorausgeht">
+<!ENTITY primary.purpose        "Der Haupteintrag, unter dem ein Begriff im Index aufgef&uuml;hrt werden soll">
+<!ENTITY primaryie.purpose      "Ein Hauptbegriff im Index, nicht im Text">
+<!ENTITY printhistory.purpose   "Die Druckgeschichte eines Dokuments">
+<!ENTITY procedure.purpose      "Eine List von Operationen, die in einer wohldefinierten Abfolge ausgef&uuml;hrt werden sollen">
+<!ENTITY productname.purpose    "Der formelle Name eines Produkts">
+<!ENTITY productnumber.purpose  "Eine einem Produkt zugeordnete Zahl">
+<!ENTITY programlisting.purpose "Eine buchst&auml;bliche Auflistung aller Bestandteile eines Programms">
+<!ENTITY programlistingco.purpose "Auflistung eines Programms mit zus&auml;tzlichen Anmerkungen in Callouts">
+<!ENTITY prompt.purpose         "Ein Zeichen oder ein String, das angibt, die auf ein Eingabefeld in einer Computeranzeige hinweisen">
+<!ENTITY property.purpose       "Eine Dateneinheit, die mit einem Teil eines Computersystems in Verbindung gebracht wird">
+<!ENTITY pubdate.purpose        "Das Ver&ouml;ffentlichungsdatum eines Dokuments">
+<!ENTITY publisher.purpose      "Der Verleger eines Dokuments">
+<!ENTITY publishername.purpose  "Der Name des Verlegers eines Dokuments">
+<!ENTITY pubsnumber.purpose     "Eine Zahl, die einer Ver&ouml;ffentlichung zugeorndet ist, abgesehen von <acronym>ISBN</acronym>, <acronym>ISSN</acronym> oder Inventarnummer">
+<!ENTITY quote.purpose          "Ein Inline-Zitat">
+<!ENTITY refclass.purpose       "Der Bereich oder eine andere Angabe des Anwendungsbereichs eines Referenzeintrags">
+<!ENTITY refdescriptor.purpose  "Themenbeschreibung einer Referenzseite">
+<!ENTITY refentry.purpose       "Eine Referenzseite (urspr&uuml;nglich eine Referenseite im Stil der UNIX-manpages)">
+<!ENTITY refentrytitle.purpose  "Die &Uuml;berschrift einer Referenzseite">
+<!ENTITY reference.purpose      "Eine Sammlung von Referenzeintr&auml;gen">
+<!ENTITY refmeta.purpose        "Meta-Informationen &uuml;ber einen Referenzeintrag">
+<!ENTITY refmiscinfo.purpose    "Meta-Informationen &uuml;ber einen Referenzeintrag, abgesehen von &Uuml;berschrift und Bandnummer">
+<!ENTITY refname.purpose        "Der Name (eines) Themas einer Referenzseite">
+<!ENTITY refnamediv.purpose     "Name, Zweck und Klassifizierung einer Referenzseite">
+<!ENTITY refpurpose.purpose     "Eine kurze (aus einem Satz bestehende) &Uuml;bersicht &uuml;ber das Thema einer Referenzseite">
+<!ENTITY refsect1.purpose       "Ein Hauptteil eines Referenzeintrags">
+<!ENTITY refsect1info.purpose   "Meta-Informationen &uuml;ber eine <sgmltag>RefSect1</sgmltag>">
+<!ENTITY refsect2.purpose       "Unterabschnitt einer <sgmltag>RefSect1</sgmltag>">
+<!ENTITY refsect2info.purpose   "Meta-Informationen &uuml;ber eine <sgmltag>RefSect2</sgmltag>">
+<!ENTITY refsect3.purpose       "Unterabschnitt einer <sgmltag>RefSect2</sgmltag>">
+<!ENTITY refsect3info.purpose   "Meta-Informationen &uuml;ber eine <sgmltag>RefSect3</sgmltag>">
+<!ENTITY refsynopsisdiv.purpose "Eine syntaktische &Uuml;bersicht &uuml;ber das Thema einer Referenzseite">
+<!ENTITY refsynopsisdivinfo.purpose "Meta-Informationen &uuml;ber eine RefSynopsisDiv">
+<!ENTITY releaseinfo.purpose    "Informationen &uuml;ber eine bestimmte Version eines Dokuments">
+<!ENTITY replaceable.purpose    "Inhalt, der vom Benutzer ersetzt werden darf oder muss">
+<!ENTITY returnvalue.purpose    "R&uuml;ckgabewert einer Funktion">
+<!ENTITY revhistory.purpose     "&Auml;nderungsgeschichte eines Dokuments">
+<!ENTITY revision.purpose       "Ein Eintrag, der eine einzelne Versions&auml;nderung in der &Auml;nderungsgeschichte eines Dokuments beschreibt">
+<!ENTITY revnumber.purpose      "&Auml;nderungsnummer eines Dokuments">
+<!ENTITY revremark.purpose      "Beschreibung der &Auml;nderungen an einem Dokument">
+<!ENTITY row.purpose            "Eine Tabellenzeile">
+<!ENTITY sbr.purpose            "Ein ausdr&uuml;cklicher Zeilenumbruch in einer Kommando-&Uuml;bersicht">
+<!ENTITY screen.purpose         "Text, den ein Benutzer auf einem Computerbildschirm sieht oder sehen k&ouml;nnte">
+<!ENTITY screenco.purpose       "Eine Bildschirmausgabe mit Verwendung von Callouts">
+<!ENTITY screeninfo.purpose     "Informationen dar&uuml;ber, wie ein Screenshot erzeugt wurde">
+<!ENTITY screenshot.purpose     "Darstellung dessen, was ein Benutzer auf dem Bildschirm sieht oder sehen k&ouml;nnte">
+<!ENTITY secondary.purpose      "Sekund&auml;rer Eintrag, unter dem ein Begriff im Index aufgef&uuml;hrt werden soll">
+<!ENTITY secondaryie.purpose    "Ein sekund&auml;rer Begriff im Index, nicht im Text">
+<!ENTITY sect1.purpose          "H&ouml;chste Untergliederung eines Dokuments">
+<!ENTITY sect1info.purpose      "Meta-Informationen &uuml;ber eine <sgmltag>Sect1</sgmltag>">
+<!ENTITY sect2.purpose          "Unterabschnitt einer <sgmltag>Sect1</sgmltag>">
+<!ENTITY sect2info.purpose      "Meta-Informationen &uuml;ber eine <sgmltag>Sect2</sgmltag>">
+<!ENTITY sect3.purpose          "Unterabschnitt einer <sgmltag>Sect2</sgmltag>">
+<!ENTITY sect3info.purpose      "Meta-Informationen &uuml;ber eine <sgmltag>Sect3</sgmltag>">
+<!ENTITY sect4.purpose          "Unterabschnitt einer <sgmltag>Sect3</sgmltag>">
+<!ENTITY sect4info.purpose      "Meta-Informationen &uuml;ber eine <sgmltag>Sect4</sgmltag>">
+<!ENTITY sect5.purpose          "Unterabschnitt einer <sgmltag>Sect4</sgmltag>">
+<!ENTITY sect5info.purpose      "Meta-Informationen &uuml;ber eine <sgmltag>Sect5</sgmltag>">
+<!ENTITY see.purpose            "Teil eines Indexeintrags, der den Leser auf einen anderen Indexeintrag verweist">
+<!ENTITY seealso.purpose        "Teil eines Indexeintrags, der den Leser auch auf einen anderen Indexeintrag verweist">
+<!ENTITY seealsoie.purpose      'Ein <quote>See also</quote>-Eintrag im Index, nicht im Text'>
+<!ENTITY seeie.purpose          'Ein <quote>See</quote>-Eintrag im Index, nicht im Text'>
+<!ENTITY seg.purpose            "Bestandteil eines Eintrags in einer Segmentliste">
+<!ENTITY seglistitem.purpose    "Ein Eintrag in einer Segmentliste">
+<!ENTITY segmentedlist.purpose  "Eine Segmentliste, eine Liste von Elementmengen">
+<!ENTITY segtitle.purpose       "&Uuml;berschrift einer Eintragsspalte in einer Segmentliste">
+<!ENTITY seriesinfo.purpose     "Informationen &uuml;ber die Ver&ouml;ffentlichungsreihe, deren Bestandteil ein Buch ist">
+<!ENTITY seriesvolnums.purpose  "Anzahl der B&auml;nde einer Buchreihe">
+<!ENTITY set.purpose            "Eine Sammlung von B&uuml;chern">
+<!ENTITY setindex.purpose       "Index f&uuml;r eine Sammlung von B&uuml;chern">
+<!ENTITY setinfo.purpose        "Meta-Informationen &uuml;ber ein <sgmltag>Set</sgmltag>">
+<!ENTITY sgmltag.purpose        "Ein Bestandteil von SGML-Markup">
+<!ENTITY shortaffil.purpose     "Eine Kurzbeschreibung der Verbindung eines Individuums mit einer Institution">
+<!ENTITY shortcut.purpose       "Tastaturkombination f&uuml;r eine Aktion, die auch &uuml;ber ein Men&uuml; zug&auml;nglich ist">
+<!ENTITY sidebar.purpose        "Teil eines Dokuments, der vom Rest des Textflusses abgesondert ist">
+<!ENTITY simpara.purpose        "Ein Absatz, der nur Text und Inline-Markup enth&auml;lt, aber keine Blockelemente">
+<!ENTITY simplelist.purpose     "Eine unmarkierte Liste von einzelnen Worten oder Ausdr&uuml;cken">
+<!ENTITY simplesect.purpose     "Ein Teil eines Dokuments ohne Unterabschnitte">
+<!ENTITY spanspec.purpose       "Informationen zur Formatierung einer &uuml;bergreifenden Spalte in einer Tabelle">
+<!ENTITY state.purpose          "Ein Staat oder eine Provinz in einer Adressangabe">
+<!ENTITY step.purpose           "Aktionseinheit in einer <sgmltag>procedure</sgmltag>">
+<!ENTITY street.purpose         "Eine Stra&szlig;e in einer Adressangabe">
+<!ENTITY structfield.purpose    "Ein Feld in einer Struktur (im Sinne einer Programmiersprache)">
+<!ENTITY structname.purpose     "Name einer Struktur (im Sinne einer Programmiersprache)">
+<!ENTITY subject.purpose        "Ein Teil einer Gruppe von Begriffen, die das Thema eines Dokuments beschreiben">
+<!ENTITY subjectset.purpose     "Eine Gruppe von Begriffen, die das Thema eines Dokuments beschreiben">
+<!ENTITY subjectterm.purpose    "Ein Begriff aus einer Gruppe von Begriffen, die das Thema eines Dokuments beschreiben">
+<!ENTITY subscript.purpose      "Ein tiefergestelltes Zeichen (wie in H<subscript>2</subscript>O, der Molekularformel f&uuml;r Wasser)">
+<!ENTITY substeps.purpose       "Ein wrapper f&uuml;r Schritte, die innerhalb von Schritten in einer <sgmltag>procedure</sgmltag> auftreten">
+<!ENTITY subtitle.purpose       "Der Untertitel eines Dokuments">
+<!ENTITY superscript.purpose    "Ein hochgestelltes Zeichen (wie in x<superscript>2</superscript>, der mathematischen Notation f&uuml;r x mit sich selber multipliziert)">
+<!ENTITY surname.purpose        'Ein Familienname; in westlichen Kulturen der <quote>Nachname</quote>'>
+<!ENTITY symbol.purpose         "Ein Name, der vor der Verarbeitung durch einen Wert ersetzt wird">
+<!ENTITY synopfragment.purpose  "Ein Teil einer <sgmltag>CmdSynopsis</sgmltag>, der aus dem Hauptteil der &Uuml;bersicht herausgel&ouml;st ist">
+<!ENTITY synopfragmentref.purpose "Referenz auf einen Teil einer Kommando&uuml;bersicht">
+<!ENTITY synopsis.purpose       "Ein allgemeines Element zur Darstellung der Syntax von Kommandos oder Funktionen">
+<!ENTITY systemitem.purpose     "Ein systembezogener Gegenstand oder Begriff">
+<!ENTITY table.purpose          "Eine formelle Tabelle in einem Dokument">
+<!ENTITY tbody.purpose          "Ein Wrapper f&uuml;r die Reihen einer formellen oder informellen Tabelle">
+<!ENTITY term.purpose           "Das Wort oder der Ausdruck, der in einem Eintrag einer Variablenaufz&auml;hlung definiert oder erkl&auml;rt wird">
+<!ENTITY tertiary.purpose       "Terti&auml;rer Eintrag, unter dem ein Begriff im Index aufgef&uuml;hrt werden soll">
+<!ENTITY tertiaryie.purpose     "Ein terti&auml;rer Begriff im Index, nicht im Text">
+<!ENTITY tfoot.purpose          "Fu&szlig;note einer Tabelle, die aus einer oder mehreren Zeilen besteht">
+<!ENTITY tgroup.purpose         "Ein Wrapper f&uuml;r den Hauptinhalt einer Tabelle oder eines Tabellenteils">
+<!ENTITY thead.purpose          "Kopfzeile einer Tabelle, die aus einer oder mehreren Reihen besteht">
+<!ENTITY tip.purpose            "Ein Hinweis an den Benutzer, abgesetzt vom &uuml;brigen Text">
+<!ENTITY title.purpose          "Text, der als &Uuml;berschrift in einem Dokumentenabschnitt oder einem formellen Blockelement verwendet wird">
+<!ENTITY titleabbrev.purpose    "Abk&uuml;rzung eines <sgmltag>Title</sgmltag>">
+<!ENTITY toc.purpose            "Ein Inhaltsverzeichnis">
+<!ENTITY tocback.purpose        "Eintrag in einem Inhaltsverzeichnis f&uuml;r Komponenten im Anhang/Nachtrag des Dokuments">
+<!ENTITY tocchap.purpose        "Eintrag in einem Inhaltsverzeichnis f&uuml;r eine Komponente im Hauptteil des Dokuments">
+<!ENTITY tocentry.purpose       "&Uuml;berschrift eines Abschnitts im Inhaltsverzeichnis">
+<!ENTITY tocfront.purpose       "Eintrag in einem Inhaltsverzeichnis f&uuml;r eine Komponente vor dem Hauptteil des Dokuments">
+<!ENTITY toclevel1.purpose      "H&ouml;chster Eintrag im Inhaltsverzeichnis f&uuml;r eine Absatzstruktur">
+<!ENTITY toclevel2.purpose      "Zweih&ouml;chster Eintrag im Inhaltsverzeichnis f&uuml;r eine Absatzstruktur">
+<!ENTITY toclevel3.purpose      "Dritth&ouml;chster Eintrag im Inhaltsverzeichnis f&uuml;r eine Absatzstruktur">
+<!ENTITY toclevel4.purpose      "Vierth&ouml;chster Eintrag im Inhaltsverzeichnis f&uuml;r eine Absatzstruktur">
+<!ENTITY toclevel5.purpose      "F&uuml;nfth&ouml;chster Eintrag im Inhaltsverzeichnis f&uuml;r eine Absatzstruktur">
+<!ENTITY tocpart.purpose        "Eintrag im Inhaltsverzeichnis f&uuml;r einen Buchteil">
+<!ENTITY token.purpose          "Eine Informationseinheit">
+<!ENTITY trademark.purpose      "Ein Warenzeichen">
+<!ENTITY type.purpose           "Klassifizierung eines Werts">
+<!ENTITY ulink.purpose          "Ein Link, der auf sein Ziel mit Hilfe einer URL (Uniform Resource Locator) verweist">
+<!ENTITY userinput.purpose      "Eine Benutzereingabe">
+<!ENTITY varargs.purpose        "Ein leeres Element in einer Funktions&uuml;bersicht, das auf eine variable Anzahl von Argumenten hinweist">
+<!ENTITY variablelist.purpose   "Eine Liste, in der jeder Eintrag aus einer Menge von einem oder mehreren Begriffen und den dazugeh&ouml;rigen Beschreibungen besteht">
+<!ENTITY varlistentry.purpose   "Ein Wrapper f&uuml;r eine Menge von Begriffen und den dazugeh&ouml;rigen Beschreibungen in einer Aufz&auml;hlung von Variablen">
+<!ENTITY void.purpose           "Ein leeres Element in einer Funktions&uuml;bersicht, das darauf hinweist, dass keine Argumente an die Funktion &uuml;bergeben werden k&ouml;nnen">
+<!ENTITY volumenum.purpose      "Bandnummer eines Dokuments in einer Menge von Dokumenten (z.B. eines Buches aus einer Reihe oder eines Artikels in einer Zeitschrift)">
+<!ENTITY warning.purpose        "Warnhinweis, vom Text abgesetzt">
+<!ENTITY wordasword.purpose     "Ein Wort, das w&ouml;rtlich genommen werden soll und nicht in einer &uuml;bertragenen Bedeutung">
+<!ENTITY xref.purpose           "Querverweis auf einen anderen Teil des Dokuments">
+<!ENTITY year.purpose           "Das Jahr der Ver&ouml;ffentlichung eines Dokuments">

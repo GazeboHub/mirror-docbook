@@ -1,0 +1,15 @@
+<!DOCTYPE book SYSTEM "../../../../../DocBook/docbook/docbookx.dtd" [
+
+<!-- Build the expanded version by default -->
+<!ENTITY % unexpanded "IGNORE">
+
+<!-- source in the book content and other entities -->
+<!ENTITY % content SYSTEM "entities/content.ent">
+%content;
+]>
+
+<book id="docbook" lang="de">
+<?dbhtml filename="docbook.html"?>
+&bookinfo;
+&bookbody;
+</book>
