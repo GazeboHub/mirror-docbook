@@ -1,5 +1,5 @@
-<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
-                  "file:/share/doctypes/website-pages/website.dtd">
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.4.0//EN"
+                  "http://docbook.sourceforge.net/release/website/2.4.1/schema/dtd/website.dtd">
 <webpage id="p.xslconfig">
 <config param="rcsdate" value="$Date$"/>
 <config param="footer" value="index.xml" altval="XML Source"/>
@@ -12,11 +12,13 @@
 <para>This experimental project is exploring the use of HTML forms as a way to
 customize the <ulink url="../xsl/">XSL Stylesheets</ulink>.</para>
 
-<itemizedlist>
-<listitem>
-<para><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/xslconfig/">CVS</ulink>.
-</para>
-</listitem>
-</itemizedlist>
+  <itemizedlist>
+    <listitem>
+      <para><ulink
+          url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/xslconfig/"
+          >CVS</ulink>
+      </para>
+    </listitem>
+  </itemizedlist>
 
 </webpage>

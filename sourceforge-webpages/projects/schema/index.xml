@@ -1,5 +1,5 @@
-<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
-          "http://docbook.sourceforge.net/release/website/snapshot/website.dtd">
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.4.0//EN"
+          "http://docbook.sourceforge.net/release/website/2.4.1/schema/dtd/website.dtd">
 <webpage id="p.schema">
 <config param="rcsdate" value="$Date$"/>
 <config param="footer" value="index.xml" altval="XML Source"/>
@@ -44,7 +44,12 @@ previously only been expressed in prose.
 </varlistentry>
 </variablelist>
 
-<para><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/schema/">CVS</ulink>
-</para>
-
+  <itemizedlist>
+    <listitem>
+      <para><ulink
+          url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/schema/"
+          >CVS</ulink>
+      </para>
+    </listitem>
+  </itemizedlist>
 </webpage>

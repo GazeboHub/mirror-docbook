@@ -1,5 +1,5 @@
-<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
-                  "file:/share/doctypes/website-pages/website.dtd">
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.4.0//EN"
+                  "http://docbook.sourceforge.net/release/website/2.4.1/schema/dtd/website.dtd">
 <webpage id="p.sourceforge-webpages">
 <config param="desc" value="SourceForge Webpages"/>
 <config param="rcsdate" value="$Date$"/>
@@ -11,14 +11,16 @@
 </head>
 
 <para>The XML sources for the web pages at
-<ulink url="http://docbook.sourceforge.net/"/>. (These very pages!)
+<ulink url="http://docbook.sourceforge.net/"/> (These very pages!)
 </para>
 
-<itemizedlist>
-<listitem>
-<para><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/sourceforge-webpages/">CVS</ulink>.
-</para>
-</listitem>
-</itemizedlist>
+  <itemizedlist>
+    <listitem>
+      <para><ulink
+          url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/sourceforge-webpages/"
+          >CVS</ulink>
+      </para>
+    </listitem>
+  </itemizedlist>
 
 </webpage>

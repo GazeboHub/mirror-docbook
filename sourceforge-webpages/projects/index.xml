@@ -1,5 +1,5 @@
-<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
-                  "file:/share/doctypes/website-pages/website.dtd" [
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.4.0//EN"
+                  "http://docbook.sourceforge.net/release/website/2.4.1/schema/dtd/website.dtd" [
 <!ENTITY cvs.xml SYSTEM "../cvs.xml" NDATA SGML>
 ]>
 <webpage id="projects">
@@ -14,10 +14,10 @@
 </head>
 
 <para>This page describes all of the packages contained in this
-project. These are available <olink targetdocent="cvs.xml">via CVS</olink>.
+  project. These are available <ulink url="../cvs.html">via CVS</ulink>.
 </para>
 
-<variablelist>
+  <variablelist>
 <varlistentry>
 <term><ulink url="contrib/">Contrib</ulink></term>
 <listitem><para>Contributions to the projects.
@@ -123,14 +123,7 @@ CVS tree or to build a new release.
 </para></listitem>
 </varlistentry>
 -->
-
-<varlistentry><term>T.B.A.</term>
-<listitem><para>A whole bunch of other projects are being added as
-construction continues.
-</para></listitem>
-</varlistentry>
 </variablelist>
-
 <webtoc/>
 
 </webpage>
