@@ -58,7 +58,7 @@ itermset, modespec, objectinfo, partinfo, prefaceinfo, primary, refentryinfo,
 referenceinfo, refmeta, refsect1info, refsect2info, refsect3info, 
 refsectioninfo, refsynopsisdivinfo, revhistory, screeninfo, secondary,
 sect1info, sect2info, sect3info, sect4info, sect5info, sectioninfo, see,
-seealso, setindexinfo, setinfo, sidebarinfo, spanspec, tertiary {
+seealso, setindexinfo, setinfo, sidebarinfo, spanspec, tertiary, titleabbrev {
 	display:none;
 }
 
