@@ -6,6 +6,7 @@
   <config param="footer" value="docs.xml" altval="XML Source"/>
   <head>
     <title>Documentation</title>
+    <titleabbrev>Docs</titleabbrev>
     <summary>DocBook guides</summary>
     <keywords>DocBook, SourceForge, documentation, docs</keywords>
   </head>
