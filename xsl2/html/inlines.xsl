@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-		xmlns="http://www.w3.org/1999/xhtml"
-		xmlns:f="http://docbook.org/xslt/ns/extension"
-		xmlns:m="http://docbook.org/xslt/ns/mode"
-		xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
-		xmlns:db="http://docbook.org/docbook-ng"
-		exclude-result-prefixes="f m fn db"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
+                xmlns:f="http://docbook.org/xslt/ns/extension"
+                xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
+                xmlns:m="http://docbook.org/xslt/ns/mode"
+                xmlns:xlink='http://www.w3.org/1999/xlink'
+                exclude-result-prefixes="db doc f fn m xlink"
                 version="2.0">
 
 <!-- ********************************************************************
@@ -18,13 +20,140 @@
 
      ******************************************************************** -->
 
+<!-- ============================================================ -->
+
+<doc:template name="simple.xlink" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Handle xlink:href attributes on inlines</refpurpose>
+
+<refdescription>
+<para>This template generates XHTML anchors for inline elements that
+have xlink:href attributes.</para>
+
+<note>
+<para>Nested anchors can occur this way and this code does not, at
+present, “unwrap” them as it should.</para>
+</note>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The node for which markup is being generated; the one that might
+have the xlink:href attribute.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>content</term>
+<listitem>
+<para>The content of the link. This defaults to the result of
+calling “apply templates” with <parameter>node</parameter> as the
+context item.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The result tree markup for the node.</para>
+</refreturn>
+</doc:template>
+
 <xsl:template name="simple.xlink">
+  <xsl:param name="node" select="."/>
   <xsl:param name="content">
     <xsl:apply-templates/>
   </xsl:param>
 
-  <xsl:copy-of select="$content"/>
+  <xsl:variable name="link">
+    <xsl:choose>
+      <xsl:when test="$node/@xlink:href
+		      and (not($node/@xlink:type)
+		           or $node/@xlink:type='simple')">
+	<a>
+	  <xsl:if test="$node/@xlink.title">
+	    <xsl:attribute name="title" select="$node/@xlink:title"/>
+	  </xsl:if>
+
+	  <xsl:attribute name="href">
+	    <xsl:choose>
+	      <!-- if the href starts with # and does not contain an "(" -->
+              <!-- or if the href starts with #xpointer(id(, it's just an ID -->
+              <xsl:when test="starts-with($node/@xlink:href,'#')
+                              and (not(contains($node/@xlink:href,'&#40;'))
+                              or starts-with($node/@xlink:href,
+			                     '#xpointer&#40;id&#40;'))">
+                <xsl:variable name="idref">
+                  <xsl:call-template name="xpointer.idref">
+                    <xsl:with-param name="xpointer" select="$node/@xlink:href"/>
+                  </xsl:call-template>
+                </xsl:variable>
+
+                <xsl:variable name="target" select="key('id',$idref)[1]"/>
+
+                <xsl:choose>
+                  <xsl:when test="not($target)">
+		    <xsl:message>
+		      <xsl:text>XLink to nonexistent id: </xsl:text>
+		      <xsl:value-of select="$idref"/>
+		    </xsl:message>
+                    <xsl:text>???</xsl:text>
+                  </xsl:when>
+		  <xsl:otherwise>
+		    <xsl:attribute name="href" select="f:href($target)"/>
+		  </xsl:otherwise>
+		</xsl:choose>
+              </xsl:when>
+
+              <!-- otherwise it's a URI -->
+              <xsl:otherwise>
+		<xsl:value-of select="$node/@xlink:href"/>
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:attribute>
+          <xsl:copy-of select="$content"/>
+        </a>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:copy-of select="$content"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:copy-of select="$link"/>
 </xsl:template>
+
+<!-- ============================================================ -->
+
+<doc:template name="inline.charseq" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Handles simple inline elements</refpurpose>
+
+<refdescription>
+<para>This template generates simple inline markup for the context
+node, assumed to be an element.</para>
+<para>Specifically, it generates a <tag>span</tag> with a
+<tag class="attribute">class</tag> attribute. It also handles any
+necessary <sgmltag class="attribute">id</sgmltag> or
+<sgmltag class="attribute">dir</sgmltag> attributes.</para>
+<para>If the element has an <sgmltag>alt</sgmltag> element among its
+children, the string-value of that element will be used as the
+<sgmltag class="attribute">title</sgmltag> of the span.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>content</term>
+<listitem>
+<para>The content of the element. This defaults to the result of
+calling “apply templates” with the current context node.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The result tree markup for the element.</para>
+</refreturn>
+</doc:template>
 
 <xsl:template name="inline.charseq">
   <xsl:param name="content">
@@ -47,6 +176,39 @@
   </span>
 </xsl:template>
 
+<!-- ============================================================ -->
+
+<doc:template name="inline.monoseq" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Handles monospace inline elements</refpurpose>
+
+<refdescription>
+<para>This template generates monospace inline markup for the context
+node, assumed to be an element.</para>
+<para>Specifically, it generates a <tag>tt</tag> with a
+<tag class="attribute">class</tag> attribute. It also handles any
+necessary <sgmltag class="attribute">id</sgmltag> or
+<sgmltag class="attribute">dir</sgmltag> attributes.</para>
+<para>If the element has an <sgmltag>alt</sgmltag> element among its
+children, the string-value of that element will be used as the
+<sgmltag class="attribute">title</sgmltag> of the <tag>tt</tag>.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>content</term>
+<listitem>
+<para>The content of the element. This defaults to the result of
+calling “apply templates” with the current context node.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The result tree markup for the element.</para>
+</refreturn>
+</doc:template>
+
 <xsl:template name="inline.monoseq">
   <xsl:param name="content">
     <xsl:call-template name="simple.xlink"/>
@@ -67,6 +229,39 @@
     <xsl:copy-of select="$content"/>
   </tt>
 </xsl:template>
+
+<!-- ============================================================ -->
+
+<doc:template name="inline.boldseq" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Handles bold inline elements</refpurpose>
+
+<refdescription>
+<para>This template generates bold inline markup for the context
+node, assumed to be an element.</para>
+<para>Specifically, it generates a <tag>strong</tag> with a
+<tag class="attribute">class</tag> attribute. It also handles any
+necessary <sgmltag class="attribute">id</sgmltag> or
+<sgmltag class="attribute">dir</sgmltag> attributes.</para>
+<para>If the element has an <sgmltag>alt</sgmltag> element among its
+children, the string-value of that element will be used as the
+<sgmltag class="attribute">title</sgmltag> of the <tag>strong</tag>.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>content</term>
+<listitem>
+<para>The content of the element. This defaults to the result of
+calling “apply templates” with the current context node.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The result tree markup for the element.</para>
+</refreturn>
+</doc:template>
 
 <xsl:template name="inline.boldseq">
   <xsl:param name="content">
@@ -89,6 +284,39 @@
   </strong>
 </xsl:template>
 
+<!-- ============================================================ -->
+
+<doc:template name="inline.italicseq" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Handles italic inline elements</refpurpose>
+
+<refdescription>
+<para>This template generates italic inline markup for the context
+node, assumed to be an element.</para>
+<para>Specifically, it generates a <tag>em</tag> with a
+<tag class="attribute">class</tag> attribute. It also handles any
+necessary <sgmltag class="attribute">id</sgmltag> or
+<sgmltag class="attribute">dir</sgmltag> attributes.</para>
+<para>If the element has an <sgmltag>alt</sgmltag> element among its
+children, the string-value of that element will be used as the
+<sgmltag class="attribute">title</sgmltag> of the <tag>em</tag>.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>content</term>
+<listitem>
+<para>The content of the element. This defaults to the result of
+calling “apply templates” with the current context node.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The result tree markup for the element.</para>
+</refreturn>
+</doc:template>
+
 <xsl:template name="inline.italicseq">
   <xsl:param name="content">
     <xsl:call-template name="simple.xlink"/>
@@ -109,6 +337,44 @@
     <xsl:copy-of select="$content"/>
   </em>
 </xsl:template>
+
+<!-- ============================================================ -->
+
+<doc:template name="inline.boldmonoseq" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Handles bold, monospace inline elements</refpurpose>
+
+<refdescription>
+<para>This template generates bold, monospace inline markup for the context
+node, assumed to be an element.</para>
+<para>Specifically, it generates a <tag>strong</tag> with a
+<tag class="attribute">class</tag> attribute and possibly an
+<sgmltag class="attribute">id</sgmltag>.</para>
+
+<para>If the element has an
+<sgmltag>alt</sgmltag> element among its children, the string-value of
+that element will be used as the <sgmltag
+class="attribute">title</sgmltag> of the <tag>strong</tag>.</para>
+
+<para>Inside the <tag>strong</tag>, it generates a <tag>tt</tag> with
+a <sgmltag class="attribute">dir</sgmltag> attribute, if
+appropriate.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>content</term>
+<listitem>
+<para>The content of the element. This defaults to the result of
+calling “apply templates” with the current context node.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The result tree markup for the element.</para>
+</refreturn>
+</doc:template>
 
 <xsl:template name="inline.boldmonoseq">
   <xsl:param name="content">
@@ -133,6 +399,44 @@
   </strong>
 </xsl:template>
 
+<!-- ============================================================ -->
+
+<doc:template name="inline.italicmonoseq" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Handles italic, monospace inline elements</refpurpose>
+
+<refdescription>
+<para>This template generates italic, monospace inline markup for the context
+node, assumed to be an element.</para>
+<para>Specifically, it generates a <tag>em</tag> with a
+<tag class="attribute">class</tag> attribute and possibly an
+<sgmltag class="attribute">id</sgmltag>.</para>
+
+<para>If the element has an
+<sgmltag>alt</sgmltag> element among its children, the string-value of
+that element will be used as the <sgmltag
+class="attribute">title</sgmltag> of the <tag>em</tag>.</para>
+
+<para>Inside the <tag>em</tag>, it generates a <tag>tt</tag> with
+a <sgmltag class="attribute">dir</sgmltag> attribute, if
+appropriate.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>content</term>
+<listitem>
+<para>The content of the element. This defaults to the result of
+calling “apply templates” with the current context node.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The result tree markup for the element.</para>
+</refreturn>
+</doc:template>
+
 <xsl:template name="inline.italicmonoseq">
   <xsl:param name="content">
     <xsl:call-template name="simple.xlink"/>
@@ -156,6 +460,40 @@
   </em>
 </xsl:template>
 
+<!-- ============================================================ -->
+
+<doc:template name="inline.superscriptseq" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Handles superscript inline elements</refpurpose>
+
+<refdescription>
+<para>This template generates superscript inline markup for the context
+node, assumed to be an element.</para>
+<para>Specifically, it generates a <tag>sup</tag> with a
+<tag class="attribute">class</tag> attribute. It also handles any
+necessary <sgmltag class="attribute">id</sgmltag> or
+<sgmltag class="attribute">dir</sgmltag> attributes.</para>
+
+<para>If the element has an <sgmltag>alt</sgmltag> element among its
+children, the string-value of that element will be used as the
+<sgmltag class="attribute">title</sgmltag> of the <tag>sup</tag>.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>content</term>
+<listitem>
+<para>The content of the element. This defaults to the result of
+calling “apply templates” with the current context node.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The result tree markup for the element.</para>
+</refreturn>
+</doc:template>
+
 <xsl:template name="inline.superscriptseq">
   <xsl:param name="content">
     <xsl:call-template name="simple.xlink"/>
@@ -177,6 +515,40 @@
   </sup>
 </xsl:template>
 
+<!-- ============================================================ -->
+
+<doc:template name="inline.subscriptseq" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Handles subscript inline elements</refpurpose>
+
+<refdescription>
+<para>This template generates subscript inline markup for the context
+node, assumed to be an element.</para>
+<para>Specifically, it generates a <tag>sub</tag> with a
+<tag class="attribute">class</tag> attribute. It also handles any
+necessary <sgmltag class="attribute">id</sgmltag> or
+<sgmltag class="attribute">dir</sgmltag> attributes.</para>
+
+<para>If the element has an <sgmltag>alt</sgmltag> element among its
+children, the string-value of that element will be used as the
+<sgmltag class="attribute">title</sgmltag> of the <tag>sub</tag>.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>content</term>
+<listitem>
+<para>The content of the element. This defaults to the result of
+calling “apply templates” with the current context node.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The result tree markup for the element.</para>
+</refreturn>
+</doc:template>
+
 <xsl:template name="inline.subscriptseq">
   <xsl:param name="content">
     <xsl:call-template name="simple.xlink"/>
@@ -197,6 +569,40 @@
     <xsl:copy-of select="$content"/>
   </sub>
 </xsl:template>
+
+<!-- ============================================================ -->
+
+<doc:template name="format.sgmltag" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Handles markup for the DocBook <tag>tag</tag> element</refpurpose>
+
+<refdescription>
+<para>This template generates markup for the context
+node, assumed to be a <tag>tag</tag> element.</para>
+
+<para>Specifically, it generates a <tag>tt</tag> with a
+<tag class="attribute">class</tag> attribute. It also handles any
+necessary <sgmltag class="attribute">id</sgmltag> attribute.</para>
+
+<para>Depending on the value of the <tag class="attribute">class</tag>
+attribute, additional generated text may be output as well.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>class</term>
+<listitem>
+<para>The class attribute associated with the context element. If
+the context element has no <tag class="attribute">class</tag> attribute,
+the default is “element”.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The result tree markup for the element.</para>
+</refreturn>
+</doc:template>
 
 <xsl:template name="format.sgmltag">
   <xsl:param name="class">
