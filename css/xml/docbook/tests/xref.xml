@@ -1,0 +1,104 @@
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd"
+[
+  <!ATTLIST chapter id ID #IMPLIED>
+  <!ATTLIST section id ID #IMPLIED>
+  <!ATTLIST titleabbrev id ID #IMPLIED>
+]>
+
+<?xml-stylesheet href="../driver.css" type="text/css"?>
+
+<book>
+  <title>XRefs</title>
+
+  <preface>
+    <title>Preface</title>
+
+    <section>
+      <title>The purpose of xref</title>
+
+      <para>DocBook's <sgmltag class="starttag">xref</sgmltag> is used to create
+      hyperlinks within a document.  the <sgmltag>linkend</sgmltag> attribute
+      specifies the element which is the target of the link by referring to the
+      element's <sgmltag>id</sgmltag>.</para>
+
+      <informalexample>
+	<screen><sgmltag class="sgmlcomment"> an element with id="ch02" must exist elsewhere </sgmltag>
+<sgmltag class="emptytag">xref linkend="ch02"</sgmltag></screen>
+      </informalexample>
+    </section>
+
+    <section>
+      <title>Problems in Mozilla</title>
+      <para>Unfortunately for the Mozilla-specific extensions to DocBook-CSS,
+      Mozilla doesn't make use of any DTD specified for XML documents.  This
+      means that Mozilla doesn't know that all DocBook elements have an
+      <sgmltag>id</sgmltag> attribute <emphasis role="strong">of type
+      ID</emphasis>, with the implication that
+      <code>document.getElementById()</code> will not find the target elements
+      we're looking for.</para>
+
+      <para>A nasty work-around for this, as used in this document, is to specify
+      an <wordasword>internal subset</wordasword> that reiterates the description
+      of the <sgmltag>id</sgmltag> attribute for those elements you want to be
+      able to make references to:</para>
+
+      <informalexample>
+	<screen><![CDATA[<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd"
+[
+  <!ATTLIST chapter id ID #IMPLIED>
+  <!ATTLIST section id ID #IMPLIED>
+  <!ATTLIST titleabbrev id ID #IMPLIED>
+]>]]></screen>
+      </informalexample>
+    </section>
+
+  </preface>
+
+  <chapter id="ch01">
+    <title>Samples</title>
+
+    <para>This paragraph demonstrates several features of
+    <sgmltag>XRef</sgmltag>.</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>A straight link generates the cross-reference text:
+	<xref linkend="ch02"/>.</para>
+      </listitem>
+
+      <listitem>
+        <para>A link to an element with an
+	<sgmltag class="attribute">XRefLabel</sgmltag>:
+	<xref linkend="ch03"/>.</para>
+      </listitem>
+
+      <listitem>
+        <para>A link with an <sgmltag class="attribute">EndTerm</sgmltag>:
+        <xref linkend="ch04" endterm="ch04short"/>.</para>
+      </listitem>
+
+      <listitem>
+        <para>A straight link whose target is non-existant:
+	<xref linkend="bogus"/>.</para>
+      </listitem>
+    </itemizedlist>
+  </chapter>
+
+  <chapter id="ch02">
+    <title>The Second Chapter</title>
+    <para>Some content here</para>
+  </chapter>
+
+  <chapter id="ch03" xreflabel="Chapter the Third">
+    <title>The Third Chapter</title>
+    <para>Some content here</para>
+  </chapter>
+
+  <chapter id="ch04">
+    <title>The Fourth Chapter</title>
+    <titleabbrev id="ch04short">Chapter 4</titleabbrev>
+    <para>Some content here</para>
+  </chapter>
+</book>
