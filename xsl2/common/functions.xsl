@@ -3,7 +3,7 @@
                 xmlns:db="http://docbook.org/docbook-ng"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:f="http://docbook.org/xslt/ns/extension"
-                xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
+                xmlns:fn="http://www.w3.org/2004/10/xpath-functions"
                 xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0"
                 xmlns:m="http://docbook.org/xslt/ns/mode"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -372,7 +372,7 @@ style should be calculated.</para>
     </xsl:when>
 
     <xsl:otherwise>
-      <xsl:value-of select="f:orderedlist-starting-number(parent::db:orderedlist)"/>
+      <xsl:value-of select="f:orderedlist-starting-number($node/parent::db:orderedlist)"/>
     </xsl:otherwise>
   </xsl:choose>
 </xsl:function>
@@ -478,7 +478,7 @@ a number style should be calculated.</para>
     <xsl:otherwise>
       <xsl:choose>
         <xsl:when test="$node/ancestor::itemizedlist">
-	  <xsl:value-of select="f:next-itemizedlist-symbol(f:itemized-list-symbol($node/ancestor::db:itemizedlist[1]))"/>
+	  <xsl:value-of select="f:next-itemizedlist-symbol(f:itemizedlist-symbol($node/ancestor::db:itemizedlist[1]))"/>
 	</xsl:when>
         <xsl:otherwise>
 	  <xsl:value-of select="f:next-itemizedlist-symbol('default')"/>

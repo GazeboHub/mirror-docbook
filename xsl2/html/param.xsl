@@ -4,12 +4,25 @@
                 xmlns:db="http://docbook.org/docbook-ng"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:f="http://docbook.org/xslt/ns/extension"
-                xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
+                xmlns:fn="http://www.w3.org/2004/10/xpath-functions"
                 xmlns:h="http://www.w3.org/1999/xhtml"
                 xmlns:m="http://docbook.org/xslt/ns/mode"
                 xmlns:t="http://docbook.org/xslt/ns/template"
 		exclude-result-prefixes="h f m fn db t doc"
                 version="2.0">
+
+<xsl:param name="root.filename" select="'index'"/>
+<xsl:param name="html.ext" select="'.html'"/>
+<xsl:param name="use.id.as.filename" select="0"/>
+
+<xsl:param name="dateTime-format" select="'[D01] [MNn,*-3] [Y0001]'"/>
+<xsl:param name="date-format" select="'[D01] [MNn,*-3] [Y0001]'"/>
+<xsl:param name="gYearMonth-format" select="'[MNn,*-3] [Y0001]'"/>
+<xsl:param name="gYear-format" select="'[Y0001]'"/>
+
+<xsl:param name="docbook.css"
+	   select="'/sourceforge/docbook/xsl2/html/docbook.css'"/>
+<xsl:param name="docbook.css.inline" select="0"/>
 
 <xsl:param name="toc.list.type">dl</xsl:param>
 <xsl:param name="manual.toc" select="''"/>

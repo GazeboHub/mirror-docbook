@@ -4,7 +4,7 @@
 		xmlns:h="http://www.w3.org/1999/xhtml"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
-		xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
+		xmlns:fn="http://www.w3.org/2004/10/xpath-functions"
 		xmlns:db="http://docbook.org/docbook-ng"
 		exclude-result-prefixes="h f m fn db"
                 version="2.0">
@@ -42,14 +42,13 @@
   </xsl:choose>
 </xsl:template>
 
-<xsl:template match="db:figure">
+<xsl:template match="db:figure|db:example">
   <xsl:variable name="titlepage"
 		select="$titlepages/*[fn:node-name(.)
 			              = fn:node-name(current())][1]"/>
   <div class="{local-name(.)}">
     <xsl:call-template name="id"/>
     <xsl:call-template name="class"/>
-    <xsl:apply-templates/>
 
     <xsl:call-template name="titlepage">
       <xsl:with-param name="content" select="$titlepage"/>
@@ -57,6 +56,25 @@
 
     <xsl:apply-templates select="*[not(self::db:info)]"/>
   </div>
+</xsl:template>
+
+<xsl:template match="db:epigraph">
+  <div class="{local-name(.)}">
+      <xsl:apply-templates select="*[not(self::db:attribution)]"/>
+      <xsl:if test="db:attribution">
+        <div class="attribution">
+          <span>—<xsl:apply-templates select="db:attribution"/></span>
+        </div>
+      </xsl:if>
+  </div>
+</xsl:template>
+
+<xsl:template match="db:attribution">
+  <span class="{local-name(.)}"><xsl:apply-templates/></span>
+</xsl:template>
+
+<xsl:template match="db:ackno">
+  <div class="{local-name(.)}"><xsl:apply-templates/></div>
 </xsl:template>
 
 </xsl:stylesheet>

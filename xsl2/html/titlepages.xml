@@ -98,6 +98,24 @@
   <!-- nop -->
 </db:refentry>
 
+<db:preface t:side="recto">
+  <div class="preface-titlepage">
+    <db:title/>
+    <db:subtitle/>
+    <db:corpauthor/>
+    <db:authorgroup/>
+    <db:author/>
+    <db:othercredit/>
+    <db:releaseinfo/>
+    <db:copyright/>
+    <db:legalnotice/>
+    <db:pubdate/>
+    <db:revision/>
+    <db:revhistory/>
+    <db:abstract/>
+  </div>
+</db:preface>
+
 <db:chapter t:side="recto">
   <div class="chapter-titlepage">
     <db:title/>
@@ -116,6 +134,24 @@
   </div>
 </db:chapter>
 
+<db:appendix t:side="recto">
+  <div class="appendix-titlepage">
+    <db:title/>
+    <db:subtitle/>
+    <db:corpauthor/>
+    <db:authorgroup/>
+    <db:author/>
+    <db:othercredit/>
+    <db:releaseinfo/>
+    <db:copyright/>
+    <db:legalnotice/>
+    <db:pubdate/>
+    <db:revision/>
+    <db:revhistory/>
+    <db:abstract/>
+  </div>
+</db:appendix>
+
 <db:bibliography t:side="recto">
   <div class="bibliography-titlepage">
     <db:title/>
@@ -123,7 +159,11 @@
   </div>
 </db:bibliography>
 
-<db:bibliography t:side="verso"/>
+<db:bibliodiv t:side="recto">
+  <div class="bibliography-titlepage">
+    <db:title/>
+  </div>
+</db:bibliodiv>
 
 <db:glossary t:side="recto">
   <div class="glossary-titlepage">
@@ -175,6 +215,30 @@
 <db:figure>
   <db:title/>
 </db:figure>
+
+<db:figure>
+  <db:example/>
+</db:figure>
+
+<db:note>
+  <db:title/>
+</db:note>
+
+<db:tip>
+  <db:title/>
+</db:tip>
+
+<db:caution>
+  <db:title/>
+</db:caution>
+
+<db:warning>
+  <db:title/>
+</db:warning>
+
+<db:important>
+  <db:title/>
+</db:important>
 
 </t:titlepages>
 

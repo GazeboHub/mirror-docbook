@@ -5,13 +5,14 @@
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:t="http://docbook.org/xslt/ns/template"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
-		xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
+		xmlns:fn="http://www.w3.org/2004/10/xpath-functions"
 		xmlns:db="http://docbook.org/docbook-ng"
 		exclude-result-prefixes="h f m fn db t"
                 version="2.0">
 
   <xsl:include href="param.xsl"/>
   <xsl:include href="../common/l10n.xsl"/>
+  <xsl:include href="../common/spspace.xsl"/>
   <xsl:include href="../common/gentext.xsl"/>
   <xsl:include href="../common/normalize.xsl"/>
   <xsl:include href="../common/root.xsl"/>
@@ -30,10 +31,13 @@
   <xsl:include href="synopsis.xsl"/>
   <xsl:include href="section.xsl"/>
   <xsl:include href="biblio.xsl"/>
+  <xsl:include href="info.xsl"/>
   <xsl:include href="glossary.xsl"/>
   <xsl:include href="lists.xsl"/>
   <xsl:include href="blocks.xsl"/>
+  <xsl:include href="admonitions.xsl"/>
   <xsl:include href="verbatim.xsl"/>
+  <xsl:include href="qandaset.xsl"/>
   <xsl:include href="inlines.xsl"/>
   <xsl:include href="xref.xsl"/>
   <xsl:include href="html.xsl"/>
@@ -68,6 +72,7 @@
 	      </xsl:otherwise>
 	    </xsl:choose>
 	  </title>
+	  <xsl:call-template name="css-style"/>
 	</head>
 	<body>
 	  <xsl:apply-templates select="."/>

@@ -4,7 +4,7 @@
 		xmlns:h="http://www.w3.org/1999/xhtml"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
-		xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
+		xmlns:fn="http://www.w3.org/2004/10/xpath-functions"
 		xmlns:db="http://docbook.org/docbook-ng"
 		xmlns:t="http://docbook.org/xslt/ns/template"
 		exclude-result-prefixes="h f m fn db t"
@@ -100,6 +100,9 @@
 	</xsl:call-template>
       </xsl:if>
     </xsl:if>
+
+    <xsl:apply-templates select="*[not(self::db:info)
+				   and not(self::db:glossentry)]"/>
 
     <dl>
       <xsl:apply-templates select="db:glossentry"/>

@@ -5,7 +5,7 @@
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:ex="http://nwalsh.com/xsl/exceptions"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
-		xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
+		xmlns:fn="http://www.w3.org/2004/10/xpath-functions"
 		xmlns:h="http://www.w3.org/1999/xhtml"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
 		xmlns:t="http://docbook.org/xslt/ns/template"

@@ -4,7 +4,7 @@
 		xmlns:h="http://www.w3.org/1999/xhtml"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
-		xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
+		xmlns:fn="http://www.w3.org/2004/10/xpath-functions"
 		xmlns:db="http://docbook.org/docbook-ng"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
 		exclude-result-prefixes="h f m fn db xs"
@@ -148,6 +148,169 @@
     <xsl:call-template name="id"/>
     <xsl:apply-templates/>
   </dd>
+</xsl:template>
+
+<!-- ============================================================ -->
+
+<xsl:template match="db:simplelist[not(@type) or @type='vert']">
+  <table class="{local-name(.)}" border="0" summary="Simple list">
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+
+    <xsl:call-template name="simplelist.vert">
+      <xsl:with-param name="cols" select="if (@columns) then @columns else 1"/>
+    </xsl:call-template>
+  </table>
+</xsl:template>
+
+<xsl:template match="db:simplelist[@type='horiz']">
+  <table class="{local-name(.)}" border="0" summary="Simple list">
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+
+    <xsl:call-template name="simplelist.horiz">
+      <xsl:with-param name="cols" select="if (@columns) then @columns else 1"/>
+    </xsl:call-template>
+  </table>
+</xsl:template>
+
+<xsl:template match="db:simplelist[@type='inline']">
+  <span class="{local-name(.)}">
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+    <xsl:apply-templates/>
+  </span>
+</xsl:template>
+
+<xsl:template name="simplelist.horiz">
+  <xsl:param name="cols" select="1"/>
+  <xsl:param name="cell" select="1"/>
+  <xsl:param name="members" select="db:member"/>
+
+  <xsl:if test="$cell &lt;= count($members)">
+    <tr>
+<!--
+      <xsl:call-template name="tr.attributes">
+        <xsl:with-param name="row" select="$members[1]"/>
+        <xsl:with-param name="rownum" select="(($cell - 1) div $cols) + 1"/>
+      </xsl:call-template>
+-->
+
+      <xsl:call-template name="simplelist.horiz.row">
+        <xsl:with-param name="cols" select="$cols"/>
+        <xsl:with-param name="cell" select="$cell"/>
+        <xsl:with-param name="members" select="$members"/>
+      </xsl:call-template>
+   </tr>
+    <xsl:call-template name="simplelist.horiz">
+      <xsl:with-param name="cols" select="$cols"/>
+      <xsl:with-param name="cell" select="$cell + $cols"/>
+      <xsl:with-param name="members" select="$members"/>
+    </xsl:call-template>
+  </xsl:if>
+</xsl:template>
+
+<xsl:template name="simplelist.horiz.row">
+  <xsl:param name="cols" select="1"/>
+  <xsl:param name="cell" select="1"/>
+  <xsl:param name="members" select="db:member"/>
+  <xsl:param name="curcol" select="1"/>
+
+  <xsl:if test="$curcol &lt;= $cols">
+    <td>
+      <xsl:choose>
+        <xsl:when test="$members[position()=$cell]">
+          <xsl:apply-templates select="$members[position()=$cell]"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:text>&#160;</xsl:text>
+        </xsl:otherwise>
+      </xsl:choose>
+    </td>
+    <xsl:call-template name="simplelist.horiz.row">
+      <xsl:with-param name="cols" select="$cols"/>
+      <xsl:with-param name="cell" select="$cell+1"/>
+      <xsl:with-param name="members" select="$members"/>
+      <xsl:with-param name="curcol" select="$curcol+1"/>
+    </xsl:call-template>
+  </xsl:if>
+</xsl:template>
+
+<xsl:template name="simplelist.vert">
+  <xsl:param name="cols" select="1"/>
+  <xsl:param name="cell" select="1"/>
+  <xsl:param name="members" select="db:member"/>
+  <xsl:param name="rows"
+             select="floor((count($members)+$cols - 1) div $cols)"/>
+
+  <xsl:if test="$cell &lt;= $rows">
+    <tr>
+<!--
+      <xsl:call-template name="tr.attributes">
+        <xsl:with-param name="row" select="$members[1]"/>
+        <xsl:with-param name="rownum" select="$cell"/>
+      </xsl:call-template>
+-->
+
+      <xsl:call-template name="simplelist.vert.row">
+        <xsl:with-param name="cols" select="$cols"/>
+        <xsl:with-param name="rows" select="$rows"/>
+        <xsl:with-param name="cell" select="$cell"/>
+        <xsl:with-param name="members" select="$members"/>
+      </xsl:call-template>
+    </tr>
+    <xsl:call-template name="simplelist.vert">
+      <xsl:with-param name="cols" select="$cols"/>
+      <xsl:with-param name="cell" select="$cell+1"/>
+      <xsl:with-param name="members" select="$members"/>
+      <xsl:with-param name="rows" select="$rows"/>
+    </xsl:call-template>
+  </xsl:if>
+</xsl:template>
+
+<xsl:template name="simplelist.vert.row">
+  <xsl:param name="cols" select="1"/>
+  <xsl:param name="rows" select="1"/>
+  <xsl:param name="cell" select="1"/>
+  <xsl:param name="members" select="db:member"/>
+  <xsl:param name="curcol" select="1"/>
+
+  <xsl:if test="$curcol &lt;= $cols">
+    <td>
+      <xsl:choose>
+        <xsl:when test="$members[position()=$cell]">
+          <xsl:apply-templates select="$members[position()=$cell]"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:text>&#160;</xsl:text>
+        </xsl:otherwise>
+      </xsl:choose>
+    </td>
+    <xsl:call-template name="simplelist.vert.row">
+      <xsl:with-param name="cols" select="$cols"/>
+      <xsl:with-param name="rows" select="$rows"/>
+      <xsl:with-param name="cell" select="$cell+$rows"/>
+      <xsl:with-param name="members" select="$members"/>
+      <xsl:with-param name="curcol" select="$curcol+1"/>
+    </xsl:call-template>
+  </xsl:if>
+</xsl:template>
+
+<xsl:template match="db:member">
+  <span class="{local-name(.)}">
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+    <xsl:apply-templates/>
+  </span>
+</xsl:template>
+
+<xsl:template match="db:simplelist[@type='inline']/db:member">
+  <span class="{local-name(.)}">
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+    <xsl:apply-templates/>
+  </span>
+  <xsl:if test="following-sibling::db:member">, </xsl:if>
 </xsl:template>
 
 </xsl:stylesheet>

@@ -3,7 +3,7 @@
 		xmlns:db="http://docbook.org/docbook-ng"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
-		xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
+		xmlns:fn="http://www.w3.org/2004/10/xpath-functions"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
 		exclude-result-prefixes="db doc f fn m xs"
@@ -72,7 +72,6 @@ and <tag>othercredit</tag>) or with the locale.</para>
 </doc:template>
 
 <xsl:template name="person-name">
-  <!-- Formats a personal name. Handles corpauthor as a special case. -->
   <xsl:param name="node" select="."/>
 
   <xsl:variable name="style">
@@ -90,16 +89,8 @@ and <tag>othercredit</tag>) or with the locale.</para>
   </xsl:variable>
 
   <xsl:choose>
-    <!-- the personname element is a specialcase -->
-    <xsl:when test="$node/self::db:personname">
-      <xsl:call-template name="person-name">
-        <xsl:with-param name="node" select="$node/db:personname"/>
-      </xsl:call-template>
-    </xsl:when>
-
-    <!-- handle corpauthor as a special case...-->
-    <xsl:when test="$node/self::db:corpauthor">
-      <xsl:apply-templates select="$node"/>
+    <xsl:when test="$node/db:orgname">
+      <xsl:apply-templates select="$node/db:orgname"/>
     </xsl:when>
 
     <xsl:otherwise>
@@ -156,7 +147,11 @@ template.</para>
 
   <!-- The family-given style applies a convention for identifying given -->
   <!-- and family names in locales where it may be ambiguous -->
-  <xsl:apply-templates select="$node//db:surname[1]"/>
+  <xsl:variable name="surname">
+    <xsl:apply-templates select="$node//db:surname[1]"/>
+  </xsl:variable>
+
+  <xsl:apply-templates select="$surname/node()" mode="m:to-uppercase"/>
 
   <xsl:if test="$node//db:surname and $node//db:firstname">
     <xsl:text> </xsl:text>
@@ -165,6 +160,37 @@ template.</para>
   <xsl:apply-templates select="$node//db:firstname[1]"/>
 
   <xsl:text> [FAMILY Given]</xsl:text>
+</xsl:template>
+
+<!-- ============================================================ -->
+
+<doc:mode name="m:to-uppercase" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for converting text to upper-case</refpurpose>
+
+<refdescription>
+<para>This mode is used to convert the text in a subtree to upper-case.
+It returns a copy of the subtree with all <code>text()</code> nodes
+converted to upper-case.</para>
+</refdescription>
+</doc:mode>
+
+<xsl:template match="/" mode="m:to-uppercase">
+  <xsl:apply-templates mode="m:to-uppercase"/>
+</xsl:template>
+
+<xsl:template match="*" mode="m:to-uppercase">
+  <xsl:copy>
+    <xsl:copy-of select="@*"/>
+    <xsl:apply-templates mode="m:to-uppercase"/>
+  </xsl:copy>
+</xsl:template>
+
+<xsl:template match="processing-instruction()|comment()" mode="m:to-uppercase">
+  <xsl:copy/>
+</xsl:template>
+
+<xsl:template match="text()" mode="m:to-uppercase">
+  <xsl:value-of select="upper-case(.)"/>
 </xsl:template>
 
 <!-- ============================================================ -->

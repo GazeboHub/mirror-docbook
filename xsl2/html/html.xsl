@@ -3,7 +3,7 @@
                 xmlns:db="http://docbook.org/docbook-ng"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:f="http://docbook.org/xslt/ns/extension"
-                xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
+                xmlns:fn="http://www.w3.org/2004/10/xpath-functions"
                 xmlns:h="http://www.w3.org/1999/xhtml"
                 xmlns:m="http://docbook.org/xslt/ns/mode"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -204,6 +204,21 @@ and a CSS style is specified.</para>
       <xsl:value-of select="$css"/>
     </xsl:attribute>
   </xsl:if>
+</xsl:template>
+
+<!-- ====================================================================== -->
+
+<xsl:template name="css-style">
+  <xsl:choose>
+    <xsl:when test="$docbook.css.inline = 0">
+      <link rel="stylesheet" type="text/css" href="{$docbook.css}"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <style type="text/css">
+	<xsl:copy-of select="unparsed-text($docbook.css, 'us-ascii')"/>
+      </style>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <!-- ====================================================================== -->

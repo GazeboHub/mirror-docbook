@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-		xmlns:f="http://docbook.org/xslt/ns/extension"
-		xmlns:m="http://docbook.org/xslt/ns/mode"
-		xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
-		xmlns:db="http://docbook.org/docbook-ng"
-		exclude-result-prefixes="f m fn"
+                xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:f="http://docbook.org/xslt/ns/extension"
+                xmlns:fn="http://www.w3.org/2004/10/xpath-functions"
+                xmlns:m="http://docbook.org/xslt/ns/mode"
+                xmlns:xlink='http://www.w3.org/1999/xlink'
+                xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		exclude-result-prefixes="db f fn m xlink xs"
                 version="2.0">
 
 <!-- ********************************************************************
@@ -80,6 +82,25 @@
 
 <xsl:template match="db:application">
   <xsl:call-template name="inline-charseq"/>
+</xsl:template>
+
+<xsl:template match="db:biblioid">
+  <xsl:choose>
+    <!-- hack? -->
+    <xsl:when test="string(.) = '' and @class = 'uri' and @xlink:href">
+      <xsl:call-template name="inline-charseq">
+	<!-- if you pass the attribute, it gets copied...as an attribute! -->
+	<xsl:with-param name="content" select="string(@xlink:href)"/>
+      </xsl:call-template>
+    </xsl:when>
+    <xsl:when test="string(.) = ''">
+      <xsl:message>Warning: empty biblioid.</xsl:message>
+      <xsl:call-template name="inline-charseq"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:call-template name="inline-charseq"/>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <xsl:template match="db:classname">
@@ -232,6 +253,10 @@
   <xsl:call-template name="inline-charseq"/>
 </xsl:template>
 
+<xsl:template match="db:pagenums">
+  <xsl:call-template name="inline-charseq"/>
+</xsl:template>
+
 <xsl:template match="db:parameter">
   <xsl:call-template name="inline-italicmonoseq"/>
 </xsl:template>
@@ -244,7 +269,34 @@
   <xsl:call-template name="inline-monoseq"/>
 </xsl:template>
 
-<xsl:template match="db:pubdate">
+<xsl:template match="db:date|db:pubdate">
+  <xsl:call-template name="inline-charseq">
+    <xsl:with-param name="content">
+      <xsl:choose>
+	<xsl:when test=". castable as xs:dateTime">
+	  <xsl:value-of select="format-dateTime(xs:dateTime(.),
+				                $dateTime-format)"/>
+	</xsl:when>
+	<xsl:when test=". castable as xs:date">
+	  <xsl:value-of select="format-date(xs:date(.), $date-format)"/>
+	</xsl:when>
+	<xsl:when test=". castable as xs:gYearMonth">
+	  <xsl:value-of select="format-date(xs:date(concat(.,'-01')),
+				            $gYearMonth-format)"/>
+	</xsl:when>
+	<xsl:when test=". castable as xs:gYear">
+	  <xsl:value-of select="format-date(xs:date(concat(.,'-01-01')),
+				            $gYear-format)"/>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:apply-templates/>
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:with-param>
+  </xsl:call-template>
+</xsl:template>
+
+<xsl:template match="db:publisher">
   <xsl:call-template name="inline-charseq"/>
 </xsl:template>
 
@@ -313,6 +365,10 @@
   </xsl:choose>
 </xsl:template>
 
+<xsl:template match="db:edition">
+  <xsl:call-template name="inline-charseq"/>
+</xsl:template>
+
 <xsl:template match="db:markup">
   <xsl:call-template name="inline-charseq"/>
 </xsl:template>
@@ -331,6 +387,10 @@
       <xsl:call-template name="gentext-nestedendquote"/>
     </xsl:otherwise>
   </xsl:choose>
+</xsl:template>
+
+<xsl:template match="db:releaseinfo">
+  <xsl:call-template name="inline-charseq"/>
 </xsl:template>
 
 <xsl:template match="db:varname">
@@ -421,12 +481,6 @@
 <xsl:template match="db:honorific|db:firstname|db:surname
 		     |db:lineage|db:othername">
   <xsl:call-template name="inline-charseq"/>
-</xsl:template>
-
-<!-- ==================================================================== -->
-
-<xsl:template match="db:beginpage">
-  <!-- does nothing; this *is not* markup to force a page break. -->
 </xsl:template>
 
 </xsl:stylesheet>
