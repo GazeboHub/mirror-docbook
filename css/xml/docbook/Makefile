@@ -5,10 +5,11 @@ dist_tgz = ${dist_dir}.tar.gz
 web_tgz = dbweb.tar.gz
 
 # stuff to go in ${dist_tgz}
-dist_files = driver.css core.css styles.css tables.css mozilla.css \
-	tests db-bindings.xml
+dist_files = driver.css core.css styles.css tables.css opera.css mozilla.css \
+	l10n.css l10n/*.css \
+	tests/index.html tests/*.x{s,m}l tests/eiffeltower.png db-bindings.xml
 
-dist:	test-gen
+dist:	tests-gen
 	mkdir -p ${dist_dir}
 	cp -r ${dist_files} ${dist_dir}
 	tar czvf ${dist_tgz} ${dist_dir}
