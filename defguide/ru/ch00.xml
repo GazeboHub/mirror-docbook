@@ -122,17 +122,17 @@
 
 <para condition="refpages"
 ><citetitle
->Part II: Reference</citetitle
+>Часть II: Справочник</citetitle
 > <phrase condition="online"
-> is a complete reference to every element and parameter entity in the DocBook &dtd.version; &DTD;. </phrase
-> <phrase condition="print"
-> is a complete reference to every element in the DocBook &dtd.version; &DTD; and provides a concise summary of the parameter entities. For a detailed reference to the parameter entities, consult the online version available either on <link linkend="app-cdrom"
->the <acronym
+> содержит полный перечень и описания элементов и сущностей DocBook &dtd.version; &DTD;. </phrase
+><phrase condition="print"
+> содержит полный перечень и описания элементов, а также краткий справочник по сущностям. Полностью сущности описаны на <link linkend="app-cdrom"
+> <acronym
 >CD-ROM</acronym
 ></link
-> or the <ulink url="http://docbook.org/"
->web site</ulink
->. </phrase
+> или <ulink url="http://docbook.org/"
+>web-сайте</ulink
+>.</phrase
 > </para>
 
 <variablelist condition="refpages">
@@ -141,7 +141,7 @@
 ><xref linkend="ref-element"/></term>
 <listitem>
 <para
->A reference guide to the DocBook elements.</para>
+>Справочник по элементам DocBook.</para>
 </listitem>
 </varlistentry>
 <varlistentry
@@ -149,7 +149,7 @@
 ><xref linkend="ref-parement"/></term>
 <listitem>
 <para
->A reference guide to the DocBook parameter entities.</para>
+>Справочник по параметрическим сущностям DocBook.</para>
 </listitem>
 </varlistentry>
 <varlistentry
@@ -157,22 +157,22 @@
 ><xref linkend="ref-charent"/></term>
 <listitem>
 <para
->A reference guide to the character entities declared in DocBook.</para>
+>Справочник по символьным сущностям DocBook.</para>
 </listitem>
 </varlistentry>
 </variablelist>
 
 <para
 ><citetitle
->Part III: Appendixes</citetitle
-> discusses other resources: </para>
+>Часть III: Приложения</citetitle
+>: </para>
 <variablelist>
 <varlistentry
 ><term
 ><xref linkend="app-install"/></term>
 <listitem>
 <para
->How to install DocBook, Jade, and the stylesheets.</para>
+>Как установить DocBook, Jade, и таблицы стилей.</para>
 </listitem>
 </varlistentry>
 <varlistentry
@@ -180,7 +180,7 @@
 ><xref linkend="app-xml"/></term>
 <listitem>
 <para
->DocBook as &XML;.</para>
+>DocBook как &XML;.</para>
 </listitem>
 </varlistentry>
 <varlistentry
@@ -188,7 +188,7 @@
 ><xref linkend="app-versions"/></term>
 <listitem>
 <para
->A guide to DocBook versions, including a summary of the features expected in future releases.</para>
+>Различные версии DocBook, а также планы по будущим релизам.</para>
 </listitem>
 </varlistentry>
 <varlistentry
@@ -196,7 +196,7 @@
 ><xref linkend="app-resources"/></term>
 <listitem>
 <para
->Other resources.</para>
+>Другие ресурсы</para>
 </listitem>
 </varlistentry>
 <varlistentry
@@ -204,8 +204,8 @@
 ><xref linkend="app-cdrom"/></term>
 <listitem>
 <para
->What's on the <acronym
->CD</acronym
+>Что на <acronym
+>сидюке</acronym
 >?</para>
 </listitem>
 </varlistentry>
@@ -214,7 +214,7 @@
 ><xref linkend="app-interchange"/></term>
 <listitem>
 <para
->An interchange checklist. Things to consider when you're sharing DocBook documents with others.</para>
+>Как распространять свои DocBook документы.</para>
 </listitem>
 </varlistentry>
 <varlistentry
@@ -222,135 +222,135 @@
 ><xref linkend="quickref"/></term>
 <listitem>
 <para
->A Quick Reference to the elements in DocBook.</para>
+>Краткий справочник по элементам DocBook.</para>
 </listitem>
 </varlistentry>
 </variablelist>
 <para
->At the end of this book you'll find a <link linkend="glossary"
->Glossary </link
-> and an <phrase condition="online"
+><link linkend="glossary"
+> Глоссарий </link
+> и <phrase condition="online"
 ><link linkend="index"
->Index</link
->.</phrase
+>Алфавитный указатель</link
+>. </phrase
 > <phrase condition="print"
->Index.</phrase
+>Алфавитный указатель.</phrase
 > </para>
 </sect1>
 
 <sect1 id="pref-conventions">
 <title
->Conventions Used in This Book</title>
+>Сокращения, использованные в книге</title>
 
 <itemizedlist>
 <listitem
 ><para
 ><sgmltag
 >Garamond Book</sgmltag
-> is used for element and attribute names. </para
+> используется для имён элементов и атрибутов. </para
 ></listitem>
 <listitem
 ><para
 ><literal
 >Constant Willison</literal
-> is used for program examples, attribute value literals, start- and end-tags, and source code example text. </para
+> используется для примеров программ, значений атрибутов, начальных конечных тегов и исходного кода. </para
 ></listitem>
 <listitem
 ><para
 ><replaceable
 >Constant Willison Oblique</replaceable
-> is used for <quote
->replaceable</quote
-> text or variables. Replaceable text is text that describes something you're supposed to type, like a <replaceable
+> используется для <quote
+>заменяемого</quote
+> текста или переменных. Пример заменяемого текста: <replaceable
 >filename</replaceable
->, in which the word <quote
->filename</quote
-> is a placeholder for the actual filename.</para>
+>. Вместо него вам нужно ввести свой текст (в данном случае имя файла).</para>
 </listitem>
 <listitem
 ><para
 ><filename
 >Garamond Italic</filename
-> is used for filenames and (in the print version of the book) <acronym
+> используется для имён файлов и (в печатной версии) <acronym
 >URL</acronym
->s. </para
+>. </para
 ></listitem>
 <listitem condition="print"
 ><para
-><ulink url="http://docbook.org/"
+>В печатной версии <ulink url="http://docbook.org/"
 ><acronym
 >URL</acronym
->s</ulink
-> are presented in parentheses after the name of the resource they describe in the print version of the book. </para
+></ulink
+> даются в скобках после имени ресурса. </para
 ></listitem>
 </itemizedlist>
 </sect1>
 <sect1 id="pref-getbook"
 ><title
->Getting This Book</title>
+>Получение книги</title>
 <para
->If you want to hold this book in your hand and flip through its pages, you have to buy it as you would any other book. You can also get this book in electronic form, as a DocBook &SGML; document, and in &HTML;, either on the <acronym
->CD</acronym
-> that accompanies the bound book or from this book's web site: <ulink url="http://docbook.org/"
+>Вы можете получить её в форме &SGML; или &HTML;, либо на диске, либо на официальном сайте стандарта - <ulink url="http://docbook.org/"
+></ulink
+>, либо на сайте переводчика - <ulink url="http://docbook.program.net.ua/"
 ></ulink
 >. </para>
 </sect1>
 
 <sect1 id="pref-getexamples">
 <title
->Getting Examples from This Book</title>
+>Получение примеров из книги</title>
 <para
->All of the examples are included on the <acronym
+>все примеры есть на <acronym
 >CD-ROM</acronym
-> and online at the book's web site. You can get the most up-to-date information about this book from the web site: <ulink url="http://docbook.org/"
+> и на официальном сайте: <ulink url="http://docbook.org/"
 >http://docbook.org/</ulink
 >.</para>
 </sect1>
 
 <sect1 id="pref-getdocbook">
 <title
->Getting DocBook</title>
+>Получение DocBook</title>
 <para
->The DocBook &DTD; is included <link linkend="app-cdrom-docbook"
->on the <acronym
+>DocBook &DTD; есть на <link linkend="app-cdrom-docbook"
+> <acronym
 >CD-ROM</acronym
 ></link
->. You can get the most up-to-date version and information about DocBook from the DocBook web page: <ulink url="http://www.oasis-open.org/docbook/"
+>., а также на сайте: <ulink url="http://www.oasis-open.org/docbook/"
 >http://www.oasis-open.org/docbook/</ulink
 >.</para>
 </sect1>
 
 <sect1 id="pref-req-comments">
 <title
->Request for Comments</title>
+>Комментарии</title>
 <para
->Please help us improve future editions of this book by reporting any errors, inaccuracies, bugs, misleading or confusing statements, and plain old typos that you find. An online errata list is maintained at <ulink url="http://docbook.org/tdg/errata.html"
+>Замечания, предложения всегда приветствуются. Список ошибок: <ulink url="http://docbook.org/tdg/errata.html"
 >http://docbook.org/tdg/errata.html</ulink
->. Email your bug reports and comments to us at <ulink role="online" url="mailto:bookcomments@docbook.org"
+>. Комментарии по поводу книги высылайте на <ulink role="online" url="mailto:bookcomments@docbook.org"
 >bookcomments@docbook.org</ulink
+>, а по поводу перевода - на <ulink role="online" url="mailto:free@program.net.ua"
+>free@program.net.ua</ulink
 >.</para>
 </sect1>
 <sect1 id="pref-acknorm">
 <title
->Acknowledgements from Norm</title>
+>Благодарности от Норма</title>
 <para
->This book has been in the works for a long time. It could not have been completed without the help and encouragement of a lot of people, most especially my wife, Deborah, who supported me through the long hours and the late nights. </para>
+>Многие люди участвовали в составлении этой книги, либо на прямую, либо морально - как моя жена Дебора. </para>
 <para
->I also want to thank Lenny for collaborating with me and developing real prose out of my rough outlines, cryptic email messages, and scribbled notes.</para>
+>Спасибо Лэнни за сотрудничество, особенно за помощь при написании лирических отступлений.</para>
 <para
->A number of people contributed technical feedback as this book was being written, in particular Terry Allen and Eve Maler. I owe most of what I know about &SGML; to them, and to the other members of the Davenport Group who answered all my questions so many years ago, especially Jon Bosak, Eduardo Guttentag, and Murray Maloney. Paul Prescod, Mark Galassi, and Dave Pawson also provided invaluable feedback on the technical review draft. It's a better book because of them. </para>
+>Техподдержка: Terry Allen Eve Maler. Большую часть знаний о &SGML; я получил от них. Участники Davenport Group: Jon Bosak, Eduardo Guttentag и Murray Maloney. Paul Prescod, Mark Galassi и Dave Pawson также оттачивали техническую сторону книги. </para>
 </sect1>
 <sect1 id="pref-acklen">
 <title
->Acknowledgements from Lenny</title>
+>Благодарности от Лэенни</title>
 <para
->My gratitude goes back to Dale Dougherty and Terry Allen, who long ago encouraged me and the production department at O'Reilly to learn &SGML;; and to Lar Kaufman, who also made large contributions to my knowledge and appreciation of &SGML;. But my greatest debt of thanks goes to Norm for all that he patiently taught me about DocBook, and for his supreme graciousness in keeping me a part of this project. </para>
+>Спасибо Dale Dougherty и Terry Allen и производственному отделу O'Reilly за помощь в изучении &SGML;, а также Lar Kaufman. Большое спасибо Норму за то, что пристрастил меня к DocBook. </para>
 </sect1>
 <sect1 id="pref-ackboth">
 <title
->Acknowledgements from Norm and Lenny</title>
+>Благодарности от Норма и Лэнни</title>
 <para
->Thanks finally to the great people at O'Reilly who encouraged us to write it (Frank Willison and Sheryl Avruch), agreed to edit it (Frank), helped design it (Alicia Cech, who worked on the interior design, and Edie Freeman, who designed the cover), proofed and produced it (Chris Maden, Madeline Newell, and David Futato), and indexed it (Ellen Troutman). </para>
+>Респект пиплам из O'Reilly, без которых мы бы не начали писать эту книгу (Frank Willison и Sheryl Avruch), согласились отредактировать её (Frank), за то, что помогли с оформлением (Alicia Cech и Edie Freeman), отверстали и напечатали её (Chris Maden, Madeline Newell и David Futato). </para>
 </sect1>
 </preface>
 
