@@ -114,7 +114,9 @@
         ><img border="0"
             alt="DocBook"
             src="http://docbook.sourceforge.net/graphics/created-with-docbook-black.png"
-          /></a> <a href="http://xmlsoft.org/XSLT/"
+          /></a>
+          
+          <a href="http://xmlsoft.org/XSLT/"
           ><img border="0"
             alt="Libxslt"
             src="http://www.zlatkovic.com/libxslt-logo.png"
