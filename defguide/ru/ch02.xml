@@ -4,125 +4,88 @@
 <pubdate>$Date$</pubdate>
 <releaseinfo>$Revision$</releaseinfo>
 </chapterinfo>
-<title>Creating DocBook Documents</title>
+<title>Создание документов DocBook</title>
 <para>
 <indexterm id="DocBookDocch02" class='startofrange'>
   <primary>DocBook DTD</primary>
-  <secondary>documents</secondary>
-  <tertiary>creating in SGML</tertiary>
+  <secondary>документы</secondary>
+  <tertiary>с использованием SGML</tertiary>
 </indexterm>
 <indexterm id="documentsDocBookch02" class='startofrange'>
-  <primary>documents</primary>
-  <secondary>creating</secondary>
+  <primary>документы</primary>
+  <secondary>создание</secondary>
   <tertiary>DocBook</tertiary>
-</indexterm>This chapter explains in concrete, practical terms how to
-make DocBook documents. It's an overview of all the kinds of markup
-that are possible in DocBook documents. It explains how to create
-several kinds of DocBook documents: books, sets of books, chapters,
-articles, and reference manual entries. The idea is to give you enough
-basic information to actually start writing. The information here is
-intentionally skeletal; you can find &ldquo;the details&rdquo; in the
-reference section of this book.
+</indexterm>В этой главе описывается создание документов DocBook. Это краткий обзор всех видов разметок, возможных в DocBook. Здесь объясняется как создать несколько видов документов DocBook: книг, серии книг, глав, статей, и справочных руководств. После прочтения данной главы вы получите общее представление о формате DocBook и уже сможете писать документы в нём. Более подробно все элементы рассмотрены в справочном разделе этой книги.
 </para>
 <para>
-Before we can examine DocBook markup, we have to take a look at what
-an &SGML; or &XML; system requires.
-</para>
-<sect1 id="ch02-makesgml"><title>Making an &SGML; Document</title>
+Перед тем, как приступить к DocBook, давайте посмотрим что требует система &SGML; или &XML;.</para>
+<sect1 id="ch02-makesgml"><title>Создание &SGML;-документа</title>
 <para>
 <indexterm><primary>SGML</primary>
-  <secondary>documents, creating</secondary></indexterm>
+  <secondary>документы, создание</secondary></indexterm>
 
-<indexterm><primary>prologue</primary>
-  <secondary>SGML documents</secondary></indexterm>
-&SGML; requires that your document have a specific prologue. The
-following sections describe the features of the prologue.
-</para>
-<sect2><title>An &SGML; Declaration</title>
+<indexterm><primary>пролог</primary>
+  <secondary>Документы SGML</secondary></indexterm>
+&SGML;-документ должен содержать пролог. Его составление описано в следующих разделах.</para>
+<sect2><title>Объявление &SGML;</title>
 <para>
 <indexterm><primary>SGML</primary>
-  <secondary>declarations</secondary></indexterm>
-<indexterm><primary>declarations</primary>
-  <secondary>SGML documents</secondary></indexterm>
+  <secondary>объявления</secondary></indexterm>
+<indexterm><primary>объявления</primary>
+  <secondary>SGML документы</secondary></indexterm>
 
-&SGML; documents begin with an optional &SGML; Declaration. The
-declaration can precede the document instance, but generally it is
-stored in a separate file that is associated with the &DTD;. The
-&SGML; Declaration is a grab bag of &SGML; defaults. DocBook includes
-an &SGML; Declaration that is appropriate for most DocBook documents,
-so we won't go into a lot of detail here about the &SGML; Declaration.
-</para>
+&SGML;-документы начинаются с необязательного объявления Последнее может быть расположено перед содержимым, но обычно записывается в отдельный файл, ассоциированный с &DTD;. Объявление &SGML; - это некоторый набор установок по умолчанию. DocBook уже содержит объявление &SGML;, которое должно использоваться в документах такого формата.</para>
 <para>
-<indexterm><primary>markup</primary>
-  <secondary>delimiters (characters)</secondary></indexterm>
-<indexterm><primary>tags</primary>
-  <secondary>names</secondary>
-    <tertiary>SGML declaration</tertiary></indexterm>
-<indexterm><primary>attributes</primary>
-  <secondary>names</secondary></indexterm>
-<indexterm><primary>characters</primary>
-  <secondary>SGML declaration</secondary></indexterm>
-<indexterm><primary>minimization</primary>
+<indexterm><primary>разметка</primary>
+  <secondary>разделители (символы)</secondary></indexterm>
+<indexterm><primary>теги</primary>
+  <secondary>имена</secondary>
+    <tertiary>объявление SGML</tertiary></indexterm>
+<indexterm><primary>атрибуты</primary>
+  <secondary>имена</secondary></indexterm>
+<indexterm><primary>символы</primary>
+  <secondary>объявление SGML</secondary></indexterm>
+<indexterm><primary>минимизация</primary>
   <secondary>markup</secondary></indexterm>
-<indexterm><primary>markup</primary>
-  <secondary>minimization</secondary></indexterm>
+<indexterm><primary>разметка</primary>
+  <primary>минимизация</primary></indexterm>
 
-In brief, the &SGML; Declaration describes, among other things, what
-characters are markup delimiters (the default is angle brackets), what
-characters can compose tag and attribute names (usually the
-alphabetical and numeric characters plus the dash and the period),
-what characters can legally occur within your document, how long
-&SGML; &ldquo;names&rdquo; and &ldquo;numbers&rdquo; can be, what sort
-of minimizations (abbreviation of markup) are allowed, and so
-on. Changing the &SGML; Declaration is rarely necessary, and because
-many tools only partially support changes to the declaration, changing
-it is best avoided, if possible.
+Объявление &SGML; описывает, кроме всего прочего, какие символы отделяют разметочную информацию от обычного текста (по умолчанию это угловые скобки), какие символы могут присутствовать в именах тегов и атрибутов (обычно это латинские буквы, цифры, тире и точка), какие символы вообще допустимы во всём документе, длину имён и чисел &SGML;, уровень сокращений (какие детали можно опускать) и т.д. Внесение изменений в объявление &SGML; необходимо очень редко, кроме того многие средства поддерживают объявления частично, поэтому желательно этого избегать.
 </para>
 <para>
-<indexterm><primary>tutorial, SGML Declaration</primary></indexterm>
+<indexterm><primary>учебное пособие, объявление SGML</primary></indexterm>
 
-Wayne Wholer has written an excellent tutorial on the &SGML;
-Declaration; if you're interested in more details, see <ulink url="http://www.oasis-open.org/cover/wlw11.html">http://www.oasis-open.org/cover/wlw11.html</ulink>.
+Вейн Вулер (Wayne Wholer) написал прекрасное введение в объявления &SGML;; см. <ulink url="http://www.oasis-open.org/cover/wlw11.html">http://www.oasis-open.org/cover/wlw11.html</ulink> 
+(на английском).
 </para>
 </sect2>
-<sect2><title>A Document Type Declaration</title>
+<sect2><title>Объявление типа документа</title>
 <para>
 <indexterm><primary>SGML</primary>
-  <secondary>document type declaration</secondary></indexterm>
-<indexterm><primary>document type declaration</primary>
-  <secondary>SGML documents</secondary></indexterm>
-<indexterm><primary>declarations</primary>
-  <secondary>document type declaration</secondary></indexterm>
-<indexterm><primary>declarations</primary>
-  <secondary>document type declaration</secondary>
+  <secondary>объявление типа документа</secondary></indexterm>
+<indexterm><primary>объявление типа документа</primary>
+  <secondary>SGML докумнты</secondary></indexterm>
+<indexterm><primary>объявления</primary>
+  <secondary>объявление типа документа</secondary></indexterm>
+<indexterm><primary>объявления</primary>
+  <secondary>объявление типа документа</secondary>
     <tertiary>SGML</tertiary></indexterm>
 
-All &SGML; documents must begin with a document type declaration. This
-identifies the &DTD; that will be used by the document and what the
-root element of the document will be. A typical doctype declaration
-for a DocBook document looks like this:
-</para>
+Все документы &SGML; должны начинаться с объявления типа. В нём даётся ссылка на &DTD; и определяется корневой элемент документа. Типичное объявление для DocBook:</para>
 <screen>&lt;!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook V3.1//EN"></screen>
 <para>
-<indexterm><primary>root element</primary>
-  <secondary>document type declaration</secondary></indexterm>
-<indexterm><primary>elements</primary>
-  <secondary>root element</secondary></indexterm>
-This declaration indicates that the <firstterm>root element</firstterm>,
-which is the first element in the hierarchical structure of the
-document, will be <sgmltag class="starttag">book</sgmltag> and that
-the &DTD; used will be the one identified by the public identifier
-<literal>-//OASIS//DTD DocBook V3.1//EN</literal>. See <xref linkend="ch.create.pubids"/>&rdquo; later in this chapter.
-</para>
+<indexterm><primary>корневой элемент</primary>
+  <secondary>объявление типа документа</secondary></indexterm>
+<indexterm><primary>элементы</primary>
+  <secondary>корневой элемент</secondary></indexterm>
+В этом объявлении указывается, что элементом самого верхнего уровня в структуре данного документа будет <sgmltag class="starttag">book</sgmltag> и ссылка на &DTD; даётся в виде  публичного идентификатора <literal>-//OASIS//DTD DocBook V4.2//EN</literal>. См. <xref linkend="ch.create.pubids"/>&rdquo; далее в этой главе.</para>
 </sect2>
 <sect2>
-<title>An Internal Subset</title>
+<title>Внутреннее подмножество</title>
 <para>
-<indexterm><primary>internal subset</primary>
-  <secondary>SGML document declarations</secondary></indexterm>
-
-It's also possible to provide additional declarations in a document
-by placing them in the document type declaration:</para>
+<indexterm><primary>внутреннее подмножество</primary>
+  <secondary>объявления SGML</secondary></indexterm>
+Также возможно установить дополнительные объявления в документе расположив их в определении типа документа:</para>
 <screen>&lt;!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook V3.1//EN" [
 &lt;!ENTITY nwalsh "Norman Walsh">
 &lt;!ENTITY chap1 SYSTEM "chap1.sgm">
@@ -130,44 +93,31 @@ by placing them in the document type declaration:</para>
 ]></screen>
 
 <para>
-<indexterm><primary>external subset</primary>
-  <secondary>SGML document declarations</secondary></indexterm>
-<indexterm><primary>public identifiers</primary>
+<indexterm><primary>внешние подмножества</primary>
+  <secondary>объявления SGML</secondary></indexterm>
+<indexterm><primary>публичные идентификаторы</primary>
   <secondary>SGML</secondary></indexterm>
-<indexterm><primary>system identifiers</primary>
+<indexterm><primary>системные идентификаторы</primary>
   <secondary>SGML</secondary></indexterm>
 
-These declarations form what is known as the
-<firstterm>internal subset</firstterm>. The declarations stored in the
-file referenced by the public or system identifier in the 
-<literal>DOCTYPE</literal> declaration is called the <firstterm>external
-subset</firstterm> and it is technically optional.
-It is legal to put the &DTD; in the internal
-subset and to have no external subset, but for a &DTD; as large
-as DocBook that wouldn't make much sense.
-</para>
+Эти объявления формируют <firstterm>внутреннее подмножество</firstterm>. Объявления, хранящиеся в файле, указанном в публичном или системном идентификаторе в <literal>DOCTYPE</literal>, называются <firstterm>внешним подмножеством</firstterm> и технически необязательны. Вы вполне можете расположить &DTD; во внутреннем подмножестве и не иметь внешнего, но для &DTD; таких размеров, как DocBook это не подходит.</para>
 
 <note>
 <para>
-<indexterm><primary>parsing</primary>
-  <secondary>order</secondary></indexterm>
-The internal subset is parsed <emphasis>first</emphasis>
-and, if multiple declarations for an entity occur, the first
-declaration is used.  Declarations in the internal subset
-override declarations in the external subset.</para>
+<indexterm><primary>анализ</primary>
+  <secondary>порядок</secondary></indexterm>
+Внутренне подмножество обрабатывается <emphasis>первым</emphasis> и, если встречается несколько объявлений одного объекта, используется первое. Объявления из внутреннего подмножества замещают объявления внешнего.</para>
 </note>
 </sect2>
 <sect2>
-<title>The Document (or Root) Element</title>
+<title>Корневой элемент</title>
 <para>
-<indexterm><primary>elements</primary>
-  <secondary>root element</secondary></indexterm>
-<indexterm><primary>root element</primary>
-  <secondary>placement</secondary></indexterm>
+<indexterm><primary>элементы</primary>
+  <secondary>корневой элемент</secondary></indexterm>
+<indexterm><primary>корневой элемент</primary>
+  <secondary>размещение</secondary></indexterm>
 
-Although comments and processing instructions may occur between the
-document type declaration and the root element, the root element usually
-immediately follows the document type declaration:</para>
+Не смотря на то, что комментарии и команды обработки могут появляться между объявлением типа документа и корневым элементом, обычно последний следует сразу после объявления:</para>
 <screen>&lt;!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook V3.1//EN" [
 &lt;!ENTITY nwalsh "Norman Walsh">
 &lt;!ENTITY chap1 SYSTEM "chap1.sgm">
@@ -177,67 +127,58 @@ immediately follows the document type declaration:</para>
 &amp;chap1;
 &amp;chap2;
 &lt;/book></screen>
-<para>You cannot place the root element of
-the document in an external entity.</para>
+<para>Нельзя размещать корневой элемент во внешнем объекте.</para>
 </sect2>
-<sect2 id="ch02-typexml"><title>Typing an &SGML; Document</title>
+<sect2 id="ch02-typexml"><title>Набор документа &SGML;</title>
 <para>
-<indexterm><primary>Emacs text editor</primary></indexterm>
-<indexterm><primary>vi text editor</primary></indexterm>
+<indexterm><primary>Emacs</primary></indexterm>
+<indexterm><primary>vi</primary></indexterm>
 <indexterm><primary>SGML</primary>
-  <secondary>text editors, entering through</secondary></indexterm>
-<indexterm><primary>text editors</primary>
-  <secondary>SGML, entering</secondary></indexterm>
+  <secondary>текстовые редакторы, ввод</secondary></indexterm>
+<indexterm><primary>текстовые редакторы</primary>
+  <secondary>SGML, набор</secondary></indexterm>
 
-If you are entering &SGML; using a text editor such as
-<application>Emacs</application> or <application>vi</application>, there are a few things to
-keep in mind.<footnote>
+Если вводите &SGML; в таком редакторе как 
+<application>Emacs</application> или <application>vi</application>, 
+нужно помнить о нескольких вещах.<footnote>
 <para>
-Many of these things are influenced by the &SGML; declaration in use.
-For the purpose of this discussion, we assume you are using the
-standard DocBook declaration.
-</para>
+Многие из них зависят от текущего объявления &SGML;.
+В данном случае, подразумевается, что вы используете стандартное объявление DocBook. </para>
 </footnote>
-Using a structured text editor designed for &SGML; hides most of these
-issues.
-</para>
+Использование специального редактора для &SGML; позволяет абстрагироваться от этого.</para>
 <itemizedlist>
 <listitem><para>
-<indexterm><primary>elements</primary>
-  <secondary>case sensitivity (DocBook)</secondary></indexterm>
-<indexterm><primary>case sensitivity</primary>
-  <secondary>elements (DocBook)</secondary></indexterm>
-<indexterm><primary>attributes</primary>
-  <secondary>case sensitivity (DocBook)</secondary></indexterm>
-<indexterm><primary>case sensitivity</primary>
-  <secondary>attributes (DocBook)</secondary></indexterm>
+<indexterm><primary>элементы</primary>
+  <secondary>регистрозависимость (DocBook)</secondary></indexterm>
+<indexterm><primary>регистрозависимость</primary>
+  <secondary>элементы (DocBook)</secondary></indexterm>
+<indexterm><primary>атрибуты</primary>
+  <secondary>регистрозависимость (DocBook)</secondary></indexterm>
+<indexterm><primary>регистрозависимость</primary>
+  <secondary>атрибуты (DocBook)</secondary></indexterm>
 
-DocBook element and attribute names are not case-sensitive.  There's
-no difference between <sgmltag class='starttag'>Para</sgmltag> and <sgmltag class='starttag'>pArA</sgmltag>.  Entity names are case-sensitive, however.
-</para>
+Имена элементов и атрибутов DocBook нерегистрозависимы. Поэтому нет разницы между <sgmltag class="starttag">Para</sgmltag> и <sgmltag class="starttag">pArA</sgmltag>. Имена объектов обрабатываются с учётом регистра.</para>
 <para>
 <indexterm><primary>SGML</primary>
-  <secondary>XML/SGML compatibility</secondary>
-    <tertiary>case sensitivity</tertiary></indexterm>
+  <secondary>совместимость XML/SGML</secondary>
+    <tertiary>регистрозависимость</tertiary></indexterm>
 
 <indexterm><primary>XML</primary>
-  <secondary>SGML/XML compatibility</secondary>
-    <tertiary>case sensitivity, attributes and elements</tertiary></indexterm>
-<indexterm><primary>compatibility, SGML/XML conversion</primary>
-  <secondary>case sensitivity, attribute and element names</secondary></indexterm>
-If you are interested in future &XML; compatibility, input all
-element and attribute names strictly in lowercase.
-</para>
+  <secondary>совместимость SGML/XML</secondary>
+    <tertiary>регистрозависимость, атрибуты и элементы</tertiary></indexterm>
+<indexterm><primary>совместимотсь, преобразование SGML/XML</primary>
+  <secondary>регистрозависимость, имена атрибутов и элементов</secondary></indexterm>
+Если вы всё ещё используете &SGML; и вам всё-таки интересна будущая совместимость с &XML;, пользуйтесь только нижним регистром.</para>
 </listitem>
 <listitem><para>
 <indexterm><primary>SGML</primary>
-  <secondary>XML/SGML compatibility</secondary>
-    <tertiary>quotes, attribute values</tertiary></indexterm>
+  <secondary>совместимость XML/SGML</secondary>
+    <tertiary>кавычки, значения атрибутов</tertiary></indexterm>
 <indexterm><primary>XML</primary>
-  <secondary>SGML/XML compatibility</secondary>
-    <tertiary>quotes, attribute values</tertiary></indexterm>
-<indexterm><primary>quotes</primary>
-  <secondary>attribute values</secondary>
+  <secondary>совместимость SGML/XML</secondary>
+    <tertiary>кавычки, значения атрибутов</tertiary></indexterm>
+<indexterm><primary>кавычки</primary>
+  <secondary>значения атрибутов</secondary>
     <tertiary>spaces and punctuation characters</tertiary></indexterm>
 <indexterm><primary>attributes</primary>
   <secondary>values</secondary>
@@ -400,72 +341,57 @@ distributions</ulink>, which are on <link linkend="app-cdrom">the
 </sect2>
 </sect1>
 <sect1 id="ch02-makexml">
-<title>Making an &XML; Document</title>
+<title>Создание &XML; документов</title>
 <para>
 <indexterm><primary>XML</primary>
-  <secondary>DocBook documents, creating</secondary></indexterm>
+  <secondary>DocBook документы, создание</secondary></indexterm>
 <indexterm><primary>DocBook DTD</primary>
-  <secondary>documents</secondary>
-    <tertiary>creating in XML</tertiary></indexterm>
-<indexterm><primary>documents</primary>
-  <secondary>creating</secondary>
-    <tertiary >in XML (DocBook)</tertiary></indexterm>
+  <secondary>документы</secondary>
+    <tertiary>создание в XML</tertiary></indexterm>
+<indexterm><primary>документы</primary>
+  <secondary>создание</secondary>
+    <tertiary>в XML (DocBook)</tertiary></indexterm>
 
-In order to create DocBook documents in &XML;, you'll need an &XML;
-version of DocBook. We've included one on the <acronym>CD</acronym>, but it hasn't
-been officially adopted by the <acronym>OASIS</acronym> DocBook Technical Committee yet.
-If you're interested in the technical details, <xref linkend="app-xml"/>, describes the specific differences between
-&SGML; and &XML; versions of DocBook.
-</para>
+Чтобы писать документы DocBookn в &XML;, вам нужна &XML;-вариант DocBook. Она содержится на диске, но она ещё не принята официально <acronym>OASIS</acronym> DocBook Technical Committee. Глава <xref linkend="app-xml"/> описывает различия &SGML;- и &XML;-вариантов DocBook.</para>
 <para>
-<indexterm><primary>prologue</primary>
-  <secondary>XML documents</secondary></indexterm>
+<indexterm><primary>пролог</primary>
+  <secondary>XML документы</secondary></indexterm>
 
-&XML;, like &SGML;, requires a specific prologue in your document.
-The following sections describe the features of the &XML; prologue.
-</para>
+&XML;, как и &SGML; требует специфического заголовка в документе.</para>
 <sect2>
-<title>An &XML; Declaration</title>
+<title>Объявление &XML;</title>
 <para>
-<indexterm><primary>declarations</primary>
+<indexterm><primary>объявления</primary>
   <secondary>XML</secondary></indexterm>
 <indexterm><primary>XML</primary>
-  <secondary>declarations</secondary></indexterm>
-<indexterm><primary>versions</primary>
-  <secondary>XML, identifying</secondary></indexterm>
-&XML; documents should begin with an &XML; declaration. Unlike the
-&SGML; declaration, which is a grab bag of features, the &XML;
-declaration identifies a few simple aspects of the document:</para>
+  <secondary>объявления</secondary></indexterm>
+<indexterm><primary>версии</primary>
+  <secondary>XML, идентифицирование</secondary></indexterm>
+Документы &XML; должны начинаться с &XML;-объявления. В отличие от &SGML;, оно определяет только несколько простых аспектов документа::</para>
 <screen>&lt;?xml version="1.0" standalone="no"?></screen>
-<para>Identifying the version of &XML; ensures that future changes to
-the &XML; specification will not alter the semantics of this
-document. The standalone declaration simply makes explicit the fact
-that this document cannot &ldquo;stand alone,&rdquo; and that it
-relies on an external &DTD;. The complete details of the &XML;
-declaration are described in the <ulink url="http://www.w3.org/TR/REC-xml">&XML; specification</ulink>.
+<para>Указание версии &XML; даёт уверенность, что возможные в будущем изменения &XML; не повлияют на семантику документа. Объявление standaloneпоказывает, что этот документ не может быть &ldquo;автономным,&rdquo;, т.е. то, что он зависит от внешнего &DTD;. Более подробно объявление &XML; описано в <ulink url="http://www.w3.org/TR/REC-xml">спецификации &XML;</ulink> (можно поискать в <ulink url="http://google.com">Google</ulink> этот документ на русском).
 </para>
 </sect2>
 <sect2>
-<title>A Document Type Declaration</title>
+<title>Объявление типа документа</title>
 <para>
-<indexterm><primary>declarations</primary>
-  <secondary>document type declaration</secondary>
+<indexterm><primary>объявления</primary>
+  <secondary>объявление типа документа</secondary>
     <tertiary>XML</tertiary></indexterm>
 <indexterm><primary>XML</primary>
-  <secondary>document type declaration</secondary></indexterm>
-<indexterm><primary>document type declaration</primary>
+  <secondary>объявление типа документа</secondary></indexterm>
+<indexterm><primary>объявление типа документа</primary>
   <secondary>XML documents</secondary></indexterm>
 <indexterm><primary>DocBook DTD</primary>
   <secondary>XML</secondary>
-    <tertiary>document type declaration</tertiary></indexterm>
-Strictly speaking, &XML; documents don't require a
-&DTD;. Realistically, DocBook &XML; documents will have one.
+    <tertiary>объявление типа документа</tertiary></indexterm>
+Строго говоря, документы &XML; не требуют &DTD;. Однако документы DocBook &XML; имеют таковой.
 </para>
 <para>
-<indexterm><primary>elements</primary>
-  <secondary>root element</secondary></indexterm>
-<indexterm><primary>root element</primary>
-  <secondary>document type declaration</secondary></indexterm>
+<indexterm><primary>элементы</primary>
+  <secondary>корневой элемент</secondary></indexterm>
+<indexterm><primary>корневой элемент</primary>
+  <secondary>объявление типа документа</secondary></indexterm>
 The document type declaration identifies the &DTD; that will be used
 by the document and what the root element of the document will be. A
 typical doctype declaration for a DocBook document looks like
@@ -500,9 +426,9 @@ correct to fully qualify them.
 <title>An Internal Subset</title>
 <para>
 <indexterm><primary>declarations</primary>
-  <secondary>document type declaration</secondary>
+  <secondary>объявление типа документа</secondary>
     <tertiary>XML</tertiary></indexterm>
-<indexterm><primary>document type declaration</primary>
+<indexterm><primary>объявление типа документа</primary>
   <secondary>internal subset</secondary></indexterm>
 <indexterm><primary>internal subset</primary>
   <secondary>XML document type declarations</secondary></indexterm>
@@ -542,9 +468,9 @@ subset.</para>
 <sect2>
 <title>The Document (or Root) Element</title>
 <para>
-<indexterm><primary>root element</primary></indexterm>
-<indexterm><primary>elements</primary>
-  <secondary>root element</secondary></indexterm>
+<indexterm><primary>корневой элемент</primary></indexterm>
+<indexterm><primary>элементы</primary>
+  <secondary>корневой элемент</secondary></indexterm>
 Although comments and processing instructions may occur between the
 document type declaration and the root element, the root element usually
 immediately follows the document type declaration:</para>
@@ -668,7 +594,7 @@ mind.
   <secondary>XML vs. SGML</secondary></indexterm>
 <indexterm><primary>SGML</primary>
   <secondary>case sensitivity</secondary></indexterm>
-<indexterm><primary>elements</primary>
+<indexterm><primary>элементы</primary>
   <secondary>case sensitivity (XML)</secondary></indexterm>
 &XML; is case-sensitive, while the &SGML; version of DocBook is
 not. In this book, we've chosen to present the element names using
@@ -999,7 +925,7 @@ are
   </listitem>
   </varlistentry>
   <varlistentry>
-  <term>ELEMENTS</term>
+  <term>элементы</term>
   <listitem>
   <para>A collection of element declarations.</para>
   </listitem>
@@ -1474,8 +1400,8 @@ two appendixes, you might create a file called
 </screen>
 <para>
 <indexterm><primary>declarations</primary>
-  <secondary>document type declaration</secondary></indexterm>
-<indexterm><primary>document type declaration</primary>
+  <secondary>объявление типа документа</secondary></indexterm>
+<indexterm><primary>объявление типа документа</primary>
   <secondary>divisions of documents</secondary></indexterm>
 
 You can then write the chapters and appendixes conveniently in
@@ -1509,7 +1435,7 @@ But it should not begin with its own document type declaration:
 <para>
 <indexterm><primary>divisions</primary>
   <secondary>elements, categories of (DocBook)</secondary></indexterm>
-<indexterm><primary>elements</primary>
+<indexterm><primary>элементы</primary>
   <secondary>categories, DocBook divisions</secondary></indexterm>
 
 DocBook elements can be divided broadly into these categories:
@@ -1581,7 +1507,7 @@ a book.
 <listitem>
 <para>
 <indexterm><primary>navigation, component-level elements</primary></indexterm>
-<indexterm><primary>elements</primary>
+<indexterm><primary>элементы</primary>
   <secondary>components, navigation</secondary></indexterm>
 <indexterm><primary>ToC</primary></indexterm>
 <indexterm><primary>LoT</primary></indexterm>
@@ -1644,7 +1570,7 @@ These are the chapter-like elements of a <sgmltag>Book</sgmltag>.
 <indexterm><primary>Article element</primary></indexterm>
 <indexterm><primary>block elements</primary></indexterm>
 <indexterm><primary>sections</primary>
-  <secondary>elements</secondary></indexterm>
+  <secondary>элементы</secondary></indexterm>
 Components are the chapter-like elements of a <sgmltag>Book</sgmltag> or
 <sgmltag>Part</sgmltag>: <sgmltag>Preface</sgmltag>,
 <sgmltag>Chapter</sgmltag>, <sgmltag>Appendix</sgmltag>,
@@ -1662,7 +1588,7 @@ navigational components and <sgmltag>RefEntry</sgmltag>s.
 <indexterm><primary>nesting</primary>
   <secondary>section elements</secondary></indexterm>
 <indexterm><primary>numbered sections, levels</primary></indexterm>
-<indexterm><primary>elements</primary>
+<indexterm><primary>элементы</primary>
   <secondary>sections</secondary></indexterm>
 
 There are several flavors of sectioning elements in DocBook:</para>
@@ -1830,8 +1756,8 @@ options, subscripts and superscripts, and glossary terms.
 <sect3><title>Lists</title>
 <para>
 <indexterm><primary>lists</primary>
-  <secondary>elements</secondary></indexterm>
-<indexterm><primary>elements</primary>
+  <secondary>элементы</secondary></indexterm>
+<indexterm><primary>элементы</primary>
   <secondary>lists</secondary></indexterm>
 
 There are seven list elements in DocBook:</para>
@@ -2351,7 +2277,7 @@ attribute.
 <sect3><title>Markup</title>
 <para>
 <indexterm><primary>markup</primary>
-  <secondary>elements</secondary></indexterm>
+  <secondary>элементы</secondary></indexterm>
 
 These inlines are used to mark up text for special presentation:
 </para>
@@ -2405,7 +2331,7 @@ These inlines are used to mark up text for special presentation:
 </sect3>
 <sect3><title>Mathematics</title>
 <para>
-<indexterm><primary>elements</primary>
+<indexterm><primary>элементы</primary>
   <secondary>mathematics</secondary></indexterm>
 <indexterm><primary>mathematics (DocBook)</primary></indexterm>
 <indexterm><primary>equations (elements)</primary></indexterm>
@@ -2440,7 +2366,7 @@ the best long-term solution.
 <para>
 These elements describe aspects of a user interface:
 <indexterm><primary>user interfaces, describing (elements)</primary></indexterm>
-<indexterm><primary>elements</primary>
+<indexterm><primary>элементы</primary>
   <secondary>user interfaces, describing</secondary></indexterm>
 
 </para>
@@ -2522,7 +2448,7 @@ These elements describe aspects of a user interface:
 <indexterm><primary>constructs (programming), elements</primary></indexterm>
 <indexterm><primary>inline elements</primary>
   <secondary>programming languages and constructs</secondary></indexterm>
-<indexterm><primary>elements</primary>
+<indexterm><primary>элементы</primary>
   <secondary>programming languages and constructs</secondary></indexterm>
 <indexterm><primary>inline elements</primary>
   <secondary>technical</secondary></indexterm>
@@ -2861,10 +2787,10 @@ section level, as shown in <xref linkend="ex-typicalchap"/>.
 <para>
 <indexterm><primary>articles</primary>
   <secondary>creating</secondary></indexterm>
-<indexterm><primary>elements</primary>
+<indexterm><primary>элементы</primary>
   <secondary>component-level</secondary></indexterm>
 <indexterm><primary>components</primary>
-  <secondary>elements</secondary></indexterm>
+  <secondary>элементы</secondary></indexterm>
 <indexterm><primary>journal articles</primary></indexterm>
 <indexterm><primary>white papers, creating</primary></indexterm>
 
