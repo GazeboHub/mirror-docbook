@@ -31,13 +31,15 @@
 <!-- ==================================================================== -->
 
 <xsl:template name="home.navhead">
-</xsl:template>
-
-<xsl:template name="home.navhead.upperright">
+  <xsl:text>&#160;</xsl:text>
   <a href="http://sourceforge.net" target="_top">
     <img src="http://sourceforge.net/sflogo.php?group_id=21935&amp;type=1"
          height="31" width="88" alt="SourceForge" border="0"/>
   </a>
+</xsl:template>
+
+<xsl:template name="home.navhead.upperright">
+  <a href="txtindex.html">Text<br/>Only</a>
 </xsl:template>
 
 <!-- ==================================================================== -->
@@ -51,7 +53,8 @@
   <xsl:variable name="title">
     <xsl:value-of select="$page/head/title[1]"/>
   </xsl:variable>
-  <xsl:variable name="footers" select="$page/config[@param='footer']"/>
+  <xsl:variable name="footers" select="$page/config[@param='footer']
+                                       |$page/config[@param='footlink']"/>
 
   <tr>
     <td width="{$navtocwidth}" bgcolor="{$navbgcolor}">&#160;</td>
@@ -90,19 +93,19 @@
           </xsl:message>
         </xsl:when>
         <xsl:when test="$toc/@id = $id">
-          <span class="foothome">
-            <xsl:text>Home</xsl:text>
-          </span>
+          <!-- nop; this is the home page -->
         </xsl:when>
         <xsl:otherwise>
           <span class="foothome">
             <a>
               <xsl:attribute name="href">
-                <xsl:call-template name="root-rel-path"/>
-                <xsl:value-of select="$toc/@filename"/>
+                <xsl:call-template name="homeuri"/>
               </xsl:attribute>
               <xsl:text>Home</xsl:text>
             </a>
+            <xsl:if test="$footers">
+              <xsl:text> | </xsl:text>
+            </xsl:if>
           </span>
         </xsl:otherwise>
       </xsl:choose>

@@ -4,9 +4,12 @@
 <config param="rcsdate" value="$Date$"/>
 <config param="footer" value="about.xml" altval="XML Source"/>
 <head>
-<title>About the Open DocBook Repository</title>
+<title>About the DocBook Open Repository</title>
 <summary>About the Repository Website</summary>
 </head>
+
+<para>The DocBook Open Repository is hosted by
+<ulink url="http://sourceforge.net/">SourceForge</ulink>.</para>
 
 <para>
 This collection of pages is maintained using XML with the Website2

@@ -1,12 +1,19 @@
 PROC=saxon
 PROCOPT=
-STYLESHEET=.stylesheets/tabular.xsl
-#STYLESHEET=.stylesheets/textonly.xsl
-CHUNK-TAB=/share/doctypes/website-pages/xsl/chunk-tabular.xsl
-CHUNK-WEB=/share/doctypes/website-pages/xsl/chunk-website.xsl
+TABSTYLE=.stylesheets/tabular.xsl
+WEBSTYLE=.stylesheets/textonly.xsl
 AUTOSTYLE=/share/doctypes/website-pages/xsl/autolayout.xsl
 DEPSTYLE=/share/doctypes/website-pages/xsl/makefile-dep.xsl
 DESTPATH=.
+TEXTONLY=0
+
+ifeq ($(TEXTONLY),0)
+STYLESHEET=$(TABSTYLE)
+include depends.tabular
+else
+STYLESHEET=$(WEBSTYLE)
+include depends.textonly
+endif
 
 .PHONY : clean
 
@@ -29,9 +36,9 @@ chunk-website: autolayout.xml
 
 depends: autolayout.xml
 	xjparse $<
-	$(PROC) $(PROCOPT) $< $(DEPSTYLE) Makefile.dep
+	$(PROC) $(PROCOPT) $< $(DEPSTYLE) depends.tabular
+	$(PROC) $(PROCOPT) $< $(DEPSTYLE) depends.textonly prefix=txt
 
 realclean: clean
 	rm -f autolayout.xml
 
-include Makefile.dep

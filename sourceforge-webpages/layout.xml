@@ -7,10 +7,8 @@
   <config param="banner-tabular"     value="graphics/banner.png"
 	  altval="Banner"/>
 
-  <config param="homebanner" value="graphics/smbanner.png"
-	  altval="Home Banner"/>
-  <config param="banner"     value="graphics/smbanner.png"
-	  altval="Banner"/>
+  <config param="homebannertext" value="DocBook"/>
+  <config param="bannertext"     value="DocBook"/>
 
 <!--
   <copyright>

@@ -7,21 +7,24 @@
 
 <xsl:import href="/share/doctypes/website-pages/xsl/chunk-website.xsl"/>
 
+<xsl:param name="filename-prefix" select="'txt'"/>
+
 <!-- ==================================================================== -->
 
 <xsl:template name="webpage.footer">
   <xsl:variable name="page" select="."/>
   <xsl:variable name="rcsdate" select="$page/config[@param='rcsdate']/@value"/>
-  <xsl:variable name="title">
-    <xsl:value-of select="$page/head/title[1]"/>
-  </xsl:variable>
-  <xsl:variable name="footers" select="$page/config[@param='footer']"/>
+  <xsl:variable name="title" select="$page/head/title[1]"/>
+  <xsl:variable name="footers" select="$page/config[@param='footer']
+                                       |$page/config[@param='footlink']"/>
+  <xsl:variable name="tocentry" select="$autolayout//*[@id=$page/@id]"/>
+  <xsl:variable name="toc" select="($tocentry/ancestor-or-self::toc[1]
+                                   | $autolayout//toc[1])[last()]"/>
 
   <div class="navfoot">
     <xsl:if test="$footer.hr != 0"><hr/></xsl:if>
     <table width="100%" border="0" summary="Footer navigation">
       <tr>
-
         <td width="33%" align="left">
           <span class="footdate">
             <!-- rcsdate = "$Date$" -->
@@ -38,18 +41,35 @@
           </span>
         </td>
         <td width="34%" align="center">
-          <span class="foothome">
-            <a>
-              <xsl:variable name="id" select="$page/@id"/>
-              <xsl:variable name="tocentry"
-                            select="$autolayout//*[@id=$id]"/>
-              <xsl:attribute name="href">
-                <xsl:call-template name="root-rel-path"/>
-                <xsl:value-of select="$tocentry/ancestor::toc/@filename"/>
-              </xsl:attribute>
-              <xsl:text>Home</xsl:text>
-            </a>
-          </span>
+          <xsl:message>
+            <xsl:value-of select="$toc/@id"/>
+            <xsl:text>=</xsl:text>
+            <xsl:value-of select="$page/@id"/>
+          </xsl:message>
+          <xsl:choose>
+            <xsl:when test="not($toc)">
+              <xsl:message>
+                <xsl:text>Cannot determine TOC for </xsl:text>
+                <xsl:value-of select="$page/@id"/>
+              </xsl:message>
+            </xsl:when>
+            <xsl:when test="$toc/@id = $page/@id">
+              <!-- nop; this is the home page -->
+            </xsl:when>
+            <xsl:otherwise>
+              <span class="foothome">
+                <a>
+                  <xsl:attribute name="href">
+                    <xsl:call-template name="homeuri"/>
+                  </xsl:attribute>
+                  <xsl:text>Home</xsl:text>
+                </a>
+                <xsl:if test="$footers">
+                  <xsl:text> | </xsl:text>
+                </xsl:if>
+              </span>
+            </xsl:otherwise>
+          </xsl:choose>
 
           <xsl:apply-templates select="$footers" mode="footer.link.mode"/>
         </td>
