@@ -1,5 +1,5 @@
 <!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
-                  "file:/share/doctypes/website-pages/website.dtd">
+                  "/usr/share/sgml/docbook/custom/website/2.0b1/website.dtd">
 <webpage id="news">
   <config param="desc" value="Documentation"/>
   <config param="rcsdate" value="$Date$"/>
@@ -20,6 +20,10 @@
     <listitem>
       <para><ulink url="http://sourceforge.net/news/?group_id=21935" >news
           page</ulink> for the DocBook Open Repository project</para>
+    </listitem>
+    <listitem>
+      <para><ulink url="http://xmlhack.com/list.php?cat=36" >xmlhack
+          category</ulink> (and RSS feed) fro DocBook new</para>
     </listitem>
     <listitem>
       <para><ulink
