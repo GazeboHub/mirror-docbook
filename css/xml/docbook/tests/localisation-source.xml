@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<eg:locales xmlns:eg="http://www.badgers-in-foil.co.uk/projects/docbooc-css/tests/examples"
+            xmlns="http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+  <eg:list>
+    <!-- TODO: localise language names too -->
+    <eg:lang code="en">English</eg:lang>
+    <eg:lang code="pl">Polish</eg:lang>
+    <eg:lang code="de">German</eg:lang>
+    <eg:lang code="es">Spanish</eg:lang>
+  </eg:list>
+
+  <eg:body>
+    <para><quote>Quoting style <quote>may vary by language</quote>,</quote>
+    she quoted.</para>
+
+    <warning><para>A Warning</para></warning>
+
+    <caution><para>A Caution</para></caution>
+
+    <important><para>Important Information</para></important>
+
+    <note><para>A Note</para></note>
+
+    <tip><para>A Hint/Tip</para></tip>
+
+    <example>
+      <title>Like So</title>
+      <para>Exemplify something</para>
+    </example>
+
+    <qandaset>
+      <qandadiv>
+        <title>Questions and Answers</title>
+	<qandaentry>
+	  <question><para>Some question?</para></question>
+	  <answer><para>The answer!</para></answer>
+	</qandaentry>
+      </qandadiv>
+    </qandaset>
+  </eg:body>
+</eg:locales>

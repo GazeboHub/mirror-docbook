@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<eg:examples xmlns:eg="http://www.badgers-in-foil.co.uk/projects/docbooc-css/tests/examples"
+             xmlns="http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd"
+             title="Inline Docbook Elements">
+
+  <eg:example title="guimenu">
+    <eg:body>In the <guimenu>File</guimenu> menu.</eg:body>
+  </eg:example>
+
+  <eg:example title="guimenuitem">
+    <eg:body>Select <guimenuitem>Quit</guimenuitem> to leave.</eg:body>
+  </eg:example>
+
+  <eg:example title="guimenu and guimenuitem">
+    <eg:description>In docbook-css 0.2, the 'Quit' in this example would gain
+    an arrow in front of it.  That shouldn't appear any more.</eg:description>
+
+    <eg:body>In the <guimenu>File</guimenu> menu,
+select <guimenuitem>Quit</guimenuitem> to leave.</eg:body>
+  </eg:example>
+
+  <eg:example title="menuchoice">
+    <eg:description>Within a menuchoice, a guimenu followed by a guimenuitem
+    will gain a seperating arrow, to emphasise the navigation action the
+    user will typically make with the mouse.</eg:description>
+    <eg:body>Select <menuchoice><guimenu>File</guimenu><guimenuitem>Quit</guimenuitem></menuchoice> to leave.</eg:body>
+  </eg:example>
+
+  <eg:example title="email">
+    <eg:description>Contents of the email element is simply rendered to look
+    like a traditional HTML link, with the addition of surrounding
+    cheverons.  There is no behavior tied to this element.</eg:description>
+
+    <eg:body>Please send a message to <email>localpart@hostpart</email>.</eg:body>
+  </eg:example>
+
+  <eg:example title="keycap">
+    <eg:description>The keycap element gains a background colour and raised
+    borders in attempt to make it look a bit like a key on a physical
+    keyboard.</eg:description>
+    <eg:body>Press <keycap>F1</keycap> for help.</eg:body>
+  </eg:example>
+
+  <eg:example title="guibutton">
+    <eg:body>Click on <guibutton>Ok</guibutton> to continue.</eg:body>
+  </eg:example>
+
+  <eg:example title="keycombo">
+    <eg:description>The keycombo element is for grouping keycaps that the user
+    needs to invoke 'together'.  To try and emphasise this, we add a dash
+    before the second, and subsequent, keycaps in the keycombo.  Unfortunately,
+    this content appears inside the border-styling of the keycap elements,
+    rather that 'between' the elements.  I should probably remove that
+    dash.</eg:description>
+    <eg:body>Hit <keycombo><keycap>ctrl</keycap><keycap>c</keycap></keycombo> to quit.</eg:body>
+  </eg:example>
+
+  <eg:example title="citation">
+    <eg:description>A citation just gets the typical square brackets fore and
+    aft.</eg:description>
+    <eg:body>As <citation>Al, et al</citation> mentions,</eg:body>
+  </eg:example>
+
+  <eg:example title="quote">
+    <eg:description>This makes use of the CSS quotes mechanism.  I don't think
+    that CSS automaticaly handles i18n issues (?), and docbook-css certainly
+    doesn't, yet.</eg:description>
+    <eg:body><quote>Arrrr!</quote> exclaimed the pirate.</eg:body>
+  </eg:example>
+
+  <eg:example title="emphasis">
+    <eg:description>Currently, nesting empasis tags makes the text bold, as well
+    as italic.  I think tradition is to return to upright text in this case.
+    Maybe the current styling should be changed to match.</eg:description>
+    <eg:body><para><emphasis>'plain' emphasis</emphasis>,
+<emphasis role="strong">strong emphasis</emphasis>,
+<emphasis role="bold">bold emphasis</emphasis>,
+<emphasis role="underline">underline emphasis</emphasis>,
+<emphasis role="strikethrough">strike-through emphasis</emphasis>.</para>
+
+<para><emphasis>Within already emphatic text, <emphasis>how</emphasis> do you
+turn up the volume?</emphasis></para></eg:body>
+  </eg:example>
+
+  <eg:example title="filename">
+    <eg:description>When the directory class is used, we add a '/' after the
+    element content.  This would be bad if the document already contains a
+    trailing slash, and it also assumes unix-style paths.</eg:description>
+    <eg:body>See <filename>README</filename> within
+<filename class="directory">src</filename>.</eg:body>
+  </eg:example>
+
+</eg:examples>
