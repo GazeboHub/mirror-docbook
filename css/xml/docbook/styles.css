@@ -670,3 +670,14 @@ mediaobject {
 caption>para {
 	text-align: inherit;  /* to override 'justify' and inherit 'centre' */
 }
+
+remark {
+	font-style: italic;
+	background-color: yellow;
+}
+remark:before {
+	content: "[";
+}
+remark:after {
+	content: "]";
+}
