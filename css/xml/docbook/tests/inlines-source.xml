@@ -37,7 +37,8 @@ select <guimenuitem>Quit</guimenuitem> to leave.</eg:body>
   <eg:example title="keycap">
     <eg:description>The keycap element gains a background colour and raised
     borders in attempt to make it look a bit like a key on a physical
-    keyboard.</eg:description>
+    keyboard.  To try and stop the border dangling into the line bellow, the
+    keycap text is smaller than the surrounding content.</eg:description>
     <eg:body>Press <keycap>F1</keycap> for help.</eg:body>
   </eg:example>
 
@@ -88,6 +89,21 @@ turn up the volume?</emphasis></para></eg:body>
     trailing slash, and it also assumes unix-style paths.</eg:description>
     <eg:body>See <filename>README</filename> within
 <filename class="directory">src</filename>.</eg:body>
+  </eg:example>
+
+  <eg:example title="sgmltag">
+    <eg:description></eg:description>
+    <eg:body>A <sgmltag>tag</sgmltag> without a
+    <sgmltag class="attribute">class</sgmltag> looks dull.  More fun are
+    <code><sgmltag class="starttag">sgmltag</sgmltag>sgmltag<sgmltag
+    class="endtag">sgmltag</sgmltag></code> elements with classes
+    <sgmltag class="attvalue">starttag</sgmltag> or
+    <sgmltag class="attvalue">endtag</sgmltag>.
+    An empty <sgmltag class="emptytag">tag</sgmltag> is also
+    possible.  We might want to talk about entities, like
+    <sgmltag class="genentity">amp</sgmltag>.  XML may include
+    <wordasword>processing instructions</wordasword>, like
+    <sgmltag class="xmlpi">xml-stylesheet</sgmltag>.</eg:body>
   </eg:example>
 
 </eg:examples>
