@@ -330,6 +330,10 @@ link, ulink, email {
 	content: " <" attr(url) ">";
 }*/
 
+ulink:empty:after {
+	content: " <" attr(url) ">";
+}
+
 email:before {
 	content: "<";
 }
