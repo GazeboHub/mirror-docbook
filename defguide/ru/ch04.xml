@@ -1,57 +1,39 @@
-<chapter id="ch-publish">
+ <chapter id="ch-publish">
 <?dbhtml filename="ch04.html"?>
 <chapterinfo>
 <pubdate>$Date$</pubdate>
 <releaseinfo>$Revision$</releaseinfo>
 </chapterinfo>
-<title>Publishing DocBook Documents</title>
+<title>Публикация документов DocBook</title>
 <para>
 <indexterm id="publishDocBookch04" class="startofrange"><primary>DocBook DTD</primary>
-  <secondary>publishing documents</secondary></indexterm>
-<indexterm id="DocBookpublishch04" class="startofrange"><primary>publishing DocBook documents</primary></indexterm>
-<indexterm><primary>stylesheets</primary>
-  <secondary>publishing SGML/XML documents</secondary></indexterm>
+  <secondary>Публикация документов DocBook</secondary></indexterm>
+<indexterm id="DocBookpublishch04" class="startofrange"><primary>Публикация документов DocBook</primary></indexterm>
+<indexterm><primary>таблицы стилей</primary>
+  <secondary>Публикация документов SGML/XML</secondary></indexterm>
 <indexterm><primary>HTML</primary>
-  <secondary>translating SGML/XML documents</secondary></indexterm>
-
-Creating and editing &SGML;/&XML; documents is usually only half the
-battle. After you've composed your document, you'll want to publish
-it. Publishing, for our purposes, means either print or web
-publishing. For &SGML; and &XML; documents, this is usually
-accomplished with some kind of <glossterm>stylesheet</glossterm>.  In
-the (not too distant) future, you may be able to publish an &XML;
-document on the Web by simply putting it online with a stylesheet, but
-for now you'll probably have to translate your document into &HTML;.
+  <secondary>преобразование SGML/XML</secondary></indexterm>
+Создание и редактирование документов &SGML;/&XML; есть только половина всего. После написание документа, его обычно публикуют (печатают либо распространяют в web). &SGML; и &XML; документы чаще всего сопровождаются <glossterm>таблицами стилей</glossterm>. В (не далёком) будущем вы сможете публиковать &XML; документ в Web просто выложив его на сервере вместе с таблицей стилей, но сейчас вам скорее всего придётся преобразовать его в старый добрый &HTML;.
 </para>
 <para>
 <indexterm><primary>Jade</primary>
-  <secondary>Modular DocBook Stylesheets</secondary></indexterm>
-<indexterm><primary>Modular DocBook Stylesheets</primary></indexterm>
+  <secondary>Модульные таблицы стилей DocBook</secondary></indexterm>
+<indexterm><primary>Модульные таблицы стилей DocBook</primary></indexterm>
 <indexterm><primary>Linux Documentation Project</primary></indexterm>
 
-There are many ways, using both free and commercial tools, to publish
-&SGML; documents. In this chapter, we're going to survey a number of
-possibilities, and then look at just one solution in detail: <ulink url="http://www.jclark.com/jade/">Jade</ulink> and the <ulink url="http://nwalsh.com/docbook/dsssl/">Modular DocBook
-Stylesheets.</ulink> We used jade to produce this
-book and to produce the online versions on the
-<acronym>CD-ROM</acronym>; it is also being deployed in other projects
-such as <ulink url="http://www.sgmltools.org/"><literal>&lt;SGML&gt;&amp;tools;</literal>,</ulink>
-which originated with the Linux Documentation Project.
-</para>
+Есть много программ (как проприетарных так и свободных) для публикации документов &SGML;. В этой главе, мы проведём обзор таких средств и остановимся более подробно лишь на одном: <ulink url=\"http://www.jclark.com/jade/\">Jade</ulink> и <ulink url=\"http://nwalsh.com/docbook/dsssl/\">Модульные таблицы стилей DocBook.</ulink>. Jjade используется для создания этой книги как в печатном варианте, так и в электронном. Дальнейшее его развитие - <ulink url=\"http://www.sgmltools.org/\"><literal>&lt;SGML&gt;&amp;tools;</literal>,</ulink> 
+используемые в Linux Documentation Project.</para>
 <para>
-For a brief survey of other tools, see <xref linkend="app-resources"/>.
+Краткий обзор других средств: <xref linkend=\"app-resources\"/>.
 </para>
-<section><title>A Survey of Stylesheet Languages</title>
+<section><title>Обзор языков таблиц стилей</title>
 <para>
-<indexterm><primary>stylesheets</primary>
-  <secondary>languages</secondary></indexterm>
-<indexterm><primary>languages</primary>
+<indexterm><primary>таблицы стилей</primary>
+  <secondary>языки</secondary></indexterm>
+<indexterm><primary>языки</primary>
   <secondary>stylesheets</secondary></indexterm>
 
-Over the years, a number of attempts have been made to produce a
-standard stylesheet language and, failing that, a large number of
-proprietary languages have been developed.
-</para>
+Годами делались попытки создать стандарт таблиц стилей, и, потерпев неудачу, было создано множество проприетарных языков.</para>
 <variablelist>
 <varlistentry><term>FOSIs</term>
 <listitem>
@@ -88,16 +70,11 @@ Composer by <ulink url="http://www.datalogics.com/">Datalogics</ulink>.
 <para>
 <indexterm><primary>DSSSL</primary></indexterm>
 <indexterm><primary>Document Style Semantics and Specification Language</primary><see>DSSSL</see></indexterm>
-<indexterm><primary>ISO standards</primary>
+<indexterm><primary>Стандарты ISO</primary>
   <secondary>DSSSL</secondary></indexterm>
-<indexterm><primary>International Organization for Standardization</primary><see>ISO Entity Sets; ISO standards</see></indexterm>
+<indexterm><primary>International Organization for Standardization</primary><see>наборы объектов ISO; стандарты ISO</see></indexterm>
 
-Next, the International Organization for Standardization
-(<acronym>ISO</acronym>) created <acronym>DSSSL</acronym>, the
-Document Style Semantics and Specification Language. Subsets of
-<acronym>DSSSL</acronym> are supported by Jade and a few other tools,
-but it never achieved widespread support.
-</para>
+Затем, Международная организация стандартизации  (<acronym>ISO</acronym>) создала <acronym>DSSSL</acronym> (Document Style Semantics and Specification Language). Подмножество <acronym>DSSSL</acronym> поддерживается Jade и несколькими другими средствами, но ему никогда уже не достичь широкой поддержки.</para>
 </listitem>
 </varlistentry>
 <varlistentry><term>CSS</term>
@@ -109,10 +86,7 @@ but it never achieved widespread support.
 <indexterm><primary>XML</primary>
   <secondary>CSS</secondary></indexterm>
 
-The <acronym>W3C</acronym> CSS Working Group created
-<acronym>CSS</acronym> as a style attachment language for &HTML;, and,
-more recently, &XML;.
-</para>
+<acronym>W3C</acronym> Рабочая группа CSS создали  <acronym>CSS</acronym> как язык вложения стиля (style attachment language) для &HTML;, и, позже, для &XML;.</para>
 </listitem>
 </varlistentry>
 <varlistentry><term>XSL</term>
@@ -122,18 +96,14 @@ more recently, &XML;.
 <indexterm><primary>XML</primary>
   <secondary>XSL</secondary></indexterm>
 <indexterm><primary>Extensible Style Language</primary><see>XSL</see></indexterm>
-Most recently, the &XML; effort has identified a standard Extensible Style
-Language (<acronym>XSL</acronym>) as a requirement. The
-<acronym>W3C</acronym> <acronym>XSL</acronym> Working Group is
-currently pursuing that effort.
-</para>
+Относительно недавно был создан <acronym>XSL</acronym> (Extensible Style Language) и его определили обязательным для &XML; <acronym>W3C</acronym> Рабочая группа <acronym>XSL</acronym> работает над его распространением.</para>
 </listitem>
 </varlistentry>
 </variablelist>
-<section><title>Stylesheet Examples</title>
+<section><title>Примеры таблиц стилей</title>
 <para>
 <indexterm id="stylsheetsch04" class="startofrange"><primary>stylesheets</primary>
-  <secondary>examples</secondary></indexterm>
+  <secondary>примеры</secondary></indexterm>
 
 
 
