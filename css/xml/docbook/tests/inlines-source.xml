@@ -106,4 +106,9 @@ turn up the volume?</emphasis></para></eg:body>
     <sgmltag class="xmlpi">xml-stylesheet</sgmltag>.</eg:body>
   </eg:example>
 
+  <eg:example title="remark">
+    <eg:body>All statements made are true <remark>must check
+    this</remark>.</eg:body>
+  </eg:example>
+
 </eg:examples>
