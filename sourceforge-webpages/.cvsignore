@@ -1,6 +1,8 @@
 autolayout.xml
+Changes
 .depends.tabular
 .depends.textonly
+.memdump
 *.html
 *.zip
 *.gz
