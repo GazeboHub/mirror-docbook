@@ -454,7 +454,7 @@ simplelist[type=inline]>member+member:before {
 }
 
 cmdsynopsis, code, command, computeroutput, envar, filename, keycode, keysym,
-literal, option, parameter, systemitem {
+literal, option, parameter, sgmltag, systemitem {
 	font-family: monospace;
 }
 
