@@ -1,10 +1,16 @@
 <html>
   <head>
     <title>DocBook Cascading Stylesheet (CSS2)</title>
-    <meta name="keywords" content="docbook-css"/>
+    <meta name="keywords" content="docbook-css, doc book, style sheet, CSS3"/>
+    <!-- $Revision$ -->
     <style type="text/css"><!--
-      h1,h2,h3	{font-family:sans-serif;}
-      p,ul,pre		{margin:0 8% .5em 8%;}
+      h1,h2,h3		{ font-family: sans-serif; }
+      p,ul,pre,dl	{ margin: 0 8% .5em 8%; }
+      h3		{ margin: 0 4% .5em 4%; }
+      dt		{ font-weight: bolder; }
+      pre		{ padding: .5em; border: 1px dashed black; background-color: #dddddd; }
+      code:before	{ content: "<"; }
+      code:after	{ content: ">"; }
     --></style>
   </head>
 
@@ -18,12 +24,12 @@
     <p>The <a href="http://www.w3.org/Style/CSS/">Cascading Stylesheet</a>
     provided here allows you to directly view a styled XML document in software
     that supports XML styled with CSS2 (e.g. a recent
-    <a href="http://www.mozilla.org/">Mozilla</a>,
-    <a href="http://www.opera.com/">Opera</a> or
-    <a href="http://www.microsoft.com/ie/">Internet Explorer</a>)</p>
+    <a href="http://www.mozilla.org/">Mozilla</a> or
+    <a href="http://www.opera.com/">Opera</a> browser)</p>
 
     <h2>Status</h2>
-    <p>Works sometimes.  Not extensively tested.</p>
+    <p>There are currently many Docbook elements that haven't had CSS written
+    to style them yet.</p>
 
     <h2>Examples</h2>
     <p><small>(To view the XML versions, you need a capable browser)</small></p>
@@ -50,17 +56,66 @@
 
     <h2>Download</h2>
     <h3>Current</h3>
+    <p>2004-10-17 <a href="docbook-css-0.3.tar.gz">docbook-css-0.3.tar.gz</a> ~69kB</p>
+    <ul>
+      <li>return of <code>ulink</code> support; in Mozilla and Opera!</li>
+      <li>Fixed an arrow preceding any <code>guimenuitem</code> following a
+      <code>guimenu</code> under the same parent node.  The arrow now only
+      appears if the parent is a <code>menuchoice</code></li>
+      <li>Stop the numbers on <code>listitem</code>s within
+      <code>orderedlist</code> always being '0' in Mozilla.</li>
+      <li>Add formatting for <code>important</code>; to match other
+      admonitions.</li>
+      <li>Factor language-specific generated content into a 'localisation
+      framework'.</li>
+      <li>Add some support for <em>pl</em>, <em>de</em> and <em>es</em> locales
+      (in addition to <em>en</em>).</li>
+      <li>Nicer <code>keycap</code>; beige backround, and borders to look more
+      'key-like'.</li>
+      <li>Give <code>guibutton</code> grey background and raised borders.</li>
+      <li>Make <code>productname</code> italic.</li>
+      <li>Extra 5% on left/right margins for admonitions, to set them off
+      better from the main text.</li>
+      <li>Explicitly alter formatting of nested <code>quote</code> tags
+      (mozilla seems to ignore CSS nested quoting syntax).</li>
+    </ul>
+    
+    <h3>Previous</h3>
     <p>2004-09-05 <a href="docbook-css-0.2.tar.gz">docbook-css-0.2.tar.gz</a> ~6kB</p>
     <ul>
       <li>Too many changes to list everything</li>
-      <li>Mozilla &lt;ulink&gt; binding dissabled, since it seems to crash
+      <li>Mozilla <code>ulink</code> binding dissabled, since it seems to crash
       recent mozilla.org offerings.</li>
       <li>Images may appear, in some instances</li>
       <li>Styling for lots more elements</li>
     </ul>
     
-    <h3>Previous</h3>
     <p>2002-12-12 <a href="docbook-css-0.1.0.tar.gz">docbook-css-0.1.0.tar.gz</a> ~3kB</p>
+
+    <h2>Limitations</h2>
+    <p>The technology behind this stylesheet is fundamentally limited, and
+    this limits the kind of presentation possible using it.</p>
+
+    <dl>
+      <dt>XML parsing</dt>
+      <dd>Browsers will not always feature fully capable XML parsers.  Often,
+      the external entities used to break up the structure of larger documents
+      are simply not handled, or will cause processing errors:  Assume this
+      stylesheet will only work with single-source-file documents.</dd>
+
+      <dt>Restructuring Layout</dt>
+      <dd>If docbook perscribes an ordering for source elements that differs
+      from the ordering in an ideal visual presentation, there's often
+      no way to re-order content using CSS.  For
+      example the <code>attribution</code> comes first inside a
+      <code>blockquote</code>, but should traditionally be presented
+      <em>after</em> the quoted text.</dd>
+
+      <dt>Generated Content</dt>
+      <dd>While CSS allows for the generation of simple content before and
+      after an existing element, generation of a table of contents, for
+      instance, is totally outside its capabilities.</dd>
+    </dl>
 
     <h2>Source</h2>
     <p>Part of the stylesheet was generated from the source of
@@ -69,11 +124,15 @@
       <li><a href="makecss.rb">makecss.rb</a></li>
     </ul>
 
-    <h2>mailto:</h2>
-    <p>If you find examples of valid docbook that doesn't get rendered
-    resonably by this stylesheet, point them out.  Suggestions to improve
-    the stylesheets gratefully accepted.</p>
+    <h2>Contact</h2>
+    <p>Report bugs and make suggestions to the <a href="http://lists.badgers-in-foil.co.uk/mailman/listinfo/docbook-css">Docbook-CSS mailing list</a>.</p>
 
-    <p>David Holroyd &lt;dave <i>at</i> badgers-in-foil <i>dot</i> co <i>dot</i> uk&gt;</p>
+    <h2>Related</h2>
+    <ul>
+      <li><a href="http://my.core.com/9A/2F/dhorton/docbook/mozbook/MozBook.css">MozBook</a>, by David Horton</li>
+      <li><a href="http://www.es.gnome.org/cgi-bin/cvsweb/documentacion/articulos/charlas/xml/docbook.css?cvsroot=GNOME">Another stylesheet</a> (in <a href="http://es.gnome.org/">es.gnome.org</a>'s CVS)</li>
+      <li><a href="http://wiki.docbook.org/topic/DocBookStylesheets">DocBookStylesheets</a> Wiki Page</li>
+      <li><a href="http://cvs.sourceforge.net/viewcvs.py/vex/vex-samples/docbook/styles/docbook-plain.css?rev=1.3&view=log">vex-samples stylesheet</a>, from the <a href="http://vex.sourceforge.net/">Vex</a> project</li>
+    </ul>
   </body>
 </html>
