@@ -17,6 +17,13 @@ example > title:lang(pl):before {
 	content: "Przykład: ";
 }
 
+:lang(pl) > quote {
+	quotes: "„" "”";
+}
+:lang(pl) > quote quote {
+	quotes: "«" "»";
+}
+
 warning:lang(pl):before {
 	content: "Ostrzeżenie: ";
 }

@@ -20,7 +20,10 @@ example > title:before {
 }
 
 quote {
-	quotes: "“" "”" "‘" "’";
+	quotes: "“" "”";
+}
+quote quote {
+	quotes: "‘" "’";
 }
 
 /* Admonitions */
