@@ -34,10 +34,9 @@ ulink:focus {
 	-moz-outline: 1px dotted invert;
 }
 
-imagedata {
-	-moz-binding:url('db-bindings.xml#image');
+mediaobject, inlinemediaobject {
+	-moz-binding:url('db-bindings.xml#mediaobj');
 }
-
 
 guimenu, guimenuitem, guisubmenu {
 	font: menu;

@@ -29,7 +29,6 @@
       <html:span/>
     </content>
 
-    <stylesheet src="plain-xref.css"/>
 
     <handlers>
       <!--
@@ -81,20 +80,58 @@
     </implementation>
   </binding>
 
-  <binding id="image">
+  <binding id="mediaobj" inheritstyle="false">
+    <!--
+      We must have <children/> here, because Moz will reject this binding if
+      any of the bound node's children aren't matched.
+      Because of this, the stylesheet hides most of [inline]mediaobject's
+      children with display:none;
+    -->
     <content>
-      <html:img xbl:inherits="src=fileref"/>
+      <html:img/>
+      <children/>
     </content>
 
     <implementation>
       <constructor>
 	var img = document.getAnonymousNodes(this)[0];
-	var file = this.getAttribute("fileref");
+	var file = this.selectImage();
 	// HACK: using img.src=file 'inline' doesn't seem to work
 	//       but it does when called from a setTimeout()
 	var f = function() { img.src = file; }
 	setTimeout(f, 0);
       </constructor>
+
+      <method name="selectImage">
+	<body><![CDATA[
+	  var src = this.selectImageByRole();
+	  if (src == null) {
+	    src = this.selectImageByFormat()
+	  }
+	  if (src == null) {
+	    src = "resource://gre/res/broken-image.gif";
+	  }
+	  return src;
+	]]></body>
+      </method>
+      <method name="selectImageByRole">
+	<body><![CDATA[
+	  var fileref = document.evaluate("imageobject[@role='html' or @role='HTML' or @role='xhtml' or @role='XHTML']/imagedata/@fileref", this, null, XPathResult.STRING_TYPE, null).stringValue;
+	  if (fileref != "") {
+	    return fileref;
+	  }
+	  return null;
+	]]></body>
+      </method>
+      <method name="selectImageByFormat">
+	<body><![CDATA[
+	  var fileref = document.evaluate("imageobject/imagedata[@format='PNG' or @format='GIF' or @format='GIF87a' or @format='GIF89a' or @format='JPG' or @format='JPEG']/@fileref", this, null, XPathResult.STRING_TYPE, null).stringValue;
+	  if (fileref != "") {
+	    return fileref;
+	  }
+	  return null;
+	]]></body>
+      </method>
     </implementation>
   </binding>
 </bindings>

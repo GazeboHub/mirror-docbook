@@ -20,4 +20,99 @@
       most widely recognized buildings in the world.</para>
     </caption>
   </mediaobject>
+
+  <section>
+    <title><sgmltag class="starttag">mediaobject</sgmltag> vs.
+    <sgmltag class="starttag">inlinemediaobject</sgmltag></title>
+
+    <para>An <sgmltag class="starttag">inlinemediaobject</sgmltag> (e.g.
+    <inlinemediaobject>
+      <imageobject>
+         <imagedata fileref="nana.png" format="PNG"/>
+      </imageobject>
+    </inlinemediaobject>) should not create linebreaks in the flow of a
+    paragraph.  A <sgmltag class="starttag">mediaobject</sgmltag> such as,
+    <mediaobject>
+      <imageobject>
+         <imagedata fileref="nana.png" format="PNG"/>
+      </imageobject>
+    </mediaobject>
+    will create a new block, though.
+    </para>
+  </section>
+
+  <section>
+    <title>Image Selection Criteria</title>
+
+    <para>In each of these test cases, a single, green apple should appear if
+    the stylesheet is working, while a yellow bananna (or nothing, or...) will
+    appear if there is a problem</para>
+
+    <section>
+      <title>By role</title>
+
+      <para>An <sgmltag class="starttag">imageobject</sgmltag> with role="html"
+      or role="xhtml" is to be preferred over other options.</para>
+
+      <programlisting><![CDATA[
+      <mediaobject>
+	<imageobject>
+	   <imagedata fileref="nana.png"/>
+	</imageobject>
+	<imageobject role="HTML">
+	   <imagedata fileref="apple.png"/>
+	</imageobject>
+	<imageobject role="PDF">
+	   <imagedata fileref="nana.png"/>
+	</imageobject>
+      </mediaobject>]]>
+      </programlisting>
+      <para>gives...</para>
+      <mediaobject>
+	<imageobject>
+	   <imagedata fileref="nana.png"/>
+	</imageobject>
+	<imageobject role="HTML">
+	   <imagedata fileref="apple.png"/>
+	</imageobject>
+	<imageobject role="PDF">
+	   <imagedata fileref="nana.png"/>
+	</imageobject>
+      </mediaobject>
+    </section>
+
+    <section>
+      <title>By format</title>
+
+      <para><sgmltag class="starttag">imagedata</sgmltag> with format="PNG",
+      format="GIF" or format="JPG" is to be preferred over other
+      options.</para>
+
+      <programlisting><![CDATA[
+      <mediaobject>
+	<imageobject>
+	   <imagedata fileref="nana.png"/>
+	</imageobject>
+	<imageobject>
+	   <imagedata fileref="apple.png" format="PNG"/>
+	</imageobject>
+	<imageobject>
+	   <imagedata fileref="nana.png" format="fruit"/>
+	</imageobject>
+      </mediaobject>]]>
+      </programlisting>
+      <para>gives...</para>
+      <mediaobject>
+	<imageobject>
+	   <imagedata fileref="nana.png"/>
+	</imageobject>
+	<imageobject>
+	   <imagedata fileref="apple.png" format="PNG"/>
+	</imageobject>
+	<imageobject>
+	   <imagedata fileref="nana.png" format="fruit"/>
+	</imageobject>
+      </mediaobject>
+    </section>
+  </section>
 </section>

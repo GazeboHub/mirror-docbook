@@ -657,6 +657,16 @@ figure {
 	text-align: center;
 }
 
-mediaobject>textobject {
-	font-size: smaller;
+/* hide content; we will use XML in mozilla to display it */
+mediaobject>*, inlinemediaobject>* {
+	display: none;
+}
+mediaobject>caption {
+	display: block;
+}
+mediaobject {
+	text-align: center;
+}
+caption>para {
+	text-align: inherit;  /* to override 'justify' and inherit 'centre' */
 }
