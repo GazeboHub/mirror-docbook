@@ -5,9 +5,10 @@
 <config param="rcsdate" value="$Date$"/>
 <config param="footer" value="issues.xml" altval="XML Source"/>
 <head>
-<title>Issue Tracking</title>
+<title>Issue Tracking (bugs etc.)</title>
+    <titleabbrev>Bugs</titleabbrev>
 <summary>Bug reports and enhancement requests</summary>
-<keywords>DocBook, SourceForge, tracking, issues</keywords>
+<keywords>DocBook, SourceForge, tracking, issues, bugs</keywords>
 </head>
 
 <para>SourceForge offers a
