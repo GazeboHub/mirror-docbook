@@ -101,8 +101,10 @@ section>section>section>section>section>title, sect5>title {
 	margin-left:10%;
 }
 
-biblioentry > title {
+biblioentry title, bibliomixed title {
 	display: inline;
+	font-style: italic;
+	font-weight: inherit;
 }
 
 /* Give vertical spacing between compoments of the document */
@@ -136,8 +138,15 @@ section>section>*+section {
  * which gap is the end just of a paragraph, and which gap is the end of the
  * entry
  */
-*+biblioentry {
+*+biblioentry, *+bibliomixed {
 	margin-top: 1em;
+}
+
+biblioentry, bibliomixed {
+	text-indent: -2em;
+}
+biblioentry > *+*, bibliomixed > *+* {
+	text-indent: 0;
 }
 
 /*
@@ -341,11 +350,15 @@ email:after {
 	content: ">";
 }
 
-citation:before {
+citation:before, biblioentry>abbrev:before {
 	content: "[";
 }
-citation:after {
+citation:after, biblioentry>abbrev:after {
 	content: "]";
+}
+
+authorgroup > author:not(:last-child):after {
+	content: ", ";
 }
 
 /* TODO: group with other 'link' styles */
@@ -643,9 +656,13 @@ footnote>*:before {
 }
 */
 
-glossentry>glossterm, term {
-	font-weight: bolder;
+glossterm, term {
 	font-style: italic;
+}
+
+glossentry>glossterm {
+	font-weight: bolder;
+	display: block;
 }
 
 
