@@ -1,0 +1,42 @@
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
+                  "file:/share/doctypes/website-pages/website.dtd">
+<webpage id="projects">
+<config param="desc" value="DocBook Projects"/>
+<config param="rcsdate" value="$Date$"/>
+<config param="footer" value="projects.xml" altval="XML Source"/>
+<head>
+<title>DocBook Projects</title>
+<titleabbrev>Projects</titleabbrev>
+<summary>Summary of the projects in the repository</summary>
+<keywords>DocBook, SourceForge, projects</keywords>
+</head>
+
+<para>This page describes all of the distributions contained in this
+project.</para>
+
+<variablelist>
+<varlistentry><term>gentext</term>
+<listitem><para>The localization text for the DSSSL and XSL Stylesheets.
+</para></listitem>
+</varlistentry>
+<varlistentry><term>sourceforge-webpages</term>
+<listitem><para>The XML sources for the web pages at
+<ulink url="http://docbook.sourceforge.net/"/>. (These very pages!)
+</para></listitem>
+</varlistentry>
+<varlistentry><term>T.B.A.</term>
+<listitem><para>A whole bunch of other projects are being added as
+construction continues.
+</para></listitem>
+</varlistentry>
+<!--
+<varlistentry><term></term>
+<listitem><para>
+</para></listitem>
+</varlistentry>
+-->
+</variablelist>
+
+<webtoc/>
+
+</webpage>

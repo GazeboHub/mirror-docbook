@@ -1,0 +1,23 @@
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
+                  "file:/share/doctypes/website-pages/website.dtd">
+<webpage id="home">
+<config param="desc" value="Open DocBook Repository"/>
+<config param="rcsdate" value="$Date$"/>
+<config param="footer" value="about.html" altval="About..."/>
+<config param="footer" value="website.xml" altval="XML Source"/>
+<head>
+<title>Welcome to the Open DocBook Repository</title>
+<summary>Introduction</summary>
+<keywords>DocBook, SourceForge</keywords>
+</head>
+
+<para>This project is still in the early planning stages. It will
+eventually contain a number of DocBook-related schemas and stylesheets.</para>
+
+<para>Check back in a few weeks to see if any progress has been
+made. Announcements will be go out when we've go anything useful set
+up.</para>
+
+<webtoc/>
+
+</webpage>

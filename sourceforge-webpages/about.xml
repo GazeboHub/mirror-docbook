@@ -1,0 +1,21 @@
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
+                  "file:/share/doctypes/website-pages/website.dtd">
+<webpage id="about">
+<config param="rcsdate" value="$Date$"/>
+<config param="footer" value="about.xml" altval="XML Source"/>
+<head>
+<title>About the Open DocBook Repository</title>
+<summary>About the Repository Website</summary>
+</head>
+
+<para>
+This collection of pages is maintained using XML with the Website2
+document type.</para>
+
+<para>N.B. the tools necessary to build these pages have not yet been
+published. Also, the XML sources won't parse anywhere except on Norm's
+system. This will be fixed asap.
+</para>
+
+</webpage>
+
