@@ -5,6 +5,24 @@
   <title><sgmltag class="starttag">itemisedlist</sgmltag></title>
 
   <section>
+  <title>Basic Presentation</title>
+
+  <para>
+    <itemizedlist>
+      <listitem>
+        <para>One</para>
+      </listitem>
+      <listitem>
+        <para>Two</para>
+      </listitem>
+      <listitem>
+        <para>Three</para>
+      </listitem>
+    </itemizedlist>
+  </para>
+  </section>
+
+  <section>
   <title>Controlling Marks With <code>mark</code> and
   <code>override</code>.</title>
 
