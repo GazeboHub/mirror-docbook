@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+		xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:h="http://www.w3.org/1999/xhtml"
+		xmlns:f="http://docbook.org/xslt/ns/extension"
+		xmlns:m="http://docbook.org/xslt/ns/mode"
+		xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
+		xmlns:db="http://docbook.org/docbook-ng"
+		xmlns:t="http://docbook.org/xslt/ns/template"
+		exclude-result-prefixes="h f m fn db t"
+                version="2.0">
+
+<xsl:param name="glossary.collection"
+	   select="'/sourceforge/docbook/xsl2/gloss.xml'"/>
+
+<xsl:param name="glossentry.show.acronym" select="'primary'"/>
+<xsl:param name="glossterm.auto.link" select="1"/>
+
+<xsl:param name="inline.style.attribute" select="1"/>
+
+<xsl:param name="titlepage.templates" select="'titlepages.xml'"/>
+
+<xsl:param name="l10n.gentext.default.language" select="'en'"/>
+<xsl:param name="l10n.gentext.language" select="''"/>
+<xsl:param name="l10n.gentext.use.xref.language" select="0"/>
+
+<xsl:param name="l10n.xml" select="document('../common/l10n.xml')"/>
+<xsl:param name="local.l10n.xml" select="document('')"/>
+
+<xsl:param name="docbook-namespace" select="'http://docbook.org/docbook-ng'"/>
+
+<xsl:param name="punct.honorific" select="'.'"/>
+<xsl:param name="author.othername.in.middle" select="0"/>
+
+<xsl:param name="itemizedlist.numeration.symbols"
+	   select="('disc', 'round')"/>
+
+<xsl:param name="root.elements">
+  <db:appendix/>
+  <db:article/>
+  <db:bibliography/>
+  <db:book/>
+  <db:chapter/>
+  <db:colophon/>
+  <db:dedication/>
+  <db:glossary/>
+  <db:index/>
+  <db:part/>
+  <db:preface/>
+  <db:refentry/>
+  <db:reference/>
+  <db:sect1/>
+  <db:section/>
+  <db:set/>
+  <db:setindex/>
+</xsl:param>
+
+<xsl:param name="autolabel.elements">
+  <db:appendix/>
+  <db:chapter/>
+</xsl:param>
+
+<xsl:param name="section.autolabel.max.depth" select="4"/>
+
+<xsl:param name="rootid"/>
+
+<!-- Profiling parameters -->
+<xsl:param name="profile.arch" select="()"/>
+<xsl:param name="profile.condition" select="'online'"/>
+<xsl:param name="profile.conformance" select="()"/>
+<xsl:param name="profile.lang" select="()"/>
+<xsl:param name="profile.os" select="()"/>
+<xsl:param name="profile.revision" select="()"/>
+<xsl:param name="profile.revisionflag" select="()"/>
+<xsl:param name="profile.role" select="()"/>
+<xsl:param name="profile.security" select="()"/>
+<xsl:param name="profile.userlevel" select="()"/>
+<xsl:param name="profile.vendor" select="()"/>
+<xsl:param name="profile.attribute" select="()"/>
+<xsl:param name="profile.value" select="()"/>
+<xsl:param name="profile.separator" select="';'"/>
+
+</xsl:stylesheet>
