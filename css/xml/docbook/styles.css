@@ -332,6 +332,15 @@ blockquote>attribution:after {
 	 * overlaps preceeding content). */
 	content:":"
 }
+blockquote>para:before {
+	content: open-quote;
+}
+blockquote>para:after {
+	content: no-close-quote;
+}
+blockquote>para:last-child:after {
+	content: close-quote;
+}
 
 /* lists */
 
