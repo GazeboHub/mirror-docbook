@@ -517,7 +517,7 @@ example, informalexample, programlisting  {
 
 
 example programlisting, informalexample programlisting {
-	background-color: none;
+	background-color: transparent;
 	padding: 0;
 	border: none;
 }
