@@ -59,6 +59,18 @@
   <a href="txtindex.html">Text<br/>Only</a>
 </xsl:template>
 
+<xsl:template name="home.navhead.cell">
+  <td width="90%" valign="middle" align="left">
+    <xsl:call-template name="home.navhead"/>
+  </td>
+</xsl:template>
+
+<xsl:template name="home.navhead.upperright.cell">
+  <td width="10%" valign="middle" align="right">
+    <xsl:call-template name="home.navhead.upperright"/>
+  </td>
+</xsl:template>
+
 <!-- ==================================================================== -->
 
 <xsl:template name="webpage.footer"/>

@@ -21,16 +21,23 @@
 
   <toc page="index.xml">
     <tocentry page="projects/index.xml" dir="projects">
+      <tocentry page="projects/contrib/index.xml" dir="contrib"/>
       <tocentry page="projects/cvstools/index.xml" dir="cvstools"/>
+      <tocentry page="projects/defguide/index.xml" dir="defguide"/>
       <tocentry page="projects/docbook/index.xml" dir="docbook"/>
       <tocentry page="projects/dsssl/index.xml" dir="dsssl"/>
       <tocentry page="projects/gentext/index.xml" dir="gentext"/>
       <tocentry page="projects/jrefentry/index.xml" dir="jrefentry"/>
+      <tocentry page="projects/litprog/index.xml" dir="litprog"/>
+      <tocentry page="projects/schema/index.xml" dir="schema"/>
+      <tocentry page="projects/slides/index.xml" dir="slides"/>
       <tocentry page="projects/sourceforge-webpages/index.xml"
 		dir="sourceforge-webpages"/>
       <tocentry page="projects/testdocs/index.xml" dir="testdocs"/>
+      <tocentry page="projects/website/index.xml" dir="website"/>
       <tocentry page="projects/xmlcharent/index.xml" dir="xmlcharent"/>
       <tocentry page="projects/xsl/index.xml" dir="xsl"/>
+      <tocentry page="projects/xslconfig/index.xml" dir="xslconfig"/>
     </tocentry>
     <tocentry page="contrib/index.xml" dir="contrib">
       <tocentry page="contrib/css/index.xml" dir="css">

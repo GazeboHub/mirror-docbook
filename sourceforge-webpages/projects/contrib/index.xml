@@ -1,0 +1,18 @@
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
+          "http://docbook.sourceforge.net/release/website/snapshot/website.dtd">
+<webpage id="p.contrib">
+<config param="rcsdate" value="$Date$"/>
+<config param="footer" value="index.xml" altval="XML Source"/>
+<head>
+<title>Contrib</title>
+<summary>Contributions</summary>
+<keywords>DocBook, SourceForge, Contrib</keywords>
+</head>
+
+<para>The contrib project holds contributions and related materials that
+are not part of any of the distributions.</para>
+
+<para><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/contrib/">CVS</ulink>
+</para>
+
+</webpage>

@@ -1,4 +1,4 @@
 autolayout.xml
-depends.tabular
-depends.textonly
+.depends.tabular
+.depends.textonly
 *.html

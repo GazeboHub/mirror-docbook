@@ -1,0 +1,19 @@
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
+                  "file:/share/doctypes/website-pages/website.dtd">
+<webpage id="p.litprog">
+<config param="rcsdate" value="$Date$"/>
+<config param="footer" value="index.xml" altval="XML Source"/>
+<head>
+<title>Literate Programming</title>
+<titleabbrev>Litprog</titleabbrev>
+<summary>Literate Programming in XML</summary>
+<keywords>DocBook, SourceForge, Literate Programming, Litprog</keywords>
+</head>
+
+<para>The literate programming system is used to build some of the other
+sources.</para>
+
+<para><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/litprog/">CVS</ulink>
+</para>
+
+</webpage>

@@ -1,5 +1,5 @@
-PROC=saxon
-PROCOPT=
+include ../cvstools/Makefile.incl
+
 TABSTYLE=.stylesheets/tabular.xsl
 WEBSTYLE=.stylesheets/textonly.xsl
 AUTOSTYLE=/sourceforge/docbook/website/xsl/autolayout.xsl
@@ -11,10 +11,10 @@ USETIDY=1
 
 ifeq ($(TEXTONLY),0)
 STYLESHEET=$(TABSTYLE)
-include depends.tabular
+include .depends.tabular
 else
 STYLESHEET=$(WEBSTYLE)
-include depends.textonly
+include .depends.textonly
 endif
 
 .PHONY : clean
@@ -23,23 +23,23 @@ all: website
 
 autolayout.xml: layout.xml
 	xjparse $(filter-out autolayout.xml,$^)
-	$(PROC) $(PROCOPT) $< $(AUTOSTYLE) $@
+	$(XSLT) $< $(AUTOSTYLE) $@
 	make depends
 
 chunk: autolayout.xml
-	$(PROC) $(PROCOPT) autolayout.xml $(STYLESHEET) -
+	$(XSLT) autolayout.xml $(STYLESHEET) -
 
 %.html: autolayout.xml
 	xjparse $(filter-out autolayout.xml,$^)
-	$(PROC) $(PROCOPT) $(filter-out autolayout.xml,$^) $(STYLESHEET) $@ autolayout-file=$(AUTOLAYOUT-FILE)
+	$(XSLT) $(filter-out autolayout.xml,$^) $(STYLESHEET) $@ autolayout-file=$(AUTOLAYOUT-FILE)
 ifeq ($(USETIDY),1)
-	tidy -iq -latin1 -mn $@
+	$(TIDY) -iq -latin1 -mn $@
 endif
 
 depends: autolayout.xml
 	xjparse $<
-	$(PROC) $(PROCOPT) $< $(DEPSTYLE) depends.tabular
-	$(PROC) $(PROCOPT) $< $(DEPSTYLE) depends.textonly prefix=txt
+	$(XSLT) $< $(DEPSTYLE) .depends.tabular
+	$(XSLT) $< $(DEPSTYLE) .depends.textonly prefix=txt
 
 realclean: clean
 	rm -f autolayout.xml

@@ -19,27 +19,63 @@ project. These are available <olink targetdocent="cvs.xml">via CVS</olink>.
 
 <variablelist>
 <varlistentry>
-<term><ulink url="cvstools/">cvstools</ulink></term>
+<term><ulink url="contrib/">Contrib</ulink></term>
+<listitem><para>Contributions to the projects.
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><ulink url="cvstools/">CVS Tools</ulink></term>
 <listitem><para>Shell scripts and other tools necessary to build a working
 CVS tree or to build a new release.
 </para></listitem>
 </varlistentry>
 
 <varlistentry>
-<term><ulink url="docbook/">docbook</ulink></term>
-<listitem><para>The DocBook DTD and schemas.
+<term><ulink url="defguide/">DocBook: The Definitive Guide</ulink></term>
+<listitem><para>Sources for the Definitive Guide.
 </para></listitem>
 </varlistentry>
 
 <varlistentry>
-<term><ulink url="dsssl/">dsssl</ulink></term>
+<term><ulink url="docbook/">DocBook DTD</ulink></term>
+<listitem><para>The DocBook DTD.
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><ulink url="dsssl/">DSSSL Stylesheets</ulink></term>
 <listitem><para>DocBook DSSSL Stylesheets.
 </para></listitem>
 </varlistentry>
 
 <varlistentry>
-<term><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/gentext/">gentext</ulink></term>
+<term><ulink url="gentext/">Generated Text</ulink></term>
 <listitem><para>The localization text for the DSSSL and XSL Stylesheets.
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><ulink url="jrefentry/">JRefEntry</ulink></term>
+<listitem><para>Java Reference pages.
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><ulink url="litprog/">Literate Programming</ulink></term>
+<listitem><para>Literate Programming in XML.
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><ulink url="schema/">DocBook Schema</ulink></term>
+<listitem><para>XML Schemas for DocBook.
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><ulink url="slides/">Slides</ulink></term>
+<listitem><para>The Slides doctype.
 </para></listitem>
 </varlistentry>
 
@@ -51,20 +87,32 @@ CVS tree or to build a new release.
 </varlistentry>
 
 <varlistentry>
-<term><ulink url="testdocs/">testdocs</ulink></term>
+<term><ulink url="testdocs/">Test Documents</ulink></term>
 <listitem><para>Test documents.
 </para></listitem>
 </varlistentry>
 
 <varlistentry>
-<term><ulink url="xmlcharent/">xmlcharent</ulink></term>
+<term><ulink url="website/">Website</ulink></term>
+<listitem><para>The Website doctype.
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><ulink url="xmlcharent/">XML Character Entities</ulink></term>
 <listitem><para>The XML version of the ISO character entity sets.
 </para></listitem>
 </varlistentry>
 
 <varlistentry>
-<term><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/xsl/">xsl</ulink></term>
+<term><ulink url="xsl/">XSL Stylesheets</ulink></term>
 <listitem><para>DocBook XSL Stylesheets.
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><ulink url="xslconfig/">XSL Configuration</ulink></term>
+<listitem><para>An experimental framework for web-based stylesheet configuration.
 </para></listitem>
 </varlistentry>
 

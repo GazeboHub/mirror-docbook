@@ -1,0 +1,21 @@
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
+                  "file:/share/doctypes/website-pages/website.dtd">
+<webpage id="p.slides">
+<config param="rcsdate" value="$Date$"/>
+<config param="footer" value="docbook.xml" altval="XML Source"/>
+<head>
+<title>Slides</title>
+<summary>The Slides doctype</summary>
+<keywords>DocBook, SourceForge, Slides</keywords>
+</head>
+
+<para>The Slides doctype is for making presentations.</para>
+
+<itemizedlist>
+<listitem>
+<para><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/slides/">CVS</ulink>.
+</para>
+</listitem>
+</itemizedlist>
+
+</webpage>
