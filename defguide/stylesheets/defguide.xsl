@@ -5,14 +5,18 @@
                 exclude-result-prefixes="scvs xcvs"
                 version="1.0">
 
-<xsl:import href="/sourceforge/docbook/xsl/html/docbook.xsl"/>
+<xsl:import href="../../xsl/html/autoidx.xsl"/>
 <xsl:include href="html-titlepage.xsl"/>
 
 <xsl:param name="output.media" select="'online'"/>
 <xsl:param name="output.type" select="'expanded'"/>
-<xsl:param name="html.stylesheet">docbook.css</xsl:param>
+<xsl:param name="html.stylesheet">defguide.css</xsl:param>
 <xsl:param name="toc.section.depth" select="1"/>
 <xsl:param name="section.autolabel" select="1"/>
+<xsl:param name="section.label.includes.component.label" select="1"/>
+
+<xsl:param name="admon.graphics.path" select="'figures/100dpi/admon/'"/>
+<xsl:param name="callout.graphics.path" select="'figures/100dpi/callouts/'"/>
 
 <xsl:template match="processing-instruction('lb')">
   <br/>
@@ -48,25 +52,25 @@
   <xsl:if test="@revision">
     <xsl:choose>
       <xsl:when test="@revision='5.0'">
-        <img src="figures/rev_5.0.gif" alt="[5.0]" align="absbottom"/>
+        <img src="figures/rev_5.0.png" alt="[5.0]" align="absbottom"/>
       </xsl:when>
       <xsl:when test="@revision='4.0'">
-        <img src="figures/rev_4.0.gif" alt="[4.0]" align="absbottom"/>
+        <img src="figures/rev_4.0.png" alt="[4.0]" align="absbottom"/>
       </xsl:when>
       <xsl:when test="@revision='3.1'">
         <!-- nop; 3.1 isn't interesting anymore -->
       </xsl:when>
       <xsl:when test="@revision='EBNF'">
-        <img src="figures/rev_ebnf.gif" alt="[EBNF]" align="absbottom"/>
+        <img src="figures/rev_ebnf.png" alt="[EBNF]" align="absbottom"/>
       </xsl:when>
       <xsl:when test="@revision='SVG'">
-        <img src="figures/rev_svg.gif" alt="[SVG]" align="absbottom"/>
+        <img src="figures/rev_svg.png" alt="[SVG]" align="absbottom"/>
       </xsl:when>
       <xsl:when test="@revision='MathML'">
-        <img src="figures/rev_mathml.gif" alt="[MathML]" align="absbottom"/>
+        <img src="figures/rev_mathml.png" alt="[MathML]" align="absbottom"/>
       </xsl:when>
       <xsl:when test="@revision='HTMLForms'">
-        <img src="figures/rev_htmlforms.gif" alt="[HTML Forms]" align="absbottom"/>
+        <img src="figures/rev_htmlforms.png" alt="[HTML Forms]" align="absbottom"/>
       </xsl:when>
       <xsl:otherwise>
         <xsl:message>
@@ -130,7 +134,22 @@
 <xsl:template match="phrase">
   <xsl:if test="not(@condition)
                 or (@condition = $output.media)">
-    <xsl:apply-imports/>
+    <xsl:choose>
+      <xsl:when test="@role = 'common.attributes'
+                      and count(id('common.attributes')) &gt; 0">
+        <a>
+          <xsl:attribute name="href">
+            <xsl:call-template name="href.target">
+              <xsl:with-param name="object" select="id('common.attributes')"/>
+            </xsl:call-template>
+          </xsl:attribute>
+          <xsl:apply-imports/>
+        </a>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:apply-imports/>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:if>
 </xsl:template>
 

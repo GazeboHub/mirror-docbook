@@ -1,10 +1,8 @@
 <?xml version="1.0"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:saxon="http://icl.com/saxon"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
 		version="1.0"
-                exclude-result-prefixes="doc"
-                extension-element-prefixes="saxon">
+                exclude-result-prefixes="doc">
 
 <!-- THIS STYLESHEET IS FOR SAXON -->
 
@@ -14,7 +12,7 @@
      to avoid chunking. -->
 
 <xsl:import href="defguide.xsl"/>
-<xsl:include href="http://docbook.sourceforge.net/release/xsl/current/html/chunker.xsl"/>
+<xsl:include href="../../xsl/html/chunker.xsl"/>
 
 <xsl:output method="html"
             encoding="ISO-8859-1"
@@ -667,19 +665,15 @@ is system dependent.)</para>
     </xsl:call-template>
   </xsl:variable>
 
-  <!-- processing the whole book and the index in the same pass -->
-  <!-- causes out-of-memory errors. So don't do that. -->
-  <xsl:if test="local-name(.) != 'index' or $rootid != ''">
-    <xsl:call-template name="write.chunk">
-      <xsl:with-param name="filename" select="$filename"/>
-      <xsl:with-param name="content">
-        <xsl:call-template name="chunk-element-content">
-          <xsl:with-param name="prev" select="$prev"/>
-          <xsl:with-param name="next" select="$next"/>
-        </xsl:call-template>
-      </xsl:with-param>
-    </xsl:call-template>
-  </xsl:if>
+  <xsl:call-template name="write.chunk">
+    <xsl:with-param name="filename" select="$filename"/>
+    <xsl:with-param name="content">
+      <xsl:call-template name="chunk-element-content">
+        <xsl:with-param name="prev" select="$prev"/>
+        <xsl:with-param name="next" select="$next"/>
+      </xsl:call-template>
+    </xsl:with-param>
+  </xsl:call-template>
 </xsl:template>
 
 <!-- ==================================================================== -->
@@ -737,6 +731,10 @@ is system dependent.)</para>
           </xsl:message>
         </xsl:when>
         <xsl:otherwise>
+          <xsl:message>
+            <xsl:text>Processing element </xsl:text>
+            <xsl:value-of select="$rootid"/>
+          </xsl:message>
           <xsl:apply-templates select="id($rootid)"/>
         </xsl:otherwise>
       </xsl:choose>
