@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns="http://www.w3.org/1999/xhtml"
-		xmlns:h="http://www.w3.org/1999/xhtml"
-		xmlns:f="http://docbook.org/xslt/ns/extension"
-		xmlns:m="http://docbook.org/xslt/ns/mode"
-		xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
-		xmlns:db="http://docbook.org/docbook-ng"
-		xmlns:t="http://docbook.org/xslt/ns/template"
-		exclude-result-prefixes="h f m fn db t"
+                xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
+                xmlns:f="http://docbook.org/xslt/ns/extension"
+                xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
+                xmlns:h="http://www.w3.org/1999/xhtml"
+                xmlns:m="http://docbook.org/xslt/ns/mode"
+                xmlns:t="http://docbook.org/xslt/ns/template"
+		exclude-result-prefixes="h f m fn db t doc"
                 version="2.0">
+
+<xsl:param name="toc.list.type">dl</xsl:param>
+<xsl:param name="manual.toc" select="''"/>
+<xsl:param name="bridgehead.in.toc" select="0"/>
+<xsl:param name="toc.section.depth">2</xsl:param>
+<xsl:param name="toc.max.depth">8</xsl:param>
+<xsl:param name="autotoc.label.separator" select="'. '"/>
+<xsl:param name="generate.index" select="1"/>
+<xsl:param name="annotate.toc" select="1"/>
 
 <xsl:param name="refentry.separator" select="1"/>
 <xsl:param name="refentry.generate.name" select="1"/>
