@@ -348,12 +348,20 @@ citation:after {
 	content: "]";
 }
 
-xref:after {
-	/* simple symbol - content: "#" attr(linkend);*/
-	/* 'section' symbol */
-	content: "\00a7" attr(linkend);
+/* TODO: group with other 'link' styles */
+xref {
 	color:#0000ff;
 	text-decoration: underline;
+}
+xref:before {
+	/*
+	 * Generates a section symbol before the xref, to try and indicate
+	 * that there is 'something' here (this will hopefully make
+	 * surrounding text that refers to 'see ...' make sense).  We could
+	 * insert attr(linkend) too, but that would clash with the presentation
+	 * in Mozilla, where we are able to generate better content text.
+	 */
+	content: "\00a7";
 }
 
 blockquote {

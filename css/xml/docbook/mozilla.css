@@ -17,6 +17,11 @@
 /* make <ulink>s clickable */
 ulink {
 	-moz-binding:url('db-bindings.xml#ulink');
+}
+xref {
+	-moz-binding:url('db-bindings.xml#xref');
+}
+ulink, xref {
 	cursor: pointer;
 	-moz-user-focus: normal;
 }
