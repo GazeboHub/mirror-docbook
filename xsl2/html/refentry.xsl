@@ -19,7 +19,9 @@
 			              and @t:side='verso'][1]"/>
 
   <div class="{local-name(.)}">
-    <xsl:call-template name="id"/>
+    <xsl:call-template name="id">
+      <xsl:with-param name="force" select="1"/>
+    </xsl:call-template>
 
     <xsl:if test="$refentry.separator != 0 and preceding-sibling::db:refentry">
       <div class="refentry-separator">
@@ -101,7 +103,7 @@
       <xsl:choose>
 	<xsl:when test="db:info/db:title">
 	  <xsl:apply-templates select="db:info/db:title"
-			       mode="titlepage.mode"/>
+			       mode="m:titlepage-mode"/>
 	</xsl:when>
 	<xsl:otherwise>
 	  <xsl:call-template name="gentext">

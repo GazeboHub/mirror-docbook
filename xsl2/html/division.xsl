@@ -30,6 +30,8 @@
       </xsl:call-template>
     </xsl:if>
 
+    <xsl:call-template name="division-toc"/>
+
     <xsl:apply-templates/>
   </div>
 </xsl:template>

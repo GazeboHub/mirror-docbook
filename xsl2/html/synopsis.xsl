@@ -89,6 +89,8 @@
     <xsl:apply-templates select="db:type"
 			 mode="m:funcprototype-xslt2-function"/>
   </xsl:if>
+
+  <xsl:if test="following-sibling::db:paramdef">, </xsl:if>
 </xsl:template>
 
 <xsl:template match="db:parameter" mode="m:funcprototype-xslt2-function">
@@ -136,12 +138,29 @@
     <xsl:text>&lt;xsl:with-param name="</xsl:text>
     <xsl:value-of select="db:parameter"/>
     <xsl:text>"</xsl:text>
-    <xsl:if test="db:type">
-      <xsl:text> as="</xsl:text>
-      <xsl:value-of select="db:funcdef/db:type"/>
+
+    <xsl:if test="db:initializer[@role='select']">
+      <xsl:text> select="</xsl:text>
+      <xsl:value-of select="db:initializer"/>
       <xsl:text>"</xsl:text>
     </xsl:if>
-    <xsl:text>/&gt;</xsl:text>
+
+    <xsl:if test="db:type">
+      <xsl:text> as="</xsl:text>
+      <xsl:value-of select="db:type"/>
+      <xsl:text>"</xsl:text>
+    </xsl:if>
+
+    <xsl:choose>
+      <xsl:when test="db:initializer[@role='content']">
+	<xsl:text>&gt;</xsl:text>
+	<xsl:copy-of select="db:initializer[@role='content']/node()"/>
+	<xsl:text>&lt;/xsl:with-param&gt;</xsl:text>
+      </xsl:when>
+      <xsl:otherwise>
+	<xsl:text>/&gt;</xsl:text>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:variable>
 
   <xsl:text>   </xsl:text>
@@ -157,5 +176,7 @@
   </xsl:choose>
   <xsl:text>&#10;</xsl:text>
 </xsl:template>
+
+<!-- ============================================================ -->
 
 </xsl:stylesheet>
