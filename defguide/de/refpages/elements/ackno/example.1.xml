@@ -1,0 +1,13 @@
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<article>
+<articleinfo>
+<author><firstname>Norman</firstname><surname>Walsh</surname></author>
+</articleinfo>
+<para>
+Dies ist ein ungew&ouml;hnlich minimalistisches Beispiel f&uuml;r einen Artikel.
+</para>
+<ackno>
+Als erstes m&ouml;chte ich mich bei den Mitgliedern der Akademie bedanken, &hellip;
+</ackno>
+</article>

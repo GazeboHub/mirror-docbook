@@ -1,0 +1,6 @@
+<!DOCTYPE para PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<para>
+Das Anker-Element <anchor id="example.anchor.1"/> ist leer und tr&auml;gt nichts 
+zu den Inhalten, in denen es vorkommt, bei. Es dient lediglich als Ziel.
+</para>

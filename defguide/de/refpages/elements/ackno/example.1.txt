@@ -1,0 +1,13 @@
+&lt;!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd"&gt;
+&lt;article&gt;
+&lt;articleinfo&gt;
+&lt;author&gt;&lt;firstname&gt;Norman&lt;/firstname&gt;&lt;surname&gt;Walsh&lt;/surname&gt;&lt;/author&gt;
+&lt;/articleinfo&gt;
+&lt;para&gt;
+Dies ist ein ungew&ouml;hnlich minimalistisches Beispiel f&uuml;r einen Artikel.
+&lt;/para&gt;
+&lt;ackno&gt;
+Als erstes m&ouml;chte ich mich bei den Mitgliedern der Akademie bedanken, &amp;hellip;
+&lt;/ackno&gt;
+&lt;/article&gt;

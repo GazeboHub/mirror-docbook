@@ -1,0 +1,6 @@
+<!DOCTYPE para PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<para>
+Durch Auswahl von <guimenuitem>Schlie&szlig;en</guimenuitem> wird die Datei geschlossen und 
+automatisch eine <action>abschlie&szlig;ende Bereinigung</action> durchgef&uuml;hrt.
+</para>

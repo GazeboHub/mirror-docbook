@@ -1,0 +1,6 @@
+&lt;!DOCTYPE para PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd"&gt;
+&lt;para&gt;
+Das Akronym &lt;acronym&gt;NASA&lt;/acronym&gt; steht in den USA und anderen L&auml;ndern f&uuml; 
+die National Aeronautics and Space Administration.
+&lt;/para&gt;

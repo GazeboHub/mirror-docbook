@@ -1,0 +1,70 @@
+<refentry id="action.element">
+<?dbhtml filename="action.html"?>
+<refentryinfo>
+<pubdate>$Date$</pubdate>
+<releaseinfo>$Revision$</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<indexterm><primary>Elemente</primary>
+<secondary>action</secondary></indexterm>
+<refentrytitle>action</refentrytitle>
+<refmiscinfo>Element</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>action</refname>
+<refpurpose>&action.purpose;</refpurpose>
+</refnamediv>
+
+&action.synopsis.gen;
+<refsect1 condition='ref.description'><title>Beschreibung</title>
+
+<para>
+Von Aktionen spricht man gew&ouml;hnlich im Zusammenhang mit <acronym>GUI</acronym>s. Eine solche Aktion 
+k&ouml;nnte eine Bewegung der Maus oder ein Mausklick sein, ein Ver&auml;ndern des Fokus oder eine beliebige 
+Zahl anderer Ereignisse.
+</para>
+
+<refsect2><title>Verarbeitungserwartungen</title>
+<para>
+&format.inline; &pexp.moreinfo;
+</para>
+</refsect2>
+
+<refsect2 role="fu" revision="4.0"><title>&FutureChanges;</title>
+<para>
+Das Inhaltsmodell von <sgmltag>Action</sgmltag> ist seit DocBook <acronym>V4.0</acronym> auf
+<literal>(#PCDATA | Replaceable | InlineGraphic)</literal> beschr&auml;nkt.
+</para>
+</refsect2>
+
+&action.parents.gen;
+&action.children.gen;
+</refsect1>
+<refsect1 condition='ref.elem.attrdesc'><title>Attribute</title>
+<variablelist>
+<varlistentry><term>moreinfo</term>
+<listitem>
+<para>
+Wenn als Wert von <sgmltag class='attribute'>MoreInfo</sgmltag> <literal>RefEntry</literal> angegeben ist,
+impliziert das, dass es einen <sgmltag>RefEntry</sgmltag> gibt, der weitere Informationen &uuml;ber die
+<sgmltag>Action</sgmltag> enth&auml;lt.
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsect1>
+<refsect1><title>Beispiele</title>
+
+<informalexample role="example-source">
+<programlisting>&action.example.1.txt;</programlisting>
+</informalexample>
+
+<anchor id="ex.os.action.1" role="HACK-ex.out.start"/>
+&action.example.1.gen;
+<anchor id="ex.oe.action.1" role="HACK-ex.out.end"/>
+
+&action.example.seealso.gen;
+</refsect1>
+</refentry>
+

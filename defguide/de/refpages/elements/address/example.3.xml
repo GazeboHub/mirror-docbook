@@ -1,0 +1,12 @@
+<!DOCTYPE para PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<para>Addressen k&ouml;nnen auch Telefonnummern beinhalten:
+<address>
+Klaus M&uuml;ller
+<street>M&uuml;hlenweg 10</street>
+<postcode>12345</postcode> <city>Irgendwo</city> 
+<country>Deutschland</country>
+<phone>0123 456789</phone>
+<fax>0123 456790</fax>
+</address>
+</para>

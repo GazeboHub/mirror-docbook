@@ -1,0 +1,45 @@
+<refentry id="ackno.element">
+<?dbhtml filename="ackno.html"?>
+<refentryinfo>
+<pubdate>$Date$</pubdate>
+<releaseinfo>$Revision$</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<indexterm><primary>Elemente</primary>
+<secondary>ackno</secondary></indexterm>
+<refentrytitle>ackno</refentrytitle>
+<refmiscinfo>Element</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>ackno</refname>
+<refpurpose>&ackno.purpose;</refpurpose>
+</refnamediv>
+
+&ackno.synopsis.gen;
+<refsect1 condition='ref.description'><title>Beschreibung</title>
+
+<para>
+Danksagungen in einem <sgmltag>article</sgmltag>.
+</para>
+
+<refsect2><title>Verarbeitungserwartungen</title>
+<para>
+&format.block;
+</para>
+</refsect2>
+
+
+&ackno.parents.gen;
+&ackno.children.gen;
+</refsect1>
+<refsect1><title>Beispiele</title>
+
+<informalexample role="example-source">
+<programlisting>&ackno.example.1.txt;</programlisting>
+</informalexample>
+
+&ackno.example.seealso.gen;
+</refsect1>
+</refentry>
+

@@ -1,0 +1,54 @@
+<refentry id="acronym.element">
+<?dbhtml filename="acronym.html"?>
+<refentryinfo>
+<pubdate>$Date$</pubdate>
+<releaseinfo>$Revision$</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<indexterm><primary>Elemente</primary>
+<secondary>acronym</secondary></indexterm>
+<refentrytitle>acronym</refentrytitle>
+<refmiscinfo>Element</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>acronym</refname>
+<refpurpose>&acronym.purpose;</refpurpose>
+</refnamediv>
+
+&acronym.synopsis.gen;
+<refsect1 condition='ref.description'><title>Beschreibung</title>
+
+<para>
+Eine aussprechbare Kombination aus Anfangsbuchstaben.
+Ein Akronym wird h&auml;ufig komplett in Gro&szlig;- oder Kleinbuchstaben geschrieben, 
+auch wenn das manchmal nicht korrekt ist (denken Sie zum Beispiel an dpi oder bps).
+</para>
+
+<refsect2><title>Verarbeitungserwartungen</title>
+<para>
+&format.inline; &pexp.moreinfo;
+</para>
+</refsect2>
+
+
+&acronym.parents.gen;
+&acronym.children.gen;
+</refsect1>
+<refsect1 condition='ref.elem.seealso'><title>Siehe auch</title>
+&acronym.seealso.gen;
+</refsect1>
+<refsect1><title>Beispiele</title>
+
+<informalexample role="example-source">
+<programlisting>&acronym.example.1.txt;</programlisting>
+</informalexample>
+
+<anchor id="ex.os.acronym.1" role="HACK-ex.out.start"/>
+&acronym.example.1.gen;
+<anchor id="ex.oe.acronym.1" role="HACK-ex.out.end"/>
+
+&acronym.example.seealso.gen;
+</refsect1>
+</refentry>
+

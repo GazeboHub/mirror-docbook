@@ -1,0 +1,56 @@
+<refentry id="affiliation.element">
+<?dbhtml filename="affiliation.html"?>
+<refentryinfo>
+<pubdate>$Date$</pubdate>
+<releaseinfo>$Revision$</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<indexterm><primary>Elemente</primary>
+<secondary>affiliation</secondary></indexterm>
+<refentrytitle>affiliation</refentrytitle>
+<refmiscinfo>Element</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>affiliation</refname>
+<refpurpose>&affiliation.purpose;</refpurpose>
+</refnamediv>
+
+&affiliation.synopsis.gen;
+<refsect1 condition='ref.description'><title>Beschreibung</title>
+
+<para>
+Die institutionelle Zuordnung eines Autors, eines Beitragenden oder 
+anderer Individuen.
+</para>
+
+<refsect2><title>Verarbeitungserwartungen</title>
+<para>
+&format.context; &format.csuppress;
+</para>
+</refsect2>
+
+<refsect2 role='fu' revision="4.0"><title>&FutureChanges;</title>
+<para>
+<indexterm><primary>DocBook DTD</primary><secondary>&Auml;nderungen in <acronym>V4.0</acronym></secondary></indexterm>
+In DocBook <acronym>V4.0</acronym> wird <sgmltag>Affiliation</sgmltag> von einigen Stellen, an 
+denen es jetzt vorkommen kann, entfernt. Anstatt zum Beispiel innerhalb des <sgmltag>Author</sgmltag>-Tags 
+vorzukommen, wird es dann ein neues Metaelement geben, das 
+<sgmltag>Author</sgmltag>, <sgmltag>AuthorBlurb</sgmltag> und
+<sgmltag>Affiliation</sgmltag> enth&auml;lt.
+</para>
+</refsect2>
+
+
+&affiliation.parents.gen;
+&affiliation.children.gen;
+</refsect1>
+<refsect1 condition='ref.elem.seealso'><title>Siehe auch</title>
+&affiliation.seealso.gen;
+</refsect1>
+<refsect1><title>Beispiele</title>
+
+&affiliation.example.seealso.gen;
+</refsect1>
+</refentry>
+

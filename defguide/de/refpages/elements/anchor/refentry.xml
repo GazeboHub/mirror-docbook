@@ -1,0 +1,81 @@
+<refentry id="anchor.element">
+<?dbhtml filename="anchor.html"?>
+<refentryinfo>
+<pubdate>$Date$</pubdate>
+<releaseinfo>$Revision$</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<indexterm><primary>Elemente</primary>
+<secondary>anchor</secondary></indexterm>
+<refentrytitle>anchor</refentrytitle>
+<refmiscinfo>Element</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>anchor</refname>
+<refpurpose>&anchor.purpose;</refpurpose>
+</refnamediv>
+
+&anchor.synopsis.gen;
+<refsect1 condition='ref.description'><title>Beschreibung</title>
+
+<para>
+Ein Anker kennzeichnet eine einzelne Stelle innerhalb des Inhalts. Sie kann 
+zum Beispiel als Ziel eines Querverweises aus einem 
+<sgmltag>Link</sgmltag> heraus dienen.  Das <sgmltag class='element'>Anchor</sgmltag>-Element darf fast
+&uuml;berall vorkommen.
+</para>
+
+<para>
+<sgmltag class='element'>Anchor</sgmltag> verf&uuml;gt &uuml;ber das <sgmltag
+class='attribute'>Role</sgmltag>-Attribut und alle weiteren <link
+linkend="common.attributes">allgemein verwendeten Attribute</link> bis auf <sgmltag
+class='attribute'>Lang</sgmltag>.
+</para>
+
+<refsect2><title>Verarbeitungserwartungen</title>
+<para>
+<sgmltag class='element'>Anchor</sgmltag> enth&auml;lt keinen Inhalt und erzeugt in allgemeinen
+keine Ausgabge. Es dient als Ziel eines Verweises.
+</para>
+</refsect2>
+
+
+&anchor.parents.gen;
+</refsect1>
+<refsect1 condition='ref.elem.attrdesc'><title>Attribute</title>
+<variablelist>
+<varlistentry><term>pagenum</term>
+<listitem>
+<para>
+<sgmltag class="attribute">PageNum</sgmltag> 
+gibt die Seite an, auf der der Anker in einer gedruckten Version des 
+Dokuments vorkommt.
+</para>
+<para>
+Das <sgmltag class="attribute">PageNum</sgmltag>-Attribut hat keine 
+Auswirkungen auf die Seitenaufteilung oder Nummerierung durch eine 
+&SGML;-Anwendung, die das Dokument verarbeitet. Es dient der Information, 
+nicht dazu eine Deklaration vorzunehmen.
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsect1>
+<refsect1 condition='ref.elem.seealso'><title>Siehe auch</title>
+&anchor.seealso.gen;
+</refsect1>
+<refsect1><title>Beispiele</title>
+
+<informalexample role="example-source">
+<programlisting>&anchor.example.1.txt;</programlisting>
+</informalexample>
+
+<anchor id="ex.os.anchor.1" role="HACK-ex.out.start"/>
+&anchor.example.1.gen;
+<anchor id="ex.oe.anchor.1" role="HACK-ex.out.end"/>
+
+&anchor.example.seealso.gen;
+</refsect1>
+</refentry>
+

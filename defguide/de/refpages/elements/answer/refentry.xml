@@ -1,0 +1,51 @@
+<refentry id="answer.element" revision='3.1'>
+<?dbhtml filename="answer.html"?>
+<refentryinfo>
+<pubdate>$Date$</pubdate>
+<releaseinfo>$Revision$</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<indexterm><primary>Elemente</primary>
+<secondary>answer</secondary></indexterm>
+<refentrytitle>answer</refentrytitle>
+<refmiscinfo>Element</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>answer</refname>
+<refpurpose>&answer.purpose;</refpurpose>
+</refnamediv>
+
+&answer.synopsis.gen;
+<refsect1 condition='ref.description'><title>Beschreibung</title>
+
+<para>
+Innerhalb einer <sgmltag>QandAEntry</sgmltag> kann eine <sgmltag>Question</sgmltag> eine
+<sgmltag>Answer</sgmltag> haben. Eine <sgmltag>Answer</sgmltag> ist optional (auf einige Fragen 
+gibt es keine Antworten) und kann mehrfach vorkommen (auf einige Fragen gibt es mehr als eine 
+Antwort).
+</para>
+
+<refsect2><title>Verarbeitungserwartungen</title>
+<para>
+Antworten werden h&auml;ufig durch eine Beschriftung wie zum Beispiel 
+<quote>A:</quote> eingeleitet. Wenn ein <sgmltag>Answer</sgmltag>-Tag &uuml;ber ein 
+<literal>Label</literal>-Kindelement verf&uuml;gt, wird der Inhalt dieses
+<sgmltag>Label</sgmltag>s als Beschriftung f&uuml;r die
+<sgmltag>Answer</sgmltag> verwendet. Das <sgmltag
+class='attribute'>DefaultLabel</sgmltag>-Attribut des am n&auml;chsten stehenden
+<sgmltag>QandASet</sgmltag>-Vorfahren einer <sgmltag>Answer</sgmltag> kann 
+dazu verwendet werden anzugeben, dass die die Verarbeitung durchf&uuml;hrende Anwendung 
+automatisch eine Beschriftung f&uuml;r die <sgmltag>Answer</sgmltag> erzeugen soll.
+</para>
+</refsect2>
+
+
+&answer.parents.gen;
+&answer.children.gen;
+</refsect1>
+<refsect1><title>Beispiele</title>
+
+&answer.example.seealso.gen;
+</refsect1>
+</refentry>

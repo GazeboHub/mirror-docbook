@@ -1,0 +1,8 @@
+&lt;!DOCTYPE para PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd"&gt;
+&lt;para os="windows"&gt;
+Sie k&ouml;nnen die meisten Windows-Anwendungen beenden, indem Sie
+&lt;guimenuitem&gt;&lt;accel&gt;B&lt;/accel&gt;enden&lt;/guimenuitem&gt; oder
+&lt;guimenuitem&gt;S&lt;accel&gt;c&lt;/accel&gt;hlie&szlig;en&lt;/guimenuitem&gt; aus dem
+&lt;guimenu&gt;&lt;accel&gt;D&lt;/accel&gt;atei&lt;/guimenu&gt; men&uuml; aufrufen.
+&lt;/para&gt;

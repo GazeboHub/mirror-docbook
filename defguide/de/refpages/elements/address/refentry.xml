@@ -1,0 +1,103 @@
+<refentry id="address.element">
+<?dbhtml filename="address.html"?>
+<refentryinfo>
+<pubdate>$Date$</pubdate>
+<releaseinfo>$Revision$</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<indexterm><primary>Elemente</primary>
+<secondary>address</secondary></indexterm>
+<refentrytitle>address</refentrytitle>
+<refmiscinfo>Element</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>address</refname>
+<refpurpose>&address.purpose;</refpurpose>
+</refnamediv>
+
+&address.synopsis.gen;
+<refsect1 condition='ref.description'><title>Beschreibung</title>
+
+<para>
+Bei einer address handelt es sich im allgemeinen um eine Postanschrift, auch wenn 
+Elemente f&uuml;r <sgmltag>FAX</sgmltag> und <sgmltag>Email</sgmltag> sowie das allgemeine
+Sammelbecken <sgmltag>OtherAddr</sgmltag> darin enthalten sind.
+</para>
+
+<para>
+Wird <sgmltag class='attvalue'>linespecific</sgmltag> als Wert des Attributs <sgmltag
+class='attribute'>format</sgmltag> verwendet, bleiben Zeilenumbr&uuml;che und andere Leerr&auml;ume 
+in der <sgmltag>address</sgmltag> erhalten.
+</para>
+
+<refsect2><title>Verarbeitungserwartungen</title>
+<para>
+&format.block; &pexp.linespecific;
+</para>
+</refsect2>
+
+<refsect2 role='fu' revision="5.0"><title>&FutureChanges;</title>
+<para>Das Attribut <literal>xml:space</literal> ist automatisch in der XML DTD enthalten.
+</para>
+</refsect2>
+
+
+&address.parents.gen;
+&address.children.gen;
+</refsect1>
+<refsect1 condition='ref.elem.attrdesc'><title>Attribute</title>
+<variablelist>
+<varlistentry><term>format</term>
+<listitem>
+<para>
+Das <sgmltag class="attribute">format</sgmltag>-Attribut wendet die Notation
+<literal>linespecific</literal> auf alle <sgmltag>Address</sgmltag>en an.
+Alle Leerr&auml;ume und Zeilenumbr&uuml;che m&uuml;ssen erhalten bleiben.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>linenumbering</term>
+<listitem>
+<para revision="4.0"><term>linenumbering</term> gibt an, ob die einzelnen Zeilen der 
+<sgmltag>address</sgmltag> automatisch durchnummeriert werden sollen. Die Details der 
+Nummerierung (jede Zeile oder nur ausgew&auml;hlte Zeilen, links oder rechts, usw.) bleiben 
+der verarbeitenden Anwendung &uuml;berlassen. Bitte beachten Sie, dass nicht alle Prozessoren 
+&uuml;ber die F&auml;higkeit zum Nummerieren verf&uuml;gen.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsect1>
+<refsect1 condition='ref.elem.seealso'><title>Siehe auch</title>
+&address.seealso.gen;
+</refsect1>
+<refsect1><title>Beispiele</title>
+
+<informalexample role="example-source">
+<programlisting>&address.example.1.txt;</programlisting>
+</informalexample>
+
+<anchor id="ex.os.address.1" role="HACK-ex.out.start"/>
+&address.example.1.gen;
+<anchor id="ex.oe.address.1" role="HACK-ex.out.end"/>
+
+<informalexample role="example-source">
+<programlisting>&address.example.2.txt;</programlisting>
+</informalexample>
+
+<anchor id="ex.os.address.2" role="HACK-ex.out.start"/>
+&address.example.2.gen;
+<anchor id="ex.oe.address.2" role="HACK-ex.out.end"/>
+
+<informalexample role="example-source">
+<programlisting>&address.example.3.txt;</programlisting>
+</informalexample>
+
+<anchor id="ex.os.address.3" role="HACK-ex.out.start"/>
+&address.example.3.gen;
+<anchor id="ex.oe.address.3" role="HACK-ex.out.end"/>
+
+&address.example.seealso.gen;
+</refsect1>
+</refentry>
+
