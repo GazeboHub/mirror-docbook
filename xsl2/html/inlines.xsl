@@ -132,11 +132,11 @@ context item.</para>
 node, assumed to be an element.</para>
 <para>Specifically, it generates a <tag>span</tag> with a
 <tag class="attribute">class</tag> attribute. It also handles any
-necessary <sgmltag class="attribute">id</sgmltag> or
-<sgmltag class="attribute">dir</sgmltag> attributes.</para>
-<para>If the element has an <sgmltag>alt</sgmltag> element among its
+necessary <tag class="attribute">id</tag> or
+<tag class="attribute">dir</tag> attributes.</para>
+<para>If the element has an <tag>alt</tag> element among its
 children, the string-value of that element will be used as the
-<sgmltag class="attribute">title</sgmltag> of the span.</para>
+<tag class="attribute">title</tag> of the span.</para>
 </refdescription>
 
 <refparameter>
@@ -186,11 +186,11 @@ calling “apply templates” with the current context node.</para>
 node, assumed to be an element.</para>
 <para>Specifically, it generates a <tag>tt</tag> with a
 <tag class="attribute">class</tag> attribute. It also handles any
-necessary <sgmltag class="attribute">id</sgmltag> or
-<sgmltag class="attribute">dir</sgmltag> attributes.</para>
-<para>If the element has an <sgmltag>alt</sgmltag> element among its
+necessary <tag class="attribute">id</tag> or
+<tag class="attribute">dir</tag> attributes.</para>
+<para>If the element has an <tag>alt</tag> element among its
 children, the string-value of that element will be used as the
-<sgmltag class="attribute">title</sgmltag> of the <tag>tt</tag>.</para>
+<tag class="attribute">title</tag> of the <tag>tt</tag>.</para>
 </refdescription>
 
 <refparameter>
@@ -240,11 +240,11 @@ calling “apply templates” with the current context node.</para>
 node, assumed to be an element.</para>
 <para>Specifically, it generates a <tag>strong</tag> with a
 <tag class="attribute">class</tag> attribute. It also handles any
-necessary <sgmltag class="attribute">id</sgmltag> or
-<sgmltag class="attribute">dir</sgmltag> attributes.</para>
-<para>If the element has an <sgmltag>alt</sgmltag> element among its
+necessary <tag class="attribute">id</tag> or
+<tag class="attribute">dir</tag> attributes.</para>
+<para>If the element has an <tag>alt</tag> element among its
 children, the string-value of that element will be used as the
-<sgmltag class="attribute">title</sgmltag> of the <tag>strong</tag>.</para>
+<tag class="attribute">title</tag> of the <tag>strong</tag>.</para>
 </refdescription>
 
 <refparameter>
@@ -294,11 +294,11 @@ calling “apply templates” with the current context node.</para>
 node, assumed to be an element.</para>
 <para>Specifically, it generates a <tag>em</tag> with a
 <tag class="attribute">class</tag> attribute. It also handles any
-necessary <sgmltag class="attribute">id</sgmltag> or
-<sgmltag class="attribute">dir</sgmltag> attributes.</para>
-<para>If the element has an <sgmltag>alt</sgmltag> element among its
+necessary <tag class="attribute">id</tag> or
+<tag class="attribute">dir</tag> attributes.</para>
+<para>If the element has an <tag>alt</tag> element among its
 children, the string-value of that element will be used as the
-<sgmltag class="attribute">title</sgmltag> of the <tag>em</tag>.</para>
+<tag class="attribute">title</tag> of the <tag>em</tag>.</para>
 </refdescription>
 
 <refparameter>
@@ -348,15 +348,15 @@ calling “apply templates” with the current context node.</para>
 node, assumed to be an element.</para>
 <para>Specifically, it generates a <tag>strong</tag> with a
 <tag class="attribute">class</tag> attribute and possibly an
-<sgmltag class="attribute">id</sgmltag>.</para>
+<tag class="attribute">id</tag>.</para>
 
 <para>If the element has an
-<sgmltag>alt</sgmltag> element among its children, the string-value of
-that element will be used as the <sgmltag
-class="attribute">title</sgmltag> of the <tag>strong</tag>.</para>
+<tag>alt</tag> element among its children, the string-value of
+that element will be used as the <tag
+class="attribute">title</tag> of the <tag>strong</tag>.</para>
 
 <para>Inside the <tag>strong</tag>, it generates a <tag>tt</tag> with
-a <sgmltag class="attribute">dir</sgmltag> attribute, if
+a <tag class="attribute">dir</tag> attribute, if
 appropriate.</para>
 </refdescription>
 
@@ -409,15 +409,15 @@ calling “apply templates” with the current context node.</para>
 node, assumed to be an element.</para>
 <para>Specifically, it generates a <tag>em</tag> with a
 <tag class="attribute">class</tag> attribute and possibly an
-<sgmltag class="attribute">id</sgmltag>.</para>
+<tag class="attribute">id</tag>.</para>
 
 <para>If the element has an
-<sgmltag>alt</sgmltag> element among its children, the string-value of
-that element will be used as the <sgmltag
-class="attribute">title</sgmltag> of the <tag>em</tag>.</para>
+<tag>alt</tag> element among its children, the string-value of
+that element will be used as the <tag
+class="attribute">title</tag> of the <tag>em</tag>.</para>
 
 <para>Inside the <tag>em</tag>, it generates a <tag>tt</tag> with
-a <sgmltag class="attribute">dir</sgmltag> attribute, if
+a <tag class="attribute">dir</tag> attribute, if
 appropriate.</para>
 </refdescription>
 
@@ -470,12 +470,12 @@ calling “apply templates” with the current context node.</para>
 node, assumed to be an element.</para>
 <para>Specifically, it generates a <tag>sup</tag> with a
 <tag class="attribute">class</tag> attribute. It also handles any
-necessary <sgmltag class="attribute">id</sgmltag> or
-<sgmltag class="attribute">dir</sgmltag> attributes.</para>
+necessary <tag class="attribute">id</tag> or
+<tag class="attribute">dir</tag> attributes.</para>
 
-<para>If the element has an <sgmltag>alt</sgmltag> element among its
+<para>If the element has an <tag>alt</tag> element among its
 children, the string-value of that element will be used as the
-<sgmltag class="attribute">title</sgmltag> of the <tag>sup</tag>.</para>
+<tag class="attribute">title</tag> of the <tag>sup</tag>.</para>
 </refdescription>
 
 <refparameter>
@@ -525,12 +525,12 @@ calling “apply templates” with the current context node.</para>
 node, assumed to be an element.</para>
 <para>Specifically, it generates a <tag>sub</tag> with a
 <tag class="attribute">class</tag> attribute. It also handles any
-necessary <sgmltag class="attribute">id</sgmltag> or
-<sgmltag class="attribute">dir</sgmltag> attributes.</para>
+necessary <tag class="attribute">id</tag> or
+<tag class="attribute">dir</tag> attributes.</para>
 
-<para>If the element has an <sgmltag>alt</sgmltag> element among its
+<para>If the element has an <tag>alt</tag> element among its
 children, the string-value of that element will be used as the
-<sgmltag class="attribute">title</sgmltag> of the <tag>sub</tag>.</para>
+<tag class="attribute">title</tag> of the <tag>sub</tag>.</para>
 </refdescription>
 
 <refparameter>
@@ -572,7 +572,7 @@ calling “apply templates” with the current context node.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="format-sgmltag" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="format-tag" xmlns="http://docbook.org/docbook-ng">
 <refpurpose>Handles markup for the DocBook <tag>tag</tag> element</refpurpose>
 
 <refdescription>
@@ -581,7 +581,7 @@ node, assumed to be a <tag>tag</tag> element.</para>
 
 <para>Specifically, it generates a <tag>tt</tag> with a
 <tag class="attribute">class</tag> attribute. It also handles any
-necessary <sgmltag class="attribute">id</sgmltag> attribute.</para>
+necessary <tag class="attribute">id</tag> attribute.</para>
 
 <para>Depending on the value of the <tag class="attribute">class</tag>
 attribute, additional generated text may be output as well.</para>
@@ -604,7 +604,7 @@ the default is “element”.</para>
 </refreturn>
 </doc:template>
 
-<xsl:template name="format-sgmltag">
+<xsl:template name="format-tag">
   <xsl:param name="class">
     <xsl:choose>
       <xsl:when test="@class">
@@ -614,7 +614,7 @@ the default is “element”.</para>
     </xsl:choose>
   </xsl:param>
 
-  <tt class="sgmltag-{$class}">
+  <tt class="tag-{$class}">
     <xsl:call-template name="id"/>
     <xsl:choose>
       <xsl:when test="$class='attribute'">
