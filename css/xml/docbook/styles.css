@@ -486,8 +486,8 @@ simplelist[type=inline]>member+member:before {
 	content: ", ";
 }
 
-cmdsynopsis, code, command, computeroutput, envar, filename, keycode, keysym,
-literal, option, parameter, sgmltag, systemitem {
+cmdsynopsis, code, command, computeroutput, envar, filename, function, keycode,
+keysym, literal, option, parameter, sgmltag, systemitem {
 	font-family: monospace;
 }
 
@@ -643,7 +643,7 @@ footnote>*:before {
 }
 */
 
-glossentry>glossterm {
+glossentry>glossterm, term {
 	font-weight: bolder;
 	font-style: italic;
 }
