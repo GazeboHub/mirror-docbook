@@ -9,6 +9,41 @@
 		exclude-result-prefixes="db doc f fn m xs"
                 version="2.0">
 
+<doc:reference xmlns="http://docbook.org/docbook-ng">
+<info>
+<title>Common Templates Reference</title>
+<author>
+  <personname>
+    <surname>Walsh</surname>
+    <firstname>Norman</firstname>
+  </personname>
+</author>
+<copyright><year>2004</year>
+<holder>Norman Walsh</holder>
+</copyright>
+<releaseinfo role="cvs">
+$Id$
+</releaseinfo>
+</info>
+
+<partintro>
+<section><title>Introduction</title>
+
+<para>This is technical reference documentation for the DocBook XSL
+Stylesheets; it documents (some of) the parameters, templates, and
+other elements of the stylesheets.</para>
+
+<para>This is not intended to be <quote>user</quote> documentation.
+It is provided for developers writing customization layers for the
+stylesheets, and for anyone who's interested in <quote>how it
+works</quote>.</para>
+
+<para>Although I am trying to be thorough, this documentation is known
+to be incomplete. Don't forget to read the source, too :-)</para>
+</section>
+</partintro>
+</doc:reference>
+
 <!-- ============================================================ -->
 
 <doc:template name="person-name" xmlns="http://docbook.org/docbook-ng">
