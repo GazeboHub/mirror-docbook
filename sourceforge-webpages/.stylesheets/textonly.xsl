@@ -5,7 +5,7 @@
                 exclude-result-prefixes="html cvs"
                 version='1.0'>
 
-<xsl:import href="/share/doctypes/website-pages/xsl/chunk-website.xsl"/>
+<xsl:import href="../../website/xsl/chunk-website.xsl"/>
 
 <xsl:param name="filename-prefix" select="'txt'"/>
 
