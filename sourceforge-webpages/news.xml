@@ -1,0 +1,34 @@
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
+                  "file:/share/doctypes/website-pages/website.dtd">
+<webpage id="news">
+  <config param="desc" value="Documentation"/>
+  <config param="rcsdate" value="$Date$"/>
+  <config param="footer" value="news.xml" altval="XML Source"/>
+  <head>
+    <title>News</title>
+    <summary>DocBook announcements</summary>
+    <keywords>DocBook, SourceForge, news, announcements, releases</keywords>
+  </head>
+
+  <para>The main ways to keep up with DocBook news are through the:</para>
+  <itemizedlist>
+    <listitem>
+      <para><ulink url="http://oasis-open.org/docbook/#announcements"
+          >announcements</ulink> released periodically by the DocBook
+        Technical Committee</para>
+    </listitem>
+    <listitem>
+      <para><ulink url="http://sourceforge.net/news/?group_id=21935" >news
+          page</ulink> for the DocBook Open Repository project</para>
+    </listitem>
+    <listitem>
+      <para><ulink
+          url="http://docbook.org/wiki/moin.cgi/DocBookMailingList"
+          >docbook</ulink> and <ulink
+          url="http://docbook.org/wiki/moin.cgi/DocBookAppsMailingList" 
+          >docbook-apps</ulink> mailing lists, where a variety of
+        announcements are posted regularly</para>
+    </listitem>
+  </itemizedlist>
+
+</webpage>
