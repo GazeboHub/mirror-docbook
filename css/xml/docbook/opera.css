@@ -1,0 +1,16 @@
+/*
+ * Discovered -o-link from,
+ * http://groups.google.com/groups?q=opera+styles+xml&start=10&hl=en&lr=&ie=UTF-8&newwindow=1&selm=opr6pgr0tgicz8n2%40news.opera.com&rnum=18
+ */
+ulink {
+	-o-link: attr(url);
+	-o-link-source: current;
+}
+
+ulink:focus {
+	outline: 1px dotted invert;
+}
+
+imagedata {
+	-o-replace: attr(fileref)
+}
