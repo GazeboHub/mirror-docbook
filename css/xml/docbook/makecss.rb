@@ -32,7 +32,7 @@ $refpath = "defguide/en/refpages/elements"
 $block_elements = Array.new
 $inline_elements = Array.new
 $suppressed_elements = Array.new
-$context_dependant_elements = Array.new
+$inherit_elements = Array.new
 $linespecific_formatted_elements = Array.new
 $undefined_elements = Array.new
 
@@ -124,6 +124,9 @@ end
 
 class BaseDecorator < ListenerDecorator
   def tag_start(name, attrs)
+    if name=="refentry"
+      listener.revision = attrs["revision"]
+    end
     if name=="refsect2"
       Refsect2Decorator.new
     else
@@ -142,11 +145,14 @@ class MyListener
   def initialize
     @stack = Array.new
     @decorator_stack = Array.new
-    @decorator_stack << BaseDecorator.new
+    base_decorator = BaseDecorator.new
+    base_decorator.listener = self
+    @decorator_stack << base_decorator
     @formatting_expectation = ""
+    @revision = nil
   end
 
-  attr_accessor :formatting_expectation
+  attr_accessor :formatting_expectation, :revision
 
   def tag_start(name, attrs)
     @stack << name
@@ -212,7 +218,7 @@ def get_formatting_expectation(ref_file)
   listener = MyListener.new
   file = File.new(ref_file)
   doc = REXML::Document.parse_stream(file, listener)
-  return listener.formatting_expectation
+  return listener
 end
 
 
@@ -220,8 +226,11 @@ end
 # some element.  Also, ASCIfies some character-entities to make aux.css
 # comments look purty
 # 
-def define_formatting(tag, expectations)
+def define_formatting(tag, listener)
+  return if listener.revision == "EBNF"
+  
   options = Array.new
+  expectations = listener.formatting_expectation
   if expectations.nil?
     expectations = ""
   else
@@ -314,11 +323,11 @@ end
 
 
 Dir.foreach($refpath) do |dir|
-  next if (dir =~ /^\./)
+  next if dir =~ /^\./ || dir == 'CVS'
   ref = "#{$refpath}/#{dir}/refentry.xml"
   if FileTest.exists?(ref)
-    format = get_formatting_expectation(ref)
-    define_formatting(dir, format)
+    listener = get_formatting_expectation(ref)
+    define_formatting(dir.sub(/-/, ":"), listener)
   else
     $stderr.puts("no refentry.xml in #{dir}");
   end
@@ -326,17 +335,18 @@ end
 
 def make_rule_for_all(io, elements, rule)
   line = ""
+  elements.sort!
   last = elements.pop
 
-  elements.sort.each do |tag|
+  elements.each do |tag|
     if block_given?
       tag = yield tag
     end
-    if (line.size + tag.size + 2) > 79
+    if line.size > 0 #(line.size + tag.size + 2) > 79
       io.puts line
       line = ""
     end
-    line += tag + ", "
+    line += tag + ","
   end
   if block_given?
     last = yield last
@@ -345,7 +355,7 @@ def make_rule_for_all(io, elements, rule)
     io.puts line
     line = ""
   end
-  io.puts line + last + " {"
+  io.puts line + "\n" + last + " {"
   io.puts "	#{rule}"
   io.puts "}"
 end
@@ -364,17 +374,67 @@ if FileTest.exists?("extra-block-elements.txt")
     end
   end
 end
+if FileTest.exists?("extra-suppressed-elements.txt")
+  File.open("extra-suppressed-elements.txt") do |io|
+    io.each_line do |element|
+      element.strip!
+      if $block_elements.include?(element) || $inline_elements.include?(element) || $suppressed_elements.include?(element)
+        raise "<#{element}> already has a display type"
+      end
+      $suppressed_elements << element
+      $undefined_elements.delete(element)
+    end
+  end
+end
+if FileTest.exists?("extra-inline-elements.txt")
+  File.open("extra-inline-elements.txt") do |io|
+    io.each_line do |element|
+      element.strip!
+      if $block_elements.include?(element) || $inline_elements.include?(element) || $suppressed_elements.include?(element)
+        raise "<#{element}> already has a display type"
+      end
+      $inline_elements << element
+      $undefined_elements.delete(element)
+    end
+  end
+end
+if FileTest.exists?("extra-inherit-elements.txt")
+  File.open("extra-inherit-elements.txt") do |io|
+    io.each_line do |element|
+      element.strip!
+      if $block_elements.include?(element) || $inline_elements.include?(element) || $suppressed_elements.include?(element)
+        raise "<#{element}> already has a display type"
+      end
+      $inherit_elements << element
+      $undefined_elements.delete(element)
+    end
+  end
+end
+if FileTest.exists?("table-elements.txt")
+  # we don't auto-generate CSS for these; just don't report problems with them
+  File.open("table-elements.txt") do |io|
+    io.each_line do |element|
+      element.strip!
+      if $block_elements.include?(element) || $inline_elements.include?(element) || $suppressed_elements.include?(element)
+        raise "<#{element}> already has a display type"
+      end
+      $undefined_elements.delete(element)
+    end
+  end
+end
 
 
 File.open("core.css", File::CREAT|File::WRONLY|File::TRUNC) do |io|
   io.puts("/* Generated #{Date.today} */")
-  make_rule_for_all(io, $inline_elements, "display:inline;")
+  make_rule_for_all(io, $inline_elements, "display: inline;")
   io.puts
-  make_rule_for_all(io, $block_elements, "display:block;")
+  make_rule_for_all(io, $block_elements, "display: block;")
   io.puts
-  make_rule_for_all(io, $suppressed_elements, "display:none;")
+  make_rule_for_all(io, $suppressed_elements, "display: none;")
   io.puts
-  make_rule_for_all(io, $linespecific_formatted_elements, "white-space:pre;\n\tfont-family:monospace;\n\tdisplay:block;")
+  make_rule_for_all(io, $inherit_elements, "display: inherit;")
+  io.puts
+  make_rule_for_all(io, $linespecific_formatted_elements, "white-space: pre;\n\tfont-family: monospace;\n\tdisplay: block;")
 end
 
 
