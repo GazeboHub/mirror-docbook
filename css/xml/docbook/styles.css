@@ -272,12 +272,15 @@ keycap {
 	border-top-width: 2px;
 	border-left-width: 3px;
 	border-right-width: 3px;
-	border-bottom-width: 5px;
+	border-bottom-width: 4px;
 	border-top-color: #eeeecc;
 	border-left-color: #eeeecc;
 	border-right-color: #999977;
 	border-bottom-color: #999977;
 	background-color: #ddddbb;
+	/* All these borders may interfere with text on the line bellow.  Make
+	   the text a little smaller to try and 'pull up' the bottom edge, */
+	font-size: smaller;
 }
 
 keycombo>keycap+keycap:before {
