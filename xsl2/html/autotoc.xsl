@@ -21,15 +21,6 @@
 
      ******************************************************************** -->
 
-<xsl:param name="toc.list.type">dl</xsl:param>
-<xsl:param name="manual.toc" select="''"/>
-<xsl:param name="bridgehead.in.toc" select="0"/>
-<xsl:param name="toc.section.depth">2</xsl:param>
-<xsl:param name="toc.max.depth">8</xsl:param>
-<xsl:param name="autotoc.label.separator" select="'. '"/>
-<xsl:param name="generate.index" select="1"/>
-<xsl:param name="annotate.toc" select="1"/>
-
 <!-- ============================================================ -->
 
 <doc:mode name="m:toc" xmlns="http://docbook.org/docbook-ng">
