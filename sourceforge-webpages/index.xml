@@ -4,7 +4,7 @@
 <config param="desc" value="DocBook Open Repository"/>
 <config param="rcsdate" value="$Date$"/>
 <config param="footlink" value="about" altval="About..."/>
-<config param="footer" value="website.xml" altval="XML Source"/>
+<config param="footer" value="index.xml" altval="XML Source"/>
 <head>
 <title>Welcome to the DocBook Open Repository</title>
 <summary>Introduction</summary>
@@ -30,9 +30,22 @@ suited to books and papers about computer hardware and software
 <ulink
 url="http://www.oasis-open.org/committees/process.shtml">Standard</ulink>.
 It is a work product of the <ulink
-url="http://www.oasis-open.org/docbook/tc.html">DocBook Technical
+url="http://www.oasis-open.org/docbook/">DocBook Technical
 Committee</ulink>. OASIS is the official governing body for all matters
 related to the DocBook DTD.</para>
+
+    <para>DocBook enables you to author and store document content in
+      a presentation-neutral form that captures the logical structure
+      of the content. Using <ulink
+        url="http://docbook.org/wiki/moin.cgi/DocBookPublishingTools"
+        >free tools</ulink> along with the DocBook <ulink
+        url="http://docbook.org/wiki/moin.cgi/DocBookXslStylesheets"
+        >XSL</ulink> and <ulink
+        url="http://docbook.org/wiki/moin.cgi/DocBookDssslStylesheets"
+        >DSSSL</ulink> Stylesheets, you can transform, format, and
+      publish your content as HTML pages and PDF files, and in many
+      other <ulink url="http://docbook.org/wiki/moin.cgi/formats"
+        >formats</ulink>.</para>
 
 <para>The official documentation for DocBook is
 <citetitle><ulink url="http://www.oreilly.com/catalog/docbook/">DocBook:
@@ -41,14 +54,26 @@ The Definitive Guide</ulink></citetitle>, published by
 This documentation is also
 <ulink url="http://docbook.org/tdg/">available online</ulink>.</para>
 
+    <para>The <ulink url="http://docbook.org/wiki/" >DocBook
+        Wiki</ulink> provides a comprehensive variety of up-to-date
+      details about DocBook, including user-contributed information
+      and links, in a format that you can edit and add to. You should
+      take a minute to <ulink
+        url="http://docbook.org/wiki/moin.cgi/ReadTheRules" >read the
+        rules</ulink> before making any changes.</para>
+
 </section>
 <section><title>About This Project</title>
 
-<para>This project supports the open source development of DocBook
-resources.  In particular, it is the official repository for the DocBook
-XSL and DSSSL Stylesheets. It also contains a number of other document types,
-schemas, and stylesheets that are derived-from or otherwise related-to
-DocBook.</para>
+    <para>This project supports the open source development of DocBook
+      resources.  In particular, it is the official repository for the
+      DocBook <ulink
+        url="http://docbook.org/wiki/moin.cgi/DocBookXslStylesheets"
+        >XSL</ulink> and <ulink
+        url="http://docbook.org/wiki/moin.cgi/DocBookDssslStylesheets"
+        >DSSSL</ulink> Stylesheets. It also contains a number of other
+      document types, schemas, and stylesheets that are derived from
+      or otherwise related to DocBook.</para>
 
 <para>It is important to note that OASIS remains the
 <ulink url="http://www.oasis-open.org/docbook/">official home</ulink>
