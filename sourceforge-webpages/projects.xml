@@ -19,32 +19,57 @@ project. These are available <olink targetdocent="cvs.xml">via CVS</olink>.
 
 <variablelist>
 <varlistentry>
+<term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/cvstools/?cvsroot=docbook">cvstools</ulink></term>
+<listitem><para>Shell scripts and other tools necessary to build a working
+CVS tree or to build a new release.
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
 <term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/docbook/?cvsroot=docbook">docbook</ulink></term>
 <listitem><para>The DocBook DTD.
 </para></listitem>
 </varlistentry>
-<varlistentry>
-<term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/xmlcharent/?cvsroot=docbook">xmlcharent</ulink></term>
-<listitem><para>The XML version of the ISO character entity sets.
-</para></listitem>
-</varlistentry>
+
 <varlistentry>
 <term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/gentext/?cvsroot=docbook">gentext</ulink></term>
 <listitem><para>The localization text for the DSSSL and XSL Stylesheets.
 </para></listitem>
 </varlistentry>
+
 <varlistentry>
 <term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/sourceforge-webpages/?cvsroot=docbook">sourceforge-webpages</ulink></term>
 <listitem><para>The XML sources for the web pages at
 <ulink url="http://docbook.sourceforge.net/"/>. (These very pages!)
 </para></listitem>
 </varlistentry>
+
+<varlistentry>
+<term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/testdocs/?cvsroot=docbook">testdocs</ulink></term>
+<listitem><para>Test documents.
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/xmlcharent/?cvsroot=docbook">xmlcharent</ulink></term>
+<listitem><para>The XML version of the ISO character entity sets.
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/xsl/?cvsroot=docbook">xsl</ulink></term>
+<listitem><para>DocBook XSL Stylesheets.
+</para></listitem>
+</varlistentry>
+
 <!--
-<varlistentry><term></term>
+<varlistentry>
+<term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi//?cvsroot=docbook"></ulink></term>
 <listitem><para>
 </para></listitem>
 </varlistentry>
 -->
+
 <varlistentry><term>T.B.A.</term>
 <listitem><para>A whole bunch of other projects are being added as
 construction continues.
