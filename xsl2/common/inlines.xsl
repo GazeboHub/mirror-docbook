@@ -312,6 +312,14 @@
   <xsl:call-template name="inline-charseq"/>
 </xsl:template>
 
+<xsl:template match="db:revnumber">
+  <xsl:call-template name="inline-charseq"/>
+</xsl:template>
+
+<xsl:template match="db:revremark">
+  <xsl:call-template name="inline-charseq"/>
+</xsl:template>
+
 <xsl:template match="db:structfield">
   <xsl:call-template name="inline-italicmonoseq"/>
 </xsl:template>

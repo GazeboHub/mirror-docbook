@@ -98,6 +98,13 @@
   <!-- nop -->
 </db:refentry>
 
+<db:dedication t:side="recto">
+  <div class="dedication-titlepage">
+    <db:title/>
+    <db:subtitle/>
+  </div>
+</db:dedication>
+
 <db:preface t:side="recto">
   <div class="preface-titlepage">
     <db:title/>
@@ -239,6 +246,10 @@
 <db:important>
   <db:title/>
 </db:important>
+
+<db:qandaset>
+  <db:title/>
+</db:qandaset>
 
 </t:titlepages>
 

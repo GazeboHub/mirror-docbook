@@ -6,8 +6,9 @@
 		xmlns:m="http://docbook.org/xslt/ns/mode"
 		xmlns:fn="http://www.w3.org/2004/10/xpath-functions"
 		xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		exclude-result-prefixes="h f m fn db xs"
+		exclude-result-prefixes="h f m fn db doc xs"
                 version="2.0">
 
 <xsl:variable name="admon.graphics" select="0"/>
@@ -41,6 +42,18 @@
   </xsl:choose>
 </xsl:template>
 
+<!-- ============================================================ -->
+
+<doc:mode name="m:graphical-admonition" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for processing admonitions with graphics</refpurpose>
+
+<refdescription>
+<para>There are two distinct presentational styles for admonitions, with
+graphics and without. Processing an admonition in this mode produces
+the graphical form.</para>
+</refdescription>
+</doc:mode>
+
 <xsl:template match="db:note|db:important|db:warning|db:caution|db:tip"
 	      mode="m:graphical-admonition">
   <xsl:variable name="titlepage"
@@ -72,7 +85,7 @@
       <span class="admon-graphic">
 	<img alt="{$alt}">
 	  <xsl:attribute name="src">
-	    <xsl:call-template name="admon.graphic"/>
+	    <xsl:call-template name="admonition-graphic"/>
 	  </xsl:attribute>
 	</img>
       </span>
@@ -92,7 +105,33 @@
   </div>
 </xsl:template>
 
-<xsl:template name="admon.graphic">
+<!-- ============================================================ -->
+
+<doc:template name="admonition-graphic" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the name of the appropriate admonition graphic</refpurpose>
+
+<refdescription>
+<para>This template returns the name (URI) of the graphic to be used
+for the specified admonition.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The admonition node.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>A URI for the graphic that should be used for the specified
+kind of admonition.</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="admonition-graphic">
   <xsl:param name="node" select="."/>
   <xsl:value-of select="$admon.graphics.path"/>
   <xsl:choose>
@@ -105,6 +144,35 @@
   </xsl:choose>
   <xsl:value-of select="$admon.graphics.extension"/>
 </xsl:template>
+
+<!-- ============================================================ -->
+
+<doc:function name="f:admonition-class" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the class value for an admonition</refpurpose>
+
+<refdescription>
+<para>This function returns the class value that should be used for
+the specified admonition.</para>
+
+<para>By default, the value “admonition” is returned
+for all classes. This function exists to make it easy for customizers
+to change that default.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The admonition node.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The class value.</para>
+</refreturn>
+</doc:function>
 
 <xsl:function name="f:admonition-class" as="xs:string">
   <xsl:param name="node" as="element()"/>

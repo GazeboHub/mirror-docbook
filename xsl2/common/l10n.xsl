@@ -507,16 +507,19 @@ the specified parameters.</para>
     <xsl:otherwise>
       <xsl:choose>
 	<xsl:when test="contains($name, '/')">
-          <xsl:call-template name="gentext-template">
-            <xsl:with-param name="context" select="$context"/>
-            <xsl:with-param name="name" select="substring-after($name, '/')"/>
-            <xsl:with-param name="origname" select="$origname"/>
-            <xsl:with-param name="purpose" select="$purpose"/>
-            <xsl:with-param name="xrefstyle" select="$xrefstyle"/>
-            <xsl:with-param name="referrer" select="$referrer"/>
-            <xsl:with-param name="lang" select="$lang"/>
-          </xsl:call-template>
-        </xsl:when>
+	  <xsl:variable name="template">
+	    <xsl:call-template name="gentext-template">
+	      <xsl:with-param name="context" select="$context"/>
+	      <xsl:with-param name="name" select="substring-after($name, '/')"/>
+	      <xsl:with-param name="origname" select="$origname"/>
+	      <xsl:with-param name="purpose" select="$purpose"/>
+	      <xsl:with-param name="xrefstyle" select="$xrefstyle"/>
+	      <xsl:with-param name="referrer" select="$referrer"/>
+	      <xsl:with-param name="lang" select="$lang"/>
+	    </xsl:call-template>
+	  </xsl:variable>
+	  <xsl:value-of select="if ($template = '') then 0 else 1"/>
+	</xsl:when>
 	<xsl:otherwise>0</xsl:otherwise>
       </xsl:choose>
     </xsl:otherwise>

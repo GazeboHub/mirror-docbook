@@ -65,9 +65,9 @@
       </xsl:call-template>
       <xsl:call-template name="class"/>
 
-      <xsl:apply-templates select="." mode="label.markup"/>
+      <xsl:apply-templates select="." mode="m:label-markup"/>
       <xsl:if test="$deflabel = 'number' and not(label)">
-	<xsl:apply-templates select="." mode="intralabel.punctuation"/>
+	<xsl:apply-templates select="." mode="m:intralabel-punctuation"/>
       </xsl:if>
     </td>
 
@@ -113,9 +113,9 @@
       </xsl:call-template>
       <xsl:call-template name="class"/>
 
-      <xsl:apply-templates select="." mode="label.markup"/>
+      <xsl:apply-templates select="." mode="m:label-markup"/>
       <xsl:if test="$deflabel = 'number' and not(label)">
-	<xsl:apply-templates select="." mode="intralabel.punctuation"/>
+	<xsl:apply-templates select="." mode="m:intralabel-punctuation"/>
       </xsl:if>
     </td>
 

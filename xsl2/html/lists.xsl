@@ -6,8 +6,9 @@
 		xmlns:m="http://docbook.org/xslt/ns/mode"
 		xmlns:fn="http://www.w3.org/2004/10/xpath-functions"
 		xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		exclude-result-prefixes="h f m fn db xs"
+		exclude-result-prefixes="h f m fn db doc xs"
                 version="2.0">
 
 <!-- ============================================================ -->
@@ -157,7 +158,7 @@
     <xsl:call-template name="id"/>
     <xsl:call-template name="class"/>
 
-    <xsl:call-template name="simplelist.vert">
+    <xsl:call-template name="simplelist-vert">
       <xsl:with-param name="cols" select="if (@columns) then @columns else 1"/>
     </xsl:call-template>
   </table>
@@ -168,7 +169,7 @@
     <xsl:call-template name="id"/>
     <xsl:call-template name="class"/>
 
-    <xsl:call-template name="simplelist.horiz">
+    <xsl:call-template name="simplelist-horiz">
       <xsl:with-param name="cols" select="if (@columns) then @columns else 1"/>
     </xsl:call-template>
   </table>
@@ -182,7 +183,18 @@
   </span>
 </xsl:template>
 
-<xsl:template name="simplelist.horiz">
+<!-- ============================================================ -->
+
+<doc:template name="simplelist-horiz" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Process a simplelist as a row-major table</refpurpose>
+
+<refdescription>
+<para>This template processes a <tag>simplelist</tag> as a row-major
+(horizontal) table.</para>
+</refdescription>
+</doc:template>
+
+<xsl:template name="simplelist-horiz">
   <xsl:param name="cols" select="1"/>
   <xsl:param name="cell" select="1"/>
   <xsl:param name="members" select="db:member"/>
@@ -196,13 +208,13 @@
       </xsl:call-template>
 -->
 
-      <xsl:call-template name="simplelist.horiz.row">
+      <xsl:call-template name="simplelist-horiz-row">
         <xsl:with-param name="cols" select="$cols"/>
         <xsl:with-param name="cell" select="$cell"/>
         <xsl:with-param name="members" select="$members"/>
       </xsl:call-template>
    </tr>
-    <xsl:call-template name="simplelist.horiz">
+    <xsl:call-template name="simplelist-horiz">
       <xsl:with-param name="cols" select="$cols"/>
       <xsl:with-param name="cell" select="$cell + $cols"/>
       <xsl:with-param name="members" select="$members"/>
@@ -210,7 +222,19 @@
   </xsl:if>
 </xsl:template>
 
-<xsl:template name="simplelist.horiz.row">
+<!-- ============================================================ -->
+
+<doc:template name="simplelist-horiz-row" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Produce a row of a simplelist as a row-major table</refpurpose>
+
+<refdescription>
+<para>This template produces a single row in a
+<tag>simplelist</tag> as a row-major
+(horizontal) table.</para>
+</refdescription>
+</doc:template>
+
+<xsl:template name="simplelist-horiz-row">
   <xsl:param name="cols" select="1"/>
   <xsl:param name="cell" select="1"/>
   <xsl:param name="members" select="db:member"/>
@@ -227,7 +251,7 @@
         </xsl:otherwise>
       </xsl:choose>
     </td>
-    <xsl:call-template name="simplelist.horiz.row">
+    <xsl:call-template name="simplelist-horiz-row">
       <xsl:with-param name="cols" select="$cols"/>
       <xsl:with-param name="cell" select="$cell+1"/>
       <xsl:with-param name="members" select="$members"/>
@@ -236,7 +260,18 @@
   </xsl:if>
 </xsl:template>
 
-<xsl:template name="simplelist.vert">
+<!-- ============================================================ -->
+
+<doc:template name="simplelist-vert" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Process a simplelist as a column-major table</refpurpose>
+
+<refdescription>
+<para>This template processes a <tag>simplelist</tag> as a column-major
+(vertical) table.</para>
+</refdescription>
+</doc:template>
+
+<xsl:template name="simplelist-vert">
   <xsl:param name="cols" select="1"/>
   <xsl:param name="cell" select="1"/>
   <xsl:param name="members" select="db:member"/>
@@ -252,14 +287,14 @@
       </xsl:call-template>
 -->
 
-      <xsl:call-template name="simplelist.vert.row">
+      <xsl:call-template name="simplelist-vert-row">
         <xsl:with-param name="cols" select="$cols"/>
         <xsl:with-param name="rows" select="$rows"/>
         <xsl:with-param name="cell" select="$cell"/>
         <xsl:with-param name="members" select="$members"/>
       </xsl:call-template>
     </tr>
-    <xsl:call-template name="simplelist.vert">
+    <xsl:call-template name="simplelist-vert">
       <xsl:with-param name="cols" select="$cols"/>
       <xsl:with-param name="cell" select="$cell+1"/>
       <xsl:with-param name="members" select="$members"/>
@@ -268,7 +303,19 @@
   </xsl:if>
 </xsl:template>
 
-<xsl:template name="simplelist.vert.row">
+<!-- ============================================================ -->
+
+<doc:template name="simplelist-vert-row" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Produce a row of a simplelist as a column-major table</refpurpose>
+
+<refdescription>
+<para>This template produces a single row in a
+<tag>simplelist</tag> as a column-major
+(vertical) table.</para>
+</refdescription>
+</doc:template>
+
+<xsl:template name="simplelist-vert-row">
   <xsl:param name="cols" select="1"/>
   <xsl:param name="rows" select="1"/>
   <xsl:param name="cell" select="1"/>
@@ -286,7 +333,7 @@
         </xsl:otherwise>
       </xsl:choose>
     </td>
-    <xsl:call-template name="simplelist.vert.row">
+    <xsl:call-template name="simplelist-vert-row">
       <xsl:with-param name="cols" select="$cols"/>
       <xsl:with-param name="rows" select="$rows"/>
       <xsl:with-param name="cell" select="$cell+$rows"/>

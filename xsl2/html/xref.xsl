@@ -11,16 +11,220 @@
 		exclude-result-prefixes="db doc f fn h m xlink"
                 version="2.0">
 
+<xsl:param name="use.role.as.xrefstyle" select="0"/>
+
+<!-- ==================================================================== -->
+
+<xsl:template match="anchor">
+  <span>
+    <xsl:call-template name="id"/>
+  </span>
+</xsl:template>
+
 <!-- ============================================================ -->
 
+<doc:template match="db:link" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Template for processing link elements</refpurpose>
+
+<refdescription>
+<para>This template matches <tag>link</tag> elements. There are four
+possibilities to consider: the link may have content or it may be
+empty and the link may have an <tag class="attribute">xlink:href</tag>
+attribute or a <tag class="attribute">linkend</tag> attribute:</para>
+
+<informaltable rowheader="firstcol">
+<tgroup cols="3">
+<thead>
+<row>
+<entry/>
+<entry>Has Content</entry>
+<entry>Is Empty</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Has <tag class="attribute">xlink:href</tag></entry>
+<entry>Content is a link to the specified URI.</entry>
+<entry>The specified URI is used as the content. It is a link to the
+specified URI.</entry>
+</row>
+<row>
+<entry>Has <tag class="attribute">linkend</tag></entry>
+<entry>Content is a link to the element identified.</entry>
+<entry>Semantically equivalent to an <tag>xref</tag> to the element
+identified.</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</refdescription>
+</doc:template>
+
 <xsl:template match="db:link">
-  <a href="{@xlink:href}">
-    <xsl:call-template name="class"/>
-    <xsl:if test="db:alt">
-      <xsl:attribute name="title" select="db:alt[1]"/>
-    </xsl:if>
-    <xsl:apply-templates/>
-  </a>
+  <xsl:choose>
+    <xsl:when test="node()">
+      <xsl:choose>
+	<xsl:when test="@xlink:href">
+	  <a href="{@xlink:href}">
+	    <xsl:call-template name="class"/>
+	    <xsl:if test="db:alt">
+	      <xsl:attribute name="title" select="db:alt[1]"/>
+	    </xsl:if>
+	    <xsl:apply-templates/>
+	  </a>
+	</xsl:when>
+	<xsl:otherwise>
+	  <a href="{f:href(key('id',@linkend)[1])}">
+	    <xsl:call-template name="class"/>
+	    <xsl:if test="db:alt">
+	      <xsl:attribute name="title" select="db:alt[1]"/>
+	    </xsl:if>
+	    <xsl:apply-templates/>
+	  </a>
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:choose>
+	<xsl:when test="@xlink:href">
+	  <a href="{@xlink:href}">
+	    <xsl:call-template name="class"/>
+	    <xsl:value-of select="@xlink:href"/>
+	  </a>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:call-template name="db:xref"/>
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
+
+<!-- ============================================================ -->
+
+<doc:template match="db:xref" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Template for processing xref elements</refpurpose>
+
+<refdescription>
+<para>This template matches <tag>xref</tag> elements. There are two
+possibilities to consider: the <tag>xref</tag> may have an
+<tag class="attribute">xlink:href</tag>
+attribute or a <tag class="attribute">linkend</tag> attribute</para>
+
+<para>For the moment, I don't know what to do about the href case.</para>
+</refdescription>
+</doc:template>
+
+<xsl:template match="db:xref" name="db:xref">
+  <xsl:variable name="target" select="key('id',@linkend)[1]"/>
+  <xsl:variable name="refelem" select="node-name($target)"/>
+
+  <xsl:if test="count(key('id', @linkend)) &gt; 1">
+    <xsl:message>
+      <xsl:text>Warning: the ID '</xsl:text>
+      <xsl:value-of select="@linkend"/>
+      <xsl:text>' is not unique.</xsl:text>
+    </xsl:message>
+  </xsl:if>
+
+  <xsl:choose>
+    <xsl:when test="count($target) = 0">
+      <xsl:message>
+        <xsl:text>XRef to nonexistent id: </xsl:text>
+        <xsl:value-of select="@linkend"/>
+      </xsl:message>
+      <span class="formatting-error">
+	<xsl:call-template name="id"/>
+	<xsl:text>???</xsl:text>
+      </span>
+    </xsl:when>
+
+    <xsl:when test="@endterm">
+      <xsl:variable name="etarget" select="key('id',@endterm)[1]"/>
+
+      <xsl:if test="count(key('id', @endterm)) &gt; 1">
+	<xsl:message>
+	  <xsl:text>Warning: the ID '</xsl:text>
+	  <xsl:value-of select="@endterm"/>
+	  <xsl:text>' is not unique.</xsl:text>
+	</xsl:message>
+      </xsl:if>
+
+      <xsl:choose>
+	<xsl:when test="count($etarget) = 0">
+          <xsl:message>
+            <xsl:text>Endterm points to nonexistent id: </xsl:text>
+	    <xsl:value-of select="@endterm"/>
+          </xsl:message>
+	  <a href="{f:href($target)}">
+	    <xsl:call-template name="id"/>
+	    <span class="formatting-error">
+	      <xsl:text>???</xsl:text>
+	    </span>
+	  </a>
+        </xsl:when>
+        <xsl:otherwise>
+	  <a href="{f:href($target)}">
+	    <xsl:call-template name="id"/>
+	    <xsl:apply-templates select="$etarget" mode="m:endterm"/>
+	  </a>
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:when>
+
+    <xsl:when test="$target/@xreflabel">
+      <a href="{f:href($target)}">
+	<xsl:call-template name="xreflabel">
+	  <xsl:with-param name="target" select="$target"/>
+	</xsl:call-template>
+      </a>
+    </xsl:when>
+
+    <xsl:otherwise>
+      <xsl:apply-templates select="$target" mode="m:xref-to-prefix"/>
+
+      <a href="{f:href($target)}">
+	<xsl:if test="$target/db:info/db:title">
+	  <xsl:attribute name="title" select="string($target/db:info/db:title)"/>
+	</xsl:if>
+	<xsl:apply-templates select="$target" mode="m:xref-to">
+	  <xsl:with-param name="referrer" select="."/>
+	  <xsl:with-param name="xrefstyle">
+	    <xsl:choose>
+	      <xsl:when test="@role and not(@xrefstyle)
+			      and $use.role.as.xrefstyle != 0">
+		<xsl:value-of select="@role"/>
+	      </xsl:when>
+	      <xsl:otherwise>
+		<xsl:value-of select="@xrefstyle"/>
+	      </xsl:otherwise>
+	    </xsl:choose>
+	  </xsl:with-param>
+	</xsl:apply-templates>
+      </a>
+
+      <xsl:apply-templates select="$target" mode="m:xref-to-suffix"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
+
+<!-- ============================================================ -->
+
+<doc:template name="xreflabel" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Template for processing xreflabels</refpurpose>
+
+<refdescription>
+<para>This template is used to insert the markup associated with an
+<tag class='attribute'>xreflabel</tag>.</para>
+</refdescription>
+</doc:template>
+
+<xsl:template name="xreflabel">
+  <!-- called to process an xreflabel...you might use this to make  -->
+  <!-- xreflabels come out in the right font for different targets, -->
+  <!-- for example. -->
+  <xsl:param name="target" select="."/>
+  <xsl:value-of select="$target/@xreflabel"/>
 </xsl:template>
 
 <!-- ============================================================ -->
@@ -165,6 +369,83 @@ Any element processed in this mode should generate its document name.</para>
   <span class="olinkdocname">
     <xsl:copy-of select="$docname"/>
   </span>
+</xsl:template>
+
+<!-- ==================================================================== -->
+
+<doc:mode name="m:endterm" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for processing endterms</refpurpose>
+
+<refdescription>
+<para>This mode is used to insert the markup associated with an
+<tag class='attribute'>endterm</tag>.</para>
+</refdescription>
+</doc:mode>
+
+<xsl:template match="*" mode="m:endterm">
+  <!-- Process the children of the endterm element -->
+  <xsl:variable name="endterm">
+    <span>
+      <xsl:apply-templates select="child::node()"/>
+    </span>
+  </xsl:variable>
+
+  <xsl:apply-templates select="$endterm/*" mode="m:remove-ids"/>
+</xsl:template>
+
+<!-- ==================================================================== -->
+
+<doc:mode name="m:remove-ids" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for removing IDs</refpurpose>
+
+<refdescription>
+<para>This mode processes result (XHTML) markup, removing all ID
+attributes.</para>
+</refdescription>
+</doc:mode>
+
+<xsl:template match="*" mode="m:remove-ids">
+  <xsl:choose>
+    <xsl:when test="node-name(.) = h:a">
+      <xsl:choose>
+	<xsl:when test="(@name and count(@*) = 1)
+			or (@id and count(@*) = 1)
+			or (@id and @name and count(@*) = 2)">
+	  <xsl:apply-templates mode="m:remove-ids"/>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:copy>
+	    <xsl:for-each select="@*">
+	      <xsl:choose>
+		<xsl:when test="name(.) != 'name' and name(.) != 'id'">
+		  <xsl:copy/>
+		</xsl:when>
+		<xsl:otherwise>
+		  <!-- nop -->
+		</xsl:otherwise>
+              </xsl:choose>
+            </xsl:for-each>
+	  </xsl:copy>
+	  <xsl:apply-templates mode="m:remove-ids"/>
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:copy>
+	<xsl:for-each select="@*">
+          <xsl:choose>
+            <xsl:when test="name(.) != 'id'">
+              <xsl:copy/>
+            </xsl:when>
+	    <xsl:otherwise>
+	      <!-- nop -->
+	    </xsl:otherwise>
+          </xsl:choose>
+        </xsl:for-each>
+        <xsl:apply-templates mode="m:remove-ids"/>
+      </xsl:copy>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <!-- ==================================================================== -->

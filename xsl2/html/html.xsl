@@ -208,6 +208,17 @@ and a CSS style is specified.</para>
 
 <!-- ====================================================================== -->
 
+<doc:template name="css-style" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Template for inserting CSS stylesheet</refpurpose>
+
+<refdescription>
+<para>This template is used to insert the CSS stylesheet associated
+with the result document. If <parameter>docbook.css.inline</parameter> is
+false (0), a link is inserted to the stylesheet, otherwise, the text
+of the stylesheet is inserted directly.</para>
+</refdescription>
+</doc:template>
+
 <xsl:template name="css-style">
   <xsl:choose>
     <xsl:when test="$docbook.css.inline = 0">
