@@ -14,7 +14,7 @@
 <para>Anyone is free to checkout individual projects from the
 <ulink url="http://sourceforge.net/cvs/?group_id=21935">CVS
 Repository</ulink>. SourceForge also provides a web interface to
-<ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/?cvsroot=docbook">browsing it</ulink>.
+<ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/">browsing it</ulink>.
 </para>
 
 </webpage>
