@@ -10,8 +10,15 @@
 <keywords>DocBook, SourceForge, releases</keywords>
 </head>
 
-<para>A history of <ulink url="http://sourceforge.net/project/showfiles.php?group_id=21935">project releases</ulink> is maintained on SourceForge.</para>
+<para>A history of <ulink
+      url="http://sourceforge.net/project/showfiles.php?group_id=21935">project 
+      releases</ulink> is available. Release announcements and other
+      news related to the project is posted on the project <ulink
+      url="http://sourceforge.net/news/?group_id=21935" >news
+      page</ulink>.</para>
 
-<para>No packages have been released yet.</para>
+  <para>Releases of work products of the DocBook Technical Committee
+    are <ulink url="http://oasis-open.org/docbook/#announcements"
+      >announced</ulink> on the official DocBook site at OASIS.</para>
 
 </webpage>
