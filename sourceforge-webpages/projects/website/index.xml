@@ -1,5 +1,5 @@
 <!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
-                  "file:/share/doctypes/website-pages/website.dtd">
+                  "/usr/share/sgml/docbook/custom/website/2.0b1/website.dtd">
 <webpage id="p.website">
 <config param="rcsdate" value="$Date$"/>
 <config param="footer" value="docbook.xml" altval="XML Source"/>
@@ -11,11 +11,20 @@
 
 <para>The Website doctype is for making presentations (like this one).</para>
 
-<itemizedlist>
-<listitem>
-<para><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/website/">CVS</ulink>.
-</para>
-</listitem>
-</itemizedlist>
+  <itemizedlist>
+    <listitem>
+      <para><ulink
+          url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/website/" 
+          >CVS</ulink>
+      </para>
+    </listitem>
+    <listitem>
+      <para>An<ulink
+          url="http://docbook.org/wiki/moin.cgi/WebsiteDoctype"
+          >annotated example</ulink> of a site generated using the
+        Website doctype is available.
+      </para>
+    </listitem>
+  </itemizedlist>
 
 </webpage>
