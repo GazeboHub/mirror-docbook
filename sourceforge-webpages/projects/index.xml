@@ -5,7 +5,7 @@
 <webpage id="projects">
   <config param="desc" value="DocBook Projects"/>
   <config param="rcsdate" value="$Date$"/>
-  <config param="footer" value="../projects.xml" altval="XML Source"/>
+  <config param="footer" value="index.xml" altval="XML Source"/>
   <head>
     <title>DocBook Projects</title>
     <titleabbrev>Projects</titleabbrev>

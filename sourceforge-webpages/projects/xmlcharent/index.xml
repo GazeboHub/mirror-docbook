@@ -3,7 +3,7 @@
 <webpage id="p.xmlcharent">
 <config param="desc" value="XML Character Entities"/>
 <config param="rcsdate" value="$Date$"/>
-<config param="footer" value="xmlcharent.xml" altval="XML Source"/>
+<config param="footer" value="index.xml" altval="XML Source"/>
 <head>
 <title>XML Character Entities</title>
 <summary>XML versions of the ISO Character Entities</summary>

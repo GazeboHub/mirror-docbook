@@ -3,7 +3,7 @@
 <webpage id="p.xsl">
 <config param="desc" value="XSL Stylesheets"/>
 <config param="rcsdate" value="$Date$"/>
-<config param="footer" value="xsl.xml" altval="XML Source"/>
+<config param="footer" value="index.xml" altval="XML Source"/>
 <head>
 <title>DocBook XSL Stylesheets</title>
 <titleabbrev>XSL Stylesheets</titleabbrev>

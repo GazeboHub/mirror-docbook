@@ -3,7 +3,7 @@
 <webpage id="p.sourceforge-webpages">
 <config param="desc" value="SourceForge Webpages"/>
 <config param="rcsdate" value="$Date$"/>
-<config param="footer" value="sourceforge-webpages.xml" altval="XML Source"/>
+<config param="footer" value="index.xml" altval="XML Source"/>
 <head>
 <title>SourceForge Webpages</title>
 <summary>Webpage source for this website</summary>

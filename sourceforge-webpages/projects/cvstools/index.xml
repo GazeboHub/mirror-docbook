@@ -3,7 +3,7 @@
 <webpage id="p.cvstools">
 <config param="desc" value="CVS Tools"/>
 <config param="rcsdate" value="$Date$"/>
-<config param="footer" value="cvstools.xml" altval="XML Source"/>
+<config param="footer" value="index.xml" altval="XML Source"/>
 <head>
 <title>CVS Tools</title>
 <summary>Scripts required to build from CVS</summary>

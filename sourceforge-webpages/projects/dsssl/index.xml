@@ -3,7 +3,7 @@
 <webpage id="p.dsssl">
 <config param="desc" value="DSSSL Stylesheets"/>
 <config param="rcsdate" value="$Date$"/>
-<config param="footer" value="dsssl.xml" altval="XML Source"/>
+<config param="footer" value="index.xml" altval="XML Source"/>
 <head>
 <title>DocBook DSSSL Stylesheets</title>
 <titleabbrev>DSSSL Stylesheets</titleabbrev>

@@ -3,7 +3,7 @@
 <webpage id="p.testdocs">
 <config param="desc" value="DocBook test documents"/>
 <config param="rcsdate" value="$Date$"/>
-<config param="footer" value="testdocs.xml" altval="XML Source"/>
+<config param="footer" value="index.xml" altval="XML Source"/>
 <head>
 <title>Test Documents</title>
 <summary>DocBook/Stylesheet Test Documents</summary>

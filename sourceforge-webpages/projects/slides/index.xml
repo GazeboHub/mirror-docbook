@@ -2,7 +2,7 @@
                   "http://docbook.sourceforge.net/release/website/2.4.1/schema/dtd/website.dtd">
 <webpage id="p.slides">
   <config param="rcsdate" value="$Date$"/>
-  <config param="footer" value="docbook.xml" altval="XML Source"/>
+  <config param="footer" value="index.xml" altval="XML Source"/>
   <head>
     <title>Slides</title>
     <summary>The Slides doctype</summary>
