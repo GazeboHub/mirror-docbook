@@ -24,19 +24,17 @@
     <table width="100%" border="0" summary="Footer navigation">
       <tr>
         <td width="33%" align="left">
-          <span class="footdate">
-            <!-- rcsdate = "$Date$" -->
-            <!-- timeString = "dow mon dd hh:mm:ss TZN yyyy" -->
-            <xsl:variable name="timeString" select="cvs:localTime($rcsdate)"/>
-            <xsl:text>Updated: </xsl:text>
-            <xsl:value-of select="substring($timeString, 1, 3)"/>
-            <xsl:text>, </xsl:text>
-            <xsl:value-of select="substring($timeString, 9, 2)"/>
-            <xsl:text> </xsl:text>
-            <xsl:value-of select="substring($timeString, 5, 3)"/>
-            <xsl:text> </xsl:text>
-            <xsl:value-of select="substring($timeString, 25, 4)"/>
-          </span>
+          <a
+            href="http://docbook.org/wiki/moin.cgi/DocBook"
+            ><img border="0"
+              alt="DocBook"
+              src="http://docbook.sourceforge.net/graphics/created-with-docbook-black.png"
+            /></a>&#160;<a
+              href="http://xmlsoft.org/XSLT/"
+            ><img border="0"
+              alt="Libxslt"
+              src="http://docbook.sourceforge.net/graphics/created-with-libxslt.png"
+            /></a>
         </td>
         <td width="34%" align="center">
           <xsl:message>
@@ -71,7 +69,21 @@
 
           <xsl:apply-templates select="$footers" mode="footer.link.mode"/>
         </td>
-        <td width="33%" align="right">&#160;</td>
+        <td width="33%" align="right">
+          <span class="footdate">
+            <!-- rcsdate = "$Date$" -->
+            <!-- timeString = "dow mon dd hh:mm:ss TZN yyyy" -->
+            <xsl:variable name="timeString" select="cvs:localTime($rcsdate)"/>
+            <xsl:text>Updated: </xsl:text>
+            <xsl:value-of select="substring($timeString, 1, 3)"/>
+            <xsl:text>, </xsl:text>
+            <xsl:value-of select="substring($timeString, 9, 2)"/>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="substring($timeString, 5, 3)"/>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="substring($timeString, 25, 4)"/>
+          </span>
+        </td>
       </tr>
     </table>
   </div>
