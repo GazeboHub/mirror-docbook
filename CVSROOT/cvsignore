@@ -1,0 +1,8 @@
+*.dvi
+*.log
+*.aux
+*.lof
+*.toc
+.AppleDouble
+ChangeLog
+ChangeLog.*
