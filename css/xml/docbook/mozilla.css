@@ -35,7 +35,7 @@ guimenu, guimenuitem, guisubmenu {
 	font: menu;
 }
 
-orderedlist {
+orderedlist, itemizedlist, procedure {
 	/* this seems to be required to make auto-numbering work */
 	-moz-counter-reset: -html-counter 0;
 }
