@@ -674,10 +674,6 @@ figure {
 	text-align: center;
 }
 
-/* hide content; we will use XML in mozilla to display it */
-mediaobject>*, inlinemediaobject>* {
-	display: none;
-}
 mediaobject>caption {
 	display: block;
 }
