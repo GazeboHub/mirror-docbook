@@ -10,6 +10,15 @@
 <keywords>DocBook, SourceForge, CVS</keywords>
 </head>
 
-<para>T.B.A.</para>
+<para>Shell scripts and other tools necessary to build a working
+CVS tree or to build a new release.
+</para>
+
+<itemizedlist>
+<listitem>
+<para><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/cvstools/">CVS</ulink>
+</para>
+</listitem>
+</itemizedlist>
 
 </webpage>

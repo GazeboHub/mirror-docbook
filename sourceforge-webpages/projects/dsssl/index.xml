@@ -23,7 +23,15 @@ Language</citetitle>. It is defined by ISO/IEC 10179:1996. For more general
 information about DSSSL, see <ulink url="http://www.jclark.com/dsssl/">the
 DSSSL Page</ulink>.</para>
 
-<para>The <ulink url="doc.dsssl/">DSSSL Stylesheet documentation</ulink>
-is also available.</para>
+<itemizedlist>
+<listitem>
+<para>The <ulink url="doc/">DSSSL Stylesheet documentation</ulink>.
+</para>
+</listitem>
+<listitem>
+<para><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/dsssl/">CVS</ulink>.
+</para>
+</listitem>
+</itemizedlist>
 
 </webpage>

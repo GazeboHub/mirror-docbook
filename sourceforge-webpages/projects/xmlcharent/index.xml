@@ -10,6 +10,14 @@
 <keywords>DocBook, SourceForge, XML character entities</keywords>
 </head>
 
-<para>T.B.A.</para>
+<para>The XML version of the ISO character entity sets.
+</para>
+
+<itemizedlist>
+<listitem>
+<para><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/xmlcharent/">CVS</ulink>.
+</para>
+</listitem>
+</itemizedlist>
 
 </webpage>

@@ -10,6 +10,14 @@
 <keywords>DocBook, SourceForge, Test Documents</keywords>
 </head>
 
-<para>T.B.A.</para>
+<para>Test documents.
+</para>
+
+<itemizedlist>
+<listitem>
+<para><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/testdocs/">CVS</ulink>.
+</para>
+</listitem>
+</itemizedlist>
 
 </webpage>

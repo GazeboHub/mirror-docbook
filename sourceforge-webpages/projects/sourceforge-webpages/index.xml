@@ -10,6 +10,15 @@
 <keywords>DocBook, SourceForge, Webpages</keywords>
 </head>
 
-<para>T.B.A.</para>
+<para>The XML sources for the web pages at
+<ulink url="http://docbook.sourceforge.net/"/>. (These very pages!)
+</para>
+
+<itemizedlist>
+<listitem>
+<para><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/sourceforge-webpages/">CVS</ulink>.
+</para>
+</listitem>
+</itemizedlist>
 
 </webpage>

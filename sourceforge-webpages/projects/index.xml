@@ -19,20 +19,20 @@ project. These are available <olink targetdocent="cvs.xml">via CVS</olink>.
 
 <variablelist>
 <varlistentry>
-<term><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/cvstools/">cvstools</ulink></term>
+<term><ulink url="cvstools/">cvstools</ulink></term>
 <listitem><para>Shell scripts and other tools necessary to build a working
 CVS tree or to build a new release.
 </para></listitem>
 </varlistentry>
 
 <varlistentry>
-<term><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/docbook/">docbook</ulink></term>
-<listitem><para>The DocBook DTD.
+<term><ulink url="docbook/">docbook</ulink></term>
+<listitem><para>The DocBook DTD and schemas.
 </para></listitem>
 </varlistentry>
 
 <varlistentry>
-<term><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/dsssl/">dsssl</ulink></term>
+<term><ulink url="dsssl/">dsssl</ulink></term>
 <listitem><para>DocBook DSSSL Stylesheets.
 </para></listitem>
 </varlistentry>
@@ -44,20 +44,20 @@ CVS tree or to build a new release.
 </varlistentry>
 
 <varlistentry>
-<term><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/sourceforge-webpages/">sourceforge-webpages</ulink></term>
+<term><ulink url="sourceforge-webpages/">sourceforge-webpages</ulink></term>
 <listitem><para>The XML sources for the web pages at
 <ulink url="http://docbook.sourceforge.net/"/>. (These very pages!)
 </para></listitem>
 </varlistentry>
 
 <varlistentry>
-<term><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/testdocs/">testdocs</ulink></term>
+<term><ulink url="testdocs/">testdocs</ulink></term>
 <listitem><para>Test documents.
 </para></listitem>
 </varlistentry>
 
 <varlistentry>
-<term><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/xmlcharent/">xmlcharent</ulink></term>
+<term><ulink url="xmlcharent/">xmlcharent</ulink></term>
 <listitem><para>The XML version of the ISO character entity sets.
 </para></listitem>
 </varlistentry>

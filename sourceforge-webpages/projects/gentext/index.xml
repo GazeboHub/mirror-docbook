@@ -10,6 +10,14 @@
 <keywords>DocBook, SourceForge, gentext, I18N, L10N</keywords>
 </head>
 
-<para>T.B.A.</para>
+<para>The localization text for the DSSSL and XSL Stylesheets.
+</para>
+
+<itemizedlist>
+<listitem>
+<para><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/gentext/">CVS</ulink>.
+</para>
+</listitem>
+</itemizedlist>
 
 </webpage>

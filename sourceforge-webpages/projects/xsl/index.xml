@@ -20,7 +20,16 @@ stylesheet language for both print and online rendering. For more
 information about XSL, see the
 <ulink url="http://www.w3.org/Style/XSL/">XSL page</ulink> at the W3C.</para>
 
-<para>The <ulink url="doc.xsl/">XSL Stylesheet documentation</ulink>
-is also available.</para>
+
+<itemizedlist>
+<listitem>
+<para>The <ulink url="doc/">XSL Stylesheet documentation</ulink>.
+</para>
+</listitem>
+<listitem>
+<para><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/xsl/">CVS</ulink>.
+</para>
+</listitem>
+</itemizedlist>
 
 </webpage>
