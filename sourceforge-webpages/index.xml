@@ -44,8 +44,6 @@ This documentation is also
 </section>
 <section><title>About This Project</title>
 
-<para>This project is still in the early planning stages.</para>
-
 <para>This project supports the open source development of DocBook
 resources.  In particular, it is the official repository for the DocBook
 XSL and DSSSL Stylesheets. It also contains a number of other document types,

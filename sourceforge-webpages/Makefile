@@ -4,6 +4,7 @@ TABSTYLE=.stylesheets/tabular.xsl
 WEBSTYLE=.stylesheets/textonly.xsl
 AUTOSTYLE=/share/doctypes/website-pages/xsl/autolayout.xsl
 DEPSTYLE=/share/doctypes/website-pages/xsl/makefile-dep.xsl
+AUTOLAYOUT-FILE=/sourceforge/docbook/sourceforge-webpages/autolayout.xml
 DESTPATH=.
 TEXTONLY=0
 
@@ -24,15 +25,12 @@ autolayout.xml: layout.xml
 	$(PROC) $(PROCOPT) $< $(AUTOSTYLE) $@
 	make depends
 
-chunk-tabular: autolayout.xml
-	$(PROC) $(PROCOPT) layout.xml $(CHUNK-TAB) - output-root=$(DESTPATH)
-
-chunk-website: autolayout.xml
-	$(PROC) $(PROCOPT) layout.xml $(CHUNK-WEB) - output-root=$(DESTPATH)
+chunk: autolayout.xml
+	$(PROC) $(PROCOPT) autolayout.xml $(STYLESHEET) - output-root=$(DESTPATH)
 
 %.html: autolayout.xml
 	xjparse $(filter-out autolayout.xml,$^)
-	$(PROC) $(PROCOPT) $(filter-out autolayout.xml,$^) $(STYLESHEET) $@
+	$(PROC) $(PROCOPT) $(filter-out autolayout.xml,$^) $(STYLESHEET) $@  autolayout-file=$(AUTOLAYOUT-FILE)
 	tidy -iq -latin1 -mn $@
 
 depends: autolayout.xml

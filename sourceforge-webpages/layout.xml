@@ -21,16 +21,21 @@
 
   <toc page="index.xml">
     <tocentry page="projects/index.xml" dir="projects">
-      <tocentry page="projects/cvstools.xml" filename="cvstools.html"/>
-      <tocentry page="projects/docbook.xml" filename="docbook.html"/>
-      <tocentry page="projects/dsssl.xml" filename="dsssl.html"/>
-      <tocentry page="projects/gentext.xml" filename="gentext.html"/>
-      <tocentry page="projects/jrefentry.xml" filename="jrefentry.html"/>
-      <tocentry page="projects/sourceforge-webpages.xml"
-		filename="sourceforge-webpages.html"/>
-      <tocentry page="projects/testdocs.xml" filename="testdocs.html"/>
-      <tocentry page="projects/xmlcharent.xml" filename="xmlcharent.html"/>
-      <tocentry page="projects/xsl.xml" filename="xsl.html"/>
+      <tocentry page="projects/cvstools/index.xml" dir="cvstools"/>
+      <tocentry page="projects/docbook/index.xml" dir="docbook"/>
+      <tocentry page="projects/dsssl/index.xml" dir="dsssl"/>
+      <tocentry page="projects/gentext/index.xml" dir="gentext"/>
+      <tocentry page="projects/jrefentry/index.xml" dir="jrefentry"/>
+      <tocentry page="projects/sourceforge-webpages/index.xml"
+		dir="sourceforge-webpages"/>
+      <tocentry page="projects/testdocs/index.xml" dir="testdocs"/>
+      <tocentry page="projects/xmlcharent/index.xml" dir="xmlcharent"/>
+      <tocentry page="projects/xsl/index.xml" dir="xsl"/>
+    </tocentry>
+    <tocentry page="contrib/index.xml" dir="contrib">
+      <tocentry page="contrib/css/index.xml" dir="css">
+        <tocentry page="contrib/css/adicarlo/index.xml" dir="adicarlo"/>
+      </tocentry>
     </tocentry>
     <tocentry page="lists.xml" filename="lists.html"/>
     <tocentry page="issues.xml" filename="issues.html"/>
