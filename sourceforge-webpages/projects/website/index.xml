@@ -9,7 +9,7 @@
 <keywords>DocBook, SourceForge, Website</keywords>
 </head>
 
-<para>The Website doctype is for making presentations (like this one).</para>
+<para>The Website doctype is for making websites (like this one).</para>
 
   <itemizedlist>
     <listitem>
@@ -20,7 +20,7 @@
     </listitem>
     <listitem>
       <para>An <ulink
-          url="http://docbook.org/wiki/moin.cgi/WebsiteDoctype"
+          url="http://docbook.sourceforge.net/release/website/example/"
           >annotated example</ulink> of a site generated using the
         Website doctype is available.
       </para>
