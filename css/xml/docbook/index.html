@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>DocBook Cascading Stylesheet (CSS2)</title>
+    <meta name="keywords" content="docbook-css"/>
+    <style type="text/css"><!--
+      h1,h2,h3	{font-family:sans-serif;}
+      p,ul,pre		{margin:0 8% .5em 8%;}
+    --></style>
+  </head>
+
+  <body>
+    <h1>Cascading Stylesheet for DocBook XML</h1>
+
+    <h2>About</h2>
+    <p><a href="http://www.docbook.org/">DocBook</a> is an XML dialect for
+    writing documentation.</p>
+
+    <p>The <a href="http://www.w3.org/Style/CSS/">Cascading Stylesheet</a>
+    provided here allows you to directly view a styled XML document in software
+    that supports XML styled with CSS2 (e.g. a recent
+    <a href="http://www.mozilla.org/">Mozilla</a>,
+    <a href="http://www.opera.com/">Opera</a> or
+    <a href="http://www.microsoft.com/ie/">Internet Explorer</a>)</p>
+
+    <h2>Status</h2>
+    <p>Works sometimes.  Not extensively tested.</p>
+
+    <h2>Examples</h2>
+    <p><small>(To view the XML versions, you need a capable browser)</small></p>
+    <p>Author Guide (from <a href="http://www.tldp.org/">The Linux
+    Documentation Project</a>)
+    </p>
+    <ul>
+      <li><a href="LDP-Author-Guide/ldp-author-guide-concat.xml">XML</a></li>
+    </ul>
+    <p>Documentation for
+    <a href="http://www.badgers-in-foil.co.uk/projects/cvsspam/">CVSspam</a></p>
+    <ul>
+      <li><a href="cvsspam-doc.xml">XML</a></li>
+    </ul>
+    <p>Some <a href="tests/index.html">docbook test cases</a>.</p>
+
+    <h2>Usage</h2>
+    <p>To use, alter your XML file to include a stylesheet directive,</p>
+    <pre>&lt;?xml version="1.0"?&gt;
+<b>&lt;?xml-stylesheet href="docbook-css-0.2/driver.css" type="text/css"?&gt;</b>
+
+&lt;book&gt;
+...</pre>
+
+    <h2>Download</h2>
+    <h3>Current</h3>
+    <p>2004-09-05 <a href="docbook-css-0.2.tar.gz">docbook-css-0.2.tar.gz</a> ~6kB</p>
+    <ul>
+      <li>Too many changes to list everything</li>
+      <li>Mozilla &lt;ulink&gt; binding dissabled, since it seems to crash
+      recent mozilla.org offerings.</li>
+      <li>Images may appear, in some instances</li>
+      <li>Styling for lots more elements</li>
+    </ul>
+    
+    <h3>Previous</h3>
+    <p>2002-12-12 <a href="docbook-css-0.1.0.tar.gz">docbook-css-0.1.0.tar.gz</a> ~3kB</p>
+
+    <h2>Source</h2>
+    <p>Part of the stylesheet was generated from the source of
+    <a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/defguide/en/">DocBook: The Definitive Guide</a> with this (slightly ugly) script,
+    <ul>
+      <li><a href="makecss.rb">makecss.rb</a></li>
+    </ul>
+
+    <h2>mailto:</h2>
+    <p>If you find examples of valid docbook that doesn't get rendered
+    resonably by this stylesheet, point them out.  Suggestions to improve
+    the stylesheets gratefully accepted.</p>
+
+    <p>David Holroyd &lt;dave <i>at</i> badgers-in-foil <i>dot</i> co <i>dot</i> uk&gt;</p>
+  </body>
+</html>
