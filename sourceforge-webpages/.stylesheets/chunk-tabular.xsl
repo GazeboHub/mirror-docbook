@@ -48,9 +48,9 @@
 
 <xsl:template name="home.navhead">
   <xsl:text>&#160;</xsl:text>
-  <a href="projects/website" target="_top">
-    <img src="graphics/website-1-cropped.png"
-        height="31" width="123" alt="Website doctype" border="0"/>
+  <a href="http://docbook.org/wiki/moin.cgi/DocBook" target="_top">
+    <img src="created-with-docbook-green.png"
+        alt="DocBook" border="0"/>
   </a>
   <xsl:text>&#160;</xsl:text>
   <!-- Yes, the ampersand is double escaped in the URL below -->
@@ -109,6 +109,18 @@
   <tr>
     <td width="{$navtocwidth}" bgcolor="{$navbgcolor}"
         valign="top" align="left">
+        <p><a
+          href="http://docbook.org/wiki/moin.cgi/DocBook"
+        ><img border="0"
+            alt="DocBook"
+            src="http://docbook.sourceforge.net/graphics/created-with-docbook-black.png"
+          /></a> <a href="http://xmlsoft.org/XSLT/"
+          ><img border="0"
+            alt="Libxslt"
+            src="http://www.zlatkovic.com/libxslt-logo.png"
+          /></a>
+          </p>
+          <p>
       <span class="footdate">
         <!-- rcsdate = "$Date$" -->
         <!-- timeString = "dow mon dd hh:mm:ss TZN yyyy" -->
@@ -135,6 +147,7 @@
         <xsl:text> </xsl:text>
         <xsl:value-of select="substring($timeString, 25, 4)"/>
       </span>
+      </p>
     </td>
 
     <td valign="top" align="center">

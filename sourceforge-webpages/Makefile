@@ -118,6 +118,8 @@ endif
 	find . -follow -type f -name ".#*"  | cut -c3- >> $(TEMP)/tar.exclude
 	find . -follow -type f -name ".*.swo"  | cut -c3- >> $(TEMP)/tar.exclude
 	find . -follow -type f -name ".*.swp"  | cut -c3- >> $(TEMP)/tar.exclude
+	find . -type f -name ".cvsignore"  | cut -c3- >> /tmp/tar.exclude
+	find . -type f -name ".memdump"  | cut -c3- >> /tmp/tar.exclude
 	find . -follow -type f -name "README.CVS"   | cut -c3- >> $(TEMP)/tar.exclude
 	@echo
 	@echo Making .tar.gz and .zip archive files for upload....
