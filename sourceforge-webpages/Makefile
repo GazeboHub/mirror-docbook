@@ -1,5 +1,5 @@
 PROC=saxon
-PROCOPT=
+PROCOPT=-q
 TABSTYLE=.stylesheets/tabular.xsl
 WEBSTYLE=.stylesheets/textonly.xsl
 AUTOSTYLE=/share/doctypes/website-pages/xsl/autolayout.xsl
@@ -22,6 +22,7 @@ all: website
 autolayout.xml: layout.xml
 	xjparse $(filter-out autolayout.xml,$^)
 	$(PROC) $(PROCOPT) $< $(AUTOSTYLE) $@
+	make depends
 
 chunk-tabular: autolayout.xml
 	$(PROC) $(PROCOPT) layout.xml $(CHUNK-TAB) - output-root=$(DESTPATH)

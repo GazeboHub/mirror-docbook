@@ -19,51 +19,51 @@ project. These are available <olink targetdocent="cvs.xml">via CVS</olink>.
 
 <variablelist>
 <varlistentry>
-<term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/cvstools/?cvsroot=docbook">cvstools</ulink></term>
+<term><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/cvstools/">cvstools</ulink></term>
 <listitem><para>Shell scripts and other tools necessary to build a working
 CVS tree or to build a new release.
 </para></listitem>
 </varlistentry>
 
 <varlistentry>
-<term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/docbook/?cvsroot=docbook">docbook</ulink></term>
+<term><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/docbook/">docbook</ulink></term>
 <listitem><para>The DocBook DTD.
 </para></listitem>
 </varlistentry>
 
 <varlistentry>
-<term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/dsssl/?cvsroot=docbook">dsssl</ulink></term>
+<term><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/dsssl/">dsssl</ulink></term>
 <listitem><para>DocBook DSSSL Stylesheets.
 </para></listitem>
 </varlistentry>
 
 <varlistentry>
-<term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/gentext/?cvsroot=docbook">gentext</ulink></term>
+<term><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/gentext/">gentext</ulink></term>
 <listitem><para>The localization text for the DSSSL and XSL Stylesheets.
 </para></listitem>
 </varlistentry>
 
 <varlistentry>
-<term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/sourceforge-webpages/?cvsroot=docbook">sourceforge-webpages</ulink></term>
+<term><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/sourceforge-webpages/">sourceforge-webpages</ulink></term>
 <listitem><para>The XML sources for the web pages at
 <ulink url="http://docbook.sourceforge.net/"/>. (These very pages!)
 </para></listitem>
 </varlistentry>
 
 <varlistentry>
-<term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/testdocs/?cvsroot=docbook">testdocs</ulink></term>
+<term><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/testdocs/">testdocs</ulink></term>
 <listitem><para>Test documents.
 </para></listitem>
 </varlistentry>
 
 <varlistentry>
-<term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/xmlcharent/?cvsroot=docbook">xmlcharent</ulink></term>
+<term><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/xmlcharent/">xmlcharent</ulink></term>
 <listitem><para>The XML version of the ISO character entity sets.
 </para></listitem>
 </varlistentry>
 
 <varlistentry>
-<term><ulink url="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/xsl/?cvsroot=docbook">xsl</ulink></term>
+<term><ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/xsl/">xsl</ulink></term>
 <listitem><para>DocBook XSL Stylesheets.
 </para></listitem>
 </varlistentry>

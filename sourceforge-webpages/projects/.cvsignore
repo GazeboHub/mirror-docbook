@@ -1,3 +1,6 @@
 template
 autolayout.xml
 *.html
+doc.dsssl
+doc.xsl
+

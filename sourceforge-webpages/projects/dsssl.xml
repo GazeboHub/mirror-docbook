@@ -1,5 +1,5 @@
 <!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
-                  "file:/share/doctypes/website-pages/website.dtd">
+          "http://docbook.sf.net/release/website/snapshot/website.dtd">
 <webpage id="p.dsssl">
 <config param="desc" value="DSSSL Stylesheets"/>
 <config param="rcsdate" value="$Date$"/>
@@ -11,40 +11,19 @@
 <keywords>DocBook, SourceForge, DSSSL</keywords>
 </head>
 
-<para>T.B.A.</para>
+<para>These are DSSSL stylesheets for the <ulink
+url="http://www.oasis-open.org/docbook/">DocBook DTD</ulink> (they are
+also completely compatible with the DocBook XML DTD and the Simplified
+DocBook DTD).
+</para>
 
-<para>The very brave amongst you might like to try the following:</para>
+<para>DSSSL is a stylesheet language for both print and online rendering.
+The acronym stands for <citetitle>Document Style Semantics and Specification
+Language</citetitle>. It is defined by ISO/IEC 10179:1996. For more general
+information about DSSSL, see <ulink url="http://www.jclark.com/dsssl/">the
+DSSSL Page</ulink>.</para>
 
-<orderedlist>
-<listitem><para>Checkout the 'cvstools', 'gentext', 'xmlcharent', and
-'dsssl' projects from cvs.docbook.sourceforge.net. Make sure you give
-them all a common parent directory.
-</para></listitem>
-
-<listitem><para>Edit the 'saxon' and 'xjparse' scripts in cvstools so
-that they work on your system (don't ask me how; if you have to ask,
-you aren't brave enough. Oh, but I will say this, you can safely edit
-xjparse so that it doesn't do anything :-)
-</para></listitem>
-
-<listitem><para>Run 'make' in the dsssl directory
-</para></listitem>
-
-<listitem><para>Fix the things I forgot to mention in this
-message. Run make again.  Repeat until it works. :-)
-</para></listitem>
-
-<listitem><para>Try the resulting stylesheet on your favorite test document.
-</para></listitem>
-</orderedlist>
-
-<section>
-<title>Notes</title>
-
-<itemizedlist>
-<listitem><para>None of the make targets except 'all' are expected to work.
-</para></listitem>
-</itemizedlist>
-</section>
+<para>The <ulink url="doc.dsssl/">DSSSL Stylesheet documentation</ulink>
+is also available.</para>
 
 </webpage>
