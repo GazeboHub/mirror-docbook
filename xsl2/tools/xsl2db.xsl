@@ -17,8 +17,7 @@
   <reference>
     <xsl:choose>
       <xsl:when test="doc:reference">
-	<xsl:copy-of select="doc:reference/*"/>
-	<xsl:apply-templates/>
+	<xsl:apply-templates select="doc:reference"/>
       </xsl:when>
       <xsl:otherwise>
 	<info>
@@ -31,7 +30,7 @@
 </xsl:template>
 
 <xsl:template match="doc:reference">
-  <!-- nop -->
+  <xsl:apply-templates mode="copy"/>
 </xsl:template>
 
 <xsl:template match="doc:function">
@@ -42,7 +41,10 @@
       <refname>
 	<xsl:value-of select="@name"/>
       </refname>
-      <xsl:copy-of select="db:refpurpose"/>
+      <refpurpose>
+	<xsl:copy-of select="@*"/>
+	<xsl:apply-templates mode="copy"/>
+      </refpurpose>
     </refnamediv>
 
     <xsl:variable name="func"
@@ -95,31 +97,37 @@
       </funcsynopsis>
     </refsynopsisdiv>
 
-    <refsection>
-      <info>
-	<title>Description</title>
-      </info>
-      <xsl:copy-of select="db:refdescription/*"/>
-    </refsection>
-
-    <xsl:if test="db:refparameter">
-      <refsection>
-	<info>
-	  <title>Parameters</title>
-	</info>
-	<xsl:copy-of select="db:refparameter/*"/>
-      </refsection>
-    </xsl:if>
-
-    <xsl:if test="db:refreturn">
-      <refsection>
-	<info>
-	  <title>Returns</title>
-	</info>
-	<xsl:copy-of select="db:refreturn/*"/>
-      </refsection>
-    </xsl:if>
+    <xsl:apply-templates select="db:refdescription"/>
+    <xsl:apply-templates select="db:refparameter"/>
+    <xsl:apply-templates select="db:refereturn"/>
   </refentry>
+</xsl:template>
+
+<xsl:template match="db:refdescription">
+  <refsection>
+    <info>
+      <title>Description</title>
+    </info>
+    <xsl:apply-templates mode="copy"/>
+  </refsection>
+</xsl:template>
+
+<xsl:template match="db:refparameter">
+  <refsection>
+    <info>
+      <title>Parameters</title>
+    </info>
+    <xsl:apply-templates mode="copy"/>
+  </refsection>
+</xsl:template>
+
+<xsl:template match="db:refreturn">
+  <refsection>
+    <info>
+      <title>Returns</title>
+    </info>
+    <xsl:apply-templates mode="copy"/>
+  </refsection>
 </xsl:template>
 
 <xsl:template match="doc:template">
@@ -130,7 +138,7 @@
       <refname>
 	<xsl:value-of select="@name"/>
       </refname>
-      <xsl:copy-of select="db:refpurpose"/>
+      <xsl:apply-templates select="db:refpurpose" mode="copy"/>
     </refnamediv>
 
     <xsl:variable name="temp"
@@ -204,30 +212,9 @@
       </funcsynopsis>
     </refsynopsisdiv>
 
-    <refsection>
-      <info>
-	<title>Description</title>
-      </info>
-      <xsl:copy-of select="db:refdescription/*"/>
-    </refsection>
-
-    <xsl:if test="db:refparameter">
-      <refsection>
-	<info>
-	  <title>Parameters</title>
-	</info>
-	<xsl:copy-of select="db:refparameter/*"/>
-      </refsection>
-    </xsl:if>
-
-    <xsl:if test="db:refreturn">
-      <refsection>
-	<info>
-	  <title>Returns</title>
-	</info>
-	<xsl:copy-of select="db:refreturn/*"/>
-      </refsection>
-    </xsl:if>
+    <xsl:apply-templates select="db:refdescription"/>
+    <xsl:apply-templates select="db:refparameter"/>
+    <xsl:apply-templates select="db:refereturn"/>
   </refentry>
 </xsl:template>
 
@@ -237,15 +224,10 @@
       <refname>
 	<xsl:value-of select="@name"/>
       </refname>
-      <xsl:copy-of select="db:refpurpose"/>
+      <xsl:apply-templates select="db:refpurpose" mode="copy"/>
     </refnamediv>
 
-    <refsection>
-      <info>
-	<title>Description</title>
-      </info>
-      <xsl:copy-of select="db:refdescription/*"/>
-    </refsection>
+    <xsl:apply-templates select="db:refdescription"/>
   </refentry>
 </xsl:template>
 
@@ -258,6 +240,19 @@
 
 <xsl:template match="xsl:*">
   <!-- nop -->
+</xsl:template>
+
+<!-- ============================================================ -->
+
+<xsl:template match="*" mode="copy">
+  <xsl:element name="{name(.)}" namespace="{namespace-uri(.)}">
+    <xsl:copy-of select="@*"/>
+    <xsl:apply-templates mode="copy"/>
+  </xsl:element>
+</xsl:template>
+
+<xsl:template match="text()|processing-instruction()|comment()" mode="copy">
+  <xsl:copy/>
 </xsl:template>
 
 <!-- ============================================================ -->
