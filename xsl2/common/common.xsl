@@ -1,12 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		exclude-result-prefixes="f m fn xs"
+		exclude-result-prefixes="db doc f fn m xs"
                 version="2.0">
+
+<!-- ============================================================ -->
+
+<doc:template name="person.name" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Formats a personal name</refpurpose>
+
+<refdescription>
+<para>This template formats a personal name. It supports several styles
+that may be specified with a <tag class="attribute">role</tag> attribute
+on the element (<tag>personname</tag>, <tag>author</tag>, <tag>editor</tag>,
+and <tag>othercredit</tag>) or with the locale.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The node containing the personal name.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The formatted personal name.</para>
+</refreturn>
+</doc:template>
 
 <xsl:template name="person.name">
   <!-- Formats a personal name. Handles corpauthor as a special case. -->
@@ -61,6 +89,33 @@
   </xsl:choose>
 </xsl:template>
 
+<!-- ============================================================ -->
+
+<doc:template name="person.name.family-given"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Formats a personal name in the “family given” style</refpurpose>
+
+<refdescription>
+<para>This template formats a personal name in the “family given” style.
+It is generally called by <function role="template">person.name</function>
+template.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The node containing the personal name.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The formatted personal name.</para>
+</refreturn>
+</doc:template>
+
 <xsl:template name="person.name.family-given">
   <xsl:param name="node" select="."/>
 
@@ -77,6 +132,33 @@
   <xsl:text> [FAMILY Given]</xsl:text>
 </xsl:template>
 
+<!-- ============================================================ -->
+
+<doc:template name="person.name.last-first"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Formats a personal name in the “last, first” style</refpurpose>
+
+<refdescription>
+<para>This template formats a personal name in the “last, first” style.
+It is generally called by <function role="template">person.name</function>
+template.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The node containing the personal name.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The formatted personal name.</para>
+</refreturn>
+</doc:template>
+
 <xsl:template name="person.name.last-first">
   <xsl:param name="node" select="."/>
 
@@ -88,6 +170,33 @@
 
   <xsl:apply-templates select="$node//db:firstname[1]"/>
 </xsl:template>
+
+<!-- ============================================================ -->
+
+<doc:template name="person.name.first-last"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Formats a personal name in the “first last” style</refpurpose>
+
+<refdescription>
+<para>This template formats a personal name in the “first last” style.
+It is generally called by <function role="template">person.name</function>
+template.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The node containing the personal name.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The formatted personal name.</para>
+</refreturn>
+</doc:template>
 
 <xsl:template name="person.name.first-last">
   <xsl:param name="node" select="."/>
@@ -124,6 +233,33 @@
     <xsl:apply-templates select="$node//db:lineage[1]"/>
   </xsl:if>
 </xsl:template>
+
+<!-- ============================================================ -->
+
+<doc:template name="person.name.list"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Formats a list of personal names</refpurpose>
+
+<refdescription>
+<para>This template formats a list of personal names, for example in
+an <tag>authorgroup</tag>.</para>
+<para>The list of names is assumed to be in the current context node.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The node containing the personal name.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The formatted personal name.</para>
+</refreturn>
+</doc:template>
 
 <xsl:template name="person.name.list">
   <!-- Return a formatted string representation of the contents of
@@ -177,6 +313,39 @@
     </xsl:otherwise>
   </xsl:choose>
 </xsl:template>
+
+<!-- ============================================================ -->
+
+<doc:template name="xpointer.idref"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose></refpurpose>
+
+<refdescription>
+<para>The <function role="template">xpointer.idref</function> template
+returns the
+ID portion of an XPointer which is a pointer to an ID within the current
+document, or the empty string if it is not.</para>
+
+<para>In other words, <function>xpointer.idref</function> returns
+<quote>foo</quote> when passed either <literal>#foo</literal>
+or <literal>#xpointer(id('foo'))</literal>, otherwise it returns
+the empty string.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>xpointer</term>
+<listitem>
+<para>The string containing the XPointer.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The ID portion of the XPointer or an empty string.</para>
+</refreturn>
+</doc:template>
 
 <xsl:template name="xpointer.idref">
   <xsl:param name="xpointer">http://...</xsl:param>

@@ -172,7 +172,7 @@ and the node has no <tag class="attribute">role</tag>.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="class" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="style" xmlns="http://docbook.org/docbook-ng">
 <refpurpose>Returns a “style” attribute if appropriate</refpurpose>
 
 <refdescription>
