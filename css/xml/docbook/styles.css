@@ -10,14 +10,6 @@
 /*
  * TODO:
  *
- *  - Localisation of generated content?
- *
- *  - <imagedata>: currently, the best I can seem to do is specify a size
- *    for a box and show an image using the CSS background-image attribute.
- *    This only worked when I specified a file: URL with a fully specified path.
- *    The fileref attribute value is usually just going to be a relative path
- *    without any URL scheme, though.
- *
  *  - do I remember correctly that <abstract> be hidden for screen media?
  */
 
@@ -42,6 +34,15 @@ dedication>*, colophon>*, sect1>*, sect2>*, sect3>*, sect4>*, sect5>*,
 bibliodiv>* {
 	margin-left:10%;
 	margin-right:10%;
+}
+
+/*
+ * Give admonitions bigger margins, to set them more apart from the main
+ * flow of text.
+ */
+warning, caution, important, tip, note {
+	margin-left: 15%;
+	margin-right: 15%;
 }
 
 /*
@@ -116,14 +117,14 @@ section>section>*+section {
 *+para, *+formalpara, *+blockquote, *+glossentry, *+table, *+variablelist,
 *+example, *+informalexample, *+programlisting, *+cmdsynopsis,
 *+orderedlist, *+itemizedlist, *+figure,
-*>warning, *>caution, *>tip, *>note {
+*>warning, *>caution, *>important, *>tip, *>note {
 	margin-top:.5em;
 }
 
 
 /*
  * BiblioEntry blocks need a bit more space, since they may contain multiple
- * paragraphs, and so need greater-then-paragraph spacing to make it clear
+ * paragraphs, and so need greater-than-paragraph spacing to make it clear
  * which gap is the end just of a paragraph, and which gap is the end of the
  * entry
  */
@@ -170,15 +171,13 @@ question>para, answer>para {
 	display:inline;
 }
 
+/* see language specific files for content */
 question:before {
 	display:marker;
-	content:"Q: ";
 	font-weight:bolder;
 }
-
 answer:before {
 	display:marker;
-	content: "A: ";
 	font-weight: bolder;
 }
 
@@ -204,7 +203,7 @@ emphasis>emphasis {
 	font-weight:bolder;
 }
 
-foreignphrase, wordasword {
+foreignphrase, wordasword, productname {
 	font-style:italic;
 }
 
@@ -241,13 +240,18 @@ author>* + *:before {
 
 /* give keycaps a '3D' shaded look */
 keycap {
-	padding: .1em;
-	border: 2px solid;
-	border-top-color: #eeeeee;
-	border-left-color: #eeeeee;
-	border-right-color: #999999;
-	border-bottom-color: #999999;
-	background-color: #dddddd;
+	padding-left: .2em;
+	padding-right: .2em;
+	border-style: solid;
+	border-top-width: 2px;
+	border-left-width: 3px;
+	border-right-width: 3px;
+	border-bottom-width: 5px;
+	border-top-color: #eeeecc;
+	border-left-color: #eeeecc;
+	border-right-color: #999977;
+	border-bottom-color: #999977;
+	background-color: #ddddbb;
 }
 
 keycombo>keycap+keycap:before {
@@ -256,12 +260,26 @@ keycombo>keycap+keycap:before {
 	content: "-";
 }
 
-guimenu+guimenuitem:before, guimenuitem+guimenuitem:before,
-guimenuitem+guisubmenu:before {
+menuchoice>guimenu+guimenuitem:before,
+menuchoice>guimenuitem+guimenuitem:before,
+menuchoice>guimenuitem+guisubmenu:before {
 	/*content: "->";*/
 	/* a 'proper' left-arrow character */
 	content: "\2192";
 }
+
+guibutton {
+	border: 2px outset #dddddd;
+	background-color: #dddddd;
+/*
+	border: 2px solid;
+	border-top-color: #eeeeee;
+	border-left-color: #eeeeee;
+	border-right-color: #999999;
+	border-bottom-color: #999999;
+	background-color: #dddddd;
+*/}
+
 
 /* render link-like elements per HTML's normal styling */
 link, ulink, email {
@@ -299,7 +317,6 @@ xref:after {
 
 blockquote {
 	padding-left:3em;
-	position: relative;
 	padding-bottom: 1em;
 }
 
@@ -407,6 +424,7 @@ filename[class=directory]:after {
 	content: "/";
 }
 
+/* TODO: Are these specific to 'en' locales or not? */
 trademark:after {
 	content: "\2122"
 }
@@ -426,10 +444,6 @@ example, informalexample, programlisting  {
 	border: 1px dashed black;
 }
 
-example > title:before {
-	content: "Example: ";
-}
-
 
 example programlisting, informalexample programlisting {
 	background-color: none;
@@ -439,43 +453,39 @@ example programlisting, informalexample programlisting {
 
 /* admonitions */
 
-warning, caution, tip, note {
+warning, caution, tip, note, important {
 	border: 1px dashed gray;
 	padding: .5em;
 }
 
 /* Have admonition titles appear inline with generated content ("Note:" etc.) */
-warning>title, caution>title, tip>title, note>title {
+warning>title, caution>title, tip>title, note>title, important>title {
 	display: inline;
 	
 }
 
-warning:before, caution:before, tip:before, note:before {
+warning:before, caution:before, tip:before, note:before, important:before {
 	/* Match the style of <title> */
 	font-weight: bolder;
 	font-family: sans-serif;
 }
 
 /* FIXME: background colours are cheezy :S ... */
-
+/* see language specific css for content: */
 warning:before {
 	background-color: red;
-	content: "Warning: ";
 }
-
 caution:before {
 	background-color: yellow;
-	content: "Caution: ";
 }
-
 tip:before {
 	background-color: #aaaddd;
-	content: "Tip: ";
 }
-
 note:before {
 	background-color: #dddddd;
-	content: "Note: ";
+}
+important:before {
+	background-color: purple;
 }
 
 /* Tables */
@@ -508,6 +518,7 @@ entry {
 
 footnote {
 	position: relative;
+	cursor: help;
 }
 footnote:hover {
 }
