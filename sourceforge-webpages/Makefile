@@ -6,7 +6,7 @@ AUTOSTYLE=/sourceforge/docbook/website/xsl/autolayout.xsl
 DEPSTYLE=/sourceforge/docbook/website/xsl/makefile-dep.xsl
 AUTOLAYOUT-FILE=/sourceforge/docbook/sourceforge-webpages/autolayout.xml
 DESTPATH=.
-TEXTONLY=0
+TEXTONLY=1
 USETIDY=1
 
 ifeq ($(TEXTONLY),0)

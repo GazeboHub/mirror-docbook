@@ -1,20 +1,24 @@
 <!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
-                  "file:/share/doctypes/website-pages/website.dtd">
+                  "/usr/share/sgml/docbook/custom/website/2.0b1/website.dtd">
 <webpage id="cvs">
-<config param="desc" value="CVS Repository"/>
-<config param="rcsdate" value="$Date$"/>
-<config param="footer" value="projects.xml" altval="XML Source"/>
-<head>
-<title>CVS Repository</title>
-<titleabbrev>CVS</titleabbrev>
-<summary>Source code control for the various packages</summary>
-<keywords>DocBook, SourceForge, CVS, projects</keywords>
-</head>
+  <config param="desc" value="CVS Repository"/>
+  <config param="rcsdate" value="$Date$"/>
+  <config param="footer" value="cvs.xml" altval="XML Source"/>
+  <head>
+    <title>CVS Repository</title>
+    <titleabbrev>CVS</titleabbrev>
+    <summary>Source code control for the various packages</summary>
+    <keywords>DocBook, SourceForge, CVS, projects</keywords>
+  </head>
 
-<para>Anyone is free to checkout individual projects from the
-<ulink url="http://sourceforge.net/cvs/?group_id=21935">CVS
-Repository</ulink>. SourceForge also provides a web interface to
-<ulink url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/">browsing it</ulink>.
-</para>
+  <para>Anyone is free to check out individual projects via anonymous
+    CVS access to the project <ulink
+      url="http://sourceforge.net/cvs/?group_id=21935" >CVS
+      repository</ulink>. SourceForge also provides a web interface
+    for <ulink
+      url="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/docbook/"
+      >browsing</ulink> the CVS repository.
+  </para>
 
 </webpage>
+
