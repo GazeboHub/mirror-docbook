@@ -16,13 +16,46 @@
 Repository</ulink> project at
 <ulink url="http://sourceforge.net/">SourceForge</ulink>.</para>
 
-<para>This project is still in the early planning stages. It will
-eventually contain a number of DocBook-related schemas and stylesheets.</para>
-
-<para>Check back in a few weeks to see if any progress has been
-made. Announcements will be go out when we've got anything useful set
-up.</para>
-
 <webtoc/>
+
+<section><title>About DocBook</title>
+
+<para>DocBook is a <ulink
+url="http://www.ucc.ie/xml/#FAQ-DOCTYPE">document type
+definition</ulink> (DTD) in SGML and XML. It is particularly well
+suited to books and papers about computer hardware and software
+(though it is by no means limited to these applications).</para>
+
+<para>DocBook is an <ulink url="http://www.oasis-open.org/">OASIS</ulink>
+<ulink
+url="http://www.oasis-open.org/committees/process.shtml">Standard</ulink>.
+It is a work product of the <ulink
+url="http://www.oasis-open.org/docbook/tc.html">DocBook Technical
+Committee</ulink>. OASIS is the official governing body for all matters
+related to the DocBook DTD.</para>
+
+<para>The official documentation for DocBook is
+<citetitle><ulink url="http://www.oreilly.com/catalog/docbook/">DocBook:
+The Definitive Guide</ulink></citetitle>, published by
+<ulink url="http://www.oreilly.com/">O'Reilly &amp; Associates, Inc.</ulink>
+This documentation is also
+<ulink url="http://docbook.org/tdg/">available online</ulink>.</para>
+
+</section>
+<section><title>About This Project</title>
+
+<para>This project is still in the early planning stages.</para>
+
+<para>This project supports the open source development of DocBook
+resources.  In particular, it is the official repository for the DocBook
+XSL and DSSSL Stylesheets. It also contains a number of other document types,
+schemas, and stylesheets that are derived-from or otherwise related-to
+DocBook.</para>
+
+<para>It is important to note that OASIS remains the
+<ulink url="http://www.oasis-open.org/docbook/">official home</ulink>
+of the DocBook DTD.</para>
+
+</section>
 
 </webpage>

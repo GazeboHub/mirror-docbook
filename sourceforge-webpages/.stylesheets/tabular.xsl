@@ -5,7 +5,7 @@
                 exclude-result-prefixes="html cvs"
                 version='1.0'>
 
-<xsl:import href="/share/doctypes/website-pages/xsl/chunk-tabular.xsl"/>
+<xsl:import href="../../website/xsl/chunk-tabular.xsl"/>
 
 <xsl:param name="admon.style" select="''"/>
 <xsl:param name="admon.graphics" select="1"/>
@@ -25,12 +25,27 @@
 <xsl:param name="textbgcolor">white</xsl:param>
 <xsl:param name="navbgcolor">#00A5A5</xsl:param>
 <xsl:param name="navtocwidth">220</xsl:param>
-<xsl:param name="navbodywidth">600</xsl:param>
+<xsl:param name="navbodywidth"></xsl:param>
 <xsl:param name="nav.table.summary">Navigation table; see text only version for non-tabular alternative</xsl:param>
+
+<xsl:attribute-set name="table.properties">
+  <xsl:attribute name="border">0</xsl:attribute>
+  <xsl:attribute name="cellpadding">5</xsl:attribute>
+  <xsl:attribute name="cellspacing">0</xsl:attribute>
+  <xsl:attribute name="width">100%</xsl:attribute>
+</xsl:attribute-set>
 
 <!-- ==================================================================== -->
 
 <xsl:template name="home.navhead">
+  <xsl:text>&#160;</xsl:text>
+  <a href="http://www.oasis-open.org/" target="_top">
+    <img src="graphics/oasis.png" alt="OASIS" border="0"/>
+  </a>
+  <xsl:text>&#160;</xsl:text>
+  <a href="http://www.oreilly.com/" target="_top">
+    <img src="graphics/oreilly.png" alt="O'Reilly &amp; Associates" border="0"/>
+  </a>
   <xsl:text>&#160;</xsl:text>
   <a href="http://sourceforge.net" target="_top">
     <img src="http://sourceforge.net/sflogo.php?group_id=21935&amp;type=1"
