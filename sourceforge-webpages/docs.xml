@@ -1,0 +1,19 @@
+<!DOCTYPE webpage PUBLIC "-//Norman Walsh//DTD Website V2.0//EN"
+                  "file:/share/doctypes/website-pages/website.dtd">
+<webpage id="docs">
+  <config param="desc" value="Documentation"/>
+  <config param="rcsdate" value="$Date$"/>
+  <config param="footer" value="docs.xml" altval="XML Source"/>
+  <head>
+    <title>Documentation</title>
+    <summary>DocBook guides</summary>
+    <keywords>DocBook, SourceForge, documentation, docs</keywords>
+  </head>
+
+  <para>A set of links to various forms of DocBook documentation is
+    maintained on the <ulink
+      url="http://docbook.org/wiki/moin.cgi/DocBookDocumentation"
+      >documentation</ulink> page at the <ulink
+      url="http://docbook.org/wiki/" >DocBook Wiki</ulink>
+    site.</para>
+</webpage>
