@@ -49,10 +49,16 @@
       </tocentry>
     </tocentry>
     <tocentry page="lists.xml" filename="lists.html"/>
+    <tocentry page="docs.xml" filename="docs.html"/>
+    <tocentry page="support.xml" filename="support.html"/>
     <tocentry page="issues.xml" filename="issues.html"/>
     <tocentry page="cvs.xml" filename="cvs.html"/>
+    <tocentry page="news.xml" filename="news.html"/>
     <tocentry page="releases.xml" filename="releases.html"/>
     <tocentry page="links.xml" filename="links.html">
+      <tocentry id="docbookwiki.link" href="http://docbook.org/wiki/">
+        <title>DocBook Wiki</title>
+      </tocentry>
       <tocentry id="docbookhowto.link" href="http://www.ibiblio.org/godoy/sgml/docbook/howto/index.html">
         <title>DocBook HOWTO</title>
       </tocentry>
