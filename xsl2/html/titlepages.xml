@@ -40,6 +40,64 @@
   <hr/>
 </db:book>
 
+<db:part t:side="recto">
+  <div class="part-titlepage">
+    <db:title/>
+    <db:subtitle/>
+    <db:corpauthor/>
+    <db:authorgroup/>
+    <db:author/>
+    <db:othercredit/>
+    <db:releaseinfo/>
+    <db:copyright/>
+    <db:legalnotice/>
+    <db:pubdate/>
+    <db:revision/>
+    <db:revhistory/>
+    <db:abstract/>
+  </div>
+</db:part>
+
+<db:reference t:side="recto">
+  <div class="reference-titlepage">
+    <db:title/>
+    <db:subtitle/>
+    <db:corpauthor/>
+    <db:authorgroup/>
+    <db:author/>
+    <db:othercredit/>
+    <db:releaseinfo/>
+    <db:copyright/>
+    <db:legalnotice/>
+    <db:pubdate/>
+    <db:revision/>
+    <db:revhistory/>
+    <db:abstract/>
+  </div>
+</db:reference>
+
+<db:partintro t:side="recto">
+  <div class="partintro-titlepage">
+    <db:title/>
+    <db:subtitle/>
+    <db:corpauthor/>
+    <db:authorgroup/>
+    <db:author/>
+    <db:othercredit/>
+    <db:releaseinfo/>
+    <db:copyright/>
+    <db:legalnotice/>
+    <db:pubdate/>
+    <db:revision/>
+    <db:revhistory/>
+    <db:abstract/>
+  </div>
+</db:partintro>
+
+<db:refentry t:side="recto">
+  <!-- nop -->
+</db:refentry>
+
 <db:chapter t:side="recto">
   <div class="chapter-titlepage">
     <db:title/>
@@ -63,7 +121,6 @@
     <db:title/>
     <db:subtitle/>
   </div>
-  <hr/>
 </db:bibliography>
 
 <db:bibliography t:side="verso"/>
@@ -73,7 +130,6 @@
     <db:title/>
     <db:subtitle/>
   </div>
-  <hr/>
 </db:glossary>
 
 <db:index t:side="recto">
@@ -81,7 +137,6 @@
     <db:title/>
     <db:subtitle/>
   </div>
-  <hr/>
 </db:index>
 
 <db:section t:side="recto">
@@ -90,6 +145,13 @@
     <db:subtitle/>
   </div>
 </db:section>
+
+<db:refsection t:side="recto">
+  <div class="section-titlepage">
+    <db:title/>
+    <db:subtitle/>
+  </div>
+</db:refsection>
 
 <db:glossdiv t:side="recto">
   <div class="glossdiv-titlepage">

@@ -22,7 +22,7 @@
 
 <!-- ============================================================ -->
 
-<doc:template name="simple.xlink" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="simple-xlink" xmlns="http://docbook.org/docbook-ng">
 <refpurpose>Handle xlink:href attributes on inlines</refpurpose>
 
 <refdescription>
@@ -58,7 +58,7 @@ context item.</para>
 </refreturn>
 </doc:template>
 
-<xsl:template name="simple.xlink">
+<xsl:template name="simple-xlink">
   <xsl:param name="node" select="."/>
   <xsl:param name="content">
     <xsl:apply-templates/>
@@ -83,7 +83,7 @@ context item.</para>
                               or starts-with($node/@xlink:href,
 			                     '#xpointer&#40;id&#40;'))">
                 <xsl:variable name="idref">
-                  <xsl:call-template name="xpointer.idref">
+                  <xsl:call-template name="xpointer-idref">
                     <xsl:with-param name="xpointer" select="$node/@xlink:href"/>
                   </xsl:call-template>
                 </xsl:variable>
@@ -124,7 +124,7 @@ context item.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="inline.charseq" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="inline-charseq" xmlns="http://docbook.org/docbook-ng">
 <refpurpose>Handles simple inline elements</refpurpose>
 
 <refdescription>
@@ -155,9 +155,9 @@ calling “apply templates” with the current context node.</para>
 </refreturn>
 </doc:template>
 
-<xsl:template name="inline.charseq">
+<xsl:template name="inline-charseq">
   <xsl:param name="content">
-    <xsl:call-template name="simple.xlink"/>
+    <xsl:call-template name="simple-xlink"/>
   </xsl:param>
 
   <span class="{local-name(.)}">
@@ -178,7 +178,7 @@ calling “apply templates” with the current context node.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="inline.monoseq" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="inline-monoseq" xmlns="http://docbook.org/docbook-ng">
 <refpurpose>Handles monospace inline elements</refpurpose>
 
 <refdescription>
@@ -209,9 +209,9 @@ calling “apply templates” with the current context node.</para>
 </refreturn>
 </doc:template>
 
-<xsl:template name="inline.monoseq">
+<xsl:template name="inline-monoseq">
   <xsl:param name="content">
-    <xsl:call-template name="simple.xlink"/>
+    <xsl:call-template name="simple-xlink"/>
   </xsl:param>
 
   <tt class="{local-name(.)}">
@@ -232,7 +232,7 @@ calling “apply templates” with the current context node.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="inline.boldseq" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="inline-boldseq" xmlns="http://docbook.org/docbook-ng">
 <refpurpose>Handles bold inline elements</refpurpose>
 
 <refdescription>
@@ -263,9 +263,9 @@ calling “apply templates” with the current context node.</para>
 </refreturn>
 </doc:template>
 
-<xsl:template name="inline.boldseq">
+<xsl:template name="inline-boldseq">
   <xsl:param name="content">
-    <xsl:call-template name="simple.xlink"/>
+    <xsl:call-template name="simple-xlink"/>
   </xsl:param>
 
   <strong class="{local-name(.)}">
@@ -286,7 +286,7 @@ calling “apply templates” with the current context node.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="inline.italicseq" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="inline-italicseq" xmlns="http://docbook.org/docbook-ng">
 <refpurpose>Handles italic inline elements</refpurpose>
 
 <refdescription>
@@ -317,9 +317,9 @@ calling “apply templates” with the current context node.</para>
 </refreturn>
 </doc:template>
 
-<xsl:template name="inline.italicseq">
+<xsl:template name="inline-italicseq">
   <xsl:param name="content">
-    <xsl:call-template name="simple.xlink"/>
+    <xsl:call-template name="simple-xlink"/>
   </xsl:param>
 
   <em class="{local-name(.)}">
@@ -340,7 +340,7 @@ calling “apply templates” with the current context node.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="inline.boldmonoseq" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="inline-boldmonoseq" xmlns="http://docbook.org/docbook-ng">
 <refpurpose>Handles bold, monospace inline elements</refpurpose>
 
 <refdescription>
@@ -376,9 +376,9 @@ calling “apply templates” with the current context node.</para>
 </refreturn>
 </doc:template>
 
-<xsl:template name="inline.boldmonoseq">
+<xsl:template name="inline-boldmonoseq">
   <xsl:param name="content">
-    <xsl:call-template name="simple.xlink"/>
+    <xsl:call-template name="simple-xlink"/>
   </xsl:param>
 
   <strong class="{local-name(.)}">
@@ -401,7 +401,7 @@ calling “apply templates” with the current context node.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="inline.italicmonoseq" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="inline-italicmonoseq" xmlns="http://docbook.org/docbook-ng">
 <refpurpose>Handles italic, monospace inline elements</refpurpose>
 
 <refdescription>
@@ -437,9 +437,9 @@ calling “apply templates” with the current context node.</para>
 </refreturn>
 </doc:template>
 
-<xsl:template name="inline.italicmonoseq">
+<xsl:template name="inline-italicmonoseq">
   <xsl:param name="content">
-    <xsl:call-template name="simple.xlink"/>
+    <xsl:call-template name="simple-xlink"/>
   </xsl:param>
 
   <em class="{local-name(.)}">
@@ -462,7 +462,7 @@ calling “apply templates” with the current context node.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="inline.superscriptseq" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="inline-superscriptseq" xmlns="http://docbook.org/docbook-ng">
 <refpurpose>Handles superscript inline elements</refpurpose>
 
 <refdescription>
@@ -494,9 +494,9 @@ calling “apply templates” with the current context node.</para>
 </refreturn>
 </doc:template>
 
-<xsl:template name="inline.superscriptseq">
+<xsl:template name="inline-superscriptseq">
   <xsl:param name="content">
-    <xsl:call-template name="simple.xlink"/>
+    <xsl:call-template name="simple-xlink"/>
   </xsl:param>
 
   <sup>
@@ -517,7 +517,7 @@ calling “apply templates” with the current context node.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="inline.subscriptseq" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="inline-subscriptseq" xmlns="http://docbook.org/docbook-ng">
 <refpurpose>Handles subscript inline elements</refpurpose>
 
 <refdescription>
@@ -549,9 +549,9 @@ calling “apply templates” with the current context node.</para>
 </refreturn>
 </doc:template>
 
-<xsl:template name="inline.subscriptseq">
+<xsl:template name="inline-subscriptseq">
   <xsl:param name="content">
-    <xsl:call-template name="simple.xlink"/>
+    <xsl:call-template name="simple-xlink"/>
   </xsl:param>
 
   <sub>
@@ -572,7 +572,7 @@ calling “apply templates” with the current context node.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="format.sgmltag" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="format-sgmltag" xmlns="http://docbook.org/docbook-ng">
 <refpurpose>Handles markup for the DocBook <tag>tag</tag> element</refpurpose>
 
 <refdescription>
@@ -604,7 +604,7 @@ the default is “element”.</para>
 </refreturn>
 </doc:template>
 
-<xsl:template name="format.sgmltag">
+<xsl:template name="format-sgmltag">
   <xsl:param name="class">
     <xsl:choose>
       <xsl:when test="@class">
@@ -679,7 +679,7 @@ the default is “element”.</para>
 </xsl:template>
 
 <xsl:template match="db:emphasis">
-  <xsl:call-template name="simple.xlink">
+  <xsl:call-template name="simple-xlink">
     <xsl:with-param name="content">
       <xsl:choose>
 	<xsl:when test="@role='bold' or @role='strong'">
@@ -708,9 +708,9 @@ the default is “element”.</para>
   <em class="{local-name(.)}">
     <xsl:call-template name="id"/>
     <xsl:if test="@lang or @xml:lang">
-      <xsl:call-template name="language.attribute"/>
+      <xsl:call-template name="lang-attribute"/>
     </xsl:if>
-    <xsl:call-template name="inline.italicseq"/>
+    <xsl:call-template name="inline-italicseq"/>
   </em>
 </xsl:template>
 
@@ -718,7 +718,7 @@ the default is “element”.</para>
   <span>
     <xsl:call-template name="id"/>
     <xsl:if test="@lang or @xml:lang">
-      <xsl:call-template name="language.attribute"/>
+      <xsl:call-template name="lang-attribute"/>
     </xsl:if>
     <xsl:if test="@role">
       <xsl:attribute name="class">
@@ -726,19 +726,19 @@ the default is “element”.</para>
       </xsl:attribute>
     </xsl:if>
 
-    <xsl:call-template name="simple.xlink"/>
+    <xsl:call-template name="simple-xlink"/>
   </span>
 </xsl:template>
 
 <xsl:template match="db:lineannotation">
   <em class="{local-name(.)}">
     <xsl:call-template name="id"/>
-    <xsl:call-template name="inline.charseq"/>
+    <xsl:call-template name="inline-charseq"/>
   </em>
 </xsl:template>
 
 <xsl:template match="db:trademark">
-  <xsl:call-template name="inline.charseq">
+  <xsl:call-template name="inline-charseq">
     <xsl:with-param name="content">
       <xsl:apply-templates/>
       <xsl:choose>
@@ -832,7 +832,7 @@ the default is “element”.</para>
 </xsl:template>
 
 <xsl:template match="db:email">
-  <xsl:call-template name="inline.monoseq">
+  <xsl:call-template name="inline-monoseq">
     <xsl:with-param name="content">
       <xsl:text>&lt;</xsl:text>
       <a>
@@ -850,7 +850,7 @@ the default is “element”.</para>
 <!-- ==================================================================== -->
 
 <xsl:template match="db:optional">
-  <xsl:call-template name="inline.charseq"/>
+  <xsl:call-template name="inline-charseq"/>
 </xsl:template>
 
 <!-- ==================================================================== -->

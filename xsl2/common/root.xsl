@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-		xmlns:f="http://docbook.org/xslt/ns/extension"
-		xmlns:m="http://docbook.org/xslt/ns/mode"
-		xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
-		xmlns:db="http://docbook.org/docbook-ng"
-		exclude-result-prefixes="f m fn"
+                xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
+                xmlns:f="http://docbook.org/xslt/ns/extension"
+                xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
+                xmlns:m="http://docbook.org/xslt/ns/mode"
+		exclude-result-prefixes="db doc f fn m"
                 version="2.0">
 
 <xsl:key name="id" match="*" use="@id|@xml:id"/>
@@ -17,6 +18,18 @@
   <xsl:apply-templates select="$cleanup" mode="m:root"/>
 </xsl:template>
   
+<!-- ============================================================ -->
+
+<doc:mode name="m:cleanup"
+	  xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for cleaning up DocBook documents</refpurpose>
+
+<refdescription>
+<para>This mode is used to clean up input documents. The namespace
+fixup, profiling, and general normalizations are applied.</para>
+</refdescription>
+</doc:mode>
+
 <xsl:template match="/" mode="m:cleanup">
   <!--
   <xsl:message>
@@ -36,6 +49,18 @@
   <xsl:apply-templates select="$profiled" mode="m:normalize"/>
 </xsl:template>
 
+<!-- ============================================================ -->
+
+<doc:mode name="m:root"
+	  xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for processing the root of a the primary input document</refpurpose>
+
+<refdescription>
+<para>This mode is used to process the root of the primary input document.
+</para>
+</refdescription>
+</doc:mode>
+
 <xsl:template match="/" mode="m:root">
   <xsl:choose>
     <!-- if there's a rootid, start there -->
@@ -53,9 +78,7 @@
 
 	<xsl:when test="not($root.elements/*[fn:node-name(.)
 			                     = fn:node-name($root)])">
-	  <xsl:call-template name="m:root-terminate">
-	    <xsl:with-param name="rootid" select="$rootid"/>
-	  </xsl:call-template>
+	  <xsl:call-template name="m:root-terminate"/>
 	</xsl:when>
 
 	<xsl:otherwise>
@@ -81,9 +104,24 @@
   </xsl:choose>
 </xsl:template>
 
-<xsl:template name="m:root-terminate">
-  <xsl:param name="rootid"/>
+<!-- ============================================================ -->
 
+<doc:template name="m:root-terminate" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Aborts processing if the root element is inappropriate</refpurpose>
+
+<refdescription>
+<para>This template is called if the stylesheet detects that the root
+element (or the element selected for processing with
+<parameter>rootid</parameter>) is not an appropriate root element.
+</para>
+</refdescription>
+
+<refreturn>
+<para>Does not return.</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="m:root-terminate">
   <xsl:message terminate="yes">
     <xsl:text>Error: document root element </xsl:text>
     <xsl:if test="$rootid">

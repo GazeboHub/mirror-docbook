@@ -25,6 +25,8 @@
   <xsl:include href="titlepage.xsl"/>
   <xsl:include href="division.xsl"/>
   <xsl:include href="component.xsl"/>
+  <xsl:include href="refentry.xsl"/>
+  <xsl:include href="synopsis.xsl"/>
   <xsl:include href="section.xsl"/>
   <xsl:include href="biblio.xsl"/>
   <xsl:include href="glossary.xsl"/>

@@ -1,8 +1,9 @@
 <?xml version='1.0'?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:f="http://docbook.org/xslt/ns/extension"
                 xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0"
-                exclude-result-prefixes="f l"
+                exclude-result-prefixes="doc f l"
                 version='2.0'>
 
 <!-- ********************************************************************
@@ -20,15 +21,64 @@
 <xsl:variable name="localization.data" select="doc($localization.xml)"/>
 
 <xsl:variable name="localization">
-  <xsl:call-template name="user.localization.data"/>
+  <xsl:call-template name="user-localization-data"/>
   <xsl:copy-of select="$localization.data/l:i18n/l:l10n"/>
 </xsl:variable>
 
-<xsl:template name="user.localization.data">
+<!-- ============================================================ -->
+
+<doc:template name="user-localization-data"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>A hook for customizer localization data</refpurpose>
+
+<refdescription>
+<para>This template is hook for customizers to add localization data.
+Any localization rules provided by this template will override the default
+localization data.</para>
+</refdescription>
+
+<refreturn>
+<para>Any customizer-supplied localization data.</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="user-localization-data">
   <!-- nop -->
 </xsl:template>
 
-<xsl:template name="l10n.language">
+<!-- ============================================================ -->
+
+<doc:template name="l10n-language" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Identifies the natural language associated with an element</refpurpose>
+
+<refdescription>
+<para>This template returns the natural language associated with specified
+target.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>target</term>
+<listitem>
+<para>The node for which the language should be calculated.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>xref-context</term>
+<listitem>
+<para>If true, the resolution is taking place in a cross-reference context.
+</para>
+<para>FIXME: I think there's a bug here!</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The language.</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="l10n-language">
   <xsl:param name="target" select="."/>
   <xsl:param name="xref-context" select="false()"/>
 
@@ -116,7 +166,33 @@
   </xsl:choose>
 </xsl:template>
 
-<xsl:template name="language.attribute">
+<!-- ============================================================ -->
+
+<doc:template name="lang-attribute" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns a language attribute, if appropriate.</refpurpose>
+
+<refdescription>
+<para>This template returns an attribute named <tag class="attribute">lang</tag>
+with the language of the specified node, if the specified node has
+an in-scope language declaration.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The node for which the language should be calculated.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>A <tag class="attribute">lang</tag> attribute, or ().</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="lang-attribute">
   <xsl:param name="node" select="."/>
 
   <xsl:variable name="language">
@@ -152,10 +228,43 @@
   </xsl:if>
 </xsl:template>
 
+<!-- ============================================================ -->
+
+<doc:template name="gentext" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the generated text associated with a particular key
+in a particular language (locale)</refpurpose>
+
+<refdescription>
+<para>This template finds the gentext associated with a specified key
+in a specified locale. If no key can be found in the specified language,
+English will be used to locate a default.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>key</term>
+<listitem>
+<para>The gentext key, defaults to the local name of the context node.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>lang</term>
+<listitem>
+<para>The gentext language (locale), defaults to the language of the
+context node.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The generated text.</para>
+</refreturn>
+</doc:template>
+
 <xsl:template name="gentext">
   <xsl:param name="key" select="local-name(.)"/>
   <xsl:param name="lang">
-    <xsl:call-template name="l10n.language"/>
+    <xsl:call-template name="l10n-language"/>
   </xsl:param>
 
   <xsl:variable name="l10n.gentext"
@@ -192,16 +301,65 @@
 
 <!-- ============================================================ -->
 
-<xsl:template name="gentext.template">
+<doc:template name="gentext-template" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the generated text template associated with a particular set
+of criteria</refpurpose>
+
+<refdescription>
+<para>This template finds the gentext template associated with the specified
+parameters.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>context</term>
+<listitem>
+<para>The context of the template.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>name</term>
+<listitem>
+<para>The name of the template.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>purpose</term>
+<listitem>
+<para>The purpose of the template.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>xrefstyle</term>
+<listitem>
+<para>If the purpose is for a cross reference, the cross reference style.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>referrer</term>
+<listitem>
+<para>If the purpose is for a cross reference, the referrer.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>lang</term>
+<listitem>
+<para>The language, defaults to the language of the current context node.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The generated text template.</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="gentext-template">
   <xsl:param name="context" select="'default'"/>
   <xsl:param name="name" select="'default'"/>
-  <xsl:param name="origname" select="$name"/>
   <xsl:param name="purpose"/>
   <xsl:param name="xrefstyle"/>
   <xsl:param name="referrer"/>
   <xsl:param name="lang">
-    <xsl:call-template name="l10n.language"/>
+    <xsl:call-template name="l10n-language"/>
   </xsl:param>
+  <xsl:param name="origname" select="$name"/>
 
   <xsl:variable name="localization.nodes"
 		select="$localization//l:l10n[@language=$lang]"/>
@@ -241,7 +399,7 @@
     <xsl:otherwise>
       <xsl:choose>
 	<xsl:when test="contains($name, '/')">
-          <xsl:call-template name="gentext.template">
+          <xsl:call-template name="gentext-template">
             <xsl:with-param name="context" select="$context"/>
             <xsl:with-param name="name" select="substring-after($name, '/')"/>
             <xsl:with-param name="origname" select="$origname"/>
@@ -268,7 +426,59 @@ in the context named "</xsl:text>
   </xsl:choose>
 </xsl:template>
 
-<xsl:template name="gentext.template.exists">
+<!-- ============================================================ -->
+
+<doc:template name="gentext-template-exists"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Tests if the generated text template associated with a particular set
+of criteria exists</refpurpose>
+
+<refdescription>
+<para>This template attempts to find the gentext template associated with
+the specified parameters.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>context</term>
+<listitem>
+<para>The context of the template.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>name</term>
+<listitem>
+<para>The name of the template.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>purpose</term>
+<listitem>
+<para>The purpose of the template.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>xrefstyle</term>
+<listitem>
+<para>If the purpose is for a cross reference, the cross reference style.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>referrer</term>
+<listitem>
+<para>If the purpose is for a cross reference, the referrer.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>lang</term>
+<listitem>
+<para>The language, defaults to the language of the current context node.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>“1” if the template exists, “0” otherwise.</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="gentext-template-exists">
   <xsl:param name="context" select="'default'"/>
   <xsl:param name="name" select="'default'"/>
   <xsl:param name="origname" select="$name"/>
@@ -276,7 +486,7 @@ in the context named "</xsl:text>
   <xsl:param name="xrefstyle"/>
   <xsl:param name="referrer"/>
   <xsl:param name="lang">
-    <xsl:call-template name="l10n.language"/>
+    <xsl:call-template name="l10n-language"/>
   </xsl:param>
 
   <xsl:variable name="localization.nodes"
@@ -297,7 +507,7 @@ in the context named "</xsl:text>
     <xsl:otherwise>
       <xsl:choose>
 	<xsl:when test="contains($name, '/')">
-          <xsl:call-template name="gentext.template">
+          <xsl:call-template name="gentext-template">
             <xsl:with-param name="context" select="$context"/>
             <xsl:with-param name="name" select="substring-after($name, '/')"/>
             <xsl:with-param name="origname" select="$origname"/>
@@ -313,28 +523,115 @@ in the context named "</xsl:text>
   </xsl:choose>
 </xsl:template>
 
-<xsl:template name="gentext.dingbat">
+<!-- ============================================================ -->
+
+<doc:template name="gentext-dingbat" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the symbol associated with a named dingbat</refpurpose>
+
+<refdescription>
+<para>See <function>dingbat</function>.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>dingbat</term>
+<listitem>
+<para>The name of the dingbat for which a symbol is sought.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>lang</term>
+<listitem>
+<para>The language, defaults to the language of the current context node.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The symbol.</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="gentext-dingbat">
   <xsl:param name="dingbat">bullet</xsl:param>
   <xsl:param name="lang">
-    <xsl:call-template name="l10n.language"/>
+    <xsl:call-template name="l10n-language"/>
   </xsl:param>
 
   <xsl:value-of select="f:dingbat(., $dingbat, $lang)"/>
 </xsl:template>
 
-<xsl:template name="gentext.startquote">
+<!-- ============================================================ -->
+
+<doc:template name="gentext-startquote" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the symbol associated with “startquote”</refpurpose>
+
+<refdescription>
+<para>See <function>dingbat</function>.</para>
+</refdescription>
+
+<refreturn>
+<para>The symbol.</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="gentext-startquote">
   <xsl:value-of select="f:dingbat(., 'startquote')"/>
 </xsl:template>
 
-<xsl:template name="gentext.endquote">
+<!-- ============================================================ -->
+
+<doc:template name="gentext-endquote" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the symbol associated with “endquote”</refpurpose>
+
+<refdescription>
+<para>See <function>dingbat</function>.</para>
+</refdescription>
+
+<refreturn>
+<para>The symbol.</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="gentext-endquote">
   <xsl:value-of select="f:dingbat(., 'endquote')"/>
 </xsl:template>
 
-<xsl:template name="gentext.nestedstartquote">
+<!-- ============================================================ -->
+
+<doc:template name="gentext-nestedstartquote"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the symbol associated with “nestedstartquote”</refpurpose>
+
+<refdescription>
+<para>See <function>dingbat</function>.</para>
+</refdescription>
+
+<refreturn>
+<para>The symbol.</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="gentext-nestedstartquote">
   <xsl:value-of select="f:dingbat(., 'nestedstartquote')"/>
 </xsl:template>
 
-<xsl:template name="gentext.nestedendquote">
+<!-- ============================================================ -->
+
+<doc:template name="gentext-nestedendquote"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the symbol associated with “nestedendquote”</refpurpose>
+
+<refdescription>
+<para>See <function>dingbat</function>.</para>
+</refdescription>
+
+<refreturn>
+<para>The symbol.</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="gentext-nestedendquote">
   <xsl:value-of select="f:dingbat(., 'nestedendquote')"/>
 </xsl:template>
 

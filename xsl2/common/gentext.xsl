@@ -19,47 +19,35 @@
 
      ******************************************************************** -->
 
-<!-- ==================================================================== -->
+<!-- ============================================================ -->
 
-<xsl:param name="part.autolabel" select="1"/>
-<xsl:param name="preface.autolabel" select="1"/>
-<xsl:param name="chapter.autolabel" select="1"/>
-<xsl:param name="appendix.autolabel" select="1"/>
-<xsl:param name="qandadiv.autolabel" select="1"/>
-<xsl:param name="section.autolabel" select="1"/>
-<xsl:param name="xref.label-title.separator" select="' '"/>
-<xsl:param name="xref.label-page.separator" select="' '"/>
-<xsl:param name="xref.title-page.separator" select="' '"/>
-<xsl:param name="insert.olink.page.number" select="1"/>
-<xsl:param name="insert.xref.page.number" select="1"/>
-<xsl:param name="olink.doctitle" select="1"/>
-<xsl:param name="formal.procedures" select="1"/>
-<xsl:param name="xref.with.number.and.title" select="1"/>
-<xsl:param name="qanda.defaultlabel" select="'number'"/>
+<doc:mode name="m:object-title-template" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for locating the title markup template for an element</refpurpose>
 
-<xsl:template name="label.this.section">
-  <xsl:value-of select="1"/>
-</xsl:template>
+<refdescription>
+<para>This mode is used to locate the title markup template. Any
+element processed in this mode should return the generated text template
+that should be used to generate its title.</para>
+</refdescription>
+</doc:mode>
 
-<!-- ==================================================================== -->
-
-<xsl:template match="*" mode="m:object.title.template">
-  <xsl:call-template name="gentext.template">
+<xsl:template match="*" mode="m:object-title-template">
+  <xsl:call-template name="gentext-template">
     <xsl:with-param name="context" select="'title'"/>
     <xsl:with-param name="name" select="f:xpath-location(.)"/>
   </xsl:call-template>
 </xsl:template>
 
-<xsl:template match="db:chapter" mode="m:object.title.template">
+<xsl:template match="db:chapter" mode="m:object-title-template">
   <xsl:choose>
     <xsl:when test="$chapter.autolabel != 0">
-      <xsl:call-template name="gentext.template">
+      <xsl:call-template name="gentext-template">
         <xsl:with-param name="context" select="'title-numbered'"/>
 	<xsl:with-param name="name" select="f:xpath-location(.)"/>
       </xsl:call-template>
     </xsl:when>
     <xsl:otherwise>
-      <xsl:call-template name="gentext.template">
+      <xsl:call-template name="gentext-template">
         <xsl:with-param name="context" select="'title-unnumbered'"/>
 	<xsl:with-param name="name" select="f:xpath-location(.)"/>
       </xsl:call-template>
@@ -67,16 +55,16 @@
   </xsl:choose>
 </xsl:template>
 
-<xsl:template match="db:appendix" mode="m:object.title.template">
+<xsl:template match="db:appendix" mode="m:object-title-template">
   <xsl:choose>
     <xsl:when test="$appendix.autolabel != 0">
-      <xsl:call-template name="gentext.template">
+      <xsl:call-template name="gentext-template">
         <xsl:with-param name="context" select="'title-numbered'"/>
 	<xsl:with-param name="name" select="f:xpath-location(.)"/>
       </xsl:call-template>
     </xsl:when>
     <xsl:otherwise>
-      <xsl:call-template name="gentext.template">
+      <xsl:call-template name="gentext-template">
         <xsl:with-param name="context" select="'title-unnumbered'"/>
 	<xsl:with-param name="name" select="f:xpath-location(.)"/>
       </xsl:call-template>
@@ -86,19 +74,16 @@
 
 <xsl:template match="db:section|db:sect1|db:sect2|db:sect3|db:sect4|db:sect5
 		     |db:simplesect|db:bridgehead"
-	      mode="m:object.title.template">
-  <xsl:variable name="is.numbered">
-    <xsl:call-template name="label.this.section"/>
-  </xsl:variable>
+	      mode="m:object-title-template">
   <xsl:choose>
-    <xsl:when test="$is.numbered != 0">
-      <xsl:call-template name="gentext.template">
+    <xsl:when test="f:label-this-section(.)">
+      <xsl:call-template name="gentext-template">
         <xsl:with-param name="context" select="'title-numbered'"/>
 	<xsl:with-param name="name" select="f:xpath-location(.)"/>
       </xsl:call-template>
     </xsl:when>
     <xsl:otherwise>
-      <xsl:call-template name="gentext.template">
+      <xsl:call-template name="gentext-template">
         <xsl:with-param name="context" select="'title-unnumbered'"/>
 	<xsl:with-param name="name" select="f:xpath-location(.)"/>
       </xsl:call-template>
@@ -106,17 +91,17 @@
   </xsl:choose>
 </xsl:template>
 
-<xsl:template match="db:procedure" mode="m:object.title.template">
+<xsl:template match="db:procedure" mode="m:object-title-template">
   <xsl:choose>
     <xsl:when test="$formal.procedures != 0 and title">
-      <xsl:call-template name="gentext.template">
+      <xsl:call-template name="gentext-template">
         <xsl:with-param name="context" select="'title'"/>
 	<xsl:with-param name="name"
 			select="concat(f:xpath-location(.), '.formal')"/>
       </xsl:call-template>
     </xsl:when>
     <xsl:otherwise>
-      <xsl:call-template name="gentext.template">
+      <xsl:call-template name="gentext-template">
         <xsl:with-param name="context" select="'title'"/>
 	<xsl:with-param name="name" select="f:xpath-location(.)"/>
       </xsl:call-template>
@@ -126,8 +111,20 @@
 
 <!-- ============================================================ -->
 
-<xsl:template match="*" mode="m:object.subtitle.template">
-  <xsl:call-template name="gentext.template">
+<doc:mode name="m:object-subtitle-template"
+	  xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for locating the subtitle markup template for an element
+</refpurpose>
+
+<refdescription>
+<para>This mode is used to locate the subtitle markup template. Any
+element processed in this mode should return the generated text template
+that should be used to generate its subtitle.</para>
+</refdescription>
+</doc:mode>
+
+<xsl:template match="*" mode="m:object-subtitle-template">
+  <xsl:call-template name="gentext-template">
     <xsl:with-param name="context" select="'subtitle'"/>
     <xsl:with-param name="name" select="f:xpath-location(.)"/>
   </xsl:call-template>
@@ -135,7 +132,19 @@
 
 <!-- ============================================================ -->
 
-<xsl:template match="*" mode="m:object.xref.template">
+<doc:mode name="m:object-xref-template"
+	  xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for locating the cross-reference (<tag>xref</tag>)
+markup template for an element</refpurpose>
+
+<refdescription>
+<para>This mode is used to locate the <tag>xref</tag> markup template. Any
+element processed in this mode should return the generated text template
+that should be used to generate a cross-reference to it.</para>
+</refdescription>
+</doc:mode>
+
+<xsl:template match="*" mode="m:object-xref-template">
   <xsl:param name="purpose"/>
   <xsl:param name="xrefstyle"/>
   <xsl:param name="referrer"/>
@@ -146,14 +155,14 @@
   </xsl:variable>
 
   <xsl:variable name="number-and-title-template">
-    <xsl:call-template name="gentext.template.exists">
+    <xsl:call-template name="gentext-template-exists">
       <xsl:with-param name="context" select="'xref-number-and-title'"/>
       <xsl:with-param name="name" select="f:xpath-location(.)"/>
     </xsl:call-template>
   </xsl:variable>
 
   <xsl:variable name="number-template">
-    <xsl:call-template name="gentext.template.exists">
+    <xsl:call-template name="gentext-template-exists">
       <xsl:with-param name="context" select="'xref-number'"/>
       <xsl:with-param name="name" select="f:xpath-location(.)"/>
     </xsl:call-template>
@@ -176,7 +185,7 @@
     </xsl:choose>
   </xsl:variable>
 
-  <xsl:call-template name="gentext.template">
+  <xsl:call-template name="gentext-template">
     <xsl:with-param name="context" select="$context"/>
     <xsl:with-param name="name" select="f:xpath-location(.)"/>
     <xsl:with-param name="purpose" select="$purpose"/>
@@ -188,13 +197,27 @@
 
 <!-- ============================================================ -->
 
+<doc:mode name="m:autonumbered"
+	  xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for determining if an element should be numbered</refpurpose>
+
+<refdescription>
+<para>This mode is used to determine if an element should be numbered.
+Any element processed in this mode should return “1” if it should be numbered,
+“0” otherwise.</para>
+</refdescription>
+</doc:mode>
+
 <xsl:template match="*" mode="m:autonumbered">
   <xsl:value-of select="'0'"/>
 </xsl:template>
 
 <xsl:template match="db:section|db:sect1|db:sect2|db:sect3|db:sect4|db:sect5" 
               mode="m:autonumbered">
-  <xsl:call-template name="label.this.section"/>
+  <xsl:choose>
+    <xsl:when test="f:label-this-section(.)">1</xsl:when>
+    <xsl:otherwise>0</xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <xsl:template match="db:figure|db:example|db:table|db:equation"
@@ -240,10 +263,21 @@
 
 <!-- ============================================================ -->
 
-<xsl:template match="*" mode="m:object.title.markup">
+<doc:mode name="m:object-title-markup"
+	  xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for formatting object titles</refpurpose>
+
+<refdescription>
+<para>This mode is used to format object titles.
+Any element processed in this mode should return its formatted title.
+</para>
+</refdescription>
+</doc:mode>
+
+<xsl:template match="*" mode="m:object-title-markup">
   <xsl:param name="allow-anchors" select="0"/>
   <xsl:variable name="template">
-    <xsl:apply-templates select="." mode="m:object.title.template"/>
+    <xsl:apply-templates select="." mode="m:object-title-template"/>
   </xsl:variable>
 
   <xsl:call-template name="substitute-markup">
@@ -252,30 +286,45 @@
   </xsl:call-template>
 </xsl:template>
 
-<xsl:template match="*" mode="m:object.title.markup.textonly">
-  <xsl:variable name="title">
-    <xsl:apply-templates select="." mode="m:object.title.markup"/>
-  </xsl:variable>
-  <xsl:value-of select="$title"/>
-</xsl:template>
-
 <!-- ============================================================ -->
 
-<xsl:template match="*" mode="m:object.titleabbrev.markup">
+<doc:mode name="m:object-titleabbrev-markup"
+	  xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for formatting the abbreviated title of an element</refpurpose>
+
+<refdescription>
+<para>This mode is used to format abbreviated titles.
+Any element processed in this mode should return a formatted
+rendition of its abbreviated title.</para>
+</refdescription>
+</doc:mode>
+
+<xsl:template match="*" mode="m:object-titleabbrev-markup">
   <xsl:param name="allow-anchors" select="0"/>
 
   <!-- Just for consistency in template naming -->
 
-  <xsl:apply-templates select="." mode="m:titleabbrev.markup">
+  <xsl:apply-templates select="." mode="m:titleabbrev-markup">
     <xsl:with-param name="allow-anchors" select="$allow-anchors"/>
   </xsl:apply-templates>
 </xsl:template>
 
 <!-- ============================================================ -->
 
-<xsl:template match="*" mode="m:object.subtitle.markup">
+<doc:mode name="m:object-subtitle-markup"
+	  xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for formatting the subtitle of an element</refpurpose>
+
+<refdescription>
+<para>This mode is used to format subtitles.
+Any element processed in this mode should return a formatted
+rendition of its subtitle.</para>
+</refdescription>
+</doc:mode>
+
+<xsl:template match="*" mode="m:object-subtitle-markup">
   <xsl:variable name="template">
-    <xsl:apply-templates select="." mode="m:object.subtitle.template"/>
+    <xsl:apply-templates select="." mode="m:object-subtitle-template"/>
   </xsl:variable>
 
   <xsl:call-template name="substitute-markup">
@@ -285,7 +334,18 @@
 
 <!-- ============================================================ -->
 
-<xsl:template match="*" mode="m:object.xref.markup">
+<doc:mode name="m:object-xref-markup"
+	  xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for formatting cross-references to an element</refpurpose>
+
+<refdescription>
+<para>This mode is used to format cross-references.
+Any element processed in this mode should return a formatted
+rendition of a cross-reference to itself.</para>
+</refdescription>
+</doc:mode>
+
+<xsl:template match="*" mode="m:object-xref-markup">
   <xsl:param name="purpose"/>
   <xsl:param name="xrefstyle"/>
   <xsl:param name="referrer"/>
@@ -294,7 +354,7 @@
   <xsl:variable name="template">
     <xsl:choose>
       <xsl:when test="starts-with(normalize-space($xrefstyle), 'select:')">
-        <xsl:call-template name="make.gentext.template">
+        <xsl:call-template name="make-gentext-template">
           <xsl:with-param name="xrefstyle" select="$xrefstyle"/>
           <xsl:with-param name="purpose" select="$purpose"/>
           <xsl:with-param name="referrer" select="$referrer"/>
@@ -304,7 +364,7 @@
         <xsl:value-of select="substring-after(normalize-space($xrefstyle), 'template:')"/>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:apply-templates select="." mode="m:object.xref.template">
+        <xsl:apply-templates select="." mode="m:object-xref-template">
           <xsl:with-param name="purpose" select="$purpose"/>
           <xsl:with-param name="xrefstyle" select="$xrefstyle"/>
           <xsl:with-param name="referrer" select="$referrer"/>
@@ -315,7 +375,7 @@
 
   <xsl:if test="$template = '' and $verbose != 0">
     <xsl:message>
-      <xsl:text>object.xref.markup: empty xref template</xsl:text>
+      <xsl:text>object-xref-markup: empty xref template</xsl:text>
       <xsl:text> for linkend="</xsl:text>
       <xsl:value-of select="@id"/>
       <xsl:text>" and @xrefstyle="</xsl:text>
@@ -333,13 +393,13 @@
   </xsl:call-template>
 </xsl:template>
 
-<xsl:template match="listitem" mode="m:object.xref.markup">
+<xsl:template match="listitem" mode="m:object-xref-markup">
   <xsl:param name="verbose" select="1"/>
 
   <xsl:choose>
     <xsl:when test="parent::orderedlist">
       <xsl:variable name="template">
-        <xsl:apply-templates select="." mode="m:object.xref.template"/>
+        <xsl:apply-templates select="." mode="m:object-xref-template"/>
       </xsl:variable>
       <xsl:call-template name="substitute-markup">
         <xsl:with-param name="template" select="$template"/>
@@ -356,7 +416,7 @@
   </xsl:choose>
 </xsl:template>
 
-<xsl:template match="question" mode="m:object.xref.markup">
+<xsl:template match="question" mode="m:object-xref-markup">
   <xsl:param name="purpose"/>
   <xsl:param name="xrefstyle"/>
   <xsl:param name="referrer"/>
@@ -378,7 +438,7 @@
       <!-- This avoids double Q: Q: in xref when defaultlabel=qanda -->
       <xsl:when test="$deflabel = 'qanda' and not(label)">%n</xsl:when>
       <xsl:otherwise>
-        <xsl:apply-templates select="." mode="m:object.xref.template">
+        <xsl:apply-templates select="." mode="m:object-xref-template">
           <xsl:with-param name="purpose" select="$purpose"/>
           <xsl:with-param name="xrefstyle" select="$xrefstyle"/>
           <xsl:with-param name="referrer" select="$referrer"/>
@@ -396,6 +456,125 @@
 </xsl:template>
 
 <!-- ============================================================ -->
+
+<doc:template name="substitute-markup" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Expands %d, %n, %o, %p, %s, and %t in generated text
+templates</refpurpose>
+
+<refdescription>
+<para>This template expands percent-encoded variables in a generated
+text template. The content of the template is passed through unchanged,
+except that:</para>
+
+<variablelist>
+<varlistentry><term>%d</term>
+<listitem>
+<para>is replaced by the direction (above or below) that a referent is
+from the current context node.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>%n</term>
+<listitem>
+<para>is replaced by the number (label) of the context node.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>%o</term>
+<listitem>
+<para>is replaced by the <tag>olink</tag> document title.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>%p</term>
+<listitem>
+<para>is replaced by the page number of the referent.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>%s</term>
+<listitem>
+<para>is replaced by the subtitle of the context node.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>%t</term>
+<listitem>
+<para>is replaced by the title of the context node.
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+<para>Note that several of these only make sense in the context of
+a cross-reference.</para>
+
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>template</term>
+<listitem>
+<para>The template to expand.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>allow-anchors</term>
+<listitem>
+<para>Non-zero if anchors are allowed (I think this is deprecated).</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>title</term>
+<listitem>
+<para>The title of the context node.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>subtitle</term>
+<listitem>
+<para>The subtitle of the context node.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>docname</term>
+<listitem>
+<para>???</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>label</term>
+<listitem>
+<para>The label of the context node.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>pagenumber</term>
+<listitem>
+<para>The page number of the context node.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>purpose</term>
+<listitem>
+<para>T.B.D.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>xrefstyle</term>
+<listitem>
+<para>T.B.D.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>referrer</term>
+<listitem>
+<para>T.B.D.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>verbose</term>
+<listitem>
+<para>T.B.D.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The expanded template.</para>
+</refreturn>
+</doc:template>
 
 <xsl:template name="substitute-markup">
   <xsl:param name="template" select="''"/>
@@ -417,7 +596,7 @@
              select="substring(substring-after($template, '%'), 1, 1)"/>
       <xsl:choose>
         <xsl:when test="$candidate = 't'">
-          <xsl:apply-templates select="." mode="m:insert.title.markup">
+          <xsl:apply-templates select="." mode="m:insert-title-markup">
             <xsl:with-param name="purpose" select="$purpose"/>
             <xsl:with-param name="xrefstyle" select="$xrefstyle"/>
             <xsl:with-param name="title">
@@ -437,7 +616,7 @@
           </xsl:apply-templates>
         </xsl:when>
         <xsl:when test="$candidate = 's'">
-          <xsl:apply-templates select="." mode="m:insert.subtitle.markup">
+          <xsl:apply-templates select="." mode="m:insert-subtitle-markup">
             <xsl:with-param name="purpose" select="$purpose"/>
             <xsl:with-param name="xrefstyle" select="$xrefstyle"/>
             <xsl:with-param name="subtitle">
@@ -455,7 +634,7 @@
           </xsl:apply-templates>
         </xsl:when>
         <xsl:when test="$candidate = 'n'">
-          <xsl:apply-templates select="." mode="m:insert.label.markup">
+          <xsl:apply-templates select="." mode="m:insert-label-markup">
             <xsl:with-param name="purpose" select="$purpose"/>
             <xsl:with-param name="xrefstyle" select="$xrefstyle"/>
             <xsl:with-param name="label">
@@ -471,7 +650,7 @@
           </xsl:apply-templates>
         </xsl:when>
         <xsl:when test="$candidate = 'p'">
-          <xsl:apply-templates select="." mode="m:insert.pagenumber.markup">
+          <xsl:apply-templates select="." mode="m:insert-pagenumber-markup">
             <xsl:with-param name="purpose" select="$purpose"/>
             <xsl:with-param name="xrefstyle" select="$xrefstyle"/>
             <xsl:with-param name="pagenumber">
@@ -488,7 +667,7 @@
         </xsl:when>
         <xsl:when test="$candidate = 'o'">
           <!-- olink target document title -->
-          <xsl:apply-templates select="." mode="m:insert.olink.docname.markup">
+          <xsl:apply-templates select="." mode="m:insert-olink-docname-markup">
             <xsl:with-param name="purpose" select="$purpose"/>
             <xsl:with-param name="xrefstyle" select="$xrefstyle"/>
             <xsl:with-param name="docname">
@@ -504,7 +683,7 @@
           </xsl:apply-templates>
         </xsl:when>
         <xsl:when test="$candidate = 'd'">
-          <xsl:apply-templates select="." mode="m:insert.direction.markup">
+          <xsl:apply-templates select="." mode="m:insert-direction-markup">
             <xsl:with-param name="purpose" select="$purpose"/>
             <xsl:with-param name="xrefstyle" select="$xrefstyle"/>
             <xsl:with-param name="direction">
@@ -568,12 +747,56 @@
 
 <!-- ============================================================ -->
 
-<xsl:template name="make.gentext.template">
+<doc:template name="make-gentext-template" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>???</refpurpose>
+
+<refdescription>
+<para>What does this do?</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>target.elem</term>
+<listitem>
+<para>The name of the target element,
+defaults to the name of the context-node.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>lang</term>
+<listitem>
+<para>The language to use,
+defaults to the language of the context node.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>purpose</term>
+<listitem>
+<para>T.B.D.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>xrefstyle</term>
+<listitem>
+<para>T.B.D.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>referrer</term>
+<listitem>
+<para>T.B.D.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The template?</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="make-gentext-template">
   <xsl:param name="xrefstyle" select="''"/>
   <xsl:param name="purpose"/>
   <xsl:param name="referrer"/>
   <xsl:param name="lang">
-    <xsl:call-template name="l10n.language"/>
+    <xsl:call-template name="l10n-language"/>
   </xsl:param>
   <xsl:param name="target.elem" select="local-name(.)"/>
 
@@ -673,7 +896,7 @@
         <xsl:text>%n</xsl:text>
       </xsl:when>
       <xsl:when test="$labeltype = 'label'">
-        <xsl:call-template name="gentext.template">
+        <xsl:call-template name="gentext-template">
           <xsl:with-param name="context" select="'xref-number'"/>
           <xsl:with-param name="name">
             <xsl:choose>
@@ -708,11 +931,11 @@
         <xsl:text>%t</xsl:text>
       </xsl:when>
       <xsl:when test="$titletype = 'quotedtitle'">
-        <xsl:call-template name="gentext.dingbat">
+        <xsl:call-template name="gentext-dingbat">
           <xsl:with-param name="dingbat" select="'startquote'"/>
         </xsl:call-template>
         <xsl:text>%t</xsl:text>
-        <xsl:call-template name="gentext.dingbat">
+        <xsl:call-template name="gentext-dingbat">
           <xsl:with-param name="dingbat" select="'endquote'"/>
         </xsl:call-template>
       </xsl:when>
@@ -730,7 +953,7 @@
                   and local-name($referrer) != 'olink'
                   and $labeltype = '' 
                   and $titletype = ''">
-    <xsl:apply-templates select="." mode="m:object.xref.template">
+    <xsl:apply-templates select="." mode="m:object-xref-template">
       <xsl:with-param name="purpose" select="$purpose"/>
       <xsl:with-param name="xrefstyle" select="$xrefstyle"/>
       <xsl:with-param name="referrer" select="$referrer"/>
@@ -740,19 +963,19 @@
   <xsl:if test="$pagetype != ''">
     <xsl:choose>
       <xsl:when test="$pagetype = 'page'">
-        <xsl:call-template name="gentext.template">
+        <xsl:call-template name="gentext-template">
           <xsl:with-param name="context" select="'xref'"/>
           <xsl:with-param name="name" select="'page'"/>
         </xsl:call-template>
       </xsl:when>
       <xsl:when test="$pagetype = 'Page'">
-        <xsl:call-template name="gentext.template">
+        <xsl:call-template name="gentext-template">
           <xsl:with-param name="context" select="'xref'"/>
           <xsl:with-param name="name" select="'Page'"/>
         </xsl:call-template>
       </xsl:when>
       <xsl:when test="$pagetype = 'pageabbrev'">
-        <xsl:call-template name="gentext.template">
+        <xsl:call-template name="gentext-template">
           <xsl:with-param name="context" select="'xref'"/>
           <xsl:with-param name="name" select="'pageabbrev'"/>
         </xsl:call-template>
@@ -769,13 +992,13 @@
     <!-- Any separator should be in the gentext template -->
     <xsl:choose>
       <xsl:when test="$docnametype = 'docnamelong'">
-        <xsl:call-template name="gentext.template">
+        <xsl:call-template name="gentext-template">
           <xsl:with-param name="context" select="'xref'"/>
           <xsl:with-param name="name" select="'docnamelong'"/>
         </xsl:call-template>
       </xsl:when>
       <xsl:when test="$docnametype = 'docname'">
-        <xsl:call-template name="gentext.template">
+        <xsl:call-template name="gentext-template">
           <xsl:with-param name="context" select="'xref'"/>
           <xsl:with-param name="name" select="'docname'"/>
         </xsl:call-template>

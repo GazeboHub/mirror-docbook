@@ -10,6 +10,8 @@
 		exclude-result-prefixes="h f m fn db xs"
                 version="2.0">
 
+<!-- ============================================================ -->
+
 <xsl:template match="db:itemizedlist">
   <xsl:variable name="titlepage"
 		select="$titlepages/*[fn:node-name(.)
@@ -31,6 +33,15 @@
     </ul>
   </div>
 </xsl:template>
+
+<xsl:template match="db:itemizedlist/db:listitem">
+  <li>
+    <xsl:call-template name="id"/>
+    <xsl:apply-templates/>
+  </li>
+</xsl:template>
+
+<!-- ============================================================ -->
 
 <xsl:template match="db:orderedlist">
   <xsl:variable name="titlepage"
@@ -88,11 +99,55 @@
   </div>
 </xsl:template>
 
-<xsl:template match="db:listitem">
+<xsl:template match="db:orderedlist/db:listitem">
   <li>
     <xsl:call-template name="id"/>
     <xsl:apply-templates/>
   </li>
+</xsl:template>
+
+<!-- ============================================================ -->
+
+<xsl:template match="db:variablelist">
+  <xsl:variable name="titlepage"
+		select="$titlepages/*[fn:node-name(.)
+			              = fn:node-name(current())][1]"/>
+
+  <div class="{local-name(.)}">
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+
+    <xsl:call-template name="titlepage">
+      <xsl:with-param name="content" select="$titlepage"/>
+    </xsl:call-template>
+
+    <xsl:apply-templates select="*[not(self::db:info)
+				   and not(self::db:varlistentry)]"/>
+
+    <dl>
+      <xsl:apply-templates select="db:varlistentry"/>
+    </dl>
+  </div>
+</xsl:template>
+
+<xsl:template match="db:varlistentry">
+  <xsl:apply-templates/>
+</xsl:template>
+
+<xsl:template match="db:varlistentry/db:term">
+  <dt>
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+
+    <xsl:apply-templates/>
+  </dt>
+</xsl:template>
+
+<xsl:template match="db:varlistentry/db:listitem">
+  <dd>
+    <xsl:call-template name="id"/>
+    <xsl:apply-templates/>
+  </dd>
 </xsl:template>
 
 </xsl:stylesheet>

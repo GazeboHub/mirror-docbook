@@ -14,13 +14,13 @@
 <xsl:variable name="titlepages.data" select="doc($titlepage.templates)"/>
 
 <xsl:variable name="titlepages">
-  <xsl:call-template name="user.titlepage.templates"/>
+  <xsl:call-template name="user-titlepage-templates"/>
   <xsl:copy-of select="$titlepages.data/t:titlepages/*"/>
 </xsl:variable>
 
 <!-- ============================================================ -->
 
-<doc:template name="user.titlepage.templates"
+<doc:template name="user-titlepage-templates"
 	      xmlns="http://docbook.org/docbook-ng">
 <refpurpose>Hook for user defined titlepage templates</refpurpose>
 
@@ -35,7 +35,7 @@ default titlepage templates.</para>
 </refreturn>
 </doc:template>
 
-<xsl:template name="user.titlepage.templates">
+<xsl:template name="user-titlepage-templates">
   <!-- nop -->
 </xsl:template>
 

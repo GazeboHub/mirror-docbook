@@ -10,9 +10,13 @@
 		exclude-result-prefixes="h f m fn db t"
                 version="2.0">
 
-<xsl:template match="db:book">
-  <xsl:variable name="recto" select="$titlepages/db:book[@t:side='recto'][1]"/>
-  <xsl:variable name="verso" select="$titlepages/db:book[@t:side='verso'][1]"/>
+<xsl:template match="db:set|db:book|db:part|db:reference">
+  <xsl:variable name="recto"
+		select="$titlepages/*[fn:node-name(.) = fn:node-name(current())
+			              and @t:side='recto'][1]"/>
+  <xsl:variable name="verso"
+		select="$titlepages/*[fn:node-name(.) = fn:node-name(current())
+			              and @t:side='verso'][1]"/>
 
   <div class="{local-name(.)}">
     <xsl:call-template name="id"/>
@@ -30,8 +34,28 @@
   </div>
 </xsl:template>
 
-<xsl:template match="db:book/db:info">
-  <!-- nop -->
+<xsl:template match="db:partintro">
+  <xsl:variable name="recto"
+		select="$titlepages/*[fn:node-name(.) = fn:node-name(current())
+			              and @t:side='recto'][1]"/>
+  <xsl:variable name="verso"
+		select="$titlepages/*[fn:node-name(.) = fn:node-name(current())
+			              and @t:side='verso'][1]"/>
+
+  <div class="{local-name(.)}">
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="titlepage">
+      <xsl:with-param name="content" select="$recto"/>
+    </xsl:call-template>
+
+    <xsl:if test="not(fn:empty($verso))">
+      <xsl:call-template name="titlepage">
+	<xsl:with-param name="content" select="$verso"/>
+      </xsl:call-template>
+    </xsl:if>
+
+    <xsl:apply-templates/>
+  </div>
 </xsl:template>
 
 </xsl:stylesheet>

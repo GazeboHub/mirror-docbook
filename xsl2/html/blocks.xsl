@@ -11,7 +11,9 @@
 
 <xsl:template match="db:para|db:simpara">
   <xsl:choose>
-    <xsl:when test="parent::db:listitem and position() = 1 and not(@role)">
+    <xsl:when test="parent::db:listitem
+		    and not(preceding-sibling::*)
+		    and not(@role)">
       <xsl:variable name="list"
 		    select="(ancestor::db:orderedlist
 			     |ancestor::db:itemizedlist

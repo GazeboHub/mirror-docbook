@@ -189,14 +189,14 @@ GlossEntry ::=
 
   <dd>
     <p>
-      <xsl:call-template name="gentext.template">
+      <xsl:call-template name="gentext-template">
         <xsl:with-param name="context" select="'glossary'"/>
         <xsl:with-param name="name" select="'see'"/>
       </xsl:call-template>
       <xsl:choose>
 	<xsl:when test="$target">
 	  <a href="{f:href($target)}">
-	    <xsl:apply-templates select="$target" mode="xref-to"/>
+	    <xsl:apply-templates select="$target" mode="m:xref-to"/>
 	  </a>
 	</xsl:when>
 	<xsl:when test="@otherterm and not($target)">
@@ -221,7 +221,7 @@ GlossEntry ::=
     <xsl:apply-templates select="*[not(self::db:glossseealso)]"/>
     <xsl:if test="db:glossseealso">
       <p>
-	<xsl:call-template name="gentext.template">
+	<xsl:call-template name="gentext-template">
           <xsl:with-param name="context" select="'glossary'"/>
           <xsl:with-param name="name" select="'seealso'"/>
         </xsl:call-template>
@@ -240,7 +240,7 @@ GlossEntry ::=
   <xsl:choose>
     <xsl:when test="$target">
       <a href="{f:href($target)}">
-        <xsl:apply-templates select="$target" mode="xref-to"/>
+        <xsl:apply-templates select="$target" mode="m:xref-to"/>
       </a>
     </xsl:when>
     <xsl:when test="@otherterm and not($target)">

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-		xmlns:f="http://docbook.org/xslt/ns/extension"
-		xmlns:m="http://docbook.org/xslt/ns/mode"
-		xmlns:n="http://docbook.org/xslt/ns/normalize"
-		xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
-		xmlns:db="http://docbook.org/docbook-ng"
-		xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		exclude-result-prefixes="f m n fn xs"
+                xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
+                xmlns:f="http://docbook.org/xslt/ns/extension"
+                xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
+                xmlns:m="http://docbook.org/xslt/ns/mode"
+                xmlns:n="http://docbook.org/xslt/ns/normalize"
+                xmlns:xlink='http://www.w3.org/1999/xlink'
+                xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                exclude-result-prefixes="db doc f fn m n xlink xs"
                 version="2.0">
 
 <!-- ============================================================ -->
@@ -24,6 +26,36 @@
   </xsl:choose>
 </xsl:variable>
 
+<xsl:variable name="external.bibliography">
+  <xsl:choose>
+    <xsl:when test="$bibliography.collection = ''">
+      <xsl:value-of select="()"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:apply-templates select="document($bibliography.collection)"
+			   mode="m:cleanup"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:variable>
+
+<!-- ============================================================ -->
+
+<doc:mode name="m:normalize" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for normalizing a DocBook document</refpurpose>
+
+<refdescription>
+<para>This mode is used to normalize an input document. Normalization
+moves all <tag>title</tag>, <tag>subtitle</tag>, and
+<tag>titleabbrev</tag> elements inside <tag>info</tag> wrappers,
+creating the wrapper if necessary.</para>
+<para>If the element being normalized has a default title (e.g.,
+<tag>bibligraphy</tag> and <tag>glossary</tag>), the title is made
+explicit during normalization.</para>
+<para>External glossaries and bibliographies (not yet!) are also
+copied by normalization.</para>
+</refdescription>
+</doc:mode>
+
 <xsl:template match="/" mode="m:normalize">
   <xsl:apply-templates mode="m:normalize"/>
 </xsl:template>
@@ -33,6 +65,22 @@
 	      mode="m:normalize">
   <xsl:call-template name="n:normalize-movetitle"/>
 </xsl:template>
+
+<!-- ============================================================ -->
+
+<doc:template name="n:normalize-movetitle" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Moves titles inside <tag>info</tag></refpurpose>
+
+<refdescription>
+<para>This template moves <tag>title</tag>, <tag>subtitle</tag>, and
+<tag>titleabbrev</tag> elements inside an <tag>info</tag>.
+</para>
+</refdescription>
+
+<refreturn>
+<para>The transformed node.</para>
+</refreturn>
+</doc:template>
 
 <xsl:template name="n:normalize-movetitle">
   <xsl:copy>
@@ -73,6 +121,45 @@
   </xsl:call-template>
 </xsl:template>
 
+<xsl:template match="db:bibliomixed|db:biblioentry" mode="m:normalize">
+  <xsl:choose>
+    <xsl:when test="not(node())"> <!-- totally empty -->
+      <xsl:variable name="id" select="(@id|@xml:id)[1]"/>
+      <xsl:choose>
+	<xsl:when test="not($id)">
+	  <message>
+	    <xsl:text>Error: </xsl:text>
+	    <xsl:text>empty </xsl:text>
+	    <xsl:value-of select="local-name(.)"/>
+	    <xsl:text> with no id.</xsl:text>
+	  </message>
+	</xsl:when>
+	<xsl:when test="$external.bibliography/key('id', $id)">
+	  <xsl:apply-templates select="$external.bibliography/key('id', $id)"
+			       mode="m:normalize"/>
+	</xsl:when>
+	<xsl:otherwise>
+	  <message>
+	    <xsl:text>Error: </xsl:text>
+	    <xsl:text>$bibliography.collection doesn't contain </xsl:text>
+	    <xsl:value-of select="$id"/>
+	  </message>
+	  <xsl:copy>
+	    <xsl:copy-of select="@*"/>
+	    <xsl:text>???</xsl:text>
+	  </xsl:copy>
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:copy>
+	<xsl:copy-of select="@*"/>
+	<xsl:apply-templates mode="m:normalize"/>
+      </xsl:copy>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
+
 <xsl:template match="db:glossary" mode="m:normalize">
   <xsl:variable name="glossary">
     <xsl:call-template name="n:normalize-generated-title">
@@ -89,7 +176,7 @@
 	</xsl:message>
       </xsl:if>
 
-      <xsl:element name="db:glossary">
+      <xsl:element name="glossary" namespace="{$docbook-namespace}">
 	<xsl:for-each select="$glossary/db:glossary/@*">
 	  <xsl:if test="name(.) != 'role'">
 	    <xsl:copy-of select="."/>
@@ -182,6 +269,49 @@
   </xsl:call-template>
 </xsl:template>
 
+<xsl:template match="db:ulink" mode="m:normalize">
+  <xsl:element name="link" namespace="{$docbook-namespace}">
+    <xsl:attribute name="xlink:href" select="@url"/>
+    <xsl:attribute name="xlink:type" select="'simple'"/>
+    <xsl:for-each select="@*">
+      <xsl:if test="namespace-uri(.) != '' or local-name(.) != 'url'">
+	<xsl:copy/>
+      </xsl:if>
+    </xsl:for-each>
+    <xsl:apply-templates mode="m:normalize"/>
+  </xsl:element>
+</xsl:template>
+
+<!-- ============================================================ -->
+
+<doc:template name="n:normalize-generated-title"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Generate a title, if necessary, and see that its moved into
+<tag>info</tag></refpurpose>
+
+<refdescription>
+<para>If the context node does not have a title, this template will
+generate one. In either case, the title will be placed or moved inside
+an <tag>info</tag> which will be created if necessary.
+</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>title-key</term>
+<listitem>
+<para>The key to use for creating the generated-text title if one is
+necessary.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The transformed node.</para>
+</refreturn>
+</doc:template>
+
 <xsl:template name="n:normalize-generated-title">
   <xsl:param name="title-key"/>
 
@@ -236,6 +366,34 @@
   </xsl:copy>
 </xsl:template>
 
+<!-- ============================================================ -->
+
+<doc:template name="n:normalize-dbinfo"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Copy the specified nodes, normalizing other content
+if appropriate</refpurpose>
+
+<refdescription>
+<para>The specified nodes are copied. If the context node is an
+<tag>info</tag> element, then the rest of its contents are also normalized.
+</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>copynodes</term>
+<listitem>
+<para>The nodes to copy.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The transformed node.</para>
+</refreturn>
+</doc:template>
+
 <xsl:template name="n:normalize-dbinfo">
   <xsl:param name="copynodes"/>
 
@@ -265,6 +423,16 @@
   
 <!-- ============================================================ -->
 <!-- fix namespace -->
+
+<doc:mode name="m:fixnamespace" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for fixing the namespace of DocBook documents</refpurpose>
+
+<refdescription>
+<para>This mode is used to fix the namespace of an input document.
+All elements that are not in any namespace are moved into the
+DocBook namespace. (See <parameter>docbook-namespace</parameter>).</para>
+</refdescription>
+</doc:mode>
 
 <xsl:template match="/" mode="m:fixnamespace">
   <xsl:choose>
@@ -302,6 +470,15 @@
 <!-- ============================================================ -->
 <!-- profile content -->
 
+<doc:mode name="m:profile" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for profiling DocBook documents</refpurpose>
+
+<refdescription>
+<para>This mode is used to profile an input document. Profiling discards
+content that is not in the specified profile.</para>
+</refdescription>
+</doc:mode>
+
 <xsl:template match="/" mode="m:profile">
   <xsl:apply-templates mode="m:profile"/>
 </xsl:template>
@@ -318,7 +495,8 @@
                 and f:profile-ok(@security, $profile.security)
                 and f:profile-ok(@userlevel, $profile.userlevel)
                 and f:profile-ok(@vendor, $profile.vendor)
-		and f:profile-attribute-ok($profile.attribute, $profile.value)">
+		and f:profile-attribute-ok(.,
+		                           $profile.attribute, $profile.value)">
     <xsl:copy>
       <xsl:copy-of select="@*"/>
       <xsl:apply-templates mode="m:profile"/>
@@ -330,6 +508,38 @@
 	      mode="m:profile">
   <xsl:copy/>
 </xsl:template>
+
+<!-- ============================================================ -->
+
+<doc:function name="f:profile-ok" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns true if the specified attribute is in the specified profile
+</refpurpose>
+
+<refdescription>
+<para>This function compares the profile values actually specified on
+an element with the set of values being used for profiling and returns
+true if the current attribute is in the specified profile.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>attr</term>
+<listitem>
+<para>The profiling attribute.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>prof</term>
+<listitem>
+<para>The desired profile.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>True or false.</para>
+</refreturn>
+</doc:function>
 
 <xsl:function name="f:profile-ok" as="xs:boolean">
   <xsl:param name="attr" as="attribute()?"/>
@@ -345,23 +555,53 @@
       <xsl:variable name="profile-values"
 		    select="fn:tokenize($prof, $profile.separator)"/>
 
-      <!--
-      <xsl:message>
-	<xsl:text>profile </xsl:text>
-	<xsl:value-of select="name($attr)"/>
-	<xsl:text>: </xsl:text>
-	<xsl:value-of select="$node-values" separator=" "/>
-	<xsl:text>=?=</xsl:text>
-	<xsl:value-of select="$profile-values" separator=" "/>
-      </xsl:message>
-      -->
-
+      <!-- take advantage of existential semantics of "=" -->
       <xsl:value-of select="$node-values = $profile-values"/>
     </xsl:otherwise>
   </xsl:choose>
 </xsl:function>
 
+<!-- ============================================================ -->
+
+<doc:function name="f:profile-attribute-ok"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns true if the context node has the specified attribute and that attribute is in the specified profile
+</refpurpose>
+
+<refdescription>
+<para>This function compares the profile values actually specified in the
+named attribute on the context element
+with the set of values being used for profiling and returns
+true if the current attribute is in the specified profile.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>context</term>
+<listitem>
+<para>The context element.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>attr</term>
+<listitem>
+<para>The profiling attribute.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>prof</term>
+<listitem>
+<para>The desired profile.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>True or false.</para>
+</refreturn>
+</doc:function>
+
 <xsl:function name="f:profile-attribute-ok" as="xs:boolean">
+  <xsl:param name="context" as="element()"/>
   <xsl:param name="attrname" as="xs:string?"/>
   <xsl:param name="prof" as="xs:string?"/>
 
@@ -369,12 +609,13 @@
     <xsl:when test="not($attrname) or not($prof)">
       <xsl:value-of select="true()"/>
     </xsl:when>
-    <xsl:when test="@*[local-name(.) = $attrname and namespace-uri(.) = '']">
+    <xsl:when test="not($context/@*[local-name(.) = $attrname
+		                    and namespace-uri(.) = ''])">
       <xsl:value-of select="true()"/>
     </xsl:when>
     <xsl:otherwise>
-      <xsl:value-of select="f:profile-ok(@*[local-name(.) = $attrname
-	                                    and namespace-uri(.) = ''],
+      <xsl:value-of select="f:profile-ok($context/@*[local-name(.) = $attrname
+                                                     and namespace-uri(.) = ''],
 					 $prof)"/>
     </xsl:otherwise>
   </xsl:choose>
@@ -382,6 +623,16 @@
 
 <!-- ============================================================ -->
 <!-- copy external glossary -->
+
+<doc:mode name="m:copy-external-glossary"
+	  xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for copying external glossary entries</refpurpose>
+
+<refdescription>
+<para>This mode is used to copy glossary entries from the
+<parameter>glossary.collection</parameter> into the current document.</para>
+</refdescription>
+</doc:mode>
 
 <xsl:template match="db:glossdiv" mode="m:copy-external-glossary">
   <xsl:param name="terms"/>

@@ -10,7 +10,52 @@
 		exclude-result-prefixes="h f m fn db t"
                 version="2.0">
 
+<xsl:param name="refentry.separator" select="1"/>
+<xsl:param name="refentry.generate.name" select="1"/>
+<xsl:param name="refentry.generate.title" select="1"/>
+
+<xsl:param name="make.year.ranges" select="1"/>
+<xsl:param name="make.single.year.ranges" select="1"/>
+
+<xsl:param name="component.label.includes.part.label" select="1"/>
+<xsl:param name="section.label.includes.component.label" select="1"/>
+<xsl:param name="qanda.inherit.numeration" select="1"/>
+<xsl:param name="label.from.part" select="1"/>
+
+<!-- ==================================================================== -->
+
+<xsl:param name="part.autolabel" select="1"/>
+<xsl:param name="preface.autolabel" select="1"/>
+<xsl:param name="chapter.autolabel" select="1"/>
+<xsl:param name="appendix.autolabel" select="1"/>
+<xsl:param name="qandadiv.autolabel" select="1"/>
+<xsl:param name="section.autolabel" select="1"/>
+<xsl:param name="xref.label-title.separator" select="' '"/>
+<xsl:param name="xref.label-page.separator" select="' '"/>
+<xsl:param name="xref.title-page.separator" select="' '"/>
+<xsl:param name="insert.olink.page.number" select="1"/>
+<xsl:param name="insert.xref.page.number" select="1"/>
+<xsl:param name="olink.doctitle" select="1"/>
+<xsl:param name="formal.procedures" select="1"/>
+<xsl:param name="xref.with.number.and.title" select="1"/>
+<xsl:param name="qanda.defaultlabel" select="'number'"/>
+
+<xsl:param name="orderedlist.numeration.styles"
+	   select="('arabic',
+		    'loweralpha', 'lowerroman',
+                    'upperalpha', 'upperroman')"/>
+
+<xsl:param name="procedure.step.numeration.styles"
+	   select="('arabic',
+		    'loweralpha', 'lowerroman',
+                    'upperalpha', 'upperroman')"/>
+
 <xsl:param name="persistent.generated.ids" select="1"/>
+
+<xsl:param name="bibliography.numbered" select="1"/>
+
+<xsl:param name="bibliography.collection"
+	   select="'/home/ndw/.bibliography.xml'"/>
 
 <xsl:param name="glossary.collection"
 	   select="'/sourceforge/docbook/xsl2/gloss.xml'"/>

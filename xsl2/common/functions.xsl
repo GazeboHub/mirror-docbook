@@ -69,7 +69,7 @@ node does not have an ID, the XSLT
 </refparameter>
 
 <refreturn>
-<para>Returns the ID.</para>
+<para>The ID.</para>
 </refreturn>
 </doc:function>
 
@@ -99,6 +99,39 @@ node does not have an ID, the XSLT
     </xsl:otherwise>
   </xsl:choose>
 </xsl:function>
+
+<!-- ============================================================ -->
+
+<doc:function name="f:xptr-id" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns an XPointer-style ID for the specified node</refpurpose>
+
+<refdescription>
+<para>This function returns the <tag class="attribute">id</tag> or
+<tag class="attribute">xml:id</tag> of the specified node. If the
+node does not have an ID, an XPointer-style “tumbler” ID is used
+to create one. In order to make sure that the value is a valid ID,
+the root is represented by “R.” and “.”s are used between each
+number.</para>
+<para>The value of <function>xptr-id</function>’s over
+<function>node-id</function>s is that they are stable. If the same
+document is processed more than once, each pass will produce the
+same XPointer IDs.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The node for which an ID will be generated.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The ID.</para>
+</refreturn>
+</doc:function>
 
 <xsl:function name="f:xptr-id" as="xs:string">
   <xsl:param name="node" as="element()"/>
@@ -148,7 +181,7 @@ is to be determined.</para>
 </refparameter>
 
 <refreturn>
-<para>Returns the starting list number.</para>
+<para>The starting list number.</para>
 </refreturn>
 </doc:function>
 
@@ -183,10 +216,32 @@ is to be determined.</para>
   </xsl:choose>
 </xsl:function>
 
-<xsl:param name="orderedlist.numeration.styles"
-	   select="('arabic',
-		    'loweralpha', 'lowerroman',
-                    'upperalpha', 'upperroman')"/>
+<!-- ============================================================ -->
+
+<doc:function name="f:next-orderedlist-numeration"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the next numeration style</refpurpose>
+
+<refdescription>
+<para>This function uses the <parameter>orderedlist.numeration.styles</parameter>
+parameter to calculate the next numeration style. The default style
+is the first style in that list.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>numeration</term>
+<listitem>
+<para>The current numeration style.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The next numeration style.</para>
+</refreturn>
+</doc:function>
 
 <xsl:function name="f:next-orderedlist-numeration" as="xs:string">
   <xsl:param name="numeration" as="xs:string"/>
@@ -208,6 +263,38 @@ is to be determined.</para>
   </xsl:choose>
 </xsl:function>
 
+<!-- ============================================================ -->
+
+<doc:function name="f:orderedlist-numeration"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the next numeration style</refpurpose>
+
+<refdescription>
+<para>This function returns the <tag>orderedlist</tag> numeration style
+for the specified list. If an explicit style is specified (using
+<tag class="attribute">numeration</tag> on the list), that style will
+be returned. Otherwise, the style returned depends on list nesting depth.
+The <parameter>orderedlist.numeration.styles</parameter> parameter
+controls the order and number of numeration styles that will be used.
+</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>list</term>
+<listitem>
+<para>The <tag>orderedlist</tag> for which a numeration style should
+be calculated.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>Numeration style.</para>
+</refreturn>
+</doc:function>
+
 <xsl:function name="f:orderedlist-numeration" as="xs:string">
   <xsl:param name="list" as="element(db:orderedlist)"/>
 
@@ -226,6 +313,52 @@ is to be determined.</para>
   </xsl:choose>
 </xsl:function>
 
+<!-- ============================================================ -->
+
+<doc:function name="f:orderedlist-item-number"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the item number of the specified <tag>listitem</tag>
+in an <tag>orderedlist</tag></refpurpose>
+
+<refdescription>
+<para>This function returns the number of the specified list item.
+This will be:</para>
+
+<itemizedlist>
+<listitem>
+<para>The value of <tag class="attribute">override</tag>, if
+it is specified.</para>
+</listitem>
+<listitem>
+<para>One more than the number of the preceding item, if there is one.</para>
+</listitem>
+<listitem>
+<para>One more than the number of the last item in the preceding list, if
+<tag class="attribute">continuation</tag> is “<literal>continues</literal>”
+and this is the first item.</para>
+</listitem>
+<listitem>
+<para>Or 1.</para>
+</listitem>
+</itemizedlist>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The <tag>listitem</tag> in an <tag>orderedlist</tag> for which a number
+style should be calculated.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The item number.</para>
+</refreturn>
+</doc:function>
+
 <xsl:function name="f:orderedlist-item-number" as="xs:integer">
   <xsl:param name="node" as="element(db:listitem)"/>
 
@@ -243,6 +376,34 @@ is to be determined.</para>
     </xsl:otherwise>
   </xsl:choose>
 </xsl:function>
+
+<!-- ============================================================ -->
+
+<doc:function name="f:next-itemizedlist-symbol"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the next symbol style</refpurpose>
+
+<refdescription>
+<para>This function uses the
+<parameter>itemizedlist.numeration.symbols</parameter>
+parameter to calculate the next symbol style. The default style
+is the first style in that list.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>symbol</term>
+<listitem>
+<para>The current symbol style.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The next symbol style.</para>
+</refreturn>
+</doc:function>
 
 <xsl:function name="f:next-itemizedlist-symbol" as="xs:string">
   <xsl:param name="symbol"/>
@@ -263,6 +424,49 @@ is to be determined.</para>
     </xsl:otherwise>
   </xsl:choose>
 </xsl:function>
+
+<!-- ============================================================ -->
+
+<doc:function name="f:itemizedlist-symbol"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the symbol of the specified <tag>listitem</tag>
+in an <tag>itemizedlist</tag></refpurpose>
+
+<refdescription>
+<para>This function returns the symbol of the specified list item.
+This will be:</para>
+
+<itemizedlist>
+<listitem>
+<para>The value of <tag class="attribute">mark</tag>, if
+it is specified.</para>
+</listitem>
+<listitem>
+<para>An symbol appropriate for the list's current nesting depth.
+</para>
+</listitem>
+<listitem>
+<para>Or the default style (the first style listed in
+<parameter>itemizedlist.numeration.symbols</parameter>).</para>
+</listitem>
+</itemizedlist>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The <tag>listitem</tag> in an <tag>itemizedlist</tag> for which
+a number style should be calculated.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The item symbol.</para>
+</refreturn>
+</doc:function>
 
 <xsl:function name="f:itemizedlist-symbol" as="xs:string">
   <xsl:param name="node" as="element(db:listitem)"/>
@@ -285,6 +489,101 @@ is to be determined.</para>
 </xsl:function>
 
 <!-- ============================================================ -->
+
+<doc:function name="f:procedure-step-numeration"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the numeration style for procedure steps</refpurpose>
+
+<refdescription>
+<para>This function returns the numeration style for procedure steps.
+The style returned depends on procedure nesting depth.
+The <parameter>procedure.step.numeration.styles</parameter> parameter
+controls the order and number of numeration styles that will be used.
+</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>context</term>
+<listitem>
+<para>The context element; must be <tag>substeps</tag>
+or <tag>steps</tag>.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>Numeration style.</para>
+</refreturn>
+</doc:function>
+
+<xsl:function name="f:procedure-step-numeration" as="xs:string">
+  <xsl:param name="context" as="element()"/>
+
+  <xsl:variable name="format.length"
+		select="count($procedure.step.numeration.styles)"/>
+
+  <xsl:choose>
+    <xsl:when test="$context/self::db:substeps">
+      <xsl:variable name="ssdepth"
+		    select="count($context/ancestor::db:substeps)"/>
+      <xsl:variable name="sstype" select="($ssdepth mod $format.length)+2"/>
+      <xsl:choose>
+	<xsl:when test="$sstype &gt; $format.length">
+	  <xsl:value-of select="$procedure.step.numeration.styles[1]"/>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:value-of select="fn:subsequence($procedure.step.numeration.styles,$sstype,1)"/>
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:when>
+    <xsl:when test="$context/self::db:step">
+      <xsl:variable name="sdepth"
+		    select="count($context/ancestor::db:substeps)"/>
+      <xsl:variable name="stype" select="($sdepth mod $format.length)+1"/>
+      <xsl:value-of select="fn:subsequence($procedure.step.numeration.styles,$stype,1)"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:message>
+	<xsl:text>Unexpected context in f:procedure-step-numeration: </xsl:text>
+	<xsl:value-of select="local-name($context)"/>
+      </xsl:message>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
+<!-- ============================================================ -->
+
+<doc:function name="f:pi" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the value of the first matching pseudo-attribute</refpurpose>
+
+<refdescription>
+<para>This function searches a list of processing instructions for the
+first psuedo-attribute matching the specified name and returns its value.
+</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>pis</term>
+<listitem>
+<para>The list of processing instructions.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>attribute</term>
+<listitem>
+<para>The name of the pseudo-attribute to return.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The value of the pseudo-attribute or an empty sequence if no
+such attribute can be found.</para>
+</refreturn>
+</doc:function>
 
 <xsl:function name="f:pi" as="xs:string?">
   <xsl:param name="pis" as="processing-instruction()*"/>
@@ -315,12 +614,45 @@ is to be determined.</para>
 
 <!-- ============================================================ -->
 
+<doc:function name="f:dingbat" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Translates a dingbat name into a symbol</refpurpose>
+
+<refdescription>
+<para>This function returns the symbol associated with the named
+dingbat. The symbols used are locale-dependent, so a context item must
+be specified. The default language of that item is used to determine
+which locale is used.
+</para>
+<para>If the specified dingbat does not exist in that locale, the English
+locale value will be used as the default.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>context</term>
+<listitem>
+<para>The context item.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>dingbat</term>
+<listitem>
+<para>The name of dingbat.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The symbol associated with the specified dingbat.</para>
+</refreturn>
+</doc:function>
+
 <xsl:function name="f:dingbat" as="xs:string">
   <xsl:param name="context" as="node()"/>
   <xsl:param name="dingbat" as="xs:string"/>
 
   <xsl:variable name="lang">
-    <xsl:call-template name="l10n.language">
+    <xsl:call-template name="l10n-language">
       <xsl:with-param name="target" select="$context"/>
       <xsl:with-param name="xref-context" select="false()"/>
     </xsl:call-template>
@@ -328,6 +660,43 @@ is to be determined.</para>
 
   <xsl:value-of select="f:dingbat($context, $dingbat, $lang)"/>
 </xsl:function>
+
+<!-- ============================================================ -->
+
+<doc:function name="f:dingbat" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Translates a dingbat name into a symbol</refpurpose>
+
+<refdescription>
+<para>This function returns the symbol associated with the named
+dingbat. The symbols used are locale-dependent.</para>
+<para>If the specified dingbat does not exist in the specified locale,
+the English locale value will be used as the default.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>context</term>
+<listitem>
+<para>The context item.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>dingbat</term>
+<listitem>
+<para>The name of dingbat.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>lang</term>
+<listitem>
+<para>The language to use for mapping the name to a symbol.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The symbol associated with the specified dingbat.</para>
+</refreturn>
+</doc:function>
 
 <xsl:function name="f:dingbat" as="xs:string">
   <xsl:param name="context" as="node()"/>
@@ -386,7 +755,7 @@ be impossible.</para>
 </refparameter>
 
 <refreturn>
-<para>Returns the pseudo-XPath.</para>
+<para>The pseudo-XPath.</para>
 </refreturn>
 </doc:function>
 
@@ -418,6 +787,33 @@ be impossible.</para>
 
 <!-- ====================================================================== -->
 
+<doc:function name="f:is-component" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns true if the specified node is a “component”</refpurpose>
+
+<refdescription>
+<para>This function return true if the specified node is a “component,” that
+is a <tag>appendix</tag>, <tag>article</tag>, <tag>chapter</tag>,
+<tag>preface</tag>, <tag>bibliography</tag>, <tag>glossary</tag>,
+or <tag>index</tag>.</para>
+<para>It is defined as a function so that customizers can add other
+elements to the list of components, if necessary.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The node to test.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>True if the node is a component, false otherwise.</para>
+</refreturn>
+</doc:function>
+
 <xsl:function name="f:is-component" as="xs:boolean">
   <xsl:param name="node" as="element()"/>
 
@@ -434,6 +830,33 @@ be impossible.</para>
 
 <!-- ====================================================================== -->
 
+<doc:function name="f:is-section" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns true if the specified node is a “section”</refpurpose>
+
+<refdescription>
+<para>This function return true if the specified node is a “section,” that
+is a <tag>section</tag>, <tag>sect<replaceable>1-5</replaceable></tag>,
+<tag>refsect<replaceable>1-3</replaceable></tag>, or
+<tag>simplesect</tag>.</para>
+<para>It is defined as a function so that customizers can add other
+elements to the list of sections, if necessary.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The node to test.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>True if the node is a section, false otherwise.</para>
+</refreturn>
+</doc:function>
+
 <xsl:function name="f:is-section" as="xs:boolean">
   <xsl:param name="node" as="element()"/>
 
@@ -446,12 +869,40 @@ be impossible.</para>
 			    | $node/self::db:refsect1
 			    | $node/self::db:refsect2
 			    | $node/self::db:refsect3
+			    | $node/self::db:refsection
 			    | $node/self::db:simplesect)
 			 then true()
 			 else false()"/>
 </xsl:function>
 
 <!-- ============================================================ -->
+
+<doc:function name="f:label-this-section" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns true if the specified section should be labelled
+(numbered).</refpurpose>
+
+<refdescription>
+<para>This function return true if the specified section should be
+labelled. Broadly speaking this is true if
+<parameter>section.autolabel</parameter> is true and if the
+<function>section-level</function> of this section is less than
+<parameter>section.autolabel.max.depth</parameter>.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>section</term>
+<listitem>
+<para>The section element to test.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>True if the section should be labelled, false otherwise.</para>
+</refreturn>
+</doc:function>
 
 <xsl:function name="f:label-this-section" as="xs:boolean">
   <xsl:param name="section" as="element()"/>
@@ -469,6 +920,31 @@ be impossible.</para>
 
 <!-- ============================================================ -->
 
+<doc:function name="f:section-level" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the nesting depth of the specified section</refpurpose>
+
+<refdescription>
+<para>This function return the nesting depth of the specified section.
+Top level sections are at level “1”.</para>
+<para>If the section belongs to a <tag>refentry</tag>, the value of
+<function>refentry-section-level</function> is returned.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>section</term>
+<listitem>
+<para>The section element for which the depth should be calculated.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The section level.</para>
+</refreturn>
+</doc:function>
+
 <xsl:function name="f:section-level" as="xs:integer">
   <xsl:param name="node" as="element()"/>
 
@@ -479,14 +955,7 @@ be impossible.</para>
     <xsl:when test="$node/self::db:sect4">4</xsl:when>
     <xsl:when test="$node/self::db:sect5">5</xsl:when>
     <xsl:when test="$node/self::db:section">
-      <xsl:choose>
-	<xsl:when test="$node/../../../../../../db:section">6</xsl:when>
-        <xsl:when test="$node/../../../../../db:section">5</xsl:when>
-        <xsl:when test="$node/../../../../db:section">4</xsl:when>
-        <xsl:when test="$node/../../../db:section">3</xsl:when>
-        <xsl:when test="$node/../../db:section">2</xsl:when>
-	<xsl:otherwise>1</xsl:otherwise>
-      </xsl:choose>
+      <xsl:value-of select="count($node/ancestor::db:section)+1"/>
     </xsl:when>
     <xsl:when test="$node/self::db:refsect1 or
                     $node/self::db:refsect2 or
@@ -497,20 +966,15 @@ be impossible.</para>
     </xsl:when>
     <xsl:when test="$node/self::db:simplesect">
       <xsl:choose>
-        <xsl:when test="$node/../../db:sect1">2</xsl:when>
-        <xsl:when test="$node/../../db:sect2">3</xsl:when>
-        <xsl:when test="$node/../../db:sect3">4</xsl:when>
-        <xsl:when test="$node/../../db:sect4">5</xsl:when>
-        <xsl:when test="$node/../../db:sect5">5</xsl:when>
-        <xsl:when test="$node/../../db:section">
-          <xsl:choose>
-            <xsl:when test="$node/../../../../../db:section">5</xsl:when>
-            <xsl:when test="$node/../../../../db:section">4</xsl:when>
-            <xsl:when test="$node/../../../db:section">3</xsl:when>
-            <xsl:otherwise>2</xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>
-        <xsl:otherwise>1</xsl:otherwise>
+        <xsl:when test="$node/parent::db:sect1">2</xsl:when>
+        <xsl:when test="$node/parent::db:sect2">3</xsl:when>
+        <xsl:when test="$node/parent::db:sect3">4</xsl:when>
+        <xsl:when test="$node/parent::db:sect4">5</xsl:when>
+        <xsl:when test="$node/parent::db:sect5">6</xsl:when>
+	<xsl:when test="$node/parent::db:section">
+	  <xsl:value-of select="count($node/ancestor::db:section)+2"/>
+	</xsl:when>
+	<xsl:otherwise>1</xsl:otherwise>
       </xsl:choose>
     </xsl:when>
     <xsl:otherwise>1</xsl:otherwise>
@@ -519,52 +983,109 @@ be impossible.</para>
 
 <!-- ============================================================ -->
 
-<xsl:function name="f:qanda-section-level" as="xs:integer">
+<doc:function name="f:pseudo-section-level"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the nesting depth of the specified element</refpurpose>
+
+<refdescription>
+<para>This function return the nesting depth of the specified element.
+The purpose of this function is to calculate the effective depth of an
+element, as if it were a section. (If it really is a section, use
+<function>section-level</function> instead.)</para>
+
+<para>This can be used to calculate the appropriate size for the titles
+of elements such as <tag>qanda</tag>.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The element for which the depth should be calculated.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The element's pseudo section level.</para>
+</refreturn>
+</doc:function>
+
+<xsl:function name="f:pseudo-section-level" as="xs:integer">
   <xsl:param name="node" as="element()"/>
 
-  <xsl:variable name="section"
-		select="($node/ancestor::db:section
-			 |$node/ancestor::db:simplesect
-                         |$node/ancestor::db:sect5
-                         |$node/ancestor::db:sect4
-                         |$node/ancestor::db:sect3
-                         |$node/ancestor::db:sect2
-                         |$node/ancestor::db:sect1
-                         |$node/ancestor::db:refsect3
-                         |$node/ancestor::db:refsect2
-                         |$node/ancestor::db:refsect1)[last()]"/>
-
   <xsl:choose>
-    <xsl:when test="count($section) = 0">1</xsl:when>
+    <xsl:when test="f:is-section($node)">
+      <xsl:value-of select="f:section-level($node)"/>
+    </xsl:when>
     <xsl:otherwise>
-      <xsl:value-of select="f:section-level($section) + 1"/>
+      <xsl:variable name="section"
+		    select="($node/ancestor::db:section
+			    |$node/ancestor::db:simplesect
+			    |$node/ancestor::db:sect5
+			    |$node/ancestor::db:sect4
+			    |$node/ancestor::db:sect3
+			    |$node/ancestor::db:sect2
+			    |$node/ancestor::db:sect1
+			    |$node/ancestor::db:refsection
+			    |$node/ancestor::db:refsect3
+			    |$node/ancestor::db:refsect2
+			    |$node/ancestor::db:refsect1)[last()]"/>
+      <xsl:choose>
+	<xsl:when test="not($section)">1</xsl:when>
+	<xsl:otherwise>
+	  <xsl:value-of select="f:section-level($section) + 1"/>
+	</xsl:otherwise>
+      </xsl:choose>
     </xsl:otherwise>
   </xsl:choose>
 </xsl:function>
 
 <!-- ============================================================ -->
 
-<!-- Finds the total section depth of a section in a refentry -->
+<doc:function name="f:refentry-section-level"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the nesting depth of the specified <tag>refentry</tag>
+section</refpurpose>
+
+<refdescription>
+<para>This function return the nesting depth of the specified section in
+a <tag>refentry</tag>.
+Top level sections are at level 1 greater than the level of the
+enclosing <tag>refentry</tag>; see <function>refentry-level</function>.
+</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>section</term>
+<listitem>
+<para>The section element for which the depth should be calculated.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The section level.</para>
+</refreturn>
+</doc:function>
+
 <xsl:function name="f:refentry-section-level" as="xs:integer">
-  <xsl:param name="node" as="element()"/>
+  <xsl:param name="section" as="element()"/>
 
   <xsl:variable name="RElevel"
-		select="f:refentry-level($node/ancestor::db:refentry[1])"/>
+		select="f:refentry-level($section/ancestor::db:refentry[1])"/>
 
   <xsl:variable name="levelinRE" as="xs:integer">
     <xsl:choose>
-      <xsl:when test="$node/self::db:refsynopsisdiv">1</xsl:when>
-      <xsl:when test="$node/self::db:refsect1">1</xsl:when>
-      <xsl:when test="$node/self::db:refsect2">2</xsl:when>
-      <xsl:when test="$node/self::db:refsect3">3</xsl:when>
-      <xsl:when test="$node/self::db:refsection">
-        <xsl:choose>
-          <xsl:when test="$node/../../../../../db:refsection">5</xsl:when>
-          <xsl:when test="$node/../../../../db:refsection">4</xsl:when>
-          <xsl:when test="$node/../../../db:refsection">3</xsl:when>
-          <xsl:when test="$node/../../db:refsection">2</xsl:when>
-          <xsl:otherwise>1</xsl:otherwise>
-        </xsl:choose>
+      <xsl:when test="$section/self::db:refsynopsisdiv">1</xsl:when>
+      <xsl:when test="$section/self::db:refsect1">1</xsl:when>
+      <xsl:when test="$section/self::db:refsect2">2</xsl:when>
+      <xsl:when test="$section/self::db:refsect3">3</xsl:when>
+      <xsl:when test="$section/self::db:refsection">
+	<xsl:value-of select="count($section/ancestor::db:refsection)+1"/>
       </xsl:when>
     </xsl:choose>
   </xsl:variable>
@@ -574,17 +1095,45 @@ be impossible.</para>
 
 <!-- ============================================================ -->
 
-<!-- Finds the section depth of a refentry -->
+<doc:function name="f:refentry-level"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the nesting depth of the specified <tag>refentry</tag>
+</refpurpose>
+
+<refdescription>
+<para>This function return the nesting depth of the specified
+<tag>refentry</tag>. The level of a <tag>refentry</tag> depends on the
+context in which it occurs. They are at level 1 greater than the level of
+the section that contains them, if they occur in a section, and at level
+“1” otherwise.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>refentry</term>
+<listitem>
+<para>The <tag>refentry</tag> element for which the depth should
+be calculated.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The <tag>refentry</tag> level.</para>
+</refreturn>
+</doc:function>
+
 <xsl:function name="f:refentry-level" as="xs:integer">
-  <xsl:param name="node" as="element()"/>
+  <xsl:param name="refentry" as="element(db:refentry)"/>
 
   <xsl:variable name="container"
-                select="($node/ancestor::db:section
-                         | $node/ancestor::db:sect1
-			 | $node/ancestor::db:sect2
-			 | $node/ancestor::db:sect3
-			 | $node/ancestor::db:sect4
-			 | $node/ancestor::db:sect5)[last()]"/>
+                select="($refentry/ancestor::db:section
+                         | $refentry/ancestor::db:sect1
+			 | $refentry/ancestor::db:sect2
+			 | $refentry/ancestor::db:sect3
+			 | $refentry/ancestor::db:sect4
+			 | $refentry/ancestor::db:sect5)[last()]"/>
 
   <xsl:choose>
     <xsl:when test="$container">

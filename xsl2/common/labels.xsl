@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:fn="http://www.w3.org/2003/11/xpath-functions"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		exclude-result-prefixes="f m fn xs"
+		exclude-result-prefixes="db doc f m fn xs"
                 version="2.0">
 
 <!-- ********************************************************************
@@ -18,17 +19,35 @@
 
      ******************************************************************** -->
 
-<xsl:param name="component.label.includes.part.label" select="1"/>
-<xsl:param name="section.label.includes.component.label" select="1"/>
-<xsl:param name="qanda.inherit.numeration" select="1"/>
-<xsl:param name="label.from.part" select="1"/>
+<!-- ============================================================ -->
 
-<!-- ==================================================================== -->
-<!-- label markup -->
+<doc:mode name="m:intralabel-punctuation"
+	  xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for producing intra-label punctuation</refpurpose>
+
+<refdescription>
+<para>This mode is used to produce intra-label punctuation. All elements
+processed in this mode should generate the punctuation symbol that should
+be used to separate their label from other labels. This only occurs in
+places where compound labels are necessary.</para>
+</refdescription>
+</doc:mode>
 
 <xsl:template match="*" mode="m:intralabel-punctuation">
   <xsl:text>.</xsl:text>
 </xsl:template>
+
+<!-- ============================================================ -->
+
+<doc:mode name="m:label-markup"
+	  xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for producing label markup</refpurpose>
+
+<refdescription>
+<para>This mode is used to produce label markup. All elements
+processed in this mode should generate their label.</para>
+</refdescription>
+</doc:mode>
 
 <xsl:template match="*" mode="m:label-markup">
   <xsl:param name="verbose" select="1"/>
