@@ -678,6 +678,9 @@ the default is “element”.</para>
   </tt>
 </xsl:template>
 
+<xsl:template match="db:alt">
+</xsl:template>
+
 <xsl:template match="db:emphasis">
   <xsl:call-template name="simple-xlink">
     <xsl:with-param name="content">
@@ -753,13 +756,24 @@ the default is “element”.</para>
   </xsl:call-template>
 </xsl:template>
 
+<!-- ============================================================ -->
+
+<doc:template name="db:glossterm" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Template for processing glossterm elements</refpurpose>
+
+<refdescription>
+<para>The glossterm template is used to process <tag>glossterm</tag>
+and <tag>firstterm</tag> elements.</para>
+</refdescription>
+</doc:template>
+
 <xsl:template match="db:firstterm">
-  <xsl:call-template name="glossterm">
+  <xsl:call-template name="db:glossterm">
     <xsl:with-param name="firstterm" select="1"/>
   </xsl:call-template>
 </xsl:template>
 
-<xsl:template match="glossterm" name="glossterm">
+<xsl:template match="db:glossterm" name="db:glossterm">
   <xsl:param name="firstterm" select="0"/>
 
   <em class="{if ($firstterm != 0) then 'firstterm' else 'glossterm'}">
@@ -829,6 +843,16 @@ the default is “element”.</para>
       </xsl:otherwise>
     </xsl:choose>
   </em>
+</xsl:template>
+
+<xsl:template match="db:termdef">
+  <span class="{local-name(.)}">
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+    <xsl:text>[Definition: </xsl:text>
+    <xsl:apply-templates/>
+    <xsl:text>]</xsl:text>
+  </span>
 </xsl:template>
 
 <xsl:template match="db:email">

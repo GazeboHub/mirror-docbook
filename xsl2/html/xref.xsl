@@ -102,7 +102,8 @@ identified.</entry>
 
 <!-- ============================================================ -->
 
-<doc:template match="db:xref" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="db:xref" match="db:xref"
+	      xmlns="http://docbook.org/docbook-ng">
 <refpurpose>Template for processing xref elements</refpurpose>
 
 <refdescription>

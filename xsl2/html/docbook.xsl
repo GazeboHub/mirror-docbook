@@ -34,12 +34,14 @@
   <xsl:include href="info.xsl"/>
   <xsl:include href="glossary.xsl"/>
   <xsl:include href="lists.xsl"/>
+  <xsl:include href="formal.xsl"/>
   <xsl:include href="blocks.xsl"/>
   <xsl:include href="admonitions.xsl"/>
   <xsl:include href="verbatim.xsl"/>
   <xsl:include href="qandaset.xsl"/>
   <xsl:include href="inlines.xsl"/>
   <xsl:include href="xref.xsl"/>
+  <xsl:include href="math.xsl"/>
   <xsl:include href="html.xsl"/>
 
   <xsl:output method="xml" encoding="utf-8" indent="no"/>
