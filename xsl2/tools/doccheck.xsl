@@ -61,7 +61,7 @@
   </xsl:for-each-group>
 </xsl:template>
 
-<xsl:template match="xsl:template[@name and not(@match)]" priority="100">
+<xsl:template match="xsl:template[@name]" priority="100">
   <xsl:if test="not(key('tdoc', @name))">
     <ex:template exception="no documentation"
 		 name="{@name}"
