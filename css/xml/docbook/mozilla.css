@@ -1,7 +1,6 @@
 /* make <ulink>s clickable */
 ulink {
-	/* This causes a crash, unfortunately,
-	-moz-binding:url('db-bindings.xml#ulink');*/
+	-moz-binding:url('db-bindings.xml#ulink');
 	cursor: pointer;
 	-moz-user-focus: normal;
 }
