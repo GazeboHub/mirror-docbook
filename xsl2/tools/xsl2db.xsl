@@ -35,6 +35,8 @@
 </xsl:template>
 
 <xsl:template match="doc:function">
+  <xsl:variable name="name" select="@name"/>
+
   <refentry>
     <refnamediv>
       <refname>
@@ -43,7 +45,18 @@
       <xsl:copy-of select="db:refpurpose"/>
     </refnamediv>
 
-    <xsl:variable name="func" select="key('functions', @name)"/>
+    <xsl:variable name="func"
+		  select="if (following-sibling::xsl:function[1][@name=$name])
+			  then following-sibling::xsl:function[1][@name=$name]
+			  else key('functions', @name)"/>
+
+    <xsl:if test="count($func) != 1">
+      <xsl:message>
+	<xsl:text>Warning: function </xsl:text>
+	<xsl:value-of select="$name"/>
+	<xsl:text> appears more than once</xsl:text>
+      </xsl:message>
+    </xsl:if>
 
     <refsynopsisdiv>
       <funcsynopsis language="xslt2-function">
@@ -110,6 +123,8 @@
 </xsl:template>
 
 <xsl:template match="doc:template">
+  <xsl:variable name="name" select="@name"/>
+
   <refentry>
     <refnamediv>
       <refname>
@@ -118,7 +133,19 @@
       <xsl:copy-of select="db:refpurpose"/>
     </refnamediv>
 
-    <xsl:variable name="temp" select="key('templates', @name)"/>
+    <xsl:variable name="temp"
+		  select="if (following-sibling::xsl:template[1][@name=$name])
+			  then following-sibling::xsl:template[1][@name=$name]
+			  else key('templates', @name)"/>
+
+    <xsl:if test="count($temp) != 1">
+      <xsl:message>
+	<xsl:text>Warning: template </xsl:text>
+	<xsl:value-of select="$name"/>
+	<xsl:text> appears more than once</xsl:text>
+      </xsl:message>
+    </xsl:if>
+
     <xsl:variable name="param"
 		  select="db:refparameter/db:variablelist[1]//db:term"/>
 
@@ -153,6 +180,19 @@
 		      <xsl:value-of select="@as"/>
 		    </type>
 		  </xsl:if>
+
+		  <xsl:if test="@select">
+		    <initializer role="select">
+		      <xsl:value-of select="@select"/>
+		    </initializer>
+		  </xsl:if>
+
+		  <xsl:if test="node()">
+		    <initializer role="content">
+		      <xsl:apply-templates mode="copy-stuff"/>
+		    </initializer>
+		  </xsl:if>
+
 		  <parameter>
 		    <xsl:value-of select="@name"/>
 		  </parameter>
@@ -218,6 +258,51 @@
 
 <xsl:template match="xsl:*">
   <!-- nop -->
+</xsl:template>
+
+<!-- ============================================================ -->
+
+<xsl:template match="*" mode="copy-stuff">
+  <xsl:text>&lt;</xsl:text>
+  <xsl:value-of select="name(.)"/>
+
+  <xsl:for-each select="@*">
+    <xsl:text> </xsl:text>
+    <xsl:value-of select="name(.)"/>
+    <xsl:text>="</xsl:text>
+    <xsl:value-of select="."/>
+    <xsl:text>"</xsl:text>
+  </xsl:for-each>
+  
+  <xsl:choose>
+    <xsl:when test="node()">
+      <xsl:text>&gt;</xsl:text>
+      <xsl:apply-templates mode="copy-stuff"/>
+      <xsl:text>&lt;/</xsl:text>
+      <xsl:value-of select="name(.)"/>
+      <xsl:text>&gt;</xsl:text>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:text>/&gt;</xsl:text>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
+
+<xsl:template match="text()" mode="copy-stuff">
+  <xsl:copy/>
+</xsl:template>
+
+<xsl:template match="processing-instruction()" mode="copy-stuff">
+  <xsl:text>&lt;?</xsl:text>
+  <xsl:copy-of select="name(.)"/>
+  <xsl:copy-of select="."/>
+  <xsl:text>?&gt;</xsl:text>
+</xsl:template>
+
+<xsl:template match="comment()" mode="copy-stuff">
+  <xsl:text>&lt;!--</xsl:text>
+  <xsl:value-of select="."/>
+  <xsl:text>--&gt;</xsl:text>
 </xsl:template>
 
 </xsl:stylesheet>
