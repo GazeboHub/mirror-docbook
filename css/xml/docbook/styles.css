@@ -211,21 +211,47 @@ replaceable {
 	font-style:italic;
 }
 
-sgmltag[class="starttag"]:before {
-	content: "<"
+sgmltag[class="starttag"]:before, sgmltag[class="emptytag"]:before {
+	content: "<";
 }
 
-sgmltag[class="starttag"]:after {
-	content: ">"
+sgmltag[class="starttag"]:after, sgmltag[class="endtag"]:after {
+	content: ">";
 }
 
 sgmltag[class="endtag"]:before {
-	content: "</"
+	content: "</";
 }
 
-sgmltag[class="endtag"]:after {
-	content: ">"
+sgmltag[class="emptytag"]:after {
+	content: "/>";
 }
+
+sgmltag[class="attvalue"]:before, sgmltag[class="attvalue"]:after {
+	content: '"';
+}
+
+sgmltag[class="genentity"]:before {
+	content: "&";
+}
+sgmltag[class="genentity"]:after {
+	content: ";";
+}
+
+sgmltag[class="sgmlcomment"]:before {
+	content: "<!--";
+}
+sgmltag[class="sgmlcomment"]:after {
+	content: "-->";
+}
+
+sgmltag[class="xmlpi"]:before {
+	content: "<?";
+}
+sgmltag[class="xmlpi"]:after {
+	content: "?>";
+}
+
 
 application, keycap, guimenu, guimenuitem, guisubmenu {
 	font-family: sans-serif;
