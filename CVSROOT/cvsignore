@@ -3,6 +3,7 @@
 *.aux
 *.lof
 *.toc
+*.memdump
 .AppleDouble
 ChangeLog
 ChangeLog.*
