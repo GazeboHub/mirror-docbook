@@ -1,10 +1,18 @@
 /*
+ * styles.css
+ *
+ * Copyright (c) 2004 David Holroyd, and contributors
+ * See the file 'COPYING' for terms of use
+ *
+ * Part of the Docbook-CSS stylesheet
+ *   http://www.badgers-in-foil.co.uk/projects/docbook-css/
+ */
+
+/*
  * CSS2 styling for DocBook XML
  *
  * To be included in the cascade _after_ core.css.  Defines styling that can't
  * be generated mechanically from another source.
- *
- * This file placed in the public domain		-- David Holroyd 2002
  */
 
 /*
