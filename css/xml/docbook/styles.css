@@ -1,0 +1,182 @@
+/*
+ * CSS2 styling for DocBook XML
+ *
+ * To be included in the cascade _after_ core.css.  Defines styling that can't
+ * be generated mechanically from another source.
+ *
+ * This file placed in the public domain		-- David Holroyd 2002
+ */
+
+article, book {
+	margin:.5em;
+}
+title, subtitle {
+	font-family:sans-serif;
+}
+title {
+	font-weight:bolder;
+	margin-top:1em;
+	margin-bottom:.5em;
+}
+section>*,chapter>* {
+	margin-left:10%;
+	margin-right:10%;
+}
+section>section, section>title, chapter>section, chapter>title {
+	margin-left:0;
+	margin-right:0;
+}
+
+book>title, article>title {
+	font-size:xx-large;
+	text-align:center;
+	border-bottom-style:solid;
+}
+
+chapter>title {
+	font-size:xx-large;
+	text-align:center;
+}
+
+section>title {
+	font-size:xx-large;
+}
+
+section>section>title {
+	font-size:x-large;
+	margin-left:5%;
+}
+
+section>section>section>title {
+	font-size:large;
+	margin-left:7.5%;
+}
+
+section>section>section>section>title {
+	margin-left:10%;
+}
+
+section>section>section>section>section>title {
+	font-size:normal;
+	margin-left:10%;
+}
+
+
+*+para {
+	margin-top:.5em;
+}
+
+example, informalexample {
+	background-color:#dddddd;
+}
+
+quote:before {
+	content: open-quote;
+}
+
+quote:after {
+	content: close-quote;
+}
+
+question, answer {
+	margin-top:.5em;
+	display:list-item;
+}
+
+question>para, answer>para {
+	display:inline;
+}
+
+question:before {
+	display:marker;
+	content:"Q: ";
+	font-weight:bolder;
+}
+
+answer:before {
+	display:marker;
+	content: "A: ";
+	font-weight: bolder;
+}
+
+emphasis {
+	font-style:italic;
+}
+emphasis[role="strong"] {
+	font-weight:bolder;
+}
+emphasis[role="bold"] {
+	font-weight:bolder;
+	font-style:inherit;
+}
+emphasis[role="underline"] {
+	text-decoration:underline;
+	font-style:inherit;
+}
+emphasis[role="strikethrough"] {
+	text-decoration:line-through;
+	font-style:inherit;
+}
+emphasis>emphasis {
+	font-weight:bolder;
+}
+
+sgmltag[class="starttag"]:before {
+	content: "<"
+}
+
+sgmltag[class="starttag"]:after {
+	content: ">"
+}
+
+sgmltag[class="endtag"]:before {
+	content: "</"
+}
+
+sgmltag[class="endtag"]:after {
+	content: ">"
+}
+
+keycap+keycap:before {
+	content:"-"
+}
+
+ulink {
+	color:#0000ff;
+	text-decoration:underline;
+}
+ulink:hover {
+	cursor:pointer;
+}
+
+blockquote {
+	padding-left:3em;
+}
+
+attribution {
+	text-align:right;
+}
+attribution:before {
+	content:"--"
+}
+
+itemizedlist>listitem {
+	display:list-item;
+}
+
+filename, literal {
+	font-family:monospace;
+}
+
+trademark:after {
+	content: "\2122"
+}
+trademark[class="copyright"]:after {
+	content: "\A9"
+}
+trademark[class="registered"]:after {
+	content: "\AE"
+}
+trademark[class="service"]:after {
+	content: "\2120"
+}

@@ -1,0 +1,26 @@
+/* make <ulink>s clickable */
+ulink {
+	-moz-binding:url('db-bindings.xml#ulink');
+	-moz-user-focus: normal;
+}
+
+ulink:active {
+	color: red;
+}
+
+ulink:focus {
+	-moz-outline: 1px dotted invert;
+}
+
+/* set window title */
+/* crasher:
+book>title, article>title {
+	-moz-binding:url('db-bindings.xml#title')
+}
+*/
+
+/* doesn't work
+imagedata {
+	-moz-binding:url('db-bindings.xml#image');
+}
+*/

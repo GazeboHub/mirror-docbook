@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<bindings xmlns="http://www.mozilla.org/xbl"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+  <binding id="ulink">
+    <handler event="click" button="0" action="window.location=this.attributes.url.value"/>
+  </binding>
+
+  <!--
+  Doesn't seen to work: image produced if src is hardcoded, but the fileref
+  attribute doesn't seem to get inherited.
+
+  <binding id="image">
+    <content>
+        <html:img xbl:inherits="src=fileref"/>
+    </content>
+  </binding>
+  -->
+</bindings>
