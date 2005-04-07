@@ -5,7 +5,7 @@
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:t="http://docbook.org/xslt/ns/template"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
-		xmlns:fn="http://www.w3.org/2004/10/xpath-functions"
+		xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
 		xmlns:db="http://docbook.org/docbook-ng"
 		exclude-result-prefixes="h f m fn db t"
                 version="2.0">
@@ -33,6 +33,7 @@
   <xsl:include href="biblio.xsl"/>
   <xsl:include href="info.xsl"/>
   <xsl:include href="glossary.xsl"/>
+  <xsl:include href="table.xsl"/>
   <xsl:include href="lists.xsl"/>
   <xsl:include href="formal.xsl"/>
   <xsl:include href="blocks.xsl"/>

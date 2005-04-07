@@ -4,7 +4,7 @@
 		xmlns:h="http://www.w3.org/1999/xhtml"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
-		xmlns:fn="http://www.w3.org/2004/10/xpath-functions"
+		xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
 		xmlns:db="http://docbook.org/docbook-ng"
 		xmlns:t="http://docbook.org/xslt/ns/template"
 		exclude-result-prefixes="h f m fn db t"
@@ -12,10 +12,10 @@
 
 <xsl:template match="db:section|db:sect1|db:sect2|db:sect3|db:sect4|db:sect5">
   <xsl:variable name="recto"
-		select="$titlepages/*[fn:node-name(.) = fn:node-name(current())
+		select="$titlepages/*[node-name(.) = node-name(current())
 			              and @t:side='recto'][1]"/>
   <xsl:variable name="verso"
-		select="$titlepages/*[fn:node-name(.) = fn:node-name(current())
+		select="$titlepages/*[node-name(.) = node-name(current())
 			              and @t:side='verso'][1]"/>
 
   <div class="{local-name(.)}">
@@ -24,7 +24,7 @@
       <xsl:with-param name="content" select="$recto"/>
     </xsl:call-template>
 
-    <xsl:if test="not(fn:empty($verso))">
+    <xsl:if test="not(empty($verso))">
       <xsl:call-template name="titlepage">
 	<xsl:with-param name="content" select="$verso"/>
       </xsl:call-template>

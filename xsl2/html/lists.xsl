@@ -4,7 +4,7 @@
 		xmlns:h="http://www.w3.org/1999/xhtml"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
-		xmlns:fn="http://www.w3.org/2004/10/xpath-functions"
+		xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
 		xmlns:db="http://docbook.org/docbook-ng"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -15,8 +15,8 @@
 
 <xsl:template match="db:itemizedlist">
   <xsl:variable name="titlepage"
-		select="$titlepages/*[fn:node-name(.)
-			              = fn:node-name(current())][1]"/>
+		select="$titlepages/*[node-name(.)
+			              = node-name(current())][1]"/>
 
   <div class="{local-name(.)}">
     <xsl:call-template name="id"/>
@@ -46,8 +46,8 @@
 
 <xsl:template match="db:orderedlist">
   <xsl:variable name="titlepage"
-		select="$titlepages/*[fn:node-name(.)
-			              = fn:node-name(current())][1]"/>
+		select="$titlepages/*[node-name(.)
+			              = node-name(current())][1]"/>
 
   <xsl:variable name="starting.number"
 		select="f:orderedlist-starting-number(.)"/>
@@ -111,8 +111,8 @@
 
 <xsl:template match="db:variablelist">
   <xsl:variable name="titlepage"
-		select="$titlepages/*[fn:node-name(.)
-			              = fn:node-name(current())][1]"/>
+		select="$titlepages/*[node-name(.)
+			              = node-name(current())][1]"/>
 
   <div class="{local-name(.)}">
     <xsl:call-template name="id"/>

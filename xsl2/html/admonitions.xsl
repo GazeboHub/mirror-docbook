@@ -4,7 +4,7 @@
 		xmlns:h="http://www.w3.org/1999/xhtml"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
-		xmlns:fn="http://www.w3.org/2004/10/xpath-functions"
+		xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
 		xmlns:db="http://docbook.org/docbook-ng"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -22,8 +22,8 @@
     </xsl:when>
     <xsl:otherwise>
       <xsl:variable name="titlepage"
-		    select="$titlepages/*[fn:node-name(.)
-			                  = fn:node-name(current())][1]"/>
+		    select="$titlepages/*[node-name(.)
+			                  = node-name(current())][1]"/>
       <div class="{f:admonition-class(.)}">
 	<xsl:call-template name="id"/>
 	<xsl:call-template name="class"/>
@@ -57,8 +57,8 @@ the graphical form.</para>
 <xsl:template match="db:note|db:important|db:warning|db:caution|db:tip"
 	      mode="m:graphical-admonition">
   <xsl:variable name="titlepage"
-		select="$titlepages/*[fn:node-name(.)
-			              = fn:node-name(current())][1]"/>
+		select="$titlepages/*[node-name(.)
+			              = node-name(current())][1]"/>
 
   <xsl:variable name="admon.type">
     <xsl:choose>

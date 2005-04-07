@@ -4,7 +4,7 @@
 		xmlns:h="http://www.w3.org/1999/xhtml"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
-		xmlns:fn="http://www.w3.org/2004/10/xpath-functions"
+		xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
 		xmlns:db="http://docbook.org/docbook-ng"
 		exclude-result-prefixes="h f m fn db"
                 version="2.0">
@@ -44,8 +44,8 @@
 
 <xsl:template match="db:figure|db:example">
   <xsl:variable name="titlepage"
-		select="$titlepages/*[fn:node-name(.)
-			              = fn:node-name(current())][1]"/>
+		select="$titlepages/*[node-name(.)
+			              = node-name(current())][1]"/>
   <div class="{local-name(.)}">
     <xsl:call-template name="id"/>
     <xsl:call-template name="class"/>
