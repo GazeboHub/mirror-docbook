@@ -13,6 +13,8 @@
 		exclude-result-prefixes="h f m ex fn db doc t xs"
                 version="2.0">
 
+<xsl:include href="expand.xsl"/>
+
 <xsl:key name="tdoc" match="doc:template" use="@name"/>
 <xsl:key name="fdoc" match="doc:function" use="@name"/>
 <xsl:key name="mdoc" match="doc:mode" use="@name"/>
@@ -96,33 +98,6 @@
 
 <xsl:template match="comment()|processing-instruction()|text()">
   <!-- nop -->
-</xsl:template>
-
-<!-- ============================================================ -->
-
-<xsl:template match="/" mode="expand">
-  <xsl:apply-templates mode="expand"/>
-</xsl:template>
-
-<xsl:template match="xsl:include|xsl:import" mode="expand" priority="100">
-  <xsl:variable name="stylesheet" select="document(@href, .)"/>
-  <xsl:element name="module" namespace="http://www.w3.org/1999/XSL/Transform">
-    <xsl:attribute name="href" select="@href"/>
-    <xsl:apply-templates select="$stylesheet/xsl:stylesheet/node()
-				 |$stylesheet/xsl:transform/node()"
-			 mode="expand"/>
-  </xsl:element>
-</xsl:template>
-
-<xsl:template match="*" mode="expand">
-  <xsl:copy>
-    <xsl:copy-of select="@*"/>
-    <xsl:apply-templates mode="expand"/>
-  </xsl:copy>
-</xsl:template>
-
-<xsl:template match="text()" mode="expand">
-  <xsl:copy/>
 </xsl:template>
 
 </xsl:stylesheet>
