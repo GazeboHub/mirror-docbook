@@ -3,11 +3,12 @@
                 xmlns:db="http://docbook.org/docbook-ng"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:f="http://docbook.org/xslt/ns/extension"
-                xmlns:fn="http://www.w3.org/2004/10/xpath-functions"
+                xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
                 xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0"
                 xmlns:m="http://docbook.org/xslt/ns/mode"
+                xmlns:u="http://nwalsh.com/xsl/unittests#"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                exclude-result-prefixes="db doc f fn l m xs"
+                exclude-result-prefixes="db doc f fn l m u xs"
                 version="2.0">
 
 <doc:reference xmlns="http://docbook.org/docbook-ng">
@@ -71,6 +72,34 @@ node does not have an ID, the XSLT
 <refreturn>
 <para>The ID.</para>
 </refreturn>
+
+<u:unittests function="f:node-id">
+  <u:test>
+    <u:param><db:anchor xml:id='id'/></u:param>
+    <u:result>'id'</u:result>
+  </u:test>
+  <u:test>
+    <u:param><db:anchor id='id'/></u:param>
+    <u:result>'id'</u:result>
+  </u:test>
+  <u:test>
+    <u:param><db:anchor/></u:param>
+    <u:result>'R.1'</u:result>
+  </u:test>
+  <u:test>
+    <u:variable name="mydoc">
+      <db:book>
+	<db:title>Some Title</db:title>
+	<db:chapter>
+	  <db:title>Some Chapter Title</db:title>
+	  <db:para>My para.</db:para>
+	</db:chapter>
+      </db:book>
+    </u:variable>
+    <u:param select="$mydoc//db:para[1]"/>
+    <u:result>'R.1.2.2'</u:result>
+  </u:test>
+</u:unittests>
 </doc:function>
 
 <xsl:function name="f:node-id" as="xs:string">
@@ -429,14 +458,18 @@ is the first style in that list.</para>
 
 <doc:function name="f:itemizedlist-symbol"
 	      xmlns="http://docbook.org/docbook-ng">
-<refpurpose>Returns the symbol of the specified <tag>listitem</tag>
-in an <tag>itemizedlist</tag></refpurpose>
+<refpurpose>Returns the mark that should be used for the specified
+<tag>listitem</tag> or <tag>itemizedlist</tag></refpurpose>
 
 <refdescription>
-<para>This function returns the symbol of the specified list item.
-This will be:</para>
+<para>This function returns the mark that should be used for the
+specified list item or itemized list. This will be:</para>
 
 <itemizedlist>
+<listitem>
+<para>The value of <tag class="attribute">override</tag>, if
+it is specified.</para>
+</listitem>
 <listitem>
 <para>The value of <tag class="attribute">mark</tag>, if
 it is specified.</para>
@@ -456,8 +489,8 @@ it is specified.</para>
 <variablelist>
 <varlistentry><term>node</term>
 <listitem>
-<para>The <tag>listitem</tag> in an <tag>itemizedlist</tag> for which
-a number style should be calculated.</para>
+<para>The <tag>itemizedlist</tag> or <tag>listitem</tag> in an
+<tag>itemizedlist</tag> for which a mark should be calculated.</para>
 </listitem>
 </varlistentry>
 </variablelist>
@@ -469,11 +502,14 @@ a number style should be calculated.</para>
 </doc:function>
 
 <xsl:function name="f:itemizedlist-symbol" as="xs:string">
-  <xsl:param name="node" as="element(db:listitem)"/>
+  <xsl:param name="node" as="element()"/>
 
   <xsl:choose>
     <xsl:when test="$node/@mark">
       <xsl:value-of select="$node/@mark"/>
+    </xsl:when>
+    <xsl:when test="$node/@override">
+      <xsl:value-of select="$node/@override"/>
     </xsl:when>
     <xsl:otherwise>
       <xsl:choose>
