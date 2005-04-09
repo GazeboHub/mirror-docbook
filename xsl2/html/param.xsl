@@ -30,7 +30,6 @@
 <xsl:param name="toc.section.depth">2</xsl:param>
 <xsl:param name="toc.max.depth">8</xsl:param>
 <xsl:param name="autotoc.label.separator" select="'. '"/>
-<xsl:param name="generate.index" select="1"/>
 <xsl:param name="annotate.toc" select="1"/>
 
 <xsl:param name="refentry.separator" select="1"/>
@@ -134,6 +133,12 @@
 <xsl:param name="section.autolabel.max.depth" select="4"/>
 
 <xsl:param name="rootid"/>
+
+<!-- Indexing related parameters -->
+<xsl:param name="index.on.role" select="0"/>
+<xsl:param name="index.on.type" select="0"/>
+<xsl:param name="generate.index" select="1"/>
+<xsl:param name="index.prefer.titleabbrev" select="0"/>
 
 <!-- Profiling parameters -->
 <xsl:param name="profile.arch" select="()"/>

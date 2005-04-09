@@ -1179,4 +1179,158 @@ be calculated.</para>
   </xsl:choose>
 </xsl:function>
 
+<!-- ============================================================ -->
+
+<doc:function name="f:group-index"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the ordinal number of index group to which supplied term belongs.</refpurpose>
+
+<refdescription>
+<para>Returns the ordinal number of index group to which supplied term belongs in a given language. 
+This number is used to group index terms and to define order of groups.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>term</term>
+<listitem>
+<para>The string for which the group index should be calculated.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>lang</term>
+<listitem>
+<para>Language of term.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>Index of group to which specified term belongs in a given language.</para>
+</refreturn>
+</doc:function>
+
+<xsl:function name="f:group-index">
+  <xsl:param name="term" as="xs:string"/>
+  <xsl:param name="lang" as="xs:string"/>
+  
+  <xsl:variable name="letters" as="element()*">
+    <xsl:variable name="l10n.letters"
+      select="($localization
+			 //l:l10n[@language=$lang]
+			 /l:letters)[1]"/>
+    
+    <xsl:choose>
+      <xsl:when test="$l10n.letters">
+        <xsl:copy-of select="$l10n.letters"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:message>
+          <xsl:text>No "</xsl:text>
+          <xsl:value-of select="$lang"/>
+          <xsl:text>" localization of index grouping letters exists</xsl:text>
+          <xsl:choose>
+            <xsl:when test="$lang = 'en'">
+              <xsl:text>.</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:text>; using "en".</xsl:text>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:message>
+        
+        <xsl:copy-of select="($localization
+			 //l:l10n[@language='en']
+			 /l:letters)[1]"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:variable name="long-letter-index" select="$letters/l:l[. = substring($term,1,2)]/@i"/>
+  <xsl:variable name="short-letter-index" select="$letters/l:l[. = substring($term,1,1)]/@i"/>
+  <xsl:variable name="letter-index">
+    <xsl:choose>
+      <xsl:when test="$long-letter-index">
+        <xsl:value-of select="$long-letter-index"/>
+      </xsl:when>
+      <xsl:when test="$short-letter-index">
+        <xsl:value-of select="$short-letter-index"/>
+      </xsl:when>
+      <xsl:otherwise>0</xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+  <xsl:value-of select="number($letter-index)"/>
+</xsl:function>
+
+<!-- ============================================================ -->
+
+<doc:function name="f:group-label"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the label of specified index group.</refpurpose>
+
+<refdescription>
+<para>Returns the label of specified index group in a given language. 
+The label is used to label corresponding index group. The label is usually just one letter, but
+it can be also longer text like "Symbols" or "Ch".</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>index</term>
+<listitem>
+<para>The index of group for which label should be generated.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>lang</term>
+<listitem>
+<para>Language of label.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>Label for specified index group in a given language.</para>
+</refreturn>
+</doc:function>
+
+<xsl:function name="f:group-label">
+  <xsl:param name="index" as="xs:integer"/>
+  <xsl:param name="lang" as="xs:string"/>
+  
+  <xsl:variable name="letters" as="element()*">
+    <xsl:variable name="l10n.letters"
+      select="($localization
+			 //l:l10n[@language=$lang]
+			 /l:letters)[1]"/>
+    
+    <xsl:choose>
+      <xsl:when test="$l10n.letters">
+        <xsl:copy-of select="$l10n.letters"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:message>
+          <xsl:text>No "</xsl:text>
+          <xsl:value-of select="$lang"/>
+          <xsl:text>" localization of index grouping letters exists</xsl:text>
+          <xsl:choose>
+            <xsl:when test="$lang = 'en'">
+              <xsl:text>.</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:text>; using "en".</xsl:text>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:message>
+        
+        <xsl:copy-of select="($localization
+			 //l:l10n[@language='en']
+			 /l:letters)[1]"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:value-of select="$letters/l:l[@i=$index][1]"/>
+</xsl:function>
+
 </xsl:stylesheet>

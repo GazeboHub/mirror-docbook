@@ -10,9 +10,7 @@
 		exclude-result-prefixes="h f m fn db t"
                 version="2.0">
 
-<xsl:template match="db:dedication
-		     |db:preface|db:chapter|db:appendix
-		     |db:colophon|db:article">
+<xsl:template match="db:index">
   <xsl:variable name="recto"
 		select="$titlepages/*[node-name(.) = node-name(current())
 			              and @t:side='recto'][1]"/>
@@ -35,7 +33,23 @@
     </xsl:if>
 
     <xsl:apply-templates/>
+
+    <!-- Empty index element indicates that index should be generated automatically -->
+    <xsl:if test="not(db:indexentry) and not(db:indexdiv)">
+      <xsl:call-template name="generate-index">
+	<xsl:with-param name="scope" select="ancestor::*[last()]"/>
+      </xsl:call-template>
+    </xsl:if>
   </div>
 </xsl:template>
+
+<xsl:template match="db:indexterm">
+  <a class="indexterm" name="{f:node-id(.)}"/>
+</xsl:template>
+
+<xsl:template match="db:primary|db:secondary|db:tertiary|db:see|db:seealso">
+</xsl:template>
+
+<!-- FIXME: add templates to handle manually created index -->
 
 </xsl:stylesheet>
