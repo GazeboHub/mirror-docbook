@@ -215,13 +215,23 @@
         <tr>
 	  <td colspan="{@cols}">
 	    <xsl:apply-templates select=".//footnote"
-				 mode="m:table.footnote.mode"/>
+				 mode="m:table-footnote-mode"/>
 	  </td>
 	</tr>
       </tbody>
     </xsl:if>
   </table>
 </xsl:template>
+
+<!-- ============================================================ -->
+
+<doc:mode name="m:cals" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for processing normalized CALS tables</refpurpose>
+
+<refdescription>
+<para>This mode is used to format normalized CALS tables.</para>
+</refdescription>
+</doc:mode>
 
 <xsl:template match="db:thead|db:tbody|db:tfoot" mode="m:cals">
   <xsl:element name="{local-name(.)}"
@@ -279,17 +289,53 @@
   </tr>
 </xsl:template>
 
-<xsl:template name="tr-attributes">
+<!-- ============================================================ -->
+
+<doc:template name="tr-attributes" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Extension point for table row attributes</refpurpose>
+
+<refdescription>
+<para>This template can be redefined by a customization layer to add
+attributes to table rows. For example, this template could be used
+to add shading
+to alternate rows of the table:</para>
+
+<programlisting><![CDATA[<xsl:template name="tr-attributes">
   <xsl:param name="row" select="."/>
   <xsl:param name="rownum" required="yes"/>
-
-  <!-- by default, do nothing. But you might want to say:
 
   <xsl:if test="$rownum mod 2 = 0">
     <xsl:attribute name="class">oddrow</xsl:attribute>
   </xsl:if>
+</xsl:template>]]></programlisting>
 
-  -->
+<para>The default version of this template does nothing.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>row</term>
+<listitem>
+<para>The table row element, defaults to the current context node.</para>
+</listitem>
+</varlistentry>
+<varlistentry role="required"><term>colnum</term>
+<listitem>
+<para>The ordinal number of the row within its parent.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>A sequence of zero or more attribute nodes.</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="tr-attributes">
+  <xsl:param name="row" select="."/>
+  <xsl:param name="rownum" required="yes"/>
+  <!-- nop -->
 </xsl:template>
 
 <xsl:template match="db:entry" mode="m:cals">
@@ -376,8 +422,55 @@
 
 <!-- ==================================================================== -->
 
+<doc:template name="border" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Generate CSS for table cell borders</refpurpose>
+
+<refdescription>
+<para>This template generates the inline CSS necessary to add borders
+to a table cell.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry role="required"><term>side</term>
+<listitem>
+<para>The side of the table on which to apply the border: must be one of
+“top”, “bottom”, “left”, or “right”.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>padding</term>
+<listitem>
+<para>The desired padding. Defaults to zero.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>style</term>
+<listitem>
+<para>The desired style.
+Defaults to <parameter>table.cell.border.style</parameter>.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>color</term>
+<listitem>
+<para>The desired color.
+Defaults to <parameter>table.cell.border.color</parameter>.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>thickness</term>
+<listitem>
+<para>The desired thickness.
+Defaults to <parameter>table.cell.border.thickness</parameter>.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>A fragment of CSS style suitable for use in a style attribute.</para>
+</refreturn>
+</doc:template>
+
 <xsl:template name="border">
-  <xsl:param name="side" select="'left'"/>
+  <xsl:param name="side" required="yes"/>
   <xsl:param name="padding" select="0"/>
   <xsl:param name="style" select="$table.cell.border.style"/>
   <xsl:param name="color" select="$table.cell.border.color"/>
@@ -432,8 +525,33 @@
   </xsl:choose>
 </xsl:template>
 
+<!-- ============================================================ -->
+
+<doc:template name="generate-colgroup" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Generates an HTML <tag>colgroup</tag>.</refpurpose>
+
+<refdescription>
+<para>Generates an HTML <tag>colgroup</tag> for the CALS table.
+</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry role="required"><term>cols</term>
+<listitem>
+<para>The number of columns in the table.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>A sequence of one or more <tag>col</tag> elements.</para>
+</refreturn>
+</doc:template>
+
 <xsl:template name="generate-colgroup">
-  <xsl:param name="cols" select="1"/>
+  <xsl:param name="cols" required="yes"/>
   <xsl:param name="count" select="1"/>
   <xsl:choose>
     <xsl:when test="$count &gt; $cols"></xsl:when>
@@ -449,8 +567,35 @@
   </xsl:choose>
 </xsl:template>
 
+<!-- ============================================================ -->
+
+<doc:template name="generate-col" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Generates an HTML <tag>col</tag>.</refpurpose>
+
+<refdescription>
+<para>Generates an HTML <tag>col</tag> for a
+<tag>colgroup</tag>.
+See <function role="named-template">generate-colgroup</function>.
+</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry role="required"><term>countcol</term>
+<listitem>
+<para>The number of the column.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>A <tag>col</tag> element.</para>
+</refreturn>
+</doc:template>
+
 <xsl:template name="generate-col">
-  <xsl:param name="countcol">1</xsl:param>
+  <xsl:param name="countcol" required="yes"/>
   <xsl:param name="colspecs" select="./colspec"/>
   <xsl:param name="count">1</xsl:param>
   <xsl:param name="colnum">1</xsl:param>

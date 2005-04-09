@@ -13,6 +13,40 @@
 		exclude-result-prefixes="doc f fp ghost h m u xs"
                 version="2.0">
 
+<doc:mode name="m:cals-phase-1" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for normalizing CALS tables</refpurpose>
+
+<refdescription>
+<para>This mode is used to normalize CALS tables. A table has a rectangular
+structure with a certain number of rows and columns. In the simplest case,
+each row has the same number of entries (equal to the number of columns
+in the table). Two complications arise: first, cells can span columns or
+rows, second, a cell can identify the column in which it appears, potentially
+“skipping” earlier columns (cells cannot appear out of order, so there's
+no possibility of that column being “back filled” by a later cell that
+explicitly identifies the skipped column).</para>
+
+<para>Another complication arises in the way default values for cell
+properties like alignment and row or column separators are calculated.
+See <function role="named-template">inherit-table-attributes</function>.
+</para>
+
+<para>These complications make processing tables quite complicated. The
+result of processing a table in the <literal>m:cals-phase-1</literal> mode
+is a normalized table. In the normalized table, all of rows have one
+child element for each column and all of the attributes associated with
+an entry appear literally on the entry.</para>
+
+<para>In the case where a cell spans across columns or rows, the normalized
+table will have a <tag>ghost:overlapped</tag> element in the phantom cells.
+In the case where a cell has skipped some columns, those columns will have
+a <tag>ghost:empty</tag> element.</para>
+
+<para>Processing a normalized table is a simple matter of processing
+each row and cell.</para>
+</refdescription>
+</doc:mode>
+
 <xsl:template match="db:tgroup" mode="m:cals-phase-1">
   <xsl:copy>
     <xsl:copy-of select="@*"/>
@@ -190,6 +224,87 @@
 </xsl:template>
 
 <!-- ============================================================ -->
+
+<doc:template name="inherit-table-attributes"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Calculates attribute values for table cells</refpurpose>
+
+<refdescription>
+<para>In a CALS table, each entry can have a number of properties
+(alignment, row and column separators, etc.). If these properties aren't
+specified directly on the entry, then their default values are calculated
+by a complex series of defaults.
+</para>
+
+<para>A property can be specified in any of nine locations:</para>
+
+<orderedlist>
+<listitem>
+<para>The <tag>entry</tag>.
+</para>
+</listitem>
+<listitem>
+<para>The <tag>row</tag>.
+</para>
+</listitem>
+<listitem>
+<para>The <tag>tgroup</tag>.
+</para>
+</listitem>
+<listitem>
+<para>The <tag>table</tag> or <tag>informaltable</tag>.
+</para>
+</listitem>
+<listitem>
+<para>The <tag>spanspec</tag> if this entry has
+a <tag class="attribute">spanname</tag> attribute.</para>
+</listitem>
+<listitem>
+<para>The starting column of the span as identified by the
+<tag class="attribute">namest</tag> attribute on the <tag>spanspec</tag>
+(if there is one, see previous.)
+</para>
+</listitem>
+<listitem>
+<para>The starting column of the span identified directly by a
+<tag class="attribute">namest</tag> attribute on the <tag>entry</tag>.
+</para>
+</listitem>
+<listitem>
+<para>The <tag>colspec</tag> for the column in which it occurs (either
+naturally or as a result of a <tag class="attribute">colname</tag> attribute).
+</para>
+</listitem>
+<listitem>
+<para>Some application default.
+</para>
+</listitem>
+</orderedlist>
+
+<para>This template performs those lookup operations and generates an
+explicit attribute node for each inheritable property. In this way,
+a normalized cell has all of the proper values specified directly.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>entry</term>
+<listitem>
+<para>The table cell element, defaults to the current context node.</para>
+</listitem>
+</varlistentry>
+<varlistentry role="required"><term>colnum</term>
+<listitem>
+<para>The column number in which this entry appears.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>A sequence of attribute nodes, one for each property.</para>
+</refreturn>
+</doc:template>
 
 <xsl:template name="inherit-table-attributes">
   <xsl:param name="entry" select="."/>
@@ -660,6 +775,37 @@ length specified was a percentage, in which case it is returned unchanged.</para
 
 <!-- ============================================================ -->
 
+<doc:function name="f:find-element-by-attribute"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Selects an element based on the presence of an attribute</refpurpose>
+
+<refdescription>
+<para>Given a sequence of elements and an attribute name, this
+function returns the first element in the list that has the
+specified attribute.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>elements</term>
+<listitem>
+<para>A sequence of zero or more elements.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>attr</term>
+<listitem>
+<para>The name of the attribute to find.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>An element or the empty sequence if no element has the specified
+attribute.</para>
+</refreturn>
+</doc:function>
+
 <xsl:function name="f:find-element-by-attribute" as="element()?">
   <xsl:param name="elements" as="element()*"/>
   <xsl:param name="attr" as="xs:QName"/>
@@ -677,14 +823,47 @@ length specified was a percentage, in which case it is returned unchanged.</para
   </xsl:choose>
 </xsl:function>
 
-<xsl:function name="f:find-colspec-by-colnum">
+<!-- ============================================================ -->
+
+<doc:function name="f:find-colspec-by-colnum"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Finds the <tag>colspec</tag> for the specified column
+number.</refpurpose>
+
+<refdescription>
+<para>Searches the <tag>colspec</tag> elements and returns the one
+for the specified column.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>tgroup</term>
+<listitem>
+<para>The <tag>tgroup</tag> element in which to search.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>colnum</term>
+<listitem>
+<para>The column number.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The <tag>colspec</tag> or the empty sequence if there is no
+specification for that column.</para>
+</refreturn>
+</doc:function>
+
+<xsl:function name="f:find-colspec-by-colnum" as="element()?">
   <xsl:param name="tgroup" as="element(db:tgroup)"/>
   <xsl:param name="colnum" as="xs:integer"/>
   
   <xsl:sequence select="fp:find-colspec($tgroup/db:colspec[1], $colnum, 0)"/>
 </xsl:function>
 
-<xsl:function name="fp:find-colspec">
+<xsl:function name="fp:find-colspec" as="element()?">
   <xsl:param name="colspec" as="element(db:colspec)*"/>
   <xsl:param name="colnum" as="xs:integer"/>
   <xsl:param name="curcol" as="xs:integer"/>

@@ -1,0 +1,7 @@
+Modes go in m: (http://docbook.org/xslt/ns/mode)
+Functions go in f: (http://docbook.org/xslt/ns/extension)
+Private functions go in fp: (http://docbook.org/xslt/ns/extension/private)
+
+Named templates have '-'s not '.'s
+
+Use tools/doccheck.xsl to check for documentation problems
