@@ -3,13 +3,40 @@
 		xmlns="http://www.w3.org/1999/xhtml"
 		xmlns:h="http://www.w3.org/1999/xhtml"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
+		xmlns:ghost="http://docbook.org/docbook-ng/ephemeral"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
 		xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
 		xmlns:db="http://docbook.org/docbook-ng"
-		exclude-result-prefixes="h f m fn db"
+		exclude-result-prefixes="h f m fn db ghost"
                 version="2.0">
 
-<xsl:template match="db:programlisting|db:screen">
+<xsl:import href="../common/verbatim.xsl"/>
+
+<xsl:template match="db:programlistingco">
+  <xsl:variable name="cleanedup" as="element()">
+    <xsl:apply-templates select="." mode="m:verbatim"/>
+  </xsl:variable>
+
+<!-- this works!
+  <NODES>
+    <xsl:copy-of select="$cleanedup/db:programlisting"/>
+  </NODES>
+-->
+  <xsl:apply-templates select="$cleanedup/db:programlisting"
+		       mode="m:outputverbatim"/>
+</xsl:template>
+
+<xsl:template match="db:programlisting">
+  <xsl:variable name="cleanedup" as="element()">
+    <xsl:apply-templates select="." mode="m:verbatim"/>
+  </xsl:variable>
+
+  <xsl:apply-templates select="$cleanedup" mode="m:outputverbatim"/>
+</xsl:template>
+
+<xsl:template match="db:programlisting|db:screen|db:synopsis"
+	      mode="m:outputverbatim">
+
   <div class="{local-name(.)}">
     <xsl:call-template name="id"/>
     <xsl:call-template name="class"/>
@@ -17,6 +44,12 @@
       <xsl:apply-templates/>
     </pre>
   </div>
+</xsl:template>
+
+<xsl:template match="ghost:co">
+  <xsl:text>(</xsl:text>
+  <xsl:value-of select="@number"/>
+  <xsl:text>)</xsl:text>
 </xsl:template>
 
 </xsl:stylesheet>
