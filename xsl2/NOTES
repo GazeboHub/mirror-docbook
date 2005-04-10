@@ -1,6 +1,11 @@
 Modes go in m: (http://docbook.org/xslt/ns/mode)
+Private modes go in mp: (http://docbook.org/xslt/ns/mode/private)
+
 Functions go in f: (http://docbook.org/xslt/ns/extension)
 Private functions go in fp: (http://docbook.org/xslt/ns/extension/private)
+
+Templates go in t: (http://docbook.org/xslt/ns/template)
+Private templates go in tp: (http://docbook.org/xslt/ns/template/private)
 
 Named templates have '-'s not '.'s
 

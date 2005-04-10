@@ -1333,4 +1333,127 @@ it can be also longer text like "Symbols" or "Ch".</para>
   <xsl:value-of select="$letters/l:l[@i=$index][1]"/>
 </xsl:function>
 
+<!-- ============================================================ -->
+
+<doc:function name="f:pad" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Constructs a string of the specified length</refpurpose>
+
+<refdescription>
+<para>Returns a string of <parameter>char</parameter> characters
+that is <parameter>count</parameter> characters long.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>count</term>
+<listitem>
+<para>The desired string length.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>char</term>
+<listitem>
+<para>The single character that should be repeated to construct the string.
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The string of the specified length.</para>
+</refreturn>
+</doc:function>
+
+<xsl:function name="f:pad">
+  <xsl:param name="count" as="xs:integer"/>
+  <xsl:param name="char" as="xs:string"/>
+
+  <xsl:choose>
+    <xsl:when test="$count &gt; 4">
+      <xsl:value-of select="$char"/>
+      <xsl:value-of select="$char"/>
+      <xsl:value-of select="$char"/>
+      <xsl:value-of select="$char"/>
+      <xsl:value-of select="f:pad($count - 4, $char)"/>
+    </xsl:when>
+    <xsl:when test="$count &gt; 3">
+      <xsl:value-of select="$char"/>
+      <xsl:value-of select="$char"/>
+      <xsl:value-of select="$char"/>
+      <xsl:value-of select="f:pad($count - 3, $char)"/>
+    </xsl:when>
+    <xsl:when test="$count &gt; 2">
+      <xsl:value-of select="$char"/>
+      <xsl:value-of select="$char"/>
+      <xsl:value-of select="f:pad($count - 2, $char)"/>
+    </xsl:when>
+    <xsl:when test="$count &gt; 1">
+      <xsl:value-of select="$char"/>
+      <xsl:value-of select="f:pad($count - 1, $char)"/>
+    </xsl:when>
+    <xsl:when test="$count &gt; 0">
+      <xsl:value-of select="$char"/>
+    </xsl:when>
+  </xsl:choose>
+</xsl:function>
+
+<!-- ============================================================ -->
+
+<doc:function name="f:find-node-in-sequence"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Finds a particular node in a sequence of nodes</refpurpose>
+
+<refdescription>
+<para>This function searches a sequence of nodes and returns the position
+of a particular node in that sequence. The function returns 0 if the
+node is not found.</para>
+<para>Note that this function searches based on node identity, the target
+node must literally be in the sequence; it is not sufficient, for example,
+for another node with the same name to appear in the sequence.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>nodes</term>
+<listitem>
+<para>The sequence to search.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>target</term>
+<listitem>
+<para>The node to find.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>start</term>
+<listitem>
+<para>The position at which to begin searching.
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The ordinal position of the node, or 0 if it is not found.</para>
+</refreturn>
+</doc:function>
+
+<xsl:function name="f:find-node-in-sequence" as="xs:integer">
+  <xsl:param name="nodes" as="node()*"/>
+  <xsl:param name="target" as="node()"/>
+  <xsl:param name="start" as="xs:integer"/>
+
+  <xsl:choose>
+    <xsl:when test="$start &gt; count($nodes)">0</xsl:when>
+    <xsl:when test="$nodes[$start] is $target">
+      <xsl:value-of select="$start"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:value-of select="f:find-node-in-sequence($nodes, $target,
+			                            $start+1)"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
 </xsl:stylesheet>

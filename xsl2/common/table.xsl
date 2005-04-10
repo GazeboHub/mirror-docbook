@@ -669,7 +669,7 @@ on the <parameter>pixels-per-inch</parameter> parameter.</para>
 
 <!-- ============================================================ -->
 
-<doc:function name="f:convert-length">
+<doc:function name="f:convert-length" xmlns="http://docbook.org/docbook-ng">
 <refpurpose>Converts a length to pixels</refpurpose>
 
 <refdescription>
@@ -895,6 +895,40 @@ specification for that column.</para>
   </xsl:choose>
 </xsl:function>
 
+<!-- ============================================================ -->
+
+<doc:function name="f:skip-overhang" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Finds the next available column position in a CALS table</refpurpose>
+
+<refdescription>
+<para>This function returns the next available column position in a
+CALS table, skipping over the columns that contains cells which hang
+down into the current row.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>overhang</term>
+<listitem>
+<para>A sequence of integer values giving the depth of “overhang” from
+previous rows for
+cells in each column of the table.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>pos</term>
+<listitem>
+<para>The nominal next column. This generally one more than the
+current column number.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The next available column in the row.</para>
+</refreturn>
+</doc:function>
+
 <xsl:function name="f:skip-overhang">
   <xsl:param name="overhang" as="xs:integer+"/>
   <xsl:param name="pos" as="xs:integer"/>
@@ -908,6 +942,32 @@ specification for that column.</para>
     </xsl:otherwise>
   </xsl:choose>
 </xsl:function>
+
+<!-- ============================================================ -->
+
+<doc:function name="f:colspec-colnum" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the column number associated with a particuluar
+<tag>colspec</tag>.</refpurpose>
+
+<refdescription>
+<para>This function returns the column number of the specified
+<tag>colspec</tag>.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>colspec</term>
+<listitem>
+<para>The <tag>colspec</tag> element.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The column number associated with that <tag>colspec</tag>.</para>
+</refreturn>
+</doc:function>
 
 <xsl:function name="f:colspec-colnum" as="xs:integer">
   <xsl:param name="colspec" as="element(db:colspec)"/>
@@ -927,12 +987,67 @@ specification for that column.</para>
   </xsl:choose>
 </xsl:function>
 
+<!-- ============================================================ -->
+
+<doc:function name="f:spanspec-colnum-start"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the column number of the starting column of a
+span</refpurpose>
+
+<refdescription>
+<para>This function returns the column number of the starting column
+of a span.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>spanspec</term>
+<listitem>
+<para>The <tag>spanspec</tag> element.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The column number associated with the first column of the
+span.</para>
+</refreturn>
+</doc:function>
+
 <xsl:function name="f:spanspec-colnum-start" as="xs:integer">
   <xsl:param name="spanspec" as="element(db:spanspec)"/>
 
   <xsl:value-of select="f:colspec-colnum($spanspec/ancestor::db:tgroup[1]
 			      /db:colspec[@colname=$spanspec/@namest])"/>
 </xsl:function>
+
+<!-- ============================================================ -->
+
+<doc:function name="f:spanspec-colnum-end"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns the column number of the ending column of a
+span</refpurpose>
+
+<refdescription>
+<para>This function returns the column number of the ending column
+of a span.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>spanspec</term>
+<listitem>
+<para>The <tag>spanspec</tag> element.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The column number associated with the last column of the span.</para>
+</refreturn>
+</doc:function>
 
 <xsl:function name="f:spanspec-colnum-end" as="xs:integer">
   <xsl:param name="spanspec" as="element(db:spanspec)"/>

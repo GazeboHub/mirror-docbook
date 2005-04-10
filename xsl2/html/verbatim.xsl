@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
 		xmlns:h="http://www.w3.org/1999/xhtml"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:ghost="http://docbook.org/docbook-ng/ephemeral"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
 		xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
 		xmlns:db="http://docbook.org/docbook-ng"
-		exclude-result-prefixes="h f m fn db ghost"
+		exclude-result-prefixes="doc h f m fn db ghost"
                 version="2.0">
 
 <xsl:import href="../common/verbatim.xsl"/>
@@ -23,7 +24,7 @@
   </NODES>
 -->
   <xsl:apply-templates select="$cleanedup/db:programlisting"
-		       mode="m:outputverbatim"/>
+		       mode="m:verbatim"/>
 </xsl:template>
 
 <xsl:template match="db:programlisting">
@@ -31,11 +32,21 @@
     <xsl:apply-templates select="." mode="m:verbatim"/>
   </xsl:variable>
 
-  <xsl:apply-templates select="$cleanedup" mode="m:outputverbatim"/>
+  <xsl:apply-templates select="$cleanedup" mode="m:verbatim"/>
 </xsl:template>
 
+<!-- ============================================================ -->
+
+<doc:mode name="m:verbatim" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for processing normalized verbatim elements</refpurpose>
+
+<refdescription>
+<para>This mode is used to format normalized verbatim elements.</para>
+</refdescription>
+</doc:mode>
+
 <xsl:template match="db:programlisting|db:screen|db:synopsis"
-	      mode="m:outputverbatim">
+	      mode="m:verbatim">
 
   <div class="{local-name(.)}">
     <xsl:call-template name="id"/>

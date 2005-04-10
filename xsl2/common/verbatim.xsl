@@ -4,12 +4,16 @@
                 xmlns:db="http://docbook.org/docbook-ng"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:f="http://docbook.org/xslt/ns/extension"
+                xmlns:fp="http://docbook.org/xslt/ns/extension"
                 xmlns:ghost="http://docbook.org/docbook-ng/ephemeral"
                 xmlns:h="http://www.w3.org/1999/xhtml"
                 xmlns:m="http://docbook.org/xslt/ns/mode"
+                xmlns:mp="http://docbook.org/xslt/ns/mode/private"
+		xmlns:t="http://docbook.org/xslt/ns/template"
+		xmlns:tp="http://docbook.org/xslt/ns/template/private"
                 xmlns:u="http://nwalsh.com/xsl/unittests#"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                exclude-result-prefixes="doc f ghost h m u xs"
+                exclude-result-prefixes="doc f fp ghost h m t tp u xs"
                 version="2.0">
 
 <xsl:param name="callout.defaultcolumn" select="40"/>
@@ -24,7 +28,21 @@
 
 <!-- ============================================================ -->
 
-<xsl:template match="db:programlistingco" mode="m:verbatim">
+<doc:mode name="m:verbatim-phase-1" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for normalizing verbatim environments</refpurpose>
+
+<refdescription>
+<para>This mode is used to normalize verbatim environments (<tag>address</tag>,
+<tag>literallayout</tag>, <tag>programlisting</tag>, <tag>screen</tag>,
+<tag>synopsis</tag>, and <tag>programlistingco</tag>.</para>
+
+<para>This mode adds line numbers and inserts callouts if necessary.
+The resulting normalized verbatim element can be formatted in the
+ordinary, straightforward manner.</para>
+</refdescription>
+</doc:mode>
+
+<xsl:template match="db:programlistingco" mode="m:verbatim-phase-1">
   <xsl:variable name="areas-unsorted" as="element()*">
     <xsl:apply-templates select="db:areaspec"/>
   </xsl:variable>
@@ -42,36 +60,36 @@
 
   <xsl:variable name="pl-empty-tags" as="node()*">
     <xsl:apply-templates select="db:programlisting/node()"
-			 mode="m:pl-empty-tags"/>
+			 mode="m:make-empty-elements"/>
   </xsl:variable>
 
   <xsl:variable name="pl-no-lb" as="node()*">
     <xsl:apply-templates select="$pl-empty-tags"
-			 mode="m:pl-no-lb"/>
+			 mode="mp:pl-no-lb"/>
   </xsl:variable>
 
   <xsl:variable name="pl-no-wrap-lb" as="node()*">
-    <xsl:call-template name="nowrap">
-      <xsl:with-param name="nowrap" select="xs:QName('ghost:br')"/>
+    <xsl:call-template name="t:unwrap">
+      <xsl:with-param name="unwrap" select="xs:QName('ghost:br')"/>
       <xsl:with-param name="content" select="$pl-no-lb"/>
     </xsl:call-template>
   </xsl:variable>
 
   <xsl:variable name="pl-lines" as="element(ghost:line)*">
-    <xsl:call-template name="wrap-lines">
+    <xsl:call-template name="tp:wrap-lines">
       <xsl:with-param name="nodes" select="$pl-no-wrap-lb"/>
     </xsl:call-template>
   </xsl:variable>
 
   <xsl:variable name="pl-callouts" as="element(ghost:line)*">
-    <xsl:apply-templates select="$pl-lines" mode="m:pl-callouts">
+    <xsl:apply-templates select="$pl-lines" mode="mp:pl-callouts">
       <xsl:with-param name="areas" select="$areas"/>
     </xsl:apply-templates>
   </xsl:variable>
 
   <xsl:variable name="pl-removed-lines" as="node()*">
     <xsl:apply-templates select="$pl-callouts"
-			 mode="m:pl-restore-lines"/>
+			 mode="mp:pl-restore-lines"/>
   </xsl:variable>
 
   <xsl:copy>
@@ -80,56 +98,56 @@
     <db:programlisting>
       <xsl:copy-of select="db:programlisting/@*"/>
       <xsl:apply-templates select="$pl-removed-lines"
-			   mode="m:pl-cleanup"/>
+			   mode="mp:pl-cleanup"/>
     </db:programlisting>
     <xsl:copy-of select="db:calloutlist"/>
   </xsl:copy>
 </xsl:template>
 
 <xsl:template match="db:programlisting|db:screen|db:synopsis
-                     |db:literallayout|db:address" mode="m:verbatim">
+                     |db:literallayout|db:address" mode="m:verbatim-phase-1">
 
   <xsl:variable name="pl-empty-tags" as="node()*">
-    <xsl:apply-templates mode="m:pl-empty-tags"/>
+    <xsl:apply-templates mode="m:make-empty-elements"/>
   </xsl:variable>
 
   <xsl:variable name="pl-no-lb" as="node()*">
     <xsl:apply-templates select="$pl-empty-tags"
-			 mode="m:pl-no-lb"/>
+			 mode="mp:pl-no-lb"/>
   </xsl:variable>
 
   <xsl:variable name="pl-no-wrap-lb" as="node()*">
-    <xsl:call-template name="nowrap">
-      <xsl:with-param name="nowrap" select="xs:QName('ghost:br')"/>
+    <xsl:call-template name="t:unwrap">
+      <xsl:with-param name="unwrap" select="xs:QName('ghost:br')"/>
       <xsl:with-param name="content" select="$pl-no-lb"/>
     </xsl:call-template>
   </xsl:variable>
 
   <xsl:variable name="pl-lines" as="element(ghost:line)*">
-    <xsl:call-template name="wrap-lines">
+    <xsl:call-template name="tp:wrap-lines">
       <xsl:with-param name="nodes" select="$pl-no-wrap-lb"/>
     </xsl:call-template>
   </xsl:variable>
 
   <xsl:variable name="pl-removed-lines" as="node()*">
     <xsl:apply-templates select="$pl-lines"
-			 mode="m:pl-restore-lines"/>
+			 mode="mp:pl-restore-lines"/>
   </xsl:variable>
 
   <xsl:variable name="result" as="element()">
     <xsl:copy>
       <xsl:copy-of select="@*"/>
       <xsl:apply-templates select="$pl-lines"
-			   mode="m:pl-restore-lines"/>
+			   mode="mp:pl-restore-lines"/>
     </xsl:copy>
   </xsl:variable>
 
-  <xsl:apply-templates select="$result" mode="m:pl-cleanup"/>
+  <xsl:apply-templates select="$result" mode="mp:pl-cleanup"/>
 </xsl:template>
 
 <!-- ============================================================ -->
 
-<xsl:template match="*" mode="m:pl-cleanup">
+<xsl:template match="*" mode="mp:pl-cleanup">
   <xsl:variable name="id" select="@xml:id"/>
   <xsl:copy>
     <xsl:copy-of select="@*[name(.) != 'xml:id'
@@ -138,18 +156,18 @@
       <xsl:attribute name="xml:id" select="$id"/>
     </xsl:if>
 
-    <xsl:apply-templates mode="m:pl-cleanup"/>
+    <xsl:apply-templates mode="mp:pl-cleanup"/>
   </xsl:copy>
 </xsl:template>
 
 <xsl:template match="comment()|processing-instruction()|text()"
-	      mode="m:pl-cleanup">
+	      mode="mp:pl-cleanup">
   <xsl:copy/>
 </xsl:template>
 
 <!-- ============================================================ -->
 
-<xsl:template match="ghost:line" mode="m:pl-restore-lines">
+<xsl:template match="ghost:line" mode="mp:pl-restore-lines">
   <xsl:variable name="linenumber" select="position()"/>
 
   <xsl:if test="true()">
@@ -175,7 +193,7 @@
 
   <xsl:choose>
     <xsl:when test="ghost:end">
-      <xsl:call-template name="restore-wrap">
+      <xsl:call-template name="t:restore-content">
 	<xsl:with-param name="nodes" select="node()"/>
       </xsl:call-template>
     </xsl:when>
@@ -187,7 +205,34 @@
   <xsl:text>&#10;</xsl:text>
 </xsl:template>
 
-<xsl:template name="restore-wrap">
+<!-- ============================================================ -->
+
+<doc:template name="t:restore-content" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Restores content to empty elements.</refpurpose>
+
+<refdescription>
+<para>This template reverses the flattening process performed by
+the <code>m:make-empty-elements</code> mode. It replaces pairs of
+empty elements and their corresponding <tag>ghost:end</tag>s with 
+an element that has content.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>nodes</term>
+<listitem>
+<para>The sequence of nodes containing empty elements.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The nodes with content restored.</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="t:restore-content">
   <xsl:param name="nodes" select="node()"/>
 
   <xsl:choose>
@@ -197,56 +242,39 @@
       <xsl:variable name="id" select="$nodes[1]/@ghost:id"/>
       <xsl:variable name="end" select="$nodes[self::ghost:end[@idref=$id]][1]"/>
       <xsl:variable name="endpos"
-		    select="f:find-element-in-sequence($nodes, $end, 2)"/>
+		    select="f:find-node-in-sequence($nodes, $end, 2)"/>
 
       <xsl:element name="{name($nodes[1])}"
 		   namespace="{namespace-uri($nodes[1])}">
 	<xsl:copy-of select="$nodes[1]/@*"/>
-	<xsl:call-template name="restore-wrap">
+	<xsl:call-template name="t:restore-content">
 	  <xsl:with-param name="nodes"
 			  select="subsequence($nodes, 2, $endpos - 2)"/>
 	</xsl:call-template>
       </xsl:element>
-      <xsl:call-template name="restore-wrap">
+      <xsl:call-template name="t:restore-content">
 	<xsl:with-param name="nodes"
 			select="subsequence($nodes, $endpos+1)"/>
       </xsl:call-template>
     </xsl:when>
     <xsl:otherwise>
       <xsl:copy-of select="$nodes[1]"/>
-      <xsl:call-template name="restore-wrap">
+      <xsl:call-template name="t:restore-content">
 	<xsl:with-param name="nodes" select="$nodes[position() &gt; 1]"/>
       </xsl:call-template>
     </xsl:otherwise>
   </xsl:choose>
 </xsl:template>
 
-<xsl:function name="f:find-element-in-sequence" as="xs:integer">
-  <xsl:param name="nodes" as="node()*"/>
-  <xsl:param name="target" as="element()"/>
-  <xsl:param name="start" as="xs:integer"/>
-
-  <xsl:choose>
-    <xsl:when test="$start &gt; count($nodes)">0</xsl:when>
-    <xsl:when test="$nodes[$start] is $target">
-      <xsl:value-of select="$start"/>
-    </xsl:when>
-    <xsl:otherwise>
-      <xsl:value-of select="f:find-element-in-sequence($nodes, $target,
-			                               $start+1)"/>
-    </xsl:otherwise>
-  </xsl:choose>
-</xsl:function>
-
 <!-- ============================================================ -->
 
-<xsl:template match="ghost:line" mode="m:pl-callouts">
+<xsl:template match="ghost:line" mode="mp:pl-callouts">
   <xsl:param name="areas" as="element()*"/>
   <xsl:param name="linenumber" select="position()"/>
 
   <xsl:choose>
     <xsl:when test="$areas[@ghost:line = $linenumber]">
-      <xsl:call-template name="addcallouts">
+      <xsl:call-template name="tp:addcallouts">
 	<xsl:with-param name="areas" select="$areas[@ghost:line = $linenumber]"/>
 	<xsl:with-param name="line" select="."/>
       </xsl:call-template>
@@ -257,13 +285,13 @@
   </xsl:choose>
 </xsl:template>
 
-<xsl:template name="addcallouts">
+<xsl:template name="tp:addcallouts">
   <xsl:param name="areas" as="element(db:area)*"/>
   <xsl:param name="line" as="element(ghost:line)"/>
 
   <xsl:variable name="newline" as="element(ghost:line)">
     <ghost:line>
-      <xsl:call-template name="addcallout">
+      <xsl:call-template name="tp:addcallout">
 	<xsl:with-param name="area" select="$areas[1]"/>
 	<xsl:with-param name="nodes" select="$line/node()"/>
       </xsl:call-template>
@@ -275,7 +303,7 @@
       <xsl:copy-of select="$newline"/>
     </xsl:when>
     <xsl:otherwise>
-      <xsl:call-template name="addcallouts">
+      <xsl:call-template name="tp:addcallouts">
 	<xsl:with-param name="areas" select="$areas[position() &gt; 1]"/>
 	<xsl:with-param name="line" select="$newline"/>
       </xsl:call-template>
@@ -283,7 +311,7 @@
   </xsl:choose>
 </xsl:template>
 
-<xsl:template name="addcallout">
+<xsl:template name="tp:addcallout">
   <xsl:param name="area" as="element(db:area)"/>
   <xsl:param name="nodes" as="node()*"/>
   <xsl:param name="pos" as="xs:integer" select="1"/>
@@ -292,18 +320,18 @@
     <xsl:when test="not($nodes)">
       <xsl:if test="$pos &lt; $area/@ghost:col">
 	<xsl:value-of select="f:pad(xs:integer($area/@ghost:col) - $pos, ' ')"/>
-	<xsl:apply-templates select="$area" mode="m:insert-callout"/>
+	<xsl:apply-templates select="$area" mode="mp:insert-callout"/>
       </xsl:if>
     </xsl:when>
     <xsl:when test="$nodes[1] instance of text()">
       <xsl:choose>
 	<xsl:when test="$pos = $area/@ghost:col">
-	  <xsl:apply-templates select="$area" mode="m:insert-callout"/>
+	  <xsl:apply-templates select="$area" mode="mp:insert-callout"/>
 	  <xsl:copy-of select="$nodes"/>
 	</xsl:when>
 	<xsl:when test="string-length($nodes[1]) = 1">
 	  <xsl:copy-of select="$nodes[1]"/>
-	  <xsl:call-template name="addcallout">
+	  <xsl:call-template name="tp:addcallout">
 	    <xsl:with-param name="area" select="$area"/>
 	    <xsl:with-param name="nodes" select="$nodes[position() &gt; 1]"/>
 	    <xsl:with-param name="pos" select="$pos+1"/>
@@ -314,7 +342,7 @@
 	  <xsl:variable name="rest" as="text()">
 	    <xsl:value-of select="substring($nodes[1], 2)"/>
 	  </xsl:variable>
-	  <xsl:call-template name="addcallout">
+	  <xsl:call-template name="tp:addcallout">
 	    <xsl:with-param name="area" select="$area"/>
 	    <xsl:with-param name="nodes"
 			    select="($rest, $nodes[position() &gt; 1])"/>
@@ -325,7 +353,7 @@
     </xsl:when>
     <xsl:otherwise>
       <xsl:copy-of select="$nodes[1]"/>
-      <xsl:call-template name="addcallout">
+      <xsl:call-template name="tp:addcallout">
 	<xsl:with-param name="area" select="$area"/>
 	<xsl:with-param name="nodes" select="$nodes[position() &gt; 1]"/>
 	<xsl:with-param name="pos" select="$pos"/>
@@ -334,46 +362,13 @@
   </xsl:choose>
 </xsl:template>
 
-<xsl:template match="db:area" mode="m:insert-callout">
+<xsl:template match="db:area" mode="mp:insert-callout">
   <ghost:co number="{@ghost:number}" xml:id="{@xml:id}"/>
 </xsl:template>
 
-<xsl:function name="f:pad">
-  <xsl:param name="count" as="xs:integer"/>
-  <xsl:param name="char" as="xs:string"/>
-
-  <xsl:choose>
-    <xsl:when test="$count &gt; 4">
-      <xsl:value-of select="$char"/>
-      <xsl:value-of select="$char"/>
-      <xsl:value-of select="$char"/>
-      <xsl:value-of select="$char"/>
-      <xsl:value-of select="f:pad($count - 4, $char)"/>
-    </xsl:when>
-    <xsl:when test="$count &gt; 3">
-      <xsl:value-of select="$char"/>
-      <xsl:value-of select="$char"/>
-      <xsl:value-of select="$char"/>
-      <xsl:value-of select="f:pad($count - 3, $char)"/>
-    </xsl:when>
-    <xsl:when test="$count &gt; 2">
-      <xsl:value-of select="$char"/>
-      <xsl:value-of select="$char"/>
-      <xsl:value-of select="f:pad($count - 2, $char)"/>
-    </xsl:when>
-    <xsl:when test="$count &gt; 1">
-      <xsl:value-of select="$char"/>
-      <xsl:value-of select="f:pad($count - 1, $char)"/>
-    </xsl:when>
-    <xsl:when test="$count &gt; 0">
-      <xsl:value-of select="$char"/>
-    </xsl:when>
-  </xsl:choose>
-</xsl:function>
-
 <!-- ============================================================ -->
 
-<xsl:template name="wrap-lines">
+<xsl:template name="tp:wrap-lines">
   <xsl:param name="nodes" as="node()*" required="yes"/>
 
   <xsl:variable name="br" as="element()">
@@ -394,7 +389,7 @@
 	</xsl:choose>
       </xsl:when>
       <xsl:otherwise>
-	<xsl:sequence select="f:trim-trailing-br($nodes)"/>
+	<xsl:sequence select="fp:trim-trailing-br($nodes)"/>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
@@ -412,12 +407,12 @@
 
 <!-- ============================================================ -->
 
-<xsl:function name="f:trim-trailing-br" as="node()*">
+<xsl:function name="fp:trim-trailing-br" as="node()*">
   <xsl:param name="nodes" as="node()*"/>
 
   <xsl:choose>
     <xsl:when test="$nodes[last()][self::ghost:br]">
-      <xsl:sequence select="f:trim-trailing-br($nodes[position() &lt; last()])"/>
+      <xsl:sequence select="fp:trim-trailing-br($nodes[position()&lt;last()])"/>
     </xsl:when>
     <xsl:otherwise>
       <xsl:sequence select="$nodes"/>
@@ -427,58 +422,85 @@
 
 <!-- ============================================================ -->
 
-<xsl:template match="db:programlisting" mode="m:pl-no-wrap-lb">
-  <xsl:copy>
-    <xsl:copy-of select="@*"/>
-    <xsl:call-template name="nowrap">
-      <xsl:with-param name="nowrap" select="xs:QName('ghost:br')"/>
-      <xsl:with-param name="content" select="node()"/>
-    </xsl:call-template>
-  </xsl:copy>
-</xsl:template>
+<doc:template name="t:unwrap" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Unwraps an element with a particular name</refpurpose>
 
-<xsl:template name="nowrap">
-  <xsl:param name="nowrap" as="xs:QName"/>
+<refdescription>
+<para>This template takes a sequence of nodes. It traverses that sequence
+making sure that any element with the specified name occurs at the top-most
+level of the sequence: it closes all open elements that the named element
+is nested within, outputs the named element, then reopens all the elements
+that it had been nested within.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>unwrap</term>
+<listitem>
+<para>The name of the element to unwrap.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>content</term>
+<listitem>
+<para>The sequence of nodes.</para>
+</listitem>
+</varlistentry>
+<varlistentry role="private"><term>stack</term>
+<listitem>
+<para>The stack of currently open elements.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The original content sequence modified so that all elements named
+<parameter>unwrap</parameter> are at the top level.</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="t:unwrap">
+  <xsl:param name="unwrap" as="xs:QName"/>
   <xsl:param name="content" as="node()*"/>
   <xsl:param name="stack" as="element()*" select="()"/>
 
   <xsl:choose>
     <xsl:when test="not($content)"/>
     <xsl:when test="$content[1] instance of element()
-                    and node-name($content[1]) = $nowrap">
-      <xsl:call-template name="close-stack">
+                    and node-name($content[1]) = $unwrap">
+      <xsl:call-template name="tp:close-stack">
 	<xsl:with-param name="stack" select="$stack"/>
       </xsl:call-template>
       <xsl:copy-of select="$content[1]"/>
-      <xsl:call-template name="open-stack">
+      <xsl:call-template name="tp:open-stack">
 	<xsl:with-param name="stack" select="$stack"/>
       </xsl:call-template>
-      <xsl:call-template name="nowrap">
-	<xsl:with-param name="nowrap" select="$nowrap"/>
+      <xsl:call-template name="t:unwrap">
+	<xsl:with-param name="unwrap" select="$unwrap"/>
 	<xsl:with-param name="content" select="$content[position() &gt; 1]"/>
 	<xsl:with-param name="stack" select="$stack"/>
       </xsl:call-template>
     </xsl:when>
     <xsl:when test="$content[1][self::ghost:end]">
       <xsl:copy-of select="$content[1]"/>
-      <xsl:call-template name="nowrap">
-	<xsl:with-param name="nowrap" select="$nowrap"/>
+      <xsl:call-template name="t:unwrap">
+	<xsl:with-param name="unwrap" select="$unwrap"/>
 	<xsl:with-param name="content" select="$content[position() &gt; 1]"/>
 	<xsl:with-param name="stack" select="$stack[position() &lt; last()]"/>
       </xsl:call-template>
     </xsl:when>
     <xsl:when test="$content[1] instance of element()">
       <xsl:copy-of select="$content[1]"/>
-      <xsl:call-template name="nowrap">
-	<xsl:with-param name="nowrap" select="$nowrap"/>
+      <xsl:call-template name="t:unwrap">
+	<xsl:with-param name="unwrap" select="$unwrap"/>
 	<xsl:with-param name="content" select="$content[position() &gt; 1]"/>
 	<xsl:with-param name="stack" select="($stack, $content[1])"/>
       </xsl:call-template>
     </xsl:when>
     <xsl:otherwise>
       <xsl:copy-of select="$content[1]"/>
-      <xsl:call-template name="nowrap">
-	<xsl:with-param name="nowrap" select="$nowrap"/>
+      <xsl:call-template name="t:unwrap">
+	<xsl:with-param name="unwrap" select="$unwrap"/>
 	<xsl:with-param name="content" select="$content[position() &gt; 1]"/>
 	<xsl:with-param name="stack" select="$stack"/>
       </xsl:call-template>
@@ -486,23 +508,23 @@
   </xsl:choose>
 </xsl:template>
 
-<xsl:template name="close-stack">
+<xsl:template name="tp:close-stack">
   <xsl:param name="stack" as="element()*" select="()"/>
 
   <xsl:if test="$stack">
     <ghost:end idref="{$stack[1]/@ghost:id}"/>
-    <xsl:call-template name="close-stack">
+    <xsl:call-template name="tp:close-stack">
       <xsl:with-param name="stack" select="$stack[position() &lt; last()]"/>
     </xsl:call-template>
   </xsl:if>
 </xsl:template>
 
-<xsl:template name="open-stack">
+<xsl:template name="tp:open-stack">
   <xsl:param name="stack" as="element()*" select="()"/>
 
   <xsl:if test="$stack">
     <xsl:copy-of select="$stack[1]"/>
-    <xsl:call-template name="open-stack">
+    <xsl:call-template name="tp:open-stack">
       <xsl:with-param name="stack" select="$stack[position() &gt; 1]"/>
     </xsl:call-template>
   </xsl:if>
@@ -510,15 +532,15 @@
 
 <!-- ============================================================ -->
 
-<xsl:template match="*" mode="m:pl-no-lb">
+<xsl:template match="*" mode="mp:pl-no-lb">
   <xsl:copy>
     <xsl:copy-of select="@*"/>
-    <xsl:apply-templates mode="m:pl-no-lb"/>
+    <xsl:apply-templates mode="mp:pl-no-lb"/>
   </xsl:copy>
 </xsl:template>
 
 <xsl:template match="text()"
-	      mode="m:pl-no-lb">
+	      mode="mp:pl-no-lb">
   <xsl:analyze-string select="." regex="\n">
     <xsl:matching-substring>
       <ghost:br/>
@@ -530,23 +552,39 @@
 </xsl:template>
 
 <xsl:template match="comment()|processing-instruction()"
-	      mode="m:pl-no-lb">
+	      mode="mp:pl-no-lb">
   <xsl:copy/>
 </xsl:template>
 
 <!-- ============================================================ -->
 
-<xsl:template match="*" mode="m:pl-empty-tags">
+<doc:mode name="m:make-empty-elements" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Make all elements empty</refpurpose>
+
+<refdescription>
+<para>This mode is used to completely flatten all nesting in a tree.
+Every start tag is replaced with an empty tag that has a
+<tag class="attribute">ghost:id</tag> attribute. Every end tag is
+replaced with an empty <tag>ghost:end</tag> element that has an 
+<tag class="attribute">idref</tag> attribute pointing to the
+appropriate <tag class="attribute">ghost:id</tag>.</para>
+
+<para>To reverse the process, see
+<function role="named-template">t:restore-content</function>.</para>
+</refdescription>
+</doc:mode>
+
+<xsl:template match="*" mode="m:make-empty-elements">
   <xsl:element name="{name(.)}" namespace="{namespace-uri(.)}">
     <xsl:copy-of select="@*"/>
     <xsl:attribute name="ghost:id" select="generate-id()"/>
   </xsl:element>
-  <xsl:apply-templates mode="m:pl-empty-tags"/>
+  <xsl:apply-templates mode="m:make-empty-elements"/>
   <ghost:end idref="{generate-id()}"/>
 </xsl:template>
 
 <xsl:template match="comment()|processing-instruction()|text()"
-	      mode="m:pl-empty-tags">
+	      mode="m:make-empty-elements">
   <xsl:copy/>
 </xsl:template>
 
