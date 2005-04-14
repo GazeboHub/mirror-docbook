@@ -10,3 +10,14 @@ Private templates go in tp: (http://docbook.org/xslt/ns/template/private)
 Named templates have '-'s not '.'s
 
 Use tools/doccheck.xsl to check for documentation problems
+
+Use tools/writetests to run the unit tests:
+
+  1. Process html/docbook.xsl with tools/writetests.xsl using Saxon 8b
+     (you need 8.4 patched). This will produce a stylesheet, tests.xsl
+
+  2. Process tests.xsl with any input you want. This will produce an HTML
+     summary of the unit tests.
+
+
+

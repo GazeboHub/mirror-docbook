@@ -453,7 +453,7 @@ on the <parameter>pixels-per-inch</parameter> parameter.</para>
   <u:test>
     <u:param name="table-width">6in</u:param>
     <u:param name="colgroup" as="element()">
-      <colgroup>
+      <colgroup xmlns="http://www.w3.org/1999/xhtml">
 	<col colwidth="2in"/>
 	<col colwidth="3in"/>
 	<col colwidth="8pt"/>
@@ -568,7 +568,7 @@ on the <parameter>pixels-per-inch</parameter> parameter.</para>
     </xsl:for-each>
   </xsl:variable>
 
-  <colgroups>
+  <colgroup>
     <xsl:choose>
       <xsl:when test="sum($parsedcols/@ghost:rel) = 0">
 	<xsl:for-each select="$parsedcols">
@@ -664,7 +664,7 @@ on the <parameter>pixels-per-inch</parameter> parameter.</para>
 	</xsl:choose>
       </xsl:otherwise>
     </xsl:choose>
-  </colgroups>
+  </colgroup>
 </xsl:template>
 
 <!-- ============================================================ -->

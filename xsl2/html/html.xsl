@@ -6,9 +6,10 @@
                 xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
                 xmlns:h="http://www.w3.org/1999/xhtml"
                 xmlns:m="http://docbook.org/xslt/ns/mode"
+                xmlns:u="http://nwalsh.com/xsl/unittests#"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 xmlns="http://www.w3.org/1999/xhtml"
-                exclude-result-prefixes="db doc f fn h m xs"
+                exclude-result-prefixes="db doc f fn h m u xs"
                 version="2.0">
 
 <!-- ============================================================ -->
@@ -57,6 +58,7 @@ not have an ID, make this parameter zero. It defaults to 1.</para>
 <refreturn>
 <para>An “id” attribute or nothing.</para>
 </refreturn>
+
 </doc:template>
 
 <xsl:template name="id">
@@ -106,13 +108,25 @@ not have an ID, make this parameter non-zero. It defaults to 0.</para>
 <refreturn>
 <para>An XHTML anchor or nothing.</para>
 </refreturn>
+
+<u:unittests template="anchor">
+  <u:test>
+    <u:param name="node" as="element()">
+      <db:para xml:id="foo"/>
+    </u:param>
+    <u:result>
+      <a name="foo" id="foo" xmlns="http://www.w3.org/1999/xhtml"/>
+    </u:result>
+  </u:test>
+</u:unittests>
+
 </doc:template>
 
 <xsl:template name="anchor">
   <xsl:param name="node" select="."/>
   <xsl:param name="force" select="0"/>
 
-  <xsl:if test="$force != 0 or (@id or @xml:id)">
+  <xsl:if test="$force != 0 or ($node/@id or $node/@xml:id)">
     <a name="{f:node-id($node)}" id="{f:node-id($node)}"/>
   </xsl:if>
 </xsl:template>
