@@ -37,7 +37,10 @@ Any element processed in this mode should generate its title.</para>
   <xsl:param name="verbose" select="1"/>
 
   <xsl:variable name="markup">
-    <xsl:next-match/>
+    <xsl:next-match>
+      <xsl:with-param name="allow-anchors" select="$allow-anchors"/>
+      <xsl:with-param name="verbose" select="$verbose"/>
+    </xsl:next-match>
   </xsl:variable>
 
   <xsl:choose>
@@ -51,17 +54,24 @@ Any element processed in this mode should generate its title.</para>
 </xsl:template>
 
 <xsl:template match="*" mode="m:title-markup">
+  <xsl:param name="allow-anchors" select="0"/>
   <xsl:param name="verbose" select="1"/>
 
   <xsl:choose>
     <xsl:when test="db:info/db:title">
-      <xsl:apply-templates select="db:info/db:title[1]" mode="m:title-markup"/>
+      <xsl:apply-templates select="db:info/db:title[1]" mode="m:title-markup">
+	<xsl:with-param name="allow-anchors" select="$allow-anchors"/>
+	<xsl:with-param name="verbose" select="$verbose"/>
+      </xsl:apply-templates>
     </xsl:when>
 
     <xsl:when test="fn:node-name(.) = xs:QName('db:partintro')">
       <!-- partintro's don't have titles, use the parent (part or reference)
 	   title instead. -->
-      <xsl:apply-templates select="parent::*" mode="m:title-markup"/>
+      <xsl:apply-templates select="parent::*" mode="m:title-markup">
+	<xsl:with-param name="allow-anchors" select="$allow-anchors"/>
+	<xsl:with-param name="verbose" select="$verbose"/>
+      </xsl:apply-templates>
     </xsl:when>
 
     <xsl:otherwise>
@@ -184,7 +194,7 @@ title.</para>
   </xsl:choose>
 </xsl:template>
 
-<xsl:template match="titleabbrev" mode="m:title-markup">
+<xsl:template match="db:titleabbrev" mode="m:title-markup">
   <xsl:apply-templates/>
 </xsl:template>
 

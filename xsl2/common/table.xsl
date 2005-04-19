@@ -74,7 +74,8 @@ each row and cell.</para>
   <xsl:variable name="row">
     <xsl:copy>
       <xsl:copy-of select="@*"/>
-      <xsl:apply-templates select="db:entry[1]" mode="m:cals-phase-1">
+      <xsl:apply-templates select="(db:entry|db:entrytbl)[1]"
+			   mode="m:cals-phase-1">
 	<xsl:with-param name="overhang" select="$overhang"/>
 	<xsl:with-param name="prevpos" select="0"/>
       </xsl:apply-templates>
@@ -197,7 +198,8 @@ each row and cell.</para>
     </ghost:overlapped>
   </xsl:for-each>
 
-  <xsl:apply-templates select="following-sibling::db:entry[1]"
+  <xsl:apply-templates select="(following-sibling::db:entry
+			        |following-sibling::db:entrytbl)[1]"
 		       mode="m:cals-phase-1">
     <xsl:with-param name="overhang" select="$overhang"/>
     <xsl:with-param name="prevpos" select="$pos + $width - 1"/>
@@ -417,7 +419,7 @@ acceptable to HTML or XSL-FO.</para>
 <listitem>
 <para>Specifies if absolute widths should be expressed in pixels: 0 for
 false, any other value for true. Converting lengths to pixels is dependent
-on the <parameter>pixels-per-inch</parameter> parameter.</para>
+on the <parameter>pixels.per.inch</parameter> parameter.</para>
 </listitem>
 </varlistentry>
 </variablelist>
@@ -428,8 +430,8 @@ on the <parameter>pixels-per-inch</parameter> parameter.</para>
 </refreturn>
 
 <u:unittests template="adjust-column-widths">
-  <u:param name="pixels-per-inch" select="96"/>
-  <u:param name="nominal-table-width" select="6 * $pixels-per-inch"/>
+  <u:param name="pixels.per.inch" select="96"/>
+  <u:param name="nominal-table-width" select="6 * $pixels.per.inch"/>
   <u:test>
     <u:param name="table-width" select="'6in'"/>
     <u:param name="colgroup" as="element()">
@@ -577,7 +579,7 @@ on the <parameter>pixels-per-inch</parameter> parameter.</para>
 	    <xsl:attribute name="colwidth">
 	      <xsl:choose>
 		<xsl:when test="$abspixels = 0">
-		  <xsl:value-of select="format-number(@ghost:abs div $pixels-per-inch,
+		  <xsl:value-of select="format-number(@ghost:abs div $pixels.per.inch,
 					              '0.00')"/>
 		  <xsl:text>in</xsl:text>
 		</xsl:when>
@@ -649,7 +651,7 @@ on the <parameter>pixels-per-inch</parameter> parameter.</para>
 		  <xsl:choose>
 		    <xsl:when test="$abspixels = 0">
 		      <xsl:value-of select="format-number(@ghost:rel
-					                  div $pixels-per-inch,
+					                  div $pixels.per.inch,
 					    '0.00')"/>
 		      <xsl:text>in</xsl:text>
 		    </xsl:when>
@@ -675,7 +677,7 @@ on the <parameter>pixels-per-inch</parameter> parameter.</para>
 <refdescription>
 <para>This function converts a length, for example, “3mm” or “2in”,
 into an integral number of pixels. The size of a pixel is determined
-by the <parameter>pixels-per-inch</parameter> parameter.</para>
+by the <parameter>pixels.per.inch</parameter> parameter.</para>
 <para>The following units are recognized: inches (in), centimeters
 (cm), milimeters (mm), picas (pc), points (pt), and pixels (px).
 A value specified without units is assumed to be pixels. For convenience,
@@ -743,19 +745,19 @@ length specified was a percentage, in which case it is returned unchanged.</para
       <xsl:variable name="units" select="substring-after($spaced, ' ')"/>
       <xsl:choose>
 	<xsl:when test="$units = 'in'">
-	  <xsl:value-of select="xs:integer($magnitude * $pixels-per-inch)"/>
+	  <xsl:value-of select="xs:integer($magnitude * $pixels.per.inch)"/>
 	</xsl:when>
 	<xsl:when test="$units = 'cm'">
-	  <xsl:value-of select="xs:integer($magnitude * $pixels-per-inch div 2.54)"/>
+	  <xsl:value-of select="xs:integer($magnitude * $pixels.per.inch div 2.54)"/>
 	</xsl:when>
 	<xsl:when test="$units = 'mm'">
-	  <xsl:value-of select="xs:integer($magnitude * $pixels-per-inch div 25.4)"/>
+	  <xsl:value-of select="xs:integer($magnitude * $pixels.per.inch div 25.4)"/>
 	</xsl:when>
 	<xsl:when test="$units = 'pc'">
-	  <xsl:value-of select="xs:integer($magnitude * $pixels-per-inch div 72 * 12)"/>
+	  <xsl:value-of select="xs:integer($magnitude * $pixels.per.inch div 72 * 12)"/>
 	</xsl:when>
 	<xsl:when test="$units = 'pt'">
-	  <xsl:value-of select="xs:integer($magnitude * $pixels-per-inch div 72)"/>
+	  <xsl:value-of select="xs:integer($magnitude * $pixels.per.inch div 72)"/>
 	</xsl:when>
 	<xsl:when test="$units = 'px'">
 	  <xsl:value-of select="xs:integer($magnitude)"/>
@@ -766,7 +768,7 @@ length specified was a percentage, in which case it is returned unchanged.</para
 	    <xsl:value-of select="$units"/>
 	  </xsl:message>
 	  <!-- 1in -->
-	  <xsl:value-of select="$pixels-per-inch"/>
+	  <xsl:value-of select="$pixels.per.inch"/>
 	</xsl:otherwise>
       </xsl:choose>
     </xsl:when>

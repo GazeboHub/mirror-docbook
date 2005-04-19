@@ -192,7 +192,6 @@ that should be used to generate a cross-reference to it.</para>
     <xsl:with-param name="xrefstyle" select="$xrefstyle"/>
     <xsl:with-param name="referrer" select="$referrer"/>
   </xsl:call-template>
-
 </xsl:template>
 
 <!-- ============================================================ -->
@@ -393,7 +392,7 @@ rendition of a cross-reference to itself.</para>
   </xsl:call-template>
 </xsl:template>
 
-<xsl:template match="listitem" mode="m:object-xref-markup">
+<xsl:template match="db:listitem" mode="m:object-xref-markup">
   <xsl:param name="verbose" select="1"/>
 
   <xsl:choose>
@@ -416,7 +415,7 @@ rendition of a cross-reference to itself.</para>
   </xsl:choose>
 </xsl:template>
 
-<xsl:template match="question" mode="m:object-xref-markup">
+<xsl:template match="db:question" mode="m:object-xref-markup">
   <xsl:param name="purpose"/>
   <xsl:param name="xrefstyle"/>
   <xsl:param name="referrer"/>

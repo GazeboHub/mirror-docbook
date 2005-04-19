@@ -3,11 +3,19 @@
 		xmlns:db="http://docbook.org/docbook-ng"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
-		xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
+		xmlns:fp="http://docbook.org/xslt/ns/extension/private"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
+		xmlns:t="http://docbook.org/xslt/ns/template"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		exclude-result-prefixes="db doc f fn m xs"
+		exclude-result-prefixes="db doc f fp m t xs"
                 version="2.0">
+
+
+<xsl:param name="use.role.for.mediaobject" select="1"/>
+<xsl:param name="preferred.mediaobject.role" select="''"/>
+<xsl:param name="tex.math.in.alt" select="0"/>
+<xsl:param name="use.svg" select="1"/>
+<xsl:param name="graphic.default.extension" select="''"/>
 
 <doc:reference xmlns="http://docbook.org/docbook-ng">
 <info>
@@ -573,7 +581,7 @@ year range is <quote>1991-1992</quote> but discretely it's
   -->
 
   <xsl:choose>
-    <xsl:when test="$print.ranges = 0 and count($years) &gt; 0">
+    <xsl:when test="$print.ranges = 0 and exists($years)">
       <xsl:choose>
         <xsl:when test="count($years) = 1">
           <xsl:apply-templates select="$years[1]" mode="titlepage.mode"/>
@@ -667,6 +675,418 @@ year range is <quote>1991-1992</quote> but discretely it's
       </xsl:call-template>
     </xsl:otherwise>
   </xsl:choose>
+</xsl:template>
+
+<!-- ====================================================================== -->
+
+<doc:template name="t:select-mediaobject" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Selects and processes an appropriate media object from a list</refpurpose>
+
+<refdescription>
+<para>This template takes a list of media objects (usually the
+children of a mediaobject or inlinemediaobject) and processes
+the "right" object.</para>
+
+<para>This template relies on <function>f:select-mediaobject-index</function>
+to determine which object in the list is appropriate.</para>
+
+<para>If no acceptable object is located, nothing happens.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>olist</term>
+<listitem>
+<para>The node list of potential objects to examine.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>Calls &lt;xsl:apply-templates&gt; on the selected object.</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="t:select-mediaobject">
+  <xsl:variable name="olist" select="*[not(self::db:info)]"/>
+  
+  <xsl:variable name="mediaobject.index"
+		select="f:select-mediaobject-index($olist)"/>
+
+  <xsl:if test="$mediaobject.index != 0">
+    <xsl:apply-templates select="$olist[position() = $mediaobject.index]"/>
+  </xsl:if>
+</xsl:template>
+
+<!-- ====================================================================== -->
+
+<doc:function name="f:select-mediaobject-index"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Selects the position of the appropriate media object from a list</refpurpose>
+
+<refdescription>
+<para>This function takes a list of media objects (usually the
+children of a mediaobject or inlinemediaobject) and determines
+the "right" object. It returns the position of that object
+to be used by the calling template.</para>
+
+<para>If the global parameter
+<parameter>use.role.for.mediaobject</parameter> is nonzero, then it
+first checks for an object with a role attribute of the appropriate
+value. It takes the first of those. Otherwise, it takes the first
+acceptable object in the list.</para>
+
+<para>This template relies on a <function>f:is-acceptable-mediaobject</function>
+to determine if a given object is an acceptable graphic. The semantics
+of media objects is that the first acceptable graphic should be used.
+</para>
+
+<para>If no acceptable object is located, no index is returned.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>olist</term>
+<listitem>
+<para>The node list of potential objects to examine.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>Returns the position of the selected object in the original list
+or 0 if no object is selected.</para>
+</refreturn>
+</doc:function>
+
+<xsl:function name="f:select-mediaobject-index" as="xs:integer">
+  <xsl:param name="olist" as="element()*"/>
+
+  <xsl:choose>
+    <!-- Test for objects preferred by role -->
+    <xsl:when test="$use.role.for.mediaobject != 0 
+		    and $preferred.mediaobject.role != ''
+		    and $olist[@role = $preferred.mediaobject.role]"> 
+      
+      <!-- Get the first hit's position index -->
+      <xsl:for-each select="$olist">
+	<xsl:if test="@role = $preferred.mediaobject.role and
+		      not(preceding-sibling::*
+		          [@role = $preferred.mediaobject.role])"> 
+	  <xsl:value-of select="position()"/> 
+	</xsl:if>
+      </xsl:for-each>
+    </xsl:when>
+
+    <xsl:when test="$use.role.for.mediaobject != 0 
+		    and $olist[@role = $stylesheet.result.type]">
+      <!-- Get the first hit's position index -->
+      <xsl:for-each select="$olist">
+        <xsl:if test="@role = $stylesheet.result.type and 
+		      not(preceding-sibling::*
+		          [@role = $stylesheet.result.type])"> 
+	  <xsl:value-of select="position()"/> 
+        </xsl:if>
+      </xsl:for-each>
+    </xsl:when>
+
+    <!-- Accept 'html' for $stylesheet.result.type = 'xhtml' -->
+    <xsl:when test="$use.role.for.mediaobject != 0 
+		    and $stylesheet.result.type = 'xhtml'
+		    and $olist[@role = 'html']">
+      <!-- Get the first hit's position index -->
+      <xsl:for-each select="$olist">
+	<xsl:if test="@role = 'html' and 
+		      not(preceding-sibling::*[@role = 'html'])"> 
+	  <xsl:value-of select="position()"/> 
+        </xsl:if>
+      </xsl:for-each>
+    </xsl:when>
+
+    <xsl:otherwise>
+      <xsl:value-of select="fp:select-mediaobject-index($olist,1)"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
+<xsl:function name="fp:select-mediaobject-index" as="xs:integer">
+  <xsl:param name="olist" as="element()*"/>
+  <xsl:param name="count" as="xs:integer"/>
+
+  <xsl:choose>
+    <xsl:when test="$count &gt; count($olist)">
+      <xsl:value-of select="0"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:variable name="object" select="$olist[position()=$count]"/>
+    
+      <xsl:variable name="useobject">
+	<xsl:choose>
+	  <!-- Phrase is used only for TeX Math when the output is FO -->
+	  <xsl:when test="name($object)='textobject'
+			  and $object/phrase
+			  and $object/@role='tex'
+			  and $stylesheet.result.type = 'fo'
+			  and $tex.math.in.alt != ''">
+	    <xsl:value-of select="1"/>
+	  </xsl:when>
+
+	  <!-- Otherwise, phrase is never used -->
+	  <xsl:when test="name($object)='textobject' and $object/phrase">
+	    <xsl:value-of select="0"/>
+	  </xsl:when>
+
+	  <!-- The first textobject is a reasonable fallback -->
+	  <xsl:when test="name($object)='textobject'
+			  and $object[not(@role) or @role!='tex']">
+	    <xsl:value-of select="1"/>
+	  </xsl:when>
+
+	  <!-- don't use graphic when output is FO, TeX Math is used 
+	       and there is math in alt element -->
+	  <xsl:when test="$object/ancestor::equation
+			  and $object/ancestor::equation/alt[@role='tex']
+			  and $stylesheet.result.type = 'fo'
+			  and $tex.math.in.alt != ''">
+	    <xsl:value-of select="0"/>
+	  </xsl:when>
+
+	  <!-- If there's only one object, use it -->
+	  <xsl:when test="$count = 1 and count($olist) = 1">
+	    <xsl:value-of select="1"/>
+	  </xsl:when>
+
+	  <!-- Otherwise, see if this one is a useable graphic -->
+	  <xsl:otherwise>
+	    <xsl:choose>
+	      <!-- peek inside imageobjectco to simplify the test -->
+	      <xsl:when test="$object/self::db:imageobjectco">
+		<xsl:value-of select="f:is-acceptable-mediaobject
+				      ($object/db:imageobject)"/>
+	      </xsl:when>
+	      <xsl:otherwise>
+		<xsl:value-of select="f:is-acceptable-mediaobject($object)"/>
+	      </xsl:otherwise>
+	    </xsl:choose>
+	  </xsl:otherwise>
+	</xsl:choose>
+      </xsl:variable>
+    
+      <xsl:choose>
+	<xsl:when test="$useobject != 0">
+	  <xsl:value-of select="$count"/>
+	</xsl:when>
+
+	<xsl:otherwise>
+	  <xsl:value-of select="fp:select-mediaobject-index($olist, $count+1)"/>
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
+<doc:function name="f:is-acceptable-mediaobject" xmlns="">
+<refpurpose>Returns '1' if the specified media object is recognized.</refpurpose>
+
+<refdescription>
+<para>This template examines a media object and returns '1' if the
+object is recognized as a graphic.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>object</term>
+<listitem>
+<para>The media object to consider.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>0 or 1</para>
+</refreturn>
+</doc:function>
+
+<xsl:function name="f:is-acceptable-mediaobject" as="xs:integer">
+  <xsl:param name="object" as="element()"/>
+
+  <xsl:variable name="filename"
+		select="f:mediaobject-filename($object)"/>
+
+  <xsl:variable name="ext"
+		select="f:filename-extension($filename)"/>
+
+  <xsl:variable name="data" select="$object/videodata
+				    |$object/imagedata
+                                    |$object/audiodata"/>
+
+  <xsl:variable name="format" select="lower-case($data/@format)"/>
+
+  <xsl:choose>
+    <xsl:when test="$use.svg = 0 and $format = 'svg'">0</xsl:when>
+    <xsl:when xmlns:svg="http://www.w3.org/2000/svg"
+	      test="$use.svg != 0 and $object/svg:*">1</xsl:when>
+    <xsl:when test="index-of($graphic.formats, $format)">1</xsl:when>
+    <xsl:when test="index-of($graphic.extensions, $ext)">1</xsl:when>
+    <xsl:otherwise>0</xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
+<xsl:function name="f:mediaobject-filename">
+  <xsl:param name="object" as="element()"/>
+
+  <xsl:variable name="data" select="$object/videodata
+                                    |$object/imagedata
+                                    |$object/audiodata
+                                    |$object"/>
+
+  <xsl:variable name="filename">
+    <xsl:choose>
+      <xsl:when test="$data[@fileref]">
+	<xsl:apply-templates select="$data/@fileref"/>
+      </xsl:when>
+      <xsl:when test="$data[@entityref]">
+	<xsl:value-of select="$data/unparsed-entity-uri($data/@entityref)"/>
+      </xsl:when>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:variable name="real.ext" select="f:filename-extension($filename)"/>
+
+  <xsl:variable name="ext">
+    <xsl:choose>
+      <xsl:when test="$real.ext != ''">
+        <xsl:value-of select="$real.ext"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="$graphic.default.extension"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:choose>
+    <xsl:when test="$real.ext = ''">
+      <xsl:choose>
+	<xsl:when test="$ext != ''">
+	  <xsl:value-of select="$filename"/>
+	  <xsl:text>.</xsl:text>
+	  <xsl:value-of select="$ext"/>
+	</xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="$filename"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:when>
+    <xsl:when test="not(index-of($graphic.extensions, $ext))">
+      <xsl:choose>
+        <xsl:when test="$graphic.default.extension != ''">
+          <xsl:value-of select="$filename"/>
+          <xsl:text>.</xsl:text>
+          <xsl:value-of select="$graphic.default.extension"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="$filename"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:value-of select="$filename"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
+<!-- ============================================================ -->
+
+<xsl:template name="t:relative-uri">
+  <xsl:param name="filename" select="."/>
+  <xsl:param name="destdir" select="''"/>
+  
+  <xsl:variable name="srcurl">
+    <xsl:call-template name="t:strippath">
+      <xsl:with-param name="filename">
+        <xsl:call-template name="t:xml-base-dirs">
+	  <xsl:with-param name="base.elem" 
+			  select="$filename/ancestor-or-self::*
+				    [@xml:base != ''][1]"/>
+	</xsl:call-template>
+        <xsl:value-of select="$filename"/>
+      </xsl:with-param>
+    </xsl:call-template>
+  </xsl:variable>
+
+  <xsl:variable name="srcurl.trimmed"
+		select="f:trim-common-uri-paths($srcurl, $destdir)"/>
+
+  <xsl:variable name="destdir.trimmed"
+		select="f:trim-common-uri-paths($destdir, $srcurl)"/>
+
+  <xsl:variable name="depth"
+		select="count(tokenize($destdir.trimmed, '/'))"/>
+
+  <xsl:for-each select="(1 to $depth)">
+    <xsl:value-of select="'../'"/>
+  </xsl:for-each>
+
+  <xsl:value-of select="$srcurl.trimmed"/>
+</xsl:template>
+
+<xsl:template name="t:xml-base-dirs">
+  <xsl:param name="base.elem" select="()"/>
+
+  <!-- Recursively resolve xml:base attributes -->
+  <xsl:if test="$base.elem/ancestor::*[@xml:base != '']">
+    <xsl:call-template name="t:xml-base-dirs">
+      <xsl:with-param name="base.elem" 
+                      select="$base.elem/ancestor::*[@xml:base != ''][1]"/>
+    </xsl:call-template>
+  </xsl:if>
+  <xsl:call-template name="t:getdir">
+    <xsl:with-param name="filename" select="$base.elem/@xml:base"/>
+  </xsl:call-template>
+</xsl:template>
+
+<xsl:template name="t:strippath">
+  <xsl:param name="filename" select="''"/>
+
+  <xsl:choose>
+    <!-- Leading .. are not eliminated -->
+    <xsl:when test="starts-with($filename, '../')">
+      <xsl:value-of select="'../'"/>
+      <xsl:call-template name="t:strippath">
+        <xsl:with-param name="filename"
+			select="substring-after($filename, '../')"/>
+      </xsl:call-template>
+    </xsl:when>
+    <xsl:when test="contains($filename, '/../')">
+      <xsl:call-template name="t:strippath">
+        <xsl:with-param name="filename">
+	  <xsl:call-template name="t:getdir">
+	    <xsl:with-param name="filename"
+			    select="substring-before($filename, '/../')"/>
+	  </xsl:call-template>
+	  <xsl:value-of select="substring-after($filename, '/../')"/>
+	</xsl:with-param>
+      </xsl:call-template>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:value-of select="$filename"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
+
+<xsl:template name="t:getdir">
+  <xsl:param name="filename" select="''"/>
+  <xsl:if test="contains($filename, '/')">
+    <xsl:value-of select="substring-before($filename, '/')"/>
+    <xsl:text>/</xsl:text>
+    <xsl:call-template name="t:getdir">
+      <xsl:with-param name="filename"
+		      select="substring-after($filename, '/')"/>
+    </xsl:call-template>
+  </xsl:if>
 </xsl:template>
 
 </xsl:stylesheet>

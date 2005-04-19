@@ -198,7 +198,7 @@ GlossEntry ::=
       </xsl:call-template>
       <xsl:choose>
 	<xsl:when test="$target">
-	  <a href="{f:href($target)}">
+	  <a href="{f:href(/,$target)}">
 	    <xsl:apply-templates select="$target" mode="m:xref-to"/>
 	  </a>
 	</xsl:when>
@@ -242,7 +242,7 @@ GlossEntry ::=
 
   <xsl:choose>
     <xsl:when test="$target">
-      <a href="{f:href($target)}">
+      <a href="{f:href(/,$target)}">
         <xsl:apply-templates select="$target" mode="m:xref-to"/>
       </a>
     </xsl:when>

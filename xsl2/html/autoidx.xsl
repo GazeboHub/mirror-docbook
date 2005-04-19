@@ -341,7 +341,7 @@
         </xsl:variable>
 
         <xsl:attribute name="href">
-	  <xsl:value-of select="f:href(&section;)"/>
+	  <xsl:value-of select="f:href(/,&section;)"/>
         </xsl:attribute>
 
         <xsl:value-of select="$title"/> <!-- text only -->
@@ -373,7 +373,7 @@
       <xsl:variable name="zone" select="substring-before($zones, ' ')"/>
       <xsl:variable name="target" select="key('sections', $zone)[&scope;]"/>
 
-      <a href="{f:href($target[1])}">
+      <a href="{f:href(/,$target[1])}">
         <xsl:apply-templates select="$target[1]" mode="m:index-title-content"/>
       </a>
       <xsl:text>, </xsl:text>
@@ -388,7 +388,7 @@
       <xsl:variable name="zone" select="$zones"/>
       <xsl:variable name="target" select="key('sections', $zone)[&scope;]"/>
 
-      <a href="{f:href($target[1])}">
+      <a href="{f:href(/,$target[1])}">
         <xsl:apply-templates select="$target[1]" mode="m:index-title-content"/>
       </a>
     </xsl:otherwise>

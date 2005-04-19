@@ -21,7 +21,7 @@
 
 <xsl:param name="linenumbering.everyNth" select="2"/>
 <xsl:param name="linenumbering.width" select="3"/>
-<xsl:param name="linenumbering.separator" select="' | '"/>
+<xsl:param name="linenumbering.separator" select="''"/>
 <xsl:param name="linenumbering.padchar" select="' '"/>
 
 <xsl:strip-space elements="*"/>
@@ -176,17 +176,26 @@ ordinary, straightforward manner.</para>
 		      or $linenumber mod $linenumbering.everyNth = 0">
 	<xsl:variable name="numwidth"
 		      select="string-length(string($linenumber))"/>
-	<xsl:if test="$numwidth &lt; $linenumbering.width">
-	  <xsl:value-of select="f:pad($linenumbering.width - $numwidth,
-				      $linenumbering.padchar)"/>
-	</xsl:if>
-	<xsl:value-of select="$linenumber"/>
-	<xsl:value-of select="$linenumbering.separator"/>
+
+	<ghost:linenumber>
+	  <xsl:if test="$numwidth &lt; $linenumbering.width">
+	    <xsl:value-of select="f:pad($linenumbering.width - $numwidth,
+				        $linenumbering.padchar)"/>
+	  </xsl:if>
+	  <xsl:value-of select="$linenumber"/>
+	</ghost:linenumber>
+	<ghost:linenumber-separator>
+	  <xsl:value-of select="$linenumbering.separator"/>
+	</ghost:linenumber-separator>
       </xsl:when>
       <xsl:otherwise>
-	<xsl:value-of select="f:pad($linenumbering.width,
-			            $linenumbering.padchar)"/>
-	<xsl:value-of select="$linenumbering.separator"/>
+	<ghost:linenumber>
+	  <xsl:value-of select="f:pad($linenumbering.width,
+				      $linenumbering.padchar)"/>
+	</ghost:linenumber>
+	<ghost:linenumber-separator>
+	  <xsl:value-of select="$linenumbering.separator"/>
+	</ghost:linenumber-separator>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:if>

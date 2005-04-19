@@ -3,12 +3,12 @@
                 xmlns:db="http://docbook.org/docbook-ng"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:f="http://docbook.org/xslt/ns/extension"
-                xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
+                xmlns:fp="http://docbook.org/xslt/ns/extension/private"
                 xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0"
                 xmlns:m="http://docbook.org/xslt/ns/mode"
                 xmlns:u="http://nwalsh.com/xsl/unittests#"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                exclude-result-prefixes="db doc f fn l m u xs"
+                exclude-result-prefixes="db doc f fp l m u xs"
                 version="2.0">
 
 <doc:reference xmlns="http://docbook.org/docbook-ng">
@@ -55,7 +55,7 @@ to be incomplete. Don't forget to read the source, too :-)</para>
 <para>This function returns the <tag class="attribute">id</tag> or
 <tag class="attribute">xml:id</tag> of the specified node. If the
 node does not have an ID, the XSLT
-<function>fn:generate-id()</function> function is used to create one.
+<function>generate-id()</function> function is used to create one.
 </para>
 </refdescription>
 
@@ -275,16 +275,16 @@ is the first style in that list.</para>
 <xsl:function name="f:next-orderedlist-numeration" as="xs:string">
   <xsl:param name="numeration" as="xs:string"/>
 
-  <xsl:variable name="pos" select="fn:index-of($orderedlist.numeration.styles,
-                                               $numeration)[1]"/>
+  <xsl:variable name="pos" select="index-of($orderedlist.numeration.styles,
+                                            $numeration)[1]"/>
 
   <xsl:choose>
     <xsl:when test="not($pos)">
       <xsl:value-of select="$orderedlist.numeration.styles[1]"/>
     </xsl:when>
-    <xsl:when test="fn:subsequence($orderedlist.numeration.styles,$pos+1,1)">
-      <xsl:value-of select="fn:subsequence($orderedlist.numeration.styles,
-			                   $pos+1,1)"/>
+    <xsl:when test="subsequence($orderedlist.numeration.styles,$pos+1,1)">
+      <xsl:value-of select="subsequence($orderedlist.numeration.styles,
+			                $pos+1,1)"/>
     </xsl:when>
     <xsl:otherwise>
       <xsl:value-of select="$orderedlist.numeration.styles[1]"/>
@@ -437,16 +437,16 @@ is the first style in that list.</para>
 <xsl:function name="f:next-itemizedlist-symbol" as="xs:string">
   <xsl:param name="symbol"/>
 
-  <xsl:variable name="pos" select="fn:index-of($itemizedlist.numeration.symbols,
-                                               $symbol)[1]"/>
+  <xsl:variable name="pos" select="index-of($itemizedlist.numeration.symbols,
+                                            $symbol)[1]"/>
 
   <xsl:choose>
     <xsl:when test="not($pos)">
       <xsl:value-of select="$itemizedlist.numeration.symbols[1]"/>
     </xsl:when>
-    <xsl:when test="fn:subsequence($itemizedlist.numeration.symbols,$pos+1,1)">
-      <xsl:value-of select="fn:subsequence($itemizedlist.numeration.symbols,
-			                   $pos+1,1)"/>
+    <xsl:when test="subsequence($itemizedlist.numeration.symbols,$pos+1,1)">
+      <xsl:value-of select="subsequence($itemizedlist.numeration.symbols,
+			                $pos+1,1)"/>
     </xsl:when>
     <xsl:otherwise>
       <xsl:value-of select="$itemizedlist.numeration.symbols[1]"/>
@@ -570,7 +570,8 @@ or <tag>steps</tag>.</para>
 	  <xsl:value-of select="$procedure.step.numeration.styles[1]"/>
 	</xsl:when>
 	<xsl:otherwise>
-	  <xsl:value-of select="fn:subsequence($procedure.step.numeration.styles,$sstype,1)"/>
+	  <xsl:value-of select="subsequence($procedure.step.numeration.styles,
+				            $sstype,1)"/>
 	</xsl:otherwise>
       </xsl:choose>
     </xsl:when>
@@ -578,7 +579,8 @@ or <tag>steps</tag>.</para>
       <xsl:variable name="sdepth"
 		    select="count($context/ancestor::db:substeps)"/>
       <xsl:variable name="stype" select="($sdepth mod $format.length)+1"/>
-      <xsl:value-of select="fn:subsequence($procedure.step.numeration.styles,$stype,1)"/>
+      <xsl:value-of select="subsequence($procedure.step.numeration.styles,
+			                $stype,1)"/>
     </xsl:when>
     <xsl:otherwise>
       <xsl:message>
@@ -1452,6 +1454,273 @@ for another node with the same name to appear in the sequence.</para>
     <xsl:otherwise>
       <xsl:value-of select="f:find-node-in-sequence($nodes, $target,
 			                            $start+1)"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
+<!-- ============================================================ -->
+
+<doc:function name="f:find-toc-params"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Finds the TOC parameters for an element</refpurpose>
+
+<refdescription>
+<para>This function returns the matching TOC parameter element in the
+specified list. The matching parameter is the one with the longest
+matching path.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The node to use for matching, usually the context node.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>toc</term>
+<listitem>
+<para>The TOC parameter list.
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The matching node or the empty sequence if no node matches.</para>
+</refreturn>
+</doc:function>
+
+<xsl:function name="f:find-toc-params" as="element()?">
+  <xsl:param name="node" as="element()"/>
+  <xsl:param name="toc" as="element()*"/>
+  <xsl:variable name="location" select="f:xpath-location($node)"/>
+
+  <xsl:sequence select="fp:find-toc-params($node, $toc, $location)"/>
+</xsl:function>
+
+<xsl:function name="fp:find-toc-params" as="element()?">
+  <xsl:param name="node" as="element()"/>
+  <xsl:param name="toc" as="element()*"/>
+  <xsl:param name="location" as="xs:string"/>
+
+  <xsl:choose>
+    <xsl:when test="$toc[@path=$location]">
+      <xsl:sequence select="$toc[@path=$location][1]"/>
+    </xsl:when>
+    <xsl:when test="not(contains($location, '/'))">
+      <xsl:sequence select="()"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:sequence select="fp:find-toc-params($node, $toc,
+			         substring-after($location, '/'))"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
+<!-- ============================================================ -->
+
+<doc:function name="f:trim-common-uri-paths"
+	      xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Trim common leading path information from a URI</refpurpose>
+
+<refdescription>
+<para>This function trims common leading path components from a
+relative URI.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>uriA</term>
+<listitem>
+<para>The first URI.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>uriB</term>
+<listitem>
+<para>The second URI.
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The <parameter>uriA</parameter> trimmed of all the initial path
+components that it has in common with <parameter>uriB</parameter>.</para>
+</refreturn>
+</doc:function>
+
+<xsl:function name="f:trim-common-uri-paths" as="xs:string">
+  <xsl:param name="uriA" as="xs:string"/>
+  <xsl:param name="uriB" as="xs:string"/>
+
+  <xsl:choose>
+    <xsl:when test="not(contains($uriA, '/'))
+                    or not(contains($uriB, '/'))
+		    or substring-before($uriA, '/') 
+		       != substring-before($uriB, '/')">
+      <xsl:value-of select="$uriA"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:value-of select="f:trim-common-uri-paths(
+			        substring-after($uriA, '/'),
+			        substring-after($uriB, '/'))"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
+<!-- ============================================================ -->
+
+<!-- We assume all filenames are really URIs and use "/" -->
+
+<xsl:function name="f:filename-basename" as="xs:string">
+  <xsl:param name="filename" as="xs:string"/>
+
+  <xsl:value-of select="tokenize($filename,'/')[last()]"/>
+</xsl:function>
+
+<xsl:function name="f:filename-extension" as="xs:string">
+  <xsl:param name="filename" as="xs:string"/>
+
+  <!-- Make sure we only look at the base name... -->
+  <xsl:variable name="basefn" select="f:filename-basename($filename)"/>
+
+  <xsl:choose>
+    <xsl:when test="contains($filename, '.')">
+      <xsl:value-of select="tokenize($filename,'.')[last()]"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:value-of select="''"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
+<!-- ============================================================ -->
+
+<xsl:function name="f:length-magnitude" as="xs:decimal?">
+  <xsl:param name="length" as="xs:string"/>
+
+  <xsl:if test="matches(normalize-space($length), '^[0-9\.]+')">
+    <xsl:value-of select="replace(normalize-space($length),
+			          '(^[0-9\.]+).*',
+				  '$1')"/>
+  </xsl:if>
+</xsl:function>
+
+<!-- ================================================================== -->
+
+<xsl:function name="f:length-units">
+  <xsl:param name="length" as="xs:string"/>
+  <xsl:value-of select="f:length-units($length, 'px')"/>
+</xsl:function>
+
+<xsl:function name="f:length-units">
+  <xsl:param name="length" as="xs:string"/>
+  <xsl:param name="default.units" as="xs:string"/>
+
+  <xsl:variable name="units">
+    <xsl:if test="matches(normalize-space($length), '^[0-9\.]+.+')">
+      <xsl:value-of select="replace(normalize-space($length),
+			            '^[0-9\.]+(.+)$',
+				    '$1')"/>
+    </xsl:if>
+  </xsl:variable>
+
+  <xsl:choose>
+    <xsl:when test="$units = ''">
+      <xsl:value-of select="$default.units"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:value-of select="$units"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
+<!-- ================================================================== -->
+
+<xsl:function name="f:length-spec">
+  <xsl:param name="length" as="xs:string"/>
+  <xsl:value-of select="f:length-spec($length, 'px')"/>
+</xsl:function>
+
+<xsl:function name="f:length-spec">
+  <xsl:param name="length" as="xs:string"/>
+  <xsl:param name="default.units" as="xs:string"/>
+
+  <xsl:variable name="magnitude" select="f:length-magnitude($length)"/>
+  <xsl:variable name="units" select="f:length-units($length)"/>
+
+  <xsl:value-of select="$magnitude"/>
+
+  <xsl:choose>
+    <xsl:when test="$units='cm'
+                    or $units='mm'
+                    or $units='in'
+                    or $units='pt'
+                    or $units='pc'
+                    or $units='px'
+                    or $units='em'">
+      <xsl:value-of select="$units"/>
+    </xsl:when>
+    <xsl:when test="$units = ''">
+      <xsl:value-of select="$default.units"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:message>
+        <xsl:text>Unrecognized unit of measure: </xsl:text>
+        <xsl:value-of select="$units"/>
+        <xsl:text>; using </xsl:text>
+        <xsl:value-of select="$default.units"/>
+      </xsl:message>
+      <xsl:value-of select="$default.units"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
+<!-- ================================================================== -->
+
+<xsl:function name="f:length-in-points" as="xs:decimal">
+  <xsl:param name="length" as="xs:string"/>
+  <xsl:value-of select="f:length-in-points($length, 10)"/>
+</xsl:function>
+
+<xsl:function name="f:length-in-points" as="xs:decimal">
+  <xsl:param name="length" as="xs:string"/>
+  <xsl:param name="em.size" as="xs:decimal"/>
+
+  <xsl:variable name="magnitude" select="f:length-magnitude($length)"/>
+  <xsl:variable name="units" select="f:length-units($length)"/>
+
+  <xsl:choose>
+    <xsl:when test="$units = 'pt'">
+      <xsl:value-of select="$magnitude"/>
+    </xsl:when>
+    <xsl:when test="$units = 'cm'">
+      <xsl:value-of select="$magnitude div 2.54 * 72.0"/>
+    </xsl:when>
+    <xsl:when test="$units = 'mm'">
+      <xsl:value-of select="$magnitude div 25.4 * 72.0"/>
+    </xsl:when>
+    <xsl:when test="$units = 'in'">
+      <xsl:value-of select="$magnitude * 72.0"/>
+    </xsl:when>
+    <xsl:when test="$units = 'pc'">
+      <xsl:value-of select="$magnitude * 12.0"/>
+    </xsl:when>
+    <xsl:when test="$units = 'px'">
+      <xsl:value-of select="$magnitude div $pixels.per.inch * 72.0"/>
+    </xsl:when>
+    <xsl:when test="$units = 'em'">
+      <xsl:value-of select="$magnitude * $em.size"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:message>
+        <xsl:text>Unrecognized unit of measure: </xsl:text>
+        <xsl:value-of select="$units"/>
+        <xsl:text>; using pt.</xsl:text>
+      </xsl:message>
+      <xsl:value-of select="$magnitude"/>
     </xsl:otherwise>
   </xsl:choose>
 </xsl:function>

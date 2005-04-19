@@ -27,7 +27,7 @@
                                    and not(self::db:qandaentry)]"/>
 
     <xsl:if test="db:qandaentry">
-      <table class="qandaentries" border="1">
+      <table class="qandaentries" border="0">
 	<xsl:apply-templates select="db:qandaentry"/>
       </table>
     </xsl:if>
@@ -112,8 +112,11 @@
       </xsl:call-template>
       <xsl:call-template name="class"/>
 
-      <xsl:apply-templates select="." mode="m:label-markup"/>
-      <xsl:if test="$deflabel = 'number' and not(label)">
+      <xsl:variable name="label">
+	<xsl:apply-templates select="." mode="m:label-markup"/>
+      </xsl:variable>
+
+      <xsl:if test="$deflabel = 'number' and not(label) and $label != ''">
 	<xsl:apply-templates select="." mode="m:intralabel-punctuation"/>
       </xsl:if>
     </td>

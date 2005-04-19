@@ -7,14 +7,15 @@
 		xmlns:ghost="http://docbook.org/docbook-ng/ephemeral"
 		xmlns:h="http://www.w3.org/1999/xhtml"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
+		xmlns:t="http://docbook.org/xslt/ns/template"
                 xmlns:u="http://nwalsh.com/xsl/unittests#"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		exclude-result-prefixes="doc f ghost h m u xs"
+		exclude-result-prefixes="db doc f ghost h m t u xs"
                 version="2.0">
 
 <xsl:include href="../common/table.xsl"/>
 
-<xsl:param name="pixels-per-inch" select="96"/>
+<xsl:param name="pixels.per.inch" select="96"/>
 
 <xsl:param name="table.cell.border.style" select="'solid'"/>
 <xsl:param name="table.cell.border.color" select="'black'"/>
@@ -26,11 +27,70 @@
 <xsl:param name="html.cellspacing" select="''"/>
 
 <xsl:template match="db:informaltable">
-  <div class="{local-name(.)}">
-    <xsl:call-template name="id"/>
-    <xsl:call-template name="class"/>
-    <xsl:apply-templates/>
-  </div>
+  <xsl:call-template name="t:formal-object">
+    <xsl:with-param name="class" select="local-name(.)"/>
+    <xsl:with-param name="object" as="element()">
+      <div class="{local-name(.)}">
+	<xsl:call-template name="id"/>
+	<xsl:call-template name="class"/>
+
+	<xsl:choose>
+	  <xsl:when test="db:tgroup|db:mediaobject">
+	    <xsl:apply-templates/>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <xsl:apply-templates select="." mode="m:html">
+	    </xsl:apply-templates>
+	  </xsl:otherwise>
+	</xsl:choose>
+
+	<xsl:call-template name="t:table-longdesc"/>
+      </div>
+    </xsl:with-param>
+  </xsl:call-template>
+</xsl:template>
+
+<xsl:template match="db:table">
+  <xsl:call-template name="t:formal-object">
+    <xsl:with-param name="placement"
+		    select="$formal.title.placement[self::db:table]/@placement"/>
+    <xsl:with-param name="class" select="local-name(.)"/>
+    <xsl:with-param name="object" as="element()">
+      <div class="{local-name(.)}">
+	<xsl:call-template name="id"/>
+	<xsl:call-template name="class"/>
+
+	<xsl:choose>
+	  <xsl:when test="db:tgroup|db:mediaobject">
+	    <xsl:apply-templates/>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <xsl:apply-templates select="." mode="m:html">
+	    </xsl:apply-templates>
+	  </xsl:otherwise>
+	</xsl:choose>
+
+	<xsl:call-template name="t:table-longdesc"/>
+      </div>
+    </xsl:with-param>
+  </xsl:call-template>
+</xsl:template>
+
+<xsl:template name="t:table-longdesc">
+  <xsl:variable name="longdesc.uri" select="f:longdesc-uri(.)"/>
+  <xsl:variable name="irrelevant">
+    <!-- write.longdesc returns the filename ... -->
+    <xsl:call-template name="t:write-longdesc">
+      <xsl:with-param name="mediaobject" select="."/>
+    </xsl:call-template>
+  </xsl:variable>
+
+  <xsl:if test="$html.longdesc != 0 and $html.longdesc.link != 0
+                and textobject[not(phrase)]">
+    <xsl:call-template name="t:longdesc-link">
+      <xsl:with-param name="longdesc.uri" select="$longdesc.uri"/>
+    </xsl:call-template>
+  </xsl:if>
 </xsl:template>
 
 <!-- ============================================================ -->
@@ -47,10 +107,16 @@
     <xsl:apply-templates select="." mode="m:cals-phase-1"/>
   </xsl:variable>
 
+<!--
+  <XXX>
+    <xsl:copy-of select="$phase1"/>
+  </XXX>
+-->
+
   <xsl:apply-templates select="$phase1/db:tgroup" mode="m:cals"/>
 </xsl:template>
 
-<xsl:template match="db:tgroup|db:entrytbl" mode="m:cals">
+<xsl:template match="db:tgroup" name="db:tgroup" mode="m:cals">
   <xsl:variable name="summary"
 		select="f:pi(processing-instruction('dbhtml'),'table-summary')"/>
 
@@ -214,13 +280,29 @@
       <tbody class="footnotes">
         <tr>
 	  <td colspan="{@cols}">
-	    <xsl:apply-templates select=".//footnote"
+	    <xsl:apply-templates select=".//db:footnote"
 				 mode="m:table-footnote-mode"/>
 	  </td>
 	</tr>
       </tbody>
     </xsl:if>
   </table>
+</xsl:template>
+
+<xsl:template match="db:entrytbl" mode="m:cals">
+  <xsl:variable name="cellgi">
+    <xsl:choose>
+      <xsl:when test="ancestor::db:thead">th</xsl:when>
+      <xsl:when test="ancestor::db:tfoot">th</xsl:when>
+      <xsl:when test="ancestor::db:tgroup/parent::*/@rowheader='firstcol'
+		      and ghost:colnum=1">th</xsl:when>
+      <xsl:otherwise>td</xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:element name="{$cellgi}">
+    <xsl:call-template name="db:tgroup"/>
+  </xsl:element>
 </xsl:template>
 
 <!-- ============================================================ -->
@@ -680,6 +762,28 @@ See <function role="named-template">generate-colgroup</function>.
       </xsl:choose>
     </xsl:otherwise>
   </xsl:choose>
+</xsl:template>
+
+<!-- ============================================================ -->
+<!-- HTML tables -->
+
+<doc:mode name="m:html" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Mode for processing HTML tables</refpurpose>
+
+<refdescription>
+<para>This mode is used to format HTML tables.</para>
+<para>FIXME: don't copy non-HTML attributes if there are any!</para>
+</refdescription>
+</doc:mode>
+
+<xsl:template match="db:table|db:caption|db:col|db:colgroup
+                     |db:thead|db:tfoot|db:tbody|db:tr
+		     |db:th|db:td" mode="m:html">
+  <xsl:element name="{local-name(.)}"
+	       namespace="http://www.w3.org/1999/xhtml">
+    <xsl:copy-of select="@*"/>
+    <xsl:apply-templates mode="m:html"/>
+  </xsl:element>
 </xsl:template>
 
 </xsl:stylesheet>

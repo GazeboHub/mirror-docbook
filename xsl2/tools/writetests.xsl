@@ -16,6 +16,7 @@
 <xsl:include href="tohtml.xsl"/>
 
 <xsl:key name="functions" match="xsl:function" use="@name"/>
+<xsl:key name="templates" match="xsl:template" use="@name"/>
 
 <xsl:template match="/">
   <xsl:variable name="expanded">
@@ -25,6 +26,8 @@
   <xsl:element name="xsl:stylesheet">
     <xsl:namespace name="f" select="'http://docbook.org/xslt/ns/extension'"/>
     <xsl:namespace name="db" select="'http://docbook.org/docbook-ng'"/>
+    <xsl:namespace name="xs" select="'http://www.w3.org/2001/XMLSchema'"/>
+
     <xsl:attribute name="version" select="'2.0'"/>
 
     <xsl:element name="xsl:import">
@@ -259,6 +262,9 @@ div.fail { background-color: #FF9999; }
 
       <xsl:element name="xsl:variable">
 	<xsl:attribute name="name" select="'eval'"/>
+	<xsl:if test="key('templates', $template)/@as">
+	  <xsl:attribute name="as" select="key('templates', $template)/@as"/>
+	</xsl:if>
 
 	<xsl:element name="xsl:call-template">
 	  <xsl:attribute name="name" select="$template"/>
@@ -338,6 +344,7 @@ div.fail { background-color: #FF9999; }
 	      <xsl:element name="xsl:when">
 		<xsl:attribute name="test"
 			       select="'$eval instance of document-node()'"/>
+doc
 		<xsl:element name="xsl:apply-templates">
 		  <xsl:attribute name="select" select="'$eval/*'"/>
 		  <xsl:attribute name="mode" select="'tohtml'"/>
@@ -346,12 +353,14 @@ div.fail { background-color: #FF9999; }
 	      <xsl:element name="xsl:when">
 		<xsl:attribute name="test"
 			       select="'$eval instance of element()'"/>
+elem
 		<xsl:element name="xsl:apply-templates">
 		  <xsl:attribute name="select" select="'$eval'"/>
 		  <xsl:attribute name="mode" select="'tohtml'"/>
 		</xsl:element>
 	      </xsl:element>
 	      <xsl:element name="xsl:otherwise">
+other
 		<xsl:text>'</xsl:text>
 		<xsl:element name="xsl:value-of">
 		  <xsl:attribute name="select" select="'$eval'"/>

@@ -7,8 +7,9 @@
 		xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
 		xmlns:db="http://docbook.org/docbook-ng"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
+                xmlns:t="http://docbook.org/xslt/ns/template"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		exclude-result-prefixes="h f m fn db doc xs"
+		exclude-result-prefixes="h f m fn db doc t xs"
                 version="2.0">
 
 <xsl:template match="db:equation">
@@ -22,8 +23,16 @@
                         then $param.placement
 			else 'before'"/>
 
-  <xsl:call-template name="semiformal-object">
+  <xsl:call-template name="t:semiformal-object">
     <xsl:with-param name="placement" select="$placement"/>
+    <xsl:with-param name="class" select="local-name(.)"/>
+    <xsl:with-param name="object">
+      <div class="{local-name(.)}">
+	<xsl:call-template name="id"/>
+	<xsl:call-template name="class"/>
+	<xsl:apply-templates/>
+      </div>
+    </xsl:with-param>
   </xsl:call-template>
 </xsl:template>
 

@@ -21,6 +21,28 @@
 
      ******************************************************************** -->
 
+<xsl:param name="generate.toc" as="element()*">
+<tocparam path="appendix"         toc="1" title="1"/>
+<tocparam path="article/appendix" toc="1" title="1"/>
+<tocparam path="article"          toc="1" title="1"/>
+<tocparam path="book"             toc="1" title="1"
+	                          figure="1" table="1"
+				  example="1" equation="1"/>
+<tocparam path="chapter"          toc="1" title="1"/>
+<tocparam path="part"             toc="1" title="1"/>
+<tocparam path="preface"          toc="1" title="1"/>
+<tocparam path="qandadiv"         toc="1"/>
+<tocparam path="qandaset"         toc="1"/>
+<tocparam path="reference"        toc="1" title="1"/>
+<tocparam path="sect1"            toc="1"/>
+<tocparam path="sect2"            toc="1"/>
+<tocparam path="sect3"            toc="1"/>
+<tocparam path="sect4"            toc="1"/>
+<tocparam path="sect5"            toc="1"/>
+<tocparam path="section"          toc="1"/>
+<tocparam path="set"              toc="1" title="1"/>
+</xsl:param>
+
 <!-- ============================================================ -->
 
 <doc:mode name="m:toc" xmlns="http://docbook.org/docbook-ng">
@@ -78,11 +100,11 @@
 
 <xsl:template name="make-toc">
   <xsl:param name="toc-context" select="."/>
-  <xsl:param name="toc.title.p" select="true()"/>
+  <xsl:param name="toc.title" select="true()"/>
   <xsl:param name="nodes" select="()"/>
 
   <xsl:variable name="toc.title">
-    <xsl:if test="$toc.title.p">
+    <xsl:if test="$toc.title">
       <p>
         <b>
           <xsl:call-template name="gentext">
@@ -154,42 +176,42 @@
 </doc:template>
 
 <xsl:template name="make-lots">
-  <xsl:param name="toc.params" select="''"/>
+  <xsl:param name="toc.params" as="element()?" select="()"/>
   <xsl:param name="toc"/>
 
-  <xsl:if test="contains($toc.params, 'toc')">
+  <xsl:if test="$toc.params/@toc != 0">
     <xsl:copy-of select="$toc"/>
   </xsl:if>
 
-  <xsl:if test="contains($toc.params, 'figure')">
+  <xsl:if test="$toc.params/@figure != 0">
     <xsl:call-template name="list-of-titles">
       <xsl:with-param name="titles" select="'figure'"/>
       <xsl:with-param name="nodes" select=".//db:figure"/>
     </xsl:call-template>
   </xsl:if>
 
-  <xsl:if test="contains($toc.params, 'table')">
+  <xsl:if test="$toc.params/@table != 0">
     <xsl:call-template name="list-of-titles">
       <xsl:with-param name="titles" select="'table'"/>
       <xsl:with-param name="nodes" select=".//db:table"/>
     </xsl:call-template>
   </xsl:if>
 
-  <xsl:if test="contains($toc.params, 'example')">
+  <xsl:if test="$toc.params/@example != 0">
     <xsl:call-template name="list-of-titles">
       <xsl:with-param name="titles" select="'example'"/>
       <xsl:with-param name="nodes" select=".//db:example"/>
     </xsl:call-template>
   </xsl:if>
 
-  <xsl:if test="contains($toc.params, 'equation')">
+  <xsl:if test="$toc.params/@equation != 0">
     <xsl:call-template name="list-of-titles">
       <xsl:with-param name="titles" select="'equation'"/>
       <xsl:with-param name="nodes" select=".//db:equation[title]"/>
     </xsl:call-template>
   </xsl:if>
 
-  <xsl:if test="contains($toc.params, 'procedure')">
+  <xsl:if test="$toc.params/@procedure != 0">
     <xsl:call-template name="list-of-titles">
       <xsl:with-param name="titles" select="'procedure'"/>
       <xsl:with-param name="nodes" select=".//db:procedure[title]"/>
@@ -302,11 +324,11 @@ component (chapter, article, etc.).</para>
 
 <xsl:template name="component-toc">
   <xsl:param name="toc-context" select="."/>
-  <xsl:param name="toc.title.p" select="true()"/>
+  <xsl:param name="toc.title" select="true()"/>
 
   <xsl:call-template name="make-toc">
     <xsl:with-param name="toc-context" select="$toc-context"/>
-    <xsl:with-param name="toc.title.p" select="$toc.title.p"/>
+    <xsl:with-param name="toc.title" select="$toc.title"/>
     <xsl:with-param name="nodes"
 		    select="db:section|db:sect1|db:refentry
 			    |db:article|db:bibliography|db:glossary
@@ -367,11 +389,11 @@ section.</para>
 
 <xsl:template name="section-toc">
   <xsl:param name="toc-context" select="."/>
-  <xsl:param name="toc.title.p" select="true()"/>
+  <xsl:param name="toc.title" select="true()"/>
 
   <xsl:call-template name="make-toc">
     <xsl:with-param name="toc-context" select="$toc-context"/>
-    <xsl:with-param name="toc.title.p" select="$toc.title.p"/>
+    <xsl:with-param name="toc.title" select="$toc.title"/>
     <xsl:with-param name="nodes"
                     select="db:section
 			    |db:sect1|db:sect2|db:sect3|db:sect4|db:sect5
@@ -483,13 +505,13 @@ section.</para>
       <xsl:with-param name="toc-context" select="$toc-context"/>
     </xsl:call-template>
     <xsl:if test="$toc.listitem.type = 'li'
-                  and $toc.section.depth > $depth and count($nodes)&gt;0
+                  and $toc.section.depth > $depth and exists($nodes)
                   and $toc.max.depth > $depth.from.context">
       <xsl:copy-of select="$subtoc.list"/>
     </xsl:if>
   </xsl:element>
   <xsl:if test="$toc.listitem.type != 'li'
-                and $toc.section.depth > $depth and count($nodes)&gt;0
+                and $toc.section.depth > $depth and exists($nodes)
                 and $toc.max.depth > $depth.from.context">
     <xsl:copy-of select="$subtoc.list"/>
   </xsl:if>
@@ -517,7 +539,7 @@ section.</para>
   <span>
     <xsl:call-template name="class"/>
 
-    <a href="{f:href(.)}">
+    <a href="{f:href(/,.)}">
       <xsl:variable name="label">
 	<xsl:apply-templates select="." mode="m:label-markup"/>
       </xsl:variable>
@@ -686,7 +708,7 @@ section.</para>
 
   <xsl:element name="{$toc.listitem.type}">
     <span class='refentrytitle'>
-      <a href="{f:href(.)}">
+      <a href="{f:href(/,.)}">
         <xsl:copy-of select="$title"/>
       </a>
     </span>
@@ -702,7 +724,7 @@ section.</para>
 <xsl:template match="db:title" mode="m:toc">
   <xsl:param name="toc-context" select="."/>
 
-  <a href="{f:href(..)}">
+  <a href="{f:href(/,..)}">
     <xsl:apply-templates/>
   </a>
 </xsl:template>
@@ -738,7 +760,7 @@ section.</para>
       <xsl:if test="$label != ''">
         <xsl:value-of select="$autotoc.label.separator"/>
       </xsl:if>
-      <a href="{f:href($node)}">
+      <a href="{f:href(/,$node)}">
         <xsl:apply-templates select="$node" mode="m:titleabbrev-markup"/>
       </a>
     </xsl:element>
@@ -818,7 +840,7 @@ section.</para>
     <xsl:if test="$label != ''">
       <xsl:value-of select="$autotoc.label.separator"/>
     </xsl:if>
-    <a href="{f:href(.)}">
+    <a href="{f:href(/,.)}">
       <xsl:apply-templates select="." mode="m:titleabbrev-markup"/>
     </a>
   </xsl:element>

@@ -232,7 +232,13 @@ for the title page.</para>
   <xsl:apply-templates select="."/>
 </xsl:template>
 
-<xsl:template match="db:info/db:author" mode="m:titlepage-mode">
+<xsl:template match="db:authorgroup" mode="m:titlepage-mode">
+  <xsl:apply-templates mode="m:titlepage-mode"/>
+</xsl:template>
+
+<xsl:template match="db:info/db:author
+		     |db:info/db:authorgroup/db:author"
+	      mode="m:titlepage-mode">
   <h3>
     <xsl:apply-templates select="."/>
   </h3>

@@ -258,6 +258,12 @@ for the specified node.</para>
 
 <refparameter>
 <variablelist>
+<varlistentry><term>context</term>
+<listitem>
+<para>The context in which the link will be used. (This is necessary
+when chunking.)</para>
+</listitem>
+</varlistentry>
 <varlistentry><term>node</term>
 <listitem>
 <para>The node for which a URI will be generated.</para>
@@ -269,9 +275,93 @@ for the specified node.</para>
 <refreturn>
 <para>The hypertext anchor URI for the node.</para>
 </refreturn>
+
+<u:unittests function="f:href">
+  <u:test>
+    <u:param select="/"/>
+    <u:param>
+      <para id="foo"/>
+    </u:param>
+    <u:result>'#foo'</u:result>
+  </u:test>
+  <u:test>
+    <u:variable name="mydoc">
+      <db:book>
+	<db:title>Some Title</db:title>
+	<db:chapter>
+	  <db:title>Some Chapter Title</db:title>
+	  <db:para>My para.</db:para>
+	</db:chapter>
+      </db:book>
+    </u:variable>
+    <u:param select="$mydoc"/>
+    <u:param select="$mydoc//db:chapter[1]"/>
+    <u:result>'#R.1.2'</u:result>
+  </u:test>
+</u:unittests>
+
 </doc:function>
 
 <xsl:function name="f:href" as="xs:string">
+  <xsl:param name="context" as="node()"/>
+  <xsl:param name="node" as="element()"/>
+  <xsl:value-of select="concat('#', f:node-id($node))"/>
+</xsl:function>
+
+<!-- ====================================================================== -->
+
+<doc:function name="f:href-target-uri" xmlns="http://docbook.org/docbook-ng">
+<refpurpose>Returns a URI for the node</refpurpose>
+
+<refdescription>
+<para>This function returns a URI suitable for use in a hypertext link
+for the specified node.</para>
+<note>
+<para>The difference between <function>href-target-uri</function> and
+<function>href</function> is only apparent when chunking is used.
+</para>
+</note>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The node for which a URI will be generated.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The hypertext anchor URI for the node.</para>
+</refreturn>
+
+<u:unittests function="f:href-target-uri">
+  <u:test>
+    <u:param>
+      <para id="foo"/>
+    </u:param>
+    <u:result>'#foo'</u:result>
+  </u:test>
+  <u:test>
+    <u:variable name="mydoc">
+      <db:book>
+	<db:title>Some Title</db:title>
+	<db:chapter>
+	  <db:title>Some Chapter Title</db:title>
+	  <db:para>My para.</db:para>
+	</db:chapter>
+      </db:book>
+    </u:variable>
+    <u:param select="$mydoc//db:chapter[1]"/>
+    <u:result>'#R.1.2'</u:result>
+  </u:test>
+</u:unittests>
+
+</doc:function>
+
+<xsl:function name="f:href-target-uri" as="xs:string">
   <xsl:param name="node" as="element()"/>
   <xsl:value-of select="concat('#', f:node-id($node))"/>
 </xsl:function>
@@ -297,6 +387,11 @@ is preserved, only the wrapping <tag>a</tag> is stripped away.</para>
 
 <xsl:template match="h:a" mode="m:strip-anchors" priority="100">
   <xsl:apply-templates mode="m:strip-anchors"/>
+</xsl:template>
+
+<xsl:template match="h:sup[@class='footnote']"
+	      mode="m:strip-anchors" priority="100">
+  <!-- strip it -->
 </xsl:template>
 
 <xsl:template match="text()|comment()|processing-instruction()"

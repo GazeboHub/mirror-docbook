@@ -99,7 +99,7 @@ context item.</para>
                     <xsl:text>???</xsl:text>
                   </xsl:when>
 		  <xsl:otherwise>
-		    <xsl:attribute name="href" select="f:href($target)"/>
+		    <xsl:attribute name="href" select="f:href(/,$target)"/>
 		  </xsl:otherwise>
 		</xsl:choose>
               </xsl:when>
@@ -794,7 +794,7 @@ and <tag>firstterm</tag> elements.</para>
       <xsl:when test="($firstterm.only.link = 0 or $firstterm = 1) and @linkend">
 	<xsl:variable name="target" select="key('id',@linkend)[1]"/>
 
-	<a href="{f:href($target)}">
+	<a href="{f:href(/,$target)}">
 	  <xsl:apply-templates/>
 	</a>
       </xsl:when>
@@ -831,7 +831,7 @@ and <tag>firstterm</tag> elements.</para>
 	    <xsl:apply-templates/>
 	  </xsl:when>
 	  <xsl:otherwise>
-	    <a href="{f:href($target)}">
+	    <a href="{f:href(/,$target)}">
 	      <xsl:apply-templates/>
 	    </a>
 	  </xsl:otherwise>

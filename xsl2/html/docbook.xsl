@@ -31,12 +31,15 @@
   <xsl:include href="synopsis.xsl"/>
   <xsl:include href="section.xsl"/>
   <xsl:include href="biblio.xsl"/>
+  <xsl:include href="pi.xsl"/>
   <xsl:include href="info.xsl"/>
   <xsl:include href="glossary.xsl"/>
   <xsl:include href="table.xsl"/>
   <xsl:include href="lists.xsl"/>
   <xsl:include href="formal.xsl"/>
   <xsl:include href="blocks.xsl"/>
+  <xsl:include href="graphics.xsl"/>
+  <xsl:include href="footnotes.xsl"/>
   <xsl:include href="admonitions.xsl"/>
   <xsl:include href="verbatim.xsl"/>
   <xsl:include href="qandaset.xsl"/>
@@ -46,9 +49,12 @@
   <xsl:include href="html.xsl"/>
   <xsl:include href="index.xsl"/>
   <xsl:include href="autoidx.xsl"/>
+  <xsl:include href="chunker.xsl"/>
 
-  <xsl:output method="xml" encoding="utf-8" indent="no"/>
-  <xsl:output name="final" method="xhtml" encoding="utf-8" indent="no"/>
+  <xsl:output method="xml" encoding="utf-8" indent="yes"/>
+  <xsl:output name="final" method="xhtml" encoding="utf-8" indent="yes"/>
+
+  <xsl:param name="stylesheet.result.type" select="'xhtml'"/>
 
   <xsl:template match="*" mode="m:root">
     <xsl:result-document href="normalized.xml">

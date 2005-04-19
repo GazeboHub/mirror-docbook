@@ -443,7 +443,6 @@ processed in this mode should generate their label.</para>
                                        |ancestor::db:refsect1
                                        |ancestor::db:refsect2
                                        |ancestor::db:refsect3)[last()]"/>
-
   <xsl:variable name="lparent.prefix">
     <xsl:apply-templates select="$lparent" mode="m:label-markup"/>
   </xsl:variable>

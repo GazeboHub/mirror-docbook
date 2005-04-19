@@ -7,8 +7,10 @@
                 xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
                 xmlns:h="http://www.w3.org/1999/xhtml"
                 xmlns:m="http://docbook.org/xslt/ns/mode"
+                xmlns:u="http://nwalsh.com/xsl/unittests#"
                 xmlns:xlink='http://www.w3.org/1999/xlink'
-		exclude-result-prefixes="db doc f fn h m xlink"
+                xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		exclude-result-prefixes="db doc f fn h m u xlink xs"
                 version="2.0">
 
 <xsl:param name="use.role.as.xrefstyle" select="0"/>
@@ -74,7 +76,7 @@ identified.</entry>
 	  </a>
 	</xsl:when>
 	<xsl:otherwise>
-	  <a href="{f:href(key('id',@linkend)[1])}">
+	  <a href="{f:href(/,key('id',@linkend)[1])}">
 	    <xsl:call-template name="class"/>
 	    <xsl:if test="db:alt">
 	      <xsl:attribute name="title" select="db:alt[1]"/>
@@ -157,7 +159,7 @@ attribute or a <tag class="attribute">linkend</tag> attribute</para>
             <xsl:text>Endterm points to nonexistent id: </xsl:text>
 	    <xsl:value-of select="@endterm"/>
           </xsl:message>
-	  <a href="{f:href($target)}">
+	  <a href="{f:href(/,$target)}">
 	    <xsl:call-template name="id"/>
 	    <span class="formatting-error">
 	      <xsl:text>???</xsl:text>
@@ -165,7 +167,7 @@ attribute or a <tag class="attribute">linkend</tag> attribute</para>
 	  </a>
         </xsl:when>
         <xsl:otherwise>
-	  <a href="{f:href($target)}">
+	  <a href="{f:href(/,$target)}">
 	    <xsl:call-template name="id"/>
 	    <xsl:apply-templates select="$etarget" mode="m:endterm"/>
 	  </a>
@@ -174,7 +176,7 @@ attribute or a <tag class="attribute">linkend</tag> attribute</para>
     </xsl:when>
 
     <xsl:when test="$target/@xreflabel">
-      <a href="{f:href($target)}">
+      <a href="{f:href(/,$target)}">
 	<xsl:call-template name="xreflabel">
 	  <xsl:with-param name="target" select="$target"/>
 	</xsl:call-template>
@@ -184,7 +186,7 @@ attribute or a <tag class="attribute">linkend</tag> attribute</para>
     <xsl:otherwise>
       <xsl:apply-templates select="$target" mode="m:xref-to-prefix"/>
 
-      <a href="{f:href($target)}">
+      <a href="{f:href(/,$target)}">
 	<xsl:if test="$target/db:info/db:title">
 	  <xsl:attribute name="title" select="string($target/db:info/db:title)"/>
 	</xsl:if>
@@ -218,9 +220,25 @@ attribute or a <tag class="attribute">linkend</tag> attribute</para>
 <para>This template is used to insert the markup associated with an
 <tag class='attribute'>xreflabel</tag>.</para>
 </refdescription>
+
+<u:unittests template="xreflabel">
+  <u:test>
+    <u:param name="target" as="element()">
+      <para xreflabel="LabelMe"/>
+    </u:param>
+    <u:result>'LabelMe'</u:result>
+  </u:test>
+  <u:test>
+    <u:param name="target" as="element()">
+      <para role="I-Have-No-XRefLabel"/>
+    </u:param>
+    <u:result>''</u:result>
+  </u:test>
+</u:unittests>
+
 </doc:template>
 
-<xsl:template name="xreflabel">
+<xsl:template name="xreflabel" as="xs:string">
   <!-- called to process an xreflabel...you might use this to make  -->
   <!-- xreflabels come out in the right font for different targets, -->
   <!-- for example. -->
