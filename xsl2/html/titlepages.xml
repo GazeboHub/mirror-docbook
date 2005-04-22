@@ -223,9 +223,9 @@
   <db:title/>
 </db:figure>
 
-<db:figure>
-  <db:example/>
-</db:figure>
+<db:table>
+  <db:title/>
+</db:table>
 
 <db:note>
   <db:title/>

@@ -1,0 +1,78 @@
+# This file is part of the XSL DocBook Stylesheet distrubution
+# $Id$
+#
+# See ../README or http://docbook.sourceforge.net/ for copyright
+# and other information.
+
+namespace local = ""
+namespace doc = "http://nwalsh.com/xsl/documentation/1.0"
+namespace xsl = "http://www.w3.org/1999/XSL/Transform"
+namespace db = "http://docbook.org/docbook-ng"
+
+include "xslt20.rnc" {
+  start = stylesheet.element
+
+  top-level-elements.model =
+     (declaration.category | top-level-extension | documentation)*
+
+  top-level-extension =
+     element * - (xsl:* | local:* | doc:*) {
+        grammar {
+           start = any
+           any =
+              (attribute * { text }
+               | text
+               | element * { any })*
+        }
+     }
+}
+
+documentation = docMode | docTemplate 
+
+docMode = element doc:mode {
+   attribute name { xsd:QName },
+   (db.refpurpose, db.refdescription)
+}
+
+docTemplate = element doc:template {
+   attribute name { text },
+   (db.refpurpose, db.refdescription, db.refparameter, db.refreturns)
+}
+
+db.refpurpose =
+   element db:refpurpose {
+      attribute role { text }?,
+      db.anyinline*
+   }
+
+db.refdescription =
+   element db:refdescription {
+      attribute role { text }?,
+      db.anyblock+
+   }
+
+db.refparameter =
+   element db:refparameter {
+      attribute role { text }?,
+      db.anyblock+
+   }
+
+db.refreturns =
+   element db:refreturn {
+      attribute role { text }?,
+      db.anyblock+
+   }
+
+# ============================================================
+
+db.anyinline = text | db.any
+
+db.anyblock = db.any
+
+db.any = element db:* {
+   (attribute * { text }
+    | text
+    | db.any)*
+}
+
+

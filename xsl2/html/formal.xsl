@@ -12,7 +12,7 @@
                 version="2.0">
 
 <xsl:param name="formal.title.placement" as="element()*">
-  <db:figure placement="before"/>
+  <db:figure placement="after"/>
   <db:example placement="before"/>
   <db:equation placement="before"/>
   <db:table placement="before"/>
@@ -32,23 +32,61 @@ title.</para>
 </doc:template>
 
 <xsl:template name="t:formal-object">
+  <xsl:param name="context" select="."/>
   <xsl:param name="placement" select="'before'"/>
-  <xsl:param name="class" select="local-name(.)"/>
+  <xsl:param name="longdesc" select="()"/>
+  <xsl:param name="class" select="local-name($context)"/>
   <xsl:param name="object" as="element()*" required="yes"/>
 
-  <div class="{$class}-wrapper">
-    <xsl:call-template name="id"/>
-    <xsl:choose>
-      <xsl:when test="$placement = 'before'">
-	<xsl:call-template name="t:formal-object-heading"/>
-	<xsl:sequence select="$object"/>
-      </xsl:when>
-      <xsl:otherwise>
-	<xsl:sequence select="$object"/>
-	<xsl:call-template name="t:formal-object-heading"/>
-      </xsl:otherwise>
-    </xsl:choose>
-  </div>
+  <xsl:variable name="titlepage"
+		select="$titlepages/*[node-name(.)
+			              = node-name($context)][1]"/>
+
+  <xsl:variable name="title">
+    <xsl:call-template name="titlepage">
+      <xsl:with-param name="context" select="$context"/>
+      <xsl:with-param name="content" select="$titlepage"/>
+    </xsl:call-template>
+    <xsl:call-template name="t:longdesc-link">
+      <xsl:with-param name="textobject" select="$longdesc[1]"/>
+    </xsl:call-template>
+  </xsl:variable>
+
+  <xsl:variable name="wrapper">
+    <div class="{$class}-wrapper">
+      <xsl:call-template name="id">
+	<xsl:with-param name="node" select="$context"/>
+      </xsl:call-template>
+      <xsl:choose>
+	<xsl:when test="$placement = 'before'">
+	  <xsl:sequence select="$title"/>
+	  <xsl:sequence select="$object"/>
+	  <xsl:apply-templates select="$context/db:caption"/>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:sequence select="$object"/>
+	  <xsl:apply-templates select="$context/db:caption"/>
+	  <xsl:sequence select="$title"/>
+	</xsl:otherwise>
+      </xsl:choose>
+    </div>
+  </xsl:variable>
+
+  <xsl:choose>
+    <xsl:when test="$context/@floatstyle">
+      <div class="float-{$context/@floatstyle}">
+	<xsl:if test="$context/@floatstyle = 'left'
+		      or $context/@floatstyle = 'right'">
+	  <xsl:attribute name="style"
+			 select="concat('float: ', $context/@floatstyle, ';')"/>
+	</xsl:if>
+	<xsl:copy-of select="$wrapper"/>
+      </div>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:copy-of select="$wrapper"/>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <!-- ============================================================ -->
@@ -88,13 +126,32 @@ title.</para>
 </doc:template>
 
 <xsl:template name="t:informal-object">
-  <xsl:param name="class" select="local-name(.)"/>
+  <xsl:param name="context" select="."/>
+  <xsl:param name="class" select="local-name($context)"/>
   <xsl:param name="object" as="element()*" required="yes"/>
 
-  <div class="{$class}-wrapper">
-    <xsl:call-template name="id"/>
-    <xsl:sequence select="$object"/>
-  </div>
+  <xsl:variable name="wrapper">
+    <div class="{$class}-wrapper">
+      <xsl:sequence select="$object"/>
+      <xsl:apply-templates select="$context/db:caption"/>
+    </div>
+  </xsl:variable>
+
+  <xsl:choose>
+    <xsl:when test="$context/@floatstyle">
+      <div class="float-{$context/@floatstyle}">
+	<xsl:if test="$context/@floatstyle = 'left'
+		      or $context/@floatstyle = 'right'">
+	  <xsl:attribute name="style"
+			 select="concat('float: ', $context/@floatstyle, ';')"/>
+	</xsl:if>
+	<xsl:copy-of select="$wrapper"/>
+      </div>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:copy-of select="$wrapper"/>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <!-- ============================================================ -->
@@ -130,6 +187,98 @@ formal, sometimes informal, by calling the appropriate template.
       </xsl:call-template>
     </xsl:otherwise>
   </xsl:choose>
+</xsl:template>
+
+<!-- ============================================================ -->
+
+<xsl:template match="db:figure">
+  <xsl:call-template name="t:formal-object">
+    <xsl:with-param name="placement"
+	    select="$formal.title.placement[self::db:figure]/@placement"/>
+    <xsl:with-param name="class" select="local-name(.)"/>
+    <xsl:with-param name="object" as="element()">
+      <div class="{local-name(.)}">
+	<xsl:call-template name="class"/>
+	<xsl:apply-templates select="*[not(self::db:caption)]"/>
+      </div>
+    </xsl:with-param>
+  </xsl:call-template>
+</xsl:template>
+
+<xsl:template match="db:figure/db:info/db:title
+		     |db:table/db:info/db:title
+		     |db:example/db:info/db:title
+		     |db:equation/db:info/db:title"
+	      mode="m:titlepage-mode">
+  <div class="title">
+    <xsl:apply-templates select="../.." mode="m:object-title-markup">
+      <xsl:with-param name="allow-anchors" select="1"/>
+    </xsl:apply-templates>
+  </div>
+</xsl:template>
+
+<xsl:template match="db:informalfigure">
+  <xsl:call-template name="t:informal-object">
+    <xsl:with-param name="class" select="local-name(.)"/>
+    <xsl:with-param name="object" as="element()">
+      <div class="{local-name(.)}">
+	<xsl:call-template name="class"/>
+	<xsl:apply-templates select="*[not(self::db:caption)]"/>
+      </div>
+    </xsl:with-param>
+  </xsl:call-template>
+</xsl:template>
+
+<xsl:template match="db:example">
+  <xsl:call-template name="t:formal-object">
+    <xsl:with-param name="placement"
+	    select="$formal.title.placement[self::db:example]/@placement"/>
+    <xsl:with-param name="class" select="local-name(.)"/>
+    <xsl:with-param name="object" as="element()">
+      <div class="{local-name(.)}">
+	<xsl:call-template name="class"/>
+	<xsl:apply-templates select="*[not(self::db:caption)]"/>
+      </div>
+    </xsl:with-param>
+  </xsl:call-template>
+</xsl:template>
+
+<xsl:template match="db:informalexample">
+  <xsl:call-template name="t:informal-object">
+    <xsl:with-param name="class" select="local-name(.)"/>
+    <xsl:with-param name="object" as="element()">
+      <div class="{local-name(.)}">
+	<xsl:call-template name="class"/>
+	<xsl:apply-templates select="*[not(self::db:caption)]"/>
+      </div>
+    </xsl:with-param>
+  </xsl:call-template>
+</xsl:template>
+
+<xsl:template match="db:equation">
+  <xsl:call-template name="t:semiformal-object">
+    <xsl:with-param name="placement"
+	    select="$formal.title.placement[self::db:equation]/@placement"/>
+    <xsl:with-param name="class" select="local-name(.)"/>
+    <xsl:with-param name="object" as="element()">
+      <div class="{local-name(.)}">
+	<xsl:call-template name="class"/>
+	<xsl:apply-templates select="*[not(self::db:caption)]"/>
+      </div>
+    </xsl:with-param>
+  </xsl:call-template>
+</xsl:template>
+
+<xsl:template match="db:informalequation">
+  <xsl:call-template name="t:informal-object">
+    <xsl:with-param name="class" select="local-name(.)"/>
+    <xsl:with-param name="object" as="element()">
+      <div class="{local-name(.)}">
+	<xsl:call-template name="class"/>
+	<xsl:apply-templates select="*[not(self::db:caption)]"/>
+      </div>
+    </xsl:with-param>
+  </xsl:call-template>
 </xsl:template>
 
 </xsl:stylesheet>

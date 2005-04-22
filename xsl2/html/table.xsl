@@ -26,35 +26,12 @@
 <xsl:param name="html.cellpadding" select="''"/>
 <xsl:param name="html.cellspacing" select="''"/>
 
-<xsl:template match="db:informaltable">
-  <xsl:call-template name="t:formal-object">
-    <xsl:with-param name="class" select="local-name(.)"/>
-    <xsl:with-param name="object" as="element()">
-      <div class="{local-name(.)}">
-	<xsl:call-template name="id"/>
-	<xsl:call-template name="class"/>
-
-	<xsl:choose>
-	  <xsl:when test="db:tgroup|db:mediaobject">
-	    <xsl:apply-templates/>
-	  </xsl:when>
-	  <xsl:otherwise>
-	    <xsl:apply-templates select="." mode="m:html">
-	    </xsl:apply-templates>
-	  </xsl:otherwise>
-	</xsl:choose>
-
-	<xsl:call-template name="t:table-longdesc"/>
-      </div>
-    </xsl:with-param>
-  </xsl:call-template>
-</xsl:template>
-
 <xsl:template match="db:table">
   <xsl:call-template name="t:formal-object">
     <xsl:with-param name="placement"
 		    select="$formal.title.placement[self::db:table]/@placement"/>
     <xsl:with-param name="class" select="local-name(.)"/>
+    <xsl:with-param name="longdesc" select="db:textobject[not(db:phrase)]"/>
     <xsl:with-param name="object" as="element()">
       <div class="{local-name(.)}">
 	<xsl:call-template name="id"/>
@@ -62,33 +39,49 @@
 
 	<xsl:choose>
 	  <xsl:when test="db:tgroup|db:mediaobject">
-	    <xsl:apply-templates/>
+	    <xsl:apply-templates select="db:tgroup|db:mediaobject"/>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <xsl:apply-templates select="." mode="m:html"/>
+	  </xsl:otherwise>
+	</xsl:choose>
+      </div>
+    </xsl:with-param>
+  </xsl:call-template>
+  <xsl:call-template name="t:table-longdesc"/>
+</xsl:template>
+
+<xsl:template match="db:informaltable">
+  <xsl:call-template name="t:formal-object">
+    <xsl:with-param name="class" select="local-name(.)"/>
+    <xsl:with-param name="longdesc" select="db:textobject[not(db:phrase)]"/>
+    <xsl:with-param name="object" as="element()">
+      <div class="{local-name(.)}">
+	<xsl:call-template name="id"/>
+	<xsl:call-template name="class"/>
+
+	<xsl:choose>
+	  <xsl:when test="db:tgroup|db:mediaobject">
+	    <xsl:apply-templates select="db:tgroup|db:mediaobject"/>
 	  </xsl:when>
 	  <xsl:otherwise>
 	    <xsl:apply-templates select="." mode="m:html">
 	    </xsl:apply-templates>
 	  </xsl:otherwise>
 	</xsl:choose>
-
-	<xsl:call-template name="t:table-longdesc"/>
       </div>
     </xsl:with-param>
   </xsl:call-template>
+  <xsl:call-template name="t:table-longdesc"/>
 </xsl:template>
 
 <xsl:template name="t:table-longdesc">
   <xsl:variable name="longdesc.uri" select="f:longdesc-uri(.)"/>
-  <xsl:variable name="irrelevant">
-    <!-- write.longdesc returns the filename ... -->
-    <xsl:call-template name="t:write-longdesc">
-      <xsl:with-param name="mediaobject" select="."/>
-    </xsl:call-template>
-  </xsl:variable>
 
   <xsl:if test="$html.longdesc != 0 and $html.longdesc.link != 0
-                and textobject[not(phrase)]">
-    <xsl:call-template name="t:longdesc-link">
-      <xsl:with-param name="longdesc.uri" select="$longdesc.uri"/>
+                and db:textobject[not(db:phrase)]">
+    <xsl:call-template name="t:write-longdesc">
+      <xsl:with-param name="mediaobject" select="."/>
     </xsl:call-template>
   </xsl:if>
 </xsl:template>

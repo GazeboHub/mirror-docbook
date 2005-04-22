@@ -42,22 +42,6 @@
   </xsl:choose>
 </xsl:template>
 
-<xsl:template match="db:figure|db:example">
-  <xsl:variable name="titlepage"
-		select="$titlepages/*[node-name(.)
-			              = node-name(current())][1]"/>
-  <div class="{local-name(.)}">
-    <xsl:call-template name="id"/>
-    <xsl:call-template name="class"/>
-
-    <xsl:call-template name="titlepage">
-      <xsl:with-param name="content" select="$titlepage"/>
-    </xsl:call-template>
-
-    <xsl:apply-templates select="*[not(self::db:info)]"/>
-  </div>
-</xsl:template>
-
 <xsl:template match="db:epigraph">
   <div class="{local-name(.)}">
       <xsl:apply-templates select="*[not(self::db:attribution)]"/>

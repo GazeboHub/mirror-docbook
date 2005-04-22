@@ -6,11 +6,22 @@
                 xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
                 xmlns:h="http://www.w3.org/1999/xhtml"
                 xmlns:m="http://docbook.org/xslt/ns/mode"
+		xmlns:t="http://docbook.org/xslt/ns/template"
                 xmlns:u="http://nwalsh.com/xsl/unittests#"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 xmlns="http://www.w3.org/1999/xhtml"
-                exclude-result-prefixes="db doc f fn h m u xs"
+                exclude-result-prefixes="db doc f fn h m t u xs"
                 version="2.0">
+
+<xsl:param name="html.stylesheet" select="''"/>
+<xsl:param name="html.stylesheet.type" select="''"/>
+<xsl:param name="link.mailto.url" select="''"/>
+<xsl:param name="html.base" select="''"/>
+<xsl:param name="VERSION" select="'0.0.1'"/>
+<xsl:param name="generate.meta.abstract" select="0"/>
+<xsl:param name="draft.mode" select="'maybe'"/>
+<xsl:param name="draft.watermark.image" select="''"/>
+<xsl:param name="inherit.keywords" select="0"/>
 
 <!-- ============================================================ -->
 
@@ -397,6 +408,115 @@ is preserved, only the wrapping <tag>a</tag> is stripped away.</para>
 <xsl:template match="text()|comment()|processing-instruction()"
 	      mode="m:strip-anchors">
   <xsl:copy/>
+</xsl:template>
+
+<!-- ============================================================ -->
+
+<xsl:template name="t:user-preroot">
+  <!-- Pre-root output, can be used to output comments and PIs. -->
+  <!-- This must not output any element content! -->
+</xsl:template>
+
+<xsl:template name="t:system-head-content">
+  <xsl:param name="node" select="."/>
+
+  <!-- system.head.content is like user.head.content, except that
+       it is called before head.content. This is important because it
+       means, for example, that <style> elements output by system-head-content
+       have a lower CSS precedence than the users stylesheet. -->
+</xsl:template>
+
+<xsl:template name="t:user-head-content">
+  <xsl:param name="node" select="."/>
+</xsl:template>
+
+<xsl:template name="t:user-header-navigation">
+  <xsl:param name="node" select="."/>
+</xsl:template>
+
+<xsl:template name="t:user-header-content">
+  <xsl:param name="node" select="."/>
+</xsl:template>
+
+<xsl:template name="t:user-footer-content">
+  <xsl:param name="node" select="."/>
+</xsl:template>
+
+<xsl:template name="t:user-footer-navigation">
+  <xsl:param name="node" select="."/>
+</xsl:template>
+
+<xsl:template name="t:head-content">
+  <xsl:param name="node" select="."/>
+  <xsl:param name="title">
+    <xsl:apply-templates select="$node" mode="m:object-title-markup"/>
+  </xsl:param>
+
+  <title>
+    <xsl:value-of select="$title"/>
+  </title>
+
+  <xsl:if test="$html.stylesheet != ''">
+    <xsl:for-each select="tokenize($html.stylesheet, '\s+')">
+      <link rel="stylesheet" href="{.}">
+	<xsl:if test="$html.stylesheet.type != ''">
+	  <xsl:attribute name="type">
+	    <xsl:value-of select="$html.stylesheet.type"/>
+	  </xsl:attribute>
+	</xsl:if>
+      </link>
+    </xsl:for-each>
+  </xsl:if>
+
+  <xsl:if test="$link.mailto.url != ''">
+    <link rev="made"
+          href="{$link.mailto.url}"/>
+  </xsl:if>
+
+  <xsl:if test="$html.base != ''">
+    <base href="{$html.base}"/>
+  </xsl:if>
+
+  <meta name="generator" content="DocBook XSL 2.0 Stylesheets V{$VERSION}"/>
+
+  <xsl:if test="$generate.meta.abstract != 0 and db:info/db:abstract">
+    <meta name="description">
+      <xsl:attribute name="content">
+	<xsl:for-each select="db:info/db:abstract[1]/*">
+	  <xsl:value-of select="."/>
+	  <xsl:if test="position() &lt; last()">
+	    <xsl:text> </xsl:text>
+	  </xsl:if>
+	</xsl:for-each>
+      </xsl:attribute>
+    </meta>
+  </xsl:if>
+
+  <xsl:if test="($draft.mode = 'yes'
+		 or ($draft.mode = 'maybe' and
+		     ancestor-or-self::*[@status][1]/@status = 'draft'))
+		and $draft.watermark.image != ''">
+    <style type="text/css"><xsl:text>
+body { background-image: url('</xsl:text>
+<xsl:value-of select="$draft.watermark.image"/><xsl:text>');
+       background-repeat: no-repeat;
+       background-position: top left;
+       /* The following properties make the watermark "fixed" on the page. */
+       /* I think that's just a bit too distracting for the reader... */
+       /* background-attachment: fixed; */
+       /* background-position: center center; */
+     }</xsl:text>
+    </style>
+  </xsl:if>
+
+  <xsl:apply-templates select="." mode="m:head-keywords-content"/>
+</xsl:template>
+
+<xsl:template match="*" mode="m:head-keywords-content">
+  <xsl:apply-templates select="db:info/db:keywordset" mode="m:html-header"/>
+  <xsl:if test="$inherit.keywords != 0 and parent::*">
+    <xsl:apply-templates select="parent::*" mode="m:head-keywords-content"/>
+  </xsl:if>
 </xsl:template>
 
 </xsl:stylesheet>

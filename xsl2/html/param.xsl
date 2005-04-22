@@ -21,7 +21,7 @@
 <xsl:param name="gYear-format" select="'[Y0001]'"/>
 
 <xsl:param name="docbook.css"
-	   select="'/sourceforge/docbook/xsl2/html/docbook.css'"/>
+	   select="'/sourceforge/docbook/xsl2/html/default.css'"/>
 <xsl:param name="docbook.css.inline" select="0"/>
 
 <xsl:param name="toc.list.type">dl</xsl:param>

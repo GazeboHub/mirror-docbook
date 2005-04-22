@@ -13,7 +13,7 @@
 		exclude-result-prefixes="db doc f ghost h m t u xs"
                 version="2.0">
 
-<xsl:function name="f:dbhtml-dir">
+<xsl:function name="f:dbhtml-dir" as="xs:string">
   <xsl:param name="context" as="element()"/>
 
   <!-- directories are now inherited from previous levels -->
@@ -26,23 +26,20 @@
   <xsl:variable name="path"
 		select="f:pi($context/processing-instruction('dbhtml'),'dir')"/>
 
-  <xsl:choose>
-    <xsl:when test="$path = ''">
-      <xsl:if test="$ppath != ''">
+  <xsl:value-of>
+    <xsl:choose>
+      <xsl:when test="empty($path)">
 	<xsl:value-of select="$ppath"/>
-      </xsl:if>
-    </xsl:when>
-    <xsl:otherwise>
-      <xsl:if test="$ppath != ''">
-	<xsl:value-of select="$ppath"/>
-	<xsl:if test="substring($ppath, string-length($ppath), 1) != '/'">
-	  <xsl:text>/</xsl:text>
-        </xsl:if>
-      </xsl:if>
-      <xsl:value-of select="$path"/>
-      <xsl:text>/</xsl:text>
-    </xsl:otherwise>
-  </xsl:choose>
+      </xsl:when>
+      <xsl:otherwise>
+	<xsl:if test="$ppath != ''">
+	  <xsl:value-of select="$ppath"/>
+	  <xsl:if test="not(ends-with($ppath, '/'))">/</xsl:if>
+	</xsl:if>
+	<xsl:value-of select="concat($path,'/')"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:value-of>
 </xsl:function>
 
 </xsl:stylesheet>

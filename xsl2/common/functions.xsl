@@ -1587,8 +1587,8 @@ components that it has in common with <parameter>uriB</parameter>.</para>
   <xsl:variable name="basefn" select="f:filename-basename($filename)"/>
 
   <xsl:choose>
-    <xsl:when test="contains($filename, '.')">
-      <xsl:value-of select="tokenize($filename,'.')[last()]"/>
+    <xsl:when test="contains($basefn, '.')">
+      <xsl:value-of select="tokenize($basefn,'\.')[last()]"/>
     </xsl:when>
     <xsl:otherwise>
       <xsl:value-of select="''"/>

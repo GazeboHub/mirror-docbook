@@ -866,7 +866,7 @@ specification for that column.</para>
 </xsl:function>
 
 <xsl:function name="fp:find-colspec" as="element()?">
-  <xsl:param name="colspec" as="element(db:colspec)*"/>
+  <xsl:param name="colspec" as="element(db:colspec)?"/>
   <xsl:param name="colnum" as="xs:integer"/>
   <xsl:param name="curcol" as="xs:integer"/>
 
@@ -880,7 +880,7 @@ specification for that column.</para>
 	  <xsl:sequence select="$colspec"/>
 	</xsl:when>
 	<xsl:otherwise>
-	  <xsl:sequence select="fp:find-colspec($colspec/following-sibling::db:colspec, $colnum, xs:integer($colspec/@colnum))"/>
+	  <xsl:sequence select="fp:find-colspec($colspec/following-sibling::db:colspec[1], $colnum, xs:integer($colspec/@colnum))"/>
 	</xsl:otherwise>
       </xsl:choose>
     </xsl:when>
@@ -890,7 +890,7 @@ specification for that column.</para>
 	  <xsl:sequence select="$colspec"/>
 	</xsl:when>
 	<xsl:otherwise>
-	  <xsl:sequence select="fp:find-colspec($colspec/following-sibling::db:colspec, $colnum, $colnum+1)"/>
+	  <xsl:sequence select="fp:find-colspec($colspec/following-sibling::db:colspec[1], $colnum, $colnum+1)"/>
 	</xsl:otherwise>
       </xsl:choose>
     </xsl:otherwise>

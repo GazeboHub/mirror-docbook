@@ -44,20 +44,21 @@ this is <tag>db:info/*</tag>.</para>
 </doc:template>
 
 <xsl:template name="titlepage">
-  <xsl:param name="info" select="db:info/*" as="element()*"/>
+  <xsl:param name="context" select="."/>
+  <xsl:param name="info" select="$context/db:info/*" as="element()*"/>
   <xsl:param name="content"/>
 
   <xsl:if test="$info">
     <xsl:choose>
       <xsl:when test="$content instance of document-node()">
 	<xsl:apply-templates select="$content" mode="m:titlepage-templates">
-	  <xsl:with-param name="node" select="." tunnel="yes"/>
+	  <xsl:with-param name="node" select="$context" tunnel="yes"/>
 	  <xsl:with-param name="info" select="$info" tunnel="yes"/>
 	</xsl:apply-templates>
       </xsl:when>
       <xsl:when test="$content instance of element()">
 	<xsl:apply-templates select="$content/*" mode="m:titlepage-templates">
-	  <xsl:with-param name="node" select="." tunnel="yes"/>
+	  <xsl:with-param name="node" select="$context" tunnel="yes"/>
 	  <xsl:with-param name="info" select="$info" tunnel="yes"/>
 	</xsl:apply-templates>
       </xsl:when>

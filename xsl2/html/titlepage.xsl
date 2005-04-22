@@ -153,30 +153,6 @@ for the title page.</para>
   </xsl:element>
 </xsl:template>
 
-<xsl:template match="db:figure/db:info/db:title"
-	      mode="m:titlepage-mode"
-	      priority="100">
-  <h3>
-    <xsl:next-match/>
-  </h3>
-</xsl:template>
-
-<xsl:template match="db:orderedlist/db:info/db:title"
-	      mode="m:titlepage-mode"
-	      priority="100">
-  <h3>
-    <xsl:next-match/>
-  </h3>
-</xsl:template>
-
-<xsl:template match="db:itemizedlist/db:info/db:title"
-	      mode="m:titlepage-mode"
-	      priority="100">
-  <h3>
-    <xsl:next-match/>
-  </h3>
-</xsl:template>
-
 <xsl:template match="db:title" mode="m:titlepage-mode">
   <xsl:apply-templates select="../.." mode="m:object-title-markup">
     <xsl:with-param name="allow-anchors" select="1"/>

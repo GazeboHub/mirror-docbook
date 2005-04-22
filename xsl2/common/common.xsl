@@ -825,8 +825,8 @@ or 0 if no object is selected.</para>
       <xsl:variable name="useobject">
 	<xsl:choose>
 	  <!-- Phrase is used only for TeX Math when the output is FO -->
-	  <xsl:when test="name($object)='textobject'
-			  and $object/phrase
+	  <xsl:when test="$object/self::db:textobject
+			  and $object/db:phrase
 			  and $object/@role='tex'
 			  and $stylesheet.result.type = 'fo'
 			  and $tex.math.in.alt != ''">
@@ -834,20 +834,20 @@ or 0 if no object is selected.</para>
 	  </xsl:when>
 
 	  <!-- Otherwise, phrase is never used -->
-	  <xsl:when test="name($object)='textobject' and $object/phrase">
+	  <xsl:when test="$object/self::db:textobject and $object/db:phrase">
 	    <xsl:value-of select="0"/>
 	  </xsl:when>
 
 	  <!-- The first textobject is a reasonable fallback -->
-	  <xsl:when test="name($object)='textobject'
-			  and $object[not(@role) or @role!='tex']">
+	  <xsl:when test="$object/self::db:textobject
+			  and $object[not(@role) or @role != 'tex']">
 	    <xsl:value-of select="1"/>
 	  </xsl:when>
 
 	  <!-- don't use graphic when output is FO, TeX Math is used 
 	       and there is math in alt element -->
-	  <xsl:when test="$object/ancestor::equation
-			  and $object/ancestor::equation/alt[@role='tex']
+	  <xsl:when test="$object/ancestor::db:equation
+			  and $object/ancestor::db:equation/db:alt[@role='tex']
 			  and $stylesheet.result.type = 'fo'
 			  and $tex.math.in.alt != ''">
 	    <xsl:value-of select="0"/>
@@ -919,9 +919,9 @@ object is recognized as a graphic.</para>
   <xsl:variable name="ext"
 		select="f:filename-extension($filename)"/>
 
-  <xsl:variable name="data" select="$object/videodata
-				    |$object/imagedata
-                                    |$object/audiodata"/>
+  <xsl:variable name="data" select="$object/db:videodata
+				    |$object/db:imagedata
+                                    |$object/db:audiodata"/>
 
   <xsl:variable name="format" select="lower-case($data/@format)"/>
 
@@ -938,9 +938,9 @@ object is recognized as a graphic.</para>
 <xsl:function name="f:mediaobject-filename">
   <xsl:param name="object" as="element()"/>
 
-  <xsl:variable name="data" select="$object/videodata
-                                    |$object/imagedata
-                                    |$object/audiodata
+  <xsl:variable name="data" select="$object/db:videodata
+                                    |$object/db:imagedata
+                                    |$object/db:audiodata
                                     |$object"/>
 
   <xsl:variable name="filename">
