@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:f="http://docbook.org/xslt/ns/extension"
                 xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
@@ -40,7 +40,7 @@
 
 <!-- ============================================================ -->
 
-<doc:mode name="m:normalize" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:normalize" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for normalizing a DocBook document</refpurpose>
 
 <refdescription>
@@ -68,7 +68,7 @@ copied by normalization.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="n:normalize-movetitle" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="n:normalize-movetitle" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Moves titles inside <tag>info</tag></refpurpose>
 
 <refdescription>
@@ -285,7 +285,7 @@ copied by normalization.</para>
 <!-- ============================================================ -->
 
 <doc:template name="n:normalize-generated-title"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Generate a title, if necessary, and see that its moved into
 <tag>info</tag></refpurpose>
 
@@ -369,7 +369,7 @@ necessary.</para>
 <!-- ============================================================ -->
 
 <doc:template name="n:normalize-dbinfo"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Copy the specified nodes, normalizing other content
 if appropriate</refpurpose>
 
@@ -424,7 +424,7 @@ if appropriate</refpurpose>
 <!-- ============================================================ -->
 <!-- fix namespace -->
 
-<doc:mode name="m:fixnamespace" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:fixnamespace" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for fixing the namespace of DocBook documents</refpurpose>
 
 <refdescription>
@@ -470,7 +470,7 @@ DocBook namespace. (See <parameter>docbook-namespace</parameter>).</para>
 <!-- ============================================================ -->
 <!-- profile content -->
 
-<doc:mode name="m:profile" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:profile" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for profiling DocBook documents</refpurpose>
 
 <refdescription>
@@ -511,7 +511,7 @@ content that is not in the specified profile.</para>
 
 <!-- ============================================================ -->
 
-<doc:function name="f:profile-ok" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:profile-ok" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns true if the specified attribute is in the specified profile
 </refpurpose>
 
@@ -564,7 +564,7 @@ true if the current attribute is in the specified profile.</para>
 <!-- ============================================================ -->
 
 <doc:function name="f:profile-attribute-ok"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns true if the context node has the specified attribute and that attribute is in the specified profile
 </refpurpose>
 
@@ -625,7 +625,7 @@ true if the current attribute is in the specified profile.</para>
 <!-- copy external glossary -->
 
 <doc:mode name="m:copy-external-glossary"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for copying external glossary entries</refpurpose>
 
 <refdescription>

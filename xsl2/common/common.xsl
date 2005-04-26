@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-		xmlns:db="http://docbook.org/docbook-ng"
+		xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:fp="http://docbook.org/xslt/ns/extension/private"
@@ -17,7 +17,7 @@
 <xsl:param name="use.svg" select="1"/>
 <xsl:param name="graphic.default.extension" select="''"/>
 
-<doc:reference xmlns="http://docbook.org/docbook-ng">
+<doc:reference xmlns="http://docbook.org/ns/docbook">
 <info>
 <title>Common Templates Reference</title>
 <author>
@@ -54,7 +54,7 @@ to be incomplete. Don't forget to read the source, too :-)</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="person-name" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="person-name" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Formats a personal name</refpurpose>
 
 <refdescription>
@@ -126,7 +126,7 @@ and <tag>othercredit</tag>) or with the locale.</para>
 <!-- ============================================================ -->
 
 <doc:template name="person-name-family-given"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Formats a personal name in the “family given” style</refpurpose>
 
 <refdescription>
@@ -172,7 +172,7 @@ template.</para>
 
 <!-- ============================================================ -->
 
-<doc:mode name="m:to-uppercase" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:to-uppercase" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for converting text to upper-case</refpurpose>
 
 <refdescription>
@@ -204,7 +204,7 @@ converted to upper-case.</para>
 <!-- ============================================================ -->
 
 <doc:template name="person-name-last-first"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Formats a personal name in the “last, first” style</refpurpose>
 
 <refdescription>
@@ -243,7 +243,7 @@ template.</para>
 <!-- ============================================================ -->
 
 <doc:template name="person-name-first-last"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Formats a personal name in the “first last” style</refpurpose>
 
 <refdescription>
@@ -306,7 +306,7 @@ template.</para>
 <!-- ============================================================ -->
 
 <doc:template name="person-name-list"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Formats a list of personal names</refpurpose>
 
 <refdescription>
@@ -386,7 +386,7 @@ an <tag>authorgroup</tag>.</para>
 <!-- ============================================================ -->
 
 <doc:template name="xpointer-idref"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the ID portion of an XPointer</refpurpose>
 
 <refdescription>
@@ -435,7 +435,7 @@ the empty string.</para>
 
 <!-- ============================================================ -->
 
-<doc:mode name="m:number" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:number" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for inserting element labels (numbers)</refpurpose>
 
 <refdescription>
@@ -501,7 +501,7 @@ Any element processed in this mode should generate its number.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="copyright-years" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="copyright-years" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Print a set of years with collapsed ranges</refpurpose>
 
 <refdescription>
@@ -679,7 +679,7 @@ year range is <quote>1991-1992</quote> but discretely it's
 
 <!-- ====================================================================== -->
 
-<doc:template name="t:select-mediaobject" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="t:select-mediaobject" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Selects and processes an appropriate media object from a list</refpurpose>
 
 <refdescription>
@@ -722,7 +722,7 @@ to determine which object in the list is appropriate.</para>
 <!-- ====================================================================== -->
 
 <doc:function name="f:select-mediaobject-index"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Selects the position of the appropriate media object from a list</refpurpose>
 
 <refdescription>

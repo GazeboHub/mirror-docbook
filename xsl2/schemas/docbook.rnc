@@ -1,5 +1,5 @@
 namespace ctrl = "http://nwalsh.com/xmlns/schema-control/"
-default namespace db = "http://docbook.org/docbook-ng"
+default namespace db = "http://docbook.org/ns/docbook"
 namespace dbx =
   "http://sourceforge.net/projects/docbook/defguide/schema/extra-markup"
 namespace dtd = "http://relaxng.org/ns/compatibility/annotations/1.0"
@@ -11,7 +11,7 @@ namespace xlink = "http://www.w3.org/1999/xlink"
 
 # DocBook NG: The "Jägermeister" Release
 
-# See http://docbook.org/docbook-ng/
+# See http://docbook.org/ns/docbook/
 start =
   (db.set
    | db.book
@@ -2746,7 +2746,7 @@ div {
         "               "
         s:assert [
           test =
-            "local-name(//*[@id=current()/@linkend]) = 'synopfragment' and namespace-uri(//*[@id=current()/@linkend]) = 'http://docbook.org/docbook-ng'"
+            "local-name(//*[@id=current()/@linkend]) = 'synopfragment' and namespace-uri(//*[@id=current()/@linkend]) = 'http://docbook.org/ns/docbook'"
           "@linkend on synopfragmentref must point to a synopfragment."
         ]
         "\x{a}" ~
@@ -5164,7 +5164,7 @@ div {
         "               "
         s:assert [
           test =
-            "local-name(//*[@id=current()/@linkend]) = 'footnote' and namespace-uri(//*[@id=current()/@linkend]) = 'http://docbook.org/docbook-ng'"
+            "local-name(//*[@id=current()/@linkend]) = 'footnote' and namespace-uri(//*[@id=current()/@linkend]) = 'http://docbook.org/ns/docbook'"
           "@linkend on footnoteref must point to a footnote."
         ]
         "\x{a}" ~
@@ -6382,7 +6382,7 @@ div {
         "               "
         s:assert [
           test =
-            "local-name(//*[@id=current()/@otherterm]) = 'glossentry' and namespace-uri(//*[@id=current()/@otherterm]) = 'http://docbook.org/docbook-ng'"
+            "local-name(//*[@id=current()/@otherterm]) = 'glossentry' and namespace-uri(//*[@id=current()/@otherterm]) = 'http://docbook.org/ns/docbook'"
           "@otherterm on glosssee must point to a glossentry."
         ]
         "\x{a}" ~
@@ -6410,7 +6410,7 @@ div {
         "               "
         s:assert [
           test =
-            "local-name(//*[@id=current()/@otherterm]) = 'glossentry' and namespace-uri(//*[@id=current()/@otherterm]) = 'http://docbook.org/docbook-ng'"
+            "local-name(//*[@id=current()/@otherterm]) = 'glossentry' and namespace-uri(//*[@id=current()/@otherterm]) = 'http://docbook.org/ns/docbook'"
           "@otherterm on glossseealso must point to a glossentry."
         ]
         "\x{a}" ~
@@ -6438,7 +6438,7 @@ div {
         "               "
         s:assert [
           test =
-            "local-name(//*[@id=current()/@linkend]) = 'glossentry' and namespace-uri(//*[@id=current()/@linkend]) = 'http://docbook.org/docbook-ng'"
+            "local-name(//*[@id=current()/@linkend]) = 'glossentry' and namespace-uri(//*[@id=current()/@linkend]) = 'http://docbook.org/ns/docbook'"
           "@linkend on firstterm must point to a glossentry."
         ]
         "\x{a}" ~
@@ -6463,7 +6463,7 @@ div {
         "               "
         s:assert [
           test =
-            "local-name(//*[@id=current()/@linkend]) = 'glossentry' and namespace-uri(//*[@id=current()/@linkend]) = 'http://docbook.org/docbook-ng'"
+            "local-name(//*[@id=current()/@linkend]) = 'glossentry' and namespace-uri(//*[@id=current()/@linkend]) = 'http://docbook.org/ns/docbook'"
           "@linkend on glossterm must point to a glossentry."
         ]
         "\x{a}" ~

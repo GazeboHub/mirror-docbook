@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns="http://www.w3.org/1999/xhtml"
-                xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:f="http://docbook.org/xslt/ns/extension"
                 xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
@@ -97,7 +97,7 @@
 <xsl:param name="l10n.xml" select="document('../common/l10n.xml')"/>
 <xsl:param name="local.l10n.xml" select="document('')"/>
 
-<xsl:param name="docbook-namespace" select="'http://docbook.org/docbook-ng'"/>
+<xsl:param name="docbook-namespace" select="'http://docbook.org/ns/docbook'"/>
 
 <xsl:param name="punct.honorific" select="'.'"/>
 <xsl:param name="author.othername.in.middle" select="0"/>

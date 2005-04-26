@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:f="http://docbook.org/xslt/ns/extension"
                 xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
@@ -25,7 +25,7 @@
 
 <!-- ============================================================ -->
 
-<doc:template name="id" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="id" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns an “id” attribute if appropriate</refpurpose>
 
 <refdescription>
@@ -84,7 +84,7 @@ not have an ID, make this parameter zero. It defaults to 1.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="anchor" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="anchor" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns an XHTML anchor if appropriate</refpurpose>
 
 <refdescription>
@@ -144,7 +144,7 @@ not have an ID, make this parameter non-zero. It defaults to 0.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="class" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="class" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns an “class” attribute if appropriate</refpurpose>
 
 <refdescription>
@@ -197,7 +197,7 @@ and the node has no <tag class="attribute">role</tag>.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="style" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="style" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns a “style” attribute if appropriate</refpurpose>
 
 <refdescription>
@@ -233,7 +233,7 @@ and a CSS style is specified.</para>
 
 <!-- ====================================================================== -->
 
-<doc:template name="css-style" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="css-style" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Template for inserting CSS stylesheet</refpurpose>
 
 <refdescription>
@@ -259,7 +259,7 @@ of the stylesheet is inserted directly.</para>
 
 <!-- ====================================================================== -->
 
-<doc:function name="f:href" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:href" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns a URI for the node</refpurpose>
 
 <refdescription>
@@ -321,7 +321,7 @@ when chunking.)</para>
 
 <!-- ====================================================================== -->
 
-<doc:function name="f:href-target-uri" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:href-target-uri" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns a URI for the node</refpurpose>
 
 <refdescription>
@@ -379,7 +379,7 @@ for the specified node.</para>
 
 <!-- ====================================================================== -->
 
-<doc:mode name="m:strip-anchors" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:strip-anchors" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for stripping anchors from XHTML</refpurpose>
 
 <refdescription>

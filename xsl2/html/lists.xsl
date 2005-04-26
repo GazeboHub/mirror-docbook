@@ -5,7 +5,7 @@
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
 		xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
-		xmlns:db="http://docbook.org/docbook-ng"
+		xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
 		exclude-result-prefixes="h f m fn db doc xs"
@@ -185,7 +185,7 @@
 
 <!-- ============================================================ -->
 
-<doc:template name="simplelist-horiz" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="simplelist-horiz" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Process a simplelist as a row-major table</refpurpose>
 
 <refdescription>
@@ -224,7 +224,7 @@
 
 <!-- ============================================================ -->
 
-<doc:template name="simplelist-horiz-row" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="simplelist-horiz-row" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Produce a row of a simplelist as a row-major table</refpurpose>
 
 <refdescription>
@@ -262,7 +262,7 @@
 
 <!-- ============================================================ -->
 
-<doc:template name="simplelist-vert" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="simplelist-vert" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Process a simplelist as a column-major table</refpurpose>
 
 <refdescription>
@@ -305,7 +305,7 @@
 
 <!-- ============================================================ -->
 
-<doc:template name="simplelist-vert-row" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="simplelist-vert-row" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Produce a row of a simplelist as a column-major table</refpurpose>
 
 <refdescription>

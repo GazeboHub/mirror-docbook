@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns="http://www.w3.org/1999/xhtml"
-                xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:f="http://docbook.org/xslt/ns/extension"
                 xmlns:fp="http://docbook.org/xslt/ns/extension"
-                xmlns:ghost="http://docbook.org/docbook-ng/ephemeral"
+                xmlns:ghost="http://docbook.org/ns/docbook/ephemeral"
                 xmlns:h="http://www.w3.org/1999/xhtml"
                 xmlns:m="http://docbook.org/xslt/ns/mode"
                 xmlns:mp="http://docbook.org/xslt/ns/mode/private"
@@ -28,7 +28,7 @@
 
 <!-- ============================================================ -->
 
-<doc:mode name="m:verbatim-phase-1" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:verbatim-phase-1" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for normalizing verbatim environments</refpurpose>
 
 <refdescription>
@@ -151,7 +151,7 @@ ordinary, straightforward manner.</para>
   <xsl:variable name="id" select="@xml:id"/>
   <xsl:copy>
     <xsl:copy-of select="@*[name(.) != 'xml:id'
-      and namespace-uri(.) != 'http://docbook.org/docbook-ng/ephemeral']"/>
+      and namespace-uri(.) != 'http://docbook.org/ns/docbook/ephemeral']"/>
     <xsl:if test="@xml:id and not(preceding::*[@xml:id = $id])">
       <xsl:attribute name="xml:id" select="$id"/>
     </xsl:if>
@@ -216,7 +216,7 @@ ordinary, straightforward manner.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="t:restore-content" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="t:restore-content" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Restores content to empty elements.</refpurpose>
 
 <refdescription>
@@ -431,7 +431,7 @@ an element that has content.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="t:unwrap" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="t:unwrap" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Unwraps an element with a particular name</refpurpose>
 
 <refdescription>
@@ -567,7 +567,7 @@ that it had been nested within.</para>
 
 <!-- ============================================================ -->
 
-<doc:mode name="m:make-empty-elements" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:make-empty-elements" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Make all elements empty</refpurpose>
 
 <refdescription>

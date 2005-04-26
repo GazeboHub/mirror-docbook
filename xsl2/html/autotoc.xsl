@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns="http://www.w3.org/1999/xhtml"
-                xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:f="http://docbook.org/xslt/ns/extension"
                 xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
@@ -45,7 +45,7 @@
 
 <!-- ============================================================ -->
 
-<doc:mode name="m:toc" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:toc" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for processing ToC and LoTs</refpurpose>
 
 <refdescription>
@@ -71,7 +71,7 @@
 
 <!-- ============================================================ -->
 
-<doc:template name="make-toc" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="make-toc" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Make a ToC</refpurpose>
 
 <refdescription>
@@ -148,7 +148,7 @@
 
 <!-- ============================================================ -->
 
-<doc:template name="make-lots" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="make-lots" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Make LoTs</refpurpose>
 
 <refdescription>
@@ -221,7 +221,7 @@
 
 <!-- ============================================================ -->
 
-<doc:template name="set-toc" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="set-toc" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Make ToC/LoTs for a Set</refpurpose>
 
 <refdescription>
@@ -256,7 +256,7 @@ Set.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="division-toc" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="division-toc" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Make ToC/LoTs for a division</refpurpose>
 
 <refdescription>
@@ -298,7 +298,7 @@ division (book, part, etc.).</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="component-toc" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="component-toc" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Make ToC/LoTs for a component</refpurpose>
 
 <refdescription>
@@ -343,7 +343,7 @@ component (chapter, article, etc.).</para>
 <!-- ============================================================ -->
 
 <doc:template name="component-toc-separator"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Make a separator for component ToCs</refpurpose>
 
 <refdescription>
@@ -363,7 +363,7 @@ component (chapter, article, etc.).</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="section-toc" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="section-toc" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Make ToC/LoTs for a section</refpurpose>
 
 <refdescription>
@@ -406,7 +406,7 @@ section.</para>
 <!-- ============================================================ -->
 
 <doc:template name="section-toc-separator"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Make a separator for section ToCs</refpurpose>
 
 <refdescription>
@@ -426,7 +426,7 @@ section.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="subtoc" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="subtoc" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Make subordinate ToC parts</refpurpose>
 
 <refdescription>
@@ -519,7 +519,7 @@ section.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="toc-line" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="toc-line" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Make a line of the ToC</refpurpose>
 
 <refdescription>
@@ -731,7 +731,7 @@ section.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="manual-toc" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="manual-toc" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Handle manual ToCs (toc elements)</refpurpose>
 
 <refdescription>
@@ -783,7 +783,7 @@ section.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="list-of-titles" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="list-of-titles" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Handles the headers for a List of Titles</refpurpose>
 
 <refdescription>

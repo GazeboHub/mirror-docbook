@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns="http://www.w3.org/1999/xhtml"
-                xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:f="http://docbook.org/xslt/ns/extension"
                 xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
@@ -25,7 +25,7 @@
 
 <!-- ============================================================ -->
 
-<doc:template match="db:link" xmlns="http://docbook.org/docbook-ng">
+<doc:template match="db:link" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Template for processing link elements</refpurpose>
 
 <refdescription>
@@ -105,7 +105,7 @@ identified.</entry>
 <!-- ============================================================ -->
 
 <doc:template name="db:xref" match="db:xref"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Template for processing xref elements</refpurpose>
 
 <refdescription>
@@ -213,7 +213,7 @@ attribute or a <tag class="attribute">linkend</tag> attribute</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="xreflabel" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="xreflabel" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Template for processing xreflabels</refpurpose>
 
 <refdescription>
@@ -248,7 +248,7 @@ attribute or a <tag class="attribute">linkend</tag> attribute</para>
 
 <!-- ============================================================ -->
 
-<doc:mode name="m:insert-title-markup" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:insert-title-markup" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for inserting title markup</refpurpose>
 
 <refdescription>
@@ -291,7 +291,7 @@ in this mode should generate its title.</para>
 
 <!-- ==================================================================== -->
 
-<doc:mode name="m:insert-subtitle-markup" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:insert-subtitle-markup" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for inserting subtitle markup</refpurpose>
 
 <refdescription>
@@ -310,7 +310,7 @@ in this mode should generate its subtitle.</para>
 
 <!-- ==================================================================== -->
 
-<doc:mode name="m:insert-label-markup" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:insert-label-markup" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for inserting label markup</refpurpose>
 
 <refdescription>
@@ -330,7 +330,7 @@ in this mode should generate its label (number).</para>
 <!-- ==================================================================== -->
 
 <doc:mode name="m:insert-pagenumber-markup"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for inserting page number markup</refpurpose>
 
 <refdescription>
@@ -350,7 +350,7 @@ in this mode should generate its page number.</para>
 <!-- ==================================================================== -->
 
 <doc:mode name="m:insert-direction-markup"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for inserting “direction” markup</refpurpose>
 
 <refdescription>
@@ -371,7 +371,7 @@ calculated from a reference and a referent (above or below, for example).</para>
 <!-- ==================================================================== -->
 
 <doc:mode name="m:insert-olink-docname-markup"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for inserting <tag>olink</tag> document name markup</refpurpose>
 
 <refdescription>
@@ -392,7 +392,7 @@ Any element processed in this mode should generate its document name.</para>
 
 <!-- ==================================================================== -->
 
-<doc:mode name="m:endterm" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:endterm" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for processing endterms</refpurpose>
 
 <refdescription>
@@ -414,7 +414,7 @@ Any element processed in this mode should generate its document name.</para>
 
 <!-- ==================================================================== -->
 
-<doc:mode name="m:remove-ids" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:remove-ids" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for removing IDs</refpurpose>
 
 <refdescription>
@@ -470,7 +470,7 @@ attributes.</para>
 <!-- ==================================================================== -->
 
 <doc:mode name="m:xref-to-prefix"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for inserting cross reference prefixes</refpurpose>
 
 <refdescription>
@@ -490,7 +490,7 @@ to cross references to that element.</para>
 <!-- ==================================================================== -->
 
 <doc:mode name="m:xref-to-suffix"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for inserting cross reference suffixes</refpurpose>
 
 <refdescription>
@@ -510,7 +510,7 @@ to cross references to that element.</para>
 <!-- ==================================================================== -->
 
 <doc:mode name="m:xref-to"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for inserting cross references</refpurpose>
 
 <refdescription>
@@ -931,7 +931,7 @@ cross references to that element.</para>
 
 <!-- ============================================================ -->
 
-<doc:mode name="m:xref" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:xref" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for inserting markup in an xref</refpurpose>
 
 <refdescription>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns="http://www.w3.org/1999/xhtml"
-		xmlns:db="http://docbook.org/docbook-ng"
+		xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
@@ -12,7 +12,7 @@
 		exclude-result-prefixes="h f m fn db doc t xs"
                 version="2.0">
 
-<doc:template name="titlepage" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="titlepage" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Processes a title page</refpurpose>
 
 <refdescription>
@@ -80,7 +80,7 @@ this is <tag>db:info/*</tag>.</para>
   </xsl:if>
 </xsl:template>
 
-<doc:mode name="m:titlepage-templates" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:titlepage-templates" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for processing the title page template contents</refpurpose>
 
 <refdescription>
@@ -122,7 +122,7 @@ are copied directly to the title page.</para>
   </xsl:if>
 </xsl:template>
 
-<doc:function name="f:node-matches" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:node-matches" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Tests if an element from the title page content matches an element
 from the document.</refpurpose>
 
@@ -189,7 +189,7 @@ document element.</para>
   </xsl:choose>
 </xsl:function>
 
-<doc:function name="f:user-node-matches" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:user-node-matches" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Tests if an element from the title page content matches an element
 from the document.</refpurpose>
 

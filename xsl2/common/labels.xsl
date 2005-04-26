@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-		xmlns:db="http://docbook.org/docbook-ng"
+		xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
@@ -22,7 +22,7 @@
 <!-- ============================================================ -->
 
 <doc:mode name="m:intralabel-punctuation"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for producing intra-label punctuation</refpurpose>
 
 <refdescription>
@@ -40,7 +40,7 @@ places where compound labels are necessary.</para>
 <!-- ============================================================ -->
 
 <doc:mode name="m:label-markup"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for producing label markup</refpurpose>
 
 <refdescription>

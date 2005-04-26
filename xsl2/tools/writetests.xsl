@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns="http://www.w3.org/1999/xhtml"
-                xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:h="http://www.w3.org/1999/xhtml"
                 xmlns:u="http://nwalsh.com/xsl/unittests#"
@@ -25,7 +25,7 @@
 
   <xsl:element name="xsl:stylesheet">
     <xsl:namespace name="f" select="'http://docbook.org/xslt/ns/extension'"/>
-    <xsl:namespace name="db" select="'http://docbook.org/docbook-ng'"/>
+    <xsl:namespace name="db" select="'http://docbook.org/ns/docbook'"/>
     <xsl:namespace name="xs" select="'http://www.w3.org/2001/XMLSchema'"/>
 
     <xsl:attribute name="version" select="'2.0'"/>

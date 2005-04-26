@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:f="http://docbook.org/xslt/ns/extension"
                 xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0"
@@ -21,7 +21,7 @@
 
 <!-- ============================================================ -->
 
-<doc:mode name="m:object-title-template" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:object-title-template" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for locating the title markup template for an element</refpurpose>
 
 <refdescription>
@@ -112,7 +112,7 @@ that should be used to generate its title.</para>
 <!-- ============================================================ -->
 
 <doc:mode name="m:object-subtitle-template"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for locating the subtitle markup template for an element
 </refpurpose>
 
@@ -133,7 +133,7 @@ that should be used to generate its subtitle.</para>
 <!-- ============================================================ -->
 
 <doc:mode name="m:object-xref-template"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for locating the cross-reference (<tag>xref</tag>)
 markup template for an element</refpurpose>
 
@@ -197,7 +197,7 @@ that should be used to generate a cross-reference to it.</para>
 <!-- ============================================================ -->
 
 <doc:mode name="m:autonumbered"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for determining if an element should be numbered</refpurpose>
 
 <refdescription>
@@ -263,7 +263,7 @@ Any element processed in this mode should return “1” if it should be numbere
 <!-- ============================================================ -->
 
 <doc:mode name="m:object-title-markup"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for formatting object titles</refpurpose>
 
 <refdescription>
@@ -288,7 +288,7 @@ Any element processed in this mode should return its formatted title.
 <!-- ============================================================ -->
 
 <doc:mode name="m:object-titleabbrev-markup"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for formatting the abbreviated title of an element</refpurpose>
 
 <refdescription>
@@ -311,7 +311,7 @@ rendition of its abbreviated title.</para>
 <!-- ============================================================ -->
 
 <doc:mode name="m:object-subtitle-markup"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for formatting the subtitle of an element</refpurpose>
 
 <refdescription>
@@ -334,7 +334,7 @@ rendition of its subtitle.</para>
 <!-- ============================================================ -->
 
 <doc:mode name="m:object-xref-markup"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for formatting cross-references to an element</refpurpose>
 
 <refdescription>
@@ -456,7 +456,7 @@ rendition of a cross-reference to itself.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="substitute-markup" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="substitute-markup" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Expands %d, %n, %o, %p, %s, and %t in generated text
 templates</refpurpose>
 
@@ -746,7 +746,7 @@ a cross-reference.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="make-gentext-template" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="make-gentext-template" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>???</refpurpose>
 
 <refdescription>

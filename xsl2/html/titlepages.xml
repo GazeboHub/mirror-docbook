@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <t:titlepages xmlns:t="http://docbook.org/xslt/ns/template"
 	      xmlns="http://www.w3.org/1999/xhtml"
-	      xmlns:db="http://docbook.org/docbook-ng">
+	      xmlns:db="http://docbook.org/ns/docbook">
 
 <db:article t:side="recto">
   <div class="article-titlepage">

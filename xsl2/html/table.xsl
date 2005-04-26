@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns="http://www.w3.org/1999/xhtml"
-		xmlns:db="http://docbook.org/docbook-ng"
+		xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
-		xmlns:ghost="http://docbook.org/docbook-ng/ephemeral"
+		xmlns:ghost="http://docbook.org/ns/docbook/ephemeral"
 		xmlns:h="http://www.w3.org/1999/xhtml"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
 		xmlns:t="http://docbook.org/xslt/ns/template"
@@ -300,7 +300,7 @@
 
 <!-- ============================================================ -->
 
-<doc:mode name="m:cals" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:cals" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for processing normalized CALS tables</refpurpose>
 
 <refdescription>
@@ -366,7 +366,7 @@
 
 <!-- ============================================================ -->
 
-<doc:template name="tr-attributes" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="tr-attributes" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Extension point for table row attributes</refpurpose>
 
 <refdescription>
@@ -497,7 +497,7 @@ to alternate rows of the table:</para>
 
 <!-- ==================================================================== -->
 
-<doc:template name="border" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="border" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Generate CSS for table cell borders</refpurpose>
 
 <refdescription>
@@ -602,7 +602,7 @@ Defaults to <parameter>table.cell.border.thickness</parameter>.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="generate-colgroup" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="generate-colgroup" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Generates an HTML <tag>colgroup</tag>.</refpurpose>
 
 <refdescription>
@@ -644,7 +644,7 @@ Defaults to <parameter>table.cell.border.thickness</parameter>.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="generate-col" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="generate-col" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Generates an HTML <tag>col</tag>.</refpurpose>
 
 <refdescription>
@@ -760,7 +760,7 @@ See <function role="named-template">generate-colgroup</function>.
 <!-- ============================================================ -->
 <!-- HTML tables -->
 
-<doc:mode name="m:html" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:html" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for processing HTML tables</refpurpose>
 
 <refdescription>

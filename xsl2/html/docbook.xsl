@@ -6,7 +6,7 @@
 		xmlns:t="http://docbook.org/xslt/ns/template"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
 		xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
-		xmlns:db="http://docbook.org/docbook-ng"
+		xmlns:db="http://docbook.org/ns/docbook"
 		exclude-result-prefixes="h f m fn db t"
                 version="2.0">
 

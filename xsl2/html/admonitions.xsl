@@ -5,7 +5,7 @@
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
 		xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
-		xmlns:db="http://docbook.org/docbook-ng"
+		xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
 		exclude-result-prefixes="h f m fn db doc xs"
@@ -44,7 +44,7 @@
 
 <!-- ============================================================ -->
 
-<doc:mode name="m:graphical-admonition" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:graphical-admonition" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for processing admonitions with graphics</refpurpose>
 
 <refdescription>
@@ -107,7 +107,7 @@ the graphical form.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="admonition-graphic" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="admonition-graphic" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the name of the appropriate admonition graphic</refpurpose>
 
 <refdescription>
@@ -147,7 +147,7 @@ kind of admonition.</para>
 
 <!-- ============================================================ -->
 
-<doc:function name="f:admonition-class" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:admonition-class" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the class value for an admonition</refpurpose>
 
 <refdescription>

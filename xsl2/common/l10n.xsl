@@ -28,7 +28,7 @@
 <!-- ============================================================ -->
 
 <doc:template name="user-localization-data"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>A hook for customizer localization data</refpurpose>
 
 <refdescription>
@@ -48,7 +48,7 @@ localization data.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="l10n-language" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="l10n-language" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Identifies the natural language associated with an element</refpurpose>
 
 <refdescription>
@@ -168,7 +168,7 @@ target.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="lang-attribute" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="lang-attribute" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns a language attribute, if appropriate.</refpurpose>
 
 <refdescription>
@@ -230,7 +230,7 @@ an in-scope language declaration.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="gentext" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="gentext" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the generated text associated with a particular key
 in a particular language (locale)</refpurpose>
 
@@ -301,7 +301,7 @@ context node.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="gentext-template" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="gentext-template" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the generated text template associated with a particular set
 of criteria</refpurpose>
 
@@ -429,7 +429,7 @@ in the context named "</xsl:text>
 <!-- ============================================================ -->
 
 <doc:template name="gentext-template-exists"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Tests if the generated text template associated with a particular set
 of criteria exists</refpurpose>
 
@@ -525,7 +525,7 @@ the specified parameters.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="gentext-dingbat" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="gentext-dingbat" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the symbol associated with a named dingbat</refpurpose>
 
 <refdescription>
@@ -563,7 +563,7 @@ the specified parameters.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="gentext-startquote" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="gentext-startquote" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the symbol associated with “startquote”</refpurpose>
 
 <refdescription>
@@ -581,7 +581,7 @@ the specified parameters.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="gentext-endquote" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="gentext-endquote" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the symbol associated with “endquote”</refpurpose>
 
 <refdescription>
@@ -600,7 +600,7 @@ the specified parameters.</para>
 <!-- ============================================================ -->
 
 <doc:template name="gentext-nestedstartquote"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the symbol associated with “nestedstartquote”</refpurpose>
 
 <refdescription>
@@ -619,7 +619,7 @@ the specified parameters.</para>
 <!-- ============================================================ -->
 
 <doc:template name="gentext-nestedendquote"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the symbol associated with “nestedendquote”</refpurpose>
 
 <refdescription>

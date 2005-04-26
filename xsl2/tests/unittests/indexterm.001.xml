@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<book xmlns="http://docbook.org/docbook-ng" version="hard cider" xml:lang="cs"><info><title>Pokusná kniha s rejstříkem</title></info>
+<book xmlns="http://docbook.org/ns/docbook" version="hard cider" xml:lang="cs"><info><title>Pokusná kniha s rejstříkem</title></info>
 
 
 <chapter><info><title>a</title></info>

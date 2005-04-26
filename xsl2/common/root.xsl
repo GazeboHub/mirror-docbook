@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:f="http://docbook.org/xslt/ns/extension"
                 xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
@@ -21,7 +21,7 @@
 <!-- ============================================================ -->
 
 <doc:mode name="m:cleanup"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for cleaning up DocBook documents</refpurpose>
 
 <refdescription>
@@ -52,7 +52,7 @@ fixup, profiling, and general normalizations are applied.</para>
 <!-- ============================================================ -->
 
 <doc:mode name="m:root"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for processing the root of a the primary input document</refpurpose>
 
 <refdescription>
@@ -106,7 +106,7 @@ fixup, profiling, and general normalizations are applied.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="m:root-terminate" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="m:root-terminate" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Aborts processing if the root element is inappropriate</refpurpose>
 
 <refdescription>

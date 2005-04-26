@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><book xmlns="http://docbook.org/docbook-ng" version="hard cider">
+<?xml version="1.0" encoding="utf-8"?><book xmlns="http://docbook.org/ns/docbook" version="hard cider">
 <info><title>Unit Test: indexterm.001</title>
 
 <releaseinfo role="CVS">$Id$</releaseinfo>

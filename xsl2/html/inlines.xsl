@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns="http://www.w3.org/1999/xhtml"
-                xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:f="http://docbook.org/xslt/ns/extension"
                 xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
@@ -22,7 +22,7 @@
 
 <!-- ============================================================ -->
 
-<doc:template name="simple-xlink" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="simple-xlink" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Handle xlink:href attributes on inlines</refpurpose>
 
 <refdescription>
@@ -124,7 +124,7 @@ context item.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="inline-charseq" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="inline-charseq" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Handles simple inline elements</refpurpose>
 
 <refdescription>
@@ -178,7 +178,7 @@ calling “apply templates” with the current context node.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="inline-monoseq" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="inline-monoseq" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Handles monospace inline elements</refpurpose>
 
 <refdescription>
@@ -232,7 +232,7 @@ calling “apply templates” with the current context node.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="inline-boldseq" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="inline-boldseq" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Handles bold inline elements</refpurpose>
 
 <refdescription>
@@ -286,7 +286,7 @@ calling “apply templates” with the current context node.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="inline-italicseq" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="inline-italicseq" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Handles italic inline elements</refpurpose>
 
 <refdescription>
@@ -340,7 +340,7 @@ calling “apply templates” with the current context node.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="inline-boldmonoseq" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="inline-boldmonoseq" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Handles bold, monospace inline elements</refpurpose>
 
 <refdescription>
@@ -401,7 +401,7 @@ calling “apply templates” with the current context node.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="inline-italicmonoseq" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="inline-italicmonoseq" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Handles italic, monospace inline elements</refpurpose>
 
 <refdescription>
@@ -462,7 +462,7 @@ calling “apply templates” with the current context node.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="inline-superscriptseq" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="inline-superscriptseq" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Handles superscript inline elements</refpurpose>
 
 <refdescription>
@@ -517,7 +517,7 @@ calling “apply templates” with the current context node.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="inline-subscriptseq" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="inline-subscriptseq" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Handles subscript inline elements</refpurpose>
 
 <refdescription>
@@ -572,7 +572,7 @@ calling “apply templates” with the current context node.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="format-tag" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="format-tag" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Handles markup for the DocBook <tag>tag</tag> element</refpurpose>
 
 <refdescription>
@@ -758,7 +758,7 @@ the default is “element”.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="db:glossterm" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="db:glossterm" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Template for processing glossterm elements</refpurpose>
 
 <refdescription>

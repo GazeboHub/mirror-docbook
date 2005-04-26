@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns="http://www.w3.org/1999/xhtml"
-                xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:f="http://docbook.org/xslt/ns/extension"
                 xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
@@ -157,7 +157,7 @@
 
 <!-- ============================================================ -->
 
-<doc:template name="biblioentry-label" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="biblioentry-label" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the label for a bibliography entry</refpurpose>
 
 <refdescription>
@@ -226,7 +226,7 @@ context node.</para>
 <!-- ============================================================ -->
 
 <doc:mode name="m:bibliomixed"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for formatting <tag>bibliomixed</tag> elements</refpurpose>
 
 <refdescription>
@@ -342,7 +342,7 @@ for the content of a bibliography entry.</para>
 <!-- ============================================================ -->
 
 <doc:mode name="m:biblioentry"
-	  xmlns="http://docbook.org/docbook-ng">
+	  xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for formatting <tag>biblioentry</tag> elements</refpurpose>
 
 <refdescription>

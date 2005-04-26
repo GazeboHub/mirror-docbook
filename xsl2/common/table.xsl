@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns="http://www.w3.org/1999/xhtml"
-		xmlns:db="http://docbook.org/docbook-ng"
+		xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:fp="http://docbook.org/xslt/ns/extension/private"
-		xmlns:ghost="http://docbook.org/docbook-ng/ephemeral"
+		xmlns:ghost="http://docbook.org/ns/docbook/ephemeral"
 		xmlns:h="http://www.w3.org/1999/xhtml"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
                 xmlns:u="http://nwalsh.com/xsl/unittests#"
@@ -13,7 +13,7 @@
 		exclude-result-prefixes="doc f fp ghost h m u xs"
                 version="2.0">
 
-<doc:mode name="m:cals-phase-1" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:cals-phase-1" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for normalizing CALS tables</refpurpose>
 
 <refdescription>
@@ -228,7 +228,7 @@ each row and cell.</para>
 <!-- ============================================================ -->
 
 <doc:template name="inherit-table-attributes"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Calculates attribute values for table cells</refpurpose>
 
 <refdescription>
@@ -365,7 +365,7 @@ a normalized cell has all of the proper values specified directly.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="adjust-column-widths" xmlns="http://docbook.org/docbook-ng">
+<doc:template name="adjust-column-widths" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Adjust column width values for HTML or XSL-FO</refpurpose>
 
 <refdescription>
@@ -575,7 +575,7 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
       <xsl:when test="sum($parsedcols/@ghost:rel) = 0">
 	<xsl:for-each select="$parsedcols">
 	  <col>
-	    <xsl:copy-of select="@*[namespace-uri(.) != 'http://docbook.org/docbook-ng/ephemeral']"/>
+	    <xsl:copy-of select="@*[namespace-uri(.) != 'http://docbook.org/ns/docbook/ephemeral']"/>
 	    <xsl:attribute name="colwidth">
 	      <xsl:choose>
 		<xsl:when test="$abspixels = 0">
@@ -595,7 +595,7 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
 	<xsl:variable name="relTotal" select="sum($parsedcols/@ghost:rel)"/>
 	<xsl:for-each select="$parsedcols">
 	  <col>
-	    <xsl:copy-of select="@*[namespace-uri(.) != 'http://docbook.org/docbook-ng/ephemeral']"/>
+	    <xsl:copy-of select="@*[namespace-uri(.) != 'http://docbook.org/ns/docbook/ephemeral']"/>
 	    <xsl:attribute name="colwidth">
 	      <xsl:value-of select="round(@ghost:rel div $relTotal * 100)"/>
 	      <xsl:text>%</xsl:text>
@@ -634,7 +634,7 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
 	    <xsl:for-each select="$convcols">
 	      <col>
 		<xsl:copy-of select="@*[namespace-uri(.)
-			        != 'http://docbook.org/docbook-ng/ephemeral']"/>
+			        != 'http://docbook.org/ns/docbook/ephemeral']"/>
 		<xsl:attribute name="colwidth">
 		  <xsl:value-of select="format-number(@ghost:rel div $absTotal * 100,
 					              '0.00')"/>
@@ -646,7 +646,7 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
 	  <xsl:otherwise>
 	    <xsl:for-each select="$convcols">
 	      <col>
-		<xsl:copy-of select="@*[namespace-uri(.) != 'http://docbook.org/docbook-ng/ephemeral']"/>
+		<xsl:copy-of select="@*[namespace-uri(.) != 'http://docbook.org/ns/docbook/ephemeral']"/>
 		<xsl:attribute name="colwidth">
 		  <xsl:choose>
 		    <xsl:when test="$abspixels = 0">
@@ -671,7 +671,7 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
 
 <!-- ============================================================ -->
 
-<doc:function name="f:convert-length" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:convert-length" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Converts a length to pixels</refpurpose>
 
 <refdescription>
@@ -778,7 +778,7 @@ length specified was a percentage, in which case it is returned unchanged.</para
 <!-- ============================================================ -->
 
 <doc:function name="f:find-element-by-attribute"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Selects an element based on the presence of an attribute</refpurpose>
 
 <refdescription>
@@ -828,7 +828,7 @@ attribute.</para>
 <!-- ============================================================ -->
 
 <doc:function name="f:find-colspec-by-colnum"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Finds the <tag>colspec</tag> for the specified column
 number.</refpurpose>
 
@@ -899,7 +899,7 @@ specification for that column.</para>
 
 <!-- ============================================================ -->
 
-<doc:function name="f:skip-overhang" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:skip-overhang" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Finds the next available column position in a CALS table</refpurpose>
 
 <refdescription>
@@ -947,7 +947,7 @@ current column number.</para>
 
 <!-- ============================================================ -->
 
-<doc:function name="f:colspec-colnum" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:colspec-colnum" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the column number associated with a particuluar
 <tag>colspec</tag>.</refpurpose>
 
@@ -992,7 +992,7 @@ current column number.</para>
 <!-- ============================================================ -->
 
 <doc:function name="f:spanspec-colnum-start"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the column number of the starting column of a
 span</refpurpose>
 
@@ -1027,7 +1027,7 @@ span.</para>
 <!-- ============================================================ -->
 
 <doc:function name="f:spanspec-colnum-end"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the column number of the ending column of a
 span</refpurpose>
 

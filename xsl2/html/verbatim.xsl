@@ -4,10 +4,10 @@
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
 		xmlns:h="http://www.w3.org/1999/xhtml"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
-		xmlns:ghost="http://docbook.org/docbook-ng/ephemeral"
+		xmlns:ghost="http://docbook.org/ns/docbook/ephemeral"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
 		xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
-		xmlns:db="http://docbook.org/docbook-ng"
+		xmlns:db="http://docbook.org/ns/docbook"
 		exclude-result-prefixes="doc h f m fn db ghost"
                 version="2.0">
 
@@ -32,7 +32,7 @@
 
 <!-- ============================================================ -->
 
-<doc:mode name="m:verbatim" xmlns="http://docbook.org/docbook-ng">
+<doc:mode name="m:verbatim" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Mode for processing normalized verbatim elements</refpurpose>
 
 <refdescription>

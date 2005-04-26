@@ -7,7 +7,7 @@
 namespace local = ""
 namespace doc = "http://nwalsh.com/xsl/documentation/1.0"
 namespace xsl = "http://www.w3.org/1999/XSL/Transform"
-namespace db = "http://docbook.org/docbook-ng"
+namespace db = "http://docbook.org/ns/docbook"
 
 include "xslt20.rnc" {
   start = stylesheet.element

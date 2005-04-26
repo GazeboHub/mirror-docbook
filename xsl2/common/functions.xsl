@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:db="http://docbook.org/docbook-ng"
+                xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:f="http://docbook.org/xslt/ns/extension"
                 xmlns:fp="http://docbook.org/xslt/ns/extension/private"
@@ -11,7 +11,7 @@
                 exclude-result-prefixes="db doc f fp l m u xs"
                 version="2.0">
 
-<doc:reference xmlns="http://docbook.org/docbook-ng">
+<doc:reference xmlns="http://docbook.org/ns/docbook">
 <info>
 <title>Common Functions Reference</title>
 <author>
@@ -48,7 +48,7 @@ to be incomplete. Don't forget to read the source, too :-)</para>
 
 <!-- ============================================================ -->
 
-<doc:function name="f:node-id" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:node-id" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns an ID for the specified node</refpurpose>
 
 <refdescription>
@@ -131,7 +131,7 @@ node does not have an ID, the XSLT
 
 <!-- ============================================================ -->
 
-<doc:function name="f:xptr-id" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:xptr-id" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns an XPointer-style ID for the specified node</refpurpose>
 
 <refdescription>
@@ -189,7 +189,7 @@ same XPointer IDs.</para>
 <!-- ============================================================ -->
 
 <doc:function name="f:orderedlist-starting-number"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the number of the first item in an ordered list</refpurpose>
 
 <refdescription>
@@ -248,7 +248,7 @@ is to be determined.</para>
 <!-- ============================================================ -->
 
 <doc:function name="f:next-orderedlist-numeration"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the next numeration style</refpurpose>
 
 <refdescription>
@@ -295,7 +295,7 @@ is the first style in that list.</para>
 <!-- ============================================================ -->
 
 <doc:function name="f:orderedlist-numeration"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the next numeration style</refpurpose>
 
 <refdescription>
@@ -345,7 +345,7 @@ be calculated.</para>
 <!-- ============================================================ -->
 
 <doc:function name="f:orderedlist-item-number"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the item number of the specified <tag>listitem</tag>
 in an <tag>orderedlist</tag></refpurpose>
 
@@ -409,7 +409,7 @@ style should be calculated.</para>
 <!-- ============================================================ -->
 
 <doc:function name="f:next-itemizedlist-symbol"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the next symbol style</refpurpose>
 
 <refdescription>
@@ -457,7 +457,7 @@ is the first style in that list.</para>
 <!-- ============================================================ -->
 
 <doc:function name="f:itemizedlist-symbol"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the mark that should be used for the specified
 <tag>listitem</tag> or <tag>itemizedlist</tag></refpurpose>
 
@@ -527,7 +527,7 @@ it is specified.</para>
 <!-- ============================================================ -->
 
 <doc:function name="f:procedure-step-numeration"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the numeration style for procedure steps</refpurpose>
 
 <refdescription>
@@ -593,7 +593,7 @@ or <tag>steps</tag>.</para>
 
 <!-- ============================================================ -->
 
-<doc:function name="f:pi" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:pi" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the value of the first matching pseudo-attribute</refpurpose>
 
 <refdescription>
@@ -652,7 +652,7 @@ such attribute can be found.</para>
 
 <!-- ============================================================ -->
 
-<doc:function name="f:dingbat" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:dingbat" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Translates a dingbat name into a symbol</refpurpose>
 
 <refdescription>
@@ -701,7 +701,7 @@ locale value will be used as the default.</para>
 
 <!-- ============================================================ -->
 
-<doc:function name="f:dingbat" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:dingbat" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Translates a dingbat name into a symbol</refpurpose>
 
 <refdescription>
@@ -767,7 +767,7 @@ the English locale value will be used as the default.</para>
 
 <!-- ============================================================ -->
 
-<doc:function name="f:xpath-location" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:xpath-location" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns a pseudo-XPath expression locating the specified node</refpurpose>
 
 <refdescription>
@@ -825,7 +825,7 @@ be impossible.</para>
 
 <!-- ====================================================================== -->
 
-<doc:function name="f:is-component" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:is-component" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns true if the specified node is a “component”</refpurpose>
 
 <refdescription>
@@ -868,7 +868,7 @@ elements to the list of components, if necessary.</para>
 
 <!-- ====================================================================== -->
 
-<doc:function name="f:is-section" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:is-section" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns true if the specified node is a “section”</refpurpose>
 
 <refdescription>
@@ -915,7 +915,7 @@ elements to the list of sections, if necessary.</para>
 
 <!-- ============================================================ -->
 
-<doc:function name="f:label-this-section" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:label-this-section" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns true if the specified section should be labelled
 (numbered).</refpurpose>
 
@@ -958,7 +958,7 @@ labelled. Broadly speaking this is true if
 
 <!-- ============================================================ -->
 
-<doc:function name="f:section-level" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:section-level" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the nesting depth of the specified section</refpurpose>
 
 <refdescription>
@@ -1022,7 +1022,7 @@ Top level sections are at level “1”.</para>
 <!-- ============================================================ -->
 
 <doc:function name="f:pseudo-section-level"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the nesting depth of the specified element</refpurpose>
 
 <refdescription>
@@ -1083,7 +1083,7 @@ of elements such as <tag>qanda</tag>.</para>
 <!-- ============================================================ -->
 
 <doc:function name="f:refentry-section-level"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the nesting depth of the specified <tag>refentry</tag>
 section</refpurpose>
 
@@ -1134,7 +1134,7 @@ enclosing <tag>refentry</tag>; see <function>refentry-level</function>.
 <!-- ============================================================ -->
 
 <doc:function name="f:refentry-level"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the nesting depth of the specified <tag>refentry</tag>
 </refpurpose>
 
@@ -1184,7 +1184,7 @@ be calculated.</para>
 <!-- ============================================================ -->
 
 <doc:function name="f:group-index"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the ordinal number of index group to which supplied term belongs.</refpurpose>
 
 <refdescription>
@@ -1267,7 +1267,7 @@ This number is used to group index terms and to define order of groups.</para>
 <!-- ============================================================ -->
 
 <doc:function name="f:group-label"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the label of specified index group.</refpurpose>
 
 <refdescription>
@@ -1337,7 +1337,7 @@ it can be also longer text like "Symbols" or "Ch".</para>
 
 <!-- ============================================================ -->
 
-<doc:function name="f:pad" xmlns="http://docbook.org/docbook-ng">
+<doc:function name="f:pad" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Constructs a string of the specified length</refpurpose>
 
 <refdescription>
@@ -1402,7 +1402,7 @@ that is <parameter>count</parameter> characters long.</para>
 <!-- ============================================================ -->
 
 <doc:function name="f:find-node-in-sequence"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Finds a particular node in a sequence of nodes</refpurpose>
 
 <refdescription>
@@ -1461,7 +1461,7 @@ for another node with the same name to appear in the sequence.</para>
 <!-- ============================================================ -->
 
 <doc:function name="f:find-toc-params"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Finds the TOC parameters for an element</refpurpose>
 
 <refdescription>
@@ -1521,7 +1521,7 @@ matching path.</para>
 <!-- ============================================================ -->
 
 <doc:function name="f:trim-common-uri-paths"
-	      xmlns="http://docbook.org/docbook-ng">
+	      xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Trim common leading path information from a URI</refpurpose>
 
 <refdescription>
