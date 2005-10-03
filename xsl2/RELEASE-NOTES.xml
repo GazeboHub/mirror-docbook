@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN" "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd">
+<article>
+  <articleinfo>
+    <title>DocBook XSL2 Stylesheet Release Notes</title>
+    <pubdate><?dbtimestamp format="Y-m-d"?></pubdate>
+    <releaseinfo role="cvs">$Id$</releaseinfo> 
+    <corpauthor>DocBook Project Development Team</corpauthor> 
+  </articleinfo> 
+
+  <para>These are the release notes for the DocBook XSL2 Stylesheets.
+  At a minimum, this file attempts to document changes to the public
+  APIs, particularly to user-configurable parameters. This file also
+  provides a high-level overview of the features added in each
+  release.</para>
+
+  <para>Bug fixes are (mostly) not documented here. For a complete
+  list of changes, including descriptions of bug fixes, see the <ulink
+  url="NEWS"/> file, which is auto-generated from the checkin
+  descriptions for changes in the project CVS repository.</para>
+
+  <section>
+    <title>Release 0.01.0</title>
+    <para>Initial release.</para>
+  </section>
+</article>
