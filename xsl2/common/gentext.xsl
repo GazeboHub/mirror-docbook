@@ -577,7 +577,7 @@ a cross-reference.</para>
 
 <xsl:template name="substitute-markup">
   <xsl:param name="template" select="''"/>
-  <xsl:param name="allow-anchors" select="'0'"/>
+  <xsl:param name="allow-anchors" select="0"/>
   <xsl:param name="title" select="''"/>
   <xsl:param name="subtitle" select="''"/>
   <xsl:param name="docname" select="''"/>
