@@ -1,0 +1,77 @@
+----------------------------------------------------------------------
+              README file for the DocBook XSL2 Stylesheets
+----------------------------------------------------------------------
+$Id$
+
+These are XSL stylesheets -- currently, EXPERIMENTAL and
+INCOMPLETE ones -- for transforming DocBook XML document instances
+into various output formats (well, actually, currently HTML output
+only). They require use of an XSLT engine that supports the XSLT
+2.0 standard (which currently means they require Saxon 8).
+
+----------------------------------------------------------------------
+Installation
+----------------------------------------------------------------------
+See the INSTALL file for information about installing this release.
+
+----------------------------------------------------------------------
+How to use the stylesheets
+----------------------------------------------------------------------
+The base canonical URI for these stylesheets is:
+
+  http://docbook.sourceforge.net/release/xsl2/current/
+
+You call any of the stylesheets in this distribution by doing one
+of the following:
+
+  - Use the base canonical URI in combination with one of the
+    pathnames below. For example, for "chunked" HTML, output:
+
+    http://docbook.sourceforge.net/release/xsl2/current/html/chunk.xsl
+
+    If your system has a working XML Catalog or SGML Catalog setup
+    (most Linux systems do), then that URI will automatically be
+    resolved and replaced with a local pathname on your system.
+
+  - Use a "real" local system base path in combination with one of
+    the pathnames below. For example, for "chunked" HTML, output:
+
+    /usr/share/xml/docbook/stylesheet/dbk/xsl2/html/chunk.xsl
+
+To transform documents created with the standard DocBook schema/DTD
+(or DocBook NG schema/DTD, use one of the following stylesheets:
+
+  html/docbook.xsl        - for HTML (as a single file)
+  html/chunk.xsl          - for HTML (chunked into multiple files)
+
+----------------------------------------------------------------------
+Manifest
+----------------------------------------------------------------------
+AUTHORS     contact information
+BUGS        about known problems
+COPYING     copyright information
+INSTALL     installation instructions
+README      this file
+RELEASE.*   per-release cumulative summaries of user-visible changes
+TODO        about planned features not yet implemented
+VERSION     current version number (VERSION is an XSL stylesheet that
+            gets included by driver stylesheets for each output format)
+NEWS        changes since the last public release (for cumulative lists
+            of changes, see the ChangeLog files in each subdirectory)
+
+common/     contains code common to both the HTML and FO stylesheets
+extensions/ Java extensions
+html/       stylesheets that produce HTML
+schemas/    RELAX NG compact-syntax schemas
+tests/      XML files for use in testing the stylesheets
+tools/      utility XSL stylesheets for building documentation, etc.
+
+----------------------------------------------------------------------
+Changes
+----------------------------------------------------------------------
+See the ChangeLog in each subdirectory for cumulative lists of all changes.
+
+See the NEWS file for changes made since the previous release.
+
+See the RELEASE-NOTES.html or RELEASE-NOTES.txt or RELEASE-NOTES.pdf files
+for per-release cumulative summaries of significant user-visible changes.
