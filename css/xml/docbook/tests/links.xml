@@ -1,8 +1,31 @@
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
-          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd"
+[
+  <!-- this hack is required to make the link implementation function in Moz
+     (as Moz doesn't read the external subset, but does treat ID attributes
+     specially) -->
+  <!ATTLIST title id ID #IMPLIED>
+]>
 <?xml-stylesheet href="../driver.css" type="text/css"?>
 <section>
-  <title>Links</title>
+  <title id="top_title">Links</title>
 
-  <para><ulink url="http://www.badgers-in-foil.co.uk/">www.badgers-in-foil.co.uk</ulink></para>
+  <section>
+    <title><sgmltag class="starttag">ulink</sgmltag></title>
+
+    <para><ulink url="http://www.badgers-in-foil.co.uk/">www.badgers-in-foil.co.uk</ulink></para>
+
+    <para>Some vertical space...</para>
+    <para>xxx</para> <para>xxx</para> <para>xxx</para> <para>xxx</para>
+    <para>xxx</para> <para>xxx</para> <para>xxx</para> <para>xxx</para>
+    <para>xxx</para> <para>xxx</para> <para>xxx</para> <para>xxx</para>
+    <para>xxx</para> <para>xxx</para> <para>xxx</para> <para>xxx</para>
+    <para>xxx</para> <para>xxx</para> <para>xxx</para> <para>xxx</para>
+    <para>xxx</para> <para>xxx</para> <para>xxx</para> <para>xxx</para>
+  </section>
+
+  <section>
+    <title><sgmltag class="starttag">link</sgmltag></title>
+    <para>Back to the <link linkend="top_title">top</link>.</para>
+  </section>
 </section>

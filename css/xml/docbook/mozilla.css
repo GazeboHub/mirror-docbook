@@ -21,16 +21,19 @@ ulink {
 xref {
 	-moz-binding:url('db-bindings.xml#xref');
 }
-ulink, xref {
+link {
+	-moz-binding:url('db-bindings.xml#link');
+}
+ulink, xref, link {
 	cursor: pointer;
 	-moz-user-focus: normal;
 }
 
-ulink:active {
+ulink:active, xref:active, link:active {
 	color: red;
 }
 
-ulink:focus {
+ulink:focus, xref:focus, link:focus {
 	-moz-outline: 1px dotted invert;
 }
 

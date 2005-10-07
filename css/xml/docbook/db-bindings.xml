@@ -80,6 +80,20 @@
     </implementation>
   </binding>
 
+  <!--
+    Binding for <link>
+  -->
+  <binding id="link">
+    <handlers>
+      <handler event="click" button="0"
+               action="window.location.hash = this.attributes.linkend.value"/>
+      <handler event="mouseover"
+               action="window.status='#'+this.attributes.linkend.value;"/>
+      <handler event="mouseout"
+               action="window.status=null;"/>
+    </handlers>
+  </binding>
+
   <binding id="mediaobj" inheritstyle="false">
     <!--
       We must have <children/> here, because Moz will reject this binding if
@@ -135,3 +149,6 @@
     </implementation>
   </binding>
 </bindings>
+<!--
+vim:softtabstop=2:shiftwidth=2
+-->
