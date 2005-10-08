@@ -33,7 +33,7 @@ Any element processed in this mode should generate its title.</para>
 </doc:mode>
 
 <xsl:template match="*" mode="m:title-markup" priority="10000">
-  <xsl:param name="allow-anchors" select="0"/>
+  <xsl:param name="allow-anchors" select="0" as="xs:integer"/>
   <xsl:param name="verbose" select="1"/>
 
   <xsl:variable name="markup">
@@ -54,7 +54,7 @@ Any element processed in this mode should generate its title.</para>
 </xsl:template>
 
 <xsl:template match="*" mode="m:title-markup">
-  <xsl:param name="allow-anchors" select="0"/>
+  <xsl:param name="allow-anchors" select="0" as="xs:integer"/>
   <xsl:param name="verbose" select="1"/>
 
   <xsl:choose>
@@ -157,7 +157,7 @@ title.</para>
 </doc:mode>
 
 <xsl:template match="*" mode="m:titleabbrev-markup" priority="10000">
-  <xsl:param name="allow-anchors" select="0"/>
+  <xsl:param name="allow-anchors" select="0" as="xs:integer"/>
   <xsl:param name="verbose" select="1"/>
 
   <xsl:variable name="markup">
@@ -175,7 +175,7 @@ title.</para>
 </xsl:template>
 
 <xsl:template match="*" mode="m:titleabbrev-markup">
-  <xsl:param name="allow-anchors" select="0"/>
+  <xsl:param name="allow-anchors" select="0" as="xs:integer"/>
   <xsl:param name="verbose" select="1"/>
 
   <xsl:choose>

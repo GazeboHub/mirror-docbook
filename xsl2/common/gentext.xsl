@@ -274,7 +274,7 @@ Any element processed in this mode should return its formatted title.
 </doc:mode>
 
 <xsl:template match="*" mode="m:object-title-markup">
-  <xsl:param name="allow-anchors" select="0"/>
+  <xsl:param name="allow-anchors" select="0" as="xs:integer"/>
   <xsl:variable name="template">
     <xsl:apply-templates select="." mode="m:object-title-template"/>
   </xsl:variable>
@@ -299,7 +299,7 @@ rendition of its abbreviated title.</para>
 </doc:mode>
 
 <xsl:template match="*" mode="m:object-titleabbrev-markup">
-  <xsl:param name="allow-anchors" select="0"/>
+  <xsl:param name="allow-anchors" select="0" as="xs:integer"/>
 
   <!-- Just for consistency in template naming -->
 
@@ -577,7 +577,7 @@ a cross-reference.</para>
 
 <xsl:template name="substitute-markup">
   <xsl:param name="template" select="''"/>
-  <xsl:param name="allow-anchors" select="0"/>
+  <xsl:param name="allow-anchors" select="0" as="xs:integer"/>
   <xsl:param name="title" select="''"/>
   <xsl:param name="subtitle" select="''"/>
   <xsl:param name="docname" select="''"/>

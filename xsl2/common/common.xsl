@@ -417,7 +417,7 @@ the empty string.</para>
 </doc:template>
 
 <xsl:template name="xpointer-idref">
-  <xsl:param name="xpointer">http://...</xsl:param>
+  <xsl:param name="xpointer" select="'http://...'"/>
   <xsl:choose>
     <xsl:when test="starts-with($xpointer, '#xpointer(id(')">
       <xsl:variable name="rest"

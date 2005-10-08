@@ -36,6 +36,7 @@
   <xsl:include href="glossary.xsl"/>
   <xsl:include href="table.xsl"/>
   <xsl:include href="lists.xsl"/>
+  <xsl:include href="callouts.xsl"/>
   <xsl:include href="formal.xsl"/>
   <xsl:include href="blocks.xsl"/>
   <xsl:include href="graphics.xsl"/>
@@ -51,10 +52,20 @@
   <xsl:include href="autoidx.xsl"/>
   <xsl:include href="chunker.xsl"/>
 
+<!-- ============================================================ -->
+<!-- HACK HACK HACK for testing framework. Delete me! -->
+
+<xsl:template match="db:emphasis" mode="foobar">
+  <b><xsl:apply-templates/></b>
+</xsl:template>
+
+<!-- ============================================================ -->
+
   <xsl:output method="xml" encoding="utf-8" indent="yes"/>
   <xsl:output name="final" method="xhtml" encoding="utf-8" indent="yes"/>
 
   <xsl:param name="stylesheet.result.type" select="'xhtml'"/>
+  <xsl:param name="input" select="/"/>
 
   <xsl:template match="*" mode="m:root">
     <xsl:result-document href="normalized.xml">

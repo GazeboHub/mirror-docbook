@@ -6,8 +6,9 @@
                 xmlns:f="http://docbook.org/xslt/ns/extension"
                 xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
                 xmlns:m="http://docbook.org/xslt/ns/mode"
+                xmlns:u="http://nwalsh.com/xsl/unittests#"
                 xmlns:xlink='http://www.w3.org/1999/xlink'
-                exclude-result-prefixes="db doc f fn m xlink"
+                exclude-result-prefixes="db doc f fn m u xlink"
                 version="2.0">
 
 <!-- ********************************************************************
@@ -15,7 +16,7 @@
      ********************************************************************
 
      This file is part of the XSL DocBook Stylesheet distribution.
-     See ../README or http://nwalsh.com/docbook/xsl/ for copyright
+     See ../README or http://docbook.sourceforge.net/ for copyright
      and other information.
 
      ******************************************************************** -->
@@ -153,6 +154,19 @@ calling “apply templates” with the current context node.</para>
 <refreturn>
 <para>The result tree markup for the element.</para>
 </refreturn>
+
+<u:unittests template="inline-charseq">
+  <u:test>
+    <u:context as="element()">
+      <db:varname xml:id="varfoo">someVarName</db:varname>
+    </u:context>
+    <u:result>
+      <span xmlns="http://www.w3.org/1999/xhtml"
+	    class="varname" id="varfoo">someVarName</span>
+    </u:result>
+  </u:test>
+</u:unittests>
+
 </doc:template>
 
 <xsl:template name="inline-charseq">
@@ -681,6 +695,26 @@ the default is “element”.</para>
 <xsl:template match="db:alt">
 </xsl:template>
 
+<u:unittests match="db:emphasis">
+  <u:test>
+    <u:context as="element()">
+      <db:emphasis>Something emphasized</db:emphasis>
+    </u:context>
+    <u:result>
+      <em xmlns="http://www.w3.org/1999/xhtml">Something emphasized</em>
+    </u:result>
+  </u:test>
+  <u:test>
+    <u:context as="element()">
+      <db:emphasis role='strong'>Something strongly emphasized</db:emphasis>
+    </u:context>
+    <u:result>
+      <strong xmlns="http://www.w3.org/1999/xhtml"
+	      class="emphasis">Something strongly emphasized</strong>
+    </u:result>
+  </u:test>
+</u:unittests>
+
 <xsl:template match="db:emphasis">
   <xsl:call-template name="simple-xlink">
     <xsl:with-param name="content">
@@ -706,6 +740,26 @@ the default is “element”.</para>
     </xsl:with-param>
   </xsl:call-template>
 </xsl:template>
+
+<!-- ============================================================ -->
+<!-- HACK HACK HACK for testing framework. Delete me! -->
+
+<u:unittests match="db:emphasis" mode="foobar">
+  <u:test>
+    <u:context as="element()">
+      <db:emphasis>Something emphasized</db:emphasis>
+    </u:context>
+    <u:result>
+      <b xmlns="http://www.w3.org/1999/xhtml">Something emphasized</b>
+    </u:result>
+  </u:test>
+</u:unittests>
+
+<xsl:template match="db:emphasis" mode="foobar">
+  <b><xsl:apply-templates/></b>
+</xsl:template>
+
+<!-- ============================================================ -->
 
 <xsl:template match="db:foreignphrase">
   <em class="{local-name(.)}">

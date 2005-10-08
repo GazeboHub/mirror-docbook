@@ -193,12 +193,68 @@
   </div>
 </db:section>
 
+<db:sect1 t:side="recto">
+  <div class="section-titlepage">
+    <db:title/>
+    <db:subtitle/>
+  </div>
+</db:sect1>
+
+<db:sect2 t:side="recto">
+  <div class="section-titlepage">
+    <db:title/>
+    <db:subtitle/>
+  </div>
+</db:sect2>
+
+<db:sect3 t:side="recto">
+  <div class="section-titlepage">
+    <db:title/>
+    <db:subtitle/>
+  </div>
+</db:sect3>
+
+<db:sect4 t:side="recto">
+  <div class="section-titlepage">
+    <db:title/>
+    <db:subtitle/>
+  </div>
+</db:sect4>
+
+<db:sect5 t:side="recto">
+  <div class="section-titlepage">
+    <db:title/>
+    <db:subtitle/>
+  </div>
+</db:sect5>
+
 <db:refsection t:side="recto">
   <div class="section-titlepage">
     <db:title/>
     <db:subtitle/>
   </div>
 </db:refsection>
+
+<db:refsect1 t:side="recto">
+  <div class="section-titlepage">
+    <db:title/>
+    <db:subtitle/>
+  </div>
+</db:refsect1>
+
+<db:refsect2 t:side="recto">
+  <div class="section-titlepage">
+    <db:title/>
+    <db:subtitle/>
+  </div>
+</db:refsect2>
+
+<db:refsect3 t:side="recto">
+  <div class="section-titlepage">
+    <db:title/>
+    <db:subtitle/>
+  </div>
+</db:refsect3>
 
 <db:glossdiv t:side="recto">
   <div class="glossdiv-titlepage">
@@ -218,6 +274,10 @@
 <db:variablelist>
   <db:title/>
 </db:variablelist>
+
+<db:calloutlist>
+  <db:title/>
+</db:calloutlist>
 
 <db:figure>
   <db:title/>

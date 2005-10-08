@@ -75,7 +75,9 @@ node does not have an ID, the XSLT
 
 <u:unittests function="f:node-id">
   <u:test>
-    <u:param><db:anchor xml:id='id'/></u:param>
+    <u:param>
+      <db:anchor xml:id='id'/>
+    </u:param>
     <u:result>'id'</u:result>
   </u:test>
   <u:test>
@@ -97,6 +99,18 @@ node does not have an ID, the XSLT
       </db:book>
     </u:variable>
     <u:param select="$mydoc//db:para[1]"/>
+    <u:result>'R.1.2.2'</u:result>
+  </u:test>
+  <u:test>
+    <u:param select="//db:para[1]">
+      <db:book>
+	<db:title>Some Title</db:title>
+	<db:chapter>
+	  <db:title>Some Chapter Title</db:title>
+	  <db:para>My para.</db:para>
+	</db:chapter>
+      </db:book>
+    </u:param>
     <u:result>'R.1.2.2'</u:result>
   </u:test>
 </u:unittests>
@@ -1572,7 +1586,48 @@ components that it has in common with <parameter>uriB</parameter>.</para>
 
 <!-- ============================================================ -->
 
-<!-- We assume all filenames are really URIs and use "/" -->
+<doc:function name="f:filename-basename"
+	      xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Return the filename part of a directory name</refpurpose>
+
+<refdescription>
+<para>This function returns the last path component of a directory name
+or URI in a hierarchical URI scheme.
+</para>
+<para>This function assumes all filenames are really URIs and always
+expects “/” to be the component separator.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>filename</term>
+<listitem>
+<para>The full filename with path or other components.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The last path component.</para>
+</refreturn>
+
+<u:unittests function="f:filename-basename">
+  <u:test>
+    <u:param>/path/to/my/file.ext</u:param>
+    <u:result>'file.ext'</u:result>
+  </u:test>
+  <u:test>
+    <u:param>http://path/spec/to/here</u:param>
+    <u:result>'here'</u:result>
+  </u:test>
+  <u:test>
+    <u:param>noslashes</u:param>
+    <u:result>'noslashes'</u:result>
+  </u:test>
+</u:unittests>
+
+</doc:function>
 
 <xsl:function name="f:filename-basename" as="xs:string">
   <xsl:param name="filename" as="xs:string"/>

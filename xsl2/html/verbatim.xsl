@@ -22,7 +22,7 @@
 		       mode="m:verbatim"/>
 </xsl:template>
 
-<xsl:template match="db:programlisting|db:address">
+<xsl:template match="db:programlisting|db:address|db:screen|db:synopsis">
   <xsl:variable name="cleanedup" as="element()">
     <xsl:apply-templates select="." mode="m:verbatim-phase-1"/>
   </xsl:variable>

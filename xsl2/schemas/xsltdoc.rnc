@@ -8,15 +8,16 @@ namespace local = ""
 namespace doc = "http://nwalsh.com/xsl/documentation/1.0"
 namespace xsl = "http://www.w3.org/1999/XSL/Transform"
 namespace db = "http://docbook.org/ns/docbook"
+namespace u = "http://nwalsh.com/xsl/unittests#"
 
 include "xslt20.rnc" {
   start = stylesheet.element
 
   top-level-elements.model =
-     (declaration.category | top-level-extension | documentation)*
+     (declaration.category | top-level-extension | documentation | unitTests)*
 
   top-level-extension =
-     element * - (xsl:* | local:* | doc:*) {
+     element * - (xsl:* | local:* | doc:* | u:*) {
         grammar {
            start = any
            any =
@@ -27,7 +28,7 @@ include "xslt20.rnc" {
      }
 }
 
-documentation = docMode | docTemplate 
+documentation = docMode | docTemplate | docFunction
 
 docMode = element doc:mode {
    attribute name { xsd:QName },
@@ -36,7 +37,14 @@ docMode = element doc:mode {
 
 docTemplate = element doc:template {
    attribute name { text },
-   (db.refpurpose, db.refdescription, db.refparameter, db.refreturns)
+   (db.refpurpose, db.refdescription,
+      db.refparameter?, db.refreturns?, unitTests?)
+}
+
+docFunction = element doc:function {
+   attribute name { text },
+   (db.refpurpose, db.refdescription,
+      db.refparameter?, db.refreturns?, unitTests?)
 }
 
 db.refpurpose =
@@ -61,6 +69,55 @@ db.refreturns =
    element db:refreturn {
       attribute role { text }?,
       db.anyblock+
+   }
+
+# ============================================================
+
+unitTests =
+   element u:unittests {
+      attribute name { text }?,
+      attribute function { text }?,
+      attribute template { text }?,
+      unitTest+
+   }
+
+unitTest =
+   element u:test {
+      unitContext?, unitVariable*, unitParam*, unitResult
+   }
+
+unitVariable =
+   element u:variable {
+      attribute name { text },
+      attribute as { text }?,
+      attribute select { text }?,
+      (text|unitAnyOther)*
+   }
+
+unitContext =
+   element u:context {
+      attribute as { text }?,
+      (text|unitAnyOther)*
+   }
+
+unitParam =
+   element u:param {
+      attribute name { text }?,
+      attribute as { text }?,
+      attribute select { text }?,
+      (text|unitAnyOther)*
+   }
+
+unitResult =
+   element u:result {
+      (text|unitAnyOther)*
+   }
+
+unitAnyOther =
+   element * - u:* {
+   (attribute * { text }
+    | text
+    | unitAnyOther)*
    }
 
 # ============================================================

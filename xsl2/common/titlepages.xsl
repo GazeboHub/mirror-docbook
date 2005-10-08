@@ -96,6 +96,7 @@ are copied directly to the title page.</para>
   <xsl:param name="info" tunnel="yes"/>
 
   <xsl:variable name="this" select="."/>
+
   <xsl:variable name="content" select="$info[f:node-matches($this,.)]"/>
 
   <xsl:if test="$content">

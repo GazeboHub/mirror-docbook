@@ -443,7 +443,7 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
       </colgroup>
     </u:param>
     <u:param name="abspixels">1</u:param>
-    <u:result>
+    <u:result as="element()">
       <colgroup xmlns="http://www.w3.org/1999/xhtml"> 
 	<col colwidth="47%"/>
 	<col colwidth="27%"/>
@@ -463,7 +463,7 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
       </colgroup>
     </u:param>
     <u:param name="abspixels">1</u:param>
-    <u:result>
+    <u:result as="element()">
       <colgroup xmlns="http://www.w3.org/1999/xhtml"> 
 	<col colwidth="192"/>
 	<col colwidth="288"/>
@@ -483,7 +483,7 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
       </colgroup>
     </u:param>
     <u:param name="abspixels">1</u:param>
-    <u:result>
+    <u:result as="element()">
       <colgroup xmlns="http://www.w3.org/1999/xhtml"> 
 	<col colwidth="502" colname="foo"/>
 	<col colwidth="177"/>
@@ -503,7 +503,7 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
       </colgroup>
     </u:param>
     <u:param name="abspixels">1</u:param>
-    <u:result>
+    <u:result as="element()">
       <colgroup xmlns="http://www.w3.org/1999/xhtml"> 
 	<col colwidth="58.12%" colname="foo"/>
 	<col colwidth="20.51%"/>
@@ -522,7 +522,7 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
 	<col colwidth="1in" align="right"/>
       </colgroup>
     </u:param>
-    <u:result>
+    <u:result as="element()">
       <colgroup xmlns="http://www.w3.org/1999/xhtml"> 
 	<col colwidth="5.23in" colname="foo"/>
 	<col colwidth="1.85in"/>
