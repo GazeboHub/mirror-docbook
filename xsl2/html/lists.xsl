@@ -7,9 +7,22 @@
 		xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
 		xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
+		xmlns:t="http://docbook.org/xslt/ns/template"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		exclude-result-prefixes="h f m fn db doc xs"
+		exclude-result-prefixes="h f m fn db doc t xs"
                 version="2.0">
+
+<xsl:template match="db:itemizedlist/db:info/db:title
+		     |db:orderedlist/db:info/db:title
+		     |db:variablelist/db:info/db:title
+		     |db:procedure/db:info/db:title"
+	      mode="m:titlepage-mode">
+  <div class="title">
+    <xsl:apply-templates select="../.." mode="m:object-title-markup">
+      <xsl:with-param name="allow-anchors" select="1"/>
+    </xsl:apply-templates>
+  </div>
+</xsl:template>
 
 <!-- ============================================================ -->
 
@@ -358,6 +371,99 @@
     <xsl:apply-templates/>
   </span>
   <xsl:if test="following-sibling::db:member">, </xsl:if>
+</xsl:template>
+
+<!-- ============================================================ -->
+
+<xsl:template match="db:procedure">
+  <xsl:variable name="numeration" select="f:procedure-step-numeration(.)"/>
+
+  <xsl:call-template name="t:semiformal-object">
+    <xsl:with-param name="placement"
+	    select="$formal.title.placement[self::db:procedure]/@placement"/>
+    <xsl:with-param name="class" select="local-name(.)"/>
+    <xsl:with-param name="object" as="element()">
+      <div class="{local-name(.)}">
+	<xsl:call-template name="id"/>
+	<xsl:call-template name="class"/>
+
+	<xsl:apply-templates
+	    select="(db:step[1]/preceding-sibling::node())[not(self::db:info)]"/>
+
+	<xsl:choose>
+	  <xsl:when test="count(db:step) = 1">
+	    <ul>
+	      <xsl:apply-templates 
+		  select="db:step[1]|db:step[1]/following-sibling::node()"/>
+	    </ul>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <ol>
+	      <xsl:attribute name="type">
+		<xsl:choose>
+		  <xsl:when test="$numeration = 'arabic'">1</xsl:when>
+		  <xsl:when test="$numeration = 'loweralpha'">a</xsl:when>
+		  <xsl:when test="$numeration = 'upperalpha'">A</xsl:when>
+		  <xsl:when test="$numeration = 'lowerroman'">i</xsl:when>
+		  <xsl:when test="$numeration = 'upperroman'">I</xsl:when>
+		  <xsl:otherwise>1</xsl:otherwise>
+		</xsl:choose>
+	      </xsl:attribute>
+	      <xsl:apply-templates 
+		  select="db:step[1]|db:step[1]/following-sibling::node()"/>
+	    </ol>
+	  </xsl:otherwise>
+	</xsl:choose>
+      </div>
+    </xsl:with-param>
+  </xsl:call-template>
+</xsl:template>
+
+<xsl:template match="db:step">
+  <xsl:variable name="titlepage"
+		select="$titlepages/*[node-name(.)
+			              = node-name(current())][1]"/>
+
+  <li>
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+
+    <div class="{local-name(.)}">
+      <xsl:call-template name="titlepage">
+	<xsl:with-param name="content" select="$titlepage"/>
+      </xsl:call-template>
+
+      <xsl:apply-templates select="node()[not(self::db:info)]"/>
+    </div>
+  </li>
+</xsl:template>
+
+<xsl:template match="db:substeps">
+  <xsl:variable name="numeration" select="f:procedure-step-numeration(.)"/>
+
+  <ol>
+    <xsl:attribute name="type">
+      <xsl:choose>
+	<xsl:when test="$numeration = 'arabic'">1</xsl:when>
+	<xsl:when test="$numeration = 'loweralpha'">a</xsl:when>
+	<xsl:when test="$numeration = 'upperalpha'">A</xsl:when>
+	<xsl:when test="$numeration = 'lowerroman'">i</xsl:when>
+	<xsl:when test="$numeration = 'upperroman'">I</xsl:when>
+	<xsl:otherwise>1</xsl:otherwise>
+      </xsl:choose>
+    </xsl:attribute>
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+    <xsl:apply-templates/>
+  </ol>
+</xsl:template>
+
+<xsl:template match="db:stepalternatives">
+  <ul>
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+    <xsl:apply-templates/>
+  </ul>
 </xsl:template>
 
 </xsl:stylesheet>

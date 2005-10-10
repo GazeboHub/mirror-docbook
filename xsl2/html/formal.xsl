@@ -14,7 +14,7 @@
 <xsl:param name="formal.title.placement" as="element()*">
   <db:figure placement="after"/>
   <db:example placement="before"/>
-  <db:equation placement="before"/>
+  <db:equation placement="after"/>
   <db:table placement="before"/>
   <db:procedure placement="before"/>
   <db:task placement="before"/>
@@ -255,30 +255,5 @@ formal, sometimes informal, by calling the appropriate template.
   </xsl:call-template>
 </xsl:template>
 
-<xsl:template match="db:equation">
-  <xsl:call-template name="t:semiformal-object">
-    <xsl:with-param name="placement"
-	    select="$formal.title.placement[self::db:equation]/@placement"/>
-    <xsl:with-param name="class" select="local-name(.)"/>
-    <xsl:with-param name="object" as="element()">
-      <div class="{local-name(.)}">
-	<xsl:call-template name="class"/>
-	<xsl:apply-templates select="*[not(self::db:caption)]"/>
-      </div>
-    </xsl:with-param>
-  </xsl:call-template>
-</xsl:template>
-
-<xsl:template match="db:informalequation">
-  <xsl:call-template name="t:informal-object">
-    <xsl:with-param name="class" select="local-name(.)"/>
-    <xsl:with-param name="object" as="element()">
-      <div class="{local-name(.)}">
-	<xsl:call-template name="class"/>
-	<xsl:apply-templates select="*[not(self::db:caption)]"/>
-      </div>
-    </xsl:with-param>
-  </xsl:call-template>
-</xsl:template>
 
 </xsl:stylesheet>

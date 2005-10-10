@@ -1,6 +1,7 @@
 div.epigraph          { margin-left: 0.5in;
                         margin-right: 0.5in;
                       }
+
 div.attribution       { margin-left: 50%;
                       }
 
@@ -90,6 +91,16 @@ div.informaltable  { padding-left: 3px;
                      padding-bottom: 5px;
                    }
 
+div.equation-wrapper
+div.title          { background-color: #CACACA;
+                     padding: 3px;
+                   }
+
+div.example-wrapper
+div.title          { background-color: #CACACA;
+                     padding: 3px;
+                   }
+div.figure-wrapper
 div.title          { background-color: #CACACA;
                      padding: 3px;
                    }
@@ -103,3 +114,43 @@ div.longdesc-link  { position: absolute;
                      right: 10px;
                      font-size: small;
                    }
+
+.revision-added    { background-color: #FFFF99; }
+
+.revision-deleted  { text-decoration: line-through;
+                     background-color: #FF9999;
+                   }
+.revision-changed  { background-color: #99FF99; }
+
+.revision-inherited { border-left-style: solid;
+                      border-left-width: 1px;
+                      border-left-color: #303030;
+                      padding-left: 10px;
+                    }
+
+div.synopfragment  { margin-bottom: 1em;
+                   }
+
+div.cmdsynopsis    { margin-bottom: 1em;
+                   }
+
+body.draft         { background-image: url("http://docbook.sf.net/release/images/draft.png");
+                   }
+
+em.strikethrough   { text-decoration: line-through;
+                     font-style: normal;
+                   }
+
+em.underline       { text-decoration: underline;
+                     font-style: normal;
+                   }
+
+em                 { font-style: italic; }
+
+em em              { font-style: normal; }
+
+em em em           { font-style: italic; }
+
+em em em em        { font-style: normal; }
+
+em em em em em     { font-style: italic; }

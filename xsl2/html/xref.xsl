@@ -880,11 +880,7 @@ cross references to that element.</para>
 <xsl:template match="db:co" mode="m:xref-to">
   <xsl:param name="referrer"/>
   <xsl:param name="xrefstyle"/>
-
-  <!-- FIXME:
   <xsl:apply-templates select="." mode="m:callout-bug"/>
-  -->
-  <xsl:text>???</xsl:text>
 </xsl:template>
 
 <xsl:template match="db:book" mode="m:xref-to">

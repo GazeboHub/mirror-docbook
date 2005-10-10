@@ -152,51 +152,55 @@
     <xsl:apply-templates select="*[not(self::db:info)
 				   and not(self::db:callout)]"/>
 
-    <dl>
+    <!-- If you can get CSS to do this layout right, pleaes tell me how -->
+    <table border="0" summary="Callout list">
       <xsl:apply-templates select="db:callout"/>
-    </dl>
+    </table>
   </div>
 </xsl:template>
 
 <xsl:template match="db:callout">
-  <dt>
-    <xsl:call-template name="id"/>
-    <xsl:for-each select="tokenize(@arearefs,'\s')">
-      <xsl:variable name="target" select="key('id',.,$input)[1]"/>
+  <tr class="callout-row">
+    <td class="callout-bug" valign="baseline" align="left">
+      <xsl:call-template name="id"/>
+      <xsl:for-each select="tokenize(@arearefs,'\s')">
+	<xsl:variable name="target" select="key('id',.,$input)[1]"/>
 
-      <xsl:choose>
-	<xsl:when test="count($target)=0">
-	  <xsl:message>
-	    <xsl:text>Error? callout points to non-existent id: </xsl:text>
-	    <xsl:value-of select="."/>
-	  </xsl:message>
-	  <xsl:text>???</xsl:text>
-	</xsl:when>
-	<xsl:when test="$target/self::db:co">
-	  <a href="{f:href($input,$target)}">
-	    <xsl:apply-templates select="$target" mode="m:callout-bug"/>
-	  </a>
-	  <xsl:text> </xsl:text>
-	</xsl:when>
-	<xsl:when test="$target/self::db:areaset">
-	  <xsl:text>FIXME: support areaset</xsl:text>
-	</xsl:when>
-	<xsl:when test="$target/self::db:area">
-	  <xsl:text>FIXME: support area</xsl:text>
-	</xsl:when>
-        <xsl:otherwise>
-	  <xsl:message>
-	    <xsl:text>Error? callout points to </xsl:text>
-	    <xsl:value-of select="name($target)"/>
-	  </xsl:message>
-	  <xsl:text>???</xsl:text>
-	</xsl:otherwise>
-      </xsl:choose>
-    </xsl:for-each>
-  </dt>
-  <dd>
-    <xsl:apply-templates/>
-  </dd>
+	<xsl:choose>
+	  <xsl:when test="count($target)=0">
+	    <xsl:message>
+	      <xsl:text>Error? callout points to non-existent id: </xsl:text>
+	      <xsl:value-of select="."/>
+	    </xsl:message>
+	    <xsl:text>???</xsl:text>
+	  </xsl:when>
+	  <xsl:when test="$target/self::db:co">
+	    <a href="{f:href($input,$target)}">
+	      <xsl:apply-templates select="$target" mode="m:callout-bug"/>
+	    </a>
+	    <xsl:text>&#160;</xsl:text>
+	  </xsl:when>
+	  <xsl:when test="$target/self::db:areaset">
+	    <xsl:text>FIXME: support areaset</xsl:text>
+	  </xsl:when>
+	  <xsl:when test="$target/self::db:area">
+	    <xsl:text>FIXME: support area</xsl:text>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <xsl:message>
+	      <xsl:text>Error? callout points to </xsl:text>
+	      <xsl:value-of select="name($target)"/>
+	    </xsl:message>
+	    <xsl:text>???</xsl:text>
+	  </xsl:otherwise>
+	</xsl:choose>
+      </xsl:for-each>
+      <xsl:text>&#160;</xsl:text>
+    </td>
+    <td class="callout-body" valign="baseline" align="left">
+      <xsl:apply-templates/>
+    </td>
+  </tr>
 </xsl:template>
 
 </xsl:stylesheet>

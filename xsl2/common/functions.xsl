@@ -596,6 +596,9 @@ or <tag>steps</tag>.</para>
       <xsl:value-of select="subsequence($procedure.step.numeration.styles,
 			                $stype,1)"/>
     </xsl:when>
+    <xsl:when test="$context/self::db:procedure">
+      <xsl:value-of select="subsequence($procedure.step.numeration.styles,1,1)"/>
+    </xsl:when>
     <xsl:otherwise>
       <xsl:message>
 	<xsl:text>Unexpected context in f:procedure-step-numeration: </xsl:text>

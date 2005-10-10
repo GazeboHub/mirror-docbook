@@ -287,6 +287,14 @@
   <db:title/>
 </db:table>
 
+<db:example>
+  <db:title/>
+</db:example>
+
+<db:equation>
+  <db:title/>
+</db:equation>
+
 <db:note>
   <db:title/>
 </db:note>
@@ -310,6 +318,22 @@
 <db:qandaset>
   <db:title/>
 </db:qandaset>
+
+<db:task>
+  <db:title/>
+</db:task>
+
+<db:tasksummary>
+  <db:title/>
+</db:tasksummary>
+
+<db:taskprerequisites>
+  <db:title/>
+</db:taskprerequisites>
+
+<db:taskrelated>
+  <db:title/>
+</db:taskrelated>
 
 </t:titlepages>
 

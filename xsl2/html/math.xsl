@@ -13,24 +13,28 @@
                 version="2.0">
 
 <xsl:template match="db:equation">
-  <xsl:variable name="nname" select="node-name(.)"/>
-  <xsl:variable name="param.placement"
-		select="$formal.title.placement
-			/*[node-name(.)=$nname][1]/@placement"/>
-
-  <xsl:variable name="placement"
-		select="if ($param.placement != '')
-                        then $param.placement
-			else 'before'"/>
-
   <xsl:call-template name="t:semiformal-object">
-    <xsl:with-param name="placement" select="$placement"/>
+    <xsl:with-param name="placement"
+	    select="$formal.title.placement[self::db:equation]/@placement"/>
     <xsl:with-param name="class" select="local-name(.)"/>
-    <xsl:with-param name="object">
+    <xsl:with-param name="object" as="element()">
       <div class="{local-name(.)}">
 	<xsl:call-template name="id"/>
 	<xsl:call-template name="class"/>
-	<xsl:apply-templates/>
+	<xsl:apply-templates select="*[not(self::db:caption)]"/>
+      </div>
+    </xsl:with-param>
+  </xsl:call-template>
+</xsl:template>
+
+<xsl:template match="db:informalequation">
+  <xsl:call-template name="t:informal-object">
+    <xsl:with-param name="class" select="local-name(.)"/>
+    <xsl:with-param name="object" as="element()">
+      <div class="{local-name(.)}">
+	<xsl:call-template name="id"/>
+	<xsl:call-template name="class"/>
+	<xsl:apply-templates select="*[not(self::db:caption)]"/>
       </div>
     </xsl:with-param>
   </xsl:call-template>
@@ -45,3 +49,4 @@
 </xsl:template>
 
 </xsl:stylesheet>
+

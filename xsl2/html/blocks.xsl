@@ -9,7 +9,12 @@
 		exclude-result-prefixes="h f m fn db"
                 version="2.0">
 
+<!-- ============================================================ -->
+
 <xsl:template match="db:para|db:simpara">
+  <xsl:param name="runin" select="()"/>
+  <xsl:param name="class" select="''"/>
+
   <xsl:choose>
     <xsl:when test="parent::db:listitem
 		    and not(preceding-sibling::*)
@@ -26,7 +31,14 @@
 	<xsl:otherwise>
 	  <p>
 	    <xsl:call-template name="id"/>
-	    <xsl:call-template name="class"/>
+	    <xsl:choose>
+	      <xsl:when test="$class = ''">
+		<xsl:call-template name="class"/>
+	      </xsl:when>
+	      <xsl:otherwise>
+		<xsl:attribute name="class" select="$class"/>
+	      </xsl:otherwise>
+	    </xsl:choose>
 	    <xsl:apply-templates/>
 	  </p>
 	</xsl:otherwise>
@@ -35,7 +47,19 @@
     <xsl:otherwise>
       <p>
 	<xsl:call-template name="id"/>
-	<xsl:call-template name="class"/>
+	<xsl:choose>
+	  <xsl:when test="$class = ''">
+	    <xsl:call-template name="class"/>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <xsl:attribute name="class" select="$class"/>
+	  </xsl:otherwise>
+	</xsl:choose>
+
+	<xsl:if test="not(empty($runin))">
+	  <xsl:copy-of select="$runin"/>
+	</xsl:if>
+
 	<xsl:apply-templates/>
       </p>
     </xsl:otherwise>
@@ -44,17 +68,16 @@
 
 <xsl:template match="db:epigraph">
   <div class="{local-name(.)}">
-      <xsl:apply-templates select="*[not(self::db:attribution)]"/>
-      <xsl:if test="db:attribution">
-        <div class="attribution">
-          <span>—<xsl:apply-templates select="db:attribution"/></span>
-        </div>
-      </xsl:if>
+    <xsl:apply-templates select="*[not(self::db:attribution)]"/>
+    <xsl:apply-templates select="db:attribution"/>
   </div>
 </xsl:template>
 
 <xsl:template match="db:attribution">
-  <div class="{local-name(.)}"><xsl:apply-templates/></div>
+  <div class="{local-name(.)}">
+    <span class="mdash">—</span>
+    <xsl:apply-templates/>
+  </div>
 </xsl:template>
 
 <xsl:template match="db:ackno">

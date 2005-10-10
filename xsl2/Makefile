@@ -31,7 +31,17 @@ DIRS=common extensions schemas
 
 .PHONY: distrib clean $(NEWSFILE)
 
-all: base
+# Some of this is for easy testing during XSLT2 development
+VPATH=../docbook/relaxng/docbook/tests/passed:output/passed:output
+RAW=$(wildcard ../docbook/relaxng/docbook/tests/passed/*.xml)
+XML=$(subst ../docbook/relaxng/docbook/tests/passed/,,$(RAW))
+HTML=$(patsubst %.xml,%.html,$(XML))
+.PHONY: tests
+
+STYLE=$(wildcard common/*.xsl) $(wildcard html/*.xsl)
+
+all:
+	@echo Run 'make base' or 'make tests' or 'make xxx.html'
 
 base:
 	for i in $(DIRS) __bogus__; do \
@@ -46,5 +56,10 @@ clean:
 			echo "$(MAKE) clean -C $$i"; $(MAKE) clean -C $$i; \
 		fi \
 	done
+
+tests: $(HTML)
+
+%.html : %.xml $(STYLE)
+	saxon -8b $< html/docbook.xsl output/$@
 
 include ../releasetools/Targets.mk

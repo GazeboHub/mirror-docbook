@@ -36,6 +36,7 @@
   <xsl:include href="glossary.xsl"/>
   <xsl:include href="table.xsl"/>
   <xsl:include href="lists.xsl"/>
+  <xsl:include href="task.xsl"/>
   <xsl:include href="callouts.xsl"/>
   <xsl:include href="formal.xsl"/>
   <xsl:include href="blocks.xsl"/>
@@ -68,10 +69,10 @@
   <xsl:param name="input" select="/"/>
 
   <xsl:template match="*" mode="m:root">
+    <!--
     <xsl:result-document href="normalized.xml">
       <xsl:copy-of select="."/>
     </xsl:result-document>
-    <!--
     <xsl:result-document href="normalized-glossary.xml">
       <xsl:copy-of select="$external.glossary"/>
     </xsl:result-document>
@@ -97,6 +98,10 @@
 	  <xsl:call-template name="css-style"/>
 	</head>
 	<body>
+	  <xsl:if test="@status">
+	    <xsl:attribute name="class" select="@status"/>
+	  </xsl:if>
+
 	  <xsl:apply-templates select="."/>
 	</body>
       </html>
@@ -126,5 +131,78 @@
       </font>
     </div>
   </xsl:template>
+
+<!-- ============================================================ -->
+
+<!-- blocks -->
+<xsl:template match="db:para|db:simpara|db:cmdsynopsis" priority="100000">
+  <xsl:param name="content">
+    <xsl:next-match/>
+  </xsl:param>
+
+  <xsl:call-template name="t:block-element">
+    <xsl:with-param name="content">
+      <xsl:copy-of select="$content"/>
+    </xsl:with-param>
+  </xsl:call-template>
+</xsl:template>
+
+<xsl:template name="t:block-element">
+  <xsl:param name="content">
+    <xsl:apply-templates/>
+  </xsl:param>
+
+  <xsl:variable name="inherit" select="self::db:para or self::db:simpara"/>
+  <xsl:variable name="changed" select=".//*[@revisionflag and
+                                            @revisionflag != 'off']"/>
+
+  <xsl:choose>
+    <xsl:when test="@revisionflag">
+      <div class="revision-inherited">
+	<div class="revision-{@revisionflag}">
+	  <xsl:copy-of select="$content"/>
+	</div>
+      </div>
+    </xsl:when>
+    <xsl:when test="$inherit and $changed">
+      <div class="revision-inherited">
+	<xsl:copy-of select="$content"/>
+      </div>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:copy-of select="$content"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
+
+<!-- inlines -->
+<xsl:template match="db:emphasis|db:phrase" priority="100000">
+  <xsl:param name="content">
+    <xsl:next-match/>
+  </xsl:param>
+
+  <xsl:call-template name="t:inline-element">
+    <xsl:with-param name="content">
+      <xsl:copy-of select="$content"/>
+    </xsl:with-param>
+  </xsl:call-template>
+</xsl:template>
+
+<xsl:template name="t:inline-element">
+  <xsl:param name="content">
+    <xsl:apply-templates/>
+  </xsl:param>
+
+  <xsl:choose>
+    <xsl:when test="@revisionflag">
+      <span class="revision-{@revisionflag}">
+	<xsl:copy-of select="$content"/>
+      </span>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:copy-of select="$content"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
 
 </xsl:stylesheet>

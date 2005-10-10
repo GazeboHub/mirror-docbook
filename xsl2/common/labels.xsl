@@ -81,6 +81,8 @@ processed in this mode should generate their label.</para>
 </xsl:template>
 
 <xsl:template match="db:preface" mode="m:label-markup">
+  <!-- no label -->
+  <!--
   <xsl:choose>
     <xsl:when test="@label">
       <xsl:value-of select="@label"/>
@@ -108,6 +110,7 @@ processed in this mode should generate their label.</para>
       </xsl:choose>
     </xsl:when>
   </xsl:choose>
+  -->
 </xsl:template>
 
 <xsl:template match="db:chapter" mode="m:label-markup">
@@ -570,8 +573,16 @@ processed in this mode should generate their label.</para>
 	</xsl:if>
       </xsl:if>
 
-      <xsl:number format="1" count="db:equation[db:info/db:title]"
-		  from="db:chapter|db:appendix" level="any"/>
+      <xsl:choose>
+	<xsl:when test="ancestor::db:chapter or ancestor::db:appendix">
+	  <xsl:number format="1" count="db:equation[db:info/db:title]"
+		      from="db:chapter|db:appendix" level="any"/>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:number format="1" count="db:equation[db:info/db:title]"
+		      level="any"/>
+	</xsl:otherwise>
+      </xsl:choose>
     </xsl:otherwise>
   </xsl:choose>
 </xsl:template>
