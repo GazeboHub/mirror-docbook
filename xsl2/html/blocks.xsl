@@ -12,8 +12,8 @@
 <!-- ============================================================ -->
 
 <xsl:template match="db:para|db:simpara">
-  <xsl:param name="runin" select="()"/>
-  <xsl:param name="class" select="''"/>
+  <xsl:param name="runin" select="()" tunnel="yes"/>
+  <xsl:param name="class" select="''" tunnel="yes"/>
 
   <xsl:choose>
     <xsl:when test="parent::db:listitem
@@ -28,6 +28,7 @@
 	  <xsl:call-template name="anchor"/>
 	  <xsl:apply-templates/>
 	</xsl:when>
+
 	<xsl:otherwise>
 	  <p>
 	    <xsl:call-template name="id"/>
@@ -39,6 +40,11 @@
 		<xsl:attribute name="class" select="$class"/>
 	      </xsl:otherwise>
 	    </xsl:choose>
+
+	    <xsl:if test="not(empty($runin))">
+	      <xsl:copy-of select="$runin"/>
+	    </xsl:if>
+
 	    <xsl:apply-templates/>
 	  </p>
 	</xsl:otherwise>
@@ -64,6 +70,26 @@
       </p>
     </xsl:otherwise>
   </xsl:choose>
+</xsl:template>
+
+<xsl:template match="db:formalpara">
+  <xsl:variable name="title">
+    <xsl:apply-templates select="db:info/db:title"/>
+  </xsl:variable>
+
+  <div class="{local-name(.)}">
+    <xsl:apply-templates select="db:indexterm"/>
+    <xsl:apply-templates select="db:para">
+      <xsl:with-param name="runin" select="$title/node()" tunnel="yes"/>
+    </xsl:apply-templates>
+  </div>
+</xsl:template>
+
+<xsl:template match="db:formalpara/db:info/db:title" priority="1000">
+  <b>
+    <xsl:apply-templates/>
+  </b>
+  <xsl:text>&#160;&#160;</xsl:text>
 </xsl:template>
 
 <xsl:template match="db:epigraph">

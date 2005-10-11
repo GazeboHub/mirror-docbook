@@ -43,6 +43,9 @@ div.footnote p { margin-top: 0px;
 
 div.title { font-weight: bold; }
 
+div.float-right    { float: right; }
+div.float-left     { float: left; }
+
 div.figure-wrapper { padding: 0px;
                      border-color: #CACACA;
                      border-width: 1px;

@@ -24,8 +24,6 @@
 <xsl:param name="linenumbering.separator" select="''"/>
 <xsl:param name="linenumbering.padchar" select="' '"/>
 
-<xsl:strip-space elements="*"/>
-
 <!-- ============================================================ -->
 
 <doc:mode name="m:verbatim-phase-1" xmlns="http://docbook.org/ns/docbook">

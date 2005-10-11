@@ -57,7 +57,9 @@
 
     <xsl:when test="ancestor::db:tgroup">
       <xsl:variable name="tfnum">
-        <xsl:number level="any" from="db:table|db:informaltable" format="1"/>
+	<!-- tables are processed in a document that begins at tgroup -->
+	<!-- so this doesn't need to count from any particular place -->
+        <xsl:number level="any" format="1"/>
       </xsl:variable>
 
       <xsl:choose>
@@ -67,7 +69,7 @@
 				          $tfnum, 1)"/>
 	</xsl:when>
 	<xsl:otherwise>
-	  <xsl:number level="any" from="tgroup"
+	  <xsl:number level="any"
 		      format="{$table.footnote.number.format}"/>
         </xsl:otherwise>
       </xsl:choose>
@@ -114,9 +116,12 @@
 	      mode="m:process-footnote-mode">
   <xsl:variable name="name" select="f:node-id(.)"/>
 
-  <xsl:variable name="footnote.body" as="element()*">
+  <xsl:variable name="footnote.body.doc">
     <xsl:apply-templates/>
   </xsl:variable>
+
+  <xsl:variable name="footnote.body" as="element()*"
+		select="$footnote.body.doc/*"/>
 
   <xsl:variable name="footnote.number" as="xs:string">
     <xsl:apply-templates select="." mode="m:footnote-number"/>

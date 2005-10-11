@@ -6,15 +6,16 @@
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:ghost="http://docbook.org/ns/docbook/ephemeral"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
+		xmlns:t="http://docbook.org/xslt/ns/template"
 		xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
 		xmlns:db="http://docbook.org/ns/docbook"
-		exclude-result-prefixes="doc h f m fn db ghost"
+		exclude-result-prefixes="doc h f m fn db ghost t"
                 version="2.0">
 
-<xsl:import href="../common/verbatim.xsl"/>
+<xsl:include href="../common/verbatim.xsl"/>
 
 <xsl:template match="db:programlistingco">
-  <xsl:variable name="cleanedup" as="element()">
+  <xsl:variable name="cleanedup" as="element()+">
     <xsl:apply-templates select="." mode="m:verbatim-phase-1"/>
   </xsl:variable>
 
@@ -61,9 +62,14 @@
 </xsl:template>
 
 <xsl:template match="ghost:co">
-  <xsl:text>(</xsl:text>
-  <xsl:value-of select="@number"/>
-  <xsl:text>)</xsl:text>
+  <xsl:call-template name="t:callout-bug">
+    <xsl:with-param name="conum">
+      <xsl:number count="ghost:co"
+                  level="any"
+                  from="db:programlisting|db:screen|db:literallayout|db:synopsis"
+                  format="1"/>
+    </xsl:with-param>
+  </xsl:call-template>
 </xsl:template>
 
 <xsl:template match="ghost:linenumber">

@@ -41,7 +41,7 @@
 
 <!-- ==================================================================== -->
 
-<xsl:template match="screenshot">
+<xsl:template match="db:screenshot">
   <xsl:call-template name="t:semiformal-object">
     <xsl:with-param name="class" select="local-name(.)"/>
     <xsl:with-param name="object" as="element()">
@@ -1034,8 +1034,10 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
 
 <xsl:template name="t:write-longdesc">
   <xsl:param name="mediaobject" select="."/>
+  <xsl:variable name="firsttext"
+		select="$mediaobject/db:textobject[not(db:phrase)][1]"/>
 
-  <xsl:variable name="filename" select="f:longdesc-uri($mediaobject)"/>
+  <xsl:variable name="filename" select="f:longdesc-uri($firsttext)"/>
 
   <xsl:if test="$html.longdesc != 0
 		and $mediaobject/db:textobject[not(db:phrase)]

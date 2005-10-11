@@ -106,6 +106,10 @@
 	</body>
       </html>
     </xsl:result-document>
+
+    <xsl:for-each select=".//db:mediaobject[db:textobject[not(db:phrase)]]">
+      <xsl:call-template name="t:write-longdesc"/>
+    </xsl:for-each>
   </xsl:template>
 
   <xsl:template match="*">

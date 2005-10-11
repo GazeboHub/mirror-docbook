@@ -75,11 +75,6 @@ title.</para>
   <xsl:choose>
     <xsl:when test="$context/@floatstyle">
       <div class="float-{$context/@floatstyle}">
-	<xsl:if test="$context/@floatstyle = 'left'
-		      or $context/@floatstyle = 'right'">
-	  <xsl:attribute name="style"
-			 select="concat('float: ', $context/@floatstyle, ';')"/>
-	</xsl:if>
 	<xsl:copy-of select="$wrapper"/>
       </div>
     </xsl:when>
@@ -140,11 +135,6 @@ title.</para>
   <xsl:choose>
     <xsl:when test="$context/@floatstyle">
       <div class="float-{$context/@floatstyle}">
-	<xsl:if test="$context/@floatstyle = 'left'
-		      or $context/@floatstyle = 'right'">
-	  <xsl:attribute name="style"
-			 select="concat('float: ', $context/@floatstyle, ';')"/>
-	</xsl:if>
 	<xsl:copy-of select="$wrapper"/>
       </div>
     </xsl:when>
