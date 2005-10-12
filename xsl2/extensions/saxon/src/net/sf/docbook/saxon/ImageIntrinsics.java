@@ -8,14 +8,16 @@ import java.awt.Toolkit;
 import java.awt.Image;
 import java.awt.image.ImageObserver;
 import java.lang.Thread;
+import java.net.URL;
+import java.net.MalformedURLException;
 import java.util.StringTokenizer;
 
 /**
- * <p>Saxon extension to examine intrinsic size of images</p>
+ * Saxon extension to examine intrinsic size of images.
  *
  * <p>$Id$</p>
  *
- * <p>Copyright (C) 2002 Norman Walsh.</p>
+ * <p>Copyright (C) 2002, 2005 Norman Walsh.</p>
  *
  * <p>This class provides a
  * <a href="http://saxon.sourceforge.net/">Saxon</a>
@@ -45,7 +47,14 @@ public class ImageIntrinsics implements ImageObserver {
    */
   public ImageIntrinsics(String imageFn) {
     System.setProperty("java.awt.headless","true");
-    image = Toolkit.getDefaultToolkit().getImage (imageFn);
+
+    try {
+	URL url = new URL(imageFn);
+	image = Toolkit.getDefaultToolkit().getImage (url);
+    } catch (MalformedURLException mue) {
+	image = Toolkit.getDefaultToolkit().getImage (imageFn);
+    }
+
     width = image.getWidth(this);
 
     while (!imageFailed && (width == -1 || depth == -1)) {
@@ -100,6 +109,7 @@ public class ImageIntrinsics implements ImageObserver {
 	  System.err.println("Failed to interpret image: " + imageFn);
 	}
       } catch (Exception e) {
+	System.err.println("Failed to load image: " + imageFn);
 	// nop;
       }
 
