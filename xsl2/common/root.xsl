@@ -46,7 +46,29 @@ fixup, profiling, and general normalizations are applied.</para>
     <xsl:apply-templates select="$fixedns" mode="m:profile"/>
   </xsl:variable>
 
-  <xsl:apply-templates select="$profiled" mode="m:normalize"/>
+  <xsl:variable name="fixedbase">
+    <xsl:apply-templates select="$profiled" mode="m:fixbaseuri">
+      <xsl:with-param name="base-uri" select="base-uri(.)"/>
+    </xsl:apply-templates>
+  </xsl:variable>
+
+  <xsl:apply-templates select="$fixedbase" mode="m:normalize"/>
+</xsl:template>
+
+<!-- ============================================================ -->
+
+<xsl:template match="text()|processing-instruction()|comment()"
+	      mode="m:fixbaseuri">
+  <xsl:copy/>
+</xsl:template>
+
+<xsl:template match="*" mode="m:fixbaseuri">
+  <xsl:param name="base-uri" required='yes'/>
+  <xsl:copy>
+    <xsl:attribute name="xml:base" select="$base-uri"/>
+    <xsl:copy-of select="@*"/>
+    <xsl:copy-of select="node()"/>
+  </xsl:copy>
 </xsl:template>
 
 <!-- ============================================================ -->
