@@ -48,7 +48,9 @@
 
     <xsl:apply-templates/>
 
-    <xsl:call-template name="t:process-footnotes"/>
+    <xsl:if test="not(parent::db:article)">
+      <xsl:call-template name="t:process-footnotes"/>
+    </xsl:if>
   </div>
 </xsl:template>
 

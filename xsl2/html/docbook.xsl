@@ -69,14 +69,9 @@
   <xsl:param name="input" select="/"/>
 
   <xsl:template match="*" mode="m:root">
-    <!--
     <xsl:result-document href="normalized.xml">
       <xsl:copy-of select="."/>
     </xsl:result-document>
-    <xsl:result-document href="normalized-glossary.xml">
-      <xsl:copy-of select="$external.glossary"/>
-    </xsl:result-document>
-    -->
 
     <xsl:result-document format="final">
       <html>

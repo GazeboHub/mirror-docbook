@@ -181,10 +181,32 @@
 	    <xsl:text>&#160;</xsl:text>
 	  </xsl:when>
 	  <xsl:when test="$target/self::db:areaset">
-	    <xsl:text>FIXME: support areaset</xsl:text>
+	    <xsl:call-template name="t:callout-bug">
+	      <xsl:with-param name="conum"
+			      select="count($target/preceding-sibling::db:areaset
+		                        |$target/preceding-sibling::db:area)
+					+1"/>
+	    </xsl:call-template>
 	  </xsl:when>
 	  <xsl:when test="$target/self::db:area">
-	    <xsl:text>FIXME: support area</xsl:text>
+	    <xsl:choose>
+	      <xsl:when test="$target/parent::db:areaset">
+		<xsl:call-template name="t:callout-bug">
+		  <xsl:with-param name="conum"
+                     select="count($target/parent::db:areaset/preceding-sibling::db:areaset
+                       |$target/parent::db:areaset/preceding-sibling::db:area)
+		       +1"/>
+		</xsl:call-template>
+	      </xsl:when>
+	      <xsl:otherwise>
+		<xsl:call-template name="t:callout-bug">
+		  <xsl:with-param name="conum"
+			      select="count($target/preceding-sibling::db:areaset
+		                        |$target/preceding-sibling::db:area)
+					+1"/>
+		</xsl:call-template>
+	      </xsl:otherwise>
+	    </xsl:choose>
 	  </xsl:when>
 	  <xsl:otherwise>
 	    <xsl:message>

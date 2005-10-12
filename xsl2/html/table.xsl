@@ -90,7 +90,7 @@
 <!-- CALS tables -->
 
 <xsl:template match="db:tgroup">
-  <xsl:if test="not(@cols)">
+  <xsl:if test="not(@cols) or @cols = ''">
     <xsl:message terminate="yes">
       <xsl:text>Error: CALS tables must specify the number of columns.</xsl:text>
     </xsl:message>
@@ -100,11 +100,13 @@
     <xsl:apply-templates select="." mode="m:cals-phase-1"/>
   </xsl:variable>
 
-<!--
-  <XXX>
-    <xsl:copy-of select="$phase1"/>
-  </XXX>
--->
+  <!--
+  <xsl:message>
+    <XXX>
+      <xsl:copy-of select="$phase1"/>
+    </XXX>
+  </xsl:message>
+  -->
 
   <xsl:apply-templates select="$phase1/db:tgroup" mode="m:cals"/>
 </xsl:template>

@@ -257,10 +257,11 @@ vertical alignment.</para>
                       $tag = 'img' and
                       not(starts-with($filename, '/')) and
                       not(contains($filename, '://'))">
-        <xsl:value-of select="concat($img.src.path, $filename)"/>
+        <xsl:value-of select="resolve-uri(concat($img.src.path, $filename),
+			                  base-uri(.))"/>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:value-of select="$filename"/>
+        <xsl:value-of select="resolve-uri($filename, base-uri(.))"/>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:variable>

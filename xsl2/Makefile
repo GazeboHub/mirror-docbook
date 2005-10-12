@@ -32,7 +32,9 @@ DIRS=common extensions schemas
 .PHONY: distrib clean $(NEWSFILE)
 
 # Some of this is for easy testing during XSLT2 development
-VPATH=../docbook/relaxng/docbook/tests/passed:output/passed:output
+SRCDIR=../docbook/relaxng/docbook/tests/passed
+ABSSRCDIR=/sourceforge/docbook/docbook/relaxng/docbook/tests/passed
+VPATH=$(SRCDIR):output/passed:output
 RAW=$(wildcard ../docbook/relaxng/docbook/tests/passed/*.xml)
 XML=$(subst ../docbook/relaxng/docbook/tests/passed/,,$(RAW))
 HTML=$(patsubst %.xml,%.html,$(XML))
@@ -61,5 +63,8 @@ tests: $(HTML)
 
 %.html : %.xml $(STYLE)
 	saxon -8b $< html/docbook.xsl output/$@
+
+glossary.002.html: glossary.002.xml glossary.002.data.xml $(STYLE)
+	saxon -8b $< html/docbook.xsl output/$@ glossary.collection=glossary.002.data.xml
 
 include ../releasetools/Targets.mk
