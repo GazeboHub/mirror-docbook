@@ -20,7 +20,7 @@
       <xsl:value-of select="()"/>
     </xsl:when>
     <xsl:otherwise>
-      <xsl:apply-templates select="document($glossary.collection)"
+      <xsl:apply-templates select="document($glossary.collection, .)"
 			   mode="m:cleanup"/>
     </xsl:otherwise>
   </xsl:choose>
@@ -184,6 +184,14 @@ copied by normalization.</para>
 	</xsl:for-each>
 	<xsl:copy-of select="$glossary/db:glossary/db:info"/>
 
+	<xsl:variable name="seealsos" as="element()*">
+	  <xsl:for-each select="$external.glossary//db:glossseealso">
+	    <xsl:copy-of select="if (key('id', @otherterm))
+				  then key('id', @otherterm)[1]
+				  else key('glossterm', string(.))"/>
+	  </xsl:for-each>
+	</xsl:variable>
+
 	<xsl:variable name="divs"
 		      select="$glossary//db:glossary/db:glossdiv"/>
 
@@ -193,7 +201,8 @@ copied by normalization.</para>
 				 mode="m:copy-external-glossary">
 	      <xsl:with-param name="terms"
 			      select="//db:glossterm[not(parent::db:glossdef)]
-				      |//db:firstterm"/>
+				      |//db:firstterm
+				      |$seealsos"/>
 	      <xsl:with-param name="divs" select="$divs"/>
 	    </xsl:apply-templates>
 	  </xsl:when>
@@ -202,7 +211,8 @@ copied by normalization.</para>
 				 mode="m:copy-external-glossary">
 	      <xsl:with-param name="terms"
 			      select="//db:glossterm[not(parent::db:glossdef)]
-				      |//db:firstterm"/>
+				      |//db:firstterm
+				      |$seealsos"/>
 	      <xsl:with-param name="divs" select="$divs"/>
 	    </xsl:apply-templates>
 	  </xsl:otherwise>
@@ -638,7 +648,7 @@ true if the current attribute is in the specified profile.</para>
   <xsl:param name="terms"/>
   <xsl:param name="divs"/>
 
-  <xsl:variable name="entries">
+  <xsl:variable name="entries" as="element()*">
     <xsl:apply-templates select="db:glossentry" mode="m:copy-external-glossary">
       <xsl:with-param name="terms" select="$terms"/>
       <xsl:with-param name="divs" select="$divs"/>
