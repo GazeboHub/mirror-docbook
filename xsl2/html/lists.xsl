@@ -49,7 +49,39 @@
 </xsl:template>
 
 <xsl:template match="db:itemizedlist/db:listitem">
+  <xsl:variable name="mark" select="xs:string(../@mark)"/>
+  <xsl:variable name="override" select="xs:string(@override)"/>
+
+  <xsl:variable name="usemark">
+    <xsl:choose>
+      <xsl:when test="$override != ''">
+        <xsl:value-of select="$override"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="$mark"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:variable name="cssmark">
+    <xsl:choose>
+      <xsl:when test="$usemark = 'opencircle'">circle</xsl:when>
+      <xsl:when test="$usemark = 'bullet'">disc</xsl:when>
+      <xsl:when test="$usemark = 'round'">disc</xsl:when>
+      <xsl:when test="$usemark = 'box'">square</xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="$usemark"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
   <li>
+    <xsl:if test="$cssmark != ''">
+      <xsl:attribute name="style">
+	<xsl:text>list-style-type: </xsl:text>
+	<xsl:value-of select="$cssmark"/>
+      </xsl:attribute>
+    </xsl:if>
     <xsl:call-template name="id"/>
     <xsl:apply-templates/>
   </li>
@@ -115,6 +147,11 @@
 
 <xsl:template match="db:orderedlist/db:listitem">
   <li>
+    <xsl:if test="@override">
+      <xsl:attribute name="value">
+        <xsl:value-of select="@override"/>
+      </xsl:attribute>
+    </xsl:if>
     <xsl:call-template name="id"/>
     <xsl:apply-templates/>
   </li>

@@ -27,6 +27,8 @@ DISTRIB_EXECUTABLES =
 URILIST = \
 ./\ http://docbook.sourceforge.net/release/xsl2/current/
 
+DEBUG=
+
 DIRS=common extensions schemas
 
 .PHONY: distrib clean $(NEWSFILE)
@@ -38,6 +40,7 @@ VPATH=$(SRCDIR):output/passed:output
 RAW=$(wildcard ../docbook/relaxng/docbook/tests/passed/*.xml)
 XML=$(subst ../docbook/relaxng/docbook/tests/passed/,,$(RAW))
 HTML=$(patsubst %.xml,%.html,$(XML))
+
 .PHONY: tests
 
 STYLE=$(wildcard common/*.xsl) $(wildcard html/*.xsl)
@@ -62,9 +65,12 @@ clean:
 tests: $(HTML)
 
 %.html : %.xml $(STYLE)
-	saxon -8b $< html/docbook.xsl output/$@
+	saxon -8b $(DEBUG) $< html/docbook.xsl output/$@
 
 glossary.002.html: glossary.002.xml glossary.002.data.xml $(STYLE)
-	saxon -8b $< html/docbook.xsl output/$@ glossary.collection=glossary.002.data.xml
+	saxon -8b $(DEBUG) $< html/docbook.xsl output/$@ glossary.collection=glossary.002.data.xml
+
+part.001.html: part.001.xml glossary.002.data.xml $(STYLE)
+	saxon -8b $(DEBUG) $< html/docbook.xsl output/$@ glossary.collection=glossary.002.data.xml
 
 include ../releasetools/Targets.mk

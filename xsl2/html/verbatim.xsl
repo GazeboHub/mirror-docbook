@@ -6,10 +6,11 @@
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:ghost="http://docbook.org/ns/docbook/ephemeral"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
+                xmlns:mp="http://docbook.org/xslt/ns/mode/private"
 		xmlns:t="http://docbook.org/xslt/ns/template"
 		xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
 		xmlns:db="http://docbook.org/ns/docbook"
-		exclude-result-prefixes="doc h f m fn db ghost t"
+		exclude-result-prefixes="doc h f m mp fn db ghost t"
                 version="2.0">
 
 <xsl:include href="../common/verbatim.xsl"/>
@@ -23,7 +24,8 @@
 		       mode="m:verbatim"/>
 </xsl:template>
 
-<xsl:template match="db:programlisting|db:address|db:screen|db:synopsis">
+<xsl:template match="db:programlisting|db:address|db:screen|db:synopsis
+		     |db:literallayout">
   <xsl:variable name="cleanedup" as="element()">
     <xsl:apply-templates select="." mode="m:verbatim-phase-1"/>
   </xsl:variable>
@@ -41,7 +43,8 @@
 </refdescription>
 </doc:mode>
 
-<xsl:template match="db:programlisting|db:screen|db:synopsis"
+<xsl:template match="db:programlisting|db:screen|db:synopsis
+		     |db:literallayout[@class='monospaced']"
 	      mode="m:verbatim">
 
   <div class="{local-name(.)}">
@@ -53,11 +56,23 @@
   </div>
 </xsl:template>
 
+<xsl:template match="db:literallayout"
+	      mode="m:verbatim">
+
+  <div class="{local-name(.)}">
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+    <xsl:apply-templates mode="mp:literallayout"/>
+  </div>
+</xsl:template>
+
 <xsl:template match="db:address"
 	      mode="m:verbatim">
 
   <div class="{local-name(.)}">
-    <xsl:apply-templates/>
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+    <xsl:apply-templates mode="mp:literallayout"/>
   </div>
 </xsl:template>
 
@@ -82,6 +97,33 @@
   <span class="linenumber-separator">
     <xsl:apply-templates/>
   </span>
+</xsl:template>
+
+<xsl:template match="*" mode="mp:literallayout">
+  <xsl:apply-templates select="."/>
+</xsl:template>
+
+<xsl:template match="comment()|processing-instruction()"
+	      mode="mp:literallayout">
+  <xsl:copy/>
+</xsl:template>
+
+<xsl:template match="text()" mode="mp:literallayout">
+  <xsl:analyze-string select="." regex="&#10;">
+    <xsl:matching-substring>
+      <br/>
+    </xsl:matching-substring>
+    <xsl:non-matching-substring>
+      <xsl:analyze-string select="." regex="[\s]">
+	<xsl:matching-substring>
+	  <xsl:text>&#160;</xsl:text>
+	</xsl:matching-substring>
+	<xsl:non-matching-substring>
+	  <xsl:copy/>
+	</xsl:non-matching-substring>
+      </xsl:analyze-string>
+    </xsl:non-matching-substring>
+  </xsl:analyze-string>
 </xsl:template>
 
 </xsl:stylesheet>

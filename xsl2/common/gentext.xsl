@@ -376,7 +376,7 @@ rendition of a cross-reference to itself.</para>
     <xsl:message>
       <xsl:text>object-xref-markup: empty xref template</xsl:text>
       <xsl:text> for linkend="</xsl:text>
-      <xsl:value-of select="@id"/>
+      <xsl:value-of select="@xml:id"/>
       <xsl:text>" and @xrefstyle="</xsl:text>
       <xsl:value-of select="$xrefstyle"/>
       <xsl:text>"</xsl:text>
@@ -396,7 +396,7 @@ rendition of a cross-reference to itself.</para>
   <xsl:param name="verbose" select="1"/>
 
   <xsl:choose>
-    <xsl:when test="parent::orderedlist">
+    <xsl:when test="parent::db:orderedlist">
       <xsl:variable name="template">
         <xsl:apply-templates select="." mode="m:object-xref-template"/>
       </xsl:variable>
@@ -408,7 +408,7 @@ rendition of a cross-reference to itself.</para>
       <xsl:message>
         <xsl:text>Xref is only supported to listitems in an</xsl:text>
         <xsl:text> orderedlist: </xsl:text>
-        <xsl:value-of select="@id"/>
+        <xsl:value-of select="@xml:id"/>
       </xsl:message>
       <xsl:text>???</xsl:text>
     </xsl:when>

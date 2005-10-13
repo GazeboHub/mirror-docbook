@@ -30,7 +30,8 @@ for the title page.</para>
 <xsl:template match="db:set/db:info/db:title
 		     |db:book/db:info/db:title
 		     |db:part/db:info/db:title
-		     |db:reference/db:info/db:title"
+		     |db:reference/db:info/db:title
+		     |db:setindex/db:info/db:title"
 	      mode="m:titlepage-mode"
 	      priority="100">
   <h1>
@@ -56,7 +57,8 @@ for the title page.</para>
 		     |db:colophon/db:info/db:title
 		     |db:article/db:info/db:title
 		     |db:bibliography/db:info/db:title
-		     |db:glossary/db:info/db:title"
+		     |db:glossary/db:info/db:title
+		     |db:index/db:info/db:title"
 	      mode="m:titlepage-mode"
 	      priority="100">
   <h2>
@@ -80,7 +82,8 @@ for the title page.</para>
 </xsl:template>
 
 <xsl:template match="db:bibliodiv/db:info/db:title
-		     |db:glossdiv/db:info/db:title"
+		     |db:glossdiv/db:info/db:title
+		     |db:indexdiv/db:info/db:title"
 	      mode="m:titlepage-mode"
 	      priority="100">
   <h3>

@@ -10,7 +10,7 @@
 		exclude-result-prefixes="h f m fn db t"
                 version="2.0">
 
-<xsl:template match="db:index">
+<xsl:template match="db:index|db:setindex">
   <xsl:variable name="recto"
 		select="$titlepages/*[node-name(.) = node-name(current())
 			              and @t:side='recto'][1]"/>
@@ -32,14 +32,28 @@
       </xsl:call-template>
     </xsl:if>
 
-    <xsl:apply-templates/>
+    <xsl:apply-templates select="*[not(self::db:indexdiv)
+                                   and not(self::db:indexentry)]"/>
 
-    <!-- Empty index element indicates that index should be generated automatically -->
-    <xsl:if test="not(db:indexentry) and not(db:indexdiv)">
-      <xsl:call-template name="generate-index">
-	<xsl:with-param name="scope" select="ancestor::*[last()]"/>
-      </xsl:call-template>
-    </xsl:if>
+    <!-- An empty index element indicates that the index -->
+    <!-- should be generated automatically -->
+    <xsl:choose>
+      <xsl:when test="not(db:indexentry) and not(db:indexdiv)">
+	<xsl:call-template name="generate-index">
+	  <xsl:with-param name="scope" select="parent::*"/>
+	</xsl:call-template>
+      </xsl:when>
+      <xsl:when test="db:indexentry">
+	<div class="indexdiv">
+	  <dl>
+	    <xsl:apply-templates select="db:indexentry"/>
+	  </dl>
+	</div>
+      </xsl:when>
+      <xsl:otherwise>
+	<xsl:apply-templates select="db:indexdiv"/>
+      </xsl:otherwise>
+    </xsl:choose>
   </div>
 </xsl:template>
 
@@ -50,6 +64,99 @@
 <xsl:template match="db:primary|db:secondary|db:tertiary|db:see|db:seealso">
 </xsl:template>
 
-<!-- FIXME: add templates to handle manually created index -->
+<xsl:template match="db:indexdiv">
+  <xsl:variable name="titlepage"
+		select="$titlepages/*[node-name(.)
+			              = node-name(current())][1]"/>
+
+  <div class="{local-name(.)}">
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+    <xsl:call-template name="titlepage">
+      <xsl:with-param name="content" select="$titlepage"/>
+    </xsl:call-template>
+
+    <xsl:apply-templates select="*[not(self::db:indexentry)]"/>
+
+    <dl>
+      <xsl:apply-templates select="db:indexentry"/>
+    </dl>
+  </div>
+</xsl:template>
+
+<!-- ==================================================================== -->
+
+<xsl:template match="db:indexentry">
+  <xsl:apply-templates select="db:primaryie"/>
+</xsl:template>
+
+<xsl:template match="db:primaryie">
+  <dt>
+    <xsl:apply-templates/>
+  </dt>
+  <xsl:choose>
+    <xsl:when test="following-sibling::db:secondaryie">
+      <dd>
+        <dl>
+          <xsl:apply-templates select="following-sibling::db:secondaryie"/>
+        </dl>
+      </dd>
+    </xsl:when>
+    <xsl:when test="following-sibling::db:seeie
+                    |following-sibling::db:seealsoie">
+      <dd>
+        <dl>
+          <xsl:apply-templates select="following-sibling::db:seeie
+                                       |following-sibling::db:seealsoie"/>
+        </dl>
+      </dd>
+    </xsl:when>
+  </xsl:choose>
+</xsl:template>
+
+<xsl:template match="db:secondaryie">
+  <dt>
+    <xsl:apply-templates/>
+  </dt>
+  <xsl:choose>
+    <xsl:when test="following-sibling::db:tertiaryie">
+      <dd>
+        <dl>
+          <xsl:apply-templates select="following-sibling::db:tertiaryie"/>
+        </dl>
+      </dd>
+    </xsl:when>
+    <xsl:when test="following-sibling::db:seeie
+                    |following-sibling::db:seealsoie">
+      <dd>
+        <dl>
+          <xsl:apply-templates select="following-sibling::db:seeie
+                                       |following-sibling::db:seealsoie"/>
+        </dl>
+      </dd>
+    </xsl:when>
+  </xsl:choose>
+</xsl:template>
+
+<xsl:template match="db:tertiaryie">
+  <dt>
+    <xsl:apply-templates/>
+  </dt>
+  <xsl:if test="following-sibling::db:seeie
+                |following-sibling::db:seealsoie">
+    <dd>
+      <dl>
+        <xsl:apply-templates select="following-sibling::db:seeie
+                                     |following-sibling::db:seealsoie"/>
+      </dl>
+    </dd>
+  </xsl:if>
+</xsl:template>
+
+<xsl:template match="db:seeie|db:seealsoie">
+  <dt>
+    <xsl:apply-templates/>
+  </dt>
+</xsl:template>
 
 </xsl:stylesheet>

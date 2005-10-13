@@ -5,10 +5,12 @@
                 xmlns:f="http://docbook.org/xslt/ns/extension"
                 xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
                 xmlns:m="http://docbook.org/xslt/ns/mode"
+                xmlns:mp="http://docbook.org/xslt/ns/mode/private"
                 xmlns:n="http://docbook.org/xslt/ns/normalize"
+		xmlns:tp="http://docbook.org/xslt/ns/template/private"
                 xmlns:xlink='http://www.w3.org/1999/xlink'
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                exclude-result-prefixes="db doc f fn m n xlink xs"
+                exclude-result-prefixes="db doc f fn m mp n xlink xs"
                 version="2.0">
 
 <!-- ============================================================ -->
@@ -61,7 +63,7 @@ copied by normalization.</para>
 </xsl:template>
 
 <xsl:template match="*[not(self::db:info)
-		       and db:title|db:subtitle|db:titleabbrev|db:info]"
+		       and db:title|db:subtitle|db:titleabbrev|db:info/db:title]"
 	      mode="m:normalize">
   <xsl:call-template name="n:normalize-movetitle"/>
 </xsl:template>
@@ -117,7 +119,7 @@ copied by normalization.</para>
 
 <xsl:template match="db:bibliography" mode="m:normalize">
   <xsl:call-template name="n:normalize-generated-title">
-    <xsl:with-param name="title-key" select="'Bibliography'"/>
+    <xsl:with-param name="title-key" select="local-name(.)"/>
   </xsl:call-template>
 </xsl:template>
 
@@ -163,7 +165,7 @@ copied by normalization.</para>
 <xsl:template match="db:glossary" mode="m:normalize">
   <xsl:variable name="glossary">
     <xsl:call-template name="n:normalize-generated-title">
-      <xsl:with-param name="title-key" select="'Glossary'"/>
+      <xsl:with-param name="title-key" select="local-name(.)"/>
     </xsl:call-template>
   </xsl:variable>
 
@@ -227,69 +229,56 @@ copied by normalization.</para>
 
 <xsl:template match="db:index" mode="m:normalize">
   <xsl:call-template name="n:normalize-generated-title">
-    <xsl:with-param name="title-key" select="'Index'"/>
+    <xsl:with-param name="title-key" select="local-name(.)"/>
   </xsl:call-template>
 </xsl:template>
 
 <xsl:template match="db:setindex" mode="m:normalize">
   <xsl:call-template name="n:normalize-generated-title">
-    <xsl:with-param name="title-key" select="'Set Index'"/>
+    <xsl:with-param name="title-key" select="local-name(.)"/>
   </xsl:call-template>
 </xsl:template>
 
 <xsl:template match="db:abstract" mode="m:normalize">
   <xsl:call-template name="n:normalize-generated-title">
-    <xsl:with-param name="title-key" select="'Abstract'"/>
+    <xsl:with-param name="title-key" select="local-name(.)"/>
   </xsl:call-template>
 </xsl:template>
 
 <xsl:template match="db:legalnotice" mode="m:normalize">
   <xsl:call-template name="n:normalize-generated-title">
-    <xsl:with-param name="title-key" select="'LegalNotice'"/>
+    <xsl:with-param name="title-key" select="local-name(.)"/>
   </xsl:call-template>
 </xsl:template>
 
 <xsl:template match="db:note" mode="m:normalize">
   <xsl:call-template name="n:normalize-generated-title">
-    <xsl:with-param name="title-key" select="'Note'"/>
+    <xsl:with-param name="title-key" select="local-name(.)"/>
   </xsl:call-template>
 </xsl:template>
 
 <xsl:template match="db:tip" mode="m:normalize">
   <xsl:call-template name="n:normalize-generated-title">
-    <xsl:with-param name="title-key" select="'Tip'"/>
+    <xsl:with-param name="title-key" select="local-name(.)"/>
   </xsl:call-template>
 </xsl:template>
 
 <xsl:template match="db:caution" mode="m:normalize">
   <xsl:call-template name="n:normalize-generated-title">
-    <xsl:with-param name="title-key" select="'Caution'"/>
+    <xsl:with-param name="title-key" select="local-name(.)"/>
   </xsl:call-template>
 </xsl:template>
 
 <xsl:template match="db:warning" mode="m:normalize">
   <xsl:call-template name="n:normalize-generated-title">
-    <xsl:with-param name="title-key" select="'Warning'"/>
+    <xsl:with-param name="title-key" select="local-name(.)"/>
   </xsl:call-template>
 </xsl:template>
 
 <xsl:template match="db:important" mode="m:normalize">
   <xsl:call-template name="n:normalize-generated-title">
-    <xsl:with-param name="title-key" select="'Important'"/>
+    <xsl:with-param name="title-key" select="local-name(.)"/>
   </xsl:call-template>
-</xsl:template>
-
-<xsl:template match="db:ulink" mode="m:normalize">
-  <xsl:element name="link" namespace="{$docbook-namespace}">
-    <xsl:attribute name="xlink:href" select="@url"/>
-    <xsl:attribute name="xlink:type" select="'simple'"/>
-    <xsl:for-each select="@*">
-      <xsl:if test="namespace-uri(.) != '' or local-name(.) != 'url'">
-	<xsl:copy/>
-      </xsl:if>
-    </xsl:for-each>
-    <xsl:apply-templates mode="m:normalize"/>
-  </xsl:element>
 </xsl:template>
 
 <!-- ============================================================ -->
@@ -335,7 +324,6 @@ necessary.</para>
 
 	<xsl:choose>
 	  <xsl:when test="db:info">
-	    <xsl:apply-templates select="db:info//preceding-sibling::*"/>
 	    <xsl:element name="info" namespace="{$docbook-namespace}">
 	      <xsl:copy-of select="db:info/@*"/>
 	      <xsl:element name="title" namespace="{$docbook-namespace}">
@@ -343,9 +331,11 @@ necessary.</para>
 		  <xsl:with-param name="key" select="$title-key"/>
 		</xsl:call-template>
 	      </xsl:element>
-	      <xsl:apply-templates select="db:info/*"/>
+	      <xsl:copy-of select="db:info/preceding-sibling::node()"/>
+	      <xsl:copy-of select="db:info/*"/>
 	    </xsl:element>
-	    <xsl:apply-templates select="db:info//following-sibling::*"/>
+	    <xsl:apply-templates select="db:info//following-sibling::node()"
+				 mode="m:normalize"/>
 	  </xsl:when>
 	  <xsl:otherwise>
 	    <xsl:variable name="node-tree">
@@ -419,6 +409,28 @@ if appropriate</refpurpose>
   </xsl:if>
 </xsl:template>
 
+<xsl:template match="db:inlinemediaobject
+		     [(parent::db:programlisting
+		       or parent::db:screen
+		       or parent::db:literallayout
+		       or parent::db:address
+		       or parent::db:funcsynopsisinfo)
+		     and db:imageobject
+		     and db:imageobject/db:imagedata[@format='linespecific']]"
+	      mode="m:normalize">
+  <xsl:value-of select="unparsed-text(db:imageobject/db:imagedata/@fileref)"/>
+</xsl:template>
+
+<xsl:template match="db:textdata
+		     [parent::db:programlisting
+		      or parent::db:screen
+		      or parent::db:literallayout
+		      or parent::db:address
+		      or parent::db:funcsynopsisinfo]"
+	      mode="m:normalize">
+  <xsl:value-of select="unparsed-text(@fileref)"/>
+</xsl:template>
+
 <xsl:template match="*" mode="m:normalize">
   <xsl:copy>
     <xsl:copy-of select="@*"/>
@@ -447,7 +459,7 @@ DocBook namespace. (See <parameter>docbook-namespace</parameter>).</para>
 <xsl:template match="/" mode="m:fixnamespace">
   <xsl:choose>
     <xsl:when test="namespace-uri(*[1]) = $docbook-namespace">
-      <xsl:copy-of select="."/>
+      <xsl:apply-templates mode="mp:justcopy"/>
     </xsl:when>
     <xsl:otherwise>
       <xsl:apply-templates mode="m:fixnamespace"/>
@@ -472,9 +484,53 @@ DocBook namespace. (See <parameter>docbook-namespace</parameter>).</para>
   </xsl:choose>
 </xsl:template>
 
+<xsl:template match="imagedata|db:imagedata
+		     |textdata|db:textdata
+		     |videodata|db:videodata
+		     |audiodata|db:audiodata" mode="m:fixnamespace">
+  <xsl:call-template name="tp:fixfileref"/>
+</xsl:template>
+
 <xsl:template match="comment()|processing-instruction()|text()"
 	      mode="m:fixnamespace">
   <xsl:copy/>
+</xsl:template>
+
+<xsl:template match="*" mode="mp:justcopy">
+  <xsl:copy>
+    <xsl:copy-of select="@*"/>
+    <xsl:apply-templates mode="mp:justcopy"/>
+  </xsl:copy>
+</xsl:template>
+
+<xsl:template match="imagedata|db:imagedata
+		     |textdata|db:textdata
+		     |videodata|db:videodata
+		     |audiodata|db:audiodata" mode="m:justcopy">
+  <xsl:call-template name="tp:fixfileref"/>
+</xsl:template>
+
+<xsl:template match="comment()|processing-instruction()|text()"
+	      mode="mp:justcopy">
+  <xsl:copy/>
+</xsl:template>
+
+<xsl:template name="tp:fixfileref">
+  <xsl:element name="{local-name(.)}" namespace="{$docbook-namespace}">
+    <xsl:copy-of select="@*[name(.) != 'fileref' and name(.) != 'entityref']"/>
+
+    <xsl:choose>
+      <xsl:when test="@fileref">
+	<xsl:attribute name="fileref"
+		       select="resolve-uri(@fileref, base-uri(.))"/>
+      </xsl:when>
+      <xsl:when test="@entityref">
+	<xsl:attribute name="fileref">
+	  <xsl:value-of select="unparsed-entity-uri(@entityref)"/>
+	</xsl:attribute>
+      </xsl:when>
+    </xsl:choose>
+  </xsl:element>
 </xsl:template>
 
 <!-- ============================================================ -->

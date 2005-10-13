@@ -33,7 +33,12 @@ span.linenumber-separator {
                         padding-right: 5px;
                       }
 
-div.address { white-space: pre }
+div.address           { white-space: pre }
+div.literallayout     { white-space: pre }
+span.linenumber       { white-space: pre;
+                        font-family: monospace;
+                      }
+span.linenumber-separator { white-space: pre; }
 
 div.footnote p { margin-top: 0px;
                  padding-top: 1px;

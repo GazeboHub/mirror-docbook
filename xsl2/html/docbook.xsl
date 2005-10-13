@@ -22,6 +22,7 @@
   <xsl:include href="../common/labels.xsl"/>
   <xsl:include href="../common/titles.xsl"/>
   <xsl:include href="../common/inlines.xsl"/>
+  <xsl:include href="../common/olink.xsl"/>
   <xsl:include href="titlepages.xsl"/>
   <xsl:include href="titlepage.xsl"/>
   <xsl:include href="autotoc.xsl"/>

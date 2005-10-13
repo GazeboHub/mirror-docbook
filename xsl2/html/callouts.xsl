@@ -84,7 +84,6 @@
     <xsl:with-param name="conum">
       <xsl:number count="db:co"
                   level="any"
-                  from="db:programlisting|db:screen|db:literallayout|db:synopsis"
                   format="1"/>
     </xsl:with-param>
   </xsl:call-template>

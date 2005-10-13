@@ -39,7 +39,7 @@
 <xsl:param name="make.year.ranges" select="1"/>
 <xsl:param name="make.single.year.ranges" select="1"/>
 
-<xsl:param name="component.label.includes.part.label" select="1"/>
+<xsl:param name="component.label.includes.part.label" select="0"/>
 <xsl:param name="section.label.includes.component.label" select="1"/>
 <xsl:param name="qanda.inherit.numeration" select="1"/>
 <xsl:param name="label.from.part" select="1"/>
@@ -55,9 +55,7 @@
 <xsl:param name="xref.label-title.separator" select="' '"/>
 <xsl:param name="xref.label-page.separator" select="' '"/>
 <xsl:param name="xref.title-page.separator" select="' '"/>
-<xsl:param name="insert.olink.page.number" select="1"/>
 <xsl:param name="insert.xref.page.number" select="1"/>
-<xsl:param name="olink.doctitle" select="1"/>
 <xsl:param name="formal.procedures" select="1"/>
 <xsl:param name="xref.with.number.and.title" select="1"/>
 <xsl:param name="qanda.defaultlabel" select="'number'"/>

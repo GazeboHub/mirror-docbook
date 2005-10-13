@@ -3,6 +3,24 @@
 	      xmlns="http://www.w3.org/1999/xhtml"
 	      xmlns:db="http://docbook.org/ns/docbook">
 
+<db:set t:side="recto">
+  <div class="set-titlepage">
+    <db:title/>
+    <db:subtitle/>
+    <db:corpauthor/>
+    <db:authorgroup/>
+    <db:author/>
+    <db:othercredit/>
+    <db:releaseinfo/>
+    <db:copyright/>
+    <db:legalnotice/>
+    <db:pubdate/>
+    <db:revision/>
+    <db:revhistory/>
+    <db:abstract/>
+  </div>
+</db:set>
+
 <db:article t:side="recto">
   <div class="article-titlepage">
     <db:title/>
@@ -185,6 +203,20 @@
     <db:subtitle/>
   </div>
 </db:index>
+
+<db:setindex t:side="recto">
+  <div class="setindex-titlepage">
+    <db:title/>
+    <db:subtitle/>
+  </div>
+</db:setindex>
+
+<db:indexdiv t:side="recto">
+  <div class="indexdiv-titlepage">
+    <db:title/>
+    <db:subtitle/>
+  </div>
+</db:indexdiv>
 
 <db:section t:side="recto">
   <div class="section-titlepage">
