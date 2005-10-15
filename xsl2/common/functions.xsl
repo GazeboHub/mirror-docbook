@@ -129,7 +129,10 @@ node does not have an ID, the XSLT
     <xsl:when test="$persistent.generated.ids != 0">
       <xsl:variable name="xpid" select="f:xptr-id($node)"/>
       <xsl:choose>
-	<xsl:when test="$xpid = '' or $node/key('id', $xpid)">
+	<!-- FIXME: what if $node/key('id', $xpid)? I can't test that because
+	     sometimes $node isn't in a tree and then that test causes
+	     a runtime error. -->
+	<xsl:when test="$xpid = ''">
 	  <xsl:value-of select="generate-id($node)"/>
 	</xsl:when>
 	<xsl:otherwise>

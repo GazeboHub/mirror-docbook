@@ -109,11 +109,27 @@ ordinary, straightforward manner.</para>
     <xsl:apply-templates mode="m:make-empty-elements"/>
   </xsl:variable>
 
+  <!--
+  <xsl:message>
+    <EMPTY>
+      <xsl:copy-of select="$pl-empty-tags"/>
+    </EMPTY>
+  </xsl:message>
+  -->
+
   <xsl:variable name="pl-no-lb" as="node()*">
     <xsl:apply-templates select="$pl-empty-tags"
 			 mode="mp:pl-no-lb"/>
   </xsl:variable>
 
+  <!--
+  <xsl:message>
+    <NOLB>
+      <xsl:copy-of select="$pl-no-lb"/>
+    </NOLB>
+  </xsl:message>
+  -->
+  
   <xsl:variable name="pl-no-wrap-lb" as="node()*">
     <xsl:call-template name="t:unwrap">
       <xsl:with-param name="unwrap" select="xs:QName('ghost:br')"/>
@@ -121,16 +137,40 @@ ordinary, straightforward manner.</para>
     </xsl:call-template>
   </xsl:variable>
 
+  <!--
+  <xsl:message>
+    <NOWRAPLB>
+      <xsl:copy-of select="$pl-no-wrap-lb"/>
+    </NOWRAPLB>
+  </xsl:message>
+  -->
+
   <xsl:variable name="pl-lines" as="element(ghost:line)*">
     <xsl:call-template name="tp:wrap-lines">
       <xsl:with-param name="nodes" select="$pl-no-wrap-lb"/>
     </xsl:call-template>
   </xsl:variable>
 
+  <!--
+  <xsl:message>
+    <LINES>
+      <xsl:copy-of select="$pl-lines"/>
+    </LINES>
+  </xsl:message>
+  -->
+
   <xsl:variable name="pl-removed-lines" as="node()*">
     <xsl:apply-templates select="$pl-lines"
 			 mode="mp:pl-restore-lines"/>
   </xsl:variable>
+
+  <!--
+  <xsl:message>
+    <REMOVEDLINES>
+      <xsl:copy-of select="$pl-removed-lines"/>
+    </REMOVEDLINES>
+  </xsl:message>
+  -->
 
   <xsl:variable name="result" as="element()">
     <xsl:copy>
@@ -140,13 +180,28 @@ ordinary, straightforward manner.</para>
     </xsl:copy>
   </xsl:variable>
 
+  <!--
+  <xsl:message>
+    <RESULT>
+      <xsl:copy-of select="$result"/>
+    </RESULT>
+  </xsl:message>
+  -->
+
   <xsl:apply-templates select="$result" mode="mp:pl-cleanup"/>
 </xsl:template>
 
 <!-- ============================================================ -->
 
+<xsl:template match="db:footnote[@ghost:copy]" mode="mp:pl-cleanup">
+  <!-- special case: when footnotes are copied (in a verbatim environment,
+       because they contain content that contains a line break), suppress
+       all the copies so they don't generate spurious footnote numbers -->
+</xsl:template>
+
 <xsl:template match="*" mode="mp:pl-cleanup">
   <xsl:variable name="id" select="@xml:id"/>
+
   <xsl:copy>
     <xsl:copy-of select="@*[name(.) != 'xml:id'
       and namespace-uri(.) != 'http://docbook.org/ns/docbook/ephemeral']"/>
@@ -242,12 +297,30 @@ an element that has content.</para>
 <xsl:template name="t:restore-content">
   <xsl:param name="nodes" select="node()"/>
 
+  <!--
+  <xsl:message>
+    <XXX>
+      <xsl:copy-of select="$nodes"/>
+    </XXX>
+  </xsl:message>
+  -->
+
   <xsl:choose>
     <xsl:when test="not($nodes)"/>
     <xsl:when test="$nodes[1] instance of element()
                     and $nodes[1]/@ghost:id">
       <xsl:variable name="id" select="$nodes[1]/@ghost:id"/>
       <xsl:variable name="end" select="$nodes[self::ghost:end[@idref=$id]][1]"/>
+
+      <!--
+      <xsl:message>
+	<xsl:text>Restore </xsl:text>
+	<xsl:value-of select="$id"/>
+	<xsl:text>, </xsl:text>
+	<xsl:value-of select="count($end)"/>
+      </xsl:message>
+      -->
+
       <xsl:variable name="endpos"
 		    select="f:find-node-in-sequence($nodes, $end, 2)"/>
 
@@ -471,6 +544,19 @@ that it had been nested within.</para>
   <xsl:param name="content" as="node()*"/>
   <xsl:param name="stack" as="element()*" select="()"/>
 
+  <!--
+  <xsl:if test="$content">
+    <xsl:message>
+      <xsl:text>UNWRAP[1]=</xsl:text>
+      <xsl:value-of select="name($content[1])"/>; <xsl:value-of select="$content[1]/@ghost:id"/>
+    </xsl:message>
+  </xsl:if>
+
+  <xsl:call-template name="tp:show-stack">
+    <xsl:with-param name="stack" select="$stack"/>
+  </xsl:call-template>
+  -->
+
   <xsl:choose>
     <xsl:when test="not($content)"/>
     <xsl:when test="$content[1] instance of element()
@@ -519,7 +605,13 @@ that it had been nested within.</para>
   <xsl:param name="stack" as="element()*" select="()"/>
 
   <xsl:if test="$stack">
-    <ghost:end idref="{$stack[1]/@ghost:id}"/>
+    <ghost:end idref="{$stack[last()]/@ghost:id}"/>
+    <!--
+    <xsl:message>
+      <xsl:text>close: </xsl:text>
+      <xsl:value-of select="$stack[last()]/@ghost:id"/>
+    </xsl:message>
+    -->
     <xsl:call-template name="tp:close-stack">
       <xsl:with-param name="stack" select="$stack[position() &lt; last()]"/>
     </xsl:call-template>
@@ -530,11 +622,37 @@ that it had been nested within.</para>
   <xsl:param name="stack" as="element()*" select="()"/>
 
   <xsl:if test="$stack">
-    <xsl:copy-of select="$stack[1]"/>
+    <xsl:apply-templates select="$stack[1]" mode="mp:stack-copy"/>
     <xsl:call-template name="tp:open-stack">
       <xsl:with-param name="stack" select="$stack[position() &gt; 1]"/>
     </xsl:call-template>
   </xsl:if>
+</xsl:template>
+
+<xsl:template match="*" mode="mp:stack-copy">
+  <xsl:copy>
+    <xsl:copy-of select="@*"/>
+    <xsl:attribute name="ghost:copy" select="'yes'"/>
+  </xsl:copy>
+</xsl:template>
+
+<xsl:template name="tp:show-stack">
+  <xsl:param name="stack" as="element()*" select="()"/>
+
+  <xsl:message>
+    <xsl:text>STACK[</xsl:text>
+    <xsl:value-of select="count($stack)"/>
+    <xsl:text>]</xsl:text>
+  </xsl:message>
+
+  <xsl:for-each select="$stack">
+    <xsl:message>
+      <xsl:text>...</xsl:text>
+      <xsl:value-of select="name(.)"/>
+      <xsl:text>,</xsl:text>
+      <xsl:value-of select="@ghost:id"/>
+    </xsl:message>
+  </xsl:for-each>
 </xsl:template>
 
 <!-- ============================================================ -->
@@ -580,6 +698,18 @@ appropriate <tag class="attribute">ghost:id</tag>.</para>
 <function role="named-template">t:restore-content</function>.</para>
 </refdescription>
 </doc:mode>
+
+<xsl:template match="db:footnote" mode="m:make-empty-elements">
+  <xsl:element name="{name(.)}" namespace="{namespace-uri(.)}">
+    <xsl:copy-of select="@*"/>
+    <xsl:if test="not(@xml:id)">
+      <xsl:attribute name="xml:id" select="f:node-id(.)"/>
+    </xsl:if>
+    <xsl:attribute name="ghost:id" select="generate-id()"/>
+  </xsl:element>
+  <xsl:apply-templates mode="m:make-empty-elements"/>
+  <ghost:end idref="{generate-id()}"/>
+</xsl:template>
 
 <xsl:template match="*" mode="m:make-empty-elements">
   <xsl:element name="{name(.)}" namespace="{namespace-uri(.)}">
