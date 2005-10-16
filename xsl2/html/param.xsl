@@ -24,6 +24,9 @@
 	   select="'/sourceforge/docbook/xsl2/html/default.css'"/>
 <xsl:param name="docbook.css.inline" select="0"/>
 
+<xsl:param name="annotation.js"
+	   select="'/sourceforge/docbook/xsl2/html/annotation.js'"/>
+
 <xsl:param name="toc.list.type">dl</xsl:param>
 <xsl:param name="manual.toc" select="''"/>
 <xsl:param name="bridgehead.in.toc" select="0"/>

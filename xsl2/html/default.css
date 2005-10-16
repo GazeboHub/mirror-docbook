@@ -184,3 +184,18 @@ div.title          { background-color: #CACACA;
 
 div.sidebar-content { padding: 10px;
                     }
+
+div.annotation     { border: solid #afafaf 1px;
+                     margin-left: 35px;
+                     margin-right: 70px;
+                     margin-top: 1ex;
+                     margin-bottom: 1ex;
+                   }
+
+div.annotation
+div.title          { background-color: #CACACA;
+                     padding: 3px;
+                   }
+
+div.annotation-content { padding: 10px;
+                    }

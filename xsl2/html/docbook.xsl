@@ -70,9 +70,11 @@
   <xsl:param name="input" select="/"/>
 
   <xsl:template match="*" mode="m:root">
+    <!--
     <xsl:result-document href="normalized.xml">
       <xsl:copy-of select="."/>
     </xsl:result-document>
+    -->
 
     <xsl:result-document format="final">
       <html>
@@ -92,6 +94,7 @@
 	    </xsl:choose>
 	  </title>
 	  <xsl:call-template name="css-style"/>
+	  <xsl:call-template name="javascript"/>
 	</head>
 	<body>
 	  <xsl:if test="@status">

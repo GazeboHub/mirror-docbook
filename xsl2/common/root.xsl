@@ -8,7 +8,7 @@
 		exclude-result-prefixes="db doc f fn m"
                 version="2.0">
 
-<xsl:key name="id" match="*" use="@id|@xml:id"/>
+<xsl:key name="id" match="*" use="@xml:id"/>
 
 <xsl:template match="/">
   <xsl:variable name="cleanup">

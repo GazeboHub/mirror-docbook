@@ -26,6 +26,10 @@
   <!-- nop -->
 </xsl:template>
 
+<xsl:template match="db:annotation">
+  <!-- nop -->
+</xsl:template>
+
 <xsl:template match="db:personname">
   <xsl:call-template name="inline-charseq">
     <xsl:with-param name="content">

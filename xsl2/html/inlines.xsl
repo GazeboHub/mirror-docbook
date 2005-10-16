@@ -121,6 +121,32 @@ context item.</para>
   </xsl:variable>
 
   <xsl:copy-of select="$link"/>
+
+  <xsl:variable name="id" select="@xml:id"/>
+
+  <xsl:variable name="annotations" as="element()*">
+    <xsl:sequence select="if (@annotations)
+                          then key('id',tokenize(@annotations,'\s'))
+			  else ()"/>
+    <xsl:sequence select="if ($id)
+			  then //db:annotation[tokenize(@annotates,'\s')=$id]
+			  else ()"/>
+  </xsl:variable>
+
+  <xsl:for-each select="$annotations">
+    <xsl:variable name="id" select="f:node-id(.)"/>
+    <a href="#" style="display: inline" onclick="show_annotation('{$id}')"
+	  id="annot-{$id}-on">
+      <xsl:text>[A+]</xsl:text>
+    </a>
+    <a href="#" style="display: none" onclick="hide_annotation('{$id}')"
+	  id="annot-{$id}-off">
+      <xsl:text>[A-]</xsl:text>
+    </a>
+    <div style="display: none" id="annot-{$id}">
+      <xsl:apply-templates select="." mode="m:annotation"/>
+    </div>
+  </xsl:for-each>
 </xsl:template>
 
 <!-- ============================================================ -->
@@ -690,9 +716,6 @@ the default is “element”.</para>
       </xsl:otherwise>
     </xsl:choose>
   </tt>
-</xsl:template>
-
-<xsl:template match="db:alt">
 </xsl:template>
 
 <u:unittests match="db:emphasis">

@@ -259,6 +259,22 @@ of the stylesheet is inserted directly.</para>
 
 <!-- ====================================================================== -->
 
+<doc:template name="javascript" xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Template for inserting Javascript</refpurpose>
+
+<refdescription>
+<para>T.B.D.</para>
+</refdescription>
+</doc:template>
+
+<xsl:template name="javascript">
+  <xsl:if test="//db:annotation">
+    <script type="text/javascript" src="{$annotation.js}"/>
+  </xsl:if>
+</xsl:template>
+
+<!-- ====================================================================== -->
+
 <doc:function name="f:href" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns a URI for the node</refpurpose>
 

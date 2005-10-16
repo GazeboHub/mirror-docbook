@@ -378,5 +378,9 @@
   <db:title/>
 </db:sidebar>
 
+<db:annotation>
+  <db:title/>
+</db:annotation>
+
 </t:titlepages>
 
