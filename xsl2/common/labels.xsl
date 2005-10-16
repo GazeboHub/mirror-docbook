@@ -135,8 +135,11 @@ processed in this mode should generate their label.</para>
         <xsl:when test="$label.from.part != 0 and ancestor::db:part">
           <xsl:number from="db:part" count="db:chapter" format="1" level="any"/>
         </xsl:when>
-        <xsl:otherwise>
+        <xsl:when test="$label.from.part != 0 and ancestor::db:book">
           <xsl:number from="db:book" count="db:chapter" format="1" level="any"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:number count="db:chapter" format="1" level="any"/>
         </xsl:otherwise>
       </xsl:choose>
     </xsl:when>

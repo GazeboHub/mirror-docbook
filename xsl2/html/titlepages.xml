@@ -260,29 +260,36 @@
   </div>
 </db:sect5>
 
-<db:refsection t:side="recto">
+<db:simplesect t:side="recto">
   <div class="section-titlepage">
+    <db:title/>
+    <db:subtitle/>
+  </div>
+</db:simplesect>
+
+<db:refsection t:side="recto">
+  <div class="refsection-titlepage">
     <db:title/>
     <db:subtitle/>
   </div>
 </db:refsection>
 
 <db:refsect1 t:side="recto">
-  <div class="section-titlepage">
+  <div class="refsection-titlepage">
     <db:title/>
     <db:subtitle/>
   </div>
 </db:refsect1>
 
 <db:refsect2 t:side="recto">
-  <div class="section-titlepage">
+  <div class="refsection-titlepage">
     <db:title/>
     <db:subtitle/>
   </div>
 </db:refsect2>
 
 <db:refsect3 t:side="recto">
-  <div class="section-titlepage">
+  <div class="refsection-titlepage">
     <db:title/>
     <db:subtitle/>
   </div>
@@ -366,6 +373,10 @@
 <db:taskrelated>
   <db:title/>
 </db:taskrelated>
+
+<db:sidebar>
+  <db:title/>
+</db:sidebar>
 
 </t:titlepages>
 

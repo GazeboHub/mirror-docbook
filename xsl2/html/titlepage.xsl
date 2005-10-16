@@ -128,6 +128,34 @@ for the title page.</para>
   </xsl:element>
 </xsl:template>
 
+<xsl:template match="db:simplesect/db:info/db:title"
+	      mode="m:titlepage-mode"
+	      priority="100">
+  <xsl:variable name="depth"
+		select="count(ancestor::db:section)"/>
+
+  <xsl:variable name="hlevel"
+		select="if ($depth &lt; 5) then $depth else 4"/>
+  
+  <xsl:element name="h{$hlevel+2}" namespace="http://www.w3.org/1999/xhtml">
+    <xsl:next-match/>
+  </xsl:element>
+</xsl:template>
+
+<xsl:template match="db:simplesect/db:info/db:subtitle"
+	      mode="m:titlepage-mode"
+	      priority="100">
+  <xsl:variable name="depth"
+		select="count(ancestor::db:section)"/>
+
+  <xsl:variable name="hlevel"
+		select="if ($depth &lt; 4) then $depth else 3"/>
+  
+  <xsl:element name="h{$hlevel+3}" namespace="http://www.w3.org/1999/xhtml">
+    <xsl:apply-templates/>
+  </xsl:element>
+</xsl:template>
+
 <xsl:template match="db:refsection/db:info/db:title"
 	      mode="m:titlepage-mode"
 	      priority="100">

@@ -96,8 +96,14 @@
     </xsl:message>
   </xsl:if>
 
+  <!-- Make sure we copy the tgroup container so that the tgroup -->
+  <!-- template has access to the table/informaltable attributes -->
   <xsl:variable name="phase1">
-    <xsl:apply-templates select="." mode="m:cals-phase-1"/>
+    <xsl:element name="{local-name(..)}"
+		 namespace="{namespace-uri(..)}">
+      <xsl:copy-of select="../@*"/>
+      <xsl:apply-templates select="." mode="m:cals-phase-1"/>
+    </xsl:element>
   </xsl:variable>
 
   <!--
@@ -108,7 +114,7 @@
   </xsl:message>
   -->
 
-  <xsl:apply-templates select="$phase1/db:tgroup" mode="m:cals"/>
+  <xsl:apply-templates select="$phase1/*/db:tgroup" mode="m:cals"/>
 </xsl:template>
 
 <xsl:template match="db:tgroup" name="db:tgroup" mode="m:cals">
@@ -442,12 +448,12 @@ to alternate rows of the table:</para>
     <!-- FIXME: handle @revisionflag -->
 
     <xsl:attribute name="style">
-      <xsl:if test="@colsep &gt; 0">
+      <xsl:if test="@colsep &gt; 0 and following-sibling::*">
 	<xsl:call-template name="border">
 	  <xsl:with-param name="side" select="'right'"/>
 	</xsl:call-template>
       </xsl:if>
-      <xsl:if test="@rowsep &gt; 0">
+      <xsl:if test="@rowsep &gt; 0 and parent::*/following-sibling::db:row">
 	<xsl:call-template name="border">
 	  <xsl:with-param name="side" select="'bottom'"/>
 	</xsl:call-template>
@@ -477,7 +483,21 @@ to alternate rows of the table:</para>
 
 <xsl:template match="ghost:empty" mode="m:cals">
   <!-- FIXME: what about attributes on empty cells? -->
-  <td>&#160;</td>
+  <td>
+    <xsl:attribute name="style">
+      <xsl:if test="@colsep &gt; 0 and following-sibling::*">
+	<xsl:call-template name="border">
+	  <xsl:with-param name="side" select="'right'"/>
+	</xsl:call-template>
+      </xsl:if>
+      <xsl:if test="@rowsep &gt; 0 and parent::*/following-sibling::db:row">
+	<xsl:call-template name="border">
+	  <xsl:with-param name="side" select="'bottom'"/>
+	</xsl:call-template>
+      </xsl:if>
+    </xsl:attribute>
+    <xsl:text>&#160;</xsl:text>
+  </td>
 </xsl:template>
 
 <xsl:template match="ghost:overlapped" mode="m:cals">
@@ -630,6 +650,7 @@ Defaults to <parameter>table.cell.border.thickness</parameter>.</para>
 <xsl:template name="generate-colgroup">
   <xsl:param name="cols" required="yes"/>
   <xsl:param name="count" select="1"/>
+
   <xsl:choose>
     <xsl:when test="$count &gt; $cols"></xsl:when>
     <xsl:otherwise>
@@ -673,7 +694,7 @@ See <function role="named-template">generate-colgroup</function>.
 
 <xsl:template name="generate-col">
   <xsl:param name="countcol" required="yes"/>
-  <xsl:param name="colspecs" select="./colspec"/>
+  <xsl:param name="colspecs" select="./db:colspec"/>
   <xsl:param name="count">1</xsl:param>
   <xsl:param name="colnum">1</xsl:param>
 
@@ -779,6 +800,13 @@ See <function role="named-template">generate-colgroup</function>.
     <xsl:copy-of select="@*"/>
     <xsl:apply-templates mode="m:html"/>
   </xsl:element>
+</xsl:template>
+
+<xsl:template match="db:informaltable" mode="m:html">
+  <table>
+    <xsl:copy-of select="@*"/>
+    <xsl:apply-templates mode="m:html"/>
+  </table>
 </xsl:template>
 
 </xsl:stylesheet>

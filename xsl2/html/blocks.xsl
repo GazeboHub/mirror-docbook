@@ -122,4 +122,45 @@
   </blockquote>
 </xsl:template>
 
+<!-- ==================================================================== -->
+
+<xsl:template match="db:remark">
+  <xsl:if test="$show.comments != 0">
+    <div class="{local-name(.)}">
+      <xsl:call-template name="id"/>
+      <xsl:call-template name="class"/>
+      <xsl:apply-templates/>
+    </div>
+  </xsl:if>
+</xsl:template>
+
+<!-- ==================================================================== -->
+
+<xsl:template match="db:sidebar">
+  <xsl:variable name="titlepage"
+		select="$titlepages/*[node-name(.)=node-name(current())][1]"/>
+
+  <div class="{local-name(.)}">
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+
+    <xsl:call-template name="titlepage">
+      <xsl:with-param name="content" select="$titlepage"/>
+    </xsl:call-template>
+
+    <div class="sidebar-content">
+      <xsl:apply-templates select="*[not(self::db:info)]"/>
+    </div>
+  </div>
+</xsl:template>
+
+<xsl:template match="db:sidebar/db:info/db:title"
+	      mode="m:titlepage-mode">
+  <div class="title">
+    <strong>
+      <xsl:apply-templates/>
+    </strong>
+  </div>
+</xsl:template>
+
 </xsl:stylesheet>

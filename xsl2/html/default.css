@@ -162,3 +162,25 @@ em em em           { font-style: italic; }
 em em em em        { font-style: normal; }
 
 em em em em em     { font-style: italic; }
+
+div.remark         { padding: 10px;
+                     border: solid #afafaf 1px;
+                     margin-left: 35px;
+                     margin-right: 70px;
+                     margin-bottom: 1ex;
+                   }
+
+
+div.sidebar        { border: solid #afafaf 1px;
+                     margin-left: 35px;
+                     margin-right: 70px;
+                     margin-bottom: 1ex;
+                   }
+
+div.sidebar
+div.title          { background-color: #CACACA;
+                     padding: 3px;
+                   }
+
+div.sidebar-content { padding: 10px;
+                    }

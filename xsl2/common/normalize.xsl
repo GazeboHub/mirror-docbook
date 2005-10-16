@@ -418,17 +418,34 @@ if appropriate</refpurpose>
 		     and db:imageobject
 		     and db:imageobject/db:imagedata[@format='linespecific']]"
 	      mode="m:normalize">
-  <xsl:value-of select="unparsed-text(db:imageobject/db:imagedata/@fileref)"/>
+  <xsl:variable name="data"
+		select="(db:imageobject
+			 /db:imagedata[@format='linespecific'])[1]"/>
+  <xsl:choose>
+    <xsl:when test="$data/@entityref">
+      <xsl:value-of select="unparsed-text(unparsed-entity-uri($data/@entityref))"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:value-of select="unparsed-text($data/@fileref)"/>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
-<xsl:template match="db:textdata
+<xsl:template match="db:textobject
 		     [parent::db:programlisting
 		      or parent::db:screen
 		      or parent::db:literallayout
 		      or parent::db:address
 		      or parent::db:funcsynopsisinfo]"
 	      mode="m:normalize">
-  <xsl:value-of select="unparsed-text(@fileref)"/>
+  <xsl:choose>
+    <xsl:when test="db:textdata/@entityref">
+      <xsl:value-of select="unparsed-text(unparsed-entity-uri(db:textdata/@entityref))"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:value-of select="unparsed-text(db:textdata/@fileref)"/>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <xsl:template match="*" mode="m:normalize">

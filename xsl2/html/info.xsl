@@ -110,4 +110,8 @@
   </table>
 </xsl:template>
 
+<xsl:template match="db:revdescription">
+  <xsl:apply-templates/>
+</xsl:template>
+
 </xsl:stylesheet>

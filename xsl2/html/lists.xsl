@@ -503,4 +503,151 @@
   </ul>
 </xsl:template>
 
+
+<!-- ==================================================================== -->
+
+<xsl:template match="db:segmentedlist">
+  <xsl:variable name="presentation"
+		select="f:pi(processing-instruction('dbhtml'),
+			     'list-presentation')"/>
+
+  <div class="{local-name(.)}">
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+
+    <xsl:choose>
+      <xsl:when test="$presentation = 'table'">
+        <xsl:apply-templates select="." mode="m:seglist-table"/>
+      </xsl:when>
+      <xsl:when test="$presentation = 'list'">
+        <xsl:apply-templates/>
+      </xsl:when>
+      <xsl:when test="$segmentedlist.as.table != 0">
+        <xsl:apply-templates select="." mode="m:seglist-table"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:apply-templates/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </div>
+</xsl:template>
+
+<xsl:template match="db:segmentedlist/db:info">
+  <xsl:apply-templates select="db:title"/>
+</xsl:template>
+
+<xsl:template match="db:segmentedlist/db:info/db:title">
+  <div class="{local-name(.)}">
+    <strong><xsl:apply-templates/></strong>
+  </div>
+</xsl:template>
+
+<xsl:template match="db:segtitle"/>
+
+<xsl:template match="db:segtitle" mode="m:segtitle-in-seg">
+  <xsl:apply-templates/>
+</xsl:template>
+
+<xsl:template match="db:seglistitem">
+  <div class="{local-name(.)}">
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+    <xsl:apply-templates/>
+  </div>
+</xsl:template>
+
+<xsl:template match="db:seg">
+  <xsl:variable name="segnum" select="count(preceding-sibling::db:seg)+1"/>
+  <xsl:variable name="seglist" select="ancestor::db:segmentedlist"/>
+  <xsl:variable name="segtitles" select="$seglist/db:segtitle"/>
+
+  <!--
+     Note: segtitle is only going to be the right thing in a well formed
+     SegmentedList.  If there are too many Segs or too few SegTitles,
+     you'll get something odd...maybe an error
+  -->
+
+  <div class="{local-name(.)}">
+    <strong>
+      <span class="segtitle">
+        <xsl:apply-templates select="$segtitles[$segnum=position()]"
+                             mode="m:segtitle-in-seg"/>
+        <xsl:text>: </xsl:text>
+      </span>
+    </strong>
+    <xsl:apply-templates/>
+  </div>
+</xsl:template>
+
+<xsl:template match="db:segmentedlist" mode="m:seglist-table">
+  <xsl:variable name="table-summary"
+		select="f:pi(processing-instruction('dbhtml'),
+			     'table-summary')"/>
+
+  <xsl:variable name="list-width"
+		select="f:pi(processing-instruction('dbhtml'),
+			     'list-width')"/>
+
+  <xsl:apply-templates select="db:info"/>
+
+  <table border="0">
+    <xsl:if test="$list-width != ''">
+      <xsl:attribute name="width">
+        <xsl:value-of select="$list-width"/>
+      </xsl:attribute>
+    </xsl:if>
+    <xsl:if test="$table-summary != ''">
+      <xsl:attribute name="summary">
+        <xsl:value-of select="$table-summary"/>
+      </xsl:attribute>
+    </xsl:if>
+    <thead>
+      <tr class="segtitle">
+	<!--
+        <xsl:call-template name="tr.attributes">
+          <xsl:with-param name="row" select="segtitle[1]"/>
+          <xsl:with-param name="rownum" select="1"/>
+        </xsl:call-template>
+	-->
+        <xsl:apply-templates select="db:segtitle" mode="m:seglist-table"/>
+      </tr>
+    </thead>
+    <tbody>
+      <xsl:apply-templates select="db:seglistitem" mode="m:seglist-table"/>
+    </tbody>
+  </table>
+</xsl:template>
+
+<xsl:template match="db:segtitle" mode="m:seglist-table">
+  <th><xsl:apply-templates/></th>
+</xsl:template>
+
+<xsl:template match="db:seglistitem" mode="m:seglist-table">
+  <xsl:variable name="seglinum">
+    <xsl:number from="db:segmentedlist" count="db:seglistitem"/>
+  </xsl:variable>
+
+  <tr class="{local-name(.)}">
+    <!--
+    <xsl:call-template name="tr.attributes">
+      <xsl:with-param name="rownum" select="$seglinum + 1"/>
+    </xsl:call-template>
+    -->
+    <xsl:apply-templates mode="m:seglist-table"/>
+  </tr>
+</xsl:template>
+
+<xsl:template match="db:seg" mode="m:seglist-table">
+  <td class="{local-name(.)}"><xsl:apply-templates/></td>
+</xsl:template>
+
+<xsl:template match="db:seg[1]" mode="m:seglist-table">
+  <td class="{local-name(.)}">
+    <xsl:call-template name="id">
+      <xsl:with-param name="node" select="ancestor::db:seglistitem"/>
+    </xsl:call-template>
+    <xsl:apply-templates/>
+  </td>
+</xsl:template>
+
 </xsl:stylesheet>

@@ -105,6 +105,9 @@ each row and cell.</para>
   <xsl:param name="prevpos" as="xs:integer"/>
 
   <xsl:variable name="entry" select="."/>
+  <xsl:variable name="row" select="$entry/parent::db:row"/>
+  <xsl:variable name="container" select="(ancestor::db:tgroup
+                                          |ancestor::db:entrytbl)[last()]"/>
 
   <xsl:variable name="nextpos" select="f:skip-overhang($overhang, $prevpos+1)"
 		as="xs:integer"/>
@@ -114,22 +117,19 @@ each row and cell.</para>
       <xsl:when test="@namest">
 	<xsl:variable name="name" select="@namest"/>
 	<xsl:variable name="colspec"
-		      select="ancestor::db:tgroup[1]
-			      /db:colspec[@colname=$name]"/>
+		      select="$container/db:colspec[@colname=$name]"/>
 	<xsl:value-of select="f:colspec-colnum($colspec)"/>
       </xsl:when>
       <xsl:when test="@colname">
 	<xsl:variable name="name" select="@colname"/>
 	<xsl:variable name="colspec"
-		      select="ancestor::db:tgroup[1]
-			      /db:colspec[@colname=$name]"/>
+		      select="$container/db:colspec[@colname=$name]"/>
 	<xsl:value-of select="f:colspec-colnum($colspec)"/>
       </xsl:when>
       <xsl:when test="@spanname">
 	<xsl:variable name="name" select="@spanname"/>
 	<xsl:variable name="spanspec"
-		      select="ancestor::db:tgroup[1]
-			      /db:spanspec[@spanname=$name]"/>
+		      select="$container/db:spanspec[@spanname=$name]"/>
 
 	<xsl:value-of select="f:spanspec-colnum-start($spanspec)"/>
       </xsl:when>
@@ -144,16 +144,14 @@ each row and cell.</para>
       <xsl:when test="@nameend">
 	<xsl:variable name="name" select="@nameend"/>
 	<xsl:variable name="colspec"
-		      select="ancestor::db:tgroup[1]
-			      /db:colspec[@colname=$name]"/>
+		      select="$container/db:colspec[@colname=$name]"/>
 
 	<xsl:value-of select="f:colspec-colnum($colspec) - $pos + 1"/>
       </xsl:when>
       <xsl:when test="@spanname">
 	<xsl:variable name="name" select="@spanname"/>
 	<xsl:variable name="spanspec"
-		      select="ancestor::db:tgroup[1]
-			      /db:spanspec[@spanname=$name]"/>
+		      select="$container/db:spanspec[@spanname=$name]"/>
 
 	<xsl:value-of select="f:spanspec-colnum-end($spanspec) - $pos + 1"/>
       </xsl:when>
@@ -168,7 +166,12 @@ each row and cell.</para>
 	<ghost:overlapped ghost:colnum="{$col}" ghost:morerows="0"/>
       </xsl:when>
       <xsl:otherwise>
-	<ghost:empty ghost:colnum="{$col}" ghost:morerows="0"/>
+	<ghost:empty ghost:colnum="{$col}" ghost:morerows="0">
+	  <xsl:call-template name="inherit-table-attributes">
+	    <xsl:with-param name="colnum" select="."/>
+	    <xsl:with-param name="row" select="$row"/>
+	  </xsl:call-template>
+	</ghost:empty>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:for-each>
@@ -198,12 +201,36 @@ each row and cell.</para>
     </ghost:overlapped>
   </xsl:for-each>
 
+  <!--
+  <xsl:message>
+    <xsl:value-of select="$pos"/>
+    <xsl:text>, </xsl:text>
+    <xsl:value-of select="count(following-sibling::*)"/>
+    <xsl:text>, </xsl:text>
+    <xsl:value-of select="$container/@cols"/>
+  </xsl:message>
+  -->
+
   <xsl:apply-templates select="(following-sibling::db:entry
 			        |following-sibling::db:entrytbl)[1]"
 		       mode="m:cals-phase-1">
     <xsl:with-param name="overhang" select="$overhang"/>
     <xsl:with-param name="prevpos" select="$pos + $width - 1"/>
   </xsl:apply-templates>
+
+  <!-- pad the row with empties if necessary -->
+  <xsl:if test="not(following-sibling::db:entry|following-sibling::db:entrytbl)">
+    <xsl:for-each select="for $col
+			  in ($pos+1 to $container/@cols)
+			  return $col">
+      <ghost:empty ghost:colnum="{.}" ghost:morerows="0">
+	<xsl:call-template name="inherit-table-attributes">
+	  <xsl:with-param name="colnum" select="."/>
+	  <xsl:with-param name="row" select="$row"/>
+	</xsl:call-template>
+      </ghost:empty>
+    </xsl:for-each>
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="db:colspec" mode="m:cals-phase-1">
@@ -300,6 +327,14 @@ a normalized cell has all of the proper values specified directly.</para>
 <para>The column number in which this entry appears.</para>
 </listitem>
 </varlistentry>
+<varlistentry><term>row</term>
+<listitem>
+<para>The row containing the cell, defaults to the parent of the entry.
+This parameter exists independent of the entry because when the entry is
+an empty column (for example, at the end of a short row), the entry will
+be an integer and won't have a parent.</para>
+</listitem>
+</varlistentry>
 </variablelist>
 </refparameter>
 
@@ -311,6 +346,7 @@ a normalized cell has all of the proper values specified directly.</para>
 <xsl:template name="inherit-table-attributes">
   <xsl:param name="entry" select="."/>
   <xsl:param name="colnum" required="yes"/>
+  <xsl:param name="row" select="$entry/parent::db:row"/>
 
   <!-- the table attributes come from:
        1. the entry
@@ -324,26 +360,53 @@ a normalized cell has all of the proper values specified directly.</para>
        9. application default
        in that order -->
 
-  <xsl:variable name="tgroup" select="$entry/ancestor::db:tgroup[1]"/>
+  <xsl:variable name="tgroup" select="$row/ancestor::db:tgroup[1]"/>
   <xsl:variable name="table" select="$tgroup/parent::*"/>
   <xsl:variable name="spanspec"
 		select="$tgroup/db:spanspec[@spanname=$entry/@spanname]"/>
 
   <xsl:variable name="elements" as="element()*">
-    <xsl:sequence select="($entry,
-                           $entry/parent::db:row,
-			   $tgroup,
-			   $tgroup/parent::*,
-			   $spanspec,
-			   $tgroup/db:colspec[@colname=$spanspec/@namest],
-			   $tgroup/db:colspec[@colname=$entry/@namest],
-			   f:find-colspec-by-colnum($tgroup, $colnum))"/>
+    <xsl:choose>
+      <xsl:when test="$entry instance of element()">
+	<xsl:sequence select="($entry,
+			       $row,
+			       $tgroup,
+			       $tgroup/parent::*,
+			       $spanspec,
+			       $tgroup/db:colspec[@colname=$spanspec/@namest],
+			       $tgroup/db:colspec[@colname=$entry/@namest],
+			       f:find-colspec-by-colnum($tgroup, $colnum))"/>
+      </xsl:when>
+      <xsl:otherwise>
+	<xsl:sequence select="($row,
+			       $tgroup,
+			       $tgroup/parent::*,
+			       f:find-colspec-by-colnum($tgroup, $colnum))"/>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:variable>
+
+  <xsl:variable name="colspec"
+		select="f:find-colspec-by-colnum($tgroup, $colnum)"/>
 
   <xsl:for-each select="('rowsep', 'colsep',
                          'align', 'valign',
 			 'char', 'charoff')">
     <xsl:variable name="attr" select="QName('', .)"/>
+
+    <xsl:variable name="value">
+      <xsl:choose>
+	<xsl:when test="f:find-element-by-attribute($elements, $attr)">
+	  <xsl:value-of select="f:find-element-by-attribute($elements, $attr)
+				/@*[node-name() = $attr]"/>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:if test="$attr=QName('','rowsep') or $attr=QName('','colsep')">
+	    <xsl:value-of select="1"/>
+	  </xsl:if>
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
 
     <xsl:choose>
       <xsl:when test="f:find-element-by-attribute($elements, $attr)">
@@ -436,19 +499,19 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
     <u:param name="table-width" select="'6in'"/>
     <u:param name="colgroup" as="element()">
       <colgroup xmlns="http://www.w3.org/1999/xhtml">
-	<col colwidth="3.5*"/>
-	<col colwidth="2*"/>
+	<col width="3.5*"/>
+	<col width="2*"/>
 	<col/>
-	<col colwidth="1*"/>
+	<col width="1*"/>
       </colgroup>
     </u:param>
     <u:param name="abspixels">1</u:param>
     <u:result as="element()">
       <colgroup xmlns="http://www.w3.org/1999/xhtml"> 
-	<col colwidth="47%"/>
-	<col colwidth="27%"/>
-	<col colwidth="13%"/>
-	<col colwidth="13%"/>
+	<col width="47%"/>
+	<col width="27%"/>
+	<col width="13%"/>
+	<col width="13%"/>
       </colgroup>
     </u:result>
   </u:test>
@@ -456,19 +519,19 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
     <u:param name="table-width">6in</u:param>
     <u:param name="colgroup" as="element()">
       <colgroup xmlns="http://www.w3.org/1999/xhtml">
-	<col colwidth="2in"/>
-	<col colwidth="3in"/>
-	<col colwidth="8pt"/>
-	<col colwidth="1in"/>
+	<col width="2in"/>
+	<col width="3in"/>
+	<col width="8pt"/>
+	<col width="1in"/>
       </colgroup>
     </u:param>
     <u:param name="abspixels">1</u:param>
     <u:result as="element()">
       <colgroup xmlns="http://www.w3.org/1999/xhtml"> 
-	<col colwidth="192"/>
-	<col colwidth="288"/>
-	<col colwidth="10"/>
-	<col colwidth="96"/>
+	<col width="192"/>
+	<col width="288"/>
+	<col width="10"/>
+	<col width="96"/>
       </colgroup>
     </u:result>
   </u:test>
@@ -476,19 +539,19 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
     <u:param name="table-width">6in</u:param>
     <u:param name="colgroup" as="element()">
       <colgroup xmlns="http://www.w3.org/1999/xhtml"> 
-	<col colwidth="3.5*+2in" colname="foo"/>
-	<col colwidth="2*"/>
+	<col width="3.5*+2in" colname="foo"/>
+	<col width="2*"/>
 	<col/>
-	<col colwidth="1in" align="right"/>
+	<col width="1in" align="right"/>
       </colgroup>
     </u:param>
     <u:param name="abspixels">1</u:param>
     <u:result as="element()">
       <colgroup xmlns="http://www.w3.org/1999/xhtml"> 
-	<col colwidth="502" colname="foo"/>
-	<col colwidth="177"/>
-	<col colwidth="89"/>
-	<col colwidth="96" align="right"/>
+	<col width="502" colname="foo"/>
+	<col width="177"/>
+	<col width="89"/>
+	<col width="96" align="right"/>
       </colgroup>
     </u:result>
   </u:test>
@@ -496,19 +559,19 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
     <u:param name="table-width">'100%'</u:param>
     <u:param name="colgroup" as="element()">
       <colgroup xmlns="http://www.w3.org/1999/xhtml"> 
-	<col colwidth="3.5*+2in" colname="foo"/>
-	<col colwidth="2*"/>
+	<col width="3.5*+2in" colname="foo"/>
+	<col width="2*"/>
 	<col/>
-	<col colwidth="1in" align="right"/>
+	<col width="1in" align="right"/>
       </colgroup>
     </u:param>
     <u:param name="abspixels">1</u:param>
     <u:result as="element()">
       <colgroup xmlns="http://www.w3.org/1999/xhtml"> 
-	<col colwidth="58.12%" colname="foo"/>
-	<col colwidth="20.51%"/>
-	<col colwidth="10.26%"/>
-	<col colwidth="11.11%" align="right"/>
+	<col width="58.12%" colname="foo"/>
+	<col width="20.51%"/>
+	<col width="10.26%"/>
+	<col width="11.11%" align="right"/>
       </colgroup>
     </u:result>
   </u:test>
@@ -516,18 +579,37 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
     <u:param name="table-width">6in</u:param>
     <u:param name="colgroup" as="element()">
       <colgroup xmlns="http://www.w3.org/1999/xhtml"> 
-	<col colwidth="3.5*+2in" colname="foo"/>
-	<col colwidth="2*"/>
+	<col width="3.5*+2in" colname="foo"/>
+	<col width="2*"/>
 	<col/>
-	<col colwidth="1in" align="right"/>
+	<col width="1in" align="right"/>
       </colgroup>
     </u:param>
     <u:result as="element()">
       <colgroup xmlns="http://www.w3.org/1999/xhtml"> 
-	<col colwidth="5.23in" colname="foo"/>
-	<col colwidth="1.85in"/>
-	<col colwidth="0.92in"/>
-	<col colwidth="1.00in" align="right"/>
+	<col width="5.23in" colname="foo"/>
+	<col width="1.85in"/>
+	<col width="0.92in"/>
+	<col width="1.00in" align="right"/>
+      </colgroup>
+    </u:result>
+  </u:test>
+  <u:test>
+    <u:param name="table-width">100%</u:param>
+    <u:param name="colgroup" as="element()">
+      <colgroup xmlns="http://www.w3.org/1999/xhtml"> 
+	<col width="1in"/>
+	<col width="1*"/>
+	<col width="5*"/>
+	<col width="1*+0.5in"/>
+      </colgroup>
+    </u:param>
+    <u:result as="element()">
+      <colgroup xmlns="http://www.w3.org/1999/xhtml"> 
+	<col width="5.23in" colname="foo"/>
+	<col width="1.85in"/>
+	<col width="0.92in"/>
+	<col width="1.00in" align="right"/>
       </colgroup>
     </u:result>
   </u:test>
@@ -540,29 +622,29 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
   <xsl:param name="abspixels" select="0"/>
 
   <xsl:variable name="parsedcols" as="element()*">
-    <xsl:for-each select="$colgroup/h:col">
+    <xsl:for-each select="$colgroup/*">
       <xsl:choose>
-	<xsl:when test="not(@colwidth)">
+	<xsl:when test="not(@width)">
 	  <col ghost:rel="1" ghost:abs="0">
 	    <xsl:copy-of select="@*"/>
 	  </col>
 	</xsl:when>
-	<xsl:when test="contains(@colwidth, '*')">
-	  <col ghost:rel="{substring-before(@colwidth, '*')}"
-	       ghost:abs="{if (substring-after(@colwidth, '*') = '')
+	<xsl:when test="contains(@width, '*')">
+	  <col ghost:rel="{substring-before(@width, '*')}"
+	       ghost:abs="{if (substring-after(@width, '*') = '')
 			   then 0
-			   else f:convert-length(substring-after(@colwidth, '*'))}">
+			   else f:convert-length(substring-after(@width, '*'))}">
 	    <xsl:copy-of select="@*"/>
 	  </col>
 	</xsl:when>
-	<xsl:when test="matches(@colwidth, '^\d+$')">
+	<xsl:when test="matches(@width, '^\d+$')">
 	  <col ghost:rel="0"
-	       ghost:abs="{f:convert-length(concat(@colwidth,'px'))}">
+	       ghost:abs="{f:convert-length(concat(@width,'px'))}">
 	    <xsl:copy-of select="@*"/>
 	  </col>
 	</xsl:when>
 	<xsl:otherwise>
-	  <col ghost:rel="0" ghost:abs="{f:convert-length(@colwidth)}">
+	  <col ghost:rel="0" ghost:abs="{f:convert-length(@width)}">
 	    <xsl:copy-of select="@*"/>
 	  </col>
 	</xsl:otherwise>
@@ -576,7 +658,7 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
 	<xsl:for-each select="$parsedcols">
 	  <col>
 	    <xsl:copy-of select="@*[namespace-uri(.) != 'http://docbook.org/ns/docbook/ephemeral']"/>
-	    <xsl:attribute name="colwidth">
+	    <xsl:attribute name="width">
 	      <xsl:choose>
 		<xsl:when test="$abspixels = 0">
 		  <xsl:value-of select="format-number(@ghost:abs div $pixels.per.inch,
@@ -596,7 +678,7 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
 	<xsl:for-each select="$parsedcols">
 	  <col>
 	    <xsl:copy-of select="@*[namespace-uri(.) != 'http://docbook.org/ns/docbook/ephemeral']"/>
-	    <xsl:attribute name="colwidth">
+	    <xsl:attribute name="width">
 	      <xsl:value-of select="round(@ghost:rel div $relTotal * 100)"/>
 	      <xsl:text>%</xsl:text>
 	    </xsl:attribute>
@@ -607,11 +689,25 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
 	<xsl:variable name="relTotal" select="sum($parsedcols/@ghost:rel)"/>
 	<xsl:variable name="pixelwidth"
 		      select="if (contains($table-width, '%'))
-			      then $nominal-table-width
+			      then f:convert-length($nominal-table-width)
 			      else f:convert-length($table-width)"/>
 
 	<xsl:variable name="convcols" as="element()*">
 	  <xsl:for-each select="$parsedcols">
+	    <!--
+	    <xsl:message>
+	      <xsl:value-of select="position()"/>
+	      <xsl:text>=</xsl:text>
+	      <xsl:value-of select="@ghost:rel"/>
+	      <xsl:text>,</xsl:text>
+	      <xsl:value-of select="@ghost:abs"/>
+	      <xsl:text>; </xsl:text>
+	      <xsl:value-of select="$relTotal"/>
+	      <xsl:text>; </xsl:text>
+	      <xsl:value-of select="$pixelwidth"/>
+	    </xsl:message>
+	    -->
+
 	    <col>
 	      <xsl:copy-of select="@*"/>
 	      <xsl:attribute name="ghost:rel"
@@ -625,7 +721,11 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
 
 	<xsl:if test="$absTotal &gt; $pixelwidth">
 	  <xsl:message>
-	    <xsl:text>Warning: table is wider than specified width.</xsl:text>
+	    <xsl:text>Warning: table is wider than specified width. (</xsl:text>
+	    <xsl:value-of select="$absTotal"/>
+	    <xsl:text> vs. </xsl:text>
+	    <xsl:value-of select="$pixelwidth"/>
+	    <xsl:text>)</xsl:text>
 	  </xsl:message>
 	</xsl:if>
 
@@ -635,7 +735,7 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
 	      <col>
 		<xsl:copy-of select="@*[namespace-uri(.)
 			        != 'http://docbook.org/ns/docbook/ephemeral']"/>
-		<xsl:attribute name="colwidth">
+		<xsl:attribute name="width">
 		  <xsl:value-of select="format-number(@ghost:rel div $absTotal * 100,
 					              '0.00')"/>
 		  <xsl:text>%</xsl:text>
@@ -647,7 +747,7 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
 	    <xsl:for-each select="$convcols">
 	      <col>
 		<xsl:copy-of select="@*[namespace-uri(.) != 'http://docbook.org/ns/docbook/ephemeral']"/>
-		<xsl:attribute name="colwidth">
+		<xsl:attribute name="width">
 		  <xsl:choose>
 		    <xsl:when test="$abspixels = 0">
 		      <xsl:value-of select="format-number(@ghost:rel
@@ -936,7 +1036,9 @@ current column number.</para>
   <xsl:param name="pos" as="xs:integer"/>
 
   <xsl:choose>
-    <xsl:when test="$pos &gt; count($overhang)">0</xsl:when>
+    <xsl:when test="$pos &gt; count($overhang)">
+      <xsl:value-of select="$pos"/>
+    </xsl:when>
     <xsl:otherwise>
       <xsl:value-of select="if ($overhang[$pos] = 0)
 			    then $pos

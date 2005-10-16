@@ -154,4 +154,7 @@
 <xsl:param name="profile.value" select="()"/>
 <xsl:param name="profile.separator" select="';'"/>
 
+<xsl:param name="show.comments">1</xsl:param>
+<xsl:param name="segmentedlist.as.table" select="0"/>
+
 </xsl:stylesheet>
