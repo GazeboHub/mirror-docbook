@@ -1786,4 +1786,18 @@ expects “/” to be the component separator.</para>
   </xsl:choose>
 </xsl:function>
 
+<!-- ================================================================== -->
+
+<xsl:function name="f:first-in-context" as="xs:boolean">
+  <xsl:param name="node" as="element()"/>
+  <xsl:param name="context" as="element()"/>
+
+  <xsl:variable name="pnode"
+		select="$node/preceding::*[node-name(.)=node-name($node)][1]"/>
+
+  <xsl:value-of select="if ($pnode)
+			then ($pnode &lt;&lt; $context) or ($pnode eq $context)
+			else true()"/>
+</xsl:function>
+
 </xsl:stylesheet>
