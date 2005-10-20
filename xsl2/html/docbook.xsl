@@ -61,6 +61,8 @@
   <b><xsl:apply-templates/></b>
 </xsl:template>
 
+<xsl:param name="save.normalized.xml" select="0"/>
+
 <!-- ============================================================ -->
 
   <xsl:output method="xml" encoding="utf-8" indent="yes"/>
@@ -70,11 +72,11 @@
   <xsl:param name="input" select="/"/>
 
   <xsl:template match="*" mode="m:root">
-    <!--
-    <xsl:result-document href="normalized.xml">
-      <xsl:copy-of select="."/>
-    </xsl:result-document>
-    -->
+    <xsl:if test="$save.normalized.xml != 0">
+      <xsl:result-document href="normalized.xml">
+	<xsl:copy-of select="."/>
+      </xsl:result-document>
+    </xsl:if>
 
     <xsl:result-document format="final">
       <html>
