@@ -1800,4 +1800,27 @@ expects “/” to be the component separator.</para>
 			else true()"/>
 </xsl:function>
 
+<!-- ================================================================== -->
+
+<xsl:function name="f:resolve-barename-xpointer" as="element()?">
+  <xsl:param name="node" as="element()"/>
+  <xsl:param name="href" as="xs:string"/>
+
+  <xsl:choose>
+    <xsl:when test="starts-with($href,'#')">
+      <xsl:sequence select="$node/key('id',substring-after($href,'#'))"/>
+    </xsl:when>
+    <xsl:when test="contains($href,'#')">
+      <xsl:variable name="uri" select="substring-before($href,'#')"/>
+      <xsl:variable name="id" select="substring-after($href,'#')"/>
+      <xsl:variable name="doc" select="document($uri, $node)"/>
+      <xsl:sequence select="$doc/key('id',$id)"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:variable name="doc" select="document($href, $node)"/>
+      <xsl:sequence select="$doc/*[1]"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
 </xsl:stylesheet>
