@@ -223,7 +223,7 @@ ordinary, straightforward manner.</para>
 <xsl:template match="ghost:line" mode="mp:pl-restore-lines">
   <xsl:variable name="linenumber" select="position()"/>
 
-  <xsl:if test="true()">
+  <xsl:if test="$linenumbering.everyNth &gt; 0">
     <xsl:choose>
       <xsl:when test="$linenumber = 1
 		      or $linenumber mod $linenumbering.everyNth = 0">
