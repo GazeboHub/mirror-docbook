@@ -13,6 +13,15 @@
                 exclude-result-prefixes="db doc f fn m mp n xlink xs"
                 version="2.0">
 
+<xsl:param name="schemafile" select="''"/>
+
+<!--	   select="'../../docbook/relaxng/dita4db/dita4db.rng'"/> -->
+
+<xsl:param name="schema"
+	   select="if ($schemafile = '')
+		   then ()
+		   else document($schemafile)"/>
+
 <!-- ============================================================ -->
 <!-- normalize content -->
 
@@ -60,12 +69,6 @@ copied by normalization.</para>
 
 <xsl:template match="/" mode="m:normalize">
   <xsl:apply-templates mode="m:normalize"/>
-</xsl:template>
-
-<xsl:template match="*[not(self::db:info)
-		       and db:title|db:subtitle|db:titleabbrev|db:info/db:title]"
-	      mode="m:normalize">
-  <xsl:call-template name="n:normalize-movetitle"/>
 </xsl:template>
 
 <!-- ============================================================ -->
@@ -129,23 +132,23 @@ copied by normalization.</para>
       <xsl:variable name="id" select="(@id|@xml:id)[1]"/>
       <xsl:choose>
 	<xsl:when test="not($id)">
-	  <message>
+	  <xsl:message>
 	    <xsl:text>Error: </xsl:text>
 	    <xsl:text>empty </xsl:text>
 	    <xsl:value-of select="local-name(.)"/>
 	    <xsl:text> with no id.</xsl:text>
-	  </message>
+	  </xsl:message>
 	</xsl:when>
 	<xsl:when test="$external.bibliography/key('id', $id)">
 	  <xsl:apply-templates select="$external.bibliography/key('id', $id)"
 			       mode="m:normalize"/>
 	</xsl:when>
 	<xsl:otherwise>
-	  <message>
+	  <xsl:message>
 	    <xsl:text>Error: </xsl:text>
 	    <xsl:text>$bibliography.collection doesn't contain </xsl:text>
 	    <xsl:value-of select="$id"/>
-	  </message>
+	  </xsl:message>
 	  <xsl:copy>
 	    <xsl:copy-of select="@*"/>
 	    <xsl:text>???</xsl:text>
@@ -448,11 +451,61 @@ if appropriate</refpurpose>
   </xsl:choose>
 </xsl:template>
 
-<xsl:template match="*" mode="m:normalize">
-  <xsl:copy>
-    <xsl:copy-of select="@*"/>
-    <xsl:apply-templates mode="m:normalize"/>
-  </xsl:copy>
+<xsl:template match="*" mode="m:normalize"
+	      xmlns:r="http://nwalsh.com/xmlns/schema-remap/"
+	      xmlns:rng="http://relaxng.org/ns/structure/1.0">
+
+  <xsl:variable name="element" select="local-name(.)"/>
+
+  <!-- There are some limitations here with multiple patterns that define
+       the same element, with namespaced elements, and with multiple remaps.
+       We can come back to them if they ever matter. -->
+  <xsl:variable name="remap"
+		select="$schema
+			//rng:element[@name=$element and r:remap]/r:remap[1]"/>
+
+  <!--
+  <xsl:message>
+    <xsl:text>normalize </xsl:text>
+    <xsl:value-of select="name(.)"/>
+    <xsl:text> (</xsl:text>
+    <xsl:value-of select="name($remap/*[1])"/>
+    <xsl:text>)</xsl:text>
+  </xsl:message>
+  -->
+
+  <xsl:choose>
+    <xsl:when test="$remap">
+      <xsl:variable name="mapped" as="element()">
+	<xsl:choose>
+	  <xsl:when test="$remap//r:content">
+	    <xsl:apply-templates select="$remap/*" mode="m:remap">
+	      <xsl:with-param name="attrs" select="@*"/>
+	      <xsl:with-param name="content" select="node()"/>
+	    </xsl:apply-templates>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <xsl:element name="{local-name($remap/*[1])}"
+			 namespace="{namespace-uri($remap/*[1])}">
+	      <xsl:copy-of select="$remap/*[1]/@*"/>
+	      <xsl:copy-of select="@*"/>
+	      <xsl:copy-of select="node()"/>
+	    </xsl:element>
+	  </xsl:otherwise>
+	</xsl:choose>
+      </xsl:variable>
+      <xsl:apply-templates select="$mapped" mode="m:normalize"/>
+    </xsl:when>
+    <xsl:when test="db:title|db:subtitle|db:titleabbrev|db:info/db:title">
+      <xsl:call-template name="n:normalize-movetitle"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:copy>
+	<xsl:copy-of select="@*"/>
+	<xsl:apply-templates mode="m:normalize"/>
+      </xsl:copy>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <xsl:template match="comment()|processing-instruction()|text()"
@@ -460,6 +513,38 @@ if appropriate</refpurpose>
   <xsl:copy/>
 </xsl:template>
   
+<!-- ============================================================ -->
+
+<xsl:template match="r:content" mode="m:remap"
+	      xmlns:r="http://nwalsh.com/xmlns/schema-remap/">
+  <xsl:param name="attrs" select="()"/>
+  <xsl:param name="content" select="()"/>
+  <xsl:copy-of select="$content"/>
+</xsl:template>
+
+<xsl:template match="*" mode="m:remap">
+  <xsl:param name="attrs" select="()"/>
+  <xsl:param name="content" select="()"/>
+
+  <xsl:element name="{local-name(.)}"
+	       namespace="{namespace-uri(.)}">
+    <xsl:copy-of select="@*"/>
+    <xsl:if test="$attrs">
+      <xsl:copy-of select="$attrs"/>
+    </xsl:if>
+    <xsl:apply-templates mode="m:remap">
+      <xsl:with-param name="content" select="$content"/>
+    </xsl:apply-templates>
+  </xsl:element>
+</xsl:template>
+
+<xsl:template match="text()|processing-instruction()|comment()" mode="m:remap">
+  <xsl:param name="attrs" select="()"/>
+  <xsl:param name="content" select="()"/>
+  <xsl:copy/>
+</xsl:template>
+
+
 <!-- ============================================================ -->
 <!-- fix namespace -->
 
