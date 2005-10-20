@@ -215,6 +215,7 @@ processed in this mode should generate their label.</para>
     </xsl:if>
 
     <xsl:if test="$section.label.includes.component.label != 0
+		  and parent::* instance of element()
 		  and f:is-component(..)">
       <xsl:variable name="parent.label">
 	<xsl:apply-templates select=".." mode="m:label-markup"/>
