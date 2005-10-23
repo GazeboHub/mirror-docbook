@@ -941,9 +941,8 @@ elements to the list of sections, if necessary.</para>
 
 <refdescription>
 <para>This function return true if the specified section should be
-labelled. Broadly speaking this is true if
-<parameter>section.autolabel</parameter> is true and if the
-<function>section-level</function> of this section is less than
+labelled. Broadly speaking this is true if sections should be labelled
+and the <function>section-level</function> of this section is less than
 <parameter>section.autolabel.max.depth</parameter>.</para>
 </refdescription>
 
@@ -968,7 +967,7 @@ labelled. Broadly speaking this is true if
   <xsl:choose>
     <xsl:when test="f:section-level($section)
 		    &lt;= $section.autolabel.max.depth">
-      <xsl:value-of select="$section.autolabel != 0"/>
+      <xsl:value-of select="not(empty($autolabel.elements/db:section))"/>
     </xsl:when>
     <xsl:otherwise>
       <xsl:value-of select="false()"/>
