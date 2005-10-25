@@ -12,7 +12,7 @@ DISTRIB_DEPENDS =
 # value of ZIP_EXCLUDES is a space-separated list of any file or
 # directory names (shell wildcards OK) that should be excluded
 # from the zip file and tarball for the release
-DISTRIB_EXCLUDES = \./NOTES extensions/saxon/build/
+DISTRIB_EXCLUDES = \./NOTES extensions/build/
 
 # value of DISTRIB_PACKAGES is a space-separated list of any
 # directory names that should be packaged as separate zip/tar
