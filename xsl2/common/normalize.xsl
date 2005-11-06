@@ -22,6 +22,8 @@
 		   then ()
 		   else document($schemafile)"/>
 
+<xsl:param name="schema-extensions" as="element()*" select="()"/>
+
 <!-- ============================================================ -->
 <!-- normalize content -->
 
@@ -456,6 +458,13 @@ if appropriate</refpurpose>
 	      xmlns:rng="http://relaxng.org/ns/structure/1.0">
 
   <xsl:variable name="element" select="local-name(.)"/>
+  <xsl:variable name="element-name" select="node-name(.)"/>
+  <xsl:variable name="known" select="for $n in $schema-extensions
+				     return
+				        if (node-name($n) = $element-name)
+					then $n
+					else ()"/>
+
 
   <!-- There are some limitations here with multiple patterns that define
        the same element, with namespaced elements, and with multiple remaps.
@@ -475,6 +484,12 @@ if appropriate</refpurpose>
   -->
 
   <xsl:choose>
+    <xsl:when test="$known">
+      <xsl:copy>
+	<xsl:copy-of select="@*"/>
+	<xsl:apply-templates mode="m:normalize"/>
+      </xsl:copy>
+    </xsl:when>
     <xsl:when test="$remap">
       <xsl:variable name="mapped" as="element()">
 	<xsl:choose>

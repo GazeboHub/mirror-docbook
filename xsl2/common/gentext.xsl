@@ -40,7 +40,7 @@ that should be used to generate its title.</para>
 
 <xsl:template match="db:chapter" mode="m:object-title-template">
   <xsl:choose>
-    <xsl:when test="$chapter.autolabel != 0">
+    <xsl:when test="$autolabel.elements/db:chapter">
       <xsl:call-template name="gentext-template">
         <xsl:with-param name="context" select="'title-numbered'"/>
 	<xsl:with-param name="name" select="f:xpath-location(.)"/>
@@ -57,7 +57,7 @@ that should be used to generate its title.</para>
 
 <xsl:template match="db:appendix" mode="m:object-title-template">
   <xsl:choose>
-    <xsl:when test="$appendix.autolabel != 0">
+    <xsl:when test="$autolabel.elements/db:appendix">
       <xsl:call-template name="gentext-template">
         <xsl:with-param name="context" select="'title-numbered'"/>
 	<xsl:with-param name="name" select="f:xpath-location(.)"/>
@@ -150,7 +150,7 @@ that should be used to generate a cross-reference to it.</para>
   <xsl:param name="referrer"/>
 
   <!-- Is autonumbering on? -->
-  <xsl:variable name="autonumber">
+  <xsl:variable name="autonumber" as="xs:integer">
     <xsl:apply-templates select="." mode="m:autonumbered"/>
   </xsl:variable>
 
@@ -208,7 +208,12 @@ Any element processed in this mode should return “1” if it should be numbere
 </doc:mode>
 
 <xsl:template match="*" mode="m:autonumbered">
-  <xsl:value-of select="'0'"/>
+  <xsl:choose>
+    <xsl:when test="$autolabel.elements/*[node-name(.) = node-name(current())]">
+      <xsl:value-of select="1"/>
+    </xsl:when>
+    <xsl:otherwise>0</xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <xsl:template match="db:section|db:sect1|db:sect2|db:sect3|db:sect4|db:sect5" 
@@ -217,27 +222,6 @@ Any element processed in this mode should return “1” if it should be numbere
     <xsl:when test="f:label-this-section(.)">1</xsl:when>
     <xsl:otherwise>0</xsl:otherwise>
   </xsl:choose>
-</xsl:template>
-
-<xsl:template match="db:figure|db:example|db:table|db:equation"
-	      mode="m:autonumbered">
-  <xsl:value-of select="'1'"/>
-</xsl:template>
-
-<xsl:template match="db:appendix" mode="m:autonumbered">
-  <xsl:value-of select="$appendix.autolabel"/>
-</xsl:template>
-
-<xsl:template match="db:chapter" mode="m:autonumbered">
-  <xsl:value-of select="$chapter.autolabel"/>
-</xsl:template>
-
-<xsl:template match="db:part" mode="m:autonumbered">
-  <xsl:value-of select="$part.autolabel"/>
-</xsl:template>
-
-<xsl:template match="db:preface" mode="m:autonumbered">
-  <xsl:value-of select="$preface.autolabel"/>
 </xsl:template>
 
 <xsl:template match="db:question|db:answer" mode="m:autonumbered">
@@ -252,12 +236,11 @@ Any element processed in this mode should return “1” if it should be numbere
   </xsl:choose>
 </xsl:template>
 
-<xsl:template match="db:qandadiv" mode="m:autonumbered">
-  <xsl:value-of select="$qandadiv.autolabel"/>
-</xsl:template>
-
 <xsl:template match="db:bridgehead" mode="m:autonumbered">
-  <xsl:value-of select="$section.autolabel"/>
+  <xsl:choose>
+    <xsl:when test="$autolabel.elements/db:section">1</xsl:when>
+    <xsl:otherwise>0</xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <!-- ============================================================ -->
