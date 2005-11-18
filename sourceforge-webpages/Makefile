@@ -160,7 +160,6 @@ endif
 	rm -rvf $(SITETEMP)/$(BASEDIR) )"
 
 clean:
-	find . -name "*.html" -exec rm -vf {} \;
 
 distclean: clean
 	rm -vf autolayout.xml .depends.tabular .depends.textonly $(BASEDIR).tar.gz $(BASEDIR).zip
