@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link href="style.css" media="all" rel="Stylesheet" type="text/css"/>
+
+    <!-- * the Prototype and Rico libraries are needed for -->
+    <!-- * enabling the "accordian menu" behavior. -->
+    <script src="lib/prototype.js" type="text/javascript"></script>
+    <script src="lib/rico.js" type="text/javascript"></script>
+
+    <title>The DocBook Project</title>
+  </head>
+
+  <!-- * The following "onload" and Javascript code are needed for -->
+  <!-- * enabling the "accordian menu" behavior. -->
+  <body onload="javascript:bodyOnLoad()">
+    <script type="text/javascript">
+      <!--
+          var onloads = new Array();
+          function bodyOnLoad() {
+          for ( var i = 0 ; i < onloads.length ; i++ )
+          onloads[i]();
+          }
+      -->
+    </script>
+
+    <div id="page">
+      <div id="header"></div>
+
+      <!-- * Contents begin -->
+      <div
+          id="content"
+          class="content">
+
+        <p>The <a href="http://sourceforge.net/projects/docbook
+        ">DocBook Project</a> supports the open-source
+        development of a variety of <a
+        href="http://wiki.docbook.org/topic/DocBook">DocBook</a>
+        resources; in particular, the <a
+        href="http://wiki.docbook.org/topic/DocBookXslStylesheets"
+        >DocBook XSL&#160;stylesheets</a>.</p>
+        
+        <!-- ================= Accordian menu ========================== -->
+        <div class="accordian"
+             id="accordionMenu">
+          
+          <!-- ================= About DocBook ========================== -->
+          <div id="aboutDocBook">
+            <div id="aboutDocBook_Header"
+            class="accordionTabTitleBar"><span
+            class="pointer">&#xbb;</span> About DocBook</div>
+            <div id="aboutDocBook_Content"
+                 class="accordionTabContentBox">
+              <br />
+              <a href="http://wiki.docbook.org/topic/DocBook">DocBook</a>
+              is an XML vocabulary that lets you create documents in a
+              presentation-neutral form that captures the logical structure of
+              your content. Using <a
+              href="http://wiki.docbook.org/topic/DocBookPublishingTools"
+              >free tools</a> along with the DocBook <a
+              href="http://wiki.docbook.org/topic/DocBookXslStylesheets"
+              >XSL&#160;stylesheets</a>, you can publish your content as HTML
+              pages and PDF files, and in many other <a
+              href="http://wiki.docbook.org/topic/formats" >formats</a>.
+            </div>
+          </div>
+
+          <!-- ================= DocBook Project ========================== -->
+          <div id="DocBookProject">
+            <div id="DocBookProject_Header"
+            class="accordionTabTitleBar"><span
+            class="pointer">&#xbb;</span> DocBook Project
+            site&#160;&#x2014; downloads, bug reports, and feature
+            requests</div>
+            <div id="DocBookProject_Content"
+                 class="accordionTabContentBox">
+              <br/>
+              Visit the <a href="http://sourceforge.net/projects/docbook"
+              >DocBook Project page at Sourceforge</a> to:
+              <ul>
+                <li>download file releases</li>
+                <li>submit bug reports, feature requests, patches, and DocBook
+                RFEs;</li>
+                <li> browse the project CVS repository</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ================= DocBook Wiki ========================== -->
+          <div id="DocBookWiki">
+            <div id="DocBookWiki_Header"
+            class="accordionTabTitleBar"><span
+            class="pointer">&#xbb;</span> DocBook Wiki&#160;&#x2014;
+            variety of up-to-date DocBook info</div>
+            <div id="DocBookWiki_Content"
+                 class="accordionTabContentBox">
+              <br />
+              The <a href="http://wiki.docbook.org/topic/DocBook"
+              >DocBook Wiki</a> provides a comprehensive variety of
+              up-to-date details about DocBook, including
+              user-contributed information and links, in a format that
+              you can edit and add to.
+            </div>
+          </div>
+
+          <!-- ================= DocBook.org ========================== -->
+          <div id="DocBook.org">
+            <div id="DocBook.org_Header"
+            class="accordionTabTitleBar"><span
+            class="pointer">&#xbb;</span> DocBook.org&#160;&#x2014;
+            official documentation</div>
+            <div id="DocBook.org_Content"
+                 class="accordionTabContentBox">
+              <br />
+              <a href="http://docbook.org" >DocBook.org</a> is the
+              official home for <strong>DocBook: The Definitive
+              Guide</strong> (also known as <cite>TDG</cite>). The
+              site provides two online versions of TDG:
+              <ul>
+                <li><a
+                        href="http://docbook.org/tdg5/index.html">DocBook: The
+                Definite Guide, for DocBook version 5</a></li>
+                <li><a
+                        href="http://docbook.org/tdg/index.html">DocBook: The
+                Definite Guide, for DocBook version 4</a></li>
+              </ul>
+              The DocBook.org site is also the unofficial location
+              from which you can <a
+              href="http://docbook.org/oasis/index.html" >download
+              the DocBook schema/DTD</a>.
+            </div>
+          </div>
+
+          <!-- ======== DocBook XSL: The Complete Guide ===================== -->
+          <div id="XSLTCG">
+            <div id="XSLTCG_Header" class="accordionTabTitleBar"><span
+            class="pointer">&#xbb;</span> DocBook XSL: The Complete
+            Guide&#160;&#x2014; must-read DocBook publishing
+            how-to</div>
+            <div id="XSLTCG_Content"
+                 class="accordionTabContentBox">
+              <br />
+              If you want to publish DocBook documents using the
+              DocBook XSL stylesheets, <a
+              href="http://sagehill.net/book-description.html"
+              >DocBook XSL: The Complete Guide</a> is a must-read. It
+              contains comprehensive step-by-step how-to guidance on
+              every aspect of publishing DocBook content in HTML and
+              PDF form and in other output formats.
+              <br/>
+              The book is for sale in paperback and in <a
+              href="http://sagehill.net/book-purchase.html" >Acrobat
+              PDF format</a>. The full text is <a
+              href="http://sagehill.net/docbookxsl/index.html">also
+              available online</a>.
+            </div>
+          </div>
+
+          <!-- ======== DocBook XSL: The Complete Guide ===================== -->
+          <div id="snapshots">
+            <div id="snapshots_Header"
+            class="accordionTabTitleBar"><span
+            class="pointer">&#xbb;</span> DocBook
+            snapshots&#160;&#x2014; bleeding-edge versions latest
+            stylesheets</div>
+            <div id="snapshots_Content"
+                 class="accordionTabContentBox">
+              <br />
+              If you want to get your hands on the very latest
+              versions, you can <a
+              href="http://docbook.sourceforge.net/snapshots/"
+              >download pre-release &#x201C;snapshots&#x201D;</a> of
+              some DocBook project file distributions, generated from
+              the latest development sources in the project CVS
+              repository.
+            </div>
+          </div>
+        </div> <!-- =================== end Accordian menu ================-->
+      </div> <!-- * Contents end -->
+      <!-- * -->
+      <div id="footer">
+        <p>Copyright 2005 by The DocBook Project</p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      onloads.push( accord );
+      function accord() { new Rico.Accordion( 'accordionMenu', {panelHeight:200} ); }
+    </script>
+  </body>
+</html>
