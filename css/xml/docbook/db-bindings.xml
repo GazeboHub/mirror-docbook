@@ -110,8 +110,10 @@
       <constructor>
 	var img = document.getAnonymousNodes(this)[0];
 	var file = this.selectImage();
+	img.src = file;
 	// HACK: using img.src=file 'inline' doesn't seem to work
 	//       but it does when called from a setTimeout()
+	//       [the above now seems to work in Firefox 1.5 though]
 	var f = function() { img.src = file; }
 	setTimeout(f, 0);
       </constructor>
