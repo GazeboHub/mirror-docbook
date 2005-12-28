@@ -3,7 +3,7 @@
 		xmlns="http://www.w3.org/1999/xhtml"
 		xmlns:db="http://docbook.org/ns/docbook"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
-		xmlns:fn="http://www.w3.org/2005/04/xpath-functions"
+		xmlns:fn="http://www.w3.org/2005/xpath-functions"
 		xmlns:h="http://www.w3.org/1999/xhtml"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
