@@ -3,7 +3,8 @@
 		xmlns="http://docbook.org/ns/docbook"
 		xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
-		exclude-result-prefixes="db doc"
+                xmlns:u="http://nwalsh.com/xsl/unittests#"
+		exclude-result-prefixes="db doc u"
                 version="2.0">
 
 <xsl:key name="functions" match="xsl:function" use="@name"/>
@@ -41,10 +42,8 @@
       <refname>
 	<xsl:value-of select="@name"/>
       </refname>
-      <refpurpose>
-	<xsl:copy-of select="@*"/>
-	<xsl:apply-templates mode="copy"/>
-      </refpurpose>
+
+      <xsl:apply-templates select="db:refpurpose" mode="copy"/>
     </refnamediv>
 
     <xsl:variable name="func"
@@ -239,6 +238,10 @@
 </xsl:template>
 
 <xsl:template match="xsl:*">
+  <!-- nop -->
+</xsl:template>
+
+<xsl:template match="u:*">
   <!-- nop -->
 </xsl:template>
 

@@ -73,11 +73,11 @@
       <xsl:attribute name="version" select="'2.0'"/>
 
       <xsl:element name="xsl:import">
-	<xsl:attribute name="href" select="'file:/share/projects/sourceforge/docbook/xsl2/html/docbook.xsl'"/>
+	<xsl:attribute name="href" select="'file:/sourceforge/docbook/xsl2/html/docbook.xsl'"/>
       </xsl:element>
 
       <xsl:element name="xsl:include">
-	<xsl:attribute name="href" select="'tools/tohtml.xsl'"/>
+	<xsl:attribute name="href" select="'file:/sourceforge/docbook/xsl2/tools/tohtml.xsl'"/>
       </xsl:element>
 
       <xsl:for-each select="$tests/u:param">
