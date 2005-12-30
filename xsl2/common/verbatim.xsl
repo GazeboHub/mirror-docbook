@@ -16,7 +16,7 @@
                 exclude-result-prefixes="doc f fp ghost h m t tp u xs"
                 version="2.0">
 
-<xsl:param name="callout.defaultcolumn" select="40"/>
+<xsl:param name="callout.defaultcolumn" select="60"/>
 <xsl:param name="verbatim.trim.blank.lines" select="1"/>
 
 <xsl:param name="linenumbering.everyNth" select="2"/>
@@ -56,8 +56,25 @@ ordinary, straightforward manner.</para>
     </xsl:for-each>
   </xsl:variable>
 
+  <xsl:variable name="expanded-text" as="node()*">
+    <xsl:for-each select="db:programlisting/node()">
+      <xsl:choose>
+	<xsl:when test="self::db:inlinemediaobject
+			and db:textobject/db:textdata">
+	  <xsl:apply-templates select="."/>
+	</xsl:when>
+	<xsl:when test="self::db:textobject and db:textdata">
+	  <xsl:apply-templates select="."/>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:sequence select="."/>
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:for-each>
+  </xsl:variable>
+
   <xsl:variable name="pl-empty-tags" as="node()*">
-    <xsl:apply-templates select="db:programlisting/node()"
+    <xsl:apply-templates select="$expanded-text"
 			 mode="m:make-empty-elements"/>
   </xsl:variable>
 
@@ -105,8 +122,25 @@ ordinary, straightforward manner.</para>
 <xsl:template match="db:programlisting|db:screen|db:synopsis
                      |db:literallayout|db:address" mode="m:verbatim-phase-1">
 
+  <xsl:variable name="expanded-text" as="node()*">
+    <xsl:for-each select="node()">
+      <xsl:choose>
+	<xsl:when test="self::db:inlinemediaobject
+			and db:textobject/db:textdata">
+	  <xsl:apply-templates select="."/>
+	</xsl:when>
+	<xsl:when test="self::db:textobject and db:textdata">
+	  <xsl:apply-templates select="."/>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:sequence select="."/>
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:for-each>
+  </xsl:variable>
+
   <xsl:variable name="pl-empty-tags" as="node()*">
-    <xsl:apply-templates mode="m:make-empty-elements"/>
+    <xsl:apply-templates select="$expanded-text" mode="m:make-empty-elements"/>
   </xsl:variable>
 
   <!--
