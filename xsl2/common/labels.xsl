@@ -560,8 +560,11 @@ processed in this mode should generate their label.</para>
 	  </xsl:if>
 	  <xsl:number format="1" from="db:chapter|db:appendix" level="any"/>
         </xsl:when>
-        <xsl:otherwise>
+	<xsl:when test="ancestor::db:book|ancestor::db:article">
           <xsl:number format="1" from="db:book|db:article" level="any"/>
+	</xsl:when>
+        <xsl:otherwise>
+	  <xsl:number format="1" level="any"/>
         </xsl:otherwise>
       </xsl:choose>
     </xsl:otherwise>
