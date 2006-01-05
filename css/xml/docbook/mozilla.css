@@ -40,6 +40,11 @@ ulink:focus, xref:focus, link:focus {
 mediaobject, inlinemediaobject {
 	-moz-binding:url('db-bindings.xml#mediaobj');
 }
+inlinemediaobject {
+	/* quick hack to get the image to display at all (without this,
+	   the <inlinemediaobject> seems to have no size) */
+	display: -moz-inline-box;
+}
 
 guimenu, guimenuitem, guisubmenu {
 	font: menu;
