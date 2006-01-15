@@ -4,13 +4,14 @@
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:f="http://docbook.org/xslt/ns/extension"
                 xmlns:fn="http://www.w3.org/2005/xpath-functions"
+                xmlns:ghost="http://docbook.org/ns/docbook/ephemeral"
                 xmlns:m="http://docbook.org/xslt/ns/mode"
                 xmlns:mp="http://docbook.org/xslt/ns/mode/private"
                 xmlns:n="http://docbook.org/xslt/ns/normalize"
 		xmlns:tp="http://docbook.org/xslt/ns/template/private"
                 xmlns:xlink='http://www.w3.org/1999/xlink'
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                exclude-result-prefixes="db doc f fn m mp n xlink xs"
+                exclude-result-prefixes="db doc f fn m mp n xlink xs ghost"
                 version="2.0">
 
 <xsl:param name="schemafile" select="''"/>
@@ -345,6 +346,7 @@ necessary.</para>
 	  <xsl:otherwise>
 	    <xsl:variable name="node-tree">
 	      <xsl:element name="title" namespace="{$docbook-namespace}">
+		<xsl:attribute name="ghost:title" select="'yes'"/>
 		<xsl:call-template name="gentext">
 		  <xsl:with-param name="key" select="$title-key"/>
 		</xsl:call-template>
