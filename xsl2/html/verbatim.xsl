@@ -94,9 +94,15 @@
 </xsl:template>
 
 <xsl:template match="ghost:linenumber-separator">
-  <span class="linenumber-separator">
+  <xsl:variable name="content" as="node()*">
     <xsl:apply-templates/>
-  </span>
+  </xsl:variable>
+
+  <xsl:if test="not(empty($content))">
+    <span class="linenumber-separator">
+      <xsl:apply-templates/>
+    </span>
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="*" mode="mp:literallayout">
