@@ -73,6 +73,7 @@
 
   <xsl:template match="*" mode="m:root">
     <xsl:if test="$save.normalized.xml != 0">
+      <xsl:message>Saving normalized xml.</xsl:message>
       <xsl:result-document href="normalized.xml">
 	<xsl:copy-of select="."/>
       </xsl:result-document>
