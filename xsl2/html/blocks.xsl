@@ -37,11 +37,11 @@
 		    select="concat(f:node-id(.),'-',generate-id($para))"/>
       <a style="display: inline" onclick="show_annotation('{$id}')"
 	 id="annot-{$id}-on">
-	<img border="0" src="../images/annot-open.png" alt="[A+]"/>
+	<img border="0" src="{$annotation-graphic-open}" alt="[A+]"/>
       </a>
       <a style="display: none" onclick="hide_annotation('{$id}')"
 	 id="annot-{$id}-off">
-	<img border="0" src="../images/annot-close.png" alt="[A-]"/>
+	<img border="0" src="{$annotation-graphic-close}" alt="[A-]"/>
       </a>
     </xsl:for-each>
     <xsl:for-each select="$annotations">
