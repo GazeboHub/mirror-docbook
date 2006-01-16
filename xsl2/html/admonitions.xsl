@@ -5,15 +5,17 @@
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
 		xmlns:fn="http://www.w3.org/2005/xpath-functions"
+                xmlns:ghost="http://docbook.org/ns/docbook/ephemeral"
 		xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		exclude-result-prefixes="h f m fn db doc xs"
+		exclude-result-prefixes="h f m fn db doc xs ghost"
                 version="2.0">
 
-<xsl:variable name="admon.graphics" select="0"/>
-<xsl:variable name="admon.graphics.path" select="'../xsl/images/'"/>
-<xsl:variable name="admon.graphics.extension" select="'.png'"/>
+<xsl:param name="admon.graphics" select="0"/>
+<xsl:param name="admon.graphics.path" select="'../xsl/images/'"/>
+<xsl:param name="admon.graphics.extension" select="'.png'"/>
+<xsl:param name="admon.default.titles" select="1"/>
 
 <xsl:template match="db:note|db:important|db:warning|db:caution|db:tip">
   <xsl:choose>
@@ -77,31 +79,42 @@ the graphical form.</para>
     </xsl:call-template>
   </xsl:variable>
 
+  <!-- I'd really rather not do this with a table, but getting the -->
+  <!-- alignment with and without a title without using a table is -->
+  <!-- painfully complicated. That said, the vertical spacing is   -->
+  <!-- awfully complicated with a table. -->
+
   <div class="{f:admonition-class(.)}">
     <xsl:call-template name="id"/>
     <xsl:call-template name="class"/>
-
-    <div class="admon-title">
-      <span class="admon-graphic">
-	<img alt="{$alt}">
-	  <xsl:attribute name="src">
-	    <xsl:call-template name="admonition-graphic"/>
-	  </xsl:attribute>
-	</img>
-      </span>
-
-      <xsl:if test="db:info/db:title">
-	<span class="admon-title-text">
-	  <xsl:call-template name="titlepage">
-	    <xsl:with-param name="content" select="$titlepage"/>
-	  </xsl:call-template>
-	</span>
-      </xsl:if>
-    </div>
-
-    <div class="admon-text">
-      <xsl:apply-templates/>
-    </div>
+    <table border="0" cellspacing="0" cellpadding="4">
+      <tbody>
+	<tr>
+	  <td valign="top">
+	    <span class="admon-graphic">
+	      <img alt="{$alt}">
+		<xsl:attribute name="src">
+		  <xsl:call-template name="admonition-graphic"/>
+		</xsl:attribute>
+	      </img>
+	    </span>
+	  </td>
+	  <td>
+	    <xsl:if test="db:info/db:title[not(@ghost:title)
+			                   or $admon.default.titles != 0]">
+	      <div class="admon-title-text">
+		<xsl:call-template name="titlepage">
+		  <xsl:with-param name="content" select="$titlepage"/>
+		</xsl:call-template>
+	      </div>
+	    </xsl:if>
+	    <div class="admon-text">
+	      <xsl:apply-templates/>
+	    </div>
+	  </td>
+	</tr>
+      </tbody>
+    </table>
   </div>
 </xsl:template>
 
