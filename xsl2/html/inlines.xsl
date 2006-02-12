@@ -139,11 +139,11 @@ context item.</para>
 		    select="concat(f:node-id(.),'-',generate-id($inline))"/>
     <a style="display: inline" onclick="show_annotation('{$id}')"
 	  id="annot-{$id}-on">
-      <img border="0" src="{$annotation-graphic-open}" alt="[A+]"/>
+      <img border="0" src="{$annotation.graphic.open}" alt="[A+]"/>
     </a>
     <a style="display: none" onclick="hide_annotation('{$id}')"
 	  id="annot-{$id}-off">
-      <img border="0" src="{$annotation-graphic-close}" alt="[A-]"/>
+      <img border="0" src="{$annotation.graphic.close}" alt="[A-]"/>
     </a>
     <div style="display: none" id="annot-{$id}">
       <xsl:apply-templates select="." mode="m:annotation"/>
