@@ -11,15 +11,6 @@
 		exclude-result-prefixes="db doc f h m t xs"
                 version="2.0">
 
-<xsl:param name="formal.title.placement" as="element()*">
-  <db:figure placement="after"/>
-  <db:example placement="before"/>
-  <db:equation placement="after"/>
-  <db:table placement="before"/>
-  <db:procedure placement="before"/>
-  <db:task placement="before"/>
-</xsl:param>
-
 <!-- ============================================================ -->
 
 <doc:template name="t:formal-object" xmlns="http://docbook.org/ns/docbook">

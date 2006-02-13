@@ -8,7 +8,7 @@
 <xsl:output method="xml" encoding="utf-8" indent="no"/>
 <xsl:preserve-space elements="*"/>
 
-<xsl:param name="condition" select="'online'"/>
+<xsl:param name="condition" select="'html'"/>
 
 <xsl:template match="/">
   <xsl:element name="xsl:stylesheet">
@@ -37,14 +37,14 @@
 
 <xsl:template match="xsl:*" mode="copy">
   <xsl:element name="{name(.)}" namespace="{namespace-uri(.)}">
-    <xsl:copy-of select="@*"/>
+    <xsl:copy-of select="@*[name(.) != 'condition']"/>
     <xsl:apply-templates mode="copy"/>
   </xsl:element>
 </xsl:template>
 
 <xsl:template match="*" mode="copy">
   <xsl:element name="{name(.)}" namespace="{namespace-uri(.)}">
-    <xsl:copy-of select="@*"/>
+    <xsl:copy-of select="@*[name(.) != 'condition']"/>
     <xsl:apply-templates mode="copy"/>
   </xsl:element>
 </xsl:template>

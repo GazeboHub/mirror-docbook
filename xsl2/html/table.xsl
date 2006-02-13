@@ -15,17 +15,6 @@
 
 <xsl:include href="../common/table.xsl"/>
 
-<xsl:param name="pixels.per.inch" select="96"/>
-
-<xsl:param name="table.cell.border.style" select="'solid'"/>
-<xsl:param name="table.cell.border.color" select="'black'"/>
-<xsl:param name="table.cell.border.thickness" select="'1px'"/>
-<xsl:param name="default.table.frame" select="'all'"/>
-<xsl:param name="default.table.width" select="''"/>
-<xsl:param name="nominal-table-width" select="'6in'"/>
-<xsl:param name="html.cellpadding" select="''"/>
-<xsl:param name="html.cellspacing" select="''"/>
-
 <xsl:template match="db:table">
   <xsl:call-template name="t:formal-object">
     <xsl:with-param name="placement"
@@ -150,18 +139,18 @@
       <xsl:otherwise><!-- nevermind --></xsl:otherwise>
     </xsl:choose>
 
-    <xsl:if test="$cellspacing != '' or $html.cellspacing != ''">
+    <xsl:if test="$cellspacing != '' or $table.html.cellspacing != ''">
       <xsl:attribute name="cellspacing"
 		     select="if ($cellspacing != '')
 	                     then $cellspacing
-			     else $html.cellspacing"/>
+			     else $table.html.cellspacing"/>
     </xsl:if>
 
-    <xsl:if test="$cellpadding != '' or $html.cellpadding != ''">
+    <xsl:if test="$cellpadding != '' or $table.html.cellpadding != ''">
       <xsl:attribute name="cellpadding"
 		     select="if ($cellpadding != '')
 	                     then $cellpadding
-			     else $html.cellpadding"/>
+			     else $table.html.cellpadding"/>
     </xsl:if>
 
     <xsl:if test="../@pgwide=1 or self::db:entrytbl">
@@ -171,7 +160,7 @@
     <xsl:variable name="frame"
 		  select="if (../@frame)
                           then ../@frame
-			  else $default.table.frame"/>
+			  else $table.frame.default"/>
 
     <xsl:choose>
       <xsl:when test="$frame='all'">
@@ -252,16 +241,16 @@
 	<xsl:when test="$explicit.table.width != ''">
           <xsl:value-of select="$explicit.table.width"/>
         </xsl:when>
-	<xsl:when test="$default.table.width = ''">
+	<xsl:when test="$table.width.default = ''">
           <xsl:text>100%</xsl:text>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:value-of select="$default.table.width"/>
+          <xsl:value-of select="$table.width.default"/>
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
 
-    <xsl:if test="$default.table.width != ''
+    <xsl:if test="$table.width.default != ''
                   or $explicit.table.width != ''">
       <xsl:attribute name="width"
 		     select="f:convert-length($table.width)"/>

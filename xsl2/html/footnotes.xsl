@@ -20,11 +20,6 @@
 
      ******************************************************************** -->
 
-<xsl:param name="table.footnote.number.symbols" select="''"/>
-<xsl:param name="table.footnote.number.format" select="'a'"/>
-<xsl:param name="footnote.number.symbols" select="''"/>
-<xsl:param name="footnote.number.format" select="'1'"/>
-
 <xsl:template match="db:footnote">
   <xsl:variable name="name" select="f:node-id(.)"/>
   <sup class="{local-name(.)}">

@@ -21,28 +21,6 @@
 
      ******************************************************************** -->
 
-<xsl:param name="generate.toc" as="element()*">
-<tocparam path="appendix"         toc="1" title="1"/>
-<tocparam path="article/appendix" toc="1" title="1"/>
-<tocparam path="article"          toc="1" title="1"/>
-<tocparam path="book"             toc="1" title="1"
-	                          figure="1" table="1"
-				  example="1" equation="1"/>
-<tocparam path="chapter"          toc="1" title="1"/>
-<tocparam path="part"             toc="1" title="1"/>
-<tocparam path="preface"          toc="1" title="1"/>
-<tocparam path="qandadiv"         toc="1"/>
-<tocparam path="qandaset"         toc="1"/>
-<tocparam path="reference"        toc="1" title="1"/>
-<tocparam path="sect1"            toc="1"/>
-<tocparam path="sect2"            toc="1"/>
-<tocparam path="sect3"            toc="1"/>
-<tocparam path="sect4"            toc="1"/>
-<tocparam path="sect5"            toc="1"/>
-<tocparam path="section"          toc="1"/>
-<tocparam path="set"              toc="1" title="1"/>
-</xsl:param>
-
 <!-- ============================================================ -->
 
 <doc:mode name="m:toc" xmlns="http://docbook.org/ns/docbook">

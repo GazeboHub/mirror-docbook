@@ -24,14 +24,6 @@
 
      ******************************************************************** -->
 
-<xsl:param name="callout.graphics" select="1"/>
-<xsl:param name="callout.graphics.path" select="'images/callouts/'"/>
-<xsl:param name="callout.graphics.number.limit" select="15"/>
-<xsl:param name="callout.graphics.extension" select="'.png'"/>
-<xsl:param name="callout.unicode" select="0"/>
-<xsl:param name="callout.unicode.start.character" select="10102"/>
-<xsl:param name="callout.unicode.number.limit" select="10"/>
-
 <!-- ============================================================ -->
 
 <xsl:template match="db:co">

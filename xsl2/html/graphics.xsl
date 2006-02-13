@@ -15,30 +15,6 @@
 		exclude-result-prefixes="db doc f ghost h m t u xlink xs simg"
                 version="2.0">
 
-<xsl:param name="html.longdesc" select="1"/>
-<xsl:param name="html.longdesc.link" select="$html.longdesc"/>
-<xsl:param name="base.dir" select="''"/>
-<xsl:param name="ignore.image.scaling" select="0"/>
-<xsl:param name="default.image.width" select="''"/>
-<xsl:param name="img.src.path"/>
-<xsl:param name="use.extensions" select="0"/>
-<xsl:param name="nominal.image.width" select="6 * $pixels.per.inch"/>
-<xsl:param name="nominal.image.depth" select="4 * $pixels.per.inch"/>
-<xsl:param name="graphicsize.extension" select="1"/>
-<xsl:param name="graphicsize.use.img.src.path" select="0"/>
-<xsl:param name="points.per.em" select="10"/>
-<xsl:param name="make.graphic.viewport" select="1"/>
-<xsl:param name="use.embed.for.svg" select="0"/>
-<xsl:param name="textdata.default.encoding" select="'utf-8'"/>
-
-<xsl:param name="graphic.formats"
-	   select="('svg','png','jpg','jpeg','gif','gif87a','gif89a','bmp',
-                    'linespecific')"/>
-
-<xsl:param name="graphic.extensions"
-	   select="('svg','png','jpg','jpeg','gif','bmp',
-		    'avi', 'mpg', 'mpeg', 'qt')"/>
-
 <!-- ==================================================================== -->
 
 <xsl:template match="db:screenshot">

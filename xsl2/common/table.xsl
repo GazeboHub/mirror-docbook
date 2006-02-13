@@ -458,7 +458,7 @@ acceptable to HTML or XSL-FO.</para>
   <listitem>
   <para>If the table width is relative, all the column widths are converted
         to absolute widths based on a
-	<parameter>nominal-table-width</parameter>. Then each width is
+	<parameter>table.width.nominal</parameter>. Then each width is
 	converted back to a percentage and those are returned.</para>
   </listitem>
   </itemizedlist>
@@ -494,7 +494,7 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
 
 <u:unittests template="adjust-column-widths">
   <u:param name="pixels.per.inch" select="96"/>
-  <u:param name="nominal-table-width" select="6 * $pixels.per.inch"/>
+  <u:param name="table.width.nominal" select="6 * $pixels.per.inch"/>
   <u:test>
     <u:param name="table-width" select="'6in'"/>
     <u:param name="colgroup" as="element()">
@@ -689,7 +689,7 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
 	<xsl:variable name="relTotal" select="sum($parsedcols/@ghost:rel)"/>
 	<xsl:variable name="pixelwidth"
 		      select="if (contains($table-width, '%'))
-			      then f:convert-length($nominal-table-width)
+			      then f:convert-length($table.width.nominal)
 			      else f:convert-length($table-width)"/>
 
 	<xsl:variable name="convcols" as="element()*">

@@ -85,4 +85,54 @@ It's just a bogus mess right now.</para>
 <refentry xml:id="segmentedlist.as.table"/>
 <refentry xml:id="keep.relative.image.uris"/>
 
+<refentry xml:id="pixels.per.inch"/>
+<refentry xml:id="table.cell.border.style"/>
+<refentry xml:id="table.cell.border.color"/>
+<refentry xml:id="table.cell.border.thickness"/>
+<refentry xml:id="table.frame.default"/>
+<refentry xml:id="table.width.default"/>
+<refentry xml:id="table.width.nominal"/>
+<refentry xml:id="table.html.cellpadding"/>
+<refentry xml:id="table.html.cellspacing"/>
+
+<refentry xml:id="admon.graphics"/>
+<refentry xml:id="admon.graphics.path"/>
+<refentry xml:id="admon.graphics.extension"/>
+<refentry xml:id="admon.default.titles"/>
+
+<refentry xml:id="html.longdesc"/>
+<refentry xml:id="html.longdesc.link"/>
+<refentry xml:id="base.dir"/>
+<refentry xml:id="ignore.image.scaling"/>
+<refentry xml:id="default.image.width"/>
+<refentry xml:id="img.src.path"/>
+<refentry xml:id="use.extensions"/>
+<refentry xml:id="nominal.image.width"/>
+<refentry xml:id="nominal.image.depth"/>
+<refentry xml:id="graphicsize.extension"/>
+<refentry xml:id="graphicsize.use.img.src.path"/>
+<refentry xml:id="points.per.em"/>
+<refentry xml:id="make.graphic.viewport"/>
+<refentry xml:id="use.embed.for.svg"/>
+<refentry xml:id="textdata.default.encoding"/>
+<refentry xml:id="graphic.formats"/>
+<refentry xml:id="graphic.extensions"/>
+
+<refentry xml:id="generate.toc"/>
+
+<refentry xml:id="callout.graphics"/>
+<refentry xml:id="callout.graphics.path"/>
+<refentry xml:id="callout.graphics.number.limit"/>
+<refentry xml:id="callout.graphics.extension"/>
+<refentry xml:id="callout.unicode"/>
+<refentry xml:id="callout.unicode.start.character"/>
+<refentry xml:id="callout.unicode.number.limit"/>
+
+<refentry xml:id="table.footnote.number.symbols"/>
+<refentry xml:id="table.footnote.number.format"/>
+<refentry xml:id="footnote.number.symbols"/>
+<refentry xml:id="footnote.number.format"/>
+
+<refentry xml:id="formal.title.placement"/>
+
 </article>

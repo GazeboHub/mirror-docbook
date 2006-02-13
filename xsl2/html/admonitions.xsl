@@ -12,11 +12,6 @@
 		exclude-result-prefixes="h f m fn db doc xs ghost"
                 version="2.0">
 
-<xsl:param name="admon.graphics" select="0"/>
-<xsl:param name="admon.graphics.path" select="'../xsl/images/'"/>
-<xsl:param name="admon.graphics.extension" select="'.png'"/>
-<xsl:param name="admon.default.titles" select="1"/>
-
 <xsl:template match="db:note|db:important|db:warning|db:caution|db:tip">
   <xsl:choose>
     <xsl:when test="$admon.graphics != 0">
