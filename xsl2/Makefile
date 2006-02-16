@@ -7,7 +7,7 @@ DISTRO=xsl2
 
 # value of DISTRIB_DEPENDS is a space-separated list of any
 # targets for this distro's "distrib" target to depend on
-DISTRIB_DEPENDS =
+DISTRIB_DEPENDS = base
 
 # value of ZIP_EXCLUDES is a space-separated list of any file or
 # directory names (shell wildcards OK) that should be excluded
@@ -29,7 +29,7 @@ URILIST = \
 
 DEBUG=
 
-DIRS=common extensions schemas
+DIRS=common extensions html schemas
 
 .PHONY: distrib clean $(NEWSFILE)
 
