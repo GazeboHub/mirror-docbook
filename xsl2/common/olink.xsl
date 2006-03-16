@@ -565,17 +565,7 @@
   <xsl:param name="olink.lang" select="''"/>
   <xsl:param name="olink.key" select="''"/>
   <xsl:param name="referrer" select="."/>
-  <xsl:param name="xrefstyle">
-    <xsl:choose>
-      <xsl:when test="@role and not(@xrefstyle) 
-                      and $use.role.as.xrefstyle != 0">
-        <xsl:value-of select="@role"/>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:value-of select="@xrefstyle"/>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:param>
+  <xsl:param name="xrefstyle" select="@xrefstyle"/>
 
   <xsl:choose>
     <!-- If it has elements or text (not just PI or comment) -->
@@ -949,17 +939,7 @@
   <xsl:param name="olink.lang" select="'en'"/>
   <xsl:param name="target.database"/>
   <xsl:param name="linkend" select="''"/>
-  <xsl:param name="xrefstyle">
-    <xsl:choose>
-      <xsl:when test="@role and not(@xrefstyle) 
-                      and $use.role.as.xrefstyle != 0">
-        <xsl:value-of select="@role"/>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:value-of select="@xrefstyle"/>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:param>
+  <xsl:param name="xrefstyle" select="@xrefstyle"/>
 
   <xsl:variable name="targetdoc">
     <xsl:value-of select="substring-before($olink.key, '/')"/>
@@ -1009,17 +989,7 @@
   <xsl:param name="olink.key" select="''"/>
   <xsl:param name="olink.lang" select="'en'"/>
   <xsl:param name="target.database"/>
-  <xsl:param name="xrefstyle">
-    <xsl:choose>
-      <xsl:when test="@role and not(@xrefstyle) 
-                      and $use.role.as.xrefstyle != 0">
-        <xsl:value-of select="@role"/>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:value-of select="@xrefstyle"/>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:param>
+  <xsl:param name="xrefstyle" select="@xrefstyle"/>
 
   <xsl:variable name="page">
     <xsl:for-each select="$target.database" >
@@ -1078,17 +1048,7 @@
        Context node is the xref or local olink element -->
   <xsl:param name="linkend" select="@linkend"/>
   <xsl:param name="target" select="key('id', $linkend)"/>
-  <xsl:param name="xrefstyle">
-    <xsl:choose>
-      <xsl:when test="@role and not(@xrefstyle) 
-                      and $use.role.as.xrefstyle != 0">
-        <xsl:value-of select="@role"/>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:value-of select="@xrefstyle"/>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:param>
+  <xsl:param name="xrefstyle" select="@xrefstyle"/>
 
   <xsl:if test="not(starts-with(normalize-space($xrefstyle),'select:')
                 and (contains($xrefstyle, 'page')
