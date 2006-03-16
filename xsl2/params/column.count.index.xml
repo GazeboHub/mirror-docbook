@@ -3,26 +3,25 @@
 	  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	  xmlns:xlink="http://www.w3.org/1999/xlink"
 	  version="5.0"
-	  xml:id="[[TEMPLATE]]">
+	  xml:id="column.count.index">
 <refmeta>
-<refentrytitle>[[TEMPLATE]]</refentrytitle>
-<refmiscinfo role="type"></refmiscinfo>
+<refentrytitle>column.count.index</refentrytitle>
+<refmiscinfo role="type">integer</refmiscinfo>
 </refmeta>
 <refnamediv>
-<refname>[[TEMPLATE]]</refname>
-<refpurpose>FIXME: TBA</refpurpose>
+<refname>column.count.index</refname>
+<refpurpose>Number of columns on index pages</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
-<src:fragment xml:id="[[TEMPLATE]].frag">
-<xsl:param name="[[TEMPLATE]]" select="1"/>
+<src:fragment xml:id="column.count.index.frag">
+<xsl:param name="column.count.index" select="2"/>
 </src:fragment>
 </refsynopsisdiv>
 
 <refsect1><title>Description</title>
 
-<para>FIXME: TBA
-</para>
+<para>Number of columns on index pages.</para>
 
 </refsect1>
 </refentry>
