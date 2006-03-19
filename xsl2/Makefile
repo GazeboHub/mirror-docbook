@@ -29,7 +29,7 @@ URILIST = \
 
 DEBUG=
 
-DIRS=common extensions html schemas
+DIRS=common extensions html fo schemas
 
 .PHONY: distrib clean $(NEWSFILE)
 
