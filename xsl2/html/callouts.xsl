@@ -86,7 +86,7 @@
 
   <xsl:choose>
     <xsl:when test="$callout.graphics != 0
-                    and $conum &lt;= $callout.graphics.number.limit">
+                    and $conum &lt;= number($callout.graphics.number.limit)">
       <img src="{$callout.graphics.path}{$conum}{$callout.graphics.extension}"
            alt="{$conum}" border="0"/>
     </xsl:when>
