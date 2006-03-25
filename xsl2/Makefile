@@ -21,7 +21,7 @@ DISTRIB_PACKAGES =
 
 # to make sure that executable bit is retained after packaging,
 # you need to explicitly list any executable files here
-DISTRIB_EXECUTABLES = 
+DISTRIB_EXECUTABLES = install.sh
 
 # list of pathname+URIs to test for catalog support
 URILIST = \
