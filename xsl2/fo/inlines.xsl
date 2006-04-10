@@ -100,7 +100,7 @@ context item.</para>
                     <xsl:text>???</xsl:text>
                   </xsl:when>
 		  <xsl:otherwise>
-		    <xsl:attribute name="href" select="f:href(/,$target)"/>
+		    <!--FIXME:fo-->
 		  </xsl:otherwise>
 		</xsl:choose>
               </xsl:when>
@@ -190,7 +190,7 @@ calling “apply templates” with the current context node.</para>
     </u:context>
     <u:result>
       <fo:inline xmlns:fo="http://www.w3.org/1999/XSL/Format"
-	    class="varname" id="varfoo">someVarName</fo:inline>
+	    id="varfoo">someVarName</fo:inline>
     </u:result>
   </u:test>
 </u:unittests>
@@ -202,7 +202,9 @@ calling “apply templates” with the current context node.</para>
     <xsl:call-template name="simple-xlink"/>
   </xsl:param>
 
-  <fo:inline class="{local-name(.)}">
+  <xsl:message>inline-charseq: <xsl:value-of select="$content"/></xsl:message>
+
+  <fo:inline>
     <xsl:call-template name="id"/>
     <xsl:if test="db:alt">
       <xsl:attribute name="title">
@@ -857,7 +859,6 @@ and <tag>firstterm</tag> elements.</para>
 
   <fo:em class="{if ($firstterm != 0) then 'firstterm' else 'glossterm'}">
     <xsl:call-template name="id"/>
-    <xsl:call-template name="class"/>
     <xsl:if test="db:alt">
       <xsl:attribute name="title">
 	<xsl:value-of select="db:alt"/>
@@ -871,11 +872,9 @@ and <tag>firstterm</tag> elements.</para>
 
     <xsl:choose>
       <xsl:when test="($firstterm.only.link = 0 or $firstterm = 1) and @linkend">
+	<!-- FIXME:
 	<xsl:variable name="target" select="key('id',@linkend)[1]"/>
-
-	<fo:a href="{f:href(/,$target)}">
-	  <xsl:apply-templates/>
-	</fo:a>
+	-->
       </xsl:when>
 
       <xsl:when test="not(@linkend)
@@ -910,9 +909,8 @@ and <tag>firstterm</tag> elements.</para>
 	    <xsl:apply-templates/>
 	  </xsl:when>
 	  <xsl:otherwise>
-	    <fo:a href="{f:href(/,$target)}">
-	      <xsl:apply-templates/>
-	    </fo:a>
+	    <!--FIXME:fo-->
+	    <xsl:apply-templates/>
 	  </xsl:otherwise>
 	</xsl:choose>
       </xsl:when>
@@ -927,7 +925,6 @@ and <tag>firstterm</tag> elements.</para>
 <xsl:template match="db:termdef">
   <fo:inline class="{local-name(.)}">
     <xsl:call-template name="id"/>
-    <xsl:call-template name="class"/>
     <xsl:text>[Definition: </xsl:text>
     <xsl:apply-templates/>
     <xsl:text>]</xsl:text>

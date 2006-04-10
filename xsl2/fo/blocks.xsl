@@ -26,7 +26,6 @@
 			     |ancestor::db:variablelist)[last()]"/>
       <xsl:choose>
 	<xsl:when test="$list/@spacing='compact'">
-	  <xsl:call-template name="anchor"/>
 	  <xsl:apply-templates/>
 	</xsl:when>
 

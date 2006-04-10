@@ -21,12 +21,12 @@
   <xsl:include href="../common/labels.xsl"/>
   <xsl:include href="../common/titles.xsl"/>
   <xsl:include href="../common/inlines.xsl"/>
-  <xsl:include href="../common/olink.xsl"/>
+<!--  <xsl:include href="../common/olink.xsl"/>-->
   <xsl:include href="pagesetup.xsl"/>
   <xsl:include href="titlepages.xsl"/>
   <xsl:include href="titlepage.xsl"/>
-<!--
   <xsl:include href="autotoc.xsl"/>
+<!--
   <xsl:include href="division.xsl"/>
 -->
   <xsl:include href="component.xsl"/>
@@ -37,7 +37,9 @@
   <xsl:include href="biblio.xsl"/>
   <xsl:include href="pi.xsl"/>
   <xsl:include href="info.xsl"/>
+-->
   <xsl:include href="glossary.xsl"/>
+<!--
   <xsl:include href="table.xsl"/>
   <xsl:include href="lists.xsl"/>
   <xsl:include href="task.xsl"/>
@@ -45,8 +47,8 @@
   <xsl:include href="formal.xsl"/>
 -->
   <xsl:include href="blocks.xsl"/>
-<!--
   <xsl:include href="graphics.xsl"/>
+<!--
   <xsl:include href="footnotes.xsl"/>
   <xsl:include href="admonitions.xsl"/>
   <xsl:include href="verbatim.xsl"/>
@@ -64,7 +66,7 @@
 
   <xsl:param name="save.normalized.xml" select="0"/>
 
-  <xsl:output method="xml" encoding="utf-8" indent="no"/>
+  <xsl:output method="xml" encoding="utf-8" indent="yes"/>
 
   <xsl:param name="stylesheet.result.type" select="'fo'"/>
   <xsl:param name="input" select="/"/>
@@ -72,7 +74,7 @@
   <xsl:template match="*" mode="m:root">
     <xsl:variable name="document.element" select="self::*"/>
 
-    <xsl:call-template name="root.messages"/>
+    <xsl:call-template name="t:root-messages"/>
 
     <xsl:if test="$save.normalized.xml != 0">
       <xsl:message>Saving normalized xml.</xsl:message>
@@ -92,18 +94,23 @@
 
     <xsl:result-document>
       <!-- Include all id values in XEP output -->
+      <!--
       <xsl:if test="$fo.processor = 'xep'">
 	<xsl:processing-instruction name="xep-pdf-drop-unused-destinations"
 				    select="'false'"/>
       </xsl:if>
+      -->
 
       <fo:root xsl:use-attribute-sets="root.properties">
+	<!--
 	<xsl:attribute name="language">
 	  <xsl:call-template name="l10n.language">
 	    <xsl:with-param name="target" select="/*[1]"/>
 	  </xsl:call-template>
 	</xsl:attribute>
+	-->
 
+	<!--
 	<xsl:if test="$fo.processor = 'xep'">
 	  <xsl:call-template name="xep-pis"/>
 	  <xsl:call-template name="xep-document-information"/>
@@ -112,9 +119,11 @@
 	<xsl:if test="$fo.processor = 'axf'">
 	  <xsl:call-template name="axf-document-information"/>
 	</xsl:if>
+	-->
 
 	<xsl:call-template name="t:setup-pagemasters"/>
 
+	<!--
 	<xsl:if test="$fo.processor = 'fop'">
 	  <xsl:apply-templates select="$document.element" mode="fop.outline"/>
 	</xsl:if>
@@ -141,6 +150,7 @@
 	    </rx:outline>
 	  </xsl:if>
 	</xsl:if>
+	-->
 
 	<xsl:apply-templates select="$document.element"/>
 

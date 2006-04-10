@@ -1,386 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE t:titlepages [
+<!ENTITY hsize0 "10pt">
+<!ENTITY hsize1 "12pt">
+<!ENTITY hsize2 "14.4pt">
+<!ENTITY hsize3 "17.28pt">
+<!ENTITY hsize4 "20.736pt">
+<!ENTITY hsize5 "24.8832pt">
+<!ENTITY hsize0space "7.5pt"> <!-- 0.75 * hsize0 -->
+<!ENTITY hsize1space "9pt"> <!-- 0.75 * hsize1 -->
+<!ENTITY hsize2space "10.8pt"> <!-- 0.75 * hsize2 -->
+<!ENTITY hsize3space "12.96pt"> <!-- 0.75 * hsize3 -->
+<!ENTITY hsize4space "15.552pt"> <!-- 0.75 * hsize4 -->
+<!ENTITY hsize5space "18.6624pt"> <!-- 0.75 * hsize5 -->
+]>
 <t:titlepages xmlns:t="http://docbook.org/xslt/ns/template"
-	      xmlns="http://www.w3.org/1999/xhtml"
+	      xmlns:fo="http://www.w3.org/1999/XSL/Format"
 	      xmlns:db="http://docbook.org/ns/docbook">
 
-<db:set t:side="recto">
-  <div class="set-titlepage">
-    <db:title/>
-    <db:subtitle/>
-    <db:corpauthor/>
-    <db:authorgroup/>
-    <db:author/>
-    <db:othercredit/>
-    <db:releaseinfo/>
-    <db:copyright/>
-    <db:legalnotice/>
-    <db:pubdate/>
-    <db:revision/>
-    <db:revhistory/>
-    <db:abstract/>
-  </div>
-</db:set>
-
 <db:article t:side="recto">
-  <div class="article-titlepage">
-    <db:title/>
+  <fo:block font-family="{$title.font.family} sans-serif"
+	    start-indent="0pt"
+	    text-align="center">
+
+    <fo:block font-size="&hsize5;" font-weight="bold">
+      <db:title/>
+    </fo:block>
+
     <db:subtitle/>
-    <db:corpauthor/>
-    <db:authorgroup/>
-    <db:author/>
-    <db:othercredit/>
-    <db:releaseinfo/>
-    <db:copyright/>
-    <db:legalnotice/>
-    <db:pubdate/>
-    <db:revision/>
-    <db:revhistory/>
-    <db:abstract/>
-  </div>
+
+    <fo:block t:conditional="1"
+	      space-before="0.5em" font-size="&hsize2;">
+      <db:corpauthor/>
+    </fo:block>
+
+    <fo:block t:conditional="1"
+	      space-before="0.5em" font-size="&hsize2;">
+      <db:authorgroup/>
+    </fo:block>
+
+    <fo:block t:conditional="1"
+	      space-before="0.5em" font-size="&hsize2;">
+      <db:author/>
+    </fo:block>
+
+    <fo:block t:conditional="1" space-before="0.5em">
+      <db:othercredit/>
+    </fo:block>
+
+    <fo:block t:conditional="1" space-before="0.5em">
+      <db:releaseinfo/>
+    </fo:block>
+
+    <fo:block t:conditional="1" space-before="0.5em">
+      <db:copyright/>
+    </fo:block>
+
+    <fo:block t:conditional="1"
+	      font-family="{$body.font.family}"
+	      text-align="start"
+	      space-before="0.5em"
+	      margin-left="0.5in"
+	      margin-right="0.5in">
+      <db:legalnotice/>
+    </fo:block>
+
+    <fo:block t:conditional="1" space-before="0.5em">
+      <db:pubdate/>
+    </fo:block>
+
+    <fo:block t:conditional="1" space-before="0.5em">
+      <db:revision/>
+    </fo:block>
+
+    <fo:block t:conditional="1" space-before="0.5em">
+      <db:revhistory/>
+    </fo:block>
+
+    <fo:block t:conditional="1"
+              font-family="{$body.fontset}"
+	      text-align="start"
+	      space-before="0.5em"
+	      margin-left="0.5in"
+              margin-right="0.5in">
+      <db:abstract/>
+    </fo:block>
+  </fo:block>
 </db:article>
-
-<db:book t:side="recto">
-  <div class="book-titlepage">
-    <db:title/>
-    <db:subtitle/>
-    <db:corpauthor/>
-    <db:authorgroup/>
-    <db:author/>
-    <db:othercredit/>
-    <db:releaseinfo/>
-    <db:copyright/>
-    <db:legalnotice/>
-    <db:pubdate/>
-    <db:revision/>
-    <db:revhistory/>
-    <db:abstract/>
-  </div>
-  <hr/>
-</db:book>
-
-<db:part t:side="recto">
-  <div class="part-titlepage">
-    <db:title/>
-    <db:subtitle/>
-    <db:corpauthor/>
-    <db:authorgroup/>
-    <db:author/>
-    <db:othercredit/>
-    <db:releaseinfo/>
-    <db:copyright/>
-    <db:legalnotice/>
-    <db:pubdate/>
-    <db:revision/>
-    <db:revhistory/>
-    <db:abstract/>
-  </div>
-</db:part>
-
-<db:reference t:side="recto">
-  <div class="reference-titlepage">
-    <db:title/>
-    <db:subtitle/>
-    <db:corpauthor/>
-    <db:authorgroup/>
-    <db:author/>
-    <db:othercredit/>
-    <db:releaseinfo/>
-    <db:copyright/>
-    <db:legalnotice/>
-    <db:pubdate/>
-    <db:revision/>
-    <db:revhistory/>
-    <db:abstract/>
-  </div>
-</db:reference>
-
-<db:partintro t:side="recto">
-  <div class="partintro-titlepage">
-    <db:title/>
-    <db:subtitle/>
-    <db:corpauthor/>
-    <db:authorgroup/>
-    <db:author/>
-    <db:othercredit/>
-    <db:releaseinfo/>
-    <db:copyright/>
-    <db:legalnotice/>
-    <db:pubdate/>
-    <db:revision/>
-    <db:revhistory/>
-    <db:abstract/>
-  </div>
-</db:partintro>
-
-<db:refentry t:side="recto">
-  <!-- nop -->
-</db:refentry>
-
-<db:dedication t:side="recto">
-  <div class="dedication-titlepage">
-    <db:title/>
-    <db:subtitle/>
-  </div>
-</db:dedication>
-
-<db:preface t:side="recto">
-  <div class="preface-titlepage">
-    <db:title/>
-    <db:subtitle/>
-    <db:corpauthor/>
-    <db:authorgroup/>
-    <db:author/>
-    <db:othercredit/>
-    <db:releaseinfo/>
-    <db:copyright/>
-    <db:legalnotice/>
-    <db:pubdate/>
-    <db:revision/>
-    <db:revhistory/>
-    <db:abstract/>
-  </div>
-</db:preface>
-
-<db:chapter t:side="recto">
-  <div class="chapter-titlepage">
-    <db:title/>
-    <db:subtitle/>
-    <db:corpauthor/>
-    <db:authorgroup/>
-    <db:author/>
-    <db:othercredit/>
-    <db:releaseinfo/>
-    <db:copyright/>
-    <db:legalnotice/>
-    <db:pubdate/>
-    <db:revision/>
-    <db:revhistory/>
-    <db:abstract/>
-  </div>
-</db:chapter>
-
-<db:appendix t:side="recto">
-  <div class="appendix-titlepage">
-    <db:title/>
-    <db:subtitle/>
-    <db:corpauthor/>
-    <db:authorgroup/>
-    <db:author/>
-    <db:othercredit/>
-    <db:releaseinfo/>
-    <db:copyright/>
-    <db:legalnotice/>
-    <db:pubdate/>
-    <db:revision/>
-    <db:revhistory/>
-    <db:abstract/>
-  </div>
-</db:appendix>
-
-<db:bibliography t:side="recto">
-  <div class="bibliography-titlepage">
-    <db:title/>
-    <db:subtitle/>
-  </div>
-</db:bibliography>
-
-<db:bibliodiv t:side="recto">
-  <div class="bibliography-titlepage">
-    <db:title/>
-  </div>
-</db:bibliodiv>
-
-<db:glossary t:side="recto">
-  <div class="glossary-titlepage">
-    <db:title/>
-    <db:subtitle/>
-  </div>
-</db:glossary>
-
-<db:index t:side="recto">
-  <div class="index-titlepage">
-    <db:title/>
-    <db:subtitle/>
-  </div>
-</db:index>
-
-<db:setindex t:side="recto">
-  <div class="setindex-titlepage">
-    <db:title/>
-    <db:subtitle/>
-  </div>
-</db:setindex>
-
-<db:indexdiv t:side="recto">
-  <div class="indexdiv-titlepage">
-    <db:title/>
-    <db:subtitle/>
-  </div>
-</db:indexdiv>
-
-<db:section t:side="recto">
-  <div class="section-titlepage">
-    <db:title/>
-    <db:subtitle/>
-  </div>
-</db:section>
-
-<db:sect1 t:side="recto">
-  <div class="section-titlepage">
-    <db:title/>
-    <db:subtitle/>
-  </div>
-</db:sect1>
-
-<db:sect2 t:side="recto">
-  <div class="section-titlepage">
-    <db:title/>
-    <db:subtitle/>
-  </div>
-</db:sect2>
-
-<db:sect3 t:side="recto">
-  <div class="section-titlepage">
-    <db:title/>
-    <db:subtitle/>
-  </div>
-</db:sect3>
-
-<db:sect4 t:side="recto">
-  <div class="section-titlepage">
-    <db:title/>
-    <db:subtitle/>
-  </div>
-</db:sect4>
-
-<db:sect5 t:side="recto">
-  <div class="section-titlepage">
-    <db:title/>
-    <db:subtitle/>
-  </div>
-</db:sect5>
-
-<db:simplesect t:side="recto">
-  <div class="section-titlepage">
-    <db:title/>
-    <db:subtitle/>
-  </div>
-</db:simplesect>
-
-<db:refsection t:side="recto">
-  <div class="refsection-titlepage">
-    <db:title/>
-    <db:subtitle/>
-  </div>
-</db:refsection>
-
-<db:refsect1 t:side="recto">
-  <div class="refsection-titlepage">
-    <db:title/>
-    <db:subtitle/>
-  </div>
-</db:refsect1>
-
-<db:refsect2 t:side="recto">
-  <div class="refsection-titlepage">
-    <db:title/>
-    <db:subtitle/>
-  </div>
-</db:refsect2>
-
-<db:refsect3 t:side="recto">
-  <div class="refsection-titlepage">
-    <db:title/>
-    <db:subtitle/>
-  </div>
-</db:refsect3>
-
-<db:glossdiv t:side="recto">
-  <div class="glossdiv-titlepage">
-    <db:title/>
-    <db:subtitle/>
-  </div>
-</db:glossdiv>
-
-<db:itemizedlist>
-  <db:title/>
-</db:itemizedlist>
-
-<db:orderedlist>
-  <db:title/>
-</db:orderedlist>
-
-<db:variablelist>
-  <db:title/>
-</db:variablelist>
-
-<db:calloutlist>
-  <db:title/>
-</db:calloutlist>
-
-<db:figure>
-  <db:title/>
-</db:figure>
-
-<db:table>
-  <db:title/>
-</db:table>
-
-<db:example>
-  <db:title/>
-</db:example>
-
-<db:equation>
-  <db:title/>
-</db:equation>
-
-<db:note>
-  <db:title/>
-</db:note>
-
-<db:tip>
-  <db:title/>
-</db:tip>
-
-<db:caution>
-  <db:title/>
-</db:caution>
-
-<db:warning>
-  <db:title/>
-</db:warning>
-
-<db:important>
-  <db:title/>
-</db:important>
-
-<db:qandaset>
-  <db:title/>
-</db:qandaset>
-
-<db:task>
-  <db:title/>
-</db:task>
-
-<db:tasksummary>
-  <db:title/>
-</db:tasksummary>
-
-<db:taskprerequisites>
-  <db:title/>
-</db:taskprerequisites>
-
-<db:taskrelated>
-  <db:title/>
-</db:taskrelated>
-
-<db:sidebar>
-  <db:title/>
-</db:sidebar>
-
-<db:annotation>
-  <db:title/>
-</db:annotation>
 
 </t:titlepages>
 

@@ -1393,7 +1393,7 @@
 
 <!-- ==================================================================== -->
 
-<xsl:template match="*" mode="running.head.mode">
+<xsl:template match="*" mode="t:running-head-mode">
   <xsl:param name="master-reference" select="'unknown'"/>
   <xsl:param name="gentext-key" select="name(.)"/>
 
@@ -1735,7 +1735,7 @@
 
 <!-- ==================================================================== -->
 
-<xsl:template match="*" mode="running.foot.mode">
+<xsl:template match="*" mode="t:running-foot-mode">
   <xsl:param name="master-reference" select="'unknown'"/>
   <xsl:param name="gentext-key" select="name(.)"/>
 
@@ -2074,7 +2074,7 @@
   </xsl:choose>
 </xsl:template>
 
-<xsl:template name="t:set-flow-properties">
+<xsl:template name="t:flow-properties">
   <xsl:param name="element" select="local-name(.)"/>
   <xsl:param name="master-reference" select="''"/>
 
