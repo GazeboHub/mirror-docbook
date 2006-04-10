@@ -10,7 +10,7 @@
 
 <refsynopsisdiv>
 <src:fragment xml:id="label.from.part.frag">
-<xsl:param name="label.from.part" select="'0'"/>
+<xsl:param name="label.from.part" select="0"/>
 </src:fragment>
 </refsynopsisdiv>
 

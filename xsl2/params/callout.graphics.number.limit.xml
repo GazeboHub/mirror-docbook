@@ -14,7 +14,7 @@
 
 <refsynopsisdiv>
 <src:fragment xml:id='callout.graphics.number.limit.frag'>
-<xsl:param name="callout.graphics.number.limit" select="'15'"/>
+<xsl:param name="callout.graphics.number.limit" select="15"/>
 </src:fragment>
 </refsynopsisdiv>
 

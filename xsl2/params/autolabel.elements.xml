@@ -15,7 +15,8 @@
 
 <refsynopsisdiv>
 <src:fragment xml:id="autolabel.elements.frag">
-<xsl:param name="autolabel.elements" as="element()*">
+<!-- n.b. this is a result-tree fragment so that $autolabel.elements/* works -->
+<xsl:param name="autolabel.elements">
   <db:appendix format="A"/>
   <db:chapter/>
   <db:figure/>
