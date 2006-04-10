@@ -857,11 +857,18 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
 		    select="../../db:textobject[db:phrase]"/>
 
       <xsl:variable name="normalphrases"
-		    select="phrases[not(@role) or @role != 'tex']"/>
+		    select="$phrases[not(@role) or @role != 'tex']"/>
 
       <xsl:call-template name="t:process-image">
 	<xsl:with-param name="alt">
-	  <xsl:apply-templates select="$normalphrases[1]"/>
+	  <xsl:choose>
+	    <xsl:when test="../../db:alt">
+	      <xsl:value-of select="../../db:alt"/>
+	    </xsl:when>
+	    <xsl:otherwise>
+	      <xsl:apply-templates select="$normalphrases[1]"/>
+	    </xsl:otherwise>
+	  </xsl:choose>
 	</xsl:with-param>
 	<xsl:with-param name="longdesc" select="$longdesc.uri"/>
       </xsl:call-template>
@@ -953,11 +960,17 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
 
 <!-- Resolve xml:base attributes -->
 <xsl:template match="@fileref">
+  <xsl:variable name="basedir"
+		select="replace(base-uri(.),'/[^/]+$','/')"/>
+
   <!-- need a check for absolute urls -->
   <xsl:choose>
-    <xsl:when test="contains(., ':')">
+    <xsl:when test="contains(., ':') and not(starts-with(.,'file:'))">
       <!-- it has a uri scheme so it is an absolute uri -->
       <xsl:value-of select="."/>
+    </xsl:when>
+    <xsl:when test="starts-with(.,$basedir)">
+      <xsl:value-of select="substring-after(.,$basedir)"/>
     </xsl:when>
     <xsl:otherwise>
       <!-- its a relative uri -->
@@ -972,7 +985,8 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
 <xsl:function name="f:longdesc-uri" as="xs:string?">
   <xsl:param name="node" as="element()?"/>
 
-  <xsl:if test="exists($node) and $html.longdesc != 0">
+  <xsl:if test="exists($node) and $html.longdesc != 0
+		and $node/db:textobject[not(db:phrase)]">
     <xsl:variable name="image-id" select="f:node-id($node)"/>
     <xsl:variable name="dbhtml.dir" select="f:dbhtml-dir($node)"/>
     <xsl:value-of>
