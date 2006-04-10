@@ -1822,4 +1822,42 @@ expects “/” to be the component separator.</para>
   </xsl:choose>
 </xsl:function>
 
+<!-- ================================================================== -->
+
+<xsl:function name="f:fake-eval-avt" as="xs:string">
+  <xsl:param name="value" as="xs:string"/>
+
+  <xsl:choose>
+    <xsl:when test="contains($value,'{')">
+      <xsl:variable name="pre" select="substring-before($value,'{')"/>
+      <xsl:variable name="var"
+		    select="substring-after(substring-before($value,'}'),'{')"/>
+      <xsl:variable name="rest" select="substring-after($value,'}')"/>
+
+      <xsl:variable name="exp">
+	<xsl:choose>
+	  <xsl:when test="$var = '$title.font.family'">
+	    <xsl:value-of select="$title.font.family"/>
+	  </xsl:when>
+	  <xsl:when test="$var = '$body.font.family'">
+	    <xsl:value-of select="$body.font.family"/>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <xsl:message>
+	      <xsl:text>Unrecognized value in fake-eval-avt(): </xsl:text>
+	      <xsl:value-of select="$var"/>
+	    </xsl:message>
+	    <xsl:value-of select="''"/>
+	  </xsl:otherwise>
+	</xsl:choose>
+      </xsl:variable>
+
+      <xsl:value-of select="concat($pre,$exp,f:fake-eval-avt($rest))"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:value-of select="$value"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
 </xsl:stylesheet>
