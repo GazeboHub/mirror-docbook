@@ -14,13 +14,9 @@
 
 <xsl:param name="olink.base.uri" select="''"/> 
 <xsl:param name="olink.debug" select="0"/>
-<xsl:attribute-set name="olink.properties">
-</xsl:attribute-set>
-<xsl:param name="insert.olink.page.number">no</xsl:param>
 <xsl:param name="insert.olink.pdf.frag" select="0"/>
 <xsl:param name="prefer.internal.olink" select="0"/>
 <xsl:param name="olink.lang.fallback.sequence" select="''"/> 
-<xsl:param name="olink.doctitle" select="'no'"/> 
 <xsl:param name="olink.fragid" select="'fragid='"/>
 <xsl:param name="olink.outline.ext" select="'.olink'"/>
 <xsl:param name="olink.pubid" select="'pubid='"/>
@@ -959,7 +955,7 @@
                      or contains($xrefstyle, 'Page')))
                 and $current.docid != '' 
                 and $current.docid != $targetdoc
-                and $insert.olink.page.number = 'yes' ">
+                and olink.insert.page.number = 1 ">
   
       <xsl:variable name="page-number">
         <xsl:for-each select="$target.database" >
