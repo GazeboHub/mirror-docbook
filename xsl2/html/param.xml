@@ -135,4 +135,13 @@ It's just a bogus mess right now.</para>
 
 <refentry xml:id="formal.title.placement"/>
 
+<refentry xml:id="olink.insert.page.number"/>
+<refentry xml:id="olink.doctitle"/>
+<refentry xml:id="olink.properties"/>
+
+<!-- For function fake-eval-avt; fix this -->
+<refentry xml:id="body.font.family"/>
+<refentry xml:id="title.font.family"/>
+<refentry xml:id="symbol.font.family"/>
+
 </article>
