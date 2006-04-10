@@ -156,7 +156,10 @@ for the title page.</para>
   </xsl:element>
 </xsl:template>
 
-<xsl:template match="db:refsection/db:info/db:title"
+<xsl:template match="db:refsection/db:info/db:title
+		     |db:refsect1/db:info/db:title
+		     |db:refsect2/db:info/db:title
+		     |db:refsect3/db:info/db:title"
 	      mode="m:titlepage-mode"
 	      priority="100">
   <xsl:variable name="depth"
