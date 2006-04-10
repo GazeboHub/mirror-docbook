@@ -87,7 +87,13 @@ this is <tag>db:info/*</tag>.</para>
 <para>This mode is used to process the title page template contents.
 For each DocBook element in the template, the corresponding element from
 the metadata (if there is one) is formatted. Elements in other namespaces
-are copied directly to the title page.</para>
+are generally copied directly to the title page.</para>
+
+<para>One exception is made if the element specifies a
+<tag class="attribute">t:conditional</tag> attribute with a non-zero value
+then the element is only copied if it contains (among its descendants)
+an element that occurs in the source document.</para>
+
 </refdescription>
 </doc:mode>
 
@@ -105,10 +111,48 @@ are copied directly to the title page.</para>
 </xsl:template>
 
 <xsl:template match="*" mode="m:titlepage-templates">
-  <xsl:element name="{local-name(.)}" namespace="{namespace-uri(.)}">
-    <xsl:copy-of select="@*"/>
-    <xsl:apply-templates mode="m:titlepage-templates"/>
-  </xsl:element>
+  <xsl:param name="node" tunnel="yes"/>
+  <xsl:param name="info" tunnel="yes"/>
+
+  <xsl:variable name="render" as="xs:boolean*">
+    <xsl:choose>
+      <xsl:when test="not(@t:conditional) or @t:conditional = 0">
+	<xsl:value-of select="true()"/>
+      </xsl:when>
+      <xsl:otherwise>
+	<xsl:for-each select=".//db:*">
+	  <xsl:variable name="this" select="."/>
+	  <xsl:if test="$info[f:node-matches($this, .)]">
+	    <xsl:value-of select="true()"/>
+	  </xsl:if>
+	</xsl:for-each>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:if test="not(empty($render))">
+    <xsl:element name="{local-name(.)}" namespace="{namespace-uri(.)}">
+      <xsl:for-each select="@*">
+	<xsl:choose>
+	  <xsl:when test="namespace-uri(.)
+			  = 'http://docbook.org/xslt/ns/template'">
+	    <!-- discard -->
+	  </xsl:when>
+	  <xsl:when test="contains(.,'{')">
+	    <!-- there's no 'eval' in XSLT, so do this the hard way -->
+	    <xsl:attribute name="{name(.)}"
+			   namespace="{namespace-uri(.)}">
+	      <xsl:value-of select="f:fake-eval-avt(.)"/>
+	    </xsl:attribute>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <xsl:copy/>
+	  </xsl:otherwise>
+	</xsl:choose>
+      </xsl:for-each>
+      <xsl:apply-templates mode="m:titlepage-templates"/>
+    </xsl:element>
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="processing-instruction()|comment()"
