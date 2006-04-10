@@ -102,20 +102,24 @@ and <tag>othercredit</tag>) or with the locale.</para>
     </xsl:when>
 
     <xsl:otherwise>
+      <!-- $node/db:personname -->
       <xsl:choose>
+	<xsl:when test="not($node/db:personname/*)">
+	  <xsl:value-of select="$node/db:personname"/>
+	</xsl:when>
         <xsl:when test="$style = 'family-given'">
           <xsl:call-template name="person-name-family-given">
-            <xsl:with-param name="node" select="$node"/>
+            <xsl:with-param name="node" select="$node/db:personname"/>
           </xsl:call-template>
         </xsl:when>
         <xsl:when test="$style = 'last-first'">
           <xsl:call-template name="person-name-last-first">
-            <xsl:with-param name="node" select="$node"/>
+            <xsl:with-param name="node" select="$node/db:personname"/>
           </xsl:call-template>
         </xsl:when>
         <xsl:otherwise>
           <xsl:call-template name="person-name-first-last">
-            <xsl:with-param name="node" select="$node"/>
+            <xsl:with-param name="node" select="$node/db:personname"/>
           </xsl:call-template>
         </xsl:otherwise>
       </xsl:choose>
@@ -156,16 +160,16 @@ template.</para>
   <!-- The family-given style applies a convention for identifying given -->
   <!-- and family names in locales where it may be ambiguous -->
   <xsl:variable name="surname">
-    <xsl:apply-templates select="$node//db:surname[1]"/>
+    <xsl:apply-templates select="$node/db:surname[1]"/>
   </xsl:variable>
 
   <xsl:apply-templates select="$surname/node()" mode="m:to-uppercase"/>
 
-  <xsl:if test="$node//db:surname and $node//db:firstname">
+  <xsl:if test="$node/db:surname and $node/db:firstname">
     <xsl:text> </xsl:text>
   </xsl:if>
 
-  <xsl:apply-templates select="$node//db:firstname[1]"/>
+  <xsl:apply-templates select="$node/db:firstname[1]"/>
 
   <xsl:text> [FAMILY Given]</xsl:text>
 </xsl:template>
@@ -231,13 +235,13 @@ template.</para>
 <xsl:template name="person-name-last-first">
   <xsl:param name="node" select="."/>
 
-  <xsl:apply-templates select="$node//db:surname[1]"/>
+  <xsl:apply-templates select="$node/db:surname[1]"/>
 
-  <xsl:if test="$node//db:surname and $node//db:firstname">
+  <xsl:if test="$node/db:surname and $node/db:firstname">
     <xsl:text>, </xsl:text>
   </xsl:if>
 
-  <xsl:apply-templates select="$node//db:firstname[1]"/>
+  <xsl:apply-templates select="$node/db:firstname[1]"/>
 </xsl:template>
 
 <!-- ============================================================ -->
@@ -270,36 +274,36 @@ template.</para>
 <xsl:template name="person-name-first-last">
   <xsl:param name="node" select="."/>
 
-  <xsl:if test="$node//db:honorific">
-    <xsl:apply-templates select="$node//db:honorific[1]"/>
+  <xsl:if test="$node/db:honorific">
+    <xsl:apply-templates select="$node/db:honorific[1]"/>
     <xsl:value-of select="$punct.honorific"/>
   </xsl:if>
 
-  <xsl:if test="$node//db:firstname">
-    <xsl:if test="$node//db:honorific">
+  <xsl:if test="$node/db:firstname">
+    <xsl:if test="$node/db:honorific">
       <xsl:text> </xsl:text>
     </xsl:if>
-    <xsl:apply-templates select="$node//db:firstname[1]"/>
+    <xsl:apply-templates select="$node/db:firstname[1]"/>
   </xsl:if>
 
-  <xsl:if test="$node//db:othername and $author.othername.in.middle != 0">
-    <xsl:if test="$node//db:honorific or $node//db:firstname">
+  <xsl:if test="$node/db:othername and $author.othername.in.middle != 0">
+    <xsl:if test="$node/db:honorific or $node/db:firstname">
       <xsl:text> </xsl:text>
     </xsl:if>
-    <xsl:apply-templates select="$node//db:othername[1]"/>
+    <xsl:apply-templates select="$node/db:othername[1]"/>
   </xsl:if>
 
-  <xsl:if test="$node//db:surname">
-    <xsl:if test="$node//db:honorific or $node//db:firstname
-                  or ($node//db:othername and $author.othername.in.middle != 0)">
+  <xsl:if test="$node/db:surname">
+    <xsl:if test="$node/db:honorific or $node/db:firstname
+                  or ($node/db:othername and $author.othername.in.middle != 0)">
       <xsl:text> </xsl:text>
     </xsl:if>
-    <xsl:apply-templates select="$node//db:surname[1]"/>
+    <xsl:apply-templates select="$node/db:surname[1]"/>
   </xsl:if>
 
-  <xsl:if test="$node//db:lineage">
+  <xsl:if test="$node/db:lineage">
     <xsl:text>, </xsl:text>
-    <xsl:apply-templates select="$node//db:lineage[1]"/>
+    <xsl:apply-templates select="$node/db:lineage[1]"/>
   </xsl:if>
 </xsl:template>
 
@@ -1003,7 +1007,7 @@ object is recognized as a graphic.</para>
 <xsl:template name="t:relative-uri">
   <xsl:param name="filename" select="."/>
   <xsl:param name="destdir" select="''"/>
-  
+
   <xsl:variable name="srcurl">
     <xsl:call-template name="t:strippath">
       <xsl:with-param name="filename">
@@ -1086,6 +1090,69 @@ object is recognized as a graphic.</para>
       <xsl:with-param name="filename"
 		      select="substring-after($filename, '/')"/>
     </xsl:call-template>
+  </xsl:if>
+</xsl:template>
+
+<xsl:template name="t:root-messages">
+  <!-- nop -->
+</xsl:template>
+
+<!-- ============================================================ -->
+
+<doc:template name="id" xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Returns an “id” attribute if appropriate</refpurpose>
+
+<refdescription>
+<para>This template returns an attribute named “id” if the specified
+node has an <tag class="attribute">id</tag>
+(or <tag class="attribute">xml:id</tag>) attribute or if the
+<parameter>force</parameter> parameter is non-zero.</para>
+<para>A <parameter>conditional</parameter> attribute also exists,
+but its use is deprecated and it may be removed in the future.</para>
+<para>Until <parameter>conditional</parameter> is removed, an ID is
+forced if <emphasis>either</emphasis> <parameter>force</parameter> is non-zero
+<emphasis>or</emphasis> <parameter>conditional</parameter> is zero.</para>
+
+<para>If an ID is generated, it's value is <function>f:node-id()</function>.
+</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The node for which an ID should be generated. It defaults to
+the context item.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>force</term>
+<listitem>
+<para>To force an “id” attribute to be generated, even if the node does
+not have an ID, make this parameter non-zero. It defaults to 0.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>conditional</term>
+<listitem>
+<para>To force an “id” attribute to be generated, even if the node does
+not have an ID, make this parameter zero. It defaults to 1.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>An “id” attribute or nothing.</para>
+</refreturn>
+
+</doc:template>
+
+<xsl:template name="id">
+  <xsl:param name="node" select="."/>
+  <xsl:param name="force" select="0"/>
+  <xsl:param name="conditional" select="1"/> <!-- deprecated! -->
+
+  <xsl:if test="($force != 0 or $conditional = 0) or (@id or @xml:id)">
+    <xsl:attribute name="id" select="f:node-id($node)"/>
   </xsl:if>
 </xsl:template>
 
