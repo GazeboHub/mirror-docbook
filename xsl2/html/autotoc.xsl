@@ -102,6 +102,7 @@
         <div class="toc">
           <xsl:copy-of select="$toc.title"/>
           <xsl:element name="{$toc.list.type}">
+	    <xsl:attribute name="class" select="'toc'"/>
             <xsl:call-template name="manual-toc">
               <xsl:with-param name="tocentry" select="$tocentry/*[1]"/>
             </xsl:call-template>
@@ -114,6 +115,7 @@
         <div class="toc">
           <xsl:copy-of select="$toc.title"/>
           <xsl:element name="{$toc.list.type}">
+	    <xsl:attribute name="class" select="'toc'"/>
             <xsl:apply-templates select="$nodes" mode="m:toc">
               <xsl:with-param name="toc-context" select="$toc-context"/>
             </xsl:apply-templates>
@@ -422,6 +424,7 @@ section.</para>
 
   <xsl:variable name="subtoc">
     <xsl:element name="{$toc.list.type}">
+      <xsl:attribute name="class" select="'toc'"/>
       <xsl:apply-templates mode="m:toc" select="$nodes">
         <xsl:with-param name="toc-context" select="$toc-context"/>
       </xsl:apply-templates>
@@ -745,6 +748,7 @@ section.</para>
 
     <xsl:if test="$tocentry/*">
       <xsl:element name="{$toc.list.type}">
+	<xsl:attribute name="class" select="'toc'"/>
         <xsl:call-template name="manual-toc">
           <xsl:with-param name="tocentry" select="$tocentry/*[1]"/>
         </xsl:call-template>
@@ -798,6 +802,7 @@ section.</para>
       </p>
 
       <xsl:element name="{$toc.list.type}">
+	<xsl:attribute name="class" select="'toc'"/>
         <xsl:apply-templates select="$nodes" mode="m:toc">
           <xsl:with-param name="toc-context" select="$toc-context"/>
         </xsl:apply-templates>
