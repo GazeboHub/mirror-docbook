@@ -25,65 +25,6 @@
 
 <!-- ============================================================ -->
 
-<doc:template name="id" xmlns="http://docbook.org/ns/docbook">
-<refpurpose>Returns an “id” attribute if appropriate</refpurpose>
-
-<refdescription>
-<para>This template returns an attribute named “id” if the specified
-node has an <tag class="attribute">id</tag>
-(or <tag class="attribute">xml:id</tag>) attribute or if the
-<parameter>force</parameter> parameter is non-zero.</para>
-<para>A <parameter>conditional</parameter> attribute also exists,
-but its use is deprecated and it may be removed in the future.</para>
-<para>Until <parameter>conditional</parameter> is removed, an ID is
-forced if <emphasis>either</emphasis> <parameter>force</parameter> is non-zero
-<emphasis>or</emphasis> <parameter>conditional</parameter> is zero.</para>
-
-<para>If an ID is generated, it's value is <function>f:node-id()</function>.
-</para>
-</refdescription>
-
-<refparameter>
-<variablelist>
-<varlistentry><term>node</term>
-<listitem>
-<para>The node for which an ID should be generated. It defaults to
-the context item.</para>
-</listitem>
-</varlistentry>
-<varlistentry><term>force</term>
-<listitem>
-<para>To force an “id” attribute to be generated, even if the node does
-not have an ID, make this parameter non-zero. It defaults to 0.</para>
-</listitem>
-</varlistentry>
-<varlistentry><term>conditional</term>
-<listitem>
-<para>To force an “id” attribute to be generated, even if the node does
-not have an ID, make this parameter zero. It defaults to 1.</para>
-</listitem>
-</varlistentry>
-</variablelist>
-</refparameter>
-
-<refreturn>
-<para>An “id” attribute or nothing.</para>
-</refreturn>
-
-</doc:template>
-
-<xsl:template name="id">
-  <xsl:param name="node" select="."/>
-  <xsl:param name="force" select="0"/>
-  <xsl:param name="conditional" select="1"/> <!-- deprecated! -->
-
-  <xsl:if test="($force != 0 or $conditional = 0) or (@id or @xml:id)">
-    <xsl:attribute name="id" select="f:node-id($node)"/>
-  </xsl:if>
-</xsl:template>
-
-<!-- ============================================================ -->
-
 <doc:template name="anchor" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns an XHTML anchor if appropriate</refpurpose>
 
