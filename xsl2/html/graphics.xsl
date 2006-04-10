@@ -232,7 +232,7 @@ vertical alignment.</para>
                       $graphicsize.use.img.src.path != 0 and
                       $tag = 'img' and
                       not(starts-with($filename, '/')) and
-                      not(contains($filename, '://'))">
+                      not(contains($filename, ':/'))">
         <xsl:value-of select="resolve-uri(concat($img.src.path, $filename),
 			                  base-uri(.))"/>
       </xsl:when>
@@ -495,7 +495,7 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
 	      <xsl:when test="$img.src.path != '' and
 			      $tag = 'img' and
 	                      not(starts-with($filename, '/')) and
-			      not(contains($filename, '://'))">
+			      not(contains($filename, ':/'))">
 	        <xsl:value-of select="$img.src.path"/>
 	      </xsl:when>
 	    </xsl:choose>
@@ -975,6 +975,8 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
     <xsl:otherwise>
       <!-- its a relative uri -->
       <xsl:call-template name="t:relative-uri">
+	<xsl:with-param name="filename" select="."/>
+	<xsl:with-param name="destdir" select="$basedir"/>
       </xsl:call-template>
     </xsl:otherwise>
   </xsl:choose>
