@@ -813,12 +813,12 @@ defaults to the language of the context node.</para>
 
   <xsl:variable name="pagetype">
     <xsl:choose>
-      <xsl:when test="$insert.olink.page.number = 'no' and
-                      local-name($referrer) = 'olink'">
+      <xsl:when test="$olink.insert.page.number = 0
+                      and local-name($referrer) = 'olink'">
         <!-- suppress page numbers -->
       </xsl:when>
-      <xsl:when test="$insert.xref.page.number = 'no' and
-                      local-name($referrer) != 'olink'">
+      <xsl:when test="$insert.xref.page.number = 'no'
+                      and local-name($referrer) != 'olink'">
         <!-- suppress page numbers -->
       </xsl:when>
       <xsl:when test="contains($parts, 'nopage')">
@@ -841,9 +841,8 @@ defaults to the language of the context node.</para>
 
   <xsl:variable name="docnametype">
     <xsl:choose>
-      <xsl:when test="($olink.doctitle = 0 or
-                       $olink.doctitle = 'no') and
-                      local-name($referrer) = 'olink'">
+      <xsl:when test="$olink.doctitle = 0
+                      and local-name($referrer) = 'olink'">
         <!-- suppress docname -->
       </xsl:when>
       <xsl:when test="contains($parts, 'nodocname')">
