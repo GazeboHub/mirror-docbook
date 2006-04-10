@@ -82,6 +82,11 @@ and <tag>othercredit</tag>) or with the locale.</para>
 <xsl:template name="person-name">
   <xsl:param name="node" select="."/>
 
+  <xsl:variable name="personname"
+		select="if ($node/self::db:personname)
+                        then $node
+			else $node/db:personname"/>
+
   <xsl:variable name="style">
     <xsl:choose>
       <xsl:when test="$node/@role">
@@ -104,22 +109,22 @@ and <tag>othercredit</tag>) or with the locale.</para>
     <xsl:otherwise>
       <!-- $node/db:personname -->
       <xsl:choose>
-	<xsl:when test="not($node/db:personname/*)">
-	  <xsl:value-of select="$node/db:personname"/>
+	<xsl:when test="not($personname/*)">
+	  <xsl:value-of select="$personname"/>
 	</xsl:when>
         <xsl:when test="$style = 'family-given'">
           <xsl:call-template name="person-name-family-given">
-            <xsl:with-param name="node" select="$node/db:personname"/>
+            <xsl:with-param name="node" select="$personname"/>
           </xsl:call-template>
         </xsl:when>
         <xsl:when test="$style = 'last-first'">
           <xsl:call-template name="person-name-last-first">
-            <xsl:with-param name="node" select="$node/db:personname"/>
+            <xsl:with-param name="node" select="$personname"/>
           </xsl:call-template>
         </xsl:when>
         <xsl:otherwise>
           <xsl:call-template name="person-name-first-last">
-            <xsl:with-param name="node" select="$node/db:personname"/>
+            <xsl:with-param name="node" select="$personname"/>
           </xsl:call-template>
         </xsl:otherwise>
       </xsl:choose>
