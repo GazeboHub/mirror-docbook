@@ -1860,4 +1860,16 @@ expects “/” to be the component separator.</para>
   </xsl:choose>
 </xsl:function>
 
+<xsl:function name="f:lineNumbering">
+  <xsl:param name="context" as="element()"/>
+  <xsl:param name="name" as="xs:string"/>
+
+  <xsl:variable name="params" 
+		select="f:find-toc-params($context, $linenumbering)"/>
+
+  <xsl:value-of select="if ($params/@*[local-name(.) = $name])
+                        then $params/@*[local-name(.) = $name]
+			else ''"/>
+</xsl:function>
+
 </xsl:stylesheet>
