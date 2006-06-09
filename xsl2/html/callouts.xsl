@@ -72,6 +72,27 @@
 </xsl:template>
 
 <xsl:template match="db:co" mode="m:callout-bug">
+  <xsl:message>
+    <xsl:text>CO: </xsl:text>
+    <xsl:value-of select="count(ancestor::db:programlisting)"/>
+    <xsl:value-of select="count(ancestor::db:screen)"/>
+    <xsl:value-of select="count(ancestor::db:synopsis)"/>
+    <xsl:value-of select="count(ancestor::db:literallayout)"/>
+    <xsl:value-of select="count(ancestor::db:address)"/>
+    <xsl:text> </xsl:text>
+    <xsl:value-of select="@xml:id"/>
+    <xsl:text> </xsl:text>
+    <xsl:number count="db:co"
+		level="single"
+		format="1"/>
+    <xsl:text>, </xsl:text>
+    <xsl:number count="db:co"
+		level="any"
+		from="db:programlisting|db:screen|db:synopsis
+		      |db:literallayout|db:address"
+		format="1"/>
+  </xsl:message>
+
   <xsl:call-template name="t:callout-bug">
     <xsl:with-param name="conum">
       <xsl:number count="db:co"
@@ -153,62 +174,64 @@
 <xsl:template match="db:callout">
   <tr class="callout-row">
     <td class="callout-bug" valign="baseline" align="left">
-      <xsl:call-template name="id"/>
-      <xsl:for-each select="tokenize(@arearefs,'\s')">
-	<xsl:variable name="target" select="key('id',.,$input)[1]"/>
+      <p>
+	<xsl:call-template name="id"/>
+	<xsl:for-each select="tokenize(@arearefs,'\s')">
+	  <xsl:variable name="target" select="key('id',.,$input)[1]"/>
 
-	<xsl:choose>
-	  <xsl:when test="count($target)=0">
-	    <xsl:message>
-	      <xsl:text>Error? callout points to non-existent id: </xsl:text>
-	      <xsl:value-of select="."/>
-	    </xsl:message>
-	    <xsl:text>???</xsl:text>
-	  </xsl:when>
-	  <xsl:when test="$target/self::db:co">
-	    <a href="{f:href($input,$target)}">
-	      <xsl:apply-templates select="$target" mode="m:callout-bug"/>
-	    </a>
-	    <xsl:text>&#160;</xsl:text>
-	  </xsl:when>
-	  <xsl:when test="$target/self::db:areaset">
-	    <xsl:call-template name="t:callout-bug">
-	      <xsl:with-param name="conum"
-			      select="count($target/preceding-sibling::db:areaset
-		                        |$target/preceding-sibling::db:area)
+	  <xsl:choose>
+	    <xsl:when test="count($target)=0">
+	      <xsl:message>
+		<xsl:text>Error? callout points to non-existent id: </xsl:text>
+		<xsl:value-of select="."/>
+	      </xsl:message>
+	      <xsl:text>???</xsl:text>
+	    </xsl:when>
+	    <xsl:when test="$target/self::db:co">
+	      <a href="{f:href($input,$target)}">
+		<xsl:apply-templates select="$target" mode="m:callout-bug"/>
+	      </a>
+	      <xsl:text>&#160;</xsl:text>
+	    </xsl:when>
+	    <xsl:when test="$target/self::db:areaset">
+	      <xsl:call-template name="t:callout-bug">
+		<xsl:with-param name="conum"
+				select="count($target/preceding-sibling::db:areaset
+					|$target/preceding-sibling::db:area)
 					+1"/>
-	    </xsl:call-template>
-	  </xsl:when>
-	  <xsl:when test="$target/self::db:area">
-	    <xsl:choose>
-	      <xsl:when test="$target/parent::db:areaset">
-		<xsl:call-template name="t:callout-bug">
-		  <xsl:with-param name="conum"
-                     select="count($target/parent::db:areaset/preceding-sibling::db:areaset
-                       |$target/parent::db:areaset/preceding-sibling::db:area)
-		       +1"/>
-		</xsl:call-template>
-	      </xsl:when>
-	      <xsl:otherwise>
-		<xsl:call-template name="t:callout-bug">
-		  <xsl:with-param name="conum"
-			      select="count($target/preceding-sibling::db:areaset
-		                        |$target/preceding-sibling::db:area)
-					+1"/>
-		</xsl:call-template>
-	      </xsl:otherwise>
-	    </xsl:choose>
-	  </xsl:when>
-	  <xsl:otherwise>
-	    <xsl:message>
-	      <xsl:text>Error? callout points to </xsl:text>
-	      <xsl:value-of select="name($target)"/>
-	    </xsl:message>
-	    <xsl:text>???</xsl:text>
-	  </xsl:otherwise>
-	</xsl:choose>
-      </xsl:for-each>
-      <xsl:text>&#160;</xsl:text>
+	      </xsl:call-template>
+	    </xsl:when>
+	    <xsl:when test="$target/self::db:area">
+	      <xsl:choose>
+		<xsl:when test="$target/parent::db:areaset">
+		  <xsl:call-template name="t:callout-bug">
+		    <xsl:with-param name="conum"
+				    select="count($target/parent::db:areaset/preceding-sibling::db:areaset
+					    |$target/parent::db:areaset/preceding-sibling::db:area)
+					    +1"/>
+		  </xsl:call-template>
+		</xsl:when>
+		<xsl:otherwise>
+		  <xsl:call-template name="t:callout-bug">
+		    <xsl:with-param name="conum"
+				    select="count($target/preceding-sibling::db:areaset
+					    |$target/preceding-sibling::db:area)
+					    +1"/>
+		  </xsl:call-template>
+		</xsl:otherwise>
+	      </xsl:choose>
+	    </xsl:when>
+	    <xsl:otherwise>
+	      <xsl:message>
+		<xsl:text>Error? callout points to </xsl:text>
+		<xsl:value-of select="name($target)"/>
+	      </xsl:message>
+	      <xsl:text>???</xsl:text>
+	    </xsl:otherwise>
+	  </xsl:choose>
+	</xsl:for-each>
+	<xsl:text>&#160;</xsl:text>
+      </p>
     </td>
     <td class="callout-body" valign="baseline" align="left">
       <xsl:apply-templates/>

@@ -602,7 +602,9 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
     <map name="{generate-id(ancestor::db:imageobjectco)}">
       <xsl:for-each select="ancestor::db:imageobjectco/db:areaspec//db:area">
 	<xsl:variable name="units" as="xs:string"
-		      select="if (@units) then @units else 'calspair'"/>
+		      select="if (@units) then @units
+			      else if (../@units) then ../@units
+			           else 'calspair'"/>
 
 	<xsl:choose>
 	  <xsl:when test="$units = 'calspair'">
@@ -617,10 +619,14 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
 
 	    <area shape="rect">
 	      <xsl:choose>
-		<xsl:when test="@linkends">
+		<xsl:when test="@linkends
+				or (parent::db:areaset and ../@linkends)">
+		  <xsl:variable name="idrefs"
+				select="if (@linkends)
+		                        then normalize-space(@linkends)
+					else normalize-space(../@linkends)"/>
 		  <xsl:variable name="target"
-				select="key('id',
-				  tokenize(normalize-space(@linkends), '[\s]'))
+				select="key('id', tokenize($idrefs, '[\s]'))
 				  [1]"/>
 		
 		  <xsl:if test="$target">
