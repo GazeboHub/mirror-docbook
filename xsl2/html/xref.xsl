@@ -212,6 +212,11 @@ attribute or a <tag class="attribute">linkend</tag> attribute</para>
   </xsl:choose>
 </xsl:template>
 
+<xsl:template match="db:biblioref">
+  <!-- FIXME: handle the things that are special about biblioref! -->
+  <xsl:call-template name="db:xref"/>
+</xsl:template>
+
 <!-- ============================================================ -->
 
 <doc:template name="xreflabel" xmlns="http://docbook.org/ns/docbook">
