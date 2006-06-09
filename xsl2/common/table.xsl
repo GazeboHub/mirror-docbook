@@ -398,7 +398,7 @@ be an integer and won't have a parent.</para>
       <xsl:choose>
 	<xsl:when test="f:find-element-by-attribute($elements, $attr)">
 	  <xsl:value-of select="f:find-element-by-attribute($elements, $attr)
-				/@*[node-name() = $attr]"/>
+				/@*[node-name(.) = $attr]"/>
 	</xsl:when>
 	<xsl:otherwise>
 	  <xsl:if test="$attr=QName('','rowsep') or $attr=QName('','colsep')">
@@ -412,7 +412,7 @@ be an integer and won't have a parent.</para>
       <xsl:when test="f:find-element-by-attribute($elements, $attr)">
 	<xsl:attribute name="{$attr}"
 		       select="f:find-element-by-attribute($elements, $attr)
-			       /@*[node-name() = $attr]"/>
+			       /@*[node-name(.) = $attr]"/>
       </xsl:when>
       <xsl:otherwise>
 	<!-- According to CALS, the default for each attribute is the
@@ -916,7 +916,7 @@ attribute.</para>
     <xsl:when test="not($elements)">
       <xsl:sequence select="()"/>
     </xsl:when>
-    <xsl:when test="$elements[1]/@*[node-name() = $attr]">
+    <xsl:when test="$elements[1]/@*[node-name(.) = $attr]">
       <xsl:sequence select="$elements[1]"/>
     </xsl:when>
     <xsl:otherwise>
