@@ -768,7 +768,7 @@ the default is “element”.</para>
 
 <!-- ============================================================ -->
 <!-- HACK HACK HACK for testing framework. Delete me! -->
-
+<!--
 <u:unittests match="db:emphasis" mode="foobar">
   <u:test>
     <u:context as="element()">
@@ -783,7 +783,7 @@ the default is “element”.</para>
 <xsl:template match="db:emphasis" mode="foobar">
   <b><xsl:apply-templates/></b>
 </xsl:template>
-
+-->
 <!-- ============================================================ -->
 
 <xsl:template match="db:foreignphrase">
