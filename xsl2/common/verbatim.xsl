@@ -19,10 +19,14 @@
 <xsl:param name="callout.defaultcolumn" select="60"/>
 <xsl:param name="verbatim.trim.blank.lines" select="1"/>
 
-<xsl:param name="linenumbering.everyNth" select="2"/>
-<xsl:param name="linenumbering.width" select="3"/>
-<xsl:param name="linenumbering.separator" select="''"/>
-<xsl:param name="linenumbering.padchar" select="' '"/>
+<xsl:param name="linenumbering" as="element()*">
+<ln path="literallayout" everyNth="2" width="3" separator="" padchar=" "/>
+<ln path="programlisting" everyNth="2" width="3" separator="" padchar=" "/>
+<ln path="screen" everyNth="2" width="3" separator="" padchar=" "/>
+<ln path="synopsis" everyNth="2" width="3" separator="" padchar=" "/>
+<ln path="address" everyNth="0"/>
+<ln path="epigraph/literallayout" everyNth="0"/>
+</xsl:param>
 
 <!-- ============================================================ -->
 
@@ -55,6 +59,11 @@ ordinary, straightforward manner.</para>
       </xsl:if>
     </xsl:for-each>
   </xsl:variable>
+
+  <xsl:variable name="everyNth"  select="f:lineNumbering(.,'everyNth')"/>
+  <xsl:variable name="width"     select="f:lineNumbering(.,'width')"/>
+  <xsl:variable name="padchar"   select="f:lineNumbering(.,'padchar')"/>
+  <xsl:variable name="separator" select="f:lineNumbering(.,'separator')"/>
 
   <xsl:variable name="expanded-text" as="node()*">
     <xsl:for-each select="db:programlisting/node()">
@@ -104,7 +113,12 @@ ordinary, straightforward manner.</para>
 
   <xsl:variable name="pl-removed-lines" as="node()*">
     <xsl:apply-templates select="$pl-callouts"
-			 mode="mp:pl-restore-lines"/>
+			 mode="mp:pl-restore-lines">
+      <xsl:with-param name="everyNth" select="$everyNth"/>
+      <xsl:with-param name="width" select="$width"/>
+      <xsl:with-param name="separator" select="$separator"/>
+      <xsl:with-param name="padchar" select="$padchar"/>
+    </xsl:apply-templates>
   </xsl:variable>
 
   <xsl:copy>
@@ -120,7 +134,13 @@ ordinary, straightforward manner.</para>
 </xsl:template>
 
 <xsl:template match="db:programlisting|db:screen|db:synopsis
-                     |db:literallayout|db:address" mode="m:verbatim-phase-1">
+                     |db:literallayout|db:address"
+	      mode="m:verbatim-phase-1">
+
+  <xsl:variable name="everyNth"  select="f:lineNumbering(.,'everyNth')"/>
+  <xsl:variable name="width"     select="f:lineNumbering(.,'width')"/>
+  <xsl:variable name="padchar"   select="f:lineNumbering(.,'padchar')"/>
+  <xsl:variable name="separator" select="f:lineNumbering(.,'separator')"/>
 
   <xsl:variable name="expanded-text" as="node()*">
     <xsl:for-each select="node()">
@@ -195,7 +215,12 @@ ordinary, straightforward manner.</para>
 
   <xsl:variable name="pl-removed-lines" as="node()*">
     <xsl:apply-templates select="$pl-lines"
-			 mode="mp:pl-restore-lines"/>
+			 mode="mp:pl-restore-lines">
+      <xsl:with-param name="everyNth" select="$everyNth"/>
+      <xsl:with-param name="width" select="$width"/>
+      <xsl:with-param name="separator" select="$separator"/>
+      <xsl:with-param name="padchar" select="$padchar"/>
+    </xsl:apply-templates>
   </xsl:variable>
 
   <!--
@@ -210,7 +235,12 @@ ordinary, straightforward manner.</para>
     <xsl:copy>
       <xsl:copy-of select="@*"/>
       <xsl:apply-templates select="$pl-lines"
-			   mode="mp:pl-restore-lines"/>
+			   mode="mp:pl-restore-lines">
+	<xsl:with-param name="everyNth" select="$everyNth"/>
+	<xsl:with-param name="width" select="$width"/>
+	<xsl:with-param name="separator" select="$separator"/>
+	<xsl:with-param name="padchar" select="$padchar"/>
+      </xsl:apply-templates>
     </xsl:copy>
   </xsl:variable>
 
@@ -255,33 +285,36 @@ ordinary, straightforward manner.</para>
 <!-- ============================================================ -->
 
 <xsl:template match="ghost:line" mode="mp:pl-restore-lines">
+  <xsl:param name="everyNth" required="yes"/>
+  <xsl:param name="width" required="yes"/>
+  <xsl:param name="padchar" required="yes"/>
+  <xsl:param name="separator" required="yes"/>
+
   <xsl:variable name="linenumber" select="position()"/>
 
-  <xsl:if test="$linenumbering.everyNth &gt; 0">
+  <xsl:if test="$everyNth &gt; 0">
     <xsl:choose>
       <xsl:when test="$linenumber = 1
-		      or $linenumber mod $linenumbering.everyNth = 0">
+		      or $linenumber mod $everyNth = 0">
 	<xsl:variable name="numwidth"
 		      select="string-length(string($linenumber))"/>
 
 	<ghost:linenumber>
-	  <xsl:if test="$numwidth &lt; $linenumbering.width">
-	    <xsl:value-of select="f:pad($linenumbering.width - $numwidth,
-				        $linenumbering.padchar)"/>
+	  <xsl:if test="$numwidth &lt; $width">
+	    <xsl:value-of select="f:pad(xs:integer($width - $numwidth), $padchar)"/>
 	  </xsl:if>
 	  <xsl:value-of select="$linenumber"/>
 	</ghost:linenumber>
 	<ghost:linenumber-separator>
-	  <xsl:value-of select="$linenumbering.separator"/>
+	  <xsl:value-of select="$separator"/>
 	</ghost:linenumber-separator>
       </xsl:when>
       <xsl:otherwise>
 	<ghost:linenumber>
-	  <xsl:value-of select="f:pad($linenumbering.width,
-				      $linenumbering.padchar)"/>
+	  <xsl:value-of select="f:pad($width, $padchar)"/>
 	</ghost:linenumber>
 	<ghost:linenumber-separator>
-	  <xsl:value-of select="$linenumbering.separator"/>
+	  <xsl:value-of select="$separator"/>
 	</ghost:linenumber-separator>
       </xsl:otherwise>
     </xsl:choose>
