@@ -65,8 +65,8 @@
 
 <!-- ============================================================ -->
 
-  <xsl:output method="xml" encoding="utf-8" indent="no"/>
-  <xsl:output name="final" method="xhtml" encoding="utf-8" indent="no"/>
+  <xsl:output method="xml" encoding="utf-8" indent="yes"/>
+  <xsl:output name="final" method="xhtml" encoding="utf-8" indent="yes"/>
 
   <xsl:param name="stylesheet.result.type" select="'xhtml'"/>
   <xsl:param name="input" select="/"/>
