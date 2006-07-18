@@ -172,12 +172,14 @@
 </xsl:template>
 
 <xsl:template match="db:callout">
+  <xsl:variable name="doc" select="/"/>
+
   <tr class="callout-row">
     <td class="callout-bug" valign="baseline" align="left">
       <p>
 	<xsl:call-template name="id"/>
 	<xsl:for-each select="tokenize(@arearefs,'\s')">
-	  <xsl:variable name="target" select="key('id',.,$input)[1]"/>
+	  <xsl:variable name="target" select="key('id',.,$doc)[1]"/>
 
 	  <xsl:choose>
 	    <xsl:when test="count($target)=0">
@@ -188,7 +190,7 @@
 	      <xsl:text>???</xsl:text>
 	    </xsl:when>
 	    <xsl:when test="$target/self::db:co">
-	      <a href="{f:href($input,$target)}">
+	      <a href="{f:href($doc,$target)}">
 		<xsl:apply-templates select="$target" mode="m:callout-bug"/>
 	      </a>
 	      <xsl:text>&#160;</xsl:text>
