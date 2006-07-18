@@ -850,9 +850,12 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
   <xsl:variable name="filename" select="f:mediaobject-filename(..)"/>
 
   <xsl:choose>
-    <xsl:when test="@format='linespecific'">
+    <xsl:when test="@format='linespecific' and $textdata.default.encoding != ''">
       <xsl:value-of select="unparsed-text($filename,
 			                  $textdata.default.encoding)"/>
+    </xsl:when>
+    <xsl:when test="@format='linespecific'">
+      <xsl:value-of select="unparsed-text($filename)"/>
     </xsl:when>
 
     <xsl:otherwise>
@@ -941,7 +944,9 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
     </xsl:choose>
   </xsl:variable>
 
-  <xsl:value-of select="unparsed-text($filename, $encoding)"/>
+  <xsl:value-of select="if ($encoding = '')
+			then unparsed-text($filename)
+			else unparsed-text($filename, $encoding)"/>
 </xsl:template>
 
 <!-- ==================================================================== -->
