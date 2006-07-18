@@ -22,6 +22,7 @@
 <xsl:param name="linenumbering" as="element()*">
 <ln path="literallayout" everyNth="2" width="3" separator="" padchar=" "/>
 <ln path="programlisting" everyNth="2" width="3" separator="" padchar=" "/>
+<ln path="programlistingco" everyNth="2" width="3" separator="" padchar=" "/>
 <ln path="screen" everyNth="2" width="3" separator="" padchar=" "/>
 <ln path="synopsis" everyNth="2" width="3" separator="" padchar=" "/>
 <ln path="address" everyNth="0"/>
@@ -231,28 +232,11 @@ ordinary, straightforward manner.</para>
   </xsl:message>
   -->
 
-  <xsl:variable name="result" as="element()">
-    <xsl:copy>
-      <xsl:copy-of select="@*"/>
-      <xsl:apply-templates select="$pl-lines"
-			   mode="mp:pl-restore-lines">
-	<xsl:with-param name="everyNth" select="$everyNth"/>
-	<xsl:with-param name="width" select="$width"/>
-	<xsl:with-param name="separator" select="$separator"/>
-	<xsl:with-param name="padchar" select="$padchar"/>
-      </xsl:apply-templates>
-    </xsl:copy>
-  </xsl:variable>
-
-  <!--
-  <xsl:message>
-    <RESULT>
-      <xsl:copy-of select="$result"/>
-    </RESULT>
-  </xsl:message>
-  -->
-
-  <xsl:apply-templates select="$result" mode="mp:pl-cleanup"/>
+  <xsl:copy>
+    <xsl:copy-of select="@*"/>
+    <xsl:apply-templates select="$pl-removed-lines"
+			 mode="mp:pl-cleanup"/>
+  </xsl:copy>
 </xsl:template>
 
 <!-- ============================================================ -->
