@@ -27,7 +27,7 @@
                                    and not(self::db:qandaentry)]"/>
 
     <xsl:if test="db:qandaentry">
-      <table class="qandaentries" border="0">
+      <table class="qandaentries" border="0" summary="Q&amp;A Set">
 	<xsl:apply-templates select="db:qandaentry"/>
       </table>
     </xsl:if>
