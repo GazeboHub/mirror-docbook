@@ -652,7 +652,7 @@ on the <parameter>pixels.per.inch</parameter> parameter.</para>
     </xsl:for-each>
   </xsl:variable>
 
-  <colgroup>
+  <colgroup xmlns="http://www.w3.org/1999/xhtml">
     <xsl:choose>
       <xsl:when test="sum($parsedcols/@ghost:rel) = 0">
 	<xsl:for-each select="$parsedcols">
