@@ -20,11 +20,11 @@
 <xsl:param name="verbatim.trim.blank.lines" select="1"/>
 
 <xsl:param name="linenumbering" as="element()*">
-<ln path="literallayout" everyNth="2" width="3" separator="" padchar=" "/>
-<ln path="programlisting" everyNth="2" width="3" separator="" padchar=" "/>
-<ln path="programlistingco" everyNth="2" width="3" separator="" padchar=" "/>
-<ln path="screen" everyNth="2" width="3" separator="" padchar=" "/>
-<ln path="synopsis" everyNth="2" width="3" separator="" padchar=" "/>
+<ln path="literallayout" everyNth="2" width="3" separator="" padchar=" " minlines="3"/>
+<ln path="programlisting" everyNth="2" width="3" separator="" padchar=" " minlines="3"/>
+<ln path="programlistingco" everyNth="2" width="3" separator="" padchar=" " minlines="3"/>
+<ln path="screen" everyNth="2" width="3" separator="" padchar=" " minlines="3"/>
+<ln path="synopsis" everyNth="2" width="3" separator="" padchar=" " minlines="3"/>
 <ln path="address" everyNth="0"/>
 <ln path="epigraph/literallayout" everyNth="0"/>
 </xsl:param>
@@ -142,6 +142,7 @@ ordinary, straightforward manner.</para>
   <xsl:variable name="width"     select="f:lineNumbering(.,'width')"/>
   <xsl:variable name="padchar"   select="f:lineNumbering(.,'padchar')"/>
   <xsl:variable name="separator" select="f:lineNumbering(.,'separator')"/>
+  <xsl:variable name="minlines"  select="f:lineNumbering(.,'minlines')"/>
 
   <xsl:variable name="expanded-text" as="node()*">
     <xsl:for-each select="node()">
@@ -215,13 +216,27 @@ ordinary, straightforward manner.</para>
   -->
 
   <xsl:variable name="pl-removed-lines" as="node()*">
-    <xsl:apply-templates select="$pl-lines"
-			 mode="mp:pl-restore-lines">
-      <xsl:with-param name="everyNth" select="$everyNth"/>
-      <xsl:with-param name="width" select="$width"/>
-      <xsl:with-param name="separator" select="$separator"/>
-      <xsl:with-param name="padchar" select="$padchar"/>
-    </xsl:apply-templates>
+    <xsl:choose>
+      <xsl:when test="$everyNth &gt; 0
+	              and count($pl-lines) &gt;= $minlines">
+	<xsl:apply-templates select="$pl-lines"
+			     mode="mp:pl-restore-lines">
+	  <xsl:with-param name="everyNth" select="$everyNth"/>
+	  <xsl:with-param name="width" select="$width"/>
+	  <xsl:with-param name="separator" select="$separator"/>
+	  <xsl:with-param name="padchar" select="$padchar"/>
+	</xsl:apply-templates>
+      </xsl:when>
+      <xsl:otherwise>
+	<xsl:apply-templates select="$pl-lines"
+			     mode="mp:pl-restore-lines">
+	  <xsl:with-param name="everyNth" select="0"/>
+	  <xsl:with-param name="width" select="$width"/>
+	  <xsl:with-param name="separator" select="$separator"/>
+	  <xsl:with-param name="padchar" select="$padchar"/>
+	</xsl:apply-templates>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:variable>
 
   <!--
