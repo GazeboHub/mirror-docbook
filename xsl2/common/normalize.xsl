@@ -333,9 +333,9 @@ necessary.</para>
 	    <xsl:element name="info" namespace="{$docbook-namespace}">
 	      <xsl:copy-of select="db:info/@*"/>
 	      <xsl:element name="title" namespace="{$docbook-namespace}">
-		<xsl:call-template name="gentext">
-		  <xsl:with-param name="key" select="$title-key"/>
-		</xsl:call-template>
+		<xsl:apply-templates select="." mode="n:normalized-title">
+		  <xsl:with-param name="title-key" select="$title-key"/>
+		</xsl:apply-templates>
 	      </xsl:element>
 	      <xsl:copy-of select="db:info/preceding-sibling::node()"/>
 	      <xsl:copy-of select="db:info/*"/>
@@ -347,9 +347,9 @@ necessary.</para>
 	    <xsl:variable name="node-tree">
 	      <xsl:element name="title" namespace="{$docbook-namespace}">
 		<xsl:attribute name="ghost:title" select="'yes'"/>
-		<xsl:call-template name="gentext">
-		  <xsl:with-param name="key" select="$title-key"/>
-		</xsl:call-template>
+		<xsl:apply-templates select="." mode="n:normalized-title">
+		  <xsl:with-param name="title-key" select="$title-key"/>
+		</xsl:apply-templates>
 	      </xsl:element>
 	    </xsl:variable>
 
@@ -364,6 +364,13 @@ necessary.</para>
       </xsl:copy>
     </xsl:otherwise>
   </xsl:choose>
+</xsl:template>
+
+<xsl:template match="*" mode="n:normalized-title">
+  <xsl:param name="title-key"/>
+  <xsl:call-template name="gentext">
+    <xsl:with-param name="key" select="$title-key"/>
+  </xsl:call-template>
 </xsl:template>
 
 <xsl:template match="db:info" mode="m:normalize">
