@@ -238,8 +238,8 @@ is to be determined.</para>
 		select="f:pi($list/processing-instruction('db-xsl'), 'start')"/>
 
   <xsl:choose>
-    <xsl:when test="$list/@startinglinenumber">
-      <xsl:value-of select="$list/@startinglinenumber"/>
+    <xsl:when test="$list/@startingnumber">
+      <xsl:value-of select="$list/@startingnumber"/>
     </xsl:when>
     <xsl:when test="$pi-start">
       <xsl:value-of select="$pi-start cast as xs:integer"/>
