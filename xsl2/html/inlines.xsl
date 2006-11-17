@@ -787,13 +787,7 @@ the default is “element”.</para>
 <!-- ============================================================ -->
 
 <xsl:template match="db:foreignphrase">
-  <em class="{local-name(.)}">
-    <xsl:call-template name="id"/>
-    <xsl:if test="@lang or @xml:lang">
-      <xsl:call-template name="lang-attribute"/>
-    </xsl:if>
-    <xsl:call-template name="inline-italicseq"/>
-  </em>
+  <xsl:call-template name="inline-italicseq"/>
 </xsl:template>
 
 <xsl:template match="db:phrase">
