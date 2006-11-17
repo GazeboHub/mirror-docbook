@@ -87,5 +87,75 @@
   </fo:block>
 </db:article>
 
+<db:chapter t:side="recto">
+  <fo:block font-family="{$title.font.family} sans-serif"
+	    start-indent="0pt"
+	    text-align="center">
+
+    <fo:block font-size="&hsize5;" font-weight="bold">
+      <db:title/>
+    </fo:block>
+
+    <db:subtitle/>
+
+    <fo:block t:conditional="1"
+	      space-before="0.5em" font-size="&hsize2;">
+      <db:corpauthor/>
+    </fo:block>
+
+    <fo:block t:conditional="1"
+	      space-before="0.5em" font-size="&hsize2;">
+      <db:authorgroup/>
+    </fo:block>
+
+    <fo:block t:conditional="1"
+	      space-before="0.5em" font-size="&hsize2;">
+      <db:author/>
+    </fo:block>
+
+    <fo:block t:conditional="1" space-before="0.5em">
+      <db:othercredit/>
+    </fo:block>
+
+    <fo:block t:conditional="1" space-before="0.5em">
+      <db:releaseinfo/>
+    </fo:block>
+
+    <fo:block t:conditional="1" space-before="0.5em">
+      <db:copyright/>
+    </fo:block>
+
+    <fo:block t:conditional="1"
+	      font-family="{$body.font.family}"
+	      text-align="start"
+	      space-before="0.5em"
+	      margin-left="0.5in"
+	      margin-right="0.5in">
+      <db:legalnotice/>
+    </fo:block>
+
+    <fo:block t:conditional="1" space-before="0.5em">
+      <db:pubdate/>
+    </fo:block>
+
+    <fo:block t:conditional="1" space-before="0.5em">
+      <db:revision/>
+    </fo:block>
+
+    <fo:block t:conditional="1" space-before="0.5em">
+      <db:revhistory/>
+    </fo:block>
+
+    <fo:block t:conditional="1"
+              font-family="{$body.fontset}"
+	      text-align="start"
+	      space-before="0.5em"
+	      margin-left="0.5in"
+              margin-right="0.5in">
+      <db:abstract/>
+    </fo:block>
+  </fo:block>
+</db:chapter>
+
 </t:titlepages>
 
