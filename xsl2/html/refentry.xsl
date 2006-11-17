@@ -77,6 +77,10 @@
 
 <xsl:template match="db:refmeta"/>
 
+<xsl:template match="db:refentrytitle">
+  <xsl:apply-templates/>
+</xsl:template>
+
 <xsl:template match="db:refname">
   <span class="{local-name(.)}">
     <xsl:apply-templates/>
