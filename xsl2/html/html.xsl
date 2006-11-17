@@ -216,6 +216,20 @@ of the stylesheet is inserted directly.</para>
 
 <!-- ====================================================================== -->
 
+<doc:template name="t:body-attributes" xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Template for inserting attributes on the HTML body</refpurpose>
+
+<refdescription>
+<para>T.B.D.</para>
+</refdescription>
+</doc:template>
+
+<xsl:template name="t:body-attributes">
+  <!-- nop -->
+</xsl:template>
+
+<!-- ====================================================================== -->
+
 <doc:function name="f:href" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns a URI for the node</refpurpose>
 

@@ -100,6 +100,7 @@
 	  <xsl:call-template name="javascript"/>
 	</head>
 	<body>
+	  <xsl:call-template name="t:body-attributes"/>
 	  <xsl:if test="@status">
 	    <xsl:attribute name="class" select="@status"/>
 	  </xsl:if>
