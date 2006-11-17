@@ -205,7 +205,7 @@ attribute or a <tag class="attribute">linkend</tag> attribute</para>
 	    </xsl:choose>
 	  </xsl:with-param>
 	</xsl:apply-templates>
-      </a>
+	</a>
 
       <xsl:apply-templates select="$target" mode="m:xref-to-suffix"/>
     </xsl:otherwise>
