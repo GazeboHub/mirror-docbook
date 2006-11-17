@@ -15,6 +15,7 @@
   <xsl:include href="../common/gentext.xsl"/>
   <xsl:include href="../common/normalize.xsl"/>
   <xsl:include href="../common/root.xsl"/>
+  <xsl:include href="../common/verbatim.xsl"/>
   <xsl:include href="../common/functions.xsl"/>
   <xsl:include href="../common/common.xsl"/>
   <xsl:include href="../common/titlepages.xsl"/>
@@ -55,8 +56,8 @@
   <xsl:include href="qandaset.xsl"/>
 -->
   <xsl:include href="inlines.xsl"/>
-<!--
   <xsl:include href="xref.xsl"/>
+<!--
   <xsl:include href="math.xsl"/>
   <xsl:include href="html.xsl"/>
   <xsl:include href="index.xsl"/>
