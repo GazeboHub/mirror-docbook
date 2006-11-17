@@ -44,6 +44,7 @@ HTML=$(patsubst %.xml,%.html,$(XML))
 .PHONY: tests
 
 STYLE=$(wildcard common/*.xsl) $(wildcard html/*.xsl)
+FOSTYLE=$(wildcard common/*.xsl) $(wildcard fo/*.xsl)
 
 all:
 	@echo Run 'make base' or 'make tests' or 'make xxx.html'
@@ -65,7 +66,14 @@ clean:
 tests: $(HTML)
 
 %.html : %.xml $(STYLE)
-	saxon -8b $(DEBUG) $< html/docbook.xsl output/$@
+	saxon $(DEBUG) $< html/docbook.xsl output/$@
+
+%.fo: %.xml $(FOSTYLE)
+	saxon $(DEBUG) $< fo/docbook.xsl $@
+
+%.pdf: %.fo
+	xep -q $<
+	evince $@
 
 glossary.002.html: glossary.002.xml glossary.002.data.xml $(STYLE)
 	saxon -8b $(DEBUG) $< html/docbook.xsl output/$@ glossary.collection=glossary.002.data.xml
