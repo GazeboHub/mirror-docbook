@@ -15,7 +15,7 @@ xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
 xmlns:u="http://nwalsh.com/xsl/unittests#"
 -->
 
-<xsl:import href="../../xsl2/html/docbook.xsl"/>
+<xsl:import href="../../base/html/docbook.xsl"/>
 
 <xsl:output
     method="xhtml"
