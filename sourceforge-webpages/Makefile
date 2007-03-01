@@ -1,5 +1,5 @@
 # $Id$
-include ../cvstools/Makefile.incl
+include ../buildtools/Makefile.incl
 
 ZIP=zip
 ZIP_FLAGS=-rpD 
