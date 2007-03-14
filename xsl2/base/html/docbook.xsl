@@ -87,6 +87,12 @@
 	      <xsl:when test="db:info/db:title">
 		<xsl:value-of select="db:info/db:title"/>
 	      </xsl:when>
+	      <xsl:when test="db:refmeta/db:refentrytitle">
+		<xsl:value-of select="db:refmeta/db:refentrytitle"/>
+	      </xsl:when>
+	      <xsl:when test="db:refmeta/db:refnamediv/db:refname">
+		<xsl:value-of select="db:refmeta/db:refnamediv/db:refname"/>
+	      </xsl:when>
 	      <xsl:otherwise>
 		<xsl:text>???</xsl:text>
 		<xsl:message>
