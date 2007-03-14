@@ -20,9 +20,9 @@
 <xsl:param name="verbatim.trim.blank.lines" select="1"/>
 
 <xsl:param name="linenumbering" as="element()*">
-<ln path="literallayout" everyNth="2" width="3" separator="" padchar=" " minlines="3"/>
-<ln path="programlisting" everyNth="2" width="3" separator="" padchar=" " minlines="3"/>
-<ln path="programlistingco" everyNth="2" width="3" separator="" padchar=" " minlines="3"/>
+<ln path="literallayout" everyNth="2" width="3" separator=" " padchar=" " minlines="3"/>
+<ln path="programlisting" everyNth="2" width="3" separator=" " padchar=" " minlines="3"/>
+<ln path="programlistingco" everyNth="2" width="3" separator=" " padchar=" " minlines="3"/>
 <ln path="screen" everyNth="2" width="3" separator="" padchar=" " minlines="3"/>
 <ln path="synopsis" everyNth="2" width="3" separator="" padchar=" " minlines="3"/>
 <ln path="address" everyNth="0"/>
