@@ -2089,8 +2089,7 @@
                     starts-with($master-reference, 'lot') or
                     starts-with($master-reference, 'front') or
                     $element = 'preface' or
-                    (starts-with($master-reference, 'back') and
-                    $element = 'appendix')">
+		    (starts-with($master-reference, 'back') and $element = 'appendix')">
       <xsl:attribute name="start-indent">
         <xsl:value-of select="$body.start.indent"/>
       </xsl:attribute>

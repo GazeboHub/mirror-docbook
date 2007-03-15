@@ -105,6 +105,17 @@ an element that occurs in the source document.</para>
 
   <xsl:variable name="content" select="$info[f:node-matches($this,.)]"/>
 
+  <!--
+  <xsl:message>
+    <xsl:text>titlepage-templates for: </xsl:text>
+    <xsl:value-of select="name(.)"/>
+  </xsl:message>
+
+  <xsl:message>
+    <xsl:copy-of select="$content"/>
+  </xsl:message>
+  -->
+
   <xsl:if test="$content">
     <xsl:apply-templates select="$content" mode="m:titlepage-mode"/>
   </xsl:if>

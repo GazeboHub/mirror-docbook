@@ -262,6 +262,11 @@ Any element processed in this mode should return its formatted title.
     <xsl:apply-templates select="." mode="m:object-title-template"/>
   </xsl:variable>
 
+  <!--
+  <xsl:message>object title markup for <xsl:value-of select="name(.)"/></xsl:message>
+  <xsl:message><xsl:value-of select="$template"/></xsl:message>
+  -->
+
   <xsl:call-template name="substitute-markup">
     <xsl:with-param name="allow-anchors" select="$allow-anchors"/>
     <xsl:with-param name="template" select="$template"/>
@@ -576,6 +581,9 @@ a cross-reference.</para>
       <xsl:value-of select="substring-before($template, '%')"/>
       <xsl:variable name="candidate"
              select="substring(substring-after($template, '%'), 1, 1)"/>
+
+      <xsl:comment>candidate: <xsl:value-of select="$candidate"/></xsl:comment>
+
       <xsl:choose>
         <xsl:when test="$candidate = 't'">
           <xsl:apply-templates select="." mode="m:insert-title-markup">
@@ -703,6 +711,9 @@ a cross-reference.</para>
           <xsl:text>%</xsl:text><xsl:value-of select="$candidate"/>
         </xsl:otherwise>
       </xsl:choose>
+
+      <xsl:comment>end candidate: <xsl:value-of select="$candidate"/></xsl:comment>
+
       <!-- recurse with the rest of the template string -->
       <xsl:variable name="rest"
             select="substring($template,

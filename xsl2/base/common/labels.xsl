@@ -101,6 +101,12 @@ processed in this mode should generate their label.</para>
       <xsl:otherwise>1</xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
+  
+  <!--
+  <xsl:message>label-markup for <xsl:value-of select="name(.)"/></xsl:message>
+  <xsl:message>label: <xsl:copy-of select="$label"/></xsl:message>
+  <xsl:message>format: <xsl:value-of select="$format"/></xsl:message>
+  -->
 
   <xsl:choose>
     <xsl:when test="@label">
@@ -132,7 +138,9 @@ processed in this mode should generate their label.</para>
 	  <xsl:number from="db:book" format="{$format}" level="any"/>
         </xsl:when>
         <xsl:otherwise>
+	  <xsl:comment>label: </xsl:comment>
 	  <xsl:number format="{$format}" level="any"/>
+	  <xsl:comment>:label</xsl:comment>
         </xsl:otherwise>
       </xsl:choose>
     </xsl:when>

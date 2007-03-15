@@ -28,6 +28,7 @@ URILIST = \
 ./\ http://docbook.sourceforge.net/release/xsl2/current/
 
 DEBUG=
+PDFVIEWER=evince
 
 DIRS=common extensions html fo schemas
 
@@ -43,8 +44,8 @@ HTML=$(patsubst %.xml,%.html,$(XML))
 
 .PHONY: tests
 
-STYLE=$(wildcard common/*.xsl) $(wildcard html/*.xsl)
-FOSTYLE=$(wildcard common/*.xsl) $(wildcard fo/*.xsl)
+STYLE=$(wildcard common/*.xsl) $(wildcard base/html/*.xsl)
+FOSTYLE=$(wildcard common/*.xsl) $(wildcard base/fo/*.xsl)
 
 all:
 	@echo Run 'make base' or 'make tests' or 'make xxx.html'
@@ -66,19 +67,20 @@ clean:
 tests: $(HTML)
 
 %.html : %.xml $(STYLE)
-	saxon $(DEBUG) $< html/docbook.xsl output/$@
+	saxon $(DEBUG) $< base/html/docbook.xsl output/$@
 
 %.fo: %.xml $(FOSTYLE)
-	saxon $(DEBUG) $< fo/docbook.xsl $@
+	saxon $(DEBUG) $< base/fo/docbook.xsl $@
+	saxon $@ tools/prettyprint.xsl $@.xml
 
 %.pdf: %.fo
 	xep -q $<
-	evince $@
+	$(PDFVIEWER) $@
 
 glossary.002.html: glossary.002.xml glossary.002.data.xml $(STYLE)
-	saxon -8b $(DEBUG) $< html/docbook.xsl output/$@ glossary.collection=glossary.002.data.xml
+	saxon -8b $(DEBUG) $< base/html/docbook.xsl output/$@ glossary.collection=glossary.002.data.xml
 
 part.001.html: part.001.xml glossary.002.data.xml $(STYLE)
-	saxon -8b $(DEBUG) $< html/docbook.xsl output/$@ glossary.collection=glossary.002.data.xml
+	saxon -8b $(DEBUG) $< base/html/docbook.xsl output/$@ glossary.collection=glossary.002.data.xml
 
 include ../releasetools/Targets.mk

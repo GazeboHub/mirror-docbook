@@ -59,4 +59,81 @@ in this mode should generate its title.</para>
 
 <!-- ==================================================================== -->
 
+<doc:mode name="m:insert-subtitle-markup" xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Mode for inserting subtitle markup</refpurpose>
+
+<refdescription>
+<para>This mode is used to insert subtitle markup. Any element processed
+in this mode should generate its subtitle.</para>
+</refdescription>
+</doc:mode>
+
+<xsl:template match="*" mode="m:insert-subtitle-markup">
+  <xsl:param name="purpose"/>
+  <xsl:param name="xrefstyle"/>
+  <xsl:param name="subtitle"/>
+
+  <xsl:copy-of select="$subtitle"/>
+</xsl:template>
+
+<!-- ==================================================================== -->
+
+<doc:mode name="m:insert-label-markup" xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Mode for inserting label markup</refpurpose>
+
+<refdescription>
+<para>This mode is used to insert label markup. Any element processed
+in this mode should generate its label (number).</para>
+</refdescription>
+</doc:mode>
+
+<xsl:template match="*" mode="m:insert-label-markup">
+  <xsl:param name="purpose"/>
+  <xsl:param name="xrefstyle"/>
+  <xsl:param name="label"/>
+
+  <xsl:copy-of select="$label"/>
+</xsl:template>
+
+<!-- ==================================================================== -->
+
+<doc:mode name="m:insert-pagenumber-markup"
+	  xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Mode for inserting page number markup</refpurpose>
+
+<refdescription>
+<para>This mode is used to insert page number markup. Any element processed
+in this mode should generate its page number.</para>
+</refdescription>
+</doc:mode>
+
+<xsl:template match="*" mode="m:insert-pagenumber-markup">
+  <xsl:param name="purpose"/>
+  <xsl:param name="xrefstyle"/>
+  <xsl:param name="pagenumber"/>
+
+  <xsl:copy-of select="$pagenumber"/>
+</xsl:template>
+
+<!-- ==================================================================== -->
+
+<doc:mode name="m:insert-direction-markup"
+	  xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Mode for inserting “direction” markup</refpurpose>
+
+<refdescription>
+<para>This mode is used to insert “direction”. Any element processed
+in this mode should generate its direction number. The direction is
+calculated from a reference and a referent (above or below, for example).</para>
+</refdescription>
+</doc:mode>
+
+<xsl:template match="*" mode="m:insert-direction-markup">
+  <xsl:param name="purpose"/>
+  <xsl:param name="xrefstyle"/>
+  <xsl:param name="direction"/>
+
+  <xsl:copy-of select="$direction"/>
+</xsl:template>
+
 </xsl:stylesheet>
