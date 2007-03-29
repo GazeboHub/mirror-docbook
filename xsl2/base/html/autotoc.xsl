@@ -8,7 +8,8 @@
                 xmlns:h="http://www.w3.org/1999/xhtml"
                 xmlns:m="http://docbook.org/xslt/ns/mode"
                 xmlns:t="http://docbook.org/xslt/ns/template"
-		exclude-result-prefixes="db doc f fn h m t"
+                xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		exclude-result-prefixes="db doc f fn h m t xs"
                 version="2.0">
 
 <!-- ********************************************************************
@@ -422,7 +423,7 @@ section.</para>
   <xsl:param name="toc-context" select="."/>
   <xsl:param name="nodes" select="()"/>
 
-  <xsl:variable name="subtoc">
+  <xsl:variable name="subtoc" as="element()">
     <xsl:element name="{$toc.list.type}">
       <xsl:attribute name="class" select="'toc'"/>
       <xsl:apply-templates mode="m:toc" select="$nodes">
@@ -431,7 +432,7 @@ section.</para>
     </xsl:element>
   </xsl:variable>
 
-  <xsl:variable name="depth">
+  <xsl:variable name="depth" as="xs:integer">
     <xsl:choose>
       <xsl:when test="self::db:section">
         <xsl:value-of select="count(ancestor::db:section) + 1"/>
@@ -475,25 +476,28 @@ section.</para>
       </xsl:when>
       <xsl:otherwise>
         <xsl:element name="{$toc.dd.type}">
-          <xsl:copy-of select="$subtoc"/>
-        </xsl:element>
+	  <xsl:copy-of select="$subtoc"/>
+	</xsl:element>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
 
+  <xsl:variable name="show.subtoc" as="xs:boolean"
+		select="count($subtoc/*) &gt; 0
+			and $toc.section.depth > $depth and exists($nodes)
+			and $toc.max.depth > $depth.from.context"/>
+  
   <xsl:element name="{$toc.listitem.type}">
     <xsl:call-template name="toc-line">
       <xsl:with-param name="toc-context" select="$toc-context"/>
     </xsl:call-template>
-    <xsl:if test="$toc.listitem.type = 'li'
-                  and $toc.section.depth > $depth and exists($nodes)
-                  and $toc.max.depth > $depth.from.context">
+
+    <xsl:if test="$toc.listitem.type = 'li' and $show.subtoc">
       <xsl:copy-of select="$subtoc.list"/>
     </xsl:if>
   </xsl:element>
-  <xsl:if test="$toc.listitem.type != 'li'
-                and $toc.section.depth > $depth and exists($nodes)
-                and $toc.max.depth > $depth.from.context">
+
+  <xsl:if test="$toc.listitem.type != 'li' and $show.subtoc">
     <xsl:copy-of select="$subtoc.list"/>
   </xsl:if>
 </xsl:template>
