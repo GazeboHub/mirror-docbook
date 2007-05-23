@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Usage:
+    build html(zh) output: ant html
+    build pdf(zh) output:  ant pdf
+
+    build html(en) output: ant html.en
+    build pdf(en) output:  ant pdf.en
+
+    build all output: ant all
+
+Dependency:
+    *) python 2.4+
+    *) python-libxml2 2.6.27+
+    *) xsltproc 1.1.20+
+    *) gettext 0.16+
+    *) jdk 1.4.2+
+    *) ant 1.7+
+    *) fop trunk r+
+    *) For windows user, you can download gettext & xsltproc binary from:
+        http://i18n-zh.googlecode.com/files/gettext-0.16.1_xsltproc-1.1.20.tar.bz2
+
+description:
+    *) add dependency software
+    *) copy build.tmpl.properties to build.properties, and adjust build.properties
+    *) start building ...
+
+TODO:
+    *) Add Multi-Language support
+    *) Add chm output
+    *) ...
+
+Author：
+    *) Dongsheng Song <dongsheng.song@gmail.com>, 2007
+
+-->
+<project name="docbook" default="html">
+
+    <property file="build.properties"/>
+
+    <path id="lib.classpath">
+        <fileset dir="${fop.dir}/build">
+            <include name="**/*.jar"/>
+        </fileset>
+        <fileset dir="${fop.dir}/lib">
+            <include name="**/*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="all">
+        <antcall target="html.en"/>
+        <antcall target="pdf.en"/>
+        <antcall target="html"/>
+        <antcall target="pdf"/>
+    </target>
+
+    <target name="clean">
+        <delete dir="build"/>
+        <delete file="../en/bookinfo.xml"/>
+        <delete file="stylesheets/html-import.xsl"/>
+        <delete file="stylesheets/fo-import.xsl"/>
+    </target>
+
+    <target name="profile.init">
+        <uptodate property="profile.isUpToDate" targetfile="build/en/${doc.name}.xml">
+            <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
+            <srcfiles dir="../en/src" includes="*.xml"/>
+            <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
+        </uptodate>
+    </target>
+
+    <target name="profile" depends="profile.init" unless="profile.isUpToDate" >
+
+        <filter token="docbook5.xsl" value="${docbook5.xsl}"/>
+        <copy file="stylesheets/html-import.tmpl.xsl" tofile="stylesheets/html-import.xsl" filtering="true" overwrite="true"/>
+        <copy file="stylesheets/fo-import.tmpl.xsl" tofile="stylesheets/fo-import.xsl" filtering="true" overwrite="true"/>
+
+        <mkdir dir="build/en"/>
+        <copy todir="build/en/figures">
+            <fileset dir="../en/figures" includes="*.png"/>
+        </copy>
+
+        <!-- omit elements reference for a while -->
+        <copy file="list-elements.xml" todir="../en/refpages"/>
+
+        <exec dir="." executable="xsltproc">
+            <arg value="--nonet"/>
+            <arg value="--output"/>
+            <arg value="../en/bookinfo.xml"/>
+            <arg value="../en/VERSION.xml"/>
+            <arg value="../en/VERSION.xml"/>
+        </exec>
+
+        <exec dir="." executable="xmllint">
+            <arg value="--nonet"/>
+            <arg value="--xinclude"/>
+            <arg value="--output"/>
+            <arg value="build/en/${doc.name}.xml"/>
+            <arg value="../en/book.xml"/>
+        </exec>
+    </target>
+
+    <target name="pot.init">
+        <uptodate property="pot.isUpToDate" targetfile="po/${doc.name}.pot">
+            <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
+            <srcfiles dir="../en/src" includes="*.xml"/>
+            <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
+        </uptodate>
+    </target>
+
+    <target name="pot" depends="pot.init,profile" unless="pot.isUpToDate" >
+        <exec dir="." executable="python">
+            <arg value="xml2po.py"/>
+            <arg value="-e"/>
+            <arg value="-o"/>
+            <arg value="po/${doc.name}.pot"/>
+            <arg value="build/en/${doc.name}.xml"/>
+        </exec>
+        <exec dir="." executable="msgmerge">
+            <arg value="--no-wrap"/>
+            <arg value="-o"/>
+            <arg value="po/zh_CN.po.new"/>
+            <arg value="po/zh_CN.po"/>
+            <arg value="po/${doc.name}.pot"/>
+        </exec>
+        <move file="po/zh_CN.po.new" tofile="po/zh_CN.po"/>
+    </target>
+
+    <target name="translate.init" depends="pot">
+        <uptodate property="translate.isUpToDate" targetfile="build/zh/${doc.name}.xml">
+            <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
+            <srcfiles dir="../en/src" includes="*.xml"/>
+            <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
+            <srcfiles dir="po" includes="zh_CN.po"/>
+        </uptodate>
+    </target>
+
+    <target name="translate" depends="translate.init" unless="translate.isUpToDate" >
+        <mkdir dir="build/zh"/>
+        <exec dir="." executable="msgfmt">
+            <arg value="po/zh_CN.po"/>
+            <arg value="-o"/>
+            <arg value="po/zh_CN.mo"/>
+        </exec>
+        <exec dir="." executable="python">
+            <arg value="xml2po.py"/>
+            <arg value="-l"/>
+            <arg value="zh-cn"/>
+            <arg value="-t"/>
+            <arg value="po/zh_CN.mo"/>
+            <arg value="-o"/>
+            <arg value="build/zh/${doc.name}.xml"/>
+            <arg value="build/en/${doc.name}.xml"/>
+        </exec>
+    </target>
+
+    <target name="html" depends="translate">
+        <mkdir dir="build/zh/html"/>
+        <copy file="stylesheets/defguide.css" todir="build/zh/html"/>
+
+        <exec dir="build/zh/html" executable="xsltproc">
+            <arg value="--nonet"/>
+            <arg value="../../../stylesheets/html.xsl"/>
+            <arg value="../${doc.name}.xml"/>
+        </exec>
+
+    </target>
+
+    <target name="pdf" depends="translate">
+        <copy todir="build/zh/pdf">
+            <fileset dir="${fonts.dir}">
+                <include name="*.ttf"/>
+                <include name="*.ttc"/>
+            </fileset>
+            <fileset dir="${fop.dir}/conf">
+                <include name="*.xml"/>
+            </fileset>
+        </copy>
+
+        <exec dir="." executable="xsltproc">
+            <arg value="--nonet"/>
+            <arg value="--output"/>
+            <arg value="build/zh/pdf/${doc.name}.fo"/>
+            <arg value="stylesheets/zh_CN/fo.xsl"/>
+            <arg value="build/zh/${doc.name}.xml"/>
+        </exec>
+
+        <java classname="org.apache.fop.cli.Main" fork="true" dir="build/zh/pdf" maxmemory="512m" >
+            <classpath refid="lib.classpath"/>
+            <arg value="-c"/>
+            <arg value="userconfig.xml"/>
+            <arg value="${doc.name}.fo"/>
+            <arg value="${doc.name}.pdf"/>
+        </java>
+
+        <delete>
+            <fileset dir="build/zh/pdf" excludes="**/*.pdf, **/*.fo"/>
+        </delete>
+    </target>
+
+    <target name="html.en" depends="profile">
+        <mkdir dir="build/en/html"/>
+
+        <exec dir="build/en/html" executable="xsltproc">
+            <arg value="--nonet"/>
+            <arg value="../../../stylesheets/html.xsl"/>
+            <arg value="../${doc.name}.xml"/>
+        </exec>
+
+        <copy file="stylesheets/defguide.css" todir="build/en/html"/>
+    </target>
+
+    <target name="pdf.en" depends="profile">
+        <mkdir dir="build/en/pdf"/>
+
+        <exec dir="." executable="xsltproc">
+            <arg value="--nonet"/>
+            <arg value="--output"/>
+            <arg value="build/en/pdf/${doc.name}.fo"/>
+            <arg value="stylesheets/fo.xsl"/>
+            <arg value="build/en/${doc.name}.xml"/>
+        </exec>
+
+        <java classname="org.apache.fop.cli.Main" fork="true"
+                dir="." maxmemory="512m" >
+            <classpath refid="lib.classpath"/>
+            <arg value="build/en/pdf/${doc.name}.fo"/>
+            <arg value="build/en/pdf/${doc.name}.pdf"/>
+        </java>
+
+        <delete>
+            <fileset dir="build/en/pdf" excludes="**/*.pdf, **/*.fo"/>
+        </delete>
+    </target>
+
+</project>
