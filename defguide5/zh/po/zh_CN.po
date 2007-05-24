@@ -17,7 +17,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: defguide5 0.0.x\n"
-"POT-Creation-Date: 2007-05-22 16:06China Standard Time\n"
+"POT-Creation-Date: 2007-05-24 17:18+0800\n"
 "PO-Revision-Date: 2007-05-17 17:20+0800\n"
 "Last-Translator: Dongsheng Song <dongsheng.song@gmail.com>\n"
 "Language-Team: zh_CN <i18n-zh@googlegroups.com >\n"
@@ -105,12 +105,12 @@ msgid "October 1999: First Edition."
 msgstr "1999 年 10 月：第一版"
 
 #: build/en/defguide5.xml:5(releaseinfo)
-msgid "0.0.20 for DocBook V5.0CR3"
-msgstr "版本 0.0.20，针对 DocBook V5.0CR3"
+msgid "0.0.21 for DocBook V5.0CR4"
+msgstr "版本 0.0.21，针对 DocBook V5.0CR4"
 
 #: build/en/defguide5.xml:5(pubdate)
-msgid "$Date: 2007-03-23 02:02:46 +0800 (五, 23 3月 2007) $"
-msgstr "$Date: 2007-03-23 02:02:46 +0800 $"
+msgid "$Date: 2007-05-23 02:51:07 +0800 (三, 23 5月 2007) $"
+msgstr "$Date: 2007-05-23 02:51:07 +0800 $"
 
 #: build/en/defguide5.xml:5(para)
 msgid "<citetitle>DocBook 5.0: The Definitive Guide</citetitle> Copyright © 2005–2007 Norman Walsh. Portions Copyright © 1999-2003 O'Reilly Media, Inc."
@@ -395,15 +395,15 @@ msgstr "致谢(Norm)"
 
 #: build/en/defguide5.xml:300(para)
 msgid "This book has been in the works for a long time. It could not have been completed without the help and encouragement of a lot of people, most especially my wife, Deborah, who supported me through the long hours and the late nights."
-msgstr ""
+msgstr "本书的写作花费了很长时间。如果没有许多人的帮助和鼓励，尤其是我的妻子，Deborah，支持我度过漫长的时间，直到深夜。"
 
 #: build/en/defguide5.xml:306(para)
 msgid "I also want to thank Lenny for collaborating with me and developing real prose out of my rough outlines, cryptic email messages, and scribbled notes."
-msgstr ""
+msgstr "我也想感谢 Lenny 的协作，他将我的粗糙想法，私下的电子邮件，以及涂鸦般的笔记，变为现实。"
 
 #: build/en/defguide5.xml:310(para)
 msgid "A number of people contributed technical feedback as this book was being written, in particular Terry Allen and Eve Maler. I owe most of what I know about <acronym>SGML</acronym> to them, and to the other members of the Davenport Group who answered all my questions so many years ago, especially Jon Bosak, Eduardo Guttentag, and Murray Maloney. Paul Prescod, Mark Galassi, and Dave Pawson also provided invaluable feedback on the technical review draft. It's a better book because of them."
-msgstr ""
+msgstr "本书的撰写也离不开很多人的技术反馈，尤其是 Terry Allen 和 Eve Maler。他们教我许多关于 <acronym>SGML</acronym> 的知识，多年以前 Davenport 组织的其他人就开始答复我许多问题，尤其是 Jon Bosak，Eduardo Guttentag，和 Murray Maloney。Paul Prescod，Mark Galassi，和 Dave Pawson 也对技术复审草案提供了无价的反馈。感谢他们的工作使本书变得更好。"
 
 #: build/en/defguide5.xml:321(title)
 msgid "Acknowledgements from Lenny"
@@ -411,7 +411,7 @@ msgstr "致谢(Lenny)"
 
 #: build/en/defguide5.xml:323(para)
 msgid "My gratitude goes back to Dale Dougherty and Terry Allen, who long ago encouraged me and the production department at O'Reilly to learn <acronym>SGML</acronym>; and to Lar Kaufman, who also made large contributions to my knowledge and appreciation of <acronym>SGML</acronym>. But my greatest debt of thanks goes to Norm for all that he patiently taught me about DocBook, and for his supreme graciousness in keeping me a part of this project."
-msgstr ""
+msgstr "我还要感谢 Dale Dougherty 和 Terry Allen 的鼓励，以及 O'Reilly 的产品部门教我学习 <acronym>SGML</acronym>。还有 Lar Kaufman，他教我大量的知识，尤其是 <acronym>SGML</acronym>。我最大的感谢给于 Norm，他耐心的教我 DocBook，努力使我成为这个工程的成员。"
 
 #: build/en/defguide5.xml:331(title)
 msgid "Acknowledgements from Norm and Lenny"
@@ -419,7 +419,7 @@ msgstr "致谢(Norm 和 Lenny)"
 
 #: build/en/defguide5.xml:333(para)
 msgid "Thanks finally to the great people at O'Reilly who encouraged us to write it (Frank Willison and Sheryl Avruch), agreed to edit it (Frank), helped design it (Alicia Cech, who worked on the interior design, and Edie Freeman, who designed the cover), proofed and produced it (Chris Maden, Madeline Newell, and David Futato), and indexed it (Ellen Troutman)."
-msgstr ""
+msgstr "最后感谢 O'Reilly 的鼓励我们写本书的伟大人员(Frank Willison 和 Sheryl Avruch)，同意编辑(Frank)，帮助设计(Alicia Cech 设计内部，Edie Freeman 设计封面)，检查和出版(Chris Maden，Madeline Newell，和 David Futato)，以及索引(Ellen Troutman)。"
 
 #: build/en/defguide5.xml:346(title)
 msgid "Introduction"
@@ -667,7 +667,7 @@ msgstr ""
 
 #: build/en/defguide5.xml:688(para)
 msgid "You can specify a DTD for DocBook V5.0 documents:"
-msgstr ""
+msgstr "你可以为 DocBook V5.0 文档指定 DTD："
 
 #: build/en/defguide5.xml:690(screen)
 #, no-wrap
@@ -682,11 +682,11 @@ msgstr ""
 
 #: build/en/defguide5.xml:694(para)
 msgid "But the limited constraints that can be expressed in DTDs mean that the resulting document may or may not <emphasis>really</emphasis> be valid DocBook V5.0. The normative schema for DocBook V5.0 is the RELAX NG Grammar with its Schematron annotations."
-msgstr ""
+msgstr "但是由于 DTD 的约束有限，可能导致结果文档可能是，也可能不是<emphasis>真正的</emphasis>有效的 DocBook V5.0。DocBook V5.0 的标准方案是 RELAX NG 语法和方案注释。"
 
 #: build/en/defguide5.xml:699(para)
 msgid "The only reason to use a DTD with DocBook V5.0 is if your editing environment (or other tool) requires one, for example, for syntax directed editing."
-msgstr ""
+msgstr "在 DocBook V5.0 中使用 DTD 的唯一原因是，你的编辑环境(或者其它工具)需要一个 DTD，例如语法控制的编辑。"
 
 #: build/en/defguide5.xml:705(title)
 msgid "An Internal Subset"
@@ -694,7 +694,7 @@ msgstr "内部子集"
 
 #: build/en/defguide5.xml:707(para)
 msgid "<indexterm><primary>declarations</primary><secondary>document type declaration</secondary><tertiary>XML</tertiary></indexterm><indexterm><primary>document type declaration</primary><secondary>internal subset</secondary></indexterm><indexterm><primary>internal subset</primary><secondary>XML document type declarations</secondary></indexterm><indexterm><primary>XML</primary><secondary>document type declarations</secondary><tertiary>internal subset</tertiary></indexterm>One reason to use a Document Type Declaration with DocBook V5.0 is to provide local declarations such as entities:"
-msgstr ""
+msgstr "<indexterm><primary>declarations</primary><secondary>document type declaration</secondary><tertiary>XML</tertiary></indexterm><indexterm><primary>document type declaration</primary><secondary>internal subset</secondary></indexterm><indexterm><primary>internal subset</primary><secondary>XML document type declarations</secondary></indexterm><indexterm><primary>XML</primary><secondary>document type declarations</secondary><tertiary>internal subset</tertiary></indexterm>在 DocBook V5.0 中使用 DTD 的一个理由是提供本地声明，以实体为例："
 
 #: build/en/defguide5.xml:724(screen)
 #, no-wrap
@@ -715,7 +715,7 @@ msgstr ""
 
 #: build/en/defguide5.xml:731(para)
 msgid "These declarations form what is known as the internal subset. In this example, the DTD has been omitted, but the two are not mutually exclusive. If you are using a DTD (which is technically known as the “<firstterm>external subset</firstterm>”), you can include the internal subset immediately after the DTD:"
-msgstr ""
+msgstr "这些声明格式是内部子集。在这个例子中，DTD 被省略了，但是它们并非互斥。如果使用 DTD(它技术上是”<firstterm>外部子集</firstterm>“)，你可以紧接着 DTD 包含内部子集。"
 
 #: build/en/defguide5.xml:737(screen)
 #, no-wrap
@@ -5328,82 +5328,3 @@ msgstr ""
 #: build/en/defguide5.xml:0(None)
 msgid "translator-credits"
 msgstr "Dongsheng Song <dongsheng.song@gmail.com>, 2007"
-
-#~ msgid ""
-#~ "&lt;e-i-c gi=\"para\"&gt;\n"
-#~ "  &lt;charlist&gt;\n"
-#~ "    &lt;textbrk startln=\"1\" endln=\"1\"&gt;\n"
-#~ "  &lt;/charlist&gt;\n"
-#~ "&lt;/e-i-c&gt;\n"
-#~ "\n"
-#~ "&lt;e-i-c gi=\"emphasis\"&gt;\n"
-#~ "  &lt;charlist inherit=\"1\"&gt;\n"
-#~ "    &lt;font posture=\"italic\"&gt;\n"
-#~ "  &lt;/charlist&gt;\n"
-#~ "&lt;/e-i-c&gt;\n"
-#~ "\n"
-#~ "&lt;e-i-c gi=\"emphasis\" context=\"emphasis\"&gt;\n"
-#~ "  &lt;charlist inherit=\"1\"&gt;\n"
-#~ "    &lt;font posture=\"upright\"&gt;\n"
-#~ "  &lt;/charlist&gt;\n"
-#~ "&lt;/e-i-c&gt;"
-#~ msgstr ""
-#~ "&lt;e-i-c gi=\"para\"&gt;\n"
-#~ "  &lt;charlist&gt;\n"
-#~ "    &lt;textbrk startln=\"1\" endln=\"1\"&gt;\n"
-#~ "  &lt;/charlist&gt;\n"
-#~ "&lt;/e-i-c&gt;\n"
-#~ "\n"
-#~ "&lt;e-i-c gi=\"emphasis\"&gt;\n"
-#~ "  &lt;charlist inherit=\"1\"&gt;\n"
-#~ "    &lt;font posture=\"italic\"&gt;\n"
-#~ "  &lt;/charlist&gt;\n"
-#~ "&lt;/e-i-c&gt;\n"
-#~ "\n"
-#~ "&lt;e-i-c gi=\"emphasis\" context=\"emphasis\"&gt;\n"
-#~ "  &lt;charlist inherit=\"1\"&gt;\n"
-#~ "    &lt;font posture=\"upright\"&gt;\n"
-#~ "  &lt;/charlist&gt;\n"
-#~ "&lt;/e-i-c&gt;"
-
-#~ msgid ""
-#~ "(element para\n"
-#~ "  (make paragraph\n"
-#~ "    (process-children)))\n"
-#~ "\n"
-#~ "(element emphasis\n"
-#~ "  (make sequence\n"
-#~ "    font-posture: 'italic\n"
-#~ "    (process-children)))\n"
-#~ "\n"
-#~ "(element (emphasis emphasis)\n"
-#~ "  (make sequence\n"
-#~ "    font-posture: 'upright\n"
-#~ "    (process-children)))"
-#~ msgstr ""
-#~ "(element para\n"
-#~ "  (make paragraph\n"
-#~ "    (process-children)))\n"
-#~ "\n"
-#~ "(element emphasis\n"
-#~ "  (make sequence\n"
-#~ "    font-posture: 'italic\n"
-#~ "    (process-children)))\n"
-#~ "\n"
-#~ "(element (emphasis emphasis)\n"
-#~ "  (make sequence\n"
-#~ "    font-posture: 'upright\n"
-#~ "    (process-children)))"
-
-#~ msgid ""
-#~ "para              { display: block }\n"
-#~ "emphasis          { display: inline;\n"
-#~ "                    font-style: italic; }\n"
-#~ "emphasis emphasis { display: inline;\n"
-#~ "                    font-style: upright; }"
-#~ msgstr ""
-#~ "para              { display: block }\n"
-#~ "emphasis          { display: inline;\n"
-#~ "                    font-style: italic; }\n"
-#~ "emphasis emphasis { display: inline;\n"
-#~ "                    font-style: upright; }"

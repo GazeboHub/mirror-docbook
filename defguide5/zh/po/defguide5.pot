@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2007-05-23 17:58�й���׼ʱ��\n"
+"POT-Creation-Date: 2007-05-24 17:18+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,11 +88,11 @@ msgid "October 1999: First Edition."
 msgstr ""
 
 #: build/en/defguide5.xml:5(releaseinfo) 
-msgid "0.0.21 for DocBook V5.0CR3"
+msgid "0.0.21 for DocBook V5.0CR4"
 msgstr ""
 
 #: build/en/defguide5.xml:5(pubdate) 
-msgid "$Date: 2007-05-23 02:51:07 +0800 (星期三, 23 五月 2007) $"
+msgid "$Date: 2007-05-23 02:51:07 +0800 (三, 23 5月 2007) $"
 msgstr ""
 
 #: build/en/defguide5.xml:5(para) 
@@ -156,7 +156,7 @@ msgid "Preface"
 msgstr ""
 
 #: build/en/defguide5.xml:31(pubdate) 
-msgid "$Date: 2007-04-04 06:53:27 +0800 (星期三, 04 四月 2007) $"
+msgid "$Date: 2007-04-04 06:53:27 +0800 (三, 04 4月 2007) $"
 msgstr ""
 
 #: build/en/defguide5.xml:32(releaseinfo) 
@@ -412,7 +412,7 @@ msgid "Getting Started with <acronym>XML</acronym>"
 msgstr ""
 
 #: build/en/defguide5.xml:352(pubdate) build/en/defguide5.xml:4580(pubdate) build/en/defguide5.xml:5428(pubdate) build/en/defguide5.xml:5890(pubdate) 
-msgid "$Date: 2005-11-01 02:42:46 +0800 (星期二, 01 十一月 2005) $"
+msgid "$Date: 2005-11-01 02:42:46 +0800 (二, 01 11月 2005) $"
 msgstr ""
 
 #: build/en/defguide5.xml:353(releaseinfo) build/en/defguide5.xml:4581(releaseinfo) build/en/defguide5.xml:5429(releaseinfo) build/en/defguide5.xml:5891(releaseinfo) 
@@ -576,7 +576,7 @@ msgid "Creating DocBook Documents"
 msgstr ""
 
 #: build/en/defguide5.xml:543(pubdate) 
-msgid "$Date: 2006-09-26 20:58:39 +0800 (星期二, 26 九月 2006) $"
+msgid "$Date: 2006-09-26 20:58:39 +0800 (二, 26 9月 2006) $"
 msgstr ""
 
 #: build/en/defguide5.xml:544(releaseinfo) 
@@ -2741,7 +2741,7 @@ msgid "Parsing DocBook Documents"
 msgstr ""
 
 #: build/en/defguide5.xml:3767(pubdate) build/en/defguide5.xml:4224(pubdate) build/en/defguide5.xml:5218(pubdate) 
-msgid "$Date: 2006-03-03 22:21:54 +0800 (星期五, 03 三月 2006) $"
+msgid "$Date: 2006-03-03 22:21:54 +0800 (五, 03 3月 2006) $"
 msgstr ""
 
 #: build/en/defguide5.xml:3768(releaseinfo) build/en/defguide5.xml:4225(releaseinfo) build/en/defguide5.xml:5219(releaseinfo) 
@@ -2757,7 +2757,7 @@ msgid "Publishing DocBook Documents"
 msgstr ""
 
 #: build/en/defguide5.xml:3778(pubdate) 
-msgid "$Date: 2005-11-01 02:50:56 +0800 (星期二, 01 十一月 2005) $"
+msgid "$Date: 2005-11-01 02:50:56 +0800 (二, 01 11月 2005) $"
 msgstr ""
 
 #: build/en/defguide5.xml:3779(releaseinfo) 
@@ -2907,7 +2907,7 @@ msgid "Customizing DocBook"
 msgstr ""
 
 #: build/en/defguide5.xml:4087(pubdate) 
-msgid "$Date: 2006-05-05 02:26:24 +0800 (星期五, 05 五月 2006) $"
+msgid "$Date: 2006-05-05 02:26:24 +0800 (五, 05 5月 2006) $"
 msgstr ""
 
 #: build/en/defguide5.xml:4088(releaseinfo) 
@@ -3028,7 +3028,7 @@ msgid "DocBook Element Reference"
 msgstr ""
 
 #: build/en/defguide5.xml:4233(pubdate) 
-msgid "$Date: 2007-03-18 06:02:46 +0800 (星期日, 18 三月 2007) $"
+msgid "$Date: 2007-03-18 06:02:46 +0800 (日, 18 3月 2007) $"
 msgstr ""
 
 #: build/en/defguide5.xml:4234(releaseinfo) 
@@ -3470,7 +3470,7 @@ msgid "DocBook Versions"
 msgstr ""
 
 #: build/en/defguide5.xml:4804(pubdate) 
-msgid "$Date: 2005-10-30 04:02:43 +0800 (星期日, 30 十月 2005) $"
+msgid "$Date: 2005-10-30 04:02:43 +0800 (日, 30 10月 2005) $"
 msgstr ""
 
 #: build/en/defguide5.xml:4805(releaseinfo) 
@@ -3486,7 +3486,7 @@ msgid "Resources"
 msgstr ""
 
 #: build/en/defguide5.xml:4815(pubdate) 
-msgid "$Date: 2006-10-13 21:45:09 +0800 (星期五, 13 十月 2006) $"
+msgid "$Date: 2006-10-13 21:45:09 +0800 (五, 13 10月 2006) $"
 msgstr ""
 
 #: build/en/defguide5.xml:4816(releaseinfo) 
@@ -4026,7 +4026,7 @@ msgid "What's on the<?lb?><acronym>CD-ROM</acronym>?"
 msgstr ""
 
 #: build/en/defguide5.xml:5207(pubdate) build/en/defguide5.xml:5877(pubdate) build/en/defguide5.xml:6437(pubdate) 
-msgid "$Date: 2005-07-08 00:41:53 +0800 (星期五, 08 七月 2005) $"
+msgid "$Date: 2005-07-08 00:41:53 +0800 (五, 08 7月 2005) $"
 msgstr ""
 
 #: build/en/defguide5.xml:5208(releaseinfo) build/en/defguide5.xml:5878(releaseinfo) build/en/defguide5.xml:6438(releaseinfo) 
@@ -4278,7 +4278,7 @@ msgid "DocBook Quick Reference"
 msgstr ""
 
 #: build/en/defguide5.xml:5415(pubdate) 
-msgid "$Date: 2007-03-23 01:00:47 +0800 (星期五, 23 三月 2007) $"
+msgid "$Date: 2007-03-23 01:00:47 +0800 (五, 23 3月 2007) $"
 msgstr ""
 
 #: build/en/defguide5.xml:5416(releaseinfo) 

@@ -2,8 +2,17 @@
     msgfmt --statistics -c zh_CN.po
 
 2. Format
-    msgmerge --no-wrap -o zh_CN.po.new zh_CN.po defguide5.pot
-    mv -f zh_CN.po.new zh_CN.po
+    msgmerge --no-wrap -o zh_CN-new.po zh_CN.po defguide5.pot
+    mv -f zh_CN-new.po zh_CN.po
+
+    msgmerge --no-wrap -o Tortoise_zh_CN-new.po Tortoise_zh_CN.po Tortoise.pot
+    mv -f Tortoise_zh_CN-new.po Tortoise_zh_CN.po
+
+    msgmerge --no-wrap -o TortoiseSVN_zh_CN-new.po TortoiseSVN_zh_CN.po TortoiseSVN.pot
+    mv -f TortoiseSVN_zh_CN-new.po TortoiseSVN_zh_CN.po
+
+    msgmerge --no-wrap -o TortoiseMerge_zh_CN-new.po TortoiseMerge_zh_CN.po TortoiseMerge.pot
+    mv -f TortoiseMerge_zh_CN-new.po TortoiseMerge_zh_CN.po
 
 3. Merge
     msgmerge -o zh_CN-new.po zh_CN-other.po zh_CN.po
@@ -11,8 +20,8 @@
 
 4. Commit
     Update Simplified Chinese translation:
-    * Tortoise_zh_CN.po: Update to Tortoise.pot@r9488.
-    * TortoiseSVN_zh_CN.po: Update some new/fuzzy messages.
+    * Tortoise_zh_CN.po: Update to Tortoise.pot@r9532.
+    * TortoiseSVN_zh_CN.po: Translate some new/fuzzy messages.
 
     ------------------------------------------------------------------------
     Follow-up to r25007, adding or improving a few comments.
