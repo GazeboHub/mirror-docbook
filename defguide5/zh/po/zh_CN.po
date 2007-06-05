@@ -1,24 +1,26 @@
-# 
+#
 # Copyright (C) 2007 Free Software Foundation, Inc.
-# 
+#
 # Dongsheng Song <dongsheng.song@gmail.com>, 2007
-# 
+#
 # Dictionary:
 # ...       ...
+#
 # DocBook V4.1.2，Scheme-like language
-# 
+#
 # Check:
 #   msgfmt --statistics -c zh_CN.po
-# 
+#
 # Format:
 #   msgmerge --no-wrap -o zh_CN.po.new zh_CN.po defguide5.pot
 #   mv -f zh_CN.po.new zh_CN.po
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: defguide5 0.0.x\n"
-"POT-Creation-Date: 2007-05-26 15:40+0800\n"
-"PO-Revision-Date: 2007-05-17 17:20+0800\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-06-05 11:00+0800\n"
+"PO-Revision-Date: 2007-06-04 19:02+0800\n"
 "Last-Translator: Dongsheng Song <dongsheng.song@gmail.com>\n"
 "Language-Team: zh_CN <i18n-zh@googlegroups.com >\n"
 "MIME-Version: 1.0\n"
@@ -105,7 +107,8 @@ msgid "October 1999: First Edition."
 msgstr "1999 年 10 月：第一版"
 
 #: build/en/defguide5.xml:5(releaseinfo)
-msgid "0.0.21 for DocBook V5.0CR4"
+#, fuzzy
+msgid "0.0.21 for DocBook V5.0CR3"
 msgstr "版本 0.0.21，针对 DocBook V5.0CR4"
 
 #: build/en/defguide5.xml:5(pubdate)
@@ -794,7 +797,7 @@ msgstr "<indexterm><primary>SGML</primary><secondary>system identifiers</seconda
 
 #: build/en/defguide5.xml:838(para)
 msgid "The historical advantage of using a public identifier is that it made your documents more portable. For any system on which DocBook is installed, the public identifier will resolve to the appropriate local version of the <acronym>DTD</acronym> (if public identifiers can be resolved at all). Today most systems can resolve system identifiers in a similar way."
-msgstr "使用公共标识符的传统优势是它使你的文档更好的移植。在安装了 DocBook 的任意系统中，公共标识符会解决<acronym>DTD</acronym>(如果公共标识符能全部解决)的本地版本。现在大多数系统能使用相似的方法解决系统标识符。"
+msgstr "使用公共标识符的传统优势是它使你的文档更好地移植。在安装了 DocBook 的任意系统中，公共标识符会解决<acronym>DTD</acronym>(如果公共标识符能全部解决)的本地版本。现在大多数系统能使用相似的方法解决系统标识符。"
 
 #: build/en/defguide5.xml:846(para)
 msgid "Public identifiers have two disadvantages:"
@@ -802,15 +805,15 @@ msgstr "公共标识符有两个不利之处："
 
 #: build/en/defguide5.xml:850(para)
 msgid "Because <acronym>XML</acronym> does not require them, and because system identifiers are required, <acronym>XML</acronym> tools may not provide adequate support for public identifiers. To work with these systems you must use system identifiers."
-msgstr ""
+msgstr "因为 <acronym>XML</acronym> 不需要它们，而系统标识符又是必需的， <acronym>XML</acronym> 工具可能不能对公共标识符提供足够的支持。为了在这些系统上工作，你必须使用系统标识符。"
 
 #: build/en/defguide5.xml:856(para)
 msgid "<indexterm><primary>public identifiers</primary><secondary>resolution, mapping to system identifiers</secondary></indexterm><indexterm><primary>OASIS</primary><secondary>public identifiers, resolution mechanism</secondary></indexterm>Public identifiers aren't magic. They're simply a method of indirection. For them to work, there must be a resolution mechanism for public identifiers. Luckily, there are standards that define mechanisms for mapping public identifiers to system identifers using catalog files."
-msgstr ""
+msgstr "<indexterm><primary> 公共标识符 </primary><secondary>解析、映射到系统标识符 </secondary></indexterm><indexterm><primary>OASIS</primary><secondary> 公共标识符，解析机制 </secondary></indexterm>公共标识符不是魔术。它们只是一种间接的方法。为了让它们工作，必须有一种公共标识符的解析机制。幸运的是，有一系列的标准定义了公共标识符利用目录文件映射到系统标识符的机制。"
 
 #: build/en/defguide5.xml:868(para)
 msgid "See FIXME: link to XML Catalogs or <link href=\"http://www.oasis-open.org/html/a401.htm\"><acronym>OASIS</acronym> Technical Resolution 9401:1997 (Amendment 2 to <acronym>TR</acronym> 9401)</link>."
-msgstr ""
+msgstr "参见 FIXME: 链接到 XML 目录或者 <link href=\"http://www.oasis-open.org/html/a401.htm\"><acronym>OASIS</acronym> 技术决议 9401:1997 (修正案 2 到 <acronym>TR</acronym> 9401)</link>."
 
 #: build/en/defguide5.xml:877(title)
 msgid "Public Identifiers"
@@ -818,11 +821,11 @@ msgstr "公共标示符"
 
 #: build/en/defguide5.xml:880(para)
 msgid "<indexterm><primary>uniqueness</primary><secondary>public identifiers</secondary></indexterm>An important characteristic of public identifiers is that they are intended to be <emphasis>globally unique</emphasis>. Referring to a document with a public identifier should mean that the identifier will resolve to the same actual document on any system, even though the location of that document on each system may vary. As a rule, you should never reuse public identifiers, and a published revision should have a new public identifier. Not following these rules defeats one purpose of the public identifier."
-msgstr ""
+msgstr "<indexterm><primary>唯一的</primary><secondary>公共标识符</secondary></indexterm>公共标识符的一个重要特性是它们是 <emphasis>全局唯一的</emphasis>。用一个全局标识符表示一个文档应该意味着在任何系统中，这个表述符能解析成同一个实际文档，即使这个文档在每个系统上的位置不同。作为一条规则，你永远也不应该重用公共标识符，并且一个发行版应该有一个新的公共标识符。不遵循这些规则就违背了公共标识符的初衷。"
 
 #: build/en/defguide5.xml:893(para)
 msgid "<indexterm><primary>public identifiers</primary><secondary>syntax, examples</secondary></indexterm>A public identifier can be any string of upper- and lowercase letters, digits, any of the following symbols: “'”, “(“, “)”, “+”, “,”, “-”, “.”, “/”, “:”, “=”, “?”, and white space, including line breaks."
-msgstr ""
+msgstr "<indexterm><primary>公共标识符</primary><secondary>语法、举例</secondary></indexterm>公共标识符是任何由大小写子母、数字、任何下列符号：“'”、“(“、“)”、“+”、“,”、“-”、“.”、“/”、“:”、“=”、“?”和空白符包括换行符组成的字符串。"
 
 #: build/en/defguide5.xml:903(title)
 msgid "System Identifiers"
@@ -830,7 +833,7 @@ msgstr "系统标示符"
 
 #: build/en/defguide5.xml:905(para)
 msgid "<indexterm><primary>system identifiers</primary></indexterm><indexterm><primary>URI</primary><secondary>XML system identifiers</secondary></indexterm>System identifiers often appear simply to be filenames on the local system. Technically, they must be <acronym>URI</acronym>s, and a simple filename is treated as a relative URI and is resolved against the location of the document that contains its declaration."
-msgstr ""
+msgstr "<indexterm><primary>系统标识符</primary></indexterm><indexterm><primary>URI</primary><secondary>XML 系统标识符</secondary></indexterm>系统标识符通常仅现实为本地系统上的文件名。从技术上讲，它们必须是 <acronym>URI</acronym>s，而简单的文件名作为一个关联URI对待并解析为包含在它声明中的本地文档。"
 
 #: build/en/defguide5.xml:919(title)
 msgid "Catalog Files"
@@ -850,7 +853,7 @@ msgstr ""
 
 #: build/en/defguide5.xml:949(para)
 msgid "Actually, we've already told you how to do it. If you recall, in the preceding sections we had declarations of the form:"
-msgstr ""
+msgstr "实际上，我们已经告诉过你怎么做了。如果你回想一下，在前面的章节里，我们已经定义过这种格式："
 
 #: build/en/defguide5.xml:952(replaceable)
 #: build/en/defguide5.xml:4188(replaceable)
@@ -912,7 +915,7 @@ msgstr ""
 
 #: build/en/defguide5.xml:993(para)
 msgid "For example, Chapter 1 might begin like this:"
-msgstr ""
+msgstr "例如，第一章可以像下面这样开始："
 
 #: build/en/defguide5.xml:996(screen)
 #, no-wrap
@@ -3174,7 +3177,7 @@ msgid ""
 msgstr ""
 "\n"
 "&lt;para&gt;\n"
-"This is an example paragraph. It should be presented in a\n"
+"这是一段例子。 It should be presented in a\n"
 "reasonable body font. &lt;emphasis&gt;Emphasized&lt;/emphasis&gt; words\n"
 "should be printed in italics. A single level of \n"
 "&lt;emphasis&gt;Nested &lt;emphasis&gt;emphasis&lt;/emphasis&gt; should also\n"
@@ -4667,23 +4670,23 @@ msgstr ""
 
 #: build/en/defguide5.xml:5378(para)
 msgid "If your <tag>Bibliography</tag>s contain <tag>BiblioEntry</tag>s, what are the processing expectations? Which fields are selected for display? What punctuation is added, and where?"
-msgstr ""
+msgstr "If your <tag>Bibliography</tag>s contain <tag>BiblioEntry</tag>s, what are the processing expectations? Which fields are selected for display? What punctuation is added, and where?"
 
 #: build/en/defguide5.xml:5385(para)
 msgid "Do <tag>GlossTerm</tag>s or other elements have implicit linking relationships that must be obeyed or handled in presentation?"
-msgstr ""
+msgstr "<tag>GlossTerm</tag> 或者其他元素有必须在显示时遵从或者处理的隐含关联关系么？"
 
 #: build/en/defguide5.xml:5390(para)
 msgid "Did you use any processing instructions? Why and what for? Are they in entities?"
-msgstr ""
+msgstr "你用了处理指令么？ 为什么那样做，想要达到什么呢？它们是实体么？"
 
 #: build/en/defguide5.xml:5394(para)
 msgid "What copyfitting have you already done, and for what outputs?"
-msgstr ""
+msgstr "你做了什么版面调整，想要得到什么输出？"
 
 #: build/en/defguide5.xml:5397(para)
 msgid "Are the <tag>Revision</tag>s in your <tag>RevHistory</tag>s sorted in any particular way?"
-msgstr ""
+msgstr "你 <tag>RevHistory</tag> 里的 <tag>Revision</tag> 用什么特殊的方法存储了么？"
 
 #: build/en/defguide5.xml:5402(bridgehead)
 msgid "Miscellaneous"
@@ -4691,11 +4694,11 @@ msgstr "杂项"
 
 #: build/en/defguide5.xml:5403(para)
 msgid "Have you checked your files for viruses?"
-msgstr ""
+msgstr "你对你的文件检查过病毒么？"
 
 #: build/en/defguide5.xml:5405(para)
 msgid "If you used <tag>BridgeHead</tag>, have you joined a recovery support group?"
-msgstr ""
+msgstr "如果你使用 <tag>BridgeHead</tag>，你加入了一个可恢复支持组么？"
 
 #: build/en/defguide5.xml:5414(title)
 msgid "DocBook Quick Reference"
@@ -4827,11 +4830,11 @@ msgstr ""
 
 #: build/en/defguide5.xml:5630(para)
 msgid "Preserve all the copyright notices of the Document."
-msgstr ""
+msgstr "保留文档的所有版权信息。"
 
 #: build/en/defguide5.xml:5634(para)
 msgid "Add an appropriate copyright notice for your modifications adjacent to the other copyright notices."
-msgstr ""
+msgstr "紧接着其他版权信息添加关于你的修改的恰当的版权信息。"
 
 #: build/en/defguide5.xml:5639(para)
 msgid "Include, immediately after the copyright notices, a license notice giving the public permission to use the Modified Version under the terms of this License, in the form shown in the Addendum below."
@@ -4987,183 +4990,183 @@ msgstr "术语表"
 
 #: build/en/defguide5.xml:5894(glossterm)
 msgid "attribute"
-msgstr ""
+msgstr "属性"
 
 #: build/en/defguide5.xml:5896(para)
 msgid "<indexterm significance=\"normal\"><primary>attributes</primary></indexterm><indexterm significance=\"normal\"><primary>elements</primary><secondary>attributes</secondary></indexterm> Attributes augment the element on which they appear; they also provide additional information about the element."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>attributes</primary></indexterm><indexterm significance=\"normal\"><primary>elements</primary><secondary>attributes</secondary></indexterm>属性参数是元素的成分，它们还提供关于元素的额外信息。"
 
 #: build/en/defguide5.xml:5904(para)
 msgid "<indexterm significance=\"normal\"><primary>start tags</primary><secondary>attribute ID, containing</secondary></indexterm> Attributes appear as name-value pairs in the element's start-tag. For example, to assign the value <literal>hostname</literal> to the <tag class=\"attribute\">Role</tag> attribute of <tag>SystemItem</tag>, you would use the mark up: <tag class=\"starttag\">systemitem role=\"hostname\"</tag>."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>start tags</primary><secondary>attribute ID, containing</secondary></indexterm>属性在元素的开始标签里表现为名字-取值对。比如，把值 <literal>hostname</literal> 赋给 <tag>SystemItem</tag> 的属性 <tag class=\"attribute\">Role</tag>，你应该使用标记：<tag class=\"starttag\">systemitem role=\"hostname\"</tag>。"
 
 #: build/en/defguide5.xml:5916(glossterm)
 msgid "callout"
-msgstr ""
+msgstr "callout"
 
 #: build/en/defguide5.xml:5918(para)
 msgid "<indexterm significance=\"normal\"><primary>callouts</primary></indexterm> A pointer, verbal or graphical or both, to a <emphasis>component</emphasis> of an illustration or a text object."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>callouts</primary></indexterm>它是指向文本或插图的指针，指向插图或文本对象的<emphasis>组件</emphasis>。"
 
 #: build/en/defguide5.xml:5925(glossterm)
 msgid "cooked"
-msgstr ""
+msgstr "cooked"
 
 #: build/en/defguide5.xml:5927(para)
 msgid "<indexterm significance=\"normal\"><primary>cooked data</primary></indexterm><indexterm significance=\"normal\"><primary>appearance</primary><secondary>cooked data</secondary></indexterm><quote>Cooked</quote> data, as distinct from <quote>raw,</quote> is a collection of elements and character data that's ready for presentation. The processor is not expected to rearrange, select, or suppress any of the elements, but simply present them as specified."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>cooked data</primary></indexterm><indexterm significance=\"normal\"><primary>appearance</primary><secondary>cooked data</secondary></indexterm><quote>Cooked</quote> 数据与 <quote>raw</quote> 截然不同，它是可显示的元素和字符数据的集合。处理器不需要重新排列、挑选或者剔除任何元素，只需要按照指定显示就行了。"
 
 #: build/en/defguide5.xml:5937(glossseealso)
 msgid "Raw"
-msgstr ""
+msgstr "Raw"
 
 #: build/en/defguide5.xml:5940(glossterm)
 msgid "document type declaration (<placeholder-1/>)"
-msgstr ""
+msgstr "文档类型声明 (<placeholder-1/>)"
 
 #: build/en/defguide5.xml:5943(para)
 msgid "<indexterm significance=\"normal\"><primary>document type declaration</primary></indexterm><indexterm significance=\"normal\"><primary>declarations</primary><secondary>document type declaration</secondary></indexterm> A set of declarations that defines the names of the elements and their attributes, and that specifies rules for their combination or sequence."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>document type declaration</primary></indexterm><indexterm significance=\"normal\"><primary>declarations</primary><secondary>document type declaration</secondary></indexterm>一组定义元素的名字和属性的声明，并且指定了它们之间的组合或顺序关系。"
 
 #: build/en/defguide5.xml:5956(para)
 msgid "<indexterm significance=\"normal\"><primary>DSSSL</primary></indexterm><indexterm significance=\"normal\"><primary>stylesheets</primary><secondary>languages</secondary><tertiary>DSSSL</tertiary></indexterm> Document Style Semantics and Specification Language (<acronym>ISO</acronym>/<acronym>IEC</acronym> 10179:1996). An international standard stylesheet language for <acronym>SGML</acronym>/<acronym>XML</acronym> documents."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>DSSSL</primary></indexterm><indexterm significance=\"normal\"><primary>stylesheets</primary><secondary>languages</secondary><tertiary>DSSSL</tertiary></indexterm>文本样式语义和规格说明语言 (<acronym>ISO</acronym>/<acronym>IEC</acronym> 10179:1996)。一种用于 <acronym>SGML</acronym>/<acronym>XML</acronym> 文档的的国际标准样式表语言。"
 
 #: build/en/defguide5.xml:5968(glossterm)
 msgid "element"
-msgstr ""
+msgstr "元素"
 
 #: build/en/defguide5.xml:5970(para)
 msgid "<indexterm significance=\"normal\"><primary>elements</primary></indexterm><indexterm significance=\"normal\"><primary>hierarchical structure</primary><secondary>elements, defining</secondary></indexterm><indexterm significance=\"normal\"><primary>empty elements</primary></indexterm><indexterm significance=\"normal\"><primary>start tags</primary><secondary>empty element</secondary></indexterm> Elements define the hierarchical structure of a document. Most elements have start and end tags and contain some part of the document content. Empty elements have only a start tag and have no content."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>elements</primary></indexterm><indexterm significance=\"normal\"><primary>hierarchical structure</primary><secondary>elements, defining</secondary></indexterm><indexterm significance=\"normal\"><primary>empty elements</primary></indexterm><indexterm significance=\"normal\"><primary>start tags</primary><secondary>empty element</secondary></indexterm>元素定义了文档的层次结构。大多数元素有开始和结束标签并包含部分文档内容。空元素只有开始标签，没有内容。"
 
 #: build/en/defguide5.xml:5984(glossterm)
 msgid "entity"
-msgstr ""
+msgstr "实体"
 
 #: build/en/defguide5.xml:5986(para)
 msgid "<indexterm significance=\"normal\"><primary>entities</primary></indexterm><indexterm significance=\"normal\"><primary>data entities</primary></indexterm> A name assigned (by means of a declaration) to some chunk of data so it can be referred to by that name; the data can be of various kinds (a special character or a chapter or a set of declarations in a <acronym>DTD</acronym>, for instance), and the way in which it is referred to depends on the type of data and where it is being referenced: <acronym>SGML</acronym> has parameter, general, external, internal, and data entities."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>entities</primary></indexterm><indexterm significance=\"normal\"><primary>data entities</primary></indexterm>用于指定(通过声明)一些数据，使得它能通过名字引用。数据可以是各种类型(例如，在 <acronym>DTD</acronym> 中的特殊字符或者章节或者一组声明)，引用方式由数据类型和被引用的位置决定：<acronym>SGML</acronym> 的参数，普通实体，外部实体，内部实体和数据实体。"
 
 #: build/en/defguide5.xml:5998(glossterm)
 msgid "exclusion"
-msgstr ""
+msgstr "排除"
 
 #: build/en/defguide5.xml:6000(para)
 msgid "<indexterm significance=\"normal\"><primary>exclusions</primary></indexterm><indexterm significance=\"normal\"><primary>DTDs</primary><secondary>exclusions</secondary></indexterm><indexterm significance=\"normal\"><primary>elements</primary><secondary>exclusions</secondary></indexterm> An exclusion is used in a <acronym>DTD</acronym> to indicate that, within the element on which the exclusion occurs, the excluded elements are not valid anywhere within the content of the element."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>exclusions</primary></indexterm><indexterm significance=\"normal\"><primary>DTDs</primary><secondary>exclusions</secondary></indexterm><indexterm significance=\"normal\"><primary>elements</primary><secondary>exclusions</secondary></indexterm>在 <acronym>DTD</acronym> 中用来指出在元素内出现了被排除的元素，在元素内容的任何地方，被排除的元素都是非法的。"
 
 #: build/en/defguide5.xml:6011(para)
 msgid "<indexterm significance=\"normal\"><primary>Footnote element</primary><secondary>exclusions</secondary></indexterm><indexterm significance=\"normal\"><primary>nesting</primary><secondary>footnotes</secondary></indexterm> For example, in DocBook, <tag>Footnote</tag> excludes <tag>Footnote</tag>. This means that footnotes cannot nest, even though <tag>Footnote</tag> contains <tag>Para</tag>, and <tag>Footnote</tag> occurs in the proper content model of <tag>Para</tag>."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>Footnote element</primary><secondary>exclusions</secondary></indexterm><indexterm significance=\"normal\"><primary>nesting</primary><secondary>footnotes</secondary></indexterm>例如，在 DocBook 中，<tag>Footnote</tag> 排除 <tag>Footnote</tag>。这意味着脚注不能嵌套，即使 <tag>Footnote</tag> 包含 <tag>Para</tag>，并且 <tag>Footnote</tag> 就在 <tag>Para</tag> 的固有内容模型内。"
 
 #: build/en/defguide5.xml:6024(glossterm)
 msgid "external entity"
-msgstr ""
+msgstr "外部实体"
 
 #: build/en/defguide5.xml:6026(para)
 msgid "<indexterm significance=\"normal\"><primary>external general entities</primary></indexterm><indexterm significance=\"normal\"><primary>general entities</primary><secondary>external</secondary></indexterm><indexterm significance=\"normal\"><primary>references</primary><secondary>external documents</secondary></indexterm><indexterm significance=\"normal\"><primary>documents</primary><secondary>external, references to</secondary></indexterm> An external entity is a general entity that refers to another document. External entities are often used to incorporate parsable text documents, like legal notices or chapters, into larger units, like chapters or books."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>external general entities</primary></indexterm><indexterm significance=\"normal\"><primary>general entities</primary><secondary>external</secondary></indexterm><indexterm significance=\"normal\"><primary>references</primary><secondary>external documents</secondary></indexterm><indexterm significance=\"normal\"><primary>documents</primary><secondary>external, references to</secondary></indexterm>外部实体是引用其它文档的普通实体。外部实体经常用于合并可解析的文档，例如将法律声明，章节等合并到象章节或书籍等更大的单元中。"
 
 #: build/en/defguide5.xml:6041(glossterm)
 msgid "external subset"
-msgstr ""
+msgstr "外部子集"
 
 #: build/en/defguide5.xml:6043(para)
 msgid "<indexterm significance=\"normal\"><primary>external subset</primary></indexterm><indexterm significance=\"normal\"><primary>document type declaration</primary><secondary>external subset</secondary></indexterm><indexterm significance=\"normal\"><primary>public identifiers</primary><secondary>external subset</secondary></indexterm><indexterm significance=\"normal\"><primary>system identifiers</primary><secondary>external subset</secondary></indexterm><indexterm significance=\"normal\"><primary>declarations</primary><secondary>document type declaration</secondary></indexterm> Element, attribute, and other declarations that compose (part of) a document type definition that are stored in an external entity, and referenced from a document's document type declaration using a public or system identifier."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>external subset</primary></indexterm><indexterm significance=\"normal\"><primary>document type declaration</primary><secondary>external subset</secondary></indexterm><indexterm significance=\"normal\"><primary>public identifiers</primary><secondary>external subset</secondary></indexterm><indexterm significance=\"normal\"><primary>system identifiers</primary><secondary>external subset</secondary></indexterm><indexterm significance=\"normal\"><primary>declarations</primary><secondary>document type declaration</secondary></indexterm>元素、属性和其它组成(部分)文档类型定义的声明，存储在外部实体中，并在文档的文档类型声明中使用公共标识符或系统标识符引用。"
 
 #: build/en/defguide5.xml:6061(glossterm)
 msgid "float"
-msgstr ""
+msgstr "浮动"
 
 #: build/en/defguide5.xml:6063(para)
 msgid "<indexterm significance=\"normal\"><primary>float</primary></indexterm><indexterm significance=\"normal\"><primary>text</primary><secondary>float</secondary></indexterm> Text objects like sidebars, figures, tables, and graphics are said to float when their actual place in the document is not fixed. For presentation on a printed page, for instance, a graphic may float to the top of the next page if it is too tall to fit on the page in which it actually falls, in the sequence of words and the sequence of other like objects in a document."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>float</primary></indexterm><indexterm significance=\"normal\"><primary>text</primary><secondary>float</secondary></indexterm>像侧栏、图表、表格和图像之类的文本对象，当它们在文本中的实际位置不固定的时候称为浮动。例如，在文档中的段落或者其它对象后面，图像可能太高，从而要浮动到到下一页的顶部。"
 
 #: build/en/defguide5.xml:6075(glossterm)
 msgid "formal public identifier"
-msgstr ""
+msgstr "正式的公共标识符"
 
 #: build/en/defguide5.xml:6077(para)
 msgid "<indexterm significance=\"normal\"><primary>FPI</primary></indexterm><indexterm significance=\"normal\"><primary>public identifiers</primary><secondary>formal</secondary></indexterm> A public identifier that conforms to the specification of formal public identifers in <acronym>ISO</acronym> 8879."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>FPI</primary></indexterm><indexterm significance=\"normal\"><primary>public identifiers</primary><secondary>formal</secondary></indexterm>符合在 <acronym>ISO</acronym> 8879 中定义的正式公共标识符。"
 
 #: build/en/defguide5.xml:6085(acronym)
 msgid "FOSI"
-msgstr ""
+msgstr "FOSI"
 
 #: build/en/defguide5.xml:6087(para)
 msgid "<indexterm significance=\"normal\"><primary>FOSI stylesheets</primary></indexterm> Formatting Output Specification Instance, an <acronym>SGML</acronym> document that specifies the appearance or presentation of another <acronym>SGML</acronym> document in accordance with the Output Specification <acronym>DTD</acronym> defined by <acronym>MIL-STD-28001C</acronym>."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>FOSI stylesheets</primary></indexterm>格式化输出规范建议，用一个 <acronym>SGML</acronym> 文档定义另一个 <acronym>SGML</acronym> 文档的外观或展现，这个输出规范 <acronym>DTD</acronym> 在 <acronym>MIL-STD-28001C</acronym> 中定义。"
 
 #: build/en/defguide5.xml:6097(glossterm)
 msgid "general entity"
-msgstr ""
+msgstr "普通实体"
 
 #: build/en/defguide5.xml:6099(para)
 msgid "<indexterm significance=\"normal\"><primary>general entities</primary></indexterm><indexterm significance=\"normal\"><primary>entities</primary><secondary>general</secondary></indexterm><indexterm significance=\"normal\"><primary>special characters, encoding as entities</primary></indexterm><indexterm significance=\"normal\"><primary>internal general entities</primary></indexterm> An entity referenced by a name that starts with an ampersand (&amp;) and ends with a semicolon. Most of the time general entities are used in <acronym>SGML</acronym> documents, not in the <acronym>DTD</acronym>. There are two types, external and internal entities, and they refer either to special characters or to text objects like commonly repeated phrases or names or chapters."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>general entities</primary></indexterm><indexterm significance=\"normal\"><primary>entities</primary><secondary>general</secondary></indexterm><indexterm significance=\"normal\"><primary>special characters, encoding as entities</primary></indexterm><indexterm significance=\"normal\"><primary>internal general entities</primary></indexterm>由 &amp; 符号开始，以分号结尾，用名字引用的实体。大多数普通实体用于 <acronym>SGML</acronym> 文档，而不是 <acronym>DTD</acronym>。它有两种类型，即外部实体和内部实体，用于引用特殊字符或者文本对象，例如重复的短语、名称，或者章节等。"
 
 #: build/en/defguide5.xml:6114(acronym)
 msgid "GI"
-msgstr ""
+msgstr "GI"
 
 #: build/en/defguide5.xml:6116(para)
 msgid "<indexterm significance=\"normal\"><primary>generic identifiers (GI)</primary></indexterm><indexterm significance=\"normal\"><primary>GI (generic identifiers)</primary></indexterm><indexterm significance=\"normal\"><primary>identifiers, generic</primary></indexterm><indexterm significance=\"normal\"><primary>elements</primary><secondary>generic identifiers</secondary></indexterm><indexterm significance=\"normal\"><primary>names</primary><secondary>elements (generic identifiers)</secondary></indexterm> Generic identifier, proper term for the actual name of an element; <literal>Para</literal> is the generic identifier of the <tag class=\"element\">para</tag> element."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>generic identifiers (GI)</primary></indexterm><indexterm significance=\"normal\"><primary>GI (generic identifiers)</primary></indexterm><indexterm significance=\"normal\"><primary>identifiers, generic</primary></indexterm><indexterm significance=\"normal\"><primary>elements</primary><secondary>generic identifiers</secondary></indexterm><indexterm significance=\"normal\"><primary>names</primary><secondary>elements (generic identifiers)</secondary></indexterm>普通标识符，元素实际名称的适当术语；<literal>Para</literal> 是元素<tag class=\"element\">para</tag> 的普通标识符。"
 
 #: build/en/defguide5.xml:6129(glossterm)
 msgid "inclusion"
-msgstr ""
+msgstr "包含"
 
 #: build/en/defguide5.xml:6131(para)
 msgid "<indexterm significance=\"normal\"><primary>inclusions</primary></indexterm><indexterm significance=\"normal\"><primary>DTDs</primary><secondary>inclusions</secondary></indexterm><indexterm significance=\"normal\"><primary>elements</primary><secondary>inclusions</secondary></indexterm><indexterm significance=\"normal\"><primary>nesting</primary><secondary>elements</secondary></indexterm> An inclusion is used in a <acronym>DTD</acronym> to indicate that, within the element on which the inclusion occurs, the included elements are valid anywhere within the content of the element."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>inclusions</primary></indexterm><indexterm significance=\"normal\"><primary>DTDs</primary><secondary>inclusions</secondary></indexterm><indexterm significance=\"normal\"><primary>elements</primary><secondary>inclusions</secondary></indexterm><indexterm significance=\"normal\"><primary>nesting</primary><secondary>elements</secondary></indexterm>包含用于 <acronym>DTD</acronym> 中，说明在元素中有包含元素，包含元素出现在元素内容的任何地方都是合法的。"
 
 #: build/en/defguide5.xml:6144(para)
 msgid "For example, in DocBook, <tag>Chapter</tag> includes <tag>IndexTerm</tag>. This means that <tag>IndexTerm</tag>s can occur anywhere inside chapters, even inside elements that do not have <tag>IndexTerm</tag>s in their proper content models."
-msgstr ""
+msgstr "例如，在 DocBook 中，<tag>Chapter</tag> 包含 <tag>IndexTerm</tag>。这意味着 <tag>IndexTerm</tag> 可以在章节的任何地方出现，甚至在固有内容模型没有 <tag>IndexTerm</tag> 的元素里出现也合法。"
 
 #: build/en/defguide5.xml:6152(glossterm)
 msgid "internal entity"
-msgstr ""
+msgstr "内部实体"
 
 #: build/en/defguide5.xml:6154(para)
 msgid "<indexterm significance=\"normal\"><primary>internal general entities</primary></indexterm><indexterm significance=\"normal\"><primary>general entities</primary><secondary>internal</secondary></indexterm><indexterm significance=\"normal\"><primary>entities</primary><secondary>general</secondary></indexterm> A general entity that references a piece of text (including its markup and even other internal entities), usually as a keyboard shortcut."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>internal general entities</primary></indexterm><indexterm significance=\"normal\"><primary>general entities</primary><secondary>internal</secondary></indexterm><indexterm significance=\"normal\"><primary>entities</primary><secondary>general</secondary></indexterm>引用文本的一部分(包含它的标记和甚至其它内部实体)的一般实体，通常作为键盘快捷键出现。"
 
 #: build/en/defguide5.xml:6166(glossterm)
 msgid "internal subset"
-msgstr ""
+msgstr "内部子集"
 
 #: build/en/defguide5.xml:6168(para)
 msgid "<indexterm significance=\"normal\"><primary>internal subset</primary></indexterm><indexterm significance=\"normal\"><primary>document type declaration</primary><secondary>internal subset</secondary></indexterm><indexterm significance=\"normal\"><primary>declarations</primary><secondary>document type declaration</secondary></indexterm> Element, attribute, and other declarations that compose (part of) a document type definition that are stored in a document, within the document type declaration."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>internal subset</primary></indexterm><indexterm significance=\"normal\"><primary>document type declaration</primary><secondary>internal subset</secondary></indexterm><indexterm significance=\"normal\"><primary>declarations</primary><secondary>document type declaration</secondary></indexterm>在文档类型声明中，存储在文档中的元素、属性和其他组成(部分)文档类型定义的声明。"
 
 #: build/en/defguide5.xml:6181(glossterm)
 msgid "meta-information"
-msgstr ""
+msgstr "元信息"
 
 #: build/en/defguide5.xml:6183(para)
 msgid "<indexterm significance=\"normal\"><primary>meta-information</primary></indexterm><indexterm significance=\"normal\"><primary>documents</primary><secondary>meta-information</secondary></indexterm> Meta-information is information about a document, such as the specification of its author or its date of composition, as opposed to the content of a document itself."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>meta-information</primary></indexterm><indexterm significance=\"normal\"><primary>documents</primary><secondary>meta-information</secondary></indexterm>与文档内容相反，元信息是关于文档的信息，比如作者或写作时间的说明。"
 
 #: build/en/defguide5.xml:6193(glossterm)
 msgid "parameter entity"
-msgstr ""
+msgstr "参数实体"
 
 #: build/en/defguide5.xml:6195(para)
 msgid "<indexterm significance=\"normal\"><primary>parameter entities</primary></indexterm><indexterm significance=\"normal\"><primary>DocBook DTD</primary><secondary>customizing</secondary><tertiary>parameter entities</tertiary></indexterm><indexterm significance=\"normal\"><primary>customization (DocBook DTD)</primary><secondary>parameter entities, using</secondary></indexterm><indexterm significance=\"normal\"><primary>marked sections</primary><secondary>parameter entities, controlling</secondary></indexterm> An entity usually referenced in the <acronym>DTD</acronym> by a name that starts with a percent sign (%) and ends with a semicolon. In DocBook, parameter entities are mainly used to facilitate customization of the <acronym>DTD</acronym>, but they can also be used to control marked sections of a document."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>parameter entities</primary></indexterm><indexterm significance=\"normal\"><primary>DocBook DTD</primary><secondary>customizing</secondary><tertiary>parameter entities</tertiary></indexterm><indexterm significance=\"normal\"><primary>customization (DocBook DTD)</primary><secondary>parameter entities, using</secondary></indexterm><indexterm significance=\"normal\"><primary>marked sections</primary><secondary>parameter entities, controlling</secondary></indexterm>通常通过以百分号(%)开始，分号结尾的名字在 <acronym>DTD</acronym> 中引用的实体。在 DocBook 里，参数实体主要用于方便 <acronym>DTD</acronym> 的定制，但是它们也可以用于控制文档的标记章节。"
 
 #: build/en/defguide5.xml:6212(glossterm)
 msgid "processing instruction"
-msgstr ""
+msgstr "处理指令"
 
 #: build/en/defguide5.xml:6214(para)
 msgid "<indexterm significance=\"normal\"><primary>processing instructions</primary></indexterm> An essentially arbitrary string preceded by a question mark and delimited by angle brackets that is intended to convey information to an application that processes an <acronym>SGML</acronym> instance. For example, the processing instruction <literal>&lt;?linebreak&gt;</literal> might cause the formatter to introduce a line break at the position where the processing instruction occurs."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>processing instructions</primary></indexterm>由问号引导，以尖角号分隔的任意字符串，用来给处理 <acronym>SGML</acronym> 实例的应用程序传递信息。例如，处理指令 <literal>&lt;?linebreak&gt;</literal> 导致格式程序在出现处理指令的地方插入换行。"
 
 #: build/en/defguide5.xml:6224(para)
 msgid ""
@@ -5171,58 +5174,61 @@ msgid ""
 "&lt;?<replaceable>pitarget</replaceable> param1=\"value1\" param2=\"value2\"?&gt;\n"
 "</screen>"
 msgstr ""
+"<indexterm significance=\"normal\"><primary>XML</primary><secondary>processing instructions</secondary></indexterm><indexterm significance=\"normal\"><primary>PI</primary><see>processing instructions</see></indexterm>在 <acronym>XML</acronym> 文档中，处理指令应该使用格式：<screen>\n"
+"&lt;?<replaceable>pitarget</replaceable> param1=\"value1\" param2=\"value2\"?&gt;\n"
+"</screen>"
 
 #: build/en/defguide5.xml:6234(para)
 msgid "The <replaceable>pitarget</replaceable> should be a name that the processing application will recognize. Additional information in the <acronym>PI</acronym> should be added using <quote>attribute syntax.</quote>"
-msgstr ""
+msgstr "<replaceable>pitarget</replaceable> 应该是一个处理程序能够识别的名字。在 <acronym>PI</acronym> 中的附加信息应该用<quote>属性语法</quote>添加。"
 
 #: build/en/defguide5.xml:6241(glossterm)
 msgid "public identifier"
-msgstr ""
+msgstr "公共标识符"
 
 #: build/en/defguide5.xml:6243(para)
 msgid "<indexterm significance=\"normal\"><primary>public identifiers</primary></indexterm><indexterm significance=\"normal\"><primary>external general entities</primary><secondary>public identifiers</secondary></indexterm><indexterm significance=\"normal\"><primary>SGML</primary><secondary>public identifiers</secondary></indexterm><indexterm significance=\"normal\"><primary>XML</primary><secondary>public identifiers</secondary></indexterm><indexterm significance=\"normal\"><primary>DTDs</primary><secondary>public identifiers</secondary></indexterm> An abstract identifier for an <acronym>SGML</acronym> or <acronym>XML</acronym> document, <acronym>DTD</acronym>, or external entity."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>public identifiers</primary></indexterm><indexterm significance=\"normal\"><primary>external general entities</primary><secondary>public identifiers</secondary></indexterm><indexterm significance=\"normal\"><primary>SGML</primary><secondary>public identifiers</secondary></indexterm><indexterm significance=\"normal\"><primary>XML</primary><secondary>public identifiers</secondary></indexterm><indexterm significance=\"normal\"><primary>DTDs</primary><secondary>public identifiers</secondary></indexterm><acronym>SGML</acronym> 或 <acronym>XML</acronym> 文档的抽象标识符。 <acronym>DTD</acronym> 或外部实体。"
 
 #: build/en/defguide5.xml:6258(glossterm)
 msgid "raw"
-msgstr ""
+msgstr "raw"
 
 #: build/en/defguide5.xml:6260(para)
 msgid "<indexterm significance=\"normal\"><primary>raw data</primary></indexterm><indexterm significance=\"normal\"><primary>appearance</primary><secondary>raw data</secondary></indexterm><indexterm significance=\"normal\"><primary>raw data</primary><seealso>cooked data</seealso></indexterm><indexterm significance=\"normal\"><primary>cooked data</primary><seealso>raw data</seealso></indexterm><quote>Raw</quote> data is just a collection of elements, with no additional punctation or information about presentation. To continue the cooking metaphor, raw data is just a set of ingredients. It's up to the processor to select appropriate elements, arrange them for display, and add required presentational information."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>raw data</primary></indexterm><indexterm significance=\"normal\"><primary>appearance</primary><secondary>raw data</secondary></indexterm><indexterm significance=\"normal\"><primary>raw data</primary><seealso>cooked data</seealso></indexterm><indexterm significance=\"normal\"><primary>cooked data</primary><seealso>raw data</seealso></indexterm><quote>原始</quote>数据只是元素的集合，没有额外的指示或展现信息。以烹饪比喻，原始数据只是原料的集合。它等到处理器选择合适的元素，安排它们显示，并添加需要的展现信息。"
 
 #: build/en/defguide5.xml:6273(glossseealso)
 msgid "Cooked"
-msgstr ""
+msgstr "Cooked"
 
 #: build/en/defguide5.xml:6278(para)
 msgid "<indexterm significance=\"normal\"><primary>SGML</primary></indexterm><indexterm significance=\"normal\"><primary>ISO standards</primary><secondary>SGML</secondary></indexterm> Standard Generalized Markup Language, an international standard (<acronym>ISO</acronym> 8879) that specifies the rules for the creation of platform-independent markup languages for electronic texts."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>SGML</primary></indexterm><indexterm significance=\"normal\"><primary>ISO standards</primary><secondary>SGML</secondary></indexterm>标准通用标记语言是一个国际标准 (<acronym>ISO</acronym> 8879)，为创建平台独立的电子文档标记语言定义了标准。"
 
 #: build/en/defguide5.xml:6288(glossterm)
 msgid "stylesheet"
-msgstr ""
+msgstr "样式表"
 
 #: build/en/defguide5.xml:6290(para)
 msgid "<indexterm significance=\"normal\"><primary>stylesheets</primary></indexterm><indexterm significance=\"normal\"><primary>appearance</primary><secondary>stylesheets</secondary></indexterm> A file that specifies the presentation or appearance of a document; there are several standards for such stylesheets, including <acronym>CSS</acronym>, <acronym>FOSI</acronym>s, <acronym>DSSSL</acronym>, and, most recently, <acronym>XSL</acronym>. Vendors often have proprietary stylesheet formats as well."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>stylesheets</primary></indexterm><indexterm significance=\"normal\"><primary>appearance</primary><secondary>stylesheets</secondary></indexterm>定义文档的展现或外观的文件。样式表有几种标准，包括 <acronym>CSS</acronym>、<acronym>FOSI</acronym>、<acronym>DSSSL</acronym>，以及最新的 <acronym>XSL</acronym>。销售商通也常有专用的样式表格式。"
 
 #: build/en/defguide5.xml:6302(glossterm)
 msgid "system identifier"
-msgstr ""
+msgstr "系统标识符"
 
 #: build/en/defguide5.xml:6304(para)
 msgid "<indexterm significance=\"normal\"><primary>system identifiers</primary><secondary>SGML</secondary></indexterm><indexterm significance=\"normal\"><primary>SGML</primary><secondary>system identifiers</secondary></indexterm> In <acronym>SGML</acronym>, a local, system-dependent identifier for a document, <acronym>DTD</acronym>, or external entity. Usually a filename on the local system."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>system identifiers</primary><secondary>SGML</secondary></indexterm><indexterm significance=\"normal\"><primary>SGML</primary><secondary>system identifiers</secondary></indexterm>在 <acronym>SGML</acronym> 中，对于文档、<acronym>DTD</acronym>，或者外部实体是本地，系统相关的标识符。通常是本地系统的文件名。"
 
 #: build/en/defguide5.xml:6312(para)
 msgid "<indexterm significance=\"normal\"><primary>system identifiers</primary><secondary>XML</secondary></indexterm><indexterm significance=\"normal\"><primary>URI</primary><secondary>XML system identifiers</secondary></indexterm><indexterm significance=\"normal\"><primary>XML</primary><secondary>system identifiers</secondary></indexterm> In <acronym>XML</acronym>, a system identifer is required to be a <acronym>URI</acronym>."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>system identifiers</primary><secondary>XML</secondary></indexterm><indexterm significance=\"normal\"><primary>URI</primary><secondary>XML system identifiers</secondary></indexterm><indexterm significance=\"normal\"><primary>XML</primary><secondary>system identifiers</secondary></indexterm>在 <acronym>XML</acronym> 中，系统标识符必须是 <acronym>URI</acronym>。"
 
 #: build/en/defguide5.xml:6326(para)
 msgid "<indexterm significance=\"normal\"><primary>tags</primary></indexterm><indexterm significance=\"normal\"><primary>elements</primary><secondary>tags</secondary></indexterm><indexterm significance=\"normal\"><primary>angle brackets</primary><secondary>SGML tags</secondary></indexterm><indexterm significance=\"normal\"><primary>SGML</primary><secondary>tags</secondary></indexterm> An <acronym>SGML</acronym> element name enclosed in angle brackets (&lt;&gt;), used to mark up the semantics or structure of a document. <tag class=\"starttag\">Para</tag> is a tag in DocBook used to mark the beginning of a paragraph."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>tags</primary></indexterm><indexterm significance=\"normal\"><primary>elements</primary><secondary>tags</secondary></indexterm><indexterm significance=\"normal\"><primary>angle brackets</primary><secondary>SGML tags</secondary></indexterm><indexterm significance=\"normal\"><primary>SGML</primary><secondary>tags</secondary></indexterm>一个括在尖括号里的 <acronym>SGML</acronym> 元素名 (&lt;&gt;)，用来标记文档的语义或者结构。在 DocBook 中，<tag class=\"starttag\">Para</tag> 是一个用来标记段落开始的标签。"
 
 #: build/en/defguide5.xml:6341(acronym)
 msgid "URI"
@@ -5230,7 +5236,7 @@ msgstr "URI"
 
 #: build/en/defguide5.xml:6343(para)
 msgid "<indexterm significance=\"normal\"><primary>URI</primary></indexterm><indexterm significance=\"normal\"><primary>Internet names and addresses</primary></indexterm><indexterm significance=\"normal\"><primary>addresses, Internet syntax</primary></indexterm><indexterm significance=\"normal\"><primary>names</primary><secondary>Internet, syntax</secondary></indexterm> Uniform Resource Identifier, the <acronym>W3C</acronym>'s codification of the name and address syntax of present and future objects on the Internet. In its most basic form, a <acronym>URI</acronym> consists of a scheme name (such as file, http, ftp, news, mailto, gopher) followed by a colon, followed by a path whose nature is determined by the scheme that precedes it (see <acronym>RFC</acronym> 1630)."
-msgstr "<indexterm significance=\"normal\"><primary>URI</primary></indexterm><indexterm significance=\"normal\"><primary>互联网名称和地址</primary></indexterm><indexterm significance=\"normal\"><primary>地址, 互联网语法</primary></indexterm><indexterm significance=\"normal\"><primary>名称</primary><secondary>互联网, 语法</secondary></indexterm>统一资源标识是 <acronym>W3C</acronym> 规定的在互联网上描述当前和未来对象的名称和地址的规范。其最基本的形式，<acronym>URI</acronym> 由方案名称(例如 file, http, ftp, news, mailto, gopher 等)，冒号，以及前述方案名称确定的自然路径组成。"
+msgstr "<indexterm significance=\"normal\"><primary>URI</primary></indexterm><indexterm significance=\"normal\"><primary>Internet names and addresses</primary></indexterm><indexterm significance=\"normal\"><primary>addresses, Internet syntax</primary></indexterm><indexterm significance=\"normal\"><primary>names</primary><secondary>Internet, syntax</secondary></indexterm>统一资源标识是 <acronym>W3C</acronym> 规定的在互联网上描述当前和未来对象的名称和地址的规范。其最基本的形式，<acronym>URI</acronym> 由方案名称(例如 file, http, ftp, news, mailto, gopher 等)，冒号，以及前述方案名称确定的自然路径组成。"
 
 #: build/en/defguide5.xml:6356(para)
 msgid "<indexterm significance=\"normal\"><primary>URN</primary></indexterm><indexterm significance=\"normal\"><primary>URL</primary></indexterm><acronym>URI</acronym> is the umbrella term for <acronym>URN</acronym>s, <acronym>URL</acronym>s, and all other Uniform Resource Identifiers."
@@ -5266,63 +5272,63 @@ msgstr "wrapper"
 
 #: build/en/defguide5.xml:6394(para)
 msgid "<indexterm significance=\"normal\"><primary>wrappers</primary></indexterm><indexterm significance=\"normal\"><primary>meta-information</primary><secondary>wrappers</secondary></indexterm><indexterm significance=\"normal\"><primary>elements</primary><secondary>wrappers</secondary></indexterm> Some elements, such as <tag>Chapter</tag>, have important semantic significance. Other elements serve no obvious purpose except to contain a number of other elements. For example, <tag>info</tag> has no important semantics; it merely serves as a container for the meta-information about a book. Elements that are just containers are sometimes called <quote>wrappers.</quote>"
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>wrappers</primary></indexterm><indexterm significance=\"normal\"><primary>meta-information</primary><secondary>wrappers</secondary></indexterm><indexterm significance=\"normal\"><primary>elements</primary><secondary>wrappers</secondary></indexterm>一些元素有重要语义意义，例如 <tag>Chapter</tag>。其它元素除了包含许多其它元素，没有明显的目的。例如 <tag>info</tag> 没有重要的语义；它只是用来作为书的元信息容器。只是容器的元素有时叫做 <quote>wrapper</quote>。"
 
 #: build/en/defguide5.xml:6412(para)
 msgid "<indexterm significance=\"normal\"><primary>XML</primary></indexterm><indexterm significance=\"normal\"><primary>SGML</primary><secondary>XML and</secondary></indexterm><indexterm significance=\"normal\"><primary>Extensible Markup Language</primary><see>XML</see></indexterm> The <link href=\"http://www.w3.org/TR/REC-xml\">Extensible Markup Language</link>, a subset of <acronym>SGML</acronym> designed specifically for use over the Web."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>XML</primary></indexterm><indexterm significance=\"normal\"><primary>SGML</primary><secondary>XML and</secondary></indexterm><indexterm significance=\"normal\"><primary>Extensible Markup Language</primary><see>XML</see></indexterm><link href=\"http://www.w3.org/TR/REC-xml\">扩展标记语言</link>作为 <acronym>SGML</acronym> 的子集，专门为在网络上使用设计。"
 
 #: build/en/defguide5.xml:6424(para)
 msgid "<indexterm significance=\"normal\"><primary>XSL</primary></indexterm><indexterm significance=\"normal\"><primary>XML</primary><secondary>XSL stylesheets</secondary></indexterm><acronym>XML</acronym> Style Language, an evolving language for stylesheets to be attached to <acronym>XML</acronym> documents. The stylesheet is itself an <acronym>XML</acronym> document."
-msgstr ""
+msgstr "<indexterm significance=\"normal\"><primary>XSL</primary></indexterm><indexterm significance=\"normal\"><primary>XML</primary><secondary>XSL stylesheets</secondary></indexterm><acronym>XML</acronym> 样式语言是样式表针对 <acronym>XML</acronym> 文档的进化语言。这种样式表本身是 <acronym>XML</acronym> 文档。"
 
 #: build/en/defguide5.xml:6441(emphasis)
 msgid "About this Book"
-msgstr ""
+msgstr "关于本书"
 
 #: build/en/defguide5.xml:6443(para)
 msgid "This is an <emphasis>alpha</emphasis> edition of this book. This version may contain glaring inconsistencies, missing sections, and other misfeatures indicative of a <quote>work in progress</quote>."
-msgstr ""
+msgstr "这是本书的 <emphasis>alpha</emphasis> 版本。这个版本可能包含明显的不一致，章节缺失，以及其它缺少的特性，它们是<quote>正在进行中</quote>的标志。"
 
 #: build/en/defguide5.xml:6448(emphasis)
 msgid "About the Authors"
-msgstr ""
+msgstr "关于作者"
 
 #: build/en/defguide5.xml:6450(para)
 msgid "Norman Walsh is an <emphasis>XML Standards Engineer</emphasis> with <link href=\"http://www.sun.com/\">Sun Microsystems, Inc.</link>."
-msgstr ""
+msgstr "Norman Walsh 是一名 <link href=\"http://www.sun.com/\">Sun Microsystems, Inc.</link> 的 <emphasis>XML 标准工程师</emphasis>。"
 
 #: build/en/defguide5.xml:6454(para)
 msgid "Norm is an active participant in a number of standards efforts worldwide, including the XML Core, XSL and XML Schema Working Groups of the World Wide Web Consortium, the OASIS XSLT Conformance and RELAX NG Committees, the OASIS Entity Resolution Committee for which he is the editor, and the OASIS DocBook Technical Committee, which he chairs."
-msgstr ""
+msgstr "Norm 是许多影响世界的标准的活跃参与者，包括 XML 核心、万维网协会的 XSL 和 XML 方案工作组、OASIS XSLT 一致性和 RELAX NG 委员会、他作为编辑的 OASIS 实体决议委员会、以及他作为主席的 OASIS DocBook 技术委员会。"
 
 #: build/en/defguide5.xml:6462(para)
 msgid "Leonard Muellner has been implementing and supporting the production of O'Reilly books marked up in DocBook since 1994."
-msgstr ""
+msgstr "Leonard Muellner 从 1994 年开始在 DocBook 标记中实现并支持 O'Reilly 出版的书。"
 
 #: build/en/defguide5.xml:6466(emphasis)
 msgid "Colophon"
-msgstr ""
+msgstr "出版声明"
 
 #: build/en/defguide5.xml:6468(para)
 msgid "Our look is the result of reader comments, our own experimentation, and feedback from distribution channels. Distinctive covers complement our distinctive approach to technical topics, breathing personality and life into potentially dry subjects."
-msgstr ""
+msgstr "本书的样子是读者的建议、我们自己的经验，以及从发行渠道得来的反馈的结果。与众不同的封面是我们对技术主题独特理解的补充，将个性和生活投入到可能枯燥的主题当中去吧。"
 
 #: build/en/defguide5.xml:6475(para)
 msgid "The bird on the cover of <citetitle>DocBook: The Definitive Guide</citetitle> is a wood duck. Often considered one of the most beautiful ducks in North America, the male wood duck has a metallic purple and green head with white streaks extending from its bill around the eyes and down to its blue and green, gold-flecked wings. It has a white neck, chestnut-colored chest, a white or red bill, and yellow-orange legs and feet. Females have more brown, gray, and subdued hues."
-msgstr ""
+msgstr "在 <citetitle>DocBook：权威指南</citetitle> 封面上的鸟是木鸭。通常被认为是北美最美丽的鸭子之一，雄木鸭有紫色和绿色金属光泽的头，上面有从嘴开始绕过眼睛最后延伸到蓝绿色带有金色斑点的翅膀上的白色条纹。它有白色的脖子，栗色的胸脯，白色或者红色的嘴，黄橙色的腿和脚。雌木鸭的颜色相比之下更为棕灰色，色调更加柔和。"
 
 #: build/en/defguide5.xml:6485(para)
 msgid "Edie Freedman designed the cover of this book, using a 19th-century engraving from the Dover Pictorial Archive. The cover layout was produced by Kathleen Wilson using QuarkXPress 3.32 and Adobe's ITC Garamond font. The inside layout was designed by Alicia Cech, based on a series design by Nancy Priest. The text was formatted from SGML into FrameMaker 5.5 with Jade, using a DSSSL conversion stylesheet written by Chris Maden. The interior fonts are ITC Garamond Light, Garamond Book, and ConstantWillison."
-msgstr ""
+msgstr "Edie Freedman 设计了本书的封面，使用了一张多弗美术馆 19 世纪的版画。封面由 Kathleen Wilson 用 QuarkXPress 3.32 和 Adobe 的 ITC Garamond font 制作。封底由 Alicia Cech 根据 Nancy Priest 的一系列设计而设计。使用 Jade 从 SGML 转变到 FrameMaker 5.5 的文本格式，其中使用了 Chris Maden 编写的 DSSSL 转换样式表。内部字体是 ITC Garamond Light、Garamond Book 和 ConstantWillison。"
 
 #: build/en/defguide5.xml:6496(para)
 msgid "Whenever possible, our books use RepKover(TM), a durable and flexible lay-flat binding. If the page count exceeds RepKover's limit, perfect binding is used."
-msgstr ""
+msgstr "对这本书我们尽可能使用 RepKover(TM)，这是一种灵活耐用的平面装订。如果页数超过了 RepKover 的限制，将会使用无损装订。"
 
 #: build/en/defguide5.xml:6501(para)
 msgid "The illustrations that appear in this book were produced by Robert Romano using Macromedia Freehand 8 and Adobe Photoshop 5. David Futato was the production editor; Madeleine Newell guided the book through the early stages of production. Mark Nigara was the copyeditor for DocBook: The Definitive Guide. Claire LeBlanc was the production manager. Ellie Cutler was the proofreader; quality assurance was provided by Jeff Holcomb and Claire LeBlanc. This colophon was written by Nicole Arigo."
-msgstr ""
+msgstr "这本书中的插图是由 Robert Romano 用 Macromedia Freehand 8 和 Adobe Photoshop 5 制作。 David Futato 是产品编辑； Madeleine Newell 指导本书度过开发的最初阶段。 Mark Nigara 是版权编辑。Claire LeBlanc 是产品经理。 Ellie Cutler 是校对员；Jeff Holcomb 和 Claire LeBlanc 做质量保证。Nicole Arigo 撰写版权声明。"
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
 #: build/en/defguide5.xml:0(None)
