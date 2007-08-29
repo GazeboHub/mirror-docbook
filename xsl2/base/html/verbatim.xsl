@@ -77,6 +77,7 @@
 </xsl:template>
 
 <xsl:template match="ghost:co">
+  <a name="{@xml:id}"/>
   <xsl:call-template name="t:callout-bug">
     <xsl:with-param name="conum">
       <xsl:number count="ghost:co"
