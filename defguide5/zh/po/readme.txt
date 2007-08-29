@@ -1,7 +1,7 @@
-1. Check
+*) Check
     msgfmt --statistics -c zh_CN.po
 
-2. Format
+*) Format
     msgmerge --no-wrap -o zh_CN-new.po zh_CN.po defguide5.pot
     mv -f zh_CN-new.po zh_CN.po
 
@@ -14,14 +14,28 @@
     msgmerge --no-wrap -o TortoiseMerge_zh_CN-new.po TortoiseMerge_zh_CN.po TortoiseMerge.pot
     mv -f TortoiseMerge_zh_CN-new.po TortoiseMerge_zh_CN.po
 
-3. Merge
-    msgmerge -o zh_CN-new.po zh_CN-other.po zh_CN.po
+*) Merge
+    subversion/tools/dev/po-merge.py zh_CN.po < zh_CN-other.po
+    msgmerge --no-wrap -o zh_CN-new.po zh_CN.po example.pot
     mv -f zh_CN-new.po zh_CN.po
 
-4. Commit
-    Update Simplified Chinese translation:
-    * Tortoise_zh_CN.po: Update to Tortoise.pot@r9532.
-    * TortoiseSVN_zh_CN.po: Translate some new/fuzzy messages.
+    or
+
+    pomerge -i zh_CN-other.po -o zh_CN-new.po -t zh_CN.po
+    msgmerge --no-wrap -o zh_CN-new.po zh_CN.po example.pot
+    mv -f zh_CN-new.po zh_CN.po
+
+*) Commit
+
+    Simplified Chinese defguide5 translation:
+    * Update to r10315 of defguide5.pot
+
+    Simplified Chinese gui translation:
+    * Update to r10315 of TortoiseSVN.pot
+
+    Simplified Chinese doc translation:
+    * Update to r10265 of TortoiseSVN.pot
+    * Update to r10308 of TortoiseMerge.pot
 
     ------------------------------------------------------------------------
     Follow-up to r25007, adding or improving a few comments.
