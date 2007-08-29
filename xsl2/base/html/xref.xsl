@@ -120,13 +120,15 @@ attribute or a <tag class="attribute">linkend</tag> attribute</para>
 </doc:template>
 
 <xsl:template match="db:xref" name="db:xref">
-  <xsl:variable name="target" select="key('id',@linkend)[1]"/>
+  <xsl:param name="linkend" select="@linkend"/>
+
+  <xsl:variable name="target" select="key('id',$linkend)[1]"/>
   <xsl:variable name="refelem" select="node-name($target)"/>
 
-  <xsl:if test="count(key('id', @linkend)) &gt; 1">
+  <xsl:if test="count(key('id', $linkend)) &gt; 1">
     <xsl:message>
       <xsl:text>Warning: the ID '</xsl:text>
-      <xsl:value-of select="@linkend"/>
+      <xsl:value-of select="$linkend"/>
       <xsl:text>' is not unique.</xsl:text>
     </xsl:message>
   </xsl:if>
@@ -135,7 +137,7 @@ attribute or a <tag class="attribute">linkend</tag> attribute</para>
     <xsl:when test="count($target) = 0">
       <xsl:message>
         <xsl:text>XRef to nonexistent id: </xsl:text>
-        <xsl:value-of select="@linkend"/>
+        <xsl:value-of select="$linkend"/>
       </xsl:message>
       <span class="formatting-error">
 	<xsl:call-template name="id"/>
@@ -1042,6 +1044,25 @@ cross references to that element.</para>
   <xsl:param name="referrer"/>
   <xsl:param name="xrefstyle"/>
   <xsl:apply-templates select="." mode="m:callout-bug"/>
+</xsl:template>
+
+<xsl:template match="db:areaset" mode="m:xref-to">
+  <xsl:call-template name="t:callout-bug">
+    <xsl:with-param name="conum"
+		    select="count(preceding-sibling::db:areaset
+			    |preceding-sibling::db:area)
+			    +1"/>
+  </xsl:call-template>
+</xsl:template>
+
+<xsl:template match="db:area" mode="m:xref-to">
+  <xsl:call-template name="t:callout-bug">
+    <xsl:with-param name="conum"
+		    select="count(parent::db:areaset/preceding-sibling::db:areaset
+			          |parent::db:areaset/preceding-sibling::db:area
+				  |preceding-sibling::db:area)
+			    +1"/>
+  </xsl:call-template>
 </xsl:template>
 
 <xsl:template match="db:book" mode="m:xref-to">
