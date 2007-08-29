@@ -249,35 +249,44 @@ for the content of a bibliography entry.</para>
 <xsl:template match="db:bibliomset/db:title|db:bibliomset/db:citetitle" 
 	      mode="m:bibliomixed">
   <xsl:variable name="relation" select="../@relation"/>
-  <xsl:choose>
-    <xsl:when test="$relation='article' or @pubwork='article'">
-      <xsl:call-template name="gentext-startquote"/>
-      <xsl:apply-templates mode="m:bibliomixed"/>
-      <xsl:call-template name="gentext-endquote"/>
-    </xsl:when>
-    <xsl:otherwise>
-      <cite>
-	<xsl:apply-templates mode="m:bibliomixed"/>
-      </cite>
-    </xsl:otherwise>
-  </xsl:choose>
+
+  <xsl:call-template name="simple-xlink">
+    <xsl:with-param name="content">
+      <xsl:choose>
+	<xsl:when test="$relation='article' or @pubwork='article'">
+	  <xsl:call-template name="gentext-startquote"/>
+	  <xsl:apply-templates mode="m:bibliomixed"/>
+	  <xsl:call-template name="gentext-endquote"/>
+	</xsl:when>
+	<xsl:otherwise>
+	  <cite>
+	    <xsl:apply-templates mode="m:bibliomixed"/>
+	  </cite>
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:with-param>
+  </xsl:call-template>
 </xsl:template>
 
 <xsl:template match="db:citetitle|db:title" mode="m:bibliomixed">
-  <span class="{name(.)}">
-    <xsl:choose>
-      <xsl:when test="@pubwork = 'article'">
-        <xsl:call-template name="gentext-startquote"/>
-	<xsl:apply-templates mode="m:bibliomixed"/>
-        <xsl:call-template name="gentext-endquote"/>
-      </xsl:when>
-      <xsl:otherwise>
-	<cite>
-	  <xsl:apply-templates mode="m:bibliomixed"/>
-	</cite>
-      </xsl:otherwise>
-    </xsl:choose>
-  </span>
+  <xsl:call-template name="simple-xlink">
+    <xsl:with-param name="content">
+      <span class="{name(.)}">
+	<xsl:choose>
+	  <xsl:when test="@pubwork = 'article'">
+	    <xsl:call-template name="gentext-startquote"/>
+	    <xsl:apply-templates mode="m:bibliomixed"/>
+	    <xsl:call-template name="gentext-endquote"/>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <cite>
+	      <xsl:apply-templates mode="m:bibliomixed"/>
+	    </cite>
+	  </xsl:otherwise>
+	</xsl:choose>
+      </span>
+    </xsl:with-param>
+  </xsl:call-template>
 </xsl:template>
 
 <xsl:template match="db:revhistory" mode="m:bibliomixed">
@@ -376,36 +385,44 @@ for the content of a bibliography entry.</para>
 <xsl:template match="db:bibliomset/db:title|db:bibliomset/db:citetitle" 
 	      mode="m:biblioentry">
   <xsl:variable name="relation" select="../@relation"/>
-  <xsl:choose>
-    <xsl:when test="$relation='article' or @pubwork='article'">
-      <xsl:call-template name="gentext-startquote"/>
-      <xsl:apply-templates mode="m:biblioentry"/>
-      <xsl:call-template name="gentext-endquote"/>
-    </xsl:when>
-    <xsl:otherwise>
-      <cite>
-	<xsl:apply-templates mode="m:biblioentry"/>
-      </cite>
-    </xsl:otherwise>
-  </xsl:choose>
+  <xsl:call-template name="simple-xlink">
+    <xsl:with-param name="content">
+      <xsl:choose>
+	<xsl:when test="$relation='article' or @pubwork='article'">
+	  <xsl:call-template name="gentext-startquote"/>
+	  <xsl:apply-templates mode="m:biblioentry"/>
+	  <xsl:call-template name="gentext-endquote"/>
+	</xsl:when>
+	<xsl:otherwise>
+	  <cite>
+	    <xsl:apply-templates mode="m:biblioentry"/>
+	  </cite>
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:with-param>
+  </xsl:call-template>
   <xsl:text>. </xsl:text>
 </xsl:template>
 
 <xsl:template match="db:citetitle|db:title" mode="m:biblioentry">
-  <span class="{name(.)}">
-    <xsl:choose>
-      <xsl:when test="@pubwork = 'article'">
-        <xsl:call-template name="gentext-startquote"/>
-	<xsl:apply-templates mode="m:biblioentry"/>
-        <xsl:call-template name="gentext-endquote"/>
-      </xsl:when>
-      <xsl:otherwise>
-	<cite>
-	  <xsl:apply-templates mode="m:biblioentry"/>
-	</cite>
-      </xsl:otherwise>
-    </xsl:choose>
-  </span>
+  <xsl:call-template name="simple-xlink">
+    <xsl:with-param name="content">
+      <span class="{name(.)}">
+	<xsl:choose>
+	  <xsl:when test="@pubwork = 'article'">
+	    <xsl:call-template name="gentext-startquote"/>
+	    <xsl:apply-templates mode="m:biblioentry"/>
+	    <xsl:call-template name="gentext-endquote"/>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <cite>
+	      <xsl:apply-templates mode="m:biblioentry"/>
+	    </cite>
+	  </xsl:otherwise>
+	</xsl:choose>
+      </span>
+    </xsl:with-param>
+  </xsl:call-template>
   <xsl:text>. </xsl:text>
 </xsl:template>
 
