@@ -10,7 +10,7 @@
 
 <refsynopsisdiv>
 <src:fragment xml:id="toc.max.depth.frag">
-<xsl:param name="toc.max.depth">8</xsl:param>
+<xsl:param name="toc.max.depth" select="8"/>
 </src:fragment>
 </refsynopsisdiv>
 
