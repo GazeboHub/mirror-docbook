@@ -582,7 +582,9 @@ a cross-reference.</para>
       <xsl:variable name="candidate"
              select="substring(substring-after($template, '%'), 1, 1)"/>
 
+      <!--
       <xsl:comment>candidate: <xsl:value-of select="$candidate"/></xsl:comment>
+      -->
 
       <xsl:choose>
         <xsl:when test="$candidate = 't'">
@@ -712,7 +714,9 @@ a cross-reference.</para>
         </xsl:otherwise>
       </xsl:choose>
 
+      <!--
       <xsl:comment>end candidate: <xsl:value-of select="$candidate"/></xsl:comment>
+      -->
 
       <!-- recurse with the rest of the template string -->
       <xsl:variable name="rest"
