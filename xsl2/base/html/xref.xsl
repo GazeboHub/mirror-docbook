@@ -63,15 +63,18 @@ identified.</entry>
 </refdescription>
 </doc:template>
 
-<xsl:template match="db:link">
+<xsl:template match="db:link" name="db:link">
+  <xsl:param name="title" select="string(db:alt[1])" as="xs:string"/>
+  <xsl:param name="href" select="string(@xlink:href)" as="xs:string"/>
+
   <xsl:choose>
     <xsl:when test="node()">
       <xsl:choose>
-	<xsl:when test="@xlink:href">
-	  <a href="{@xlink:href}">
+	<xsl:when test="$href != ''">
+	  <a href="{$href}">
 	    <xsl:call-template name="class"/>
-	    <xsl:if test="db:alt">
-	      <xsl:attribute name="title" select="db:alt[1]"/>
+	    <xsl:if test="$title != ''">
+	      <xsl:attribute name="title" select="$title"/>
 	    </xsl:if>
 	    <xsl:apply-templates/>
 	  </a>
@@ -79,8 +82,8 @@ identified.</entry>
 	<xsl:otherwise>
 	  <a href="{f:href(/,key('id',@linkend)[1])}">
 	    <xsl:call-template name="class"/>
-	    <xsl:if test="db:alt">
-	      <xsl:attribute name="title" select="db:alt[1]"/>
+	    <xsl:if test="$title != ''">
+	      <xsl:attribute name="title" select="$title"/>
 	    </xsl:if>
 	    <xsl:apply-templates/>
 	  </a>
@@ -89,10 +92,10 @@ identified.</entry>
     </xsl:when>
     <xsl:otherwise>
       <xsl:choose>
-	<xsl:when test="@xlink:href">
-	  <a href="{@xlink:href}">
+	<xsl:when test="$href != ''">
+	  <a href="{$href}">
 	    <xsl:call-template name="class"/>
-	    <xsl:value-of select="@xlink:href"/>
+	    <xsl:value-of select="$href"/>
 	  </a>
 	</xsl:when>
 	<xsl:otherwise>
