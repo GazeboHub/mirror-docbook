@@ -102,6 +102,8 @@
 	      </xsl:otherwise>
 	    </xsl:choose>
 	  </title>
+	  <xsl:call-template name="t:head-meta"/>
+	  <xsl:call-template name="t:head-links"/>
 	  <xsl:call-template name="css-style"/>
 	  <xsl:call-template name="javascript"/>
 	</head>

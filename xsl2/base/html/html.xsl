@@ -216,6 +216,36 @@ of the stylesheet is inserted directly.</para>
 
 <!-- ====================================================================== -->
 
+<doc:template name="t:head-meta" xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Template for inserting metadata in the head</refpurpose>
+
+<refdescription>
+<para>This template is called in the HTML <tag>head</tag> to insert
+HTML <tag>meta</tag> elements. The standard version does nothing;
+customizers must override this template if they wish to insert
+metadata.</para>
+</refdescription>
+</doc:template>
+
+<xsl:template name="t:head-meta"/>
+
+<!-- ====================================================================== -->
+
+<doc:template name="t:head-links" xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Template for inserting links in the head</refpurpose>
+
+<refdescription>
+<para>This template is called in the HTML <tag>head</tag> to insert
+HTML <tag>link</tag> elements. The standard version does nothing;
+customizers must override this template if they wish to insert
+links.</para>
+</refdescription>
+</doc:template>
+
+<xsl:template name="t:head-links"/>
+
+<!-- ====================================================================== -->
+
 <doc:template name="t:body-attributes" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Template for inserting attributes on the HTML body</refpurpose>
 
