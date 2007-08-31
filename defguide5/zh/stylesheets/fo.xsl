@@ -40,4 +40,13 @@
   <xsl:param name="monospace.font.family">monospace</xsl:param>
   <xsl:param name="title.font.family">sans-serif</xsl:param>
 
+  <xsl:attribute-set name="xref.properties">
+    <xsl:attribute name="color">
+      <xsl:choose>
+        <xsl:when test="self::ulink">blue</xsl:when>
+        <xsl:otherwise>red</xsl:otherwise>
+      </xsl:choose>
+    </xsl:attribute>
+  </xsl:attribute-set>
+
 </xsl:stylesheet>
