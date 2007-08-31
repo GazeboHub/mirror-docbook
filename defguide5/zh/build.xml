@@ -69,7 +69,7 @@ Author：
         </uptodate>
     </target>
 
-    <target name="profile" depends="profile.init" unless="profile.isUpToDate" >
+    <target name="profile" depends="profile.init" unless="profile.isUpToDate">
 
         <filter token="docbook5.xsl" value="${docbook5.xsl}"/>
         <copy file="stylesheets/html-import.tmpl.xsl" tofile="stylesheets/html-import.xsl" filtering="true" overwrite="true"/>
@@ -81,7 +81,7 @@ Author：
         </copy>
 
         <!-- omit elements reference for a while -->
-        <copy file="list-elements.xml" todir="../en/refpages"/>
+        <copy file="list-elements.xml" todir="../en/refpages" overwrite="true"/>
 
         <exec dir="." executable="xsltproc">
             <arg value="--nonet"/>
@@ -108,7 +108,7 @@ Author：
         </uptodate>
     </target>
 
-    <target name="pot" depends="pot.init,profile" unless="pot.isUpToDate" >
+    <target name="pot" depends="pot.init,profile" unless="pot.isUpToDate">
         <exec dir="." executable="python">
             <arg value="xml2po.py"/>
             <arg value="-e"/>
@@ -135,7 +135,7 @@ Author：
         </uptodate>
     </target>
 
-    <target name="translate" depends="translate.init" unless="translate.isUpToDate" >
+    <target name="translate" depends="translate.init" unless="translate.isUpToDate">
         <mkdir dir="build/zh"/>
         <exec dir="." executable="msgfmt">
             <arg value="po/zh_CN.po"/>
@@ -185,7 +185,7 @@ Author：
             <arg value="build/zh/${doc.name}.xml"/>
         </exec>
 
-        <java classname="org.apache.fop.cli.Main" fork="true" dir="build/zh/pdf" maxmemory="512m" >
+        <java classname="org.apache.fop.cli.Main" fork="true" dir="build/zh/pdf" maxmemory="512m">
             <classpath refid="lib.classpath"/>
             <arg value="-c"/>
             <arg value="userconfig.xml"/>
@@ -222,7 +222,7 @@ Author：
         </exec>
 
         <java classname="org.apache.fop.cli.Main" fork="true"
-                dir="." maxmemory="512m" >
+                dir="." maxmemory="512m">
             <classpath refid="lib.classpath"/>
             <arg value="build/en/pdf/${doc.name}.fo"/>
             <arg value="build/en/pdf/${doc.name}.pdf"/>
