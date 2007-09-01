@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2007-08-31 23:01+0800\n"
+"POT-Creation-Date: 2007-09-01 13:32+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -360,7 +360,7 @@ msgid "Request for Comments"
 msgstr ""
 
 #: build/en/defguide5.xml:301(para) 
-msgid "Please help us improve future editions of this book by reporting any errors, inaccuracies, bugs, misleading or confusing statements, and plain old typos that you find. An online errata list is maintained at <link href=\"http://docbook.org/tdg5/errata.html\"/>. Email your bug reports and comments to us at <email>bookcomments@docbook.org</email>."
+msgid "Please help us improve future editions of this book by reporting any errors, inaccuracies, bugs, misleading or confusing statements, and plain old typos that you find. An online errata list is maintained at <link href=\"http://docbook.org/tdg5/errata.html\">http://docbook.org/tdg5/errata.html</link>. Email your bug reports and comments to us at <email>bookcomments@docbook.org</email>."
 msgstr ""
 
 #: build/en/defguide5.xml:311(title) 

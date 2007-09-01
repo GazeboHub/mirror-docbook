@@ -13,16 +13,15 @@
 #   msgfmt --statistics -c zh_CN.po
 #
 # Format:
-#   msgmerge --no-wrap -o zh_CN.po.new zh_CN.po defguide5.pot
-#   mv -f zh_CN.po.new zh_CN.po
+#   msgmerge --no-wrap --update zh_CN.po defguide5.pot
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: defguide5 0.0.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-31 23:01+0800\n"
+"POT-Creation-Date: 2007-09-01 13:32+0800\n"
 "PO-Revision-Date: 2007-08-31 21:16+0800\n"
-"Last-Translator: doriandeng <chinamoonlit@163.com>\n"
+"Last-Translator: DorianDeng <doriandeng@gmail.com>\n"
 "Language-Team: zh_CN <i18n-zh@googlegroups.com >\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -382,8 +381,8 @@ msgid "Request for Comments"
 msgstr "请求评论"
 
 #: build/en/defguide5.xml:301(para)
-msgid "Please help us improve future editions of this book by reporting any errors, inaccuracies, bugs, misleading or confusing statements, and plain old typos that you find. An online errata list is maintained at <link href=\"http://docbook.org/tdg5/errata.html\"/>. Email your bug reports and comments to us at <email>bookcomments@docbook.org</email>."
-msgstr "请帮助我们改进本书的未来版本，包含报告错误，不准确的地方，问题，易误解之处或混淆的语句，或者简单的拼写错误。勘误表在线维护于 <link href=\"http://docbook.org/tdg5/errata.html\"/>。请使用地址 <email>bookcomments@docbook.org</email> 给我们发送问题报告和注释。"
+msgid "Please help us improve future editions of this book by reporting any errors, inaccuracies, bugs, misleading or confusing statements, and plain old typos that you find. An online errata list is maintained at <link href=\"http://docbook.org/tdg5/errata.html\">http://docbook.org/tdg5/errata.html</link>. Email your bug reports and comments to us at <email>bookcomments@docbook.org</email>."
+msgstr "请帮助我们改进本书的未来版本，包含报告错误，不准确的地方，问题，易误解之处或混淆的语句，或者简单的拼写错误。勘误表在线维护于 <link href=\"http://docbook.org/tdg5/errata.html\">http://docbook.org/tdg5/errata.html</link>。请使用地址 <email>bookcomments@docbook.org</email> 给我们发送问题报告和注释。"
 
 #: build/en/defguide5.xml:311(title)
 msgid "Acknowledgements from the First Edition"
