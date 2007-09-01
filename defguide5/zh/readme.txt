@@ -1,26 +1,42 @@
 Create English Output
-=====================
-*) HTML
-    ant html.en
+---------------------
 
-*) PDF
-    ant pdf.en
+HTML
+~~~~
+--------------------------------
+  ant html.en
+--------------------------------
+
+PDF
+~~~
+--------------------------------
+  ant pdf.en
+--------------------------------
 
 
 Create Simplified Chinese Output
-================================
-*) Create or Update PO Template file
+--------------------------------
 
-    ant pot
+Create or Update PO Template file
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------
+  ant pot
+--------------------------------
 
-*) Translate by zh_CN.po
+Translate by zh_CN.po
+~~~~~~~~~~~~~~~~~~~~~
+--------------------------------
+  ant translate
+--------------------------------
 
-    ant translate
+Create HTML Output
+~~~~~~~~~~~~~~~~~~
+--------------------------------
+  ant html
+--------------------------------
 
-*) Create HTML Output
-
-    ant html
-
-*) Create PDF Output
-
-    ant pdf
+Create PDF Output
+~~~~~~~~~~~~~~~~~
+--------------------------------
+  ant pdf
+--------------------------------
