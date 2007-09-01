@@ -1,0 +1,26 @@
+Create English Output
+=====================
+*) HTML
+    ant html.en
+
+*) PDF
+    ant pdf.en
+
+
+Create Simplified Chinese Output
+================================
+*) Create or Update PO Template file
+
+    ant pot
+
+*) Translate by zh_CN.po
+
+    ant translate
+
+*) Create HTML Output
+
+    ant html
+
+*) Create PDF Output
+
+    ant pdf
