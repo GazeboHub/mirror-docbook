@@ -1,3 +1,14 @@
+Update
+------
+    #msgmerge --no-wrap --sort-by-file --update zh_CN.po defguide5.pot
+
+    msgmerge --update zh_CN.po defguide5.pot
+    msgmerge --update zh_CN.po subversion.pot
+    msgmerge --update Tortoise_zh_CN.po Tortoise.pot
+    msgmerge --update TortoiseSVN_zh_CN.po TortoiseSVN.pot
+    msgmerge --update TortoiseMerge_zh_CN.po TortoiseMerge.pot
+
+
 Check
 -----
     msgfmt --statistics -c zh_CN.po
@@ -5,17 +16,20 @@ Check
 
 Format
 ------
-    msgmerge --no-wrap --update zh_CN.po defguide5.pot
+    msgmerge --width=80 -o zh_CN_new.po zh_CN.po defguide5.pot
+    mv -f zh_CN_new.po zh_CN.po
 
-    msgmerge --sort-by-file --update zh_CN.po subversion.pot
-    "Last-Translator: Subversion Developers <dev@subversion.tigris.org>\n"
-    "Language-Team: Simplified Chinese <dev@subversion.tigris.org>\n"
+    msgmerge --sort-by-file --width=80 -o zh_CN_new.po zh_CN.po subversion.pot
+    mv -f zh_CN_new.po zh_CN.po
 
-    msgmerge --no-wrap --update Tortoise_zh_CN.po Tortoise.pot
+    msgmerge --width=80 -o Tortoise_zh_CN_new.po Tortoise_zh_CN.po Tortoise.pot
+    mv -f Tortoise_zh_CN_new.po Tortoise_zh_CN.po
 
-    msgmerge --no-wrap --update TortoiseSVN_zh_CN.po TortoiseSVN.pot
+    msgmerge --width=80 -o TortoiseSVN_zh_CN_new.po TortoiseSVN_zh_CN.po TortoiseSVN.pot
+    mv -f TortoiseSVN_zh_CN_new.po TortoiseSVN_zh_CN.po
 
-    msgmerge --no-wrap --update TortoiseMerge_zh_CN.po TortoiseMerge.pot
+    msgmerge ---width=80 -o TortoiseMerge_zh_CN_new.po TortoiseMerge_zh_CN.po TortoiseMerge.pot
+    mv -f TortoiseMerge_zh_CN_new.po TortoiseMerge_zh_CN.po
 
 
 Merge
