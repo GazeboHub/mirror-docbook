@@ -26,7 +26,6 @@ description:
     *) start building ...
 
 TODO:
-    *) Add Multi-Language support
     *) Add chm output
     *) ...
 
@@ -34,7 +33,7 @@ Author：
     *) Dongsheng Song <dongsheng.song@gmail.com>, 2007
 
 -->
-<project name="docbook" default="html">
+<project name="defguide5-zh" default="all">
 
     <property file="build.properties"/>
 
@@ -47,7 +46,9 @@ Author：
         </fileset>
     </path>
 
-    <target name="all">
+    <target name="all" depends="clean,doc"/>
+
+    <target name="doc">
         <antcall target="html.en"/>
         <antcall target="pdf.en"/>
         <antcall target="html"/>

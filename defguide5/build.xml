@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Usage:
+    Building 'The Definitive Guide (5.0)' - all
+        $ ant
+
+    Building 'The Definitive Guide (5.0)' - en(html & pdf)
+        $ ant en
+
+    Building 'The Definitive Guide (5.0)' - zh(html & pdf)
+        $ ant zh
+
+    more information can be found in 'build.tmpl.properties', 'en/build.xml' or 'zh/build.xml'.
+
+Dependency(en):
+    *) ant 1.7+
+    *) beanshell 2.0b4+, more information can be found in the ant manual, OptionalTasks/script.html
+    *) xsltproc 1.1.20+
+    *) jdk 1.4.2+
+    *) saxon8+, copy saxon*.jar to ${ant.home}/lib.
+    *) fop 0.94+, pdf only
+    *) For windows user, you can download gettext & xsltproc binary from:
+        http://i18n-zh.googlecode.com/files/gettext-0.16.1_xsltproc-1.1.20.tar.bz2
+
+Dependency(zh only):
+    *) python 2.4+
+    *) python-libxml2 2.6.27+
+    *) gettext 0.16+
+
+TODO:
+    *) Add chm output
+    *) ...
+
+Author：
+    *) Dongsheng Song <dongsheng.song@gmail.com>, 2007
+-->
+<project name="defguide5" default="all">
+
+    <target name="properties">
+        <echo message="ant.java.version: ${ant.java.version}"/>
+        <echo message="ant.version: ${ant.version}"/>
+        <echo message="ant.file: ${ant.file}"/>
+        <echo message="ant.project.name: ${ant.project.name}"/>
+        <echo message="os.name: ${os.name}"/>
+        <echo message="os.arch: ${os.arch}"/>
+        <echo message="os.version: ${os.version}"/>
+        <echo message="file.encoding: ${file.encoding}"/>
+        <echo message="file.separator: ${file.separator}"/>
+        <echo message="path.separator: ${path.separator}"/>
+        <echo message="basedir: ${basedir}"/>
+    </target>
+
+    <target name="clean">
+        <ant dir="en" target="clean"/>
+        <ant dir="zh" target="clean"/>
+    </target>
+
+    <target name="en">
+        <echo message="Building 'The Definitive Guide (5.0)' - en ..."/>
+        <ant dir="en"/>
+    </target>
+
+    <target name="zh">
+        <echo message="Building 'The Definitive Guide (5.0)' - zh ..."/>
+        <ant dir="zh"/>
+    </target>
+
+    <target name="all">
+        <antcall target="en"/>
+        <antcall target="zh"/>
+    </target>
+</project>
