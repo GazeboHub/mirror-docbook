@@ -17,7 +17,8 @@ Dependency(en):
     *) beanshell 2.0b4+, more information can be found in the ant manual, OptionalTasks/script.html
     *) xsltproc 1.1.20+
     *) jdk 1.4.2+
-    *) saxon8+, copy saxon*.jar to ${ant.home}/lib.
+    *) saxon8b+, copy saxon*.jar to ${ant.home}/lib
+    *) DocBook v5 XSL 1.72+
     *) fop 0.94+, pdf only
     *) For windows user, you can download gettext & xsltproc binary from:
         http://i18n-zh.googlecode.com/files/gettext-0.16.1_xsltproc-1.1.20.tar.bz2
@@ -26,6 +27,7 @@ Dependency(zh only):
     *) python 2.4+
     *) python-libxml2 2.6.27+
     *) gettext 0.16+
+    *) chinese font files, pdf only
 
 TODO:
     *) Add chm output
@@ -35,6 +37,8 @@ Author：
     *) Dongsheng Song <dongsheng.song@gmail.com>, 2007
 -->
 <project name="defguide5" default="all">
+
+    <import file="build-common.xml"/>
 
     <target name="properties">
         <echo message="ant.java.version: ${ant.java.version}"/>
@@ -55,12 +59,14 @@ Author：
         <ant dir="zh" target="clean"/>
     </target>
 
-    <target name="en">
+    <target name="init" depends="init-avail"/>
+
+    <target name="en" depends="init">
         <echo message="Building 'The Definitive Guide (5.0)' - en ..."/>
         <ant dir="en"/>
     </target>
 
-    <target name="zh">
+    <target name="zh" depends="init">
         <echo message="Building 'The Definitive Guide (5.0)' - zh ..."/>
         <ant dir="zh"/>
     </target>

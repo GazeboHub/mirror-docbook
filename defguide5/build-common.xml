@@ -1,0 +1,43 @@
+<project>
+    <path id="saxon.classpath">
+        <fileset dir="${ant.home}/lib">
+            <include name="saxon*.jar"/>
+        </fileset>
+    </path>
+
+    <path id="check.classpath">
+        <fileset dir="${ant.home}/lib">
+            <include name="saxon*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="init-avail" description="Check Saxon 8B, BSF, BeanShell">
+        <available property="saxon.present" classname="net.sf.saxon.Transform"
+            classpathref="check.classpath"/>
+        <condition property="saxon.message" value="Saxon 8B Support NOT Present !">
+          <not>
+            <equals arg1="${saxon.present}" arg2="true"/>
+          </not>
+        </condition>
+        <fail message="${saxon.message}" unless="saxon.present"/>
+
+        <available property="bsf.present" classname="org.apache.bsf.BSFManager"
+            classpathref="check.classpath"/>
+        <condition property="bsf.message" value="Apache bsf Support NOT Present !">
+          <not>
+            <equals arg1="${bsf.present}" arg2="true"/>
+          </not>
+        </condition>
+        <fail message="${bsf.message}" unless="bsf.present"/>
+
+        <available property="bsh.present" classname="bsh.util.BeanShellBSFEngine"
+            classpathref="check.classpath"/>
+        <condition property="bsh.message" value="BeanShell Support NOT Present !">
+          <not>
+            <equals arg1="${bsh.present}" arg2="true"/>
+          </not>
+        </condition>
+        <fail message="${bsh.message}" unless="bsh.present"/>
+    </target>
+
+</project>
