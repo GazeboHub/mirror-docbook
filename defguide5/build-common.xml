@@ -1,7 +1,14 @@
 <project>
-    <path id="saxon.classpath">
+
+    <path id="lib.classpath">
         <fileset dir="${ant.home}/lib">
-            <include name="saxon*.jar"/>
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${fop.home}/lib">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${fop.home}/build">
+            <include name="**/*.jar"/>
         </fileset>
     </path>
 
@@ -9,12 +16,15 @@
         <fileset dir="${ant.home}/lib">
             <include name="saxon*.jar"/>
         </fileset>
+        <fileset dir="${fop.home}/lib">
+            <include name="saxon*.jar"/>
+        </fileset>
     </path>
 
-    <target name="init-avail" description="Check Saxon 8B, BSF, BeanShell">
+    <target name="init-avail" description="Check Saxon 8, BSF, BeanShell">
         <available property="saxon.present" classname="net.sf.saxon.Transform"
             classpathref="check.classpath"/>
-        <condition property="saxon.message" value="Saxon 8B Support NOT Present !">
+        <condition property="saxon.message" value="Saxon 8 Support NOT Present !">
           <not>
             <equals arg1="${saxon.present}" arg2="true"/>
           </not>

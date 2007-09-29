@@ -54,6 +54,10 @@ Author：
         <echo message="basedir: ${basedir}"/>
     </target>
 
+    <target name="usage">
+        <echo message="Use the -projecthelp option instead"/>
+    </target>
+
     <target name="clean">
         <ant dir="en" target="clean"/>
         <ant dir="zh" target="clean"/>
