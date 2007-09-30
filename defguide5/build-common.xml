@@ -1,53 +1,34 @@
-<project>
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="defguide5-common">
 
     <path id="lib.classpath">
         <fileset dir="${ant.home}/lib">
             <include name="*.jar"/>
         </fileset>
-        <fileset dir="${fop.home}/lib">
-            <include name="*.jar"/>
+        <fileset dir="${fop.home}">
+            <include name="**/*.jar"/>
         </fileset>
-        <fileset dir="${fop.home}/build">
+        <fileset dir="${usr.share.java}">
             <include name="**/*.jar"/>
         </fileset>
     </path>
 
-    <path id="check.classpath">
-        <fileset dir="${ant.home}/lib">
-            <include name="saxon*.jar"/>
-        </fileset>
-        <fileset dir="${fop.home}/lib">
-            <include name="saxon*.jar"/>
-        </fileset>
-    </path>
-
-    <target name="init-avail" description="Check Saxon 8, BSF, BeanShell">
-        <available property="saxon.present" classname="net.sf.saxon.Transform"
-            classpathref="check.classpath"/>
-        <condition property="saxon.message" value="Saxon 8 Support NOT Present !">
-          <not>
-            <equals arg1="${saxon.present}" arg2="true"/>
-          </not>
+    <target name="init-avail">
+        <condition property="saxon.present">
+          <and>
+            <available classname="org.apache.bsf.BSFManager" classpathref="lib.classpath"/>
+            <available classname="net.sf.saxon.Transform" classpathref="lib.classpath"/>
+          </and>
         </condition>
-        <fail message="${saxon.message}" unless="saxon.present"/>
+        <fail message="Saxon 6.5 or 8.9 Support NOT Present !" unless="saxon.present"/>
 
-        <available property="bsf.present" classname="org.apache.bsf.BSFManager"
-            classpathref="check.classpath"/>
-        <condition property="bsf.message" value="Apache bsf Support NOT Present !">
-          <not>
-            <equals arg1="${bsf.present}" arg2="true"/>
-          </not>
+        <condition property="bsh.present">
+          <and>
+            <available classname="org.apache.bsf.BSFManager"/>
+            <available classname="bsh.util.BeanShellBSFEngine"/>
+          </and>
         </condition>
-        <fail message="${bsf.message}" unless="bsf.present"/>
-
-        <available property="bsh.present" classname="bsh.util.BeanShellBSFEngine"
-            classpathref="check.classpath"/>
-        <condition property="bsh.message" value="BeanShell Support NOT Present !">
-          <not>
-            <equals arg1="${bsh.present}" arg2="true"/>
-          </not>
-        </condition>
-        <fail message="${bsh.message}" unless="bsh.present"/>
+        <fail message="BeanShell Support NOT Present !" unless="bsh.present"/>
     </target>
 
 </project>

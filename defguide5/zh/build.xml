@@ -10,67 +10,61 @@ Usage:
     build all output: ant all
 
 Dependency:
-    *) python 2.4+
-    *) python-libxml2 2.6.27+
-    *) xsltproc 1.1.20+
-    *) gettext 0.16+
-    *) jdk 1.4.2+
-    *) ant 1.7+
-    *) fop trunk r+
+    *) python 2.4.4
+    *) python-libxml2 2.6.27
+    *) xsltproc 1.1.20
+    *) gettext 0.16
+    *) jdk 1.4.2
+    *) ant 1.7
+    *) fop trunk
     *) For windows user, you can download gettext & xsltproc binary from:
         http://i18n-zh.googlecode.com/files/gettext-0.16.1_xsltproc-1.1.20.tar.bz2
-
-description:
-    *) add dependency software
-    *) copy build.tmpl.properties to build.properties, and adjust build.properties
-    *) start building ...
-
-TODO:
-    *) Add chm output
-    *) ...
-
-Author：
-    *) Dongsheng Song <dongsheng.song@gmail.com>, 2007
-
 -->
 <project name="defguide5-zh" default="all">
 
-    <property file="build.properties"/>
+    <property file="../build-common.properties"/>
+    <import file="../build-common.xml"/>
 
-    <path id="lib.classpath">
-        <fileset dir="${fop.dir}/build">
-            <include name="**/*.jar"/>
-        </fileset>
-        <fileset dir="${fop.dir}/lib">
-            <include name="**/*.jar"/>
-        </fileset>
-    </path>
+    <property name="doc.name" value="defguide5-en"/>
 
-    <target name="all" depends="clean,doc"/>
+    <taskdef name="jing" classname="com.thaiopensource.relaxng.util.JingTask"/>
 
-    <target name="doc">
+    <target name="usage">
+        <echo message="Use the -projecthelp option instead"/>
+    </target>
+
+    <target name="clean" description="Clean the build directory">
+        <delete dir="build"/>
+        <delete file="../en/bookinfo.xml"/>
+        <!-- ant dir="../en/refpages" target="clean"/ -->
+    </target>
+
+    <target name="init" depends="init-avail" description="Check runtime class"/>
+
+    <target name="all" description="Generate document - html,chm,pdf">
         <antcall target="html.en"/>
         <antcall target="pdf.en"/>
         <antcall target="html"/>
         <antcall target="pdf"/>
     </target>
 
-    <target name="clean">
-        <delete dir="build"/>
-        <delete file="../en/bookinfo.xml"/>
-        <delete file="stylesheets/html-import.xsl"/>
-        <delete file="stylesheets/fo-import.xsl"/>
-    </target>
+    <!-- target name="validate" description="Validate source document">
+        <jing rngfile="${docbook5.home}/rng/docbook.rng" checkid="false">
+            <fileset dir="${basedir}${file.separator}src"
+                    includes="**/*.xml"/>
+        </jing>
+        <ant dir="refpages" target="validate"/>
+    </target -->
 
-    <target name="profile.init">
-        <uptodate property="profile.isUpToDate" targetfile="build/en/${doc.name}.xml">
+    <target name="xinclude.init">
+        <uptodate property="xinclude.isUpToDate" targetfile="build/en/${doc.name}.xml">
             <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
             <srcfiles dir="../en/src" includes="*.xml"/>
             <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
         </uptodate>
     </target>
 
-    <target name="profile" depends="profile.init" unless="profile.isUpToDate">
+    <target name="xinclude" depends="xinclude.init" unless="xinclude.isUpToDate" description="XInclude processing on document">
 
         <filter token="docbook5.xsl" value="${docbook5.xsl}"/>
         <copy file="stylesheets/html-import.tmpl.xsl" tofile="stylesheets/html-import.xsl" filtering="true" overwrite="true"/>
@@ -109,7 +103,15 @@ Author：
         </uptodate>
     </target>
 
-    <target name="pot" depends="pot.init,profile" unless="pot.isUpToDate">
+    <target name="pot" depends="pot.init,xinclude" unless="pot.isUpToDate" description="Generate document - pot">
+        <fail>
+            <condition>
+                <or>
+                    <os family="windows"/>
+                </or>
+            </condition>
+            This target known work on unix, not windows !
+        </fail>
         <exec dir="." executable="python">
             <arg value="xml2po.py"/>
             <arg value="-e"/>
@@ -136,7 +138,7 @@ Author：
         </uptodate>
     </target>
 
-    <target name="translate" depends="translate.init" unless="translate.isUpToDate">
+    <target name="translate" depends="translate.init" unless="translate.isUpToDate" description="Translate document">
         <mkdir dir="build/zh"/>
         <exec dir="." executable="msgfmt">
             <arg value="po/zh_CN.po"/>
@@ -155,7 +157,7 @@ Author：
         </exec>
     </target>
 
-    <target name="html" depends="translate">
+    <target name="html" depends="translate" description="Generate document - html">
         <mkdir dir="build/zh/html"/>
         <copy file="stylesheets/defguide.css" todir="build/zh/html"/>
 
@@ -167,7 +169,7 @@ Author：
 
     </target>
 
-    <target name="pdf" depends="translate">
+    <target name="pdf" depends="translate" description="Generate document - html">
         <copy todir="build/zh/pdf">
             <fileset dir="${fonts.dir}">
                 <include name="*.ttf"/>
@@ -199,7 +201,7 @@ Author：
         </delete>
     </target>
 
-    <target name="html.en" depends="profile">
+    <target name="html.en" depends="xinclude">
         <mkdir dir="build/en/html"/>
 
         <exec dir="build/en/html" executable="xsltproc">
@@ -211,7 +213,7 @@ Author：
         <copy file="stylesheets/defguide.css" todir="build/en/html"/>
     </target>
 
-    <target name="pdf.en" depends="profile">
+    <target name="pdf.en" depends="xinclude">
         <mkdir dir="build/en/pdf"/>
 
         <exec dir="." executable="xsltproc">

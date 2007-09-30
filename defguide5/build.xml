@@ -4,43 +4,40 @@ Usage:
     Building 'The Definitive Guide (5.0)' - all
         $ ant
 
-    Building 'The Definitive Guide (5.0)' - en(html & pdf)
+    Building 'The Definitive Guide (5.0)' - en(html, chm & pdf)
         $ ant en
 
-    Building 'The Definitive Guide (5.0)' - zh(html & pdf)
+    Building 'The Definitive Guide (5.0)' - zh(html, chm & pdf)
         $ ant zh
 
-    more information can be found in 'build.tmpl.properties', 'en/build.xml' or 'zh/build.xml'.
-
 Dependency(en):
-    *) ant 1.7+
-    *) beanshell 2.0b4+, more information can be found in the ant manual, OptionalTasks/script.html
-    *) xsltproc 1.1.20+
-    *) jdk 1.4.2+
-    *) saxon8b+, copy saxon*.jar to ${ant.home}/lib
-    *) DocBook v5 XSL 1.72+
-    *) fop 0.94+, pdf only
+    *) ant 1.7
+    *) beanshell 2.0b4
+    *) xsltproc 1.1.20
+    *) jdk 1.4.2
+    *) saxon 6.5 & 8.9
+    *) DocBook v5 XSL 1.73.2
+    *) fop 0.20.5, pdf only
     *) For windows user, you can download gettext & xsltproc binary from:
         http://i18n-zh.googlecode.com/files/gettext-0.16.1_xsltproc-1.1.20.tar.bz2
 
 Dependency(zh only):
-    *) python 2.4+
-    *) python-libxml2 2.6.27+
-    *) gettext 0.16+
+    *) python 2.4.4
+    *) python-libxml2 2.6.27
+    *) gettext 0.16.1
     *) chinese font files, pdf only
 
 TODO:
-    *) Add chm output
+    *) Adjust XSL for output
     *) ...
-
-Author：
-    *) Dongsheng Song <dongsheng.song@gmail.com>, 2007
 -->
-<project name="defguide5" default="all">
+<project default="all" name="defguide5">
 
+    <property file="build-common.properties"/>
     <import file="build-common.xml"/>
 
-    <target name="properties">
+    <target name="properties" description="Print runtime properties">
+        <echo message="Print runtime properties"/>
         <echo message="ant.java.version: ${ant.java.version}"/>
         <echo message="ant.version: ${ant.version}"/>
         <echo message="ant.file: ${ant.file}"/>
@@ -51,6 +48,7 @@ Author：
         <echo message="file.encoding: ${file.encoding}"/>
         <echo message="file.separator: ${file.separator}"/>
         <echo message="path.separator: ${path.separator}"/>
+        <echo message="user.home: ${user.home}"/>
         <echo message="basedir: ${basedir}"/>
     </target>
 
@@ -58,24 +56,29 @@ Author：
         <echo message="Use the -projecthelp option instead"/>
     </target>
 
-    <target name="clean">
+    <target name="clean" description="Clean the build directory">
         <ant dir="en" target="clean"/>
         <ant dir="zh" target="clean"/>
     </target>
 
-    <target name="init" depends="init-avail"/>
+    <target name="init" depends="init-avail" description="Check runtime class"/>
 
-    <target name="en" depends="init">
+    <target name="validate" depends="init" description="Validate source document">
+        <echo message="Validate 'The Definitive Guide (5.0)' - en ..."/>
+        <ant dir="en" target="validate"/>
+    </target>
+
+    <target name="en" depends="init" description="Generate document - en">
         <echo message="Building 'The Definitive Guide (5.0)' - en ..."/>
         <ant dir="en"/>
     </target>
 
-    <target name="zh" depends="init">
+    <target name="zh" depends="init" description="Generate document - zh">
         <echo message="Building 'The Definitive Guide (5.0)' - zh ..."/>
         <ant dir="zh"/>
     </target>
 
-    <target name="all">
+    <target name="all" description="Generate document - en,zh">
         <antcall target="en"/>
         <antcall target="zh"/>
     </target>
