@@ -60,19 +60,9 @@ Dependency:
     </target>
 
     <target name="all" description="Generate document - html,chm,pdf">
-        <antcall target="html.en"/>
-        <antcall target="pdf.en"/>
         <antcall target="html"/>
         <antcall target="pdf"/>
     </target>
-
-    <!-- target name="validate" description="Validate source document">
-        <jing rngfile="${docbook5.home}/rng/docbook.rng" checkid="false">
-            <fileset dir="${basedir}${file.separator}src"
-                    includes="**/*.xml"/>
-        </jing>
-        <ant dir="refpages" target="validate"/>
-    </target -->
 
     <target name="xinclude.init">
         <uptodate property="xinclude.isUpToDate" targetfile="build/defguide5.xml">
@@ -174,15 +164,6 @@ Dependency:
         </exec>
     </target>
 
-    <target name="chm.init">
-        <uptodate property="chm.isUpToDate" targetfile="build/defguide5-zh_CN.chm">
-            <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
-            <srcfiles dir="../en/src" includes="*.xml"/>
-            <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
-            <srcfiles dir="po" includes="zh_CN.po"/>
-        </uptodate>
-    </target>
-
     <target name="html.init">
         <uptodate property="html.isUpToDate" targetfile="build/html/.done">
             <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
@@ -210,6 +191,15 @@ Dependency:
         <touch file="build/html/.done"/>
     </target>
 
+    <target name="chm.init">
+        <uptodate property="chm.isUpToDate" targetfile="build/defguide5-zh_CN.chm">
+            <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
+            <srcfiles dir="../en/src" includes="*.xml"/>
+            <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
+            <srcfiles dir="po" includes="zh_CN.po"/>
+        </uptodate>
+    </target>
+
     <target name="chm" depends="translate,chm.init" unless="chm.isUpToDate" description="Generate document - chm">
         <fail>
             <condition>
@@ -223,7 +213,7 @@ Dependency:
 
         <copy file="stylesheets/defguide.css" todir="build/htmlhelp"/>
         <copy todir="build/htmlhelp/figures">
-            <fileset dir="figures" includes="*.png"/>
+            <fileset dir="../en/figures" includes="*.png"/>
         </copy>
         <copy todir="build/htmlhelp/images">
             <fileset dir="${docbook5.xsl}/images" includes="*.git,*.png,*.tif,*.svg"/>
@@ -244,6 +234,9 @@ Dependency:
     <target name="pdf" depends="translate" description="Generate document - html">
         <copy todir="build/pdf/figures">
             <fileset dir="../en/figures" includes="*.png,*.git,*.eps"/>
+        </copy>
+        <copy todir="build/pdf/images">
+            <fileset dir="${docbook5.xsl}/images" includes="*.git,*.png,*.tif,*.svg"/>
         </copy>
 
         <filter token="docbook5.xsl" value="${docbook5.xsl}"/>
@@ -270,7 +263,7 @@ Dependency:
         </java>
 
         <echo message="Making pdf ..."/>
-        <java classname="org.apache.fop.cli.Main" fork="true" dir="build/pdf" maxmemory="512m">
+        <java classname="${fop.class}" fork="true" dir="build/pdf" maxmemory="512m">
             <classpath refid="lib.classpath"/>
             <arg value="-c"/>
             <arg value="userconfig.xml"/>
