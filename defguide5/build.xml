@@ -17,6 +17,7 @@ Dependency(en):
     *) jdk 1.4.2
     *) saxon 6.5 & 8.9
     *) DocBook v5 XSL 1.73.2
+    *) RELAX NG Support(jing)
     *) fop 0.20.5, pdf only
     *) For windows user, you can download gettext & xsltproc binary from:
         http://i18n-zh.googlecode.com/files/gettext-0.16.1_xsltproc-1.1.20.tar.bz2
