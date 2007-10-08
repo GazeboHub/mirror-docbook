@@ -10,15 +10,18 @@
 <xsl:import href="chm-import.xsl"/>
 <xsl:include href="manifest.xsl"/>
 
+<xsl:param name="l10n.gentext.language" select="'zh_cn'"/>
+<xsl:param name="htmlhelp.encoding" select="'UTF-8'"/>
+<xsl:param name="chunker.output.encoding" select="'UTF-8'"/>
+
+<xsl:param name="saxon.character.representation" select="'native'"/>
+
 <xsl:param name="use.extensions">1</xsl:param>
 <xsl:param name="tablecolumns.extension">0</xsl:param>
 <xsl:param name="callouts.extension">0</xsl:param>
 
 <xsl:param name="base.dir" select="'htmlhelp/'"/>
-<xsl:param name="htmlhelp.encoding" select="'GB18030'"/>
-<xsl:param name="chunker.output.encoding" select="'GB18030'"/>
-<xsl:param name="saxon.character.representation" select="'native'"/>
-<xsl:param name="suppress.navigation" select="0"/>
+<xsl:param name="suppress.navigation" select="1"/>
 <xsl:param name="suppress.footer.navigation" select="1"/>
 <xsl:param name="htmlhelp.hhc.show.root" select="0"/>
 <xsl:param name="htmlhelp.button.locate" select="1"/>
@@ -29,8 +32,8 @@
   <xsl:text>DocBook: The Definitive Guide</xsl:text>
 </xsl:param>
 
-<xsl:param name="VERSION" select="string(document('../VERSION.xml')//fm:Version[1])"/>
-<xsl:param name="htmlhelp.chm" select="'defguide5-en.chm'"/>
+<xsl:param name="VERSION" select="string(document('../../en/VERSION.xml')//fm:Version[1])"/>
+<xsl:param name="htmlhelp.chm" select="'defguide5-zh_CN.chm'"/>
 
 <xsl:param name="htmlhelp.generate.index" select="1"/>
 

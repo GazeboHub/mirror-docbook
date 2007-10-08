@@ -46,17 +46,19 @@ Dependency:
         <delete file="stylesheets/chm-import.xsl"/>
         <delete file="stylesheets/fo-import.xsl"/>
         <delete file="stylesheets/html-import.xsl"/>
+        <delete dir="../en/build"/>
         <delete file="../en/bookinfo.xml"/>
-        <!-- ant dir="../en/refpages" target="clean"/ -->
+        <!-- dir="../en" target="clean"/ -->
     </target>
 
     <target name="init" depends="init-avail" description="Check runtime class"/>
 
     <target name="validate" depends="xinclude" description="Validate document">
-        <jing rngfile="${docbook5.home}/rng/docbook.rng" checkid="false">
-            <fileset dir="build"
-                    includes="defguide5.xml"/>
-        </jing>
+        <jing rngfile="${docbook5.home}/rng/docbook.rng"
+                file="../en/build/defguide5.xml"/>
+        <!-- Don't uncomment this unless xml2po support namespace ! -->
+        <!--jing rngfile="${docbook5.home}/rng/docbook.rng"
+                file="../en/build/defguide5-zh_CN.xml"/-->
     </target>
 
     <target name="all" description="Generate document - html,chm,pdf">
@@ -64,37 +66,8 @@ Dependency:
         <antcall target="pdf"/>
     </target>
 
-    <target name="xinclude.init">
-        <uptodate property="xinclude.isUpToDate" targetfile="build/defguide5.xml">
-            <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
-            <srcfiles dir="../en/src" includes="*.xml"/>
-            <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
-        </uptodate>
-    </target>
-
-    <target name="xinclude" depends="xinclude.init" unless="xinclude.isUpToDate" description="XInclude processing on document">
-
-        <copy todir="build/figures">
-            <fileset dir="../en/figures" includes="*.png,*.git,*.eps"/>
-        </copy>
-
-        <copy file="list-elements.xml" todir="../en/refpages" overwrite="true"/>
-
-        <exec dir="." executable="xsltproc">
-            <arg value="--nonet"/>
-            <arg value="--output"/>
-            <arg value="../en/bookinfo.xml"/>
-            <arg value="../en/VERSION.xml"/>
-            <arg value="../en/VERSION.xml"/>
-        </exec>
-
-        <exec dir="." executable="xmllint">
-            <arg value="--nonet"/>
-            <arg value="--xinclude"/>
-            <arg value="--output"/>
-            <arg value="build/defguide5.xml"/>
-            <arg value="../en/book.xml"/>
-        </exec>
+    <target name="xinclude" description="XInclude processing on document">
+        <ant dir="../en" target="xinclude"/>
     </target>
 
     <target name="pot.init">
@@ -105,7 +78,7 @@ Dependency:
         </uptodate>
     </target>
 
-    <target name="pot" depends="pot.init,xinclude" unless="pot.isUpToDate" description="Generate document - pot">
+    <target name="pot" depends="xinclude,pot.init" unless="pot.isUpToDate" description="Generate document - pot">
         <fail>
             <condition>
                 <or>
@@ -116,16 +89,16 @@ Dependency:
         </fail>
 
         <echo message="Making defguide5.pot ..."/>
-        <exec dir="." executable="python">
+        <exec dir="${basedir}" executable="python">
             <arg value="xml2po.py"/>
             <arg value="-e"/>
             <arg value="-o"/>
             <arg value="po/defguide5.pot"/>
-            <arg value="build/defguide5.xml"/>
+            <arg value="../en/build/defguide5.xml"/>
         </exec>
 
         <echo message="Merging zh_CN.po ..."/>
-        <exec dir="." executable="msgmerge">
+        <exec dir="${basedir}" executable="msgmerge">
             <arg value="--no-wrap"/>
             <arg value="-o"/>
             <arg value="po/zh_CN.po.new"/>
@@ -136,7 +109,7 @@ Dependency:
     </target>
 
     <target name="translate.init" depends="pot">
-        <uptodate property="translate.isUpToDate" targetfile="build/defguide5-zh_CN.xml">
+        <uptodate property="translate.isUpToDate" targetfile="../en/build/defguide5-zh_CN.xml">
             <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
             <srcfiles dir="../en/src" includes="*.xml"/>
             <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
@@ -145,22 +118,22 @@ Dependency:
     </target>
 
     <target name="translate" depends="translate.init" unless="translate.isUpToDate" description="Translate document">
-        <exec dir="." executable="msgfmt">
+        <exec dir="${basedir}" executable="msgfmt">
             <arg value="po/zh_CN.po"/>
             <arg value="-o"/>
             <arg value="po/zh_CN.mo"/>
         </exec>
 
         <echo message="Translating defguide5-zh_CN.xml ..."/>
-        <exec dir="." executable="python">
+        <exec dir="${basedir}" executable="python">
             <arg value="xml2po.py"/>
             <arg value="-l"/>
             <arg value="zh-cn"/>
             <arg value="-t"/>
             <arg value="po/zh_CN.mo"/>
             <arg value="-o"/>
-            <arg value="build/defguide5-zh_CN.xml"/>
-            <arg value="build/defguide5.xml"/>
+            <arg value="../en/build/defguide5-zh_CN.xml"/>
+            <arg value="../en/build/defguide5.xml"/>
         </exec>
     </target>
 
@@ -169,24 +142,26 @@ Dependency:
             <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
             <srcfiles dir="../en/src" includes="*.xml"/>
             <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
+            <srcfiles dir="../en/refpages/elements" includes="*/*.xml" excludes="build/*"/>
             <srcfiles dir="po" includes="zh_CN.po"/>
         </uptodate>
     </target>
 
     <target name="html" depends="translate,html.init" unless="html.isUpToDate" description="Generate document - html">
+
         <copy file="stylesheets/defguide.css" todir="build/html"/>
         <copy todir="build/html/figures">
             <fileset dir="../en/figures" includes="*.png,*.git,*.eps"/>
         </copy>
 
-        <filter token="docbook5.xsl" value="${docbook5.xsl}"/>
+        <filter token="docbook5.xsl.url" value="${docbook5.xsl.url}"/>
         <copy file="stylesheets/html-import.tmpl.xsl" tofile="stylesheets/html-import.xsl" filtering="true" overwrite="true"/>
 
         <echo message="Making html ..."/>
-        <exec dir="build/html" executable="xsltproc">
+        <exec dir="${basedir}${file.separator}build${file.separator}html" executable="xsltproc">
             <arg value="--nonet"/>
             <arg value="../../stylesheets/html.xsl"/>
-            <arg value="../defguide5-zh_CN.xml"/>
+            <arg value="../../../en/build/defguide5-zh_CN.xml"/>
         </exec>
         <touch file="build/html/.done"/>
     </target>
@@ -196,6 +171,7 @@ Dependency:
             <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
             <srcfiles dir="../en/src" includes="*.xml"/>
             <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
+            <srcfiles dir="../en/refpages/elements" includes="*/*.xml" excludes="build/*"/>
             <srcfiles dir="po" includes="zh_CN.po"/>
         </uptodate>
     </target>
@@ -219,28 +195,60 @@ Dependency:
             <fileset dir="${docbook5.xsl}/images" includes="*.git,*.png,*.tif,*.svg"/>
         </copy>
 
-        <exec dir="${basedir}${file.separator}build" executable="xsltproc" failonerror="true">
-            <arg value="--nonet"/>
-            <arg value="${basedir}${file.separator}stylesheets${file.separator}chm.xsl"/>
-            <arg value="${basedir}${file.separator}build${file.separator}defguide5-zh_CN.xml"/>
-        </exec>
+        <java classname="com.icl.saxon.StyleSheet" fork="true" dir="${basedir}${file.separator}build"
+                 failonerror="true" maxmemory="512m">
+            <classpath refid="lib.classpath"/>
+            <arg value="../../en/build/defguide5-zh_CN.xml"/>
+            <arg value="../stylesheets/chm.xsl"/>
+        </java>
+
+        <!--exec dir="${basedir}${file.separator}build" executable="xsltproc" failonerror="true">
+            <arg value="- -nonet"/>
+            <arg value="../stylesheets/chm.xsl"/>
+            <arg value="../../en/build/defguide5-zh_CN.xml"/>
+        </exec-->
+
         <exec dir="${basedir}${file.separator}build" executable="hhc" failonerror="false">
             <arg value="htmlhelp.hhp"/>
         </exec>
 
-        <delete dir="build/htmlhelp"/>
+        <!--delete dir="build/htmlhelp"/>
+        <delete file="build/toc.hhc"/>
+        <delete file="build/index.hhk"/>
+        <delete file="build/htmlhelp.hhp"/-->
     </target>
 
-    <target name="pdf" depends="translate" description="Generate document - html">
+    <target name="pdf.init">
+        <uptodate property="pdf.isUpToDate" targetfile="build/defguide5-zh_CN.pdf">
+            <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
+            <srcfiles dir="../en/src" includes="*.xml"/>
+            <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
+            <srcfiles dir="../en/refpages/elements" includes="*/*.xml" excludes="build/*"/>
+            <srcfiles dir="po" includes="zh_CN.po"/>
+        </uptodate>
+    </target>
+
+    <target name="pdf" depends="translate,pdf.init" unless="pdf.isUpToDate"  description="Generate document - html">
+
+        <filter token="docbook5.xsl.url" value="${docbook5.xsl.url}"/>
+        <copy file="stylesheets/fo-import.tmpl.xsl" tofile="stylesheets/fo-import.xsl" filtering="true" overwrite="true"/>
+
+        <echo message="Making fo ..."/>
+        <java classname="com.icl.saxon.StyleSheet" fork="true" dir="${basedir}"
+                 failonerror="true" maxmemory="512m">
+            <classpath refid="lib.classpath"/>
+            <arg value="-o"/>
+            <arg value="build/pdf/defguide5-zh_CN.fo"/>
+            <arg value="../en/build/defguide5-zh_CN.xml"/>
+            <arg value="stylesheets/zh_CN/fo.xsl"/>
+        </java>
+
         <copy todir="build/pdf/figures">
             <fileset dir="../en/figures" includes="*.png,*.git,*.eps"/>
         </copy>
         <copy todir="build/pdf/images">
             <fileset dir="${docbook5.xsl}/images" includes="*.git,*.png,*.tif,*.svg"/>
         </copy>
-
-        <filter token="docbook5.xsl" value="${docbook5.xsl}"/>
-        <copy file="stylesheets/fo-import.tmpl.xsl" tofile="stylesheets/fo-import.xsl" filtering="true" overwrite="true"/>
 
         <copy todir="build/pdf">
             <fileset dir="${fonts.dir}">
@@ -250,30 +258,20 @@ Dependency:
             <fileset dir="${fop.home}/conf">
                 <include name="*.xml"/>
             </fileset>
+            <fileset file="build/defguide5-zh_CN.fo"/>
         </copy>
 
-        <echo message="Making fo ..."/>
-        <java classname="com.icl.saxon.StyleSheet" fork="true"
-                 failonerror="true" maxmemory="512m">
-            <classpath refid="lib.classpath"/>
-            <arg value="-o"/>
-            <arg value="build/pdf/defguide5-zh_CN.fo"/>
-            <arg value="build/defguide5-zh_CN.xml"/>
-            <arg value="stylesheets/zh_CN/fo.xsl"/>
-        </java>
-
         <echo message="Making pdf ..."/>
-        <java classname="${fop.class}" fork="true" dir="build/pdf" maxmemory="512m">
+        <java classname="${fop.class}" fork="true" maxmemory="512m"
+                dir="${basedir}${file.separator}build${file.separator}pdf">
             <classpath refid="lib.classpath"/>
             <arg value="-c"/>
             <arg value="userconfig.xml"/>
             <arg value="defguide5-zh_CN.fo"/>
-            <arg value="defguide5-zh_CN.pdf"/>
+            <arg value="../defguide5-zh_CN.pdf"/>
         </java>
 
-        <delete>
-            <fileset dir="build/pdf" excludes="**/*.pdf, **/*.fo"/>
-        </delete>
+        <delete dir="build/pdf"/>
     </target>
 
 </project>

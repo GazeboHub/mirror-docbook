@@ -21,10 +21,10 @@
           </and>
         </condition>
         <fail message="RELAX NG Support(jing) NOT Present !" unless="rng.present"/>
-        
+
         <condition property="saxon.present">
           <and>
-            <available classname="org.apache.bsf.BSFManager" classpathref="lib.classpath"/>
+            <available classname="com.icl.saxon.StyleSheet" classpathref="lib.classpath"/>
             <available classname="net.sf.saxon.Transform" classpathref="lib.classpath"/>
           </and>
         </condition>

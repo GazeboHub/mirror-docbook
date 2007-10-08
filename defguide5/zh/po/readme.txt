@@ -1,3 +1,12 @@
+Resource
+--------
+    https://docbook.org
+    https://docbook.sourceforge.net
+    https://sourceforge.net/projects/docbook
+
+    https://docbook.svn.sourceforge.net/svnroot/docbook/trunk
+
+
 Update
 ------
     #msgmerge --no-wrap --sort-by-file --update zh_CN.po defguide5.pot
@@ -38,12 +47,10 @@ Merge
 Using po-merge.py from subversion
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     subversion/tools/dev/po-merge.py zh_CN.po < zh_CN-other.po
-    msgmerge --no-wrap --update zh_CN.po example.pot
 
 Using pomerge from translation tookit
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     pomerge -i zh_CN-other.po -o zh_CN-new.po -t zh_CN.po
-    msgmerge --no-wrap --update zh_CN.po example.pot
 
 
 Commit
