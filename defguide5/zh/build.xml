@@ -14,7 +14,6 @@ Usage:
         $ ant pdf
 
 Dependency:
-
     *) ant 1.7
     *) beanshell 2.0b4
     *) xsltproc 1.1.20
@@ -79,19 +78,18 @@ Dependency:
     </target>
 
     <target name="pot" depends="xinclude,pot.init" unless="pot.isUpToDate" description="Generate document - pot">
-        <fail>
+        <!--fail>
             <condition>
                 <or>
                     <os family="windows"/>
                 </or>
             </condition>
             This target known work on unix, not windows !
-        </fail>
+        </fail-->
 
         <echo message="Making defguide5.pot ..."/>
         <exec dir="${basedir}" executable="python">
             <arg value="xml2po.py"/>
-            <arg value="-e"/>
             <arg value="-o"/>
             <arg value="po/defguide5.pot"/>
             <arg value="../en/build/defguide5.xml"/>
@@ -118,23 +116,26 @@ Dependency:
     </target>
 
     <target name="translate" depends="translate.init" unless="translate.isUpToDate" description="Translate document">
-        <exec dir="${basedir}" executable="msgfmt">
-            <arg value="po/zh_CN.po"/>
-            <arg value="-o"/>
-            <arg value="po/zh_CN.mo"/>
-        </exec>
-
         <echo message="Translating defguide5-zh_CN.xml ..."/>
         <exec dir="${basedir}" executable="python">
             <arg value="xml2po.py"/>
             <arg value="-l"/>
             <arg value="zh-cn"/>
-            <arg value="-t"/>
-            <arg value="po/zh_CN.mo"/>
+            <arg value="-p"/>
+            <arg value="po/zh_CN.po"/>
             <arg value="-o"/>
-            <arg value="../en/build/defguide5-zh_CN.xml"/>
+            <arg value="../en/build/defguide5-zh_CN-tmp.xml"/>
             <arg value="../en/build/defguide5.xml"/>
         </exec>
+        <exec dir="${basedir}/build" executable="xmllint">
+            <arg value="--encode"/>
+            <arg value="UTF-8"/>
+            <arg value="--output"/>
+            <arg value="defguide5-zh_CN.xml"/>
+            <arg value="--format"/>
+            <arg value="defguide5-zh_CN-tmp.xml"/>
+        </exec>
+        <delete file="build/defguide5-zh_CN-tmp.xml"/>
     </target>
 
     <target name="html.init">
