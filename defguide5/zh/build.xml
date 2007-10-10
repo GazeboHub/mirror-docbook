@@ -88,11 +88,11 @@ Dependency:
         </fail-->
 
         <echo message="Making defguide5.pot ..."/>
-        <exec dir="${basedir}" executable="python">
-            <arg value="xml2po.py"/>
+        <exec dir="${basedir}/po" executable="python">
+            <arg value="../xml2po.py"/>
             <arg value="-o"/>
-            <arg value="po/defguide5.pot"/>
-            <arg value="../en/build/defguide5.xml"/>
+            <arg value="defguide5.pot"/>
+            <arg value="../../en/build/defguide5.xml"/>
         </exec>
 
         <echo message="Merging zh_CN.po ..."/>
