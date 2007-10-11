@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: defguide5 0.0.22\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-10-10 12:25 +0000\n"
-"PO-Revision-Date: 2007-10-10 17:45+0800\n"
+"PO-Revision-Date: 2007-10-11 17:47+0800\n"
 "Last-Translator: Dongsheng Song <dongsheng.song@gmail.com>\n"
 "Language-Team: zh_CN <i18n-zh@googlegroups.com >\n"
 "MIME-Version: 1.0\n"
@@ -175,7 +175,7 @@ msgstr "DocBook 5.0"
 #. (subtitle)
 #: ../../en/build/defguide5.xml:7
 msgid "The Definitive Guide"
-msgstr "权威指南"
+msgstr "The Definitive Guide"
 
 #. (firstname)
 #: ../../en/build/defguide5.xml:11 ../../en/build/defguide5.xml:58748
@@ -20209,9 +20209,8 @@ msgstr "<tag>area</tag> <phrase role=\"pattern\">(db.area)</phrase>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:8451
-#, fuzzy
 msgid "An <tag>areaspec</tag> holds a collection of regions and/or region sets in a graphic, program listing, or screen that are associated with <tag>callout</tag> descriptions. See <tag>area</tag> for a description of the attributes."
-msgstr " <tag>AreaSpec</tag> 在与 <tag>Callout</tag> 描述相关联的图形、程序列表或屏幕中保持一个区域从和/或区域集合。查看<tag>Area</tag>以得到属性的描述。"
+msgstr "<tag>areaspec</tag> 在与 <tag>callout</tag> 描述相关联的图形、程序列表或屏幕中保持一个区域或区域集合。参见 <tag>area</tag> 以得到其属性描述。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:8566
@@ -20354,9 +20353,8 @@ msgstr "“repeat”"
 
 #. (para)
 #: ../../en/build/defguide5.xml:8772
-#, fuzzy
 msgid "See <tag>cmdsynopsis</tag> for more information."
-msgstr "查阅 <tag>CmdSynopsis</tag> 以得到更多信息。"
+msgstr "参见 <tag>cmdsynopsis</tag> 以得到更多信息。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:8776 ../../en/build/defguide5.xml:65535
@@ -20518,9 +20516,8 @@ msgstr "<tag>Article</tag> 元素是文章的多用途容器。内容模型不�
 
 #. (para)
 #: ../../en/build/defguide5.xml:9323
-#, fuzzy
 msgid "An <tag>article</tag> is composed of a header and a body. The body may include a table of contents and multiple lists of tables, figures, and so on, before the main text of the article and may include a number of common end-matter components at the end."
-msgstr "<tag>Article</tag> 由一个头和一个结构体组成。结构体可以包括一个目录和多个表格、图形或其他的列表，在文章的主要文字之前，也许在结束处包括一些普通的结尾组件。"
+msgstr "<tag>article</tag> 由一个头和一个主体组成。主体可以在文章的主要文字之前包括一个目录和多个表格、图形等的列表，也许在结束处包括一些普通的结尾组件。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:9330
@@ -20685,9 +20682,8 @@ msgstr "artpagenums ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:9620
-#, fuzzy
 msgid "This element holds the page numbers of an article as published. Its content is not intended to influence the page numbers used by a presentation system formatting the parent <tag>article</tag>."
-msgstr "这个元素保持了像出版了的一样的文章的页码。它的内容不影响由呈现系统用来格式化父 <tag>Article</tag> 的页码。"
+msgstr "这个元素保存出版文章的页码。它的内容不影响由展现系统用来格式化 <tag>article</tag> 的页码。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:9626
@@ -20722,9 +20718,8 @@ msgstr "attribution ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:9785
-#, fuzzy
 msgid "An <tag>attribution</tag> identifies the source to whom a <tag>blockquote</tag> or <tag>epigraph</tag> is ascribed."
-msgstr " <tag>Attribution</tag> 标识 <tag>BlockQuote</tag> 或 <tag>Epigraph</tag> 所归属的源。"
+msgstr "<tag>attribution</tag> 标识 <tag>blockquote</tag>> 或 <tag>epigraph</tag> 所归属的源。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:9796
@@ -21574,9 +21569,8 @@ msgstr "不要对系统呈现在<tag>BiblioEntry</tag> 中的所有字段或它�
 
 #. (para)
 #: ../../en/build/defguide5.xml:11809
-#, fuzzy
 msgid "Correct formatting of <tag>biblioentry</tag>s is an interchange issue. See <xref linkend=\"app-interchange\"/>."
-msgstr " 正确的 <tag>BiblioEntry</tag> 的格式化是一个交换的出版物。请查阅 <xref linkend=\"app-interchange\"/>。"
+msgstr "正确的格式化 <tag>biblioentry</tag> 是一个交换交换。参见 <xref linkend=\"app-interchange\"/>。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:11815
@@ -42842,9 +42836,8 @@ msgstr "db.qandaset"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A question-and-answer set"
-msgstr "问题与解答"
+msgstr "问题与解答集合"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -42892,9 +42885,8 @@ msgstr "格式化为一个显示块。<tag class=\"attribute\">DefaultLabel</tag
 
 #. (term)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "defaultlabel"
-msgstr "guilabel"
+msgstr "defaultlabel"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -42908,9 +42900,8 @@ msgstr "没有标签"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "Numeric labels"
-msgstr "guilabel"
+msgstr "Numeric labels"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
@@ -43045,9 +43036,8 @@ msgstr "..."
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.question"
-msgstr "方程式"
+msgstr "db.question"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -43083,21 +43073,18 @@ msgstr "下列元素可以出现在 question 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.quote"
-msgstr "quote"
+msgstr "db.quote"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "An inline quotation"
-msgstr "inlineequation"
+msgstr "行内引用"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "quote ::="
-msgstr "quote"
+msgstr "quote ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -43241,9 +43228,8 @@ msgstr "下列元素可以出现在 refdescriptor 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.refentry"
-msgstr "citerefentry"
+msgstr "db.refentry"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -43252,21 +43238,18 @@ msgstr "参考页（最初的 UNIX man-style 参考页）"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "refentry ::="
-msgstr "citerefentry"
+msgstr "refentry ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "<tag>refmeta</tag>?"
-msgstr "<tag>attribution</tag>?"
+msgstr "<tag>refmeta</tag>?"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "<tag>refsynopsisdiv</tag>?"
-msgstr "refsynopsisdiv"
+msgstr "<tag>refsynopsisdiv</tag>?"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -43276,9 +43259,8 @@ msgstr "<tag>RefEntry</tag> 是一个参考页。在 <tag>RefEntry</tag> 说法�
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "You're reading a <tag>refentry</tag> right now."
-msgstr "你马上将读到一个 <tag>RefEntry</tag>。"
+msgstr "你马上将读到一个 <tag>refentry</tag>。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -43385,7 +43367,7 @@ msgstr ""
 
 #. (programlisting)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "&lt;article xmlns='http://docbook.org/ns/docbook'&gt;\n"
 "&lt;title&gt;Example refentry&lt;/title&gt;\n"
@@ -43443,9 +43425,10 @@ msgid ""
 "\n"
 "&lt;/article&gt;\n"
 msgstr ""
+"&lt;article xmlns='http://docbook.org/ns/docbook'&gt;\n"
+"&lt;title&gt;Example refentry&lt;/title&gt;\n"
 "\n"
-"\n"
-"&lt;refentry id=\"printf\"&gt;\n"
+"&lt;refentry xml:id=\"printf\"&gt;\n"
 "\n"
 "&lt;refmeta&gt;\n"
 "&lt;refentrytitle&gt;printf&lt;/refentrytitle&gt;\n"
@@ -43489,17 +43472,14 @@ msgstr ""
 "&lt;/refsynopsisdiv&gt;\n"
 "\n"
 "&lt;refsect1&gt;&lt;title&gt;Description&lt;/title&gt;\n"
-"&lt;para&gt;\n"
-"&lt;indexterm&gt;&lt;primary&gt;functions&lt;/primary&gt;\n"
-"  &lt;secondary&gt;printf&lt;/secondary&gt;&lt;/indexterm&gt;\n"
-"&lt;indexterm&gt;&lt;primary&gt;printing function&lt;/primary&gt;&lt;/indexterm&gt;\n"
-"\n"
-"&lt;function&gt;printf&lt;/function&gt; places output on the standard\n"
+"&lt;para&gt;&lt;function&gt;printf&lt;/function&gt; places output on the standard\n"
 "output stream stdout.\n"
-"&amp;hellip;\n"
 "&lt;/para&gt;\n"
+"&lt;para&gt;…&lt;/para&gt;\n"
 "&lt;/refsect1&gt;\n"
-"&lt;/refentry&gt;"
+"&lt;/refentry&gt;\n"
+"\n"
+"&lt;/article&gt;\n"
 
 #. (programlisting)
 #: ../../en/build/defguide5.xml:65535
@@ -43616,9 +43596,8 @@ msgstr "db.refentrytitle"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "The title of a reference page"
-msgstr "创建参考页"
+msgstr "参考页标题"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -43643,9 +43622,8 @@ msgstr "下列元素可以出现在 refentrytitle 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.reference"
-msgstr "参考"
+msgstr "db.reference"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -43654,9 +43632,8 @@ msgstr "参考条目集合"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "reference ::="
-msgstr "参考"
+msgstr "reference ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -43759,21 +43736,18 @@ msgstr ""
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.refmeta"
-msgstr "refmeta"
+msgstr "db.refmeta"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "Meta-information for a reference entry"
-msgstr "元信息元素"
+msgstr "参考入口元信息"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "refmeta ::="
-msgstr "refmeta"
+msgstr "refmeta ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -43819,9 +43793,8 @@ msgstr "“source”"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "“version”"
-msgstr "version"
+msgstr "“version”"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -43845,9 +43818,8 @@ msgstr "标识混合信息的种类"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "source"
-msgstr "资源"
+msgstr "source"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -43871,9 +43843,8 @@ msgstr "参考页的节标题（比如说，用户命令）"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "sectdesc"
-msgstr "sect1"
+msgstr "sectdesc"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -43912,9 +43883,8 @@ msgstr "下列元素可以出现在 refmiscinfo 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.refname"
-msgstr "refnamediv"
+msgstr "db.refname"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -43923,9 +43893,8 @@ msgstr "参考页的主题（几个）（其中之一）的名称"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "refname ::="
-msgstr "refnamediv"
+msgstr "refname ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -43956,9 +43925,8 @@ msgstr "下列元素可以出现在 refname 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.refnamediv"
-msgstr "refnamediv"
+msgstr "db.refnamediv"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -43967,21 +43935,18 @@ msgstr "参考页的名称、目的和分类"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "refnamediv ::="
-msgstr "refnamediv"
+msgstr "refnamediv ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "<tag>refdescriptor</tag>?"
-msgstr "<tag>attribution</tag>?"
+msgstr "<tag>refdescriptor</tag>?"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A <tag>refnamediv</tag> is the first mandatory section in a <tag>refentry</tag>. It is a peer to <tag>refsynopsisdiv</tag> and <tag>refsect1</tag>."
-msgstr "<tag>RefNameDiv</tag> 是在 <tag>RefEntry</tag> 中第一个强制的节。它等同于 <tag>RefSynopsisDiv</tag> 和 <tag>RefSect1</tag> 。"
+msgstr "<tag>refnamediv</tag> 是 <tag>refentry</tag> 中的第一个强制节。它 <tag>refsynopsisdiv</tag> 和 <tag>refsect1</tag> 对等。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -44040,9 +44005,8 @@ msgstr "<tag>RefPurpose</tag> 是参考页的主题的简洁概述。 <tag>RefPu
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "Formatted inline. See <tag>refnamediv</tag>."
-msgstr "格式化在行内。请参阅 <tag>RefNameDiv</tag> 。"
+msgstr "行内格式化。参见 <tag>refnamediv</tag>。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -44062,9 +44026,8 @@ msgstr "下列元素可以出现在 refpurpose 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.refsect1"
-msgstr "sect1"
+msgstr "db.refsect1"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -44111,15 +44074,13 @@ msgstr "下列元素可以出现在 refsect1 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.refsect2"
-msgstr "sect2"
+msgstr "db.refsect2"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A subsection of a <placeholder-1/>"
-msgstr "<placeholder-1/> 中的名称空间。"
+msgstr "<placeholder-1/> 中的子节。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -44144,9 +44105,8 @@ msgstr "下列元素可以出现在 refsect2 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.refsect3"
-msgstr "sect3"
+msgstr "db.refsect3"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -44213,9 +44173,8 @@ msgstr "下列元素可以出现在 refsection 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.refsynopsisdiv"
-msgstr "refsynopsisdiv"
+msgstr "db.refsynopsisdiv"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -44224,9 +44183,8 @@ msgstr "参考页的主题的句法提要"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "refsynopsisdiv ::="
-msgstr "refsynopsisdiv"
+msgstr "refsynopsisdiv ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -44258,9 +44216,8 @@ msgstr "下列元素可以出现在 refsynopsisdiv 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.releaseinfo"
-msgstr "releaseinfo"
+msgstr "db.releaseinfo"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -44269,9 +44226,8 @@ msgstr "关于文档的特定发布的信息"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "releaseinfo ::="
-msgstr "releaseinfo"
+msgstr "releaseinfo ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -44295,9 +44251,8 @@ msgstr "下列元素可以出现在 releaseinfo 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.remark"
-msgstr "trademark"
+msgstr "db.remark"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -44306,9 +44261,8 @@ msgstr "用于在草稿稿子中的陈述的备注（或注释）"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "remark ::="
-msgstr "trademark"
+msgstr "remark ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -44387,9 +44341,8 @@ msgstr "<remark>Some details are still a bit shaky</remark> … Q.E.D."
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.replaceable"
-msgstr "replaceable"
+msgstr "db.replaceable"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -44398,15 +44351,13 @@ msgstr "内容可能或必须由用户所替换"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "replaceable ::="
-msgstr "replaceable"
+msgstr "replaceable ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "“parameter”"
-msgstr "parameter"
+msgstr "“parameter”"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -44441,9 +44392,8 @@ msgstr "标识可替换文本的性质"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A parameter"
-msgstr "parameter"
+msgstr "参数"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -44457,9 +44407,8 @@ msgstr "下列元素可以出现在 replaceable 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.returnvalue"
-msgstr "returnvalue"
+msgstr "db.returnvalue"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -44468,15 +44417,13 @@ msgstr "函数返回的值"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "returnvalue ::="
-msgstr "returnvalue"
+msgstr "returnvalue ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A <tag>returnvalue</tag> identifies the value returned by a function or command."
-msgstr "<tag>ReturnValue</tag> 标识了函数或命令返回的值"
+msgstr "<tag>returnvalue</tag> 标识了函数或命令返回的值"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -44517,9 +44464,8 @@ msgstr "The <function>open</function> function returns <returnvalue>2</returnval
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.revdescription"
-msgstr "描述"
+msgstr "db.revdescription"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -44528,9 +44474,8 @@ msgstr "对文档的版本的扩展描述"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "revdescription ::="
-msgstr "描述"
+msgstr "revdescription ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -44550,9 +44495,8 @@ msgstr "下列元素可以出现在 revdescription 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.revhistory"
-msgstr "revhistory"
+msgstr "db.revhistory"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -44561,15 +44505,13 @@ msgstr "文档的修改历史"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "revhistory ::="
-msgstr "revhistory"
+msgstr "revhistory ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A <tag>revhistory</tag> is a structure for documenting a history of changes, specifically, a history of changes to the document or section in which it occurs."
-msgstr "<tag>RevHistory</tag> 是一个用于文件修改历史的结构，特别的，它所出现在其中的文档或节的改变历史。"
+msgstr "<tag>revhistory</tag> 是一个用于文件修改历史的结构，特别的，它所出现在其中的文档或节的改变历史。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -44653,9 +44595,8 @@ msgstr "0.91"
 
 #. (date)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "1996-12-11"
-msgstr "1970-01-01"
+msgstr ""
 
 #. (authorinitials)
 #: ../../en/build/defguide5.xml:65535
@@ -44674,9 +44615,8 @@ msgstr "0.90"
 
 #. (date)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "1996-11-30"
-msgstr "1970-01-01"
+msgstr ""
 
 #. (revremark)
 #: ../../en/build/defguide5.xml:65535
@@ -44685,9 +44625,8 @@ msgstr "First beta release"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.revision"
-msgstr "base_version"
+msgstr "db.revision"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -44701,9 +44640,8 @@ msgstr "revision ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "<tag>revnumber</tag>?"
-msgstr "<tag>attribution</tag>?"
+msgstr "<tag>revnumber</tag>?"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -44963,9 +44901,8 @@ msgstr "这些元素包含 <tag>sbr</tag> ： <placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.screen"
-msgstr "screen"
+msgstr "db.screen"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -44974,9 +44911,8 @@ msgstr "用户看到或可能看到的在计算机屏幕中的文本"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "screen ::="
-msgstr "screen"
+msgstr "screen ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -45092,9 +45028,8 @@ msgstr ""
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.screenco"
-msgstr "screen"
+msgstr "db.screenco"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -45103,9 +45038,8 @@ msgstr "用于插图编号中的 screen 和相关区域"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "screenco ::="
-msgstr "screen"
+msgstr "screenco ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -45288,9 +45222,8 @@ msgstr "比较这个示例和 <tag>co</tag> 的例子。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.screenshot"
-msgstr "screenshot"
+msgstr "db.screenshot"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -45299,9 +45232,8 @@ msgstr "用户在计算机屏幕在看到或可能看到的图像"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "screenshot ::="
-msgstr "screenshot"
+msgstr "screenshot ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -45442,9 +45374,8 @@ msgstr "下列元素可以出现在 secondaryie 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.sect1"
-msgstr "sect1"
+msgstr "db.sect1"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -45453,15 +45384,13 @@ msgstr "文档的顶层节"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "sect1 ::="
-msgstr "sect1"
+msgstr "sect1 ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A <tag>sect1</tag> is one of the top-level sectioning elements in a component. There are three types of sectioning elements in DocBook:"
-msgstr "<tag>Sect1</tag> 是在组件中的顶层节元素之一。在 DocBook 中有三种节元素："
+msgstr "<tag>sect1</tag> 是在组件中的顶层节元素之一。在 DocBook 中有三种节元素："
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -45509,9 +45438,8 @@ msgstr "下列元素可以出现在 sect1 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.sect2"
-msgstr "sect2"
+msgstr "db.sect2"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -45520,15 +45448,13 @@ msgstr "在 sect2 中的子节"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "sect2 ::="
-msgstr "sect2"
+msgstr "sect2 ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A <tag>sect2</tag> is a second-level section in a document."
-msgstr "<tag>Sect2</tag> 是文档的第二级节。"
+msgstr "<tag>sect2</tag> 是文档的第二级节。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -45542,9 +45468,8 @@ msgstr "下列元素可以出现在 sect2 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.sect3"
-msgstr "sect3"
+msgstr "db.sect3"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -45553,15 +45478,13 @@ msgstr "在 Sect2 中的子节"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "sect3 ::="
-msgstr "sect3"
+msgstr "sect3 ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A <tag>sect3</tag> is a third-level section in a document."
-msgstr "<tag>Sect3</tag> 是在文档中的第三级节"
+msgstr "<tag>sect3</tag> 是在文档中的第三级节"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -45575,9 +45498,8 @@ msgstr "下列元素可以出现在 sect3 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.sect4"
-msgstr "sect4"
+msgstr "db.sect4"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -45586,15 +45508,13 @@ msgstr "在 Sect3 中的子节"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "sect4 ::="
-msgstr "sect4"
+msgstr "sect4 ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A <tag>sect4</tag> is a fourth-level section in a document."
-msgstr "<tag>Sect4</tag> 是文档中的第四级节"
+msgstr "<tag>sect4</tag> 是文档中的第四级节"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -45608,9 +45528,8 @@ msgstr "下列元素可以出现在 sect4 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.sect5"
-msgstr "sect5"
+msgstr "db.sect5"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -45619,15 +45538,13 @@ msgstr "在 Sect4 中的子节"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "sect5 ::="
-msgstr "sect5"
+msgstr "sect5 ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A <tag>sect5</tag> is a fifth-level section in a document. This is the lowest-level numbered sectioning element. There is no <tag role=\"nonexistant\">sect6</tag>."
-msgstr "<tag>Sect5</tag> 是文档中的第五级节。这是最底级的编号节元素。不存在 <tag role=\"nonexistant\">sect6</tag>。"
+msgstr "<tag>sect5</tag> 是文档中的第五级节。这是最底级的编号节元素。不存在 <tag role=\"nonexistant\">sect6</tag>。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -45641,9 +45558,8 @@ msgstr "下列元素可以出现在 sect5 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.section"
-msgstr "节"
+msgstr "db.section"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -45652,21 +45568,18 @@ msgstr "递归的节"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "section ::="
-msgstr "节"
+msgstr "section ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A <tag>section</tag> is one of the top-level sectioning elements in a component. There are three types of sectioning elements in DocBook:"
-msgstr "<tag>Section</tag> 是组件中最顶级节元素之一。在 DocBook 中有三种节元素："
+msgstr "<tag>section</tag> 是组件中最顶级节元素之一。在 DocBook 中有三种节元素："
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "Recursive <tag>section</tag>s, which are an alternative to the numbered sections and have unbounded depth."
-msgstr "递归的 <tag>Section</tag>，它是编号节的另一个选择，并且有无限的深度。"
+msgstr "递归的 <tag>section</tag>，它是编号节的另一个选择，并且有无限的深度。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -45886,7 +45799,6 @@ msgstr "db.seealsoie"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "See also"
 msgstr "参见"
 
@@ -46018,9 +45930,8 @@ msgstr "DocBook 不能检测由在 <tag>SegListItem</tag> 中的太多或太少 
 
 #. (tag), (secondary), (refentrytitle), (refmiscinfo), (refname)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "seglistitem"
-msgstr "systemitem"
+msgstr "seglistitem"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -46076,9 +45987,8 @@ msgstr "下列元素可以出现在 seglistitem 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.segmentedlist"
-msgstr "segmentedlist"
+msgstr "db.segmentedlist"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -46087,9 +45997,8 @@ msgstr "分片段列表，元素集合列表"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "segmentedlist ::="
-msgstr "segmentedlist"
+msgstr "segmentedlist ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -46156,9 +46065,8 @@ msgstr "State Capitals"
 
 #. (segtitle)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "State"
-msgstr "date"
+msgstr "State"
 
 #. (segtitle)
 #: ../../en/build/defguide5.xml:65535
@@ -46240,21 +46148,18 @@ msgstr ""
 
 #. (seg)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "Anchorage"
-msgstr "anchor"
+msgstr "Anchorage"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "<placeholder-1/> …"
-msgstr "<placeholder-1/> 1630"
+msgstr "<placeholder-1/> …"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.segtitle"
-msgstr "subtitle"
+msgstr "db.segtitle"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -46263,9 +46168,8 @@ msgstr "在分片段列表中的列表项的元素的标题"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "segtitle ::="
-msgstr "subtitle"
+msgstr "segtitle ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -46297,9 +46201,8 @@ msgstr "下列元素可以出现在 segtitle 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.seriesvolnums"
-msgstr "seriesvolnums"
+msgstr "db.seriesvolnums"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -46308,9 +46211,8 @@ msgstr "在一系列书中的卷号"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "seriesvolnums ::="
-msgstr "seriesvolnums"
+msgstr "seriesvolnums ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -46330,7 +46232,7 @@ msgstr "下列元素可以出现在 seriesvolnums 中：<placeholder-1/>。"
 
 #. (programlisting)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "&lt;article xmlns='http://docbook.org/ns/docbook'&gt;\n"
 "&lt;title&gt;Example seriesvolnums&lt;/title&gt;\n"
@@ -46341,12 +46243,14 @@ msgid ""
 "\n"
 "&lt;/article&gt;\n"
 msgstr ""
-"&lt;!DOCTYPE chapter&gt;\n"
-"&lt;chapter xmlns=\"http://docbook.org/ns/docbook\"\n"
-"         id=\"ch1\"&gt;\n"
-"&lt;title&gt;My First Chapter&lt;/title&gt;\n"
-"&lt;para&gt;My first paragraph.&lt;/para&gt;\n"
-"…"
+"&lt;article xmlns='http://docbook.org/ns/docbook'&gt;\n"
+"&lt;title&gt;Example seriesvolnums&lt;/title&gt;\n"
+"\n"
+"&lt;para&gt;\n"
+"TBS.\n"
+"&lt;/para&gt;\n"
+"\n"
+"&lt;/article&gt;\n"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -46370,15 +46274,13 @@ msgstr "set ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "<tag>toc</tag>?"
-msgstr "<tag>attribution</tag>?"
+msgstr "<tag>toc</tag>?"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "<tag>setindex</tag>?"
-msgstr "<tag>attribution</tag>?"
+msgstr "<tag>setindex</tag>?"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -46531,9 +46433,8 @@ msgstr "下列元素可以出现在 shortaffil 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.shortcut"
-msgstr "shortcut"
+msgstr "db.shortcut"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -46542,9 +46443,8 @@ msgstr "用于一个动作的键组合，也可以通过一个菜单访问"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "shortcut ::="
-msgstr "shortcut"
+msgstr "shortcut ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -46598,9 +46498,8 @@ msgstr ""
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.sidebar"
-msgstr "sidebar"
+msgstr "db.sidebar"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -46609,9 +46508,8 @@ msgstr "文档中从主要叙述流中分离出来的一部分"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "sidebar ::="
-msgstr "sidebar"
+msgstr "sidebar ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -46699,9 +46597,8 @@ msgstr ""
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.simpara"
-msgstr "simpara"
+msgstr "db.simpara"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -46710,9 +46607,8 @@ msgstr "仅包含文本和行内标记的段落，没有块元素"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "simpara ::="
-msgstr "simpara"
+msgstr "simpara ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -46732,7 +46628,7 @@ msgstr "下列元素可以出现在 simpara 中：<placeholder-1/>。"
 
 #. (programlisting)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "&lt;article xmlns='http://docbook.org/ns/docbook'&gt;\n"
 "&lt;title&gt;Example simpara&lt;/title&gt;\n"
@@ -46743,18 +46639,19 @@ msgid ""
 "\n"
 "&lt;/article&gt;\n"
 msgstr ""
-"&lt;!DOCTYPE chapter&gt;\n"
-"&lt;chapter xmlns=\"http://docbook.org/ns/docbook\"\n"
-"         id=\"ch1\"&gt;\n"
-"&lt;title&gt;My First Chapter&lt;/title&gt;\n"
-"&lt;para&gt;My first paragraph.&lt;/para&gt;\n"
-"…"
+"&lt;article xmlns='http://docbook.org/ns/docbook'&gt;\n"
+"&lt;title&gt;Example simpara&lt;/title&gt;\n"
+"\n"
+"&lt;simpara&gt;\n"
+"Just the text, ma'am.\n"
+"&lt;/simpara&gt;\n"
+"\n"
+"&lt;/article&gt;\n"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.simplelist"
-msgstr "simplelist"
+msgstr "db.simplelist"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -46763,9 +46660,8 @@ msgstr "单个单词或简短短语的未修饰列表"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "simplelist ::="
-msgstr "simplelist"
+msgstr "simplelist ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -46804,9 +46700,8 @@ msgstr "讽刺的是，<tag>simplelist</tag> 的处理期望是十分复杂的�
 
 #. (term)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "columns"
-msgstr "volumenum"
+msgstr "columns"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -46820,9 +46715,8 @@ msgstr "指定列表呈现类型"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "horiz"
-msgstr "Chris"
+msgstr "horiz"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -46841,9 +46735,8 @@ msgstr "在列为主的表格式呈现"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "inline"
-msgstr "包含"
+msgstr "inline"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -46925,9 +46818,8 @@ msgstr "F"
 
 #. (member)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "G"
-msgstr "GI"
+msgstr "G"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -47070,9 +46962,8 @@ msgstr "下列元素可以出现在 simplemsgentry 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.simplesect"
-msgstr "simplelist"
+msgstr "db.simplesect"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -47081,9 +46972,8 @@ msgstr "文档中的没有子分区的节"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "simplesect ::="
-msgstr "simplelist"
+msgstr "simplesect ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -47199,9 +47089,8 @@ msgstr "这些元素包含 <tag>spanspec</tag> ： <placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.state"
-msgstr "date"
+msgstr "db.state"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -47246,9 +47135,8 @@ msgstr "step ::="
 
 #. (tag), (secondary), (refentrytitle), (refmiscinfo), (refname)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "substeps"
-msgstr "subtitle"
+msgstr "substeps"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -47257,9 +47145,8 @@ msgstr "performance (枚举)"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "“optional”"
-msgstr "optional"
+msgstr "“optional”"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -47280,9 +47167,8 @@ msgstr "格式化为一个显示块。<tag>Step</tag> 几乎总是被编号的�
 
 #. (term)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "performance"
-msgstr "errorcode"
+msgstr "performance"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -47382,9 +47268,8 @@ msgstr "下列元素可以出现在 street 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.subject"
-msgstr "subjectset"
+msgstr "db.subject"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -47393,9 +47278,8 @@ msgstr "描述文档主旨的条目组之一"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "subject ::="
-msgstr "subjectset"
+msgstr "subject ::="
 
 #. (para), (term)
 #: ../../en/build/defguide5.xml:65535
@@ -47457,9 +47341,8 @@ msgstr "下列元素可以出现在 subject 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.subjectset"
-msgstr "subjectset"
+msgstr "db.subjectset"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -47468,9 +47351,8 @@ msgstr "描述文档主题的条目集"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "subjectset ::="
-msgstr "subjectset"
+msgstr "subjectset ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -47497,9 +47379,8 @@ msgstr "DocBook 没有指定在文档不同部分的 <tag>SubjectSet</tag> 之�
 
 #. (term)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "scheme"
-msgstr "screen"
+msgstr "scheme"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -47556,9 +47437,8 @@ msgstr ""
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.subjectterm"
-msgstr "subjectset"
+msgstr "db.subjectterm"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -47567,9 +47447,8 @@ msgstr "在一个描述文档主题的条目组中的条目"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "subjectterm ::="
-msgstr "subjectset"
+msgstr "subjectterm ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -47594,9 +47473,8 @@ msgstr "这些元素包含 <tag>subjectterm</tag>： <placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.subscript"
-msgstr "subscript"
+msgstr "db.subscript"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -47605,9 +47483,8 @@ msgstr "下标（如在水的分子式  H<placeholder-1/> O 中）"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "subscript ::="
-msgstr "subscript"
+msgstr "subscript ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -47632,7 +47509,7 @@ msgstr "下列元素可以出现在 subscript 中：<placeholder-1/>。"
 
 #. (programlisting)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "&lt;article xmlns='http://docbook.org/ns/docbook'&gt;\n"
 "&lt;title&gt;Example subscript&lt;/title&gt;\n"
@@ -47642,12 +47519,13 @@ msgid ""
 "\n"
 "&lt;/article&gt;\n"
 msgstr ""
-"&lt;!DOCTYPE chapter&gt;\n"
-"&lt;chapter xmlns=\"http://docbook.org/ns/docbook\"\n"
-"         id=\"ch1\"&gt;\n"
-"&lt;title&gt;My First Chapter&lt;/title&gt;\n"
-"&lt;para&gt;My first paragraph.&lt;/para&gt;\n"
-"…"
+"&lt;article xmlns='http://docbook.org/ns/docbook'&gt;\n"
+"&lt;title&gt;Example subscript&lt;/title&gt;\n"
+"\n"
+"&lt;para&gt;Thirsty?  Have some H&lt;subscript&gt;2&lt;/subscript&gt;O.\n"
+"&lt;/para&gt;\n"
+"\n"
+"&lt;/article&gt;\n"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -47699,9 +47577,8 @@ msgstr "下列元素可以出现在 substeps 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.subtitle"
-msgstr "subtitle"
+msgstr "db.subtitle"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -47710,9 +47587,8 @@ msgstr "文档的子标题"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "subtitle ::="
-msgstr "subtitle"
+msgstr "subtitle ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -47732,9 +47608,8 @@ msgstr "下列元素可以出现在 subtitle 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.superscript"
-msgstr "superscript"
+msgstr "db.superscript"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -47743,9 +47618,8 @@ msgstr "上标识（如 x^2 ，用于 x 自乘的数学符号）"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "superscript ::="
-msgstr "superscript"
+msgstr "superscript ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -47797,9 +47671,8 @@ msgstr "The equation e<superscript>πi</superscript> + 1 = 0 ties together five 
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.surname"
-msgstr "publishername"
+msgstr "db.surname"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -47829,9 +47702,8 @@ msgstr "下列元素可以出现在 surname 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.symbol"
-msgstr "symbol"
+msgstr "db.symbol"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -47840,9 +47712,8 @@ msgstr "在处理前由一个值替换的名称"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "symbol ::="
-msgstr "symbol"
+msgstr "symbol ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -48137,15 +48008,13 @@ msgstr "-I-"
 
 #. (arg)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "-imacros <placeholder-1/>"
-msgstr "<placeholder-1/> 中的名称空间。"
+msgstr "-imacros <placeholder-1/>"
 
 #. (arg)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "-include <placeholder-1/>"
-msgstr "<placeholder-1/>.com"
+msgstr "-include <placeholder-1/>"
 
 #. (synopfragmentref)
 #: ../../en/build/defguide5.xml:65535
@@ -48154,9 +48023,8 @@ msgstr "languages"
 
 #. (arg)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "-lint"
-msgstr "link"
+msgstr "-lint"
 
 #. (arg)
 #: ../../en/build/defguide5.xml:65535
@@ -48185,9 +48053,8 @@ msgstr "-nostdinc"
 
 #. (arg)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "-pedantic"
-msgstr "legalnotice"
+msgstr "-pedantic"
 
 #. (arg)
 #: ../../en/build/defguide5.xml:65535
@@ -48196,15 +48063,13 @@ msgstr "-pedantic-errors"
 
 #. (arg)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "-trigraphs"
-msgstr "段落"
+msgstr "-trigraphs"
 
 #. (arg)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "-U<placeholder-1/>"
-msgstr "<placeholder-1/>.com"
+msgstr "-U<placeholder-1/>"
 
 #. (arg)
 #: ../../en/build/defguide5.xml:65535
@@ -48213,15 +48078,13 @@ msgstr "-undef"
 
 #. (synopfragmentref)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "warnings"
-msgstr "巴黎"
+msgstr "warnings"
 
 #. (replaceable)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "infile"
-msgstr "info"
+msgstr "infile"
 
 #. (arg)
 #: ../../en/build/defguide5.xml:65535
@@ -48230,9 +48093,8 @@ msgstr "-"
 
 #. (replaceable)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "outfile"
-msgstr "title"
+msgstr "outfile"
 
 #. (arg)
 #: ../../en/build/defguide5.xml:65535
@@ -48251,27 +48113,23 @@ msgstr "-lang-objc"
 
 #. (arg)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "-Wtrigraphs"
-msgstr "段落"
+msgstr "-Wtrigraphs"
 
 #. (arg)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "-Wcomment"
-msgstr "command"
+msgstr "-Wcomment"
 
 #. (arg)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "-Wall"
-msgstr "Walsh"
+msgstr "-Wall"
 
 #. (arg)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "-Wtraditional"
-msgstr "edition"
+msgstr "-Wtraditional"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
@@ -48340,9 +48198,8 @@ msgstr "这些元素包含 <tag>synopfragmentref</tag> ： <placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.synopsis"
-msgstr "synopsis"
+msgstr "db.synopsis"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -48351,9 +48208,8 @@ msgstr "用于描述命令或函数的语法的通用目的元素"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "synopsis ::="
-msgstr "synopsis"
+msgstr "synopsis ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -48433,9 +48289,8 @@ msgstr "int max(int int1, int int2);"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.systemitem"
-msgstr "systemitem"
+msgstr "db.systemitem"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -48444,9 +48299,8 @@ msgstr "系统相关的条目或术语"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "systemitem ::="
-msgstr "systemitem"
+msgstr "systemitem ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -48490,9 +48344,8 @@ msgstr "“groupname”"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "“ipaddress”"
-msgstr "address"
+msgstr "“ipaddress”"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -48531,9 +48384,8 @@ msgstr "“protocol”"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "“resource”"
-msgstr "资源"
+msgstr "“resource”"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -48569,9 +48421,8 @@ msgstr "标识系统条目的性质"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "daemon"
-msgstr "date"
+msgstr "daemon"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -48590,9 +48441,8 @@ msgstr "域名（example.com）"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "etheraddress"
-msgstr "address"
+msgstr "etheraddress"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -48601,9 +48451,8 @@ msgstr "以太网地址（00:05:4E:49:FD:8E）"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "event"
-msgstr "元素"
+msgstr "event"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -48622,9 +48471,8 @@ msgstr "某些分类事件处理函数（hangup）"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "filesystem"
-msgstr "firstterm"
+msgstr "filesystem"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -48633,9 +48481,8 @@ msgstr "文件系统（ext3）"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "fqdomainname"
-msgstr "filename"
+msgstr "fqdomainname"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -48644,9 +48491,8 @@ msgstr "完全限定域名（my.example.com）"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "groupname"
-msgstr "productname"
+msgstr "groupname"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -48655,9 +48501,8 @@ msgstr "组名（wheel）"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "ipaddress"
-msgstr "address"
+msgstr "ipaddress"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -48676,9 +48521,8 @@ msgstr "程序库（libncurses）"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "macro"
-msgstr "acronym"
+msgstr "macro"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -48697,9 +48541,8 @@ msgstr "子网掩码（225.255.255.192）"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "newsgroup"
-msgstr "confgroup"
+msgstr "newsgroup"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -48708,15 +48551,13 @@ msgstr "新闻组（comp.text.xml）"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "osname"
-msgstr "name"
+msgstr "osname"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "An operating system name (Hurd)"
-msgstr "操作系统"
+msgstr "操作系统名称(Hurd)"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
@@ -48740,13 +48581,11 @@ msgstr "协议（ftp）"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "resource"
-msgstr "资源"
+msgstr "resource"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A resource"
 msgstr "资源"
 
@@ -48762,9 +48601,8 @@ msgstr "服务 (ppp)"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "systemname"
-msgstr "systemitem"
+msgstr "systemname"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -48773,9 +48611,8 @@ msgstr "系统名 (hephaistos)"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "username"
-msgstr "publishername"
+msgstr "username"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -48912,9 +48749,8 @@ msgstr "格式化为一个显示块。这个元素被期望服从 <link linkend=
 
 #. (term)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "shortentry"
-msgstr "shortcut"
+msgstr "shortentry"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -49089,9 +48925,8 @@ msgstr "f1"
 
 #. (entry)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "f2"
-msgstr "2"
+msgstr "f2"
 
 #. (entry)
 #: ../../en/build/defguide5.xml:65535
@@ -49110,9 +48945,8 @@ msgstr "f5"
 
 #. (entry)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "b2"
-msgstr "2"
+msgstr "b2"
 
 #. (entry)
 #: ../../en/build/defguide5.xml:65535
@@ -49156,9 +48990,8 @@ msgstr "table (db.html.table)"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.html.table"
-msgstr "html:label"
+msgstr "db.html.table"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -49253,9 +49086,8 @@ msgstr "Body 2"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.tag"
-msgstr "tag"
+msgstr "db.tag"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -49264,15 +49096,13 @@ msgstr "XML（或 SGML ）标记组件"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "tag ::="
-msgstr "tag"
+msgstr "tag ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "“attribute”"
-msgstr "属性"
+msgstr "“attribute”"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -49281,9 +49111,8 @@ msgstr "“attvalue”"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "“element”"
-msgstr "元素"
+msgstr "“element”"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -49297,9 +49126,8 @@ msgstr "“endtag”"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "“genentity”"
-msgstr "普通实体"
+msgstr "“genentity”"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -49318,9 +49146,8 @@ msgstr "“numcharref”"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "“paramentity”"
-msgstr "参数实体"
+msgstr "“paramentity”"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -49374,21 +49201,18 @@ msgstr "属性"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "An attribute"
 msgstr "属性"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "attvalue"
-msgstr "returnvalue"
+msgstr "attvalue"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "An attribute value"
-msgstr "增加属性"
+msgstr "属性值"
 
 #. (quote), (glossterm)
 #: ../../en/build/defguide5.xml:65535
@@ -49397,7 +49221,6 @@ msgstr "元素"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "An element"
 msgstr "元素"
 
@@ -49408,15 +49231,13 @@ msgstr "emptytag"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "An empty element tag"
-msgstr "增加元素"
+msgstr "空元素标签"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "endtag"
-msgstr "tag"
+msgstr "endtag"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -49425,21 +49246,18 @@ msgstr "结束标记"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "genentity"
-msgstr "实体"
+msgstr "genentity"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A general entity"
 msgstr "普通实体"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "localname"
-msgstr "classname"
+msgstr "localname"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -49448,9 +49266,8 @@ msgstr "限定名的局部名称部分"
 
 #. (quote), (term)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "namespace"
-msgstr "name"
+msgstr "namespace"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -49469,13 +49286,11 @@ msgstr "数字字符参考"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "paramentity"
-msgstr "参数实体"
+msgstr "paramentity"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A parameter entity"
 msgstr "参数实体"
 
@@ -49486,15 +49301,13 @@ msgstr "pi"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A processing instruction"
 msgstr "处理指令"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "prefix"
-msgstr "xref"
+msgstr "prefix"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -49503,9 +49316,8 @@ msgstr "限定名的前缀部分"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "comment"
-msgstr "command"
+msgstr "comment"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -49529,9 +49341,8 @@ msgstr "xmlpi"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "An XML processing instruction"
-msgstr "处理指令"
+msgstr "XML 处理指令"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -49565,21 +49376,18 @@ msgstr "task ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "<tag>tasksummary</tag>?"
-msgstr "<tag>attribution</tag>?"
+msgstr "<tag>tasksummary</tag>?"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "<tag>taskprerequisites</tag>?"
-msgstr "<tag>attribution</tag>?"
+msgstr "<tag>taskprerequisites</tag>?"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "<tag>taskrelated</tag>?"
-msgstr "<tag>attribution</tag>?"
+msgstr "<tag>taskrelated</tag>?"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -49795,15 +49603,13 @@ msgstr "td ::="
 
 #. (para), (term)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "abbr"
-msgstr "abbrev"
+msgstr "abbr"
 
 #. (para), (term)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "axis"
-msgstr "巴黎"
+msgstr "axis"
 
 #. (para), (term)
 #: ../../en/build/defguide5.xml:65535
@@ -49827,9 +49633,8 @@ msgstr "“rowgroup”"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "“colgroup”"
-msgstr "confgroup"
+msgstr "“colgroup”"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -49858,9 +49663,8 @@ msgstr "这个属性可用于放置一个单元格到概念种类中，种类可
 
 #. (term)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "colspan"
-msgstr "constant"
+msgstr "colspan"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -49899,9 +49703,8 @@ msgstr "当前单元格提供用于包含它的其余列的标头信息"
 
 #. (quote)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "rowgroup"
-msgstr "confgroup"
+msgstr "rowgroup"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -50200,9 +50003,8 @@ msgstr "下列元素可以出现在 textdata 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.textobject"
-msgstr "textobject"
+msgstr "db.textobject"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -50211,9 +50013,8 @@ msgstr "用于对象的文本描述以它的相关元信息的包装器"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "textobject ::="
-msgstr "textobject"
+msgstr "textobject ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -50332,9 +50133,8 @@ msgstr "这个元素被期望服从描述在 <citetitle href=\"http://www.w3.org
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.tgroup"
-msgstr "authorgroup"
+msgstr "db.tgroup"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -50615,9 +50415,8 @@ msgstr "If you tie your shoelaces, you're less likely to trip and fall down."
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.title"
-msgstr "title"
+msgstr "db.title"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -50626,9 +50425,8 @@ msgstr "文档的节或者正式块级元素的标题的文本"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "title ::="
-msgstr "title"
+msgstr "title ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -50658,7 +50456,7 @@ msgstr "下列元素可以出现在 title 中：<placeholder-1/>。"
 
 #. (programlisting)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "&lt;article xmlns='http://docbook.org/ns/docbook'&gt;\n"
 "&lt;title&gt;Example title&lt;/title&gt;\n"
@@ -50671,19 +50469,21 @@ msgid ""
 "\n"
 "&lt;/article&gt;\n"
 msgstr ""
-"&lt;chapter&gt;&lt;title&gt;My Chapter&lt;/title&gt;\n"
-"&lt;para&gt; ... &lt;/para&gt;\n"
-"&lt;sect1&gt;&lt;title&gt;First Section&lt;/title&gt;\n"
-"&lt;para&gt; ... &lt;/para&gt;\n"
-"&lt;example&gt; ... &lt;/example&gt;\n"
-"&lt;/sect1&gt;\n"
-"&lt;/chapter&gt;\n"
+"&lt;article xmlns='http://docbook.org/ns/docbook'&gt;\n"
+"&lt;title&gt;Example title&lt;/title&gt;\n"
+"\n"
+"&lt;section&gt;\n"
+"  &lt;title&gt;A Top Level Section&lt;/title&gt;\n"
+"\n"
+"  &lt;para&gt;Actual content.&lt;/para&gt;\n"
+"&lt;/section&gt;\n"
+"\n"
+"&lt;/article&gt;\n"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.titleabbrev"
-msgstr "titleabbrev"
+msgstr "db.titleabbrev"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -50692,9 +50492,8 @@ msgstr "标题的缩写"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "titleabbrev ::="
-msgstr "titleabbrev"
+msgstr "titleabbrev ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -50780,7 +50579,7 @@ msgstr "下列元素可以出现在 toc 中：<placeholder-1/>。"
 
 #. (programlisting)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "&lt;article xmlns='http://docbook.org/ns/docbook'&gt;\n"
 "&lt;title&gt;Example toc&lt;/title&gt;\n"
@@ -50789,18 +50588,17 @@ msgid ""
 "\n"
 "&lt;/article&gt;\n"
 msgstr ""
-"&lt;!DOCTYPE chapter&gt;\n"
-"&lt;chapter xmlns=\"http://docbook.org/ns/docbook\"\n"
-"         id=\"ch1\"&gt;\n"
-"&lt;title&gt;My First Chapter&lt;/title&gt;\n"
-"&lt;para&gt;My first paragraph.&lt;/para&gt;\n"
-"…"
+"&lt;article xmlns='http://docbook.org/ns/docbook'&gt;\n"
+"&lt;title&gt;Example toc&lt;/title&gt;\n"
+"\n"
+"&lt;para&gt;TBD&lt;/para&gt;\n"
+"\n"
+"&lt;/article&gt;\n"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "TBD"
-msgstr "DTD"
+msgstr "TBD"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
@@ -50844,9 +50642,8 @@ msgstr "下列元素可以出现在 tocdiv 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.tocentry"
-msgstr "文档"
+msgstr "db.tocentry"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -50875,21 +50672,18 @@ msgstr "下列元素可以出现在 tocentry 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.token"
-msgstr "token"
+msgstr "db.token"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A unit of information"
-msgstr "元信息"
+msgstr "信息单元"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "token ::="
-msgstr "token"
+msgstr "token ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -50971,21 +50765,18 @@ msgstr "下列元素可以出现在 tr 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.trademark"
-msgstr "trademark"
+msgstr "db.trademark"
 
 #. (refpurpose), (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A trademark"
-msgstr "trademark"
+msgstr "商标"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "trademark ::="
-msgstr "trademark"
+msgstr "trademark ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -51012,9 +50803,8 @@ msgstr "标识商标的类型"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A copyright"
-msgstr "copyright"
+msgstr "版权"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -51065,9 +50855,8 @@ msgstr "The name <trademark class=\"registered\">WebSite</trademark> is a regist
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.type"
-msgstr "type"
+msgstr "db.type"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -51076,9 +50865,8 @@ msgstr "值的分类"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "type ::="
-msgstr "type"
+msgstr "type ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -51238,9 +51026,8 @@ msgstr "这个 <emphasis>alpha</emphasis> 参考页是 $Revision: 5412 $ 发布�
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.userinput"
-msgstr "userinput"
+msgstr "db.userinput"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -51249,9 +51036,8 @@ msgstr "用户输入的数据"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "userinput ::="
-msgstr "userinput"
+msgstr "userinput ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -51375,9 +51161,8 @@ msgstr ""
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.variablelist"
-msgstr "variablelist"
+msgstr "db.variablelist"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -51386,15 +51171,13 @@ msgstr "列表，它的每个条目由一个或多个术语集及相关描绘组
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "variablelist ::="
-msgstr "variablelist"
+msgstr "variablelist ::="
 
 #. (para), (term)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "termlength"
-msgstr "itermset"
+msgstr "termlength"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -51540,9 +51323,8 @@ msgstr "下列元素可以出现在 varlistentry 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.varname"
-msgstr "varname"
+msgstr "db.varname"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -51551,9 +51333,8 @@ msgstr "变量名称"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "varname ::="
-msgstr "varname"
+msgstr "varname ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -51651,9 +51432,8 @@ msgstr "下列元素可以出现在 videodata 中：<placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.videoobject"
-msgstr "videoobject"
+msgstr "db.videoobject"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -51662,9 +51442,8 @@ msgstr "用于视频数据及它的相关元信息的包装器"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "videoobject ::="
-msgstr "videoobject"
+msgstr "videoobject ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -51772,9 +51551,8 @@ msgstr "这些元素包含 <tag>void</tag>： <placeholder-1/>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.volumenum"
-msgstr "volumenum"
+msgstr "db.volumenum"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -51783,9 +51561,8 @@ msgstr "在一个集合中的文档的卷号（有如在集合中的书或者在
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "volumenum ::="
-msgstr "volumenum"
+msgstr "volumenum ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -51891,9 +51668,8 @@ msgstr "Striking your thumb with a hammer may cause severe pain and discomfort."
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.wordasword"
-msgstr "wordasword"
+msgstr "db.wordasword"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -51902,9 +51678,8 @@ msgstr "意思是特定单词并且不描述为其他任何东西的单词"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "wordasword ::="
-msgstr "wordasword"
+msgstr "wordasword ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -51957,9 +51732,8 @@ msgstr "A <wordasword>Term</wordasword> in Algebra has a very different meaning 
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "db.xref"
-msgstr "xref"
+msgstr "db.xref"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:65535
@@ -51968,9 +51742,8 @@ msgstr "到另一部分文档的交叉引用"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "xref ::="
-msgstr "xref"
+msgstr "xref ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -51990,9 +51763,8 @@ msgstr "如果在 <tag>xref</tag> 上指定了 <tag class=\"attribute\">endterm<
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "Otherwise, if the object <emphasis>pointed to</emphasis> has a specified <tag class=\"attribute\">xreflabel</tag>, the content of that attribute will be used as the cross-reference text."
-msgstr "否则，如果<emphasis>被指向的对象</emphasis>有一个指定的 <tag class=\"attribute\">XRefLabel</tag> ，那个属性的内容将被用为交叉引用的文本。"
+msgstr "否则，如果<emphasis>被指向的对象</emphasis>有指定的 <tag class=\"attribute\">xreflabel</tag>，那个属性的内容将被用做交叉引用文本。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -52105,9 +51877,8 @@ msgstr "year ::="
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "A <tag>year</tag> element identifies a year. In DocBook V3.0, this is only used in <tag>copyright</tag>, to identify the year or years in which copyright is asserted."
-msgstr "<tag>Year</tag> 标识了一个年度。在 DocBook V3.0 中，这仅用于 <tag>Year</tag> ，标识声明的版权中的年度或多个年度。"
+msgstr "<tag>year</tag> 标识年度。在 DocBook V3.0 中，仅用于 <tag>copyright</tag> 中，用来标识声明的版权中的年度。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
@@ -52146,15 +51917,13 @@ msgstr "来自 http://www.w3.org/1998/Math/MathML 命名空间的任何元素。
 
 #. (emphasis)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "Zero or more:"
 msgstr "零个或多个："
 
 #. (emphasis)
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "Any attribute"
-msgstr "属性"
+msgstr "任意属性"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65535
