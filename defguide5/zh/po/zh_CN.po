@@ -10,7 +10,7 @@
 #    msgmerge --update zh_CN.po defguide5.pot
 #
 # Check translation:
-#    msgfmt --statistics -c zh_CN.po
+#    msgfmt --statistics -c -o zh_CN.mo zh_CN.po
 #
 # Please format your translation before commit:
 #    msgmerge --no-wrap -o zh_CN_new.po zh_CN.po defguide5.pot
@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: defguide5 0.0.22\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-10-10 12:25 +0000\n"
-"PO-Revision-Date: 2007-10-11 17:47+0800\n"
+"PO-Revision-Date: 2007-10-12 00:28+0800\n"
 "Last-Translator: Dongsheng Song <dongsheng.song@gmail.com>\n"
 "Language-Team: zh_CN <i18n-zh@googlegroups.com >\n"
 "MIME-Version: 1.0\n"
@@ -175,7 +175,7 @@ msgstr "DocBook 5.0"
 #. (subtitle)
 #: ../../en/build/defguide5.xml:7
 msgid "The Definitive Guide"
-msgstr "The Definitive Guide"
+msgstr "权威指南"
 
 #. (firstname)
 #: ../../en/build/defguide5.xml:11 ../../en/build/defguide5.xml:58748
@@ -19957,9 +19957,8 @@ msgstr "范围通常用数字、符号或其他有特色的标记来修饰。标
 #. (para)
 #: ../../en/build/defguide5.xml:7941 ../../en/build/defguide5.xml:8228
 #: ../../en/build/defguide5.xml:65535
-#, fuzzy
 msgid "For a complete description of callouts, see <tag>callout</tag>."
-msgstr "对于插图编号的完整描述，请查阅 <tag>Callout</tag>。"
+msgstr "对于插图编号的完整描述，参见 <tag>callout</tag>。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:7945 ../../en/build/defguide5.xml:8458
@@ -19968,9 +19967,8 @@ msgstr "不显示。此元素为处理提供数据，但不被期望去直接呈
 
 #. (para)
 #: ../../en/build/defguide5.xml:7949
-#, fuzzy
 msgid "The processing expectations of <tag>callout</tag>s are likely to deserve special consideration for interchange. See <xref linkend=\"app-interchange\"/>."
-msgstr "<tag>Callout</tag> 的处理期望是类似于交换应受的特定考虑。请查阅<xref linkend=\"app-interchange\"/>。"
+msgstr "<tag>callout</tag> 的处理期望可能值得为交换特别考虑。参见 <xref linkend=\"app-interchange\"/>。"
 
 #. (tag), (quote)
 #: ../../en/build/defguide5.xml:7957 ../../en/build/defguide5.xml:8042
@@ -20024,9 +20022,8 @@ msgstr "otherunits"
 
 #. (para)
 #: ../../en/build/defguide5.xml:7977
-#, fuzzy
 msgid "If specified, then the <tag class=\"attribute\">otherunits</tag> attribute is expected to identify the units in some implementation-specific way."
-msgstr "如果指定了这个单位，则 <tag class=\"attribute\">OtherUnits</tag> 属性被用来标识在一些具体实施文法中的单位。"
+msgstr "如果指定了单位，则 <tag class=\"attribute\">otherunits</tag> 属性被用来标识在一些特定实现方法的单位。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:7952
@@ -21423,15 +21420,13 @@ msgstr "<tag>bibliodiv</tag> 是 <tag>bibliography</tag> 的节。参考书目�
 
 #. (para)
 #: ../../en/build/defguide5.xml:11376
-#, fuzzy
 msgid "A bibliography may contain any number of <tag>biblioentry</tag> or <tag>bibliomixed</tag> elements or any number of <tag>bibliodiv</tag>s, but it cannot contain a mixture of both at the same level."
-msgstr "一个参考书目可以包含任何数量的 <tag>BiblioEntry</tag> 或 <tag>BiblioMixed</tag> 元素或者任何数量的 <tag>BiblioDiv</tag> ，但它不能在同一层级中包含它们二个的混合。"
+msgstr "一个参考书目可以包含任何数量的 <tag>biblioentry</tag> 或 <tag>bibliomixed</tag> 元素，或者任何数量的 <tag>bibliodiv</tag>，但不能在同一层级中包含它们。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:11384
-#, fuzzy
 msgid "Formatted as a displayed block. Some systems may display only those entries within a <tag>bibliodiv</tag> that are cited in the containing document. This may be an interchange issue. See <xref linkend=\"app-interchange\"/>."
-msgstr "格式化为一个显示块。有些系统仅显示在包含的文档中引用了的在 <tag>BiblioDiv</tag> 中的那些实体。这也许是一个交换的出版物。请查阅 <xref linkend=\"app-interchange\"/>。"
+msgstr "格式化为一个显示块。有些系统仅显示在 <tag>bibliodiv</tag> 中引用了的实体。这也许是一个交换问题。参见 <xref linkend=\"app-interchange\"/>。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:11410
@@ -21557,9 +21552,8 @@ msgstr "格式化为一个显示块。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:11799
-#, fuzzy
 msgid "A <tag>biblioentry</tag> is <quote>raw.</quote> It contains a database-like collection of named fields. It is the responsibility of the processing system to select elements from within a <tag>biblioentry</tag>, present them in the correct order, and add all punctuation."
-msgstr "<tag>BiblioEntry</tag> 是 <quote>生肉。</quote>它们包括一个类数据库的命名字段集。处理系统的职责是从 <tag>BiblioEntry</tag> 中的元素中选择出元素，以正确的顺序显示他们，并添加所有标点。"
+msgstr "<tag>biblioentry</tag> 是 <quote>原始数据</quote>。它包括一个类数据库的命名字段集。处理系统的职责是从 <tag>biblioentry</tag> 中选择元素，以正确的顺序显示它们，并添加所有标点。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:11805
@@ -21611,9 +21605,8 @@ msgstr "格式化为一个显示块。在 <tag>Book</tag> 中的  <tag>Bibliogra
 
 #. (para)
 #: ../../en/build/defguide5.xml:12268
-#, fuzzy
 msgid "Some systems may display only those entries within a <tag>bibliography</tag> that are cited in the containing document. This may be an interchange issue. See <xref linkend=\"app-interchange\"/>."
-msgstr "某些系统可能只显示那些在 <tag>Bibliography</tag> 中并且仅在包含文档中被引用的条目。"
+msgstr "某些系统可能只显示那些在 <tag>bibliography</tag> 中，并且仅在包含文档中被引用的条目。这可能是一个交换问题。参见 <xref linkend=\"app-interchange\"/>。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:12272
