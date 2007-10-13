@@ -16,7 +16,7 @@ Usage:
 Dependency:
     *) ant 1.7
     *) xsltproc 1.1.20
-    *) jdk 1.4.2
+    *) jdk 1.5
     *) saxon 6.5
     *) DocBook v5 XSL 1.73.2
     *) RELAX NG Support(jing)
@@ -210,20 +210,21 @@ Dependency:
             <fileset dir="../en/examples"/>
         </copy>
         <copy todir="build/htmlhelp/images">
-            <fileset dir="${docbook5.xsl}/images" includes="*.git,*.png,*.tif,*.svg"/>
+            <fileset dir="${docbook5.xsl}/images"/>
         </copy>
 
+        <echo message="Making chm ..."/>
         <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="512m"
                 failonerror="true" dir="${basedir}${file.separator}build">
             <classpath refid="lib.classpath"/>
-            <arg value="../defguide-zh_CN.xml"/>
-            <arg value="../../stylesheets/chm.xsl"/>
+            <arg value="defguide-zh_CN.xml"/>
+            <arg value="../stylesheets/chm.xsl"/>
         </java>
 
         <!--exec dir="${basedir}${file.separator}build" executable="xsltproc" failonerror="true">
             <arg value="- -nonet"/>
-            <arg value="../../stylesheets/chm.xsl"/>
-            <arg value="../defguide-zh_CN.xml"/>
+            <arg value="../stylesheets/chm.xsl"/>
+            <arg value="defguide-zh_CN.xml"/>
         </exec-->
 
         <exec dir="${basedir}${file.separator}build" executable="hhc" failonerror="true">
@@ -236,8 +237,8 @@ Dependency:
         <delete file="build/htmlhelp.hhp"/-->
     </target>
 
-    <target name="pdf.init">    
-        <fail message="Unfixed java.lang.StackOverflowError !"/>
+    <target name="pdf.init">
+        <!-- fail message="Unfixed java.lang.StackOverflowError !"/ -->
         <uptodate property="pdf.isUpToDate" targetfile="build/defguide-zh_CN.pdf">
             <srcfiles dir="source" includes="defguide.xml"/>
             <srcfiles dir="po" includes="zh_CN.po"/>
@@ -253,7 +254,7 @@ Dependency:
         <copy file="stylesheets/fo-import.tmpl.xsl" tofile="stylesheets/fo-import.xsl" filtering="true" overwrite="true"/>
 
         <echo message="Making fo ..."/>
-        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="512m"
+        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="1024m"
                 failonerror="true" dir="${basedir}">
             <classpath refid="lib.classpath"/>
             <arg value="-o"/>
@@ -266,7 +267,7 @@ Dependency:
             <fileset dir="source/figures" includes="*.png,*.gif,*.eps"/>
         </copy>
         <copy todir="build/pdf/images">
-            <fileset dir="${docbook5.xsl}/images" includes="*.git,*.png,*.tif,*.svg"/>
+            <fileset dir="${docbook5.xsl}/images"/>
         </copy>
 
         <copy todir="build/pdf">
