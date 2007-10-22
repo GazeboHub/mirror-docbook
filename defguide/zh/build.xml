@@ -16,13 +16,13 @@ Usage:
 Dependency:
     *) ant 1.7
     *) xsltproc 1.1.20
-    *) jdk 1.5
+    *) jdk 1.5(1.4 & 1.6 has a unfixed java.lang.StackOverflowError !)
     *) saxon 6.5
-    *) DocBook v5 XSL 1.73.2
+    *) DocBook v5 XSL
     *) RELAX NG Support(jing)
-    *) python 2.4.4
+    *) python 2.4
     *) python-libxml2 2.6.27
-    *) gettext 0.16.1
+    *) gettext 0.16
     *) fop 0.20.5, pdf only
     *) chinese font files, pdf only
     *) For windows user, you can download gettext & xsltproc binary from:
@@ -72,6 +72,13 @@ Dependency:
           </and>
         </condition>
         <fail message="Saxon 6.5 Support NOT Present !" unless="saxon.present"/>
+
+        <!-- Java SE 1.4 & 1.6: Unfixed java.lang.StackOverflowError ! -->
+        <echo message="java.version: ${java.version}"/>
+        <condition property="java15.present">
+            <equals arg1="${ant.java.version}" arg2="1.5"/>
+        </condition>
+        <fail message="Must use Java SE 5.0 !" unless="java15.present"/>
     </target>
 
     <target name="validate" depends="init" description="Validate document">
@@ -84,8 +91,8 @@ Dependency:
 
     <target name="all" description="Generate document - html,chm,pdf">
         <antcall target="html"/>
-        <!-- antcall target="pdf"/ -->
-        <!-- antcall target="chm"/ -->
+        <antcall target="pdf"/>
+        <antcall target="chm"/>
     </target>
 
     <target name="pot.init">
@@ -237,15 +244,15 @@ Dependency:
         <delete file="build/htmlhelp.hhp"/-->
     </target>
 
-    <target name="pdf.init">
-        <!-- fail message="Unfixed java.lang.StackOverflowError !"/ -->
-        <uptodate property="pdf.isUpToDate" targetfile="build/defguide-zh_CN.pdf">
+    <target name="fo.init">
+        <uptodate property="fo.isUpToDate" targetfile="build/pdf/defguide-zh_CN.fo">
             <srcfiles dir="source" includes="defguide.xml"/>
             <srcfiles dir="po" includes="zh_CN.po"/>
         </uptodate>
     </target>
 
-    <target name="pdf" depends="init,translate,pdf.init" unless="pdf.isUpToDate"  description="Generate document - html">
+    <target name="fo" depends="init,translate,fo.init" unless="fo.isUpToDate"  description="Generate document - fo">
+        <mkdir dir="build/pdf"/>
         <copy todir="build/examples">
             <fileset dir="../en/examples"/>
         </copy>
@@ -262,7 +269,17 @@ Dependency:
             <arg value="build/defguide-zh_CN.xml"/>
             <arg value="stylesheets/zh_CN/fo.xsl"/>
         </java>
+    </target>
 
+    <target name="pdf.init">
+        <uptodate property="pdf.isUpToDate" targetfile="build/defguide-zh_CN.pdf">
+            <srcfiles dir="source" includes="defguide.xml"/>
+            <srcfiles dir="po" includes="zh_CN.po"/>
+            <srcfiles dir="build/pdf" includes="defguide-zh_CN.fo"/>
+        </uptodate>
+    </target>
+
+    <target name="pdf" depends="init,translate,fo,pdf.init" unless="pdf.isUpToDate"  description="Generate document - pdf">
         <copy todir="build/pdf/figures">
             <fileset dir="source/figures" includes="*.png,*.gif,*.eps"/>
         </copy>
@@ -278,7 +295,6 @@ Dependency:
             <fileset dir="${fop.home}/conf">
                 <include name="*.xml"/>
             </fileset>
-            <fileset file="build/defguide-zh_CN.fo"/>
         </copy>
 
         <echo message="Making pdf ..."/>

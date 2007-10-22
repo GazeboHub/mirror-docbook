@@ -21,12 +21,16 @@ Update
 
 Check
 -----
-    msgfmt --statistics -c zh_CN.po
+    msgfmt --statistics -c -o zh_CN.mo zh_CN.po
+    msgfmt --statistics -c --check-accelerators -o Tortoise_zh_CN.mo Tortoise_zh_CN.po
 
 
 Format
 ------
     msgmerge --no-wrap -o zh_CN_new.po zh_CN.po defguide5.pot
+    mv -f zh_CN_new.po zh_CN.po
+
+    msgmerge --no-wrap -o zh_CN_new.po zh_CN.po defguide.pot
     mv -f zh_CN_new.po zh_CN.po
 
     msgmerge --sort-by-file --no-wrap -o zh_CN_new.po zh_CN.po subversion.pot

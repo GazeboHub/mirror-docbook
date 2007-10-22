@@ -14,18 +14,18 @@ Dependency(en):
     *) ant 1.7
     *) beanshell 2.0b4
     *) xsltproc 1.1.20
-    *) jdk 1.4.2
+    *) jdk 1.4
     *) saxon 6.5 & 8.9
-    *) DocBook v5 XSL 1.73.2
+    *) DocBook v5 XSL
     *) RELAX NG Support(jing)
     *) fop 0.20.5, pdf only
     *) For windows user, you can download gettext & xsltproc binary from:
         http://i18n-zh.googlecode.com/files/gettext-0.16.1_xsltproc-1.1.20.tar.bz2
 
 Dependency(zh only):
-    *) python 2.4.4
+    *) python 2.4
     *) python-libxml2 2.6.27
-    *) gettext 0.16.1
+    *) gettext 0.16
     *) chinese font files, pdf only
 
 TODO:

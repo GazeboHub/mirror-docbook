@@ -17,13 +17,13 @@ Dependency:
     *) ant 1.7
     *) beanshell 2.0b4
     *) xsltproc 1.1.20
-    *) jdk 1.4.2
+    *) jdk 1.4
     *) saxon 6.5 & 8.9
-    *) DocBook v5 XSL 1.73.2
+    *) DocBook v5 XSL
     *) RELAX NG Support(jing)
-    *) python 2.4.4
+    *) python 2.4
     *) python-libxml2 2.6.27
-    *) gettext 0.16.1
+    *) gettext 0.16
     *) fop 0.20.5, pdf only
     *) chinese font files, pdf only
     *) For windows user, you can download gettext & xsltproc binary from:
@@ -221,8 +221,8 @@ Dependency:
         <delete file="build/htmlhelp.hhp"/-->
     </target>
 
-    <target name="pdf.init">
-        <uptodate property="pdf.isUpToDate" targetfile="build/defguide5-zh_CN.pdf">
+    <target name="fo.init">
+        <uptodate property="fo.isUpToDate" targetfile="build/pdf/defguide5-zh_CN.fo">
             <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
             <srcfiles dir="../en/src" includes="*.xml"/>
             <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
@@ -231,7 +231,8 @@ Dependency:
         </uptodate>
     </target>
 
-    <target name="pdf" depends="translate,pdf.init" unless="pdf.isUpToDate"  description="Generate document - pdf">
+    <target name="fo" depends="translate,fo.init" unless="fo.isUpToDate"  description="Generate document - fo">
+        <mkdir dir="build/pdf"/>
 
         <filter token="docbook5.xsl.url" value="${docbook5.xsl.url}"/>
         <copy file="stylesheets/fo-import.tmpl.xsl" tofile="stylesheets/fo-import.xsl" filtering="true" overwrite="true"/>
@@ -245,7 +246,20 @@ Dependency:
             <arg value="../en/build/defguide5-zh_CN.xml"/>
             <arg value="stylesheets/zh_CN/fo.xsl"/>
         </java>
+    </target>
 
+    <target name="pdf.init">
+        <uptodate property="pdf.isUpToDate" targetfile="build/defguide5-zh_CN.pdf">
+            <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
+            <srcfiles dir="../en/src" includes="*.xml"/>
+            <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
+            <srcfiles dir="../en/refpages/elements" includes="*/*.xml" excludes="build/*"/>
+            <srcfiles dir="po" includes="zh_CN.po"/>
+            <srcfiles dir="build/pdf" includes="defguide5-zh_CN.fo"/>
+        </uptodate>
+    </target>
+
+    <target name="pdf" depends="translate,fo,pdf.init" unless="pdf.isUpToDate"  description="Generate document - pdf">
         <copy todir="build/pdf/figures">
             <fileset dir="../en/figures" includes="*.png,*.gif,*.eps"/>
         </copy>
@@ -261,7 +275,6 @@ Dependency:
             <fileset dir="${fop.home}/conf">
                 <include name="*.xml"/>
             </fileset>
-            <fileset file="build/defguide5-zh_CN.fo"/>
         </copy>
 
         <echo message="Making pdf ..."/>
