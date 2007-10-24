@@ -14,8 +14,6 @@
 <xsl:param name="htmlhelp.encoding" select="'UTF-8'"/>
 <xsl:param name="chunker.output.encoding" select="'UTF-8'"/>
 
-<xsl:param name="saxon.character.representation" select="'native'"/>
-
 <xsl:param name="use.extensions">1</xsl:param>
 <xsl:param name="tablecolumns.extension">0</xsl:param>
 <xsl:param name="callouts.extension">0</xsl:param>

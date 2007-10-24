@@ -30,7 +30,7 @@ Dependency:
 
 Status:
                     PDF     HTML    CHM
-    JavaSE 1.4      FAIL
+    JavaSE 1.4      FAIL    OK      FAIL
     JavaSE 1.5      FAIL    OK      FAIL
     JavaSE 1.6      OK      OK      FAIL
 -->
@@ -78,12 +78,7 @@ Status:
         </condition>
         <fail message="Saxon 6.5 Support NOT Present !" unless="saxon.present"/>
 
-        <!-- Java SE 1.4 & 1.6: Unfixed java.lang.StackOverflowError ! -->
         <echo message="java.version: ${java.version}"/>
-        <!-- condition property="java15.present">
-            <equals arg1="${ant.java.version}" arg2="1.5"/>
-        </condition>
-        <fail message="Must use Java SE 5.0 !" unless="java15.present"/ -->
     </target>
 
     <target name="validate" depends="init" description="Validate document">
@@ -226,18 +221,18 @@ Status:
         </copy>
 
         <echo message="Making chm ..."/>
-        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="512m"
+        <!--java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="512m"
                 failonerror="true" dir="${basedir}${file.separator}build">
             <classpath refid="lib.classpath"/>
             <arg value="defguide-zh_CN.xml"/>
             <arg value="../stylesheets/chm.xsl"/>
-        </java>
+        </java-->
 
-        <!--exec dir="${basedir}${file.separator}build" executable="xsltproc" failonerror="true">
-            <arg value="- -nonet"/>
+        <exec dir="${basedir}${file.separator}build" executable="xsltproc" failonerror="true">
+            <arg value="--nonet"/>
             <arg value="../stylesheets/chm.xsl"/>
             <arg value="defguide-zh_CN.xml"/>
-        </exec-->
+        </exec>
 
         <exec dir="${basedir}${file.separator}build" executable="hhc" failonerror="true">
             <arg value="htmlhelp.hhp"/>
@@ -250,6 +245,11 @@ Status:
     </target>
 
     <target name="fo.init">
+        <!-- Java SE 1.4 & 1.5: Unfixed java.lang.StackOverflowError ! -->
+        <condition property="java16.present">
+            <equals arg1="${ant.java.version}" arg2="1.6"/>
+        </condition>
+        <fail message="Must use Java SE 6 !" unless="java16.present"/>
         <uptodate property="fo.isUpToDate" targetfile="build/pdf/defguide-zh_CN.fo">
             <srcfiles dir="source" includes="defguide.xml"/>
             <srcfiles dir="po" includes="zh_CN.po"/>
