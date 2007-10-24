@@ -27,6 +27,12 @@ Dependency:
     *) chinese font files, pdf only
     *) For windows user, you can download gettext & xsltproc binary from:
         http://i18n-zh.googlecode.com/files/gettext-0.16.1_xsltproc-1.1.20.tar.bz2
+
+Status:
+                    PDF     HTML    CHM
+    JavaSE 1.4      FAIL
+    JavaSE 1.5      FAIL    OK      FAIL
+    JavaSE 1.6      OK      OK      FAIL
 -->
 <project name="defguide" default="all">
 
@@ -55,7 +61,6 @@ Dependency:
         <delete file="stylesheets/chm-import.xsl"/>
         <delete file="stylesheets/fo-import.xsl"/>
         <delete file="stylesheets/html-import.xsl"/>
-        <delete dir="build"/>
     </target>
 
     <target name="init" description="Check runtime class">
@@ -75,10 +80,10 @@ Dependency:
 
         <!-- Java SE 1.4 & 1.6: Unfixed java.lang.StackOverflowError ! -->
         <echo message="java.version: ${java.version}"/>
-        <condition property="java15.present">
+        <!-- condition property="java15.present">
             <equals arg1="${ant.java.version}" arg2="1.5"/>
         </condition>
-        <fail message="Must use Java SE 5.0 !" unless="java15.present"/>
+        <fail message="Must use Java SE 5.0 !" unless="java15.present"/ -->
     </target>
 
     <target name="validate" depends="init" description="Validate document">
