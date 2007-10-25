@@ -16,7 +16,7 @@ Usage:
 Dependency:
     *) ant 1.7
     *) xsltproc 1.1.20
-    *) jdk 1.5(1.4 & 1.6 has a unfixed java.lang.StackOverflowError !)
+    *) jdk 1.6(1.4 & 1.5 has a unfixed java.lang.StackOverflowError for PDF!)
     *) saxon 6.5
     *) DocBook v5 XSL
     *) RELAX NG Support(jing)
@@ -33,6 +33,7 @@ Status:
     JavaSE 1.4      FAIL    OK      FAIL
     JavaSE 1.5      FAIL    OK      FAIL
     JavaSE 1.6      OK      OK      FAIL
+    xsltproc        X       OK      OK
 -->
 <project name="defguide" default="all">
 
@@ -65,16 +66,16 @@ Status:
 
     <target name="init" description="Check runtime class">
         <condition property="rng.present">
-          <and>
-            <available classname="com.thaiopensource.relaxng.util.Driver"/>
-          </and>
+            <and>
+                <available classname="com.thaiopensource.relaxng.util.Driver"/>
+            </and>
         </condition>
         <fail message="RELAX NG Support(jing) NOT Present !" unless="rng.present"/>
 
         <condition property="saxon.present">
-          <and>
-            <available classname="com.icl.saxon.StyleSheet" classpathref="lib.classpath"/>
-          </and>
+            <and>
+                <available classname="com.icl.saxon.StyleSheet" classpathref="lib.classpath"/>
+            </and>
         </condition>
         <fail message="Saxon 6.5 Support NOT Present !" unless="saxon.present"/>
 
@@ -82,9 +83,8 @@ Status:
     </target>
 
     <target name="validate" depends="init" description="Validate document">
-        <jing rngfile="${docbook5.home}/rng/docbook.rng"
-                file="source/defguide.xml"/>
-        <!-- Don't uncomment this unless xml2po support namespace ! -->
+        <jing rngfile="${docbook5.home}/rng/docbook.rng" file="source/defguide.xml"/>
+        <!--Don't uncomment this unless xml2po support namespace !-->
         <!--jing rngfile="${docbook5.home}/rng/docbook.rng"
                 file="build/defguide-zh_CN.xml"/-->
     </target>
@@ -102,15 +102,6 @@ Status:
     </target>
 
     <target name="pot" depends="pot.init" unless="pot.isUpToDate" description="Generate document - pot">
-        <!--fail>
-            <condition>
-                <or>
-                    <os family="windows"/>
-                </or>
-            </condition>
-            This target known work on unix, not windows !
-        </fail-->
-
         <echo message="Making defguide.pot ..."/>
         <exec dir="${basedir}/po" executable="python" failonerror="true">
             <arg value="../xml2po.py"/>
@@ -151,11 +142,9 @@ Status:
             <arg value="source/defguide.xml"/>
         </exec>
         <exec dir="${basedir}/build" executable="xmllint">
-            <arg value="--encode"/>
-            <arg value="UTF-8"/>
+            <arg value="--format"/>
             <arg value="--output"/>
             <arg value="defguide-zh_CN.xml"/>
-            <arg value="--format"/>
             <arg value="defguide-zh_CN-tmp.xml"/>
         </exec>
         <delete file=".xml2po.mo"/>
@@ -163,16 +152,15 @@ Status:
     </target>
 
     <target name="html.init">
-        <uptodate property="html.isUpToDate" targetfile="build/html/.done">
+        <uptodate property="html.isUpToDate" targetfile="build/defguide/.done">
             <srcfiles dir="source" includes="defguide.xml"/>
             <srcfiles dir="po" includes="zh_CN.po"/>
         </uptodate>
     </target>
 
     <target name="html" depends="init,translate,html.init" unless="html.isUpToDate" description="Generate document - html">
-
-        <copy file="stylesheets/defguide.css" todir="build/html"/>
-        <copy todir="build/html/figures">
+        <copy file="stylesheets/defguide.css" todir="build/defguide"/>
+        <copy todir="build/defguide/figures">
             <fileset dir="source/figures" includes="*.png,*.gif,*.eps"/>
         </copy>
         <copy todir="build/examples">
@@ -183,12 +171,17 @@ Status:
         <copy file="stylesheets/html-import.tmpl.xsl" tofile="stylesheets/html-import.xsl" filtering="true" overwrite="true"/>
 
         <echo message="Making html ..."/>
-        <exec dir="${basedir}${file.separator}build${file.separator}html" executable="xsltproc" failonerror="true">
+        <!--java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="512m" failonerror="true" dir="${basedir}/build/defguide">
+            <classpath refid="lib.classpath"/>
+            <arg value="../defguide-zh_CN.xml"/>
+            <arg value="../../stylesheets/zh_CN/html.xsl"/>
+        </java-->
+        <exec dir="${basedir}/build/defguide" executable="xsltproc" failonerror="true">
             <arg value="--nonet"/>
-            <arg value="../../stylesheets/html.xsl"/>
+            <arg value="../../stylesheets/zh_CN/html.xsl"/>
             <arg value="../defguide-zh_CN.xml"/>
         </exec>
-        <touch file="build/html/.done"/>
+        <touch file="build/defguide/.done"/>
     </target>
 
     <target name="chm.init">
@@ -201,7 +194,9 @@ Status:
     <target name="chm" depends="init,translate,chm.init" unless="chm.isUpToDate" description="Generate document - chm">
         <fail>
             <condition>
-                <not><os family="windows"/></not>
+                <not>
+                    <os family="windows"/>
+                </not>
             </condition>
             This target only known work on windows !
         </fail>
@@ -221,23 +216,19 @@ Status:
         </copy>
 
         <echo message="Making chm ..."/>
-        <!--java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="512m"
-                failonerror="true" dir="${basedir}${file.separator}build">
+        <!--java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="512m" failonerror="true" dir="${basedir}${file.separator}build">
             <classpath refid="lib.classpath"/>
             <arg value="defguide-zh_CN.xml"/>
-            <arg value="../stylesheets/chm.xsl"/>
+            <arg value="../stylesheets/zh_CN/chm.xsl"/>
         </java-->
-
         <exec dir="${basedir}${file.separator}build" executable="xsltproc" failonerror="true">
             <arg value="--nonet"/>
-            <arg value="../stylesheets/chm.xsl"/>
+            <arg value="../stylesheets/zh_CN/chm.xsl"/>
             <arg value="defguide-zh_CN.xml"/>
         </exec>
-
         <exec dir="${basedir}${file.separator}build" executable="hhc" failonerror="true">
             <arg value="htmlhelp.hhp"/>
         </exec>
-
         <!--delete dir="build/htmlhelp"/>
         <delete file="build/toc.hhc"/>
         <delete file="build/index.hhk"/>
@@ -245,18 +236,19 @@ Status:
     </target>
 
     <target name="fo.init">
-        <!-- Java SE 1.4 & 1.5: Unfixed java.lang.StackOverflowError ! -->
+        <!--Java SE 1.4 & 1.5: Unfixed java.lang.StackOverflowError !-->
         <condition property="java16.present">
             <equals arg1="${ant.java.version}" arg2="1.6"/>
         </condition>
         <fail message="Must use Java SE 6 !" unless="java16.present"/>
+
         <uptodate property="fo.isUpToDate" targetfile="build/pdf/defguide-zh_CN.fo">
             <srcfiles dir="source" includes="defguide.xml"/>
             <srcfiles dir="po" includes="zh_CN.po"/>
         </uptodate>
     </target>
 
-    <target name="fo" depends="init,translate,fo.init" unless="fo.isUpToDate"  description="Generate document - fo">
+    <target name="fo" depends="init,translate,fo.init" unless="fo.isUpToDate" description="Generate document - fo">
         <mkdir dir="build/pdf"/>
         <copy todir="build/examples">
             <fileset dir="../en/examples"/>
@@ -266,8 +258,7 @@ Status:
         <copy file="stylesheets/fo-import.tmpl.xsl" tofile="stylesheets/fo-import.xsl" filtering="true" overwrite="true"/>
 
         <echo message="Making fo ..."/>
-        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="1024m"
-                failonerror="true" dir="${basedir}">
+        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="1024m" failonerror="true" dir="${basedir}">
             <classpath refid="lib.classpath"/>
             <arg value="-o"/>
             <arg value="build/pdf/defguide-zh_CN.fo"/>
@@ -284,14 +275,13 @@ Status:
         </uptodate>
     </target>
 
-    <target name="pdf" depends="init,translate,fo,pdf.init" unless="pdf.isUpToDate"  description="Generate document - pdf">
+    <target name="pdf" depends="init,translate,fo,pdf.init" unless="pdf.isUpToDate" description="Generate document - pdf">
         <copy todir="build/pdf/figures">
             <fileset dir="source/figures" includes="*.png,*.gif,*.eps"/>
         </copy>
         <copy todir="build/pdf/images">
             <fileset dir="${docbook5.xsl}/images"/>
         </copy>
-
         <copy todir="build/pdf">
             <fileset dir="${fonts.dir}">
                 <include name="*.ttf"/>
@@ -303,15 +293,13 @@ Status:
         </copy>
 
         <echo message="Making pdf ..."/>
-        <java classname="${fop.class}" fork="true" maxmemory="512m" failonerror="true"
-                dir="${basedir}${file.separator}build${file.separator}pdf">
+        <java classname="${fop.class}" fork="true" maxmemory="512m" failonerror="true" dir="${basedir}${file.separator}build${file.separator}pdf">
             <classpath refid="lib.classpath"/>
             <arg value="-c"/>
             <arg value="userconfig.xml"/>
             <arg value="defguide-zh_CN.fo"/>
             <arg value="../defguide-zh_CN.pdf"/>
         </java>
-
         <delete dir="build/pdf"/>
     </target>
 

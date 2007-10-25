@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version='1.0'>
 
   <xsl:import href="fo-import.xsl"/>
@@ -10,6 +11,7 @@
   <xsl:param name="use.extensions">1</xsl:param>
   <xsl:param name="tablecolumns.extension">1</xsl:param>
   <xsl:param name="callouts.extension">1</xsl:param>
+  <xsl:param name="textinsert.extension">1</xsl:param>
 
   <xsl:param name="fop.extensions">1</xsl:param>
   <xsl:param name="fop1.extensions">0</xsl:param>
