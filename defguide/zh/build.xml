@@ -15,8 +15,9 @@ Usage:
 
 Dependency:
     *) ant 1.7
-    *) xsltproc 1.1.20
-    *) jdk 1.6(1.4 & 1.5 has a unfixed java.lang.StackOverflowError for PDF!)
+    *) libxml2 2.6.30
+    *) xsltproc 1.1.22
+    *) jdk 1.6(1.4.2 & 1.5 has a unfixed java.lang.StackOverflowError for PDF!)
     *) saxon 6.5
     *) DocBook v5 XSL
     *) RELAX NG Support(jing)
@@ -26,7 +27,7 @@ Dependency:
     *) fop 0.20.5, pdf only
     *) chinese font files, pdf only
     *) For windows user, you can download gettext & xsltproc binary from:
-        http://i18n-zh.googlecode.com/files/gettext-0.16.1_xsltproc-1.1.20.tar.bz2
+        http://i18n-zh.googlecode.com/files/gettext_0.16.1_xsltproc_1.1.22.tar.bz2
 
 Status:
                     PDF     HTML    CHM
