@@ -43,6 +43,8 @@
     <xsl:attribute name="color">
       <xsl:choose>
         <xsl:when test="self::ulink">blue</xsl:when>
+        <xsl:when test="self::xref">blue</xsl:when>
+        <xsl:when test="self::uri">blue</xsl:when>
         <xsl:otherwise>red</xsl:otherwise>
       </xsl:choose>
     </xsl:attribute>

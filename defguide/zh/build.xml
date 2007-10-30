@@ -105,7 +105,7 @@ Status:
     <target name="pot" depends="pot.init" unless="pot.isUpToDate" description="Generate document - pot">
         <echo message="Making defguide.pot ..."/>
         <exec dir="${basedir}/po" executable="python" failonerror="true">
-            <arg value="../xml2po.py"/>
+            <arg value="../xml2po/xml2po.py"/>
             <arg value="-o"/>
             <arg value="defguide.pot"/>
             <arg value="../source/defguide.xml"/>
@@ -132,15 +132,15 @@ Status:
     <target name="translate" depends="translate.init" unless="translate.isUpToDate" description="Translate document">
         <mkdir dir="build"/>
         <echo message="Translating defguide-zh_CN.xml ..."/>
-        <exec dir="${basedir}" executable="python" failonerror="true">
+        <exec dir="${basedir}/xml2po" executable="python" failonerror="true">
             <arg value="xml2po.py"/>
             <arg value="-l"/>
             <arg value="zh-cn"/>
             <arg value="-p"/>
-            <arg value="po/zh_CN.po"/>
+            <arg value="../po/zh_CN.po"/>
             <arg value="-o"/>
-            <arg value="build/defguide-zh_CN-tmp.xml"/>
-            <arg value="source/defguide.xml"/>
+            <arg value="../build/defguide-zh_CN-tmp.xml"/>
+            <arg value="../source/defguide.xml"/>
         </exec>
         <exec dir="${basedir}/build" executable="xmllint">
             <arg value="--format"/>
@@ -148,7 +148,7 @@ Status:
             <arg value="defguide-zh_CN.xml"/>
             <arg value="defguide-zh_CN-tmp.xml"/>
         </exec>
-        <delete file=".xml2po.mo"/>
+    <delete file="xml2po/.xml2po.mo"/>
         <delete file="build/defguide-zh_CN-tmp.xml"/>
     </target>
 
@@ -160,7 +160,6 @@ Status:
     </target>
 
     <target name="html" depends="init,translate,html.init" unless="html.isUpToDate" description="Generate document - html">
-        <copy file="stylesheets/defguide.css" todir="build/defguide"/>
         <copy todir="build/defguide/figures">
             <fileset dir="source/figures" includes="*.png,*.gif,*.eps"/>
         </copy>
@@ -205,7 +204,6 @@ Status:
         <filter token="docbook5.xsl.url" value="${docbook5.xsl.url}"/>
         <copy file="stylesheets/chm-import.tmpl.xsl" tofile="stylesheets/chm-import.xsl" filtering="true" overwrite="true"/>
 
-        <copy file="stylesheets/defguide.css" todir="build/htmlhelp"/>
         <copy todir="build/htmlhelp/figures">
             <fileset dir="source/figures" includes="*.png,*.gif,*.eps"/>
         </copy>

@@ -92,7 +92,7 @@ Dependency:
 
         <echo message="Making defguide5.pot ..."/>
         <exec dir="${basedir}/po" executable="python" failonerror="true">
-            <arg value="../xml2po.py"/>
+            <arg value="../xml2po/xml2po.py"/>
             <arg value="-o"/>
             <arg value="defguide5.pot"/>
             <arg value="../../en/build/defguide5.xml"/>
@@ -121,15 +121,15 @@ Dependency:
     <target name="translate" depends="translate.init" unless="translate.isUpToDate" description="Translate document">
         <mkdir dir="build"/>
         <echo message="Translating defguide5-zh_CN.xml ..."/>
-        <exec dir="${basedir}" executable="python" failonerror="true">
+        <exec dir="${basedir}/xml2po" executable="python" failonerror="true">
             <arg value="xml2po.py"/>
             <arg value="-l"/>
             <arg value="zh-cn"/>
             <arg value="-p"/>
-            <arg value="po/zh_CN.po"/>
+            <arg value="../po/zh_CN.po"/>
             <arg value="-o"/>
-            <arg value="../en/build/defguide5-zh_CN-tmp.xml"/>
-            <arg value="../en/build/defguide5.xml"/>
+            <arg value="../../en/build/defguide5-zh_CN-tmp.xml"/>
+            <arg value="../../en/build/defguide5.xml"/>
         </exec>
         <exec dir="../en/build" executable="xmllint">
             <arg value="--encode"/>
@@ -139,12 +139,12 @@ Dependency:
             <arg value="--format"/>
             <arg value="defguide5-zh_CN-tmp.xml"/>
         </exec>
-        <delete file=".xml2po.mo"/>
+        <delete file="xml2po/.xml2po.mo"/>
         <delete file="../en/build/defguide5-zh_CN-tmp.xml"/>
     </target>
 
     <target name="html.init">
-        <uptodate property="html.isUpToDate" targetfile="build/html/.done">
+        <uptodate property="html.isUpToDate" targetfile="build/defguide5/.done">
             <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
             <srcfiles dir="../en/src" includes="*.xml"/>
             <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
@@ -154,8 +154,7 @@ Dependency:
     </target>
 
     <target name="html" depends="translate,html.init" unless="html.isUpToDate" description="Generate document - html">
-        <copy file="stylesheets/defguide.css" todir="build/html"/>
-        <copy todir="build/html/figures">
+        <copy todir="build/defguide5/figures">
             <fileset dir="../en/figures" includes="*.png,*.gif,*.eps"/>
         </copy>
 
@@ -163,12 +162,11 @@ Dependency:
         <copy file="stylesheets/html-import.tmpl.xsl" tofile="stylesheets/html-import.xsl" filtering="true" overwrite="true"/>
 
         <echo message="Making html ..."/>
-        <exec dir="${basedir}${file.separator}build${file.separator}html" executable="xsltproc" failonerror="true">
-            <arg value="--nonet"/>
+        <exec dir="${basedir}/build/defguide5" executable="xsltproc" failonerror="true">
             <arg value="../../stylesheets/html.xsl"/>
             <arg value="../../../en/build/defguide5-zh_CN.xml"/>
         </exec>
-        <touch file="build/html/.done"/>
+        <touch file="build/defguide5/.done"/>
     </target>
 
     <target name="chm.init">
@@ -192,7 +190,6 @@ Dependency:
         <filter token="docbook5.xsl.url" value="${docbook5.xsl.url}"/>
         <copy file="stylesheets/chm-import.tmpl.xsl" tofile="stylesheets/chm-import.xsl" filtering="true" overwrite="true"/>
 
-        <copy file="stylesheets/defguide.css" todir="build/htmlhelp"/>
         <copy todir="build/htmlhelp/figures">
             <fileset dir="../en/figures" includes="*.png,*.gif,*.eps"/>
         </copy>
