@@ -48,10 +48,12 @@ Dependency:
         <delete file="stylesheets/html-import.xsl"/>
         <delete dir="../en/build"/>
         <delete file="../en/bookinfo.xml"/>
-        <!-- dir="../en" target="clean"/ -->
+        <ant dir="../en" target="clean"/>
     </target>
 
-    <target name="init" depends="init-avail" description="Check runtime class"/>
+    <target name="init" depends="init-avail" description="Check runtime class">
+        <echo message="java.version: ${java.version}"/>
+    </target>
 
     <target name="validate" depends="xinclude" description="Validate document">
         <jing rngfile="${docbook5.home}/rng/docbook.rng"
@@ -152,7 +154,6 @@ Dependency:
     </target>
 
     <target name="html" depends="translate,html.init" unless="html.isUpToDate" description="Generate document - html">
-
         <copy file="stylesheets/defguide.css" todir="build/html"/>
         <copy todir="build/html/figures">
             <fileset dir="../en/figures" includes="*.png,*.gif,*.eps"/>
@@ -199,20 +200,22 @@ Dependency:
             <fileset dir="${docbook5.xsl}/images" includes="*.git,*.png,*.tif,*.svg"/>
         </copy>
 
-        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="512m"
-                failonerror="true" dir="${basedir}${file.separator}build">
-            <classpath refid="lib.classpath"/>
-            <arg value="../../en/build/defguide5-zh_CN.xml"/>
-            <arg value="../stylesheets/chm.xsl"/>
-        </java>
+        <!--Must use GB18030 encoding and xsltproc for chm format !-->
+        <echo message="Making chm ..."/>
+        <exec dir="${basedir}/build" executable="xmllint">
+          <arg value="--encode"/>
+          <arg value="GB18030"/>
+          <arg value="--format"/>
+          <arg value="--output"/>
+          <arg value="../../en/build/defguide5-zh_CN-GB18030.xml"/>
+          <arg value="../../en/build/defguide5-zh_CN.xml"/>
+        </exec>
+        <exec dir="${basedir}/build" executable="xsltproc" failonerror="true">
+            <arg value="../stylesheets/zh_CN/chm.xsl"/>
+            <arg value="../../en/build/defguide5-zh_CN-GB18030.xml"/>
+        </exec>
 
-        <!--exec dir="${basedir}${file.separator}build" executable="xsltproc" failonerror="true">
-            <arg value="- -nonet"/>
-            <arg value="../stylesheets/chm.xsl"/>
-            <arg value="../../en/build/defguide5-zh_CN.xml"/>
-        </exec-->
-
-        <exec dir="${basedir}${file.separator}build" executable="hhc" failonerror="false">
+        <exec dir="${basedir}/build" executable="hhc" failonerror="false">
             <arg value="htmlhelp.hhp"/>
         </exec>
 

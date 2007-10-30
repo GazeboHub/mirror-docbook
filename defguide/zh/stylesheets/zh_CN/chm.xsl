@@ -4,6 +4,9 @@
   <xsl:import href="../chm.xsl"/>
 
   <xsl:param name="l10n.gentext.language" select="'zh_cn'"/>
+  
+  <xsl:param name="htmlhelp.encoding" select="'GB18030'"/>
+  <xsl:param name="chunker.output.encoding" select="'GB18030'"/>
 
   <xsl:param name="htmlhelp.chm" select="'defguide-zh_CN.chm'"/>
   <xsl:param name="htmlhelp.title">

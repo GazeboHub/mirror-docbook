@@ -216,18 +216,21 @@ Status:
             <fileset dir="${docbook5.xsl}/images"/>
         </copy>
 
+        <!--Must use GB18030 encoding and xsltproc for chm format !-->
         <echo message="Making chm ..."/>
-        <!--java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="512m" failonerror="true" dir="${basedir}${file.separator}build">
-            <classpath refid="lib.classpath"/>
-            <arg value="defguide-zh_CN.xml"/>
-            <arg value="../stylesheets/zh_CN/chm.xsl"/>
-        </java-->
-        <exec dir="${basedir}${file.separator}build" executable="xsltproc" failonerror="true">
-            <arg value="--nonet"/>
-            <arg value="../stylesheets/zh_CN/chm.xsl"/>
-            <arg value="defguide-zh_CN.xml"/>
+        <exec dir="${basedir}/build" executable="xmllint">
+          <arg value="--encode"/>
+          <arg value="GB18030"/>
+          <arg value="--format"/>
+          <arg value="--output"/>
+          <arg value="defguide-zh_CN-GB1803.xml"/>
+          <arg value="defguide-zh_CN.xml"/>
         </exec>
-        <exec dir="${basedir}${file.separator}build" executable="hhc" failonerror="true">
+        <exec dir="${basedir}/build" executable="xsltproc" failonerror="true">
+            <arg value="../stylesheets/zh_CN/chm.xsl"/>
+            <arg value="defguide-zh_CN-GB1803.xml"/>
+        </exec>
+        <exec dir="${basedir}/build" executable="hhc" failonerror="true">
             <arg value="htmlhelp.hhp"/>
         </exec>
         <!--delete dir="build/htmlhelp"/>

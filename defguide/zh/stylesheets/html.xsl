@@ -7,9 +7,10 @@
 
   <xsl:param name="l10n.gentext.language" select="'en'"/>
 
-  <xsl:param name="use.extensions">1</xsl:param>
-  <xsl:param name="tablecolumns.extension">1</xsl:param>
-  <xsl:param name="callouts.extension">1</xsl:param>
-  <xsl:param name="textinsert.extension">1</xsl:param>
+  <!--No adjustColumnWidths function available.-->
+  <xsl:param name="use.extensions">0</xsl:param>
+  <xsl:param name="tablecolumns.extension">0</xsl:param>
+  <xsl:param name="callouts.extension">0</xsl:param>
+  <xsl:param name="textinsert.extension">0</xsl:param>
 
 </xsl:stylesheet>

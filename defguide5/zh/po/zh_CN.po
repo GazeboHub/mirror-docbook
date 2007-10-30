@@ -19287,7 +19287,7 @@ msgstr "uri"
 #: ../../en/build/defguide5.xml:60307 ../../en/build/defguide5.xml:64481
 #: ../../en/build/defguide5.xml:65535
 msgid "year"
-msgstr "年"
+msgstr "year"
 
 #. (para)
 #: ../../en/build/defguide5.xml:6052
