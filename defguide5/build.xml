@@ -63,11 +63,20 @@ TODO:
         <ant dir="zh" target="clean"/>
     </target>
 
-    <target name="init" depends="init-avail" description="Check runtime class"/>
+    <target name="init" depends="init-avail" description="Check runtime configuration">
+        <echo message="java.version: ${java.version}"/>
+
+        <fail>
+            <condition>
+                <not><available file="build-common.properties"/></not>
+            </condition>
+            Please create your build-common.properties from build-common.tmpl.properties !
+        </fail>
+    </target>
 
     <target name="validate" depends="init" description="Validate source document">
-        <echo message="Validate 'The Definitive Guide (5.0)' - en ..."/>
         <ant dir="en" target="validate"/>
+        <ant dir="zh" target="validate"/>
     </target>
 
     <target name="en" depends="init" description="Generate document - en">

@@ -14,29 +14,29 @@
     </path>
 
     <target name="init-avail">
+        <fail>
+            <condition>
+                <not><available classname="com.thaiopensource.relaxng.util.Driver"/></not>
+            </condition>
+            RELAX NG Support(jing) NOT Present !
+        </fail>
 
-        <condition property="rng.present">
-          <and>
-            <available classname="com.thaiopensource.relaxng.util.Driver"/>
-          </and>
-        </condition>
-        <fail message="RELAX NG Support(jing) NOT Present !" unless="rng.present"/>
+        <fail>
+            <condition>
+                <not><available classname="com.icl.saxon.StyleSheet" classpathref="lib.classpath"/></not>
+            </condition>
+            Saxon 6.5 Support NOT Present !
+        </fail>
 
-        <condition property="saxon.present">
-          <and>
-            <available classname="com.icl.saxon.StyleSheet" classpathref="lib.classpath"/>
-            <available classname="net.sf.saxon.Transform" classpathref="lib.classpath"/>
-          </and>
-        </condition>
-        <fail message="Saxon 6.5 or 8.9 Support NOT Present !" unless="saxon.present"/>
-
-        <condition property="bsh.present">
-          <and>
-            <available classname="org.apache.bsf.BSFManager"/>
-            <available classname="bsh.util.BeanShellBSFEngine"/>
-          </and>
-        </condition>
-        <fail message="BeanShell Support NOT Present !" unless="bsh.present"/>
+        <fail>
+            <condition>
+              <not><and>
+                <available classname="org.apache.bsf.BSFManager"/>
+                <available classname="bsh.util.BeanShellBSFEngine"/>
+              </and></not>
+            </condition>
+            BeanShell Support NOT Present !
+        </fail>
     </target>
 
 </project>

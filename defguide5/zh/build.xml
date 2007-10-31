@@ -30,7 +30,7 @@ Dependency:
     *) For windows user, you can download gettext & xsltproc binary from:
         http://i18n-zh.googlecode.com/files/gettext_0.16.1_xsltproc_1.1.22.tar.bz2
 -->
-<project name="defguide5-zh" default="all">
+<project name="defguide5-zh" default="html">
 
     <property file="../build-common.properties"/>
     <import file="../build-common.xml"/>
@@ -51,8 +51,17 @@ Dependency:
         <ant dir="../en" target="clean"/>
     </target>
 
-    <target name="init" depends="init-avail" description="Check runtime class">
+    <target name="init" description="Check runtime configuration">
         <echo message="java.version: ${java.version}"/>
+
+        <fail>
+            <condition>
+                <not><available file="../build-common.properties"/></not>
+            </condition>
+            Please create your ../build-common.properties from ../build-common.tmpl.properties !
+        </fail>
+
+        <antcall target="init-avail"/>
     </target>
 
     <target name="validate" depends="xinclude" description="Validate document">
@@ -63,9 +72,10 @@ Dependency:
                 file="../en/build/defguide5-zh_CN.xml"/-->
     </target>
 
-    <target name="all" description="Generate document - html,chm,pdf">
-        <antcall target="html"/>
+    <target name="all" description="Generate document - pdf,html,chm">
         <antcall target="pdf"/>
+        <antcall target="html"/>
+        <antcall target="chm"/>
     </target>
 
     <target name="xinclude" description="XInclude processing on document">
@@ -81,15 +91,6 @@ Dependency:
     </target>
 
     <target name="pot" depends="xinclude,pot.init" unless="pot.isUpToDate" description="Generate document - pot">
-        <!--fail>
-            <condition>
-                <or>
-                    <os family="windows"/>
-                </or>
-            </condition>
-            This target known work on unix, not windows !
-        </fail-->
-
         <echo message="Making defguide5.pot ..."/>
         <exec dir="${basedir}/po" executable="python" failonerror="true">
             <arg value="../xml2po/xml2po.py"/>
@@ -132,8 +133,6 @@ Dependency:
             <arg value="../../en/build/defguide5.xml"/>
         </exec>
         <exec dir="../en/build" executable="xmllint">
-            <arg value="--encode"/>
-            <arg value="UTF-8"/>
             <arg value="--output"/>
             <arg value="defguide5-zh_CN.xml"/>
             <arg value="--format"/>
@@ -154,8 +153,11 @@ Dependency:
     </target>
 
     <target name="html" depends="translate,html.init" unless="html.isUpToDate" description="Generate document - html">
+        <copy todir="build/defguide5/images">
+            <fileset dir="${docbook5.xsl}/images" includes="**/*.png"/>
+        </copy>
         <copy todir="build/defguide5/figures">
-            <fileset dir="../en/figures" includes="*.png,*.gif,*.eps"/>
+            <fileset dir="../en/figures" includes="*.eps,*.gif,*.png"/>
         </copy>
 
         <filter token="docbook5.xsl.url" value="${docbook5.xsl.url}"/>
@@ -184,69 +186,39 @@ Dependency:
             <condition>
                 <not><os family="windows"/></not>
             </condition>
-            This target only known work on windows !
+            This target only work on windows !
         </fail>
 
         <filter token="docbook5.xsl.url" value="${docbook5.xsl.url}"/>
         <copy file="stylesheets/chm-import.tmpl.xsl" tofile="stylesheets/chm-import.xsl" filtering="true" overwrite="true"/>
 
-        <copy todir="build/htmlhelp/figures">
-            <fileset dir="../en/figures" includes="*.png,*.gif,*.eps"/>
+        <copy todir="build/chm/htmlhelp/images">
+            <fileset dir="${docbook5.xsl}/images" includes="**/*.png"/>
         </copy>
-        <copy todir="build/htmlhelp/images">
-            <fileset dir="${docbook5.xsl}/images" includes="*.git,*.png,*.tif,*.svg"/>
+        <copy todir="build/chm/htmlhelp/figures">
+            <fileset dir="../en/figures" includes="*.eps,*.gif,*.png"/>
         </copy>
 
         <!--Must use GB18030 encoding and xsltproc for chm format !-->
         <echo message="Making chm ..."/>
-        <exec dir="${basedir}/build" executable="xmllint">
+        <exec dir="${basedir}/build/chm" executable="xmllint">
           <arg value="--encode"/>
           <arg value="GB18030"/>
           <arg value="--format"/>
           <arg value="--output"/>
-          <arg value="../../en/build/defguide5-zh_CN-GB18030.xml"/>
-          <arg value="../../en/build/defguide5-zh_CN.xml"/>
+          <arg value="../../../en/build/defguide5-zh_CN-GB18030.xml"/>
+          <arg value="../../../en/build/defguide5-zh_CN.xml"/>
         </exec>
-        <exec dir="${basedir}/build" executable="xsltproc" failonerror="true">
-            <arg value="../stylesheets/zh_CN/chm.xsl"/>
-            <arg value="../../en/build/defguide5-zh_CN-GB18030.xml"/>
+        <exec dir="${basedir}/build/chm" executable="xsltproc" failonerror="true">
+            <arg value="../../stylesheets/zh_CN/chm.xsl"/>
+            <arg value="../../../en/build/defguide5-zh_CN-GB18030.xml"/>
         </exec>
-
-        <exec dir="${basedir}/build" executable="hhc" failonerror="false">
+        <exec dir="${basedir}/build/chm" executable="hhc" failonerror="false">
             <arg value="htmlhelp.hhp"/>
         </exec>
 
-        <!--delete dir="build/htmlhelp"/>
-        <delete file="build/toc.hhc"/>
-        <delete file="build/index.hhk"/>
-        <delete file="build/htmlhelp.hhp"/-->
-    </target>
-
-    <target name="fo.init">
-        <uptodate property="fo.isUpToDate" targetfile="build/pdf/defguide5-zh_CN.fo">
-            <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
-            <srcfiles dir="../en/src" includes="*.xml"/>
-            <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
-            <srcfiles dir="../en/refpages/elements" includes="*/*.xml" excludes="build/*"/>
-            <srcfiles dir="po" includes="zh_CN.po"/>
-        </uptodate>
-    </target>
-
-    <target name="fo" depends="translate,fo.init" unless="fo.isUpToDate"  description="Generate document - fo">
-        <mkdir dir="build/pdf"/>
-
-        <filter token="docbook5.xsl.url" value="${docbook5.xsl.url}"/>
-        <copy file="stylesheets/fo-import.tmpl.xsl" tofile="stylesheets/fo-import.xsl" filtering="true" overwrite="true"/>
-
-        <echo message="Making fo ..."/>
-        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="512m"
-                failonerror="true" dir="${basedir}">
-            <classpath refid="lib.classpath"/>
-            <arg value="-o"/>
-            <arg value="build/pdf/defguide5-zh_CN.fo"/>
-            <arg value="../en/build/defguide5-zh_CN.xml"/>
-            <arg value="stylesheets/zh_CN/fo.xsl"/>
-        </java>
+        <move file="build/chm/defguide5-zh_CN.chm" tofile="build/defguide5-zh_CN.chm"/>
+        <delete dir="build/chm"/>
     </target>
 
     <target name="pdf.init">
@@ -255,17 +227,18 @@ Dependency:
             <srcfiles dir="../en/src" includes="*.xml"/>
             <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
             <srcfiles dir="../en/refpages/elements" includes="*/*.xml" excludes="build/*"/>
-            <srcfiles dir="po" includes="zh_CN.po"/>
-            <srcfiles dir="build/pdf" includes="defguide5-zh_CN.fo"/>
         </uptodate>
     </target>
 
-    <target name="pdf" depends="translate,fo,pdf.init" unless="pdf.isUpToDate"  description="Generate document - pdf">
-        <copy todir="build/pdf/figures">
-            <fileset dir="../en/figures" includes="*.png,*.gif,*.eps"/>
-        </copy>
+    <target name="pdf" depends="translate,pdf.init" unless="pdf.isUpToDate"  description="Generate document - pdf">
+        <filter token="docbook5.xsl.url" value="${docbook5.xsl.url}"/>
+        <copy file="stylesheets/fo-import.tmpl.xsl" tofile="stylesheets/fo-import.xsl" filtering="true" overwrite="true"/>
+
         <copy todir="build/pdf/images">
-            <fileset dir="${docbook5.xsl}/images" includes="*.git,*.png,*.tif,*.svg"/>
+            <fileset dir="${docbook5.xsl}/images" includes="**/*.png"/>
+        </copy>
+        <copy todir="build/pdf/figures">
+            <fileset dir="../en/figures" includes="*.eps,*.gif,*.png"/>
         </copy>
 
         <copy todir="build/pdf">
@@ -278,9 +251,19 @@ Dependency:
             </fileset>
         </copy>
 
+        <echo message="Making fo ..."/>
+        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="512m"
+                failonerror="true" dir="${basedir}">
+            <classpath refid="lib.classpath"/>
+            <arg value="-o"/>
+            <arg value="build/pdf/defguide5-zh_CN.fo"/>
+            <arg value="../en/build/defguide5-zh_CN.xml"/>
+            <arg value="stylesheets/zh_CN/fo.xsl"/>
+        </java>
+
         <echo message="Making pdf ..."/>
         <java classname="${fop.class}" fork="true" maxmemory="512m" failonerror="true"
-                dir="${basedir}${file.separator}build${file.separator}pdf">
+                dir="${basedir}/build/pdf">
             <classpath refid="lib.classpath"/>
             <arg value="-c"/>
             <arg value="userconfig.xml"/>

@@ -36,7 +36,7 @@ Status:
     JavaSE 1.6      OK      OK      FAIL
     xsltproc        X       OK      OK
 -->
-<project name="defguide" default="all">
+<project name="defguide" default="html">
 
     <property file="build.properties"/>
 
@@ -65,22 +65,29 @@ Status:
         <delete file="stylesheets/html-import.xsl"/>
     </target>
 
-    <target name="init" description="Check runtime class">
-        <condition property="rng.present">
-            <and>
-                <available classname="com.thaiopensource.relaxng.util.Driver"/>
-            </and>
-        </condition>
-        <fail message="RELAX NG Support(jing) NOT Present !" unless="rng.present"/>
-
-        <condition property="saxon.present">
-            <and>
-                <available classname="com.icl.saxon.StyleSheet" classpathref="lib.classpath"/>
-            </and>
-        </condition>
-        <fail message="Saxon 6.5 Support NOT Present !" unless="saxon.present"/>
-
+    <target name="init" description="Check runtime configuration">
         <echo message="java.version: ${java.version}"/>
+
+        <fail>
+            <condition>
+                <not><available file="build.properties"/></not>
+            </condition>
+            Please create your build.properties from build.tmpl.properties !
+        </fail>
+
+        <fail>
+            <condition>
+                <not><available classname="com.thaiopensource.relaxng.util.Driver"/></not>
+            </condition>
+            RELAX NG Support(jing) NOT Present !
+        </fail>
+
+        <fail>
+            <condition>
+                <not><available classname="com.icl.saxon.StyleSheet" classpathref="lib.classpath"/></not>
+            </condition>
+            Saxon 6.5 Support NOT Present !
+        </fail>
     </target>
 
     <target name="validate" depends="init" description="Validate document">
@@ -90,9 +97,9 @@ Status:
                 file="build/defguide-zh_CN.xml"/-->
     </target>
 
-    <target name="all" description="Generate document - html,chm,pdf">
-        <antcall target="html"/>
+    <target name="all" description="Generate document - pdf,html,chm">
         <antcall target="pdf"/>
+        <antcall target="html"/>
         <antcall target="chm"/>
     </target>
 
@@ -160,8 +167,11 @@ Status:
     </target>
 
     <target name="html" depends="init,translate,html.init" unless="html.isUpToDate" description="Generate document - html">
+        <copy todir="build/defguide/images">
+            <fileset dir="${docbook5.xsl}/images" includes="**/*.png"/>
+        </copy>
         <copy todir="build/defguide/figures">
-            <fileset dir="source/figures" includes="*.png,*.gif,*.eps"/>
+            <fileset dir="source/figures" includes="*.eps, *.png"/>
         </copy>
         <copy todir="build/examples">
             <fileset dir="../en/examples"/>
@@ -194,24 +204,22 @@ Status:
     <target name="chm" depends="init,translate,chm.init" unless="chm.isUpToDate" description="Generate document - chm">
         <fail>
             <condition>
-                <not>
-                    <os family="windows"/>
-                </not>
+                <not><os family="windows"/></not>
             </condition>
-            This target only known work on windows !
+            This target only work on windows !
         </fail>
 
         <filter token="docbook5.xsl.url" value="${docbook5.xsl.url}"/>
         <copy file="stylesheets/chm-import.tmpl.xsl" tofile="stylesheets/chm-import.xsl" filtering="true" overwrite="true"/>
 
-        <copy todir="build/htmlhelp/figures">
-            <fileset dir="source/figures" includes="*.png,*.gif,*.eps"/>
+        <copy todir="build/chm/htmlhelp/images">
+            <fileset dir="${docbook5.xsl}/images" includes="**/*.png"/>
+        </copy>
+        <copy todir="build/chm/htmlhelp/figures">
+            <fileset dir="source/figures" includes="*.eps, *.png"/>
         </copy>
         <copy todir="build/examples">
             <fileset dir="../en/examples"/>
-        </copy>
-        <copy todir="build/htmlhelp/images">
-            <fileset dir="${docbook5.xsl}/images"/>
         </copy>
 
         <!--Must use GB18030 encoding and xsltproc for chm format !-->
@@ -224,65 +232,39 @@ Status:
           <arg value="defguide-zh_CN-GB1803.xml"/>
           <arg value="defguide-zh_CN.xml"/>
         </exec>
-        <exec dir="${basedir}/build" executable="xsltproc" failonerror="true">
-            <arg value="../stylesheets/zh_CN/chm.xsl"/>
-            <arg value="defguide-zh_CN-GB1803.xml"/>
+        <exec dir="${basedir}/build/chm" executable="xsltproc" failonerror="true">
+            <arg value="../../stylesheets/zh_CN/chm.xsl"/>
+            <arg value="../defguide-zh_CN-GB1803.xml"/>
         </exec>
-        <exec dir="${basedir}/build" executable="hhc" failonerror="true">
+        <exec dir="${basedir}/build/chm" executable="hhc" failonerror="true">
             <arg value="htmlhelp.hhp"/>
         </exec>
-        <!--delete dir="build/htmlhelp"/>
-        <delete file="build/toc.hhc"/>
-        <delete file="build/index.hhk"/>
-        <delete file="build/htmlhelp.hhp"/-->
-    </target>
 
-    <target name="fo.init">
-        <!--Java SE 1.4 & 1.5: Unfixed java.lang.StackOverflowError !-->
-        <condition property="java16.present">
-            <equals arg1="${ant.java.version}" arg2="1.6"/>
-        </condition>
-        <fail message="Must use Java SE 6 !" unless="java16.present"/>
-
-        <uptodate property="fo.isUpToDate" targetfile="build/pdf/defguide-zh_CN.fo">
-            <srcfiles dir="source" includes="defguide.xml"/>
-            <srcfiles dir="po" includes="zh_CN.po"/>
-        </uptodate>
-    </target>
-
-    <target name="fo" depends="init,translate,fo.init" unless="fo.isUpToDate" description="Generate document - fo">
-        <mkdir dir="build/pdf"/>
-        <copy todir="build/examples">
-            <fileset dir="../en/examples"/>
-        </copy>
-
-        <filter token="docbook5.xsl.url" value="${docbook5.xsl.url}"/>
-        <copy file="stylesheets/fo-import.tmpl.xsl" tofile="stylesheets/fo-import.xsl" filtering="true" overwrite="true"/>
-
-        <echo message="Making fo ..."/>
-        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="1024m" failonerror="true" dir="${basedir}">
-            <classpath refid="lib.classpath"/>
-            <arg value="-o"/>
-            <arg value="build/pdf/defguide-zh_CN.fo"/>
-            <arg value="build/defguide-zh_CN.xml"/>
-            <arg value="stylesheets/zh_CN/fo.xsl"/>
-        </java>
+        <move file="build/chm/defguide-zh_CN.chm" tofile="build/defguide-zh_CN.chm"/>
+        <delete dir="build/chm"/>
     </target>
 
     <target name="pdf.init">
         <uptodate property="pdf.isUpToDate" targetfile="build/defguide-zh_CN.pdf">
             <srcfiles dir="source" includes="defguide.xml"/>
             <srcfiles dir="po" includes="zh_CN.po"/>
-            <srcfiles dir="build/pdf" includes="defguide-zh_CN.fo"/>
         </uptodate>
     </target>
 
-    <target name="pdf" depends="init,translate,fo,pdf.init" unless="pdf.isUpToDate" description="Generate document - pdf">
-        <copy todir="build/pdf/figures">
-            <fileset dir="source/figures" includes="*.png,*.gif,*.eps"/>
-        </copy>
+    <target name="pdf" depends="init,translate,pdf.init" unless="pdf.isUpToDate" description="Generate document - pdf">
+        <!--Java SE 1.4 & 1.5: Unfixed java.lang.StackOverflowError !-->
+        <fail>
+            <condition>
+                <not><equals arg1="${ant.java.version}" arg2="1.6"/></not>
+            </condition>
+            Must use Java SE 6 !
+        </fail>
+
         <copy todir="build/pdf/images">
-            <fileset dir="${docbook5.xsl}/images"/>
+            <fileset dir="${docbook5.xsl}/images" includes="**/*.png"/>
+        </copy>
+        <copy todir="build/pdf/figures">
+            <fileset dir="source/figures" includes="*.eps, *.png"/>
         </copy>
         <copy todir="build/pdf">
             <fileset dir="${fonts.dir}">
@@ -294,8 +276,24 @@ Status:
             </fileset>
         </copy>
 
+        <filter token="docbook5.xsl.url" value="${docbook5.xsl.url}"/>
+        <copy file="stylesheets/fo-import.tmpl.xsl" tofile="stylesheets/fo-import.xsl" filtering="true" overwrite="true"/>
+
+        <copy todir="build/examples">
+            <fileset dir="../en/examples"/>
+        </copy>
+
+        <echo message="Making fo ..."/>
+        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="1024m" failonerror="true" dir="${basedir}">
+            <classpath refid="lib.classpath"/>
+            <arg value="-o"/>
+            <arg value="build/pdf/defguide-zh_CN.fo"/>
+            <arg value="build/defguide-zh_CN.xml"/>
+            <arg value="stylesheets/zh_CN/fo.xsl"/>
+        </java>
+
         <echo message="Making pdf ..."/>
-        <java classname="${fop.class}" fork="true" maxmemory="512m" failonerror="true" dir="${basedir}${file.separator}build${file.separator}pdf">
+        <java classname="${fop.class}" fork="true" maxmemory="512m" failonerror="true" dir="${basedir}/build/pdf">
             <classpath refid="lib.classpath"/>
             <arg value="-c"/>
             <arg value="userconfig.xml"/>
