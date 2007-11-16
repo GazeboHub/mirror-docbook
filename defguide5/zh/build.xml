@@ -86,7 +86,7 @@ Dependency:
         <uptodate property="pot.isUpToDate" targetfile="po/defguide5.pot">
             <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
             <srcfiles dir="../en/src" includes="*.xml"/>
-            <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
+            <srcfiles dir="../en/refpages" includes="**/*.xml" excludes="elements/build/*.xml"/>
         </uptodate>
     </target>
 
