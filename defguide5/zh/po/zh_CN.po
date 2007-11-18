@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: defguide5 0.0.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-16 03:19 +0000\n"
+"POT-Creation-Date: 2007-11-18 13:06 +0000\n"
 "PO-Revision-Date: 2007-11-16 11:36+0800\n"
 "Last-Translator: Dongsheng Song <dongsheng.song@gmail.com>\n"
 "Language-Team: zh_CN <i18n-zh@googlegroups.com >\n"
@@ -658,202 +658,200 @@ msgid "Getting Started with <acronym>XML</acronym>"
 msgstr "<acronym>XML</acronym> 入门"
 
 #. (pubdate)
-#: ../../en/build/defguide5.xml:460 ../../en/build/defguide5.xml:599
-#: ../../en/build/defguide5.xml:4169 ../../en/build/defguide5.xml:4363
-#: ../../en/build/defguide5.xml:4512 ../../en/build/defguide5.xml:5175
-#: ../../en/build/defguide5.xml:5373 ../../en/build/defguide5.xml:5850
-#: ../../en/build/defguide5.xml:5995 ../../en/build/defguide5.xml:6069
-#: ../../en/build/defguide5.xml:6164 ../../en/build/defguide5.xml:6590
-#: ../../en/build/defguide5.xml:6956 ../../en/build/defguide5.xml:7421
-#: ../../en/build/defguide5.xml:7655 ../../en/build/defguide5.xml:7740
-#: ../../en/build/defguide5.xml:7842 ../../en/build/defguide5.xml:8135
-#: ../../en/build/defguide5.xml:8361 ../../en/build/defguide5.xml:8606
-#: ../../en/build/defguide5.xml:8909 ../../en/build/defguide5.xml:9507
-#: ../../en/build/defguide5.xml:9652 ../../en/build/defguide5.xml:9849
-#: ../../en/build/defguide5.xml:9964 ../../en/build/defguide5.xml:10079
-#: ../../en/build/defguide5.xml:10278 ../../en/build/defguide5.xml:10424
-#: ../../en/build/defguide5.xml:10565 ../../en/build/defguide5.xml:10988
-#: ../../en/build/defguide5.xml:11428 ../../en/build/defguide5.xml:11850
-#: ../../en/build/defguide5.xml:12424 ../../en/build/defguide5.xml:12758
-#: ../../en/build/defguide5.xml:13161 ../../en/build/defguide5.xml:13323
-#: ../../en/build/defguide5.xml:13746 ../../en/build/defguide5.xml:14282
-#: ../../en/build/defguide5.xml:14396 ../../en/build/defguide5.xml:14938
-#: ../../en/build/defguide5.xml:15411 ../../en/build/defguide5.xml:15737
-#: ../../en/build/defguide5.xml:16162 ../../en/build/defguide5.xml:16434
-#: ../../en/build/defguide5.xml:17207 ../../en/build/defguide5.xml:17627
-#: ../../en/build/defguide5.xml:18066 ../../en/build/defguide5.xml:18489
-#: ../../en/build/defguide5.xml:19289 ../../en/build/defguide5.xml:19736
-#: ../../en/build/defguide5.xml:20213 ../../en/build/defguide5.xml:20907
-#: ../../en/build/defguide5.xml:21233 ../../en/build/defguide5.xml:21342
-#: ../../en/build/defguide5.xml:22198 ../../en/build/defguide5.xml:22375
-#: ../../en/build/defguide5.xml:22555 ../../en/build/defguide5.xml:22746
-#: ../../en/build/defguide5.xml:23534 ../../en/build/defguide5.xml:23870
-#: ../../en/build/defguide5.xml:24052 ../../en/build/defguide5.xml:24280
-#: ../../en/build/defguide5.xml:24644 ../../en/build/defguide5.xml:25017
-#: ../../en/build/defguide5.xml:25166 ../../en/build/defguide5.xml:25639
-#: ../../en/build/defguide5.xml:25981 ../../en/build/defguide5.xml:26159
-#: ../../en/build/defguide5.xml:26504 ../../en/build/defguide5.xml:26669
-#: ../../en/build/defguide5.xml:26802 ../../en/build/defguide5.xml:26966
-#: ../../en/build/defguide5.xml:27130 ../../en/build/defguide5.xml:27294
-#: ../../en/build/defguide5.xml:27554 ../../en/build/defguide5.xml:27609
-#: ../../en/build/defguide5.xml:27991 ../../en/build/defguide5.xml:28120
-#: ../../en/build/defguide5.xml:28286 ../../en/build/defguide5.xml:28476
-#: ../../en/build/defguide5.xml:28644 ../../en/build/defguide5.xml:28770
-#: ../../en/build/defguide5.xml:28878 ../../en/build/defguide5.xml:29055
-#: ../../en/build/defguide5.xml:29500 ../../en/build/defguide5.xml:29909
-#: ../../en/build/defguide5.xml:30007 ../../en/build/defguide5.xml:30488
-#: ../../en/build/defguide5.xml:30617 ../../en/build/defguide5.xml:30779
-#: ../../en/build/defguide5.xml:30949 ../../en/build/defguide5.xml:31133
-#: ../../en/build/defguide5.xml:31309 ../../en/build/defguide5.xml:31949
-#: ../../en/build/defguide5.xml:33333 ../../en/build/defguide5.xml:33858
-#: ../../en/build/defguide5.xml:34038 ../../en/build/defguide5.xml:34157
-#: ../../en/build/defguide5.xml:34503 ../../en/build/defguide5.xml:34710
-#: ../../en/build/defguide5.xml:34879 ../../en/build/defguide5.xml:35048
-#: ../../en/build/defguide5.xml:35215 ../../en/build/defguide5.xml:35804
-#: ../../en/build/defguide5.xml:35947 ../../en/build/defguide5.xml:36020
-#: ../../en/build/defguide5.xml:36198 ../../en/build/defguide5.xml:36304
-#: ../../en/build/defguide5.xml:36867 ../../en/build/defguide5.xml:37181
-#: ../../en/build/defguide5.xml:37343 ../../en/build/defguide5.xml:37986
-#: ../../en/build/defguide5.xml:38436 ../../en/build/defguide5.xml:38578
-#: ../../en/build/defguide5.xml:38885 ../../en/build/defguide5.xml:39030
-#: ../../en/build/defguide5.xml:39249 ../../en/build/defguide5.xml:39475
-#: ../../en/build/defguide5.xml:39972 ../../en/build/defguide5.xml:40820
-#: ../../en/build/defguide5.xml:40997 ../../en/build/defguide5.xml:41495
-#: ../../en/build/defguide5.xml:41889 ../../en/build/defguide5.xml:42319
-#: ../../en/build/defguide5.xml:42449 ../../en/build/defguide5.xml:42889
-#: ../../en/build/defguide5.xml:43522 ../../en/build/defguide5.xml:44154
-#: ../../en/build/defguide5.xml:44794 ../../en/build/defguide5.xml:45050
-#: ../../en/build/defguide5.xml:45281 ../../en/build/defguide5.xml:45512
-#: ../../en/build/defguide5.xml:45748 ../../en/build/defguide5.xml:45971
-#: ../../en/build/defguide5.xml:46196 ../../en/build/defguide5.xml:46417
-#: ../../en/build/defguide5.xml:46599 ../../en/build/defguide5.xml:46743
-#: ../../en/build/defguide5.xml:46910 ../../en/build/defguide5.xml:47737
-#: ../../en/build/defguide5.xml:48269 ../../en/build/defguide5.xml:48880
-#: ../../en/build/defguide5.xml:49393 ../../en/build/defguide5.xml:50097
-#: ../../en/build/defguide5.xml:50783 ../../en/build/defguide5.xml:51015
-#: ../../en/build/defguide5.xml:51301 ../../en/build/defguide5.xml:52336
-#: ../../en/build/defguide5.xml:53000 ../../en/build/defguide5.xml:53154
-#: ../../en/build/defguide5.xml:53381 ../../en/build/defguide5.xml:53827
-#: ../../en/build/defguide5.xml:54346 ../../en/build/defguide5.xml:54787
-#: ../../en/build/defguide5.xml:54951 ../../en/build/defguide5.xml:55159
-#: ../../en/build/defguide5.xml:55595 ../../en/build/defguide5.xml:56041
-#: ../../en/build/defguide5.xml:56359 ../../en/build/defguide5.xml:56658
-#: ../../en/build/defguide5.xml:56973 ../../en/build/defguide5.xml:57290
-#: ../../en/build/defguide5.xml:57610 ../../en/build/defguide5.xml:57779
-#: ../../en/build/defguide5.xml:58231 ../../en/build/defguide5.xml:58747
-#: ../../en/build/defguide5.xml:59296 ../../en/build/defguide5.xml:59888
-#: ../../en/build/defguide5.xml:60031 ../../en/build/defguide5.xml:60165
-#: ../../en/build/defguide5.xml:60344 ../../en/build/defguide5.xml:60487
-#: ../../en/build/defguide5.xml:60645 ../../en/build/defguide5.xml:61177
-#: ../../en/build/defguide5.xml:61253 ../../en/build/defguide5.xml:61413
-#: ../../en/build/defguide5.xml:61950 ../../en/build/defguide5.xml:62157
-#: ../../en/build/defguide5.xml:62463 ../../en/build/defguide5.xml:62670
-#: ../../en/build/defguide5.xml:62754 ../../en/build/defguide5.xml:62856
-#: ../../en/build/defguide5.xml:63003 ../../en/build/defguide5.xml:63402
-#: ../../en/build/defguide5.xml:63457 ../../en/build/defguide5.xml:63620
-#: ../../en/build/defguide5.xml:63816 ../../en/build/defguide5.xml:64503
-#: ../../en/build/defguide5.xml:64903 ../../en/build/defguide5.xml:65112
-#: ../../en/build/defguide5.xml:65535
+#: ../../en/build/defguide5.xml:460 ../../en/build/defguide5.xml:4169
+#: ../../en/build/defguide5.xml:4363 ../../en/build/defguide5.xml:4512
+#: ../../en/build/defguide5.xml:5175 ../../en/build/defguide5.xml:5373
+#: ../../en/build/defguide5.xml:5850 ../../en/build/defguide5.xml:5995
+#: ../../en/build/defguide5.xml:6069 ../../en/build/defguide5.xml:6164
+#: ../../en/build/defguide5.xml:6590 ../../en/build/defguide5.xml:6956
+#: ../../en/build/defguide5.xml:7421 ../../en/build/defguide5.xml:7655
+#: ../../en/build/defguide5.xml:7740 ../../en/build/defguide5.xml:7842
+#: ../../en/build/defguide5.xml:8135 ../../en/build/defguide5.xml:8361
+#: ../../en/build/defguide5.xml:8606 ../../en/build/defguide5.xml:8909
+#: ../../en/build/defguide5.xml:9507 ../../en/build/defguide5.xml:9652
+#: ../../en/build/defguide5.xml:9849 ../../en/build/defguide5.xml:9964
+#: ../../en/build/defguide5.xml:10079 ../../en/build/defguide5.xml:10278
+#: ../../en/build/defguide5.xml:10424 ../../en/build/defguide5.xml:10565
+#: ../../en/build/defguide5.xml:10988 ../../en/build/defguide5.xml:11428
+#: ../../en/build/defguide5.xml:11850 ../../en/build/defguide5.xml:12424
+#: ../../en/build/defguide5.xml:12758 ../../en/build/defguide5.xml:13161
+#: ../../en/build/defguide5.xml:13323 ../../en/build/defguide5.xml:13746
+#: ../../en/build/defguide5.xml:14282 ../../en/build/defguide5.xml:14396
+#: ../../en/build/defguide5.xml:14938 ../../en/build/defguide5.xml:15411
+#: ../../en/build/defguide5.xml:15737 ../../en/build/defguide5.xml:16162
+#: ../../en/build/defguide5.xml:16434 ../../en/build/defguide5.xml:17207
+#: ../../en/build/defguide5.xml:17627 ../../en/build/defguide5.xml:18066
+#: ../../en/build/defguide5.xml:18489 ../../en/build/defguide5.xml:19289
+#: ../../en/build/defguide5.xml:19736 ../../en/build/defguide5.xml:20213
+#: ../../en/build/defguide5.xml:20907 ../../en/build/defguide5.xml:21233
+#: ../../en/build/defguide5.xml:21342 ../../en/build/defguide5.xml:22198
+#: ../../en/build/defguide5.xml:22375 ../../en/build/defguide5.xml:22555
+#: ../../en/build/defguide5.xml:22746 ../../en/build/defguide5.xml:23534
+#: ../../en/build/defguide5.xml:23870 ../../en/build/defguide5.xml:24052
+#: ../../en/build/defguide5.xml:24280 ../../en/build/defguide5.xml:24644
+#: ../../en/build/defguide5.xml:25017 ../../en/build/defguide5.xml:25166
+#: ../../en/build/defguide5.xml:25639 ../../en/build/defguide5.xml:25981
+#: ../../en/build/defguide5.xml:26159 ../../en/build/defguide5.xml:26504
+#: ../../en/build/defguide5.xml:26669 ../../en/build/defguide5.xml:26802
+#: ../../en/build/defguide5.xml:26966 ../../en/build/defguide5.xml:27130
+#: ../../en/build/defguide5.xml:27294 ../../en/build/defguide5.xml:27554
+#: ../../en/build/defguide5.xml:27609 ../../en/build/defguide5.xml:27991
+#: ../../en/build/defguide5.xml:28120 ../../en/build/defguide5.xml:28286
+#: ../../en/build/defguide5.xml:28476 ../../en/build/defguide5.xml:28644
+#: ../../en/build/defguide5.xml:28770 ../../en/build/defguide5.xml:28878
+#: ../../en/build/defguide5.xml:29055 ../../en/build/defguide5.xml:29500
+#: ../../en/build/defguide5.xml:29909 ../../en/build/defguide5.xml:30007
+#: ../../en/build/defguide5.xml:30488 ../../en/build/defguide5.xml:30617
+#: ../../en/build/defguide5.xml:30779 ../../en/build/defguide5.xml:30949
+#: ../../en/build/defguide5.xml:31133 ../../en/build/defguide5.xml:31309
+#: ../../en/build/defguide5.xml:31949 ../../en/build/defguide5.xml:33333
+#: ../../en/build/defguide5.xml:33858 ../../en/build/defguide5.xml:34038
+#: ../../en/build/defguide5.xml:34157 ../../en/build/defguide5.xml:34503
+#: ../../en/build/defguide5.xml:34710 ../../en/build/defguide5.xml:34879
+#: ../../en/build/defguide5.xml:35048 ../../en/build/defguide5.xml:35215
+#: ../../en/build/defguide5.xml:35804 ../../en/build/defguide5.xml:35947
+#: ../../en/build/defguide5.xml:36020 ../../en/build/defguide5.xml:36198
+#: ../../en/build/defguide5.xml:36304 ../../en/build/defguide5.xml:36867
+#: ../../en/build/defguide5.xml:37181 ../../en/build/defguide5.xml:37343
+#: ../../en/build/defguide5.xml:37986 ../../en/build/defguide5.xml:38436
+#: ../../en/build/defguide5.xml:38578 ../../en/build/defguide5.xml:38885
+#: ../../en/build/defguide5.xml:39030 ../../en/build/defguide5.xml:39249
+#: ../../en/build/defguide5.xml:39475 ../../en/build/defguide5.xml:39972
+#: ../../en/build/defguide5.xml:40820 ../../en/build/defguide5.xml:40997
+#: ../../en/build/defguide5.xml:41495 ../../en/build/defguide5.xml:41889
+#: ../../en/build/defguide5.xml:42319 ../../en/build/defguide5.xml:42449
+#: ../../en/build/defguide5.xml:42889 ../../en/build/defguide5.xml:43522
+#: ../../en/build/defguide5.xml:44154 ../../en/build/defguide5.xml:44794
+#: ../../en/build/defguide5.xml:45050 ../../en/build/defguide5.xml:45281
+#: ../../en/build/defguide5.xml:45512 ../../en/build/defguide5.xml:45748
+#: ../../en/build/defguide5.xml:45971 ../../en/build/defguide5.xml:46196
+#: ../../en/build/defguide5.xml:46417 ../../en/build/defguide5.xml:46599
+#: ../../en/build/defguide5.xml:46743 ../../en/build/defguide5.xml:46910
+#: ../../en/build/defguide5.xml:47737 ../../en/build/defguide5.xml:48269
+#: ../../en/build/defguide5.xml:48880 ../../en/build/defguide5.xml:49393
+#: ../../en/build/defguide5.xml:50097 ../../en/build/defguide5.xml:50783
+#: ../../en/build/defguide5.xml:51015 ../../en/build/defguide5.xml:51301
+#: ../../en/build/defguide5.xml:52336 ../../en/build/defguide5.xml:53000
+#: ../../en/build/defguide5.xml:53154 ../../en/build/defguide5.xml:53381
+#: ../../en/build/defguide5.xml:53827 ../../en/build/defguide5.xml:54346
+#: ../../en/build/defguide5.xml:54787 ../../en/build/defguide5.xml:54951
+#: ../../en/build/defguide5.xml:55159 ../../en/build/defguide5.xml:55595
+#: ../../en/build/defguide5.xml:56041 ../../en/build/defguide5.xml:56359
+#: ../../en/build/defguide5.xml:56658 ../../en/build/defguide5.xml:56973
+#: ../../en/build/defguide5.xml:57290 ../../en/build/defguide5.xml:57610
+#: ../../en/build/defguide5.xml:57779 ../../en/build/defguide5.xml:58231
+#: ../../en/build/defguide5.xml:58747 ../../en/build/defguide5.xml:59296
+#: ../../en/build/defguide5.xml:59888 ../../en/build/defguide5.xml:60031
+#: ../../en/build/defguide5.xml:60165 ../../en/build/defguide5.xml:60344
+#: ../../en/build/defguide5.xml:60487 ../../en/build/defguide5.xml:60645
+#: ../../en/build/defguide5.xml:61177 ../../en/build/defguide5.xml:61253
+#: ../../en/build/defguide5.xml:61413 ../../en/build/defguide5.xml:61950
+#: ../../en/build/defguide5.xml:62157 ../../en/build/defguide5.xml:62463
+#: ../../en/build/defguide5.xml:62670 ../../en/build/defguide5.xml:62754
+#: ../../en/build/defguide5.xml:62856 ../../en/build/defguide5.xml:63003
+#: ../../en/build/defguide5.xml:63402 ../../en/build/defguide5.xml:63457
+#: ../../en/build/defguide5.xml:63620 ../../en/build/defguide5.xml:63816
+#: ../../en/build/defguide5.xml:64503 ../../en/build/defguide5.xml:64903
+#: ../../en/build/defguide5.xml:65112 ../../en/build/defguide5.xml:65535
 msgid "$Date: 2007-07-23 01:34:53 +0800 (Mon, 23 Jul 2007) $"
 msgstr ""
 
 #. (releaseinfo)
-#: ../../en/build/defguide5.xml:461 ../../en/build/defguide5.xml:600
-#: ../../en/build/defguide5.xml:4170 ../../en/build/defguide5.xml:4364
-#: ../../en/build/defguide5.xml:4513 ../../en/build/defguide5.xml:5176
-#: ../../en/build/defguide5.xml:5374 ../../en/build/defguide5.xml:5851
-#: ../../en/build/defguide5.xml:5996 ../../en/build/defguide5.xml:6070
-#: ../../en/build/defguide5.xml:6165 ../../en/build/defguide5.xml:6591
-#: ../../en/build/defguide5.xml:6957 ../../en/build/defguide5.xml:7422
-#: ../../en/build/defguide5.xml:7656 ../../en/build/defguide5.xml:7741
-#: ../../en/build/defguide5.xml:7843 ../../en/build/defguide5.xml:8136
-#: ../../en/build/defguide5.xml:8362 ../../en/build/defguide5.xml:8607
-#: ../../en/build/defguide5.xml:8910 ../../en/build/defguide5.xml:9508
-#: ../../en/build/defguide5.xml:9653 ../../en/build/defguide5.xml:9850
-#: ../../en/build/defguide5.xml:9965 ../../en/build/defguide5.xml:10080
-#: ../../en/build/defguide5.xml:10279 ../../en/build/defguide5.xml:10425
-#: ../../en/build/defguide5.xml:10566 ../../en/build/defguide5.xml:10989
-#: ../../en/build/defguide5.xml:11429 ../../en/build/defguide5.xml:11851
-#: ../../en/build/defguide5.xml:12425 ../../en/build/defguide5.xml:12759
-#: ../../en/build/defguide5.xml:13162 ../../en/build/defguide5.xml:13324
-#: ../../en/build/defguide5.xml:13747 ../../en/build/defguide5.xml:14283
-#: ../../en/build/defguide5.xml:14397 ../../en/build/defguide5.xml:14939
-#: ../../en/build/defguide5.xml:15412 ../../en/build/defguide5.xml:15738
-#: ../../en/build/defguide5.xml:16163 ../../en/build/defguide5.xml:16435
-#: ../../en/build/defguide5.xml:17208 ../../en/build/defguide5.xml:17628
-#: ../../en/build/defguide5.xml:18067 ../../en/build/defguide5.xml:18490
-#: ../../en/build/defguide5.xml:19290 ../../en/build/defguide5.xml:19737
-#: ../../en/build/defguide5.xml:20214 ../../en/build/defguide5.xml:20908
-#: ../../en/build/defguide5.xml:21234 ../../en/build/defguide5.xml:21343
-#: ../../en/build/defguide5.xml:22199 ../../en/build/defguide5.xml:22376
-#: ../../en/build/defguide5.xml:22556 ../../en/build/defguide5.xml:22747
-#: ../../en/build/defguide5.xml:23535 ../../en/build/defguide5.xml:23871
-#: ../../en/build/defguide5.xml:24053 ../../en/build/defguide5.xml:24281
-#: ../../en/build/defguide5.xml:24645 ../../en/build/defguide5.xml:25018
-#: ../../en/build/defguide5.xml:25167 ../../en/build/defguide5.xml:25640
-#: ../../en/build/defguide5.xml:25982 ../../en/build/defguide5.xml:26160
-#: ../../en/build/defguide5.xml:26505 ../../en/build/defguide5.xml:26670
-#: ../../en/build/defguide5.xml:26803 ../../en/build/defguide5.xml:26967
-#: ../../en/build/defguide5.xml:27131 ../../en/build/defguide5.xml:27295
-#: ../../en/build/defguide5.xml:27555 ../../en/build/defguide5.xml:27610
-#: ../../en/build/defguide5.xml:27992 ../../en/build/defguide5.xml:28121
-#: ../../en/build/defguide5.xml:28287 ../../en/build/defguide5.xml:28477
-#: ../../en/build/defguide5.xml:28645 ../../en/build/defguide5.xml:28771
-#: ../../en/build/defguide5.xml:28879 ../../en/build/defguide5.xml:29056
-#: ../../en/build/defguide5.xml:29501 ../../en/build/defguide5.xml:29910
-#: ../../en/build/defguide5.xml:30008 ../../en/build/defguide5.xml:30489
-#: ../../en/build/defguide5.xml:30618 ../../en/build/defguide5.xml:30780
-#: ../../en/build/defguide5.xml:30950 ../../en/build/defguide5.xml:31134
-#: ../../en/build/defguide5.xml:31310 ../../en/build/defguide5.xml:31950
-#: ../../en/build/defguide5.xml:33334 ../../en/build/defguide5.xml:33859
-#: ../../en/build/defguide5.xml:34039 ../../en/build/defguide5.xml:34158
-#: ../../en/build/defguide5.xml:34504 ../../en/build/defguide5.xml:34711
-#: ../../en/build/defguide5.xml:34880 ../../en/build/defguide5.xml:35049
-#: ../../en/build/defguide5.xml:35216 ../../en/build/defguide5.xml:35805
-#: ../../en/build/defguide5.xml:35948 ../../en/build/defguide5.xml:36021
-#: ../../en/build/defguide5.xml:36199 ../../en/build/defguide5.xml:36305
-#: ../../en/build/defguide5.xml:36868 ../../en/build/defguide5.xml:37182
-#: ../../en/build/defguide5.xml:37344 ../../en/build/defguide5.xml:37987
-#: ../../en/build/defguide5.xml:38437 ../../en/build/defguide5.xml:38579
-#: ../../en/build/defguide5.xml:38886 ../../en/build/defguide5.xml:39031
-#: ../../en/build/defguide5.xml:39250 ../../en/build/defguide5.xml:39476
-#: ../../en/build/defguide5.xml:39973 ../../en/build/defguide5.xml:40821
-#: ../../en/build/defguide5.xml:40998 ../../en/build/defguide5.xml:41496
-#: ../../en/build/defguide5.xml:41890 ../../en/build/defguide5.xml:42320
-#: ../../en/build/defguide5.xml:42450 ../../en/build/defguide5.xml:42890
-#: ../../en/build/defguide5.xml:43523 ../../en/build/defguide5.xml:44155
-#: ../../en/build/defguide5.xml:44795 ../../en/build/defguide5.xml:45051
-#: ../../en/build/defguide5.xml:45282 ../../en/build/defguide5.xml:45513
-#: ../../en/build/defguide5.xml:45749 ../../en/build/defguide5.xml:45972
-#: ../../en/build/defguide5.xml:46197 ../../en/build/defguide5.xml:46418
-#: ../../en/build/defguide5.xml:46600 ../../en/build/defguide5.xml:46744
-#: ../../en/build/defguide5.xml:46911 ../../en/build/defguide5.xml:47738
-#: ../../en/build/defguide5.xml:48270 ../../en/build/defguide5.xml:48881
-#: ../../en/build/defguide5.xml:49394 ../../en/build/defguide5.xml:50098
-#: ../../en/build/defguide5.xml:50784 ../../en/build/defguide5.xml:51016
-#: ../../en/build/defguide5.xml:51302 ../../en/build/defguide5.xml:52337
-#: ../../en/build/defguide5.xml:53001 ../../en/build/defguide5.xml:53155
-#: ../../en/build/defguide5.xml:53382 ../../en/build/defguide5.xml:53828
-#: ../../en/build/defguide5.xml:54347 ../../en/build/defguide5.xml:54788
-#: ../../en/build/defguide5.xml:54952 ../../en/build/defguide5.xml:55160
-#: ../../en/build/defguide5.xml:55596 ../../en/build/defguide5.xml:56042
-#: ../../en/build/defguide5.xml:56360 ../../en/build/defguide5.xml:56659
-#: ../../en/build/defguide5.xml:56974 ../../en/build/defguide5.xml:57291
-#: ../../en/build/defguide5.xml:57611 ../../en/build/defguide5.xml:57780
-#: ../../en/build/defguide5.xml:58232 ../../en/build/defguide5.xml:58748
-#: ../../en/build/defguide5.xml:59297 ../../en/build/defguide5.xml:59889
-#: ../../en/build/defguide5.xml:60032 ../../en/build/defguide5.xml:60166
-#: ../../en/build/defguide5.xml:60345 ../../en/build/defguide5.xml:60488
-#: ../../en/build/defguide5.xml:60646 ../../en/build/defguide5.xml:61178
-#: ../../en/build/defguide5.xml:61254 ../../en/build/defguide5.xml:61414
-#: ../../en/build/defguide5.xml:61951 ../../en/build/defguide5.xml:62158
-#: ../../en/build/defguide5.xml:62464 ../../en/build/defguide5.xml:62671
-#: ../../en/build/defguide5.xml:62755 ../../en/build/defguide5.xml:62857
-#: ../../en/build/defguide5.xml:63004 ../../en/build/defguide5.xml:63403
-#: ../../en/build/defguide5.xml:63458 ../../en/build/defguide5.xml:63621
-#: ../../en/build/defguide5.xml:63817 ../../en/build/defguide5.xml:64504
-#: ../../en/build/defguide5.xml:64904 ../../en/build/defguide5.xml:65113
-#: ../../en/build/defguide5.xml:65535
+#: ../../en/build/defguide5.xml:461 ../../en/build/defguide5.xml:4170
+#: ../../en/build/defguide5.xml:4364 ../../en/build/defguide5.xml:4513
+#: ../../en/build/defguide5.xml:5176 ../../en/build/defguide5.xml:5374
+#: ../../en/build/defguide5.xml:5851 ../../en/build/defguide5.xml:5996
+#: ../../en/build/defguide5.xml:6070 ../../en/build/defguide5.xml:6165
+#: ../../en/build/defguide5.xml:6591 ../../en/build/defguide5.xml:6957
+#: ../../en/build/defguide5.xml:7422 ../../en/build/defguide5.xml:7656
+#: ../../en/build/defguide5.xml:7741 ../../en/build/defguide5.xml:7843
+#: ../../en/build/defguide5.xml:8136 ../../en/build/defguide5.xml:8362
+#: ../../en/build/defguide5.xml:8607 ../../en/build/defguide5.xml:8910
+#: ../../en/build/defguide5.xml:9508 ../../en/build/defguide5.xml:9653
+#: ../../en/build/defguide5.xml:9850 ../../en/build/defguide5.xml:9965
+#: ../../en/build/defguide5.xml:10080 ../../en/build/defguide5.xml:10279
+#: ../../en/build/defguide5.xml:10425 ../../en/build/defguide5.xml:10566
+#: ../../en/build/defguide5.xml:10989 ../../en/build/defguide5.xml:11429
+#: ../../en/build/defguide5.xml:11851 ../../en/build/defguide5.xml:12425
+#: ../../en/build/defguide5.xml:12759 ../../en/build/defguide5.xml:13162
+#: ../../en/build/defguide5.xml:13324 ../../en/build/defguide5.xml:13747
+#: ../../en/build/defguide5.xml:14283 ../../en/build/defguide5.xml:14397
+#: ../../en/build/defguide5.xml:14939 ../../en/build/defguide5.xml:15412
+#: ../../en/build/defguide5.xml:15738 ../../en/build/defguide5.xml:16163
+#: ../../en/build/defguide5.xml:16435 ../../en/build/defguide5.xml:17208
+#: ../../en/build/defguide5.xml:17628 ../../en/build/defguide5.xml:18067
+#: ../../en/build/defguide5.xml:18490 ../../en/build/defguide5.xml:19290
+#: ../../en/build/defguide5.xml:19737 ../../en/build/defguide5.xml:20214
+#: ../../en/build/defguide5.xml:20908 ../../en/build/defguide5.xml:21234
+#: ../../en/build/defguide5.xml:21343 ../../en/build/defguide5.xml:22199
+#: ../../en/build/defguide5.xml:22376 ../../en/build/defguide5.xml:22556
+#: ../../en/build/defguide5.xml:22747 ../../en/build/defguide5.xml:23535
+#: ../../en/build/defguide5.xml:23871 ../../en/build/defguide5.xml:24053
+#: ../../en/build/defguide5.xml:24281 ../../en/build/defguide5.xml:24645
+#: ../../en/build/defguide5.xml:25018 ../../en/build/defguide5.xml:25167
+#: ../../en/build/defguide5.xml:25640 ../../en/build/defguide5.xml:25982
+#: ../../en/build/defguide5.xml:26160 ../../en/build/defguide5.xml:26505
+#: ../../en/build/defguide5.xml:26670 ../../en/build/defguide5.xml:26803
+#: ../../en/build/defguide5.xml:26967 ../../en/build/defguide5.xml:27131
+#: ../../en/build/defguide5.xml:27295 ../../en/build/defguide5.xml:27555
+#: ../../en/build/defguide5.xml:27610 ../../en/build/defguide5.xml:27992
+#: ../../en/build/defguide5.xml:28121 ../../en/build/defguide5.xml:28287
+#: ../../en/build/defguide5.xml:28477 ../../en/build/defguide5.xml:28645
+#: ../../en/build/defguide5.xml:28771 ../../en/build/defguide5.xml:28879
+#: ../../en/build/defguide5.xml:29056 ../../en/build/defguide5.xml:29501
+#: ../../en/build/defguide5.xml:29910 ../../en/build/defguide5.xml:30008
+#: ../../en/build/defguide5.xml:30489 ../../en/build/defguide5.xml:30618
+#: ../../en/build/defguide5.xml:30780 ../../en/build/defguide5.xml:30950
+#: ../../en/build/defguide5.xml:31134 ../../en/build/defguide5.xml:31310
+#: ../../en/build/defguide5.xml:31950 ../../en/build/defguide5.xml:33334
+#: ../../en/build/defguide5.xml:33859 ../../en/build/defguide5.xml:34039
+#: ../../en/build/defguide5.xml:34158 ../../en/build/defguide5.xml:34504
+#: ../../en/build/defguide5.xml:34711 ../../en/build/defguide5.xml:34880
+#: ../../en/build/defguide5.xml:35049 ../../en/build/defguide5.xml:35216
+#: ../../en/build/defguide5.xml:35805 ../../en/build/defguide5.xml:35948
+#: ../../en/build/defguide5.xml:36021 ../../en/build/defguide5.xml:36199
+#: ../../en/build/defguide5.xml:36305 ../../en/build/defguide5.xml:36868
+#: ../../en/build/defguide5.xml:37182 ../../en/build/defguide5.xml:37344
+#: ../../en/build/defguide5.xml:37987 ../../en/build/defguide5.xml:38437
+#: ../../en/build/defguide5.xml:38579 ../../en/build/defguide5.xml:38886
+#: ../../en/build/defguide5.xml:39031 ../../en/build/defguide5.xml:39250
+#: ../../en/build/defguide5.xml:39476 ../../en/build/defguide5.xml:39973
+#: ../../en/build/defguide5.xml:40821 ../../en/build/defguide5.xml:40998
+#: ../../en/build/defguide5.xml:41496 ../../en/build/defguide5.xml:41890
+#: ../../en/build/defguide5.xml:42320 ../../en/build/defguide5.xml:42450
+#: ../../en/build/defguide5.xml:42890 ../../en/build/defguide5.xml:43523
+#: ../../en/build/defguide5.xml:44155 ../../en/build/defguide5.xml:44795
+#: ../../en/build/defguide5.xml:45051 ../../en/build/defguide5.xml:45282
+#: ../../en/build/defguide5.xml:45513 ../../en/build/defguide5.xml:45749
+#: ../../en/build/defguide5.xml:45972 ../../en/build/defguide5.xml:46197
+#: ../../en/build/defguide5.xml:46418 ../../en/build/defguide5.xml:46600
+#: ../../en/build/defguide5.xml:46744 ../../en/build/defguide5.xml:46911
+#: ../../en/build/defguide5.xml:47738 ../../en/build/defguide5.xml:48270
+#: ../../en/build/defguide5.xml:48881 ../../en/build/defguide5.xml:49394
+#: ../../en/build/defguide5.xml:50098 ../../en/build/defguide5.xml:50784
+#: ../../en/build/defguide5.xml:51016 ../../en/build/defguide5.xml:51302
+#: ../../en/build/defguide5.xml:52337 ../../en/build/defguide5.xml:53001
+#: ../../en/build/defguide5.xml:53155 ../../en/build/defguide5.xml:53382
+#: ../../en/build/defguide5.xml:53828 ../../en/build/defguide5.xml:54347
+#: ../../en/build/defguide5.xml:54788 ../../en/build/defguide5.xml:54952
+#: ../../en/build/defguide5.xml:55160 ../../en/build/defguide5.xml:55596
+#: ../../en/build/defguide5.xml:56042 ../../en/build/defguide5.xml:56360
+#: ../../en/build/defguide5.xml:56659 ../../en/build/defguide5.xml:56974
+#: ../../en/build/defguide5.xml:57291 ../../en/build/defguide5.xml:57611
+#: ../../en/build/defguide5.xml:57780 ../../en/build/defguide5.xml:58232
+#: ../../en/build/defguide5.xml:58748 ../../en/build/defguide5.xml:59297
+#: ../../en/build/defguide5.xml:59889 ../../en/build/defguide5.xml:60032
+#: ../../en/build/defguide5.xml:60166 ../../en/build/defguide5.xml:60345
+#: ../../en/build/defguide5.xml:60488 ../../en/build/defguide5.xml:60646
+#: ../../en/build/defguide5.xml:61178 ../../en/build/defguide5.xml:61254
+#: ../../en/build/defguide5.xml:61414 ../../en/build/defguide5.xml:61951
+#: ../../en/build/defguide5.xml:62158 ../../en/build/defguide5.xml:62464
+#: ../../en/build/defguide5.xml:62671 ../../en/build/defguide5.xml:62755
+#: ../../en/build/defguide5.xml:62857 ../../en/build/defguide5.xml:63004
+#: ../../en/build/defguide5.xml:63403 ../../en/build/defguide5.xml:63458
+#: ../../en/build/defguide5.xml:63621 ../../en/build/defguide5.xml:63817
+#: ../../en/build/defguide5.xml:64504 ../../en/build/defguide5.xml:64904
+#: ../../en/build/defguide5.xml:65113 ../../en/build/defguide5.xml:65535
 msgid "$Revision: 7120 $"
 msgstr ""
 
@@ -1041,6 +1039,16 @@ msgstr "委员会继续新的 DocBook 开发，保证方案继续满足用户要
 #: ../../en/build/defguide5.xml:597
 msgid "Creating DocBook Documents"
 msgstr "创建 DocBook 文档"
+
+#. (pubdate)
+#: ../../en/build/defguide5.xml:599
+msgid "$Date: 2007-11-17 22:12:22 +0800 (Sat, 17 Nov 2007) $"
+msgstr ""
+
+#. (releaseinfo)
+#: ../../en/build/defguide5.xml:600
+msgid "$Revision: 7560 $"
+msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:602
@@ -9115,11 +9123,11 @@ msgstr "参考页样例"
 
 #. (programlisting)
 #: ../../en/build/defguide5.xml:3052
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "\n"
 "\n"
-"&lt;refentry id=\"printf\"&gt;\n"
+"&lt;refentry xml:id=\"printf\" &gt;\n"
 "\n"
 "&lt;refmeta&gt;\n"
 "&lt;refentrytitle&gt;printf&lt;/refentrytitle&gt;\n"
@@ -9142,21 +9150,21 @@ msgid ""
 "&lt;funcprototype&gt;\n"
 "  &lt;funcdef&gt;int &lt;function&gt;printf&lt;/function&gt;&lt;/funcdef&gt;\n"
 "  &lt;paramdef&gt;const char *&lt;parameter&gt;format&lt;/parameter&gt;&lt;/paramdef&gt;\n"
-"  &lt;paramdef&gt;...&lt;/paramdef&gt;\n"
+"  &lt;varargs/&gt;\n"
 "&lt;/funcprototype&gt;\n"
 "\n"
 "&lt;funcprototype&gt;\n"
 "  &lt;funcdef&gt;int &lt;function&gt;fprintf&lt;/function&gt;&lt;/funcdef&gt;\n"
 "  &lt;paramdef&gt;FILE *&lt;parameter&gt;strm&lt;/parameter&gt;&lt;/paramdef&gt;\n"
 "  &lt;paramdef&gt;const char *&lt;parameter&gt;format&lt;/parameter&gt;&lt;/paramdef&gt;\n"
-"  &lt;paramdef&gt;...&lt;/paramdef&gt;\n"
+"  &lt;varargs/&gt;\n"
 "&lt;/funcprototype&gt;\n"
 "\n"
 "&lt;funcprototype&gt;\n"
 "  &lt;funcdef&gt;int &lt;function&gt;sprintf&lt;/function&gt;&lt;/funcdef&gt;\n"
 "  &lt;paramdef&gt;char *&lt;parameter&gt;s&lt;/parameter&gt;&lt;/paramdef&gt;\n"
 "  &lt;paramdef&gt;const char *&lt;parameter&gt;format&lt;/parameter&gt;&lt;/paramdef&gt;\n"
-"  &lt;paramdef&gt;...&lt;/paramdef&gt;\n"
+"  &lt;varargs/&gt;\n"
 "&lt;/funcprototype&gt;\n"
 "&lt;/funcsynopsis&gt;\n"
 "\n"
@@ -10170,7 +10178,7 @@ msgstr "参考"
 
 #. (pubdate)
 #: ../../en/build/defguide5.xml:3873
-msgid "$Date: 2006-03-03 22:21:54 +0800 (Fri, 03 Mar 2006) $"
+msgid "$Date: 2006-03-03 22:21:54 +0800 (五, 03 3月 2006) $"
 msgstr ""
 
 #. (releaseinfo)
@@ -10185,7 +10193,7 @@ msgstr "DocBook 元素参考"
 
 #. (pubdate)
 #: ../../en/build/defguide5.xml:3883
-msgid "$Date: 2007-03-18 06:02:46 +0800 (Sun, 18 Mar 2007) $"
+msgid "$Date: 2007-03-18 06:02:46 +0800 (日, 18 3月 2007) $"
 msgstr ""
 
 #. (releaseinfo)
@@ -30652,7 +30660,7 @@ msgstr "下列元素可以出现在 funcprototype 中：<placeholder-1/>。"
 
 #. (pubdate)
 #: ../../en/build/defguide5.xml:39628
-msgid "$Date: 2007-11-04 21:08:27 +0800 (星期日, 04 十一月 2007) $"
+msgid "$Date: 2007-11-04 21:08:27 +0800 (Sun, 04 Nov 2007) $"
 msgstr ""
 
 #. (releaseinfo)
@@ -31032,7 +31040,7 @@ msgstr ""
 #. (para)
 #: ../../en/build/defguide5.xml:39964
 #, fuzzy
-msgid "This <emphasis>alpha</emphasis> reference page is $Revision: 7551 $ published 星期日, 04 十一月 2007."
+msgid "This <emphasis>alpha</emphasis> reference page is $Revision: 7551 $ published Sun, 04 Nov 2007."
 msgstr "这个 <emphasis>alpha</emphasis> 参考页是 $Revision: 5412 $ 发布于2005年10月31日，星期一。"
 
 #. (refmiscinfo)
@@ -51981,7 +51989,7 @@ msgstr "这些元素包含 <tag>svg:*</tag>： <placeholder-1/>。"
 
 #. (programlisting)
 #: ../../en/build/defguide5.xml:65535
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "&lt;article xmlns='http://docbook.org/ns/docbook'\n"
 "\t version=\"5.0\"&gt;\n"
@@ -51989,12 +51997,14 @@ msgid ""
 "\n"
 "&lt;mediaobject&gt;\n"
 "  &lt;imageobject&gt;\n"
-"    &lt;svg xmlns=\"http://www.w3.org/2000/svg\"\n"
-"\t width=\"100\" height=\"100\" version=\"1.1\"&gt;\n"
-"      &lt;rect x=\"20\" y=\"20\" width=\"80\" height=\"80\"\n"
-"\t    style=\"fill:blue; stroke:green; stroke-width: 2;\n"
-"\t\t   fill-opacity: 0.5; stroke-opacity: 0.9\"/&gt;\n"
-"    &lt;/svg&gt;\n"
+"    &lt;imagedata&gt;\n"
+"      &lt;svg xmlns=\"http://www.w3.org/2000/svg\"\n"
+"\t   width=\"100\" height=\"100\" version=\"1.1\"&gt;\n"
+"\t&lt;rect x=\"20\" y=\"20\" width=\"80\" height=\"80\"\n"
+"\t      style=\"fill:blue; stroke:green; stroke-width: 2;\n"
+"\t\t     fill-opacity: 0.5; stroke-opacity: 0.9\"/&gt;\n"
+"      &lt;/svg&gt;\n"
+"    &lt;/imagedata&gt;\n"
 "  &lt;/imageobject&gt;\n"
 "&lt;/mediaobject&gt;\n"
 "\n"
@@ -52309,7 +52319,7 @@ msgstr "资源"
 
 #. (pubdate)
 #: ../../en/build/defguide5.xml:65535
-msgid "$Date: 2006-10-13 21:45:09 +0800 (Fri, 13 Oct 2006) $"
+msgid "$Date: 2006-10-13 21:45:09 +0800 (五, 13 10月 2006) $"
 msgstr ""
 
 #. (releaseinfo)
@@ -54031,44 +54041,3 @@ msgstr ""
 "Dongsheng Song <dongsheng.song@gmail.com>, 2007\n"
 "Dorian Deng <doriandeng@gmail.com>, 2007"
 
-#~ msgid "A Note on the Use of <tag>varargs</tag>"
-#~ msgstr "使用 <tag>varargs</tag> 的注意事项"
-
-#, fuzzy
-#~ msgid "The content model of <tag>funcprototype</tag> is such that you cannot use <tag>varargs</tag> in a function prototype in which the first few parameters to the function are given explicitly before the variable arguments (generally rendered as an ellipsis)."
-#~ msgstr "<tag>FuncPrototype</tag> 的内容模型是你不能在一个函数原型中使用 <tag>VarArgs</tag> ，这个函数原型在函数在可变的参数(通常呈现为省略号)之前明确给定的开始少量参数中。"
-
-#, fuzzy
-#~ msgid ""
-#~ "In other words, the following synopsis cannot be rendered with <tag>varargs</tag>: <synopsis>\n"
-#~ "int printf(char *format, ...)\n"
-#~ "</synopsis>"
-#~ msgstr "换句话说，下面的提要不能用 <tag>VarArgs</tag> 呈现。"
-
-#, fuzzy
-#~ msgid ""
-#~ "Instead, you can enclose the ellipsis in a final <tag>parameter</tag>, like this: <screen>\n"
-#~ "\n"
-#~ "&lt;funcsynopsis&gt;\n"
-#~ "&lt;funcprototype&gt;&lt;funcdef&gt;int &lt;function&gt;printf&lt;/function&gt;&lt;/funcdef&gt;\n"
-#~ "&lt;paramdef&gt;\n"
-#~ "  &lt;parameter&gt;char *format&lt;/parameter&gt;\n"
-#~ "  &lt;parameter&gt;...&lt;/parameter&gt;\n"
-#~ "&lt;/paramdef&gt;\n"
-#~ "&lt;/funcprototype&gt;\n"
-#~ "&lt;/funcsynopsis&gt;\n"
-#~ "\n"
-#~ "</screen>"
-#~ msgstr ""
-#~ "相反，你可以在一个结尾的 <tag>Parameter</tag>后紧跟一个省略号，就像这样： <screen>\n"
-#~ "\n"
-#~ "&lt;funcsynopsis&gt;\n"
-#~ "&lt;funcprototype&gt;&lt;funcdef&gt;int &lt;function&gt;printf&lt;/function&gt;&lt;/funcdef&gt;\n"
-#~ "&lt;paramdef&gt;\n"
-#~ "  &lt;parameter&gt;char *format&lt;/parameter&gt;\n"
-#~ "  &lt;parameter&gt;...&lt;/parameter&gt;\n"
-#~ "&lt;/paramdef&gt;\n"
-#~ "&lt;/funcprototype&gt;\n"
-#~ "&lt;/funcsynopsis&gt;\n"
-#~ "\n"
-#~ "</screen>"
