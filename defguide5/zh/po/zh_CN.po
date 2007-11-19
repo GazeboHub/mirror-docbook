@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: defguide5 0.0.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-18 13:06 +0000\n"
+"POT-Creation-Date: 2007-11-19 06:29 +0000\n"
 "PO-Revision-Date: 2007-11-16 11:36+0800\n"
 "Last-Translator: Dongsheng Song <dongsheng.song@gmail.com>\n"
 "Language-Team: zh_CN <i18n-zh@googlegroups.com >\n"
@@ -10178,7 +10178,7 @@ msgstr "参考"
 
 #. (pubdate)
 #: ../../en/build/defguide5.xml:3873
-msgid "$Date: 2006-03-03 22:21:54 +0800 (五, 03 3月 2006) $"
+msgid "$Date: 2006-03-03 22:21:54 +0800 (Fri, 03 Mar 2006) $"
 msgstr ""
 
 #. (releaseinfo)
@@ -10193,7 +10193,7 @@ msgstr "DocBook 元素参考"
 
 #. (pubdate)
 #: ../../en/build/defguide5.xml:3883
-msgid "$Date: 2007-03-18 06:02:46 +0800 (日, 18 3月 2007) $"
+msgid "$Date: 2007-03-18 06:02:46 +0800 (Sun, 18 Mar 2007) $"
 msgstr ""
 
 #. (releaseinfo)
@@ -52319,7 +52319,7 @@ msgstr "资源"
 
 #. (pubdate)
 #: ../../en/build/defguide5.xml:65535
-msgid "$Date: 2006-10-13 21:45:09 +0800 (五, 13 10月 2006) $"
+msgid "$Date: 2006-10-13 21:45:09 +0800 (Fri, 13 Oct 2006) $"
 msgstr ""
 
 #. (releaseinfo)
@@ -54040,4 +54040,3 @@ msgid "translator-credits"
 msgstr ""
 "Dongsheng Song <dongsheng.song@gmail.com>, 2007\n"
 "Dorian Deng <doriandeng@gmail.com>, 2007"
-
