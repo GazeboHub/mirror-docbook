@@ -825,7 +825,11 @@ appropriate <tag class="attribute">ghost:id</tag>.</para>
 <xsl:template match="db:areaset/db:area">
   <db:area>
     <xsl:copy-of select="@*[name(.) != 'coords']"/>
-    <xsl:attribute name="xml:id" select="parent::db:areaset/@xml:id"/>
+
+    <xsl:if test="not(preceding-sibling::db:area)">
+      <xsl:attribute name="xml:id" select="parent::db:areaset/@xml:id"/>
+    </xsl:if>
+
     <xsl:if test="(not(@units)
 		   or @units='linecolumn'
 		   or @units='linecolumnpair')">
