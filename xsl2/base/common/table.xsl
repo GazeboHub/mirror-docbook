@@ -10,7 +10,7 @@
 		xmlns:m="http://docbook.org/xslt/ns/mode"
                 xmlns:u="http://nwalsh.com/xsl/unittests#"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		exclude-result-prefixes="doc f fp ghost h m u xs"
+		exclude-result-prefixes="db doc f fp ghost h m u xs"
                 version="2.0">
 
 <doc:mode name="m:cals-phase-1" xmlns="http://docbook.org/ns/docbook">
