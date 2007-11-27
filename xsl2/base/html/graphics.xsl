@@ -169,6 +169,7 @@ vertical alignment.</para>
   <xsl:param name="tag" select="'img'"/>
   <xsl:param name="alt"/>
   <xsl:param name="longdesc"/>
+  <xsl:param name="tag-attributes" as="attribute()*"/>
 
   <xsl:variable name="width-units">
     <xsl:choose>
@@ -348,21 +349,30 @@ vertical alignment.</para>
     </xsl:if>
   </xsl:variable>
 
-  <xsl:variable name="depth-units"
-		select="if (@depth) then f:length-units(@depth) else ()"/>
+  <xsl:variable name="depth-units">
+    <xsl:if test="@depth">
+      <xsl:message>this message works around a bug in saxon 8.9j</xsl:message>
+      <xsl:value-of select="f:length-units(@depth)"/>
+    </xsl:if>
+  </xsl:variable>
 
   <!-- as="xs:string" works around a bug in Saxon 8.9 -->
   <xsl:variable name="depth" as="xs:string">
-    <xsl:if test="@depth">
-      <xsl:choose>
-        <xsl:when test="$depth-units = '%'">
-          <xsl:value-of select="@depth"/>
-        </xsl:when>
-        <xsl:otherwise>
-	  <xsl:value-of select="f:length-spec(@depth)"/>
-        </xsl:otherwise>
-      </xsl:choose>
-    </xsl:if>
+    <xsl:choose>
+      <xsl:when test="@depth">
+	<xsl:choose>
+	  <xsl:when test="$depth-units = '%'">
+	    <xsl:value-of select="@depth"/>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <xsl:value-of select="f:length-spec(@depth)"/>
+	  </xsl:otherwise>
+	</xsl:choose>
+      </xsl:when>
+      <xsl:otherwise>
+	<xsl:value-of select="''"/>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:variable>
 
   <xsl:variable name="html.depth">
@@ -417,6 +427,18 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
 
   <xsl:variable name="img">
     <xsl:choose>
+      <!-- attempt to handle audio data -->
+      <xsl:when test="self::db:audiodata">
+	<object data="{$filename}">
+	  <!-- this is a complete hack; DocBook needs more markup -->
+	  <xsl:if test="@condition = 'hidden'">
+	    <param name="hidden" value="true"/>
+	  </xsl:if>
+	  <xsl:if test="@role = 'autostart'">
+	    <param name="autostart" value="true"/>
+	  </xsl:if>
+	</object>
+      </xsl:when>
       <xsl:when test="lower-case(@format) = 'svg'">
 	<object data="{$filename}" type="image/svg+xml">
 	  <xsl:call-template name="t:process-image-attributes">
@@ -463,6 +485,7 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
       </xsl:when>
       <xsl:otherwise>
 	<xsl:element name="{$tag}">
+	  <xsl:copy-of select="$tag-attributes"/>
 	  <xsl:if test="$tag = 'img' and ancestor::db:imageobjectco">
 	    <xsl:choose>
 	      <xsl:when test="$scaled">
@@ -787,24 +810,34 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
   <xsl:variable name="object" select="$olist[position() = $object.index]"/>
 
   <xsl:variable name="align">
-    <xsl:value-of select="$object/db:imagedata/@align"/>
+    <xsl:value-of select="$object/*/@align"/>
   </xsl:variable>
 
-  <div class="{local-name(.)}">
-    <xsl:call-template name="id"/>
-    <xsl:call-template name="class"/>
-    <xsl:if test="$align != '' ">
-      <xsl:attribute name="align" select="$align"/>
-    </xsl:if>
-    <xsl:if test="$html.longdesc != 0 and $html.longdesc.link != 0">
-      <xsl:call-template name="t:longdesc-link">
-	<xsl:with-param name="textobject"
-			select="db:textobject[not(db:phrase)][1]"/>
-      </xsl:call-template>
-    </xsl:if>
-    <xsl:apply-templates select="$object"/>
-    <xsl:apply-templates select="db:caption"/>
-  </div>
+  <!-- hack -->
+  <xsl:choose>
+    <xsl:when test="$object/self::db:audioobject
+		    and $object/db:audiodata/@condition='hidden'">
+      <!-- don't output a div wrapper -->
+      <xsl:apply-templates select="$object"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <div class="{local-name(.)}">
+	<xsl:call-template name="id"/>
+	<xsl:call-template name="class"/>
+	<xsl:if test="$align != '' ">
+	  <xsl:attribute name="align" select="$align"/>
+	</xsl:if>
+	<xsl:if test="$html.longdesc != 0 and $html.longdesc.link != 0">
+	  <xsl:call-template name="t:longdesc-link">
+	    <xsl:with-param name="textobject"
+			    select="db:textobject[not(db:phrase)][1]"/>
+	  </xsl:call-template>
+	</xsl:if>
+	<xsl:apply-templates select="$object"/>
+	<xsl:apply-templates select="db:caption"/>
+      </div>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <xsl:template match="db:inlinemediaobject">
@@ -906,7 +939,6 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
 
 <xsl:template match="db:audiodata">
   <xsl:call-template name="t:process-image">
-    <xsl:with-param name="tag" select="'embed'"/>
     <xsl:with-param name="alt">
       <xsl:apply-templates select="(../../db:textobject/db:phrase)[1]"/>
     </xsl:with-param>
