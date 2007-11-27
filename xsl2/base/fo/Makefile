@@ -1,7 +1,7 @@
-include ../../buildtools/Makefile.incl
+include ../../../buildtools/Makefile.incl
 
 param.xsl: param.xml ../common/mkparam.xsl
-	../../buildtools/saxon -8b $^ $@
+	../../../buildtools/saxon $^ $@
 
 clean:
 	$(RM) param.xsl
