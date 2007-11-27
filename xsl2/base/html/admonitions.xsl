@@ -82,7 +82,8 @@ the graphical form.</para>
   <div class="{f:admonition-class(.)}">
     <xsl:call-template name="id"/>
     <xsl:call-template name="class"/>
-    <table border="0" cellspacing="0" cellpadding="4">
+    <table border="0" cellspacing="0" cellpadding="4"
+	   summary="Presentation of a {f:admonition-class(.)}">
       <tbody>
 	<tr>
 	  <td valign="top">
