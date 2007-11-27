@@ -156,6 +156,7 @@
 
 <xsl:template match="db:blockquote">
   <blockquote>
+    <xsl:call-template name="id"/>
     <xsl:if test="db:info/db:title">
       <h3>
 	<xsl:apply-templates select="db:info/db:title/node()"/>
