@@ -23,7 +23,7 @@
     <xsl:with-param name="longdesc" select="db:textobject[not(db:phrase)]"/>
     <xsl:with-param name="object" as="element()">
       <div class="{local-name(.)}">
-	<xsl:call-template name="id"/>
+	<!-- don't put the ID here, it'll be generated on the table -->
 	<xsl:call-template name="class"/>
 
 	<xsl:choose>
@@ -46,7 +46,7 @@
     <xsl:with-param name="longdesc" select="db:textobject[not(db:phrase)]"/>
     <xsl:with-param name="object" as="element()">
       <div class="{local-name(.)}">
-	<xsl:call-template name="id"/>
+	<!-- don't put the ID here, it'll be generated on the table -->
 	<xsl:call-template name="class"/>
 
 	<xsl:choose>
@@ -91,6 +91,7 @@
     <xsl:element name="{local-name(..)}"
 		 namespace="{namespace-uri(..)}">
       <xsl:copy-of select="../@*"/>
+      <xsl:copy-of select="../*[not(self::db:tgroup)]"/>
       <xsl:apply-templates select="." mode="m:cals-phase-1"/>
     </xsl:element>
   </xsl:variable>
