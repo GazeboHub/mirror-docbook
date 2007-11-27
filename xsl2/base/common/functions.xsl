@@ -1147,6 +1147,7 @@ enclosing <tag>refentry</tag>; see <function>refentry-level</function>.
       <xsl:when test="$section/self::db:refsection">
 	<xsl:value-of select="count($section/ancestor::db:refsection)+1"/>
       </xsl:when>
+      <xsl:otherwise>1</xsl:otherwise> <!-- this can't happen -->
     </xsl:choose>
   </xsl:variable>
 
