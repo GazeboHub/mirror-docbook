@@ -22,6 +22,7 @@
 
   <xsl:apply-templates select="$cleanedup/db:programlisting"
 		       mode="m:verbatim"/>
+  <xsl:apply-templates select="db:calloutlist"/>
 </xsl:template>
 
 <xsl:template match="db:programlisting|db:address|db:screen|db:synopsis
@@ -77,13 +78,22 @@
 </xsl:template>
 
 <xsl:template match="ghost:co">
-  <a name="{@xml:id}"/>
+  <xsl:if test="@xml:id">
+    <a name="{@xml:id}"/>
+  </xsl:if>
   <xsl:call-template name="t:callout-bug">
     <xsl:with-param name="conum">
-      <xsl:number count="ghost:co"
-                  level="any"
-                  from="db:programlisting|db:screen|db:literallayout|db:synopsis"
-                  format="1"/>
+      <xsl:choose>
+	<xsl:when test="@number">
+	  <xsl:value-of select="@number"/>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:number count="ghost:co"
+		      level="any"
+		      from="db:programlisting|db:screen|db:literallayout|db:synopsis"
+		      format="1"/>
+	</xsl:otherwise>
+      </xsl:choose>
     </xsl:with-param>
   </xsl:call-template>
 </xsl:template>
