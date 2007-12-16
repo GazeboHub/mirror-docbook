@@ -201,8 +201,9 @@ xmlns:u="http://nwalsh.com/xsl/unittests#"
     <html>
       <head>
 	<xsl:call-template name="t:head">
-	  <xsl:with-param name="notes" select="1"/>
+	  <xsl:with-param name="notes" select="1" tunnel="yes"/>
 	</xsl:call-template>
+	<link rel="bookmark" href="index.html" title="Foil"/>
       </head>
       <body onload="newPage(1)" onkeypress="navigate(event)">
 	<h1>
@@ -218,7 +219,7 @@ xmlns:u="http://nwalsh.com/xsl/unittests#"
     <html>
       <head>
 	<xsl:call-template name="t:head">
-	  <xsl:with-param name="notes" select="1"/>
+	  <xsl:with-param name="notes" select="1" tunnel="yes"/>
 	</xsl:call-template>
       </head>
       <body onload="newPage(1)" onkeypress="navigate(event)">
@@ -328,6 +329,22 @@ xmlns:u="http://nwalsh.com/xsl/unittests#"
 	      <xsl:apply-templates select="db:speakernotes/*"/>
 	    </div>
 	  </xsl:if>
+
+	  <xsl:variable name="nfoils"
+			select="(following::db:foil
+				|following-sibling::db:foil
+				|following::db:foilgroup
+				|db:foil|db:foilgroup)"/>
+
+	  <xsl:if test="$nfoils">
+	    <p>
+	      <xsl:text>Next: </xsl:text>
+	      <cite>
+		<xsl:value-of select="$nfoils[1]/db:info/db:title"/>
+	      </cite>
+	    </p>
+	  </xsl:if>
+
 	  <xsl:call-template name="t:foil-footer"/>
 	</div>
       </body>
@@ -353,11 +370,13 @@ xmlns:u="http://nwalsh.com/xsl/unittests#"
 </xsl:template>
 
 <xsl:template match="db:foil" mode="m:slidetoc">
-  <li>
-    <a href="{f:filename(.,0)}">
-      <xsl:value-of select="db:info/db:title"/>
-    </a>
-  </li>
+  <xsl:if test="not(contains(concat(' ', @role, ' '),' notoc '))">
+    <li>
+      <a href="{f:filename(.,0)}">
+	<xsl:value-of select="db:info/db:title"/>
+      </a>
+    </li>
+  </xsl:if>
 </xsl:template>
 
 <!-- ============================================================ -->
