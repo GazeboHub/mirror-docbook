@@ -351,12 +351,10 @@ vertical alignment.</para>
 
   <xsl:variable name="depth-units">
     <xsl:if test="@depth">
-      <xsl:message>this message works around a bug in saxon 8.9j</xsl:message>
       <xsl:value-of select="f:length-units(@depth)"/>
     </xsl:if>
   </xsl:variable>
 
-  <!-- as="xs:string" works around a bug in Saxon 8.9 -->
   <xsl:variable name="depth" as="xs:string">
     <xsl:choose>
       <xsl:when test="@depth">
