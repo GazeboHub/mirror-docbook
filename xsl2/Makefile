@@ -30,7 +30,7 @@ URILIST = \
 DEBUG=
 PDFVIEWER=evince
 
-DIRS=common extensions html fo schemas
+DIRS=base extensions schemas
 
 .PHONY: distrib clean $(NEWSFILE)
 
@@ -42,7 +42,7 @@ RAW=$(wildcard ../docbook/relaxng/docbook/tests/passed/*.xml)
 XML=$(subst ../docbook/relaxng/docbook/tests/passed/,,$(RAW))
 HTML=$(patsubst %.xml,%.html,$(XML))
 
-.PHONY: tests
+.PHONY: tests base
 
 STYLE=$(wildcard common/*.xsl) $(wildcard base/html/*.xsl)
 FOSTYLE=$(wildcard common/*.xsl) $(wildcard base/fo/*.xsl)
