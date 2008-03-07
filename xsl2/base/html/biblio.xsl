@@ -205,7 +205,7 @@ for the content of a bibliography entry.</para>
 	      mode="m:bibliomixed">
   <xsl:variable name="relation" select="../@relation"/>
 
-  <xsl:call-template name="simple-xlink">
+  <xsl:call-template name="t:simple-xlink">
     <xsl:with-param name="content">
       <xsl:choose>
 	<xsl:when test="$relation='article' or @pubwork='article'">
@@ -224,7 +224,7 @@ for the content of a bibliography entry.</para>
 </xsl:template>
 
 <xsl:template match="db:citetitle|db:title" mode="m:bibliomixed">
-  <xsl:call-template name="simple-xlink">
+  <xsl:call-template name="t:simple-xlink">
     <xsl:with-param name="content">
       <span class="{name(.)}">
 	<xsl:choose>
@@ -340,7 +340,7 @@ for the content of a bibliography entry.</para>
 <xsl:template match="db:bibliomset/db:title|db:bibliomset/db:citetitle" 
 	      mode="m:biblioentry">
   <xsl:variable name="relation" select="../@relation"/>
-  <xsl:call-template name="simple-xlink">
+  <xsl:call-template name="t:simple-xlink">
     <xsl:with-param name="content">
       <xsl:choose>
 	<xsl:when test="$relation='article' or @pubwork='article'">
@@ -360,7 +360,7 @@ for the content of a bibliography entry.</para>
 </xsl:template>
 
 <xsl:template match="db:citetitle|db:title" mode="m:biblioentry">
-  <xsl:call-template name="simple-xlink">
+  <xsl:call-template name="t:simple-xlink">
     <xsl:with-param name="content">
       <span class="{name(.)}">
 	<xsl:choose>

@@ -25,6 +25,12 @@
 
 <!-- ============================================================ -->
 
+<xsl:param name="body.fontset">
+  <!-- this isn't used by the HTML stylesheets, but it's in common/functions -->
+</xsl:param>
+
+<!-- ============================================================ -->
+
 <doc:template name="anchor" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns an XHTML anchor if appropriate</refpurpose>
 

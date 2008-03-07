@@ -1132,11 +1132,11 @@ cross-reference.</para>
 </xsl:template>
 
 <xsl:template match="command" mode="m:xref">
-  <xsl:call-template name="inline-boldseq"/>
+  <xsl:call-template name="t:inline-boldseq"/>
 </xsl:template>
 
 <xsl:template match="function" mode="m:xref">
-  <xsl:call-template name="inline-monoseq"/>
+  <xsl:call-template name="t:inline-monoseq"/>
 </xsl:template>
 
 </xsl:stylesheet>

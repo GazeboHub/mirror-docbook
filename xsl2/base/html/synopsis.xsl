@@ -52,7 +52,7 @@
   <xsl:if test="preceding-sibling::*[1]">
     <br/>
   </xsl:if>
-  <xsl:call-template name="inline-monoseq"/>
+  <xsl:call-template name="t:inline-monoseq"/>
   <xsl:text> </xsl:text>
 </xsl:template>
 

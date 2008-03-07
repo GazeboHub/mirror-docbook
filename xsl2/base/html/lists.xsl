@@ -190,7 +190,7 @@
     <xsl:call-template name="id"/>
     <xsl:call-template name="class"/>
 
-    <xsl:call-template name="simple-xlink"/>
+    <xsl:call-template name="t:simple-xlink"/>
   </dt>
 </xsl:template>
 

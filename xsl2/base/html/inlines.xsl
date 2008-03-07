@@ -9,7 +9,7 @@
 		xmlns:t="http://docbook.org/xslt/ns/template"
                 xmlns:u="http://nwalsh.com/xsl/unittests#"
                 xmlns:xlink='http://www.w3.org/1999/xlink'
-                exclude-result-prefixes="db doc f fn m u xlink"
+                exclude-result-prefixes="db doc f fn m t u xlink"
                 version="2.0">
 
 <!-- ********************************************************************
