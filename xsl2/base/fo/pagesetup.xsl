@@ -1,7 +1,12 @@
 <?xml version="1.0"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:fo="http://www.w3.org/1999/XSL/Format"
+		xmlns:db="http://docbook.org/ns/docbook"
+		xmlns:f="http://docbook.org/xslt/ns/extension"
+		xmlns:m="http://docbook.org/xslt/ns/mode"
 		xmlns:t="http://docbook.org/xslt/ns/template"
+                xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		exclude-result-prefixes="db f m t xs"
                 version="2.0">
 
 <!-- ********************************************************************
@@ -15,13 +20,6 @@
      ******************************************************************** -->
 
 <!-- ==================================================================== -->
-
-<xsl:param name="body.fontset">
-  <xsl:value-of select="$body.font.family"/>
-  <xsl:if test="$body.font.family != ''
-                and $symbol.font.family  != ''">,</xsl:if>
-    <xsl:value-of select="$symbol.font.family"/>
-</xsl:param>
 
 <xsl:param name="title.fontset">
   <xsl:value-of select="$title.font.family"/>
@@ -1312,9 +1310,16 @@
 
 <!-- ==================================================================== -->
 
-<xsl:template name="t:select-pagemaster">
-  <xsl:param name="element" select="local-name(.)"/>
-  <xsl:param name="pageclass" select="''"/>
+<xsl:function name="f:select-pagemaster" as="xs:string">
+  <xsl:param name="element-node" as="element()"/>
+  <xsl:value-of select="f:select-pagemaster($element-node,'')"/>
+</xsl:function>
+
+<xsl:function name="f:select-pagemaster" as="xs:string">
+  <xsl:param name="element-node" as="element()"/>
+  <xsl:param name="pageclass" as="xs:string"/>
+
+  <xsl:variable name="element" select="local-name($element-node)"/>
 
   <xsl:variable name="pagemaster">
     <xsl:choose>
@@ -1339,7 +1344,7 @@
       <xsl:when test="$draft.mode = 'no'">
         <!-- nop -->
       </xsl:when>
-      <xsl:when test="ancestor-or-self::*[@status][1]/@status = 'draft'">
+      <xsl:when test="$element-node/ancestor-or-self::*[@status][1]/@status = 'draft'">
         <xsl:text>-draft</xsl:text>
       </xsl:when>
       <xsl:otherwise>
@@ -1353,7 +1358,7 @@
     <xsl:with-param name="pageclass" select="$pageclass"/>
     <xsl:with-param name="default-pagemaster" select="$pagemaster"/>
   </xsl:call-template>
-</xsl:template>
+</xsl:function>
 
 <xsl:template name="t:select-user-pagemaster">
   <xsl:param name="element"/>
@@ -1393,7 +1398,7 @@
 
 <!-- ==================================================================== -->
 
-<xsl:template match="*" mode="t:running-head-mode">
+<xsl:template match="*" mode="m:running-head-mode">
   <xsl:param name="master-reference" select="'unknown'"/>
   <xsl:param name="gentext-key" select="name(.)"/>
 
@@ -1735,7 +1740,7 @@
 
 <!-- ==================================================================== -->
 
-<xsl:template match="*" mode="t:running-foot-mode">
+<xsl:template match="*" mode="m:running-foot-mode">
   <xsl:param name="master-reference" select="'unknown'"/>
   <xsl:param name="gentext-key" select="name(.)"/>
 
@@ -2100,6 +2105,259 @@
   </xsl:choose>
 
 </xsl:template>
+
 <!-- ==================================================================== -->
+
+<!-- Utility template to create a page sequence for an element -->
+<xsl:template name="t:page-sequence">
+  <xsl:param name="content">
+    <xsl:apply-templates/>
+  </xsl:param>
+  <xsl:param name="master-reference" select="f:select-pagemaster(.)"/>
+  <xsl:param name="element" select="local-name(.)"/>
+  <xsl:param name="gentext-key" select="local-name(.)"/>
+  <xsl:param name="language" select="f:l10n-language(.)"/>
+
+  <xsl:param name="format">
+    <xsl:call-template name="t:page-number-format">
+      <xsl:with-param name="master-reference" select="$master-reference"/>
+      <xsl:with-param name="element" select="$element"/>
+    </xsl:call-template>
+  </xsl:param>
+
+  <xsl:param name="initial-page-number">
+    <xsl:call-template name="t:initial-page-number">
+      <xsl:with-param name="master-reference" select="$master-reference"/>
+      <xsl:with-param name="element" select="$element"/>
+    </xsl:call-template>
+  </xsl:param>
+
+  <xsl:param name="force-page-count">
+    <xsl:call-template name="t:force-page-count">
+      <xsl:with-param name="master-reference" select="$master-reference"/>
+      <xsl:with-param name="element" select="$element"/>
+    </xsl:call-template>
+  </xsl:param>
+
+  <fo:page-sequence hyphenate="{$hyphenate}"
+                    master-reference="{$master-reference}">
+    <xsl:attribute name="language">
+      <xsl:value-of select="$language"/>
+    </xsl:attribute>
+
+    <xsl:attribute name="format">
+      <xsl:value-of select="$format"/>
+    </xsl:attribute>
+
+    <xsl:attribute name="initial-page-number">
+      <xsl:value-of select="$initial-page-number"/>
+    </xsl:attribute>
+
+    <xsl:attribute name="force-page-count">
+      <xsl:value-of select="$force-page-count"/>
+    </xsl:attribute>
+
+    <xsl:attribute name="hyphenation-character">
+      <xsl:call-template name="gentext">
+        <xsl:with-param name="key" select="'hyphenation-character'"/>
+      </xsl:call-template>
+    </xsl:attribute>
+
+    <xsl:attribute name="hyphenation-push-character-count">
+      <xsl:call-template name="gentext">
+        <xsl:with-param name="key" select="'hyphenation-push-character-count'"/>
+      </xsl:call-template>
+    </xsl:attribute>
+
+    <xsl:attribute name="hyphenation-remain-character-count">
+      <xsl:call-template name="gentext">
+        <xsl:with-param name="key" select="'hyphenation-remain-character-count'"/>
+      </xsl:call-template>
+    </xsl:attribute>
+
+    <xsl:apply-templates select="." mode="m:running-head-mode">
+      <xsl:with-param name="master-reference" select="$master-reference"/>
+      <xsl:with-param name="gentext-key" select="$gentext-key"/>
+    </xsl:apply-templates>
+
+    <xsl:apply-templates select="." mode="m:running-foot-mode">
+      <xsl:with-param name="master-reference" select="$master-reference"/>
+      <xsl:with-param name="gentext-key" select="$gentext-key"/>
+    </xsl:apply-templates>
+
+    <fo:flow flow-name="xsl-region-body">
+      <xsl:call-template name="t:set-flow-properties">
+        <xsl:with-param name="element" select="local-name(.)"/>
+        <xsl:with-param name="master-reference" select="$master-reference"/>
+      </xsl:call-template>
+
+      <xsl:copy-of select="$content"/>
+
+    </fo:flow>
+  </fo:page-sequence>
+</xsl:template>
+
+<!-- ==================================================================== -->
+
+<xsl:function name="f:page-number-format" as="xs:string">
+  <xsl:param name="context" as="element()"/>
+  <xsl:value-of select="f:page-number-format($context, local-name($context), '')"/>
+</xsl:function>
+
+<xsl:function name="f:page-number-format" as="xs:string">
+  <xsl:param name="context" as="element()"/>
+  <xsl:param name="element" as="xs:string"/>
+  <xsl:value-of select="f:page-number-format($context, $element, '')"/>
+</xsl:function>
+
+<xsl:function name="f:page-number-format" as="xs:string">
+  <xsl:param name="context" as="element()"/>
+  <xsl:param name="element" as="xs:string"/>
+  <xsl:param name="master-reference" as="xs:string"/>
+
+  <xsl:choose>
+    <xsl:when test="$element = 'toc' and $context/self::book">
+      <xsl:value-of select="'i'"/>
+    </xsl:when>
+    <xsl:when test="$element = 'preface'">
+      <xsl:value-of select="'i'"/>
+    </xsl:when>
+    <xsl:when test="$element = 'dedication'">
+      <xsl:value-of select="'i'"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:value-of select="'1'"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
+<xsl:function name="f:initial-page-number" as="xs:string">
+  <xsl:param name="context" as="element()"/>
+  <xsl:value-of select="f:initial-page-number($context, local-name($context), '')"/>
+</xsl:function>
+
+<xsl:function name="f:initial-page-number" as="xs:string">
+  <xsl:param name="context" as="element()"/>
+  <xsl:param name="element" as="xs:string"/>
+  <xsl:value-of select="f:initial-page-number($context, $element,'')"/>
+</xsl:function>
+
+<xsl:function name="f:initial-page-number" as="xs:string">
+  <xsl:param name="context" as="element()"/>
+  <xsl:param name="element" as="xs:string"/>
+  <xsl:param name="master-reference" as="xs:string"/>
+
+  <!-- Select the first content that the stylesheet places
+       after the TOC -->
+  <xsl:variable name="first.book.content" 
+                select="$context/ancestor::db:book/*[
+                          not(self::db:info or
+                              self::db:dedication or
+                              self::db:preface or
+                              self::db:toc or
+                              self::db:lot)
+			][1]"/>
+
+  <xsl:variable name="auto" select="if ($double.sided != 0)
+                                    then 'auto-odd'
+				    else 'auto'"/>
+
+  <xsl:choose>
+    <xsl:when test="$element = 'toc'">
+      <xsl:value-of select="$auto"/>
+    </xsl:when>
+    <xsl:when test="$element = 'book'">
+      <xsl:value-of select="'1'"/>
+    </xsl:when>
+    <!-- preface typically continues TOC roman numerals -->
+    <!-- Change page.number.format if not -->
+    <xsl:when test="$element = 'preface'">
+      <xsl:value-of select="$auto"/>
+    </xsl:when>
+    <xsl:when test="($element = 'dedication' or $element = 'article') 
+		    and not($context/preceding::db:chapter
+		            or $context/preceding::db:preface
+			    or $context/preceding::db:appendix
+			    or $context/preceding::db:article
+			    or $context/preceding::db:dedication
+			    or $context/parent::db:part
+			    or $context/parent::db:reference)">
+      <xsl:value-of select="'1'"/>
+    </xsl:when>
+    <xsl:when test="generate-id($first.book.content) = generate-id($context)">
+      <xsl:value-of select="'1'"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:value-of select="$auto"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
+<xsl:function name="f:force-page-count" as="xs:string">
+  <xsl:param name="context" as="element()"/>
+  <xsl:value-of select="f:force-page-count($context,local-name($context),'')"/>
+</xsl:function>
+
+<xsl:function name="f:force-page-count" as="xs:string">
+  <xsl:param name="context" as="element()"/>
+  <xsl:param name="element" as="xs:string"/>
+  <xsl:value-of select="f:force-page-count($context,$element,'')"/>
+</xsl:function>
+
+<xsl:function name="f:force-page-count" as="xs:string">
+  <xsl:param name="context" as="element()"/>
+  <xsl:param name="element" as="xs:string"/>
+  <xsl:param name="master-reference" as="xs:string"/>
+
+  <xsl:choose>
+    <!-- double-sided output -->
+    <xsl:when test="$double.sided != 0">
+      <xsl:value-of select="'end-on-even'"/>
+    </xsl:when>
+    <!-- single-sided output -->
+    <xsl:otherwise>
+      <xsl:value-of select="'no-force'"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
+<xsl:template name="t:set-flow-properties">
+  <xsl:param name="element" select="local-name(.)"/>
+  <xsl:param name="master-reference" select="''"/>
+
+  <!-- This template is called after each <fo:flow> starts. -->
+  <!-- Customize this template to set attributes on fo:flow -->
+
+  <!-- remove -draft from reference -->
+  <xsl:variable name="pageclass">
+    <xsl:choose>
+      <xsl:when test="contains($master-reference, '-draft')">
+        <xsl:value-of select="substring-before($master-reference, '-draft')"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="$master-reference"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:choose>
+    <xsl:when test="$fo.processor = 'fop' or $fo.processor = 'passivetex'">
+      <!-- body.start.indent does not work well with these processors -->
+    </xsl:when>
+    <xsl:when test="starts-with($pageclass, 'body') or
+                    starts-with($pageclass, 'lot') or
+                    starts-with($pageclass, 'front') or
+                    $element = 'preface' or
+                    (starts-with($pageclass, 'back') and
+                    $element = 'appendix')">
+      <xsl:attribute name="start-indent">
+        <xsl:value-of select="$body.start.indent"/>
+      </xsl:attribute>
+      <xsl:attribute name="end-indent">
+        <xsl:value-of select="$body.end.indent"/>
+      </xsl:attribute>
+    </xsl:when>
+  </xsl:choose>
+</xsl:template>
 
 </xsl:stylesheet>

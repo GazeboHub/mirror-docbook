@@ -8,6 +8,7 @@ It's just a bogus mess right now.</para>
 <refentry xml:id="date-format"/>
 <refentry xml:id="gYearMonth-format"/>
 <refentry xml:id="gYear-format"/>
+<refentry xml:id="verbosity"/>
 <refentry xml:id="docbook.css"/>
 <refentry xml:id="docbook.css.inline"/>
 <refentry xml:id="annotation.js"/>
@@ -46,6 +47,8 @@ It's just a bogus mess right now.</para>
 <refentry xml:id="glossterm.auto.link"/>
 <refentry xml:id="firstterm.only.link"/>
 <refentry xml:id="inline.style.attribute"/>
+<refentry xml:id="superscript.properties"/>
+<refentry xml:id="subscript.properties"/>
 <refentry xml:id="titlepage.templates"/>
 <refentry xml:id="l10n.gentext.default.language"/>
 <refentry xml:id="l10n.gentext.language"/>

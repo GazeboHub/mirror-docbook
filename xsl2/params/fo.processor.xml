@@ -14,6 +14,8 @@
 
 <!-- FIXME: shouldn't be xep here -->
 
+<!-- 'xep', 'passivetex', 'fop', 'antennahouse', ... -->
+
 <refsynopsisdiv>
 <src:fragment xml:id="fo.processor.frag">
 <xsl:param name="fo.processor" select="'xep'"/>

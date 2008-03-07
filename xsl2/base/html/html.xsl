@@ -216,6 +216,35 @@ of the stylesheet is inserted directly.</para>
 
 <!-- ====================================================================== -->
 
+<doc:template name="t:head" xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Template for generating the head element</refpurpose>
+
+<refdescription>
+<para>This template is called to generate the HTML head for the
+primary result document.</para>
+</refdescription>
+</doc:template>
+
+<xsl:template name="t:head">
+  <xsl:param name="root" as="element()"
+	     select="if ($rootid != '')
+                     then key('id',$rootid)[1]
+		     else /*[1]"/>
+  <head>
+    <title>
+      <xsl:value-of select="f:title($root)"/>
+    </title>
+    <xsl:call-template name="t:system-head-content"/>
+    <xsl:call-template name="t:head-meta"/>
+    <xsl:call-template name="t:head-links"/>
+    <xsl:call-template name="css-style"/>
+    <xsl:call-template name="javascript"/>
+    <xsl:call-template name="t:user-head-content"/>
+  </head>
+</xsl:template>
+
+<!-- ====================================================================== -->
+
 <doc:template name="t:head-meta" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Template for inserting metadata in the head</refpurpose>
 

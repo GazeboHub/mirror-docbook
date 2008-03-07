@@ -88,71 +88,26 @@
     <xsl:call-template name="biblioentry-label"/>
   </xsl:param>
 
+  <!-- N.B. The bibliography entry is expanded using $bibliography.collection -->
+  <!-- during *normalization*, not here... -->
+
   <xsl:variable name="id" select="f:node-id(.)"/>
 
-  <xsl:choose>
-    <xsl:when test="string(.) = ''">
-      <xsl:variable name="bib" select="document($bibliography.collection,.)"/>
-      <xsl:variable name="entry" select="$bib/bibliography/*[@xml:id=$id][1]"/>
+  <div class="{local-name(.)}">
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+    <p>
+      <xsl:copy-of select="$label"/>
       <xsl:choose>
-        <xsl:when test="$entry">
-	  <xsl:choose>
-	    <xsl:when test="$bibliography.numbered != 0">
-	      <xsl:apply-templates select="$entry">
-		<xsl:with-param name="label" select="$label"/>
-	      </xsl:apply-templates>
-	    </xsl:when>
-	    <xsl:otherwise>
-	      <xsl:choose>
-		<xsl:when test="self::db:biblioentry">
-		  <xsl:apply-templates select="$entry" mode="m:biblioentry"/>
-		</xsl:when>
-		<xsl:otherwise>
-		  <xsl:apply-templates select="$entry" mode="m:bibliomixed"/>
-		</xsl:otherwise>
-	      </xsl:choose>
-	    </xsl:otherwise>
-	  </xsl:choose>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:message>
-            <xsl:text>No bibliography entry: </xsl:text>
-            <xsl:value-of select="$id"/>
-            <xsl:text> found in </xsl:text>
-            <xsl:value-of select="$bibliography.collection"/>
-          </xsl:message>
-          <div class="{local-name(.)}">
-            <xsl:call-template name="id"/>
-            <xsl:call-template name="class"/>
-            <p>
-	      <xsl:copy-of select="$label"/>
-              <xsl:text>Error: no bibliography entry: </xsl:text>
-              <xsl:value-of select="$id"/>
-              <xsl:text> found in </xsl:text>
-              <xsl:value-of select="$bibliography.collection"/>
-            </p>
-          </div>
-        </xsl:otherwise>
+	<xsl:when test="self::db:biblioentry">
+	  <xsl:apply-templates mode="m:biblioentry"/>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:apply-templates mode="m:bibliomixed"/>
+	</xsl:otherwise>
       </xsl:choose>
-    </xsl:when>
-    <xsl:otherwise>
-      <div class="{local-name(.)}">
-        <xsl:call-template name="id"/>
-        <xsl:call-template name="class"/>
-	<p>
-	  <xsl:copy-of select="$label"/>
-	  <xsl:choose>
-	    <xsl:when test="self::db:biblioentry">
-	      <xsl:apply-templates mode="m:biblioentry"/>
-	    </xsl:when>
-	    <xsl:otherwise>
-	      <xsl:apply-templates mode="m:bibliomixed"/>
-	    </xsl:otherwise>
-	  </xsl:choose>
-	</p>
-      </div>
-    </xsl:otherwise>
-  </xsl:choose>
+    </p>
+  </div>
 </xsl:template>
 
 <!-- ============================================================ -->

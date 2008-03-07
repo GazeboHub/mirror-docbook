@@ -792,9 +792,7 @@ defaults to the language of the context node.</para>
   <xsl:param name="xrefstyle" select="''"/>
   <xsl:param name="purpose"/>
   <xsl:param name="referrer"/>
-  <xsl:param name="lang">
-    <xsl:call-template name="l10n-language"/>
-  </xsl:param>
+  <xsl:param name="lang" select="f:l10n-language(.)"/>
   <xsl:param name="target.elem" select="local-name(.)"/>
 
   <!-- parse xrefstyle to get parts -->

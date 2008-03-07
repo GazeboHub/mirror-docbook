@@ -712,14 +712,7 @@ locale value will be used as the default.</para>
   <xsl:param name="context" as="node()"/>
   <xsl:param name="dingbat" as="xs:string"/>
 
-  <xsl:variable name="lang">
-    <xsl:call-template name="l10n-language">
-      <xsl:with-param name="target" select="$context"/>
-      <xsl:with-param name="xref-context" select="false()"/>
-    </xsl:call-template>
-  </xsl:variable>
-
-  <xsl:value-of select="f:dingbat($context, $dingbat, $lang)"/>
+  <xsl:value-of select="f:dingbat($context, $dingbat, f:l10n-language($context))"/>
 </xsl:function>
 
 <!-- ============================================================ -->
@@ -1846,9 +1839,12 @@ expects “/” to be the component separator.</para>
 	  <xsl:when test="$var = '$body.font.family'">
 	    <xsl:value-of select="$body.font.family"/>
 	  </xsl:when>
+	  <xsl:when test="$var = '$body.fontset'">
+	    <xsl:value-of select="$body.fontset"/>
+	  </xsl:when>
 	  <xsl:otherwise>
 	    <xsl:message>
-	      <xsl:text>Unrecognized value in fake-eval-avt(): </xsl:text>
+	      <xsl:text>Unrecognized value in f:fake-eval-avt(): </xsl:text>
 	      <xsl:value-of select="$var"/>
 	    </xsl:message>
 	    <xsl:value-of select="''"/>
@@ -1874,6 +1870,74 @@ expects “/” to be the component separator.</para>
   <xsl:value-of select="if ($params/@*[local-name(.) = $name])
                         then $params/@*[local-name(.) = $name]
 			else ''"/>
+</xsl:function>
+
+<!-- ================================================================== -->
+
+<doc:function name="f:title" xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Returns the title element of the specified node</refpurpose>
+
+<refdescription>
+<para>This function returns the <emphasis>string value</emphasis> of the
+<tag>title</tag> (or the element
+that serves as the title) of the specified node. If the node does
+not have a title, it returns “???”.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The node for which the title will be extracted.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The string value of the title of the specified node.</para>
+</refreturn>
+
+<u:unittests function="f:title">
+  <u:test>
+    <u:variable name="mydoc">
+      <db:book>
+	<db:title>Some Title</db:title>
+	<db:chapter>
+	  <db:title>Some Chapter Title</db:title>
+	  <db:para>My para.</db:para>
+	</db:chapter>
+      </db:book>
+    </u:variable>
+    <u:param select="$mydoc/db:book"/>
+    <u:result>'Some Title'</u:result>
+  </u:test>
+</u:unittests>
+</doc:function>
+
+<xsl:function name="f:title" as="xs:string">
+  <xsl:param name="node" as="node()"/>
+
+  <xsl:choose>
+    <xsl:when test="$node/db:info/db:title">
+      <xsl:value-of select="$node/db:info/db:title"/>
+    </xsl:when>
+    <xsl:when test="$node/db:refmeta/db:refentrytitle">
+      <xsl:value-of select="$node/db:refmeta/db:refentrytitle"/>
+    </xsl:when>
+    <xsl:when test="$node/db:refmeta/db:refnamediv/db:refname">
+      <xsl:value-of select="$node/db:refmeta/db:refnamediv/db:refname"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:text>???</xsl:text>
+      <xsl:if test="$verbosity &gt; 0">
+	<xsl:message>
+	  <xsl:text>Warning: no title for root element: </xsl:text>
+	  <xsl:value-of select="local-name($node)"/>
+	</xsl:message>
+      </xsl:if>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:function>
 
 </xsl:stylesheet>

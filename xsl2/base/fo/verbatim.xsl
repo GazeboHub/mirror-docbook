@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-		xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:fo="http://www.w3.org/1999/XSL/Format"
                 xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
-		xmlns:h="http://www.w3.org/1999/xhtml"
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:ghost="http://docbook.org/ns/docbook/ephemeral"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
@@ -10,10 +9,43 @@
 		xmlns:t="http://docbook.org/xslt/ns/template"
 		xmlns:fn="http://www.w3.org/2005/xpath-functions"
 		xmlns:db="http://docbook.org/ns/docbook"
-		exclude-result-prefixes="doc h f m mp fn db ghost t"
+		exclude-result-prefixes="doc f m mp fn db ghost t"
                 version="2.0">
 
 <xsl:include href="../common/verbatim.xsl"/>
+
+<xsl:param name="shade.verbatim" select="0"/>
+<xsl:param name="monospace.font.family">monospace</xsl:param>
+
+<xsl:attribute-set name="verbatim.properties">
+  <xsl:attribute name="space-before.minimum">0.8em</xsl:attribute>
+  <xsl:attribute name="space-before.optimum">1em</xsl:attribute>
+  <xsl:attribute name="space-before.maximum">1.2em</xsl:attribute>
+  <xsl:attribute name="space-after.minimum">0.8em</xsl:attribute>
+  <xsl:attribute name="space-after.optimum">1em</xsl:attribute>
+  <xsl:attribute name="space-after.maximum">1.2em</xsl:attribute>
+  <xsl:attribute name="hyphenate">false</xsl:attribute>
+  <xsl:attribute name="wrap-option">no-wrap</xsl:attribute>
+  <xsl:attribute name="white-space-collapse">false</xsl:attribute>
+  <xsl:attribute name="white-space-treatment">preserve</xsl:attribute>
+  <xsl:attribute name="linefeed-treatment">preserve</xsl:attribute>
+  <xsl:attribute name="text-align">start</xsl:attribute>
+</xsl:attribute-set>
+
+<xsl:attribute-set name="monospace.properties">
+  <xsl:attribute name="font-family">
+    <xsl:value-of select="$monospace.font.family"/>
+  </xsl:attribute>
+</xsl:attribute-set>
+
+<xsl:attribute-set name="monospace.verbatim.properties" use-attribute-sets="verbatim.properties monospace.properties">
+  <xsl:attribute name="text-align">start</xsl:attribute>
+  <xsl:attribute name="wrap-option">no-wrap</xsl:attribute>
+</xsl:attribute-set>
+
+<xsl:attribute-set name="shade.verbatim.style">
+  <xsl:attribute name="background-color">#E0E0E0</xsl:attribute>
+</xsl:attribute-set>
 
 <xsl:template match="db:programlistingco">
   <!-- FIXME: this doesn't do anything to process the areas!? -->
@@ -39,14 +71,24 @@
 <xsl:template match="db:programlisting|db:screen|db:synopsis
 		     |db:literallayout[@class='monospaced']"
 	      mode="m:verbatim">
+  <xsl:param name="suppress-numbers" select="'0'"/>
+  <xsl:variable name="id" select="f:node-id(.)"/>
 
-  <div class="{local-name(.)}">
-    <xsl:call-template name="id"/>
-    <xsl:call-template name="class"/>
-    <pre>
-      <xsl:apply-templates/>
-    </pre>
-  </div>
+  <xsl:choose>
+    <xsl:when test="$shade.verbatim != 0">
+      <fo:block id="{$id}"
+		xsl:use-attribute-sets="monospace.verbatim.properties
+					shade.verbatim.style">
+	<xsl:apply-templates mode="m:verbatim"/>
+      </fo:block>
+    </xsl:when>
+    <xsl:otherwise>
+      <fo:block id="{$id}"
+                xsl:use-attribute-sets="monospace.verbatim.properties">
+	<xsl:apply-templates mode="m:verbatim"/>
+      </fo:block>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <xsl:template match="db:literallayout"
@@ -54,7 +96,6 @@
 
   <div class="{local-name(.)}">
     <xsl:call-template name="id"/>
-    <xsl:call-template name="class"/>
     <xsl:apply-templates mode="mp:literallayout"/>
   </div>
 </xsl:template>
@@ -64,11 +105,11 @@
 
   <div class="{local-name(.)}">
     <xsl:call-template name="id"/>
-    <xsl:call-template name="class"/>
     <xsl:apply-templates mode="mp:literallayout"/>
   </div>
 </xsl:template>
 
+<!--
 <xsl:template match="ghost:co">
   <xsl:if test="@xml:id">
     <a name="{@xml:id}"/>
@@ -89,6 +130,7 @@
     </xsl:with-param>
   </xsl:call-template>
 </xsl:template>
+-->
 
 <xsl:template match="ghost:linenumber">
   <span class="linenumber">

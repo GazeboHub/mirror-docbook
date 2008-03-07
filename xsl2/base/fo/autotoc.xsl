@@ -138,4 +138,37 @@ component (chapter, article, etc.).</para>
   <!-- FIXME: -->
 </xsl:template>
 
+<!-- ============================================================ -->
+
+<doc:template name="division-toc" xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Make ToC/LoTs for a division</refpurpose>
+
+<refdescription>
+<para>This template formats the Table of Contents and
+Lists of Titles for a
+division (chapter, article, etc.).</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>toc-context</term>
+<listitem>
+<para>The division context.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The formatted ToC and LoTs for the element.</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="division-toc">
+  <xsl:param name="toc-context" select="."/>
+  <xsl:param name="toc.title" select="true()"/>
+
+  <!-- FIXME: -->
+</xsl:template>
+
 </xsl:stylesheet>

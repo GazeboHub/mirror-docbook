@@ -85,26 +85,11 @@
     </xsl:message>
   </xsl:if>
 
-  <!-- Make sure we copy the tgroup container so that the tgroup -->
-  <!-- template has access to the table/informaltable attributes -->
-  <xsl:variable name="phase1">
-    <xsl:element name="{local-name(..)}"
-		 namespace="{namespace-uri(..)}">
-      <xsl:copy-of select="../@*"/>
-      <xsl:copy-of select="../*[not(self::db:tgroup)]"/>
-      <xsl:apply-templates select="." mode="m:cals-phase-1"/>
-    </xsl:element>
-  </xsl:variable>
+  <!-- We used to do a two-phase process here, phase1 is now part of
+       normalization. Otherwise xref's in the table were in the "wrong tree"
+       when we came to processing the entries -->
 
-  <!--
-  <xsl:message>
-    <XXX>
-      <xsl:copy-of select="$phase1"/>
-    </XXX>
-  </xsl:message>
-  -->
-
-  <xsl:apply-templates select="$phase1/*/db:tgroup" mode="m:cals"/>
+  <xsl:apply-templates select="." mode="m:cals"/>
 </xsl:template>
 
 <xsl:template match="db:tgroup" name="db:tgroup" mode="m:cals">

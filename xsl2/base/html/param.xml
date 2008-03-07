@@ -5,6 +5,7 @@
 It's just a bogus mess right now.</para>
 
 <refentry xml:id="root.filename"/>
+<refentry xml:id="verbosity"/>
 <refentry xml:id="html.ext"/>
 <refentry xml:id="use.id.as.filename"/>
 <refentry xml:id="dateTime-format"/>

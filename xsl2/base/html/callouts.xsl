@@ -28,11 +28,11 @@
 
 <xsl:template match="db:co">
   <!-- Support a single linkend in HTML -->
-  <xsl:variable name="targets" select="$input/key('id', @linkends)"/>
+  <xsl:variable name="targets" select="key('id', @linkends)"/>
   <xsl:variable name="target" select="$targets[1]"/>
   <xsl:choose>
     <xsl:when test="$target">
-      <a href="{f:href($input,$target)}">
+      <a href="{f:href(/,$target)}">
         <xsl:if test="@id">
           <xsl:attribute name="name">
             <xsl:value-of select="@id"/>

@@ -65,7 +65,7 @@ identified.</entry>
 
 <xsl:template match="db:link" name="db:link">
   <xsl:param name="title" select="string(db:alt[1])" as="xs:string"/>
-  <xsl:param name="href" select="string(@xlink:href)" as="xs:string"/>
+  <xsl:param name="href" select="iri-to-uri(string(@xlink:href))" as="xs:string"/>
 
   <xsl:choose>
     <xsl:when test="node()">
@@ -127,6 +127,14 @@ attribute or a <tag class="attribute">linkend</tag> attribute</para>
 
   <xsl:variable name="target" select="key('id',$linkend)[1]"/>
   <xsl:variable name="refelem" select="node-name($target)"/>
+
+<!--
+  <xsl:if test="generate-id(/) != 'd49'">
+    <xsl:message>
+      <xsl:copy-of select="/"/>
+    </xsl:message>
+  </xsl:if>
+-->
 
   <xsl:if test="count(key('id', $linkend)) &gt; 1">
     <xsl:message>
@@ -266,11 +274,7 @@ attribute or a <tag class="attribute">linkend</tag> attribute</para>
   <xsl:variable name="targetdoc.att" select="@targetdoc"/>
   <xsl:variable name="targetptr.att" select="@targetptr"/>
 
-  <xsl:variable name="olink.lang">
-    <xsl:call-template name="l10n-language">
-      <xsl:with-param name="xref-context" select="true()"/>
-    </xsl:call-template>
-  </xsl:variable>
+  <xsl:variable name="olink.lang" select="f:l10n-language(.,true())"/>
     
   <xsl:variable name="target.database.filename">
     <xsl:call-template name="t:select-target-database">

@@ -20,6 +20,50 @@
   descriptions for changes in the project CVS repository.</para>
 
   <section>
+    <title>Release 0.02.0</title>
+
+    <para>The XSL2 stylesheets take a multi-phase approach to processing
+DocBook documents. In this release, the mechanism for initiating that
+processing has changed. If you are not using a customization layer, then
+these changes won't matter to you. If your customization layer does not
+override the “<literal>/</literal>” template, then these chagnes won't
+matter to you either. If you have a customization that <emphasis>does</emphasis>
+override the “<literal>/</literal>” template, you will have to change
+it along the following lines:</para>
+
+<programlisting><![CDATA[<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		xmlns:db="http://docbook.org/ns/docbook"
+		xmlns:f="http://docbook.org/xslt/ns/extension"
+		exclude-result-prefixes="xs db f"
+                version="2.0">
+
+<xsl:import href="/path/to/base/docbook.xsl"/>
+
+<xsl:template match="/">
+  <xsl:variable name="normalized" as="document-node()"
+		select="f:cleanup-docbook(/)"/>
+
+  <xsl:variable name="root" as="element()"
+		select="f:docbook-root-element($normalized)"/>
+
+  <xsl:apply-templates select="$root"/>
+</xsl:template>
+
+</xsl:stylesheet>]]></programlisting>
+
+<para>The function <function>f:cleanup-docbook</function> takes the original
+input document and applies several phases of processing to clean up and normalize
+it. You <emphasis>must</emphasis> do this or the stylesheets
+<emphasis>will not work</emphasis>. The function
+ <function>f:docbook-root-element</function> returns the root element of
+the document, after checking that it's a valid DocBook root element. It has
+an optional second argument, an ID. If you pass an ID, then
+<varname>$root</varname> will be the element with that ID.</para>
+
+  </section>
+
+  <section>
     <title>Release 0.01.0</title>
     <para>Initial release.</para>
   </section>

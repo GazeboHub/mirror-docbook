@@ -19,9 +19,7 @@
 		select="$titlepages/*[node-name(.) = node-name(current())
 			              and @t:side='verso'][1]"/>
 
-  <xsl:variable name="master-reference">
-    <xsl:call-template name="t:select-pagemaster"/>
-  </xsl:variable>
+  <xsl:variable name="master-reference" select="f:select-pagemaster(.)"/>
 
   <fo:page-sequence hyphenate="{$hyphenate}"
                     master-reference="{$master-reference}">
@@ -65,11 +63,11 @@
     </xsl:attribute>
     -->
 
-    <xsl:apply-templates select="." mode="t:running-head-mode">
+    <xsl:apply-templates select="." mode="m:running-head-mode">
       <xsl:with-param name="master-reference" select="$master-reference"/>
     </xsl:apply-templates>
 
-    <xsl:apply-templates select="." mode="t:running-foot-mode">
+    <xsl:apply-templates select="." mode="m:running-foot-mode">
       <xsl:with-param name="master-reference" select="$master-reference"/>
     </xsl:apply-templates>
 
@@ -104,6 +102,39 @@
       <xsl:apply-templates/>
     </fo:flow>
   </fo:page-sequence>
+</xsl:template>
+
+<xsl:template match="db:article/db:appendix">
+  <xsl:variable name="recto"
+		select="$titlepages/*[node-name(.) = node-name(current())
+			              and @t:side='recto'][1]"/>
+  <xsl:variable name="verso"
+		select="$titlepages/*[node-name(.) = node-name(current())
+			              and @t:side='verso'][1]"/>
+
+  <xsl:call-template name="titlepage">
+    <xsl:with-param name="content" select="$recto"/>
+  </xsl:call-template>
+
+  <xsl:if test="not(empty($verso))">
+    <xsl:call-template name="titlepage">
+      <xsl:with-param name="content" select="$verso"/>
+    </xsl:call-template>
+  </xsl:if>
+
+  <xsl:variable name="toc.params"
+		select="f:find-toc-params(., $generate.toc)"/>
+
+  <xsl:call-template name="make-lots">
+    <xsl:with-param name="toc.params" select="$toc.params"/>
+    <xsl:with-param name="toc">
+      <xsl:call-template name="component-toc">
+	<xsl:with-param name="toc.title" select="$toc.params/@title != 0"/>
+      </xsl:call-template>
+    </xsl:with-param>
+  </xsl:call-template>
+      
+  <xsl:apply-templates/>
 </xsl:template>
 
 </xsl:stylesheet>
