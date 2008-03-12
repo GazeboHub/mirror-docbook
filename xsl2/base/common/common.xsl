@@ -5,6 +5,7 @@
 		xmlns:f="http://docbook.org/xslt/ns/extension"
 		xmlns:fp="http://docbook.org/xslt/ns/extension/private"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
+		xmlns:mp="http://docbook.org/xslt/ns/mode/private"
 		xmlns:t="http://docbook.org/xslt/ns/template"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
 		exclude-result-prefixes="db doc f fp m t xs"
@@ -510,7 +511,7 @@ Any element processed in this mode should generate its number.</para>
 
 <!-- ============================================================ -->
 
-<doc:template name="copyright-years" xmlns="http://docbook.org/ns/docbook">
+<doc:template name="t:copyright-years" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Print a set of years with collapsed ranges</refpurpose>
 
 <refdescription>
@@ -564,7 +565,7 @@ year range is <quote>1991-1992</quote> but discretely it's
 </refreturn>
 </doc:template>
 
-<xsl:template name="copyright-years">
+<xsl:template name="t:copyright-years">
   <xsl:param name="years"/>
   <xsl:param name="print.ranges" select="1"/>
   <xsl:param name="single.year.ranges" select="0"/>
@@ -598,7 +599,7 @@ year range is <quote>1991-1992</quote> but discretely it's
         <xsl:otherwise>
           <xsl:apply-templates select="$years[1]" mode="titlepage.mode"/>
           <xsl:text>, </xsl:text>
-          <xsl:call-template name="copyright-years">
+          <xsl:call-template name="t:copyright-years">
             <xsl:with-param name="years"
                             select="$years[position() &gt; 1]"/>
             <xsl:with-param name="print.ranges" select="$print.ranges"/>
@@ -631,7 +632,7 @@ year range is <quote>1991-1992</quote> but discretely it's
       </xsl:choose>
     </xsl:when>
     <xsl:when test="$firstyear = 0">
-      <xsl:call-template name="copyright-years">
+      <xsl:call-template name="t:copyright-years">
         <xsl:with-param name="years"
                         select="$years[position() &gt; 1]"/>
         <xsl:with-param name="firstyear" select="$years[1]"/>
@@ -642,7 +643,7 @@ year range is <quote>1991-1992</quote> but discretely it's
       </xsl:call-template>
     </xsl:when>
     <xsl:when test="$nextyear = $years[1]">
-      <xsl:call-template name="copyright-years">
+      <xsl:call-template name="t:copyright-years">
         <xsl:with-param name="years"
                         select="$years[position() &gt; 1]"/>
         <xsl:with-param name="firstyear" select="$firstyear"/>
@@ -673,7 +674,7 @@ year range is <quote>1991-1992</quote> but discretely it's
           <xsl:text>, </xsl:text>
         </xsl:otherwise>
       </xsl:choose>
-      <xsl:call-template name="copyright-years">
+      <xsl:call-template name="t:copyright-years">
         <xsl:with-param name="years"
                         select="$years[position() &gt; 1]"/>
         <xsl:with-param name="firstyear" select="$years[1]"/>
