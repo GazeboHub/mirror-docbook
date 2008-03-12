@@ -84,14 +84,10 @@
 </xsl:template>
 
 <xsl:template match="db:biblioentry|db:bibliomixed">
-  <xsl:param name="label">
-    <xsl:call-template name="biblioentry-label"/>
-  </xsl:param>
+  <xsl:param name="label" select="f:biblioentry-label(.)"/>
 
   <!-- N.B. The bibliography entry is expanded using $bibliography.collection -->
   <!-- during *normalization*, not here... -->
-
-  <xsl:variable name="id" select="f:node-id(.)"/>
 
   <div class="{local-name(.)}">
     <xsl:call-template name="id"/>
@@ -108,74 +104,6 @@
       </xsl:choose>
     </p>
   </div>
-</xsl:template>
-
-<!-- ============================================================ -->
-
-<doc:template name="biblioentry-label" xmlns="http://docbook.org/ns/docbook">
-<refpurpose>Returns the label for a bibliography entry</refpurpose>
-
-<refdescription>
-<para>This template formats the label for a bibliography entry
-(<tag>biblioentry</tag> or <tag>bibliomixed</tag>).</para>
-</refdescription>
-
-<refparameter>
-<variablelist>
-<varlistentry><term>node</term>
-<listitem>
-<para>The node containing the bibliography entry, defaults to the current
-context node.</para>
-</listitem>
-</varlistentry>
-</variablelist>
-</refparameter>
-
-<refreturn>
-<para>The bibliography entry label.</para>
-</refreturn>
-</doc:template>
-
-<xsl:template name="biblioentry-label">
-  <xsl:param name="node" select="."/>
-
-  <xsl:variable name="context" select="(ancestor::db:bibliography
-                                        |ancestor::db:bibliolist)[last()]"/>
-
-  <xsl:choose>
-    <xsl:when test="$bibliography.numbered != 0">
-      <xsl:text>[</xsl:text>
-      <xsl:choose>
-	<xsl:when test="$context/self::db:bibliography">
-	  <xsl:number from="db:bibliography"
-		      count="db:biblioentry|db:bibliomixed"
-		      level="any" format="1"/>
-	</xsl:when>
-	<xsl:otherwise>
-	  <xsl:number from="db:bibliolist"
-		      count="db:biblioentry|db:bibliomixed"
-		      level="any" format="1"/>
-	</xsl:otherwise>
-      </xsl:choose>
-      <xsl:text>] </xsl:text>
-    </xsl:when>
-    <xsl:when test="$node/*[1]/self::db:abbrev">
-      <xsl:text>[</xsl:text>
-      <xsl:apply-templates select="$node/db:abbrev[1]"/>
-      <xsl:text>] </xsl:text>
-    </xsl:when>
-    <xsl:when test="$node/@xreflabel">
-      <xsl:text>[</xsl:text>
-      <xsl:value-of select="$node/@xreflabel"/>
-      <xsl:text>] </xsl:text>
-    </xsl:when>
-    <xsl:when test="$node/@id">
-      <xsl:text>[</xsl:text>
-      <xsl:value-of select="$node/@id"/>
-      <xsl:text>] </xsl:text>
-    </xsl:when>
-    <xsl:otherwise><!-- nop --></xsl:otherwise>
-  </xsl:choose>
 </xsl:template>
 
 <!-- ============================================================ -->
