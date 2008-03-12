@@ -25,22 +25,26 @@
 <!--  <xsl:include href="../common/olink.xsl"/>-->
   <xsl:include href="pagesetup.xsl"/>
   <xsl:include href="titlepages.xsl"/>
-  <xsl:include href="titlepage.xsl"/>
   <xsl:include href="autotoc.xsl"/>
   <xsl:include href="division.xsl"/>
   <xsl:include href="component.xsl"/>
+  <xsl:include href="fo.xsl"/>
 <!--
   <xsl:include href="refentry.xsl"/>
   <xsl:include href="synopsis.xsl"/>
-  <xsl:include href="section.xsl"/>
+-->
+  <xsl:include href="sections.xsl"/>
   <xsl:include href="biblio.xsl"/>
   <xsl:include href="pi.xsl"/>
+<!--
   <xsl:include href="info.xsl"/>
 -->
   <xsl:include href="glossary.xsl"/>
 <!--
   <xsl:include href="table.xsl"/>
+-->
   <xsl:include href="lists.xsl"/>
+<!--
   <xsl:include href="task.xsl"/>
   <xsl:include href="callouts.xsl"/>
   <xsl:include href="formal.xsl"/>
