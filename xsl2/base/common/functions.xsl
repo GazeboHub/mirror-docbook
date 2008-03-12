@@ -6,9 +6,10 @@
                 xmlns:fp="http://docbook.org/xslt/ns/extension/private"
                 xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0"
                 xmlns:m="http://docbook.org/xslt/ns/mode"
+                xmlns:mp="http://docbook.org/xslt/ns/mode/private"
                 xmlns:u="http://nwalsh.com/xsl/unittests#"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                exclude-result-prefixes="db doc f fp l m u xs"
+                exclude-result-prefixes="db doc f fp l m mp u xs"
                 version="2.0">
 
 <doc:reference xmlns="http://docbook.org/ns/docbook">
@@ -1001,36 +1002,47 @@ Top level sections are at level “1”.</para>
 <xsl:function name="f:section-level" as="xs:integer">
   <xsl:param name="node" as="element()"/>
 
+  <xsl:variable name="level" as="xs:integer">
+    <xsl:choose>
+      <xsl:when test="$node/self::db:sect1">1</xsl:when>
+      <xsl:when test="$node/self::db:sect2">2</xsl:when>
+      <xsl:when test="$node/self::db:sect3">3</xsl:when>
+      <xsl:when test="$node/self::db:sect4">4</xsl:when>
+      <xsl:when test="$node/self::db:sect5">5</xsl:when>
+      <xsl:when test="$node/self::db:section">
+	<xsl:value-of select="count($node/ancestor::db:section)+1"/>
+      </xsl:when>
+      <xsl:when test="$node/self::db:refsect1 or
+		      $node/self::db:refsect2 or
+		      $node/self::db:refsect3 or
+		      $node/self::db:refsection or
+		      $node/self::db:refsynopsisdiv">
+	<xsl:value-of select="f:refentry-section-level($node)"/>
+      </xsl:when>
+      <xsl:when test="$node/self::db:simplesect">
+	<xsl:choose>
+	  <xsl:when test="$node/parent::db:sect1">2</xsl:when>
+	  <xsl:when test="$node/parent::db:sect2">3</xsl:when>
+	  <xsl:when test="$node/parent::db:sect3">4</xsl:when>
+	  <xsl:when test="$node/parent::db:sect4">5</xsl:when>
+	  <xsl:when test="$node/parent::db:sect5">6</xsl:when>
+	  <xsl:when test="$node/parent::db:section">
+	    <xsl:value-of select="count($node/ancestor::db:section)+2"/>
+	  </xsl:when>
+	  <xsl:otherwise>1</xsl:otherwise>
+	</xsl:choose>
+      </xsl:when>
+      <xsl:otherwise>1</xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
   <xsl:choose>
-    <xsl:when test="$node/self::db:sect1">1</xsl:when>
-    <xsl:when test="$node/self::db:sect2">2</xsl:when>
-    <xsl:when test="$node/self::db:sect3">3</xsl:when>
-    <xsl:when test="$node/self::db:sect4">4</xsl:when>
-    <xsl:when test="$node/self::db:sect5">5</xsl:when>
-    <xsl:when test="$node/self::db:section">
-      <xsl:value-of select="count($node/ancestor::db:section)+1"/>
+    <xsl:when test="$node/ancestor::db:appendix[parent::db:article]">
+      <xsl:value-of select="$level + 1"/>
     </xsl:when>
-    <xsl:when test="$node/self::db:refsect1 or
-                    $node/self::db:refsect2 or
-                    $node/self::db:refsect3 or
-                    $node/self::db:refsection or
-                    $node/self::db:refsynopsisdiv">
-      <xsl:value-of select="f:refentry-section-level($node)"/>
-    </xsl:when>
-    <xsl:when test="$node/self::db:simplesect">
-      <xsl:choose>
-        <xsl:when test="$node/parent::db:sect1">2</xsl:when>
-        <xsl:when test="$node/parent::db:sect2">3</xsl:when>
-        <xsl:when test="$node/parent::db:sect3">4</xsl:when>
-        <xsl:when test="$node/parent::db:sect4">5</xsl:when>
-        <xsl:when test="$node/parent::db:sect5">6</xsl:when>
-	<xsl:when test="$node/parent::db:section">
-	  <xsl:value-of select="count($node/ancestor::db:section)+2"/>
-	</xsl:when>
-	<xsl:otherwise>1</xsl:otherwise>
-      </xsl:choose>
-    </xsl:when>
-    <xsl:otherwise>1</xsl:otherwise>
+    <xsl:otherwise>
+      <xsl:value-of select="$level"/>
+    </xsl:otherwise>
   </xsl:choose>
 </xsl:function>
 
@@ -1936,6 +1948,116 @@ not have a title, it returns “???”.</para>
 	  <xsl:value-of select="local-name($node)"/>
 	</xsl:message>
       </xsl:if>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
+<!-- ============================================================ -->
+
+<doc:function name="f:biblioentry-label" xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Returns the label for a bibliography entry</refpurpose>
+
+<refdescription>
+<para>This template formats the label for a bibliography entry
+(<tag>biblioentry</tag> or <tag>bibliomixed</tag>).</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The node containing the bibliography entry, defaults to the current
+context node.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The bibliography entry label.</para>
+</refreturn>
+</doc:function>
+
+<xsl:function name="f:biblioentry-label">
+  <xsl:param name="node"/>
+
+  <xsl:choose>
+    <xsl:when test="$bibliography.numbered != 0">
+      <xsl:text>[</xsl:text>
+      <xsl:apply-templates select="$node" mode="mp:biblioentry-label-count"/>
+      <xsl:text>] </xsl:text>
+    </xsl:when>
+    <xsl:when test="node-name($node/child::*[1]) = xs:QName('db:abbrev')">
+      <xsl:text>[</xsl:text>
+      <xsl:apply-templates select="$node/db:abbrev[1]"/>
+      <xsl:text>] </xsl:text>
+    </xsl:when>
+    <xsl:when test="$node/@xreflabel">
+      <xsl:text>[</xsl:text>
+      <xsl:value-of select="$node/@xreflabel"/>
+      <xsl:text>] </xsl:text>
+    </xsl:when>
+    <xsl:when test="$node/@id or $node/@xml:id">
+      <xsl:text>[</xsl:text>
+      <xsl:value-of select="($node/@id|$node/@xml:id)[1]"/>
+      <xsl:text>] </xsl:text>
+    </xsl:when>
+    <xsl:otherwise><!-- nop --></xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
+<xsl:template match="*" mode="mp:biblioentry-label-count">
+  <xsl:choose>
+    <xsl:when test="ancestor::db:bibliolist">
+      <xsl:number from="db:bibliolist" count="db:biblioentry|db:bibliomixed"
+		  level="any" format="1"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:number from="db:bibliography" count="db:biblioentry|db:bibliomixed"
+		  level="any" format="1"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
+
+<!-- ============================================================ -->
+
+<xsl:function name="f:pi-attribute" as="xs:string">
+  <xsl:param name="pis"/>
+  <xsl:param name="attribute"/>
+  <xsl:value-of select="f:pi-attribute($pis,$attribute,1)"/>
+</xsl:function>
+
+<xsl:function name="f:pi-attribute" as="xs:string">
+  <xsl:param name="pis"/>
+  <xsl:param name="attribute"/>
+  <xsl:param name="count"/>
+
+  <xsl:choose>
+    <xsl:when test="empty($pis)">
+      <!-- no pis -->
+      <xsl:value-of select="''"/>
+    </xsl:when>
+    <xsl:when test="$count &gt; count($pis)">
+      <!-- not found -->
+      <xsl:value-of select="''"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:variable name="pi">
+        <xsl:value-of select="$pis[$count]"/>
+      </xsl:variable>
+      <xsl:variable name="pivalue">
+        <xsl:value-of select="concat(' ', normalize-space($pi))"/>
+      </xsl:variable>
+      <xsl:choose>
+        <xsl:when test="contains($pivalue,concat(' ', $attribute, '='))">
+          <xsl:variable name="rest" select="substring-after($pivalue,concat(' ', $attribute,'='))"/>
+          <xsl:variable name="quote" select="substring($rest,1,1)"/>
+          <xsl:value-of select="substring-before(substring($rest,2),$quote)"/>
+        </xsl:when>
+        <xsl:otherwise>
+	  <xsl:value-of select="f:pi-attribute($pis,$attribute,$count + 1)"/>
+        </xsl:otherwise>
+      </xsl:choose>
     </xsl:otherwise>
   </xsl:choose>
 </xsl:function>
