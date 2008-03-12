@@ -12,56 +12,11 @@
 <xsl:template match="db:dedication
 		     |db:preface|db:chapter|db:appendix
 		     |db:colophon|db:article">
-  <xsl:variable name="recto"
-		select="$titlepages/*[node-name(.) = node-name(current())
-			              and @t:side='recto'][1]"/>
-  <xsl:variable name="verso"
-		select="$titlepages/*[node-name(.) = node-name(current())
-			              and @t:side='verso'][1]"/>
-
   <xsl:variable name="master-reference" select="f:select-pagemaster(.)"/>
 
   <fo:page-sequence hyphenate="{$hyphenate}"
                     master-reference="{$master-reference}">
-    <!--
-    <xsl:attribute name="language">
-      <xsl:call-template name="l10n.language"/>
-    </xsl:attribute>
-
-    <xsl:attribute name="format">
-      <xsl:call-template name="page.number.format">
-        <xsl:with-param name="master-reference" select="$master-reference"/>
-      </xsl:call-template>
-    </xsl:attribute>
-
-    <xsl:attribute name="initial-page-number">
-      <xsl:call-template name="initial.page.number">
-        <xsl:with-param name="master-reference" select="$master-reference"/>
-      </xsl:call-template>
-    </xsl:attribute>
-
-    <xsl:attribute name="force-page-count">
-      <xsl:call-template name="force.page.count">
-        <xsl:with-param name="master-reference" select="$master-reference"/>
-      </xsl:call-template>
-    </xsl:attribute>
-
-    <xsl:attribute name="hyphenation-character">
-      <xsl:call-template name="gentext">
-        <xsl:with-param name="key" select="'hyphenation-character'"/>
-      </xsl:call-template>
-    </xsl:attribute>
-    <xsl:attribute name="hyphenation-push-character-count">
-      <xsl:call-template name="gentext">
-        <xsl:with-param name="key" select="'hyphenation-push-character-count'"/>
-      </xsl:call-template>
-    </xsl:attribute>
-    <xsl:attribute name="hyphenation-remain-character-count">
-      <xsl:call-template name="gentext">
-        <xsl:with-param name="key" select="'hyphenation-remain-character-count'"/>
-      </xsl:call-template>
-    </xsl:attribute>
-    -->
+    <xsl:call-template name="t:page-sequence-attributes"/>
 
     <xsl:apply-templates select="." mode="m:running-head-mode">
       <xsl:with-param name="master-reference" select="$master-reference"/>
@@ -77,15 +32,7 @@
         <xsl:with-param name="master-reference" select="$master-reference"/>
       </xsl:call-template>
 
-      <xsl:call-template name="titlepage">
-	<xsl:with-param name="content" select="$recto"/>
-      </xsl:call-template>
-
-      <xsl:if test="not(empty($verso))">
-	<xsl:call-template name="titlepage">
-	  <xsl:with-param name="content" select="$verso"/>
-	</xsl:call-template>
-      </xsl:if>
+      <xsl:apply-templates select="db:info" mode="m:titlepage-mode"/>
 
       <xsl:variable name="toc.params"
 		    select="f:find-toc-params(., $generate.toc)"/>
@@ -105,22 +52,7 @@
 </xsl:template>
 
 <xsl:template match="db:article/db:appendix">
-  <xsl:variable name="recto"
-		select="$titlepages/*[node-name(.) = node-name(current())
-			              and @t:side='recto'][1]"/>
-  <xsl:variable name="verso"
-		select="$titlepages/*[node-name(.) = node-name(current())
-			              and @t:side='verso'][1]"/>
-
-  <xsl:call-template name="titlepage">
-    <xsl:with-param name="content" select="$recto"/>
-  </xsl:call-template>
-
-  <xsl:if test="not(empty($verso))">
-    <xsl:call-template name="titlepage">
-      <xsl:with-param name="content" select="$verso"/>
-    </xsl:call-template>
-  </xsl:if>
+  <xsl:apply-templates select="db:info" mode="m:titlepage-mode"/>
 
   <xsl:variable name="toc.params"
 		select="f:find-toc-params(., $generate.toc)"/>
