@@ -6,8 +6,9 @@
 		xmlns:fn="http://www.w3.org/2005/xpath-functions"
 		xmlns:h="http://www.w3.org/1999/xhtml"
 		xmlns:m="http://docbook.org/xslt/ns/mode"
+                xmlns:t="http://docbook.org/xslt/ns/template"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		exclude-result-prefixes="db f fn h m xs"
+		exclude-result-prefixes="db f fn h m t xs"
                 version="2.0">
 
 <!-- many info elements are handled by ../common/inlines.xsl -->
@@ -32,7 +33,7 @@
     <xsl:text>&#160;©&#160;</xsl:text>
 
     <span class="years">
-      <xsl:call-template name="copyright-years">
+      <xsl:call-template name="t:copyright-years">
 	<xsl:with-param name="years" select="db:year"/>
 	<xsl:with-param name="print.ranges" select="$make.year.ranges"/>
 	<xsl:with-param name="single.year.ranges"
