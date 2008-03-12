@@ -107,6 +107,38 @@
 
 <!-- ============================================================ -->
 
+<doc:template name="t:section-toc" xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Make ToC/LoTs for a section</refpurpose>
+
+<refdescription>
+<para>This template formats the Table of Contents and
+Lists of Titles for a section.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>toc-context</term>
+<listitem>
+<para>The component context.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The formatted ToC and LoTs for the element.</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="t:section-toc">
+  <xsl:param name="toc-context" select="."/>
+  <xsl:param name="toc.title" select="true()"/>
+
+  <!-- FIXME: -->
+</xsl:template>
+
+<!-- ============================================================ -->
+
 <doc:template name="component-toc" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Make ToC/LoTs for a component</refpurpose>
 
