@@ -1649,7 +1649,7 @@
                                   retrieve-boundary="page-sequence"/>
             </xsl:when>
             <xsl:otherwise>
-              <xsl:apply-templates select="." mode="titleabbrev.markup"/>
+              <xsl:apply-templates select="." mode="m:titleabbrev-markup"/>
             </xsl:otherwise>
           </xsl:choose>
         </xsl:if>
