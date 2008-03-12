@@ -303,6 +303,10 @@ context node.</para>
   </xsl:choose>
 </xsl:template>
 
+<xsl:template name="gentext-space">
+  <xsl:text> </xsl:text>
+</xsl:template>
+
 <!-- ============================================================ -->
 
 <doc:template name="gentext-template" xmlns="http://docbook.org/ns/docbook">
