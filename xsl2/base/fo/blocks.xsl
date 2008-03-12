@@ -39,7 +39,7 @@
       </xsl:choose>
     </xsl:when>
     <xsl:otherwise>
-      <fo:block>
+      <fo:block xsl:use-attribute-sets="normal.para.spacing">
 	<xsl:call-template name="id"/>
 	<xsl:copy-of select="$runin"/>
 	<xsl:apply-templates/>
@@ -112,26 +112,14 @@
 <!-- ==================================================================== -->
 
 <xsl:template match="db:sidebar">
-  <xsl:variable name="titlepage"
-		select="$titlepages/*[node-name(.)=node-name(current())][1]"/>
-
   <fo:block>
     <xsl:call-template name="id"/>
 
-    <xsl:call-template name="titlepage">
-      <xsl:with-param name="content" select="$titlepage"/>
-    </xsl:call-template>
+    <!-- FIXME: titlepage -->
 
     <fo:block>
       <xsl:apply-templates select="*[not(self::db:info)]"/>
     </fo:block>
-  </fo:block>
-</xsl:template>
-
-<xsl:template match="db:sidebar/db:info/db:title"
-	      mode="m:titlepage-mode">
-  <fo:block>
-    <xsl:apply-templates/>
   </fo:block>
 </xsl:template>
 
