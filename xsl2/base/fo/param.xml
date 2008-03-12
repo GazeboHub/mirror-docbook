@@ -42,6 +42,9 @@ It's just a bogus mess right now.</para>
 <refentry xml:id="persistent.generated.ids"/>
 <refentry xml:id="bibliography.numbered"/>
 <refentry xml:id="bibliography.collection"/>
+<refentry xml:id="bibliography.style"/>
+<refentry xml:id="biblioentry.item.separator"/>
+<refentry xml:id="biblioentry.properties"/>
 <refentry xml:id="glossary.collection"/>
 <refentry xml:id="glossentry.show.acronym"/>
 <refentry xml:id="glossterm.auto.link"/>
@@ -110,6 +113,7 @@ It's just a bogus mess right now.</para>
 <refentry xml:id="body.font.family"/>
 <refentry xml:id="title.font.family"/>
 <refentry xml:id="symbol.font.family"/>
+<refentry xml:id="dingbat.font.family"/>
 
 <refentry xml:id="body.font.size"/>
 <refentry xml:id="body.font.master"/>
@@ -168,5 +172,25 @@ It's just a bogus mess right now.</para>
 <refentry xml:id="footer.content.properties"/>
 
 <refentry xml:id="hyphenate"/>
+<refentry xml:id="normal.para.spacing"/>
+
+<refentry xml:id="itemizedlist.label.width"/>
+<refentry xml:id="variablelist.as.blocks"/>
+<refentry xml:id="variablelist.max.termlength"/>
+<refentry xml:id="variablelist.term.separator"/>
+<refentry xml:id="variablelist.term.break.after"/>
+<refentry xml:id="default.table.width"/>
+
+<refentry xml:id="formal.object.properties"/>
+<refentry xml:id="informal.object.properties"/>
+<refentry xml:id="itemizedlist.properties"/>
+<refentry xml:id="itemizedlist.label.properties"/>
+<refentry xml:id="orderedlist.label.properties"/>
+<refentry xml:id="list.block.spacing"/>
+<refentry xml:id="list.block.properties"/>
+<refentry xml:id="list.item.spacing"/>
+<refentry xml:id="compact.list.item.spacing"/>
+
+<refentry xml:id="component.title.properties"/>
 
 </article>
