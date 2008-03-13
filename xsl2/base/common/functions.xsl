@@ -2062,4 +2062,26 @@ context node.</para>
   </xsl:choose>
 </xsl:function>
 
+<!-- ============================================================ -->
+
+<xsl:function name="f:xpointer-idref">
+  <xsl:param name="xpointer"/>
+
+  <xsl:choose>
+    <xsl:when test="starts-with($xpointer, '#xpointer(id(')">
+      <xsl:variable name="rest"
+		    select="substring-after($xpointer, '#xpointer(id(')"/>
+      <xsl:variable name="quote" select="substring($rest, 1, 1)"/>
+      <xsl:value-of select="substring-before(substring-after($xpointer, $quote), $quote)"/>
+    </xsl:when>
+    <xsl:when test="starts-with($xpointer, '#')">
+      <xsl:value-of select="substring-after($xpointer, '#')"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <!-- otherwise it's a pointer to some other document -->
+      <xsl:value-of select="''"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
 </xsl:stylesheet>

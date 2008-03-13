@@ -236,6 +236,90 @@ an in-scope language declaration.</para>
 
 <!-- ============================================================ -->
 
+<doc:function name="f:gentext" xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Returns the generated text associated with a particular key
+in a particular language (locale)</refpurpose>
+
+<refdescription>
+<para>This template finds the gentext associated with a specified key
+in a specified locale. If no key can be found in the specified language,
+English will be used to locate a default.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>node</term>
+<listitem>
+<para>The context node.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>key</term>
+<listitem>
+<para>The gentext key, defaults to the local name of the context node.</para>
+</listitem>
+</varlistentry>
+<varlistentry><term>lang</term>
+<listitem>
+<para>The gentext language (locale), defaults to the language of the
+context node.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The generated text.</para>
+</refreturn>
+</doc:function>
+
+<xsl:function name="f:gentext">
+  <xsl:param name="node"/>
+  <xsl:value-of select="f:gentext($node,local-name($node),f:l10n-language($node))"/>
+</xsl:function>
+
+<xsl:function name="f:gentext">
+  <xsl:param name="node"/>
+  <xsl:param name="key"/>
+  <xsl:value-of select="f:gentext($node,$key,f:l10n-language($node))"/>
+</xsl:function>
+
+<xsl:function name="f:gentext">
+  <xsl:param name="node"/>
+  <xsl:param name="key"/>
+  <xsl:param name="lang"/>
+
+  <xsl:variable name="l10n.gentext"
+		select="($localization
+			 //l:l10n[@language=$lang]
+			 /l:gentext[@key=$key])[1]"/>
+
+  <xsl:choose>
+    <xsl:when test="$l10n.gentext">
+      <xsl:value-of select="$l10n.gentext/@text"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:message>
+        <xsl:text>No "</xsl:text>
+        <xsl:value-of select="$lang"/>
+        <xsl:text>" localization of "</xsl:text>
+        <xsl:value-of select="$key"/>
+        <xsl:text>" exists</xsl:text>
+        <xsl:choose>
+          <xsl:when test="$lang = 'en'">
+             <xsl:text>.</xsl:text>
+          </xsl:when>
+          <xsl:otherwise>
+             <xsl:text>; using "en".</xsl:text>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:message>
+      <xsl:value-of select="($localization
+			    //l:l10n[@language='en']
+			    /l:gentext[@key=$key])[1]/@text"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
 <doc:template name="gentext" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Returns the generated text associated with a particular key
 in a particular language (locale)</refpurpose>
@@ -270,37 +354,7 @@ context node.</para>
 <xsl:template name="gentext">
   <xsl:param name="key" select="local-name(.)"/>
   <xsl:param name="lang" select="f:l10n-language(.)"/>
-
-  <xsl:variable name="l10n.gentext"
-		select="($localization
-			 //l:l10n[@language=$lang]
-			 /l:gentext[@key=$key])[1]"/>
-
-  <xsl:choose>
-    <xsl:when test="$l10n.gentext">
-      <xsl:value-of select="$l10n.gentext/@text"/>
-    </xsl:when>
-    <xsl:otherwise>
-      <xsl:message>
-        <xsl:text>No "</xsl:text>
-        <xsl:value-of select="$lang"/>
-        <xsl:text>" localization of "</xsl:text>
-        <xsl:value-of select="$key"/>
-        <xsl:text>" exists</xsl:text>
-        <xsl:choose>
-          <xsl:when test="$lang = 'en'">
-             <xsl:text>.</xsl:text>
-          </xsl:when>
-          <xsl:otherwise>
-             <xsl:text>; using "en".</xsl:text>
-          </xsl:otherwise>
-        </xsl:choose>
-      </xsl:message>
-      <xsl:value-of select="($localization
-			    //l:l10n[@language='en']
-			    /l:gentext[@key=$key])[1]/@text"/>
-    </xsl:otherwise>
-  </xsl:choose>
+  <xsl:value-of select="f:gentext(.,$key,$lang)"/>
 </xsl:template>
 
 <xsl:template name="gentext-space">

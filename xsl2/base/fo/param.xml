@@ -193,4 +193,16 @@ It's just a bogus mess right now.</para>
 
 <refentry xml:id="component.title.properties"/>
 
+<refentry xml:id="use.role.as.xrefstyle"/>
+<refentry xml:id="insert.link.page.number"/>
+<refentry xml:id="ulink.footnotes"/>
+<refentry xml:id="ulink.hyphenate"/>
+<refentry xml:id="ulink.hyphenate.chars"/>
+<refentry xml:id="ulink.show"/>
+
+<refentry xml:id="xref.properties"/>
+<refentry xml:id="footnote.properties"/>
+<refentry xml:id="footnote.mark.properties"/>
+<refentry xml:id="footnote.font.size"/>
+
 </article>

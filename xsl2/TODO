@@ -3,3 +3,9 @@ requests, see the following:
 
   http://sourceforge.net/tracker/?atid=373750&group_id=21935&func=browse
   http://sourceforge.net/tracker/?atid=516914&group_id=21935&func=browse
+
+Norm's notes to himself:
+
+- Consider making <index/> contextual, so an index in a part, for example,
+  can index just that part.
+

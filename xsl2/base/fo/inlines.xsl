@@ -71,49 +71,48 @@ context item.</para>
       <xsl:when test="$node/@xlink:href
 		      and (not($node/@xlink:type)
 		           or $node/@xlink:type='simple')">
-	<fo:a>
-	  <xsl:if test="$node/@xlink.title">
-	    <xsl:attribute name="title" select="$node/@xlink:title"/>
-	  </xsl:if>
 
-	  <xsl:attribute name="href">
-	    <xsl:choose>
-	      <!-- if the href starts with # and does not contain an "(" -->
-              <!-- or if the href starts with #xpointer(id(, it's just an ID -->
-              <xsl:when test="starts-with($node/@xlink:href,'#')
-                              and (not(contains($node/@xlink:href,'&#40;'))
-                              or starts-with($node/@xlink:href,
-			                     '#xpointer&#40;id&#40;'))">
-                <xsl:variable name="idref">
-                  <xsl:call-template name="xpointer-idref">
-                    <xsl:with-param name="xpointer" select="$node/@xlink:href"/>
-                  </xsl:call-template>
-                </xsl:variable>
+	<xsl:variable name="url">
+	  <xsl:choose>
+	    <!-- if the href starts with # and does not contain an "(" -->
+	    <!-- or if the href starts with #xpointer(id(, it's just an ID -->
+	    <xsl:when test="starts-with($node/@xlink:href,'#')
+                            and (not(contains($node/@xlink:href,'&#40;'))
+                            or starts-with($node/@xlink:href,
+			                   '#xpointer&#40;id&#40;'))">
+	      <xsl:variable name="idref">
+		<xsl:call-template name="xpointer-idref">
+		  <xsl:with-param name="xpointer" select="$node/@xlink:href"/>
+		</xsl:call-template>
+	      </xsl:variable>
 
-                <xsl:variable name="target" select="key('id',$idref)[1]"/>
+	      <xsl:variable name="target" select="key('id',$idref)[1]"/>
 
-                <xsl:choose>
-                  <xsl:when test="not($target)">
-		    <xsl:message>
-		      <xsl:text>XLink to nonexistent id: </xsl:text>
-		      <xsl:value-of select="$idref"/>
-		    </xsl:message>
-                    <xsl:text>???</xsl:text>
-                  </xsl:when>
-		  <xsl:otherwise>
-		    <!--FIXME:fo-->
-		  </xsl:otherwise>
-		</xsl:choose>
-              </xsl:when>
+	      <xsl:choose>
+		<xsl:when test="not($target)">
+		  <xsl:message>
+		    <xsl:text>XLink to nonexistent id: </xsl:text>
+		    <xsl:value-of select="$idref"/>
+		  </xsl:message>
+		  <xsl:text>???</xsl:text>
+		</xsl:when>
+		<xsl:otherwise>
+		  <!--FIXME:fo-->
+		</xsl:otherwise>
+	      </xsl:choose>
+	    </xsl:when>
 
-              <!-- otherwise it's a URI -->
-              <xsl:otherwise>
-		<xsl:value-of select="$node/@xlink:href"/>
-              </xsl:otherwise>
-            </xsl:choose>
-          </xsl:attribute>
-          <xsl:copy-of select="$content"/>
-        </fo:a>
+	    <!-- otherwise it's a URI -->
+	    <xsl:otherwise>
+	      <xsl:value-of select="$node/@xlink:href"/>
+	    </xsl:otherwise>
+	  </xsl:choose>
+	</xsl:variable>
+
+	<fo:basic-link xsl:use-attribute-sets="xref.properties"
+		       external-destination="url({$url})">
+	  <xsl:copy-of select="$content"/>
+	</fo:basic-link>
       </xsl:when>
       <xsl:otherwise>
         <xsl:copy-of select="$content"/>
@@ -123,6 +122,7 @@ context item.</para>
 
   <xsl:copy-of select="$link"/>
 
+  <!-- FIXME
   <xsl:variable name="inline" select="."/>
   <xsl:variable name="id" select="@xml:id"/>
 
@@ -150,6 +150,7 @@ context item.</para>
       <xsl:apply-templates select="." mode="m:annotation"/>
     </fo:block>
   </xsl:for-each>
+   -->
 </xsl:template>
 
 <!-- ============================================================ -->

@@ -1162,4 +1162,72 @@ not have an ID, make this parameter zero. It defaults to 1.</para>
   </xsl:if>
 </xsl:template>
 
+<!-- ====================================================================== -->
+
+<doc:template name="t:check-id-unique" xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Warn users about references to non-unique IDs</refpurpose>
+<refdescription id="check.id.unique-desc">
+<para>If passed an ID in <varname>linkend</varname>,
+<function>t:check-id-unique</function> prints
+a warning message to the user if either the ID does not exist or
+the ID is not unique.</para>
+</refdescription>
+</doc:template>
+
+<xsl:template name="t:check-id-unique">
+  <xsl:param name="linkend"/>
+
+  <xsl:if test="$linkend != ''">
+    <xsl:variable name="targets" select="key('id',$linkend)"/>
+
+    <xsl:if test="not($targets)">
+      <xsl:message>
+	<xsl:text>Error: no ID for constraint linkend: </xsl:text>
+        <xsl:value-of select="$linkend"/>
+        <xsl:text>.</xsl:text>
+      </xsl:message>
+    </xsl:if>
+
+    <xsl:if test="count($targets) &gt; 1">
+      <xsl:message>
+        <xsl:text>Warning: multiple "IDs" for constraint linkend: </xsl:text>
+	<xsl:value-of select="$linkend"/>
+	<xsl:text>.</xsl:text>
+      </xsl:message>
+    </xsl:if>
+  </xsl:if>
+</xsl:template>
+
+<doc:template name="t:check-idref-targets" xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Warn users about incorrectly typed references</refpurpose>
+<refdescription id="check.idref.targets-desc">
+<para>If passed an ID in <varname>linkend</varname>,
+<function>t:check-idref-targets</function> makes sure that the element
+pointed to by the link is one of the elements listed in
+<varname>element-list</varname> and warns the user otherwise.</para>
+<para>The <varname>element-list</varname> is a list of QNames.</para>
+</refdescription>
+</doc:template>
+
+<xsl:template name="t:check-idref-targets">
+  <xsl:param name="linkend"/>
+  <xsl:param name="element-list" as="xs:QName*"/>
+
+  <xsl:if test="$linkend != ''">
+    <xsl:variable name="targets" select="key('id',$linkend)"/>
+
+    <xsl:if test="$targets
+		  and empty(index-of($element-list,node-name($targets[1])))">
+      <xsl:message>
+	<xsl:text>Error: linkend (</xsl:text>
+	<xsl:value-of select="$linkend"/>
+	<xsl:text>) points to "</xsl:text>
+	<xsl:value-of select="local-name($targets[1])"/>
+	<xsl:text>" not (one of): </xsl:text>
+	<xsl:value-of select="$element-list" separator=", "/>
+      </xsl:message>
+    </xsl:if>
+  </xsl:if>
+</xsl:template>
+
 </xsl:stylesheet>
