@@ -795,7 +795,7 @@
       <xsl:otherwise>
         <!-- * ulink.show is non-zero, but ulink.footnote is not; that -->
         <!-- * means we display the URL inline -->
-	<fo:inline hyphenate="false">
+	<fo:inline hyphenate="false" font-style="normal">
 	  <!-- * put square brackets around the URL -->
 	  <xsl:text> [</xsl:text>
 	  <fo:basic-link external-destination="url({$url})">
