@@ -1983,24 +1983,16 @@ context node.</para>
 
   <xsl:choose>
     <xsl:when test="$bibliography.numbered != 0">
-      <xsl:text>[</xsl:text>
       <xsl:apply-templates select="$node" mode="mp:biblioentry-label-count"/>
-      <xsl:text>] </xsl:text>
     </xsl:when>
     <xsl:when test="node-name($node/child::*[1]) = xs:QName('db:abbrev')">
-      <xsl:text>[</xsl:text>
       <xsl:apply-templates select="$node/db:abbrev[1]"/>
-      <xsl:text>] </xsl:text>
     </xsl:when>
     <xsl:when test="$node/@xreflabel">
-      <xsl:text>[</xsl:text>
       <xsl:value-of select="$node/@xreflabel"/>
-      <xsl:text>] </xsl:text>
     </xsl:when>
     <xsl:when test="$node/@id or $node/@xml:id">
-      <xsl:text>[</xsl:text>
       <xsl:value-of select="($node/@id|$node/@xml:id)[1]"/>
-      <xsl:text>] </xsl:text>
     </xsl:when>
     <xsl:otherwise><!-- nop --></xsl:otherwise>
   </xsl:choose>
