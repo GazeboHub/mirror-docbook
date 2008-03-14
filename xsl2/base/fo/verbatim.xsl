@@ -30,6 +30,8 @@
   <xsl:attribute name="white-space-treatment">preserve</xsl:attribute>
   <xsl:attribute name="linefeed-treatment">preserve</xsl:attribute>
   <xsl:attribute name="text-align">start</xsl:attribute>
+  <xsl:attribute name="keep-with-next.within-column">always</xsl:attribute>
+  <xsl:attribute name="keep-with-previous.within-column">always</xsl:attribute>
 </xsl:attribute-set>
 
 <xsl:attribute-set name="monospace.properties">
