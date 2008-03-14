@@ -36,9 +36,7 @@
   <xsl:include href="sections.xsl"/>
   <xsl:include href="biblio.xsl"/>
   <xsl:include href="pi.xsl"/>
-<!--
   <xsl:include href="info.xsl"/>
--->
   <xsl:include href="glossary.xsl"/>
 <!--
   <xsl:include href="table.xsl"/>
@@ -69,7 +67,7 @@
   <xsl:include href="chunker.xsl"/>
 -->
 
-<xsl:output method="xml" encoding="utf-8" indent="yes"/>
+<xsl:output method="xml" encoding="utf-8" indent="no"/>
 
 <xsl:param name="stylesheet.result.type" select="'fo'"/>
 
