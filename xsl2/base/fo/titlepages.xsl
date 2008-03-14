@@ -353,8 +353,7 @@ for the title page.</para>
 		     |db:index/db:info/db:title"
 	      mode="m:titlepage-mode"
 	      priority="100">
-  <fo:block font-size="24.8832pt"
-	    xsl:use-attribute-sets="component.title.properties">
+  <fo:block xsl:use-attribute-sets="component.title.properties">
     <xsl:apply-templates select="../.." mode="m:object-title-markup">
       <xsl:with-param name="allow-anchors" select="1"/>
     </xsl:apply-templates>
@@ -364,8 +363,7 @@ for the title page.</para>
 <xsl:template match="db:article/db:appendix/db:info/db:title"
 	      mode="m:titlepage-mode"
 	      priority="110">
-  <fo:block font-size="20.736pt"
-	    xsl:use-attribute-sets="section.title.properties">
+  <fo:block xsl:use-attribute-sets="section.title.level1.properties">
     <xsl:apply-templates select="../.." mode="m:object-title-markup">
       <xsl:with-param name="allow-anchors" select="1"/>
     </xsl:apply-templates>
@@ -490,15 +488,6 @@ for the title page.</para>
 	      priority="100">
   <xsl:variable name="level" select="f:section-level(../..)"/>
   <fo:block font-weight="bold" keep-with-next.within-column="always">
-    <xsl:attribute name="font-size">
-      <xsl:choose>
-	<xsl:when test="$level = 4">10pt</xsl:when>
-	<xsl:when test="$level = 3">12pt</xsl:when>
-	<xsl:when test="$level = 2">14.4pt</xsl:when>
-	<xsl:when test="$level = 1">17.28pt</xsl:when>
-	<xsl:otherwise>10pt</xsl:otherwise>
-      </xsl:choose>
-    </xsl:attribute>
     <xsl:next-match/>
   </fo:block>
 </xsl:template>
