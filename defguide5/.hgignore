@@ -9,11 +9,13 @@ syntax: glob
 *.gz
 *.jar
 *.mo
+*.orig
 *.py[co]
 *.rpm
 *.tbz
 *.tgz
-*.tmp*.rar
+*.tmp
+*.rar
 *.zip
 .svn
 .bzr
