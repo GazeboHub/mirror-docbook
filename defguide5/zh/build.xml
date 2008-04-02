@@ -156,8 +156,10 @@ Dependency:
         <copy todir="build/defguide5/images">
             <fileset dir="${docbook5.xsl}/images" includes="**/*.png"/>
         </copy>
-        <copy todir="build/defguide5/figures">
-            <fileset dir="../en/figures" includes="*.eps,*.gif,*.png"/>
+        <copy todir="build/defguide5">
+            <fileset dir="../en/figures"/>
+            <fileset dir="../en/graphics"/>
+            <fileset dir="../en/examples"/>
         </copy>
 
         <filter token="docbook5.xsl.url" value="${docbook5.xsl.url}"/>
@@ -195,8 +197,10 @@ Dependency:
         <copy todir="build/chm/htmlhelp/images">
             <fileset dir="${docbook5.xsl}/images" includes="**/*.png"/>
         </copy>
-        <copy todir="build/chm/htmlhelp/figures">
-            <fileset dir="../en/figures" includes="*.eps,*.gif,*.png"/>
+        <copy todir="build/chm/htmlhelp">
+            <fileset dir="../en/figures"/>
+            <fileset dir="../en/graphics"/>
+            <fileset dir="../en/examples"/>
         </copy>
 
         <!--Must use GB18030 encoding and xsltproc for chm format !-->
@@ -237,8 +241,10 @@ Dependency:
         <copy todir="build/pdf/images">
             <fileset dir="${docbook5.xsl}/images" includes="**/*.png"/>
         </copy>
-        <copy todir="build/pdf/figures">
-            <fileset dir="../en/figures" includes="*.eps,*.gif,*.png"/>
+        <copy todir="build/pdf">
+            <fileset dir="../en/figures"/>
+            <fileset dir="../en/graphics"/>
+            <fileset dir="../en/examples"/>
         </copy>
 
         <copy todir="build/pdf">
