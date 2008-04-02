@@ -72,7 +72,7 @@ Status:
             <condition>
                 <not><available file="build.properties"/></not>
             </condition>
-            Please create your build.properties from build.tmpl.properties !
+            Please create your build.properties from build.properties.tmpl !
         </fail>
 
         <fail>
