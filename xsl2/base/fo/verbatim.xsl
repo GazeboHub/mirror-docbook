@@ -93,22 +93,26 @@
   </xsl:choose>
 </xsl:template>
 
-<xsl:template match="db:literallayout"
+<xsl:template match="db:literallayout|db:address"
 	      mode="m:verbatim">
+  <xsl:param name="suppress-numbers" select="'0'"/>
+  <xsl:variable name="id" select="f:node-id(.)"/>
 
-  <div class="{local-name(.)}">
-    <xsl:call-template name="id"/>
-    <xsl:apply-templates mode="mp:literallayout"/>
-  </div>
-</xsl:template>
-
-<xsl:template match="db:address"
-	      mode="m:verbatim">
-
-  <div class="{local-name(.)}">
-    <xsl:call-template name="id"/>
-    <xsl:apply-templates mode="mp:literallayout"/>
-  </div>
+  <xsl:choose>
+    <xsl:when test="$shade.verbatim != 0">
+      <fo:block id="{$id}"
+		xsl:use-attribute-sets="verbatim.properties
+					shade.verbatim.style">
+	<xsl:apply-templates mode="m:verbatim"/>
+      </fo:block>
+    </xsl:when>
+    <xsl:otherwise>
+      <fo:block id="{$id}"
+                xsl:use-attribute-sets="verbatim.properties">
+	<xsl:apply-templates mode="m:verbatim"/>
+      </fo:block>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <!--

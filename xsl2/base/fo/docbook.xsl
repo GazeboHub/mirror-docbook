@@ -38,9 +38,7 @@
   <xsl:include href="pi.xsl"/>
   <xsl:include href="info.xsl"/>
   <xsl:include href="glossary.xsl"/>
-<!--
   <xsl:include href="table.xsl"/>
--->
   <xsl:include href="lists.xsl"/>
 <!--
   <xsl:include href="task.xsl"/>

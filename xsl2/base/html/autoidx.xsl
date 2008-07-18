@@ -117,13 +117,15 @@
         <xsl:value-of select="f:group-label($group-index, $lang)"/>
       </h3>
       <dl>
-        <xsl:apply-templates select="$nodes" mode="m:index-primary">
-          <xsl:sort select="&primary;" lang="{$lang}"/>
-          <xsl:with-param name="scope" select="$scope"/>
-          <xsl:with-param name="role" select="$role"/>
-          <xsl:with-param name="type" select="$type"/>
-	  <xsl:with-param name="lang" select="$lang"/>
-        </xsl:apply-templates>
+	<xsl:for-each-group select="$nodes" group-by="&primary;">
+	  <xsl:sort select="&primary;" lang="{$lang}"/>
+	  <xsl:apply-templates select="current-group()[1]" mode="m:index-primary">
+	    <xsl:with-param name="scope" select="$scope"/>
+	    <xsl:with-param name="role" select="$role"/>
+	    <xsl:with-param name="type" select="$type"/>
+	    <xsl:with-param name="lang" select="$lang"/>
+	  </xsl:apply-templates>
+	</xsl:for-each-group>
       </dl>
     </div>
   </xsl:if>
@@ -335,23 +337,11 @@
       </xsl:call-template>
     </xsl:when>
     <xsl:otherwise>
-      <a>
-        <xsl:variable name="title">
-          <xsl:choose>
-            <xsl:when test="&section;/db:titleabbrev and $index.prefer.titleabbrev != 0">
-              <xsl:apply-templates select="&section;" mode="m:titleabbrev-markup"/>
-            </xsl:when>
-            <xsl:otherwise>
-              <xsl:apply-templates select="&section;" mode="m:title-markup"/>
-            </xsl:otherwise>
-          </xsl:choose>
-        </xsl:variable>
-
-        <xsl:attribute name="href">
-	  <xsl:value-of select="f:href(/,&section;)"/>
-        </xsl:attribute>
-
-        <xsl:value-of select="$title"/> <!-- text only -->
+      <xsl:variable name="tobject"
+		    select="ancestor::*[db:info/db:title][1]"/>
+      <!-- FIXME: what about titleabbrev? -->
+      <a title="{$tobject/db:info/db:title}" href="{f:href(/,.)}">
+	<xsl:value-of select="position()"/>
       </a>
 
       <xsl:if test="key('endofrange', @xml:id)[&scope;]">
