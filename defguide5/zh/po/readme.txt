@@ -10,7 +10,7 @@ Resource
 Update
 ------
     #msgmerge --no-wrap --sort-by-file --update zh_CN.po defguide5.pot
-    #msgmerge --width=96 -o zh_CN_new.po zh_CN.po defguide5.pot
+    #msgmerge --width=80 --sort-by-file -o zh_CN_new.po zh_CN.po defguide5.pot
 
     msgmerge --update zh_CN.po defguide5.pot
     msgmerge --update zh_CN.po subversion.pot
@@ -27,22 +27,16 @@ Check
 
 Format
 ------
-    msgmerge --no-wrap -o zh_CN_new.po zh_CN.po defguide5.pot
+    msgcat --width=80 --sort-by-file -o zh_CN_new.po zh_CN.po
     mv -f zh_CN_new.po zh_CN.po
 
-    msgmerge --no-wrap -o zh_CN_new.po zh_CN.po defguide.pot
-    mv -f zh_CN_new.po zh_CN.po
-
-    msgmerge --sort-by-file --no-wrap -o zh_CN_new.po zh_CN.po subversion.pot
-    mv -f zh_CN_new.po zh_CN.po
-
-    msgmerge --no-wrap -o Tortoise_zh_CN_new.po Tortoise_zh_CN.po Tortoise.pot
+    msgcat --width=80 --sort-by-file -o Tortoise_zh_CN_new.po Tortoise_zh_CN.po
     mv -f Tortoise_zh_CN_new.po Tortoise_zh_CN.po
 
-    msgmerge --no-wrap -o TortoiseSVN_zh_CN_new.po TortoiseSVN_zh_CN.po TortoiseSVN.pot
+    msgcat --width=80 --sort-by-file -o TortoiseSVN_zh_CN_new.po TortoiseSVN_zh_CN.po
     mv -f TortoiseSVN_zh_CN_new.po TortoiseSVN_zh_CN.po
 
-    msgmerge --no-wrap -o TortoiseMerge_zh_CN_new.po TortoiseMerge_zh_CN.po TortoiseMerge.pot
+    msgcat --width=80 --sort-by-file -o TortoiseMerge_zh_CN_new.po TortoiseMerge_zh_CN.po
     mv -f TortoiseMerge_zh_CN_new.po TortoiseMerge_zh_CN.po
 
 
