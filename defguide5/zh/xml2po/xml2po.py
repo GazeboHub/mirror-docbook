@@ -83,7 +83,7 @@ class MessageOutput:
             if self.output_msgstr:
                 self.translations.append(t)
                 return
-            
+
             if self.do_translations or (not t in self.messages):
                 self.messages.append(t)
                 if spacepreserve:
@@ -129,12 +129,12 @@ msgstr ""
             nt = 0
             nr = 0
             for reference in self.linenos[k]:
-                if nr < 3:
+                if nr < 4:
                     references += "%s:%d " % (reference[0], reference[2])
                     nr += 1
-                if(reference[1] not in tags): 
+                if(reference[1] not in tags):
                     tags.append(reference[1])
-                    if nt < 3:
+                    if nt < 4:
                         tagstr += "(" + str(reference[1]) + "), "
                         nt += 1
             out.write("#.%s\n" % (tagstr[0 : len(tagstr) - 2]))
@@ -726,8 +726,8 @@ import getopt, fileinput
 
 def usage (with_help = False):
         print >> sys.stderr, "Usage:  %s [OPTIONS] [XMLFILE]..." % (sys.argv[0])
-	if (with_help):
-        	print >> sys.stderr, """
+    if (with_help):
+            print >> sys.stderr, """
 OPTIONS may be some of:
     -a    --automatic-tags     Automatically decides if tags are to be considered
                                  "final" or not
@@ -801,7 +801,7 @@ for opt, arg in opts:
         print VERSION
         sys.exit(0)
     elif opt in ('-h', '--help'):
-    	usage(True)
+        usage(True)
 
 # Treat remaining arguments as XML files
 while args:
