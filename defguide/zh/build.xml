@@ -1,40 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Usage:
-    Building 'The Definitive Guide' - all(html, chm & pdf)
-        $ ant
-
     Building 'The Definitive Guide' - html
         $ ant html
-
-    Building 'The Definitive Guide' - chm
-        $ ant chm
 
     Building 'The Definitive Guide' - pdf
         $ ant pdf
 
 Dependency:
+    *) jdk 1.6
     *) ant 1.7
-    *) libxml2 2.6.30
-    *) xsltproc 1.1.22
-    *) jdk 1.6(1.4.2 & 1.5 has a unfixed java.lang.StackOverflowError for PDF!)
-    *) saxon 6.5
-    *) DocBook v5 XSL
+    *) saxon 6.5.5
     *) RELAX NG Support(jing)
-    *) python 2.4
-    *) python-libxml2 2.6.27
-    *) gettext 0.16
+    *) DocBook v5 XSL
+    *) libxml2 2.6.32
+    *) xsltproc 1.1.24
+    *) python 2.5
+    *) python-libxml2 2.6.32
+    *) gettext 0.17
     *) fop 0.20.5, pdf only
     *) chinese font files, pdf only
     *) For windows user, you can download gettext & xsltproc binary from:
         http://i18n-zh.googlecode.com/files/gettext_0.16.1_xsltproc_1.1.22.tar.bz2
-
-Status:
-                    PDF     HTML    CHM
-    JavaSE 1.4      FAIL    OK      FAIL
-    JavaSE 1.5      FAIL    OK      FAIL
-    JavaSE 1.6      OK      OK      FAIL
-    xsltproc        X       OK      OK
 -->
 <project name="defguide" default="html">
 
@@ -50,6 +37,7 @@ Status:
         <fileset dir="${usr.share.java}">
             <include name="**/*.jar"/>
         </fileset>
+        <pathelement location="${usr.share.java}"/>
     </path>
 
     <taskdef name="jing" classname="com.thaiopensource.relaxng.util.JingTask"/>
@@ -60,9 +48,6 @@ Status:
 
     <target name="clean" description="Clean the build directory">
         <delete dir="build"/>
-        <delete file="stylesheets/chm-import.xsl"/>
-        <delete file="stylesheets/fo-import.xsl"/>
-        <delete file="stylesheets/html-import.xsl"/>
     </target>
 
     <target name="init" description="Check runtime configuration">
@@ -97,10 +82,9 @@ Status:
                 file="build/defguide-zh_CN.xml"/-->
     </target>
 
-    <target name="all" description="Generate document - pdf,html,chm">
-        <antcall target="pdf"/>
+    <target name="all" description="Generate document - pdf,html">
         <antcall target="html"/>
-        <antcall target="chm"/>
+        <antcall target="pdf"/>
     </target>
 
     <target name="pot.init">
@@ -120,7 +104,8 @@ Status:
 
         <echo message="Merging zh_CN.po ..."/>
         <exec dir="${basedir}" executable="msgmerge">
-            <arg value="--no-wrap"/>
+            <arg value="--sort-by-file"/>
+            <arg value="--width=80"/>
             <arg value="-o"/>
             <arg value="po/zh_CN.po.new"/>
             <arg value="po/zh_CN.po"/>
@@ -160,88 +145,42 @@ Status:
     </target>
 
     <target name="html.init">
-        <uptodate property="html.isUpToDate" targetfile="build/defguide/.done">
+        <uptodate property="html.isUpToDate" targetfile="build/html/.done">
             <srcfiles dir="source" includes="defguide.xml"/>
             <srcfiles dir="po" includes="zh_CN.po"/>
         </uptodate>
     </target>
 
     <target name="html" depends="init,translate,html.init" unless="html.isUpToDate" description="Generate document - html">
-        <copy todir="build/defguide/images">
+        <copy todir="build/html/images">
             <fileset dir="${docbook5.xsl}/images" includes="**/*.png"/>
         </copy>
-        <copy todir="build/defguide/figures">
-            <fileset dir="source/figures" includes="*.eps, *.png"/>
+        <copy todir="build/html/figures">
+            <fileset dir="source/figures"/>
         </copy>
         <copy todir="build/examples">
             <fileset dir="../en/examples"/>
         </copy>
-
-        <filter token="docbook5.xsl.url" value="${docbook5.xsl.url}"/>
-        <copy file="stylesheets/html-import.tmpl.xsl" tofile="stylesheets/html-import.xsl" filtering="true" overwrite="true"/>
 
         <echo message="Making html ..."/>
-        <!--java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="512m" failonerror="true" dir="${basedir}/build/defguide">
+        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="1024m" failonerror="true" dir="${basedir}/build/html">
             <classpath refid="lib.classpath"/>
+            <arg value="-x"/>
+            <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
+            <arg value="-y"/>
+            <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
+            <arg value="-r"/>
+            <arg value="org.apache.xml.resolver.tools.CatalogResolver"/>
+            <arg value="-u"/>
             <arg value="../defguide-zh_CN.xml"/>
-            <arg value="../../stylesheets/zh_CN/html.xsl"/>
-        </java-->
-        <exec dir="${basedir}/build/defguide" executable="xsltproc" failonerror="true">
-            <arg value="--nonet"/>
+            <arg value="../../stylesheets/html.xsl"/>
+        </java>
+        <!--exec dir="${basedir}/build/defguide" executable="xsltproc" failonerror="true">
+            <arg value="- -nonet"/>
             <arg value="../../stylesheets/zh_CN/html.xsl"/>
             <arg value="../defguide-zh_CN.xml"/>
-        </exec>
-        <touch file="build/defguide/.done"/>
-    </target>
-
-    <target name="chm.init">
-        <uptodate property="chm.isUpToDate" targetfile="build/defguide-zh_CN.chm">
-            <srcfiles dir="source" includes="defguide.xml"/>
-            <srcfiles dir="po" includes="zh_CN.po"/>
-        </uptodate>
-    </target>
-
-    <target name="chm" depends="init,translate,chm.init" unless="chm.isUpToDate" description="Generate document - chm">
-        <fail>
-            <condition>
-                <not><os family="windows"/></not>
-            </condition>
-            This target only work on windows !
-        </fail>
-
-        <filter token="docbook5.xsl.url" value="${docbook5.xsl.url}"/>
-        <copy file="stylesheets/chm-import.tmpl.xsl" tofile="stylesheets/chm-import.xsl" filtering="true" overwrite="true"/>
-
-        <copy todir="build/chm/htmlhelp/images">
-            <fileset dir="${docbook5.xsl}/images" includes="**/*.png"/>
-        </copy>
-        <copy todir="build/chm/htmlhelp/figures">
-            <fileset dir="source/figures" includes="*.eps, *.png"/>
-        </copy>
-        <copy todir="build/examples">
-            <fileset dir="../en/examples"/>
-        </copy>
-
-        <!--Must use GB18030 encoding and xsltproc for chm format !-->
-        <echo message="Making chm ..."/>
-        <exec dir="${basedir}/build" executable="xmllint">
-          <arg value="--encode"/>
-          <arg value="GB18030"/>
-          <arg value="--format"/>
-          <arg value="--output"/>
-          <arg value="defguide-zh_CN-GB1803.xml"/>
-          <arg value="defguide-zh_CN.xml"/>
-        </exec>
-        <exec dir="${basedir}/build/chm" executable="xsltproc" failonerror="true">
-            <arg value="../../stylesheets/zh_CN/chm.xsl"/>
-            <arg value="../defguide-zh_CN-GB1803.xml"/>
-        </exec>
-        <exec dir="${basedir}/build/chm" executable="hhc" failonerror="true">
-            <arg value="htmlhelp.hhp"/>
-        </exec>
-
-        <move file="build/chm/defguide-zh_CN.chm" tofile="build/defguide-zh_CN.chm"/>
-        <delete dir="build/chm"/>
+        </exec-->
+        <touch file="build/html/.done"/>
     </target>
 
     <target name="pdf.init">
@@ -253,18 +192,27 @@ Status:
 
     <target name="pdf" depends="init,translate,pdf.init" unless="pdf.isUpToDate" description="Generate document - pdf">
         <!--Java SE 1.4 & 1.5: Unfixed java.lang.StackOverflowError !-->
-        <fail>
-            <condition>
-                <not><equals arg1="${ant.java.version}" arg2="1.6"/></not>
-            </condition>
-            Must use Java SE 6 !
+        <condition property="jdk_ok">
+            <scriptcondition language="beanshell" value="true">
+            <![CDATA[
+                jvm = System.getProperty("java.specification.version");
+                if(jvm.compareTo("1.6") < 0)
+                    self.setValue(false);
+            ]]>
+            </scriptcondition>
+        </condition>
+        <fail unless="jdk_ok">
+            Must use Java SE 6+ !
         </fail>
 
         <copy todir="build/pdf/images">
             <fileset dir="${docbook5.xsl}/images" includes="**/*.png"/>
         </copy>
         <copy todir="build/pdf/figures">
-            <fileset dir="source/figures" includes="*.eps, *.png"/>
+            <fileset dir="source/figures" />
+        </copy>
+        <copy todir="build/examples">
+            <fileset dir="../en/examples"/>
         </copy>
         <copy todir="build/pdf">
             <fileset dir="${fonts.dir}">
@@ -276,31 +224,31 @@ Status:
             </fileset>
         </copy>
 
-        <filter token="docbook5.xsl.url" value="${docbook5.xsl.url}"/>
-        <copy file="stylesheets/fo-import.tmpl.xsl" tofile="stylesheets/fo-import.xsl" filtering="true" overwrite="true"/>
-
-        <copy todir="build/examples">
-            <fileset dir="../en/examples"/>
-        </copy>
-
         <echo message="Making fo ..."/>
-        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="1024m" failonerror="true" dir="${basedir}">
+        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="1024m" failonerror="true" dir="${basedir}/build/pdf">
             <classpath refid="lib.classpath"/>
+            <arg value="-x"/>
+            <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
+            <arg value="-y"/>
+            <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
+            <arg value="-r"/>
+            <arg value="org.apache.xml.resolver.tools.CatalogResolver"/>
+            <arg value="-u"/>
             <arg value="-o"/>
-            <arg value="build/pdf/defguide-zh_CN.fo"/>
-            <arg value="build/defguide-zh_CN.xml"/>
-            <arg value="stylesheets/zh_CN/fo.xsl"/>
+            <arg value="../defguide-zh_CN.fo"/>
+            <arg value="../defguide-zh_CN.xml"/>
+            <arg value="../../stylesheets/fo.xsl"/>
         </java>
 
         <echo message="Making pdf ..."/>
-        <java classname="${fop.class}" fork="true" maxmemory="512m" failonerror="true" dir="${basedir}/build/pdf">
+        <java classname="${fop.class}" fork="true" maxmemory="1024m" failonerror="true" dir="${basedir}/build/pdf">
             <classpath refid="lib.classpath"/>
             <arg value="-c"/>
             <arg value="userconfig.xml"/>
-            <arg value="defguide-zh_CN.fo"/>
+            <arg value="../defguide-zh_CN.fo"/>
             <arg value="../defguide-zh_CN.pdf"/>
         </java>
-        <delete dir="build/pdf"/>
+        <!--delete dir="build/pdf"/-->
     </target>
 
 </project>
