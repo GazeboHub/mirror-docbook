@@ -104,6 +104,7 @@ Dependency:
 
         <echo message="Merging zh_CN.po ..."/>
         <exec dir="${basedir}" executable="msgmerge">
+            <arg value="--no-fuzzy-matching"/>
             <arg value="--sort-by-file"/>
             <arg value="--width=80"/>
             <arg value="-o"/>
