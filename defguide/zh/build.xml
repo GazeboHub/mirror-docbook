@@ -13,15 +13,11 @@ Dependency:
     *) saxon 6.5.5
     *) RELAX NG Support(jing)
     *) DocBook v5 XSL
-    *) libxml2 2.6.32
-    *) xsltproc 1.1.24
     *) python 2.5
     *) python-libxml2 2.6.32
     *) gettext 0.17
-    *) fop 0.20.5, pdf only
+    *) fop trunk 2008-09-25(r698670), pdf only
     *) chinese font files, pdf only
-    *) For windows user, you can download gettext & xsltproc binary from:
-        http://i18n-zh.googlecode.com/files/gettext_0.16.1_xsltproc_1.1.22.tar.bz2
 -->
 <project name="defguide" default="html">
 
@@ -93,6 +89,7 @@ Dependency:
         </uptodate>
     </target>
 
+    <!-- Total time: 31 minutes 58 seconds -->
     <target name="pot" depends="pot.init" unless="pot.isUpToDate" description="Generate document - pot">
         <echo message="Making defguide.pot ..."/>
         <exec dir="${basedir}/po" executable="python" failonerror="true">
@@ -122,6 +119,7 @@ Dependency:
         </uptodate>
     </target>
 
+    <!-- Total time: 32 minutes 58 seconds -->
     <target name="translate" depends="translate.init" unless="translate.isUpToDate" description="Translate document">
         <mkdir dir="build"/>
         <echo message="Translating defguide-zh_CN.xml ..."/>
@@ -152,6 +150,7 @@ Dependency:
         </uptodate>
     </target>
 
+    <!-- Total time: 31 minutes 38 seconds -->
     <target name="html" depends="init,translate,html.init" unless="html.isUpToDate" description="Generate document - html">
         <copy todir="build/html/images">
             <fileset dir="${docbook5.xsl}/images" includes="**/*.png"/>
@@ -172,7 +171,6 @@ Dependency:
             <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
             <arg value="-r"/>
             <arg value="org.apache.xml.resolver.tools.CatalogResolver"/>
-            <arg value="-u"/>
             <arg value="../defguide-zh_CN.xml"/>
             <arg value="../../stylesheets/html.xsl"/>
         </java>
@@ -191,6 +189,7 @@ Dependency:
         </uptodate>
     </target>
 
+    <!-- Total time: 16 minutes 14 seconds -->
     <target name="pdf" depends="init,translate,pdf.init" unless="pdf.isUpToDate" description="Generate document - pdf">
         <!--Java SE 1.4 & 1.5: Unfixed java.lang.StackOverflowError !-->
         <condition property="jdk_ok">
@@ -209,7 +208,7 @@ Dependency:
         <copy todir="build/pdf/images">
             <fileset dir="${docbook5.xsl}/images" includes="**/*.png"/>
         </copy>
-        <copy todir="build/pdf/figures">
+        <copy todir="build/figures">
             <fileset dir="source/figures" />
         </copy>
         <copy todir="build/examples">
@@ -234,7 +233,6 @@ Dependency:
             <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
             <arg value="-r"/>
             <arg value="org.apache.xml.resolver.tools.CatalogResolver"/>
-            <arg value="-u"/>
             <arg value="-o"/>
             <arg value="../defguide-zh_CN.fo"/>
             <arg value="../defguide-zh_CN.xml"/>
