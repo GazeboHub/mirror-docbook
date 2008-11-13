@@ -1,0 +1,585 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 8.2.7" />
+<title>翻译 DocBook4 文档的方法</title>
+<style type="text/css">
+/* Debug borders */
+p, li, dt, dd, div, pre, h1, h2, h3, h4, h5, h6 {
+/*
+  border: 1px solid red;
+*/
+}
+
+body {
+  margin: 1em 5% 1em 5%;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+a:visited {
+  color: fuchsia;
+}
+
+em {
+  font-style: italic;
+  color: navy;
+}
+
+strong {
+  font-weight: bold;
+  color: #083194;
+}
+
+tt {
+  color: navy;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #527bbd;
+  font-family: sans-serif;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+h1, h2, h3 {
+  border-bottom: 2px solid silver;
+}
+h2 {
+  padding-top: 0.5em;
+}
+h3 {
+  float: left;
+}
+h3 + * {
+  clear: left;
+}
+
+div.sectionbody {
+  font-family: serif;
+  margin-left: 0;
+}
+
+hr {
+  border: 1px solid silver;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ul, ol, li > p {
+  margin-top: 0;
+}
+
+pre {
+  padding: 0;
+  margin: 0;
+}
+
+span#author {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+span#email {
+}
+span#revision {
+  font-family: sans-serif;
+}
+
+div#footer {
+  font-family: sans-serif;
+  font-size: small;
+  border-top: 2px solid silver;
+  padding-top: 0.5em;
+  margin-top: 4.0em;
+}
+div#footer-text {
+  float: left;
+  padding-bottom: 0.5em;
+}
+div#footer-badges {
+  float: right;
+  padding-bottom: 0.5em;
+}
+
+div#preamble,
+div.tableblock, div.imageblock, div.exampleblock, div.verseblock,
+div.quoteblock, div.literalblock, div.listingblock, div.sidebarblock,
+div.admonitionblock {
+  margin-right: 10%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+div.admonitionblock {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+div.content { /* Block element content. */
+  padding: 0;
+}
+
+/* Block element titles. */
+div.title, caption.title {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+}
+div.title + * {
+  margin-top: 0;
+}
+
+td div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content + div.title {
+  margin-top: 0.0em;
+}
+
+div.sidebarblock > div.content {
+  background: #ffffee;
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+
+div.listingblock {
+  margin-right: 0%;
+}
+div.listingblock > div.content {
+  border: 1px solid silver;
+  background: #f4f4f4;
+  padding: 0.5em;
+}
+
+div.quoteblock {
+  padding-left: 2.0em;
+}
+div.quoteblock > div.attribution {
+  padding-top: 0.5em;
+  text-align: right;
+}
+
+div.verseblock {
+  padding-left: 2.0em;
+}
+div.verseblock > div.content {
+  white-space: pre;
+}
+div.verseblock > div.attribution {
+  padding-top: 0.75em;
+  text-align: left;
+}
+/* DEPRECATED: Pre version 8.2.7 verse style literal block. */
+div.verseblock + div.attribution {
+  text-align: left;
+}
+
+div.admonitionblock .icon {
+  vertical-align: top;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #527bbd;
+  padding-right: 0.5em;
+}
+div.admonitionblock td.content {
+  padding-left: 0.5em;
+  border-left: 2px solid silver;
+}
+
+div.exampleblock > div.content {
+  border-left: 2px solid silver;
+  padding: 0.5em;
+}
+
+div.imageblock div.content { padding-left: 0; }
+div.imageblock img { border: 1px solid silver; }
+span.image img { border-style: none; }
+
+dl {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+dt {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-style: normal;
+  color: navy;
+}
+dd > *:first-child {
+  margin-top: 0.1em;
+}
+
+ul, ol {
+    list-style-position: outside;
+}
+div.olist > ol {
+  list-style-type: decimal;
+}
+div.olist2 > ol {
+  list-style-type: lower-alpha;
+}
+
+div.compact ul, div.compact ol,
+div.compact p, div.compact p,
+div.compact div, div.compact div {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+div.tableblock > table {
+  border: 3px solid #527bbd;
+}
+thead {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+tfoot {
+  font-weight: bold;
+}
+td > div.verse {
+  white-space: pre;
+}
+p.table {
+  margin-top: 0;
+}
+
+
+div.hdlist {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+div.hdlist tr {
+  padding-bottom: 15px;
+}
+dt.hdlist1.strong, td.hdlist1.strong {
+  font-weight: bold;
+}
+td.hdlist1 {
+  vertical-align: top;
+  font-style: normal;
+  padding-right: 0.8em;
+  color: navy;
+}
+td.hdlist2 {
+  vertical-align: top;
+}
+div.hdlist.compact tr {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+@media print {
+  div#footer-badges { display: none; }
+}
+
+div#toctitle {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1.0em;
+  margin-bottom: 0.1em;
+}
+
+div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.toclevel2 {
+  margin-left: 2em;
+  font-size: 0.9em;
+}
+div.toclevel3 {
+  margin-left: 4em;
+  font-size: 0.9em;
+}
+div.toclevel4 {
+  margin-left: 6em;
+  font-size: 0.9em;
+}
+/* Workarounds for IE6's broken and incomplete CSS2. */
+
+div.sidebar-content {
+  background: #ffffee;
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+div.sidebar-title, div.image-title {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 0.0em;
+  margin-bottom: 0.5em;
+}
+
+div.listingblock div.content {
+  border: 1px solid silver;
+  background: #f4f4f4;
+  padding: 0.5em;
+}
+
+div.quoteblock-attribution {
+  padding-top: 0.5em;
+  text-align: right;
+}
+
+div.verseblock-content {
+  white-space: pre;
+}
+div.verseblock-attribution {
+  padding-top: 0.75em;
+  text-align: left;
+}
+
+div.exampleblock-content {
+  border-left: 2px solid silver;
+  padding-left: 0.5em;
+}
+
+/* IE6 sets dynamically generated links as visited. */
+div#toc a:visited { color: blue; }
+
+/* Because IE6 child selector is broken. */
+div.olist2 ol {
+  list-style-type: lower-alpha;
+}
+div.olist2 div.olist ol {
+  list-style-type: decimal;
+}
+</style>
+<script type="text/javascript">
+/*<![CDATA[*/
+window.onload = function(){generateToc(3)}
+/* Author: Mihai Bazon, September 2002
+ * http://students.infoiasi.ro/~mishoo
+ *
+ * Table Of Content generator
+ * Version: 0.4
+ *
+ * Feel free to use this script under the terms of the GNU General Public
+ * License, as long as you do not remove or alter this notice.
+ */
+
+ /* modified by Troy D. Hanson, September 2006. License: GPL */
+ /* modified by Stuart Rackham, October 2006. License: GPL */
+
+function getText(el) {
+  var text = "";
+  for (var i = el.firstChild; i != null; i = i.nextSibling) {
+    if (i.nodeType == 3 /* Node.TEXT_NODE */) // IE doesn't speak constants.
+      text += i.data;
+    else if (i.firstChild != null)
+      text += getText(i);
+  }
+  return text;
+}
+
+function TocEntry(el, text, toclevel) {
+  this.element = el;
+  this.text = text;
+  this.toclevel = toclevel;
+}
+
+function tocEntries(el, toclevels) {
+  var result = new Array;
+  var re = new RegExp('[hH]([2-'+(toclevels+1)+'])');
+  // Function that scans the DOM tree for header elements (the DOM2
+  // nodeIterator API would be a better technique but not supported by all
+  // browsers).
+  var iterate = function (el) {
+    for (var i = el.firstChild; i != null; i = i.nextSibling) {
+      if (i.nodeType == 1 /* Node.ELEMENT_NODE */) {
+        var mo = re.exec(i.tagName)
+        if (mo)
+          result[result.length] = new TocEntry(i, getText(i), mo[1]-1);
+        iterate(i);
+      }
+    }
+  }
+  iterate(el);
+  return result;
+}
+
+// This function does the work. toclevels = 1..4.
+function generateToc(toclevels) {
+  var toc = document.getElementById("toc");
+  var entries = tocEntries(document.getElementsByTagName("body")[0], toclevels);
+  for (var i = 0; i < entries.length; ++i) {
+    var entry = entries[i];
+    if (entry.element.id == "")
+      entry.element.id = "toc" + i;
+    var a = document.createElement("a");
+    a.href = "#" + entry.element.id;
+    a.appendChild(document.createTextNode(entry.text));
+    var div = document.createElement("div");
+    div.appendChild(a);
+    div.className = "toclevel" + entry.toclevel;
+    toc.appendChild(div);
+  }
+  if (entries.length == 0)
+    document.getElementById("header").removeChild(toc);
+}
+/*]]>*/
+</script>
+</head>
+<body>
+<div id="header">
+<h1>翻译 DocBook4 文档的方法</h1>
+<div id="toc">
+  <div id="toctitle">Table of Contents</div>
+  <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
+</div>
+</div>
+<h2 id="_docbook">1. docbook 的开发资源</h2>
+<div class="sectionbody">
+<div class="ulist"><ul>
+<li>
+<p>
+<a href="http://docbook.org/">http://docbook.org/</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://docbook.sourceforge.net/">http://docbook.sourceforge.net/</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://sourceforge.net/projects/docbook/">http://sourceforge.net/projects/docbook/</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://docbook.svn.sourceforge.net/svnroot/docbook/">DocBook SVN</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</a>
+</p>
+</li>
+</ul></div>
+</div>
+<h2 id="_defguide">2. defguide 的翻译方法</h2>
+<div class="sectionbody">
+<h3 id="_po">2.1. 更新 po 文件</h3><div style="clear:left"></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>    msgmerge --width=80 --sort-by-file -o zh_CN_new.po zh_CN.po defguide.pot
+    mv -f zh_CN_new.po zh_CN.po</tt></pre>
+</div></div>
+<h3 id="_po_2">2.2. 翻译 po 文件</h3><div style="clear:left"></div>
+<div class="para"><p>使用 poedit 或 KBabel，甚至普通文本编辑器。</p></div>
+<h3 id="_">2.3. 查阅上下文</h3><div style="clear:left"></div>
+<div class="para"><p>如果翻译时不能确定语义环境，那么请运行 ant pot，则对应的条目有其在
+source/defguide.xml 中的位置，例如：</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>    #. (para)
+    #: ../source/defguide.xml:8360
+    msgid "Add new elements"
+    msgstr "增加元素"</tt></pre>
+</div></div>
+<div class="literalblock">
+<div class="content">
+<pre><tt>打开 source/defguide.xml，定位到 8360 行即可。</tt></pre>
+</div></div>
+<h3 id="_po_3">2.4. 格式化 po 文件</h3><div style="clear:left"></div>
+<div class="para"><p>统一采用 80 列宽，按照文件位置排序的 gettext 翻译格式，请在提交之前先格式化
+po 文件。</p></div>
+<div class="para"><p>gettext 的 Windows 平台二进制包可以从 i18n-zh 下载。</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>    msgcat --width=80 --sort-by-file -o zh_CN_new.po zh_CN.po
+    mv -f zh_CN_new.po zh_CN.po</tt></pre>
+</div></div>
+<h3 id="_po_4">2.5. 合并 po 文件</h3><div style="clear:left"></div>
+<div class="para"><p>如果合作者有约定协作翻译的方法，请略过本节。</p></div>
+<div class="para"><p>下面的例子是以他人的翻译(zh_CN-other.po)为准合并。如果需要以自己的翻译(zh_CN.po)
+为准合并，交换下述命令中的 zh_CN.po 和 zh_CN-other.po 即可。</p></div>
+<h4 id="_subversion_po_merge_py">2.5.1. 使用 Subversion 的 po-merge.py</h4>
+<div class="listingblock">
+<div class="content">
+<pre><tt>    subversion/tools/dev/po-merge.py zh_CN.po &lt; zh_CN-other.po</tt></pre>
+</div></div>
+<h4 id="_translation_tookit_pomerge">2.5.2. 使用 translation tookit 的 pomerge</h4>
+<div class="listingblock">
+<div class="content">
+<pre><tt>    pomerge -i zh_CN-other.po -o zh_CN-new.po -t zh_CN.po</tt></pre>
+</div></div>
+<h3 id="_po_5">2.6. 检查 po 文件</h3><div style="clear:left"></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>    msgfmt --statistics -c zh_CN.po</tt></pre>
+</div></div>
+</div>
+<h2 id="_defguide_2">3. defguide 的构建方法</h2>
+<div class="sectionbody">
+<h3 id="__2">3.1. 安装软件包</h3><div style="clear:left"></div>
+<div class="para"><p>在 Debian 系统中，安装方法如下：</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>% sudo apt-get install openjdk-6-jdk ant ant-optional libbsf-java bsh \
+    libsaxon-java docbook-xml docbook-xsl python-libxml2 gettext</tt></pre>
+</div></div>
+<div class="para"><p>对于其它系统，请参考 Debian 系统的安装方法。</p></div>
+<div class="para"><p>此外，还需要手工安装 docbook 5.0 和 RELAX NG Support(jing)，配置 ant
+支持 BeanShell 脚本。如果要生成 pdf，还需要安装中文字体，以及 fop trunk
+2008-09-25(r698670) 以上版本。</p></div>
+<h3 id="__3">3.2. 配置构建环境</h3><div style="clear:left"></div>
+<div class="para"><p>请根据 build.properties.tmpl 创建 build.properties：</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>docbook5.home ----- docbook 5.0 安装的根目录
+docbook5.xsl ------ docbook-xsl 安装的根目录(e.g. /usr/share/xml/docbook/stylesheet/nwalsh)
+usr.share.java ---- 存放共享 jar 文件的目录(e.g. /usr/share/java)</tt></pre>
+</div></div>
+<h3 id="_xml_catalog">3.3. 配置 xml catalog</h3><div style="clear:left"></div>
+<div class="para"><p>在 Debian 系统中，直接复制 CatalogManager.properties.tmpl
+为 CatalogManager.properties，放到 ${usr.share.java} 目录即可。
+对于其它系统，可能需要少许修改。</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>catalogs=/etc/xml/catalog
+relative-catalogs=true
+static-catalog=yes
+catalog-class-name=org.apache.xml.resolver.Resolver
+verbosity=1</tt></pre>
+</div></div>
+<h3 id="__4">3.4. 配置构建环境</h3><div style="clear:left"></div>
+<div class="para"><p>然后就可以构建 html 或 pdf 输出格式的文档了：</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>Building 'The Definitive Guide' - html
+    $ ant html
+
+Building 'The Definitive Guide' - pdf
+    $ ant pdf</tt></pre>
+</div></div>
+<div class="para"><p>请付出耐心，因为在 Intel Xeon 2.00GHz 的主机上，完全构建 html
+需要近 100 分钟，完全构建 pdf 需要近 80 分钟。</p></div>
+<div class="para"><p>祝你好运！</p></div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2008-11-13 14:58:20 中国标准时间
+</div>
+</div>
+</body>
+</html>

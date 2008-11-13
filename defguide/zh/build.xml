@@ -10,6 +10,8 @@ Usage:
 Dependency:
     *) jdk 1.6
     *) ant 1.7
+    *) bsf 2.4
+    *) beanshell 2.0b4
     *) saxon 6.5.5
     *) RELAX NG Support(jing)
     *) DocBook v5 XSL
