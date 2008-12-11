@@ -24,9 +24,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: defguide 0.0.22\n"
+"Project-Id-Version: defguide 2.0.17\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-11-09 15:50 +0000\n"
+"POT-Creation-Date: 2008-12-11 09:27 +0000\n"
 "PO-Revision-Date: 2008-11-10 11:43+0800\n"
 "Last-Translator: Dongsheng Song <dongsheng.song@gmail.com>\n"
 "Language-Team: zh <i18n-zh@googlegroups.com >\n"
