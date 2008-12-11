@@ -77,12 +77,13 @@ Dependency:
         <jing rngfile="${docbook5.home}/rng/docbook.rng" file="source/defguide.xml"/>
         <!--Don't uncomment this unless xml2po support namespace !-->
         <!--jing rngfile="${docbook5.home}/rng/docbook.rng"
-                file="build/defguide-zh_CN.xml"/-->
+                file="build/defguide-zh.xml"/-->
     </target>
 
     <target name="all" description="Generate document - pdf,html">
-        <antcall target="html"/>
+        <antcall target="defguide"/>
         <antcall target="pdf"/>
+        <antcall target="html"/>
     </target>
 
     <target name="pot.init">
@@ -92,7 +93,7 @@ Dependency:
     </target>
 
     <!-- Total time: 31 minutes 58 seconds -->
-    <target name="pot" depends="pot.init" unless="pot.isUpToDate" description="Generate document - pot">
+    <target name="pot" depends="pot.init" unless="pot.isUpToDate" description="Generate PO Template file">
         <echo message="Making defguide.pot ..."/>
         <exec dir="${basedir}/po" executable="python" failonerror="true">
             <arg value="../xml2po/xml2po.py"/>
@@ -101,61 +102,61 @@ Dependency:
             <arg value="../source/defguide.xml"/>
         </exec>
 
-        <echo message="Merging zh_CN.po ..."/>
+        <echo message="Merging zh.po ..."/>
         <exec dir="${basedir}" executable="msgmerge">
             <arg value="--no-fuzzy-matching"/>
             <arg value="--sort-by-file"/>
             <arg value="--width=80"/>
             <arg value="-o"/>
-            <arg value="po/zh_CN.po.new"/>
-            <arg value="po/zh_CN.po"/>
+            <arg value="po/zh.po.new"/>
+            <arg value="po/zh.po"/>
             <arg value="po/defguide.pot"/>
         </exec>
-        <move file="po/zh_CN.po.new" tofile="po/zh_CN.po"/>
+        <move file="po/zh.po.new" tofile="po/zh.po"/>
     </target>
 
     <target name="translate.init" depends="pot">
-        <uptodate property="translate.isUpToDate" targetfile="build/defguide-zh_CN.xml">
+        <uptodate property="translate.isUpToDate" targetfile="build/defguide-zh.xml">
             <srcfiles dir="source" includes="defguide.xml"/>
-            <srcfiles dir="po" includes="zh_CN.po"/>
+            <srcfiles dir="po" includes="zh.po"/>
         </uptodate>
     </target>
 
     <!-- Total time: 32 minutes 58 seconds -->
     <target name="translate" depends="translate.init" unless="translate.isUpToDate" description="Translate document">
         <mkdir dir="build"/>
-        <echo message="Translating defguide-zh_CN.xml ..."/>
+        <echo message="Translating defguide-zh.xml ..."/>
         <exec dir="${basedir}/xml2po" executable="python" failonerror="true">
             <arg value="xml2po.py"/>
             <arg value="-l"/>
             <arg value="zh-cn"/>
             <arg value="-p"/>
-            <arg value="../po/zh_CN.po"/>
+            <arg value="../po/zh.po"/>
             <arg value="-o"/>
-            <arg value="../build/defguide-zh_CN-tmp.xml"/>
+            <arg value="../build/defguide-zh-tmp.xml"/>
             <arg value="../source/defguide.xml"/>
         </exec>
         <exec dir="${basedir}/build" executable="xmllint">
             <arg value="--format"/>
             <arg value="--output"/>
-            <arg value="defguide-zh_CN.xml"/>
-            <arg value="defguide-zh_CN-tmp.xml"/>
+            <arg value="defguide-zh.xml"/>
+            <arg value="defguide-zh-tmp.xml"/>
         </exec>
-    <delete file="xml2po/.xml2po.mo"/>
-        <delete file="build/defguide-zh_CN-tmp.xml"/>
+        <delete file="xml2po/.xml2po.mo"/>
+        <delete file="build/defguide-zh-tmp.xml"/>
     </target>
 
     <target name="html.init">
         <uptodate property="html.isUpToDate" targetfile="build/html/.done">
             <srcfiles dir="source" includes="defguide.xml"/>
-            <srcfiles dir="po" includes="zh_CN.po"/>
+            <srcfiles dir="po" includes="zh.po"/>
         </uptodate>
     </target>
 
     <!-- Total time: 31 minutes 38 seconds -->
     <target name="html" depends="init,translate,html.init" unless="html.isUpToDate" description="Generate document - html">
         <copy todir="build/html/images">
-            <fileset dir="${docbook5.xsl}/images" includes="**/*.png"/>
+            <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
         </copy>
         <copy todir="build/html/figures">
             <fileset dir="source/figures"/>
@@ -166,6 +167,7 @@ Dependency:
 
         <echo message="Making html ..."/>
         <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="1024m" failonerror="true" dir="${basedir}/build/html">
+            <jvmarg value="-Xss512k"/>
             <classpath refid="lib.classpath"/>
             <arg value="-x"/>
             <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
@@ -173,21 +175,21 @@ Dependency:
             <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
             <arg value="-r"/>
             <arg value="org.apache.xml.resolver.tools.CatalogResolver"/>
-            <arg value="../defguide-zh_CN.xml"/>
-            <arg value="../../stylesheets/html.xsl"/>
+            <arg value="../defguide-zh.xml"/>
+            <arg value="../../stylesheets/zh/html.xsl"/>
         </java>
         <!--exec dir="${basedir}/build/defguide" executable="xsltproc" failonerror="true">
             <arg value="- -nonet"/>
-            <arg value="../../stylesheets/zh_CN/html.xsl"/>
-            <arg value="../defguide-zh_CN.xml"/>
+            <arg value="../../stylesheets/zh/html.xsl"/>
+            <arg value="../defguide-zh.xml"/>
         </exec-->
         <touch file="build/html/.done"/>
     </target>
 
     <target name="pdf.init">
-        <uptodate property="pdf.isUpToDate" targetfile="build/defguide-zh_CN.pdf">
+        <uptodate property="pdf.isUpToDate" targetfile="build/defguide-zh.pdf">
             <srcfiles dir="source" includes="defguide.xml"/>
-            <srcfiles dir="po" includes="zh_CN.po"/>
+            <srcfiles dir="po" includes="zh.po"/>
         </uptodate>
     </target>
 
@@ -208,7 +210,7 @@ Dependency:
         </fail>
 
         <copy todir="build/pdf/images">
-            <fileset dir="${docbook5.xsl}/images" includes="**/*.png"/>
+            <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
         </copy>
         <copy todir="build/figures">
             <fileset dir="source/figures" />
@@ -228,6 +230,7 @@ Dependency:
 
         <echo message="Making fo ..."/>
         <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="1024m" failonerror="true" dir="${basedir}/build/pdf">
+            <jvmarg value="-Xss512k"/>
             <classpath refid="lib.classpath"/>
             <arg value="-x"/>
             <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
@@ -236,9 +239,9 @@ Dependency:
             <arg value="-r"/>
             <arg value="org.apache.xml.resolver.tools.CatalogResolver"/>
             <arg value="-o"/>
-            <arg value="../defguide-zh_CN.fo"/>
-            <arg value="../defguide-zh_CN.xml"/>
-            <arg value="../../stylesheets/fo.xsl"/>
+            <arg value="../defguide-zh.fo"/>
+            <arg value="../defguide-zh.xml"/>
+            <arg value="../../stylesheets/zh/fo.xsl"/>
         </java>
 
         <echo message="Making pdf ..."/>
@@ -246,8 +249,66 @@ Dependency:
             <classpath refid="lib.classpath"/>
             <arg value="-c"/>
             <arg value="userconfig.xml"/>
-            <arg value="../defguide-zh_CN.fo"/>
-            <arg value="../defguide-zh_CN.pdf"/>
+            <arg value="../defguide-zh.fo"/>
+            <arg value="../defguide-zh.pdf"/>
+        </java>
+        <!--delete dir="build/pdf"/-->
+    </target>
+
+    <target name="defguide.init">
+        <uptodate property="defguide.isUpToDate" targetfile="build/defguide.pdf">
+            <srcfiles dir="source" includes="defguide.xml"/>
+        </uptodate>
+    </target>
+
+    <!-- Total time: ?? minutes ?? seconds -->
+    <target name="defguide" depends="init,defguide.init" unless="defguide.isUpToDate" description="Generate document - defguide(en)">
+        <!--Java SE 1.4 & 1.5: Unfixed java.lang.StackOverflowError !-->
+        <condition property="jdk_ok">
+            <scriptcondition language="beanshell" value="true">
+            <![CDATA[
+                jvm = System.getProperty("java.specification.version");
+                if(jvm.compareTo("1.6") < 0)
+                    self.setValue(false);
+            ]]>
+            </scriptcondition>
+        </condition>
+        <fail unless="jdk_ok">
+            Must use Java SE 6+ !
+        </fail>
+
+        <copy todir="build/pdf/images">
+            <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
+        </copy>
+        <copy todir="build/figures">
+            <fileset dir="source/figures" />
+        </copy>
+        <copy todir="build/examples">
+            <fileset dir="../en/examples"/>
+        </copy>
+        <copy file="source/defguide.xml" todir="build"/>
+
+        <echo message="Making fo ..."/>
+        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="1024m" failonerror="true" dir="${basedir}/build/pdf">
+            <jvmarg value="-Xss512k"/>
+            <classpath refid="lib.classpath"/>
+            <arg value="-x"/>
+            <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
+            <arg value="-y"/>
+            <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
+            <arg value="-r"/>
+            <arg value="org.apache.xml.resolver.tools.CatalogResolver"/>
+            <arg value="-o"/>
+            <arg value="../defguide.fo"/>
+            <arg value="../defguide.xml"/>
+            <arg value="../../stylesheets/fo.xsl"/>
+        </java>
+
+        <echo message="Making pdf ..."/>
+        <java classname="${fop.class}" fork="true" maxmemory="1024m" failonerror="true" dir="${basedir}/build/pdf">
+            <classpath refid="lib.classpath"/>
+            <arg value="../defguide.fo"/>
+            <arg value="../defguide.pdf"/>
         </java>
         <!--delete dir="build/pdf"/-->
     </target>

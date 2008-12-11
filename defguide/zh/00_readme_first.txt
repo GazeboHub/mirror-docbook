@@ -2,7 +2,7 @@
 // asciidoc -a toc -a toclevels=3 -a numbered 00_readme_first.txt
 //
 
-= 翻译 DocBook4 文档的方法
+= 翻译 DocBook 文档的方法
 
 == docbook 的开发资源
  * http://docbook.org/
@@ -17,8 +17,8 @@
 
 === 更新 po 文件
 ----------------------------------------------------------------
-    msgmerge --width=80 --sort-by-file -o zh_CN_new.po zh_CN.po defguide.pot
-    mv -f zh_CN_new.po zh_CN.po
+    msgmerge --width=80 --sort-by-file -o zh_new.po zh.po defguide.pot
+    mv -f zh_new.po zh.po
 ----------------------------------------------------------------
 
 === 翻译 po 文件
@@ -44,29 +44,29 @@ po 文件。
 
 gettext 的 Windows 平台二进制包可以从 i18n-zh 下载。
 ----------------------------------------------------------------
-    msgcat --width=80 --sort-by-file -o zh_CN_new.po zh_CN.po
-    mv -f zh_CN_new.po zh_CN.po
+    msgcat --width=80 --sort-by-file -o zh_new.po zh.po
+    mv -f zh_new.po zh.po
 ----------------------------------------------------------------
 
 === 合并 po 文件
 如果合作者有约定协作翻译的方法，请略过本节。
 
-下面的例子是以他人的翻译(zh_CN-other.po)为准合并。如果需要以自己的翻译(zh_CN.po)
-为准合并，交换下述命令中的 zh_CN.po 和 zh_CN-other.po 即可。
+下面的例子是以他人的翻译(zh-other.po)为准合并。如果需要以自己的翻译(zh.po)
+为准合并，交换下述命令中的 zh.po 和 zh-other.po 即可。
 
 ==== 使用 Subversion 的 po-merge.py
 ----------------------------------------------------------------
-    subversion/tools/dev/po-merge.py zh_CN.po < zh_CN-other.po
+    subversion/tools/dev/po-merge.py zh.po < zh-other.po
 ----------------------------------------------------------------
 
 ==== 使用 translation tookit 的 pomerge
 ----------------------------------------------------------------
-    pomerge -i zh_CN-other.po -o zh_CN-new.po -t zh_CN.po
+    pomerge -i zh-other.po -o zh-new.po -t zh.po
 ----------------------------------------------------------------
 
 === 检查 po 文件
 ----------------------------------------------------------------
-    msgfmt --statistics -c zh_CN.po
+    msgfmt --statistics -c zh.po
 ----------------------------------------------------------------
 
 == defguide 的构建方法
@@ -86,7 +86,7 @@ gettext 的 Windows 平台二进制包可以从 i18n-zh 下载。
 请根据 build.properties.tmpl 创建 build.properties：
 ----------------------------------------------------------------
 docbook5.home ----- docbook 5.0 安装的根目录
-docbook5.xsl ------ docbook-xsl 安装的根目录(e.g. /usr/share/xml/docbook/stylesheet/nwalsh)
+docbook.xsl ------- docbook-xsl 安装的根目录(e.g. /usr/share/xml/docbook/stylesheet/nwalsh)
 usr.share.java ---- 存放共享 jar 文件的目录(e.g. /usr/share/java)
 ----------------------------------------------------------------
 

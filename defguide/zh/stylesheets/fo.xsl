@@ -3,7 +3,7 @@
 
   <xsl:import href="http://docbook.sourceforge.net/release/xsl/current/fo/docbook.xsl"/>
 
-  <xsl:param name="l10n.gentext.language" select="'zh_cn'"/>
+  <xsl:param name="l10n.gentext.language" select="'en'"/>
 
   <xsl:param name="draft.mode" select="no"/>
 
@@ -37,12 +37,12 @@
   <xsl:param name="symbol.font.family">Symbol,ZapfDingbats</xsl:param>
   -->
 
-  <!-- Chinese font related settings -->
-  <xsl:param name="body.font.family">zh_text</xsl:param>
-  <xsl:param name="dingbat.font.family">zh_text</xsl:param>
-  <xsl:param name="monospace.font.family">zh_verbatim</xsl:param>
-  <xsl:param name="sans.font.family">zh_title</xsl:param>
-  <xsl:param name="title.font.family">zh_title</xsl:param>
+  <!-- Page related Settings -->
+  <xsl:param name="page.margin.inner">1.5cm</xsl:param>
+  <xsl:param name="page.margin.outer">1.5cm</xsl:param>
+  <xsl:param name="title.margin.left">0pt</xsl:param>
+  <xsl:param name="body.start.indent">24pt</xsl:param>
+  <xsl:param name="body.end.indent">0pt</xsl:param>
 
   <!-- Prevent blank pages in output -->
   <xsl:template name="book.titlepage.before.verso">
