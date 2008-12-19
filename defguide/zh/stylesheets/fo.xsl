@@ -29,13 +29,19 @@
 
   <!-- English font related Settings -->
   <!--
+  <xsl:param name="title.font.family">sans-serif</xsl:param>
   <xsl:param name="body.font.family">serif</xsl:param>
+  <xsl:param name="sans.font.family">sans-serif</xsl:param>
   <xsl:param name="dingbat.font.family">serif</xsl:param>
   <xsl:param name="monospace.font.family">monospace</xsl:param>
-  <xsl:param name="sans.font.family">sans-serif</xsl:param>
-  <xsl:param name="title.font.family">sans-serif</xsl:param>
   <xsl:param name="symbol.font.family">Symbol,ZapfDingbats</xsl:param>
   -->
+  <xsl:param name="title.font.family">Arial</xsl:param>
+  <xsl:param name="body.font.family">Times New Roman</xsl:param>
+  <xsl:param name="sans.font.family">Arial</xsl:param>
+  <xsl:param name="dingbat.font.family">Times New Roman</xsl:param>
+  <xsl:param name="monospace.font.family">Courier New</xsl:param>
+  <xsl:param name="symbol.font.family">Wingdings,Symbol,ZapfDingbats</xsl:param>
 
   <!-- Page related Settings -->
   <xsl:param name="page.margin.inner">1.5cm</xsl:param>
