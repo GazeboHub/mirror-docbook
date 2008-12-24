@@ -88,14 +88,14 @@ Dependency:
         <antcall target="html"/>
     </target>
 
-    <target name="pot.init">
-        <uptodate property="pot.isUpToDate" targetfile="po/defguide.pot">
+    <target name="po.init">
+        <uptodate property="po.isUpToDate" targetfile="po/zh.po">
             <srcfiles dir="source" includes="defguide.xml"/>
         </uptodate>
     </target>
 
     <!-- Total time: 31 minutes 58 seconds -->
-    <target name="pot" depends="pot.init" unless="pot.isUpToDate" description="Generate PO Template file">
+    <target name="updatepo" depends="po.init" unless="po.isUpToDate" description="Update PO file">
         <echo message="Making defguide.pot ..."/>
         <exec dir="${basedir}/po" executable="python" failonerror="true">
             <arg value="../xml2po/xml2po.py"/>
@@ -116,7 +116,7 @@ Dependency:
         <move file="po/zh.po.new" tofile="po/zh.po"/>
     </target>
 
-    <target name="translate.init" depends="pot">
+    <target name="translate.init" depends="updatepo">
         <uptodate property="translate.isUpToDate" targetfile="build/defguide-zh.xml">
             <srcfiles dir="source" includes="defguide.xml"/>
             <srcfiles dir="po" includes="zh.po"/>

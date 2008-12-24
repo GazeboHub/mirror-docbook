@@ -77,15 +77,15 @@ Dependency:
         <ant dir="../en" target="xinclude"/>
     </target>
 
-    <target name="pot.init">
-        <uptodate property="pot.isUpToDate" targetfile="po/defguide5.pot">
+    <target name="po.init">
+        <uptodate property="po.isUpToDate" targetfile="po/zh.po">
             <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
             <srcfiles dir="../en/src" includes="*.xml"/>
             <srcfiles dir="../en/refpages" includes="**/*.xml" excludes="elements/build/*.xml"/>
         </uptodate>
     </target>
 
-    <target name="pot" depends="xinclude,pot.init" unless="pot.isUpToDate" description="Generate document - pot">
+    <target name="updatepo" depends="xinclude,po.init" unless="po.isUpToDate" description="Update PO file">
         <echo message="Making defguide5.pot ..."/>
         <exec dir="${basedir}/po" executable="python" failonerror="true">
             <arg value="../xml2po/xml2po.py"/>
@@ -106,8 +106,8 @@ Dependency:
         <move file="po/zh.po.new" tofile="po/zh.po"/>
     </target>
 
-    <target name="translate.init" depends="pot">
-        <uptodate property="translate.isUpToDate" targetfile="../en/build/defguide5-zh.xml">
+    <target name="translate.init" depends="updatepo">
+        <uptodate property="translate.isUpToDate" targetfile="build/defguide5-zh.xml">
             <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
             <srcfiles dir="../en/src" includes="*.xml"/>
             <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
@@ -125,17 +125,17 @@ Dependency:
             <arg value="-p"/>
             <arg value="../po/zh.po"/>
             <arg value="-o"/>
-            <arg value="../../en/build/defguide5-zh-tmp.xml"/>
+            <arg value="${basedir}/build/defguide5-zh-tmp.xml"/>
             <arg value="../../en/build/defguide5.xml"/>
         </exec>
-        <exec dir="../en/build" executable="xmllint">
+        <exec dir="build" executable="xmllint">
             <arg value="--output"/>
             <arg value="defguide5-zh.xml"/>
             <arg value="--format"/>
             <arg value="defguide5-zh-tmp.xml"/>
         </exec>
         <delete file="xml2po/.xml2po.mo"/>
-        <delete file="../en/build/defguide5-zh-tmp.xml"/>
+        <delete file="build/defguide5-zh-tmp.xml"/>
     </target>
 
     <target name="html.init">
@@ -150,7 +150,7 @@ Dependency:
 
     <target name="html" depends="translate,html.init" unless="html.isUpToDate" description="Generate document - html">
         <copy todir="build/defguide5/images">
-            <fileset dir="${docbook5.xsl}/images" includes="**/*.png"/>
+            <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
         </copy>
         <copy todir="build/defguide5">
             <fileset dir="../en/figures"/>
@@ -197,7 +197,7 @@ Dependency:
         </fail>
 
         <copy todir="build/chm/htmlhelp/images">
-            <fileset dir="${docbook5.xsl}/images" includes="**/*.png"/>
+            <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
         </copy>
         <copy todir="build/chm/htmlhelp">
             <fileset dir="../en/figures"/>
@@ -237,13 +237,17 @@ Dependency:
     </target>
 
     <target name="pdf" depends="translate,pdf.init" unless="pdf.isUpToDate"  description="Generate document - pdf">
-        <copy todir="build/pdf/images">
-            <fileset dir="${docbook5.xsl}/images" includes="**/*.png"/>
+        <copy todir="build/src/examples">
+          <fileset dir="../en/examples"/>
         </copy>
-        <copy todir="build/pdf">
+        <copy todir="build/pdf/images">
+            <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
+        </copy>
+        <copy todir="build/refpages/elements/build/figures">
             <fileset dir="../en/figures"/>
+        </copy>
+        <copy todir="build/refpages/graphics">
             <fileset dir="../en/graphics"/>
-            <fileset dir="../en/examples"/>
         </copy>
 
         <copy todir="build/pdf">
@@ -279,11 +283,11 @@ Dependency:
             <classpath refid="lib.classpath"/>
             <arg value="-c"/>
             <arg value="userconfig.xml"/>
-            <arg value="defguide5-zh.fo"/>
+            <arg value="../defguide5-zh.fo"/>
             <arg value="../defguide5-zh.pdf"/>
         </java>
 
-        <delete dir="build/pdf"/>
+        <!--delete dir="build/pdf"/-->
     </target>
 
 </project>
