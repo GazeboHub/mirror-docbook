@@ -3,12 +3,18 @@
                 xmlns:fm="http://freshmeat.net/projects/freshmeat-submit/"
                 version="1.0"
                 exclude-result-prefixes="fm">
-  <xsl:import href="chm-import.xsl"/>
+
+  <xsl:import href="http://docbook.sourceforge.net/release/xsl/current/htmlhelp/htmlhelp.xsl"/>
 
   <xsl:param name="l10n.gentext.language" select="'en'"/>
 
   <xsl:param name="htmlhelp.encoding" select="'UTF-8'"/>
   <xsl:param name="chunker.output.encoding" select="'UTF-8'"/>
+
+  <xsl:param name="saxon.character.representation" select="'native'"/>
+
+  <!--It maybe can prevent hhc crash.-->
+  <xsl:param name="suppress.navigation" select="0"/>
 
   <!--No adjustColumnWidths function available.-->
   <xsl:param name="use.extensions">0</xsl:param>

@@ -7,17 +7,17 @@
 # Please DO NOT translate CVS/SVN tags or '@@image' !!!
 #
 # Update to new pot:
-#    msgmerge --update zh_CN.po defguide5.pot
+#    msgmerge --update zh.po defguide5.pot
 # or
-#    msgmerge -o zh_CN_new.po zh_CN.po defguide5.pot
-#    mv -f zh_CN_new.po zh_CN.po
+#    msgmerge -o zh_new.po zh.po defguide5.pot
+#    mv -f zh_new.po zh.po
 #
 # Check translation:
-#    msgfmt --statistics -c -o zh_CN.mo zh_CN.po
+#    msgfmt --statistics -c -o zh.mo zh.po
 #
 # Please format your translation before commit:
-#    msgcat --width=80 --sort-by-file -o zh_CN_new.po zh_CN.po
-#    mv -f zh_CN_new.po zh_CN.po
+#    msgcat --width=80 --sort-by-file -o zh_new.po zh.po
+#    mv -f zh_new.po zh.po
 #
 # Dictionary:
 # subscript         下标

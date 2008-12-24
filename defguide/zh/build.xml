@@ -16,8 +16,8 @@ Dependency:
     *) RELAX NG Support(jing)
     *) DocBook v5 XSL
     *) python 2.5
-    *) python-libxml2 2.6.32 (Line number in the pot file is inaccurate if XML 
-            file larger than 65535 lines, See: 
+    *) python-libxml2 2.6.32 (Line number in the pot file is inaccurate if XML
+            file larger than 65535 lines, See:
             http://bugzilla.gnome.org/show_bug.cgi?id=325533)
     *) gettext 0.17
     *) fop trunk 2008-09-25(r698670), pdf only
@@ -106,7 +106,6 @@ Dependency:
 
         <echo message="Merging zh.po ..."/>
         <exec dir="${basedir}" executable="msgmerge">
-            <arg value="--no-fuzzy-matching"/>
             <arg value="--sort-by-file"/>
             <arg value="--width=80"/>
             <arg value="-o"/>
@@ -180,7 +179,7 @@ Dependency:
             <arg value="../defguide-zh.xml"/>
             <arg value="../../stylesheets/zh/html.xsl"/>
         </java>
-        <!--exec dir="${basedir}/build/defguide" executable="xsltproc" failonerror="true">
+        <!--exec dir="${basedir}/build/html" executable="xsltproc" failonerror="true">
             <arg value="- -nonet"/>
             <arg value="../../stylesheets/zh/html.xsl"/>
             <arg value="../defguide-zh.xml"/>

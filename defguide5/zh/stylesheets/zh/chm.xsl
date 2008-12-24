@@ -8,7 +8,7 @@
   <xsl:param name="htmlhelp.encoding" select="'GB18030'"/>
   <xsl:param name="chunker.output.encoding" select="'GB18030'"/>
 
-  <xsl:param name="htmlhelp.chm" select="'defguide5-zh_CN.chm'"/>
+  <xsl:param name="htmlhelp.chm" select="'defguide5-zh.chm'"/>
   <xsl:param name="htmlhelp.title">
     <xsl:text>DocBook 5.0 权威指南</xsl:text>
   </xsl:param>

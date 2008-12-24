@@ -11,6 +11,7 @@
         <fileset dir="${usr.share.java}">
             <include name="**/*.jar"/>
         </fileset>
+        <pathelement location="${usr.share.java}"/>
     </path>
 
     <target name="init-avail">

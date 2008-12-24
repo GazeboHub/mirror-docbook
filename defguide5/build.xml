@@ -4,34 +4,32 @@ Usage:
     Building 'The Definitive Guide (5.0)' - all
         $ ant
 
-    Building 'The Definitive Guide (5.0)' - en(html, chm & pdf)
+    Building 'The Definitive Guide (5.0)' - en(html & pdf)
         $ ant en
 
-    Building 'The Definitive Guide (5.0)' - zh(html, chm & pdf)
+    Building 'The Definitive Guide (5.0)' - zh(html & pdf)
         $ ant zh
 
 Dependency(en):
+    *) jdk 1.6
     *) ant 1.7
+    *) bsf 2.4
     *) beanshell 2.0b4
-    *) libxml2 2.6.30
-    *) xsltproc 1.1.22
-    *) jdk 1.4.2
-    *) saxon 6.5 & 8.9
-    *) DocBook v5 XSL
+    *) saxon 6.5 & 9.1
     *) RELAX NG Support(jing)
-    *) fop 0.20.5, pdf only
-    *) For windows user, you can download gettext & xsltproc binary from:
-        http://i18n-zh.googlecode.com/files/gettext_0.16.1_xsltproc_1.1.22.tar.bz2
+    *) DocBook XSL
+    *) xsltproc 1.1.24
+    *) python 2.5
+    *) python-libxml2 2.6.32
+    *) gettext 0.17
+    *) fop trunk 2008-10-27(r708012), pdf only
+    *) chinese font files, chinese pdf only
 
 Dependency(zh only):
     *) python 2.4
     *) python-libxml2 2.6.27
     *) gettext 0.16
     *) chinese font files, pdf only
-
-TODO:
-    *) Adjust XSL for output
-    *) ...
 -->
 <project default="all" name="defguide5">
 
