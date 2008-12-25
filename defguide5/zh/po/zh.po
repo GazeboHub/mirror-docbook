@@ -5,6 +5,7 @@
 # DorianDeng <doriandeng@gmail.com>, 2007
 #
 # Please DO NOT translate CVS/SVN tags or '@@image' !!!
+# Please DO NOT translate verbatim or no-changed string !!!
 #
 # Update to new pot:
 #    msgmerge --update zh.po defguide5.pot
@@ -28,7 +29,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: defguide5 0.0.25\n"
 "POT-Creation-Date: 2008-12-24 08:18 +0000\n"
-"PO-Revision-Date: 2008-12-25 14:09+0800\n"
+"PO-Revision-Date: 2008-12-25 22:05+0800\n"
 "Last-Translator: Dongsheng Song <dongsheng.song@gmail.com>\n"
 "Language-Team: zh <i18n-zh@googlegroups.com >\n"
 "MIME-Version: 1.0\n"
@@ -6393,11 +6394,13 @@ msgid ""
 "detail about available RELAX NG tools, see <link href=\"http://www.relax-ng."
 "org/\"/>."
 msgstr ""
+"有几个免费的 RELAX NG 验证器，包含 Jing 和 MSV。参见 <link href=\"http://www."
+"relax-ng.org/\"/>，以获取更多可用的 RELAX NG 工具信息。"
 
 #. (title)
 #: ../../en/build/defguide5.xml:3478
 msgid "ID/IDREF constraints and validation"
-msgstr ""
+msgstr "ID/IDREF 约束和验证"
 
 #. (para)
 #: ../../en/build/defguide5.xml:3479
@@ -6515,6 +6518,7 @@ msgid ""
 "If you use the <option>-warnings</option> option, you'll see the ID/IDREF "
 "warnings."
 msgstr ""
+"如果你使用选项 <option>-warnings</option>，将会看到关于 ID/IDREF 的警告。"
 
 #. (title)
 #: ../../en/build/defguide5.xml:3527
@@ -6957,7 +6961,7 @@ msgstr ""
 #. (para)
 #: ../../en/build/defguide5.xml:3728
 msgid "Namespace selection in CSS is widely supported, but not yet a standard."
-msgstr ""
+msgstr "在 CSS 中选择名称空间得到了广泛的支持，但是尚没有成为标准。"
 
 #. (title)
 #: ../../en/build/defguide5.xml:3733
@@ -7062,7 +7066,7 @@ msgstr ""
 #. (title)
 #: ../../en/build/defguide5.xml:3783
 msgid "A Fragment of XQuery"
-msgstr ""
+msgstr "一个 XQuery 片段"
 
 #. (programlisting)
 #: ../../en/build/defguide5.xml:3785
@@ -7232,16 +7236,14 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:3874
-#, fuzzy
 msgid ""
 "That said, DocBook is designed to be easy to modify. This chapter assumes "
 "that you are comfortable with <acronym>XML</acronym> and RELAX NG grammar "
 "syntax, but the examples presented should be a good springboard to learning "
 "the syntax if it's not already familiar to you."
 msgstr ""
-"这就是说，DocBook 被设计为易于修改的。本章假设你熟知 <acronym>SGML</acronym>/"
-"<acronym>XML</acronym> <acronym>DTD</acronym> 语法，但是如果你不熟悉它们的话，"
-"这些例子将是学习语法的一个好起点。"
+"这就是说，DocBook 被设计为易于修改的。本章假设你熟知 <acronym>XML</acronym> "
+"和 RELAX NG 语法，但是如果你不熟悉它们的话，这些例子将是学习语法的一个好起点。"
 
 #. (title)
 #: ../../en/build/defguide5.xml:3883
@@ -7340,7 +7342,6 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:3920
-#, fuzzy
 msgid ""
 "<indexterm><primary>public identifiers</primary><secondary>DocBook</"
 "secondary><tertiary>altering</tertiary></indexterm>Although not directly "
@@ -7348,7 +7349,7 @@ msgid ""
 "DocBook V5.0 customization layer with a public identifier. A public "
 "identifier for DocBook V5.0 is:"
 msgstr ""
-"<indexterm><primary>public identifiers</primary><secondary>DocBook DTD</"
+"<indexterm><primary>public identifiers</primary><secondary>DocBook</"
 "secondary><tertiary>altering</tertiary></indexterm>尽管不直接被 RELAX NG 支"
 "持，在一些情况下，使用公共标识符来标识 DocBook V5.0 定制层仍旧有价值。DocBook "
 "V5.0 的公共标识符是："
@@ -7457,7 +7458,7 @@ msgstr ""
 #. (title)
 #: ../../en/build/defguide5.xml:3968
 msgid "RELAX NG Syntax"
-msgstr ""
+msgstr "RELAX NG 语法"
 
 #. (para)
 #: ../../en/build/defguide5.xml:3969
@@ -7890,15 +7891,11 @@ msgstr "删除元素"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4275
-#, fuzzy
 msgid ""
 "<indexterm><primary>elements</primary><secondary>removing</secondary></"
 "indexterm>DocBook has a large number of elements. In some authoring "
 "environments, it may be useful or necessary to remove some of these elements."
 msgstr ""
-"<indexterm><primary>元素</primary><secondary>描述，语义</secondary></"
-"indexterm><indexterm><primary>语义(元素)，描述</primary></indexterm>描述元素的"
-"语义。"
 
 #. (title)
 #: ../../en/build/defguide5.xml:4280 ../../en/build/defguide5.xml:4291
@@ -7952,7 +7949,6 @@ msgstr "删除计算机嵌入"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4318
-#, fuzzy
 msgid ""
 "<indexterm><primary>inline elements</primary><secondary>computer inlines, "
 "removing</secondary></indexterm><indexterm><primary>parameter entities</"
@@ -7963,11 +7959,6 @@ msgid ""
 "vocabulary. If you're working in another domain, many of them may be "
 "unnecessary."
 msgstr ""
-"<indexterm><primary>declarations</primary><secondary>XML</secondary></"
-"indexterm><indexterm><primary>XML</primary><secondary>declarations</"
-"secondary></indexterm><indexterm><primary>versions</primary><secondary>XML, "
-"identifying</secondary></indexterm><acronym>XML</acronym> 文档经常用 "
-"<acronym>XML</acronym> 声明开始，它标识了文档的特性，例如："
 
 #. (para)
 #: ../../en/build/defguide5.xml:4321
@@ -7992,7 +7983,6 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:4343
-#, fuzzy
 msgid ""
 "<indexterm><primary>synopses</primary><secondary>synopsis elements, removing</"
 "secondary></indexterm><indexterm><primary>funcsynopsis element</"
@@ -8003,10 +7993,6 @@ msgid ""
 "remove some larger technical structures (<tag>msgset</tag>, "
 "<tag>funcsynopsis</tag>)."
 msgstr ""
-"<indexterm><primary>嵌套</primary><secondary>节元素</secondary></"
-"indexterm><indexterm><primary>编号工，级别</primary></"
-"indexterm><indexterm><primary>元素</primary><secondary>节</secondary></"
-"indexterm>这里有几个 DocBook 中节元素的方言："
 
 #. (title)
 #: ../../en/build/defguide5.xml:4348
@@ -8033,17 +8019,12 @@ msgstr "删除节元素"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4364
-#, fuzzy
 msgid ""
 "<indexterm><primary>sections</primary><secondary>elements, removing</"
 "secondary></indexterm>Perhaps you want to restrict your authors to only three "
 "levels of sectioning. To do that, you must remove the <tag>sect4</tag> and "
 "<tag>sect5</tag> elements, as shown in <xref linkend=\"ex.remvsect4\"/>."
 msgstr ""
-"<indexterm><primary>节</primary><secondary>RefEntry, 级别</secondary></"
-"indexterm><indexterm><primary>RefSect1…RefSect3</primary></indexterm>在 "
-"<tag>refentry</tag> 中，只有三级节元素：<tag>refsect1</tag>、 <tag>refsect2</"
-"tag> 和 <tag>refsect3</tag>。"
 
 #. (title)
 #: ../../en/build/defguide5.xml:4368
@@ -8177,7 +8158,6 @@ msgstr "公共属性子集"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4459
-#, fuzzy
 msgid ""
 "<indexterm><primary>attributes</primary><secondary>common</"
 "secondary><tertiary>subsetting</tertiary></"
@@ -8187,24 +8167,20 @@ msgid ""
 "you're processing your documents, removing some of them can both simplify the "
 "authoring task and improve processing speed."
 msgstr ""
-"<indexterm><primary>属性</primary><secondary>普通</secondary></"
-"indexterm><indexterm><primary>公共属性</primary></indexterm>下列属性在所有元素"
-"中出现。它们在这里被一次性的概述，在许多元素的附加属性中出现。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4464
 msgid "Some obvious candidates are:"
-msgstr ""
+msgstr "一些明显的候选是："
 
 #. (term)
 #: ../../en/build/defguide5.xml:4467
-#, fuzzy
 msgid ""
 "Effectivity attributes (<tag class=\"attribute\">Arch </tag>, <tag class="
 "\"attribute\">OS</tag>,...)"
 msgstr ""
-"指定了二个对齐方式属性：<tag class=\"attribute\">align</tag> 和 <tag class="
-"\"attribute\">valign</tag> 。"
+"有效属性 (<tag class=\"attribute\">Arch </tag>, <tag class=\"attribute\">OS</"
+"tag>,...)"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4470
@@ -8222,14 +8198,11 @@ msgstr "lang"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4482
-#, fuzzy
 msgid ""
 "<indexterm><primary>lang attribute</primary><secondary>removing</secondary></"
 "indexterm>If you're not producing multilingual documents, you can remove <tag "
 "class=\"attribute\">lang</tag>."
 msgstr ""
-"<indexterm><primary>属性</primary><secondary>语义</secondary></indexterm>描述"
-"每个属性的语义。"
 
 #. (tag)
 #: ../../en/build/defguide5.xml:4488
@@ -8255,14 +8228,14 @@ msgstr "xreflabel"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4503
-#, fuzzy
 msgid ""
 "<indexterm><primary>xreflabel attribute</primary><secondary>removing</"
 "secondary></indexterm>If your processing system isn't using <tag class="
 "\"attribute\">xreflabel</tag>, it's a candidate as well."
 msgstr ""
-"<indexterm><primary>属性</primary><secondary>语义</secondary></indexterm>描述"
-"每个属性的语义。"
+"<indexterm><primary>xreflabel attribute</primary><secondary>removing</"
+"secondary></indexterm>如果你的处理系统不使用 <tag class=\"attribute"
+"\">xreflabel</tag>，那么它是一个较好的候选。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4508
@@ -8947,7 +8920,7 @@ msgstr "inlinemediaobject"
 #: ../../en/build/defguide5.xml:4955 ../../en/build/defguide5.xml:5351
 #: ../../en/build/defguide5.xml:5650 ../../en/build/defguide5.xml:6167
 msgid "Indexing inlines"
-msgstr ""
+msgstr "行内索引"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4959 ../../en/build/defguide5.xml:5027
@@ -12536,7 +12509,6 @@ msgstr "此空元素指向外部音频数据。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:11907
-#, fuzzy
 msgid ""
 "There are two ways to provide content for <tag>audiodata</tag>: <tag class="
 "\"attribute\">entityref</tag> or <tag class=\"attribute\">fileref</tag>. It "
@@ -12544,10 +12516,6 @@ msgid ""
 "provided, <tag class=\"attribute\">entityref</tag> will be used in favor of "
 "<tag class=\"attribute\">fileref</tag>."
 msgstr ""
-"有二种方法可以为 <tag>textdata</tag> 提供内容：<tag class=\"attribute"
-"\">entityref</tag> 或 <tag class=\"attribute\">fileref</tag>。最好只使用其中一"
-"种方法；无论如何，如果提供了多个源，<tag class=\"attribute\">entityref</tag> "
-"将被使用以支持 <tag class=\"attribute\">fileref</tag> 。"
 
 #. (term)
 #: ../../en/build/defguide5.xml:11919 ../../en/build/defguide5.xml:63393
@@ -13341,13 +13309,12 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:14558
-#, fuzzy
 msgid ""
 "Formatted as a displayed block. A <tag>bibliography</tag> in a <tag>book</"
 "tag> frequently causes a forced page break in print media."
 msgstr ""
-"格式化为一个显示块。在一部书(<tag>book</tag>)中的 <tag>index</tag> 在打印媒介"
-"中通常导致一个强制的分页符。"
+"格式化为一个显示块。<tag>bibliography</tag> 在 <tag>book</tag> 中经常导致在打"
+"印媒体强制换行。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:14562
@@ -14402,12 +14369,11 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:17973
-#, fuzzy
 msgid ""
 "Correct formatting of <tag>biblioset</tag>s is an interchange issue. See "
 "<xref linkend=\"app-interchange\"/>."
 msgstr ""
-"正确的格式化 <tag>biblioentry</tag> 是一个交换交换。参见 <xref linkend=\"app-"
+"正确的格式化 <tag>biblioset</tag> 是一个交换问题。参见 <xref linkend=\"app-"
 "interchange\"/>。"
 
 #. (para)
@@ -14799,23 +14765,20 @@ msgstr "oointerface"
 #. (emphasis)
 #: ../../en/build/defguide5.xml:19589 ../../en/build/defguide5.xml:22071
 #: ../../en/build/defguide5.xml:24364 ../../en/build/defguide5.xml:25719
-#, fuzzy
 msgid "Operating system inlines"
-msgstr "操作系统"
+msgstr ""
 
 #. (emphasis)
 #: ../../en/build/defguide5.xml:19626 ../../en/build/defguide5.xml:22108
 #: ../../en/build/defguide5.xml:24401 ../../en/build/defguide5.xml:25756
-#, fuzzy
 msgid "Product inlines"
-msgstr "productionset"
+msgstr ""
 
 #. (emphasis)
 #: ../../en/build/defguide5.xml:19663 ../../en/build/defguide5.xml:22145
 #: ../../en/build/defguide5.xml:24438 ../../en/build/defguide5.xml:25793
-#, fuzzy
 msgid "Programming inlines"
-msgstr "设计特性"
+msgstr ""
 
 #. (emphasis)
 #: ../../en/build/defguide5.xml:19818 ../../en/build/defguide5.xml:22300
@@ -15084,7 +15047,6 @@ msgstr "在在线的环境中，这也可能构建一个链接关联二个元素
 
 #. (para)
 #: ../../en/build/defguide5.xml:20611
-#, fuzzy
 msgid ""
 "The processing expectations of <tag>callout</tag>s are likely to deserve "
 "special consideration for interchange. See <xref linkend=\"app-interchange\"/"
@@ -15092,8 +15054,6 @@ msgid ""
 "documentation in a medium that has restricted visual presentation features, "
 "such as aural media or Braille."
 msgstr ""
-"<tag>callout</tag> 的处理期望可能值得为交换特别考虑。参见 <xref linkend=\"app-"
-"interchange\"/>。"
 
 #. (term)
 #: ../../en/build/defguide5.xml:20624
@@ -16482,16 +16442,14 @@ msgstr "classsynopsisinfo <phrase role=\"cceq\">::=</phrase>"
 #. (emphasis)
 #: ../../en/build/defguide5.xml:27116 ../../en/build/defguide5.xml:31257
 #: ../../en/build/defguide5.xml:47969 ../../en/build/defguide5.xml:77174
-#, fuzzy
 msgid "Computer-output inlines"
-msgstr "ComputerOutput"
+msgstr ""
 
 #. (emphasis)
 #: ../../en/build/defguide5.xml:27958 ../../en/build/defguide5.xml:48811
 #: ../../en/build/defguide5.xml:78016 ../../en/build/defguide5.xml:99819
-#, fuzzy
 msgid "User-input inlines"
-msgstr "删除计算机嵌入"
+msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:28280
@@ -17371,9 +17329,8 @@ msgstr ""
 #. (para)
 #: ../../en/build/defguide5.xml:29426 ../../en/build/defguide5.xml:29785
 #: ../../en/build/defguide5.xml:141382 ../../en/build/defguide5.xml:142898
-#, fuzzy
 msgid "An explicit offset."
-msgstr "一个分区的例子。"
+msgstr "显式偏移。"
 
 #. (entry)
 #: ../../en/build/defguide5.xml:29430 ../../en/build/defguide5.xml:29789
@@ -17391,7 +17348,7 @@ msgstr "xsd:string"
 #: ../../en/build/defguide5.xml:29432 ../../en/build/defguide5.xml:29791
 #: ../../en/build/defguide5.xml:141388 ../../en/build/defguide5.xml:142904
 msgid "A percentage offset."
-msgstr ""
+msgstr "百分比偏移。"
 
 #. (term)
 #: ../../en/build/defguide5.xml:29513 ../../en/build/defguide5.xml:29872
@@ -20743,14 +20700,15 @@ msgid ""
 "If the MathML Module is used, <tag>equation</tag> can also contain the <tag "
 "namespace=\"http://www.w3.org/1998/Math/MathML\">mml:math</tag> element."
 msgstr ""
+"如果使用了 MathML 模块，<tag>equation</tag> 还可以包含元素 <tag namespace="
+"\"http://www.w3.org/1998/Math/MathML\">mml:math</tag>。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:41136
-#, fuzzy
 msgid ""
 "Formatted as a displayed block. For an inline equation, use "
 "<tag>inlineequation</tag>."
-msgstr "格式为一个显示块。某些时候节是被编号的。"
+msgstr "格式为一个显示块。对于行内公式，使用 <tag>inlineequation</tag>。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:41139
@@ -21056,9 +21014,8 @@ msgstr "errorname <phrase role=\"cceq\">::=</phrase>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:41759
-#, fuzzy
 msgid "An <tag>errorname</tag> holds the symbolic name of an error."
-msgstr "<tag>personname</tag> 标识个人的人名。"
+msgstr "<tag>errorname</tag> 标识错误的符号名称。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:41768 ../../en/build/defguide5.xml:42001
@@ -21096,9 +21053,8 @@ msgstr "errortext <phrase role=\"cceq\">::=</phrase>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:41992
-#, fuzzy
 msgid "An <tag>errortext</tag> holds the text of an error message."
-msgstr "<tag>index</tag> 包含格式化的文档索引"
+msgstr "<tag>errortext</tag> 包含错误消息正文。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:42013
@@ -21371,13 +21327,12 @@ msgstr "exceptionname <phrase role=\"cceq\">::=</phrase>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:43125
-#, fuzzy
 msgid ""
 "The <tag>exceptionname</tag> element is used to identify the name of an "
 "interface. This is likely to occur only in documentation about object-"
 "oriented programming systems, languages, and architectures."
 msgstr ""
-"<tag>interfacename</tag> 元素用于标识一个接口的名称。这可能仅出现在关于面向对"
+"<tag>exceptionname</tag> 元素用于标识一个接口的名称。这可能仅出现在关于面向对"
 "象程序系统、语言和架构相关的文档中。"
 
 #. (para)
@@ -21447,9 +21402,8 @@ msgstr "fax <phrase role=\"cceq\">::=</phrase>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:43402
-#, fuzzy
 msgid "A <tag>fax</tag> is a fax number in an address."
-msgstr "<tag>entry</tag> 是表中的单元格。"
+msgstr "<tag>fax</tag> 是地址中的传真号码。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:43406 ../../en/build/defguide5.xml:93234
@@ -22354,13 +22308,12 @@ msgstr "有一个标题的正式段落。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:46742
-#, fuzzy
 msgid ""
 "Formatted as a displayed block. The <tag>title</tag> of a <tag>formalpara</"
 "tag> is often rendered as a run-in head."
 msgstr ""
-"格式化为一个显示块。在一部书(<tag>book</tag>)中的 <tag>index</tag> 在打印媒介"
-"中通常导致一个强制的分页符。"
+"格式化为一个显示块。<tag>title</tag> 在 <tag>formalpara</tag> 中经常渲染为插入"
+"头。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:46749
@@ -22461,11 +22414,10 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:47003 ../../en/build/defguide5.xml:47285
-#, fuzzy
 msgid ""
 "Formatted inline. For a complete description of the processing expecations, "
 "see <tag>funcsynopsis</tag>."
-msgstr "对于插图编号的完整描述，参见 <tag>callout</tag>。"
+msgstr "行内格式化。参见 <tag>funcsynopsis</tag>，以获取处理期望的完整描述。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:47010
@@ -23682,10 +23634,9 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:52576
-#, fuzzy
 msgid ""
 "Formatted as a displayed block, in the same style as a <tag>glossdef</tag>."
-msgstr "格式化为一个显示块。某些时候是限制显示的。"
+msgstr "格式化为一个显示块。与 <tag>glossdef</tag> 的样式相同。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:52579
@@ -23745,10 +23696,9 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:53393
-#, fuzzy
 msgid ""
 "Formatted as a displayed block, in the same style as the <tag>glossdef</tag>."
-msgstr "格式化为一个显示块。某些时候是限制显示的。"
+msgstr "格式化为一个显示块。与 <tag>glossdef</tag> 的样式相同。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:53396
@@ -23903,11 +23853,10 @@ msgstr "guibutton <phrase role=\"cceq\">::=</phrase>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:54690
-#, fuzzy
 msgid ""
 "A <tag>guibutton</tag> identifies the text that appears on a button in a "
 "graphical user interface."
-msgstr " <tag>citebiblioid</tag> 标识一个用书目标识的另一部作品的引用。"
+msgstr " <tag>guibutton</tag> 在图形用户接口中标识按钮中的文字。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:54701
@@ -24002,11 +23951,10 @@ msgstr "guiicon <phrase role=\"cceq\">::=</phrase>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:54975
-#, fuzzy
 msgid ""
 "A <tag>guiicon</tag> identifies a graphic or text icon that appears in a "
 "graphical user interface."
-msgstr " <tag>citebiblioid</tag> 标识一个用书目标识的另一部作品的引用。"
+msgstr " <tag>guiicon</tag> 在图形用户接口中标识图形或图标文字。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:54986
@@ -24075,11 +24023,10 @@ msgstr "guilabel <phrase role=\"cceq\">::=</phrase>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:55260
-#, fuzzy
 msgid ""
 "A <tag>guilabel</tag> identifies text that appears as a label in a graphical "
 "user interface."
-msgstr " <tag>citebiblioid</tag> 标识一个用书目标识的另一部作品的引用。"
+msgstr " <tag>guilabel</tag> 在图形用户接口中标识出现在标签中的文字。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:55263
@@ -26427,12 +26374,11 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:63568
-#, fuzzy
 msgid ""
 "An <tag>imageobject</tag> is a wrapper containing <tag>imagedata</tag> and "
 "its associated meta-information."
 msgstr ""
-"<?tdg-purp imageobjectco?>. (包含 <tag>imagedata</tag> 和相关的编号信息 )"
+"<tag>imageobject</tag> 是包含了 <tag>imagedata</tag> 和相关元信息的包装器。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:63571
@@ -26498,27 +26444,6 @@ msgid ""
 "\n"
 "&lt;/article&gt;\n"
 msgstr ""
-"&lt;article xmlns='http://docbook.org/ns/docbook'&gt;\n"
-"&lt;title&gt;Example imageobject&lt;/title&gt;\n"
-"\n"
-"&lt;mediaobject&gt;\n"
-"  &lt;imageobject&gt;\n"
-"    &lt;imagedata fileref=\"figures/eiffeltower.eps\" format=\"EPS\"/&gt;\n"
-"  &lt;/imageobject&gt;\n"
-"  &lt;imageobject&gt;\n"
-"    &lt;imagedata fileref=\"figures/eiffeltower.png\" format=\"PNG\"/&gt;\n"
-"  &lt;/imageobject&gt;\n"
-"  &lt;textobject&gt;\n"
-"    &lt;phrase&gt;The Eiffel Tower&lt;/phrase&gt;\n"
-"  &lt;/textobject&gt;\n"
-"  &lt;caption&gt;\n"
-"    &lt;para&gt;Designed by Gustave Eiffel in 1889, The Eiffel Tower is one of the\n"
-"most widely recognized buildings in the world.\n"
-"    &lt;/para&gt;\n"
-"  &lt;/caption&gt;\n"
-"&lt;/mediaobject&gt;\n"
-"\n"
-"&lt;/article&gt;\n"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
@@ -26805,10 +26730,9 @@ msgstr "warning 禁止出现在 important 的子节点中"
 
 #. (para)
 #: ../../en/build/defguide5.xml:64353
-#, fuzzy
 msgid ""
 "An <tag>important</tag> element is an admonition set off from the main text."
-msgstr "从主文本中分出来的引用语"
+msgstr "<tag>important</tag> 元素是从主文本中分离出来的警告。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:64356 ../../en/build/defguide5.xml:150766
@@ -26964,9 +26888,8 @@ msgstr "下列元素可以出现在 index 中：<placeholder-1/>。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:64975
-#, fuzzy
 msgid "An <tag>index</tag> with a <tag>title</tag> and <tag>indexdiv</tag>s."
-msgstr "<tag>glossdiv</tag>, <tag>bibliodiv</tag>, 和 <tag>indexdiv</tag>"
+msgstr "<tag>index</tag> 包含 <tag>title</tag> 和 <tag>indexdiv</tag>。"
 
 #. (programlisting)
 #: ../../en/build/defguide5.xml:64977
@@ -27087,13 +27010,12 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:65507
-#, fuzzy
 msgid ""
 "An index may contain any number of <tag>indexentry</tag> or <tag>indexdiv</"
 "tag> elements, but it cannot contain a mixture of both at the same level."
 msgstr ""
-"一个参考书目可以包含任何数量的 <tag>biblioentry</tag> 或 <tag>bibliomixed</"
-"tag> 元素，或者任何数量的 <tag>bibliodiv</tag>，但不能在同一层级中包含它们。"
+"索引可以包含任何数量的 <tag>indexentry</tag> 元素，或者 <tag>indexdiv</tag> 元"
+"素，但不能在同一层级中包含它们。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:65537
@@ -27200,7 +27122,6 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:65773
-#, fuzzy
 msgid ""
 "The <tag>indexterm</tag>s mark either a single point in the document or a "
 "range. A single point is marked with an <tag>indexterm</tag> placed in the "
@@ -28145,32 +28066,6 @@ msgid ""
 "\n"
 "&lt;/article&gt;\n"
 msgstr ""
-"&lt;article xmlns='http://docbook.org/ns/docbook'&gt;\n"
-"&lt;title&gt;Example informalfigure&lt;/title&gt;\n"
-"\n"
-"&lt;informalfigure&gt;\n"
-"&lt;mediaobject&gt;\n"
-"&lt;imageobject&gt;\n"
-"&lt;info&gt;\n"
-"  &lt;author&gt;\n"
-"    &lt;personname&gt;\n"
-"      &lt;firstname&gt;Norman&lt;/firstname&gt;\n"
-"      &lt;surname&gt;Walsh&lt;/surname&gt;\n"
-"    &lt;/personname&gt;\n"
-"  &lt;/author&gt;\n"
-"  &lt;pubdate&gt;1998&lt;/pubdate&gt;\n"
-"&lt;/info&gt;\n"
-"&lt;imagedata fileref=\"figures/watarun.eps\"/&gt;\n"
-"&lt;/imageobject&gt;\n"
-"&lt;textobject&gt;&lt;phrase&gt;Wat Arun&lt;/phrase&gt;&lt;/textobject&gt;\n"
-"&lt;caption&gt;&lt;para&gt;Wat Arun, Temple of the Dawn, on the Chao Phraya River\n"
-"in Bangkok, Thailand. In April, 1998, Wat Arun was in the midst of\n"
-"renovation.&lt;/para&gt;\n"
-"&lt;/caption&gt;\n"
-"&lt;/mediaobject&gt;\n"
-"&lt;/informalfigure&gt;\n"
-"\n"
-"&lt;/article&gt;\n"
 
 #. (pubdate)
 #: ../../en/build/defguide5.xml:69620
@@ -28669,14 +28564,13 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:70403 ../../en/build/defguide5.xml:138435
-#, fuzzy
 msgid "An explicit padding."
-msgstr "显式地址"
+msgstr "显式填充。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:70409 ../../en/build/defguide5.xml:138441
 msgid "A percentage padding."
-msgstr ""
+msgstr "百分比填充。"
 
 #. (term)
 #: ../../en/build/defguide5.xml:70418 ../../en/build/defguide5.xml:138450
@@ -28698,12 +28592,12 @@ msgstr ""
 #. (para)
 #: ../../en/build/defguide5.xml:70436 ../../en/build/defguide5.xml:138468
 msgid "An explicit spacing."
-msgstr ""
+msgstr "显式间隔。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:70442 ../../en/build/defguide5.xml:138474
 msgid "A percentage spacing."
-msgstr ""
+msgstr "百分比间隔。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:70459 ../../en/build/defguide5.xml:138497
@@ -28813,12 +28707,12 @@ msgstr ""
 #. (para)
 #: ../../en/build/defguide5.xml:70681 ../../en/build/defguide5.xml:138793
 msgid "An explicit width."
-msgstr ""
+msgstr "显式宽度。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:70687 ../../en/build/defguide5.xml:138799
 msgid "A percentage width."
-msgstr ""
+msgstr "百分比宽度。"
 
 #. (phrase)
 #: ../../en/build/defguide5.xml:70703 ../../en/build/defguide5.xml:138815
@@ -33356,9 +33250,8 @@ msgstr "db.orgname"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:88046
-#, fuzzy
 msgid "The name of an organization"
-msgstr "一个组织的分区"
+msgstr "组织名称"
 
 #. (para)
 #: ../../en/build/defguide5.xml:88050
@@ -36259,9 +36152,8 @@ msgstr "db.publishername"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:101312
-#, fuzzy
 msgid "The name of the publisher of a document"
-msgstr "文档编者的姓名"
+msgstr "文档出版者名称"
 
 #. (para)
 #: ../../en/build/defguide5.xml:101316
@@ -38721,9 +38613,8 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:114081
-#, fuzzy
 msgid "An <tag>sbr</tag> causes a line break."
-msgstr "<tag>entry</tag> 是表中的单元格。"
+msgstr "<tag>sbr</tag> 导致换行。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:114086
@@ -41111,9 +41002,8 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:130778
-#, fuzzy
 msgid "Provides a name for a span specification."
-msgstr "为规范的列提供名称。"
+msgstr "提供横越规格名称。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:130785
@@ -45160,9 +45050,8 @@ msgstr "trademark <phrase role=\"cceq\">::=</phrase>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:155080
-#, fuzzy
 msgid "A <tag>trademark</tag> identifies a legal trademark."
-msgstr "<tag>date</tag> 元素标识日期。"
+msgstr "<tag>trademark</tag> 标识合法商标。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:155082
@@ -45580,11 +45469,10 @@ msgstr "varargs <phrase role=\"cceq\">::=</phrase>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:156715
-#, fuzzy
 msgid ""
 "A <tag>varargs</tag> indicates that a function takes a variable number of "
 "arguments."
-msgstr "在函数大纲中指出一个可变数量的参数的空元素"
+msgstr "<tag>varargs</tag> 指示函数接受可变参数。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:156720

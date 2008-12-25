@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Usage:
-    Building 'The Definitive Guide (5.0)' - all(html, chm & pdf)
+    Building 'The Definitive Guide (5.0)' - all(html & pdf)
         $ ant
 
     Building 'The Definitive Guide (5.0)' - html
         $ ant html
-
-    Building 'The Definitive Guide (5.0)' - chm
-        $ ant chm
 
     Building 'The Definitive Guide (5.0)' - pdf
         $ ant pdf
@@ -64,13 +61,12 @@ Dependency:
                 file="../en/build/defguide5.xml"/>
         <!-- Don't uncomment this unless xml2po support namespace ! -->
         <!--jing rngfile="${docbook5.home}/rng/docbook.rng"
-                file="../en/build/defguide5-zh.xml"/-->
+                file="build/defguide5-zh.xml"/-->
     </target>
 
-    <target name="all" description="Generate document - pdf,html,chm">
+    <target name="all" description="Generate document - pdf,html">
         <antcall target="pdf"/>
         <antcall target="html"/>
-        <antcall target="chm"/>
     </target>
 
     <target name="xinclude" description="XInclude processing on document">
@@ -115,6 +111,7 @@ Dependency:
         </uptodate>
     </target>
 
+    <!-- Total time: 6 minutes 9 seconds -->
     <target name="translate" depends="translate.init" unless="translate.isUpToDate" description="Translate document">
         <mkdir dir="build"/>
         <echo message="Translating defguide5-zh.xml ..."/>
@@ -148,13 +145,18 @@ Dependency:
         </uptodate>
     </target>
 
+    <!-- Total time: 22 minutes 8 seconds -->
     <target name="html" depends="translate,html.init" unless="html.isUpToDate" description="Generate document - html">
         <copy todir="build/defguide5/images">
             <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
         </copy>
-        <copy todir="build/defguide5">
+        <copy todir="build/defguide5/figures">
             <fileset dir="../en/figures"/>
+        </copy>
+        <copy todir="build/defguide5/graphics">
             <fileset dir="../en/graphics"/>
+        </copy>
+        <copy todir="build/defguide5/src/examples">
             <fileset dir="../en/examples"/>
         </copy>
 
@@ -168,63 +170,14 @@ Dependency:
             <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
             <arg value="-r"/>
             <arg value="org.apache.xml.resolver.tools.CatalogResolver"/>
-            <arg value="../../../en/build/defguide5-zh.xml"/>
+            <arg value="../defguide5-zh.xml"/>
             <arg value="../../stylesheets/zh/html.xsl"/>
         </java>
         <!--exec dir="${basedir}/build/defguide5" executable="xsltproc" failonerror="true">
             <arg value="../../stylesheets/zh/html.xsl"/>
-            <arg value="../../../en/build/defguide5-zh.xml"/>
+            <arg value="../defguide5-zh.xml"/>
         </exec-->
         <touch file="build/defguide5/.done"/>
-    </target>
-
-    <target name="chm.init">
-        <uptodate property="chm.isUpToDate" targetfile="build/defguide5-zh.chm">
-            <srcfiles dir="../en" includes="book.xml, VERSION.xml"/>
-            <srcfiles dir="../en/src" includes="*.xml"/>
-            <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
-            <srcfiles dir="../en/refpages/elements" includes="*/*.xml" excludes="build/*"/>
-            <srcfiles dir="po" includes="zh.po"/>
-        </uptodate>
-    </target>
-
-    <target name="chm" depends="translate,chm.init" unless="chm.isUpToDate" description="Generate document - chm">
-        <fail>
-            <condition>
-                <not><os family="windows"/></not>
-            </condition>
-            This target only work on windows !
-        </fail>
-
-        <copy todir="build/chm/htmlhelp/images">
-            <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
-        </copy>
-        <copy todir="build/chm/htmlhelp">
-            <fileset dir="../en/figures"/>
-            <fileset dir="../en/graphics"/>
-            <fileset dir="../en/examples"/>
-        </copy>
-
-        <!--Must use GB18030 encoding and xsltproc for chm format !-->
-        <echo message="Making chm ..."/>
-        <exec dir="${basedir}/build/chm" executable="xmllint">
-          <arg value="--encode"/>
-          <arg value="GB18030"/>
-          <arg value="--format"/>
-          <arg value="--output"/>
-          <arg value="../../../en/build/defguide5-zh-GB18030.xml"/>
-          <arg value="../../../en/build/defguide5-zh.xml"/>
-        </exec>
-        <exec dir="${basedir}/build/chm" executable="xsltproc" failonerror="true">
-            <arg value="../../stylesheets/zh/chm.xsl"/>
-            <arg value="../../../en/build/defguide5-zh-GB18030.xml"/>
-        </exec>
-        <exec dir="${basedir}/build/chm" executable="hhc" failonerror="false">
-            <arg value="htmlhelp.hhp"/>
-        </exec>
-
-        <move file="build/chm/defguide5-zh.chm" tofile="build/defguide5-zh.chm"/>
-        <delete dir="build/chm"/>
     </target>
 
     <target name="pdf.init">
@@ -236,6 +189,7 @@ Dependency:
         </uptodate>
     </target>
 
+    <!-- Total time: 9 minutes 31 seconds -->
     <target name="pdf" depends="translate,pdf.init" unless="pdf.isUpToDate"  description="Generate document - pdf">
         <copy todir="build/src/examples">
           <fileset dir="../en/examples"/>
@@ -273,9 +227,15 @@ Dependency:
             <arg value="org.apache.xml.resolver.tools.CatalogResolver"/>
             <arg value="-o"/>
             <arg value="build/pdf/defguide5-zh.fo"/>
-            <arg value="../en/build/defguide5-zh.xml"/>
+            <arg value="build/defguide5-zh.xml"/>
             <arg value="stylesheets/zh/fo.xsl"/>
         </java>
+        <exec dir="build/pdf" executable="xmllint">
+            <arg value="--output"/>
+            <arg value="../defguide5-zh.fo"/>
+            <arg value="--format"/>
+            <arg value="defguide5-zh.fo"/>
+        </exec>
 
         <echo message="Making pdf ..."/>
         <java classname="${fop.class}" fork="true" maxmemory="512m" failonerror="true"
@@ -283,7 +243,7 @@ Dependency:
             <classpath refid="lib.classpath"/>
             <arg value="-c"/>
             <arg value="userconfig.xml"/>
-            <arg value="../defguide5-zh.fo"/>
+            <arg value="defguide5-zh.fo"/>
             <arg value="../defguide5-zh.pdf"/>
         </java>
 
