@@ -81,6 +81,7 @@ Dependency:
         </uptodate>
     </target>
 
+    <!-- Total time: 14 minutes 42 seconds -->
     <target name="updatepo" depends="xinclude,po.init" unless="po.isUpToDate" description="Update PO file">
         <echo message="Making defguide5.pot ..."/>
         <exec dir="${basedir}/po" executable="python" failonerror="true">
@@ -142,6 +143,8 @@ Dependency:
             <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
             <srcfiles dir="../en/refpages/elements" includes="*/*.xml" excludes="build/*"/>
             <srcfiles dir="po" includes="zh.po"/>
+            <srcfiles dir="stylesheets" includes="html.xsl"/>
+            <srcfiles dir="stylesheets/zh" includes="html.xsl"/>
         </uptodate>
     </target>
 
@@ -186,6 +189,9 @@ Dependency:
             <srcfiles dir="../en/src" includes="*.xml"/>
             <srcfiles dir="../en/refpages" includes="intro-elements.xml, references.xml"/>
             <srcfiles dir="../en/refpages/elements" includes="*/*.xml" excludes="build/*"/>
+            <srcfiles dir="po" includes="zh.po"/>
+            <srcfiles dir="stylesheets" includes="fo.xsl"/>
+            <srcfiles dir="stylesheets/zh" includes="fo.xsl"/>
         </uptodate>
     </target>
 

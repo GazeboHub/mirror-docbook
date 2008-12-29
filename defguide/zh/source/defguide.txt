@@ -1,0 +1,7 @@
+
+* In defguide/en, run
+xsltproc --output bookinfo.xml VERSION.xml VERSION.xml
+xsltproc --output tdgex.xml stylesheets/identity.xsl unexbook.xml
+
+xmllint --format --postvalid --output defguide.xml tdgex.xml
+/bin/cp defguide.xml ../zh/source/defguide.xml

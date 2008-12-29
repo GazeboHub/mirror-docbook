@@ -151,6 +151,8 @@ Dependency:
         <uptodate property="html.isUpToDate" targetfile="build/html/.done">
             <srcfiles dir="source" includes="defguide.xml"/>
             <srcfiles dir="po" includes="zh.po"/>
+            <srcfiles dir="stylesheets" includes="html.xsl"/>
+            <srcfiles dir="stylesheets/zh" includes="html.xsl"/>
         </uptodate>
     </target>
 
@@ -191,6 +193,8 @@ Dependency:
         <uptodate property="pdf.isUpToDate" targetfile="build/defguide-zh.pdf">
             <srcfiles dir="source" includes="defguide.xml"/>
             <srcfiles dir="po" includes="zh.po"/>
+            <srcfiles dir="stylesheets" includes="fo.xsl"/>
+            <srcfiles dir="stylesheets/zh" includes="fo.xsl"/>
         </uptodate>
     </target>
 
@@ -213,7 +217,7 @@ Dependency:
         <copy todir="build/pdf/images">
             <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
         </copy>
-        <copy todir="build/figures">
+        <copy todir="build/pdf/figures">
             <fileset dir="source/figures" />
         </copy>
         <copy todir="build/examples">
@@ -262,7 +266,7 @@ Dependency:
         </uptodate>
     </target>
 
-    <!-- Total time: ?? minutes ?? seconds -->
+    <!-- Total time: 12 minutes 59 seconds -->
     <target name="defguide" depends="init,defguide.init" unless="defguide.isUpToDate" description="Generate document - defguide(en)">
         <!--Java SE 1.4 & 1.5: Unfixed java.lang.StackOverflowError !-->
         <condition property="jdk_ok">
@@ -286,6 +290,9 @@ Dependency:
         </copy>
         <copy todir="build/examples">
             <fileset dir="../en/examples"/>
+        </copy>
+        <copy todir="build/schema">
+            <fileset dir="source/schema"/>
         </copy>
         <copy file="source/defguide.xml" todir="build"/>
 

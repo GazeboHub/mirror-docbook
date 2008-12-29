@@ -29,7 +29,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: defguide5 0.0.25\n"
 "POT-Creation-Date: 2008-12-24 08:18 +0000\n"
-"PO-Revision-Date: 2008-12-25 22:05+0800\n"
+"PO-Revision-Date: 2008-12-29 15:58+0800\n"
 "Last-Translator: Dongsheng Song <dongsheng.song@gmail.com>\n"
 "Language-Team: zh <i18n-zh@googlegroups.com >\n"
 "MIME-Version: 1.0\n"
@@ -8966,7 +8966,7 @@ msgstr "biblioref"
 #: ../../en/build/defguide5.xml:5003 ../../en/build/defguide5.xml:5399
 #: ../../en/build/defguide5.xml:6215 ../../en/build/defguide5.xml:6522
 msgid "Ubiquitous inlines"
-msgstr ""
+msgstr "行内通用"
 
 #. (tag), (secondary), (refentrytitle), (refmiscinfo)
 #: ../../en/build/defguide5.xml:5008 ../../en/build/defguide5.xml:5095
@@ -9649,7 +9649,7 @@ msgstr "HTML 表单元素"
 #: ../../en/build/defguide5.xml:5755 ../../en/build/defguide5.xml:7379
 #: ../../en/build/defguide5.xml:7867 ../../en/build/defguide5.xml:8382
 msgid "Informal elements"
-msgstr "不等式元素"
+msgstr "非正式元素"
 
 #. (tag), (secondary), (refentrytitle), (refmiscinfo)
 #: ../../en/build/defguide5.xml:5760 ../../en/build/defguide5.xml:6068
@@ -10923,7 +10923,7 @@ msgstr "revremark"
 #: ../../en/build/defguide5.xml:7090 ../../en/build/defguide5.xml:7153
 #: ../../en/build/defguide5.xml:7694 ../../en/build/defguide5.xml:16986
 msgid "year"
-msgstr "年"
+msgstr "year"
 
 #. (para)
 #: ../../en/build/defguide5.xml:7094
@@ -13196,7 +13196,7 @@ msgstr "biblioentry <phrase role=\"cceq\">::=</phrase>"
 #: ../../en/build/defguide5.xml:13682 ../../en/build/defguide5.xml:15886
 #: ../../en/build/defguide5.xml:16403 ../../en/build/defguide5.xml:17626
 msgid "Publishing inlines"
-msgstr "传统出版的行内元素"
+msgstr "行内的传统出版元素"
 
 #. (para)
 #: ../../en/build/defguide5.xml:13706 ../../en/build/defguide5.xml:15910
@@ -14724,7 +14724,7 @@ msgstr "行内 HTML 表单"
 #: ../../en/build/defguide5.xml:19434 ../../en/build/defguide5.xml:21916
 #: ../../en/build/defguide5.xml:24209 ../../en/build/defguide5.xml:25564
 msgid "Keyboard inlines"
-msgstr "行内键入"
+msgstr "行内键盘操作"
 
 #. (emphasis)
 #: ../../en/build/defguide5.xml:19503 ../../en/build/defguide5.xml:21985
@@ -14766,7 +14766,7 @@ msgstr "oointerface"
 #: ../../en/build/defguide5.xml:19589 ../../en/build/defguide5.xml:22071
 #: ../../en/build/defguide5.xml:24364 ../../en/build/defguide5.xml:25719
 msgid "Operating system inlines"
-msgstr ""
+msgstr "行内操作系统元素"
 
 #. (emphasis)
 #: ../../en/build/defguide5.xml:19626 ../../en/build/defguide5.xml:22108
@@ -14778,13 +14778,13 @@ msgstr ""
 #: ../../en/build/defguide5.xml:19663 ../../en/build/defguide5.xml:22145
 #: ../../en/build/defguide5.xml:24438 ../../en/build/defguide5.xml:25793
 msgid "Programming inlines"
-msgstr ""
+msgstr "行内编程元素"
 
 #. (emphasis)
 #: ../../en/build/defguide5.xml:19818 ../../en/build/defguide5.xml:22300
 #: ../../en/build/defguide5.xml:24593 ../../en/build/defguide5.xml:25948
 msgid "Technical inlines"
-msgstr ""
+msgstr "行内技术元素"
 
 #. (tag), (secondary), (refentrytitle), (refmiscinfo)
 #: ../../en/build/defguide5.xml:19823 ../../en/build/defguide5.xml:20105
@@ -21601,7 +21601,7 @@ msgstr ""
 #. (title)
 #: ../../en/build/defguide5.xml:44191
 msgid "The Pythagorean Theorem Illustrated"
-msgstr "The Pythagorean Theorem Illustrated"
+msgstr "勾股定理插图"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
@@ -21613,7 +21613,7 @@ msgstr "@@image: 'figures/pythag.png'; md5=f4b25bc0a7382047eab71c352cb779b6"
 #. (phrase)
 #: ../../en/build/defguide5.xml:44197
 msgid "An illustration of the Pythagorean Theorem"
-msgstr "An illustration of the Pythagorean Theorem"
+msgstr "勾股定理插图"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:44223
@@ -42915,7 +42915,7 @@ msgstr ""
 #. (title)
 #: ../../en/build/defguide5.xml:138061
 msgid "Sample CALS Table"
-msgstr "Sample CALS Table"
+msgstr "CALS 表格样例"
 
 #. (entry)
 #: ../../en/build/defguide5.xml:138069
@@ -43083,7 +43083,7 @@ msgstr ""
 #. (caption)
 #: ../../en/build/defguide5.xml:138897
 msgid "Sample HTML Table"
-msgstr "Sample HTML Table"
+msgstr "HTML 表格样例"
 
 #. (td)
 #: ../../en/build/defguide5.xml:138900

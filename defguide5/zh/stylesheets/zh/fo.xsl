@@ -26,7 +26,7 @@
     <xsl:attribute name="text-indent">24pt</xsl:attribute>
   </xsl:attribute-set>
 
-  <xsl:template match="para">
+  <xsl:template match="section/para">
     <fo:block xsl:use-attribute-sets="standard.para.spacing">
       <xsl:call-template name="anchor"/>
       <xsl:apply-templates/>
