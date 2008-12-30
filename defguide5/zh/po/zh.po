@@ -28,7 +28,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: defguide5 0.0.25\n"
-"POT-Creation-Date: 2008-12-24 08:18 +0000\n"
+"POT-Creation-Date: 2008-12-29 10:37 +0000\n"
 "PO-Revision-Date: 2008-12-29 15:58+0800\n"
 "Last-Translator: Dongsheng Song <dongsheng.song@gmail.com>\n"
 "Language-Team: zh <i18n-zh@googlegroups.com >\n"
@@ -1150,13 +1150,13 @@ msgstr "创建 DocBook 文档"
 
 #. (pubdate)
 #: ../../en/build/defguide5.xml:600
-msgid "$Date: 2008-07-12 03:02:10 +0800 (Sat, 12 Jul 2008) $"
-msgstr "$Date: 2008-07-12 03:02:10 +0800 (Sat, 12 Jul 2008) $"
+msgid "$Date: 2008-12-25 14:39:21 +0800 (Thu, 25 Dec 2008) $"
+msgstr ""
 
 #. (releaseinfo)
 #: ../../en/build/defguide5.xml:601
-msgid "$Revision: 8083 $"
-msgstr "$Revision: 8083 $"
+msgid "$Revision: 8193 $"
+msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:603

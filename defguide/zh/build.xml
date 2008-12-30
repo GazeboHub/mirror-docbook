@@ -158,6 +158,10 @@ Dependency:
 
     <!-- Total time: 31 minutes 38 seconds -->
     <target name="html" depends="init,translate,html.init" unless="html.isUpToDate" description="Generate document - html">
+        <mkdir dir="build/schema"/>
+        <copy todir="build/schema">
+            <fileset dir="source/schema"/>
+        </copy>
         <copy todir="build/html/images">
             <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
         </copy>
@@ -214,6 +218,10 @@ Dependency:
             Must use Java SE 6+ !
         </fail>
 
+        <mkdir dir="build/schema"/>
+        <copy todir="build/schema">
+            <fileset dir="source/schema"/>
+        </copy>
         <copy todir="build/pdf/images">
             <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
         </copy>
@@ -282,6 +290,10 @@ Dependency:
             Must use Java SE 6+ !
         </fail>
 
+        <mkdir dir="build/schema"/>
+        <copy todir="build/schema">
+            <fileset dir="source/schema"/>
+        </copy>
         <copy todir="build/pdf/images">
             <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
         </copy>
@@ -291,8 +303,14 @@ Dependency:
         <copy todir="build/examples">
             <fileset dir="../en/examples"/>
         </copy>
-        <copy todir="build/schema">
-            <fileset dir="source/schema"/>
+        <copy todir="build/pdf">
+            <fileset dir="${fonts.dir}">
+                <include name="*.ttf"/>
+                <include name="*.ttc"/>
+            </fileset>
+            <fileset dir="${fop.home}/conf">
+                <include name="*.xml"/>
+            </fileset>
         </copy>
         <copy file="source/defguide.xml" todir="build"/>
 

@@ -26,11 +26,17 @@
     <xsl:attribute name="text-indent">24pt</xsl:attribute>
   </xsl:attribute-set>
 
-  <xsl:template match="section/para">
+  <xsl:template match="abstract/para|appendix/para|chapter/para|colophon/para|legalnotice/para|preface/para|section/para|sect1/para|sect2/para">
     <fo:block xsl:use-attribute-sets="standard.para.spacing">
       <xsl:call-template name="anchor"/>
       <xsl:apply-templates/>
     </fo:block>
+  </xsl:template>
+
+  <xsl:template match="section/para/*">
+    <fo:wrapper text-indent="0pt">
+      <xsl:apply-imports/>
+    </fo:wrapper>
   </xsl:template>
 
 </xsl:stylesheet>

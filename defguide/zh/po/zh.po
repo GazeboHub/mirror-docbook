@@ -29,7 +29,7 @@ msgstr ""
 "Project-Id-Version: defguide 2.0.17\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-12-29 08:51 +0000\n"
-"PO-Revision-Date: 2008-12-25 16:10+0800\n"
+"PO-Revision-Date: 2008-12-30 12:10+0800\n"
 "Last-Translator: Dongsheng Song <dongsheng.song@gmail.com>\n"
 "Language-Team: zh <i18n-zh@googlegroups.com >\n"
 "MIME-Version: 1.0\n"
@@ -12276,11 +12276,10 @@ msgstr ""
 
 #. (title)
 #: ../source/defguide.xml:7370
-#, fuzzy
 msgid ""
 "<filename moreinfo=\"none\">both.dsl</filename>: A Stylesheet with Two Style "
 "Specifications"
-msgstr "<filename>both.dsl</filename>：一个满足两个样式规范的样式表"
+msgstr "<filename moreinfo=\"none\">both.dsl</filename>：一个满足两个样式规范的样式表"
 
 #. (para)
 #: ../source/defguide.xml:7375
@@ -16466,9 +16465,8 @@ msgstr ""
 
 #. (title)
 #: ../source/defguide.xml:9870
-#, fuzzy
 msgid "Removing <sgmltag>Sect4</sgmltag> and <sgmltag>Sect5</sgmltag> Elements"
-msgstr "删除 <tag>Sect4</tag> 和 <tag>Sect5</tag> 元素"
+msgstr "删除 <sgmltag>Sect4</sgmltag> 和 <sgmltag>Sect5</sgmltag> 元素"
 
 #. (para)
 #: ../source/defguide.xml:9876
@@ -16849,9 +16847,8 @@ msgstr ""
 
 #. (title)
 #: ../source/defguide.xml:10058
-#, fuzzy
 msgid "Removing <sgmltag class=\"paramentity\">synop.class</sgmltag>"
-msgstr "删除 <tag class=\"paramentity\">synop.class</tag>"
+msgstr "删除 <sgmltag class=\"paramentity\">synop.class</sgmltag>"
 
 #. (para)
 #: ../source/defguide.xml:10059
@@ -27593,7 +27590,7 @@ msgstr "月 <placeholder-1/>"
 #: ../source/defguide.xml:21635 ../source/defguide.xml:25220
 #: ../source/defguide.xml:25282 ../source/defguide.xml:26967
 msgid "year"
-msgstr "年"
+msgstr "year"
 
 #. (programlisting)
 #: ../source/defguide.xml:21639
@@ -30911,7 +30908,7 @@ msgstr ""
 #: ../source/defguide.xml:28563 ../source/defguide.xml:28583
 #: ../source/defguide.xml:44552
 msgid "Fermat's Last Theorem"
-msgstr "Fermat's Last Theorem"
+msgstr "费马大定理"
 
 #. (alt)
 #: ../source/defguide.xml:28564 ../source/defguide.xml:28584
@@ -30926,7 +30923,7 @@ msgid ""
 "Alternatively, for relatively simple equations such as Fermat's Last Theorem, "
 "<sgmltag>mathphrase</sgmltag> is often sufficient:"
 msgstr ""
-"可选的，对于相关的简单的等式如 Fermat's Last Theorem，<tag>mathphrase</tag>通"
+"可选的，对于相关的简单的等式如费马大定理，<tag>mathphrase</tag>通"
 "常已经足够了："
 
 #. (programlisting)
@@ -31281,7 +31278,7 @@ msgstr ""
 #. (title)
 #: ../source/defguide.xml:29405
 msgid "A DSSSL Function"
-msgstr "A DSSSL Function"
+msgstr "一个 DSSSL 函数"
 
 #. (programlisting)
 #: ../source/defguide.xml:29406
@@ -31547,7 +31544,7 @@ msgstr ""
 #. (title)
 #: ../source/defguide.xml:30036
 msgid "The Pythagorean Theorem Illustrated"
-msgstr "The Pythagorean Theorem Illustrated"
+msgstr "勾股定理插图"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
@@ -46207,7 +46204,7 @@ msgstr ""
 #. (title)
 #: ../source/defguide.xml:58389
 msgid "The Grand Unified Theory"
-msgstr "The Grand Unified Theory"
+msgstr "大统一理论"
 
 #. (para)
 #: ../source/defguide.xml:58390
