@@ -333,6 +333,8 @@ Dependency:
         <echo message="Making pdf ..."/>
         <java classname="${fop.class}" fork="true" maxmemory="1024m" failonerror="true" dir="${basedir}/build/pdf">
             <classpath refid="lib.classpath"/>
+            <arg value="-c"/>
+            <arg value="userconfig.xml"/>
             <arg value="../defguide.fo"/>
             <arg value="../defguide.pdf"/>
         </java>
