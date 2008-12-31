@@ -94,7 +94,7 @@ Dependency:
         </uptodate>
     </target>
 
-    <!-- Total time: 31 minutes 58 seconds -->
+    <!-- Total time: 29 minutes 30 seconds -->
     <target name="updatepo" depends="po.init" unless="po.isUpToDate" description="Update PO file">
         <echo message="Making defguide.pot ..."/>
         <exec dir="${basedir}/po" executable="python" failonerror="true">
@@ -123,7 +123,7 @@ Dependency:
         </uptodate>
     </target>
 
-    <!-- Total time: 32 minutes 58 seconds -->
+    <!-- Total time: 29 minutes 14 seconds -->
     <target name="translate" depends="translate.init" unless="translate.isUpToDate" description="Translate document">
         <mkdir dir="build"/>
         <echo message="Translating defguide-zh.xml ..."/>
@@ -134,14 +134,14 @@ Dependency:
             <arg value="-p"/>
             <arg value="../po/zh.po"/>
             <arg value="-o"/>
-            <arg value="../build/defguide-zh-tmp.xml"/>
+            <arg value="../build/defguide-zh.xml"/>
             <arg value="../source/defguide.xml"/>
         </exec>
         <exec dir="${basedir}/build" executable="xmllint">
             <arg value="--format"/>
             <arg value="--output"/>
+            <arg value="defguide-zh-fmt.xml"/>
             <arg value="defguide-zh.xml"/>
-            <arg value="defguide-zh-tmp.xml"/>
         </exec>
         <delete file="xml2po/.xml2po.mo"/>
         <delete file="build/defguide-zh-tmp.xml"/>
@@ -156,7 +156,7 @@ Dependency:
         </uptodate>
     </target>
 
-    <!-- Total time: 31 minutes 38 seconds -->
+    <!-- Total time: 13 minutes 48 seconds -->
     <target name="html" depends="init,translate,html.init" unless="html.isUpToDate" description="Generate document - html">
         <mkdir dir="build/schema"/>
         <copy todir="build/schema">
@@ -202,7 +202,7 @@ Dependency:
         </uptodate>
     </target>
 
-    <!-- Total time: 16 minutes 14 seconds -->
+    <!-- Total time: 10 minutes 44 seconds -->
     <target name="pdf" depends="init,translate,pdf.init" unless="pdf.isUpToDate" description="Generate document - pdf">
         <!--Java SE 1.4 & 1.5: Unfixed java.lang.StackOverflowError !-->
         <condition property="jdk_ok">
@@ -274,7 +274,7 @@ Dependency:
         </uptodate>
     </target>
 
-    <!-- Total time: 12 minutes 59 seconds -->
+    <!-- Total time: 12 minutes 41 seconds -->
     <target name="defguide" depends="init,defguide.init" unless="defguide.isUpToDate" description="Generate document - defguide(en)">
         <!--Java SE 1.4 & 1.5: Unfixed java.lang.StackOverflowError !-->
         <condition property="jdk_ok">
@@ -297,7 +297,7 @@ Dependency:
         <copy todir="build/pdf/images">
             <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
         </copy>
-        <copy todir="build/figures">
+        <copy todir="build/pdf/figures">
             <fileset dir="source/figures" />
         </copy>
         <copy todir="build/examples">

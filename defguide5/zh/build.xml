@@ -123,14 +123,14 @@ Dependency:
             <arg value="-p"/>
             <arg value="../po/zh.po"/>
             <arg value="-o"/>
-            <arg value="${basedir}/build/defguide5-zh-tmp.xml"/>
+            <arg value="${basedir}/build/defguide5-zh.xml"/>
             <arg value="../../en/build/defguide5.xml"/>
         </exec>
         <exec dir="build" executable="xmllint">
             <arg value="--output"/>
-            <arg value="defguide5-zh.xml"/>
+            <arg value="defguide5-zh-fmt.xml"/>
             <arg value="--format"/>
-            <arg value="defguide5-zh-tmp.xml"/>
+            <arg value="defguide5-zh.xml"/>
         </exec>
         <delete file="xml2po/.xml2po.mo"/>
         <delete file="build/defguide5-zh-tmp.xml"/>
@@ -232,13 +232,13 @@ Dependency:
             <arg value="-r"/>
             <arg value="org.apache.xml.resolver.tools.CatalogResolver"/>
             <arg value="-o"/>
-            <arg value="build/pdf/defguide5-zh.fo"/>
+            <arg value="build/defguide5-zh.fo"/>
             <arg value="build/defguide5-zh.xml"/>
             <arg value="stylesheets/zh/fo.xsl"/>
         </java>
-        <exec dir="build/pdf" executable="xmllint">
+        <exec dir="build" executable="xmllint">
             <arg value="--output"/>
-            <arg value="../defguide5-zh.fo"/>
+            <arg value="defguide5-zh-fmt.fo"/>
             <arg value="--format"/>
             <arg value="defguide5-zh.fo"/>
         </exec>
@@ -249,7 +249,7 @@ Dependency:
             <classpath refid="lib.classpath"/>
             <arg value="-c"/>
             <arg value="userconfig.xml"/>
-            <arg value="defguide5-zh.fo"/>
+            <arg value="../defguide5-zh.fo"/>
             <arg value="../defguide5-zh.pdf"/>
         </java>
 
