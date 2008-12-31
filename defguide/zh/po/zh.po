@@ -14558,7 +14558,7 @@ msgstr ""
 #. (para)
 #: ../source/defguide.xml:10058
 msgid "Some obvious candidates are:"
-msgstr ""
+msgstr "一些明显的候选是："
 
 #. (term)
 #: ../source/defguide.xml:10060
@@ -25553,7 +25553,7 @@ msgstr "为一般的目的指定一个标识字符串。"
 #: ../source/defguide.xml:33611 ../source/defguide.xml:33633
 #: ../source/defguide.xml:54949
 msgid "Fermat's Last Theorem"
-msgstr "费马大定理"
+msgstr "费玛大定理"
 
 #. (alt)
 #: ../source/defguide.xml:33612 ../source/defguide.xml:33634
@@ -25960,7 +25960,7 @@ msgstr "@@image: 'figures/pythag.png'; md5=f4b25bc0a7382047eab71c352cb779b6"
 #. (phrase)
 #: ../source/defguide.xml:35581
 msgid "An illustration of the Pythagorean Theorem"
-msgstr "An illustration of the Pythagorean Theorem"
+msgstr "勾股定理插图"
 
 #. (refpurpose), (entry)
 #: ../source/defguide.xml:35612 ../source/defguide.xml:172070
@@ -35153,9 +35153,8 @@ msgstr "下列元素可以出现在 publisher 中：<placeholder-1/>。"
 
 #. (refpurpose), (entry)
 #: ../source/defguide.xml:69163 ../source/defguide.xml:172198
-#, fuzzy
 msgid "The name of the publisher of a document"
-msgstr "文档编者的姓名"
+msgstr "文档出版者名称"
 
 #. (para)
 #: ../source/defguide.xml:69199
