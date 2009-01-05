@@ -28,7 +28,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: defguide5 0.0.25\n"
-"POT-Creation-Date: 2008-12-31 03:55 +0000\n"
+"POT-Creation-Date: 2009-01-05 09:50 +0000\n"
 "PO-Revision-Date: 2008-12-29 15:58+0800\n"
 "Last-Translator: Dongsheng Song <dongsheng.song@gmail.com>\n"
 "Language-Team: zh <i18n-zh@googlegroups.com >\n"
@@ -5782,9 +5782,8 @@ msgstr "$Revision: 8082 $"
 #. (para)
 #: ../../en/build/defguide5.xml:3803
 msgid ""
-"<indexterm xml:id=\"parsDocch4\" class=\"startofrange\"><primary>parsing</"
-"primary><secondary>DocBook documents</secondary></indexterm><indexterm xml:id="
-"\"docDTDparsch4\" class=\"startofrange\"><primary>DocBook DTD</"
+"<indexterm><primary>parsing</primary><secondary>DocBook documents</"
+"secondary></indexterm><indexterm><primary>DocBook DTD</"
 "primary><secondary>parsing documents</secondary></indexterm>A key feature of "
 "<acronym>XML</acronym> markup is that you <emphasis>validate</emphasis> it. "
 "The DocBook schema is a precise description of valid nesting: the order of "
@@ -5943,9 +5942,9 @@ msgstr "理解验证错误"
 
 #. (para)
 #: ../../en/build/defguide5.xml:3914
+#, fuzzy
 msgid ""
-"<indexterm xml:id=\"errorparsech4\" class=\"startofrange\"><primary>errors</"
-"primary><secondary>validation</secondary></"
+"<indexterm><primary>errors</primary><secondary>validation</secondary></"
 "indexterm><indexterm><primary>validation</primary><secondary>errors</"
 "secondary></indexterm><indexterm><primary>error messages</"
 "primary><secondary>validation</secondary></indexterm>Every validator produces "
@@ -5954,6 +5953,11 @@ msgid ""
 "a little experience, this information is all you'll need to quickly identify "
 "what's wrong."
 msgstr ""
+"<indexterm><primary>declarations</primary><secondary>XML</secondary></"
+"indexterm><indexterm><primary>XML</primary><secondary>declarations</"
+"secondary></indexterm><indexterm><primary>versions</primary><secondary>XML, "
+"identifying</secondary></indexterm><acronym>XML</acronym> 文档经常用 "
+"<acronym>XML</acronym> 声明开始，它标识了文档的特性，例如："
 
 #. (para)
 #: ../../en/build/defguide5.xml:3923
@@ -6075,14 +6079,14 @@ msgstr "$Revision: 7801 $"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4057
+#, fuzzy
 msgid ""
-"<indexterm xml:id=\"publishDocBookch04\" class=\"startofrange\" significance="
-"\"normal\"><primary>DocBook DTD</primary><secondary>publishing documents</"
-"secondary></indexterm><indexterm xml:id=\"DocBookpublishch04\" class="
-"\"startofrange\" significance=\"normal\"><primary>publishing DocBook "
-"documents</primary></indexterm><indexterm significance=\"normal"
-"\"><primary>stylesheets</primary><secondary>publishing SGML/XML documents</"
-"secondary></indexterm><indexterm significance=\"normal\"><primary>HTML</"
+"<indexterm significance=\"normal\"><primary>DocBook DTD</"
+"primary><secondary>publishing documents</secondary></indexterm><indexterm "
+"significance=\"normal\"><primary>publishing DocBook documents</primary></"
+"indexterm><indexterm significance=\"normal\"><primary>stylesheets</"
+"primary><secondary>publishing SGML/XML documents</secondary></"
+"indexterm><indexterm significance=\"normal\"><primary>HTML</"
 "primary><secondary>translating SGML/XML documents</secondary></"
 "indexterm>Creating and editing <acronym>XML</acronym> documents is usually "
 "only half the battle. After you've composed your document, you'll want to "
@@ -6219,11 +6223,11 @@ msgstr "样式表例子"
 #: ../../en/build/defguide5.xml:4121
 #, fuzzy
 msgid ""
-"<indexterm xml:id=\"stylsheetsch04\" class=\"startofrange\" significance="
-"\"normal\"><primary>stylesheets</primary><secondary>examples</secondary></"
-"indexterm>By way of comparison, here's an example of each of the standard "
-"style languages. In each case, the stylesheet fragment shown contains the "
-"rules that reasonably formatted the following paragraph:"
+"<indexterm significance=\"normal\"><primary>stylesheets</"
+"primary><secondary>examples</secondary></indexterm>By way of comparison, "
+"here's an example of each of the standard style languages. In each case, the "
+"stylesheet fragment shown contains the rules that reasonably formatted the "
+"following paragraph:"
 msgstr ""
 "<indexterm xml:id=\"stylsheetsch04\" class=\"startofrange\" significance="
 "\"normal\"><primary>stylesheets</primary><secondary>examples</secondary></"
@@ -6341,10 +6345,9 @@ msgstr "定制 DocBook"
 #: ../../en/build/defguide5.xml:4249
 #, fuzzy
 msgid ""
-"<indexterm xml:id=\"customDocBookch05\" class=\"startofrange\" significance="
-"\"normal\"><primary>customizing</primary><secondary>DocBook schema</"
-"secondary></indexterm><indexterm xml:id=\"DocBookcustomch05\" class="
-"\"startofrange\" significance=\"normal\"><primary>DocBook schema</"
+"<indexterm significance=\"normal\"><primary>customizing</"
+"primary><secondary>DocBook schema</secondary></indexterm><indexterm "
+"significance=\"normal\"><primary>DocBook schema</"
 "primary><secondary>customizing</secondary></indexterm>For the applications "
 "you have in mind, DocBook <quote>out of the box</quote> may not be exactly "
 "what you need. Perhaps you need additional inline elements or perhaps you "
@@ -7575,10 +7578,10 @@ msgstr "$Revision: 7794 $"
 
 #. (para)
 #: ../../en/build/defguide5.xml:5124
+#, fuzzy
 msgid ""
-"<indexterm xml:id=\"elementsref\" class=\"startofrange\"><primary>elements</"
-"primary><secondary>reference</secondary></indexterm>This reference describes "
-"every element in the DocBook schema."
+"<indexterm><primary>elements</primary><secondary>reference</secondary></"
+"indexterm>This reference describes every element in the DocBook schema."
 msgstr ""
 "<indexterm xml:id=\"elementsref\" class=\"startofrange\"><primary>元素</"
 "primary><secondary>参考</secondary></indexterm> 本参考描述了在 DocBook 模式中"

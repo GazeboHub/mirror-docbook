@@ -22,7 +22,7 @@ Dependency:
     *) python 2.5
     *) python-libxml2 2.6.32
     *) gettext 0.17
-    *) fop trunk 2008-10-27(r708012), pdf only
+    *) xep 4.1.4 or fop trunk 2008-12-19(r728025), pdf only
     *) chinese font files, chinese pdf only
 -->
 <project name="defguide5-zh" default="html">
@@ -115,6 +115,7 @@ Dependency:
     <!-- Total time: 6 minutes 9 seconds -->
     <target name="translate" depends="translate.init" unless="translate.isUpToDate" description="Translate document">
         <mkdir dir="build"/>
+        <delete file="xml2po/.xml2po.mo"/>
         <echo message="Translating defguide5-zh.xml ..."/>
         <exec dir="${basedir}/xml2po" executable="python" failonerror="true">
             <arg value="xml2po.py"/>
@@ -126,14 +127,6 @@ Dependency:
             <arg value="${basedir}/build/defguide5-zh.xml"/>
             <arg value="../../en/build/defguide5.xml"/>
         </exec>
-        <exec dir="build" executable="xmllint">
-            <arg value="--output"/>
-            <arg value="defguide5-zh-fmt.xml"/>
-            <arg value="--format"/>
-            <arg value="defguide5-zh.xml"/>
-        </exec>
-        <delete file="xml2po/.xml2po.mo"/>
-        <delete file="build/defguide5-zh-tmp.xml"/>
     </target>
 
     <target name="html.init">
@@ -164,7 +157,8 @@ Dependency:
         </copy>
 
         <echo message="Making html ..."/>
-        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="1024m" failonerror="true" dir="${basedir}/build/defguide5">
+        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="512m"
+                failonerror="true" dir="${basedir}/build/defguide5">
             <jvmarg value="-Xss512k"/>
             <classpath refid="lib.classpath"/>
             <arg value="-x"/>
@@ -210,14 +204,53 @@ Dependency:
             <fileset dir="../en/graphics"/>
         </copy>
 
-        <copy todir="build/pdf">
-            <fileset dir="${fonts.dir}">
-                <include name="*.ttf"/>
-                <include name="*.ttc"/>
-            </fileset>
-            <fileset dir="${fop.home}/conf">
-                <include name="*.xml"/>
-            </fileset>
+        <echo message="Making fo ..."/>
+        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="512m"
+                failonerror="true" dir="${basedir}">
+            <jvmarg value="-Xss512k"/>
+            <classpath refid="lib.classpath"/>
+            <arg value="-x"/>
+            <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
+            <arg value="-y"/>
+            <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
+            <arg value="-r"/>
+            <arg value="org.apache.xml.resolver.tools.CatalogResolver"/>
+            <arg value="-o"/>
+            <arg value="build/defguide5-zh.fo"/>
+            <arg value="build/defguide5-zh.xml"/>
+            <arg value="stylesheets/zh/fo.xsl"/>
+            <arg value="fop1.extensions=1"/>
+            <arg value="title.font.family=${fop.title.font.family}"/>
+            <arg value="body.font.family=${fop.body.font.family}"/>
+            <arg value="sans.font.family=${fop.sans.font.family}"/>
+            <arg value="ingbat.font.family=${fop.ingbat.font.family}"/>
+            <arg value="monospace.font.family=${fop.monospace.font.family}"/>
+        </java>
+
+        <echo message="Making pdf ..."/>
+        <java classname="${fop.class}" fork="true" maxmemory="512m"
+                failonerror="true" dir="${basedir}/build/pdf">
+            <classpath refid="lib.classpath"/>
+            <arg value="-c"/>
+            <arg value="${fop.home}/conf/userconfig.xml"/>
+            <arg value="../defguide5-zh.fo"/>
+            <arg value="../defguide5-zh.pdf"/>
+        </java>
+    </target>
+
+    <!-- Total time: ? minutes ?? seconds -->
+    <target name="pdf-xep" depends="translate,pdf.init" unless="pdf.isUpToDate"  description="Generate document - pdf - xep">
+        <copy todir="build/src/examples">
+          <fileset dir="../en/examples"/>
+        </copy>
+        <copy todir="build/pdf/images">
+            <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
+        </copy>
+        <copy todir="build/refpages/elements/build/figures">
+            <fileset dir="../en/figures"/>
+        </copy>
+        <copy todir="build/refpages/graphics">
+            <fileset dir="../en/graphics"/>
         </copy>
 
         <echo message="Making fo ..."/>
@@ -235,25 +268,19 @@ Dependency:
             <arg value="build/defguide5-zh.fo"/>
             <arg value="build/defguide5-zh.xml"/>
             <arg value="stylesheets/zh/fo.xsl"/>
+            <arg value="xep.extensions=1"/>
         </java>
-        <exec dir="build" executable="xmllint">
-            <arg value="--output"/>
-            <arg value="defguide5-zh-fmt.fo"/>
-            <arg value="--format"/>
-            <arg value="defguide5-zh.fo"/>
-        </exec>
 
         <echo message="Making pdf ..."/>
-        <java classname="${fop.class}" fork="true" maxmemory="512m" failonerror="true"
-                dir="${basedir}/build/pdf">
-            <classpath refid="lib.classpath"/>
-            <arg value="-c"/>
-            <arg value="userconfig.xml"/>
+        <java classname="com.renderx.xep.XSLDriver" fork="true" maxmemory="512m"
+                failonerror="true" dir="${basedir}/build/pdf">
+            <jvmarg value="-Xss512k"/>
+            <classpath refid="xep.classpath"/>
+            <arg value="-DCONFIG=${xep.home}/xep.xml"/>
+            <arg value="-quiet"/>
             <arg value="../defguide5-zh.fo"/>
             <arg value="../defguide5-zh.pdf"/>
         </java>
-
-        <!--delete dir="build/pdf"/-->
     </target>
 
 </project>
