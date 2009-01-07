@@ -82,7 +82,8 @@ Dependency:
     </target>
 
     <!-- Total time: 14 minutes 42 seconds -->
-    <target name="updatepo" depends="xinclude,po.init" unless="po.isUpToDate" description="Update PO file">
+    <target name="updatepo" depends="xinclude,po.init" unless="po.isUpToDate"
+            description="Update PO file">
         <echo message="Making defguide5.pot ..."/>
         <exec dir="${basedir}/po" executable="python" failonerror="true">
             <arg value="../xml2po/xml2po.py"/>
@@ -113,9 +114,9 @@ Dependency:
     </target>
 
     <!-- Total time: 6 minutes 9 seconds -->
-    <target name="translate" depends="translate.init" unless="translate.isUpToDate" description="Translate document">
+    <target name="translate" depends="translate.init" unless="translate.isUpToDate"
+            description="Translate document">
         <mkdir dir="build"/>
-        <delete file="xml2po/.xml2po.mo"/>
         <echo message="Translating defguide5-zh.xml ..."/>
         <exec dir="${basedir}/xml2po" executable="python" failonerror="true">
             <arg value="xml2po.py"/>
@@ -127,6 +128,7 @@ Dependency:
             <arg value="${basedir}/build/defguide5-zh.xml"/>
             <arg value="../../en/build/defguide5.xml"/>
         </exec>
+        <delete file="xml2po/.xml2po.mo"/>
     </target>
 
     <target name="html.init">
@@ -141,8 +143,9 @@ Dependency:
         </uptodate>
     </target>
 
-    <!-- Total time: 22 minutes 8 seconds -->
-    <target name="html" depends="translate,html.init" unless="html.isUpToDate" description="Generate document - html">
+    <!-- Total time: 14 minutes 16 seconds -->
+    <target name="html" depends="translate,html.init" unless="html.isUpToDate"
+            description="Generate document - html">
         <copy todir="build/defguide5/images">
             <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
         </copy>
@@ -190,11 +193,12 @@ Dependency:
     </target>
 
     <!-- Total time: 9 minutes 31 seconds -->
-    <target name="pdf" depends="translate,pdf.init" unless="pdf.isUpToDate"  description="Generate document - pdf">
+    <target name="pdf" depends="translate,pdf.init" unless="pdf.isUpToDate"
+            description="Generate document - pdf">
         <copy todir="build/src/examples">
           <fileset dir="../en/examples"/>
         </copy>
-        <copy todir="build/pdf/images">
+        <copy todir="build/images">
             <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
         </copy>
         <copy todir="build/refpages/elements/build/figures">
@@ -228,22 +232,23 @@ Dependency:
         </java>
 
         <echo message="Making pdf ..."/>
-        <java classname="${fop.class}" fork="true" maxmemory="512m"
-                failonerror="true" dir="${basedir}/build/pdf">
+        <java classname="${fop.class}" fork="true" maxmemory="1024m"
+                failonerror="true" dir="${basedir}/build">
             <classpath refid="lib.classpath"/>
             <arg value="-c"/>
             <arg value="${fop.home}/conf/userconfig.xml"/>
-            <arg value="../defguide5-zh.fo"/>
-            <arg value="../defguide5-zh.pdf"/>
+            <arg value="defguide5-zh.fo"/>
+            <arg value="defguide5-zh.pdf"/>
         </java>
     </target>
 
-    <!-- Total time: ? minutes ?? seconds -->
-    <target name="pdf-xep" depends="translate,pdf.init" unless="pdf.isUpToDate"  description="Generate document - pdf - xep">
+    <!-- Total time: 8 minutes 39 seconds -->
+    <target name="pdf-xep" depends="translate,pdf.init" unless="pdf.isUpToDate"
+            description="Generate document - pdf - xep">
         <copy todir="build/src/examples">
           <fileset dir="../en/examples"/>
         </copy>
-        <copy todir="build/pdf/images">
+        <copy todir="build/images">
             <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
         </copy>
         <copy todir="build/refpages/elements/build/figures">
@@ -272,14 +277,14 @@ Dependency:
         </java>
 
         <echo message="Making pdf ..."/>
-        <java classname="com.renderx.xep.XSLDriver" fork="true" maxmemory="512m"
-                failonerror="true" dir="${basedir}/build/pdf">
+        <java classname="com.renderx.xep.XSLDriver" fork="true" maxmemory="1536m"
+                failonerror="true" dir="${basedir}/build">
             <jvmarg value="-Xss512k"/>
             <classpath refid="xep.classpath"/>
             <arg value="-DCONFIG=${xep.home}/xep.xml"/>
             <arg value="-quiet"/>
-            <arg value="../defguide5-zh.fo"/>
-            <arg value="../defguide5-zh.pdf"/>
+            <arg value="defguide5-zh.fo"/>
+            <arg value="defguide5-zh.pdf"/>
         </java>
     </target>
 

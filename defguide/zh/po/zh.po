@@ -1,7 +1,7 @@
 #
 # Copyright (C) 2007 Free Software Foundation, Inc.
 #
-# Dongsheng Song <dongsheng.song@gmail.com>, 2007-2008
+# Dongsheng Song <dongsheng.song@gmail.com>, 2007-2009
 # DorianDeng <doriandeng@gmail.com>, 2007
 #
 # Please DO NOT translate CVS/SVN tags or '@@image' !!!
@@ -29,7 +29,7 @@ msgstr ""
 "Project-Id-Version: defguide 2.0.17\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-01-05 10:00 +0000\n"
-"PO-Revision-Date: 2008-12-30 12:10+0800\n"
+"PO-Revision-Date: 2009-01-06 16:10+0800\n"
 "Last-Translator: Dongsheng Song <dongsheng.song@gmail.com>\n"
 "Language-Team: zh <i18n-zh@googlegroups.com >\n"
 "MIME-Version: 1.0\n"
@@ -34060,8 +34060,8 @@ msgid ""
 "Starting in DocBook 4.2, personal names, like <personname><firstname>Albert</"
 "firstname><surname>Einstein</surname></personname> can be marked-up inline."
 msgstr ""
-"Starting in DocBook 4.2, personal names, like <personname><firstname>Albert</"
-"firstname><surname>Einstein</surname></personname> can be marked-up inline."
+"从 DocBook 4.2 开始，人名，如 <personname><firstname>Albert</"
+"firstname><surname>Einstein</surname></personname> 可以在行内标记。"
 
 #. (refpurpose), (entry)
 #: ../source/defguide.xml:64600 ../source/defguide.xml:172182

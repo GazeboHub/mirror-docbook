@@ -116,7 +116,7 @@ Dependency:
         </uptodate>
     </target>
 
-    <!-- Total time: 29 minutes 30 seconds -->
+    <!-- Total time: 29 minutes 12 seconds -->
     <target name="updatepo" depends="po.init" unless="po.isUpToDate" description="Update PO file">
         <echo message="Making defguide.pot ..."/>
         <exec dir="${basedir}/po" executable="python" failonerror="true">
@@ -146,10 +146,10 @@ Dependency:
     </target>
 
     <!-- Total time: 29 minutes 14 seconds -->
-    <target name="translate" depends="translate.init" unless="translate.isUpToDate" description="Translate document">
+    <target name="translate" depends="translate.init" unless="translate.isUpToDate"
+            description="Translate document">
         <mkdir dir="build"/>
         <echo message="Translating defguide-zh.xml ..."/>
-        <delete file="xml2po/.xml2po.mo"/>
         <exec dir="${basedir}/xml2po" executable="python" failonerror="true">
             <arg value="xml2po.py"/>
             <arg value="-l"/>
@@ -160,6 +160,7 @@ Dependency:
             <arg value="../build/defguide-zh.xml"/>
             <arg value="../source/defguide.xml"/>
         </exec>
+        <delete file="xml2po/.xml2po.mo"/>
     </target>
 
     <target name="html.init">
@@ -171,9 +172,9 @@ Dependency:
         </uptodate>
     </target>
 
-    <!-- Total time: 13 minutes 48 seconds -->
-    <target name="html" depends="init,translate,html.init" unless="html.isUpToDate" description="Generate document - html">
-        <mkdir dir="build/schema"/>
+    <!-- Total time: 14 minutes 10 seconds -->
+    <target name="html" depends="init,translate,html.init" unless="html.isUpToDate"
+            description="Generate document - html">
         <copy todir="build/schema">
             <fileset dir="source/schema"/>
         </copy>
@@ -219,15 +220,15 @@ Dependency:
     </target>
 
     <!-- Total time: 10 minutes 44 seconds -->
-    <target name="pdf" depends="init,translate,pdf.init" unless="pdf.isUpToDate" description="Generate document - pdf">
-        <mkdir dir="build/schema"/>
+    <target name="pdf" depends="init,translate,pdf.init" unless="pdf.isUpToDate"
+            description="Generate document - pdf">
         <copy todir="build/schema">
             <fileset dir="source/schema"/>
         </copy>
-        <copy todir="build/pdf/images">
+        <copy todir="build/images">
             <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
         </copy>
-        <copy todir="build/pdf/figures">
+        <copy todir="build/figures">
             <fileset dir="source/figures" />
         </copy>
         <copy todir="build/examples">
@@ -236,7 +237,7 @@ Dependency:
 
         <echo message="Making fo ..."/>
         <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="1024m"
-                failonerror="true" dir="${basedir}/build/pdf">
+                failonerror="true" dir="${basedir}/build">
             <jvmarg value="-Xss512k"/>
             <classpath refid="lib.classpath"/>
             <arg value="-x"/>
@@ -246,9 +247,9 @@ Dependency:
             <arg value="-r"/>
             <arg value="org.apache.xml.resolver.tools.CatalogResolver"/>
             <arg value="-o"/>
-            <arg value="../defguide-zh.fo"/>
-            <arg value="../defguide-zh.xml"/>
-            <arg value="../../stylesheets/zh/fo.xsl"/>
+            <arg value="defguide-zh.fo"/>
+            <arg value="defguide-zh.xml"/>
+            <arg value="../stylesheets/zh/fo.xsl"/>
             <arg value="fop1.extensions=1"/>
             <arg value="title.font.family=${fop.title.font.family}"/>
             <arg value="body.font.family=${fop.body.font.family}"/>
@@ -259,25 +260,25 @@ Dependency:
 
         <echo message="Making pdf ..."/>
         <java classname="${fop.class}" fork="true" maxmemory="1024m"
-                failonerror="true" dir="${basedir}/build/pdf">
+                failonerror="true" dir="${basedir}/build">
             <classpath refid="lib.classpath"/>
             <arg value="-c"/>
             <arg value="${fop.home}/conf/userconfig.xml"/>
-            <arg value="../defguide-zh.fo"/>
-            <arg value="../defguide-zh.pdf"/>
+            <arg value="defguide-zh.fo"/>
+            <arg value="defguide-zh.pdf"/>
         </java>
     </target>
 
-    <!-- Total time: ?? minutes ?? seconds -->
-    <target name="pdf-xep" depends="init,translate,pdf.init" unless="pdf.isUpToDate" description="Generate document - pdf - xep">
-        <mkdir dir="build/schema"/>
+    <!-- Total time: 12 minutes 49 seconds -->
+    <target name="pdf-xep" depends="init,translate,pdf.init" unless="pdf.isUpToDate"
+            description="Generate document - pdf - xep">
         <copy todir="build/schema">
             <fileset dir="source/schema"/>
         </copy>
-        <copy todir="build/pdf/images">
+        <copy todir="build/images">
             <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
         </copy>
-        <copy todir="build/pdf/figures">
+        <copy todir="build/figures">
             <fileset dir="source/figures" />
         </copy>
         <copy todir="build/examples">
@@ -286,8 +287,8 @@ Dependency:
 
         <echo message="Making fo ..."/>
         <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="1024m"
-                failonerror="true" dir="${basedir}/build/pdf">
-            <jvmarg value="-Xss512k"/>
+                failonerror="true" dir="${basedir}/build">
+            <jvmarg value="-Xss1m"/>
             <classpath refid="lib.classpath"/>
             <arg value="-x"/>
             <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
@@ -296,21 +297,21 @@ Dependency:
             <arg value="-r"/>
             <arg value="org.apache.xml.resolver.tools.CatalogResolver"/>
             <arg value="-o"/>
-            <arg value="../defguide-zh.fo"/>
-            <arg value="../defguide-zh.xml"/>
-            <arg value="../../stylesheets/zh/fo.xsl"/>
+            <arg value="defguide-zh.fo"/>
+            <arg value="defguide-zh.xml"/>
+            <arg value="../stylesheets/zh/fo.xsl"/>
             <arg value="xep.extensions=1"/>
         </java>
 
         <echo message="Making pdf ..."/>
-        <java classname="com.renderx.xep.XSLDriver" fork="true" maxmemory="1024m"
-                failonerror="true" dir="${basedir}/build/pdf">
+        <java classname="com.renderx.xep.XSLDriver" fork="true" maxmemory="1536m"
+                failonerror="true" dir="${basedir}/build">
             <jvmarg value="-Xss512k"/>
             <classpath refid="xep.classpath"/>
             <arg value="-DCONFIG=${xep.home}/xep.xml"/>
             <arg value="-quiet"/>
-            <arg value="../defguide-zh.fo"/>
-            <arg value="../defguide-zh.pdf"/>
+            <arg value="defguide-zh.fo"/>
+            <arg value="defguide-zh.pdf"/>
         </java>
     </target>
 
@@ -320,60 +321,9 @@ Dependency:
         </uptodate>
     </target>
 
-    <!-- Total time: 12 minutes 41 seconds -->
-    <target name="defguide" depends="init,defguide.init" unless="defguide.isUpToDate" description="Generate document - defguide(en)">
-        <mkdir dir="build/schema"/>
-        <copy todir="build/schema">
-            <fileset dir="source/schema"/>
-        </copy>
-        <copy todir="build/pdf/images">
-            <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
-        </copy>
-        <copy todir="build/pdf/figures">
-            <fileset dir="source/figures" />
-        </copy>
-        <copy todir="build/examples">
-            <fileset dir="../en/examples"/>
-        </copy>
-        <copy file="source/defguide.xml" todir="build"/>
-
-        <echo message="Making fo ..."/>
-        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="1024m"
-                failonerror="true" dir="${basedir}/build/pdf">
-            <jvmarg value="-Xss512k"/>
-            <classpath refid="lib.classpath"/>
-            <arg value="-x"/>
-            <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
-            <arg value="-y"/>
-            <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
-            <arg value="-r"/>
-            <arg value="org.apache.xml.resolver.tools.CatalogResolver"/>
-            <arg value="-o"/>
-            <arg value="../defguide.fo"/>
-            <arg value="../defguide.xml"/>
-            <arg value="../../stylesheets/fo.xsl"/>
-            <arg value="fop1.extensions=1"/>
-            <arg value="title.font.family=${fop.title.font.family}"/>
-            <arg value="body.font.family=${fop.body.font.family}"/>
-            <arg value="sans.font.family=${fop.sans.font.family}"/>
-            <arg value="ingbat.font.family=${fop.ingbat.font.family}"/>
-            <arg value="monospace.font.family=${fop.monospace.font.family}"/>
-        </java>
-
-        <echo message="Making pdf ..."/>
-        <java classname="${fop.class}" fork="true" maxmemory="1024m"
-                failonerror="true" dir="${basedir}/build/pdf">
-            <classpath refid="lib.classpath"/>
-            <arg value="-c"/>
-            <arg value="${fop.home}/conf/userconfig.xml"/>
-            <arg value="../defguide.fo"/>
-            <arg value="../defguide.pdf"/>
-        </java>
-    </target>
-
-    <!-- Total time: ?? minutes ?? seconds -->
-    <target name="defguide-xep" depends="init,defguide.init" unless="defguide.isUpToDate" description="Generate document - defguide(en) - xep">
-        <mkdir dir="build/schema"/>
+    <!-- Total time: 12 minutes 14 seconds -->
+    <target name="defguide" depends="init,defguide.init" unless="defguide.isUpToDate"
+            description="Generate document - defguide(en)">
         <copy todir="build/schema">
             <fileset dir="source/schema"/>
         </copy>
@@ -390,7 +340,7 @@ Dependency:
 
         <echo message="Making fo ..."/>
         <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="1024m"
-                failonerror="true" dir="${basedir}/build/pdf">
+                failonerror="true" dir="${basedir}/build">
             <jvmarg value="-Xss512k"/>
             <classpath refid="lib.classpath"/>
             <arg value="-x"/>
@@ -400,23 +350,113 @@ Dependency:
             <arg value="-r"/>
             <arg value="org.apache.xml.resolver.tools.CatalogResolver"/>
             <arg value="-o"/>
-            <arg value="../defguide.fo"/>
-            <arg value="../defguide.xml"/>
-            <arg value="../../stylesheets/fo.xsl"/>
+            <arg value="defguide.fo"/>
+            <arg value="defguide.xml"/>
+            <arg value="../stylesheets/fo.xsl"/>
+            <arg value="fop1.extensions=1"/>
+            <arg value="title.font.family=${fop.title.font.family}"/>
+            <arg value="body.font.family=${fop.body.font.family}"/>
+            <arg value="sans.font.family=${fop.sans.font.family}"/>
+            <arg value="ingbat.font.family=${fop.ingbat.font.family}"/>
+            <arg value="monospace.font.family=${fop.monospace.font.family}"/>
+        </java>
+
+        <echo message="Making pdf ..."/>
+        <java classname="${fop.class}" fork="true" maxmemory="1024m"
+                failonerror="true" dir="${basedir}/build">
+            <classpath refid="lib.classpath"/>
+            <arg value="-c"/>
+            <arg value="${fop.home}/conf/userconfig.xml"/>
+            <arg value="defguide.fo"/>
+            <arg value="defguide.pdf"/>
+        </java>
+    </target>
+
+    <!-- Total time: 14 minutes 57 seconds -->
+    <target name="defguide-xep" depends="init,defguide.init" unless="defguide.isUpToDate"
+            description="Generate document - defguide(en) - xep">
+        <copy todir="build/schema">
+            <fileset dir="source/schema"/>
+        </copy>
+        <copy todir="build/images">
+            <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
+        </copy>
+        <copy todir="build/figures">
+            <fileset dir="source/figures" />
+        </copy>
+        <copy todir="build/examples">
+            <fileset dir="../en/examples"/>
+        </copy>
+        <copy file="source/defguide.xml" todir="build"/>
+
+        <echo message="Making fo ..."/>
+        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="1024m"
+                failonerror="true" dir="${basedir}/build">
+            <jvmarg value="-Xss1m"/>
+            <classpath refid="lib.classpath"/>
+            <arg value="-x"/>
+            <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
+            <arg value="-y"/>
+            <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
+            <arg value="-r"/>
+            <arg value="org.apache.xml.resolver.tools.CatalogResolver"/>
+            <arg value="-o"/>
+            <arg value="defguide.fo"/>
+            <arg value="defguide.xml"/>
+            <arg value="../stylesheets/fo.xsl"/>
             <arg value="xep.extensions=1"/>
         </java>
 
         <echo message="Making pdf ..."/>
         <java classname="com.renderx.xep.XSLDriver" fork="true" maxmemory="1536m"
-                failonerror="true" dir="${basedir}/build/pdf">
+                failonerror="true" dir="${basedir}/build">
             <jvmarg value="-Xss512k"/>
-            <jvmarg value="-XX:-UseGCOverheadLimit"/>
             <classpath refid="xep.classpath"/>
             <arg value="-DCONFIG=${xep.home}/xep.xml"/>
             <arg value="-quiet"/>
-            <arg value="../defguide.fo"/>
-            <arg value="../defguide.pdf"/>
+            <arg value="defguide.fo"/>
+            <arg value="defguide.pdf"/>
         </java>
     </target>
 
+    <target name="defguide-html.init">
+        <uptodate property="defguide-html.isUpToDate" targetfile="build/defguide/.done">
+            <srcfiles dir="source" includes="defguide.xml"/>
+            <srcfiles dir="stylesheets" includes="html.xsl"/>
+        </uptodate>
+    </target>
+
+    <!-- Total time: ?? minutes ?? seconds -->
+    <target name="defguide-html" depends="init,defguide-html.init" unless="defguide-html.isUpToDate"
+            description="Generate document - defguide(en) - html">
+        <copy todir="build/schema">
+            <fileset dir="source/schema"/>
+        </copy>
+        <copy todir="build/defguide/images">
+            <fileset dir="${docbook.xsl}/images" includes="**/*.png"/>
+        </copy>
+        <copy todir="build/defguide/figures">
+            <fileset dir="source/figures" />
+        </copy>
+        <copy todir="build/examples">
+            <fileset dir="../en/examples"/>
+        </copy>
+        <copy file="source/defguide.xml" todir="build"/>
+
+        <echo message="Making html ..."/>
+        <java classname="com.icl.saxon.StyleSheet" fork="true" maxmemory="1024m"
+                failonerror="true" dir="${basedir}/build/defguide">
+            <jvmarg value="-Xss512k"/>
+            <classpath refid="lib.classpath"/>
+            <arg value="-x"/>
+            <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
+            <arg value="-y"/>
+            <arg value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>
+            <arg value="-r"/>
+            <arg value="org.apache.xml.resolver.tools.CatalogResolver"/>
+            <arg value="../defguide.xml"/>
+            <arg value="../../stylesheets/html.xsl"/>
+        </java>
+        <touch file="build/defguide/.done"/>
+    </target>
 </project>

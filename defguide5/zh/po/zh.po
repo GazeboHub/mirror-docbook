@@ -1,7 +1,7 @@
 #
 # Copyright (C) 2007-2008 Free Software Foundation, Inc.
 #
-# Dongsheng Song <dongsheng.song@gmail.com>, 2007-2008
+# Dongsheng Song <dongsheng.song@gmail.com>, 2007-2009
 # DorianDeng <doriandeng@gmail.com>, 2007
 #
 # Please DO NOT translate CVS/SVN tags or '@@image' !!!
@@ -28,8 +28,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: defguide5 0.0.25\n"
-"POT-Creation-Date: 2009-01-05 09:50 +0000\n"
-"PO-Revision-Date: 2008-12-29 15:58+0800\n"
+"POT-Creation-Date: 2009-01-07 03:26 +0000\n"
+"PO-Revision-Date: 2009-01-06 16:08+0800\n"
 "Last-Translator: Dongsheng Song <dongsheng.song@gmail.com>\n"
 "Language-Team: zh <i18n-zh@googlegroups.com >\n"
 "MIME-Version: 1.0\n"
@@ -5129,7 +5129,6 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:3200
-#, fuzzy
 msgid ""
 "<indexterm><primary>refmiscinfo element</primary></"
 "indexterm><indexterm><primary>miscellaneous information, reference pages</"
@@ -5137,9 +5136,9 @@ msgid ""
 "or vendor information specific to the particular environment you are working "
 "in, may be stored in <tag>refmiscinfo</tag>."
 msgstr ""
-"<indexterm><primary>RefMiscInfo 元素</primary></indexterm><indexterm><primary>"
-"混合信息，参考页 </primary></indexterm>其它的这类信息，如特别环境中的一致性或"
-"卖主信息，可以保存在 <tag>refmiscinfo</tag> 中。"
+"<indexterm><primary>refmiscinfo 元素</primary></indexterm><indexterm><primary>"
+"混合信息，参考页</primary></indexterm>其它的这类信息，如特别环境中的一致性或卖"
+"主信息，可以保存在 <tag>refmiscinfo</tag> 中。"
 
 #. (tag), (secondary), (refentrytitle), (refmiscinfo)
 #: ../../en/build/defguide5.xml:3214 ../../en/build/defguide5.xml:27106
@@ -5244,7 +5243,6 @@ msgstr "<tag>refsect1</tag>…<tag>refsect3</tag>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:3293
-#, fuzzy
 msgid ""
 "<indexterm><primary>sections</primary><secondary>refentry, levels</"
 "secondary></indexterm><indexterm><primary>refsect1…refsect3</primary></"
@@ -5252,8 +5250,8 @@ msgid ""
 "sectioning elements: <tag>refsect1</tag>, <tag>refsect2</tag>, and "
 "<tag>refsect3</tag>."
 msgstr ""
-"<indexterm><primary>节</primary><secondary>RefEntry, 级别</secondary></"
-"indexterm><indexterm><primary>RefSect1…RefSect3</primary></indexterm>在 "
+"<indexterm><primary>节</primary><secondary>refentry, 级别</secondary></"
+"indexterm><indexterm><primary>refsect1…refsect3</primary></indexterm>在 "
 "<tag>refentry</tag> 中，只有三级节元素：<tag>refsect1</tag>、 <tag>refsect2</"
 "tag> 和 <tag>refsect3</tag>。"
 
@@ -5434,7 +5432,6 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:3504
-#, fuzzy
 msgid ""
 "<indexterm><primary>xml:id attribute</primary><secondary>index entries, "
 "ranges</secondary></indexterm><indexterm><primary>class attribute</"
@@ -5444,15 +5441,14 @@ msgid ""
 "class=\"attribute\">xml:id</tag>. The mark at the end of the range points "
 "back to the start."
 msgstr ""
-"<indexterm><primary>ID 属性</primary><secondary>索引入口，范围</secondary></"
-"indexterm><indexterm><primary>Class 属性</primary><secondary>索引入口，范围</"
-"secondary></indexterm>注意，在范围开始的标记就像在范围的开始处使用 <tag class="
-"\"attribute\">class</tag> 属性并提供一个 <tag class=\"attribute\">id</tag> 来"
-"标记它自己一样。 "
+"<indexterm><primary>xml:id 属性</primary><secondary>索引入口，范围</"
+"secondary></indexterm><indexterm><primary>class 属性</primary><secondary>索引"
+"入口，范围</secondary></indexterm>注意，在范围的开始处使用 <tag class="
+"\"attribute\">class</tag> 属性，并提供一个 <tag class=\"attribute\">xml:id</"
+"tag> 来标记它自己。在范围的结束处用此标记指回开始。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:3518
-#, fuzzy
 msgid ""
 "<indexterm><primary>indexterm element</primary><secondary>zone attribute</"
 "secondary></indexterm><indexterm><primary>zone attribute (indexterm)</"
@@ -5463,11 +5459,11 @@ msgid ""
 "content in question. The <tag class=\"attribute\">zone</tag> attribute of "
 "<tag>indexterm</tag> provides this functionality."
 msgstr ""
-"<indexterm><primary>IndexTerm 元素</primary><secondary>Zone 属性</secondary></"
-"indexterm><indexterm><primary>Zone 属性 (indexterm)</primary></indexterm>另一"
+"<indexterm><primary>indexterm 元素</primary><secondary>zone 属性</secondary></"
+"indexterm><indexterm><primary>zone 属性 (indexterm)</primary></indexterm>另一"
 "种标记文本范围的方法是指定一个元素的入口内容，如章或节就是一个完整的范围。在这"
 "种情况下，所有你需要为索引项目做的是指出包含正讨论的内容元素的 <tag class="
-"\"attribute\">id</tag>。<tag>indexterm</tag> 的 <tag class=\"attribute"
+"\"attribute\">xml:id</tag>。<tag>indexterm</tag> 的 <tag class=\"attribute"
 "\">zone</tag> 属性提供了这样的功能。"
 
 #. (para)
@@ -5484,7 +5480,6 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:3540
-#, fuzzy
 msgid ""
 "Suppose the discussion of tigers in your document comprises a whole text "
 "object (like a <tag class=\"element\">sect1</tag> or a <tag class=\"element"
@@ -5497,13 +5492,12 @@ msgid ""
 "</screen>"
 msgstr ""
 "设想在上述文档 tigers 中的讨论，由一个带有值为 <literal>tiger-desc</literal> "
-"的 <tag class=\"attribute\">id</tag> 完整的文本对象组成(如一个 <tag class="
+"的 <tag class=\"attribute\">xml:id</tag> 完整的文本对象组成(如一个 <tag class="
 "\"element\">sect1</tag> 或一个 <tag class=\"element\">chapter</tag>)。你可以在"
 "文档的任何地方放置下面的标记来索引文本范围：<screen>\n"
 "&lt;indexterm zone=\"tiger-desc\"&gt;\n"
-"  &lt;primary&gt;Big Cats&lt;/primary&gt;\n"
-"  &lt;secondary&gt;Tigers&lt;/secondary&gt;\n"
-"&lt;/indexterm&gt;\n"
+"&lt;primary&gt;Big Cats&lt;/primary&gt;\n"
+"&lt;secondary&gt;Tigers&lt;/secondary&gt;&lt;/indexterm&gt;\n"
 "</screen>"
 
 #. (para)
@@ -5701,7 +5695,6 @@ msgstr "创建参考书目"
 
 #. (para)
 #: ../../en/build/defguide5.xml:3705
-#, fuzzy
 msgid ""
 "<indexterm><primary>bibliographies, creating</primary></"
 "indexterm><indexterm><primary>raw data</primary><secondary>bibliographies</"
@@ -5716,7 +5709,7 @@ msgstr ""
 "<indexterm><primary>参考书目，创建</primary></indexterm><indexterm><primary>原"
 "始数据</primary><secondary>参考书目</secondary></"
 "indexterm><indexterm><primary>加工后的数据</primary><secondary>参考书目</"
-"secondary></indexterm><indexterm><primary>BiblioEntry 元素</primary></"
+"secondary></indexterm><indexterm><primary>biblioentry 元素</primary></"
 "indexterm>有二种方法可以在 DocBook 中创建参考书目：你可以用 <emphasis>raw</"
 "emphasis> 或 <emphasis>cooked</emphasis> 数据。下面是一个被包装在 <tag class="
 "\"element\">biblioentry</tag> 元素中的原始参考条目："
@@ -5737,7 +5730,6 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:3759
-#, fuzzy
 msgid ""
 "<indexterm><primary>bibliomixed element</primary></indexterm> All the "
 "“cooked” data in a <tag class=\"element\">bibliomixed</tag> entry in a "
@@ -5745,9 +5737,9 @@ msgid ""
 "the form and sequence in which it is provided. It even includes punctuation "
 "between the fields of data:"
 msgstr ""
-"<indexterm><primary>Bibliomixed 元素</primary></indexterm>所有的  “已加工的” "
-"数据都在参考书目的 <tag class=\"element\">bibliomixed</tag> 条目中。换句话说，"
-"是有意在表单中排序后提供给读者。它甚至在数据的字段间包括标点符号："
+"<indexterm><primary>bibliomixed 元素</primary></indexterm>所有的 “已加工的” 数"
+"据都在参考书目的 <tag class=\"element\">bibliomixed</tag> 条目中。换句话说，是"
+"有意在表单中排序后提供给读者。它甚至在数据的字段间包括标点符号："
 
 #. (para)
 #: ../../en/build/defguide5.xml:3784
@@ -5770,14 +5762,16 @@ msgid "Parsing DocBook Documents"
 msgstr "解析 DocBook 文档"
 
 #. (pubdate)
-#: ../../en/build/defguide5.xml:3799 ../../en/build/defguide5.xml:4245
-msgid "$Date: 2008-07-12 02:02:22 +0800 (Sat, 12 Jul 2008) $"
-msgstr "$Date: 2008-07-12 02:02:22 +0800 (Sat, 12 Jul 2008) $"
+#: ../../en/build/defguide5.xml:3799 ../../en/build/defguide5.xml:4053
+#: ../../en/build/defguide5.xml:4245 ../../en/build/defguide5.xml:5120
+msgid "$Date: 2009-01-05 18:11:06 +0800 (Mon, 05 Jan 2009) $"
+msgstr "$Date: 2009-01-05 18:11:06 +0800 (Mon, 05 Jan 2009) $"
 
 #. (releaseinfo)
-#: ../../en/build/defguide5.xml:3800 ../../en/build/defguide5.xml:4246
-msgid "$Revision: 8082 $"
-msgstr "$Revision: 8082 $"
+#: ../../en/build/defguide5.xml:3800 ../../en/build/defguide5.xml:4054
+#: ../../en/build/defguide5.xml:4246 ../../en/build/defguide5.xml:5121
+msgid "$Revision: 8202 $"
+msgstr "$Revision: 8202 $"
 
 #. (para)
 #: ../../en/build/defguide5.xml:3803
@@ -5942,7 +5936,6 @@ msgstr "理解验证错误"
 
 #. (para)
 #: ../../en/build/defguide5.xml:3914
-#, fuzzy
 msgid ""
 "<indexterm><primary>errors</primary><secondary>validation</secondary></"
 "indexterm><indexterm><primary>validation</primary><secondary>errors</"
@@ -5953,11 +5946,6 @@ msgid ""
 "a little experience, this information is all you'll need to quickly identify "
 "what's wrong."
 msgstr ""
-"<indexterm><primary>declarations</primary><secondary>XML</secondary></"
-"indexterm><indexterm><primary>XML</primary><secondary>declarations</"
-"secondary></indexterm><indexterm><primary>versions</primary><secondary>XML, "
-"identifying</secondary></indexterm><acronym>XML</acronym> 文档经常用 "
-"<acronym>XML</acronym> 声明开始，它标识了文档的特性，例如："
 
 #. (para)
 #: ../../en/build/defguide5.xml:3923
@@ -5984,7 +5972,6 @@ msgstr "此处不允许字符数据"
 
 #. (para)
 #: ../../en/build/defguide5.xml:3943
-#, fuzzy
 msgid ""
 "<indexterm><primary>error messages</primary><secondary>character data out of "
 "context</secondary></indexterm><indexterm><primary>characters</"
@@ -5994,11 +5981,6 @@ msgid ""
 "missing start tag, but sometimes it's just the result of typing in the wrong "
 "place!"
 msgstr ""
-"<indexterm><primary>declarations</primary><secondary>XML</secondary></"
-"indexterm><indexterm><primary>XML</primary><secondary>declarations</"
-"secondary></indexterm><indexterm><primary>versions</primary><secondary>XML, "
-"identifying</secondary></indexterm><acronym>XML</acronym> 文档经常用 "
-"<acronym>XML</acronym> 声明开始，它标识了文档的特性，例如："
 
 #. (para)
 #: ../../en/build/defguide5.xml:3964
@@ -6067,19 +6049,8 @@ msgstr ""
 msgid "Publishing DocBook Documents"
 msgstr "出版 DocBook 文档"
 
-#. (pubdate)
-#: ../../en/build/defguide5.xml:4053
-msgid "$Date: 2008-03-04 01:34:51 +0800 (Tue, 04 Mar 2008) $"
-msgstr "$Date: 2008-03-04 01:34:51 +0800 (Tue, 04 Mar 2008) $"
-
-#. (releaseinfo)
-#: ../../en/build/defguide5.xml:4054
-msgid "$Revision: 7801 $"
-msgstr "$Revision: 7801 $"
-
 #. (para)
 #: ../../en/build/defguide5.xml:4057
-#, fuzzy
 msgid ""
 "<indexterm significance=\"normal\"><primary>DocBook DTD</"
 "primary><secondary>publishing documents</secondary></indexterm><indexterm "
@@ -6096,18 +6067,16 @@ msgid ""
 "environments, it is now possible to publish an <acronym>XML</acronym> "
 "document on the Web simply by putting it online with a stylesheet."
 msgstr ""
-"<indexterm xml:id=\"publishDocBookch04\" class=\"startofrange\" significance="
-"\"normal\"><primary>DocBook DTD</primary><secondary>出版文档</secondary></"
-"indexterm><indexterm xml:id=\"DocBookpublishch04\" class=\"startofrange\" "
-"significance=\"normal\"><primary>出版 DocBook 文档</primary></"
-"indexterm><indexterm significance=\"normal\"><primary>stylesheets</"
-"primary><secondary>出版 SGML/XML 文档</secondary></indexterm><indexterm "
-"significance=\"normal\"><primary>HTML</primary><secondary>转变 SGML/XML 文档</"
-"secondary></indexterm>创建和编辑 <acronym>XML</acronym> 文档通常是只完成了一半"
-"工作。当文档稳定以后，你就会出版它。出版，对于我们来说，意味着打印或者发布到 "
-"WEB。对于 <acronym>XML</acronym> 文档，这通常用几种<glossterm>样式表</"
-"glossterm>来完成。在一些环境中，可以通过简单的将 <acronym>XML</acronym> 文档与"
-"一个样式表放在一起来发布到 WEB。"
+"<indexterm significance=\"normal\"><primary>DocBook DTD</primary><secondary>出"
+"版文档</secondary></indexterm><indexterm significance=\"normal\"><primary>出"
+"版 DocBook 文档</primary></indexterm><indexterm significance=\"normal"
+"\"><primary>样式表</primary><secondary>出版 SGML/XML 文档</secondary></"
+"indexterm><indexterm significance=\"normal\"><primary>HTML</"
+"primary><secondary>转换 SGML/XML 文档</secondary></indexterm>创建和编辑 "
+"<acronym>XML</acronym> 文档通常是只完成了一半工作。当文档完成以后，你将会出版"
+"它。出版，对于我们来说，意味着打印或者发布到 WEB。对于 <acronym>XML</acronym> "
+"文档，这通常用几种<glossterm>样式表</glossterm>来完成。在一些环境中，可以通过"
+"简单的将 <acronym>XML</acronym> 文档与一个样式表放在一起来发布到 WEB。"
 
 #. (title)
 #: ../../en/build/defguide5.xml:4071
@@ -6116,7 +6085,6 @@ msgstr "样式表语言概览"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4072
-#, fuzzy
 msgid ""
 "<indexterm significance=\"normal\"><primary>stylesheets</"
 "primary><secondary>languages</secondary></indexterm><indexterm significance="
@@ -6129,7 +6097,8 @@ msgstr ""
 "<indexterm significance=\"normal\"><primary>样式表</primary><secondary>语言</"
 "secondary></indexterm><indexterm significance=\"normal\"><primary>语言</"
 "primary><secondary>样式表</secondary></indexterm>在过去数年中，许多尝试产生了"
-"标准的样式表语言，以及私有的语言。"
+"标准的样式表语言，以及私有的语言。自从本书首次编写，已经有三个标准的样式表占据"
+"统治地位："
 
 #. (term)
 #: ../../en/build/defguide5.xml:4081
@@ -6138,7 +6107,6 @@ msgstr "CSS"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4083
-#, fuzzy
 msgid ""
 "<indexterm significance=\"normal\"><primary>CSS</primary></"
 "indexterm><indexterm significance=\"normal\"><primary>HTML</"
@@ -6154,8 +6122,9 @@ msgstr ""
 "indexterm><indexterm significance=\"normal\"><primary>HTML</"
 "primary><secondary>CSS</secondary></indexterm><indexterm significance=\"normal"
 "\"><primary>XML</primary><secondary>CSS</secondary></indexterm><acronym>W3C</"
-"acronym> CSS 工作组为 <acronym>HTML</acronym> 和 <acronym>XML</acronym> 创建了"
-"样式附加语言 <acronym>CSS</acronym>。"
+"acronym> CSS 工作组为 <acronym>HTML</acronym> 创建了样式附加语言 "
+"<acronym>CSS</acronym>。它已经扩展为也适用于 <acronym>XML</acronym>。一些浏览"
+"器可以用 CSS 来显示 XML，某些商业产品可以渲染 XML+CSS 为在线格式或打印格式。"
 
 #. (term), (acronym)
 #: ../../en/build/defguide5.xml:4094 ../../en/build/defguide5.xml:38961
@@ -6164,7 +6133,6 @@ msgstr "XSL"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4096
-#, fuzzy
 msgid ""
 "<indexterm significance=\"normal\"><primary>XSL</primary></"
 "indexterm><indexterm significance=\"normal\"><primary>XML</"
@@ -6177,9 +6145,9 @@ msgstr ""
 "<indexterm significance=\"normal\"><primary>XSL</primary></"
 "indexterm><indexterm significance=\"normal\"><primary>XML</"
 "primary><secondary>XSL</secondary></indexterm><indexterm significance=\"normal"
-"\"><primary>扩展样式语言</primary><see>XSL</see></indexterm>最近，"
-"<acronym>XML</acronym> 的成熟需要一个标准的扩展样式语言(<acronym>XSL</"
-"acronym>)。<acronym>W3C</acronym> <acronym>XSL</acronym> 工作组从事此工作。"
+"\"><primary>扩展样式语言</primary><see>XSL</see></indexterm>XSL 1.0 制定良好，"
+"对于 DocBook，它可能是最常用的样式表技术。XSL 2.0 提供许多重要的新特性(自然"
+"的，它带来了一些复杂性)，越来越流行。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4102
@@ -6197,7 +6165,6 @@ msgstr "XQuery"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4111
-#, fuzzy
 msgid ""
 "<indexterm significance=\"normal\"><primary>XQuery</primary></"
 "indexterm><indexterm significance=\"normal\"><primary>XML</"
@@ -6207,12 +6174,12 @@ msgid ""
 "different set of features than XSL, but can be used to transform DocBook into "
 "other formats."
 msgstr ""
-"<indexterm significance=\"normal\"><primary>XML</primary></"
-"indexterm><indexterm significance=\"normal\"><primary>SGML</"
-"primary><secondary>XML and</secondary></indexterm><indexterm significance="
-"\"normal\"><primary>Extensible Markup Language</primary><see>XML</see></"
-"indexterm><link href=\"http://www.w3.org/TR/REC-xml\">扩展标记语言</link>作为 "
-"<acronym>SGML</acronym> 的子集，专门为在网络上使用设计。"
+"<indexterm significance=\"normal\"><primary>XQuery</primary></"
+"indexterm><indexterm significance=\"normal\"><primary>XML</"
+"primary><secondary>XQuery</secondary></indexterm><indexterm significance="
+"\"normal\"><primary>XML Query Language</primary><see>XQuery</see></"
+"indexterm>XQuery 1.0 与 XSL 2.0 同时开发，提供了与 XSL 不同的特性，但是也能用"
+"于转换 DocBook 到其它格式。"
 
 #. (title)
 #: ../../en/build/defguide5.xml:4119
@@ -6221,7 +6188,6 @@ msgstr "样式表例子"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4121
-#, fuzzy
 msgid ""
 "<indexterm significance=\"normal\"><primary>stylesheets</"
 "primary><secondary>examples</secondary></indexterm>By way of comparison, "
@@ -6229,10 +6195,9 @@ msgid ""
 "stylesheet fragment shown contains the rules that reasonably formatted the "
 "following paragraph:"
 msgstr ""
-"<indexterm xml:id=\"stylsheetsch04\" class=\"startofrange\" significance="
-"\"normal\"><primary>stylesheets</primary><secondary>examples</secondary></"
-"indexterm>作为比较，这里为每个标准样式表语言都提供一个例子。在每个样例中，样式"
-"表片断包含了下述段落的近似格式化规则："
+"<indexterm significance=\"normal\"><primary>stylesheets</primary><secondary>样"
+"例</secondary></indexterm>作为比较，这里为每个标准样式表语言都提供一个例子。在"
+"每个样例中，样式表片断包含了下述段落的近似格式化规则："
 
 #. (title)
 #: ../../en/build/defguide5.xml:4135
@@ -6296,16 +6261,15 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:4206
-#, fuzzy
 msgid ""
 "<indexterm significance=\"normal\"><primary>XQuery</"
 "primary><secondary>example</secondary></indexterm><acronym>XQuery</acronym> "
 "is expressed in a mixture of text and XML fragments, as shown in <xref "
 "linkend=\"ex-xquery\"/>."
 msgstr ""
-"<indexterm significance=\"normal\"><primary>CSS 样式表</primary><secondary>例"
-"子</secondary></indexterm><acronym>CSS</acronym> 样式表由选择器和格式化属性组"
-"成，如 <xref linkend=\"ex-css\"/> 所示。"
+"<indexterm significance=\"normal\"><primary>XQuery</"
+"primary><secondary>example</secondary></indexterm><acronym>XQuery</acronym> 表"
+"现为文本和 XML 片断的混合，如 <xref linkend=\"ex-xquery\"/> 所示。"
 
 #. (title)
 #: ../../en/build/defguide5.xml:4216
@@ -6326,13 +6290,12 @@ msgstr "使用 <acronym>XSL</acronym> 出版 DocBook 文档"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4233
-#, fuzzy
 msgid ""
 "For a detailed discussion of using <acronym>XSL</acronym> to publish DocBook "
 "documents, see <citetitle>DocBook XSL: The Complete Guide</citetitle> by "
 "<personname><firstname>Bob</firstname><surname>Stayton</surname></personname>."
 msgstr ""
-"为了获得关于使用 <acronym>XSL</acronym> 出版 DocBook 文档的更多信息，参看 "
+"为了获得关于使用 <acronym>XSL</acronym> 出版 DocBook 文档的更多信息，请参看 "
 "<personname><firstname>Bob</firstname><surname>Stayton</surname></personname> "
 "所著的 <citetitle>DocBook XSL: The Complete Guide</citetitle>。"
 
@@ -6343,7 +6306,6 @@ msgstr "定制 DocBook"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4249
-#, fuzzy
 msgid ""
 "<indexterm significance=\"normal\"><primary>customizing</"
 "primary><secondary>DocBook schema</secondary></indexterm><indexterm "
@@ -6354,17 +6316,15 @@ msgid ""
 "want to remove elements that you never want your authors to use. By design, "
 "DocBook makes this sort of customization easy."
 msgstr ""
-"<indexterm xml:id=\"customDocBookch05\" class=\"startofrange\" significance="
-"\"normal\"><primary>定制</primary><secondary>DocBook DTD</secondary></"
-"indexterm><indexterm xml:id=\"DocBookcustomch05\" class=\"startofrange\" "
-"significance=\"normal\"><primary>DocBook DTD</primary><secondary>定制</"
-"secondary></indexterm>对于在你关注的应用，DocBook 的 <quote>开箱即用</quote> "
-"也许不完全适合你的需要。也许你需要添加一些行内元素，或者删除一些不希望使用的元"
-"素。DocBook 的设计使这种定制很容易。"
+"<indexterm significance=\"normal\"><primary>定制</primary><secondary>DocBook "
+"方案</secondary></indexterm><indexterm significance=\"normal"
+"\"><primary>DocBook 方案</primary><secondary>定制</secondary></indexterm>对于"
+"在你关注的应用，DocBook 的 <quote>开箱即用</quote> 也许不完全适合你的需要。也"
+"许你需要添加一些行内元素，或者删除一些不希望使用的元素。DocBook 的设计使这种定"
+"制很容易。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4258
-#, fuzzy
 msgid ""
 "<indexterm significance=\"normal\"><primary>attributes</"
 "primary><secondary>DocBook schema, customizing</secondary></"
@@ -6374,10 +6334,9 @@ msgid ""
 "firstterm>. You might do this in order to:"
 msgstr ""
 "<indexterm significance=\"normal\"><primary>属性</primary><secondary>DocBook "
-"DTD, customizing</secondary></indexterm><indexterm significance=\"normal"
-"\"><primary>元素</primary><secondary>DocBook DTD, customizing</secondary></"
-"indexterm>本章说明了如何创建你自己的<firstterm>定制层</firstterm>，你也许会为"
-"了以下目的进行定制："
+"方案, 定制</secondary></indexterm><indexterm significance=\"normal\"><primary>"
+"元素</primary><secondary>DocBook 方案, 定制</secondary></indexterm>本章说明了"
+"如何创建你自己的<firstterm>定制层</firstterm>，你也许会为了以下目的进行定制："
 
 #. (para)
 #: ../../en/build/defguide5.xml:4268
@@ -6417,7 +6376,6 @@ msgstr "缩窄属性值域为一个指定的列表或固定值"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4279
-#, fuzzy
 msgid ""
 "<indexterm significance=\"normal\"><primary>extensions, DocBook schema</"
 "primary></indexterm><indexterm significance=\"normal\"><primary>environment</"
@@ -6430,14 +6388,13 @@ msgid ""
 "in a way that is not compatible with DocBook. Extensions can be very useful, "
 "but might have a great impact on your environment."
 msgstr ""
-"<indexterm significance=\"normal\"><primary>扩展, DocBook DTD</primary></"
+"<indexterm significance=\"normal\"><primary>扩展, DocBook 方案</primary></"
 "indexterm><indexterm significance=\"normal\"><primary>环境</"
 "primary><secondary>DocBook 扩展, 影响</secondary></indexterm>你可以使用定制层"
-"来扩展 DocBook 或创建它的子集。为严格的 DocBook 子集创建 <acronym>DTD</"
-"acronym> 意味着你所有的实例都依然完全是有效的 DocBook 实例，这对于工具、样式表"
-"或者与其它人共享文档是非常重要的。<firstterm>扩展</firstterm>增加了新的结构，"
-"或者按某种与 DocBook 不兼容的方式改变了 <acronym>DTD</acronym>。扩展是非常有用"
-"的，但它对你的环境的影响非常大。"
+"来扩展 DocBook 或创建它的子集。为严格的 DocBook 子集创建方案意味着你所有的实例"
+"都依然完全是有效的 DocBook 实例，这对于工具、样式表或者与其它人共享文档是非常"
+"重要的。<firstterm>扩展</firstterm>增加了新的结构，或者按某种与 DocBook 不兼容"
+"的方式改变了方案。扩展可能非常有用，但它对你的环境的影响非常大。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4293
@@ -6678,7 +6635,7 @@ msgstr ""
 #. (para)
 #: ../../en/build/defguide5.xml:4426
 msgid "For convenience, the DocBook grammar is distributed in a single file."
-msgstr ""
+msgstr "为了方便，DocBook 的语法使用单一文件发布。"
 
 #. (title)
 #: ../../en/build/defguide5.xml:4430
@@ -7565,16 +7522,6 @@ msgstr "$Revision: 5609 $"
 #: ../../en/build/defguide5.xml:5115
 msgid "DocBook Element Reference"
 msgstr "DocBook 元素参考"
-
-#. (pubdate)
-#: ../../en/build/defguide5.xml:5120
-msgid "$Date: 2008-03-03 22:28:43 +0800 (Mon, 03 Mar 2008) $"
-msgstr "$Date: 2008-03-03 22:28:43 +0800 (Mon, 03 Mar 2008) $"
-
-#. (releaseinfo)
-#: ../../en/build/defguide5.xml:5121
-msgid "$Revision: 7794 $"
-msgstr "$Revision: 7794 $"
 
 #. (para)
 #: ../../en/build/defguide5.xml:5124
@@ -19576,7 +19523,7 @@ msgstr "sortas"
 msgid ""
 "A <tag>glossentry</tag> is a wrapper around a glossary term and its "
 "definition."
-msgstr ""
+msgstr "<tag>glossentry</tag> 是术语和定义的包装器。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:15514
@@ -28444,9 +28391,9 @@ msgid ""
 "<person><personname><firstname>Norman</firstname><surname>Walsh</surname></"
 "personname><email>ndw@nwalsh.com</email></person>."
 msgstr ""
-"The principle author of this document is "
-"<person><personname><firstname>Norman</firstname><surname>Walsh</surname></"
-"personname><email>ndw@nwalsh.com</email></person>."
+"本书的主要作者是 <person><personname><firstname>Norman</"
+"firstname><surname>Walsh</surname></personname><email>ndw@nwalsh.com</email></"
+"person>。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:24750
@@ -28514,8 +28461,8 @@ msgid ""
 "Starting in DocBook 4.2, personal names, like <personname><firstname>Albert</"
 "firstname><surname>Einstein</surname></personname> can be marked-up inline."
 msgstr ""
-"Starting in DocBook 4.2, personal names, like <personname><firstname>Albert</"
-"firstname><surname>Einstein</surname></personname> can be marked-up inline."
+"从 DocBook 4.2 开始，人名，如 <personname><firstname>Albert</"
+"firstname><surname>Einstein</surname></personname> 可以在行内标记。"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:24880
@@ -28534,10 +28481,9 @@ msgstr "phone <phrase role=\"cceq\">::=</phrase>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:24895
-#, fuzzy
 msgid ""
 "A <tag>phone</tag> identifies a telephone number in an <tag>address</tag>."
-msgstr "<tag>personname</tag> 标识个人的人名。"
+msgstr "<tag>phone</tag> 在 <tag>address</tag> 中标识电话号码。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:24909
@@ -28694,6 +28640,8 @@ msgid ""
 "A <tag>postcode</tag> is a postal code (in the United States, a <acronym>ZIP</"
 "acronym> code) in an <tag>address</tag>."
 msgstr ""
+"<tag>postcode</tag> 是 <tag>address</tag> 中的邮政编码(在美国，是 "
+"<acronym>ZIP</acronym> 代码)。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:25120
@@ -28726,13 +28674,16 @@ msgid ""
 "A <tag>preface</tag> is a preface or forward in a <tag>book</tag>. The "
 "<tag>preface</tag> element may appear more than once and should be used for "
 "all introductory chapter-like material. For example, a <tag>book</tag> might "
-"have both a <emphasis>Foreward</emphasis> and an <emphasis>Introduction</"
+"have both a <emphasis>Forward</emphasis> and an <emphasis>Introduction</"
 "emphasis>. Both should be tagged as <tag>preface</tag>s in DocBook."
 msgstr ""
+"<tag>preface</tag> 是 <tag>book</tag> 中的序言或导言。<tag>preface</tag> 元素"
+"可以多次出现，应该作为类似章的介绍材料。例如，<tag>book</tag> 可能同时有 "
+"<emphasis>导言</emphasis> 和 <emphasis>绪论</emphasis>，它们在 DocBook 都应该"
+"使用 <tag>preface</tag>。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:25218
-#, fuzzy
 msgid ""
 "Formatted as a displayed block. Usually introduces a forced page break and "
 "often starts on the next recto page. It is common for the page numbers in "
@@ -28740,8 +28691,8 @@ msgid ""
 "<tag>preface</tag>s are usually listed in the Table of Contents."
 msgstr ""
 "格式化为一个显示块。通常引入一个强制的页分隔符，并且经常开始于下一页纸的正面。"
-"某些时候会重新开始页编码。典型的，附录以字母编排而不是数字，并且会出现在目录"
-"中。"
+"通常序言中的页码用罗马数字，而不是阿拉伯数字。<tag>preface</tag> 通常在目录"
+"zhog列出。中。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:25228
@@ -28775,6 +28726,8 @@ msgid ""
 "significant word or words in the entry. All <tag>indexterm</tag>s must have a "
 "<tag>primary</tag>."
 msgstr ""
+"在 <tag>indexterm</tag> 中，<tag>primary</tag> 标识条目中最有效的词语。所有 "
+"<tag>indexterm</tag> 都必须有一个 <tag>primary</tag>。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:25271 ../../en/build/defguide5.xml:30419
@@ -38207,16 +38160,6 @@ msgstr "DocBook V5.0 仍旧在开发中。"
 #: ../../en/build/defguide5.xml:37353
 msgid "Resources"
 msgstr "资源"
-
-#. (pubdate)
-#: ../../en/build/defguide5.xml:37354
-msgid "$Date: 2006-10-13 21:45:09 +0800 (Fri, 13 Oct 2006) $"
-msgstr "$Date: 2006-10-13 21:45:09 +0800 (Fri, 13 Oct 2006) $"
-
-#. (releaseinfo)
-#: ../../en/build/defguide5.xml:37355
-msgid "$Revision: 6357 $"
-msgstr "$Revision: 6357 $"
 
 #. (primary), (acronym)
 #: ../../en/build/defguide5.xml:37358 ../../en/build/defguide5.xml:37423
