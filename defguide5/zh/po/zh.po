@@ -28,8 +28,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: defguide5 0.0.25\n"
-"POT-Creation-Date: 2009-01-07 03:26 +0000\n"
-"PO-Revision-Date: 2009-01-06 16:08+0800\n"
+"POT-Creation-Date: 2009-01-07 10:17 +0000\n"
+"PO-Revision-Date: 2009-01-16 17:50+0800\n"
 "Last-Translator: Dongsheng Song <dongsheng.song@gmail.com>\n"
 "Language-Team: zh <i18n-zh@googlegroups.com >\n"
 "MIME-Version: 1.0\n"
@@ -1151,12 +1151,12 @@ msgstr "创建 DocBook 文档"
 #. (pubdate)
 #: ../../en/build/defguide5.xml:564
 msgid "$Date: 2008-12-25 14:39:21 +0800 (Thu, 25 Dec 2008) $"
-msgstr ""
+msgstr "$Date: 2008-12-25 14:39:21 +0800 (Thu, 25 Dec 2008) $"
 
 #. (releaseinfo)
 #: ../../en/build/defguide5.xml:565
 msgid "$Revision: 8193 $"
-msgstr ""
+msgstr "$Revision: 8193 $"
 
 #. (para)
 #: ../../en/build/defguide5.xml:568
@@ -5187,7 +5187,6 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:3244
-#, fuzzy
 msgid ""
 "<indexterm><primary>titles</primary><secondary>reference pages</secondary></"
 "indexterm><indexterm><primary>refentrytitle element</primary></indexterm> If "
@@ -5195,8 +5194,8 @@ msgid ""
 "the reference page is the <tag>refdescriptor</tag>, if present, or the first "
 "<tag>refname</tag>."
 msgstr ""
-"<indexterm><primary>标题</primary><secondary>参考页 </secondary></"
-"indexterm><indexterm><primary>RefEntryTitle 元素</primary></indexterm>如果在 "
+"<indexterm><primary>标题</primary><secondary>参考页</secondary></"
+"indexterm><indexterm><primary>refentrytitle 元素</primary></indexterm>如果在 "
 "<tag>refmeta</tag> 中没有给出 <tag>refentrytitle</tag>，参考页的标题将是 "
 "<tag>refdescriptor</tag>(如果出现)，或者是首个 <tag>refname</tag>。"
 
@@ -6410,7 +6409,6 @@ msgstr "你应该这样做吗？"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4300
-#, fuzzy
 msgid ""
 "<indexterm significance=\"normal\"><primary>stylesheets</"
 "primary><secondary>schema extension, effects</secondary></indexterm>Changing "
@@ -6422,11 +6420,11 @@ msgid ""
 "additional issues that are outside your immediate control. Proceed with "
 "caution."
 msgstr ""
-"<indexterm significance=\"normal\"><primary>样式</primary><secondary>DTD 扩"
-"展, 影响</secondary></indexterm>改变 <acronym>DTD</acronym> 会大范围影响你所使"
-"用的工具和样式表，也会影响你的作者和遗留文档。这在你创建扩展时尤其正确。如果你"
-"依赖于支持人员安装和维护写作和发布工具，请在你投入大量时间修改 <acronym>DTD</"
-"acronym> 之前检查这些影响。可能会有你不能直接控制的额外问题，请谨慎处理。"
+"<indexterm significance=\"normal\"><primary>样式</primary><secondary>方案扩"
+"展, 影响</secondary></indexterm>改变方案会大范围影响你所使用的工具和样式表，也"
+"会影响你的作者和遗留文档。这在你创建扩展时尤其正确。如果你依赖于支持人员安装和"
+"维护创作和发布工具，请在你投入大量时间修改方案之前检查这些影响。可能会有你不能"
+"直接控制的额外问题，请谨慎处理。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4312
@@ -6602,7 +6600,6 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:4404
-#, fuzzy
 msgid ""
 "<indexterm><primary>subsets (DocBook schema)</primary></indexterm>If your "
 "schema is a proper subset, you can advertise this status by using the "
@@ -6612,11 +6609,11 @@ msgid ""
 "variant specifically as a subset or an extension, you can leave out this "
 "field entirely, or, if you prefer, use the <literal>Variant</literal> keyword."
 msgstr ""
-"<indexterm><primary>子集 (DocBook DTD)</primary></indexterm>如果你的方案是严格"
-"子集，你可以在描述中使用 <literal>Subset</literal> 关键字来标识这个状态。如果"
-"你的方案包含标记模型扩展，你可以使用 <literal>Extension</literal> 关键字来标识"
-"这个状态。如果你不愿意明确的区分你的变化是子集还是扩展，你完全省略这个字段，或"
-"者如果你喜欢，可以使用 <literal>Variant</literal> 关键字。"
+"<indexterm><primary>子集 (DocBook 方案)</primary></indexterm>如果你的方案是严"
+"格子集，你可以在描述中使用 <literal>Subset</literal> 关键字来标识这个状态。如"
+"果你的方案包含标记模型扩展，你可以使用 <literal>Extension</literal> 关键字来标"
+"识这个状态。如果你不愿意明确的区分你的变化是子集还是扩展，你完全省略这个字段，"
+"或者如果你喜欢，可以使用 <literal>Variant</literal> 关键字。"
 
 #. (title)
 #: ../../en/build/defguide5.xml:4418
@@ -6865,7 +6862,7 @@ msgstr ""
 #. (para)
 #: ../../en/build/defguide5.xml:4582
 msgid "Start by importing the base DocBook schema."
-msgstr ""
+msgstr "从导入基本的 DocBook 方案开始。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4585
@@ -7039,7 +7036,6 @@ msgstr "测试你的工作"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4729
-#, fuzzy
 msgid ""
 "<indexterm><primary>customizing</primary><secondary>DocBook schema</"
 "secondary><tertiary>writing, testing, and using customization layers</"
@@ -7050,11 +7046,6 @@ msgid ""
 "interrelated patterns. Whenever you make a change to the schema, it's always "
 "wise to use a validator to double-check your work."
 msgstr ""
-"<indexterm><primary>元素</primary><secondary>参考</secondary><tertiary>提纲</"
-"tertiary></indexterm><indexterm><primary>提纲</primary><secondary>元素 ( 参考"
-"页 )</secondary></indexterm><indexterm><primary>内容模型</primary><secondary>"
-"元素，参考</secondary></indexterm>提供了元素的快速提纲。提纲的内容是根据元素而"
-"变化的，但也许包括某些或所有下面的章节："
 
 #. (para)
 #: ../../en/build/defguide5.xml:4740
@@ -7250,7 +7241,6 @@ msgstr "从表入口删除警告"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4910
-#, fuzzy
 msgid ""
 "<indexterm><primary>modules</primary><secondary>redeclarations</secondary></"
 "indexterm><indexterm><primary>redeclarations</primary><secondary>modules</"
@@ -7259,10 +7249,6 @@ msgid ""
 "contexts. The way to accomplish this task is to redefine the patterns used to "
 "calculate the elements allowed in those contexts."
 msgstr ""
-"<indexterm><primary>声明</primary><secondary>文档类型声明</secondary></"
-"indexterm><indexterm><primary>文档类型声明</primary><secondary>文档分割</"
-"secondary></indexterm>这样你就能方便的在独立的文件中编写章和附录。被外部解析实"
-"体引用的文档禁止含有文档类型声明。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:4919
@@ -7525,14 +7511,12 @@ msgstr "DocBook 元素参考"
 
 #. (para)
 #: ../../en/build/defguide5.xml:5124
-#, fuzzy
 msgid ""
 "<indexterm><primary>elements</primary><secondary>reference</secondary></"
 "indexterm>This reference describes every element in the DocBook schema."
 msgstr ""
-"<indexterm xml:id=\"elementsref\" class=\"startofrange\"><primary>元素</"
-"primary><secondary>参考</secondary></indexterm> 本参考描述了在 DocBook 模式中"
-"的每个元素。"
+"<indexterm><primary>元素</primary><secondary>参考</secondary></indexterm>本参"
+"考描述了在 DocBook 方案中的每个元素。"
 
 #. (title)
 #: ../../en/build/defguide5.xml:5131
@@ -11365,7 +11349,6 @@ msgstr "<tag>audioobject</tag> 是 <tag>audiodata</tag> 的包装器。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:7326
-#, fuzzy
 msgid ""
 "Its content is rendered aurally or not at all. It might not be rendered, "
 "depending on its placement within a <tag>mediaobject</tag> or "
@@ -11373,9 +11356,9 @@ msgid ""
 "For a more detailed description of the semantics involved, see "
 "<tag>mediaobject</tag>."
 msgstr ""
-"格式化为一个显示块。它可能总是不呈现，依赖于在包含它的 <tag>mediaobject</tag> "
-"中的位置和在发布系统中的约束。对于更详细的相关语义的描述，请参阅 "
-"<tag>mediaobject</tag> 。"
+"它的内容呈现为声音或被丢弃。它可能不呈现，依赖于在包含它的 <tag>mediaobject</"
+"tag> 或 <tag>inlinemediaobject</tag> 中的位置，以及在发布系统中的约束。要获得"
+"相关语义更详细的描述，请参阅 <tag>mediaobject</tag> 。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:7337
@@ -12227,14 +12210,11 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:8194
-#, fuzzy
 msgid ""
 "Formatted inline. It is recommended that the <tag class=\"attribute\">role</"
 "tag> attribute be used to identify the kind of information that this element "
 "contains."
 msgstr ""
-"如果指定了单位，则 <tag class=\"attribute\">otherunits</tag> 属性被用来标识在"
-"一些特定实现方法的单位。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:8202
@@ -12733,16 +12713,15 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:8527
-#, fuzzy
 msgid ""
 "A <tag>biblioset</tag> is <quote>raw</quote>. It contain a database-like "
 "collection of named fields. It is the responsibility of the processing system "
 "to select elements from within a <tag>biblioset</tag>, present them in the "
 "correct order, and add all punctuation."
 msgstr ""
-"<tag>biblioentry</tag> 是 <quote>原始数据</quote>。它包括一个类数据库的命名字"
-"段集。处理系统的职责是从 <tag>biblioentry</tag> 中选择元素，以正确的顺序显示它"
-"们，并添加所有标点。"
+"<tag>biblioset</tag> 是 <quote>原始数据</quote>。它包括一个类数据库的命名字段"
+"集。处理系统的职责是从 <tag>biblioset</tag> 中选择元素，以正确的顺序显示它们，"
+"并添加所有标点符号。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:8534
@@ -13536,16 +13515,14 @@ msgstr "onkeyup"
 
 #. (para)
 #: ../../en/build/defguide5.xml:9213
-#, fuzzy
 msgid ""
 "A <tag>caption</tag> is an extended description of a <tag>mediaobject</tag>. "
 "Unlike a <tag>textobject</tag>, which is an alternative to the other elements "
 "in the <tag>mediaobject</tag>, the <tag>caption</tag> augments the object."
 msgstr ""
-"<tag>caption</tag> 是一个<tag>mediaobject</tag> 或 <tag>figure</tag> 或其它正"
-"式或非正式元素的一个扩展描述。不像 <tag>textobject</tag> ，<tag>textobject</"
-"tag> 是一个用于在 <tag>mediaobject</tag> 中的其它元素的可选元素，而 "
-"<tag>caption</tag> 添加对象。"
+"<tag>caption</tag> 是一个<tag>mediaobject</tag> 的扩展描述。不像 "
+"<tag>textobject</tag> 是一个在 <tag>mediaobject</tag> 中的其它元素的可选元素，"
+"而 <tag>caption</tag> 添加对象。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:9224 ../../en/build/defguide5.xml:10503
@@ -13685,10 +13662,9 @@ msgstr "警告(warning)绝对不能出现在警告(caution)的子孙中"
 
 #. (para)
 #: ../../en/build/defguide5.xml:9278
-#, fuzzy
 msgid ""
 "A <tag>caution</tag> is an admonition, usually set off from the main text."
-msgstr "从主文本中分出来的引用语"
+msgstr "<tag>caution</tag>  是一种警告，通常从主文本中分离出来。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:9282
@@ -13745,9 +13721,8 @@ msgstr "chapter <phrase role=\"cceq\">::=</phrase>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:9410
-#, fuzzy
 msgid "A <tag>chapter</tag> is a chapter of a <tag>book</tag>."
-msgstr "<tag>audioobject</tag> 是 <tag>audiodata</tag> 的包装器。"
+msgstr "<tag>chapter</tag> 是 <tag>book</tag> 中的章。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:9414
@@ -14277,14 +14252,13 @@ msgstr "classname <phrase role=\"cceq\">::=</phrase>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:9870
-#, fuzzy
 msgid ""
 "The <tag>classname</tag> tag is used to identify the name of a class. This is "
 "likely to occur only in documentation about object-oriented programming "
 "systems, languages, and architectures."
 msgstr ""
-"<tag>interfacename</tag> 元素用于标识一个接口的名称。这可能仅出现在关于面向对"
-"象程序系统、语言和架构相关的文档中。"
+"<tag>classname</tag> 元素用于标识类名称。这可能仅出现于关于面向对象编程系统、"
+"语言和架构相关的文档中。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:9875
@@ -14418,13 +14392,13 @@ msgstr "classsynopsisinfo <phrase role=\"cceq\">::=</phrase>"
 #: ../../en/build/defguide5.xml:10008 ../../en/build/defguide5.xml:10920
 #: ../../en/build/defguide5.xml:15084 ../../en/build/defguide5.xml:21126
 msgid "Computer-output inlines"
-msgstr ""
+msgstr "行内计算机输出"
 
 #. (emphasis)
 #: ../../en/build/defguide5.xml:10008 ../../en/build/defguide5.xml:15084
 #: ../../en/build/defguide5.xml:21126 ../../en/build/defguide5.xml:26036
 msgid "User-input inlines"
-msgstr ""
+msgstr "行内用户输入"
 
 #. (para)
 #: ../../en/build/defguide5.xml:10032
@@ -14507,10 +14481,9 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:10105
-#, fuzzy
 msgid ""
 "The processing expectations of <tag>cmdsynopsis</tag> are fairly complex."
-msgstr "下列参数包含 <tag>cmdsynopsis</tag>： <placeholder-1/>。"
+msgstr "<tag>cmdsynopsis</tag> 的处理期望相当复杂。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:10109
@@ -15699,11 +15672,10 @@ msgstr "confdates <phrase role=\"cceq\">::=</phrase>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:10997
-#, fuzzy
 msgid ""
 "A <tag>confdates</tag> element holds the dates of a conference for which a "
 "document was written or at which it was presented."
-msgstr "用于编写一个文档的协会的创建日期"
+msgstr "<tag>confdates</tag> 元素标识编写或发表此文档的会议的日期。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:11008
@@ -16136,12 +16108,10 @@ msgstr "contrib <phrase role=\"cceq\">::=</phrase>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:11621
-#, fuzzy
 msgid ""
 "The <tag>contrib</tag> element contains a summary or description of the "
 "contributions made by an author, editor, or other credited source."
-msgstr ""
-"<tag>releaseinfo</tag> 元素包含文档或部分文档的释放或出版的版本的有用描述。"
+msgstr "<tag>contrib</tag> 元素包含作者、编辑或其它贡献源的概要或描述。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:11633
@@ -16732,11 +16702,10 @@ msgstr "edition <phrase role=\"cceq\">::=</phrase>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:12340
-#, fuzzy
 msgid ""
 "The <tag>edition</tag> contains the name or number of the edition of the "
 "document."
-msgstr "<tag>pubdate</tag> 是文档的出版日期。"
+msgstr "<tag>edition</tag> 包含文档版本的名称或数字。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:12352
@@ -16800,14 +16769,11 @@ msgstr "行内标记标识一个 email 地址。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:12445
-#, fuzzy
 msgid ""
 "Formatted inline. An <tag>email</tag> may generate surrounding punctuation, "
 "such as angle brackets. This is an interchange issue. See <xref linkend=\"app-"
 "interchange\"/>."
 msgstr ""
-"正确的格式化 <tag>biblioentry</tag> 是一个交换交换。参见 <xref linkend=\"app-"
-"interchange\"/>。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:12450
@@ -17326,13 +17292,12 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:12847
-#, fuzzy
 msgid ""
 "Many formatters are incapable of supporting <tag>entrytbl</tag>s. This is an "
 "interchange issue. See <xref linkend=\"app-interchange\"/>."
 msgstr ""
-"正确的格式化 <tag>biblioentry</tag> 是一个交换交换。参见 <xref linkend=\"app-"
-"interchange\"/>。"
+"许多格式化程序不能支持 <tag>entrytbl</tag>，这是一个交换问题。参见 <xref "
+"linkend=\"app-interchange\"/>。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:12858 ../../en/build/defguide5.xml:34804
@@ -19256,13 +19221,12 @@ msgstr "ANSI 例子"
 
 #. (para)
 #: ../../en/build/defguide5.xml:15059
-#, fuzzy
 msgid ""
 "This <emphasis>alpha</emphasis> reference page is $Revision: 7551 $ published "
 "Sun, 04 Nov 2007."
 msgstr ""
-"这个 <emphasis>alpha</emphasis> 参考页是 $Revision: 5412 $ 发布于2005年10月31"
-"日，星期一。"
+"This <emphasis>alpha</emphasis> reference page is $Revision: 7551 $ published "
+"Sun, 04 Nov 2007."
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:15069
@@ -19375,13 +19339,12 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:15276
-#, fuzzy
 msgid ""
 "Formatted as a displayed block. A <tag>glossary</tag> in a <tag>book</tag> "
 "frequently causes a forced page break in print media."
 msgstr ""
-"格式化为一个显示块。在一部书(<tag>book</tag>)中的 <tag>index</tag> 在打印媒介"
-"中通常导致一个强制的分页符。"
+"格式化为一个显示块。<tag>book</tag> 中的 <tag>glossary</tag> 在打印媒体中经常"
+"导致强制换页。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:15284
@@ -19421,11 +19384,10 @@ msgstr "subject"
 
 #. (para)
 #: ../../en/build/defguide5.xml:15373
-#, fuzzy
 msgid ""
 "A <tag>glossdef</tag> contains the description or definition of a "
 "<tag>glossterm</tag>."
-msgstr "<tag>index</tag> 包含格式化的文档索引"
+msgstr "<tag>glossdef</tag> 包含 <tag>glossterm</tag> 的描述或定义。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:15382
@@ -19459,23 +19421,21 @@ msgstr "glossdiv <phrase role=\"cceq\">::=</phrase>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:15442
-#, fuzzy
 msgid ""
 "A <tag>glossdiv</tag> is a section of a <tag>glossary</tag>. A Glossary might "
 "be divided into sections in order to group terms, perhaps alphabetically."
 msgstr ""
-"<tag>bibliodiv</tag> 是 <tag>bibliography</tag> 的节。参考书目也许会被分成几节"
-"以将不同的源类型分组，如书籍、杂志中的文章、web 网点，等等。"
+"<tag>glossdiv</tag> 是 <tag>glossary</tag> 的节。为了分组术语，术语表可能按照"
+"字母顺序分节。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:15447
-#, fuzzy
 msgid ""
 "A Glossary may contain any number of <tag>glossentry</tag> or <tag>glossdiv</"
 "tag> elements, but it cannot contain a mixture of both at the same level."
 msgstr ""
-"一个参考书目可以包含任何数量的 <tag>biblioentry</tag> 或 <tag>bibliomixed</"
-"tag> 元素，或者任何数量的 <tag>bibliodiv</tag>，但不能在同一层级中包含它们。"
+"术语表可以包含任何数量的 <tag>glossentry</tag> 或 <tag>glossdiv</tag> 元素，但"
+"不能在同一层级中包含它们。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:15460
@@ -28320,9 +28280,8 @@ msgstr "db.partintro"
 
 #. (refpurpose)
 #: ../../en/build/defguide5.xml:24583
-#, fuzzy
 msgid "An introduction to the contents of a part"
-msgstr "无法设定目录的文本内容"
+msgstr "对部的内容的介绍"
 
 #. (para)
 #: ../../en/build/defguide5.xml:24587
@@ -28605,9 +28564,8 @@ msgstr "pob <phrase role=\"cceq\">::=</phrase>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:25060
-#, fuzzy
 msgid "A <tag>pob</tag> is a post office box number in an <tag>address</tag>."
-msgstr "<tag>audioobject</tag> 是 <tag>audiodata</tag> 的包装器。"
+msgstr "<tag>pob</tag> 是 <tag>address</tag> 中的邮政信箱编码。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:25073
@@ -28652,6 +28610,16 @@ msgstr "这些元素包含 <tag>postcode</tag> ： <placeholder-1/>。"
 #: ../../en/build/defguide5.xml:25121
 msgid "The following elements occur in postcode: <placeholder-1/>."
 msgstr "下列元素可以出现在 postcode 中：<placeholder-1/>。"
+
+#. (pubdate)
+#: ../../en/build/defguide5.xml:25132
+msgid "$Date: 2009-01-07 15:42:29 +0800 (Wed, 07 Jan 2009) $"
+msgstr "$Date: 2009-01-07 15:42:29 +0800 (Wed, 07 Jan 2009) $"
+
+#. (releaseinfo)
+#: ../../en/build/defguide5.xml:25133
+msgid "$Revision: 8205 $"
+msgstr "$Revision: 8205 $"
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:25139
@@ -28703,6 +28671,15 @@ msgstr "这些元素包含 <tag>preface</tag> ： <placeholder-1/>。"
 #: ../../en/build/defguide5.xml:25229
 msgid "The following elements occur in preface: <placeholder-1/>."
 msgstr "下列元素可以出现在 preface 中：<placeholder-1/>。"
+
+#. (para)
+#: ../../en/build/defguide5.xml:25237
+msgid ""
+"This <emphasis>alpha</emphasis> reference page is $Revision: 8205 $ published "
+"Wed, 07 Jan 2009."
+msgstr ""
+"This <emphasis>alpha</emphasis> reference page is $Revision: 8205 $ published "
+"Wed, 07 Jan 2009."
 
 #. (refmiscinfo)
 #: ../../en/build/defguide5.xml:25247
@@ -28788,11 +28765,11 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:25323
-#, fuzzy
 msgid ""
 "Formatted as a displayed block. The <tag>primaryie</tag> starts a new entry "
 "in the <tag>index</tag>."
-msgstr "格式为一个显示块。某些时候节是被编号的。"
+msgstr ""
+"格式为一个显示块。<tag>primaryie</tag> 在 <tag>index</tag> 中开始新条目。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:25330
@@ -28980,10 +28957,9 @@ msgstr "productionrecap <phrase role=\"cceq\">::=</phrase>"
 
 #. (para)
 #: ../../en/build/defguide5.xml:25616
-#, fuzzy
 msgid ""
 "A <tag>productionrecap</tag> is a cross reference to a <tag>production</tag>."
-msgstr "<tag>audioobject</tag> 是 <tag>audiodata</tag> 的包装器。"
+msgstr "<tag>productionrecap</tag> 是 <tag>production</tag> 的交叉索引。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:25620
@@ -29372,14 +29348,13 @@ msgstr ""
 
 #. (para)
 #: ../../en/build/defguide5.xml:26070
-#, fuzzy
 msgid ""
 "Formatted as a displayed block. This element is displayed “verbatim”; "
 "whitespace and linebreaks within this element are significant. The "
 "<tag>programlisting</tag>s are usually displayed in a fixed width font."
 msgstr ""
 "格式化为显示块。这个元素被显示为“逐字的”；在这个元素中的空白和行分隔符是有意义"
-"的。"
+"的。<tag>programlisting</tag> 通常用等宽字体显示。"
 
 #. (para)
 #: ../../en/build/defguide5.xml:26076

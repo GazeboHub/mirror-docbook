@@ -426,7 +426,7 @@ Dependency:
         </uptodate>
     </target>
 
-    <!-- Total time: ?? minutes ?? seconds -->
+    <!-- Total time: 15 minutes 57 seconds -->
     <target name="defguide-html" depends="init,defguide-html.init" unless="defguide-html.isUpToDate"
             description="Generate document - defguide(en) - html">
         <copy todir="build/schema">
