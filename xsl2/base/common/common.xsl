@@ -885,7 +885,7 @@ or 0 if no object is selected.</para>
       </xsl:variable>
     
       <xsl:choose>
-	<xsl:when test="$useobject != 0">
+	<xsl:when test="$useobject != '0'">
 	  <xsl:value-of select="$count"/>
 	</xsl:when>
 
