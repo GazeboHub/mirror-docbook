@@ -27,7 +27,7 @@ include this space, and titles are outdented to the left by this
 amount, effectively leaving titles at the left margin and the body
 text indented. Currently this method is only used for FOP because it
 cannot properly use the <parameter>body.start.indent</parameter>
-parameter. the relative
+parameter.
 </para>
 
 <para>The default value for FOP is -4pc, which means the body text is
