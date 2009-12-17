@@ -41,6 +41,7 @@
   <xsl:include href="callouts.xsl"/>
   <xsl:include href="formal.xsl"/>
   <xsl:include href="blocks.xsl"/>
+  <xsl:include href="msgset.xsl"/>
   <xsl:include href="graphics.xsl"/>
   <xsl:include href="footnotes.xsl"/>
   <xsl:include href="admonitions.xsl"/>
@@ -56,8 +57,8 @@
 
 <!-- ============================================================ -->
 
-<xsl:output method="xml" encoding="utf-8" indent="yes"/>
-<xsl:output name="final" method="xhtml" encoding="utf-8" indent="yes"/>
+<xsl:output method="xhtml" encoding="utf-8" indent="no"/>
+<xsl:output name="xml" method="xml" encoding="utf-8" indent="no"/>
 
 <xsl:param name="stylesheet.result.type" select="'xhtml'"/>
 
@@ -72,21 +73,19 @@
     <xsl:message>Styling...</xsl:message>
   </xsl:if>
 
-  <xsl:result-document format="final">
-    <html>
-      <xsl:call-template name="t:head">
-	<xsl:with-param name="root" select="$root"/>
-      </xsl:call-template>
-      <body>
-	<xsl:call-template name="t:body-attributes"/>
-	<xsl:if test="$root/@status">
-	  <xsl:attribute name="class" select="$root/@status"/>
-	</xsl:if>
+  <html>
+    <xsl:call-template name="t:head">
+      <xsl:with-param name="root" select="$root"/>
+    </xsl:call-template>
+    <body>
+      <xsl:call-template name="t:body-attributes"/>
+      <xsl:if test="$root/@status">
+        <xsl:attribute name="class" select="$root/@status"/>
+      </xsl:if>
 
-	<xsl:apply-templates select="$root"/>
-      </body>
-    </html>
-  </xsl:result-document>
+      <xsl:apply-templates select="$root"/>
+    </body>
+  </html>
 
   <xsl:for-each select=".//db:mediaobject[db:textobject[not(db:phrase)]]">
     <xsl:call-template name="t:write-longdesc"/>
@@ -118,76 +117,5 @@
 </xsl:template>
 
 <!-- ============================================================ -->
-
-<!-- blocks -->
-<xsl:template match="db:para|db:simpara|db:cmdsynopsis" priority="100000">
-  <xsl:param name="content">
-    <xsl:next-match/>
-  </xsl:param>
-
-  <xsl:call-template name="t:block-element">
-    <xsl:with-param name="content">
-      <xsl:copy-of select="$content"/>
-    </xsl:with-param>
-  </xsl:call-template>
-</xsl:template>
-
-<xsl:template name="t:block-element">
-  <xsl:param name="content">
-    <xsl:apply-templates/>
-  </xsl:param>
-
-  <xsl:variable name="inherit" select="self::db:para or self::db:simpara"/>
-  <xsl:variable name="changed" select=".//*[@revisionflag and
-                                            @revisionflag != 'off']"/>
-
-  <xsl:choose>
-    <xsl:when test="@revisionflag">
-      <div class="revision-inherited">
-	<div class="revision-{@revisionflag}">
-	  <xsl:copy-of select="$content"/>
-	</div>
-      </div>
-    </xsl:when>
-    <xsl:when test="$inherit and $changed">
-      <div class="revision-inherited">
-	<xsl:copy-of select="$content"/>
-      </div>
-    </xsl:when>
-    <xsl:otherwise>
-      <xsl:copy-of select="$content"/>
-    </xsl:otherwise>
-  </xsl:choose>
-</xsl:template>
-
-<!-- inlines -->
-<xsl:template match="db:emphasis|db:phrase" priority="100000">
-  <xsl:param name="content">
-    <xsl:next-match/>
-  </xsl:param>
-
-  <xsl:call-template name="t:inline-element">
-    <xsl:with-param name="content">
-      <xsl:copy-of select="$content"/>
-    </xsl:with-param>
-  </xsl:call-template>
-</xsl:template>
-
-<xsl:template name="t:inline-element">
-  <xsl:param name="content">
-    <xsl:apply-templates/>
-  </xsl:param>
-
-  <xsl:choose>
-    <xsl:when test="@revisionflag">
-      <span class="revision-{@revisionflag}">
-	<xsl:copy-of select="$content"/>
-      </span>
-    </xsl:when>
-    <xsl:otherwise>
-      <xsl:copy-of select="$content"/>
-    </xsl:otherwise>
-  </xsl:choose>
-</xsl:template>
 
 </xsl:stylesheet>

@@ -13,7 +13,10 @@
 
 <!-- many info elements are handled by ../common/inlines.xsl -->
 
-<xsl:template match="db:orgname">
+<xsl:template match="db:orgname|db:orgdiv|db:shortaffil|db:subtitle|db:artpagenums
+                     |db:confdates|db:conftitle|db:confnum
+                     |db:confsponsor|db:contractnum|db:contractsponsor
+                     |db:volumenum|db:issuenum|db:seriesvolnums">
   <span class="{local-name(.)}">
     <xsl:call-template name="id"/>
     <xsl:call-template name="class"/>
@@ -67,6 +70,13 @@
   <xsl:variable name="cols" select="sum($colspec)"/>
 
   <table class="{local-name(.)}" border="0" summary="Revision History">
+    <tr>
+      <td colspan="{$cols}">
+        <span class="title">
+          <xsl:value-of select="f:gentext(.)"/>
+        </span>
+      </td>
+    </tr>
     <xsl:for-each select="db:revision">
       <tr class="{local-name}">
 	<xsl:if test="$has-revnumber">

@@ -187,9 +187,22 @@
 
 <xsl:template match="db:varlistentry/db:term">
   <dt>
-    <xsl:call-template name="id"/>
+    <!-- If the first term doesn't have an ID, but the varlistentry does,
+         output an ID for the varlistentry... -->
+    <xsl:choose>
+      <xsl:when test="not(@xml:id) and ../@xml:id
+                      and not(preceding-sibling::db:term)">
+        <xsl:call-template name="id">
+          <xsl:with-param name="node" select="parent::db:varlistentry"/>
+        </xsl:call-template>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:call-template name="id">
+          <xsl:with-param name="force" select="1"/>
+        </xsl:call-template>
+      </xsl:otherwise>
+    </xsl:choose>
     <xsl:call-template name="class"/>
-
     <xsl:call-template name="t:simple-xlink"/>
   </dt>
 </xsl:template>
@@ -421,7 +434,6 @@
     <xsl:with-param name="class" select="local-name(.)"/>
     <xsl:with-param name="object" as="element()">
       <div class="{local-name(.)}">
-	<xsl:call-template name="id"/>
 	<xsl:call-template name="class"/>
 
 	<xsl:apply-templates
@@ -430,7 +442,7 @@
 	<xsl:choose>
 	  <xsl:when test="count(db:step) = 1">
 	    <ul>
-	      <xsl:apply-templates 
+	      <xsl:apply-templates
 		  select="db:step[1]|db:step[1]/following-sibling::node()"/>
 	    </ul>
 	  </xsl:when>
@@ -446,7 +458,7 @@
 		  <xsl:otherwise>1</xsl:otherwise>
 		</xsl:choose>
 	      </xsl:attribute>
-	      <xsl:apply-templates 
+	      <xsl:apply-templates
 		  select="db:step[1]|db:step[1]/following-sibling::node()"/>
 	    </ol>
 	  </xsl:otherwise>

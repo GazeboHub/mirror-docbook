@@ -19,7 +19,6 @@
     <xsl:with-param name="class" select="local-name(.)"/>
     <xsl:with-param name="object" as="element()">
       <div class="{local-name(.)}">
-	<xsl:call-template name="id"/>
 	<xsl:call-template name="class"/>
 	<xsl:apply-templates select="*[not(self::db:caption)]"/>
       </div>
@@ -32,7 +31,6 @@
     <xsl:with-param name="class" select="local-name(.)"/>
     <xsl:with-param name="object" as="element()">
       <div class="{local-name(.)}">
-	<xsl:call-template name="id"/>
 	<xsl:call-template name="class"/>
 	<xsl:apply-templates select="*[not(self::db:caption)]"/>
       </div>
@@ -40,8 +38,16 @@
   </xsl:call-template>
 </xsl:template>
 
+<xsl:template match="db:inlineequation">
+  <span class="{local-name(.)}">
+    <xsl:call-template name="id"/>
+    <xsl:call-template name="class"/>
+    <xsl:apply-templates/>
+  </span>
+</xsl:template>
+
 <xsl:template match="db:mathphrase">
-  <span>
+  <span class="{local-name(.)}">
     <xsl:call-template name="id"/>
     <xsl:call-template name="class"/>
     <xsl:apply-templates/>

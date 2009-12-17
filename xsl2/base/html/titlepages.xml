@@ -46,6 +46,7 @@
     <db:corpauthor/>
     <db:authorgroup/>
     <db:author/>
+    <db:editor/>
     <db:othercredit/>
     <db:releaseinfo/>
     <db:copyright/>
@@ -190,12 +191,20 @@
   </div>
 </db:bibliodiv>
 
+<db:bibliolist>
+  <db:title/>
+</db:bibliolist>
+
 <db:glossary t:side="recto">
   <div class="glossary-titlepage">
     <db:title/>
     <db:subtitle/>
   </div>
 </db:glossary>
+
+<db:glosslist>
+  <db:title/>
+</db:glosslist>
 
 <db:index t:side="recto">
   <div class="index-titlepage">
@@ -354,9 +363,21 @@
   <db:title/>
 </db:important>
 
+<db:procedure>
+  <db:title/>
+</db:procedure>
+
+<db:step>
+  <db:title/>
+</db:step>
+
 <db:qandaset>
   <db:title/>
 </db:qandaset>
+
+<db:qandadiv>
+  <db:title/>
+</db:qandadiv>
 
 <db:task>
   <db:title/>
@@ -381,6 +402,30 @@
 <db:annotation>
   <db:title/>
 </db:annotation>
+
+<db:msgset>
+  <db:title/>
+</db:msgset>
+
+<db:msg>
+  <db:title/>
+</db:msg>
+
+<db:msgmain>
+  <db:title/>
+</db:msgmain>
+
+<db:msgrel>
+  <db:title/>
+</db:msgrel>
+
+<db:msgsub>
+  <db:title/>
+</db:msgsub>
+
+<db:msgexplan>
+  <db:title/>
+</db:msgexplan>
 
 </t:titlepages>
 

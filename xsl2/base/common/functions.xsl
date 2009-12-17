@@ -652,7 +652,7 @@ such attribute can be found.</para>
   <xsl:param name="attribute" as="xs:string"/>
 
   <xsl:choose>
-    <xsl:when test="not($pis)"/>
+    <xsl:when test="empty($pis)"></xsl:when>
     <xsl:otherwise>
       <xsl:variable name="pivalue">
 	<xsl:value-of select="concat(' ', normalize-space($pis[1]))"/>
@@ -1580,10 +1580,13 @@ components that it has in common with <parameter>uriB</parameter>.</para>
 </doc:function>
 
 <xsl:function name="f:trim-common-uri-paths" as="xs:string">
-  <xsl:param name="uriA" as="xs:string"/>
-  <xsl:param name="uriB" as="xs:string"/>
+  <xsl:param name="uriA" as="xs:string?"/>
+  <xsl:param name="uriB" as="xs:string?"/>
 
   <xsl:choose>
+    <xsl:when test="empty($uriA)">
+      <xsl:value-of select="$uriB"/>
+    </xsl:when>
     <xsl:when test="not(contains($uriA, '/'))
                     or not(contains($uriB, '/'))
 		    or substring-before($uriA, '/') 
@@ -1688,13 +1691,10 @@ expects “/” to be the component separator.</para>
   <xsl:param name="length" as="xs:string"/>
   <xsl:param name="default.units" as="xs:string"/>
 
-  <xsl:variable name="units">
-    <xsl:if test="matches(normalize-space($length), '^[0-9\.]+.+')">
-      <xsl:value-of select="replace(normalize-space($length),
-			            '^[0-9\.]+(.+)$',
-				    '$1')"/>
-    </xsl:if>
-  </xsl:variable>
+  <xsl:variable name="units"
+                select="if (matches(normalize-space($length), '^[0-9\.]+.*?'))
+                        then replace(normalize-space($length),'^[0-9\.]+(.*?)$','$1')
+                        else ''"/>
 
   <xsl:choose>
     <xsl:when test="$units = ''">
@@ -1876,12 +1876,76 @@ expects “/” to be the component separator.</para>
   <xsl:param name="context" as="element()"/>
   <xsl:param name="name" as="xs:string"/>
 
-  <xsl:variable name="params" 
+  <xsl:variable name="pis" as="processing-instruction()*">
+    <xsl:choose>
+      <xsl:when test="$stylesheet.result.type = 'fo'">
+        <xsl:sequence select="$context/processing-instruction('dbfo')"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:sequence select="$context/processing-instruction('dbhtml')"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:variable name="params"
 		select="f:find-toc-params($context, $linenumbering)"/>
 
-  <xsl:value-of select="if ($params/@*[local-name(.) = $name])
-                        then $params/@*[local-name(.) = $name]
-			else ''"/>
+  <!-- everyNth is a special case... -->
+  <xsl:choose>
+    <xsl:when test="$name = 'everyNth'
+                    and $context/@linenumbering = 'unnumbered'">
+      <xsl:value-of select="0"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:variable name="cfgval"
+                    select="if ($params/@*[local-name(.) = $name])
+                            then $params/@*[local-name(.) = $name]
+                            else ''"/>
+      <xsl:variable name="pival"
+                    select="f:pi($pis, concat('linenumbering.', $name))"
+                    as="xs:string?"/>
+
+      <!-- FIXME: why doesn't f:pi return a proper empty sequence!?
+      <xsl:message>
+        <xsl:text>pi? </xsl:text>
+        <xsl:value-of select="empty($pival)"/>
+        <xsl:text>:</xsl:text>
+        <xsl:value-of select="count($pival)"/>
+        <xsl:text>:</xsl:text>
+        <xsl:value-of select="not($pival)"/>
+        <xsl:text>:</xsl:text>
+        <xsl:value-of select="$pival = ''"/>
+        <xsl:text>:</xsl:text>
+        <xsl:value-of select="empty(f:pi($pis, $name))"/>
+      </xsl:message>
+      -->
+
+      <xsl:choose>
+        <xsl:when test="empty($pival) or $pival = ''">
+          <!--
+          <xsl:message>
+            <xsl:value-of select="$name"/>
+            <xsl:text>=</xsl:text>
+            <xsl:value-of select="$cfgval"/>
+            <xsl:text> (cfg)</xsl:text>
+          </xsl:message>
+          -->
+          <xsl:value-of select="$cfgval"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <!--
+          <xsl:message>
+            <xsl:value-of select="$name"/>
+            <xsl:text>=</xsl:text>
+            <xsl:value-of select="$pival"/>
+            <xsl:text> (pi)</xsl:text>
+          </xsl:message>
+          -->
+          <xsl:value-of select="$pival"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:function>
 
 <!-- ================================================================== -->

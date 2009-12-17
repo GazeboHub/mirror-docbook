@@ -19,33 +19,110 @@
 
 <xsl:template match="db:table">
   <fo:block>
-    <xsl:choose>
-      <xsl:when test="db:tgroup|db:mediaobject">
-	<xsl:apply-templates select="db:tgroup|db:mediaobject"/>
-      </xsl:when>
-      <xsl:otherwise>
-	<xsl:apply-templates select="." mode="m:html"/>
-      </xsl:otherwise>
-    </xsl:choose>
+    <xsl:call-template name="t:make.table.content"/>
   </fo:block>
 </xsl:template>
 
 <xsl:template match="db:informaltable">
   <fo:block>
-    <xsl:choose>
-      <xsl:when test="db:tgroup|db:mediaobject">
-	<xsl:apply-templates select="db:tgroup|db:mediaobject"/>
-      </xsl:when>
-      <xsl:otherwise>
-	<xsl:apply-templates select="." mode="m:html">
-	</xsl:apply-templates>
-      </xsl:otherwise>
-    </xsl:choose>
+    <xsl:call-template name="t:make.table.content"/>
   </fo:block>
+</xsl:template>
+
+<xsl:template name="t:make.table.content">
+  <xsl:choose>
+    <xsl:when test="db:tgroup|db:mediaobject">
+      <xsl:apply-templates select="db:tgroup|db:mediaobject"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:apply-templates select="." mode="m:html"/>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <xsl:template name="t:table-longdesc">
   <!-- NOP -->
+</xsl:template>
+
+<!-- ==================================================================== -->
+
+<!-- Placeholder template enables wrapping a fo:table in
+     another table for purposes of layout or applying
+     extensions such as XEP table-omit-initial-header to
+     create "continued" titles on page breaks. -->
+<xsl:template name="t:table.layout">
+  <xsl:param name="table.content" select="()"/>
+
+  <xsl:copy-of select="$table.content"/>
+</xsl:template>
+
+<xsl:template name="t:table.block">
+  <xsl:param name="table.layout" select="()"/>
+
+  <xsl:variable name="id">
+    <xsl:call-template name="id"/>
+  </xsl:variable>
+
+  <xsl:variable name="param.placement"
+                select="substring-after(normalize-space(
+                   $formal.title.placement), concat(local-name(.), ' '))"/>
+
+  <xsl:variable name="placement">
+    <xsl:choose>
+      <xsl:when test="contains($param.placement, ' ')">
+        <xsl:value-of select="substring-before($param.placement, ' ')"/>
+      </xsl:when>
+      <xsl:when test="$param.placement = ''">before</xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="$param.placement"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:variable name="keep.together"><!--
+    <xsl:call-template name="pi.dbfo_keep-together"/>
+  --></xsl:variable>
+
+  <xsl:choose>
+    <xsl:when test="self::db:table">
+      <fo:block id="{$id}"
+                xsl:use-attribute-sets="table.properties">
+        <xsl:if test="$keep.together != ''">
+          <xsl:attribute name="keep-together.within-column">
+            <xsl:value-of select="$keep.together"/>
+          </xsl:attribute>
+        </xsl:if>
+        <xsl:if test="$placement = 'before'">
+          <xsl:call-template name="t:formal.object.heading">
+            <xsl:with-param name="placement" select="$placement"/>
+          </xsl:call-template>
+        </xsl:if>
+        <xsl:copy-of select="$table.layout"/>
+        <xsl:call-template name="t:table.footnote.block"/>
+        <xsl:if test="$placement != 'before'">
+          <xsl:call-template name="t:formal.object.heading">
+            <xsl:with-param name="placement" select="$placement"/>
+          </xsl:call-template>
+        </xsl:if>
+      </fo:block>
+    </xsl:when>
+    <xsl:otherwise>
+      <fo:block id="{$id}"
+                xsl:use-attribute-sets="informaltable.properties">
+        <xsl:copy-of select="$table.layout"/>
+        <xsl:call-template name="t:table.footnote.block"/>
+      </fo:block>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
+
+<!-- Output a table's footnotes in a block -->
+<xsl:template name="t:table.footnote.block">
+  <xsl:if test=".//db:footnote">
+    <fo:block keep-with-previous.within-column="always">
+      <xsl:apply-templates select=".//db:footnote" mode="m:table.footnote.mode"/>
+    </fo:block>
+  </xsl:if>
 </xsl:template>
 
 <!-- ============================================================ -->

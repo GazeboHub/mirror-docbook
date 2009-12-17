@@ -715,7 +715,7 @@ See <function role="named-template">generate-colgroup</function>.
 	      <!-- Suggested by Pavel ZAMPACH <zampach@nemcb.cz> -->
 	      <xsl:when test="$colspecs/parent::db:tgroup/@align">
 		<xsl:attribute name="align">
-                  <xsl:value-of select="$colspecs/parent::tgroup/@align"/>
+                  <xsl:value-of select="$colspecs/parent::db:tgroup/@align"/>
 		</xsl:attribute>
               </xsl:when>
             </xsl:choose>
@@ -767,7 +767,44 @@ See <function role="named-template">generate-colgroup</function>.
 </refdescription>
 </doc:mode>
 
-<xsl:template match="db:table|db:caption|db:col|db:colgroup
+<xsl:template match="db:table" mode="m:html">
+  <xsl:element name="{local-name(.)}"
+	       namespace="http://www.w3.org/1999/xhtml">
+    <xsl:copy-of select="@*"/>
+    <xsl:apply-templates mode="m:html"/>
+
+    <xsl:if test=".//db:footnote">
+      <tbody class="footnotes">
+        <tr>
+          <td colspan="{max(for $row in .//db:tr return count($row/*))}">
+            <xsl:apply-templates select=".//db:footnote"
+                                 mode="m:table-footnote-mode"/>
+          </td>
+        </tr>
+      </tbody>
+    </xsl:if>
+  </xsl:element>
+</xsl:template>
+
+<xsl:template match="db:informaltable" mode="m:html">
+  <table>
+    <xsl:copy-of select="@*"/>
+    <xsl:apply-templates mode="m:html"/>
+
+    <xsl:if test=".//db:footnote">
+      <tbody class="footnotes">
+        <tr>
+          <td colspan="{max(for $row in .//db:tr return count($row/*))}">
+            <xsl:apply-templates select=".//db:footnote"
+                                 mode="m:table-footnote-mode"/>
+          </td>
+        </tr>
+      </tbody>
+    </xsl:if>
+  </table>
+</xsl:template>
+
+<xsl:template match="db:col|db:colgroup
                      |db:thead|db:tfoot|db:tbody|db:tr
 		     |db:th|db:td" mode="m:html">
   <xsl:element name="{local-name(.)}"
@@ -777,11 +814,13 @@ See <function role="named-template">generate-colgroup</function>.
   </xsl:element>
 </xsl:template>
 
-<xsl:template match="db:informaltable" mode="m:html">
-  <table>
-    <xsl:copy-of select="@*"/>
-    <xsl:apply-templates mode="m:html"/>
-  </table>
+<xsl:template match="db:caption" mode="m:html">
+  <!-- suppress; dealt with by t:formal-object -->
+</xsl:template>
+
+<xsl:template match="*" mode="m:html">
+  <!-- process everything else in the default mode -->
+  <xsl:apply-templates select="."/>
 </xsl:template>
 
 </xsl:stylesheet>

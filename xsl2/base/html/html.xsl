@@ -555,4 +555,48 @@ body { background-image: url('</xsl:text>
   </xsl:if>
 </xsl:template>
 
+<!-- ====================================================================== -->
+
+<xsl:template match="*" mode="m:html-attributes" as="attribute()*">
+  <xsl:param name="class" select="''" as="xs:string"/>
+  <xsl:param name="force-id" select="false()" as="xs:boolean"/>
+  <xsl:param name="suppress-local-name-class" select="false()" as="xs:boolean"/>
+  <xsl:param name="suppress-role-class" select="false()" as="xs:boolean"/>
+
+  <xsl:choose>
+    <xsl:when test="@xml:id">
+      <xsl:attribute name="id" select="@xml:id"/>
+    </xsl:when>
+    <xsl:when test="$force-id">
+      <xsl:attribute name="id" select="f:node-id(.)"/>
+    </xsl:when>
+  </xsl:choose>
+
+  <xsl:if test="@dir">
+    <xsl:copy-of select="@dir"/>
+  </xsl:if>
+
+  <xsl:if test="@xml:lang">
+    <xsl:call-template name="lang-attribute">
+      <xsl:with-param name="node" select="."/>
+    </xsl:call-template>
+  </xsl:if>
+
+  <xsl:variable name="value-seq"
+                select="(if ($suppress-local-name-class)
+                         then () else local-name(.),
+                         if ($class != '') then $class else (),
+                         if ($suppress-role-class or not(@role))
+                         then ()
+                         else @role,
+                         if (@revisionflag)
+                         then concat('rf-',@revisionflag)
+                         else ())"/>
+
+  <xsl:if test="not(empty($value-seq))">
+    <xsl:attribute name="class"
+                   select="normalize-space(string-join($value-seq, ' '))"/>
+  </xsl:if>
+</xsl:template>
+
 </xsl:stylesheet>

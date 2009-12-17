@@ -113,7 +113,11 @@ copied by normalization.</para>
 </xsl:template>
 
 <xsl:template match="db:title|db:subtitle|db:titleabbrev" mode="m:normalize">
-  <xsl:if test="parent::db:info">
+  <xsl:if test="parent::db:info
+                |parent::db:biblioentry
+                |parent::db:bibliomixed
+                |parent::db:bibliomset
+                |parent::db:biblioset">
     <xsl:copy>
       <xsl:copy-of select="@*"/>
       <xsl:apply-templates mode="m:normalize"/>
@@ -338,9 +342,11 @@ necessary.</para>
 	      <xsl:copy-of select="db:info/preceding-sibling::node()"/>
 	      <xsl:copy-of select="db:info/*"/>
 	    </xsl:element>
-	    <xsl:apply-templates select="db:info//following-sibling::node()"
+
+	    <xsl:apply-templates select="db:info/following-sibling::node()"
 				 mode="m:normalize"/>
 	  </xsl:when>
+
 	  <xsl:otherwise>
 	    <xsl:variable name="node-tree">
 	      <xsl:element name="title" namespace="{$docbook-namespace}">
@@ -430,6 +436,7 @@ if appropriate</refpurpose>
 		     and db:imageobject
 		     and db:imageobject/db:imagedata[@format='linespecific']]"
 	      mode="m:normalize">
+
   <xsl:variable name="data"
 		select="(db:imageobject
 			 /db:imagedata[@format='linespecific'])[1]"/>
@@ -469,7 +476,34 @@ if appropriate</refpurpose>
 <xsl:template
     match="db:programlisting|db:address|db:screen|db:synopsis|db:literallayout"
     mode="m:normalize">
-  <xsl:apply-templates select="." mode="m:verbatim-phase-1"/>
+
+  <xsl:variable name="normalized" as="element()">
+    <xsl:copy>
+      <xsl:copy-of select="@*"/>
+      <xsl:apply-templates mode="m:normalize"/>
+    </xsl:copy>
+  </xsl:variable>
+
+  <xsl:apply-templates select="$normalized" mode="m:verbatim-phase-1">
+    <xsl:with-param name="origelem" select="."/>
+  </xsl:apply-templates>
+</xsl:template>
+
+<xsl:template match="db:programlistingco" mode="m:normalize">
+  <xsl:variable name="normalized" as="element()">
+    <xsl:copy>
+      <xsl:copy-of select="@*"/>
+      <xsl:copy-of select="db:info"/>
+      <xsl:copy-of select="db:areaspec"/>
+      <db:programlisting>
+        <xsl:copy-of select="db:programlisting/@*"/>
+        <xsl:apply-templates select="db:programlisting/node()" mode="m:normalize"/>
+      </db:programlisting>
+      <xsl:copy-of select="db:calloutlist"/>
+    </xsl:copy>
+  </xsl:variable>
+
+  <xsl:apply-templates select="$normalized" mode="m:verbatim-phase-1"/>
 </xsl:template>
 
 <xsl:template match="*" mode="m:normalize"
@@ -531,7 +565,20 @@ if appropriate</refpurpose>
       <xsl:apply-templates select="$mapped" mode="m:normalize"/>
     </xsl:when>
     <xsl:when test="db:title|db:subtitle|db:titleabbrev|db:info/db:title">
-      <xsl:call-template name="n:normalize-movetitle"/>
+      <xsl:choose>
+        <xsl:when test="parent::db:biblioentry
+                        |parent::db:bibliomixed
+                        |parent::db:bibliomset
+                        |parent::db:biblioset">
+          <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="m:normalize"/>
+          </xsl:copy>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:call-template name="n:normalize-movetitle"/>
+        </xsl:otherwise>
+      </xsl:choose>
     </xsl:when>
     <xsl:otherwise>
       <xsl:copy>
@@ -546,7 +593,7 @@ if appropriate</refpurpose>
 	      mode="m:normalize">
   <xsl:copy/>
 </xsl:template>
-  
+
 <!-- ============================================================ -->
 
 <xsl:template match="r:content" mode="m:remap"

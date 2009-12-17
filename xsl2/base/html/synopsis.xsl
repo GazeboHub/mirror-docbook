@@ -38,12 +38,25 @@
 <xsl:variable name="arg.rep.norepeat.str"></xsl:variable>
 <xsl:variable name="arg.rep.def.str"></xsl:variable>
 <xsl:variable name="arg.or.sep"> | </xsl:variable>
-<xsl:variable name="cmdsynopsis.hanging.indent">4pi</xsl:variable>
+<xsl:variable name="cmdsynopsis.hanging.indent">0.66in</xsl:variable>
+<xsl:variable name="cmdsynopsis.margin.top">1em</xsl:variable>
 
 <xsl:template match="db:cmdsynopsis">
   <div class="{local-name(.)}">
     <xsl:call-template name="id"/>
     <xsl:call-template name="class"/>
+    <xsl:attribute name="style">
+      <xsl:text>margin-top: </xsl:text>
+      <xsl:value-of select="$cmdsynopsis.margin.top"/>
+      <xsl:text>; </xsl:text>
+      <xsl:if test="f:length-magnitude($cmdsynopsis.hanging.indent) != 0">
+        <xsl:text>text-indent: -</xsl:text>
+        <xsl:value-of select="$cmdsynopsis.hanging.indent"/>
+        <xsl:text>; margin-left: </xsl:text>
+        <xsl:value-of select="$cmdsynopsis.hanging.indent"/>
+        <xsl:text>;</xsl:text>
+      </xsl:if>
+    </xsl:attribute>
     <xsl:apply-templates/>
   </div>
 </xsl:template>
@@ -156,6 +169,11 @@
 <xsl:template match="db:synopfragment">
   <div class="{local-name(.)}">
     <xsl:call-template name="id"/>
+    <xsl:attribute name="style">
+      <xsl:text>margin-top: </xsl:text>
+      <xsl:value-of select="$cmdsynopsis.margin.top"/>
+      <xsl:text>; </xsl:text>
+    </xsl:attribute>
     <xsl:text>(</xsl:text>
     <xsl:apply-templates select="." mode="m:synopfragment.number"/>
     <xsl:text>)</xsl:text>

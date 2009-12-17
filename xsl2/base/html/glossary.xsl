@@ -82,28 +82,16 @@
 <!-- ==================================================================== -->
 
 <xsl:template match="db:glosslist">
-  <xsl:variable name="recto"
-		select="$titlepages/*[node-name(.) = node-name(current())
-			              and @t:side='recto'][1]"/>
-  <xsl:variable name="verso"
-		select="$titlepages/*[node-name(.) = node-name(current())
-			              and @t:side='verso'][1]"/>
+  <xsl:variable name="titlepage"
+		select="$titlepages/*[node-name(.)=node-name(current())][1]"/>
 
   <div class="{local-name(.)}">
     <xsl:call-template name="id"/>
     <xsl:call-template name="class"/>
 
-    <xsl:if test="not(empty($recto))">
-      <xsl:call-template name="titlepage">
-	<xsl:with-param name="content" select="$recto"/>
-      </xsl:call-template>
-
-      <xsl:if test="not(empty($verso))">
-	<xsl:call-template name="titlepage">
-	  <xsl:with-param name="content" select="$verso"/>
-	</xsl:call-template>
-      </xsl:if>
-    </xsl:if>
+    <xsl:call-template name="titlepage">
+      <xsl:with-param name="content" select="$titlepage"/>
+    </xsl:call-template>
 
     <xsl:apply-templates select="*[not(self::db:info)
 				   and not(self::db:glossentry)]"/>
@@ -226,15 +214,23 @@ GlossEntry ::=
 <xsl:template match="db:glossentry/db:glossdef">
   <dd>
     <xsl:apply-templates select="*[not(self::db:glossseealso)]"/>
-    <xsl:if test="db:glossseealso">
+    <xsl:for-each select="db:glossseealso">
       <p>
-	<xsl:call-template name="gentext-template">
-          <xsl:with-param name="context" select="'glossary'"/>
-          <xsl:with-param name="name" select="'seealso'"/>
+        <xsl:variable name="template">
+          <xsl:call-template name="gentext-template">
+            <xsl:with-param name="context" select="'glossary'"/>
+            <xsl:with-param name="name" select="'seealso'"/>
+          </xsl:call-template>
+        </xsl:variable>
+        <xsl:variable name="title">
+          <xsl:apply-templates select="."/>
+        </xsl:variable>
+        <xsl:call-template name="substitute-markup">
+          <xsl:with-param name="template" select="$template"/>
+          <xsl:with-param name="title" select="$title"/>
         </xsl:call-template>
-        <xsl:apply-templates select="db:glossseealso"/>
       </p>
-    </xsl:if>
+    </xsl:for-each>
   </dd>
 </xsl:template>
 

@@ -128,19 +128,28 @@ Any element processed in this mode should generate its title.</para>
   <xsl:apply-templates/>
 </xsl:template>
 
-<xsl:template match="question" mode="m:title-markup">
+<xsl:template match="db:question" mode="m:title-markup">
   <!-- questions don't have titles -->
-  <xsl:text>Question</xsl:text>
+  <xsl:value-of select="*[1]"/>
 </xsl:template>
 
-<xsl:template match="answer" mode="m:title-markup">
+<xsl:template match="db:answer" mode="m:title-markup">
   <!-- answers don't have titles -->
-  <xsl:text>Answer</xsl:text>
+  <xsl:value-of select="*[1]"/>
 </xsl:template>
 
-<xsl:template match="qandaentry" mode="m:title-markup">
-  <!-- qandaentrys are represented by the first question in them -->
-  <xsl:text>Question</xsl:text>
+<xsl:template match="db:qandaentry" mode="m:title-markup">
+  <xsl:choose>
+    <xsl:when test="db:info/db:titleabbrev">
+      <xsl:apply-templates select="db:info/db:titleabbrev" mode="m:title-markup"/>
+    </xsl:when>
+    <xsl:when test="db:info/db:title">
+      <xsl:apply-templates select="db:info/db:title" mode="m:title-markup"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:apply-templates select="db:question[1]" mode="m:title-markup"/>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <!-- ============================================================ -->

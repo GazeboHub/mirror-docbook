@@ -198,7 +198,7 @@ an in-scope language declaration.</para>
 </refreturn>
 </doc:template>
 
-<xsl:template name="lang-attribute">
+<xsl:template name="lang-attribute" as="attribute()?">
   <xsl:param name="node" select="."/>
 
   <xsl:variable name="language">

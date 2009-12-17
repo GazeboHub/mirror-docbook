@@ -171,6 +171,11 @@ vertical alignment.</para>
   <xsl:param name="longdesc"/>
   <xsl:param name="tag-attributes" as="attribute()*"/>
 
+  <xsl:variable name="format" xmlns:svg="http://www.w3.org/2000/svg"
+                select="if (@format) then string(@format)
+                        else if (svg:*) then 'svg'
+                        else ''"/>
+
   <xsl:variable name="width-units">
     <xsl:choose>
       <xsl:when test="$ignore.image.scaling != 0"></xsl:when>
@@ -216,7 +221,6 @@ vertical alignment.</para>
   <xsl:variable name="scale">
     <xsl:choose>
       <xsl:when test="$ignore.image.scaling != 0">1.0</xsl:when>
-      <xsl:when test="@contentwidth or @contentdepth">1.0</xsl:when>
       <xsl:when test="@scale">
         <xsl:value-of select="@scale div 100.0"/>
       </xsl:when>
@@ -437,7 +441,13 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
 	  </xsl:if>
 	</object>
       </xsl:when>
-      <xsl:when test="lower-case(@format) = 'svg'">
+
+      <xsl:when xmlns:svg="http://www.w3.org/2000/svg"
+                test="$format = 'svg' and svg:*">
+        <xsl:sequence select="node()"/>
+      </xsl:when>
+
+      <xsl:when test="lower-case($format) = 'svg'">
 	<object data="{$filename}" type="image/svg+xml">
 	  <xsl:call-template name="t:process-image-attributes">
 	    <xsl:with-param name="alt" select="$alt"/>
@@ -560,7 +570,8 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
   </xsl:variable>
 
   <xsl:variable name="bgcolor"
-		select="f:pi(processing-instruction('dbhtml'),'bgcolor')"/>
+     select="f:pi(ancestor-or-self::db:imageobject/processing-instruction('dbhtml'),
+             'background-color')"/>
 
   <xsl:variable name="use.viewport"
                 select="$viewport != 0
@@ -807,10 +818,6 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
 
   <xsl:variable name="object" select="$olist[position() = $object.index]"/>
 
-  <xsl:variable name="align">
-    <xsl:value-of select="$object/*/@align"/>
-  </xsl:variable>
-
   <!-- hack -->
   <xsl:choose>
     <xsl:when test="$object/self::db:audioobject
@@ -822,9 +829,6 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
       <div class="{local-name(.)}">
 	<xsl:call-template name="id"/>
 	<xsl:call-template name="class"/>
-	<xsl:if test="$align != '' ">
-	  <xsl:attribute name="align" select="$align"/>
-	</xsl:if>
 	<xsl:if test="$html.longdesc != 0 and $html.longdesc.link != 0">
 	  <xsl:call-template name="t:longdesc-link">
 	    <xsl:with-param name="textobject"
@@ -883,6 +887,7 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
       <xsl:value-of select="unparsed-text($filename,
 			                  $textdata.default.encoding)"/>
     </xsl:when>
+
     <xsl:when test="@format='linespecific'">
       <xsl:value-of select="unparsed-text($filename)"/>
     </xsl:when>
@@ -1002,10 +1007,13 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
   <xsl:variable name="basedir"
 		select="replace(base-uri(.),'/[^/]+$','/')"/>
 
-  <!-- need a check for absolute urls -->
   <xsl:choose>
     <xsl:when test="contains(., ':') and not(starts-with(.,'file:'))">
       <!-- it has a uri scheme so it is an absolute uri -->
+      <xsl:value-of select="."/>
+    </xsl:when>
+    <xsl:when test="starts-with(., '/')">
+      <!-- it's absolute, leave it alone -->
       <xsl:value-of select="."/>
     </xsl:when>
     <xsl:when test="starts-with(.,$basedir)">

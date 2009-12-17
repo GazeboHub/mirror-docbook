@@ -17,11 +17,9 @@
 		     |db:taskprerequisites/db:info/db:title
 		     |db:taskrelated/db:info/db:title"
 	      mode="m:titlepage-mode">
-  <div class="title">
-    <xsl:apply-templates select="../.." mode="m:object-title-markup">
-      <xsl:with-param name="allow-anchors" select="1"/>
-    </xsl:apply-templates>
-  </div>
+  <xsl:apply-templates select="../.." mode="m:object-title-markup">
+    <xsl:with-param name="allow-anchors" select="1"/>
+  </xsl:apply-templates>
 </xsl:template>
 
 <xsl:template match="db:task|db:tasksummary|db:taskprerequisites|db:taskrelated">

@@ -21,16 +21,15 @@
       <xsl:variable name="titlepage"
 		    select="$titlepages/*[node-name(.)
 			                  = node-name(current())][1]"/>
-      <div class="{f:admonition-class(.)}">
-	<xsl:call-template name="id"/>
-	<xsl:call-template name="class"/>
+      <div>
+        <xsl:apply-templates select="." mode="m:html-attributes">
+          <xsl:with-param name="class" select="'admonition'"/>
+        </xsl:apply-templates>
 
 	<xsl:if test="db:info/db:title">
-	  <div class="admon-title">
-	    <xsl:call-template name="titlepage">
-	      <xsl:with-param name="content" select="$titlepage"/>
-	    </xsl:call-template>
-	  </div>
+          <xsl:call-template name="titlepage">
+            <xsl:with-param name="content" select="$titlepage"/>
+          </xsl:call-template>
 	</xsl:if>
 
 	<xsl:apply-templates select="*[not(self::db:info)]"/>
@@ -79,11 +78,13 @@ the graphical form.</para>
   <!-- painfully complicated. That said, the vertical spacing is   -->
   <!-- awfully complicated with a table. -->
 
-  <div class="{f:admonition-class(.)}">
-    <xsl:call-template name="id"/>
-    <xsl:call-template name="class"/>
+  <div>
+    <xsl:apply-templates select="." mode="m:html-attributes">
+      <xsl:with-param name="class" select="'admonition'"/>
+    </xsl:apply-templates>
+
     <table border="0" cellspacing="0" cellpadding="4"
-	   summary="Presentation of a {f:admonition-class(.)}">
+	   summary="Presentation of a {local-name(.)}">
       <tbody>
 	<tr>
 	  <td valign="top">
@@ -153,44 +154,5 @@ kind of admonition.</para>
   </xsl:choose>
   <xsl:value-of select="$admon.graphics.extension"/>
 </xsl:template>
-
-<!-- ============================================================ -->
-
-<doc:function name="f:admonition-class" xmlns="http://docbook.org/ns/docbook">
-<refpurpose>Returns the class value for an admonition</refpurpose>
-
-<refdescription>
-<para>This function returns the class value that should be used for
-the specified admonition.</para>
-
-<para>By default, the value “admonition” is returned
-for all classes. This function exists to make it easy for customizers
-to change that default.</para>
-</refdescription>
-
-<refparameter>
-<variablelist>
-<varlistentry><term>node</term>
-<listitem>
-<para>The admonition node.</para>
-</listitem>
-</varlistentry>
-</variablelist>
-</refparameter>
-
-<refreturn>
-<para>The class value.</para>
-</refreturn>
-</doc:function>
-
-<xsl:function name="f:admonition-class" as="xs:string">
-  <xsl:param name="node" as="element()"/>
-
-  <!-- If you want different classes for each admonition type...
-  <xsl:value-of select="local-name($node)"/>
-  -->
-
-  <xsl:value-of select="'admonition'"/>
-</xsl:function>
 
 </xsl:stylesheet>

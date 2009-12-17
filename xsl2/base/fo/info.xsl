@@ -14,6 +14,12 @@
 
 <!-- ============================================================ -->
 
+<xsl:template match="db:orgname">
+  <fo:inline>
+    <xsl:apply-templates/>
+  </fo:inline>
+</xsl:template>
+
 <xsl:template match="db:abstract">
   <fo:block>
     <xsl:call-template name="id"/>

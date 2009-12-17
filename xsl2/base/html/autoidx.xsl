@@ -87,7 +87,7 @@
 
   <xsl:variable name="lang" select="f:l10n-language($scope)"/>
 
-  <div class="index">
+  <div class="generated-index">
     <xsl:for-each-group select="//db:indexterm[&scope;][not(@class = 'endofrange')]"
 			group-by="f:group-index(&primary;, $lang)">
       <xsl:sort select="f:group-index(&primary;, $lang)" data-type="number"/>
@@ -112,7 +112,7 @@
   <xsl:param name="group-index"/>
 
   <xsl:if test="$nodes">
-    <div class="indexdiv">
+    <div class="generated-indexdiv">
       <h3>
         <xsl:value-of select="f:group-label($group-index, $lang)"/>
       </h3>

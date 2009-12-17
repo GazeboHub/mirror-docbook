@@ -18,7 +18,7 @@
 		select="$titlepages/*[node-name(.) = node-name(current())
 			              and @t:side='verso'][1]"/>
 
-  <div class="{local-name(.)}">
+  <div class="{local-name(.)}" x="{count(ancestor::node())}">
     <xsl:call-template name="id"/>
     <xsl:call-template name="titlepage">
       <xsl:with-param name="content" select="$recto"/>
@@ -65,6 +65,8 @@
     </xsl:if>
 
     <xsl:apply-templates/>
+
+    <xsl:call-template name="t:process-footnotes"/>
   </div>
 </xsl:template>
 

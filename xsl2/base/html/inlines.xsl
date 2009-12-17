@@ -202,8 +202,10 @@ calling “apply templates” with the current context node.</para>
   <xsl:param name="content">
     <xsl:call-template name="t:simple-xlink"/>
   </xsl:param>
+  <xsl:param name="class" select="''"/>
 
-  <span class="{local-name(.)}">
+  <span class="{local-name(.)}{if ($class != '')
+                               then concat(' ',local-name(.),'-', $class) else ''}">
     <xsl:call-template name="id"/>
     <xsl:if test="db:alt">
       <xsl:attribute name="title">
@@ -256,8 +258,10 @@ calling “apply templates” with the current context node.</para>
   <xsl:param name="content">
     <xsl:call-template name="t:simple-xlink"/>
   </xsl:param>
+  <xsl:param name="class" select="''"/>
 
-  <tt class="{local-name(.)}">
+  <tt class="{local-name(.)}{if ($class != '')
+                             then concat(' ',local-name(.),'-', $class) else ''}">
     <xsl:call-template name="id"/>
     <xsl:if test="db:alt">
       <xsl:attribute name="title">
@@ -793,18 +797,34 @@ the default is “element”.</para>
 
 <xsl:template match="db:phrase">
   <span>
-    <xsl:call-template name="id"/>
-    <xsl:if test="@lang or @xml:lang">
-      <xsl:call-template name="lang-attribute"/>
-    </xsl:if>
-    <xsl:if test="@role">
-      <xsl:attribute name="class">
-	<xsl:value-of select="@role"/>
-      </xsl:attribute>
-    </xsl:if>
-
+    <xsl:apply-templates select="." mode="m:html-attributes">
+      <xsl:with-param name="suppress-local-name-class" select="true()"/>
+    </xsl:apply-templates>
     <xsl:call-template name="t:simple-xlink"/>
   </span>
+</xsl:template>
+
+<xsl:template match="db:productname">
+  <xsl:call-template name="t:inline-charseq">
+    <xsl:with-param name="content">
+      <xsl:apply-templates/>
+      <xsl:choose>
+	<xsl:when test="@class = 'copyright'">
+          <sup>&#x00A9;</sup>
+        </xsl:when>
+	<xsl:when test="@class = 'registered'">
+          <sup>&#x00AE;</sup>
+        </xsl:when>
+	<xsl:when test="@class = 'service'">
+	  <sup>SM</sup>
+	</xsl:when>
+	<xsl:when test="@class = 'trade'">&#x2122;</xsl:when>
+	<xsl:otherwise>
+	  <!-- nop -->
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:with-param>
+  </xsl:call-template>
 </xsl:template>
 
 <xsl:template match="db:lineannotation">
@@ -819,8 +839,12 @@ the default is “element”.</para>
     <xsl:with-param name="content">
       <xsl:apply-templates/>
       <xsl:choose>
-	<xsl:when test="@class = 'copyright'">&#x00A9;</xsl:when>
-	<xsl:when test="@class = 'registered'">&#x00AE;</xsl:when>
+	<xsl:when test="@class = 'copyright'">
+          <sup>&#x00A9;</sup>
+        </xsl:when>
+	<xsl:when test="@class = 'registered'">
+          <sup>&#x00AE;</sup>
+        </xsl:when>
 	<xsl:when test="@class = 'service'">
 	  <sup>SM</sup>
 	</xsl:when>
@@ -949,6 +973,12 @@ and <tag>firstterm</tag> elements.</para>
 
 <xsl:template match="db:optional">
   <xsl:call-template name="t:inline-charseq"/>
+</xsl:template>
+
+<xsl:template match="db:systemitem">
+  <xsl:call-template name="t:inline-monoseq">
+    <xsl:with-param name="class" select="@class"/>
+  </xsl:call-template>
 </xsl:template>
 
 <!-- ==================================================================== -->

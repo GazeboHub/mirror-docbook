@@ -61,10 +61,11 @@ ordinary, straightforward manner.</para>
     </xsl:for-each>
   </xsl:variable>
 
-  <xsl:variable name="everyNth"  select="f:lineNumbering(.,'everyNth')"/>
-  <xsl:variable name="width"     select="f:lineNumbering(.,'width')"/>
-  <xsl:variable name="padchar"   select="f:lineNumbering(.,'padchar')"/>
-  <xsl:variable name="separator" select="f:lineNumbering(.,'separator')"/>
+  <xsl:variable name="everyNth"  select="f:lineNumbering(db:programlisting,'everyNth')"/>
+  <xsl:variable name="width"     select="f:lineNumbering(db:programlisting,'width')"/>
+  <xsl:variable name="padchar"   select="f:lineNumbering(db:programlisting,'padchar')"/>
+  <xsl:variable name="separator" select="f:lineNumbering(db:programlisting,'separator')"/>
+  <xsl:variable name="minlines"  select="f:lineNumbering(db:programlisting,'minlines')"/>
 
   <xsl:variable name="expanded-text" as="node()*">
     <xsl:for-each select="db:programlisting/node()">
@@ -119,6 +120,7 @@ ordinary, straightforward manner.</para>
       <xsl:with-param name="width" select="$width"/>
       <xsl:with-param name="separator" select="$separator"/>
       <xsl:with-param name="padchar" select="$padchar"/>
+      <xsl:with-param name="element" select="db:programlisting"/>
     </xsl:apply-templates>
   </xsl:variable>
 
@@ -137,6 +139,7 @@ ordinary, straightforward manner.</para>
 <xsl:template match="db:programlisting|db:screen|db:synopsis
                      |db:literallayout|db:address"
 	      mode="m:verbatim-phase-1">
+  <xsl:param name="origelem" required="yes" as="element()"/>
 
   <xsl:variable name="everyNth"  select="f:lineNumbering(.,'everyNth')"/>
   <xsl:variable name="width"     select="f:lineNumbering(.,'width')"/>
@@ -185,7 +188,7 @@ ordinary, straightforward manner.</para>
     </NOLB>
   </xsl:message>
   -->
-  
+
   <xsl:variable name="pl-no-wrap-lb" as="node()*">
     <xsl:call-template name="t:unwrap">
       <xsl:with-param name="unwrap" select="xs:QName('ghost:br')"/>
@@ -225,6 +228,7 @@ ordinary, straightforward manner.</para>
 	  <xsl:with-param name="width" select="$width"/>
 	  <xsl:with-param name="separator" select="$separator"/>
 	  <xsl:with-param name="padchar" select="$padchar"/>
+          <xsl:with-param name="element" select="$origelem"/>
 	</xsl:apply-templates>
       </xsl:when>
       <xsl:otherwise>
@@ -234,6 +238,7 @@ ordinary, straightforward manner.</para>
 	  <xsl:with-param name="width" select="$width"/>
 	  <xsl:with-param name="separator" select="$separator"/>
 	  <xsl:with-param name="padchar" select="$padchar"/>
+          <xsl:with-param name="element" select="$origelem"/>
 	</xsl:apply-templates>
       </xsl:otherwise>
     </xsl:choose>
@@ -283,13 +288,100 @@ ordinary, straightforward manner.</para>
 
 <!-- ============================================================ -->
 
+<xsl:function name="f:lastLineNumber" as="xs:decimal">
+  <xsl:param name="listing" as="element()"/>
+
+  <xsl:variable name="startnum" as="xs:decimal">
+    <xsl:choose>
+      <xsl:when test="$listing/@continuation != 'continues'">
+        <xsl:value-of select="0"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:variable name="prev"
+             select="$listing/preceding::*[node-name(.)=node-name($listing)][1]"/>
+        <xsl:choose>
+          <xsl:when test="empty($prev)">
+            <xsl:value-of select="0"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="f:lastLineNumber($prev)"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:variable name="expanded-text" as="node()*">
+    <xsl:for-each select="$listing/node()">
+      <xsl:choose>
+	<xsl:when test="self::db:inlinemediaobject
+			and db:textobject/db:textdata">
+	  <xsl:apply-templates select="."/>
+	</xsl:when>
+	<xsl:when test="self::db:textobject and db:textdata">
+	  <xsl:apply-templates select="."/>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:sequence select="."/>
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:for-each>
+  </xsl:variable>
+
+  <xsl:variable name="pl-empty-tags" as="node()*">
+    <xsl:apply-templates select="$expanded-text" mode="m:make-empty-elements"/>
+  </xsl:variable>
+
+  <xsl:variable name="pl-no-lb" as="node()*">
+    <xsl:apply-templates select="$pl-empty-tags"
+			 mode="mp:pl-no-lb"/>
+  </xsl:variable>
+
+  <xsl:variable name="pl-no-wrap-lb" as="node()*">
+    <xsl:call-template name="t:unwrap">
+      <xsl:with-param name="unwrap" select="xs:QName('ghost:br')"/>
+      <xsl:with-param name="content" select="$pl-no-lb"/>
+    </xsl:call-template>
+  </xsl:variable>
+
+  <xsl:variable name="pl-lines" as="element(ghost:line)*">
+    <xsl:call-template name="tp:wrap-lines">
+      <xsl:with-param name="nodes" select="$pl-no-wrap-lb"/>
+    </xsl:call-template>
+  </xsl:variable>
+
+  <xsl:value-of select="count($pl-lines)"/>
+</xsl:function>
+
 <xsl:template match="ghost:line" mode="mp:pl-restore-lines">
   <xsl:param name="everyNth" required="yes"/>
   <xsl:param name="width" required="yes"/>
   <xsl:param name="padchar" required="yes"/>
   <xsl:param name="separator" required="yes"/>
+  <xsl:param name="element" as="element()" required="yes"/>
 
-  <xsl:variable name="linenumber" select="position()"/>
+  <xsl:variable name="startnum" as="xs:decimal">
+    <xsl:choose>
+      <xsl:when test="not($element/@continuation)
+                      or $element/@continuation != 'continues'">
+        <xsl:value-of select="0"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:variable name="prev"
+             select="$element/preceding::*[node-name(.)=node-name($element)][1]"/>
+        <xsl:choose>
+          <xsl:when test="empty($prev)">
+            <xsl:value-of select="0"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="f:lastLineNumber($prev)"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:variable name="linenumber" select="position() + $startnum"/>
 
   <xsl:if test="$everyNth &gt; 0">
     <xsl:choose>
@@ -723,6 +815,10 @@ that it had been nested within.</para>
 
 <!-- ============================================================ -->
 
+<xsl:template match="db:footnote" mode="mp:pl-no-lb">
+  <xsl:copy-of select="."/>
+</xsl:template>
+
 <xsl:template match="*" mode="mp:pl-no-lb">
   <xsl:copy>
     <xsl:copy-of select="@*"/>
@@ -773,7 +869,12 @@ appropriate <tag class="attribute">ghost:id</tag>.</para>
     </xsl:if>
     <xsl:attribute name="ghost:id" select="generate-id()"/>
   </xsl:element>
-  <xsl:apply-templates mode="m:make-empty-elements"/>
+
+  <xsl:variable name="nolb" as="node()*">
+    <xsl:apply-templates mode="m:remove-lb"/>
+  </xsl:variable>
+
+  <xsl:apply-templates select="$nolb" mode="m:make-empty-elements"/>
   <ghost:end idref="{generate-id()}"/>
 </xsl:template>
 
@@ -788,6 +889,38 @@ appropriate <tag class="attribute">ghost:id</tag>.</para>
 
 <xsl:template match="comment()|processing-instruction()|text()"
 	      mode="m:make-empty-elements">
+  <xsl:copy/>
+</xsl:template>
+
+<!-- ============================================================ -->
+
+<doc:mode name="m:remove-lb" xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Remove all newlines</refpurpose>
+
+<refdescription>
+<para>This mode is used to remove newlines from text content.
+This is necessary in verbatim processing of elements such as
+footnote because, although line breaks are significant in a verbatim
+environment, they are not significant in the content of a footnote
+in a verbatim environment.</para>
+
+</refdescription>
+</doc:mode>
+
+<xsl:template match="*" mode="m:remove-lb">
+  <xsl:copy>
+    <xsl:copy-of select="@*"/>
+    <xsl:apply-templates mode="m:remove-lb"/>
+  </xsl:copy>
+</xsl:template>
+
+<xsl:template match="text()"
+	      mode="m:remove-lb">
+  <xsl:value-of select="replace(.,'&#10;',' ')"/>
+</xsl:template>
+
+<xsl:template match="comment()|processing-instruction()"
+	      mode="m:remove-lb">
   <xsl:copy/>
 </xsl:template>
 

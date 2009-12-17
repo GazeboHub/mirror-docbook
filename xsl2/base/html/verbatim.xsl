@@ -16,7 +16,7 @@
 <xsl:include href="../common/verbatim.xsl"/>
 
 <xsl:template match="db:programlistingco">
-  <!-- FIXME: this doesn't do anything to process the areas!? -->
+  <!-- N.B. Areas are processed during normalization -->
   <xsl:apply-templates select="db:programlisting" mode="m:verbatim"/>
   <xsl:apply-templates select="db:calloutlist"/>
 </xsl:template>

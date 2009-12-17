@@ -97,7 +97,9 @@
 
   <fo:block xsl:use-attribute-sets="biblioentry.properties">
     <xsl:call-template name="id"/>
+    <xsl:text>[</xsl:text>
     <xsl:copy-of select="$label"/>
+    <xsl:text>] </xsl:text>
     <xsl:choose>
       <xsl:when test="self::db:biblioentry">
 	<xsl:apply-templates mode="m:biblioentry-mode"/>

@@ -294,23 +294,7 @@ processed in this mode should generate their label.</para>
 </xsl:template>
 
 <xsl:template match="db:bridgehead" mode="m:label-markup">
-  <!-- FIXME: could we do a better job here? -->
-  <xsl:variable name="contsec"
-                select="(ancestor::db:section
-                         |ancestor::db:simplesect
-                         |ancestor::db:sect1
-                         |ancestor::db:sect2
-                         |ancestor::db:sect3
-                         |ancestor::db:sect4
-                         |ancestor::db:sect5
-                         |ancestor::db:refsect1
-                         |ancestor::db:refsect2
-                         |ancestor::db:refsect3
-                         |ancestor::db:chapter
-                         |ancestor::db:appendix
-                         |ancestor::db:preface)[last()]"/>
-
-  <xsl:apply-templates select="$contsec" mode="m:label-markup"/>
+  <!-- Is empty really the right answer? -->
 </xsl:template>
 
 <xsl:template match="db:refsect1" mode="m:label-markup">
@@ -451,9 +435,17 @@ processed in this mode should generate their label.</para>
       </xsl:if>
     </xsl:variable>
 
-    <xsl:value-of select="$prefix"/>
-    <xsl:number level="multiple" count="db:qandadiv" format="1"/>
+    <xsl:variable name="count" as="xs:string">
+      <xsl:number level="multiple" count="db:qandadiv" format="1"/>
+    </xsl:variable>
+
+    <xsl:variable name="label" as="xs:string" select="concat($prefix,$count)"/>
+    <xsl:value-of select="$label"/>
   </xsl:if>
+</xsl:template>
+
+<xsl:template match="db:qandaentry" mode="m:label-markup">
+  <xsl:apply-templates select="db:question[1]" mode="m:label-markup"/>
 </xsl:template>
 
 <xsl:template match="db:question|db:answer" mode="m:label-markup">

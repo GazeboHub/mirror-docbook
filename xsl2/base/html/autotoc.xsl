@@ -407,6 +407,64 @@ section.</para>
 
 <!-- ============================================================ -->
 
+<doc:template name="qanda-toc" xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Make ToC/LoTs for a QAndASet</refpurpose>
+
+<refdescription>
+<para>This template formats the Table of Contents and
+Lists of Titles for a qandaset.</para>
+</refdescription>
+
+<refparameter>
+<variablelist>
+<varlistentry><term>toc-context</term>
+<listitem>
+<para>The component context.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refparameter>
+
+<refreturn>
+<para>The formatted ToC and LoTs for the element.</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="qanda-toc">
+  <xsl:param name="toc-context" select="."/>
+  <xsl:param name="toc.title" select="true()"/>
+
+  <xsl:call-template name="make-toc">
+    <xsl:with-param name="toc-context" select="$toc-context"/>
+    <xsl:with-param name="toc.title" select="$toc.title"/>
+    <xsl:with-param name="nodes"
+		    select="db:qandadiv|db:qandaentry"/>
+  </xsl:call-template>
+</xsl:template>
+
+<!-- ============================================================ -->
+
+<doc:template name="qanda-toc-separator"
+	      xmlns="http://docbook.org/ns/docbook">
+<refpurpose>Make a separator for qandaset ToCs</refpurpose>
+
+<refdescription>
+<para>This template outputs a separator after qandaset ToC.
+</para>
+</refdescription>
+
+<refreturn>
+<para>The formatted separator.</para>
+</refreturn>
+</doc:template>
+
+<xsl:template name="qanda-toc-separator">
+  <!-- Customize to output something between
+       component.toc and first output -->
+</xsl:template>
+
+<!-- ============================================================ -->
+
 <doc:template name="subtoc" xmlns="http://docbook.org/ns/docbook">
 <refpurpose>Make subordinate ToC parts</refpurpose>
 
@@ -704,6 +762,15 @@ section.</para>
       </xsl:if>
     </span>
   </xsl:element>
+</xsl:template>
+
+<xsl:template match="db:qandadiv|db:qandaentry" mode="m:toc">
+  <xsl:param name="toc-context" select="."/>
+
+  <xsl:call-template name="subtoc">
+    <xsl:with-param name="toc-context" select="$toc-context"/>
+    <xsl:with-param name="nodes" select="db:qandadiv|db:qandaentry"/>
+  </xsl:call-template>
 </xsl:template>
 
 <xsl:template match="db:title" mode="m:toc">

@@ -117,7 +117,7 @@
       <xsl:text>, </xsl:text>
     </xsl:when>
     <xsl:otherwise>
-      <xsl:text> </xsl:text>
+      <xsl:text>class </xsl:text>
     </xsl:otherwise>
   </xsl:choose>
   <span class="{local-name(.)}">
@@ -208,7 +208,7 @@
   <xsl:if test="position() &gt; 1">
     <xsl:text>,</xsl:text>
     <br/>
-    <xsl:value-of select="for $count in (1 to $indent) return '&#160;'"/>
+    <xsl:value-of select="string-join(for $count in (1 to $indent) return '&#160;','')"/>
   </xsl:if>
   <span class="{local-name(.)}">
     <xsl:apply-templates mode="java"/>
@@ -243,7 +243,7 @@
     <xsl:copy-of select="$decl"/>
     <xsl:text>(</xsl:text>
     <xsl:apply-templates select="db:methodparam" mode="java">
-      <xsl:with-param name="indent" select="string-length($decl)"/>
+      <xsl:with-param name="indent" select="string-length($decl)+1"/>
     </xsl:apply-templates>
     <xsl:text>)</xsl:text>
     <xsl:if test="db:exceptionname">

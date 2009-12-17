@@ -54,7 +54,7 @@
       <xsl:variable name="tfnum">
 	<!-- tables are processed in a document that begins at tgroup -->
 	<!-- so this doesn't need to count from any particular place -->
-        <xsl:number level="any" format="1"/>
+        <xsl:number from="db:tgroup" level="any" format="1"/>
       </xsl:variable>
 
       <xsl:choose>
@@ -64,14 +64,37 @@
 				          $tfnum, 1)"/>
 	</xsl:when>
 	<xsl:otherwise>
-	  <xsl:number level="any"
+	  <xsl:number from="db:tgroup" level="any"
 		      format="{$table.footnote.number.format}"/>
         </xsl:otherwise>
       </xsl:choose>
     </xsl:when>
+
+    <xsl:when test="ancestor::db:tr">
+      <!-- Must be an HTML table -->
+      <xsl:variable name="tfnum">
+	<!-- tables are processed in a document that begins at tgroup -->
+	<!-- so this doesn't need to count from any particular place -->
+        <xsl:number from="db:table" level="any" format="1"/>
+      </xsl:variable>
+
+      <xsl:choose>
+	<xsl:when test="string-length($table.footnote.number.symbols)
+			&gt;= $tfnum">
+	  <xsl:value-of select="substring($table.footnote.number.symbols,
+				          $tfnum, 1)"/>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:number from="db:table" level="any"
+		      format="{$table.footnote.number.format}"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:when>
+
     <xsl:otherwise>
       <xsl:variable name="pfoot" select="preceding::db:footnote[not(@label)]"/>
-      <xsl:variable name="ptfoot" select="preceding::db:tgroup//db:footnote"/>
+      <xsl:variable name="ptfoot" select="preceding::db:tgroup//db:footnote
+                                          |preceding::db:tr//db:footnote"/>
       <xsl:variable name="fnum" select="count($pfoot) - count($ptfoot) + 1"/>
 
       <xsl:choose>
@@ -89,13 +112,11 @@
 <!-- ==================================================================== -->
 
 <xsl:template name="t:process-footnotes">
-  <xsl:variable name="footnotes" select=".//db:footnote"/>
-  <!-- FIXME: what about footnotes in HTML tables? -->
   <xsl:variable name="table.footnotes"
-                select=".//db:tgroup//db:footnote"/>
+                select=".//db:tgroup//db:footnote|.//db:tr//db:footnote"/>
+  <xsl:variable name="footnotes" select=".//db:footnote except $table.footnotes"/>
 
-  <!-- Only bother to do this if there's at least one non-table footnote -->
-  <xsl:if test="count($footnotes) &gt; count($table.footnotes)">
+  <xsl:if test="not(empty($footnotes))">
     <div class="footnotes">
       <hr width="100" align="left" class="footnotes-divider"/>
       <xsl:apply-templates select="$footnotes" mode="m:process-footnote-mode"/>

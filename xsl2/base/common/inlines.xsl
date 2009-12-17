@@ -31,6 +31,10 @@
   <!-- nop -->
 </xsl:template>
 
+<xsl:template match="db:person">
+  <xsl:apply-templates select="db:personname"/>
+</xsl:template>
+
 <xsl:template match="db:personname">
   <xsl:call-template name="t:inline-charseq">
     <xsl:with-param name="content">
@@ -108,11 +112,21 @@
   </xsl:choose>
 </xsl:template>
 
+<xsl:template match="db:citebiblioid">
+  <xsl:call-template name="t:inline-charseq">
+    <xsl:with-param name="class" select="@class"/>
+  </xsl:call-template>
+</xsl:template>
+
 <xsl:template match="db:classname">
   <xsl:call-template name="t:inline-monoseq"/>
 </xsl:template>
 
 <xsl:template match="db:exceptionname">
+  <xsl:call-template name="t:inline-monoseq"/>
+</xsl:template>
+
+<xsl:template match="db:initializer">
   <xsl:call-template name="t:inline-monoseq"/>
 </xsl:template>
 
@@ -218,6 +232,10 @@
   <xsl:call-template name="t:inline-charseq"/>
 </xsl:template>
 
+<xsl:template match="db:jobtitle">
+  <xsl:call-template name="t:inline-charseq"/>
+</xsl:template>
+
 <xsl:template match="db:keycap">
   <xsl:call-template name="t:inline-boldseq"/>
 </xsl:template>
@@ -240,6 +258,10 @@
 
 <xsl:template match="db:medialabel">
   <xsl:call-template name="t:inline-italicseq"/>
+</xsl:template>
+
+<xsl:template match="db:modifier">
+  <xsl:call-template name="t:inline-monoseq"/>
 </xsl:template>
 
 <xsl:template match="db:shortcut">
@@ -337,10 +359,6 @@
   <xsl:call-template name="t:inline-charseq"/>
 </xsl:template>
 
-<xsl:template match="db:systemitem">
-  <xsl:call-template name="t:inline-monoseq"/>
-</xsl:template>
-
 <xsl:template match="db:token">
   <xsl:call-template name="t:inline-charseq"/>
 </xsl:template>
@@ -423,7 +441,16 @@
 </xsl:template>
 
 <xsl:template match="db:sgmltag|db:tag">
-  <xsl:call-template name="format-tag"/>
+  <xsl:choose>
+    <!-- It's not legal for them to nest, but reformatting a verbatim environment
+         sometimes causes it to happen, so suppress any extra markup. -->
+    <xsl:when test="parent::db:sgmltag or parent::db:tag">
+      <xsl:apply-templates/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:call-template name="format-tag"/>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <xsl:template match="db:keycombo">
@@ -458,25 +485,6 @@
   <xsl:text>]</xsl:text>
 </xsl:template>
 
-<xsl:template match="db:productname">
-  <xsl:call-template name="t:inline-charseq">
-    <xsl:with-param name="content">
-      <xsl:apply-templates/>
-      <xsl:choose>
-	<xsl:when test="@class = 'copyright'">&#x00A9;</xsl:when>
-	<xsl:when test="@class = 'registered'">&#x00AE;</xsl:when>
-	<xsl:when test="@class = 'service'">
-	  <sup>SM</sup>
-	</xsl:when>
-	<xsl:when test="@class = 'trade'">&#x2122;</xsl:when>
-	<xsl:otherwise>
-	  <!-- nop -->
-	</xsl:otherwise>
-      </xsl:choose>
-    </xsl:with-param>
-  </xsl:call-template>
-</xsl:template>
-
 <xsl:template match="db:productnumber">
   <xsl:call-template name="t:inline-charseq"/>
 </xsl:template>
@@ -491,7 +499,7 @@
 </xsl:template>
 
 <!-- in Addresses, for example -->
-<xsl:template match="db:honorific|db:firstname|db:surname
+<xsl:template match="db:honorific|db:firstname|db:givenname|db:surname
 		     |db:lineage|db:othername">
   <xsl:call-template name="t:inline-charseq"/>
 </xsl:template>
