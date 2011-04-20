@@ -1,7 +1,7 @@
 .figure .title,
 .note .title,
 .example .title,
-.appendix .title;
+.appendix .title,
 .toc b,       /* ToC label */
 div.titlepage { font-family: Arial, sans-serif;
               }
@@ -13,7 +13,7 @@ h1            { font-size: 36pt;
               }
 
 div.titlepage h2,
-div.appendix h2,
+div.appendix h2
            { font-size: 24pt;
                 margin-top: 0px;
                 padding-top: 0px;
@@ -21,8 +21,9 @@ div.appendix h2,
                 padding-bottom: 0px;
               }
 
-div.titlepage
-h3            { font-size: 18pt;
+div.titlepage h3,
+div.appendix h3
+            { font-size: 18pt;
                 margin-top: 10px;
                 padding-top: 0px;
               }
