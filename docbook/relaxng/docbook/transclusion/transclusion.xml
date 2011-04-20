@@ -10,6 +10,7 @@
       <email>jirka@kosek.cz</email>
     </author>
     </authorgroup>
+    <pubdate>2011-04-20</pubdate>
     <pubdate>2010-12-09</pubdate>
   </info>
 
@@ -640,6 +641,80 @@ special schemes exists – <literal>xpath1()</literal> and
 <literal>xpath2()</literal> – for respective versions of XPath
 language.</para>
 </note>
+
+</appendix>
+
+<appendix>
+<title>Alternative proposal from Hussein Shafie</title>
+
+<para>This appendix summarizes points made in the following email
+<link
+xlink:href="http://lists.oasis-open.org/archives/docbook/201012/msg00014.html"/>.</para>
+
+<para>Any element may bear one of these two attributes: <tag
+class="attribute">ref</tag> and <tag class="attribute">copy</tag>. The
+value of these attributes is an URL, possibly ending with a
+fragment.</para>
+
+<para>When an element has a <tag class="attribute">ref</tag> or a <tag
+class="attribute">copy</tag> attribute, it must be completely
+empty.</para>
+
+<section>
+<title><quote>Compose</quote> transclusion directive</title>
+
+<para><tag class="attribute">ref</tag> is a <quote>compose</quote>
+transclusion directive. Examples:</para>
+
+<programlisting><![CDATA[<chapter ref="chapter1.xml"/>
+
+<section ref="book.xml#api_reference"/>]]></programlisting>
+
+<para>When <tag class="attribute">ref</tag> attribute is used, there
+is no ID/IDREF fixup in the transcluded content.</para>
+
+</section>
+
+<section>
+<title><quote>Instantiate a copy</quote> transclusion directive</title>
+
+<para><tag class="attribute">copy</tag> is an <quote>instantiate a
+copy</quote> transclusion directive. Examples:</para>
+
+<programlisting><![CDATA[<note xml:id="warning" copy="common.xml#legal_warning"/>
+
+<phrase copy="common.xml#product_name"/>]]></programlisting>
+
+<para>When <tag class="attribute">copy</tag> attribute is used, there
+is an automatic ID/IDREF fixup in the transcluded content, the one
+described above:</para>
+<itemizedlist>
+<listitem><para>Add a globally unique suffix to each ID defined in the copy.</para></listitem>
+<listitem><para>Update the IDREF/IDREFS which point to these IDs.</para></listitem>
+<listitem><para>Ignore the IDREF/IDREFS which point outside the copy.</para></listitem>
+</itemizedlist>
+
+</section>
+
+<section>
+<title>Evaluation</title>
+
+<para>Although very simple, this proposal covers many
+use-cases. Although compared to the original proposal several features
+are missing:</para>
+
+<itemizedlist>
+<listitem><para>It is not possible to include just a text node, or
+sequence of sibling nodes. Only one element (and its content) can
+be transcluded at one time.</para></listitem>
+<listitem><para>It is not possible to override definitions.</para></listitem>
+<listitem><para>It is not possible to configure way in which ID fixup
+is done.</para></listitem>
+<listitem><para>Verbosity for including simple inline content is
+similar to XInclude.</para></listitem>
+</itemizedlist>
+
+</section>
 
 </appendix>
 
