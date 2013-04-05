@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">The Life of Timon of Athens</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">The Life of Timon of Athens</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The Life of Timon of Athens</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -30,17 +30,17 @@
 
 <para><personname remap="PERSONA">Cupid and Amazons in the mask. </personname></para>
 <para><personname remap="PERSONA">Other Lords, Senators, Officers, Soldiers, Banditti, and Attendants.</personname></para>
-    <para remap="SCNDESCR">SCENE  Athens, and the neighbouring woods.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  Athens, and the neighbouring woods.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Athens. A hall in Timon's house.</title>
-<para remap="STAGEDIR">Enter Poet, Painter, Jeweller, Merchant, and
-others, at several doors</para>
+<stagedir remap="STAGEDIR">Enter Poet, Painter, Jeweller, Merchant, and
+others, at several doors</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Poet</speaker>
@@ -110,7 +110,7 @@ others, at several doors</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Poet</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reciting to himself</phrase>  'When we for recompense have</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reciting to himself</inlinestagedir>  'When we for recompense have</line>
 <line remap="LINE">praised the vile,</line>
 <line remap="LINE">It stains the glory in that happy verse</line>
 <line remap="LINE">Which aptly sings the good.'</line>
@@ -121,7 +121,7 @@ others, at several doors</para>
 <line remap="LINE">'Tis a good form.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Looking at the jewel</para>
+<stagedir remap="STAGEDIR">Looking at the jewel</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Jeweller</speaker>
@@ -192,7 +192,7 @@ others, at several doors</para>
 <line remap="LINE">Lives in these touches, livelier than life.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter certain Senators, and pass over</para>
+<stagedir remap="STAGEDIR">Enter certain Senators, and pass over</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Painter</speaker>
@@ -308,10 +308,10 @@ others, at several doors</para>
 <line remap="LINE">The foot above the head.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Trumpets sound. Enter TIMON, addressing himself
+<stagedir remap="STAGEDIR">Trumpets sound. Enter TIMON, addressing himself
 courteously to every suitor; a Messenger from
 VENTIDIUS talking with him; LUCILIUS and other
-servants following</para>
+servants following</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
@@ -355,8 +355,8 @@ servants following</para>
 <line remap="LINE">All happiness to your honour!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter an old Athenian</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter an old Athenian</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Old Athenian</speaker>
@@ -445,7 +445,7 @@ servants following</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To LUCILIUS</phrase>           Love you the maid?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To LUCILIUS</inlinestagedir>           Love you the maid?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -499,7 +499,7 @@ servants following</para>
 <line remap="LINE">Which is not owed to you!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt LUCILIUS and Old Athenian</para>
+<stagedir remap="STAGEDIR">Exeunt LUCILIUS and Old Athenian</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Poet</speaker>
@@ -578,7 +578,7 @@ servants following</para>
 <line remap="LINE">Look, who comes here: will you be chid?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter APEMANTUS</para>
+<stagedir remap="STAGEDIR">Enter APEMANTUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Jeweller</speaker>
@@ -847,7 +847,7 @@ servants following</para>
 <line remap="LINE">Traffic's thy god; and thy god confound thee!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Trumpet sounds. Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Trumpet sounds. Enter a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
@@ -863,11 +863,11 @@ servants following</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
 <line remap="LINE">Pray, entertain them; give them guide to us.</line>
-<para remap="STAGEDIR">Exeunt some Attendants</para>
+<stagedir remap="STAGEDIR">Exeunt some Attendants</stagedir>
 <line remap="LINE">You must needs dine with me: go not you hence</line>
 <line remap="LINE">Till I have thank'd you: when dinner's done,</line>
 <line remap="LINE">Show me this piece. I am joyful of your sights.</line>
-<para remap="STAGEDIR">Enter ALCIBIADES, with the rest</para>
+<stagedir remap="STAGEDIR">Enter ALCIBIADES, with the rest</stagedir>
 <line remap="LINE">Most welcome, sir!</line>
 </linegroup></dialogue>
 
@@ -894,8 +894,8 @@ servants following</para>
 <line remap="LINE">In different pleasures. Pray you, let us in.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all except APEMANTUS</para>
-<para remap="STAGEDIR">Enter two Lords</para>
+<stagedir remap="STAGEDIR">Exeunt all except APEMANTUS</stagedir>
+<stagedir remap="STAGEDIR">Enter two Lords</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Lord</speaker>
@@ -969,7 +969,7 @@ servants following</para>
 <line remap="LINE">I will fly, like a dog, the heels o' the ass.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Lord</speaker>
@@ -1003,15 +1003,15 @@ servants following</para>
 <line remap="LINE">I'll keep you company.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A banqueting-room in Timon's house.</title>
-<para remap="STAGEDIR">Hautboys playing loud music. A great banquet
+<stagedir remap="STAGEDIR">Hautboys playing loud music. A great banquet
 served in; FLAVIUS and others attending; then enter
 TIMON, ALCIBIADES, Lords, Senators, and VENTIDIUS.
 Then comes, dropping, after all, APEMANTUS,
-discontentedly, like himself</para>
+discontentedly, like himself</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VENTIDIUS</speaker>
@@ -1043,7 +1043,7 @@ discontentedly, like himself</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
 <line remap="LINE">Nay, my lords,</line>
-<para remap="STAGEDIR">They all stand ceremoniously looking on TIMON</para>
+<stagedir remap="STAGEDIR">They all stand ceremoniously looking on TIMON</stagedir>
 <line remap="LINE">Ceremony was but devised at first</line>
 <line remap="LINE">To set a gloss on faint deeds, hollow welcomes,</line>
 <line remap="LINE">Recanting goodness, sorry ere 'tis shown;</line>
@@ -1052,7 +1052,7 @@ discontentedly, like himself</para>
 <line remap="LINE">Than my fortunes to me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They sit</para>
+<stagedir remap="STAGEDIR">They sit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Lord</speaker>
@@ -1147,7 +1147,7 @@ discontentedly, like himself</para>
 <line remap="LINE">Or my friends, if I should need 'em.</line>
 <line remap="LINE">Amen. So fall to't:</line>
 <line remap="LINE">Rich men sin, and I eat root.</line>
-<para remap="STAGEDIR">Eats and drinks</para>
+<stagedir remap="STAGEDIR">Eats and drinks</stagedir>
 <line remap="LINE">Much good dich thy good heart, Apemantus!</line>
 </linegroup></dialogue>
 
@@ -1238,12 +1238,12 @@ discontentedly, like himself</para>
 <line remap="LINE">Much!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Tucket, within</para>
+<stagedir remap="STAGEDIR">Tucket, within</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
 <line remap="LINE">What means that trump?</line>
-<para remap="STAGEDIR">Enter a Servant</para>
+<stagedir remap="STAGEDIR">Enter a Servant</stagedir>
 <line remap="LINE">How now?</line>
 </linegroup></dialogue>
 
@@ -1269,7 +1269,7 @@ discontentedly, like himself</para>
 <line remap="LINE">I pray, let them be admitted.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Cupid</para>
+<stagedir remap="STAGEDIR">Enter Cupid</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Cupid</speaker>
@@ -1287,16 +1287,16 @@ discontentedly, like himself</para>
 <line remap="LINE">Music, make their welcome!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Cupid</para>
+<stagedir remap="STAGEDIR">Exit Cupid</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Lord</speaker>
 <line remap="LINE">You see, my lord, how ample you're beloved.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Music. Re-enter Cupid with a mask of Ladies
+<stagedir remap="STAGEDIR">Music. Re-enter Cupid with a mask of Ladies
 as Amazons, with lutes in their hands,
-dancing and playing</para>
+dancing and playing</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">APEMANTUS</speaker>
@@ -1316,10 +1316,10 @@ dancing and playing</para>
 <line remap="LINE">Men shut their doors against a setting sun.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The Lords rise from table, with much adoring of
+<stagedir remap="STAGEDIR">The Lords rise from table, with much adoring of
 TIMON; and to show their loves, each singles out an
 Amazon, and all dance, men with women, a lofty
-strain or two to the hautboys, and cease</para>
+strain or two to the hautboys, and cease</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
@@ -1353,7 +1353,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">Most thankfully, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Cupid and Ladies</para>
+<stagedir remap="STAGEDIR">Exeunt Cupid and Ladies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
@@ -1374,14 +1374,14 @@ strain or two to the hautboys, and cease</para>
 <speaker remap="SPEAKER">FLAVIUS</speaker>
 <line remap="LINE">Yes, my lord. More jewels yet!</line>
 <line remap="LINE">There is no crossing him in 's humour;</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">Else I should tell him,--well, i' faith I should,</line>
 <line remap="LINE">When all's spent, he 'ld be cross'd then, an he could.</line>
 <line remap="LINE">'Tis pity bounty had not eyes behind,</line>
 <line remap="LINE">That man might ne'er be wretched for his mind.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Lord</speaker>
@@ -1398,7 +1398,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">Our horses!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter FLAVIUS, with the casket</para>
+<stagedir remap="STAGEDIR">Re-enter FLAVIUS, with the casket</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
@@ -1419,7 +1419,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">So are we all.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Servant</para>
+<stagedir remap="STAGEDIR">Enter a Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Servant</speaker>
@@ -1447,10 +1447,10 @@ strain or two to the hautboys, and cease</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FLAVIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  I scarce know how.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  I scarce know how.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Second Servant</para>
+<stagedir remap="STAGEDIR">Enter a Second Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Servant</speaker>
@@ -1463,7 +1463,7 @@ strain or two to the hautboys, and cease</para>
 <speaker remap="SPEAKER">TIMON</speaker>
 <line remap="LINE">I shall accept them fairly; let the presents</line>
 <line remap="LINE">Be worthily entertain'd.</line>
-<para remap="STAGEDIR">Enter a third Servant</para>
+<stagedir remap="STAGEDIR">Enter a third Servant</stagedir>
 <line remap="LINE">How now! what news?</line>
 </linegroup></dialogue>
 
@@ -1483,7 +1483,7 @@ strain or two to the hautboys, and cease</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FLAVIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>                What will this come to?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>                What will this come to?</line>
 <line remap="LINE">He commands us to provide, and give great gifts,</line>
 <line remap="LINE">And all out of an empty coffer:</line>
 <line remap="LINE">Nor will he know his purse, or yield me this,</line>
@@ -1500,7 +1500,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">I bleed inwardly for my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
@@ -1593,7 +1593,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">Ready for his friends.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but APEMANTUS and TIMON</para>
+<stagedir remap="STAGEDIR">Exeunt all but APEMANTUS and TIMON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">APEMANTUS</speaker>
@@ -1628,7 +1628,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">with better music.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">APEMANTUS</speaker>
@@ -1639,7 +1639,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">To counsel deaf, but not to flattery!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -1647,7 +1647,7 @@ strain or two to the hautboys, and cease</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A Senator's house.</title>
-<para remap="STAGEDIR">Enter Senator, with papers in his hand</para>
+<stagedir remap="STAGEDIR">Enter Senator, with papers in his hand</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Senator</speaker>
@@ -1667,7 +1667,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">Caphis, I say!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CAPHIS</para>
+<stagedir remap="STAGEDIR">Enter CAPHIS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CAPHIS</speaker>
@@ -1717,11 +1717,11 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">Go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same. A hall in Timon's house.</title>
-<para remap="STAGEDIR">Enter FLAVIUS, with many bills in his hand</para>
+<stagedir remap="STAGEDIR">Enter FLAVIUS, with many bills in his hand</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FLAVIUS</speaker>
@@ -1736,7 +1736,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">Fie, fie, fie, fie!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CAPHIS, and the Servants of Isidore and Varro</para>
+<stagedir remap="STAGEDIR">Enter CAPHIS, and the Servants of Isidore and Varro</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CAPHIS</speaker>
@@ -1774,7 +1774,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">Here comes the lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter TIMON, ALCIBIADES, and Lords, &amp;c</para>
+<stagedir remap="STAGEDIR">Enter TIMON, ALCIBIADES, and Lords, &amp;c</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
@@ -1860,8 +1860,8 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">Give me breath.</line>
 <line remap="LINE">I do beseech you, good my lords, keep on;</line>
 <line remap="LINE">I'll wait upon you instantly.</line>
-<para remap="STAGEDIR">Exeunt ALCIBIADES and Lords</para>
-<para remap="STAGEDIR">To FLAVIUS</para>
+<stagedir remap="STAGEDIR">Exeunt ALCIBIADES and Lords</stagedir>
+<stagedir remap="STAGEDIR">To FLAVIUS</stagedir>
 <line remap="LINE">Come hither: pray you,</line>
 <line remap="LINE">How goes the world, that I am thus encounter'd</line>
 <line remap="LINE">With clamourous demands of date-broke bonds,</line>
@@ -1883,15 +1883,15 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">Do so, my friends. See them well entertain'd.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FLAVIUS</speaker>
 <line remap="LINE">Pray, draw near.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter APEMANTUS and Fool</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter APEMANTUS and Fool</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CAPHIS</speaker>
@@ -1927,7 +1927,7 @@ strain or two to the hautboys, and cease</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">APEMANTUS</speaker>
 <line remap="LINE">No,'tis to thyself.</line>
-<para remap="STAGEDIR">To the Fool</para>
+<stagedir remap="STAGEDIR">To the Fool</stagedir>
 <line remap="LINE">Come away.</line>
 </linegroup></dialogue>
 
@@ -1994,7 +1994,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">Good! gramercy.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Page</para>
+<stagedir remap="STAGEDIR">Enter Page</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Fool</speaker>
@@ -2003,7 +2003,7 @@ strain or two to the hautboys, and cease</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Page</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To the Fool</phrase>  Why, how now, captain! what do you</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To the Fool</inlinestagedir>  Why, how now, captain! what do you</line>
 <line remap="LINE">in this wise company? How dost thou, Apemantus?</line>
 </linegroup></dialogue>
 
@@ -2043,7 +2043,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">dog's death. Answer not; I am gone.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">APEMANTUS</speaker>
@@ -2139,7 +2139,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">Aside, aside; here comes Lord Timon.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter TIMON and FLAVIUS</para>
+<stagedir remap="STAGEDIR">Re-enter TIMON and FLAVIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">APEMANTUS</speaker>
@@ -2152,14 +2152,14 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">woman; sometime the philosopher.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt APEMANTUS and Fool</para>
+<stagedir remap="STAGEDIR">Exeunt APEMANTUS and Fool</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FLAVIUS</speaker>
 <line remap="LINE">Pray you, walk near: I'll speak with you anon.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Servants</para>
+<stagedir remap="STAGEDIR">Exeunt Servants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
@@ -2292,7 +2292,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">Within there! Flaminius! Servilius!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter FLAMINIUS, SERVILIUS, and other Servants</para>
+<stagedir remap="STAGEDIR">Enter FLAMINIUS, SERVILIUS, and other Servants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Servants</speaker>
@@ -2316,7 +2316,7 @@ strain or two to the hautboys, and cease</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FLAVIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Lord Lucius and Lucullus? hum!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Lord Lucius and Lucullus? hum!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -2364,13 +2364,13 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">'Tis lack of kindly warmth they are not kind;</line>
 <line remap="LINE">And nature, as it grows again toward earth,</line>
 <line remap="LINE">Is fashion'd for the journey, dull and heavy.</line>
-<para remap="STAGEDIR">To a Servant</para>
+<stagedir remap="STAGEDIR">To a Servant</stagedir>
 <line remap="LINE">Go to Ventidius.</line>
-<para remap="STAGEDIR">To FLAVIUS</para>
+<stagedir remap="STAGEDIR">To FLAVIUS</stagedir>
 <line remap="LINE">Prithee, be not sad,</line>
 <line remap="LINE">Thou art true and honest; ingeniously I speak.</line>
 <line remap="LINE">No blame belongs to thee.</line>
-<para remap="STAGEDIR">To Servant</para>
+<stagedir remap="STAGEDIR">To Servant</stagedir>
 <line remap="LINE">Ventidius lately</line>
 <line remap="LINE">Buried his father; by whose death he's stepp'd</line>
 <line remap="LINE">Into a great estate: when he was poor,</line>
@@ -2379,8 +2379,8 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">Bid him suppose some good necessity</line>
 <line remap="LINE">Touches his friend, which craves to be remember'd</line>
 <line remap="LINE">With those five talents.</line>
-<para remap="STAGEDIR">Exit Servant</para>
-<para remap="STAGEDIR">To FLAVIUS</para>
+<stagedir remap="STAGEDIR">Exit Servant</stagedir>
+<stagedir remap="STAGEDIR">To FLAVIUS</stagedir>
 <line remap="LINE">That had, give't these fellows</line>
 <line remap="LINE">To whom 'tis instant due. Ne'er speak, or think,</line>
 <line remap="LINE">That Timon's fortunes 'mong his friends can sink.</line>
@@ -2393,7 +2393,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">Being free itself, it thinks all others so.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -2401,7 +2401,7 @@ strain or two to the hautboys, and cease</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A room in Lucullus' house.</title>
-<para remap="STAGEDIR">FLAMINIUS waiting. Enter a Servant to him</para>
+<stagedir remap="STAGEDIR">FLAMINIUS waiting. Enter a Servant to him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Servant</speaker>
@@ -2413,7 +2413,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">I thank you, sir.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LUCULLUS</para>
+<stagedir remap="STAGEDIR">Enter LUCULLUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Servant</speaker>
@@ -2422,12 +2422,12 @@ strain or two to the hautboys, and cease</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCULLUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  One of Lord Timon's men? a gift, I</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  One of Lord Timon's men? a gift, I</line>
 <line remap="LINE">warrant. Why, this hits right; I dreamt of a silver</line>
 <line remap="LINE">basin and ewer to-night. Flaminius, honest</line>
 <line remap="LINE">Flaminius; you are very respectively welcome, sir.</line>
 <line remap="LINE">Fill me some wine.</line>
-<para remap="STAGEDIR">Exit Servants</para>
+<stagedir remap="STAGEDIR">Exit Servants</stagedir>
 <line remap="LINE">And how does that honourable, complete, free-hearted</line>
 <line remap="LINE">gentleman of Athens, thy very bountiful good lord</line>
 <line remap="LINE">and master?</line>
@@ -2467,7 +2467,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">him from't.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter Servant, with wine</para>
+<stagedir remap="STAGEDIR">Re-enter Servant, with wine</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Servant</speaker>
@@ -2490,9 +2490,9 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">spirit--give thee thy due--and one that knows what</line>
 <line remap="LINE">belongs to reason; and canst use the time well, if</line>
 <line remap="LINE">the time use thee well: good parts in thee.</line>
-<para remap="STAGEDIR">To Servant</para>
+<stagedir remap="STAGEDIR">To Servant</stagedir>
 <line remap="LINE">Get you gone, sirrah.</line>
-<para remap="STAGEDIR">Exit Servant</para>
+<stagedir remap="STAGEDIR">Exit Servant</stagedir>
 <line remap="LINE">Draw nearer, honest Flaminius. Thy lord's a</line>
 <line remap="LINE">bountiful gentleman: but thou art wise; and thou</line>
 <line remap="LINE">knowest well enough, although thou comest to me,</line>
@@ -2509,14 +2509,14 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">To him that worships thee!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Throwing the money back</para>
+<stagedir remap="STAGEDIR">Throwing the money back</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCULLUS</speaker>
 <line remap="LINE">Ha! now I see thou art a fool, and fit for thy master.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FLAMINIUS</speaker>
@@ -2535,11 +2535,11 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">To expel sickness, but prolong his hour!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A public place.</title>
-<para remap="STAGEDIR">Enter LUCILIUS, with three Strangers</para>
+<stagedir remap="STAGEDIR">Enter LUCILIUS, with three Strangers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCILIUS</speaker>
@@ -2591,7 +2591,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">ne'er have denied his occasion so many talents.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SERVILIUS</para>
+<stagedir remap="STAGEDIR">Enter SERVILIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SERVILIUS</speaker>
@@ -2599,7 +2599,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">I have sweat to see his honour. My honoured lord,--</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">To LUCIUS</para>
+<stagedir remap="STAGEDIR">To LUCIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCILIUS</speaker>
@@ -2678,12 +2678,12 @@ strain or two to the hautboys, and cease</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCILIUS</speaker>
 <line remap="LINE">I'll look you out a good turn, Servilius.</line>
-<para remap="STAGEDIR">Exit SERVILIUS</para>
+<stagedir remap="STAGEDIR">Exit SERVILIUS</stagedir>
 <line remap="LINE">True as you said, Timon is shrunk indeed;</line>
 <line remap="LINE">And he that's once denied will hardly speed.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Stranger</speaker>
@@ -2733,11 +2733,11 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">For policy sits above conscience.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A room in Sempronius' house.</title>
-<para remap="STAGEDIR">Enter SEMPRONIUS, and a Servant of TIMON's</para>
+<stagedir remap="STAGEDIR">Enter SEMPRONIUS, and a Servant of TIMON's</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SEMPRONIUS</speaker>
@@ -2781,7 +2781,7 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">Who bates mine honour shall not know my coin.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Servant</speaker>
@@ -2803,13 +2803,13 @@ strain or two to the hautboys, and cease</para>
 <line remap="LINE">Who cannot keep his wealth must keep his house.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  The same. A hall in Timon's house.</title>
-<para remap="STAGEDIR">Enter two Servants of Varro, and the Servant of
+<stagedir remap="STAGEDIR">Enter two Servants of Varro, and the Servant of
 LUCIUS, meeting TITUS, HORTENSIUS, and other
-Servants of TIMON's creditors, waiting his coming out</para>
+Servants of TIMON's creditors, waiting his coming out</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Varro's First Servant</speaker>
@@ -2838,7 +2838,7 @@ Servants of TIMON's creditors, waiting his coming out</para>
 <line remap="LINE">So is theirs and ours.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PHILOTUS</para>
+<stagedir remap="STAGEDIR">Enter PHILOTUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lucilius' Servant</speaker>
@@ -2977,8 +2977,8 @@ Servants of TIMON's creditors, waiting his coming out</para>
 <line remap="LINE">I need not tell him that; he knows you are too diligent.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter FLAVIUS in a cloak, muffled</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter FLAVIUS in a cloak, muffled</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lucilius' Servant</speaker>
@@ -3033,7 +3033,7 @@ Servants of TIMON's creditors, waiting his coming out</para>
 <line remap="LINE">For you serve knaves.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Varro's First Servant</speaker>
@@ -3048,7 +3048,7 @@ Servants of TIMON's creditors, waiting his coming out</para>
 <line remap="LINE">great buildings.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SERVILIUS</para>
+<stagedir remap="STAGEDIR">Enter SERVILIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS</speaker>
@@ -3084,10 +3084,10 @@ Servants of TIMON's creditors, waiting his coming out</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FLAMINIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Servilius, help! My lord! my lord!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Servilius, help! My lord! my lord!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter TIMON, in a rage, FLAMINIUS following</para>
+<stagedir remap="STAGEDIR">Enter TIMON, in a rage, FLAMINIUS following</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
@@ -3179,7 +3179,7 @@ Servants of TIMON's creditors, waiting his coming out</para>
 <line remap="LINE">Tear me, take me, and the gods fall upon you!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORTENSIUS</speaker>
@@ -3188,8 +3188,8 @@ Servants of TIMON's creditors, waiting his coming out</para>
 <line remap="LINE">desperate ones, for a madman owes 'em.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
-<para remap="STAGEDIR">Re-enter TIMON and FLAVIUS</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
+<stagedir remap="STAGEDIR">Re-enter TIMON and FLAVIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
@@ -3245,7 +3245,7 @@ Servants of TIMON's creditors, waiting his coming out</para>
 <line remap="LINE">Of knaves once more; my cook and I'll provide.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  The same. The senate-house. The Senate sitting.</title>
@@ -3262,7 +3262,7 @@ Servants of TIMON's creditors, waiting his coming out</para>
 <line remap="LINE">Most true; the law shall bruise him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ALCIBIADES, with Attendants</para>
+<stagedir remap="STAGEDIR">Enter ALCIBIADES, with Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ALCIBIADES</speaker>
@@ -3463,7 +3463,7 @@ Servants of TIMON's creditors, waiting his coming out</para>
 <line remap="LINE">He shall be executed presently.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Senators</para>
+<stagedir remap="STAGEDIR">Exeunt Senators</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ALCIBIADES</speaker>
@@ -3483,13 +3483,13 @@ Servants of TIMON's creditors, waiting his coming out</para>
 <line remap="LINE">Soldiers should brook as little wrongs as gods.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  The same. A banqueting-room in Timon's house.</title>
-<para remap="STAGEDIR">Music. Tables set out: Servants attending.
+<stagedir remap="STAGEDIR">Music. Tables set out: Servants attending.
 Enter divers Lords, Senators and others, at
-several doors</para>
+several doors</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Lord</speaker>
@@ -3562,7 +3562,7 @@ several doors</para>
 <line remap="LINE">He sent to me, sir,--Here he comes.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter TIMON and Attendants</para>
+<stagedir remap="STAGEDIR">Enter TIMON and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
@@ -3582,7 +3582,7 @@ several doors</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Nor more willingly leaves winter; such</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Nor more willingly leaves winter; such</line>
 <line remap="LINE">summer-birds are men. Gentlemen, our dinner will not</line>
 <line remap="LINE">recompense this long stay: feast your ears with the</line>
 <line remap="LINE">music awhile, if they will fare so harshly o' the</line>
@@ -3630,7 +3630,7 @@ several doors</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
 <line remap="LINE">Let it not cumber your better remembrance.</line>
-<para remap="STAGEDIR">The banquet brought in</para>
+<stagedir remap="STAGEDIR">The banquet brought in</stagedir>
 <line remap="LINE">Come, bring in all together.</line>
 </linegroup></dialogue>
 
@@ -3737,8 +3737,8 @@ several doors</para>
 <line remap="LINE">Uncover, dogs, and lap.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The dishes are uncovered and seen to be full of
-warm water</para>
+<stagedir remap="STAGEDIR">The dishes are uncovered and seen to be full of
+warm water</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Some Speak</speaker>
@@ -3758,7 +3758,7 @@ warm water</para>
 <line remap="LINE">Who, stuck and spangled with your flatteries,</line>
 <line remap="LINE">Washes it off, and sprinkles in your faces</line>
 <line remap="LINE">Your reeking villany.</line>
-<para remap="STAGEDIR">Throwing the water in their faces</para>
+<stagedir remap="STAGEDIR">Throwing the water in their faces</stagedir>
 <line remap="LINE">Live loathed and long,</line>
 <line remap="LINE">Most smiling, smooth, detested parasites,</line>
 <line remap="LINE">Courteous destroyers, affable wolves, meek bears,</line>
@@ -3768,15 +3768,15 @@ warm water</para>
 <line remap="LINE">Crust you quite o'er! What, dost thou go?</line>
 <line remap="LINE">Soft! take thy physic first--thou too--and thou;--</line>
 <line remap="LINE">Stay, I will lend thee money, borrow none.</line>
-<para remap="STAGEDIR">Throws the dishes at them, and drives them out</para>
+<stagedir remap="STAGEDIR">Throws the dishes at them, and drives them out</stagedir>
 <line remap="LINE">What, all in motion? Henceforth be no feast,</line>
 <line remap="LINE">Whereat a villain's not a welcome guest.</line>
 <line remap="LINE">Burn, house! sink, Athens! henceforth hated be</line>
 <line remap="LINE">Of Timon man and all humanity!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Re-enter the Lords, Senators, &amp;c</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Re-enter the Lords, Senators, &amp;c</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Lord</speaker>
@@ -3840,7 +3840,7 @@ warm water</para>
 <line remap="LINE">One day he gives us diamonds, next day stones.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -3848,7 +3848,7 @@ warm water</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Without the walls of Athens.</title>
-<para remap="STAGEDIR">Enter TIMON</para>
+<stagedir remap="STAGEDIR">Enter TIMON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
@@ -3894,11 +3894,11 @@ warm water</para>
 <line remap="LINE">To the whole race of mankind, high and low! Amen.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Athens. A room in Timon's house.</title>
-<para remap="STAGEDIR">Enter FLAVIUS, with two or three Servants</para>
+<stagedir remap="STAGEDIR">Enter FLAVIUS, with two or three Servants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Servant</speaker>
@@ -3933,7 +3933,7 @@ warm water</para>
 <line remap="LINE">Walks, like contempt, alone. More of our fellows.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter other Servants</para>
+<stagedir remap="STAGEDIR">Enter other Servants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FLAVIUS</speaker>
@@ -3960,7 +3960,7 @@ warm water</para>
 <line remap="LINE">'We have seen better days.' Let each take some;</line>
 <line remap="LINE">Nay, put out all your hands. Not one word more:</line>
 <line remap="LINE">Thus part we rich in sorrow, parting poor.</line>
-<para remap="STAGEDIR">Servants embrace, and part several ways</para>
+<stagedir remap="STAGEDIR">Servants embrace, and part several ways</stagedir>
 <line remap="LINE">O, the fierce wretchedness that glory brings us!</line>
 <line remap="LINE">Who would not wish to be from wealth exempt,</line>
 <line remap="LINE">Since riches point to misery and contempt?</line>
@@ -3984,11 +3984,11 @@ warm water</para>
 <line remap="LINE">Whilst I have gold, I'll be his steward still.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Woods and cave, near the seashore.</title>
-<para remap="STAGEDIR">Enter TIMON, from the cave</para>
+<stagedir remap="STAGEDIR">Enter TIMON, from the cave</stagedir>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
 <line remap="LINE">O blessed breeding sun, draw from the earth</line>
@@ -4014,7 +4014,7 @@ warm water</para>
 <line remap="LINE">All feasts, societies, and throngs of men!</line>
 <line remap="LINE">His semblable, yea, himself, Timon disdains:</line>
 <line remap="LINE">Destruction fang mankind! Earth, yield me roots!</line>
-<para remap="STAGEDIR">Digging</para>
+<stagedir remap="STAGEDIR">Digging</stagedir>
 <line remap="LINE">Who seeks for better of thee, sauce his palate</line>
 <line remap="LINE">With thy most operant poison! What is here?</line>
 <line remap="LINE">Gold? yellow, glittering, precious gold? No, gods,</line>
@@ -4036,15 +4036,15 @@ warm water</para>
 <line remap="LINE">Thou common whore of mankind, that put'st odds</line>
 <line remap="LINE">Among the route of nations, I will make thee</line>
 <line remap="LINE">Do thy right nature.</line>
-<para remap="STAGEDIR">March afar off</para>
+<stagedir remap="STAGEDIR">March afar off</stagedir>
 <line remap="LINE">Ha! a drum? Thou'rt quick,</line>
 <line remap="LINE">But yet I'll bury thee: thou'lt go, strong thief,</line>
 <line remap="LINE">When gouty keepers of thee cannot stand.</line>
 <line remap="LINE">Nay, stay thou out for earnest.</line>
 </linegroup></dialogue>
-<para remap="STAGEDIR">Keeping some gold</para>
-<para remap="STAGEDIR">Enter ALCIBIADES, with drum and fife, in
-warlike manner; PHRYNIA and TIMANDRA</para>
+<stagedir remap="STAGEDIR">Keeping some gold</stagedir>
+<stagedir remap="STAGEDIR">Enter ALCIBIADES, with drum and fife, in
+warlike manner; PHRYNIA and TIMANDRA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ALCIBIADES</speaker>
@@ -4393,14 +4393,14 @@ warlike manner; PHRYNIA and TIMANDRA</para>
 <line remap="LINE">We but offend him. Strike!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Drum beats. Exeunt ALCIBIADES, PHRYNIA,
-and TIMANDRA</para>
+<stagedir remap="STAGEDIR">Drum beats. Exeunt ALCIBIADES, PHRYNIA,
+and TIMANDRA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
 <line remap="LINE">That nature, being sick of man's unkindness,</line>
 <line remap="LINE">Should yet be hungry! Common mother, thou,</line>
-<para remap="STAGEDIR">Digging</para>
+<stagedir remap="STAGEDIR">Digging</stagedir>
 <line remap="LINE">Whose womb unmeasurable, and infinite breast,</line>
 <line remap="LINE">Teems, and feeds all; whose self-same mettle,</line>
 <line remap="LINE">Whereof thy proud child, arrogant man, is puff'd,</line>
@@ -4420,7 +4420,7 @@ and TIMANDRA</para>
 <line remap="LINE">Whereof ungrateful man, with liquorish draughts</line>
 <line remap="LINE">And morsels unctuous, greases his pure mind,</line>
 <line remap="LINE">That from it all consideration slips!</line>
-<para remap="STAGEDIR">Enter APEMANTUS</para>
+<stagedir remap="STAGEDIR">Enter APEMANTUS</stagedir>
 <line remap="LINE">More man? plague, plague!</line>
 </linegroup></dialogue>
 
@@ -4607,14 +4607,14 @@ and TIMANDRA</para>
 <line remap="LINE">Thus would I eat it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Eating a root</para>
+<stagedir remap="STAGEDIR">Eating a root</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">APEMANTUS</speaker>
 <line remap="LINE">Here; I will mend thy feast.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Offering him a root</para>
+<stagedir remap="STAGEDIR">Offering him a root</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
@@ -4870,7 +4870,7 @@ and TIMANDRA</para>
 <line remap="LINE">A stone by thee.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Throws a stone at him</para>
+<stagedir remap="STAGEDIR">Throws a stone at him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">APEMANTUS</speaker>
@@ -4896,7 +4896,7 @@ and TIMANDRA</para>
 <line remap="LINE">Lie where the light foam the sea may beat</line>
 <line remap="LINE">Thy grave-stone daily: make thine epitaph,</line>
 <line remap="LINE">That death in me at others' lives may laugh.</line>
-<para remap="STAGEDIR">To the gold</para>
+<stagedir remap="STAGEDIR">To the gold</stagedir>
 <line remap="LINE">O thou sweet king-killer, and dear divorce</line>
 <line remap="LINE">'Twixt natural son and sire! thou bright defiler</line>
 <line remap="LINE">Of Hymen's purest bed! thou valiant Mars!</line>
@@ -4942,12 +4942,12 @@ and TIMANDRA</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
 <line remap="LINE">Long live so, and so die.</line>
-<para remap="STAGEDIR">Exit APEMANTUS</para>
+<stagedir remap="STAGEDIR">Exit APEMANTUS</stagedir>
 <line remap="LINE">I am quit.</line>
 <line remap="LINE">Moe things like men! Eat, Timon, and abhor them.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Banditti</para>
+<stagedir remap="STAGEDIR">Enter Banditti</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Bandit</speaker>
@@ -5088,8 +5088,8 @@ and TIMANDRA</para>
 <line remap="LINE">so miserable but a man may be true.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Banditti</para>
-<para remap="STAGEDIR">Enter FLAVIUS</para>
+<stagedir remap="STAGEDIR">Exeunt Banditti</stagedir>
+<stagedir remap="STAGEDIR">Enter FLAVIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FLAVIUS</speaker>
@@ -5232,7 +5232,7 @@ and TIMANDRA</para>
 <line remap="LINE">Ne'er see thou man, and let me ne'er see thee.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit FLAVIUS. TIMON retires to his cave</para>
+<stagedir remap="STAGEDIR">Exit FLAVIUS. TIMON retires to his cave</stagedir>
 </section>
 
 </chapter>
@@ -5240,8 +5240,8 @@ and TIMANDRA</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  The woods. Before Timon's cave.</title>
-<para remap="STAGEDIR">Enter Poet and Painter; TIMON watching
-them from his cave</para>
+<stagedir remap="STAGEDIR">Enter Poet and Painter; TIMON watching
+them from his cave</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Painter</speaker>
@@ -5308,11 +5308,11 @@ them from his cave</para>
 <line remap="LINE">in his judgment that makes it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">TIMON comes from his cave, behind</para>
+<stagedir remap="STAGEDIR">TIMON comes from his cave, behind</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Excellent workman! thou canst not paint a</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Excellent workman! thou canst not paint a</line>
 <line remap="LINE">man so bad as is thyself.</line>
 </linegroup></dialogue>
 
@@ -5326,7 +5326,7 @@ them from his cave</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Must thou needs stand for a villain in</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Must thou needs stand for a villain in</line>
 <line remap="LINE">thine own work? wilt thou whip thine own faults in</line>
 <line remap="LINE">other men? Do so, I have gold for thee.</line>
 </linegroup></dialogue>
@@ -5347,7 +5347,7 @@ them from his cave</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  I'll meet you at the turn. What a</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  I'll meet you at the turn. What a</line>
 <line remap="LINE">god's gold,</line>
 <line remap="LINE">That he is worshipp'd in a baser temple</line>
 <line remap="LINE">Than where swine feed!</line>
@@ -5358,7 +5358,7 @@ them from his cave</para>
 <line remap="LINE">Fit I meet them.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Coming forward</para>
+<stagedir remap="STAGEDIR">Coming forward</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Poet</speaker>
@@ -5537,15 +5537,15 @@ them from his cave</para>
 <line remap="LINE">Come not near him. If thou wouldst not reside</line>
 <line remap="LINE">But where one villain is, then him abandon.</line>
 <line remap="LINE">Hence, pack! there's gold; you came for gold, ye slaves:</line>
-<para remap="STAGEDIR">To Painter</para>
+<stagedir remap="STAGEDIR">To Painter</stagedir>
 <line remap="LINE">You have work'd for me; there's payment for you: hence!</line>
-<para remap="STAGEDIR">To Poet</para>
+<stagedir remap="STAGEDIR">To Poet</stagedir>
 <line remap="LINE">You are an alchemist; make gold of that.</line>
 <line remap="LINE">Out, rascal dogs!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Beats them out, and then retires to his cave</para>
-<para remap="STAGEDIR">Enter FLAVIUS and two Senators</para>
+<stagedir remap="STAGEDIR">Beats them out, and then retires to his cave</stagedir>
+<stagedir remap="STAGEDIR">Enter FLAVIUS and two Senators</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FLAVIUS</speaker>
@@ -5581,7 +5581,7 @@ them from his cave</para>
 <line remap="LINE">Speak to them, noble Timon.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">TIMON comes from his cave</para>
+<stagedir remap="STAGEDIR">TIMON comes from his cave</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TIMON</speaker>
@@ -5788,7 +5788,7 @@ them from his cave</para>
 <line remap="LINE">Sun, hide thy beams! Timon hath done his reign.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Retires to his cave</para>
+<stagedir remap="STAGEDIR">Retires to his cave</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Senator</speaker>
@@ -5808,11 +5808,11 @@ them from his cave</para>
 <line remap="LINE">It requires swift foot.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Before the walls of Athens.</title>
-<para remap="STAGEDIR">Enter two Senators and a Messenger</para>
+<stagedir remap="STAGEDIR">Enter two Senators and a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Senator</speaker>
@@ -5849,7 +5849,7 @@ them from his cave</para>
 <line remap="LINE">Here come our brothers.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter the Senators from TIMON</para>
+<stagedir remap="STAGEDIR">Enter the Senators from TIMON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Third Senator</speaker>
@@ -5859,11 +5859,11 @@ them from his cave</para>
 <line remap="LINE">Ours is the fall, I fear; our foes the snare.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The woods. Timon's cave, and a rude tomb seen.</title>
-<para remap="STAGEDIR">Enter a Soldier, seeking TIMON</para>
+<stagedir remap="STAGEDIR">Enter a Soldier, seeking TIMON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Soldier</speaker>
@@ -5879,18 +5879,18 @@ them from his cave</para>
 <line remap="LINE">Whose fall the mark of his ambition is.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Before the walls of Athens.</title>
-<para remap="STAGEDIR">Trumpets sound. Enter ALCIBIADES with his powers</para>
+<stagedir remap="STAGEDIR">Trumpets sound. Enter ALCIBIADES with his powers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ALCIBIADES</speaker>
 <line remap="LINE">Sound to this coward and lascivious town</line>
 <line remap="LINE">Our terrible approach.</line>
-<para remap="STAGEDIR">A parley sounded</para>
-<para remap="STAGEDIR">Enter Senators on the walls</para>
+<stagedir remap="STAGEDIR">A parley sounded</stagedir>
+<stagedir remap="STAGEDIR">Enter Senators on the walls</stagedir>
 <line remap="LINE">Till now you have gone on and fill'd the time</line>
 <line remap="LINE">With all licentious measure, making your wills</line>
 <line remap="LINE">The scope of justice; till now myself and such</line>
@@ -6010,8 +6010,8 @@ them from his cave</para>
 <line remap="LINE">Descend, and keep your words.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The Senators descend, and open the gates</para>
-<para remap="STAGEDIR">Enter Soldier</para>
+<stagedir remap="STAGEDIR">The Senators descend, and open the gates</stagedir>
+<stagedir remap="STAGEDIR">Enter Soldier</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Soldier</speaker>
@@ -6024,7 +6024,7 @@ them from his cave</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ALCIBIADES</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads the epitaph</phrase>  'Here lies a</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads the epitaph</inlinestagedir>  'Here lies a</line>
 <line remap="LINE">wretched corse, of wretched soul bereft:</line>
 <line remap="LINE">Seek not my name: a plague consume you wicked</line>
 <line remap="LINE">caitiffs left!</line>
@@ -6046,7 +6046,7 @@ them from his cave</para>
 <line remap="LINE">Let our drums strike.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 </chapter>
 </book>

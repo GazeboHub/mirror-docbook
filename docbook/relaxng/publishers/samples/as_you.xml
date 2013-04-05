@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">As You Like It</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">As You Like It</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">As You Like It</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -31,16 +31,16 @@
 <para><personname remap="PERSONA">PHEBE, a shepherdess.</personname></para>
 <para><personname remap="PERSONA">AUDREY, a country wench.</personname></para>
 <para><personname remap="PERSONA">Lords, pages, and attendants, &amp;c.</personname></para>
-    <para remap="SCNDESCR">SCENE  Oliver's house; Duke Frederick's court; and the Forest of Arden.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  Oliver's house; Duke Frederick's court; and the Forest of Arden.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Orchard of Oliver's house.</title>
-<para remap="STAGEDIR">Enter ORLANDO and ADAM</para>
+<stagedir remap="STAGEDIR">Enter ORLANDO and ADAM</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ORLANDO</speaker>
@@ -82,7 +82,7 @@
 <line remap="LINE">shake me up.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter OLIVER</para>
+<stagedir remap="STAGEDIR">Enter OLIVER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVER</speaker>
@@ -219,7 +219,7 @@
 <line remap="LINE">he would not have spoke such a word.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt ORLANDO and ADAM</para>
+<stagedir remap="STAGEDIR">Exeunt ORLANDO and ADAM</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVER</speaker>
@@ -228,7 +228,7 @@
 <line remap="LINE">crowns neither. Holla, Dennis!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DENNIS</para>
+<stagedir remap="STAGEDIR">Enter DENNIS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DENNIS</speaker>
@@ -249,11 +249,11 @@
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVER</speaker>
 <line remap="LINE">Call him in.</line>
-<para remap="STAGEDIR">Exit DENNIS</para>
+<stagedir remap="STAGEDIR">Exit DENNIS</stagedir>
 <line remap="LINE">'Twill be a good way; and to-morrow the wrestling is.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CHARLES</para>
+<stagedir remap="STAGEDIR">Enter CHARLES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CHARLES</speaker>
@@ -365,7 +365,7 @@
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVER</speaker>
 <line remap="LINE">Farewell, good Charles.</line>
-<para remap="STAGEDIR">Exit CHARLES</para>
+<stagedir remap="STAGEDIR">Exit CHARLES</stagedir>
 <line remap="LINE">Now will I stir this gamester: I hope I shall see</line>
 <line remap="LINE">an end of him; for my soul, yet I know not why,</line>
 <line remap="LINE">hates nothing more than he. Yet he's gentle, never</line>
@@ -378,11 +378,11 @@
 <line remap="LINE">I kindle the boy thither; which now I'll go about.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Lawn before the Duke's palace.</title>
-<para remap="STAGEDIR">Enter CELIA and ROSALIND</para>
+<stagedir remap="STAGEDIR">Enter CELIA and ROSALIND</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CELIA</speaker>
@@ -471,7 +471,7 @@
 <line remap="LINE">not in the lineaments of Nature.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter TOUCHSTONE</para>
+<stagedir remap="STAGEDIR">Enter TOUCHSTONE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CELIA</speaker>
@@ -607,7 +607,7 @@
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CELIA</speaker>
 <line remap="LINE">All the better; we shall be the more marketable.</line>
-<para remap="STAGEDIR">Enter LE BEAU</para>
+<stagedir remap="STAGEDIR">Enter LE BEAU</stagedir>
 <line remap="LINE">Bon jour, Monsieur Le Beau: what's the news?</line>
 </linegroup></dialogue>
 
@@ -754,8 +754,8 @@
 <line remap="LINE">Yonder, sure, they are coming: let us now stay and see it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish. Enter DUKE FREDERICK, Lords, ORLANDO,
-CHARLES, and Attendants</para>
+<stagedir remap="STAGEDIR">Flourish. Enter DUKE FREDERICK, Lords, ORLANDO,
+CHARLES, and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE FREDERICK</speaker>
@@ -923,7 +923,7 @@ CHARLES, and Attendants</para>
 <line remap="LINE">fellow by the leg.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They wrestle</para>
+<stagedir remap="STAGEDIR">They wrestle</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALIND</speaker>
@@ -936,7 +936,7 @@ CHARLES, and Attendants</para>
 <line remap="LINE">should down.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Shout. CHARLES is thrown</para>
+<stagedir remap="STAGEDIR">Shout. CHARLES is thrown</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE FREDERICK</speaker>
@@ -979,7 +979,7 @@ CHARLES, and Attendants</para>
 <line remap="LINE">I would thou hadst told me of another father.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt DUKE FREDERICK, train, and LE BEAU</para>
+<stagedir remap="STAGEDIR">Exeunt DUKE FREDERICK, train, and LE BEAU</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CELIA</speaker>
@@ -1016,7 +1016,7 @@ CHARLES, and Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALIND</speaker>
 <line remap="LINE">Gentleman,</line>
-<para remap="STAGEDIR">Giving him a chain from her neck</para>
+<stagedir remap="STAGEDIR">Giving him a chain from her neck</stagedir>
 <line remap="LINE">Wear this for me, one out of suits with fortune,</line>
 <line remap="LINE">That could give more, but that her hand lacks means.</line>
 <line remap="LINE">Shall we go, coz?</line>
@@ -1052,7 +1052,7 @@ CHARLES, and Attendants</para>
 <line remap="LINE">Have with you. Fare you well.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt ROSALIND and CELIA</para>
+<stagedir remap="STAGEDIR">Exeunt ROSALIND and CELIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ORLANDO</speaker>
@@ -1062,7 +1062,7 @@ CHARLES, and Attendants</para>
 <line remap="LINE">Or Charles or something weaker masters thee.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter LE BEAU</para>
+<stagedir remap="STAGEDIR">Re-enter LE BEAU</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LE BEAU</speaker>
@@ -1104,17 +1104,17 @@ CHARLES, and Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ORLANDO</speaker>
 <line remap="LINE">I rest much bounden to you: fare you well.</line>
-<para remap="STAGEDIR">Exit LE BEAU</para>
+<stagedir remap="STAGEDIR">Exit LE BEAU</stagedir>
 <line remap="LINE">Thus must I from the smoke into the smother;</line>
 <line remap="LINE">From tyrant duke unto a tyrant brother:</line>
 <line remap="LINE">But heavenly Rosalind!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A room in the palace.</title>
-<para remap="STAGEDIR">Enter CELIA and ROSALIND</para>
+<stagedir remap="STAGEDIR">Enter CELIA and ROSALIND</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CELIA</speaker>
@@ -1225,7 +1225,7 @@ CHARLES, and Attendants</para>
 <line remap="LINE">With his eyes full of anger.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DUKE FREDERICK, with Lords</para>
+<stagedir remap="STAGEDIR">Enter DUKE FREDERICK, with Lords</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE FREDERICK</speaker>
@@ -1336,7 +1336,7 @@ CHARLES, and Attendants</para>
 <line remap="LINE">And in the greatness of my word, you die.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt DUKE FREDERICK and Lords</para>
+<stagedir remap="STAGEDIR">Exeunt DUKE FREDERICK and Lords</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CELIA</speaker>
@@ -1450,7 +1450,7 @@ CHARLES, and Attendants</para>
 <line remap="LINE">To liberty and not to banishment.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -1458,8 +1458,8 @@ CHARLES, and Attendants</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  The Forest of Arden.</title>
-<para remap="STAGEDIR">Enter DUKE SENIOR, AMIENS, and two or three Lords,
-like foresters</para>
+<stagedir remap="STAGEDIR">Enter DUKE SENIOR, AMIENS, and two or three Lords,
+like foresters</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE SENIOR</speaker>
@@ -1574,11 +1574,11 @@ like foresters</para>
 <line remap="LINE">I'll bring you to him straight.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A room in the palace.</title>
-<para remap="STAGEDIR">Enter DUKE FREDERICK, with Lords</para>
+<stagedir remap="STAGEDIR">Enter DUKE FREDERICK, with Lords</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE FREDERICK</speaker>
@@ -1617,11 +1617,11 @@ like foresters</para>
 <line remap="LINE">To bring again these foolish runaways.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Before OLIVER'S house.</title>
-<para remap="STAGEDIR">Enter ORLANDO and ADAM, meeting</para>
+<stagedir remap="STAGEDIR">Enter ORLANDO and ADAM, meeting</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ORLANDO</speaker>
@@ -1740,12 +1740,12 @@ like foresters</para>
 <line remap="LINE">Than to die well and not my master's debtor.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  The Forest of Arden.</title>
-<para remap="STAGEDIR">Enter ROSALIND for Ganymede, CELIA for Aliena,
-and TOUCHSTONE</para>
+<stagedir remap="STAGEDIR">Enter ROSALIND for Ganymede, CELIA for Aliena,
+and TOUCHSTONE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALIND</speaker>
@@ -1793,7 +1793,7 @@ and TOUCHSTONE</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALIND</speaker>
 <line remap="LINE">Ay, be so, good Touchstone.</line>
-<para remap="STAGEDIR">Enter CORIN and SILVIUS</para>
+<stagedir remap="STAGEDIR">Enter CORIN and SILVIUS</stagedir>
 <line remap="LINE">Look you, who comes here; a young man and an old in</line>
 <line remap="LINE">solemn talk.</line>
 </linegroup></dialogue>
@@ -1844,7 +1844,7 @@ and TOUCHSTONE</para>
 <line remap="LINE">O Phebe, Phebe, Phebe!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALIND</speaker>
@@ -1989,11 +1989,11 @@ and TOUCHSTONE</para>
 <line remap="LINE">And buy it with your gold right suddenly.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  The Forest.</title>
-<para remap="STAGEDIR">Enter AMIENS, JAQUES, and others</para>
+<stagedir remap="STAGEDIR">Enter AMIENS, JAQUES, and others</stagedir>
 <bridgehead remap="SUBHEAD">SONG.</bridgehead>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -2076,7 +2076,7 @@ and TOUCHSTONE</para>
 <line remap="LINE">boast of them. Come, warble, come.</line>
 <bridgehead remap="SUBHEAD">SONG.</bridgehead>
 <line remap="LINE">Who doth ambition shun</line>
-<para remap="STAGEDIR">All together here</para>
+<stagedir remap="STAGEDIR">All together here</stagedir>
 <line remap="LINE">And loves to live i' the sun,</line>
 <line remap="LINE">Seeking the food he eats</line>
 <line remap="LINE">And pleased with what he gets,</line>
@@ -2126,11 +2126,11 @@ and TOUCHSTONE</para>
 <line remap="LINE">And I'll go seek the duke: his banquet is prepared.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt severally</para>
+<stagedir remap="STAGEDIR">Exeunt severally</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  The forest.</title>
-<para remap="STAGEDIR">Enter ORLANDO and ADAM</para>
+<stagedir remap="STAGEDIR">Enter ORLANDO and ADAM</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ADAM</speaker>
@@ -2158,12 +2158,12 @@ and TOUCHSTONE</para>
 <line remap="LINE">desert. Cheerly, good Adam!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VII.  The forest.</title>
-<para remap="STAGEDIR">A table set out. Enter DUKE SENIOR, AMIENS, and
-Lords like outlaws</para>
+<stagedir remap="STAGEDIR">A table set out. Enter DUKE SENIOR, AMIENS, and
+Lords like outlaws</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE SENIOR</speaker>
@@ -2184,7 +2184,7 @@ Lords like outlaws</para>
 <line remap="LINE">Go, seek him: tell him I would speak with him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter JAQUES</para>
+<stagedir remap="STAGEDIR">Enter JAQUES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Lord</speaker>
@@ -2311,7 +2311,7 @@ Lords like outlaws</para>
 <line remap="LINE">Unclaim'd of any man. But who comes here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ORLANDO, with his sword drawn</para>
+<stagedir remap="STAGEDIR">Enter ORLANDO, with his sword drawn</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ORLANDO</speaker>
@@ -2422,7 +2422,7 @@ Lords like outlaws</para>
 <line remap="LINE">I thank ye; and be blest for your good comfort!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE SENIOR</speaker>
@@ -2464,7 +2464,7 @@ Lords like outlaws</para>
 <line remap="LINE">Sans teeth, sans eyes, sans taste, sans everything.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter ORLANDO, with ADAM</para>
+<stagedir remap="STAGEDIR">Re-enter ORLANDO, with ADAM</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE SENIOR</speaker>
@@ -2527,7 +2527,7 @@ Lords like outlaws</para>
 <line remap="LINE">And let me all your fortunes understand.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -2535,7 +2535,7 @@ Lords like outlaws</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A room in the palace.</title>
-<para remap="STAGEDIR">Enter DUKE FREDERICK, Lords, and OLIVER</para>
+<stagedir remap="STAGEDIR">Enter DUKE FREDERICK, Lords, and OLIVER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE FREDERICK</speaker>
@@ -2567,11 +2567,11 @@ Lords like outlaws</para>
 <line remap="LINE">Do this expediently and turn him going.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The forest.</title>
-<para remap="STAGEDIR">Enter ORLANDO, with a paper</para>
+<stagedir remap="STAGEDIR">Enter ORLANDO, with a paper</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ORLANDO</speaker>
@@ -2587,8 +2587,8 @@ Lords like outlaws</para>
 <line remap="LINE">The fair, the chaste and unexpressive she.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter CORIN and TOUCHSTONE</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter CORIN and TOUCHSTONE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIN</speaker>
@@ -2754,7 +2754,7 @@ Lords like outlaws</para>
 <line remap="LINE">Here comes young Master Ganymede, my new mistress's brother.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ROSALIND, with a paper, reading</para>
+<stagedir remap="STAGEDIR">Enter ROSALIND, with a paper, reading</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALIND</speaker>
@@ -2823,7 +2823,7 @@ Lords like outlaws</para>
 <line remap="LINE">forest judge.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CELIA, with a writing</para>
+<stagedir remap="STAGEDIR">Enter CELIA, with a writing</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALIND</speaker>
@@ -2832,7 +2832,7 @@ Lords like outlaws</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CELIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir></line>
 <line remap="LINE">Why should this a desert be?</line>
 <line remap="LINE">For it is unpeopled? No:</line>
 <line remap="LINE">Tongues I'll hang on every tree,</line>
@@ -2884,7 +2884,7 @@ Lords like outlaws</para>
 <line remap="LINE">though not with bag and baggage, yet with scrip and scrippage.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt CORIN and TOUCHSTONE</para>
+<stagedir remap="STAGEDIR">Exeunt CORIN and TOUCHSTONE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CELIA</speaker>
@@ -3127,7 +3127,7 @@ Lords like outlaws</para>
 <line remap="LINE">You bring me out. Soft! comes he not here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ORLANDO and JAQUES</para>
+<stagedir remap="STAGEDIR">Enter ORLANDO and JAQUES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALIND</speaker>
@@ -3271,11 +3271,11 @@ Lords like outlaws</para>
 <line remap="LINE">Melancholy.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit JAQUES</para>
+<stagedir remap="STAGEDIR">Exit JAQUES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALIND</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to CELIA</phrase>  I will speak to him, like a saucy</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to CELIA</inlinestagedir>  I will speak to him, like a saucy</line>
 <line remap="LINE">lackey and under that habit play the knave with him.</line>
 <line remap="LINE">Do you hear, forester?</line>
 </linegroup></dialogue>
@@ -3571,11 +3571,11 @@ Lords like outlaws</para>
 <line remap="LINE">Nay you must call me Rosalind. Come, sister, will you go?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The forest.</title>
-<para remap="STAGEDIR">Enter TOUCHSTONE and AUDREY; JAQUES behind</para>
+<stagedir remap="STAGEDIR">Enter TOUCHSTONE and AUDREY; JAQUES behind</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TOUCHSTONE</speaker>
@@ -3597,7 +3597,7 @@ Lords like outlaws</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JAQUES</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  O knowledge ill-inhabited, worse than Jove</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  O knowledge ill-inhabited, worse than Jove</line>
 <line remap="LINE">in a thatched house!</line>
 </linegroup></dialogue>
 
@@ -3648,7 +3648,7 @@ Lords like outlaws</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JAQUES</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  A material fool!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  A material fool!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -3680,7 +3680,7 @@ Lords like outlaws</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JAQUES</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  I would fain see this meeting.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  I would fain see this meeting.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -3706,7 +3706,7 @@ Lords like outlaws</para>
 <line remap="LINE">bachelor; and by how much defence is better than no</line>
 <line remap="LINE">skill, by so much is a horn more precious than to</line>
 <line remap="LINE">want. Here comes Sir Oliver.</line>
-<para remap="STAGEDIR">Enter SIR OLIVER MARTEXT</para>
+<stagedir remap="STAGEDIR">Enter SIR OLIVER MARTEXT</stagedir>
 <line remap="LINE">Sir Oliver Martext, you are well met: will you</line>
 <line remap="LINE">dispatch us here under this tree, or shall we go</line>
 <line remap="LINE">with you to your chapel?</line>
@@ -3729,7 +3729,7 @@ Lords like outlaws</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JAQUES</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Advancing</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Advancing</inlinestagedir></line>
 <line remap="LINE">Proceed, proceed I'll give her.</line>
 </linegroup></dialogue>
 
@@ -3765,7 +3765,7 @@ Lords like outlaws</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TOUCHSTONE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  I am not in the mind but I were better to be</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  I am not in the mind but I were better to be</line>
 <line remap="LINE">married of him than of another: for he is not like</line>
 <line remap="LINE">to marry me well; and not being well married, it</line>
 <line remap="LINE">will be a good excuse for me hereafter to leave my wife.</line>
@@ -3789,7 +3789,7 @@ Lords like outlaws</para>
 <line remap="LINE">I will not to wedding with thee.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt JAQUES, TOUCHSTONE and AUDREY</para>
+<stagedir remap="STAGEDIR">Exeunt JAQUES, TOUCHSTONE and AUDREY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR OLIVER MARTEXT</speaker>
@@ -3797,11 +3797,11 @@ Lords like outlaws</para>
 <line remap="LINE">all shall flout me out of my calling.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  The forest.</title>
-<para remap="STAGEDIR">Enter ROSALIND and CELIA</para>
+<stagedir remap="STAGEDIR">Enter ROSALIND and CELIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALIND</speaker>
@@ -3925,7 +3925,7 @@ Lords like outlaws</para>
 <line remap="LINE">guides. Who comes here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CORIN</para>
+<stagedir remap="STAGEDIR">Enter CORIN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIN</speaker>
@@ -3958,11 +3958,11 @@ Lords like outlaws</para>
 <line remap="LINE">I'll prove a busy actor in their play.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Another part of the forest.</title>
-<para remap="STAGEDIR">Enter SILVIUS and PHEBE</para>
+<stagedir remap="STAGEDIR">Enter SILVIUS and PHEBE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SILVIUS</speaker>
@@ -3975,7 +3975,7 @@ Lords like outlaws</para>
 <line remap="LINE">Than he that dies and lives by bloody drops?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ROSALIND, CELIA, and CORIN, behind</para>
+<stagedir remap="STAGEDIR">Enter ROSALIND, CELIA, and CORIN, behind</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PHEBE</speaker>
@@ -4083,7 +4083,7 @@ Lords like outlaws</para>
 <line remap="LINE">Come, to our flock.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt ROSALIND, CELIA and CORIN</para>
+<stagedir remap="STAGEDIR">Exeunt ROSALIND, CELIA and CORIN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PHEBE</speaker>
@@ -4207,7 +4207,7 @@ Lords like outlaws</para>
 <line remap="LINE">Go with me, Silvius.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -4215,7 +4215,7 @@ Lords like outlaws</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  The forest.</title>
-<para remap="STAGEDIR">Enter ROSALIND, CELIA, and JAQUES</para>
+<stagedir remap="STAGEDIR">Enter ROSALIND, CELIA, and JAQUES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JAQUES</speaker>
@@ -4284,7 +4284,7 @@ Lords like outlaws</para>
 <line remap="LINE">sad; and to travel for it too!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ORLANDO</para>
+<stagedir remap="STAGEDIR">Enter ORLANDO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ORLANDO</speaker>
@@ -4296,7 +4296,7 @@ Lords like outlaws</para>
 <line remap="LINE">Nay, then, God be wi' you, an you talk in blank verse.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALIND</speaker>
@@ -4710,7 +4710,7 @@ Lords like outlaws</para>
 <line remap="LINE">offenders, and let Time try: adieu.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit ORLANDO</para>
+<stagedir remap="STAGEDIR">Exit ORLANDO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CELIA</speaker>
@@ -4750,11 +4750,11 @@ Lords like outlaws</para>
 <line remap="LINE">And I'll sleep.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The forest.</title>
-<para remap="STAGEDIR">Enter JAQUES, Lords, and Foresters</para>
+<stagedir remap="STAGEDIR">Enter JAQUES, Lords, and Foresters</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JAQUES</speaker>
@@ -4791,7 +4791,7 @@ Lords like outlaws</para>
 <line remap="LINE">What shall he have that kill'd the deer?</line>
 <line remap="LINE">His leather skin and horns to wear.</line>
 <line remap="LINE">Then sing him home;</line>
-<para remap="STAGEDIR">The rest shall bear this burden</para>
+<stagedir remap="STAGEDIR">The rest shall bear this burden</stagedir>
 <line remap="LINE">Take thou no scorn to wear the horn;</line>
 <line remap="LINE">It was a crest ere thou wast born:</line>
 <line remap="LINE">Thy father's father wore it,</line>
@@ -4800,11 +4800,11 @@ Lords like outlaws</para>
 <line remap="LINE">Is not a thing to laugh to scorn.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The forest.</title>
-<para remap="STAGEDIR">Enter ROSALIND and CELIA</para>
+<stagedir remap="STAGEDIR">Enter ROSALIND and CELIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALIND</speaker>
@@ -4819,7 +4819,7 @@ Lords like outlaws</para>
 <line remap="LINE">sleep. Look, who comes here.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SILVIUS</para>
+<stagedir remap="STAGEDIR">Enter SILVIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SILVIUS</speaker>
@@ -4886,7 +4886,7 @@ Lords like outlaws</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALIND</speaker>
 <line remap="LINE">She Phebes me: mark how the tyrant writes.</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">Art thou god to shepherd turn'd,</line>
 <line remap="LINE">That a maiden's heart hath burn'd?</line>
 <line remap="LINE">Can a woman rail thus?</line>
@@ -4899,7 +4899,7 @@ Lords like outlaws</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALIND</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir></line>
 <line remap="LINE">Why, thy godhead laid apart,</line>
 <line remap="LINE">Warr'st thou with a woman's heart?</line>
 <line remap="LINE">Did you ever hear such railing?</line>
@@ -4945,8 +4945,8 @@ Lords like outlaws</para>
 <line remap="LINE">hence, and not a word; for here comes more company.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit SILVIUS</para>
-<para remap="STAGEDIR">Enter OLIVER</para>
+<stagedir remap="STAGEDIR">Exit SILVIUS</stagedir>
+<stagedir remap="STAGEDIR">Enter OLIVER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVER</speaker>
@@ -5110,7 +5110,7 @@ Lords like outlaws</para>
 <line remap="LINE">That he in sport doth call his Rosalind.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">ROSALIND swoons</para>
+<stagedir remap="STAGEDIR">ROSALIND swoons</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CELIA</speaker>
@@ -5196,7 +5196,7 @@ Lords like outlaws</para>
 <line remap="LINE">my counterfeiting to him. Will you go?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -5204,7 +5204,7 @@ Lords like outlaws</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  The forest.</title>
-<para remap="STAGEDIR">Enter TOUCHSTONE and AUDREY</para>
+<stagedir remap="STAGEDIR">Enter TOUCHSTONE and AUDREY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TOUCHSTONE</speaker>
@@ -5237,7 +5237,7 @@ Lords like outlaws</para>
 <line remap="LINE">for; we shall be flouting; we cannot hold.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter WILLIAM</para>
+<stagedir remap="STAGEDIR">Enter WILLIAM</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">WILLIAM</speaker>
@@ -5373,8 +5373,8 @@ Lords like outlaws</para>
 <line remap="LINE">God rest you merry, sir.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter CORIN</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter CORIN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIN</speaker>
@@ -5386,11 +5386,11 @@ Lords like outlaws</para>
 <line remap="LINE">Trip, Audrey! trip, Audrey! I attend, I attend.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The forest.</title>
-<para remap="STAGEDIR">Enter ORLANDO and OLIVER</para>
+<stagedir remap="STAGEDIR">Enter ORLANDO and OLIVER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ORLANDO</speaker>
@@ -5420,7 +5420,7 @@ Lords like outlaws</para>
 <line remap="LINE">you, here comes my Rosalind.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ROSALIND</para>
+<stagedir remap="STAGEDIR">Enter ROSALIND</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALIND</speaker>
@@ -5432,7 +5432,7 @@ Lords like outlaws</para>
 <line remap="LINE">And you, fair sister.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALIND</speaker>
@@ -5537,7 +5537,7 @@ Lords like outlaws</para>
 <line remap="LINE">say I am a magician. Therefore, put you in your</line>
 <line remap="LINE">best array: bid your friends; for if you will be</line>
 <line remap="LINE">married to-morrow, you shall, and to Rosalind, if you will.</line>
-<para remap="STAGEDIR">Enter SILVIUS and PHEBE</para>
+<stagedir remap="STAGEDIR">Enter SILVIUS and PHEBE</stagedir>
 <line remap="LINE">Look, here comes a lover of mine and a lover of hers.</line>
 </linegroup></dialogue>
 
@@ -5656,22 +5656,22 @@ Lords like outlaws</para>
 <speaker remap="SPEAKER">ROSALIND</speaker>
 <line remap="LINE">Pray you, no more of this; 'tis like the howling</line>
 <line remap="LINE">of Irish wolves against the moon.</line>
-<para remap="STAGEDIR">To SILVIUS</para>
+<stagedir remap="STAGEDIR">To SILVIUS</stagedir>
 <line remap="LINE">I will help you, if I can:</line>
-<para remap="STAGEDIR">To PHEBE</para>
+<stagedir remap="STAGEDIR">To PHEBE</stagedir>
 <line remap="LINE">I would love you, if I could. To-morrow meet me all together.</line>
-<para remap="STAGEDIR">To PHEBE</para>
+<stagedir remap="STAGEDIR">To PHEBE</stagedir>
 <line remap="LINE">I will marry you, if ever I marry woman, and I'll be</line>
 <line remap="LINE">married to-morrow:</line>
-<para remap="STAGEDIR">To ORLANDO</para>
+<stagedir remap="STAGEDIR">To ORLANDO</stagedir>
 <line remap="LINE">I will satisfy you, if ever I satisfied man, and you</line>
 <line remap="LINE">shall be married to-morrow:</line>
-<para remap="STAGEDIR">To SILVIUS</para>
+<stagedir remap="STAGEDIR">To SILVIUS</stagedir>
 <line remap="LINE">I will content you, if what pleases you contents</line>
 <line remap="LINE">you, and you shall be married to-morrow.</line>
-<para remap="STAGEDIR">To ORLANDO</para>
+<stagedir remap="STAGEDIR">To ORLANDO</stagedir>
 <line remap="LINE">As you love Rosalind, meet:</line>
-<para remap="STAGEDIR">To SILVIUS</para>
+<stagedir remap="STAGEDIR">To SILVIUS</stagedir>
 <line remap="LINE">as you love Phebe, meet: and as I love no woman,</line>
 <line remap="LINE">I'll meet. So fare you well: I have left you commands.</line>
 </linegroup></dialogue>
@@ -5691,11 +5691,11 @@ Lords like outlaws</para>
 <line remap="LINE">Nor I.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The forest.</title>
-<para remap="STAGEDIR">Enter TOUCHSTONE and AUDREY</para>
+<stagedir remap="STAGEDIR">Enter TOUCHSTONE and AUDREY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TOUCHSTONE</speaker>
@@ -5710,7 +5710,7 @@ Lords like outlaws</para>
 <line remap="LINE">world. Here comes two of the banished duke's pages.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter two Pages</para>
+<stagedir remap="STAGEDIR">Enter two Pages</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Page</speaker>
@@ -5778,12 +5778,12 @@ Lords like outlaws</para>
 <line remap="LINE">your voices! Come, Audrey.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  The forest.</title>
-<para remap="STAGEDIR">Enter DUKE SENIOR, AMIENS, JAQUES, ORLANDO, OLIVER,
-and CELIA</para>
+<stagedir remap="STAGEDIR">Enter DUKE SENIOR, AMIENS, JAQUES, ORLANDO, OLIVER,
+and CELIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE SENIOR</speaker>
@@ -5797,7 +5797,7 @@ and CELIA</para>
 <line remap="LINE">As those that fear they hope, and know they fear.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ROSALIND, SILVIUS, and PHEBE</para>
+<stagedir remap="STAGEDIR">Enter ROSALIND, SILVIUS, and PHEBE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALIND</speaker>
@@ -5864,7 +5864,7 @@ and CELIA</para>
 <line remap="LINE">To make these doubts all even.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt ROSALIND and CELIA</para>
+<stagedir remap="STAGEDIR">Exeunt ROSALIND and CELIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE SENIOR</speaker>
@@ -5883,7 +5883,7 @@ and CELIA</para>
 <line remap="LINE">Obscured in the circle of this forest.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter TOUCHSTONE and AUDREY</para>
+<stagedir remap="STAGEDIR">Enter TOUCHSTONE and AUDREY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JAQUES</speaker>
@@ -6028,8 +6028,8 @@ and CELIA</para>
 <line remap="LINE">the presentation of that he shoots his wit.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HYMEN, ROSALIND, and CELIA</para>
-<para remap="STAGEDIR">Still Music</para>
+<stagedir remap="STAGEDIR">Enter HYMEN, ROSALIND, and CELIA</stagedir>
+<stagedir remap="STAGEDIR">Still Music</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HYMEN</speaker>
@@ -6045,8 +6045,8 @@ and CELIA</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALIND</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To DUKE SENIOR</phrase>  To you I give myself, for I am yours.</line>
-<para remap="STAGEDIR">To ORLANDO</para>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To DUKE SENIOR</inlinestagedir>  To you I give myself, for I am yours.</line>
+<stagedir remap="STAGEDIR">To ORLANDO</stagedir>
 <line remap="LINE">To you I give myself, for I am yours.</line>
 </linegroup></dialogue>
 
@@ -6112,7 +6112,7 @@ and CELIA</para>
 <line remap="LINE">Thy faith my fancy to thee doth combine.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter JAQUES DE BOYS</para>
+<stagedir remap="STAGEDIR">Enter JAQUES DE BOYS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JAQUES DE BOYS</speaker>
@@ -6168,16 +6168,16 @@ and CELIA</para>
 <speaker remap="SPEAKER">JAQUES</speaker>
 <line remap="LINE">To him will I : out of these convertites</line>
 <line remap="LINE">There is much matter to be heard and learn'd.</line>
-<para remap="STAGEDIR">To DUKE SENIOR</para>
+<stagedir remap="STAGEDIR">To DUKE SENIOR</stagedir>
 <line remap="LINE">You to your former honour I bequeath;</line>
 <line remap="LINE">Your patience and your virtue well deserves it:</line>
-<para remap="STAGEDIR">To ORLANDO</para>
+<stagedir remap="STAGEDIR">To ORLANDO</stagedir>
 <line remap="LINE">You to a love that your true faith doth merit:</line>
-<para remap="STAGEDIR">To OLIVER</para>
+<stagedir remap="STAGEDIR">To OLIVER</stagedir>
 <line remap="LINE">You to your land and love and great allies:</line>
-<para remap="STAGEDIR">To SILVIUS</para>
+<stagedir remap="STAGEDIR">To SILVIUS</stagedir>
 <line remap="LINE">You to a long and well-deserved bed:</line>
-<para remap="STAGEDIR">To TOUCHSTONE</para>
+<stagedir remap="STAGEDIR">To TOUCHSTONE</stagedir>
 <line remap="LINE">And you to wrangling; for thy loving voyage</line>
 <line remap="LINE">Is but for two months victuall'd. So, to your pleasures:</line>
 <line remap="LINE">I am for other than for dancing measures.</line>
@@ -6194,14 +6194,14 @@ and CELIA</para>
 <line remap="LINE">I'll stay to know at your abandon'd cave.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE SENIOR</speaker>
 <line remap="LINE">Proceed, proceed: we will begin these rites,</line>
 <line remap="LINE">As we do trust they'll end, in true delights.</line>
 </linegroup></dialogue>
-<para remap="STAGEDIR">A dance</para>
+<stagedir remap="STAGEDIR">A dance</stagedir>
 </section>
 
 <section remap="EPILOGUE"><title remap="TITLE">EPILOGUE</title>
@@ -6231,7 +6231,7 @@ and CELIA</para>
 <line remap="LINE">kind offer, when I make curtsy, bid me farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 </chapter>
 </book>

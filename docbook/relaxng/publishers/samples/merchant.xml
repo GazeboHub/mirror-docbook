@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">The Merchant of Venice</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">The Merchant of Venice</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The Merchant of Venice</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -29,16 +29,16 @@
 <para><personname remap="PERSONA">NERISSA, her waiting-maid.</personname></para>
 <para><personname remap="PERSONA">JESSICA, daughter to SHYLOCK.</personname></para>
 <para><personname remap="PERSONA">Magnificoes of Venice, Officers of the Court of Justice, Gaoler, Servants to Portia, and other Attendants.</personname></para>
-    <para remap="SCNDESCR">SCENE  Partly at Venice, and partly at Belmont, the seat of PORTIA, on the Continent.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  Partly at Venice, and partly at Belmont, the seat of PORTIA, on the Continent.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Venice. A street.</title>
-<para remap="STAGEDIR">Enter ANTONIO, SALARINO, and SALANIO</para>
+<stagedir remap="STAGEDIR">Enter ANTONIO, SALARINO, and SALANIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTONIO</speaker>
@@ -130,7 +130,7 @@
 <line remap="LINE">Though Nestor swear the jest be laughable.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BASSANIO, LORENZO, and GRATIANO</para>
+<stagedir remap="STAGEDIR">Enter BASSANIO, LORENZO, and GRATIANO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SALANIO</speaker>
@@ -168,7 +168,7 @@
 <line remap="LINE">We'll make our leisures to attend on yours.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Salarino and Salanio</para>
+<stagedir remap="STAGEDIR">Exeunt Salarino and Salanio</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORENZO</speaker>
@@ -251,7 +251,7 @@
 <line remap="LINE">In a neat's tongue dried and a maid not vendible.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt GRATIANO and LORENZO</para>
+<stagedir remap="STAGEDIR">Exeunt GRATIANO and LORENZO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTONIO</speaker>
@@ -362,11 +362,11 @@
 <line remap="LINE">To have it of my trust or for my sake.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II: Belmont. A room in PORTIA'S house.</title>
-<para remap="STAGEDIR">Enter PORTIA and NERISSA</para>
+<stagedir remap="STAGEDIR">Enter PORTIA and NERISSA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PORTIA</speaker>
@@ -589,7 +589,7 @@
 <speaker remap="SPEAKER">PORTIA</speaker>
 <line remap="LINE">I remember him well, and I remember him worthy of</line>
 <line remap="LINE">thy praise.</line>
-<para remap="STAGEDIR">Enter a Serving-man</para>
+<stagedir remap="STAGEDIR">Enter a Serving-man</stagedir>
 <line remap="LINE">How now! what news?</line>
 </linegroup></dialogue>
 
@@ -613,11 +613,11 @@
 <line remap="LINE">upon one wooer, another knocks at the door.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Venice. A public place.</title>
-<para remap="STAGEDIR">Enter BASSANIO and SHYLOCK</para>
+<stagedir remap="STAGEDIR">Enter BASSANIO and SHYLOCK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHYLOCK</speaker>
@@ -713,7 +713,7 @@
 <line remap="LINE">news on the Rialto? Who is he comes here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ANTONIO</para>
+<stagedir remap="STAGEDIR">Enter ANTONIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BASSANIO</speaker>
@@ -722,7 +722,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHYLOCK</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  How like a fawning publican he looks!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  How like a fawning publican he looks!</line>
 <line remap="LINE">I hate him for he is a Christian,</line>
 <line remap="LINE">But more for that in low simplicity</line>
 <line remap="LINE">He lends out money gratis and brings down</line>
@@ -750,7 +750,7 @@
 <line remap="LINE">Tubal, a wealthy Hebrew of my tribe,</line>
 <line remap="LINE">Will furnish me. But soft! how many months</line>
 <line remap="LINE">Do you desire?</line>
-<para remap="STAGEDIR">To ANTONIO</para>
+<stagedir remap="STAGEDIR">To ANTONIO</stagedir>
 <line remap="LINE">Rest you fair, good signior;</line>
 <line remap="LINE">Your worship was the last man in our mouths.</line>
 </linegroup></dialogue>
@@ -975,7 +975,7 @@
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTONIO</speaker>
 <line remap="LINE">Hie thee, gentle Jew.</line>
-<para remap="STAGEDIR">Exit Shylock</para>
+<stagedir remap="STAGEDIR">Exit Shylock</stagedir>
 <line remap="LINE">The Hebrew will turn Christian: he grows kind.</line>
 </linegroup></dialogue>
 
@@ -990,7 +990,7 @@
 <line remap="LINE">My ships come home a month before the day.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -998,9 +998,9 @@
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Belmont. A room in PORTIA'S house.</title>
-<para remap="STAGEDIR">Flourish of cornets. Enter the PRINCE OF MOROCCO
+<stagedir remap="STAGEDIR">Flourish of cornets. Enter the PRINCE OF MOROCCO
 and his train; PORTIA, NERISSA, and others
-attending</para>
+attending</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MOROCCO</speaker>
@@ -1079,11 +1079,11 @@ attending</para>
 <line remap="LINE">To make me blest or cursed'st among men.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Cornets, and exeunt</para>
+<stagedir remap="STAGEDIR">Cornets, and exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Venice. A street.</title>
-<para remap="STAGEDIR">Enter LAUNCELOT</para>
+<stagedir remap="STAGEDIR">Enter LAUNCELOT</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAUNCELOT</speaker>
@@ -1120,7 +1120,7 @@ attending</para>
 <line remap="LINE">at your command; I will run.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Old GOBBO, with a basket</para>
+<stagedir remap="STAGEDIR">Enter Old GOBBO, with a basket</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GOBBO</speaker>
@@ -1130,7 +1130,7 @@ attending</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAUNCELOT</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  O heavens, this is my true-begotten father!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  O heavens, this is my true-begotten father!</line>
 <line remap="LINE">who, being more than sand-blind, high-gravel blind,</line>
 <line remap="LINE">knows me not: I will try confusions with him.</line>
 </linegroup></dialogue>
@@ -1159,7 +1159,7 @@ attending</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAUNCELOT</speaker>
 <line remap="LINE">Talk you of young Master Launcelot?</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">Mark me now; now will I raise the waters. Talk you</line>
 <line remap="LINE">of young Master Launcelot?</line>
 </linegroup></dialogue>
@@ -1306,7 +1306,7 @@ attending</para>
 <line remap="LINE">am a Jew, if I serve the Jew any longer.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BASSANIO, with LEONARDO and other followers</para>
+<stagedir remap="STAGEDIR">Enter BASSANIO, with LEONARDO and other followers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BASSANIO</speaker>
@@ -1316,7 +1316,7 @@ attending</para>
 <line remap="LINE">and desire Gratiano to come anon to my lodging.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit a Servant</para>
+<stagedir remap="STAGEDIR">Exit a Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAUNCELOT</speaker>
@@ -1436,7 +1436,7 @@ attending</para>
 <line remap="LINE">come; I'll take my leave of the Jew in the twinkling of an eye.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Launcelot and Old Gobbo</para>
+<stagedir remap="STAGEDIR">Exeunt Launcelot and Old Gobbo</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BASSANIO</speaker>
@@ -1451,7 +1451,7 @@ attending</para>
 <line remap="LINE">My best endeavours shall be done herein.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter GRATIANO</para>
+<stagedir remap="STAGEDIR">Enter GRATIANO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GRATIANO</speaker>
@@ -1463,7 +1463,7 @@ attending</para>
 <line remap="LINE">Yonder, sir, he walks.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GRATIANO</speaker>
@@ -1543,11 +1543,11 @@ attending</para>
 <line remap="LINE">But we will visit you at supper-time.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The same. A room in SHYLOCK'S house.</title>
-<para remap="STAGEDIR">Enter JESSICA and LAUNCELOT</para>
+<stagedir remap="STAGEDIR">Enter JESSICA and LAUNCELOT</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JESSICA</speaker>
@@ -1574,7 +1574,7 @@ attending</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JESSICA</speaker>
 <line remap="LINE">Farewell, good Launcelot.</line>
-<para remap="STAGEDIR">Exit Launcelot</para>
+<stagedir remap="STAGEDIR">Exit Launcelot</stagedir>
 <line remap="LINE">Alack, what heinous sin is it in me</line>
 <line remap="LINE">To be ashamed to be my father's child!</line>
 <line remap="LINE">But though I am a daughter to his blood,</line>
@@ -1583,11 +1583,11 @@ attending</para>
 <line remap="LINE">Become a Christian and thy loving wife.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  The same. A street.</title>
-<para remap="STAGEDIR">Enter GRATIANO, LORENZO, SALARINO, and SALANIO</para>
+<stagedir remap="STAGEDIR">Enter GRATIANO, LORENZO, SALARINO, and SALANIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORENZO</speaker>
@@ -1616,7 +1616,7 @@ attending</para>
 <speaker remap="SPEAKER">LORENZO</speaker>
 <line remap="LINE">'Tis now but four o'clock: we have two hours</line>
 <line remap="LINE">To furnish us.</line>
-<para remap="STAGEDIR">Enter LAUNCELOT, with a letter</para>
+<stagedir remap="STAGEDIR">Enter LAUNCELOT, with a letter</stagedir>
 <line remap="LINE">Friend Launcelot, what's the news?</line>
 </linegroup></dialogue>
 
@@ -1659,7 +1659,7 @@ attending</para>
 <line remap="LINE">Hold here, take this: tell gentle Jessica</line>
 <line remap="LINE">I will not fail her; speak it privately.</line>
 <line remap="LINE">Go, gentlemen,</line>
-<para remap="STAGEDIR">Exit Launcelot</para>
+<stagedir remap="STAGEDIR">Exit Launcelot</stagedir>
 <line remap="LINE">Will you prepare you for this masque tonight?</line>
 <line remap="LINE">I am provided of a torch-bearer.</line>
 </linegroup></dialogue>
@@ -1685,7 +1685,7 @@ attending</para>
 <line remap="LINE">'Tis good we do so.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt SALARINO and SALANIO</para>
+<stagedir remap="STAGEDIR">Exeunt SALARINO and SALANIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GRATIANO</speaker>
@@ -1707,11 +1707,11 @@ attending</para>
 <line remap="LINE">Fair Jessica shall be my torch-bearer.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  The same. Before SHYLOCK'S house.</title>
-<para remap="STAGEDIR">Enter SHYLOCK and LAUNCELOT</para>
+<stagedir remap="STAGEDIR">Enter SHYLOCK and LAUNCELOT</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHYLOCK</speaker>
@@ -1739,7 +1739,7 @@ attending</para>
 <line remap="LINE">I could do nothing without bidding.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Jessica</para>
+<stagedir remap="STAGEDIR">Enter Jessica</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JESSICA</speaker>
@@ -1802,7 +1802,7 @@ attending</para>
 <line remap="LINE">boy, will be worth a Jewess' eye.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHYLOCK</speaker>
@@ -1828,7 +1828,7 @@ attending</para>
 <line remap="LINE">A proverb never stale in thrifty mind.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JESSICA</speaker>
@@ -1836,11 +1836,11 @@ attending</para>
 <line remap="LINE">I have a father, you a daughter, lost.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  The same.</title>
-<para remap="STAGEDIR">Enter GRATIANO and SALARINO, masqued</para>
+<stagedir remap="STAGEDIR">Enter GRATIANO and SALARINO, masqued</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GRATIANO</speaker>
@@ -1887,7 +1887,7 @@ attending</para>
 <line remap="LINE">Here comes Lorenzo: more of this hereafter.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LORENZO</para>
+<stagedir remap="STAGEDIR">Enter LORENZO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORENZO</speaker>
@@ -1898,7 +1898,7 @@ attending</para>
 <line remap="LINE">Here dwells my father Jew. Ho! who's within?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter JESSICA, above, in boy's clothes</para>
+<stagedir remap="STAGEDIR">Enter JESSICA, above, in boy's clothes</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JESSICA</speaker>
@@ -1962,7 +1962,7 @@ attending</para>
 <line remap="LINE">With some more ducats, and be with you straight.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit above</para>
+<stagedir remap="STAGEDIR">Exit above</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GRATIANO</speaker>
@@ -1977,13 +1977,13 @@ attending</para>
 <line remap="LINE">And true she is, as she hath proved herself,</line>
 <line remap="LINE">And therefore, like herself, wise, fair and true,</line>
 <line remap="LINE">Shall she be placed in my constant soul.</line>
-<para remap="STAGEDIR">Enter JESSICA, below</para>
+<stagedir remap="STAGEDIR">Enter JESSICA, below</stagedir>
 <line remap="LINE">What, art thou come? On, gentlemen; away!</line>
 <line remap="LINE">Our masquing mates by this time for us stay.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit with Jessica and Salarino</para>
-<para remap="STAGEDIR">Enter ANTONIO</para>
+<stagedir remap="STAGEDIR">Exit with Jessica and Salarino</stagedir>
+<stagedir remap="STAGEDIR">Enter ANTONIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTONIO</speaker>
@@ -2010,12 +2010,12 @@ attending</para>
 <line remap="LINE">Than to be under sail and gone to-night.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VII.  Belmont. A room in PORTIA'S house.</title>
-<para remap="STAGEDIR">Flourish of cornets. Enter PORTIA, with the
-PRINCE OF MOROCCO, and their trains</para>
+<stagedir remap="STAGEDIR">Flourish of cornets. Enter PORTIA, with the
+PRINCE OF MOROCCO, and their trains</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PORTIA</speaker>
@@ -2099,14 +2099,14 @@ PRINCE OF MOROCCO, and their trains</para>
 <line remap="LINE">Then I am yours.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">He unlocks the golden casket</para>
+<stagedir remap="STAGEDIR">He unlocks the golden casket</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MOROCCO</speaker>
 <line remap="LINE">O hell! what have we here?</line>
 <line remap="LINE">A carrion Death, within whose empty eye</line>
 <line remap="LINE">There is a written scroll! I'll read the writing.</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">All that glitters is not gold;</line>
 <line remap="LINE">Often have you heard that told:</line>
 <line remap="LINE">Many a man his life hath sold</line>
@@ -2122,7 +2122,7 @@ PRINCE OF MOROCCO, and their trains</para>
 <line remap="LINE">To take a tedious leave: thus losers part.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit with his train. Flourish of cornets</para>
+<stagedir remap="STAGEDIR">Exit with his train. Flourish of cornets</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PORTIA</speaker>
@@ -2130,11 +2130,11 @@ PRINCE OF MOROCCO, and their trains</para>
 <line remap="LINE">Let all of his complexion choose me so.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VIII.  Venice. A street.</title>
-<para remap="STAGEDIR">Enter SALARINO and SALANIO</para>
+<stagedir remap="STAGEDIR">Enter SALARINO and SALANIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SALARINO</speaker>
@@ -2235,11 +2235,11 @@ PRINCE OF MOROCCO, and their trains</para>
 <line remap="LINE">Do we so.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IX.  Belmont. A room in PORTIA'S house.</title>
-<para remap="STAGEDIR">Enter NERISSA with a Servitor</para>
+<stagedir remap="STAGEDIR">Enter NERISSA with a Servitor</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NERISSA</speaker>
@@ -2248,8 +2248,8 @@ PRINCE OF MOROCCO, and their trains</para>
 <line remap="LINE">And comes to his election presently.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish of cornets. Enter the PRINCE OF ARRAGON,
-PORTIA, and their trains</para>
+<stagedir remap="STAGEDIR">Flourish of cornets. Enter the PRINCE OF ARRAGON,
+PORTIA, and their trains</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PORTIA</speaker>
@@ -2315,7 +2315,7 @@ PORTIA, and their trains</para>
 <line remap="LINE">And instantly unlock my fortunes here.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">He opens the silver casket</para>
+<stagedir remap="STAGEDIR">He opens the silver casket</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PORTIA</speaker>
@@ -2342,7 +2342,7 @@ PORTIA, and their trains</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ARRAGON</speaker>
 <line remap="LINE">What is here?</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">The fire seven times tried this:</line>
 <line remap="LINE">Seven times tried that judgment is,</line>
 <line remap="LINE">That did never choose amiss.</line>
@@ -2361,7 +2361,7 @@ PORTIA, and their trains</para>
 <line remap="LINE">Patiently to bear my wroth.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Arragon and train</para>
+<stagedir remap="STAGEDIR">Exeunt Arragon and train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PORTIA</speaker>
@@ -2381,7 +2381,7 @@ PORTIA, and their trains</para>
 <line remap="LINE">Come, draw the curtain, Nerissa.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Servant</para>
+<stagedir remap="STAGEDIR">Enter a Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Servant</speaker>
@@ -2421,7 +2421,7 @@ PORTIA, and their trains</para>
 <line remap="LINE">Bassanio, lord Love, if thy will it be!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -2429,7 +2429,7 @@ PORTIA, and their trains</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Venice. A street.</title>
-<para remap="STAGEDIR">Enter SALANIO and SALARINO</para>
+<stagedir remap="STAGEDIR">Enter SALANIO and SALARINO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SALANIO</speaker>
@@ -2477,7 +2477,7 @@ PORTIA, and their trains</para>
 <speaker remap="SPEAKER">SALANIO</speaker>
 <line remap="LINE">Let me say 'amen' betimes, lest the devil cross my</line>
 <line remap="LINE">prayer, for here he comes in the likeness of a Jew.</line>
-<para remap="STAGEDIR">Enter SHYLOCK</para>
+<stagedir remap="STAGEDIR">Enter SHYLOCK</stagedir>
 <line remap="LINE">How now, Shylock! what news among the merchants?</line>
 </linegroup></dialogue>
 
@@ -2576,7 +2576,7 @@ PORTIA, and their trains</para>
 <line remap="LINE">will better the instruction.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Servant</para>
+<stagedir remap="STAGEDIR">Enter a Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Servant</speaker>
@@ -2589,7 +2589,7 @@ PORTIA, and their trains</para>
 <line remap="LINE">We have been up and down to seek him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter TUBAL</para>
+<stagedir remap="STAGEDIR">Enter TUBAL</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SALANIO</speaker>
@@ -2597,7 +2597,7 @@ PORTIA, and their trains</para>
 <line remap="LINE">matched, unless the devil himself turn Jew.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt SALANIO, SALARINO, and Servant</para>
+<stagedir remap="STAGEDIR">Exeunt SALANIO, SALARINO, and Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHYLOCK</speaker>
@@ -2713,12 +2713,12 @@ PORTIA, and their trains</para>
 <line remap="LINE">go, good Tubal; at our synagogue, Tubal.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Belmont. A room in PORTIA'S house.</title>
-<para remap="STAGEDIR">Enter BASSANIO, PORTIA, GRATIANO, NERISSA, and
-Attendants</para>
+<stagedir remap="STAGEDIR">Enter BASSANIO, PORTIA, GRATIANO, NERISSA, and
+Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PORTIA</speaker>
@@ -2818,7 +2818,7 @@ Attendants</para>
 <line remap="LINE">The issue of the exploit. Go, Hercules!</line>
 <line remap="LINE">Live thou, I live: with much, much more dismay</line>
 <line remap="LINE">I view the fight than thou that makest the fray.</line>
-<para remap="STAGEDIR">Music, whilst BASSANIO comments on the caskets to himself</para>
+<stagedir remap="STAGEDIR">Music, whilst BASSANIO comments on the caskets to himself</stagedir>
 <bridgehead remap="SUBHEAD">SONG.</bridgehead>
 <line remap="LINE">Tell me where is fancy bred,</line>
 <line remap="LINE">Or in the heart, or in the head?</line>
@@ -2877,7 +2877,7 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PORTIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  How all the other passions fleet to air,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  How all the other passions fleet to air,</line>
 <line remap="LINE">As doubtful thoughts, and rash-embraced despair,</line>
 <line remap="LINE">And shuddering fear, and green-eyed jealousy! O love,</line>
 <line remap="LINE">Be moderate; allay thy ecstasy,</line>
@@ -2889,7 +2889,7 @@ Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BASSANIO</speaker>
 <line remap="LINE">What find I here?</line>
-<para remap="STAGEDIR">Opening the leaden casket</para>
+<stagedir remap="STAGEDIR">Opening the leaden casket</stagedir>
 <line remap="LINE">Fair Portia's counterfeit! What demi-god</line>
 <line remap="LINE">Hath come so near creation? Move these eyes?</line>
 <line remap="LINE">Or whether, riding on the balls of mine,</line>
@@ -2906,7 +2906,7 @@ Attendants</para>
 <line remap="LINE">In underprizing it, so far this shadow</line>
 <line remap="LINE">Doth limp behind the substance. Here's the scroll,</line>
 <line remap="LINE">The continent and summary of my fortune.</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">You that choose not by the view,</line>
 <line remap="LINE">Chance as fair and choose as true!</line>
 <line remap="LINE">Since this fortune falls to you,</line>
@@ -3053,8 +3053,8 @@ Attendants</para>
 <line remap="LINE">and my old Venetian friend Salerio?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LORENZO, JESSICA, and SALERIO, a Messenger
-from Venice</para>
+<stagedir remap="STAGEDIR">Enter LORENZO, JESSICA, and SALERIO, a Messenger
+from Venice</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BASSANIO</speaker>
@@ -3087,7 +3087,7 @@ from Venice</para>
 <line remap="LINE">Commends him to you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Gives Bassanio a letter</para>
+<stagedir remap="STAGEDIR">Gives Bassanio a letter</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BASSANIO</speaker>
@@ -3229,7 +3229,7 @@ from Venice</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BASSANIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  Sweet Bassanio, my ships have all</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  Sweet Bassanio, my ships have all</line>
 <line remap="LINE">miscarried, my creditors grow cruel, my estate is</line>
 <line remap="LINE">very low, my bond to the Jew is forfeit; and since</line>
 <line remap="LINE">in paying it, it is impossible I should live, all</line>
@@ -3252,11 +3252,11 @@ from Venice</para>
 <line remap="LINE">No rest be interposer 'twixt us twain.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Venice. A street.</title>
-<para remap="STAGEDIR">Enter SHYLOCK, SALARINO, ANTONIO, and Gaoler</para>
+<stagedir remap="STAGEDIR">Enter SHYLOCK, SALARINO, ANTONIO, and Gaoler</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHYLOCK</speaker>
@@ -3296,7 +3296,7 @@ from Venice</para>
 <line remap="LINE">I'll have no speaking: I will have my bond.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SALARINO</speaker>
@@ -3335,12 +3335,12 @@ from Venice</para>
 <line remap="LINE">To see me pay his debt, and then I care not!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Belmont. A room in PORTIA'S house.</title>
-<para remap="STAGEDIR">Enter PORTIA, NERISSA, LORENZO, JESSICA, and
-BALTHASAR</para>
+<stagedir remap="STAGEDIR">Enter PORTIA, NERISSA, LORENZO, JESSICA, and
+BALTHASAR</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORENZO</speaker>
@@ -3413,7 +3413,7 @@ BALTHASAR</para>
 <speaker remap="SPEAKER">PORTIA</speaker>
 <line remap="LINE">I thank you for your wish, and am well pleased</line>
 <line remap="LINE">To wish it back on you: fare you well Jessica.</line>
-<para remap="STAGEDIR">Exeunt JESSICA and LORENZO</para>
+<stagedir remap="STAGEDIR">Exeunt JESSICA and LORENZO</stagedir>
 <line remap="LINE">Now, Balthasar,</line>
 <line remap="LINE">As I have ever found thee honest-true,</line>
 <line remap="LINE">So let me find thee still. Take this same letter,</line>
@@ -3432,7 +3432,7 @@ BALTHASAR</para>
 <line remap="LINE">Madam, I go with all convenient speed.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PORTIA</speaker>
@@ -3484,11 +3484,11 @@ BALTHASAR</para>
 <line remap="LINE">For we must measure twenty miles to-day.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  The same. A garden.</title>
-<para remap="STAGEDIR">Enter LAUNCELOT and JESSICA</para>
+<stagedir remap="STAGEDIR">Enter LAUNCELOT and JESSICA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAUNCELOT</speaker>
@@ -3542,7 +3542,7 @@ BALTHASAR</para>
 <line remap="LINE">shall not shortly have a rasher on the coals for money.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LORENZO</para>
+<stagedir remap="STAGEDIR">Enter LORENZO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JESSICA</speaker>
@@ -3630,7 +3630,7 @@ BALTHASAR</para>
 <line remap="LINE">conceits shall govern.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORENZO</speaker>
@@ -3692,7 +3692,7 @@ BALTHASAR</para>
 <line remap="LINE">Well, I'll set you forth.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -3700,8 +3700,8 @@ BALTHASAR</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Venice. A court of justice.</title>
-<para remap="STAGEDIR">Enter the DUKE, the Magnificoes, ANTONIO, BASSANIO,
-GRATIANO, SALERIO, and others</para>
+<stagedir remap="STAGEDIR">Enter the DUKE, the Magnificoes, ANTONIO, BASSANIO,
+GRATIANO, SALERIO, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE</speaker>
@@ -3743,7 +3743,7 @@ GRATIANO, SALERIO, and others</para>
 <line remap="LINE">He is ready at the door: he comes, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SHYLOCK</para>
+<stagedir remap="STAGEDIR">Enter SHYLOCK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE</speaker>
@@ -3921,7 +3921,7 @@ GRATIANO, SALERIO, and others</para>
 <line remap="LINE">Than to live still and write mine epitaph.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter NERISSA, dressed like a lawyer's clerk</para>
+<stagedir remap="STAGEDIR">Enter NERISSA, dressed like a lawyer's clerk</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE</speaker>
@@ -3933,7 +3933,7 @@ GRATIANO, SALERIO, and others</para>
 <line remap="LINE">From both, my lord. Bellario greets your grace.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Presenting a letter</para>
+<stagedir remap="STAGEDIR">Presenting a letter</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BASSANIO</speaker>
@@ -4003,7 +4003,7 @@ GRATIANO, SALERIO, and others</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Clerk</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir></line>
 <line remap="LINE">Your grace shall understand that at the receipt of</line>
 <line remap="LINE">your letter I am very sick: but in the instant that</line>
 <line remap="LINE">your messenger came, in loving visitation was with</line>
@@ -4026,7 +4026,7 @@ GRATIANO, SALERIO, and others</para>
 <speaker remap="SPEAKER">DUKE</speaker>
 <line remap="LINE">You hear the learn'd Bellario, what he writes:</line>
 <line remap="LINE">And here, I take it, is the doctor come.</line>
-<para remap="STAGEDIR">Enter PORTIA, dressed like a doctor of laws</para>
+<stagedir remap="STAGEDIR">Enter PORTIA, dressed like a doctor of laws</stagedir>
 <line remap="LINE">Give me your hand. Come you from old Bellario?</line>
 </linegroup></dialogue>
 
@@ -4340,7 +4340,7 @@ GRATIANO, SALERIO, and others</para>
 <line remap="LINE">These be the Christian husbands. I have a daughter;</line>
 <line remap="LINE">Would any of the stock of Barrabas</line>
 <line remap="LINE">Had been her husband rather than a Christian!</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">We trifle time: I pray thee, pursue sentence.</line>
 </linegroup></dialogue>
 
@@ -4603,7 +4603,7 @@ GRATIANO, SALERIO, and others</para>
 <line remap="LINE">To bring thee to the gallows, not the font.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit SHYLOCK</para>
+<stagedir remap="STAGEDIR">Exit SHYLOCK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE</speaker>
@@ -4624,7 +4624,7 @@ GRATIANO, SALERIO, and others</para>
 <line remap="LINE">For, in my mind, you are much bound to him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Duke and his train</para>
+<stagedir remap="STAGEDIR">Exeunt Duke and his train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BASSANIO</speaker>
@@ -4662,9 +4662,9 @@ GRATIANO, SALERIO, and others</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PORTIA</speaker>
 <line remap="LINE">You press me far, and therefore I will yield.</line>
-<para remap="STAGEDIR">To ANTONIO</para>
+<stagedir remap="STAGEDIR">To ANTONIO</stagedir>
 <line remap="LINE">Give me your gloves, I'll wear them for your sake;</line>
-<para remap="STAGEDIR">To BASSANIO</para>
+<stagedir remap="STAGEDIR">To BASSANIO</stagedir>
 <line remap="LINE">And, for your love, I'll take this ring from you:</line>
 <line remap="LINE">Do not draw back your hand; I'll take no more;</line>
 <line remap="LINE">And you in love shall not deny me this.</line>
@@ -4713,7 +4713,7 @@ GRATIANO, SALERIO, and others</para>
 <line remap="LINE">For giving it to me. Well, peace be with you!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Portia and Nerissa</para>
+<stagedir remap="STAGEDIR">Exeunt Portia and Nerissa</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTONIO</speaker>
@@ -4727,17 +4727,17 @@ GRATIANO, SALERIO, and others</para>
 <line remap="LINE">Go, Gratiano, run and overtake him;</line>
 <line remap="LINE">Give him the ring, and bring him, if thou canst,</line>
 <line remap="LINE">Unto Antonio's house: away! make haste.</line>
-<para remap="STAGEDIR">Exit Gratiano</para>
+<stagedir remap="STAGEDIR">Exit Gratiano</stagedir>
 <line remap="LINE">Come, you and I will thither presently;</line>
 <line remap="LINE">And in the morning early will we both</line>
 <line remap="LINE">Fly toward Belmont: come, Antonio.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same. A street.</title>
-<para remap="STAGEDIR">Enter PORTIA and NERISSA</para>
+<stagedir remap="STAGEDIR">Enter PORTIA and NERISSA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PORTIA</speaker>
@@ -4747,7 +4747,7 @@ GRATIANO, SALERIO, and others</para>
 <line remap="LINE">This deed will be well welcome to Lorenzo.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter GRATIANO</para>
+<stagedir remap="STAGEDIR">Enter GRATIANO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GRATIANO</speaker>
@@ -4773,18 +4773,18 @@ GRATIANO, SALERIO, and others</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NERISSA</speaker>
 <line remap="LINE">Sir, I would speak with you.</line>
-<para remap="STAGEDIR">Aside to PORTIA</para>
+<stagedir remap="STAGEDIR">Aside to PORTIA</stagedir>
 <line remap="LINE">I'll see if I can get my husband's ring,</line>
 <line remap="LINE">Which I did make him swear to keep for ever.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PORTIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to NERISSA</phrase>  Thou mayst, I warrant.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to NERISSA</inlinestagedir>  Thou mayst, I warrant.</line>
 <line remap="LINE">We shall have old swearing</line>
 <line remap="LINE">That they did give the rings away to men;</line>
 <line remap="LINE">But we'll outface them, and outswear them too.</line>
-<para remap="STAGEDIR">Aloud</para>
+<stagedir remap="STAGEDIR">Aloud</stagedir>
 <line remap="LINE">Away! make haste: thou knowist where I will tarry.</line>
 </linegroup></dialogue>
 
@@ -4793,7 +4793,7 @@ GRATIANO, SALERIO, and others</para>
 <line remap="LINE">Come, good sir, will you show me to this house?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -4801,7 +4801,7 @@ GRATIANO, SALERIO, and others</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Belmont. Avenue to PORTIA'S house.</title>
-<para remap="STAGEDIR">Enter LORENZO and JESSICA</para>
+<stagedir remap="STAGEDIR">Enter LORENZO and JESSICA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORENZO</speaker>
@@ -4865,7 +4865,7 @@ GRATIANO, SALERIO, and others</para>
 <line remap="LINE">But, hark, I hear the footing of a man.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter STEPHANO</para>
+<stagedir remap="STAGEDIR">Enter STEPHANO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORENZO</speaker>
@@ -4910,7 +4910,7 @@ GRATIANO, SALERIO, and others</para>
 <line remap="LINE">Some welcome for the mistress of the house.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LAUNCELOT</para>
+<stagedir remap="STAGEDIR">Enter LAUNCELOT</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAUNCELOT</speaker>
@@ -4950,7 +4950,7 @@ GRATIANO, SALERIO, and others</para>
 <line remap="LINE">ere morning.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORENZO</speaker>
@@ -4959,7 +4959,7 @@ GRATIANO, SALERIO, and others</para>
 <line remap="LINE">My friend Stephano, signify, I pray you,</line>
 <line remap="LINE">Within the house, your mistress is at hand;</line>
 <line remap="LINE">And bring your music forth into the air.</line>
-<para remap="STAGEDIR">Exit Stephano</para>
+<stagedir remap="STAGEDIR">Exit Stephano</stagedir>
 <line remap="LINE">How sweet the moonlight sleeps upon this bank!</line>
 <line remap="LINE">Here will we sit and let the sounds of music</line>
 <line remap="LINE">Creep in our ears: soft stillness and the night</line>
@@ -4972,13 +4972,13 @@ GRATIANO, SALERIO, and others</para>
 <line remap="LINE">Such harmony is in immortal souls;</line>
 <line remap="LINE">But whilst this muddy vesture of decay</line>
 <line remap="LINE">Doth grossly close it in, we cannot hear it.</line>
-<para remap="STAGEDIR">Enter Musicians</para>
+<stagedir remap="STAGEDIR">Enter Musicians</stagedir>
 <line remap="LINE">Come, ho! and wake Diana with a hymn!</line>
 <line remap="LINE">With sweetest touches pierce your mistress' ear,</line>
 <line remap="LINE">And draw her home with music.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Music</para>
+<stagedir remap="STAGEDIR">Music</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JESSICA</speaker>
@@ -5008,7 +5008,7 @@ GRATIANO, SALERIO, and others</para>
 <line remap="LINE">Let no such man be trusted. Mark the music.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PORTIA and NERISSA</para>
+<stagedir remap="STAGEDIR">Enter PORTIA and NERISSA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PORTIA</speaker>
@@ -5060,7 +5060,7 @@ GRATIANO, SALERIO, and others</para>
 <line remap="LINE">And would not be awaked.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Music ceases</para>
+<stagedir remap="STAGEDIR">Music ceases</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORENZO</speaker>
@@ -5101,7 +5101,7 @@ GRATIANO, SALERIO, and others</para>
 <line remap="LINE">Nor you, Lorenzo; Jessica, nor you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">A tucket sounds</para>
+<stagedir remap="STAGEDIR">A tucket sounds</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORENZO</speaker>
@@ -5116,8 +5116,8 @@ GRATIANO, SALERIO, and others</para>
 <line remap="LINE">Such as the day is when the sun is hid.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BASSANIO, ANTONIO, GRATIANO, and
-their followers</para>
+<stagedir remap="STAGEDIR">Enter BASSANIO, ANTONIO, GRATIANO, and
+their followers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BASSANIO</speaker>
@@ -5160,7 +5160,7 @@ their followers</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GRATIANO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To NERISSA</phrase>  By yonder moon I swear you do me wrong;</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To NERISSA</inlinestagedir>  By yonder moon I swear you do me wrong;</line>
 <line remap="LINE">In faith, I gave it to the judge's clerk:</line>
 <line remap="LINE">Would he were gelt that had it, for my part,</line>
 <line remap="LINE">Since you do take it, love, so much at heart.</line>
@@ -5227,7 +5227,7 @@ their followers</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BASSANIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Why, I were best to cut my left hand off</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Why, I were best to cut my left hand off</line>
 <line remap="LINE">And swear I lost the ring defending it.</line>
 </linegroup></dialogue>
 
@@ -5508,7 +5508,7 @@ their followers</para>
 <line remap="LINE">So sore as keeping safe Nerissa's ring.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 </chapter>
 </book>

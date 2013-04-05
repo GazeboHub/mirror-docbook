@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">A Midsummer Night's Dream</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">A Midsummer Night's Dream</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">A Midsummer Night's Dream</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -30,17 +30,17 @@
 
 <para><personname remap="PERSONA">Other fairies attending their King and Queen.</personname></para>
 <para><personname remap="PERSONA">Attendants on Theseus and Hippolyta.</personname></para>
-    <para remap="SCNDESCR">SCENE  Athens, and a wood near it.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  Athens, and a wood near it.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Athens. The palace of THESEUS.</title>
-<para remap="STAGEDIR">Enter THESEUS, HIPPOLYTA, PHILOSTRATE, and
-Attendants</para>
+<stagedir remap="STAGEDIR">Enter THESEUS, HIPPOLYTA, PHILOSTRATE, and
+Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THESEUS</speaker>
@@ -68,14 +68,14 @@ Attendants</para>
 <line remap="LINE">Awake the pert and nimble spirit of mirth;</line>
 <line remap="LINE">Turn melancholy forth to funerals;</line>
 <line remap="LINE">The pale companion is not for our pomp.</line>
-<para remap="STAGEDIR">Exit PHILOSTRATE</para>
+<stagedir remap="STAGEDIR">Exit PHILOSTRATE</stagedir>
 <line remap="LINE">Hippolyta, I woo'd thee with my sword,</line>
 <line remap="LINE">And won thy love, doing thee injuries;</line>
 <line remap="LINE">But I will wed thee in another key,</line>
 <line remap="LINE">With pomp, with triumph and with revelling.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter EGEUS, HERMIA, LYSANDER, and DEMETRIUS</para>
+<stagedir remap="STAGEDIR">Enter EGEUS, HERMIA, LYSANDER, and DEMETRIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EGEUS</speaker>
@@ -258,7 +258,7 @@ Attendants</para>
 <line remap="LINE">With duty and desire we follow you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but LYSANDER and HERMIA</para>
+<stagedir remap="STAGEDIR">Exeunt all but LYSANDER and HERMIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LYSANDER</speaker>
@@ -365,7 +365,7 @@ Attendants</para>
 <line remap="LINE">Keep promise, love. Look, here comes Helena.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HELENA</para>
+<stagedir remap="STAGEDIR">Enter HELENA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HERMIA</speaker>
@@ -466,12 +466,12 @@ Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LYSANDER</speaker>
 <line remap="LINE">I will, my Hermia.</line>
-<para remap="STAGEDIR">Exit HERMIA</para>
+<stagedir remap="STAGEDIR">Exit HERMIA</stagedir>
 <line remap="LINE">Helena, adieu:</line>
 <line remap="LINE">As you on him, Demetrius dote on you!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HELENA</speaker>
@@ -503,12 +503,12 @@ Attendants</para>
 <line remap="LINE">To have his sight thither and back again.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Athens. QUINCE'S house.</title>
-<para remap="STAGEDIR">Enter QUINCE, SNUG, BOTTOM, FLUTE, SNOUT, and
-STARVELING</para>
+<stagedir remap="STAGEDIR">Enter QUINCE, SNUG, BOTTOM, FLUTE, SNOUT, and
+STARVELING</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUINCE</speaker>
@@ -775,7 +775,7 @@ STARVELING</para>
 <line remap="LINE">Enough; hold or cut bow-strings.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -783,7 +783,7 @@ STARVELING</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A wood near Athens.</title>
-<para remap="STAGEDIR">Enter, from opposite sides, a Fairy, and PUCK</para>
+<stagedir remap="STAGEDIR">Enter, from opposite sides, a Fairy, and PUCK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PUCK</speaker>
@@ -869,8 +869,8 @@ STARVELING</para>
 <line remap="LINE">And here my mistress. Would that he were gone!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter, from one side, OBERON, with his train;
-from the other, TITANIA, with hers</para>
+<stagedir remap="STAGEDIR">Enter, from one side, OBERON, with his train;
+from the other, TITANIA, with hers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OBERON</speaker>
@@ -1007,7 +1007,7 @@ from the other, TITANIA, with hers</para>
 <line remap="LINE">We shall chide downright, if I longer stay.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit TITANIA with her train</para>
+<stagedir remap="STAGEDIR">Exit TITANIA with her train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OBERON</speaker>
@@ -1057,7 +1057,7 @@ from the other, TITANIA, with hers</para>
 <line remap="LINE">In forty minutes.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OBERON</speaker>
@@ -1075,7 +1075,7 @@ from the other, TITANIA, with hers</para>
 <line remap="LINE">And I will overhear their conference.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DEMETRIUS, HELENA, following him</para>
+<stagedir remap="STAGEDIR">Enter DEMETRIUS, HELENA, following him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DEMETRIUS</speaker>
@@ -1178,18 +1178,18 @@ from the other, TITANIA, with hers</para>
 <line remap="LINE">Your wrongs do set a scandal on my sex:</line>
 <line remap="LINE">We cannot fight for love, as men may do;</line>
 <line remap="LINE">We should be wood and were not made to woo.</line>
-<para remap="STAGEDIR">Exit DEMETRIUS</para>
+<stagedir remap="STAGEDIR">Exit DEMETRIUS</stagedir>
 <line remap="LINE">I'll follow thee and make a heaven of hell,</line>
 <line remap="LINE">To die upon the hand I love so well.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OBERON</speaker>
 <line remap="LINE">Fare thee well, nymph: ere he do leave this grove,</line>
 <line remap="LINE">Thou shalt fly him and he shall seek thy love.</line>
-<para remap="STAGEDIR">Re-enter PUCK</para>
+<stagedir remap="STAGEDIR">Re-enter PUCK</stagedir>
 <line remap="LINE">Hast thou the flower there? Welcome, wanderer.</line>
 </linegroup></dialogue>
 
@@ -1227,11 +1227,11 @@ from the other, TITANIA, with hers</para>
 <line remap="LINE">Fear not, my lord, your servant shall do so.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Another part of the wood.</title>
-<para remap="STAGEDIR">Enter TITANIA, with her train</para>
+<stagedir remap="STAGEDIR">Enter TITANIA, with her train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITANIA</speaker>
@@ -1243,7 +1243,7 @@ from the other, TITANIA, with hers</para>
 <line remap="LINE">The clamorous owl that nightly hoots and wonders</line>
 <line remap="LINE">At our quaint spirits. Sing me now asleep;</line>
 <line remap="LINE">Then to your offices and let me rest.</line>
-<para remap="STAGEDIR">The Fairies sing</para>
+<stagedir remap="STAGEDIR">The Fairies sing</stagedir>
 <line remap="LINE">You spotted snakes with double tongue,</line>
 <line remap="LINE">Thorny hedgehogs, be not seen;</line>
 <line remap="LINE">Newts and blind-worms, do no wrong,</line>
@@ -1268,8 +1268,8 @@ from the other, TITANIA, with hers</para>
 <line remap="LINE">One aloof stand sentinel.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Fairies. TITANIA sleeps</para>
-<para remap="STAGEDIR">Enter OBERON and squeezes the flower on TITANIA's eyelids</para>
+<stagedir remap="STAGEDIR">Exeunt Fairies. TITANIA sleeps</stagedir>
+<stagedir remap="STAGEDIR">Enter OBERON and squeezes the flower on TITANIA's eyelids</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OBERON</speaker>
@@ -1283,8 +1283,8 @@ from the other, TITANIA, with hers</para>
 <line remap="LINE">Wake when some vile thing is near.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter LYSANDER and HERMIA</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter LYSANDER and HERMIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LYSANDER</speaker>
@@ -1349,8 +1349,8 @@ from the other, TITANIA, with hers</para>
 <line remap="LINE">With half that wish the wisher's eyes be press'd!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They sleep</para>
-<para remap="STAGEDIR">Enter PUCK</para>
+<stagedir remap="STAGEDIR">They sleep</stagedir>
+<stagedir remap="STAGEDIR">Enter PUCK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PUCK</speaker>
@@ -1374,8 +1374,8 @@ from the other, TITANIA, with hers</para>
 <line remap="LINE">For I must now to Oberon.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter DEMETRIUS and HELENA, running</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter DEMETRIUS and HELENA, running</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HELENA</speaker>
@@ -1397,7 +1397,7 @@ from the other, TITANIA, with hers</para>
 <line remap="LINE">Stay, on thy peril: I alone will go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HELENA</speaker>
@@ -1420,7 +1420,7 @@ from the other, TITANIA, with hers</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LYSANDER</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Awaking</phrase>  And run through fire I will for thy sweet sake.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Awaking</inlinestagedir>  And run through fire I will for thy sweet sake.</line>
 <line remap="LINE">Transparent Helena! Nature shows art,</line>
 <line remap="LINE">That through thy bosom makes me see thy heart.</line>
 <line remap="LINE">Where is Demetrius? O, how fit a word</line>
@@ -1466,7 +1466,7 @@ from the other, TITANIA, with hers</para>
 <line remap="LINE">Should of another therefore be abused!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LYSANDER</speaker>
@@ -1482,11 +1482,11 @@ from the other, TITANIA, with hers</para>
 <line remap="LINE">To honour Helen and to be her knight!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HERMIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Awaking</phrase>  Help me, Lysander, help me! do thy best</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Awaking</inlinestagedir>  Help me, Lysander, help me! do thy best</line>
 <line remap="LINE">To pluck this crawling serpent from my breast!</line>
 <line remap="LINE">Ay me, for pity! what a dream was here!</line>
 <line remap="LINE">Lysander, look how I do quake with fear:</line>
@@ -1500,7 +1500,7 @@ from the other, TITANIA, with hers</para>
 <line remap="LINE">Either death or you I'll find immediately.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -1508,8 +1508,8 @@ from the other, TITANIA, with hers</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  The wood. TITANIA lying asleep.</title>
-<para remap="STAGEDIR">Enter QUINCE, SNUG, BOTTOM, FLUTE, SNOUT, and
-STARVELING</para>
+<stagedir remap="STAGEDIR">Enter QUINCE, SNUG, BOTTOM, FLUTE, SNOUT, and
+STARVELING</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BOTTOM</speaker>
@@ -1675,7 +1675,7 @@ STARVELING</para>
 <line remap="LINE">according to his cue.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PUCK behind</para>
+<stagedir remap="STAGEDIR">Enter PUCK behind</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PUCK</speaker>
@@ -1708,14 +1708,14 @@ STARVELING</para>
 <line remap="LINE">And by and by I will to thee appear.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PUCK</speaker>
 <line remap="LINE">A stranger Pyramus than e'er played here.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FLUTE</speaker>
@@ -1751,7 +1751,7 @@ STARVELING</para>
 <line remap="LINE">never tire.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter PUCK, and BOTTOM with an ass's head</para>
+<stagedir remap="STAGEDIR">Re-enter PUCK, and BOTTOM with an ass's head</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BOTTOM</speaker>
@@ -1764,7 +1764,7 @@ STARVELING</para>
 <line remap="LINE">masters! fly, masters! Help!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt QUINCE, SNUG, FLUTE, SNOUT, and STARVELING</para>
+<stagedir remap="STAGEDIR">Exeunt QUINCE, SNUG, FLUTE, SNOUT, and STARVELING</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PUCK</speaker>
@@ -1776,7 +1776,7 @@ STARVELING</para>
 <line remap="LINE">Like horse, hound, hog, bear, fire, at every turn.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BOTTOM</speaker>
@@ -1784,7 +1784,7 @@ STARVELING</para>
 <line remap="LINE">make me afeard.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter SNOUT</para>
+<stagedir remap="STAGEDIR">Re-enter SNOUT</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SNOUT</speaker>
@@ -1797,8 +1797,8 @@ STARVELING</para>
 <line remap="LINE">you?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit SNOUT</para>
-<para remap="STAGEDIR">Re-enter QUINCE</para>
+<stagedir remap="STAGEDIR">Exit SNOUT</stagedir>
+<stagedir remap="STAGEDIR">Re-enter QUINCE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUINCE</speaker>
@@ -1806,7 +1806,7 @@ STARVELING</para>
 <line remap="LINE">translated.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BOTTOM</speaker>
@@ -1815,7 +1815,7 @@ STARVELING</para>
 <line remap="LINE">from this place, do what they can: I will walk up</line>
 <line remap="LINE">and down here, and I will sing, that they shall hear</line>
 <line remap="LINE">I am not afraid.</line>
-<para remap="STAGEDIR">Sings</para>
+<stagedir remap="STAGEDIR">Sings</stagedir>
 <line remap="LINE">The ousel cock so black of hue,</line>
 <line remap="LINE">With orange-tawny bill,</line>
 <line remap="LINE">The throstle with his note so true,</line>
@@ -1824,12 +1824,12 @@ STARVELING</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITANIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Awaking</phrase>  What angel wakes me from my flowery bed?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Awaking</inlinestagedir>  What angel wakes me from my flowery bed?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BOTTOM</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Sings</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Sings</inlinestagedir></line>
 <line remap="LINE">The finch, the sparrow and the lark,</line>
 <line remap="LINE">The plain-song cuckoo gray,</line>
 <line remap="LINE">Whose note full many a man doth mark,</line>
@@ -1883,7 +1883,7 @@ STARVELING</para>
 <line remap="LINE">Peaseblossom! Cobweb! Moth! and Mustardseed!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PEASEBLOSSOM, COBWEB, MOTH, and MUSTARDSEED</para>
+<stagedir remap="STAGEDIR">Enter PEASEBLOSSOM, COBWEB, MOTH, and MUSTARDSEED</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PEASEBLOSSOM</speaker>
@@ -2000,18 +2000,18 @@ STARVELING</para>
 <line remap="LINE">Tie up my love's tongue bring him silently.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Another part of the wood.</title>
-<para remap="STAGEDIR">Enter OBERON</para>
+<stagedir remap="STAGEDIR">Enter OBERON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OBERON</speaker>
 <line remap="LINE">I wonder if Titania be awaked;</line>
 <line remap="LINE">Then, what it was that next came in her eye,</line>
 <line remap="LINE">Which she must dote on in extremity.</line>
-<para remap="STAGEDIR">Enter PUCK</para>
+<stagedir remap="STAGEDIR">Enter PUCK</stagedir>
 <line remap="LINE">Here comes my messenger.</line>
 <line remap="LINE">How now, mad spirit!</line>
 <line remap="LINE">What night-rule now about this haunted grove?</line>
@@ -2066,7 +2066,7 @@ STARVELING</para>
 <line remap="LINE">That, when he waked, of force she must be eyed.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HERMIA and DEMETRIUS</para>
+<stagedir remap="STAGEDIR">Enter HERMIA and DEMETRIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OBERON</speaker>
@@ -2157,7 +2157,7 @@ STARVELING</para>
 <line remap="LINE">See me no more, whether he be dead or no.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DEMETRIUS</speaker>
@@ -2169,7 +2169,7 @@ STARVELING</para>
 <line remap="LINE">If for his tender here I make some stay.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Lies down and sleeps</para>
+<stagedir remap="STAGEDIR">Lies down and sleeps</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OBERON</speaker>
@@ -2201,7 +2201,7 @@ STARVELING</para>
 <line remap="LINE">Swifter than arrow from the Tartar's bow.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OBERON</speaker>
@@ -2215,7 +2215,7 @@ STARVELING</para>
 <line remap="LINE">Beg of her for remedy.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter PUCK</para>
+<stagedir remap="STAGEDIR">Re-enter PUCK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PUCK</speaker>
@@ -2241,7 +2241,7 @@ STARVELING</para>
 <line remap="LINE">That befal preposterously.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LYSANDER and HELENA</para>
+<stagedir remap="STAGEDIR">Enter LYSANDER and HELENA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LYSANDER</speaker>
@@ -2280,7 +2280,7 @@ STARVELING</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DEMETRIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Awaking</phrase>  O Helena, goddess, nymph, perfect, divine!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Awaking</inlinestagedir>  O Helena, goddess, nymph, perfect, divine!</line>
 <line remap="LINE">To what, my love, shall I compare thine eyne?</line>
 <line remap="LINE">Crystal is muddy. O, how ripe in show</line>
 <line remap="LINE">Thy lips, those kissing cherries, tempting grow!</line>
@@ -2347,7 +2347,7 @@ STARVELING</para>
 <line remap="LINE">Look, where thy love comes; yonder is thy dear.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter HERMIA</para>
+<stagedir remap="STAGEDIR">Re-enter HERMIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HERMIA</speaker>
@@ -2720,7 +2720,7 @@ STARVELING</para>
 <line remap="LINE">Follow! nay, I'll go with thee, cheek by jole.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt LYSANDER and DEMETRIUS</para>
+<stagedir remap="STAGEDIR">Exeunt LYSANDER and DEMETRIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HERMIA</speaker>
@@ -2736,14 +2736,14 @@ STARVELING</para>
 <line remap="LINE">My legs are longer though, to run away.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HERMIA</speaker>
 <line remap="LINE">I am amazed, and know not what to say.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OBERON</speaker>
@@ -2816,7 +2816,7 @@ STARVELING</para>
 <line remap="LINE">We may effect this business yet ere day.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PUCK</speaker>
@@ -2827,7 +2827,7 @@ STARVELING</para>
 <line remap="LINE">Here comes one.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter LYSANDER</para>
+<stagedir remap="STAGEDIR">Re-enter LYSANDER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LYSANDER</speaker>
@@ -2850,8 +2850,8 @@ STARVELING</para>
 <line remap="LINE">To plainer ground.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit LYSANDER, as following the voice</para>
-<para remap="STAGEDIR">Re-enter DEMETRIUS</para>
+<stagedir remap="STAGEDIR">Exit LYSANDER, as following the voice</stagedir>
+<stagedir remap="STAGEDIR">Re-enter DEMETRIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DEMETRIUS</speaker>
@@ -2879,8 +2879,8 @@ STARVELING</para>
 <line remap="LINE">Follow my voice: we'll try no manhood here.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
-<para remap="STAGEDIR">Re-enter LYSANDER</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
+<stagedir remap="STAGEDIR">Re-enter LYSANDER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LYSANDER</speaker>
@@ -2890,14 +2890,14 @@ STARVELING</para>
 <line remap="LINE">I follow'd fast, but faster he did fly;</line>
 <line remap="LINE">That fallen am I in dark uneven way,</line>
 <line remap="LINE">And here will rest me.</line>
-<para remap="STAGEDIR">Lies down</para>
+<stagedir remap="STAGEDIR">Lies down</stagedir>
 <line remap="LINE">Come, thou gentle day!</line>
 <line remap="LINE">For if but once thou show me thy grey light,</line>
 <line remap="LINE">I'll find Demetrius and revenge this spite.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Sleeps</para>
-<para remap="STAGEDIR">Re-enter PUCK and DEMETRIUS</para>
+<stagedir remap="STAGEDIR">Sleeps</stagedir>
+<stagedir remap="STAGEDIR">Re-enter PUCK and DEMETRIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PUCK</speaker>
@@ -2926,8 +2926,8 @@ STARVELING</para>
 <line remap="LINE">By day's approach look to be visited.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Lies down and sleeps</para>
-<para remap="STAGEDIR">Re-enter HELENA</para>
+<stagedir remap="STAGEDIR">Lies down and sleeps</stagedir>
+<stagedir remap="STAGEDIR">Re-enter HELENA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HELENA</speaker>
@@ -2939,7 +2939,7 @@ STARVELING</para>
 <line remap="LINE">Steal me awhile from mine own company.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Lies down and sleeps</para>
+<stagedir remap="STAGEDIR">Lies down and sleeps</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PUCK</speaker>
@@ -2950,7 +2950,7 @@ STARVELING</para>
 <line remap="LINE">Thus to make poor females mad.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter HERMIA</para>
+<stagedir remap="STAGEDIR">Re-enter HERMIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HERMIA</speaker>
@@ -2962,7 +2962,7 @@ STARVELING</para>
 <line remap="LINE">Heavens shield Lysander, if they mean a fray!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Lies down and sleeps</para>
+<stagedir remap="STAGEDIR">Lies down and sleeps</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PUCK</speaker>
@@ -2971,7 +2971,7 @@ STARVELING</para>
 <line remap="LINE">I'll apply</line>
 <line remap="LINE">To your eye,</line>
 <line remap="LINE">Gentle lover, remedy.</line>
-<para remap="STAGEDIR">Squeezing the juice on LYSANDER's eyes</para>
+<stagedir remap="STAGEDIR">Squeezing the juice on LYSANDER's eyes</stagedir>
 <line remap="LINE">When thou wakest,</line>
 <line remap="LINE">Thou takest</line>
 <line remap="LINE">True delight</line>
@@ -2985,7 +2985,7 @@ STARVELING</para>
 <line remap="LINE">The man shall have his mare again, and all shall be well.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -2993,9 +2993,9 @@ STARVELING</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  The same. LYSANDER, DEMETRIUS, HELENA, and HERMIA lying asleep.</title>
-<para remap="STAGEDIR">Enter TITANIA and BOTTOM; PEASEBLOSSOM, COBWEB, MOTH,
+<stagedir remap="STAGEDIR">Enter TITANIA and BOTTOM; PEASEBLOSSOM, COBWEB, MOTH,
 MUSTARDSEED, and other Fairies attending; OBERON
-behind unseen</para>
+behind unseen</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITANIA</speaker>
@@ -3103,19 +3103,19 @@ behind unseen</para>
 <speaker remap="SPEAKER">TITANIA</speaker>
 <line remap="LINE">Sleep thou, and I will wind thee in my arms.</line>
 <line remap="LINE">Fairies, begone, and be all ways away.</line>
-<para remap="STAGEDIR">Exeunt fairies</para>
+<stagedir remap="STAGEDIR">Exeunt fairies</stagedir>
 <line remap="LINE">So doth the woodbine the sweet honeysuckle</line>
 <line remap="LINE">Gently entwist; the female ivy so</line>
 <line remap="LINE">Enrings the barky fingers of the elm.</line>
 <line remap="LINE">O, how I love thee! how I dote on thee!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They sleep</para>
-<para remap="STAGEDIR">Enter PUCK</para>
+<stagedir remap="STAGEDIR">They sleep</stagedir>
+<stagedir remap="STAGEDIR">Enter PUCK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OBERON</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Advancing</phrase>  Welcome, good Robin.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Advancing</inlinestagedir>  Welcome, good Robin.</line>
 <line remap="LINE">See'st thou this sweet sight?</line>
 <line remap="LINE">Her dotage now I do begin to pity:</line>
 <line remap="LINE">For, meeting her of late behind the wood,</line>
@@ -3177,7 +3177,7 @@ behind unseen</para>
 <line remap="LINE">Music, ho! music, such as charmeth sleep!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Music, still</para>
+<stagedir remap="STAGEDIR">Music, still</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PUCK</speaker>
@@ -3217,11 +3217,11 @@ behind unseen</para>
 <line remap="LINE">Tell me how it came this night</line>
 <line remap="LINE">That I sleeping here was found</line>
 <line remap="LINE">With these mortals on the ground.</line>
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Horns winded within</para>
-<para remap="STAGEDIR">Enter THESEUS, HIPPOLYTA, EGEUS, and train</para>
+<stagedir remap="STAGEDIR">Horns winded within</stagedir>
+<stagedir remap="STAGEDIR">Enter THESEUS, HIPPOLYTA, EGEUS, and train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THESEUS</speaker>
@@ -3231,7 +3231,7 @@ behind unseen</para>
 <line remap="LINE">My love shall hear the music of my hounds.</line>
 <line remap="LINE">Uncouple in the western valley; let them go:</line>
 <line remap="LINE">Dispatch, I say, and find the forester.</line>
-<para remap="STAGEDIR">Exit an Attendant</para>
+<stagedir remap="STAGEDIR">Exit an Attendant</stagedir>
 <line remap="LINE">We will, fair queen, up to the mountain's top,</line>
 <line remap="LINE">And mark the musical confusion</line>
 <line remap="LINE">Of hounds and echo in conjunction.</line>
@@ -3286,8 +3286,8 @@ behind unseen</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THESEUS</speaker>
 <line remap="LINE">Go, bid the huntsmen wake them with their horns.</line>
-<para remap="STAGEDIR">Horns and shout within. LYSANDER, DEMETRIUS,
-HELENA, and HERMIA wake and start up</para>
+<stagedir remap="STAGEDIR">Horns and shout within. LYSANDER, DEMETRIUS,
+HELENA, and HERMIA wake and start up</stagedir>
 <line remap="LINE">Good morrow, friends. Saint Valentine is past:</line>
 <line remap="LINE">Begin these wood-birds but to couple now?</line>
 </linegroup></dialogue>
@@ -3363,7 +3363,7 @@ HELENA, and HERMIA wake and start up</para>
 <line remap="LINE">Come, Hippolyta.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt THESEUS, HIPPOLYTA, EGEUS, and train</para>
+<stagedir remap="STAGEDIR">Exeunt THESEUS, HIPPOLYTA, EGEUS, and train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DEMETRIUS</speaker>
@@ -3412,11 +3412,11 @@ HELENA, and HERMIA wake and start up</para>
 <line remap="LINE">And by the way let us recount our dreams.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BOTTOM</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Awaking</phrase>  When my cue comes, call me, and I will</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Awaking</inlinestagedir>  When my cue comes, call me, and I will</line>
 <line remap="LINE">answer: my next is, 'Most fair Pyramus.' Heigh-ho!</line>
 <line remap="LINE">Peter Quince! Flute, the bellows-mender! Snout,</line>
 <line remap="LINE">the tinker! Starveling! God's my life, stolen</line>
@@ -3438,11 +3438,11 @@ HELENA, and HERMIA wake and start up</para>
 <line remap="LINE">sing it at her death.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Athens. QUINCE'S house.</title>
-<para remap="STAGEDIR">Enter QUINCE, FLUTE, SNOUT, and STARVELING</para>
+<stagedir remap="STAGEDIR">Enter QUINCE, FLUTE, SNOUT, and STARVELING</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUINCE</speaker>
@@ -3485,7 +3485,7 @@ HELENA, and HERMIA wake and start up</para>
 <line remap="LINE">a thing of naught.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SNUG</para>
+<stagedir remap="STAGEDIR">Enter SNUG</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SNUG</speaker>
@@ -3505,7 +3505,7 @@ HELENA, and HERMIA wake and start up</para>
 <line remap="LINE">Pyramus, or nothing.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BOTTOM</para>
+<stagedir remap="STAGEDIR">Enter BOTTOM</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BOTTOM</speaker>
@@ -3545,7 +3545,7 @@ HELENA, and HERMIA wake and start up</para>
 <line remap="LINE">comedy. No more words: away! go, away!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -3553,8 +3553,8 @@ HELENA, and HERMIA wake and start up</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Athens. The palace of THESEUS.</title>
-<para remap="STAGEDIR">Enter THESEUS, HIPPOLYTA, PHILOSTRATE, Lords and
-Attendants</para>
+<stagedir remap="STAGEDIR">Enter THESEUS, HIPPOLYTA, PHILOSTRATE, Lords and
+Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HIPPOLYTA</speaker>
@@ -3599,7 +3599,7 @@ Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THESEUS</speaker>
 <line remap="LINE">Here come the lovers, full of joy and mirth.</line>
-<para remap="STAGEDIR">Enter LYSANDER, DEMETRIUS, HERMIA, and HELENA</para>
+<stagedir remap="STAGEDIR">Enter LYSANDER, DEMETRIUS, HERMIA, and HELENA</stagedir>
 <line remap="LINE">Joy, gentle friends! joy and fresh days of love</line>
 <line remap="LINE">Accompany your hearts!</line>
 </linegroup></dialogue>
@@ -3639,25 +3639,25 @@ Attendants</para>
 <line remap="LINE">Make choice of which your highness will see first.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Giving a paper</para>
+<stagedir remap="STAGEDIR">Giving a paper</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THESEUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'The battle with the Centaurs, to be sung</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'The battle with the Centaurs, to be sung</line>
 <line remap="LINE">By an Athenian eunuch to the harp.'</line>
 <line remap="LINE">We'll none of that: that have I told my love,</line>
 <line remap="LINE">In glory of my kinsman Hercules.</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">'The riot of the tipsy Bacchanals,</line>
 <line remap="LINE">Tearing the Thracian singer in their rage.'</line>
 <line remap="LINE">That is an old device; and it was play'd</line>
 <line remap="LINE">When I from Thebes came last a conqueror.</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">'The thrice three Muses mourning for the death</line>
 <line remap="LINE">Of Learning, late deceased in beggary.'</line>
 <line remap="LINE">That is some satire, keen and critical,</line>
 <line remap="LINE">Not sorting with a nuptial ceremony.</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">'A tedious brief scene of young Pyramus</line>
 <line remap="LINE">And his love Thisbe; very tragical mirth.'</line>
 <line remap="LINE">Merry and tragical! tedious and brief!</line>
@@ -3715,7 +3715,7 @@ Attendants</para>
 <line remap="LINE">Go, bring them in: and take your places, ladies.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit PHILOSTRATE</para>
+<stagedir remap="STAGEDIR">Exit PHILOSTRATE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HIPPOLYTA</speaker>
@@ -3754,7 +3754,7 @@ Attendants</para>
 <line remap="LINE">In least speak most, to my capacity.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter PHILOSTRATE</para>
+<stagedir remap="STAGEDIR">Re-enter PHILOSTRATE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PHILOSTRATE</speaker>
@@ -3766,8 +3766,8 @@ Attendants</para>
 <line remap="LINE">Let him approach.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish of trumpets</para>
-<para remap="STAGEDIR">Enter QUINCE for the Prologue</para>
+<stagedir remap="STAGEDIR">Flourish of trumpets</stagedir>
+<stagedir remap="STAGEDIR">Enter QUINCE for the Prologue</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Prologue</speaker>
@@ -3807,7 +3807,7 @@ Attendants</para>
 <line remap="LINE">impaired, but all disordered. Who is next?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Pyramus and Thisbe, Wall, Moonshine, and Lion</para>
+<stagedir remap="STAGEDIR">Enter Pyramus and Thisbe, Wall, Moonshine, and Lion</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Prologue</speaker>
@@ -3838,7 +3838,7 @@ Attendants</para>
 <line remap="LINE">At large discourse, while here they do remain.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Prologue, Thisbe, Lion, and Moonshine</para>
+<stagedir remap="STAGEDIR">Exeunt Prologue, Thisbe, Lion, and Moonshine</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THESEUS</speaker>
@@ -3875,7 +3875,7 @@ Attendants</para>
 <line remap="LINE">discourse, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Pyramus</para>
+<stagedir remap="STAGEDIR">Enter Pyramus</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THESEUS</speaker>
@@ -3892,7 +3892,7 @@ Attendants</para>
 <line remap="LINE">That stand'st between her father's ground and mine!</line>
 <line remap="LINE">Thou wall, O wall, O sweet and lovely wall,</line>
 <line remap="LINE">Show me thy chink, to blink through with mine eyne!</line>
-<para remap="STAGEDIR">Wall holds up his fingers</para>
+<stagedir remap="STAGEDIR">Wall holds up his fingers</stagedir>
 <line remap="LINE">Thanks, courteous wall: Jove shield thee well for this!</line>
 <line remap="LINE">But what see I? No Thisby do I see.</line>
 <line remap="LINE">O wicked wall, through whom I see no bliss!</line>
@@ -3912,7 +3912,7 @@ Attendants</para>
 <line remap="LINE">fall pat as I told you. Yonder she comes.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Thisbe</para>
+<stagedir remap="STAGEDIR">Enter Thisbe</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Thisbe</speaker>
@@ -3974,7 +3974,7 @@ Attendants</para>
 <line remap="LINE">'Tide life, 'tide death, I come without delay.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Pyramus and Thisbe</para>
+<stagedir remap="STAGEDIR">Exeunt Pyramus and Thisbe</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Wall</speaker>
@@ -3982,7 +3982,7 @@ Attendants</para>
 <line remap="LINE">And, being done, thus Wall away doth go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THESEUS</speaker>
@@ -4018,7 +4018,7 @@ Attendants</para>
 <line remap="LINE">come two noble beasts in, a man and a lion.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Lion and Moonshine</para>
+<stagedir remap="STAGEDIR">Enter Lion and Moonshine</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lion</speaker>
@@ -4130,7 +4130,7 @@ Attendants</para>
 <line remap="LINE">these are in the moon. But, silence! here comes Thisbe.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Thisbe</para>
+<stagedir remap="STAGEDIR">Enter Thisbe</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Thisbe</speaker>
@@ -4139,10 +4139,10 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lion</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Roaring</phrase>  Oh--</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Roaring</inlinestagedir>  Oh--</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Thisbe runs off</para>
+<stagedir remap="STAGEDIR">Thisbe runs off</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DEMETRIUS</speaker>
@@ -4160,7 +4160,7 @@ Attendants</para>
 <line remap="LINE">good grace.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The Lion shakes Thisbe's mantle, and exit</para>
+<stagedir remap="STAGEDIR">The Lion shakes Thisbe's mantle, and exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THESEUS</speaker>
@@ -4177,7 +4177,7 @@ Attendants</para>
 <line remap="LINE">And then came Pyramus.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Pyramus</para>
+<stagedir remap="STAGEDIR">Enter Pyramus</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Pyramus</speaker>
@@ -4222,18 +4222,18 @@ Attendants</para>
 <line remap="LINE">The pap of Pyramus;</line>
 <line remap="LINE">Ay, that left pap,</line>
 <line remap="LINE">Where heart doth hop:</line>
-<para remap="STAGEDIR">Stabs himself</para>
+<stagedir remap="STAGEDIR">Stabs himself</stagedir>
 <line remap="LINE">Thus die I, thus, thus, thus.</line>
 <line remap="LINE">Now am I dead,</line>
 <line remap="LINE">Now am I fled;</line>
 <line remap="LINE">My soul is in the sky:</line>
 <line remap="LINE">Tongue, lose thy light;</line>
 <line remap="LINE">Moon take thy flight:</line>
-<para remap="STAGEDIR">Exit Moonshine</para>
+<stagedir remap="STAGEDIR">Exit Moonshine</stagedir>
 <line remap="LINE">Now die, die, die, die, die.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Dies</para>
+<stagedir remap="STAGEDIR">Dies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DEMETRIUS</speaker>
@@ -4263,7 +4263,7 @@ Attendants</para>
 <line remap="LINE">her passion ends the play.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter Thisbe</para>
+<stagedir remap="STAGEDIR">Re-enter Thisbe</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HIPPOLYTA</speaker>
@@ -4311,13 +4311,13 @@ Attendants</para>
 <line remap="LINE">Tongue, not a word:</line>
 <line remap="LINE">Come, trusty sword;</line>
 <line remap="LINE">Come, blade, my breast imbrue:</line>
-<para remap="STAGEDIR">Stabs herself</para>
+<stagedir remap="STAGEDIR">Stabs herself</stagedir>
 <line remap="LINE">And, farewell, friends;</line>
 <line remap="LINE">Thus Thisby ends:</line>
 <line remap="LINE">Adieu, adieu, adieu.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Dies</para>
+<stagedir remap="STAGEDIR">Dies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THESEUS</speaker>
@@ -4331,7 +4331,7 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BOTTOM</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Starting up</phrase>  No assure you; the wall is down that</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Starting up</inlinestagedir>  No assure you; the wall is down that</line>
 <line remap="LINE">parted their fathers. Will it please you to see the</line>
 <line remap="LINE">epilogue, or to hear a Bergomask dance between two</line>
 <line remap="LINE">of our company?</line>
@@ -4347,7 +4347,7 @@ Attendants</para>
 <line remap="LINE">tragedy: and so it is, truly; and very notably</line>
 <line remap="LINE">discharged. But come, your Bergomask: let your</line>
 <line remap="LINE">epilogue alone.</line>
-<para remap="STAGEDIR">A dance</para>
+<stagedir remap="STAGEDIR">A dance</stagedir>
 <line remap="LINE">The iron tongue of midnight hath told twelve:</line>
 <line remap="LINE">Lovers, to bed; 'tis almost fairy time.</line>
 <line remap="LINE">I fear we shall out-sleep the coming morn</line>
@@ -4358,8 +4358,8 @@ Attendants</para>
 <line remap="LINE">In nightly revels and new jollity.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
-<para remap="STAGEDIR">Enter PUCK</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
+<stagedir remap="STAGEDIR">Enter PUCK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PUCK</speaker>
@@ -4385,7 +4385,7 @@ Attendants</para>
 <line remap="LINE">To sweep the dust behind the door.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter OBERON and TITANIA with their train</para>
+<stagedir remap="STAGEDIR">Enter OBERON and TITANIA with their train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OBERON</speaker>
@@ -4405,7 +4405,7 @@ Attendants</para>
 <line remap="LINE">Will we sing, and bless this place.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Song and dance</para>
+<stagedir remap="STAGEDIR">Song and dance</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OBERON</speaker>
@@ -4433,7 +4433,7 @@ Attendants</para>
 <line remap="LINE">Meet me all by break of day.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt OBERON, TITANIA, and train</para>
+<stagedir remap="STAGEDIR">Exeunt OBERON, TITANIA, and train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PUCK</speaker>

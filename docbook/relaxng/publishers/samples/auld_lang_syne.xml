@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?>
+<?xml-model href="../../publishers_schema_1.0/relaxng/publishers/publishers/publishers.rnc" type="application/relax-ng-compact-syntax"?>
 <book xmlns="http://docbook.org/ns/docbook" version="5.0">
     <title>Poems And Songs Of Robert Burns</title>
     <info>

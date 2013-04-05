@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">The Merry Wives of Windsor</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">The Merry Wives of Windsor</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The Merry Wives of Windsor</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -29,16 +29,16 @@
 <para><personname remap="PERSONA">ANNE PAGE, her daughter.</personname></para>
 <para><personname remap="PERSONA">MISTRESS QUICKLY, servant to Doctor Caius.</personname></para>
 <para><personname remap="PERSONA">Servants to Page, Ford, &amp;c.</personname></para>
-    <para remap="SCNDESCR">SCENE  Windsor, and the neighbourhood.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  Windsor, and the neighbourhood.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Windsor. Before PAGE's house.</title>
-<para remap="STAGEDIR">Enter SHALLOW, SLENDER, and SIR HUGH EVANS</para>
+<stagedir remap="STAGEDIR">Enter SHALLOW, SLENDER, and SIR HUGH EVANS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHALLOW</speaker>
@@ -204,16 +204,16 @@
 <line remap="LINE">is not true. The knight, Sir John, is there; and, I</line>
 <line remap="LINE">beseech you, be ruled by your well-willers. I will</line>
 <line remap="LINE">peat the door for Master Page.</line>
-<para remap="STAGEDIR">Knocks</para>
+<stagedir remap="STAGEDIR">Knocks</stagedir>
 <line remap="LINE">What, hoa! Got pless your house here!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PAGE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Who's there?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Who's there?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PAGE</para>
+<stagedir remap="STAGEDIR">Enter PAGE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR HUGH EVANS</speaker>
@@ -320,7 +320,7 @@
 <line remap="LINE">Here comes Sir John.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter FALSTAFF, BARDOLPH, NYM, and PISTOL</para>
+<stagedir remap="STAGEDIR">Enter FALSTAFF, BARDOLPH, NYM, and PISTOL</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -537,15 +537,15 @@
 <line remap="LINE">You hear all these matters denied, gentlemen; you hear it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ANNE PAGE, with wine; MISTRESS FORD
-and MISTRESS PAGE, following</para>
+<stagedir remap="STAGEDIR">Enter ANNE PAGE, with wine; MISTRESS FORD
+and MISTRESS PAGE, following</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PAGE</speaker>
 <line remap="LINE">Nay, daughter, carry the wine in; we'll drink within.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit ANNE PAGE</para>
+<stagedir remap="STAGEDIR">Exit ANNE PAGE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SLENDER</speaker>
@@ -563,7 +563,7 @@ and MISTRESS PAGE, following</para>
 <line remap="LINE">by your leave, good mistress.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Kisses her</para>
+<stagedir remap="STAGEDIR">Kisses her</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PAGE</speaker>
@@ -572,13 +572,13 @@ and MISTRESS PAGE, following</para>
 <line remap="LINE">we shall drink down all unkindness.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all except SHALLOW, SLENDER, and SIR HUGH EVANS</para>
+<stagedir remap="STAGEDIR">Exeunt all except SHALLOW, SLENDER, and SIR HUGH EVANS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SLENDER</speaker>
 <line remap="LINE">I had rather than forty shillings I had my Book of</line>
 <line remap="LINE">Songs and Sonnets here.</line>
-<para remap="STAGEDIR">Enter SIMPLE</para>
+<stagedir remap="STAGEDIR">Enter SIMPLE</stagedir>
 <line remap="LINE">How now, Simple! where have you been? I must wait</line>
 <line remap="LINE">on myself, must I? You have not the Book of Riddles</line>
 <line remap="LINE">about you, have you?</line>
@@ -725,7 +725,7 @@ and MISTRESS PAGE, following</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHALLOW</speaker>
 <line remap="LINE">Here comes fair Mistress Anne.</line>
-<para remap="STAGEDIR">Re-enter ANNE PAGE</para>
+<stagedir remap="STAGEDIR">Re-enter ANNE PAGE</stagedir>
 <line remap="LINE">Would I were young for your sake, Mistress Anne!</line>
 </linegroup></dialogue>
 
@@ -745,7 +745,7 @@ and MISTRESS PAGE, following</para>
 <line remap="LINE">Od's plessed will! I will not be absence at the grace.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt SHALLOW and SIR HUGH EVANS</para>
+<stagedir remap="STAGEDIR">Exeunt SHALLOW and SIR HUGH EVANS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANNE PAGE</speaker>
@@ -767,7 +767,7 @@ and MISTRESS PAGE, following</para>
 <line remap="LINE">I am not a-hungry, I thank you, forsooth. Go,</line>
 <line remap="LINE">sirrah, for all you are my man, go wait upon my</line>
 <line remap="LINE">cousin Shallow.</line>
-<para remap="STAGEDIR">Exit SIMPLE</para>
+<stagedir remap="STAGEDIR">Exit SIMPLE</stagedir>
 <line remap="LINE">A justice of peace sometimes may be beholding to his</line>
 <line remap="LINE">friend for a man. I keep but three men and a boy</line>
 <line remap="LINE">yet, till my mother be dead: but what though? Yet I</line>
@@ -828,7 +828,7 @@ and MISTRESS PAGE, following</para>
 <line remap="LINE">rough things.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter PAGE</para>
+<stagedir remap="STAGEDIR">Re-enter PAGE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PAGE</speaker>
@@ -871,11 +871,11 @@ and MISTRESS PAGE, following</para>
 <line remap="LINE">You do yourself wrong, indeed, la!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same.</title>
-<para remap="STAGEDIR">Enter SIR HUGH EVANS and SIMPLE</para>
+<stagedir remap="STAGEDIR">Enter SIR HUGH EVANS and SIMPLE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR HUGH EVANS</speaker>
@@ -901,12 +901,12 @@ and MISTRESS PAGE, following</para>
 <line remap="LINE">make an end of my dinner; there's pippins and cheese to come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A room in the Garter Inn.</title>
-<para remap="STAGEDIR">Enter FALSTAFF, Host, BARDOLPH, NYM, PISTOL,
-and ROBIN</para>
+<stagedir remap="STAGEDIR">Enter FALSTAFF, Host, BARDOLPH, NYM, PISTOL,
+and ROBIN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -949,11 +949,11 @@ and ROBIN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Host</speaker>
 <line remap="LINE">I have spoke; let him follow.</line>
-<para remap="STAGEDIR">To BARDOLPH</para>
+<stagedir remap="STAGEDIR">To BARDOLPH</stagedir>
 <line remap="LINE">Let me see thee froth and lime: I am at a word; follow.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -972,7 +972,7 @@ and ROBIN</para>
 <line remap="LINE">O base Hungarian wight! wilt thou the spigot wield?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit BARDOLPH</para>
+<stagedir remap="STAGEDIR">Exit BARDOLPH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NYM</speaker>
@@ -1123,7 +1123,7 @@ and ROBIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To ROBIN</phrase>  Hold, sirrah, bear you these letters tightly;</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To ROBIN</inlinestagedir>  Hold, sirrah, bear you these letters tightly;</line>
 <line remap="LINE">Sail like my pinnace to these golden shores.</line>
 <line remap="LINE">Rogues, hence, avaunt! vanish like hailstones, go;</line>
 <line remap="LINE">Trudge, plod away o' the hoof; seek shelter, pack!</line>
@@ -1131,7 +1131,7 @@ and ROBIN</para>
 <line remap="LINE">French thrift, you rogues; myself and skirted page.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt FALSTAFF and ROBIN</para>
+<stagedir remap="STAGEDIR">Exeunt FALSTAFF and ROBIN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PISTOL</speaker>
@@ -1188,11 +1188,11 @@ and ROBIN</para>
 <line remap="LINE">Thou art the Mars of malecontents: I second thee; troop on.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  A room in DOCTOR CAIUS' house.</title>
-<para remap="STAGEDIR">Enter MISTRESS QUICKLY, SIMPLE, and RUGBY</para>
+<stagedir remap="STAGEDIR">Enter MISTRESS QUICKLY, SIMPLE, and RUGBY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
@@ -1212,7 +1212,7 @@ and ROBIN</para>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
 <line remap="LINE">Go; and we'll have a posset for't soon at night, in</line>
 <line remap="LINE">faith, at the latter end of a sea-coal fire.</line>
-<para remap="STAGEDIR">Exit RUGBY</para>
+<stagedir remap="STAGEDIR">Exit RUGBY</stagedir>
 <line remap="LINE">An honest, willing, kind fellow, as ever servant</line>
 <line remap="LINE">shall come in house withal, and, I warrant you, no</line>
 <line remap="LINE">tell-tale nor no breed-bate: his worst fault is,</line>
@@ -1278,7 +1278,7 @@ and ROBIN</para>
 <line remap="LINE">master: Anne is a good girl, and I wish--</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter RUGBY</para>
+<stagedir remap="STAGEDIR">Re-enter RUGBY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">RUGBY</speaker>
@@ -1289,15 +1289,15 @@ and ROBIN</para>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
 <line remap="LINE">We shall all be shent. Run in here, good young man;</line>
 <line remap="LINE">go into this closet: he will not stay long.</line>
-<para remap="STAGEDIR">Shuts SIMPLE in the closet</para>
+<stagedir remap="STAGEDIR">Shuts SIMPLE in the closet</stagedir>
 <line remap="LINE">What, John Rugby! John! what, John, I say!</line>
 <line remap="LINE">Go, John, go inquire for my master; I doubt</line>
 <line remap="LINE">he be not well, that he comes not home.</line>
-<para remap="STAGEDIR">Singing</para>
+<stagedir remap="STAGEDIR">Singing</stagedir>
 <line remap="LINE">And down, down, adown-a, &amp;c.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DOCTOR CAIUS</para>
+<stagedir remap="STAGEDIR">Enter DOCTOR CAIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOCTOR CAIUS</speaker>
@@ -1309,7 +1309,7 @@ and ROBIN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
 <line remap="LINE">Ay, forsooth; I'll fetch it you.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">I am glad he went not in himself: if he had found</line>
 <line remap="LINE">the young man, he would have been horn-mad.</line>
 </linegroup></dialogue>
@@ -1367,7 +1367,7 @@ and ROBIN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOCTOR CAIUS</speaker>
 <line remap="LINE">O diable, diable! vat is in my closet? Villain! larron!</line>
-<para remap="STAGEDIR">Pulling SIMPLE out</para>
+<stagedir remap="STAGEDIR">Pulling SIMPLE out</stagedir>
 <line remap="LINE">Rugby, my rapier!</line>
 </linegroup></dialogue>
 
@@ -1437,11 +1437,11 @@ and ROBIN</para>
 <line remap="LINE">Tarry you a little-a while.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Writes</para>
+<stagedir remap="STAGEDIR">Writes</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to SIMPLE</phrase>  I am glad he is so quiet: if he</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to SIMPLE</inlinestagedir>  I am glad he is so quiet: if he</line>
 <line remap="LINE">had been thoroughly moved, you should have heard him</line>
 <line remap="LINE">so loud and so melancholy. But notwithstanding,</line>
 <line remap="LINE">man, I'll do you your master what good I can: and</line>
@@ -1454,13 +1454,13 @@ and ROBIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIMPLE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to MISTRESS QUICKLY</phrase>  'Tis a great charge to</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to MISTRESS QUICKLY</inlinestagedir>  'Tis a great charge to</line>
 <line remap="LINE">come under one body's hand.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to SIMPLE</phrase>  Are you avised o' that? you</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to SIMPLE</inlinestagedir>  Are you avised o' that? you</line>
 <line remap="LINE">shall find it a great charge: and to be up early</line>
 <line remap="LINE">and down late; but notwithstanding,--to tell you in</line>
 <line remap="LINE">your ear; I would have no words of it,--my master</line>
@@ -1480,7 +1480,7 @@ and ROBIN</para>
 <line remap="LINE">at his dog:</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit SIMPLE</para>
+<stagedir remap="STAGEDIR">Exit SIMPLE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
@@ -1509,7 +1509,7 @@ and ROBIN</para>
 <line remap="LINE">door. Follow my heels, Rugby.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt DOCTOR CAIUS and RUGBY</para>
+<stagedir remap="STAGEDIR">Exeunt DOCTOR CAIUS and RUGBY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
@@ -1521,7 +1521,7 @@ and ROBIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FENTON</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Who's within there? ho!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Who's within there? ho!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1529,7 +1529,7 @@ and ROBIN</para>
 <line remap="LINE">Who's there, I trow! Come near the house, I pray you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter FENTON</para>
+<stagedir remap="STAGEDIR">Enter FENTON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FENTON</speaker>
@@ -1603,13 +1603,13 @@ and ROBIN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
 <line remap="LINE">Farewell to your worship.</line>
-<para remap="STAGEDIR">Exit FENTON</para>
+<stagedir remap="STAGEDIR">Exit FENTON</stagedir>
 <line remap="LINE">Truly, an honest gentleman: but Anne loves him not;</line>
 <line remap="LINE">for I know Anne's mind as well as another does. Out</line>
 <line remap="LINE">upon't! what have I forgot?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -1617,14 +1617,14 @@ and ROBIN</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Before PAGE'S house.</title>
-<para remap="STAGEDIR">Enter MISTRESS PAGE, with a letter</para>
+<stagedir remap="STAGEDIR">Enter MISTRESS PAGE, with a letter</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
 <line remap="LINE">What, have I scaped love-letters in the holiday-</line>
 <line remap="LINE">time of my beauty, and am I now a subject for them?</line>
 <line remap="LINE">Let me see.</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">'Ask me no reason why I love you; for though</line>
 <line remap="LINE">Love use Reason for his physician, he admits him</line>
 <line remap="LINE">not for his counsellor. You are not young, no more</line>
@@ -1654,7 +1654,7 @@ and ROBIN</para>
 <line remap="LINE">as sure as his guts are made of puddings.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MISTRESS FORD</para>
+<stagedir remap="STAGEDIR">Enter MISTRESS FORD</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS FORD</speaker>
@@ -1804,8 +1804,8 @@ and ROBIN</para>
 <line remap="LINE">Come hither.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They retire</para>
-<para remap="STAGEDIR">Enter FORD with PISTOL, and PAGE with NYM</para>
+<stagedir remap="STAGEDIR">They retire</stagedir>
+<stagedir remap="STAGEDIR">Enter FORD with PISTOL, and PAGE with NYM</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FORD</speaker>
@@ -1856,16 +1856,16 @@ and ROBIN</para>
 <line remap="LINE">Believe it, Page; he speaks sense.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FORD</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  I will be patient; I will find out this.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  I will be patient; I will find out this.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NYM</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To PAGE</phrase>  And this is true; I like not the humour</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To PAGE</inlinestagedir>  And this is true; I like not the humour</line>
 <line remap="LINE">of lying. He hath wronged me in some humours: I</line>
 <line remap="LINE">should have borne the humoured letter to her; but I</line>
 <line remap="LINE">have a sword and it shall bite upon my necessity.</line>
@@ -1876,7 +1876,7 @@ and ROBIN</para>
 <line remap="LINE">and there's the humour of it. Adieu.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PAGE</speaker>
@@ -1915,7 +1915,7 @@ and ROBIN</para>
 <line remap="LINE">How now, Meg!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">MISTRESS PAGE and MISTRESS FORD come forward</para>
+<stagedir remap="STAGEDIR">MISTRESS PAGE and MISTRESS FORD come forward</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
@@ -1941,18 +1941,18 @@ and ROBIN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
 <line remap="LINE">Have with you. You'll come to dinner, George.</line>
-<para remap="STAGEDIR">Aside to MISTRESS FORD</para>
+<stagedir remap="STAGEDIR">Aside to MISTRESS FORD</stagedir>
 <line remap="LINE">Look who comes yonder: she shall be our messenger</line>
 <line remap="LINE">to this paltry knight.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS FORD</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to MISTRESS PAGE</phrase>  Trust me, I thought on her:</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to MISTRESS PAGE</inlinestagedir>  Trust me, I thought on her:</line>
 <line remap="LINE">she'll fit it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MISTRESS QUICKLY</para>
+<stagedir remap="STAGEDIR">Enter MISTRESS QUICKLY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
@@ -1970,7 +1970,7 @@ and ROBIN</para>
 <line remap="LINE">you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt MISTRESS PAGE, MISTRESS FORD, and MISTRESS QUICKLY</para>
+<stagedir remap="STAGEDIR">Exeunt MISTRESS PAGE, MISTRESS FORD, and MISTRESS QUICKLY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PAGE</speaker>
@@ -2036,7 +2036,7 @@ and ROBIN</para>
 <line remap="LINE">Look where my ranting host of the Garter comes:</line>
 <line remap="LINE">there is either liquor in his pate or money in his</line>
 <line remap="LINE">purse when he looks so merrily.</line>
-<para remap="STAGEDIR">Enter Host</para>
+<stagedir remap="STAGEDIR">Enter Host</stagedir>
 <line remap="LINE">How now, mine host!</line>
 </linegroup></dialogue>
 
@@ -2046,7 +2046,7 @@ and ROBIN</para>
 <line remap="LINE">Cavaleiro-justice, I say!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SHALLOW</para>
+<stagedir remap="STAGEDIR">Enter SHALLOW</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHALLOW</speaker>
@@ -2071,7 +2071,7 @@ and ROBIN</para>
 <line remap="LINE">Good mine host o' the Garter, a word with you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Drawing him aside</para>
+<stagedir remap="STAGEDIR">Drawing him aside</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Host</speaker>
@@ -2080,14 +2080,14 @@ and ROBIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHALLOW</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To PAGE</phrase>  Will you go with us to behold it? My</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To PAGE</inlinestagedir>  Will you go with us to behold it? My</line>
 <line remap="LINE">merry host hath had the measuring of their weapons;</line>
 <line remap="LINE">and, I think, hath appointed them contrary places;</line>
 <line remap="LINE">for, believe me, I hear the parson is no jester.</line>
 <line remap="LINE">Hark, I will tell you what our sport shall be.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They converse apart</para>
+<stagedir remap="STAGEDIR">They converse apart</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Host</speaker>
@@ -2139,7 +2139,7 @@ and ROBIN</para>
 <line remap="LINE">Have with you. I would rather hear them scold than fight.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Host, SHALLOW, and PAGE</para>
+<stagedir remap="STAGEDIR">Exeunt Host, SHALLOW, and PAGE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FORD</speaker>
@@ -2152,11 +2152,11 @@ and ROBIN</para>
 <line remap="LINE">my labour; if she be otherwise, 'tis labour well bestowed.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A room in the Garter Inn.</title>
-<para remap="STAGEDIR">Enter FALSTAFF and PISTOL</para>
+<stagedir remap="STAGEDIR">Enter FALSTAFF and PISTOL</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -2211,7 +2211,7 @@ and ROBIN</para>
 <line remap="LINE">I do relent: what would thou more of man?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ROBIN</para>
+<stagedir remap="STAGEDIR">Enter ROBIN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROBIN</speaker>
@@ -2223,7 +2223,7 @@ and ROBIN</para>
 <line remap="LINE">Let her approach.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MISTRESS QUICKLY</para>
+<stagedir remap="STAGEDIR">Enter MISTRESS QUICKLY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
@@ -2439,7 +2439,7 @@ and ROBIN</para>
 <line remap="LINE">Fare thee well: commend me to them both: there's</line>
 <line remap="LINE">my purse; I am yet thy debtor. Boy, go along with</line>
 <line remap="LINE">this woman.</line>
-<para remap="STAGEDIR">Exeunt MISTRESS QUICKLY and ROBIN</para>
+<stagedir remap="STAGEDIR">Exeunt MISTRESS QUICKLY and ROBIN</stagedir>
 <line remap="LINE">This news distracts me!</line>
 </linegroup></dialogue>
 
@@ -2450,7 +2450,7 @@ and ROBIN</para>
 <line remap="LINE">Give fire: she is my prize, or ocean whelm them all!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -2462,7 +2462,7 @@ and ROBIN</para>
 <line remap="LINE">fairly done, no matter.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BARDOLPH</para>
+<stagedir remap="STAGEDIR">Enter BARDOLPH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BARDOLPH</speaker>
@@ -2484,13 +2484,13 @@ and ROBIN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
 <line remap="LINE">Call him in.</line>
-<para remap="STAGEDIR">Exit BARDOLPH</para>
+<stagedir remap="STAGEDIR">Exit BARDOLPH</stagedir>
 <line remap="LINE">Such Brooks are welcome to me, that o'erflow such</line>
 <line remap="LINE">liquor. Ah, ha! Mistress Ford and Mistress Page</line>
 <line remap="LINE">have I encompassed you? go to; via!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter BARDOLPH, with FORD disguised</para>
+<stagedir remap="STAGEDIR">Re-enter BARDOLPH, with FORD disguised</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FORD</speaker>
@@ -2513,7 +2513,7 @@ and ROBIN</para>
 <line remap="LINE">You're welcome. What's your will? Give us leave, drawer.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit BARDOLPH</para>
+<stagedir remap="STAGEDIR">Exit BARDOLPH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FORD</speaker>
@@ -2768,7 +2768,7 @@ and ROBIN</para>
 <line remap="LINE">cuckold. Come to me soon at night.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FORD</speaker>
@@ -2801,11 +2801,11 @@ and ROBIN</para>
 <line remap="LINE">Fie, fie, fie! cuckold! cuckold! cuckold!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A field near Windsor.</title>
-<para remap="STAGEDIR">Enter DOCTOR CAIUS and RUGBY</para>
+<stagedir remap="STAGEDIR">Enter DOCTOR CAIUS and RUGBY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOCTOR CAIUS</speaker>
@@ -2861,7 +2861,7 @@ and ROBIN</para>
 <line remap="LINE">Forbear; here's company.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Host, SHALLOW, SLENDER, and PAGE</para>
+<stagedir remap="STAGEDIR">Enter Host, SHALLOW, SLENDER, and PAGE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Host</speaker>
@@ -3013,7 +3013,7 @@ and ROBIN</para>
 <line remap="LINE">through the town to Frogmore.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Aside to them</para>
+<stagedir remap="STAGEDIR">Aside to them</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PAGE</speaker>
@@ -3038,7 +3038,7 @@ and ROBIN</para>
 <line remap="LINE">Adieu, good master doctor.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt PAGE, SHALLOW, and SLENDER</para>
+<stagedir remap="STAGEDIR">Exeunt PAGE, SHALLOW, and SLENDER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOCTOR CAIUS</speaker>
@@ -3083,7 +3083,7 @@ and ROBIN</para>
 <line remap="LINE">Come at my heels, Jack Rugby.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -3091,7 +3091,7 @@ and ROBIN</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A field near Frogmore.</title>
-<para remap="STAGEDIR">Enter SIR HUGH EVANS and SIMPLE</para>
+<stagedir remap="STAGEDIR">Enter SIR HUGH EVANS and SIMPLE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR HUGH EVANS</speaker>
@@ -3118,7 +3118,7 @@ and ROBIN</para>
 <line remap="LINE">I will, sir.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR HUGH EVANS</speaker>
@@ -3127,21 +3127,21 @@ and ROBIN</para>
 <line remap="LINE">deceived me. How melancholies I am! I will knog</line>
 <line remap="LINE">his urinals about his knave's costard when I have</line>
 <line remap="LINE">good opportunities for the ork. 'Pless my soul!</line>
-<para remap="STAGEDIR">Sings</para>
+<stagedir remap="STAGEDIR">Sings</stagedir>
 <line remap="LINE">To shallow rivers, to whose falls</line>
 <line remap="LINE">Melodious birds sings madrigals;</line>
 <line remap="LINE">There will we make our peds of roses,</line>
 <line remap="LINE">And a thousand fragrant posies.</line>
 <line remap="LINE">To shallow--</line>
 <line remap="LINE">Mercy on me! I have a great dispositions to cry.</line>
-<para remap="STAGEDIR">Sings</para>
+<stagedir remap="STAGEDIR">Sings</stagedir>
 <line remap="LINE">Melodious birds sing madrigals--</line>
 <line remap="LINE">When as I sat in Pabylon--</line>
 <line remap="LINE">And a thousand vagram posies.</line>
 <line remap="LINE">To shallow &amp;c.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter SIMPLE</para>
+<stagedir remap="STAGEDIR">Re-enter SIMPLE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIMPLE</speaker>
@@ -3151,7 +3151,7 @@ and ROBIN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR HUGH EVANS</speaker>
 <line remap="LINE">He's welcome.</line>
-<para remap="STAGEDIR">Sings</para>
+<stagedir remap="STAGEDIR">Sings</stagedir>
 <line remap="LINE">To shallow rivers, to whose falls-</line>
 <line remap="LINE">Heaven prosper the right! What weapons is he?</line>
 </linegroup></dialogue>
@@ -3168,7 +3168,7 @@ and ROBIN</para>
 <line remap="LINE">Pray you, give me my gown; or else keep it in your arms.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PAGE, SHALLOW, and SLENDER</para>
+<stagedir remap="STAGEDIR">Enter PAGE, SHALLOW, and SLENDER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHALLOW</speaker>
@@ -3179,7 +3179,7 @@ and ROBIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SLENDER</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Ah, sweet Anne Page!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Ah, sweet Anne Page!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -3270,7 +3270,7 @@ and ROBIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHALLOW</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  O sweet Anne Page!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  O sweet Anne Page!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -3279,7 +3279,7 @@ and ROBIN</para>
 <line remap="LINE">here comes Doctor Caius.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Host, DOCTOR CAIUS, and RUGBY</para>
+<stagedir remap="STAGEDIR">Enter Host, DOCTOR CAIUS, and RUGBY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PAGE</speaker>
@@ -3305,7 +3305,7 @@ and ROBIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR HUGH EVANS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to DOCTOR CAIUS</phrase>  Pray you, use your patience:</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to DOCTOR CAIUS</inlinestagedir>  Pray you, use your patience:</line>
 <line remap="LINE">in good time.</line>
 </linegroup></dialogue>
 
@@ -3316,10 +3316,10 @@ and ROBIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR HUGH EVANS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to DOCTOR CAIUS</phrase>  Pray you let us not be</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to DOCTOR CAIUS</inlinestagedir>  Pray you let us not be</line>
 <line remap="LINE">laughing-stocks to other men's humours; I desire you</line>
 <line remap="LINE">in friendship, and I will one way or other make you amends.</line>
-<para remap="STAGEDIR">Aloud</para>
+<stagedir remap="STAGEDIR">Aloud</stagedir>
 <line remap="LINE">I will knog your urinals about your knave's cockscomb</line>
 <line remap="LINE">for missing your meetings and appointments.</line>
 </linegroup></dialogue>
@@ -3372,10 +3372,10 @@ and ROBIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SLENDER</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  O sweet Anne Page!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  O sweet Anne Page!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt SHALLOW, SLENDER, PAGE, and Host</para>
+<stagedir remap="STAGEDIR">Exeunt SHALLOW, SLENDER, PAGE, and Host</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOCTOR CAIUS</speaker>
@@ -3402,11 +3402,11 @@ and ROBIN</para>
 <line remap="LINE">Well, I will smite his noddles. Pray you, follow.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A street.</title>
-<para remap="STAGEDIR">Enter MISTRESS PAGE and ROBIN</para>
+<stagedir remap="STAGEDIR">Enter MISTRESS PAGE and ROBIN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
@@ -3426,7 +3426,7 @@ and ROBIN</para>
 <line remap="LINE">O, you are a flattering boy: now I see you'll be a courtier.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter FORD</para>
+<stagedir remap="STAGEDIR">Enter FORD</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FORD</speaker>
@@ -3489,7 +3489,7 @@ and ROBIN</para>
 <line remap="LINE">By your leave, sir: I am sick till I see her.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt MISTRESS PAGE and ROBIN</para>
+<stagedir remap="STAGEDIR">Exeunt MISTRESS PAGE and ROBIN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FORD</speaker>
@@ -3508,7 +3508,7 @@ and ROBIN</para>
 <line remap="LINE">Mistress Page, divulge Page himself for a secure and</line>
 <line remap="LINE">wilful Actaeon; and to these violent proceedings all</line>
 <line remap="LINE">my neighbours shall cry aim.</line>
-<para remap="STAGEDIR">Clock heard</para>
+<stagedir remap="STAGEDIR">Clock heard</stagedir>
 <line remap="LINE">The clock gives me my cue, and my assurance bids me</line>
 <line remap="LINE">search: there I shall find Falstaff: I shall be</line>
 <line remap="LINE">rather praised for this than mocked; for it is as</line>
@@ -3516,8 +3516,8 @@ and ROBIN</para>
 <line remap="LINE">there: I will go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PAGE, SHALLOW, SLENDER, Host,
-SIR HUGH EVANS, DOCTOR CAIUS, and RUGBY</para>
+<stagedir remap="STAGEDIR">Enter PAGE, SHALLOW, SLENDER, Host,
+SIR HUGH EVANS, DOCTOR CAIUS, and RUGBY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHALLOW</speaker>
@@ -3601,14 +3601,14 @@ SIR HUGH EVANS, DOCTOR CAIUS, and RUGBY</para>
 <line remap="LINE">at Master Page's.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt SHALLOW, and SLENDER</para>
+<stagedir remap="STAGEDIR">Exeunt SHALLOW, and SLENDER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOCTOR CAIUS</speaker>
 <line remap="LINE">Go home, John Rugby; I come anon.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit RUGBY</para>
+<stagedir remap="STAGEDIR">Exit RUGBY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Host</speaker>
@@ -3616,11 +3616,11 @@ SIR HUGH EVANS, DOCTOR CAIUS, and RUGBY</para>
 <line remap="LINE">Falstaff, and drink canary with him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FORD</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  I think I shall drink in pipe wine first</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  I think I shall drink in pipe wine first</line>
 <line remap="LINE">with him; I'll make him dance. Will you go, gentles?</line>
 </linegroup></dialogue>
 
@@ -3629,11 +3629,11 @@ SIR HUGH EVANS, DOCTOR CAIUS, and RUGBY</para>
 <line remap="LINE">Have with you to see this monster.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A room in FORD'S house.</title>
-<para remap="STAGEDIR">Enter MISTRESS FORD and MISTRESS PAGE</para>
+<stagedir remap="STAGEDIR">Enter MISTRESS FORD and MISTRESS PAGE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS FORD</speaker>
@@ -3650,7 +3650,7 @@ SIR HUGH EVANS, DOCTOR CAIUS, and RUGBY</para>
 <line remap="LINE">I warrant. What, Robin, I say!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Servants with a basket</para>
+<stagedir remap="STAGEDIR">Enter Servants with a basket</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
@@ -3689,14 +3689,14 @@ SIR HUGH EVANS, DOCTOR CAIUS, and RUGBY</para>
 <line remap="LINE">direction. Be gone, and come when you are called.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Servants</para>
+<stagedir remap="STAGEDIR">Exeunt Servants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
 <line remap="LINE">Here comes little Robin.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ROBIN</para>
+<stagedir remap="STAGEDIR">Enter ROBIN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS FORD</speaker>
@@ -3732,7 +3732,7 @@ SIR HUGH EVANS, DOCTOR CAIUS, and RUGBY</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS FORD</speaker>
 <line remap="LINE">Do so. Go tell thy master I am alone.</line>
-<para remap="STAGEDIR">Exit ROBIN</para>
+<stagedir remap="STAGEDIR">Exit ROBIN</stagedir>
 <line remap="LINE">Mistress Page, remember you your cue.</line>
 </linegroup></dialogue>
 
@@ -3741,7 +3741,7 @@ SIR HUGH EVANS, DOCTOR CAIUS, and RUGBY</para>
 <line remap="LINE">I warrant thee; if I do not act it, hiss me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS FORD</speaker>
@@ -3750,7 +3750,7 @@ SIR HUGH EVANS, DOCTOR CAIUS, and RUGBY</para>
 <line remap="LINE">turtles from jays.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter FALSTAFF</para>
+<stagedir remap="STAGEDIR">Enter FALSTAFF</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -3849,7 +3849,7 @@ SIR HUGH EVANS, DOCTOR CAIUS, and RUGBY</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROBIN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Mistress Ford, Mistress Ford! here's</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Mistress Ford, Mistress Ford! here's</line>
 <line remap="LINE">Mistress Page at the door, sweating and blowing and</line>
 <line remap="LINE">looking wildly, and would needs speak with you presently.</line>
 </linegroup></dialogue>
@@ -3862,8 +3862,8 @@ SIR HUGH EVANS, DOCTOR CAIUS, and RUGBY</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS FORD</speaker>
 <line remap="LINE">Pray you, do so: she's a very tattling woman.</line>
-<para remap="STAGEDIR">FALSTAFF hides himself</para>
-<para remap="STAGEDIR">Re-enter MISTRESS PAGE and ROBIN</para>
+<stagedir remap="STAGEDIR">FALSTAFF hides himself</stagedir>
+<stagedir remap="STAGEDIR">Re-enter MISTRESS PAGE and ROBIN</stagedir>
 <line remap="LINE">What's the matter? how now!</line>
 </linegroup></dialogue>
 
@@ -3952,7 +3952,7 @@ SIR HUGH EVANS, DOCTOR CAIUS, and RUGBY</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Coming forward</phrase>  Let me see't, let me see't, O, let</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Coming forward</inlinestagedir>  Let me see't, let me see't, O, let</line>
 <line remap="LINE">me see't! I'll in, I'll in. Follow your friend's</line>
 <line remap="LINE">counsel. I'll in.</line>
 </linegroup></dialogue>
@@ -3968,7 +3968,7 @@ SIR HUGH EVANS, DOCTOR CAIUS, and RUGBY</para>
 <line remap="LINE">I'll never--</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Gets into the basket; they cover him with foul linen</para>
+<stagedir remap="STAGEDIR">Gets into the basket; they cover him with foul linen</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
@@ -3979,14 +3979,14 @@ SIR HUGH EVANS, DOCTOR CAIUS, and RUGBY</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS FORD</speaker>
 <line remap="LINE">What, John! Robert! John!</line>
-<para remap="STAGEDIR">Exit ROBIN</para>
-<para remap="STAGEDIR">Re-enter Servants</para>
+<stagedir remap="STAGEDIR">Exit ROBIN</stagedir>
+<stagedir remap="STAGEDIR">Re-enter Servants</stagedir>
 <line remap="LINE">Go take up these clothes here quickly. Where's the</line>
 <line remap="LINE">cowl-staff? look, how you drumble! Carry them to</line>
 <line remap="LINE">the laundress in Datchet-meat; quickly, come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter FORD, PAGE, DOCTOR CAIUS, and SIR HUGH EVANS</para>
+<stagedir remap="STAGEDIR">Enter FORD, PAGE, DOCTOR CAIUS, and SIR HUGH EVANS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FORD</speaker>
@@ -4011,12 +4011,12 @@ SIR HUGH EVANS, DOCTOR CAIUS, and RUGBY</para>
 <line remap="LINE">Buck! I would I could wash myself of the buck!</line>
 <line remap="LINE">Buck, buck, buck! Ay, buck; I warrant you, buck;</line>
 <line remap="LINE">and of the season too, it shall appear.</line>
-<para remap="STAGEDIR">Exeunt Servants with the basket</para>
+<stagedir remap="STAGEDIR">Exeunt Servants with the basket</stagedir>
 <line remap="LINE">Gentlemen, I have dreamed to-night; I'll tell you my</line>
 <line remap="LINE">dream. Here, here, here be my keys: ascend my</line>
 <line remap="LINE">chambers; search, seek, find out: I'll warrant</line>
 <line remap="LINE">we'll unkennel the fox. Let me stop this way first.</line>
-<para remap="STAGEDIR">Locking the door</para>
+<stagedir remap="STAGEDIR">Locking the door</stagedir>
 <line remap="LINE">So, now uncape.</line>
 </linegroup></dialogue>
 
@@ -4031,7 +4031,7 @@ SIR HUGH EVANS, DOCTOR CAIUS, and RUGBY</para>
 <line remap="LINE">sport anon: follow me, gentlemen.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR HUGH EVANS</speaker>
@@ -4049,7 +4049,7 @@ SIR HUGH EVANS, DOCTOR CAIUS, and RUGBY</para>
 <line remap="LINE">Nay, follow him, gentlemen; see the issue of his search.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt PAGE, DOCTOR CAIUS, and SIR HUGH EVANS</para>
+<stagedir remap="STAGEDIR">Exeunt PAGE, DOCTOR CAIUS, and SIR HUGH EVANS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
@@ -4108,8 +4108,8 @@ SIR HUGH EVANS, DOCTOR CAIUS, and RUGBY</para>
 <line remap="LINE">eight o'clock, to have amends.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter FORD, PAGE, DOCTOR CAIUS, and
-SIR HUGH EVANS</para>
+<stagedir remap="STAGEDIR">Re-enter FORD, PAGE, DOCTOR CAIUS, and
+SIR HUGH EVANS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FORD</speaker>
@@ -4119,7 +4119,7 @@ SIR HUGH EVANS</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to MISTRESS FORD</phrase>  Heard you that?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to MISTRESS FORD</inlinestagedir>  Heard you that?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -4242,11 +4242,11 @@ SIR HUGH EVANS</para>
 <line remap="LINE">A lousy knave, to have his gibes and his mockeries!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  A room in PAGE'S house.</title>
-<para remap="STAGEDIR">Enter FENTON and ANNE PAGE</para>
+<stagedir remap="STAGEDIR">Enter FENTON and ANNE PAGE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FENTON</speaker>
@@ -4295,8 +4295,8 @@ SIR HUGH EVANS</para>
 <line remap="LINE">Cannot attain it, why, then,--hark you hither!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They converse apart</para>
-<para remap="STAGEDIR">Enter SHALLOW, SLENDER, and MISTRESS QUICKLY</para>
+<stagedir remap="STAGEDIR">They converse apart</stagedir>
+<stagedir remap="STAGEDIR">Enter SHALLOW, SLENDER, and MISTRESS QUICKLY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHALLOW</speaker>
@@ -4329,7 +4329,7 @@ SIR HUGH EVANS</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANNE PAGE</speaker>
 <line remap="LINE">I come to him.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">This is my father's choice.</line>
 <line remap="LINE">O, what a world of vile ill-favor'd faults</line>
 <line remap="LINE">Looks handsome in three hundred pounds a-year!</line>
@@ -4427,7 +4427,7 @@ SIR HUGH EVANS</para>
 <line remap="LINE">than I can: you may ask your father; here he comes.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PAGE and MISTRESS PAGE</para>
+<stagedir remap="STAGEDIR">Enter PAGE and MISTRESS PAGE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PAGE</speaker>
@@ -4464,7 +4464,7 @@ SIR HUGH EVANS</para>
 <line remap="LINE">Knowing my mind, you wrong me, Master Fenton.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt PAGE, SHALLOW, and SLENDER</para>
+<stagedir remap="STAGEDIR">Exeunt PAGE, SHALLOW, and SLENDER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
@@ -4516,7 +4516,7 @@ SIR HUGH EVANS</para>
 <line remap="LINE">Farewell, gentle mistress: farewell, Nan.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt MISTRESS PAGE and ANNE PAGE</para>
+<stagedir remap="STAGEDIR">Exeunt MISTRESS PAGE and ANNE PAGE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
@@ -4534,7 +4534,7 @@ SIR HUGH EVANS</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
 <line remap="LINE">Now heaven send thee good fortune!</line>
-<para remap="STAGEDIR">Exit FENTON</para>
+<stagedir remap="STAGEDIR">Exit FENTON</stagedir>
 <line remap="LINE">A kind heart he hath: a woman would run through</line>
 <line remap="LINE">fire and water for such a kind heart. But yet I</line>
 <line remap="LINE">would my master had Mistress Anne; or I would</line>
@@ -4546,11 +4546,11 @@ SIR HUGH EVANS</para>
 <line remap="LINE">my two mistresses: what a beast am I to slack it!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  A room in the Garter Inn.</title>
-<para remap="STAGEDIR">Enter FALSTAFF and BARDOLPH</para>
+<stagedir remap="STAGEDIR">Enter FALSTAFF and BARDOLPH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -4565,7 +4565,7 @@ SIR HUGH EVANS</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
 <line remap="LINE">Go fetch me a quart of sack; put a toast in't.</line>
-<para remap="STAGEDIR">Exit BARDOLPH</para>
+<stagedir remap="STAGEDIR">Exit BARDOLPH</stagedir>
 <line remap="LINE">Have I lived to be carried in a basket, like a</line>
 <line remap="LINE">barrow of butcher's offal, and to be thrown in the</line>
 <line remap="LINE">Thames? Well, if I be served such another trick,</line>
@@ -4582,7 +4582,7 @@ SIR HUGH EVANS</para>
 <line remap="LINE">had been swelled! I should have been a mountain of mummy.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter BARDOLPH with sack</para>
+<stagedir remap="STAGEDIR">Re-enter BARDOLPH with sack</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BARDOLPH</speaker>
@@ -4601,7 +4601,7 @@ SIR HUGH EVANS</para>
 <line remap="LINE">Come in, woman!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MISTRESS QUICKLY</para>
+<stagedir remap="STAGEDIR">Enter MISTRESS QUICKLY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
@@ -4623,7 +4623,7 @@ SIR HUGH EVANS</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
 <line remap="LINE">Simple of itself; I'll no pullet-sperm in my brewage.</line>
-<para remap="STAGEDIR">Exit BARDOLPH</para>
+<stagedir remap="STAGEDIR">Exit BARDOLPH</stagedir>
 <line remap="LINE">How now!</line>
 </linegroup></dialogue>
 
@@ -4690,7 +4690,7 @@ SIR HUGH EVANS</para>
 <line remap="LINE">Peace be with you, sir.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -4698,7 +4698,7 @@ SIR HUGH EVANS</para>
 <line remap="LINE">to stay within: I like his money well. O, here he comes.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter FORD</para>
+<stagedir remap="STAGEDIR">Enter FORD</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FORD</speaker>
@@ -4853,7 +4853,7 @@ SIR HUGH EVANS</para>
 <line remap="LINE">cuckold Ford.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FORD</speaker>
@@ -4873,7 +4873,7 @@ SIR HUGH EVANS</para>
 <line remap="LINE">with me: I'll be horn-mad.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -4881,8 +4881,8 @@ SIR HUGH EVANS</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A street.</title>
-<para remap="STAGEDIR">Enter MISTRESS PAGE, MISTRESS QUICKLY, and
-WILLIAM PAGE</para>
+<stagedir remap="STAGEDIR">Enter MISTRESS PAGE, MISTRESS QUICKLY, and
+WILLIAM PAGE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
@@ -4901,7 +4901,7 @@ WILLIAM PAGE</para>
 <line remap="LINE">I'll be with her by and by; I'll but bring my young</line>
 <line remap="LINE">man here to school. Look, where his master comes;</line>
 <line remap="LINE">'tis a playing-day, I see.</line>
-<para remap="STAGEDIR">Enter SIR HUGH EVANS</para>
+<stagedir remap="STAGEDIR">Enter SIR HUGH EVANS</stagedir>
 <line remap="LINE">How now, Sir Hugh! no school to-day?</line>
 </linegroup></dialogue>
 
@@ -5141,15 +5141,15 @@ WILLIAM PAGE</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
 <line remap="LINE">Adieu, good Sir Hugh.</line>
-<para remap="STAGEDIR">Exit SIR HUGH EVANS</para>
+<stagedir remap="STAGEDIR">Exit SIR HUGH EVANS</stagedir>
 <line remap="LINE">Get you home, boy. Come, we stay too long.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A room in FORD'S house.</title>
-<para remap="STAGEDIR">Enter FALSTAFF and MISTRESS FORD</para>
+<stagedir remap="STAGEDIR">Enter FALSTAFF and MISTRESS FORD</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -5169,7 +5169,7 @@ WILLIAM PAGE</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  What, ho, gossip Ford! what, ho!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  What, ho, gossip Ford! what, ho!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5177,8 +5177,8 @@ WILLIAM PAGE</para>
 <line remap="LINE">Step into the chamber, Sir John.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit FALSTAFF</para>
-<para remap="STAGEDIR">Enter MISTRESS PAGE</para>
+<stagedir remap="STAGEDIR">Exit FALSTAFF</stagedir>
+<stagedir remap="STAGEDIR">Enter MISTRESS PAGE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
@@ -5198,7 +5198,7 @@ WILLIAM PAGE</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS FORD</speaker>
 <line remap="LINE">No, certainly.</line>
-<para remap="STAGEDIR">Aside to her</para>
+<stagedir remap="STAGEDIR">Aside to her</stagedir>
 <line remap="LINE">Speak louder.</line>
 </linegroup></dialogue>
 
@@ -5267,7 +5267,7 @@ WILLIAM PAGE</para>
 <line remap="LINE">Shall I put him into the basket again?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter FALSTAFF</para>
+<stagedir remap="STAGEDIR">Re-enter FALSTAFF</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -5360,7 +5360,7 @@ WILLIAM PAGE</para>
 <line remap="LINE">on the gown the while.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit FALSTAFF</para>
+<stagedir remap="STAGEDIR">Exit FALSTAFF</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS FORD</speaker>
@@ -5406,7 +5406,7 @@ WILLIAM PAGE</para>
 <line remap="LINE">basket. Go up; I'll bring linen for him straight.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
@@ -5417,8 +5417,8 @@ WILLIAM PAGE</para>
 <line remap="LINE">'Tis old, but true, Still swine eat all the draff.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Re-enter MISTRESS FORD with two Servants</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Re-enter MISTRESS FORD with two Servants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS FORD</speaker>
@@ -5427,7 +5427,7 @@ WILLIAM PAGE</para>
 <line remap="LINE">down, obey him: quickly, dispatch.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Servant</speaker>
@@ -5444,8 +5444,8 @@ WILLIAM PAGE</para>
 <line remap="LINE">I hope not; I had as lief bear so much lead.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter FORD, PAGE, SHALLOW, DOCTOR CAIUS, and
-SIR HUGH EVANS</para>
+<stagedir remap="STAGEDIR">Enter FORD, PAGE, SHALLOW, DOCTOR CAIUS, and
+SIR HUGH EVANS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FORD</speaker>
@@ -5477,7 +5477,7 @@ SIR HUGH EVANS</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FORD</speaker>
 <line remap="LINE">So say I too, sir.</line>
-<para remap="STAGEDIR">Re-enter MISTRESS FORD</para>
+<stagedir remap="STAGEDIR">Re-enter MISTRESS FORD</stagedir>
 <line remap="LINE">Come hither, Mistress Ford; Mistress Ford the honest</line>
 <line remap="LINE">woman, the modest wife, the virtuous creature, that</line>
 <line remap="LINE">hath the jealous fool to her husband! I suspect</line>
@@ -5495,7 +5495,7 @@ SIR HUGH EVANS</para>
 <line remap="LINE">Well said, brazen-face! hold it out. Come forth, sirrah!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Pulling clothes out of the basket</para>
+<stagedir remap="STAGEDIR">Pulling clothes out of the basket</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PAGE</speaker>
@@ -5613,8 +5613,8 @@ SIR HUGH EVANS</para>
 <line remap="LINE">not strike the old woman.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter FALSTAFF in woman's clothes, and
-MISTRESS PAGE</para>
+<stagedir remap="STAGEDIR">Re-enter FALSTAFF in woman's clothes, and
+MISTRESS PAGE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
@@ -5624,13 +5624,13 @@ MISTRESS PAGE</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FORD</speaker>
 <line remap="LINE">I'll prat her.</line>
-<para remap="STAGEDIR">Beating him</para>
+<stagedir remap="STAGEDIR">Beating him</stagedir>
 <line remap="LINE">Out of my door, you witch, you hag, you baggage, you</line>
 <line remap="LINE">polecat, you runyon! out, out! I'll conjure you,</line>
 <line remap="LINE">I'll fortune-tell you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit FALSTAFF</para>
+<stagedir remap="STAGEDIR">Exit FALSTAFF</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
@@ -5668,8 +5668,8 @@ MISTRESS PAGE</para>
 <line remap="LINE">gentlemen.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt FORD, PAGE, SHALLOW, DOCTOR CAIUS, and
-SIR HUGH EVANS</para>
+<stagedir remap="STAGEDIR">Exeunt FORD, PAGE, SHALLOW, DOCTOR CAIUS, and
+SIR HUGH EVANS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
@@ -5730,11 +5730,11 @@ SIR HUGH EVANS</para>
 <line remap="LINE">not have things cool.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A room in the Garter Inn.</title>
-<para remap="STAGEDIR">Enter Host and BARDOLPH</para>
+<stagedir remap="STAGEDIR">Enter Host and BARDOLPH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BARDOLPH</speaker>
@@ -5763,12 +5763,12 @@ SIR HUGH EVANS</para>
 <line remap="LINE">must come off; I'll sauce them. Come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  A room in FORD'S house.</title>
-<para remap="STAGEDIR">Enter PAGE, FORD, MISTRESS PAGE, MISTRESS FORD,
-and SIR HUGH EVANS</para>
+<stagedir remap="STAGEDIR">Enter PAGE, FORD, MISTRESS PAGE, MISTRESS FORD,
+and SIR HUGH EVANS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR HUGH EVANS</speaker>
@@ -5932,7 +5932,7 @@ and SIR HUGH EVANS</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PAGE</speaker>
 <line remap="LINE">That silk will I go buy.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">And in that time</line>
 <line remap="LINE">Shall Master Slender steal my Nan away</line>
 <line remap="LINE">And marry her at Eton. Go send to Falstaff straight.</line>
@@ -5956,13 +5956,13 @@ and SIR HUGH EVANS</para>
 <line remap="LINE">honest knaveries.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt PAGE, FORD, and SIR HUGH EVANS</para>
+<stagedir remap="STAGEDIR">Exeunt PAGE, FORD, and SIR HUGH EVANS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
 <line remap="LINE">Go, Mistress Ford,</line>
 <line remap="LINE">Send quickly to Sir John, to know his mind.</line>
-<para remap="STAGEDIR">Exit MISTRESS FORD</para>
+<stagedir remap="STAGEDIR">Exit MISTRESS FORD</stagedir>
 <line remap="LINE">I'll to the doctor: he hath my good will,</line>
 <line remap="LINE">And none but he, to marry with Nan Page.</line>
 <line remap="LINE">That Slender, though well landed, is an idiot;</line>
@@ -5972,11 +5972,11 @@ and SIR HUGH EVANS</para>
 <line remap="LINE">Though twenty thousand worthier come to crave her.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  A room in the Garter Inn.</title>
-<para remap="STAGEDIR">Enter Host and SIMPLE</para>
+<stagedir remap="STAGEDIR">Enter Host and SIMPLE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Host</speaker>
@@ -6016,7 +6016,7 @@ and SIR HUGH EVANS</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Above</phrase>  How now, mine host!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Above</inlinestagedir>  How now, mine host!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -6027,7 +6027,7 @@ and SIR HUGH EVANS</para>
 <line remap="LINE">fie!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter FALSTAFF</para>
+<stagedir remap="STAGEDIR">Enter FALSTAFF</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -6136,7 +6136,7 @@ and SIR HUGH EVANS</para>
 <line remap="LINE">with these tidings.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Host</speaker>
@@ -6152,7 +6152,7 @@ and SIR HUGH EVANS</para>
 <line remap="LINE">my learning.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BARDOLPH</para>
+<stagedir remap="STAGEDIR">Enter BARDOLPH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BARDOLPH</speaker>
@@ -6178,7 +6178,7 @@ and SIR HUGH EVANS</para>
 <line remap="LINE">say they be fled; Germans are honest men.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SIR HUGH EVANS</para>
+<stagedir remap="STAGEDIR">Enter SIR HUGH EVANS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR HUGH EVANS</speaker>
@@ -6201,8 +6201,8 @@ and SIR HUGH EVANS</para>
 <line remap="LINE">'tis not convenient you should be cozened. Fare you well.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter DOCTOR CAIUS</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter DOCTOR CAIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOCTOR CAIUS</speaker>
@@ -6222,7 +6222,7 @@ and SIR HUGH EVANS</para>
 <line remap="LINE">come. I tell you for good vill: adieu.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Host</speaker>
@@ -6230,7 +6230,7 @@ and SIR HUGH EVANS</para>
 <line remap="LINE">undone! Fly, run, hue and cry, villain! I am undone!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Host and BARDOLPH</para>
+<stagedir remap="STAGEDIR">Exeunt Host and BARDOLPH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -6244,7 +6244,7 @@ and SIR HUGH EVANS</para>
 <line remap="LINE">as crest-fallen as a dried pear. I never prospered</line>
 <line remap="LINE">since I forswore myself at primero. Well, if my</line>
 <line remap="LINE">wind were but long enough to say my prayers, I would repent.</line>
-<para remap="STAGEDIR">Enter MISTRESS QUICKLY</para>
+<stagedir remap="STAGEDIR">Enter MISTRESS QUICKLY</stagedir>
 <line remap="LINE">Now, whence come you?</line>
 </linegroup></dialogue>
 
@@ -6295,11 +6295,11 @@ and SIR HUGH EVANS</para>
 <line remap="LINE">Come up into my chamber.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  Another room in the Garter Inn.</title>
-<para remap="STAGEDIR">Enter FENTON and Host</para>
+<stagedir remap="STAGEDIR">Enter FENTON and Host</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Host</speaker>
@@ -6387,7 +6387,7 @@ and SIR HUGH EVANS</para>
 <line remap="LINE">Besides, I'll make a present recompense.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -6395,7 +6395,7 @@ and SIR HUGH EVANS</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A room in the Garter Inn.</title>
-<para remap="STAGEDIR">Enter FALSTAFF and MISTRESS QUICKLY</para>
+<stagedir remap="STAGEDIR">Enter FALSTAFF and MISTRESS QUICKLY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -6414,8 +6414,8 @@ and SIR HUGH EVANS</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
 <line remap="LINE">Away, I say; time wears: hold up your head, and mince.</line>
-<para remap="STAGEDIR">Exit MISTRESS QUICKLY</para>
-<para remap="STAGEDIR">Enter FORD</para>
+<stagedir remap="STAGEDIR">Exit MISTRESS QUICKLY</stagedir>
+<stagedir remap="STAGEDIR">Enter FORD</stagedir>
 <line remap="LINE">How now, Master Brook! Master Brook, the matter</line>
 <line remap="LINE">will be known to-night, or never. Be you in the</line>
 <line remap="LINE">Park about midnight, at Herne's oak, and you shall</line>
@@ -6448,11 +6448,11 @@ and SIR HUGH EVANS</para>
 <line remap="LINE">Strange things in hand, Master Brook! Follow.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Windsor Park.</title>
-<para remap="STAGEDIR">Enter PAGE, SHALLOW, and SLENDER</para>
+<stagedir remap="STAGEDIR">Enter PAGE, SHALLOW, and SLENDER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PAGE</speaker>
@@ -6484,12 +6484,12 @@ and SIR HUGH EVANS</para>
 <line remap="LINE">Let's away; follow me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A street leading to the Park.</title>
-<para remap="STAGEDIR">Enter MISTRESS PAGE, MISTRESS FORD, and
-DOCTOR CAIUS</para>
+<stagedir remap="STAGEDIR">Enter MISTRESS PAGE, MISTRESS FORD, and
+DOCTOR CAIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
@@ -6507,7 +6507,7 @@ DOCTOR CAIUS</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
 <line remap="LINE">Fare you well, sir.</line>
-<para remap="STAGEDIR">Exit DOCTOR CAIUS</para>
+<stagedir remap="STAGEDIR">Exit DOCTOR CAIUS</stagedir>
 <line remap="LINE">My husband will not rejoice so much at the abuse of</line>
 <line remap="LINE">Falstaff as he will chafe at the doctor's marrying</line>
 <line remap="LINE">my daughter: but 'tis no matter; better a little</line>
@@ -6555,11 +6555,11 @@ DOCTOR CAIUS</para>
 <line remap="LINE">The hour draws on. To the oak, to the oak!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Windsor Park.</title>
-<para remap="STAGEDIR">Enter SIR HUGH EVANS, disguised, with others as Fairies</para>
+<stagedir remap="STAGEDIR">Enter SIR HUGH EVANS, disguised, with others as Fairies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR HUGH EVANS</speaker>
@@ -6569,11 +6569,11 @@ DOCTOR CAIUS</para>
 <line remap="LINE">come, come; trib, trib.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Another part of the Park.</title>
-<para remap="STAGEDIR">Enter FALSTAFF disguised as Herne</para>
+<stagedir remap="STAGEDIR">Enter FALSTAFF disguised as Herne</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -6595,7 +6595,7 @@ DOCTOR CAIUS</para>
 <line remap="LINE">doe?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MISTRESS FORD and MISTRESS PAGE</para>
+<stagedir remap="STAGEDIR">Enter MISTRESS FORD and MISTRESS PAGE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS FORD</speaker>
@@ -6625,7 +6625,7 @@ DOCTOR CAIUS</para>
 <line remap="LINE">restitution. As I am a true spirit, welcome!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Noise within</para>
+<stagedir remap="STAGEDIR">Noise within</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
@@ -6648,7 +6648,7 @@ DOCTOR CAIUS</para>
 <line remap="LINE">Away, away!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They run off</para>
+<stagedir remap="STAGEDIR">They run off</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -6657,9 +6657,9 @@ DOCTOR CAIUS</para>
 <line remap="LINE">never else cross me thus.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SIR HUGH EVANS, disguised as before; PISTOL,
+<stagedir remap="STAGEDIR">Enter SIR HUGH EVANS, disguised as before; PISTOL,
 as Hobgoblin; MISTRESS QUICKLY, ANNE PAGE, and
-others, as Fairies, with tapers</para>
+others, as Fairies, with tapers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
@@ -6685,7 +6685,7 @@ others, as Fairies, with tapers</para>
 <line remap="LINE">I'll wink and couch: no man their works must eye.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Lies down upon his face</para>
+<stagedir remap="STAGEDIR">Lies down upon his face</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR HUGH EVANS</speaker>
@@ -6760,7 +6760,7 @@ others, as Fairies, with tapers</para>
 <line remap="LINE">Come, will this wood take fire?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They burn him with their tapers</para>
+<stagedir remap="STAGEDIR">They burn him with their tapers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -6785,14 +6785,14 @@ others, as Fairies, with tapers</para>
 <line remap="LINE">Till candles and starlight and moonshine be out.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">During this song they pinch FALSTAFF. DOCTOR CAIUS
+<stagedir remap="STAGEDIR">During this song they pinch FALSTAFF. DOCTOR CAIUS
 comes one way, and steals away a boy in green;
 SLENDER another way, and takes off a boy in white;
 and FENTON comes and steals away ANN PAGE.
 A noise of hunting is heard within. All the
 Fairies run away. FALSTAFF pulls off his buck's
-head, and rises</para>
-<para remap="STAGEDIR">Enter PAGE, FORD, MISTRESS PAGE, and MISTRESS FORD</para>
+head, and rises</stagedir>
+<stagedir remap="STAGEDIR">Enter PAGE, FORD, MISTRESS PAGE, and MISTRESS FORD</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PAGE</speaker>
@@ -6964,11 +6964,11 @@ head, and rises</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS PAGE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Doctors doubt that: if Anne Page be my</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Doctors doubt that: if Anne Page be my</line>
 <line remap="LINE">daughter, she is, by this, Doctor Caius' wife.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SLENDER</para>
+<stagedir remap="STAGEDIR">Enter SLENDER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SLENDER</speaker>
@@ -7034,7 +7034,7 @@ head, and rises</para>
 <line remap="LINE">now with the doctor at the deanery, and there married.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DOCTOR CAIUS</para>
+<stagedir remap="STAGEDIR">Enter DOCTOR CAIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOCTOR CAIUS</speaker>
@@ -7053,7 +7053,7 @@ head, and rises</para>
 <line remap="LINE">Ay, by gar, and 'tis a boy: by gar, I'll raise all Windsor.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FORD</speaker>
@@ -7063,7 +7063,7 @@ head, and rises</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PAGE</speaker>
 <line remap="LINE">My heart misgives me: here comes Master Fenton.</line>
-<para remap="STAGEDIR">Enter FENTON and ANNE PAGE</para>
+<stagedir remap="STAGEDIR">Enter FENTON and ANNE PAGE</stagedir>
 <line remap="LINE">How now, Master Fenton!</line>
 </linegroup></dialogue>
 
@@ -7137,7 +7137,7 @@ head, and rises</para>
 <line remap="LINE">For he tonight shall lie with Mistress Ford.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 </chapter>
 </book>

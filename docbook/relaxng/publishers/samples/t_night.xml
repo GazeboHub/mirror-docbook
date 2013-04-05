@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">Twelfth Night, or What You Will</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">Twelfth Night, or What You Will</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Twelfth Night, or What You Will</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -24,17 +24,17 @@
 <para><personname remap="PERSONA">VIOLA</personname></para>
 <para><personname remap="PERSONA">MARIA, Olivia's woman.</personname></para>
 <para><personname remap="PERSONA">Lords, Priests, Sailors, Officers, Musicians, and other Attendants.</personname></para>
-    <para remap="SCNDESCR">SCENE  A city in Illyria, and the sea-coast near it.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  A city in Illyria, and the sea-coast near it.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  DUKE ORSINO's palace.</title>
-<para remap="STAGEDIR">Enter DUKE ORSINO, CURIO, and other Lords;
-Musicians attending</para>
+<stagedir remap="STAGEDIR">Enter DUKE ORSINO, CURIO, and other Lords;
+Musicians attending</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE ORSINO</speaker>
@@ -78,7 +78,7 @@ Musicians attending</para>
 <line remap="LINE">That instant was I turn'd into a hart;</line>
 <line remap="LINE">And my desires, like fell and cruel hounds,</line>
 <line remap="LINE">E'er since pursue me.</line>
-<para remap="STAGEDIR">Enter VALENTINE</para>
+<stagedir remap="STAGEDIR">Enter VALENTINE</stagedir>
 <line remap="LINE">How now! what news from her?</line>
 </linegroup></dialogue>
 
@@ -108,11 +108,11 @@ Musicians attending</para>
 <line remap="LINE">Love-thoughts lie rich when canopied with bowers.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The sea-coast.</title>
-<para remap="STAGEDIR">Enter VIOLA, a Captain, and Sailors</para>
+<stagedir remap="STAGEDIR">Enter VIOLA, a Captain, and Sailors</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VIOLA</speaker>
@@ -264,11 +264,11 @@ Musicians attending</para>
 <line remap="LINE">I thank thee: lead me on.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  OLIVIA'S house.</title>
-<para remap="STAGEDIR">Enter SIR TOBY BELCH and MARIA</para>
+<stagedir remap="STAGEDIR">Enter SIR TOBY BELCH and MARIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
@@ -378,7 +378,7 @@ Musicians attending</para>
 <line remap="LINE">Castiliano vulgo! for here comes Sir Andrew Agueface.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SIR ANDREW</para>
+<stagedir remap="STAGEDIR">Enter SIR ANDREW</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR ANDREW</speaker>
@@ -508,7 +508,7 @@ Musicians attending</para>
 <line remap="LINE">now I let go your hand, I am barren.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
@@ -665,11 +665,11 @@ Musicians attending</para>
 <line remap="LINE">caper; ha! higher: ha, ha! excellent!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  DUKE ORSINO's palace.</title>
-<para remap="STAGEDIR">Enter VALENTINE and VIOLA in man's attire</para>
+<stagedir remap="STAGEDIR">Enter VALENTINE and VIOLA in man's attire</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VALENTINE</speaker>
@@ -695,7 +695,7 @@ Musicians attending</para>
 <line remap="LINE">I thank you. Here comes the count.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DUKE ORSINO, CURIO, and Attendants</para>
+<stagedir remap="STAGEDIR">Enter DUKE ORSINO, CURIO, and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE ORSINO</speaker>
@@ -770,16 +770,16 @@ Musicians attending</para>
 <speaker remap="SPEAKER">VIOLA</speaker>
 <line remap="LINE">I'll do my best</line>
 <line remap="LINE">To woo your lady:</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">yet, a barful strife!</line>
 <line remap="LINE">Whoe'er I woo, myself would be his wife.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  OLIVIA'S house.</title>
-<para remap="STAGEDIR">Enter MARIA and Clown</para>
+<stagedir remap="STAGEDIR">Enter MARIA and Clown</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARIA</speaker>
@@ -867,7 +867,7 @@ Musicians attending</para>
 <line remap="LINE">lady: make your excuse wisely, you were best.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Clown</speaker>
@@ -876,7 +876,7 @@ Musicians attending</para>
 <line remap="LINE">prove fools; and I, that am sure I lack thee, may</line>
 <line remap="LINE">pass for a wise man: for what says Quinapalus?</line>
 <line remap="LINE">'Better a witty fool, than a foolish wit.'</line>
-<para remap="STAGEDIR">Enter OLIVIA with MALVOLIO</para>
+<stagedir remap="STAGEDIR">Enter OLIVIA with MALVOLIO</stagedir>
 <line remap="LINE">God bless thee, lady!</line>
 </linegroup></dialogue>
 
@@ -1031,7 +1031,7 @@ Musicians attending</para>
 <line remap="LINE">speakest well of fools!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter MARIA</para>
+<stagedir remap="STAGEDIR">Re-enter MARIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARIA</speaker>
@@ -1063,10 +1063,10 @@ Musicians attending</para>
 <speaker remap="SPEAKER">OLIVIA</speaker>
 <line remap="LINE">Fetch him off, I pray you; he speaks nothing but</line>
 <line remap="LINE">madman: fie on him!</line>
-<para remap="STAGEDIR">Exit MARIA</para>
+<stagedir remap="STAGEDIR">Exit MARIA</stagedir>
 <line remap="LINE">Go you, Malvolio: if it be a suit from the count, I</line>
 <line remap="LINE">am sick, or not at home; what you will, to dismiss it.</line>
-<para remap="STAGEDIR">Exit MALVOLIO</para>
+<stagedir remap="STAGEDIR">Exit MALVOLIO</stagedir>
 <line remap="LINE">Now you see, sir, how your fooling grows old, and</line>
 <line remap="LINE">people dislike it.</line>
 </linegroup></dialogue>
@@ -1079,7 +1079,7 @@ Musicians attending</para>
 <line remap="LINE">most weak pia mater.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SIR TOBY BELCH</para>
+<stagedir remap="STAGEDIR">Enter SIR TOBY BELCH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVIA</speaker>
@@ -1128,7 +1128,7 @@ Musicians attending</para>
 <line remap="LINE">me faith, say I. Well, it's all one.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVIA</speaker>
@@ -1155,8 +1155,8 @@ Musicians attending</para>
 <line remap="LINE">to the madman.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Re-enter MALVOLIO</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Re-enter MALVOLIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALVOLIO</speaker>
@@ -1226,8 +1226,8 @@ Musicians attending</para>
 <line remap="LINE">Gentlewoman, my lady calls.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Re-enter MARIA</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Re-enter MARIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVIA</speaker>
@@ -1235,7 +1235,7 @@ Musicians attending</para>
 <line remap="LINE">We'll once more hear Orsino's embassy.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter VIOLA, and Attendants</para>
+<stagedir remap="STAGEDIR">Enter VIOLA, and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VIOLA</speaker>
@@ -1359,7 +1359,7 @@ Musicians attending</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVIA</speaker>
 <line remap="LINE">Give us the place alone: we will hear this divinity.</line>
-<para remap="STAGEDIR">Exeunt MARIA and Attendants</para>
+<stagedir remap="STAGEDIR">Exeunt MARIA and Attendants</stagedir>
 <line remap="LINE">Now, sir, what is your text?</line>
 </linegroup></dialogue>
 
@@ -1408,7 +1408,7 @@ Musicians attending</para>
 <line remap="LINE">not well done?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Unveiling</para>
+<stagedir remap="STAGEDIR">Unveiling</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VIOLA</speaker>
@@ -1527,7 +1527,7 @@ Musicians attending</para>
 <line remap="LINE">Placed in contempt! Farewell, fair cruelty.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVIA</speaker>
@@ -1545,7 +1545,7 @@ Musicians attending</para>
 <line remap="LINE">What ho, Malvolio!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter MALVOLIO</para>
+<stagedir remap="STAGEDIR">Re-enter MALVOLIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALVOLIO</speaker>
@@ -1568,7 +1568,7 @@ Musicians attending</para>
 <line remap="LINE">Madam, I will.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVIA</speaker>
@@ -1578,7 +1578,7 @@ Musicians attending</para>
 <line remap="LINE">What is decreed must be, and be this so.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -1586,7 +1586,7 @@ Musicians attending</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  The sea-coast.</title>
-<para remap="STAGEDIR">Enter ANTONIO and SEBASTIAN</para>
+<stagedir remap="STAGEDIR">Enter ANTONIO and SEBASTIAN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTONIO</speaker>
@@ -1666,7 +1666,7 @@ Musicians attending</para>
 <line remap="LINE">tales of me. I am bound to the Count Orsino's court: farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTONIO</speaker>
@@ -1677,11 +1677,11 @@ Musicians attending</para>
 <line remap="LINE">That danger shall seem sport, and I will go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A street.</title>
-<para remap="STAGEDIR">Enter VIOLA, MALVOLIO following</para>
+<stagedir remap="STAGEDIR">Enter VIOLA, MALVOLIO following</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALVOLIO</speaker>
@@ -1718,7 +1718,7 @@ Musicians attending</para>
 <line remap="LINE">it his that finds it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VIOLA</speaker>
@@ -1749,11 +1749,11 @@ Musicians attending</para>
 <line remap="LINE">It is too hard a knot for me to untie!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  OLIVIA's house.</title>
-<para remap="STAGEDIR">Enter SIR TOBY BELCH and SIR ANDREW</para>
+<stagedir remap="STAGEDIR">Enter SIR TOBY BELCH and SIR ANDREW</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
@@ -1789,7 +1789,7 @@ Musicians attending</para>
 <line remap="LINE">Marian, I say! a stoup of wine!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Clown</para>
+<stagedir remap="STAGEDIR">Enter Clown</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR ANDREW</speaker>
@@ -1859,7 +1859,7 @@ Musicians attending</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Clown</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Sings</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Sings</inlinestagedir></line>
 <line remap="LINE">O mistress mine, where are you roaming?</line>
 <line remap="LINE">O, stay and hear; your true love's coming,</line>
 <line remap="LINE">That can sing both high and low:</line>
@@ -1880,7 +1880,7 @@ Musicians attending</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Clown</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Sings</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Sings</inlinestagedir></line>
 <line remap="LINE">What is love? 'tis not hereafter;</line>
 <line remap="LINE">Present mirth hath present laughter;</line>
 <line remap="LINE">What's to come is still unsure:</line>
@@ -1949,8 +1949,8 @@ Musicians attending</para>
 <line remap="LINE">Good, i' faith. Come, begin.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Catch sung</para>
-<para remap="STAGEDIR">Enter MARIA</para>
+<stagedir remap="STAGEDIR">Catch sung</stagedir>
+<stagedir remap="STAGEDIR">Enter MARIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARIA</speaker>
@@ -1965,7 +1965,7 @@ Musicians attending</para>
 <line remap="LINE">a Peg-a-Ramsey, and 'Three merry men be we.' Am not</line>
 <line remap="LINE">I consanguineous? am I not of her blood?</line>
 <line remap="LINE">Tillyvally. Lady!</line>
-<para remap="STAGEDIR">Sings</para>
+<stagedir remap="STAGEDIR">Sings</stagedir>
 <line remap="LINE">'There dwelt a man in Babylon, lady, lady!'</line>
 </linegroup></dialogue>
 
@@ -1983,7 +1983,7 @@ Musicians attending</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Sings</phrase>  'O, the twelfth day of December,'--</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Sings</inlinestagedir>  'O, the twelfth day of December,'--</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1991,7 +1991,7 @@ Musicians attending</para>
 <line remap="LINE">For the love o' God, peace!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MALVOLIO</para>
+<stagedir remap="STAGEDIR">Enter MALVOLIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALVOLIO</speaker>
@@ -2101,7 +2101,7 @@ Musicians attending</para>
 <line remap="LINE">for this uncivil rule: she shall know of it, by this hand.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARIA</speaker>
@@ -2233,7 +2233,7 @@ Musicians attending</para>
 <line remap="LINE">bed, and dream on the event. Farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
@@ -2284,11 +2284,11 @@ Musicians attending</para>
 <line remap="LINE">to go to bed now: come, knight; come, knight.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  DUKE ORSINO's palace.</title>
-<para remap="STAGEDIR">Enter DUKE ORSINO, VIOLA, CURIO, and others</para>
+<stagedir remap="STAGEDIR">Enter DUKE ORSINO, VIOLA, CURIO, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE ORSINO</speaker>
@@ -2320,7 +2320,7 @@ Musicians attending</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE ORSINO</speaker>
 <line remap="LINE">Seek him out, and play the tune the while.</line>
-<para remap="STAGEDIR">Exit CURIO. Music plays</para>
+<stagedir remap="STAGEDIR">Exit CURIO. Music plays</stagedir>
 <line remap="LINE">Come hither, boy: if ever thou shalt love,</line>
 <line remap="LINE">In the sweet pangs of it remember me;</line>
 <line remap="LINE">For such as I am all true lovers are,</line>
@@ -2398,7 +2398,7 @@ Musicians attending</para>
 <line remap="LINE">To die, even when they to perfection grow!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter CURIO and Clown</para>
+<stagedir remap="STAGEDIR">Re-enter CURIO and Clown</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE ORSINO</speaker>
@@ -2419,7 +2419,7 @@ Musicians attending</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE ORSINO</speaker>
 <line remap="LINE">Ay; prithee, sing.</line>
-<para remap="STAGEDIR">Music</para>
+<stagedir remap="STAGEDIR">Music</stagedir>
 </linegroup></dialogue>
 
 <bridgehead remap="SUBHEAD">SONG.</bridgehead>
@@ -2479,12 +2479,12 @@ Musicians attending</para>
 <line remap="LINE">it that always makes a good voyage of nothing. Farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE ORSINO</speaker>
 <line remap="LINE">Let all the rest give place.</line>
-<para remap="STAGEDIR">CURIO and Attendants retire</para>
+<stagedir remap="STAGEDIR">CURIO and Attendants retire</stagedir>
 <line remap="LINE">Once more, Cesario,</line>
 <line remap="LINE">Get thee to yond same sovereign cruelty:</line>
 <line remap="LINE">Tell her, my love, more noble than the world,</line>
@@ -2585,11 +2585,11 @@ Musicians attending</para>
 <line remap="LINE">My love can give no place, bide no denay.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  OLIVIA's garden.</title>
-<para remap="STAGEDIR">Enter SIR TOBY BELCH, SIR ANDREW, and FABIAN</para>
+<stagedir remap="STAGEDIR">Enter SIR TOBY BELCH, SIR ANDREW, and FABIAN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
@@ -2628,7 +2628,7 @@ Musicians attending</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
 <line remap="LINE">Here comes the little villain.</line>
-<para remap="STAGEDIR">Enter MARIA</para>
+<stagedir remap="STAGEDIR">Enter MARIA</stagedir>
 <line remap="LINE">How now, my metal of India!</line>
 </linegroup></dialogue>
 
@@ -2640,12 +2640,12 @@ Musicians attending</para>
 <line remap="LINE">hour: observe him, for the love of mockery; for I</line>
 <line remap="LINE">know this letter will make a contemplative idiot of</line>
 <line remap="LINE">him. Close, in the name of jesting! Lie thou there,</line>
-<para remap="STAGEDIR">Throws down a letter</para>
+<stagedir remap="STAGEDIR">Throws down a letter</stagedir>
 <line remap="LINE">for here comes the trout that must be caught with tickling.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter MALVOLIO</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter MALVOLIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALVOLIO</speaker>
@@ -2842,7 +2842,7 @@ Musicians attending</para>
 <line remap="LINE">What employment have we here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Taking up the letter</para>
+<stagedir remap="STAGEDIR">Taking up the letter</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FABIAN</speaker>
@@ -2869,7 +2869,7 @@ Musicians attending</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALVOLIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'To the unknown beloved, this, and my good</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'To the unknown beloved, this, and my good</line>
 <line remap="LINE">wishes:'--her very phrases! By your leave, wax.</line>
 <line remap="LINE">Soft! and the impressure her Lucrece, with which she</line>
 <line remap="LINE">uses to seal: 'tis my lady. To whom should this be?</line>
@@ -2882,7 +2882,7 @@ Musicians attending</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALVOLIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir></line>
 <line remap="LINE">Jove knows I love: But who?</line>
 <line remap="LINE">Lips, do not move;</line>
 <line remap="LINE">No man must know.</line>
@@ -2898,7 +2898,7 @@ Musicians attending</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALVOLIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir></line>
 <line remap="LINE">I may command where I adore;</line>
 <line remap="LINE">But silence, like a Lucrece knife,</line>
 <line remap="LINE">With bloodless stroke my heart doth gore:</line>
@@ -2998,7 +2998,7 @@ Musicians attending</para>
 <line remap="LINE">yet, to crush this a little, it would bow to me, for</line>
 <line remap="LINE">every one of these letters are in my name. Soft!</line>
 <line remap="LINE">here follows prose.</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">'If this fall into thy hand, revolve. In my stars I</line>
 <line remap="LINE">am above thee; but be not afraid of greatness: some</line>
 <line remap="LINE">are born great, some achieve greatness, and some</line>
@@ -3032,7 +3032,7 @@ Musicians attending</para>
 <line remap="LINE">cross-gartered, even with the swiftness of putting</line>
 <line remap="LINE">on. Jove and my stars be praised! Here is yet a</line>
 <line remap="LINE">postscript.</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">'Thou canst not choose but know who I am. If thou</line>
 <line remap="LINE">entertainest my love, let it appear in thy smiling;</line>
 <line remap="LINE">thy smiles become thee well; therefore in my</line>
@@ -3041,7 +3041,7 @@ Musicians attending</para>
 <line remap="LINE">everything that thou wilt have me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FABIAN</speaker>
@@ -3074,7 +3074,7 @@ Musicians attending</para>
 <line remap="LINE">Here comes my noble gull-catcher.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter MARIA</para>
+<stagedir remap="STAGEDIR">Re-enter MARIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
@@ -3136,7 +3136,7 @@ Musicians attending</para>
 <line remap="LINE">I'll make one too.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -3144,7 +3144,7 @@ Musicians attending</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  OLIVIA's garden.</title>
-<para remap="STAGEDIR">Enter VIOLA, and Clown with a tabour</para>
+<stagedir remap="STAGEDIR">Enter VIOLA, and Clown with a tabour</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VIOLA</speaker>
@@ -3272,7 +3272,7 @@ Musicians attending</para>
 <speaker remap="SPEAKER">VIOLA</speaker>
 <line remap="LINE">By my troth, I'll tell thee, I am almost sick for</line>
 <line remap="LINE">one;</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">though I would not have it grow on my chin. Is thy</line>
 <line remap="LINE">lady within?</line>
 </linegroup></dialogue>
@@ -3307,7 +3307,7 @@ Musicians attending</para>
 <line remap="LINE">welkin, I might say 'element,' but the word is over-worn.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VIOLA</speaker>
@@ -3322,7 +3322,7 @@ Musicians attending</para>
 <line remap="LINE">But wise men, folly-fall'n, quite taint their wit.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SIR TOBY BELCH, and SIR ANDREW</para>
+<stagedir remap="STAGEDIR">Enter SIR TOBY BELCH, and SIR ANDREW</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
@@ -3381,7 +3381,7 @@ Musicians attending</para>
 <speaker remap="SPEAKER">VIOLA</speaker>
 <line remap="LINE">I will answer you with gait and entrance. But we</line>
 <line remap="LINE">are prevented.</line>
-<para remap="STAGEDIR">Enter OLIVIA and MARIA</para>
+<stagedir remap="STAGEDIR">Enter OLIVIA and MARIA</stagedir>
 <line remap="LINE">Most excellent accomplished lady, the heavens rain</line>
 <line remap="LINE">odours on you!</line>
 </linegroup></dialogue>
@@ -3406,7 +3406,7 @@ Musicians attending</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVIA</speaker>
 <line remap="LINE">Let the garden door be shut, and leave me to my hearing.</line>
-<para remap="STAGEDIR">Exeunt SIR TOBY BELCH, SIR ANDREW, and MARIA</para>
+<stagedir remap="STAGEDIR">Exeunt SIR TOBY BELCH, SIR ANDREW, and MARIA</stagedir>
 <line remap="LINE">Give me your hand, sir.</line>
 </linegroup></dialogue>
 
@@ -3502,7 +3502,7 @@ Musicians attending</para>
 <line remap="LINE">O, world, how apt the poor are to be proud!</line>
 <line remap="LINE">If one should be a prey, how much the better</line>
 <line remap="LINE">To fall before the lion than the wolf!</line>
-<para remap="STAGEDIR">Clock strikes</para>
+<stagedir remap="STAGEDIR">Clock strikes</stagedir>
 <line remap="LINE">The clock upbraids me with the waste of time.</line>
 <line remap="LINE">Be not afraid, good youth, I will not have you:</line>
 <line remap="LINE">And yet, when wit and youth is come to harvest,</line>
@@ -3581,11 +3581,11 @@ Musicians attending</para>
 <line remap="LINE">That heart, which now abhors, to like his love.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  OLIVIA's house.</title>
-<para remap="STAGEDIR">Enter SIR TOBY BELCH, SIR ANDREW, and FABIAN</para>
+<stagedir remap="STAGEDIR">Enter SIR TOBY BELCH, SIR ANDREW, and FABIAN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR ANDREW</speaker>
@@ -3707,7 +3707,7 @@ Musicians attending</para>
 <line remap="LINE">We'll call thee at the cubiculo: go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit SIR ANDREW</para>
+<stagedir remap="STAGEDIR">Exit SIR ANDREW</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FABIAN</speaker>
@@ -3742,7 +3742,7 @@ Musicians attending</para>
 <line remap="LINE">great presage of cruelty.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MARIA</para>
+<stagedir remap="STAGEDIR">Enter MARIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
@@ -3782,11 +3782,11 @@ Musicians attending</para>
 <line remap="LINE">Come, bring us, bring us where he is.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A street.</title>
-<para remap="STAGEDIR">Enter SEBASTIAN and ANTONIO</para>
+<stagedir remap="STAGEDIR">Enter SEBASTIAN and ANTONIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SEBASTIAN</speaker>
@@ -3901,11 +3901,11 @@ Musicians attending</para>
 <line remap="LINE">I do remember.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  OLIVIA's garden.</title>
-<para remap="STAGEDIR">Enter OLIVIA and MARIA</para>
+<stagedir remap="STAGEDIR">Enter OLIVIA and MARIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVIA</speaker>
@@ -3939,10 +3939,10 @@ Musicians attending</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVIA</speaker>
 <line remap="LINE">Go call him hither.</line>
-<para remap="STAGEDIR">Exit MARIA</para>
+<stagedir remap="STAGEDIR">Exit MARIA</stagedir>
 <line remap="LINE">I am as mad as he,</line>
 <line remap="LINE">If sad and merry madness equal be.</line>
-<para remap="STAGEDIR">Re-enter MARIA, with MALVOLIO</para>
+<stagedir remap="STAGEDIR">Re-enter MARIA, with MALVOLIO</stagedir>
 <line remap="LINE">How now, Malvolio!</line>
 </linegroup></dialogue>
 
@@ -4089,7 +4089,7 @@ Musicians attending</para>
 <line remap="LINE">Why, this is very midsummer madness.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Servant</para>
+<stagedir remap="STAGEDIR">Enter Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Servant</speaker>
@@ -4101,14 +4101,14 @@ Musicians attending</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVIA</speaker>
 <line remap="LINE">I'll come to him.</line>
-<para remap="STAGEDIR">Exit Servant</para>
+<stagedir remap="STAGEDIR">Exit Servant</stagedir>
 <line remap="LINE">Good Maria, let this fellow be looked to. Where's</line>
 <line remap="LINE">my cousin Toby? Let some of my people have a special</line>
 <line remap="LINE">care of him: I would not have him miscarry for the</line>
 <line remap="LINE">half of my dowry.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt OLIVIA and MARIA</para>
+<stagedir remap="STAGEDIR">Exeunt OLIVIA and MARIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALVOLIO</speaker>
@@ -4135,7 +4135,7 @@ Musicians attending</para>
 <line remap="LINE">doer of this, and he is to be thanked.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter MARIA, with SIR TOBY BELCH and FABIAN</para>
+<stagedir remap="STAGEDIR">Re-enter MARIA, with SIR TOBY BELCH and FABIAN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
@@ -4259,7 +4259,7 @@ Musicians attending</para>
 <line remap="LINE">more hereafter.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
@@ -4303,7 +4303,7 @@ Musicians attending</para>
 <line remap="LINE">finder of madmen. But see, but see.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SIR ANDREW</para>
+<stagedir remap="STAGEDIR">Enter SIR ANDREW</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FABIAN</speaker>
@@ -4329,7 +4329,7 @@ Musicians attending</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
 <line remap="LINE">Give me.</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">'Youth, whatsoever thou art, thou art but a scurvy fellow.'</line>
 </linegroup></dialogue>
 
@@ -4340,7 +4340,7 @@ Musicians attending</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'Wonder not, nor admire not in thy mind,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'Wonder not, nor admire not in thy mind,</line>
 <line remap="LINE">why I do call thee so, for I will show thee no reason for't.'</line>
 </linegroup></dialogue>
 
@@ -4351,7 +4351,7 @@ Musicians attending</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'Thou comest to the lady Olivia, and in my</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'Thou comest to the lady Olivia, and in my</line>
 <line remap="LINE">sight she uses thee kindly: but thou liest in thy</line>
 <line remap="LINE">throat; that is not the matter I challenge thee for.'</line>
 </linegroup></dialogue>
@@ -4363,7 +4363,7 @@ Musicians attending</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'I will waylay thee going home; where if it</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'I will waylay thee going home; where if it</line>
 <line remap="LINE">be thy chance to kill me,'--</line>
 </linegroup></dialogue>
 
@@ -4374,7 +4374,7 @@ Musicians attending</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'Thou killest me like a rogue and a villain.'</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'Thou killest me like a rogue and a villain.'</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -4384,7 +4384,7 @@ Musicians attending</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'Fare thee well; and God have mercy upon</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'Fare thee well; and God have mercy upon</line>
 <line remap="LINE">one of our souls! He may have mercy upon mine; but</line>
 <line remap="LINE">my hope is better, and so look to thyself. Thy</line>
 <line remap="LINE">friend, as thou usest him, and thy sworn enemy,</line>
@@ -4415,7 +4415,7 @@ Musicians attending</para>
 <line remap="LINE">Nay, let me alone for swearing.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
@@ -4434,7 +4434,7 @@ Musicians attending</para>
 <line remap="LINE">one another by the look, like cockatrices.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter OLIVIA, with VIOLA</para>
+<stagedir remap="STAGEDIR">Re-enter OLIVIA, with VIOLA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FABIAN</speaker>
@@ -4448,7 +4448,7 @@ Musicians attending</para>
 <line remap="LINE">for a challenge.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt SIR TOBY BELCH, FABIAN, and MARIA</para>
+<stagedir remap="STAGEDIR">Exeunt SIR TOBY BELCH, FABIAN, and MARIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVIA</speaker>
@@ -4496,8 +4496,8 @@ Musicians attending</para>
 <line remap="LINE">A fiend like thee might bear my soul to hell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Re-enter SIR TOBY BELCH and FABIAN</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Re-enter SIR TOBY BELCH and FABIAN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
@@ -4583,7 +4583,7 @@ Musicians attending</para>
 <line remap="LINE">gentleman till my return.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VIOLA</speaker>
@@ -4619,8 +4619,8 @@ Musicians attending</para>
 <line remap="LINE">care not who knows so much of my mettle.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
-<para remap="STAGEDIR">Re-enter SIR TOBY BELCH, with SIR ANDREW</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
+<stagedir remap="STAGEDIR">Re-enter SIR TOBY BELCH, with SIR ANDREW</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
@@ -4655,10 +4655,10 @@ Musicians attending</para>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
 <line remap="LINE">I'll make the motion: stand here, make a good show</line>
 <line remap="LINE">on't: this shall end without the perdition of souls.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">Marry, I'll ride your horse as well as I ride you.</line>
-<para remap="STAGEDIR">Re-enter FABIAN and VIOLA</para>
-<para remap="STAGEDIR">To FABIAN</para>
+<stagedir remap="STAGEDIR">Re-enter FABIAN and VIOLA</stagedir>
+<stagedir remap="STAGEDIR">To FABIAN</stagedir>
 <line remap="LINE">I have his horse to take up the quarrel:</line>
 <line remap="LINE">I have persuaded him the youth's a devil.</line>
 </linegroup></dialogue>
@@ -4671,7 +4671,7 @@ Musicians attending</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To VIOLA</phrase>  There's no remedy, sir; he will fight</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To VIOLA</inlinestagedir>  There's no remedy, sir; he will fight</line>
 <line remap="LINE">with you for's oath sake: marry, he hath better</line>
 <line remap="LINE">bethought him of his quarrel, and he finds that now</line>
 <line remap="LINE">scarce to be worth talking of: therefore draw, for</line>
@@ -4680,7 +4680,7 @@ Musicians attending</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VIOLA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Pray God defend me! A little thing would</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Pray God defend me! A little thing would</line>
 <line remap="LINE">make me tell them how much I lack of a man.</line>
 </linegroup></dialogue>
 
@@ -4708,8 +4708,8 @@ Musicians attending</para>
 <line remap="LINE">I do assure you, 'tis against my will.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They draw</para>
-<para remap="STAGEDIR">Enter ANTONIO</para>
+<stagedir remap="STAGEDIR">They draw</stagedir>
+<stagedir remap="STAGEDIR">Enter ANTONIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTONIO</speaker>
@@ -4734,8 +4734,8 @@ Musicians attending</para>
 <line remap="LINE">Nay, if you be an undertaker, I am for you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They draw</para>
-<para remap="STAGEDIR">Enter Officers</para>
+<stagedir remap="STAGEDIR">They draw</stagedir>
+<stagedir remap="STAGEDIR">Enter Officers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FABIAN</speaker>
@@ -4784,7 +4784,7 @@ Musicians attending</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTONIO</speaker>
 <line remap="LINE">I must obey.</line>
-<para remap="STAGEDIR">To VIOLA</para>
+<stagedir remap="STAGEDIR">To VIOLA</stagedir>
 <line remap="LINE">This comes with seeking you:</line>
 <line remap="LINE">But there's no remedy; I shall answer it.</line>
 <line remap="LINE">What will you do, now my necessity</line>
@@ -4879,7 +4879,7 @@ Musicians attending</para>
 <line remap="LINE">Lead me on.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit with Officers</para>
+<stagedir remap="STAGEDIR">Exit with Officers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VIOLA</speaker>
@@ -4905,7 +4905,7 @@ Musicians attending</para>
 <line remap="LINE">Tempests are kind and salt waves fresh in love.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
@@ -4945,7 +4945,7 @@ Musicians attending</para>
 <line remap="LINE">I dare lay any money 'twill be nothing yet.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -4953,7 +4953,7 @@ Musicians attending</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Before OLIVIA's house.</title>
-<para remap="STAGEDIR">Enter SEBASTIAN and Clown</para>
+<stagedir remap="STAGEDIR">Enter SEBASTIAN and Clown</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Clown</speaker>
@@ -5004,7 +5004,7 @@ Musicians attending</para>
 <line remap="LINE">report--after fourteen years' purchase.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SIR ANDREW, SIR TOBY BELCH, and FABIAN</para>
+<stagedir remap="STAGEDIR">Enter SIR ANDREW, SIR TOBY BELCH, and FABIAN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR ANDREW</speaker>
@@ -5028,7 +5028,7 @@ Musicians attending</para>
 <line remap="LINE">in some of your coats for two pence.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
@@ -5066,7 +5066,7 @@ Musicians attending</para>
 <line remap="LINE">of this malapert blood from you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter OLIVIA</para>
+<stagedir remap="STAGEDIR">Enter OLIVIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVIA</speaker>
@@ -5085,7 +5085,7 @@ Musicians attending</para>
 <line remap="LINE">Where manners ne'er were preach'd! out of my sight!</line>
 <line remap="LINE">Be not offended, dear Cesario.</line>
 <line remap="LINE">Rudesby, be gone!</line>
-<para remap="STAGEDIR">Exeunt SIR TOBY BELCH, SIR ANDREW, and FABIAN</para>
+<stagedir remap="STAGEDIR">Exeunt SIR TOBY BELCH, SIR ANDREW, and FABIAN</stagedir>
 <line remap="LINE">I prithee, gentle friend,</line>
 <line remap="LINE">Let thy fair wisdom, not thy passion, sway</line>
 <line remap="LINE">In this uncivil and thou unjust extent</line>
@@ -5120,11 +5120,11 @@ Musicians attending</para>
 <line remap="LINE">O, say so, and so be!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  OLIVIA's house.</title>
-<para remap="STAGEDIR">Enter MARIA and Clown</para>
+<stagedir remap="STAGEDIR">Enter MARIA and Clown</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARIA</speaker>
@@ -5133,7 +5133,7 @@ Musicians attending</para>
 <line remap="LINE">it quickly; I'll call Sir Toby the whilst.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Clown</speaker>
@@ -5146,7 +5146,7 @@ Musicians attending</para>
 <line remap="LINE">careful man and a great scholar. The competitors enter.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SIR TOBY BELCH and MARIA</para>
+<stagedir remap="STAGEDIR">Enter SIR TOBY BELCH and MARIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR TOBY BELCH</speaker>
@@ -5179,7 +5179,7 @@ Musicians attending</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALVOLIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Who calls there?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Who calls there?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5311,11 +5311,11 @@ Musicians attending</para>
 <line remap="LINE">sport to the upshot. Come by and by to my chamber.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt SIR TOBY BELCH and MARIA</para>
+<stagedir remap="STAGEDIR">Exeunt SIR TOBY BELCH and MARIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Clown</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Singing</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Singing</inlinestagedir></line>
 <line remap="LINE">'Hey, Robin, jolly Robin,</line>
 <line remap="LINE">Tell me how thy lady does.'</line>
 </linegroup></dialogue>
@@ -5467,7 +5467,7 @@ Musicians attending</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Clown</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Singing</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Singing</inlinestagedir></line>
 <line remap="LINE">I am gone, sir,</line>
 <line remap="LINE">And anon, sir,</line>
 <line remap="LINE">I'll be with you again,</line>
@@ -5482,11 +5482,11 @@ Musicians attending</para>
 <line remap="LINE">Adieu, good man devil.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  OLIVIA's garden.</title>
-<para remap="STAGEDIR">Enter SEBASTIAN</para>
+<stagedir remap="STAGEDIR">Enter SEBASTIAN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SEBASTIAN</speaker>
@@ -5513,7 +5513,7 @@ Musicians attending</para>
 <line remap="LINE">That is deceiveable. But here the lady comes.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter OLIVIA and Priest</para>
+<stagedir remap="STAGEDIR">Enter OLIVIA and Priest</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVIA</speaker>
@@ -5541,7 +5541,7 @@ Musicians attending</para>
 <line remap="LINE">That they may fairly note this act of mine!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -5549,7 +5549,7 @@ Musicians attending</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Before OLIVIA's house.</title>
-<para remap="STAGEDIR">Enter Clown and FABIAN</para>
+<stagedir remap="STAGEDIR">Enter Clown and FABIAN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FABIAN</speaker>
@@ -5577,7 +5577,7 @@ Musicians attending</para>
 <line remap="LINE">dog again.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DUKE ORSINO, VIOLA, CURIO, and Lords</para>
+<stagedir remap="STAGEDIR">Enter DUKE ORSINO, VIOLA, CURIO, and Lords</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE ORSINO</speaker>
@@ -5690,14 +5690,14 @@ Musicians attending</para>
 <line remap="LINE">will awake it anon.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VIOLA</speaker>
 <line remap="LINE">Here comes the man, sir, that did rescue me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ANTONIO and Officers</para>
+<stagedir remap="STAGEDIR">Enter ANTONIO and Officers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE ORSINO</speaker>
@@ -5779,7 +5779,7 @@ Musicians attending</para>
 <line remap="LINE">Both day and night did we keep company.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter OLIVIA and Attendants</para>
+<stagedir remap="STAGEDIR">Enter OLIVIA and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE ORSINO</speaker>
@@ -5938,7 +5938,7 @@ Musicians attending</para>
 <line remap="LINE">Fear not, Cesario; take thy fortunes up;</line>
 <line remap="LINE">Be that thou know'st thou art, and then thou art</line>
 <line remap="LINE">As great as that thou fear'st.</line>
-<para remap="STAGEDIR">Enter Priest</para>
+<stagedir remap="STAGEDIR">Enter Priest</stagedir>
 <line remap="LINE">O, welcome, father!</line>
 <line remap="LINE">Father, I charge thee, by thy reverence,</line>
 <line remap="LINE">Here to unfold, though lately we intended</line>
@@ -5980,7 +5980,7 @@ Musicians attending</para>
 <line remap="LINE">Hold little faith, though thou hast too much fear.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SIR ANDREW</para>
+<stagedir remap="STAGEDIR">Enter SIR ANDREW</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR ANDREW</speaker>
@@ -6034,7 +6034,7 @@ Musicians attending</para>
 <speaker remap="SPEAKER">SIR ANDREW</speaker>
 <line remap="LINE">If a bloody coxcomb be a hurt, you have hurt me: I</line>
 <line remap="LINE">think you set nothing by a bloody coxcomb.</line>
-<para remap="STAGEDIR">Enter SIR TOBY BELCH and Clown</para>
+<stagedir remap="STAGEDIR">Enter SIR TOBY BELCH and Clown</stagedir>
 <line remap="LINE">Here comes Sir Toby halting; you shall hear more:</line>
 <line remap="LINE">but if he had not been in drink, he would have</line>
 <line remap="LINE">tickled you othergates than he did.</line>
@@ -6084,8 +6084,8 @@ Musicians attending</para>
 <line remap="LINE">Get him to bed, and let his hurt be look'd to.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Clown, FABIAN, SIR TOBY BELCH, and SIR ANDREW</para>
-<para remap="STAGEDIR">Enter SEBASTIAN</para>
+<stagedir remap="STAGEDIR">Exeunt Clown, FABIAN, SIR TOBY BELCH, and SIR ANDREW</stagedir>
+<stagedir remap="STAGEDIR">Enter SEBASTIAN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SEBASTIAN</speaker>
@@ -6201,7 +6201,7 @@ Musicians attending</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SEBASTIAN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To OLIVIA</phrase>  So comes it, lady, you have been mistook:</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To OLIVIA</inlinestagedir>  So comes it, lady, you have been mistook:</line>
 <line remap="LINE">But nature to her bias drew in that.</line>
 <line remap="LINE">You would have been contracted to a maid;</line>
 <line remap="LINE">Nor are you therein, by my life, deceived,</line>
@@ -6213,7 +6213,7 @@ Musicians attending</para>
 <line remap="LINE">Be not amazed; right noble is his blood.</line>
 <line remap="LINE">If this be so, as yet the glass seems true,</line>
 <line remap="LINE">I shall have share in this most happy wreck.</line>
-<para remap="STAGEDIR">To VIOLA</para>
+<stagedir remap="STAGEDIR">To VIOLA</stagedir>
 <line remap="LINE">Boy, thou hast said to me a thousand times</line>
 <line remap="LINE">Thou never shouldst love woman like to me.</line>
 </linegroup></dialogue>
@@ -6245,7 +6245,7 @@ Musicians attending</para>
 <line remap="LINE">He shall enlarge him: fetch Malvolio hither:</line>
 <line remap="LINE">And yet, alas, now I remember me,</line>
 <line remap="LINE">They say, poor gentleman, he's much distract.</line>
-<para remap="STAGEDIR">Re-enter Clown with a letter, and FABIAN</para>
+<stagedir remap="STAGEDIR">Re-enter Clown with a letter, and FABIAN</stagedir>
 <line remap="LINE">A most extracting frenzy of mine own</line>
 <line remap="LINE">From my remembrance clearly banish'd his.</line>
 <line remap="LINE">How does he, sirrah?</line>
@@ -6269,7 +6269,7 @@ Musicians attending</para>
 <speaker remap="SPEAKER">Clown</speaker>
 <line remap="LINE">Look then to be well edified when the fool delivers</line>
 <line remap="LINE">the madman.</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">'By the Lord, madam,'--</line>
 </linegroup></dialogue>
 
@@ -6300,11 +6300,11 @@ Musicians attending</para>
 <line remap="LINE">Read it you, sirrah.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">To FABIAN</para>
+<stagedir remap="STAGEDIR">To FABIAN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FABIAN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'By the Lord, madam, you wrong me, and the</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'By the Lord, madam, you wrong me, and the</line>
 <line remap="LINE">world shall know it: though you have put me into</line>
 <line remap="LINE">darkness and given your drunken cousin rule over</line>
 <line remap="LINE">me, yet have I the benefit of my senses as well as</line>
@@ -6334,7 +6334,7 @@ Musicians attending</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVIA</speaker>
 <line remap="LINE">See him deliver'd, Fabian; bring him hither.</line>
-<para remap="STAGEDIR">Exit FABIAN</para>
+<stagedir remap="STAGEDIR">Exit FABIAN</stagedir>
 <line remap="LINE">My lord so please you, these things further</line>
 <line remap="LINE">thought on,</line>
 <line remap="LINE">To think me as well a sister as a wife,</line>
@@ -6345,7 +6345,7 @@ Musicians attending</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE ORSINO</speaker>
 <line remap="LINE">Madam, I am most apt to embrace your offer.</line>
-<para remap="STAGEDIR">To VIOLA</para>
+<stagedir remap="STAGEDIR">To VIOLA</stagedir>
 <line remap="LINE">Your master quits you; and for your service done him,</line>
 <line remap="LINE">So much against the mettle of your sex,</line>
 <line remap="LINE">So far beneath your soft and tender breeding,</line>
@@ -6359,7 +6359,7 @@ Musicians attending</para>
 <line remap="LINE">A sister! you are she.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter FABIAN, with MALVOLIO</para>
+<stagedir remap="STAGEDIR">Re-enter FABIAN, with MALVOLIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE ORSINO</speaker>
@@ -6456,7 +6456,7 @@ Musicians attending</para>
 <line remap="LINE">I'll be revenged on the whole pack of you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OLIVIA</speaker>
@@ -6476,11 +6476,11 @@ Musicians attending</para>
 <line remap="LINE">Orsino's mistress and his fancy's queen.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all, except Clown</para>
+<stagedir remap="STAGEDIR">Exeunt all, except Clown</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Clown</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Sings</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Sings</inlinestagedir></line>
 <line remap="LINE">When that I was and a little tiny boy,</line>
 <line remap="LINE">With hey, ho, the wind and the rain,</line>
 <line remap="LINE">A foolish thing was but a toy,</line>
@@ -6503,7 +6503,7 @@ Musicians attending</para>
 <line remap="LINE">And we'll strive to please you every day.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 </chapter>
 </book>

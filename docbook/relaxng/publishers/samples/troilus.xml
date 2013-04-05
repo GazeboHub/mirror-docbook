@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">The History of Troilus and Cressida</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">The History of Troilus and Cressida</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The History of Troilus and Cressida</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -32,9 +32,9 @@
 <para><personname remap="PERSONA">CASSANDRA, daughter to Priam, a prophetess.</personname></para>
 <para><personname remap="PERSONA">CRESSIDA, daughter to Calchas.</personname></para>
 <para><personname remap="PERSONA">Trojan and Greek Soldiers, and Attendants.</personname></para>
-    <para remap="SCNDESCR">SCENE  Troy, and the Grecian camp before it.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  Troy, and the Grecian camp before it.</para>
 
 
 
@@ -77,7 +77,7 @@
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Troy. Before Priam's palace.</title>
-<para remap="STAGEDIR">Enter TROILUS armed, and PANDARUS</para>
+<stagedir remap="STAGEDIR">Enter TROILUS armed, and PANDARUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TROILUS</speaker>
@@ -276,7 +276,7 @@
 <line remap="LINE">found it, and there an end.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit PANDARUS. An alarum</para>
+<stagedir remap="STAGEDIR">Exit PANDARUS. An alarum</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TROILUS</speaker>
@@ -298,7 +298,7 @@
 <line remap="LINE">Our doubtful hope, our convoy and our bark.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Alarum. Enter AENEAS</para>
+<stagedir remap="STAGEDIR">Alarum. Enter AENEAS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AENEAS</speaker>
@@ -333,7 +333,7 @@
 <line remap="LINE">Paris is gored with Menelaus' horn.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Alarum</para>
+<stagedir remap="STAGEDIR">Alarum</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AENEAS</speaker>
@@ -356,11 +356,11 @@
 <line remap="LINE">Come, go we then together.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The Same. A street.</title>
-<para remap="STAGEDIR">Enter CRESSIDA and ALEXANDER</para>
+<stagedir remap="STAGEDIR">Enter CRESSIDA and ALEXANDER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CRESSIDA</speaker>
@@ -458,7 +458,7 @@
 <line remap="LINE">Madam, your uncle Pandarus.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PANDARUS</para>
+<stagedir remap="STAGEDIR">Enter PANDARUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CRESSIDA</speaker>
@@ -916,7 +916,7 @@
 <line remap="LINE">against May.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">A retreat sounded</para>
+<stagedir remap="STAGEDIR">A retreat sounded</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -942,7 +942,7 @@
 <line remap="LINE">Speak not so loud.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">AENEAS passes</para>
+<stagedir remap="STAGEDIR">AENEAS passes</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -951,7 +951,7 @@
 <line remap="LINE">Troilus; you shall see anon.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">ANTENOR passes</para>
+<stagedir remap="STAGEDIR">ANTENOR passes</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CRESSIDA</speaker>
@@ -982,7 +982,7 @@
 <line remap="LINE">If he do, the rich shall have more.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">HECTOR passes</para>
+<stagedir remap="STAGEDIR">HECTOR passes</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -1016,7 +1016,7 @@
 <line remap="LINE">Swords! any thing, he cares not; an the devil come</line>
 <line remap="LINE">to him, it's all one: by God's lid, it does one's</line>
 <line remap="LINE">heart good. Yonder comes Paris, yonder comes Paris.</line>
-<para remap="STAGEDIR">PARIS passes</para>
+<stagedir remap="STAGEDIR">PARIS passes</stagedir>
 <line remap="LINE">Look ye yonder, niece; is't not a gallant man too,</line>
 <line remap="LINE">is't not? Why, this is brave now. Who said he came</line>
 <line remap="LINE">hurt home to-day? he's not hurt: why, this will do</line>
@@ -1024,7 +1024,7 @@
 <line remap="LINE">Troilus now! You shall see Troilus anon.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">HELENUS passes</para>
+<stagedir remap="STAGEDIR">HELENUS passes</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CRESSIDA</speaker>
@@ -1054,7 +1054,7 @@
 <line remap="LINE">What sneaking fellow comes yonder?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">TROILUS passes</para>
+<stagedir remap="STAGEDIR">TROILUS passes</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -1086,7 +1086,7 @@
 <line remap="LINE">Here come more.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Forces pass</para>
+<stagedir remap="STAGEDIR">Forces pass</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -1162,7 +1162,7 @@
 <line remap="LINE">You are such another!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Troilus's Boy</para>
+<stagedir remap="STAGEDIR">Enter Troilus's Boy</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Boy</speaker>
@@ -1182,7 +1182,7 @@
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
 <line remap="LINE">Good boy, tell him I come.</line>
-<para remap="STAGEDIR">Exit boy</para>
+<stagedir remap="STAGEDIR">Exit boy</stagedir>
 <line remap="LINE">I doubt he be hurt. Fare ye well, good niece.</line>
 </linegroup></dialogue>
 
@@ -1209,7 +1209,7 @@
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CRESSIDA</speaker>
 <line remap="LINE">By the same token, you are a bawd.</line>
-<para remap="STAGEDIR">Exit PANDARUS</para>
+<stagedir remap="STAGEDIR">Exit PANDARUS</stagedir>
 <line remap="LINE">Words, vows, gifts, tears, and love's full sacrifice,</line>
 <line remap="LINE">He offers in another's enterprise;</line>
 <line remap="LINE">But more in Troilus thousand fold I see</line>
@@ -1226,12 +1226,12 @@
 <line remap="LINE">Nothing of that shall from mine eyes appear.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The Grecian camp. Before Agamemnon's tent.</title>
-<para remap="STAGEDIR">Sennet. Enter AGAMEMNON, NESTOR, ULYSSES,
-MENELAUS, and others</para>
+<stagedir remap="STAGEDIR">Sennet. Enter AGAMEMNON, NESTOR, ULYSSES,
+MENELAUS, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AGAMEMNON</speaker>
@@ -1303,9 +1303,9 @@ MENELAUS, and others</para>
 <line remap="LINE">In whom the tempers and the minds of all</line>
 <line remap="LINE">Should be shut up, hear what Ulysses speaks.</line>
 <line remap="LINE">Besides the applause and approbation To which,</line>
-<para remap="STAGEDIR">To AGAMEMNON</para>
+<stagedir remap="STAGEDIR">To AGAMEMNON</stagedir>
 <line remap="LINE">most mighty for thy place and sway,</line>
-<para remap="STAGEDIR">To NESTOR</para>
+<stagedir remap="STAGEDIR">To NESTOR</stagedir>
 <line remap="LINE">And thou most reverend for thy stretch'd-out life</line>
 <line remap="LINE">I give to both your speeches, which were such</line>
 <line remap="LINE">As Agamemnon and the hand of Greece</line>
@@ -1492,7 +1492,7 @@ MENELAUS, and others</para>
 <line remap="LINE">Makes many Thetis' sons.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">A tucket</para>
+<stagedir remap="STAGEDIR">A tucket</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AGAMEMNON</speaker>
@@ -1504,7 +1504,7 @@ MENELAUS, and others</para>
 <line remap="LINE">From Troy.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter AENEAS</para>
+<stagedir remap="STAGEDIR">Enter AENEAS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AGAMEMNON</speaker>
@@ -1626,7 +1626,7 @@ MENELAUS, and others</para>
 <line remap="LINE">Send thy brass voice through all these lazy tents;</line>
 <line remap="LINE">And every Greek of mettle, let him know,</line>
 <line remap="LINE">What Troy means fairly shall be spoke aloud.</line>
-<para remap="STAGEDIR">Trumpet sounds</para>
+<stagedir remap="STAGEDIR">Trumpet sounds</stagedir>
 <line remap="LINE">We have, great Agamemnon, here in Troy</line>
 <line remap="LINE">A prince call'd Hector,--Priam is his father,--</line>
 <line remap="LINE">Who in this dull and long-continued truce</line>
@@ -1699,7 +1699,7 @@ MENELAUS, and others</para>
 <line remap="LINE">And find the welcome of a noble foe.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but ULYSSES and NESTOR</para>
+<stagedir remap="STAGEDIR">Exeunt all but ULYSSES and NESTOR</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ULYSSES</speaker>
@@ -1841,7 +1841,7 @@ MENELAUS, and others</para>
 <line remap="LINE">Must tarre the mastiffs on, as 'twere their bone.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -1849,7 +1849,7 @@ MENELAUS, and others</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A part of the Grecian camp.</title>
-<para remap="STAGEDIR">Enter AJAX and THERSITES</para>
+<stagedir remap="STAGEDIR">Enter AJAX and THERSITES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AJAX</speaker>
@@ -1886,7 +1886,7 @@ MENELAUS, and others</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AJAX</speaker>
 <line remap="LINE">Thou bitch-wolf's son, canst thou not hear?</line>
-<para remap="STAGEDIR">Beating him</para>
+<stagedir remap="STAGEDIR">Beating him</stagedir>
 <line remap="LINE">Feel, then.</line>
 </linegroup></dialogue>
 
@@ -1979,7 +1979,7 @@ MENELAUS, and others</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AJAX</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Beating him</phrase>  You whoreson cur!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Beating him</inlinestagedir>  You whoreson cur!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -2016,7 +2016,7 @@ MENELAUS, and others</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AJAX</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Beating him</phrase>  You cur!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Beating him</inlinestagedir>  You cur!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -2024,7 +2024,7 @@ MENELAUS, and others</para>
 <line remap="LINE">Mars his idiot! do, rudeness; do, camel; do, do.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ACHILLES and PATROCLUS</para>
+<stagedir remap="STAGEDIR">Enter ACHILLES and PATROCLUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ACHILLES</speaker>
@@ -2105,7 +2105,7 @@ MENELAUS, and others</para>
 <line remap="LINE">I say, this Ajax--</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Ajax offers to beat him</para>
+<stagedir remap="STAGEDIR">Ajax offers to beat him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ACHILLES</speaker>
@@ -2255,7 +2255,7 @@ MENELAUS, and others</para>
 <line remap="LINE">wit stirring and leave the faction of fools.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PATROCLUS</speaker>
@@ -2288,11 +2288,11 @@ MENELAUS, and others</para>
 <line remap="LINE">O, meaning you. I will go learn more of it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Troy. A room in Priam's palace.</title>
-<para remap="STAGEDIR">Enter PRIAM, HECTOR, TROILUS, PARIS, and HELENUS</para>
+<stagedir remap="STAGEDIR">Enter PRIAM, HECTOR, TROILUS, PARIS, and HELENUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRIAM</speaker>
@@ -2432,7 +2432,7 @@ MENELAUS, and others</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSANDRA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Cry, Trojans, cry!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Cry, Trojans, cry!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -2447,7 +2447,7 @@ MENELAUS, and others</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSANDRA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Cry, Trojans!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Cry, Trojans!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -2455,7 +2455,7 @@ MENELAUS, and others</para>
 <line remap="LINE">It is Cassandra.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CASSANDRA, raving</para>
+<stagedir remap="STAGEDIR">Enter CASSANDRA, raving</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSANDRA</speaker>
@@ -2481,7 +2481,7 @@ MENELAUS, and others</para>
 <line remap="LINE">Cry, cry! Troy burns, or else let Helen go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HECTOR</speaker>
@@ -2619,11 +2619,11 @@ MENELAUS, and others</para>
 <line remap="LINE">This, I presume, will wake him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The Grecian camp. Before Achilles' tent.</title>
-<para remap="STAGEDIR">Enter THERSITES, solus</para>
+<stagedir remap="STAGEDIR">Enter THERSITES, solus</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THERSITES</speaker>
@@ -2651,7 +2651,7 @@ MENELAUS, and others</para>
 <line remap="LINE">say Amen. What ho! my Lord Achilles!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PATROCLUS</para>
+<stagedir remap="STAGEDIR">Enter PATROCLUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PATROCLUS</speaker>
@@ -2682,7 +2682,7 @@ MENELAUS, and others</para>
 <line remap="LINE">Ay: the heavens hear me!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ACHILLES</para>
+<stagedir remap="STAGEDIR">Enter ACHILLES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ACHILLES</speaker>
@@ -2787,7 +2787,7 @@ MENELAUS, and others</para>
 <line remap="LINE">Come in with me, Thersites.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THERSITES</speaker>
@@ -2798,8 +2798,8 @@ MENELAUS, and others</para>
 <line remap="LINE">the subject! and war and lechery confound all!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter AGAMEMNON, ULYSSES, NESTOR, DIOMEDES, and AJAX</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter AGAMEMNON, ULYSSES, NESTOR, DIOMEDES, and AJAX</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AGAMEMNON</speaker>
@@ -2826,7 +2826,7 @@ MENELAUS, and others</para>
 <line remap="LINE">I shall say so to him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ULYSSES</speaker>
@@ -2842,7 +2842,7 @@ MENELAUS, and others</para>
 <line remap="LINE">cause. A word, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Takes AGAMEMNON aside</para>
+<stagedir remap="STAGEDIR">Takes AGAMEMNON aside</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NESTOR</speaker>
@@ -2888,7 +2888,7 @@ MENELAUS, and others</para>
 <line remap="LINE">untie. Here comes Patroclus.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter PATROCLUS</para>
+<stagedir remap="STAGEDIR">Re-enter PATROCLUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NESTOR</speaker>
@@ -2948,7 +2948,7 @@ MENELAUS, and others</para>
 <line remap="LINE">I shall; and bring his answer presently.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AGAMEMNON</speaker>
@@ -2956,7 +2956,7 @@ MENELAUS, and others</para>
 <line remap="LINE">We come to speak with him. Ulysses, enter you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit ULYSSES</para>
+<stagedir remap="STAGEDIR">Exit ULYSSES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AJAX</speaker>
@@ -3016,8 +3016,8 @@ MENELAUS, and others</para>
 <line remap="LINE">Yet he loves himself: is't not strange?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Aside</para>
-<para remap="STAGEDIR">Re-enter ULYSSES</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
+<stagedir remap="STAGEDIR">Re-enter ULYSSES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ULYSSES</speaker>
@@ -3089,13 +3089,13 @@ MENELAUS, and others</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NESTOR</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to DIOMEDES</phrase>  O, this is well; he rubs the</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to DIOMEDES</inlinestagedir>  O, this is well; he rubs the</line>
 <line remap="LINE">vein of him.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DIOMEDES</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to NESTOR</phrase>  And how his silence drinks up</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to NESTOR</inlinestagedir>  And how his silence drinks up</line>
 <line remap="LINE">this applause!</line>
 </linegroup></dialogue>
 
@@ -3189,7 +3189,7 @@ MENELAUS, and others</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ULYSSES</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To AGAMEMNON</phrase>  My lord, you feed too much on this dislike.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To AGAMEMNON</inlinestagedir>  My lord, you feed too much on this dislike.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -3304,7 +3304,7 @@ MENELAUS, and others</para>
 <line remap="LINE">Light boats sail swift, though greater hulks draw deep.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -3312,7 +3312,7 @@ MENELAUS, and others</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Troy. Priam's palace.</title>
-<para remap="STAGEDIR">Enter a Servant and PANDARUS</para>
+<stagedir remap="STAGEDIR">Enter a Servant and PANDARUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -3379,7 +3379,7 @@ MENELAUS, and others</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
 <line remap="LINE">Grace! not so, friend: honour and lordship are my titles.</line>
-<para remap="STAGEDIR">Music within</para>
+<stagedir remap="STAGEDIR">Music within</stagedir>
 <line remap="LINE">What music is this?</line>
 </linegroup></dialogue>
 
@@ -3467,7 +3467,7 @@ MENELAUS, and others</para>
 <line remap="LINE">Sodden business! there's a stewed phrase indeed!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PARIS and HELEN, attended</para>
+<stagedir remap="STAGEDIR">Enter PARIS and HELEN, attended</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -3691,7 +3691,7 @@ MENELAUS, and others</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
 <line remap="LINE">In good troth, it begins so.</line>
-<para remap="STAGEDIR">Sings</para>
+<stagedir remap="STAGEDIR">Sings</stagedir>
 <line remap="LINE">Love, love, nothing but love, still more!</line>
 <line remap="LINE">For, O, love's bow</line>
 <line remap="LINE">Shoots buck and doe:</line>
@@ -3766,8 +3766,8 @@ MENELAUS, and others</para>
 <line remap="LINE">I will, sweet queen.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">A retreat sounded</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">A retreat sounded</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PARIS</speaker>
@@ -3793,11 +3793,11 @@ MENELAUS, and others</para>
 <line remap="LINE">Sweet, above thought I love thee.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same. Pandarus' orchard.</title>
-<para remap="STAGEDIR">Enter PANDARUS and Troilus's Boy, meeting</para>
+<stagedir remap="STAGEDIR">Enter PANDARUS and Troilus's Boy, meeting</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -3813,7 +3813,7 @@ MENELAUS, and others</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
 <line remap="LINE">O, here he comes.</line>
-<para remap="STAGEDIR">Enter TROILUS</para>
+<stagedir remap="STAGEDIR">Enter TROILUS</stagedir>
 <line remap="LINE">How now, how now!</line>
 </linegroup></dialogue>
 
@@ -3822,7 +3822,7 @@ MENELAUS, and others</para>
 <line remap="LINE">Sirrah, walk off.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Boy</para>
+<stagedir remap="STAGEDIR">Exit Boy</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -3846,7 +3846,7 @@ MENELAUS, and others</para>
 <line remap="LINE">Walk here i' the orchard, I'll bring her straight.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TROILUS</speaker>
@@ -3864,7 +3864,7 @@ MENELAUS, and others</para>
 <line remap="LINE">The enemy flying.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter PANDARUS</para>
+<stagedir remap="STAGEDIR">Re-enter PANDARUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -3876,7 +3876,7 @@ MENELAUS, and others</para>
 <line remap="LINE">new-ta'en sparrow.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TROILUS</speaker>
@@ -3887,7 +3887,7 @@ MENELAUS, and others</para>
 <line remap="LINE">The eye of majesty.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter PANDARUS with CRESSIDA</para>
+<stagedir remap="STAGEDIR">Re-enter PANDARUS with CRESSIDA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -3921,7 +3921,7 @@ MENELAUS, and others</para>
 <line remap="LINE">Come in, come in: I'll go get a fire.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CRESSIDA</speaker>
@@ -4012,7 +4012,7 @@ MENELAUS, and others</para>
 <line remap="LINE">Will you walk in, my lord?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter PANDARUS</para>
+<stagedir remap="STAGEDIR">Re-enter PANDARUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -4237,12 +4237,12 @@ MENELAUS, and others</para>
 <line remap="LINE">Bed, chamber, Pandar to provide this gear!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The Grecian camp. Before Achilles' tent.</title>
-<para remap="STAGEDIR">Enter AGAMEMNON, ULYSSES, DIOMEDES, NESTOR, AJAX,
-MENELAUS, and CALCHAS</para>
+<stagedir remap="STAGEDIR">Enter AGAMEMNON, ULYSSES, DIOMEDES, NESTOR, AJAX,
+MENELAUS, and CALCHAS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CALCHAS</speaker>
@@ -4302,8 +4302,8 @@ MENELAUS, and CALCHAS</para>
 <line remap="LINE">Which I am proud to bear.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt DIOMEDES and CALCHAS</para>
-<para remap="STAGEDIR">Enter ACHILLES and PATROCLUS, before their tent</para>
+<stagedir remap="STAGEDIR">Exeunt DIOMEDES and CALCHAS</stagedir>
+<stagedir remap="STAGEDIR">Enter ACHILLES and PATROCLUS, before their tent</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ULYSSES</speaker>
@@ -4361,7 +4361,7 @@ MENELAUS, and CALCHAS</para>
 <line remap="LINE">The better.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt AGAMEMNON and NESTOR</para>
+<stagedir remap="STAGEDIR">Exeunt AGAMEMNON and NESTOR</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ACHILLES</speaker>
@@ -4373,7 +4373,7 @@ MENELAUS, and CALCHAS</para>
 <line remap="LINE">How do you? how do you?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ACHILLES</speaker>
@@ -4405,7 +4405,7 @@ MENELAUS, and CALCHAS</para>
 <line remap="LINE">Ay, and good next day too.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ACHILLES</speaker>
@@ -4618,7 +4618,7 @@ MENELAUS, and CALCHAS</para>
 <line remap="LINE">The fool slides o'er the ice that you should break.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PATROCLUS</speaker>
@@ -4670,7 +4670,7 @@ MENELAUS, and CALCHAS</para>
 <line remap="LINE">To see great Hector in his weeds of peace,</line>
 <line remap="LINE">To talk with him and to behold his visage,</line>
 <line remap="LINE">Even to my full of view.</line>
-<para remap="STAGEDIR">Enter THERSITES</para>
+<stagedir remap="STAGEDIR">Enter THERSITES</stagedir>
 <line remap="LINE">A labour saved!</line>
 </linegroup></dialogue>
 
@@ -4862,7 +4862,7 @@ MENELAUS, and CALCHAS</para>
 <line remap="LINE">And I myself see not the bottom of it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt ACHILLES and PATROCLUS</para>
+<stagedir remap="STAGEDIR">Exeunt ACHILLES and PATROCLUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THERSITES</speaker>
@@ -4871,7 +4871,7 @@ MENELAUS, and CALCHAS</para>
 <line remap="LINE">tick in a sheep than such a valiant ignorance.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -4879,9 +4879,9 @@ MENELAUS, and CALCHAS</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Troy. A street.</title>
-<para remap="STAGEDIR">Enter, from one side, AENEAS, and Servant with a
+<stagedir remap="STAGEDIR">Enter, from one side, AENEAS, and Servant with a
 torch; from the other, PARIS, DEIPHOBUS, ANTENOR,
-DIOMEDES, and others, with torches</para>
+DIOMEDES, and others, with torches</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PARIS</speaker>
@@ -5005,7 +5005,7 @@ DIOMEDES, and others, with torches</para>
 <line remap="LINE">Good morrow, all.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit with Servant</para>
+<stagedir remap="STAGEDIR">Exit with Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PARIS</speaker>
@@ -5057,11 +5057,11 @@ DIOMEDES, and others, with torches</para>
 <line remap="LINE">Here lies our way.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same. Court of Pandarus' house.</title>
-<para remap="STAGEDIR">Enter TROILUS and CRESSIDA</para>
+<stagedir remap="STAGEDIR">Enter TROILUS and CRESSIDA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TROILUS</speaker>
@@ -5129,7 +5129,7 @@ DIOMEDES, and others, with torches</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  What, 's all the doors open here?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  What, 's all the doors open here?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5143,7 +5143,7 @@ DIOMEDES, and others, with torches</para>
 <line remap="LINE">I shall have such a life!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PANDARUS</para>
+<stagedir remap="STAGEDIR">Enter PANDARUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -5179,7 +5179,7 @@ DIOMEDES, and others, with torches</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CRESSIDA</speaker>
 <line remap="LINE">Did not I tell you? Would he were knock'd i' the head!</line>
-<para remap="STAGEDIR">Knocking within</para>
+<stagedir remap="STAGEDIR">Knocking within</stagedir>
 <line remap="LINE">Who's that at door? good uncle, go and see.</line>
 <line remap="LINE">My lord, come you again into my chamber:</line>
 <line remap="LINE">You smile and mock me, as if I meant naughtily.</line>
@@ -5193,12 +5193,12 @@ DIOMEDES, and others, with torches</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CRESSIDA</speaker>
 <line remap="LINE">Come, you are deceived, I think of no such thing.</line>
-<para remap="STAGEDIR">Knocking within</para>
+<stagedir remap="STAGEDIR">Knocking within</stagedir>
 <line remap="LINE">How earnestly they knock! Pray you, come in:</line>
 <line remap="LINE">I would not for half Troy have you seen here.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt TROILUS and CRESSIDA</para>
+<stagedir remap="STAGEDIR">Exeunt TROILUS and CRESSIDA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -5206,7 +5206,7 @@ DIOMEDES, and others, with torches</para>
 <line remap="LINE">down the door? How now! what's the matter?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter AENEAS</para>
+<stagedir remap="STAGEDIR">Enter AENEAS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AENEAS</speaker>
@@ -5250,7 +5250,7 @@ DIOMEDES, and others, with torches</para>
 <line remap="LINE">fetch him hither; go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter TROILUS</para>
+<stagedir remap="STAGEDIR">Re-enter TROILUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TROILUS</speaker>
@@ -5293,7 +5293,7 @@ DIOMEDES, and others, with torches</para>
 <line remap="LINE">Have not more gift in taciturnity.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt TROILUS and AENEAS</para>
+<stagedir remap="STAGEDIR">Exeunt TROILUS and AENEAS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -5302,7 +5302,7 @@ DIOMEDES, and others, with torches</para>
 <line remap="LINE">plague upon Antenor! I would they had broke 's neck!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter CRESSIDA</para>
+<stagedir remap="STAGEDIR">Re-enter CRESSIDA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CRESSIDA</speaker>
@@ -5387,12 +5387,12 @@ DIOMEDES, and others, with torches</para>
 <line remap="LINE">With sounding Troilus. I will not go from Troy.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The same. Street before Pandarus' house.</title>
-<para remap="STAGEDIR">Enter PARIS, TROILUS, AENEAS, DEIPHOBUS, ANTENOR,
-and DIOMEDES</para>
+<stagedir remap="STAGEDIR">Enter PARIS, TROILUS, AENEAS, DEIPHOBUS, ANTENOR,
+and DIOMEDES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PARIS</speaker>
@@ -5412,7 +5412,7 @@ and DIOMEDES</para>
 <line remap="LINE">A priest there offering to it his own heart.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PARIS</speaker>
@@ -5421,11 +5421,11 @@ and DIOMEDES</para>
 <line remap="LINE">Please you walk in, my lords.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  The same. Pandarus' house.</title>
-<para remap="STAGEDIR">Enter PANDARUS and CRESSIDA</para>
+<stagedir remap="STAGEDIR">Enter PANDARUS and CRESSIDA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -5448,7 +5448,7 @@ and DIOMEDES</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
 <line remap="LINE">Here, here, here he comes.</line>
-<para remap="STAGEDIR">Enter TROILUS</para>
+<stagedir remap="STAGEDIR">Enter TROILUS</stagedir>
 <line remap="LINE">Ah, sweet ducks!</line>
 </linegroup></dialogue>
 
@@ -5457,7 +5457,7 @@ and DIOMEDES</para>
 <line remap="LINE">O Troilus! Troilus!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Embracing him</para>
+<stagedir remap="STAGEDIR">Embracing him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -5538,7 +5538,7 @@ and DIOMEDES</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AENEAS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  My lord, is the lady ready?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  My lord, is the lady ready?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5554,7 +5554,7 @@ and DIOMEDES</para>
 <line remap="LINE">my heart will be blown up by the root.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CRESSIDA</speaker>
@@ -5668,7 +5668,7 @@ and DIOMEDES</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AENEAS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Nay, good my lord,--</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Nay, good my lord,--</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5678,7 +5678,7 @@ and DIOMEDES</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PARIS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Brother Troilus!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Brother Troilus!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5701,8 +5701,8 @@ and DIOMEDES</para>
 <line remap="LINE">With truth and plainness I do wear mine bare.</line>
 <line remap="LINE">Fear not my truth: the moral of my wit</line>
 <line remap="LINE">Is 'plain and true;' there's all the reach of it.</line>
-<para remap="STAGEDIR">Enter AENEAS, PARIS, ANTENOR, DEIPHOBUS,
-and DIOMEDES</para>
+<stagedir remap="STAGEDIR">Enter AENEAS, PARIS, ANTENOR, DEIPHOBUS,
+and DIOMEDES</stagedir>
 <line remap="LINE">Welcome, Sir Diomed! here is the lady</line>
 <line remap="LINE">Which for Antenor we deliver you:</line>
 <line remap="LINE">At the port, lord, I'll give her to thy hand,</line>
@@ -5754,8 +5754,8 @@ and DIOMEDES</para>
 <line remap="LINE">To our own selves bend we our needful talk.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt TROILUS, CRESSIDA, and DIOMEDES</para>
-<para remap="STAGEDIR">Trumpet within</para>
+<stagedir remap="STAGEDIR">Exeunt TROILUS, CRESSIDA, and DIOMEDES</stagedir>
+<stagedir remap="STAGEDIR">Trumpet within</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PARIS</speaker>
@@ -5787,12 +5787,12 @@ and DIOMEDES</para>
 <line remap="LINE">On his fair worth and single chivalry.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  The Grecian camp. Lists set out.</title>
-<para remap="STAGEDIR">Enter AJAX, armed; AGAMEMNON, ACHILLES, PATROCLUS,
-MENELAUS, ULYSSES, NESTOR, and others</para>
+<stagedir remap="STAGEDIR">Enter AJAX, armed; AGAMEMNON, ACHILLES, PATROCLUS,
+MENELAUS, ULYSSES, NESTOR, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AGAMEMNON</speaker>
@@ -5814,7 +5814,7 @@ MENELAUS, ULYSSES, NESTOR, and others</para>
 <line remap="LINE">Thou blow'st for Hector.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Trumpet sounds</para>
+<stagedir remap="STAGEDIR">Trumpet sounds</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ULYSSES</speaker>
@@ -5838,7 +5838,7 @@ MENELAUS, ULYSSES, NESTOR, and others</para>
 <line remap="LINE">In aspiration lifts him from the earth.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DIOMEDES, with CRESSIDA</para>
+<stagedir remap="STAGEDIR">Enter DIOMEDES, with CRESSIDA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AGAMEMNON</speaker>
@@ -6007,7 +6007,7 @@ MENELAUS, ULYSSES, NESTOR, and others</para>
 <line remap="LINE">Lady, a word: I'll bring you to your father.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit with CRESSIDA</para>
+<stagedir remap="STAGEDIR">Exit with CRESSIDA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NESTOR</speaker>
@@ -6028,7 +6028,7 @@ MENELAUS, ULYSSES, NESTOR, and others</para>
 <line remap="LINE">And daughters of the game.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Trumpet within</para>
+<stagedir remap="STAGEDIR">Trumpet within</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ALL</speaker>
@@ -6040,8 +6040,8 @@ MENELAUS, ULYSSES, NESTOR, and others</para>
 <line remap="LINE">Yonder comes the troop.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HECTOR, armed; AENEAS, TROILUS, and other
-Trojans, with Attendants</para>
+<stagedir remap="STAGEDIR">Enter HECTOR, armed; AENEAS, TROILUS, and other
+Trojans, with Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AENEAS</speaker>
@@ -6101,7 +6101,7 @@ Trojans, with Attendants</para>
 <line remap="LINE">A maiden battle, then? O, I perceive you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter DIOMEDES</para>
+<stagedir remap="STAGEDIR">Re-enter DIOMEDES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AGAMEMNON</speaker>
@@ -6113,7 +6113,7 @@ Trojans, with Attendants</para>
 <line remap="LINE">Half stints their strife before their strokes begin.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">AJAX and HECTOR enter the lists</para>
+<stagedir remap="STAGEDIR">AJAX and HECTOR enter the lists</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ULYSSES</speaker>
@@ -6146,7 +6146,7 @@ Trojans, with Attendants</para>
 <line remap="LINE">Did in great Ilion thus translate him to me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Alarum. Hector and Ajax fight</para>
+<stagedir remap="STAGEDIR">Alarum. Hector and Ajax fight</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AGAMEMNON</speaker>
@@ -6174,7 +6174,7 @@ Trojans, with Attendants</para>
 <line remap="LINE">You must no more.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Trumpets cease</para>
+<stagedir remap="STAGEDIR">Trumpets cease</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AENEAS</speaker>
@@ -6297,7 +6297,7 @@ Trojans, with Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AGAMEMNON</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To TROILUS</phrase>  My well-famed lord of Troy, no</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To TROILUS</inlinestagedir>  My well-famed lord of Troy, no</line>
 <line remap="LINE">less to you.</line>
 </linegroup></dialogue>
 
@@ -6549,7 +6549,7 @@ Trojans, with Attendants</para>
 <line remap="LINE">That this great soldier may his welcome know.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all except TROILUS and ULYSSES</para>
+<stagedir remap="STAGEDIR">Exeunt all except TROILUS and ULYSSES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TROILUS</speaker>
@@ -6589,7 +6589,7 @@ Trojans, with Attendants</para>
 <line remap="LINE">But still sweet love is food for fortune's tooth.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -6597,7 +6597,7 @@ Trojans, with Attendants</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  The Grecian camp. Before Achilles' tent.</title>
-<para remap="STAGEDIR">Enter ACHILLES and PATROCLUS</para>
+<stagedir remap="STAGEDIR">Enter ACHILLES and PATROCLUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ACHILLES</speaker>
@@ -6611,7 +6611,7 @@ Trojans, with Attendants</para>
 <line remap="LINE">Here comes Thersites.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter THERSITES</para>
+<stagedir remap="STAGEDIR">Enter THERSITES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ACHILLES</speaker>
@@ -6724,7 +6724,7 @@ Trojans, with Attendants</para>
 <line remap="LINE">Away, Patroclus!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt ACHILLES and PATROCLUS</para>
+<stagedir remap="STAGEDIR">Exeunt ACHILLES and PATROCLUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THERSITES</speaker>
@@ -6750,8 +6750,8 @@ Trojans, with Attendants</para>
 <line remap="LINE">spirits and fires!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HECTOR, TROILUS, AJAX, AGAMEMNON, ULYSSES,
-NESTOR, MENELAUS, and DIOMEDES, with lights</para>
+<stagedir remap="STAGEDIR">Enter HECTOR, TROILUS, AJAX, AGAMEMNON, ULYSSES,
+NESTOR, MENELAUS, and DIOMEDES, with lights</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AGAMEMNON</speaker>
@@ -6779,7 +6779,7 @@ NESTOR, MENELAUS, and DIOMEDES, with lights</para>
 <line remap="LINE">Here comes himself to guide you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter ACHILLES</para>
+<stagedir remap="STAGEDIR">Re-enter ACHILLES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ACHILLES</speaker>
@@ -6824,7 +6824,7 @@ NESTOR, MENELAUS, and DIOMEDES, with lights</para>
 <line remap="LINE">Good night.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt AGAMEMNON and MENELAUS</para>
+<stagedir remap="STAGEDIR">Exeunt AGAMEMNON and MENELAUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ACHILLES</speaker>
@@ -6845,7 +6845,7 @@ NESTOR, MENELAUS, and DIOMEDES, with lights</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ULYSSES</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to TROILUS</phrase>  Follow his torch; he goes to</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to TROILUS</inlinestagedir>  Follow his torch; he goes to</line>
 <line remap="LINE">Calchas' tent:</line>
 <line remap="LINE">I'll keep you company.</line>
 </linegroup></dialogue>
@@ -6860,14 +6860,14 @@ NESTOR, MENELAUS, and DIOMEDES, with lights</para>
 <line remap="LINE">And so, good night.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit DIOMEDES; ULYSSES and TROILUS following</para>
+<stagedir remap="STAGEDIR">Exit DIOMEDES; ULYSSES and TROILUS following</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ACHILLES</speaker>
 <line remap="LINE">Come, come, enter my tent.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt ACHILLES, HECTOR, AJAX, and NESTOR</para>
+<stagedir remap="STAGEDIR">Exeunt ACHILLES, HECTOR, AJAX, and NESTOR</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THERSITES</speaker>
@@ -6884,11 +6884,11 @@ NESTOR, MENELAUS, and DIOMEDES, with lights</para>
 <line remap="LINE">after. Nothing but lechery! all incontinent varlets!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same. Before Calchas' tent.</title>
-<para remap="STAGEDIR">Enter DIOMEDES</para>
+<stagedir remap="STAGEDIR">Enter DIOMEDES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DIOMEDES</speaker>
@@ -6897,7 +6897,7 @@ NESTOR, MENELAUS, and DIOMEDES, with lights</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CALCHAS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Who calls?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Who calls?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -6907,18 +6907,18 @@ NESTOR, MENELAUS, and DIOMEDES, with lights</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CALCHAS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  She comes to you.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  She comes to you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter TROILUS and ULYSSES, at a distance;
-after them, THERSITES</para>
+<stagedir remap="STAGEDIR">Enter TROILUS and ULYSSES, at a distance;
+after them, THERSITES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ULYSSES</speaker>
 <line remap="LINE">Stand where the torch may not discover us.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CRESSIDA</para>
+<stagedir remap="STAGEDIR">Enter CRESSIDA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TROILUS</speaker>
@@ -6935,7 +6935,7 @@ after them, THERSITES</para>
 <line remap="LINE">Now, my sweet guardian! Hark, a word with you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Whispers</para>
+<stagedir remap="STAGEDIR">Whispers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TROILUS</speaker>
@@ -7191,7 +7191,7 @@ after them, THERSITES</para>
 <line remap="LINE">I'll fetch you one.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ULYSSES</speaker>
@@ -7205,7 +7205,7 @@ after them, THERSITES</para>
 <line remap="LINE">Of what I feel: I am all patience.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter CRESSIDA</para>
+<stagedir remap="STAGEDIR">Re-enter CRESSIDA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THERSITES</speaker>
@@ -7386,7 +7386,7 @@ after them, THERSITES</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CRESSIDA</speaker>
 <line remap="LINE">Good night: I prithee, come.</line>
-<para remap="STAGEDIR">Exit DIOMEDES</para>
+<stagedir remap="STAGEDIR">Exit DIOMEDES</stagedir>
 <line remap="LINE">Troilus, farewell! one eye yet looks on thee</line>
 <line remap="LINE">But with my heart the other eye doth see.</line>
 <line remap="LINE">Ah, poor our sex! this fault in us I find,</line>
@@ -7395,7 +7395,7 @@ after them, THERSITES</para>
 <line remap="LINE">Minds sway'd by eyes are full of turpitude.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THERSITES</speaker>
@@ -7551,7 +7551,7 @@ after them, THERSITES</para>
 <line remap="LINE">Your passion draws ears hither.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter AENEAS</para>
+<stagedir remap="STAGEDIR">Enter AENEAS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AENEAS</speaker>
@@ -7577,7 +7577,7 @@ after them, THERSITES</para>
 <line remap="LINE">Accept distracted thanks.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt TROILUS, AENEAS, and ULYSSES</para>
+<stagedir remap="STAGEDIR">Exeunt TROILUS, AENEAS, and ULYSSES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THERSITES</speaker>
@@ -7590,11 +7590,11 @@ after them, THERSITES</para>
 <line remap="LINE">else holds fashion: a burning devil take them!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Troy. Before Priam's palace.</title>
-<para remap="STAGEDIR">Enter HECTOR and ANDROMACHE</para>
+<stagedir remap="STAGEDIR">Enter HECTOR and ANDROMACHE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANDROMACHE</speaker>
@@ -7619,7 +7619,7 @@ after them, THERSITES</para>
 <line remap="LINE">No more, I say.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CASSANDRA</para>
+<stagedir remap="STAGEDIR">Enter CASSANDRA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSANDRA</speaker>
@@ -7683,7 +7683,7 @@ after them, THERSITES</para>
 <line remap="LINE">Mine honour keeps the weather of my fate:</line>
 <line remap="LINE">Lie every man holds dear; but the brave man</line>
 <line remap="LINE">Holds honour far more precious-dear than life.</line>
-<para remap="STAGEDIR">Enter TROILUS</para>
+<stagedir remap="STAGEDIR">Enter TROILUS</stagedir>
 <line remap="LINE">How now, young man! mean'st thou to fight to-day?</line>
 </linegroup></dialogue>
 
@@ -7692,7 +7692,7 @@ after them, THERSITES</para>
 <line remap="LINE">Cassandra, call my father to persuade.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit CASSANDRA</para>
+<stagedir remap="STAGEDIR">Exit CASSANDRA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HECTOR</speaker>
@@ -7773,7 +7773,7 @@ after them, THERSITES</para>
 <line remap="LINE">But by my ruin.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter CASSANDRA, with PRIAM</para>
+<stagedir remap="STAGEDIR">Re-enter CASSANDRA, with PRIAM</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSANDRA</speaker>
@@ -7831,7 +7831,7 @@ after them, THERSITES</para>
 <line remap="LINE">Upon the love you bear me, get you in.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit ANDROMACHE</para>
+<stagedir remap="STAGEDIR">Exit ANDROMACHE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TROILUS</speaker>
@@ -7862,7 +7862,7 @@ after them, THERSITES</para>
 <line remap="LINE">Thou dost thyself and all our Troy deceive.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HECTOR</speaker>
@@ -7876,7 +7876,7 @@ after them, THERSITES</para>
 <line remap="LINE">Farewell: the gods with safety stand about thee!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt severally PRIAM and HECTOR. Alarums</para>
+<stagedir remap="STAGEDIR">Exeunt severally PRIAM and HECTOR. Alarums</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TROILUS</speaker>
@@ -7884,7 +7884,7 @@ after them, THERSITES</para>
 <line remap="LINE">I come to lose my arm, or win my sleeve.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PANDARUS</para>
+<stagedir remap="STAGEDIR">Enter PANDARUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -7921,17 +7921,17 @@ after them, THERSITES</para>
 <speaker remap="SPEAKER">TROILUS</speaker>
 <line remap="LINE">Words, words, mere words, no matter from the heart:</line>
 <line remap="LINE">The effect doth operate another way.</line>
-<para remap="STAGEDIR">Tearing the letter</para>
+<stagedir remap="STAGEDIR">Tearing the letter</stagedir>
 <line remap="LINE">Go, wind, to wind, there turn and change together.</line>
 <line remap="LINE">My love with words and errors still she feeds;</line>
 <line remap="LINE">But edifies another with her deeds.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt severally</para>
+<stagedir remap="STAGEDIR">Exeunt severally</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Plains between Troy and the Grecian camp.</title>
-<para remap="STAGEDIR">Alarums: excursions. Enter THERSITES</para>
+<stagedir remap="STAGEDIR">Alarums: excursions. Enter THERSITES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THERSITES</speaker>
@@ -7955,7 +7955,7 @@ after them, THERSITES</para>
 <line remap="LINE">Soft! here comes sleeve, and t'other.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DIOMEDES, TROILUS following</para>
+<stagedir remap="STAGEDIR">Enter DIOMEDES, TROILUS following</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TROILUS</speaker>
@@ -7977,8 +7977,8 @@ after them, THERSITES</para>
 <line remap="LINE">Trojan!--now the sleeve, now the sleeve!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt TROILUS and DIOMEDES, fighting</para>
-<para remap="STAGEDIR">Enter HECTOR</para>
+<stagedir remap="STAGEDIR">Exeunt TROILUS and DIOMEDES, fighting</stagedir>
+<stagedir remap="STAGEDIR">Enter HECTOR</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HECTOR</speaker>
@@ -7997,7 +7997,7 @@ after them, THERSITES</para>
 <line remap="LINE">I do believe thee: live.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THERSITES</speaker>
@@ -8009,11 +8009,11 @@ after them, THERSITES</para>
 <line remap="LINE">I'll seek them.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Another part of the plains.</title>
-<para remap="STAGEDIR">Enter DIOMEDES and a Servant</para>
+<stagedir remap="STAGEDIR">Enter DIOMEDES and a Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DIOMEDES</speaker>
@@ -8029,8 +8029,8 @@ after them, THERSITES</para>
 <line remap="LINE">I go, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter AGAMEMNON</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter AGAMEMNON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AGAMEMNON</speaker>
@@ -8047,7 +8047,7 @@ after them, THERSITES</para>
 <line remap="LINE">To reinforcement, or we perish all.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter NESTOR</para>
+<stagedir remap="STAGEDIR">Enter NESTOR</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NESTOR</speaker>
@@ -8066,7 +8066,7 @@ after them, THERSITES</para>
 <line remap="LINE">That proof is call'd impossibility.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ULYSSES</para>
+<stagedir remap="STAGEDIR">Enter ULYSSES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ULYSSES</speaker>
@@ -8085,14 +8085,14 @@ after them, THERSITES</para>
 <line remap="LINE">Bade him win all.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter AJAX</para>
+<stagedir remap="STAGEDIR">Enter AJAX</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AJAX</speaker>
 <line remap="LINE">Troilus! thou coward Troilus!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DIOMEDES</speaker>
@@ -8104,7 +8104,7 @@ after them, THERSITES</para>
 <line remap="LINE">So, so, we draw together.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ACHILLES</para>
+<stagedir remap="STAGEDIR">Enter ACHILLES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ACHILLES</speaker>
@@ -8114,18 +8114,18 @@ after them, THERSITES</para>
 <line remap="LINE">Hector? where's Hector? I will none but Hector.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  Another part of the plains.</title>
-<para remap="STAGEDIR">Enter AJAX</para>
+<stagedir remap="STAGEDIR">Enter AJAX</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AJAX</speaker>
 <line remap="LINE">Troilus, thou coward Troilus, show thy head!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DIOMEDES</para>
+<stagedir remap="STAGEDIR">Enter DIOMEDES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DIOMEDES</speaker>
@@ -8148,7 +8148,7 @@ after them, THERSITES</para>
 <line remap="LINE">Ere that correction. Troilus, I say! what, Troilus!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter TROILUS</para>
+<stagedir remap="STAGEDIR">Enter TROILUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TROILUS</speaker>
@@ -8176,15 +8176,15 @@ after them, THERSITES</para>
 <line remap="LINE">Come, both you cogging Greeks; have at you both!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt, fighting</para>
-<para remap="STAGEDIR">Enter HECTOR</para>
+<stagedir remap="STAGEDIR">Exeunt, fighting</stagedir>
+<stagedir remap="STAGEDIR">Enter HECTOR</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HECTOR</speaker>
 <line remap="LINE">Yea, Troilus? O, well fought, my youngest brother!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ACHILLES</para>
+<stagedir remap="STAGEDIR">Enter ACHILLES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ACHILLES</speaker>
@@ -8205,7 +8205,7 @@ after them, THERSITES</para>
 <line remap="LINE">Till when, go seek thy fortune.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HECTOR</speaker>
@@ -8214,7 +8214,7 @@ after them, THERSITES</para>
 <line remap="LINE">Had I expected thee. How now, my brother!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter TROILUS</para>
+<stagedir remap="STAGEDIR">Re-enter TROILUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TROILUS</speaker>
@@ -8225,8 +8225,8 @@ after them, THERSITES</para>
 <line remap="LINE">I reck not though I end my life to-day.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter one in sumptuous armour</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter one in sumptuous armour</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HECTOR</speaker>
@@ -8238,11 +8238,11 @@ after them, THERSITES</para>
 <line remap="LINE">Why, then fly on, I'll hunt thee for thy hide.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VII.  Another part of the plains.</title>
-<para remap="STAGEDIR">Enter ACHILLES, with Myrmidons</para>
+<stagedir remap="STAGEDIR">Enter ACHILLES, with Myrmidons</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ACHILLES</speaker>
@@ -8256,9 +8256,9 @@ after them, THERSITES</para>
 <line remap="LINE">It is decreed Hector the great must die.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
-<para remap="STAGEDIR">Enter MENELAUS and PARIS, fighting:
-then THERSITES</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
+<stagedir remap="STAGEDIR">Enter MENELAUS and PARIS, fighting:
+then THERSITES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THERSITES</speaker>
@@ -8268,8 +8268,8 @@ then THERSITES</para>
 <line remap="LINE">game: ware horns, ho!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt PARIS and MENELAUS</para>
-<para remap="STAGEDIR">Enter MARGARELON</para>
+<stagedir remap="STAGEDIR">Exeunt PARIS and MENELAUS</stagedir>
+<stagedir remap="STAGEDIR">Enter MARGARELON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARGARELON</speaker>
@@ -8297,18 +8297,18 @@ then THERSITES</para>
 <line remap="LINE">farewell, bastard.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARGARELON</speaker>
 <line remap="LINE">The devil take thee, coward!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VIII.  Another part of the plains.</title>
-<para remap="STAGEDIR">Enter HECTOR</para>
+<stagedir remap="STAGEDIR">Enter HECTOR</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HECTOR</speaker>
@@ -8318,9 +8318,9 @@ then THERSITES</para>
 <line remap="LINE">Rest, sword; thou hast thy fill of blood and death.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Puts off his helmet and hangs his shield
-behind him</para>
-<para remap="STAGEDIR">Enter ACHILLES and Myrmidons</para>
+<stagedir remap="STAGEDIR">Puts off his helmet and hangs his shield
+behind him</stagedir>
+<stagedir remap="STAGEDIR">Enter ACHILLES and Myrmidons</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ACHILLES</speaker>
@@ -8338,12 +8338,12 @@ behind him</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ACHILLES</speaker>
 <line remap="LINE">Strike, fellows, strike; this is the man I seek.</line>
-<para remap="STAGEDIR">HECTOR falls</para>
+<stagedir remap="STAGEDIR">HECTOR falls</stagedir>
 <line remap="LINE">So, Ilion, fall thou next! now, Troy, sink down!</line>
 <line remap="LINE">Here lies thy heart, thy sinews, and thy bone.</line>
 <line remap="LINE">On, Myrmidons, and cry you all amain,</line>
 <line remap="LINE">'Achilles hath the mighty Hector slain.'</line>
-<para remap="STAGEDIR">A retreat sounded</para>
+<stagedir remap="STAGEDIR">A retreat sounded</stagedir>
 <line remap="LINE">Hark! a retire upon our Grecian part.</line>
 </linegroup></dialogue>
 
@@ -8358,17 +8358,17 @@ behind him</para>
 <line remap="LINE">And, stickler-like, the armies separates.</line>
 <line remap="LINE">My half-supp'd sword, that frankly would have fed,</line>
 <line remap="LINE">Pleased with this dainty bait, thus goes to bed.</line>
-<para remap="STAGEDIR">Sheathes his sword</para>
+<stagedir remap="STAGEDIR">Sheathes his sword</stagedir>
 <line remap="LINE">Come, tie his body to my horse's tail;</line>
 <line remap="LINE">Along the field I will the Trojan trail.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IX.  Another part of the plains.</title>
-<para remap="STAGEDIR">Enter AGAMEMNON, AJAX, MENELAUS, NESTOR, DIOMEDES,
-and others, marching. Shouts within</para>
+<stagedir remap="STAGEDIR">Enter AGAMEMNON, AJAX, MENELAUS, NESTOR, DIOMEDES,
+and others, marching. Shouts within</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AGAMEMNON</speaker>
@@ -8378,7 +8378,7 @@ and others, marching. Shouts within</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NESTOR</speaker>
 <line remap="LINE">Peace, drums!</line>
-<para remap="STAGEDIR">Within</para>
+<stagedir remap="STAGEDIR">Within</stagedir>
 <line remap="LINE">Achilles! Achilles! Hector's slain! Achilles.</line>
 </linegroup></dialogue>
 
@@ -8401,11 +8401,11 @@ and others, marching. Shouts within</para>
 <line remap="LINE">Great Troy is ours, and our sharp wars are ended.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt, marching</para>
+<stagedir remap="STAGEDIR">Exeunt, marching</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE X.  Another part of the plains.</title>
-<para remap="STAGEDIR">Enter AENEAS and Trojans</para>
+<stagedir remap="STAGEDIR">Enter AENEAS and Trojans</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AENEAS</speaker>
@@ -8413,7 +8413,7 @@ and others, marching. Shouts within</para>
 <line remap="LINE">Never go home; here starve we out the night.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter TROILUS</para>
+<stagedir remap="STAGEDIR">Enter TROILUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TROILUS</speaker>
@@ -8465,9 +8465,9 @@ and others, marching. Shouts within</para>
 <line remap="LINE">Hope of revenge shall hide our inward woe.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt AENEAS and Trojans</para>
-<para remap="STAGEDIR">As TROILUS is going out, enter, from the other
-side, PANDARUS</para>
+<stagedir remap="STAGEDIR">Exeunt AENEAS and Trojans</stagedir>
+<stagedir remap="STAGEDIR">As TROILUS is going out, enter, from the other
+side, PANDARUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -8480,7 +8480,7 @@ side, PANDARUS</para>
 <line remap="LINE">Pursue thy life, and live aye with thy name!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANDARUS</speaker>
@@ -8508,7 +8508,7 @@ side, PANDARUS</para>
 <line remap="LINE">And at that time bequeathe you my diseases.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 </chapter>
 </book>

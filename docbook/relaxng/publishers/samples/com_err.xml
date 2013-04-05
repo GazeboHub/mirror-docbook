@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">The Comedy of Errors</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">The Comedy of Errors</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The Comedy of Errors</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -25,17 +25,17 @@
 <para><personname remap="PERSONA">LUCE, servant to Adriana.</personname></para>
 <para><personname remap="PERSONA">A Courtezan.</personname></para>
 <para><personname remap="PERSONA">Gaoler, Officers, and other Attendants</personname></para>
-    <para remap="SCNDESCR">SCENE  Ephesus.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  Ephesus.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A hall in DUKE SOLINUS'S palace.</title>
-<para remap="STAGEDIR">Enter DUKE SOLINUS, AEGEON, Gaoler, Officers, and other
-Attendants</para>
+<stagedir remap="STAGEDIR">Enter DUKE SOLINUS, AEGEON, Gaoler, Officers, and other
+Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AEGEON</speaker>
@@ -243,12 +243,12 @@ Attendants</para>
 <line remap="LINE">But to procrastinate his lifeless end.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The Mart.</title>
-<para remap="STAGEDIR">Enter ANTIPHOLUS of Syracuse, DROMIO of Syracuse,
-and First Merchant</para>
+<stagedir remap="STAGEDIR">Enter ANTIPHOLUS of Syracuse, DROMIO of Syracuse,
+and First Merchant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Merchant</speaker>
@@ -280,7 +280,7 @@ and First Merchant</para>
 <line remap="LINE">And go indeed, having so good a mean.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTIPHOLUS OF SYRACUSE</speaker>
@@ -312,7 +312,7 @@ and First Merchant</para>
 <line remap="LINE">Sir, I commend you to your own content.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTIPHOLUS OF SYRACUSE</speaker>
@@ -324,7 +324,7 @@ and First Merchant</para>
 <line remap="LINE">Unseen, inquisitive, confounds himself:</line>
 <line remap="LINE">So I, to find a mother and a brother,</line>
 <line remap="LINE">In quest of them, unhappy, lose myself.</line>
-<para remap="STAGEDIR">Enter DROMIO of Ephesus</para>
+<stagedir remap="STAGEDIR">Enter DROMIO of Ephesus</stagedir>
 <line remap="LINE">Here comes the almanac of my true date.</line>
 <line remap="LINE">What now? how chance thou art return'd so soon?</line>
 </linegroup></dialogue>
@@ -440,7 +440,7 @@ and First Merchant</para>
 <line remap="LINE">Nay, and you will not, sir, I'll take my heels.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTIPHOLUS OF SYRACUSE</speaker>
@@ -457,7 +457,7 @@ and First Merchant</para>
 <line remap="LINE">I greatly fear my money is not safe.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -465,7 +465,7 @@ and First Merchant</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  The house of ANTIPHOLUS of Ephesus.</title>
-<para remap="STAGEDIR">Enter ADRIANA and LUCIANA</para>
+<stagedir remap="STAGEDIR">Enter ADRIANA and LUCIANA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ADRIANA</speaker>
@@ -574,7 +574,7 @@ and First Merchant</para>
 <line remap="LINE">Here comes your man; now is your husband nigh.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DROMIO of Ephesus</para>
+<stagedir remap="STAGEDIR">Enter DROMIO of Ephesus</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ADRIANA</speaker>
@@ -690,7 +690,7 @@ and First Merchant</para>
 <line remap="LINE">If I last in this service, you must case me in leather.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIANA</speaker>
@@ -743,11 +743,11 @@ and First Merchant</para>
 <line remap="LINE">How many fond fools serve mad jealousy!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A public place.</title>
-<para remap="STAGEDIR">Enter ANTIPHOLUS of Syracuse</para>
+<stagedir remap="STAGEDIR">Enter ANTIPHOLUS of Syracuse</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTIPHOLUS OF SYRACUSE</speaker>
@@ -757,7 +757,7 @@ and First Merchant</para>
 <line remap="LINE">By computation and mine host's report.</line>
 <line remap="LINE">I could not speak with Dromio since at first</line>
 <line remap="LINE">I sent him from the mart. See, here he comes.</line>
-<para remap="STAGEDIR">Enter DROMIO of Syracuse</para>
+<stagedir remap="STAGEDIR">Enter DROMIO of Syracuse</stagedir>
 <line remap="LINE">How now sir! is your merry humour alter'd?</line>
 <line remap="LINE">As you love strokes, so jest with me again.</line>
 <line remap="LINE">You know no Centaur? you received no gold?</line>
@@ -801,7 +801,7 @@ and First Merchant</para>
 <line remap="LINE">Think'st thou I jest? Hold, take thou that, and that.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Beating him</para>
+<stagedir remap="STAGEDIR">Beating him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DROMIO OF SYRACUSE</speaker>
@@ -1067,7 +1067,7 @@ and First Merchant</para>
 <line remap="LINE">But, soft! who wafts us yonder?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ADRIANA and LUCIANA</para>
+<stagedir remap="STAGEDIR">Enter ADRIANA and LUCIANA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ADRIANA</speaker>
@@ -1292,7 +1292,7 @@ and First Merchant</para>
 <line remap="LINE">Come, come, Antipholus, we dine too late.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -1300,8 +1300,8 @@ and First Merchant</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Before the house of ANTIPHOLUS of Ephesus.</title>
-<para remap="STAGEDIR">Enter ANTIPHOLUS of Ephesus, DROMIO of Ephesus,
-ANGELO, and BALTHAZAR</para>
+<stagedir remap="STAGEDIR">Enter ANTIPHOLUS of Ephesus, DROMIO of Ephesus,
+ANGELO, and BALTHAZAR</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OF EPHESUS</speaker>
@@ -1386,7 +1386,7 @@ ANGELO, and BALTHAZAR</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DROMIO OF SYRACUSE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Mome, malt-horse, capon, coxcomb,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Mome, malt-horse, capon, coxcomb,</line>
 <line remap="LINE">idiot, patch!</line>
 <line remap="LINE">Either get thee from the door, or sit down at the hatch.</line>
 <line remap="LINE">Dost thou conjure for wenches, that thou call'st</line>
@@ -1402,7 +1402,7 @@ ANGELO, and BALTHAZAR</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DROMIO OF SYRACUSE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Let him walk from whence he came, lest he</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Let him walk from whence he came, lest he</line>
 <line remap="LINE">catch cold on's feet.</line>
 </linegroup></dialogue>
 
@@ -1413,7 +1413,7 @@ ANGELO, and BALTHAZAR</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DROMIO OF SYRACUSE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Right, sir; I'll tell you when, an you tell</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Right, sir; I'll tell you when, an you tell</line>
 <line remap="LINE">me wherefore.</line>
 </linegroup></dialogue>
 
@@ -1424,7 +1424,7 @@ ANGELO, and BALTHAZAR</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DROMIO OF SYRACUSE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Nor to-day here you must not; come again</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Nor to-day here you must not; come again</line>
 <line remap="LINE">when you may.</line>
 </linegroup></dialogue>
 
@@ -1435,7 +1435,7 @@ ANGELO, and BALTHAZAR</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DROMIO OF SYRACUSE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  The porter for this time, sir, and my name</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  The porter for this time, sir, and my name</line>
 <line remap="LINE">is Dromio.</line>
 </linegroup></dialogue>
 
@@ -1450,7 +1450,7 @@ ANGELO, and BALTHAZAR</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  What a coil is there, Dromio? who are those</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  What a coil is there, Dromio? who are those</line>
 <line remap="LINE">at the gate?</line>
 </linegroup></dialogue>
 
@@ -1461,7 +1461,7 @@ ANGELO, and BALTHAZAR</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Faith, no; he comes too late;</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Faith, no; he comes too late;</line>
 <line remap="LINE">And so tell your master.</line>
 </linegroup></dialogue>
 
@@ -1473,13 +1473,13 @@ ANGELO, and BALTHAZAR</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Have at you with another; that's--When?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Have at you with another; that's--When?</line>
 <line remap="LINE">can you tell?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DROMIO OF SYRACUSE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  If thy name be call'd Luce--Luce, thou hast</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  If thy name be call'd Luce--Luce, thou hast</line>
 <line remap="LINE">answered him well.</line>
 </linegroup></dialogue>
 
@@ -1490,12 +1490,12 @@ ANGELO, and BALTHAZAR</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  I thought to have asked you.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  I thought to have asked you.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DROMIO OF SYRACUSE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  And you said no.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  And you said no.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1510,7 +1510,7 @@ ANGELO, and BALTHAZAR</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Can you tell for whose sake?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Can you tell for whose sake?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1520,7 +1520,7 @@ ANGELO, and BALTHAZAR</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Let him knock till it ache.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Let him knock till it ache.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1530,18 +1530,18 @@ ANGELO, and BALTHAZAR</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  What needs all that, and a pair of stocks in the town?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  What needs all that, and a pair of stocks in the town?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ADRIANA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Who is that at the door that keeps all</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Who is that at the door that keeps all</line>
 <line remap="LINE">this noise?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DROMIO OF SYRACUSE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  By my troth, your town is troubled with</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  By my troth, your town is troubled with</line>
 <line remap="LINE">unruly boys.</line>
 </linegroup></dialogue>
 
@@ -1552,7 +1552,7 @@ ANGELO, and BALTHAZAR</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ADRIANA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Your wife, sir knave! go get you from the door.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Your wife, sir knave! go get you from the door.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1595,7 +1595,7 @@ ANGELO, and BALTHAZAR</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DROMIO OF SYRACUSE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Break any breaking here, and I'll break your</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Break any breaking here, and I'll break your</line>
 <line remap="LINE">knave's pate.</line>
 </linegroup></dialogue>
 
@@ -1607,7 +1607,7 @@ ANGELO, and BALTHAZAR</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DROMIO OF SYRACUSE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  It seems thou want'st breaking: out upon</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  It seems thou want'st breaking: out upon</line>
 <line remap="LINE">thee, hind!</line>
 </linegroup></dialogue>
 
@@ -1619,7 +1619,7 @@ ANGELO, and BALTHAZAR</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DROMIO OF SYRACUSE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Ay, when fowls have no feathers and fish have no fin.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Ay, when fowls have no feathers and fish have no fin.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1675,7 +1675,7 @@ ANGELO, and BALTHAZAR</para>
 <line remap="LINE">My wife--but, I protest, without desert--</line>
 <line remap="LINE">Hath oftentimes upbraided me withal:</line>
 <line remap="LINE">To her will we to dinner.</line>
-<para remap="STAGEDIR">To Angelo</para>
+<stagedir remap="STAGEDIR">To Angelo</stagedir>
 <line remap="LINE">Get you home</line>
 <line remap="LINE">And fetch the chain; by this I know 'tis made:</line>
 <line remap="LINE">Bring it, I pray you, to the Porpentine;</line>
@@ -1696,11 +1696,11 @@ ANGELO, and BALTHAZAR</para>
 <line remap="LINE">Do so. This jest shall cost me some expense.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same.</title>
-<para remap="STAGEDIR">Enter LUCIANA and ANTIPHOLUS of Syracuse</para>
+<stagedir remap="STAGEDIR">Enter LUCIANA and ANTIPHOLUS of Syracuse</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIANA</speaker>
@@ -1835,8 +1835,8 @@ ANGELO, and BALTHAZAR</para>
 <line remap="LINE">I'll fetch my sister, to get her good will.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter DROMIO of Syracuse</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter DROMIO of Syracuse</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTIPHOLUS OF SYRACUSE</speaker>
@@ -2054,7 +2054,7 @@ ANGELO, and BALTHAZAR</para>
 <line remap="LINE">So fly I from her that would be my wife.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTIPHOLUS OF SYRACUSE</speaker>
@@ -2069,7 +2069,7 @@ ANGELO, and BALTHAZAR</para>
 <line remap="LINE">I'll stop mine ears against the mermaid's song.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ANGELO with the chain</para>
+<stagedir remap="STAGEDIR">Enter ANGELO with the chain</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANGELO</speaker>
@@ -2122,7 +2122,7 @@ ANGELO, and BALTHAZAR</para>
 <line remap="LINE">You are a merry man, sir: fare you well.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTIPHOLUS OF SYRACUSE</speaker>
@@ -2135,7 +2135,7 @@ ANGELO, and BALTHAZAR</para>
 <line remap="LINE">If any ship put out, then straight away.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -2143,7 +2143,7 @@ ANGELO, and BALTHAZAR</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A public place.</title>
-<para remap="STAGEDIR">Enter Second Merchant, ANGELO, and an Officer</para>
+<stagedir remap="STAGEDIR">Enter Second Merchant, ANGELO, and an Officer</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Merchant</speaker>
@@ -2166,8 +2166,8 @@ ANGELO, and BALTHAZAR</para>
 <line remap="LINE">I will discharge my bond and thank you too.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ANTIPHOLUS of Ephesus and DROMIO of Ephesus
-from the courtezan's</para>
+<stagedir remap="STAGEDIR">Enter ANTIPHOLUS of Ephesus and DROMIO of Ephesus
+from the courtezan's</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Officer</speaker>
@@ -2189,7 +2189,7 @@ from the courtezan's</para>
 <line remap="LINE">I buy a thousand pound a year: I buy a rope.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTIPHOLUS OF EPHESUS</speaker>
@@ -2370,7 +2370,7 @@ from the courtezan's</para>
 <line remap="LINE">To your notorious shame; I doubt it not.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DROMIO of Syracuse, from the bay</para>
+<stagedir remap="STAGEDIR">Enter DROMIO of Syracuse, from the bay</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DROMIO OF SYRACUSE</speaker>
@@ -2420,8 +2420,8 @@ from the courtezan's</para>
 <line remap="LINE">On, officer, to prison till it come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Second Merchant, Angelo, Officer, and
-Antipholus of Ephesus</para>
+<stagedir remap="STAGEDIR">Exeunt Second Merchant, Angelo, Officer, and
+Antipholus of Ephesus</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DROMIO OF SYRACUSE</speaker>
@@ -2432,11 +2432,11 @@ Antipholus of Ephesus</para>
 <line remap="LINE">For servants must their masters' minds fulfil.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The house of ANTIPHOLUS of Ephesus.</title>
-<para remap="STAGEDIR">Enter ADRIANA and LUCIANA</para>
+<stagedir remap="STAGEDIR">Enter ADRIANA and LUCIANA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ADRIANA</speaker>
@@ -2528,7 +2528,7 @@ Antipholus of Ephesus</para>
 <line remap="LINE">My heart prays for him, though my tongue do curse.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DROMIO of Syracuse</para>
+<stagedir remap="STAGEDIR">Enter DROMIO of Syracuse</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DROMIO OF SYRACUSE</speaker>
@@ -2589,7 +2589,7 @@ Antipholus of Ephesus</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ADRIANA</speaker>
 <line remap="LINE">Go fetch it, sister.</line>
-<para remap="STAGEDIR">Exit Luciana</para>
+<stagedir remap="STAGEDIR">Exit Luciana</stagedir>
 <line remap="LINE">This I wonder at,</line>
 <line remap="LINE">That he, unknown to me, should be in debt.</line>
 <line remap="LINE">Tell me, was he arrested on a band?</line>
@@ -2639,7 +2639,7 @@ Antipholus of Ephesus</para>
 <line remap="LINE">Hath he not reason to turn back an hour in a day?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter LUCIANA with a purse</para>
+<stagedir remap="STAGEDIR">Re-enter LUCIANA with a purse</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ADRIANA</speaker>
@@ -2649,11 +2649,11 @@ Antipholus of Ephesus</para>
 <line remap="LINE">Conceit, my comfort and my injury.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A public place.</title>
-<para remap="STAGEDIR">Enter ANTIPHOLUS of Syracuse</para>
+<stagedir remap="STAGEDIR">Enter ANTIPHOLUS of Syracuse</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTIPHOLUS OF SYRACUSE</speaker>
@@ -2670,7 +2670,7 @@ Antipholus of Ephesus</para>
 <line remap="LINE">And Lapland sorcerers inhabit here.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DROMIO OF SYRACUSE</para>
+<stagedir remap="STAGEDIR">Enter DROMIO OF SYRACUSE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DROMIO OF SYRACUSE</speaker>
@@ -2742,7 +2742,7 @@ Antipholus of Ephesus</para>
 <line remap="LINE">Some blessed power deliver us from hence!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Courtezan</para>
+<stagedir remap="STAGEDIR">Enter a Courtezan</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Courtezan</speaker>
@@ -2840,7 +2840,7 @@ Antipholus of Ephesus</para>
 <line remap="LINE">'Fly pride,' says the peacock: mistress, that you know.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Antipholus of Syracuse and Dromio of Syracuse</para>
+<stagedir remap="STAGEDIR">Exeunt Antipholus of Syracuse and Dromio of Syracuse</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Courtezan</speaker>
@@ -2862,11 +2862,11 @@ Antipholus of Ephesus</para>
 <line remap="LINE">For forty ducats is too much to lose.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  A street.</title>
-<para remap="STAGEDIR">Enter ANTIPHOLUS of Ephesus and the Officer</para>
+<stagedir remap="STAGEDIR">Enter ANTIPHOLUS of Ephesus and the Officer</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTIPHOLUS OF EPHESUS</speaker>
@@ -2877,7 +2877,7 @@ Antipholus of Ephesus</para>
 <line remap="LINE">And will not lightly trust the messenger</line>
 <line remap="LINE">That I should be attach'd in Ephesus,</line>
 <line remap="LINE">I tell you, 'twill sound harshly in her ears.</line>
-<para remap="STAGEDIR">Enter DROMIO of Ephesus with a rope's-end</para>
+<stagedir remap="STAGEDIR">Enter DROMIO of Ephesus with a rope's-end</stagedir>
 <line remap="LINE">Here comes my man; I think he brings the money.</line>
 <line remap="LINE">How now, sir! have you that I sent you for?</line>
 </linegroup></dialogue>
@@ -2922,7 +2922,7 @@ Antipholus of Ephesus</para>
 <line remap="LINE">And to that end, sir, I will welcome you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Beating him</para>
+<stagedir remap="STAGEDIR">Beating him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Officer</speaker>
@@ -2975,7 +2975,7 @@ Antipholus of Ephesus</para>
 <line remap="LINE">Come, go along; my wife is coming yonder.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ADRIANA, LUCIANA, the Courtezan, and PINCH</para>
+<stagedir remap="STAGEDIR">Enter ADRIANA, LUCIANA, the Courtezan, and PINCH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DROMIO OF EPHESUS</speaker>
@@ -2989,7 +2989,7 @@ Antipholus of Ephesus</para>
 <line remap="LINE">Wilt thou still talk?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Beating him</para>
+<stagedir remap="STAGEDIR">Beating him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Courtezan</speaker>
@@ -3024,7 +3024,7 @@ Antipholus of Ephesus</para>
 <line remap="LINE">There is my hand, and let it feel your ear.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Striking him</para>
+<stagedir remap="STAGEDIR">Striking him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PINCH</speaker>
@@ -3198,8 +3198,8 @@ Antipholus of Ephesus</para>
 <line remap="LINE">That would behold in me this shameful sport.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter three or four, and offer to bind him.
-He strives</para>
+<stagedir remap="STAGEDIR">Enter three or four, and offer to bind him.
+He strives</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ADRIANA</speaker>
@@ -3234,7 +3234,7 @@ He strives</para>
 <line remap="LINE">Go bind this man, for he is frantic too.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They offer to bind Dromio of Ephesus</para>
+<stagedir remap="STAGEDIR">They offer to bind Dromio of Ephesus</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ADRIANA</speaker>
@@ -3287,8 +3287,8 @@ He strives</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ADRIANA</speaker>
 <line remap="LINE">Go bear him hence. Sister, go you with me.</line>
-<para remap="STAGEDIR">Exeunt all but Adriana, Luciana, Officer and
-Courtezan</para>
+<stagedir remap="STAGEDIR">Exeunt all but Adriana, Luciana, Officer and
+Courtezan</stagedir>
 <line remap="LINE">Say now, whose suit is he arrested at?</line>
 </linegroup></dialogue>
 
@@ -3337,8 +3337,8 @@ Courtezan</para>
 <line remap="LINE">I long to know the truth hereof at large.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ANTIPHOLUS of Syracuse with his rapier drawn,
-and DROMIO of Syracuse</para>
+<stagedir remap="STAGEDIR">Enter ANTIPHOLUS of Syracuse with his rapier drawn,
+and DROMIO of Syracuse</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIANA</speaker>
@@ -3356,8 +3356,8 @@ and DROMIO of Syracuse</para>
 <line remap="LINE">Away! they'll kill us.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but Antipholus of Syracuse and Dromio
-of Syracuse</para>
+<stagedir remap="STAGEDIR">Exeunt all but Antipholus of Syracuse and Dromio
+of Syracuse</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTIPHOLUS OF SYRACUSE</speaker>
@@ -3391,7 +3391,7 @@ of Syracuse</para>
 <line remap="LINE">Therefore away, to get our stuff aboard.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -3399,7 +3399,7 @@ of Syracuse</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A street before a Priory.</title>
-<para remap="STAGEDIR">Enter Second Merchant and ANGELO</para>
+<stagedir remap="STAGEDIR">Enter Second Merchant and ANGELO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANGELO</speaker>
@@ -3426,7 +3426,7 @@ of Syracuse</para>
 <line remap="LINE">Speak softly; yonder, as I think, he walks.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ANTIPHOLUS of Syracuse and DROMIO of Syracuse</para>
+<stagedir remap="STAGEDIR">Enter ANTIPHOLUS of Syracuse and DROMIO of Syracuse</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANGELO</speaker>
@@ -3479,8 +3479,8 @@ of Syracuse</para>
 <line remap="LINE">I dare, and do defy thee for a villain.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They draw</para>
-<para remap="STAGEDIR">Enter ADRIANA, LUCIANA, the Courtezan, and others</para>
+<stagedir remap="STAGEDIR">They draw</stagedir>
+<stagedir remap="STAGEDIR">Enter ADRIANA, LUCIANA, the Courtezan, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ADRIANA</speaker>
@@ -3495,9 +3495,9 @@ of Syracuse</para>
 <line remap="LINE">This is some priory. In, or we are spoil'd!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Antipholus of Syracuse and Dromio of Syracuse
-to the Priory</para>
-<para remap="STAGEDIR">Enter the Lady Abbess, AEMILIA</para>
+<stagedir remap="STAGEDIR">Exeunt Antipholus of Syracuse and Dromio of Syracuse
+to the Priory</stagedir>
+<stagedir remap="STAGEDIR">Enter the Lady Abbess, AEMILIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AEMELIA</speaker>
@@ -3680,7 +3680,7 @@ to the Priory</para>
 <line remap="LINE">Be quiet and depart: thou shalt not have him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIANA</speaker>
@@ -3727,8 +3727,8 @@ to the Priory</para>
 <line remap="LINE">Kneel to the duke before he pass the abbey.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DUKE SOLINUS, attended; AEGEON bareheaded; with the
-Headsman and other Officers</para>
+<stagedir remap="STAGEDIR">Enter DUKE SOLINUS, attended; AEGEON bareheaded; with the
+Headsman and other Officers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE SOLINUS</speaker>
@@ -3788,7 +3788,7 @@ Headsman and other Officers</para>
 <line remap="LINE">I will determine this before I stir.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Servant</para>
+<stagedir remap="STAGEDIR">Enter a Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Servant</speaker>
@@ -3816,7 +3816,7 @@ Headsman and other Officers</para>
 <line remap="LINE">I have not breathed almost since I did see it.</line>
 <line remap="LINE">He cries for you, and vows, if he can take you,</line>
 <line remap="LINE">To scorch your face and to disfigure you.</line>
-<para remap="STAGEDIR">Cry within</para>
+<stagedir remap="STAGEDIR">Cry within</stagedir>
 <line remap="LINE">Hark, hark! I hear him, mistress. fly, be gone!</line>
 </linegroup></dialogue>
 
@@ -3833,7 +3833,7 @@ Headsman and other Officers</para>
 <line remap="LINE">And now he's there, past thought of human reason.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ANTIPHOLUS of Ephesus and DROMIO of Ephesus</para>
+<stagedir remap="STAGEDIR">Enter ANTIPHOLUS of Ephesus and DROMIO of Ephesus</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTIPHOLUS OF EPHESUS</speaker>
@@ -4016,7 +4016,7 @@ Headsman and other Officers</para>
 <line remap="LINE">I think you are all mated or stark mad.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit one to Abbess</para>
+<stagedir remap="STAGEDIR">Exit one to Abbess</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AEGEON</speaker>
@@ -4137,15 +4137,15 @@ Headsman and other Officers</para>
 <line remap="LINE">I see thy age and dangers make thee dote.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter AEMILIA, with ANTIPHOLUS of Syracuse and
-DROMIO of Syracuse</para>
+<stagedir remap="STAGEDIR">Re-enter AEMILIA, with ANTIPHOLUS of Syracuse and
+DROMIO of Syracuse</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AEMELIA</speaker>
 <line remap="LINE">Most mighty duke, behold a man much wrong'd.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">All gather to see them</para>
+<stagedir remap="STAGEDIR">All gather to see them</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ADRIANA</speaker>
@@ -4270,7 +4270,7 @@ DROMIO of Syracuse</para>
 <line remap="LINE">And so do I; yet did she call me so:</line>
 <line remap="LINE">And this fair gentlewoman, her sister here,</line>
 <line remap="LINE">Did call me brother.</line>
-<para remap="STAGEDIR">To Luciana</para>
+<stagedir remap="STAGEDIR">To Luciana</stagedir>
 <line remap="LINE">What I told you then,</line>
 <line remap="LINE">I hope I shall have leisure to make good;</line>
 <line remap="LINE">If this be not a dream I see and hear.</line>
@@ -4359,8 +4359,8 @@ DROMIO of Syracuse</para>
 <line remap="LINE">With all my heart, I'll gossip at this feast.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but Antipholus of Syracuse, Antipholus
-of Ephesus, Dromio of Syracuse and Dromio of Ephesus</para>
+<stagedir remap="STAGEDIR">Exeunt all but Antipholus of Syracuse, Antipholus
+of Ephesus, Dromio of Syracuse and Dromio of Ephesus</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DROMIO OF SYRACUSE</speaker>
@@ -4384,7 +4384,7 @@ of Ephesus, Dromio of Syracuse and Dromio of Ephesus</para>
 <line remap="LINE">Embrace thy brother there; rejoice with him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Antipholus of Syracuse and Antipholus of Ephesus</para>
+<stagedir remap="STAGEDIR">Exeunt Antipholus of Syracuse and Antipholus of Ephesus</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DROMIO OF SYRACUSE</speaker>
@@ -4422,7 +4422,7 @@ of Ephesus, Dromio of Syracuse and Dromio of Ephesus</para>
 <line remap="LINE">And now let's go hand in hand, not one before another.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 </chapter>
 </book>

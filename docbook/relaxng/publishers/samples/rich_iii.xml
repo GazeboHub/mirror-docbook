@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">The Tragedy of Richard the Third</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">The Tragedy of Richard the Third</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The Tragedy of Richard the Third</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -49,16 +49,16 @@
 <para><personname remap="PERSONA">LADY ANNE, Widow of Edward Prince of Wales, son to King Henry VI; afterwards married to Richard.</personname></para>
 <para><personname remap="PERSONA">A young Daughter of Clarence [MARGARET PLANTAGENET] </personname></para>
 <para><personname remap="PERSONA">Ghosts of those murdered by Richard III., Lords and other Attendants; a Pursuivant Scrivener, Citizens, Murderers, Messengers Soldiers, &amp;c.</personname></para>
-    <para remap="SCNDESCR">SCENE  England.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  England.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  London. A street.</title>
-<para remap="STAGEDIR">Enter GLOUCESTER, solus</para>
+<stagedir remap="STAGEDIR">Enter GLOUCESTER, solus</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
@@ -104,7 +104,7 @@
 <line remap="LINE">Of Edward's heirs the murderer shall be.</line>
 <line remap="LINE">Dive, thoughts, down to my soul: here</line>
 <line remap="LINE">Clarence comes.</line>
-<para remap="STAGEDIR">Enter CLARENCE, guarded, and BRAKENBURY</para>
+<stagedir remap="STAGEDIR">Enter CLARENCE, guarded, and BRAKENBURY</stagedir>
 <line remap="LINE">Brother, good day; what means this armed guard</line>
 <line remap="LINE">That waits upon your grace?</line>
 </linegroup></dialogue>
@@ -264,7 +264,7 @@
 <line remap="LINE">I must perforce. Farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt CLARENCE, BRAKENBURY, and Guard</para>
+<stagedir remap="STAGEDIR">Exeunt CLARENCE, BRAKENBURY, and Guard</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
@@ -275,7 +275,7 @@
 <line remap="LINE">But who comes here? the new-deliver'd Hastings?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HASTINGS</para>
+<stagedir remap="STAGEDIR">Enter HASTINGS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HASTINGS</speaker>
@@ -338,7 +338,7 @@
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
 <line remap="LINE">Go you before, and I will follow you.</line>
-<para remap="STAGEDIR">Exit HASTINGS</para>
+<stagedir remap="STAGEDIR">Exit HASTINGS</stagedir>
 <line remap="LINE">He cannot live, I hope; and must not die</line>
 <line remap="LINE">Till George be pack'd with post-horse up to heaven.</line>
 <line remap="LINE">I'll in, to urge his hatred more to Clarence,</line>
@@ -359,12 +359,12 @@
 <line remap="LINE">When they are gone, then must I count my gains.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same. Another street.</title>
-<para remap="STAGEDIR">Enter the corpse of KING HENRY the Sixth, Gentlemen
-with halberds to guard it; LADY ANNE being the mourner</para>
+<stagedir remap="STAGEDIR">Enter the corpse of KING HENRY the Sixth, Gentlemen
+with halberds to guard it; LADY ANNE being the mourner</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LADY ANNE</speaker>
@@ -402,7 +402,7 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <line remap="LINE">Rest you, whiles I lament King Henry's corse.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter GLOUCESTER</para>
+<stagedir remap="STAGEDIR">Enter GLOUCESTER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
@@ -751,7 +751,7 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
 <line remap="LINE">Here.</line>
-<para remap="STAGEDIR">She spitteth at him</para>
+<stagedir remap="STAGEDIR">She spitteth at him</stagedir>
 <line remap="LINE">Why dost thou spit at me?</line>
 </linegroup></dialogue>
 
@@ -803,7 +803,7 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <line remap="LINE">My tongue could never learn sweet smoothing word;</line>
 <line remap="LINE">But now thy beauty is proposed my fee,</line>
 <line remap="LINE">My proud heart sues, and prompts my tongue to speak.</line>
-<para remap="STAGEDIR">She looks scornfully at him</para>
+<stagedir remap="STAGEDIR">She looks scornfully at him</stagedir>
 <line remap="LINE">Teach not thy lips such scorn, for they were made</line>
 <line remap="LINE">For kissing, lady, not for such contempt.</line>
 <line remap="LINE">If thy revengeful heart cannot forgive,</line>
@@ -812,12 +812,12 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <line remap="LINE">And let the soul forth that adoreth thee,</line>
 <line remap="LINE">I lay it naked to the deadly stroke,</line>
 <line remap="LINE">And humbly beg the death upon my knee.</line>
-<para remap="STAGEDIR">He lays his breast open: she offers at it with his sword</para>
+<stagedir remap="STAGEDIR">He lays his breast open: she offers at it with his sword</stagedir>
 <line remap="LINE">Nay, do not pause; for I did kill King Henry,</line>
 <line remap="LINE">But 'twas thy beauty that provoked me.</line>
 <line remap="LINE">Nay, now dispatch; 'twas I that stabb'd young Edward,</line>
 <line remap="LINE">But 'twas thy heavenly face that set me on.</line>
-<para remap="STAGEDIR">Here she lets fall the sword</para>
+<stagedir remap="STAGEDIR">Here she lets fall the sword</stagedir>
 <line remap="LINE">Take up the sword again, or take up me.</line>
 </linegroup></dialogue>
 
@@ -948,7 +948,7 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <line remap="LINE">Imagine I have said farewell already.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt LADY ANNE, TRESSEL, and BERKELEY</para>
+<stagedir remap="STAGEDIR">Exeunt LADY ANNE, TRESSEL, and BERKELEY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
@@ -963,7 +963,7 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
 <line remap="LINE">No, to White-Friars; there attend my coining.</line>
-<para remap="STAGEDIR">Exeunt all but GLOUCESTER</para>
+<stagedir remap="STAGEDIR">Exeunt all but GLOUCESTER</stagedir>
 <line remap="LINE">Was ever woman in this humour woo'd?</line>
 <line remap="LINE">Was ever woman in this humour won?</line>
 <line remap="LINE">I'll have her; but I will not keep her long.</line>
@@ -1004,11 +1004,11 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <line remap="LINE">That I may see my shadow as I pass.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The palace.</title>
-<para remap="STAGEDIR">Enter QUEEN ELIZABETH, RIVERS, and GREY</para>
+<stagedir remap="STAGEDIR">Enter QUEEN ELIZABETH, RIVERS, and GREY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">RIVERS</speaker>
@@ -1062,7 +1062,7 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <line remap="LINE">But so it must be, if the king miscarry.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BUCKINGHAM and DERBY</para>
+<stagedir remap="STAGEDIR">Enter BUCKINGHAM and DERBY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GREY</speaker>
@@ -1137,7 +1137,7 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <line remap="LINE">I fear our happiness is at the highest.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter GLOUCESTER, HASTINGS, and DORSET</para>
+<stagedir remap="STAGEDIR">Enter GLOUCESTER, HASTINGS, and DORSET</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
@@ -1262,7 +1262,7 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <line remap="LINE">I had rather be a country servant-maid</line>
 <line remap="LINE">Than a great queen, with this condition,</line>
 <line remap="LINE">To be thus taunted, scorn'd, and baited at:</line>
-<para remap="STAGEDIR">Enter QUEEN MARGARET, behind</para>
+<stagedir remap="STAGEDIR">Enter QUEEN MARGARET, behind</stagedir>
 <line remap="LINE">Small joy have I in being England's queen.</line>
 </linegroup></dialogue>
 
@@ -1371,7 +1371,7 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <line remap="LINE">A little joy enjoys the queen thereof;</line>
 <line remap="LINE">For I am she, and altogether joyless.</line>
 <line remap="LINE">I can no longer hold me patient.</line>
-<para remap="STAGEDIR">Advancing</para>
+<stagedir remap="STAGEDIR">Advancing</stagedir>
 <line remap="LINE">Hear me, you wrangling pirates, that fall out</line>
 <line remap="LINE">In sharing that which you have pill'd from me!</line>
 <line remap="LINE">Which of you trembles not that looks on me?</line>
@@ -1687,7 +1687,7 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <line remap="LINE">And he to yours, and all of you to God's!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HASTINGS</speaker>
@@ -1730,12 +1730,12 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
 <line remap="LINE">So do I ever:</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">being well-advised.</line>
 <line remap="LINE">For had I cursed now, I had cursed myself.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CATESBY</para>
+<stagedir remap="STAGEDIR">Enter CATESBY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CATESBY</speaker>
@@ -1753,7 +1753,7 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <line remap="LINE">Madam, we will attend your grace.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but GLOUCESTER</para>
+<stagedir remap="STAGEDIR">Exeunt all but GLOUCESTER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
@@ -1772,7 +1772,7 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <line remap="LINE">And thus I clothe my naked villany</line>
 <line remap="LINE">With old odd ends stolen out of holy writ;</line>
 <line remap="LINE">And seem a saint, when most I play the devil.</line>
-<para remap="STAGEDIR">Enter two Murderers</para>
+<stagedir remap="STAGEDIR">Enter two Murderers</stagedir>
 <line remap="LINE">But, soft! here come my executioners.</line>
 <line remap="LINE">How now, my hardy, stout resolved mates!</line>
 <line remap="LINE">Are you now going to dispatch this deed?</line>
@@ -1787,7 +1787,7 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
 <line remap="LINE">Well thought upon; I have it here about me.</line>
-<para remap="STAGEDIR">Gives the warrant</para>
+<stagedir remap="STAGEDIR">Gives the warrant</stagedir>
 <line remap="LINE">When you have done, repair to Crosby Place.</line>
 <line remap="LINE">But, sirs, be sudden in the execution,</line>
 <line remap="LINE">Withal obdurate, do not hear him plead;</line>
@@ -1815,11 +1815,11 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <line remap="LINE">We will, my noble lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  London. The Tower.</title>
-<para remap="STAGEDIR">Enter CLARENCE and BRAKENBURY</para>
+<stagedir remap="STAGEDIR">Enter CLARENCE and BRAKENBURY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BRAKENBURY</speaker>
@@ -1938,7 +1938,7 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BRAKENBURY</speaker>
 <line remap="LINE">I will, my lord: God give your grace good rest!</line>
-<para remap="STAGEDIR">CLARENCE sleeps</para>
+<stagedir remap="STAGEDIR">CLARENCE sleeps</stagedir>
 <line remap="LINE">Sorrow breaks seasons and reposing hours,</line>
 <line remap="LINE">Makes the night morning, and the noon-tide night.</line>
 <line remap="LINE">Princes have but their tides for their glories,</line>
@@ -1949,7 +1949,7 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <line remap="LINE">There's nothing differs but the outward fame.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter the two Murderers</para>
+<stagedir remap="STAGEDIR">Enter the two Murderers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Murderer</speaker>
@@ -1977,7 +1977,7 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <line remap="LINE">him our commission; talk no more.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">BRAKENBURY reads it</para>
+<stagedir remap="STAGEDIR">BRAKENBURY reads it</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BRAKENBURY</speaker>
@@ -1995,7 +1995,7 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <line remap="LINE">Do so, it is a point of wisdom: fare you well.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit BRAKENBURY</para>
+<stagedir remap="STAGEDIR">Exit BRAKENBURY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Murderer</speaker>
@@ -2460,11 +2460,11 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Murderer</speaker>
 <line remap="LINE">Take that, and that: if all this will not do,</line>
-<para remap="STAGEDIR">Stabs him</para>
+<stagedir remap="STAGEDIR">Stabs him</stagedir>
 <line remap="LINE">I'll drown you in the malmsey-butt within.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit, with the body</para>
+<stagedir remap="STAGEDIR">Exit, with the body</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Murderer</speaker>
@@ -2473,7 +2473,7 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <line remap="LINE">Of this most grievous guilty murder done!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter First Murderer</para>
+<stagedir remap="STAGEDIR">Re-enter First Murderer</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Murderer</speaker>
@@ -2488,7 +2488,7 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <line remap="LINE">For I repent me that the duke is slain.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Murderer</speaker>
@@ -2506,9 +2506,9 @@ with halberds to guard it; LADY ANNE being the mourner</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  London. The palace.</title>
-<para remap="STAGEDIR">Flourish. Enter KING EDWARD IV sick, QUEEN
+<stagedir remap="STAGEDIR">Flourish. Enter KING EDWARD IV sick, QUEEN
 ELIZABETH, DORSET, RIVERS, HASTINGS, BUCKINGHAM,
-GREY, and others</para>
+GREY, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING EDWARD IV</speaker>
@@ -2582,7 +2582,7 @@ GREY, and others</para>
 <line remap="LINE">And so swear I, my lord</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They embrace</para>
+<stagedir remap="STAGEDIR">They embrace</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING EDWARD IV</speaker>
@@ -2595,7 +2595,7 @@ GREY, and others</para>
 <speaker remap="SPEAKER">BUCKINGHAM</speaker>
 <line remap="LINE">Whenever Buckingham doth turn his hate</line>
 <line remap="LINE">On you or yours,</line>
-<para remap="STAGEDIR">To the Queen</para>
+<stagedir remap="STAGEDIR">To the Queen</stagedir>
 <line remap="LINE">but with all duteous love</line>
 <line remap="LINE">Doth cherish you and yours, God punish me</line>
 <line remap="LINE">With hate in those where I expect most love!</line>
@@ -2619,7 +2619,7 @@ GREY, and others</para>
 <line remap="LINE">And, in good time, here comes the noble duke.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter GLOUCESTER</para>
+<stagedir remap="STAGEDIR">Enter GLOUCESTER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
@@ -2673,7 +2673,7 @@ GREY, and others</para>
 <line remap="LINE">Why, madam, have I offer'd love for this</line>
 <line remap="LINE">To be so bouted in this royal presence?</line>
 <line remap="LINE">Who knows not that the noble duke is dead?</line>
-<para remap="STAGEDIR">They all start</para>
+<stagedir remap="STAGEDIR">They all start</stagedir>
 <line remap="LINE">You do him injury to scorn his corse.</line>
 </linegroup></dialogue>
 
@@ -2715,7 +2715,7 @@ GREY, and others</para>
 <line remap="LINE">And yet go current from suspicion!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DERBY</para>
+<stagedir remap="STAGEDIR">Enter DERBY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DORSET</speaker>
@@ -2781,7 +2781,7 @@ GREY, and others</para>
 <line remap="LINE">Oh, poor Clarence!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt some with KING EDWARD IV and QUEEN MARGARET</para>
+<stagedir remap="STAGEDIR">Exeunt some with KING EDWARD IV and QUEEN MARGARET</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
@@ -2798,11 +2798,11 @@ GREY, and others</para>
 <line remap="LINE">We wait upon your grace.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The palace.</title>
-<para remap="STAGEDIR">Enter the DUCHESS OF YORK, with the two children of CLARENCE</para>
+<stagedir remap="STAGEDIR">Enter the DUCHESS OF YORK, with the two children of CLARENCE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Boy</speaker>
@@ -2889,8 +2889,8 @@ GREY, and others</para>
 <line remap="LINE">I cannot think it. Hark! what noise is this?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter QUEEN ELIZABETH, with her hair about her
-ears; RIVERS, and DORSET after her</para>
+<stagedir remap="STAGEDIR">Enter QUEEN ELIZABETH, with her hair about her
+ears; RIVERS, and DORSET after her</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN ELIZABETH</speaker>
@@ -3027,7 +3027,7 @@ ears; RIVERS, and DORSET after her</para>
 <line remap="LINE">And plant your joys in living Edward's throne.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter GLOUCESTER, BUCKINGHAM, DERBY, HASTINGS, and RATCLIFF</para>
+<stagedir remap="STAGEDIR">Enter GLOUCESTER, BUCKINGHAM, DERBY, HASTINGS, and RATCLIFF</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
@@ -3047,7 +3047,7 @@ ears; RIVERS, and DORSET after her</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Amen; and make me die a good old man!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Amen; and make me die a good old man!</line>
 <line remap="LINE">That is the butt-end of a mother's blessing:</line>
 <line remap="LINE">I marvel why her grace did leave it out.</line>
 </linegroup></dialogue>
@@ -3119,7 +3119,7 @@ ears; RIVERS, and DORSET after her</para>
 <line remap="LINE">With all our harts.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but BUCKINGHAM and GLOUCESTER</para>
+<stagedir remap="STAGEDIR">Exeunt all but BUCKINGHAM and GLOUCESTER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BUCKINGHAM</speaker>
@@ -3138,11 +3138,11 @@ ears; RIVERS, and DORSET after her</para>
 <line remap="LINE">Towards Ludlow then, for we'll not stay behind.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  London. A street.</title>
-<para remap="STAGEDIR">Enter two Citizens meeting</para>
+<stagedir remap="STAGEDIR">Enter two Citizens meeting</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Citizen</speaker>
@@ -3166,7 +3166,7 @@ ears; RIVERS, and DORSET after her</para>
 <line remap="LINE">I fear, I fear 'twill prove a troublous world.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter another Citizen</para>
+<stagedir remap="STAGEDIR">Enter another Citizen</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Third Citizen</speaker>
@@ -3283,12 +3283,12 @@ ears; RIVERS, and DORSET after her</para>
 <line remap="LINE">And so was I: I'll bear you company.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  London. The palace.</title>
-<para remap="STAGEDIR">Enter the ARCHBISHOP OF YORK, young YORK, QUEEN
-ELIZABETH, and the DUCHESS OF YORK</para>
+<stagedir remap="STAGEDIR">Enter the ARCHBISHOP OF YORK, young YORK, QUEEN
+ELIZABETH, and the DUCHESS OF YORK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ARCHBISHOP OF YORK</speaker>
@@ -3404,7 +3404,7 @@ ELIZABETH, and the DUCHESS OF YORK</para>
 <line remap="LINE">Pitchers have ears.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ARCHBISHOP OF YORK</speaker>
@@ -3511,7 +3511,7 @@ ELIZABETH, and the DUCHESS OF YORK</para>
 <line remap="LINE">Come, I'll conduct you to the sanctuary.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -3519,8 +3519,8 @@ ELIZABETH, and the DUCHESS OF YORK</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  London. A street.</title>
-<para remap="STAGEDIR">The trumpets sound. Enter the young PRINCE EDWARD,
-GLOUCESTER, BUCKINGHAM, CARDINAL, CATESBY, and others</para>
+<stagedir remap="STAGEDIR">The trumpets sound. Enter the young PRINCE EDWARD,
+GLOUCESTER, BUCKINGHAM, CARDINAL, CATESBY, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BUCKINGHAM</speaker>
@@ -3563,7 +3563,7 @@ GLOUCESTER, BUCKINGHAM, CARDINAL, CATESBY, and others</para>
 <line remap="LINE">My lord, the mayor of London comes to greet you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter the Lord Mayor and his train</para>
+<stagedir remap="STAGEDIR">Enter the Lord Mayor and his train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lord Mayor</speaker>
@@ -3579,7 +3579,7 @@ GLOUCESTER, BUCKINGHAM, CARDINAL, CATESBY, and others</para>
 <line remap="LINE">To tell us whether they will come or no!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HASTINGS</para>
+<stagedir remap="STAGEDIR">Enter HASTINGS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BUCKINGHAM</speaker>
@@ -3652,7 +3652,7 @@ GLOUCESTER, BUCKINGHAM, CARDINAL, CATESBY, and others</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRINCE EDWARD</speaker>
 <line remap="LINE">Good lords, make all the speedy haste you may.</line>
-<para remap="STAGEDIR">Exeunt CARDINAL and HASTINGS</para>
+<stagedir remap="STAGEDIR">Exeunt CARDINAL and HASTINGS</stagedir>
 <line remap="LINE">Say, uncle Gloucester, if our brother come,</line>
 <line remap="LINE">Where shall we sojourn till our coronation?</line>
 </linegroup></dialogue>
@@ -3699,7 +3699,7 @@ GLOUCESTER, BUCKINGHAM, CARDINAL, CATESBY, and others</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  So wise so young, they say, do never</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  So wise so young, they say, do never</line>
 <line remap="LINE">live long.</line>
 </linegroup></dialogue>
 
@@ -3711,7 +3711,7 @@ GLOUCESTER, BUCKINGHAM, CARDINAL, CATESBY, and others</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
 <line remap="LINE">I say, without characters, fame lives long.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">Thus, like the formal vice, Iniquity,</line>
 <line remap="LINE">I moralize two meanings in one word.</line>
 </linegroup></dialogue>
@@ -3740,10 +3740,10 @@ GLOUCESTER, BUCKINGHAM, CARDINAL, CATESBY, and others</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Short summers lightly have a forward spring.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Short summers lightly have a forward spring.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter young YORK, HASTINGS, and the CARDINAL</para>
+<stagedir remap="STAGEDIR">Enter young YORK, HASTINGS, and the CARDINAL</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BUCKINGHAM</speaker>
@@ -3950,8 +3950,8 @@ GLOUCESTER, BUCKINGHAM, CARDINAL, CATESBY, and others</para>
 <line remap="LINE">Thinking on them, go I unto the Tower.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">A Sennet. Exeunt all but GLOUCESTER, BUCKINGHAM
-and CATESBY</para>
+<stagedir remap="STAGEDIR">A Sennet. Exeunt all but GLOUCESTER, BUCKINGHAM
+and CATESBY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BUCKINGHAM</speaker>
@@ -4045,7 +4045,7 @@ and CATESBY</para>
 <line remap="LINE">At Crosby Place, there shall you find us both.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit CATESBY</para>
+<stagedir remap="STAGEDIR">Exit CATESBY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BUCKINGHAM</speaker>
@@ -4073,11 +4073,11 @@ and CATESBY</para>
 <line remap="LINE">We may digest our complots in some form.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Before Lord Hastings' house.</title>
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
@@ -4086,7 +4086,7 @@ and CATESBY</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HASTINGS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Who knocks at the door?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Who knocks at the door?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -4094,7 +4094,7 @@ and CATESBY</para>
 <line remap="LINE">A messenger from the Lord Stanley.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HASTINGS</para>
+<stagedir remap="STAGEDIR">Enter HASTINGS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HASTINGS</speaker>
@@ -4159,8 +4159,8 @@ and CATESBY</para>
 <line remap="LINE">My gracious lord, I'll tell him what you say.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter CATESBY</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter CATESBY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CATESBY</speaker>
@@ -4257,14 +4257,14 @@ and CATESBY</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CATESBY</speaker>
 <line remap="LINE">The princes both make high account of you;</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">For they account his head upon the bridge.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HASTINGS</speaker>
 <line remap="LINE">I know they do; and I have well deserved it.</line>
-<para remap="STAGEDIR">Enter STANLEY</para>
+<stagedir remap="STAGEDIR">Enter STANLEY</stagedir>
 <line remap="LINE">Come on, come on; where is your boar-spear, man?</line>
 <line remap="LINE">Fear you the boar, and go so unprovided?</line>
 </linegroup></dialogue>
@@ -4310,12 +4310,12 @@ and CATESBY</para>
 <line remap="LINE">But come, my lord, let us away.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Pursuivant</para>
+<stagedir remap="STAGEDIR">Enter a Pursuivant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HASTINGS</speaker>
 <line remap="LINE">Go on before; I'll talk with this good fellow.</line>
-<para remap="STAGEDIR">Exeunt STANLEY and CATESBY</para>
+<stagedir remap="STAGEDIR">Exeunt STANLEY and CATESBY</stagedir>
 <line remap="LINE">How now, sirrah! how goes the world with thee?</line>
 </linegroup></dialogue>
 
@@ -4345,15 +4345,15 @@ and CATESBY</para>
 <line remap="LINE">Gramercy, fellow: there, drink that for me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Throws him his purse</para>
+<stagedir remap="STAGEDIR">Throws him his purse</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Pursuivant</speaker>
 <line remap="LINE">God save your lordship!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter a Priest</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter a Priest</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Priest</speaker>
@@ -4367,8 +4367,8 @@ and CATESBY</para>
 <line remap="LINE">Come the next Sabbath, and I will content you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">He whispers in his ear</para>
-<para remap="STAGEDIR">Enter BUCKINGHAM</para>
+<stagedir remap="STAGEDIR">He whispers in his ear</stagedir>
+<stagedir remap="STAGEDIR">Enter BUCKINGHAM</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BUCKINGHAM</speaker>
@@ -4397,7 +4397,7 @@ and CATESBY</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BUCKINGHAM</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  And supper too, although thou know'st it not.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  And supper too, although thou know'st it not.</line>
 <line remap="LINE">Come, will you go?</line>
 </linegroup></dialogue>
 
@@ -4406,12 +4406,12 @@ and CATESBY</para>
 <line remap="LINE">I'll wait upon your lordship.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Pomfret Castle.</title>
-<para remap="STAGEDIR">Enter RATCLIFF, with halberds, carrying RIVERS,
-GREY, and VAUGHAN to death</para>
+<stagedir remap="STAGEDIR">Enter RATCLIFF, with halberds, carrying RIVERS,
+GREY, and VAUGHAN to death</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">RATCLIFF</speaker>
@@ -4478,13 +4478,13 @@ GREY, and VAUGHAN to death</para>
 <line remap="LINE">And take our leave, until we meet in heaven.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  The Tower of London.</title>
-<para remap="STAGEDIR">Enter BUCKINGHAM, DERBY, HASTINGS, the BISHOP OF
+<stagedir remap="STAGEDIR">Enter BUCKINGHAM, DERBY, HASTINGS, the BISHOP OF
 ELY, RATCLIFF, LOVEL, with others, and take their
-seats at a table</para>
+seats at a table</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HASTINGS</speaker>
@@ -4539,7 +4539,7 @@ seats at a table</para>
 <line remap="LINE">Which, I presume, he'll take in gentle part.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter GLOUCESTER</para>
+<stagedir remap="STAGEDIR">Enter GLOUCESTER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BISHOP OF ELY</speaker>
@@ -4594,12 +4594,12 @@ seats at a table</para>
 <line remap="LINE">Marry, and will, my lord, with all my heart.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
 <line remap="LINE">Cousin of Buckingham, a word with you.</line>
-<para remap="STAGEDIR">Drawing him aside</para>
+<stagedir remap="STAGEDIR">Drawing him aside</stagedir>
 <line remap="LINE">Catesby hath sounded Hastings in our business,</line>
 <line remap="LINE">And finds the testy gentleman so hot,</line>
 <line remap="LINE">As he will lose his head ere give consent</line>
@@ -4612,7 +4612,7 @@ seats at a table</para>
 <line remap="LINE">Withdraw you hence, my lord, I'll follow you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit GLOUCESTER, BUCKINGHAM following</para>
+<stagedir remap="STAGEDIR">Exit GLOUCESTER, BUCKINGHAM following</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DERBY</speaker>
@@ -4622,7 +4622,7 @@ seats at a table</para>
 <line remap="LINE">As else I would be, were the day prolong'd.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter BISHOP OF ELY</para>
+<stagedir remap="STAGEDIR">Re-enter BISHOP OF ELY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BISHOP OF ELY</speaker>
@@ -4657,7 +4657,7 @@ seats at a table</para>
 <line remap="LINE">I pray God he be not, I say.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter GLOUCESTER and BUCKINGHAM</para>
+<stagedir remap="STAGEDIR">Re-enter GLOUCESTER and BUCKINGHAM</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
@@ -4700,7 +4700,7 @@ seats at a table</para>
 <line remap="LINE">The rest, that love me, rise and follow me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but HASTINGS, RATCLIFF, and LOVEL</para>
+<stagedir remap="STAGEDIR">Exeunt all but HASTINGS, RATCLIFF, and LOVEL</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HASTINGS</speaker>
@@ -4750,12 +4750,12 @@ seats at a table</para>
 <line remap="LINE">They smile at me that shortly shall be dead.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  The Tower-walls.</title>
-<para remap="STAGEDIR">Enter GLOUCESTER and BUCKINGHAM, in rotten armour,
-marvellous ill-favoured</para>
+<stagedir remap="STAGEDIR">Enter GLOUCESTER and BUCKINGHAM, in rotten armour,
+marvellous ill-favoured</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
@@ -4782,7 +4782,7 @@ marvellous ill-favoured</para>
 <line remap="LINE">He is; and, see, he brings the mayor along.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter the Lord Mayor and CATESBY</para>
+<stagedir remap="STAGEDIR">Enter the Lord Mayor and CATESBY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BUCKINGHAM</speaker>
@@ -4824,7 +4824,7 @@ marvellous ill-favoured</para>
 <line remap="LINE">Be patient, they are friends, Ratcliff and Lovel.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LOVEL and RATCLIFF, with HASTINGS' head</para>
+<stagedir remap="STAGEDIR">Enter LOVEL and RATCLIFF, with HASTINGS' head</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LOVEL</speaker>
@@ -4916,7 +4916,7 @@ marvellous ill-favoured</para>
 <line remap="LINE">And so, my good lord mayor, we bid farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Lord Mayor</para>
+<stagedir remap="STAGEDIR">Exit Lord Mayor</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
@@ -4965,26 +4965,26 @@ marvellous ill-favoured</para>
 <line remap="LINE">Look for the news that the Guildhall affords.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit BUCKINGHAM</para>
+<stagedir remap="STAGEDIR">Exit BUCKINGHAM</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
 <line remap="LINE">Go, Lovel, with all speed to Doctor Shaw;</line>
-<para remap="STAGEDIR">To CATESBY</para>
+<stagedir remap="STAGEDIR">To CATESBY</stagedir>
 <line remap="LINE">Go thou to Friar Penker; bid them both</line>
 <line remap="LINE">Meet me within this hour at Baynard's Castle.</line>
-<para remap="STAGEDIR">Exeunt all but GLOUCESTER</para>
+<stagedir remap="STAGEDIR">Exeunt all but GLOUCESTER</stagedir>
 <line remap="LINE">Now will I in, to take some privy order,</line>
 <line remap="LINE">To draw the brats of Clarence out of sight;</line>
 <line remap="LINE">And to give notice, that no manner of person</line>
 <line remap="LINE">At any time have recourse unto the princes.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  The same.</title>
-<para remap="STAGEDIR">Enter a Scrivener, with a paper in his hand</para>
+<stagedir remap="STAGEDIR">Enter a Scrivener, with a paper in his hand</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Scrivener</speaker>
@@ -5004,11 +5004,11 @@ marvellous ill-favoured</para>
 <line remap="LINE">When such bad dealings must be seen in thought.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VII.  Baynard's Castle.</title>
-<para remap="STAGEDIR">Enter GLOUCESTER and BUCKINGHAM, at several doors</para>
+<stagedir remap="STAGEDIR">Enter GLOUCESTER and BUCKINGHAM, at several doors</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GLOUCESTER</speaker>
@@ -5111,11 +5111,11 @@ marvellous ill-favoured</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BUCKINGHAM</speaker>
 <line remap="LINE">Go, go, up to the leads; the lord mayor knocks.</line>
-<para remap="STAGEDIR">Exit GLOUCESTER</para>
-<para remap="STAGEDIR">Enter the Lord Mayor and Citizens</para>
+<stagedir remap="STAGEDIR">Exit GLOUCESTER</stagedir>
+<stagedir remap="STAGEDIR">Enter the Lord Mayor and Citizens</stagedir>
 <line remap="LINE">Welcome my lord; I dance attendance here;</line>
 <line remap="LINE">I think the duke will not be spoke withal.</line>
-<para remap="STAGEDIR">Enter CATESBY</para>
+<stagedir remap="STAGEDIR">Enter CATESBY</stagedir>
 <line remap="LINE">Here comes his servant: how now, Catesby,</line>
 <line remap="LINE">What says he?</line>
 </linegroup></dialogue>
@@ -5144,7 +5144,7 @@ marvellous ill-favoured</para>
 <line remap="LINE">I'll tell him what you say, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BUCKINGHAM</speaker>
@@ -5168,7 +5168,7 @@ marvellous ill-favoured</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BUCKINGHAM</speaker>
 <line remap="LINE">I fear he will.</line>
-<para remap="STAGEDIR">Re-enter CATESBY</para>
+<stagedir remap="STAGEDIR">Re-enter CATESBY</stagedir>
 <line remap="LINE">How now, Catesby, what says your lord?</line>
 </linegroup></dialogue>
 
@@ -5187,14 +5187,14 @@ marvellous ill-favoured</para>
 <line remap="LINE">Suspect me, that I mean no good to him:</line>
 <line remap="LINE">By heaven, I come in perfect love to him;</line>
 <line remap="LINE">And so once more return and tell his grace.</line>
-<para remap="STAGEDIR">Exit CATESBY</para>
+<stagedir remap="STAGEDIR">Exit CATESBY</stagedir>
 <line remap="LINE">When holy and devout religious men</line>
 <line remap="LINE">Are at their beads, 'tis hard to draw them thence,</line>
 <line remap="LINE">So sweet is zealous contemplation.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter GLOUCESTER aloft, between two Bishops.
-CATESBY returns</para>
+<stagedir remap="STAGEDIR">Enter GLOUCESTER aloft, between two Bishops.
+CATESBY returns</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lord Mayor</speaker>
@@ -5386,7 +5386,7 @@ CATESBY returns</para>
 <line remap="LINE">O, do not swear, my lord of Buckingham.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit BUCKINGHAM with the Citizens</para>
+<stagedir remap="STAGEDIR">Exit BUCKINGHAM with the Citizens</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CATESBY</speaker>
@@ -5404,7 +5404,7 @@ CATESBY returns</para>
 <line remap="LINE">Well, call them again. I am not made of stone,</line>
 <line remap="LINE">But penetrable to your. kind entreats,</line>
 <line remap="LINE">Albeit against my conscience and my soul.</line>
-<para remap="STAGEDIR">Re-enter BUCKINGHAM and the rest</para>
+<stagedir remap="STAGEDIR">Re-enter BUCKINGHAM and the rest</stagedir>
 <line remap="LINE">Cousin of Buckingham, and you sage, grave men,</line>
 <line remap="LINE">Since you will buckle fortune on my back,</line>
 <line remap="LINE">To bear her burthen, whether I will or no,</line>
@@ -5461,7 +5461,7 @@ CATESBY returns</para>
 <line remap="LINE">Farewell, good cousin; farewell, gentle friends.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -5469,10 +5469,10 @@ CATESBY returns</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Before the Tower.</title>
-<para remap="STAGEDIR">Enter, on one side, QUEEN ELIZABETH, DUCHESS OF
+<stagedir remap="STAGEDIR">Enter, on one side, QUEEN ELIZABETH, DUCHESS OF
 YORK, and DORSET; on the other, ANNE, Duchess of
 Gloucester, leading Lady Margaret Plantagenet,
-CLARENCE's young Daughter</para>
+CLARENCE's young Daughter</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUCHESS OF YORK</speaker>
@@ -5504,7 +5504,7 @@ CLARENCE's young Daughter</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN ELIZABETH</speaker>
 <line remap="LINE">Kind sister, thanks: we'll enter all together.</line>
-<para remap="STAGEDIR">Enter BRAKENBURY</para>
+<stagedir remap="STAGEDIR">Enter BRAKENBURY</stagedir>
 <line remap="LINE">And, in good time, here the lieutenant comes.</line>
 <line remap="LINE">Master lieutenant, pray you, by your leave,</line>
 <line remap="LINE">How doth the prince, and my young son of York?</line>
@@ -5552,15 +5552,15 @@ CLARENCE's young Daughter</para>
 <line remap="LINE">I am bound by oath, and therefore pardon me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter LORD STANLEY</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter LORD STANLEY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD STANLEY</speaker>
 <line remap="LINE">Let me but meet you, ladies, one hour hence,</line>
 <line remap="LINE">And I'll salute your grace of York as mother,</line>
 <line remap="LINE">And reverend looker on, of two fair queens.</line>
-<para remap="STAGEDIR">To LADY ANNE</para>
+<stagedir remap="STAGEDIR">To LADY ANNE</stagedir>
 <line remap="LINE">Come, madam, you must straight to Westminster,</line>
 <line remap="LINE">There to be crowned Richard's royal queen.</line>
 </linegroup></dialogue>
@@ -5681,11 +5681,11 @@ CLARENCE's young Daughter</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUCHESS OF YORK</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To DORSET</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To DORSET</inlinestagedir></line>
 <line remap="LINE">Go thou to Richmond, and good fortune guide thee!</line>
-<para remap="STAGEDIR">To LADY ANNE</para>
+<stagedir remap="STAGEDIR">To LADY ANNE</stagedir>
 <line remap="LINE">Go thou to Richard, and good angels guard thee!</line>
-<para remap="STAGEDIR">To QUEEN ELIZABETH</para>
+<stagedir remap="STAGEDIR">To QUEEN ELIZABETH</stagedir>
 <line remap="LINE">Go thou to sanctuary, and good thoughts possess thee!</line>
 <line remap="LINE">I to my grave, where peace and rest lie with me!</line>
 <line remap="LINE">Eighty odd years of sorrow have I seen,</line>
@@ -5703,12 +5703,12 @@ CLARENCE's young Daughter</para>
 <line remap="LINE">So foolish sorrow bids your stones farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  London. The palace.</title>
-<para remap="STAGEDIR">Sennet. Enter KING RICHARD III, in pomp, crowned;
-BUCKINGHAM, CATESBY, a page, and others</para>
+<stagedir remap="STAGEDIR">Sennet. Enter KING RICHARD III, in pomp, crowned;
+BUCKINGHAM, CATESBY, a page, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD III</speaker>
@@ -5723,7 +5723,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD III</speaker>
 <line remap="LINE">Give me thy hand.</line>
-<para remap="STAGEDIR">Here he ascendeth his throne</para>
+<stagedir remap="STAGEDIR">Here he ascendeth his throne</stagedir>
 <line remap="LINE">Thus high, by thy advice</line>
 <line remap="LINE">And thy assistance, is King Richard seated;</line>
 <line remap="LINE">But shall we wear these honours for a day?</line>
@@ -5795,11 +5795,11 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">I will resolve your grace immediately.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CATESBY</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to a stander by</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to a stander by</inlinestagedir></line>
 <line remap="LINE">The king is angry: see, he bites the lip.</line>
 </linegroup></dialogue>
 
@@ -5844,12 +5844,12 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD III</speaker>
 <line remap="LINE">I partly know the man: go, call him hither.</line>
-<para remap="STAGEDIR">Exit Page</para>
+<stagedir remap="STAGEDIR">Exit Page</stagedir>
 <line remap="LINE">The deep-revolving witty Buckingham</line>
 <line remap="LINE">No more shall be the neighbour to my counsel:</line>
 <line remap="LINE">Hath he so long held out with me untired,</line>
 <line remap="LINE">And stops he now for breath?</line>
-<para remap="STAGEDIR">Enter STANLEY</para>
+<stagedir remap="STAGEDIR">Enter STANLEY</stagedir>
 <line remap="LINE">How now! what news with you?</line>
 </linegroup></dialogue>
 
@@ -5860,7 +5860,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">Where he abides.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Stands apart</para>
+<stagedir remap="STAGEDIR">Stands apart</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD III</speaker>
@@ -5884,14 +5884,14 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">That Anne my wife is sick and like to die:</line>
 <line remap="LINE">About it; for it stands me much upon,</line>
 <line remap="LINE">To stop all hopes whose growth may damage me.</line>
-<para remap="STAGEDIR">Exit CATESBY</para>
+<stagedir remap="STAGEDIR">Exit CATESBY</stagedir>
 <line remap="LINE">I must be married to my brother's daughter,</line>
 <line remap="LINE">Or else my kingdom stands on brittle glass.</line>
 <line remap="LINE">Murder her brothers, and then marry her!</line>
 <line remap="LINE">Uncertain way of gain! But I am in</line>
 <line remap="LINE">So far in blood that sin will pluck on sin:</line>
 <line remap="LINE">Tear-falling pity dwells not in this eye.</line>
-<para remap="STAGEDIR">Re-enter Page, with TYRREL</para>
+<stagedir remap="STAGEDIR">Re-enter Page, with TYRREL</stagedir>
 <line remap="LINE">Is thy name Tyrrel?</line>
 </linegroup></dialogue>
 
@@ -5939,7 +5939,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <speaker remap="SPEAKER">KING RICHARD III</speaker>
 <line remap="LINE">Thou sing'st sweet music. Hark, come hither, Tyrrel</line>
 <line remap="LINE">Go, by this token: rise, and lend thine ear:</line>
-<para remap="STAGEDIR">Whispers</para>
+<stagedir remap="STAGEDIR">Whispers</stagedir>
 <line remap="LINE">There is no more but so: say it is done,</line>
 <line remap="LINE">And I will love thee, and prefer thee too.</line>
 </linegroup></dialogue>
@@ -5959,8 +5959,8 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">Ye shall, my Lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Re-enter BUCKINGHAM</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Re-enter BUCKINGHAM</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BUCKINGHAM</speaker>
@@ -6089,7 +6089,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">Thou troublest me; am not in the vein.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but BUCKINGHAM</para>
+<stagedir remap="STAGEDIR">Exeunt all but BUCKINGHAM</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BUCKINGHAM</speaker>
@@ -6099,11 +6099,11 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">To Brecknock, while my fearful head is on!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The same.</title>
-<para remap="STAGEDIR">Enter TYRREL</para>
+<stagedir remap="STAGEDIR">Enter TYRREL</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TYRREL</speaker>
@@ -6130,7 +6130,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">They could not speak; and so I left them both,</line>
 <line remap="LINE">To bring this tidings to the bloody king.</line>
 <line remap="LINE">And here he comes.</line>
-<para remap="STAGEDIR">Enter KING RICHARD III</para>
+<stagedir remap="STAGEDIR">Enter KING RICHARD III</stagedir>
 <line remap="LINE">All hail, my sovereign liege!</line>
 </linegroup></dialogue>
 
@@ -6174,7 +6174,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">Meantime, but think how I may do thee good,</line>
 <line remap="LINE">And be inheritor of thy desire.</line>
 <line remap="LINE">Farewell till soon.</line>
-<para remap="STAGEDIR">Exit TYRREL</para>
+<stagedir remap="STAGEDIR">Exit TYRREL</stagedir>
 <line remap="LINE">The son of Clarence have I pent up close;</line>
 <line remap="LINE">His daughter meanly have I match'd in marriage;</line>
 <line remap="LINE">The sons of Edward sleep in Abraham's bosom,</line>
@@ -6185,7 +6185,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">To her I go, a jolly thriving wooer.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CATESBY</para>
+<stagedir remap="STAGEDIR">Enter CATESBY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CATESBY</speaker>
@@ -6217,11 +6217,11 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">We must be brief when traitors brave the field.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Before the palace.</title>
-<para remap="STAGEDIR">Enter QUEEN MARGARET</para>
+<stagedir remap="STAGEDIR">Enter QUEEN MARGARET</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN MARGARET</speaker>
@@ -6235,7 +6235,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">Withdraw thee, wretched Margaret: who comes here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter QUEEN ELIZABETH and the DUCHESS OF YORK</para>
+<stagedir remap="STAGEDIR">Enter QUEEN ELIZABETH and the DUCHESS OF YORK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN ELIZABETH</speaker>
@@ -6284,7 +6284,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">Woe's scene, world's shame, grave's due by life usurp'd,</line>
 <line remap="LINE">Brief abstract and record of tedious days,</line>
 <line remap="LINE">Rest thy unrest on England's lawful earth,</line>
-<para remap="STAGEDIR">Sitting down</para>
+<stagedir remap="STAGEDIR">Sitting down</stagedir>
 <line remap="LINE">Unlawfully made drunk with innocents' blood!</line>
 </linegroup></dialogue>
 
@@ -6296,7 +6296,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">O, who hath any cause to mourn but I?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Sitting down by her</para>
+<stagedir remap="STAGEDIR">Sitting down by her</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN MARGARET</speaker>
@@ -6304,7 +6304,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">Give mine the benefit of seniory,</line>
 <line remap="LINE">And let my woes frown on the upper hand.</line>
 <line remap="LINE">If sorrow can admit society,</line>
-<para remap="STAGEDIR">Sitting down with them</para>
+<stagedir remap="STAGEDIR">Sitting down with them</stagedir>
 <line remap="LINE">Tell o'er your woes again by viewing mine:</line>
 <line remap="LINE">I had an Edward, till a Richard kill'd him;</line>
 <line remap="LINE">I had a Harry, till a Richard kill'd him:</line>
@@ -6434,7 +6434,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">Thy woes will make them sharp, and pierce like mine.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUCHESS OF YORK</speaker>
@@ -6458,7 +6458,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">I hear his drum: be copious in exclaims.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter KING RICHARD III, marching, with drums and trumpets</para>
+<stagedir remap="STAGEDIR">Enter KING RICHARD III, marching, with drums and trumpets</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD III</speaker>
@@ -6497,7 +6497,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">A flourish, trumpets! strike alarum, drums!</line>
 <line remap="LINE">Let not the heavens hear these tell-tale women</line>
 <line remap="LINE">Rail on the Lord's enointed: strike, I say!</line>
-<para remap="STAGEDIR">Flourish. Alarums</para>
+<stagedir remap="STAGEDIR">Flourish. Alarums</stagedir>
 <line remap="LINE">Either be patient, and entreat me fair,</line>
 <line remap="LINE">Or with the clamorous report of war</line>
 <line remap="LINE">Thus will I drown your exclamations.</line>
@@ -6618,7 +6618,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">Shame serves thy life and doth thy death attend.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN ELIZABETH</speaker>
@@ -7223,9 +7223,9 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD III</speaker>
 <line remap="LINE">Bear her my true love's kiss; and so, farewell.</line>
-<para remap="STAGEDIR">Exit QUEEN ELIZABETH</para>
+<stagedir remap="STAGEDIR">Exit QUEEN ELIZABETH</stagedir>
 <line remap="LINE">Relenting fool, and shallow, changing woman!</line>
-<para remap="STAGEDIR">Enter RATCLIFF; CATESBY following</para>
+<stagedir remap="STAGEDIR">Enter RATCLIFF; CATESBY following</stagedir>
 <line remap="LINE">How now! what news?</line>
 </linegroup></dialogue>
 
@@ -7254,10 +7254,10 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD III</speaker>
 <line remap="LINE">Fly to the duke:</line>
-<para remap="STAGEDIR">To RATCLIFF</para>
+<stagedir remap="STAGEDIR">To RATCLIFF</stagedir>
 <line remap="LINE">Post thou to Salisbury</line>
 <line remap="LINE">When thou comest thither--</line>
-<para remap="STAGEDIR">To CATESBY</para>
+<stagedir remap="STAGEDIR">To CATESBY</stagedir>
 <line remap="LINE">Dull, unmindful villain,</line>
 <line remap="LINE">Why stand'st thou still, and go'st not to the duke?</line>
 </linegroup></dialogue>
@@ -7280,7 +7280,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">I go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">RATCLIFF</speaker>
@@ -7301,7 +7301,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD III</speaker>
 <line remap="LINE">My mind is changed, sir, my mind is changed.</line>
-<para remap="STAGEDIR">Enter STANLEY</para>
+<stagedir remap="STAGEDIR">Enter STANLEY</stagedir>
 <line remap="LINE">How now, what news with you?</line>
 </linegroup></dialogue>
 
@@ -7425,8 +7425,8 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">So deal with him as I prove true to you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
@@ -7437,7 +7437,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">With many more confederates, are in arms.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter another Messenger</para>
+<stagedir remap="STAGEDIR">Enter another Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Messenger</speaker>
@@ -7446,7 +7446,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">Flock to their aid, and still their power increaseth.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter another Messenger</para>
+<stagedir remap="STAGEDIR">Enter another Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Third Messenger</speaker>
@@ -7456,7 +7456,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD III</speaker>
 <line remap="LINE">Out on you, owls! nothing but songs of death?</line>
-<para remap="STAGEDIR">He striketh him</para>
+<stagedir remap="STAGEDIR">He striketh him</stagedir>
 <line remap="LINE">Take that, until thou bring me better news.</line>
 </linegroup></dialogue>
 
@@ -7482,7 +7482,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">Such proclamation hath been made, my liege.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter another Messenger</para>
+<stagedir remap="STAGEDIR">Enter another Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Fourth Messenger</speaker>
@@ -7505,7 +7505,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">Yet to beat down these rebels here at home.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter CATESBY</para>
+<stagedir remap="STAGEDIR">Re-enter CATESBY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CATESBY</speaker>
@@ -7523,11 +7523,11 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">To Salisbury; the rest march on with me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish. Exeunt</para>
+<stagedir remap="STAGEDIR">Flourish. Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Lord Derby's house.</title>
-<para remap="STAGEDIR">Enter DERBY and SIR CHRISTOPHER URSWICK</para>
+<stagedir remap="STAGEDIR">Enter DERBY and SIR CHRISTOPHER URSWICK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DERBY</speaker>
@@ -7568,7 +7568,7 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <line remap="LINE">These letters will resolve him of my mind. Farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -7576,8 +7576,8 @@ BUCKINGHAM, CATESBY, a page, and others</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Salisbury. An open place.</title>
-<para remap="STAGEDIR">Enter the Sheriff, and BUCKINGHAM, with halberds,
-led to execution</para>
+<stagedir remap="STAGEDIR">Enter the Sheriff, and BUCKINGHAM, with halberds,
+led to execution</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BUCKINGHAM</speaker>
@@ -7628,12 +7628,12 @@ led to execution</para>
 <line remap="LINE">Wrong hath but wrong, and blame the due of blame.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The camp near Tamworth.</title>
-<para remap="STAGEDIR">Enter RICHMOND, OXFORD, BLUNT, HERBERT, and others,
-with drum and colours</para>
+<stagedir remap="STAGEDIR">Enter RICHMOND, OXFORD, BLUNT, HERBERT, and others,
+with drum and colours</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">RICHMOND</speaker>
@@ -7679,12 +7679,12 @@ with drum and colours</para>
 <line remap="LINE">Kings it makes gods, and meaner creatures kings.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Bosworth Field.</title>
-<para remap="STAGEDIR">Enter KING RICHARD III in arms, with NORFOLK,
-SURREY, and others</para>
+<stagedir remap="STAGEDIR">Enter KING RICHARD III in arms, with NORFOLK,
+SURREY, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD III</speaker>
@@ -7741,10 +7741,10 @@ SURREY, and others</para>
 <line remap="LINE">For, lords, to-morrow is a busy day.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
-<para remap="STAGEDIR">Enter, on the other side of the field, RICHMOND,
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
+<stagedir remap="STAGEDIR">Enter, on the other side of the field, RICHMOND,
 Sir William Brandon, OXFORD, and others. Some of
-the Soldiers pitch RICHMOND's tent</para>
+the Soldiers pitch RICHMOND's tent</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">RICHMOND</speaker>
@@ -7794,9 +7794,9 @@ the Soldiers pitch RICHMOND's tent</para>
 <line remap="LINE">In to our tent; the air is raw and cold.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They withdraw into the tent</para>
-<para remap="STAGEDIR">Enter, to his tent, KING RICHARD III, NORFOLK,
-RATCLIFF, CATESBY, and others</para>
+<stagedir remap="STAGEDIR">They withdraw into the tent</stagedir>
+<stagedir remap="STAGEDIR">Enter, to his tent, KING RICHARD III, NORFOLK,
+RATCLIFF, CATESBY, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD III</speaker>
@@ -7843,7 +7843,7 @@ RATCLIFF, CATESBY, and others</para>
 <line remap="LINE">I warrant you, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD III</speaker>
@@ -7861,7 +7861,7 @@ RATCLIFF, CATESBY, and others</para>
 <line remap="LINE">To Stanley's regiment; bid him bring his power</line>
 <line remap="LINE">Before sunrising, lest his son George fall</line>
 <line remap="LINE">Into the blind cave of eternal night.</line>
-<para remap="STAGEDIR">Exit CATESBY</para>
+<stagedir remap="STAGEDIR">Exit CATESBY</stagedir>
 <line remap="LINE">Fill me a bowl of wine. Give me a watch.</line>
 <line remap="LINE">Saddle white Surrey for the field to-morrow.</line>
 <line remap="LINE">Look that my staves be sound, and not too heavy.</line>
@@ -7905,9 +7905,9 @@ RATCLIFF, CATESBY, and others</para>
 <line remap="LINE">And help to arm me. Leave me, I say.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt RATCLIFF and the other Attendants</para>
-<para remap="STAGEDIR">Enter DERBY to RICHMOND in his tent, Lords and
-others attending</para>
+<stagedir remap="STAGEDIR">Exeunt RATCLIFF and the other Attendants</stagedir>
+<stagedir remap="STAGEDIR">Enter DERBY to RICHMOND in his tent, Lords and
+others attending</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DERBY</speaker>
@@ -7952,7 +7952,7 @@ others attending</para>
 <line remap="LINE">Lest leaden slumber peise me down to-morrow,</line>
 <line remap="LINE">When I should mount with wings of victory:</line>
 <line remap="LINE">Once more, good night, kind lords and gentlemen.</line>
-<para remap="STAGEDIR">Exeunt all but RICHMOND</para>
+<stagedir remap="STAGEDIR">Exeunt all but RICHMOND</stagedir>
 <line remap="LINE">O Thou, whose captain I account myself,</line>
 <line remap="LINE">Look on my forces with a gracious eye;</line>
 <line remap="LINE">Put in their hands thy bruising irons of wrath,</line>
@@ -7965,146 +7965,146 @@ others attending</para>
 <line remap="LINE">Sleeping and waking, O, defend me still!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Sleeps</para>
-<para remap="STAGEDIR">Enter the Ghost of Prince Edward, son to King Henry VI</para>
+<stagedir remap="STAGEDIR">Sleeps</stagedir>
+<stagedir remap="STAGEDIR">Enter the Ghost of Prince Edward, son to King Henry VI</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Ghost of Prince Edward</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To KING RICHARD III</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To KING RICHARD III</inlinestagedir></line>
 <line remap="LINE">Let me sit heavy on thy soul to-morrow!</line>
 <line remap="LINE">Think, how thou stab'dst me in my prime of youth</line>
 <line remap="LINE">At Tewksbury: despair, therefore, and die!</line>
-<para remap="STAGEDIR">To RICHMOND</para>
+<stagedir remap="STAGEDIR">To RICHMOND</stagedir>
 <line remap="LINE">Be cheerful, Richmond; for the wronged souls</line>
 <line remap="LINE">Of butcher'd princes fight in thy behalf</line>
 <line remap="LINE">King Henry's issue, Richmond, comforts thee.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter the Ghost of King Henry VI</para>
+<stagedir remap="STAGEDIR">Enter the Ghost of King Henry VI</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Ghost of King Henry VI</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To KING RICHARD III</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To KING RICHARD III</inlinestagedir></line>
 <line remap="LINE">When I was mortal, my anointed body</line>
 <line remap="LINE">By thee was punched full of deadly holes</line>
 <line remap="LINE">Think on the Tower and me: despair, and die!</line>
 <line remap="LINE">Harry the Sixth bids thee despair, and die!</line>
-<para remap="STAGEDIR">To RICHMOND</para>
+<stagedir remap="STAGEDIR">To RICHMOND</stagedir>
 <line remap="LINE">Virtuous and holy, be thou conqueror!</line>
 <line remap="LINE">Harry, that prophesied thou shouldst be king,</line>
 <line remap="LINE">Doth comfort thee in thy sleep: live, and flourish!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter the Ghost of CLARENCE</para>
+<stagedir remap="STAGEDIR">Enter the Ghost of CLARENCE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Ghost of CLARENCE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To KING RICHARD III</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To KING RICHARD III</inlinestagedir></line>
 <line remap="LINE">Let me sit heavy on thy soul to-morrow!</line>
 <line remap="LINE">I, that was wash'd to death with fulsome wine,</line>
 <line remap="LINE">Poor Clarence, by thy guile betrayed to death!</line>
 <line remap="LINE">To-morrow in the battle think on me,</line>
 <line remap="LINE">And fall thy edgeless sword: despair, and die!--</line>
-<para remap="STAGEDIR">To RICHMOND</para>
+<stagedir remap="STAGEDIR">To RICHMOND</stagedir>
 <line remap="LINE">Thou offspring of the house of Lancaster</line>
 <line remap="LINE">The wronged heirs of York do pray for thee</line>
 <line remap="LINE">Good angels guard thy battle! live, and flourish!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter the Ghosts of RIVERS, GRAY, and VAUGHAN</para>
+<stagedir remap="STAGEDIR">Enter the Ghosts of RIVERS, GRAY, and VAUGHAN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Ghost of RIVERS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To KING RICHARD III</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To KING RICHARD III</inlinestagedir></line>
 <line remap="LINE">Let me sit heavy on thy soul to-morrow,</line>
 <line remap="LINE">Rivers. that died at Pomfret! despair, and die!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Ghost of GREY</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To KING RICHARD III</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To KING RICHARD III</inlinestagedir></line>
 <line remap="LINE">Think upon Grey, and let thy soul despair!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Ghost of VAUGHAN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To KING RICHARD III</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To KING RICHARD III</inlinestagedir></line>
 <line remap="LINE">Think upon Vaughan, and, with guilty fear,</line>
 <line remap="LINE">Let fall thy lance: despair, and die!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">All</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To RICHMOND</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To RICHMOND</inlinestagedir></line>
 <line remap="LINE">Awake, and think our wrongs in Richard's bosom</line>
 <line remap="LINE">Will conquer him! awake, and win the day!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter the Ghost of HASTINGS</para>
+<stagedir remap="STAGEDIR">Enter the Ghost of HASTINGS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Ghost of HASTINGS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To KING RICHARD III</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To KING RICHARD III</inlinestagedir></line>
 <line remap="LINE">Bloody and guilty, guiltily awake,</line>
 <line remap="LINE">And in a bloody battle end thy days!</line>
 <line remap="LINE">Think on Lord Hastings: despair, and die!</line>
-<para remap="STAGEDIR">To RICHMOND</para>
+<stagedir remap="STAGEDIR">To RICHMOND</stagedir>
 <line remap="LINE">Quiet untroubled soul, awake, awake!</line>
 <line remap="LINE">Arm, fight, and conquer, for fair England's sake!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter the Ghosts of the two young Princes</para>
+<stagedir remap="STAGEDIR">Enter the Ghosts of the two young Princes</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Ghosts of young Princes</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To KING RICHARD III</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To KING RICHARD III</inlinestagedir></line>
 <line remap="LINE">Dream on thy cousins smother'd in the Tower:</line>
 <line remap="LINE">Let us be led within thy bosom, Richard,</line>
 <line remap="LINE">And weigh thee down to ruin, shame, and death!</line>
 <line remap="LINE">Thy nephews' souls bid thee despair and die!</line>
-<para remap="STAGEDIR">To RICHMOND</para>
+<stagedir remap="STAGEDIR">To RICHMOND</stagedir>
 <line remap="LINE">Sleep, Richmond, sleep in peace, and wake in joy;</line>
 <line remap="LINE">Good angels guard thee from the boar's annoy!</line>
 <line remap="LINE">Live, and beget a happy race of kings!</line>
 <line remap="LINE">Edward's unhappy sons do bid thee flourish.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter the Ghost of LADY ANNE</para>
+<stagedir remap="STAGEDIR">Enter the Ghost of LADY ANNE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Ghost of LADY ANNE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To KING RICHARD III</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To KING RICHARD III</inlinestagedir></line>
 <line remap="LINE">Richard, thy wife, that wretched Anne thy wife,</line>
 <line remap="LINE">That never slept a quiet hour with thee,</line>
 <line remap="LINE">Now fills thy sleep with perturbations</line>
 <line remap="LINE">To-morrow in the battle think on me,</line>
 <line remap="LINE">And fall thy edgeless sword: despair, and die!</line>
-<para remap="STAGEDIR">To RICHMOND</para>
+<stagedir remap="STAGEDIR">To RICHMOND</stagedir>
 <line remap="LINE">Thou quiet soul, sleep thou a quiet sleep</line>
 <line remap="LINE">Dream of success and happy victory!</line>
 <line remap="LINE">Thy adversary's wife doth pray for thee.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter the Ghost of BUCKINGHAM</para>
+<stagedir remap="STAGEDIR">Enter the Ghost of BUCKINGHAM</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Ghost of BUCKINGHAM</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To KING RICHARD III</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To KING RICHARD III</inlinestagedir></line>
 <line remap="LINE">The last was I that helped thee to the crown;</line>
 <line remap="LINE">The last was I that felt thy tyranny:</line>
 <line remap="LINE">O, in the battle think on Buckingham,</line>
 <line remap="LINE">And die in terror of thy guiltiness!</line>
 <line remap="LINE">Dream on, dream on, of bloody deeds and death:</line>
 <line remap="LINE">Fainting, despair; despairing, yield thy breath!</line>
-<para remap="STAGEDIR">To RICHMOND</para>
+<stagedir remap="STAGEDIR">To RICHMOND</stagedir>
 <line remap="LINE">I died for hope ere I could lend thee aid:</line>
 <line remap="LINE">But cheer thy heart, and be thou not dismay'd:</line>
 <line remap="LINE">God and good angel fight on Richmond's side;</line>
 <line remap="LINE">And Richard falls in height of all his pride.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The Ghosts vanish</para>
-<para remap="STAGEDIR">KING RICHARD III starts out of his dream</para>
+<stagedir remap="STAGEDIR">The Ghosts vanish</stagedir>
+<stagedir remap="STAGEDIR">KING RICHARD III starts out of his dream</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD III</speaker>
@@ -8140,7 +8140,7 @@ others attending</para>
 <line remap="LINE">To-morrow's vengeance on the head of Richard.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter RATCLIFF</para>
+<stagedir remap="STAGEDIR">Enter RATCLIFF</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">RATCLIFF</speaker>
@@ -8191,8 +8191,8 @@ others attending</para>
 <line remap="LINE">To see if any mean to shrink from me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
-<para remap="STAGEDIR">Enter the Lords to RICHMOND, sitting in his tent</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
+<stagedir remap="STAGEDIR">Enter the Lords to RICHMOND, sitting in his tent</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORDS</speaker>
@@ -8230,7 +8230,7 @@ others attending</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">RICHMOND</speaker>
 <line remap="LINE">Why, then 'tis time to arm and give direction.</line>
-<para remap="STAGEDIR">His oration to his soldiers</para>
+<stagedir remap="STAGEDIR">His oration to his soldiers</stagedir>
 <line remap="LINE">More than I have said, loving countrymen,</line>
 <line remap="LINE">The leisure and enforcement of the time</line>
 <line remap="LINE">Forbids to dwell upon: yet remember this,</line>
@@ -8267,9 +8267,9 @@ others attending</para>
 <line remap="LINE">God and Saint George! Richmond and victory!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
-<para remap="STAGEDIR">Re-enter KING RICHARD, RATCLIFF, Attendants
-and Forces</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
+<stagedir remap="STAGEDIR">Re-enter KING RICHARD, RATCLIFF, Attendants
+and Forces</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD III</speaker>
@@ -8294,7 +8294,7 @@ and Forces</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD III</speaker>
 <line remap="LINE">He was in the right; and so indeed it is.</line>
-<para remap="STAGEDIR">Clock striketh</para>
+<stagedir remap="STAGEDIR">Clock striketh</stagedir>
 <line remap="LINE">Ten the clock there. Give me a calendar.</line>
 <line remap="LINE">Who saw the sun to-day?</line>
 </linegroup></dialogue>
@@ -8326,7 +8326,7 @@ and Forces</para>
 <line remap="LINE">That frowns on me looks sadly upon him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter NORFOLK</para>
+<stagedir remap="STAGEDIR">Enter NORFOLK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NORFOLK</speaker>
@@ -8356,11 +8356,11 @@ and Forces</para>
 <line remap="LINE">This found I on my tent this morning.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">He sheweth him a paper</para>
+<stagedir remap="STAGEDIR">He sheweth him a paper</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD III</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir></line>
 <line remap="LINE">'Jockey of Norfolk, be not too bold,</line>
 <line remap="LINE">For Dickon thy master is bought and sold.'</line>
 <line remap="LINE">A thing devised by the enemy.</line>
@@ -8371,7 +8371,7 @@ and Forces</para>
 <line remap="LINE">Our strong arms be our conscience, swords our law.</line>
 <line remap="LINE">March on, join bravely, let us to't pell-mell</line>
 <line remap="LINE">If not to heaven, then hand in hand to hell.</line>
-<para remap="STAGEDIR">His oration to his Army</para>
+<stagedir remap="STAGEDIR">His oration to his Army</stagedir>
 <line remap="LINE">What shall I say more than I have inferr'd?</line>
 <line remap="LINE">Remember whom you are to cope withal;</line>
 <line remap="LINE">A sort of vagabonds, rascals, and runaways,</line>
@@ -8396,13 +8396,13 @@ and Forces</para>
 <line remap="LINE">And in record, left them the heirs of shame.</line>
 <line remap="LINE">Shall these enjoy our lands?  lie with our wives?</line>
 <line remap="LINE">Ravish our daughters?</line>
-<para remap="STAGEDIR">Drum afar off</para>
+<stagedir remap="STAGEDIR">Drum afar off</stagedir>
 <line remap="LINE">Hark! I hear their drum.</line>
 <line remap="LINE">Fight, gentlemen of England! fight, bold yoemen!</line>
 <line remap="LINE">Draw, archers, draw your arrows to the head!</line>
 <line remap="LINE">Spur your proud horses hard, and ride in blood;</line>
 <line remap="LINE">Amaze the welkin with your broken staves!</line>
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 <line remap="LINE">What says Lord Stanley? will he bring his power?</line>
 </linegroup></dialogue>
 
@@ -8431,12 +8431,12 @@ and Forces</para>
 <line remap="LINE">Upon them! victory sits on our helms.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Another part of the field.</title>
-<para remap="STAGEDIR">Alarum: excursions. Enter NORFOLK and forces
-fighting; to him CATESBY</para>
+<stagedir remap="STAGEDIR">Alarum: excursions. Enter NORFOLK and forces
+fighting; to him CATESBY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CATESBY</speaker>
@@ -8448,7 +8448,7 @@ fighting; to him CATESBY</para>
 <line remap="LINE">Rescue, fair lord, or else the day is lost!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Alarums. Enter KING RICHARD III</para>
+<stagedir remap="STAGEDIR">Alarums. Enter KING RICHARD III</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD III</speaker>
@@ -8469,14 +8469,14 @@ fighting; to him CATESBY</para>
 <line remap="LINE">A horse! a horse! my kingdom for a horse!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Another part of the field.</title>
-<para remap="STAGEDIR">Alarum. Enter KING RICHARD III and RICHMOND; they
+<stagedir remap="STAGEDIR">Alarum. Enter KING RICHARD III and RICHMOND; they
 fight. KING RICHARD III is slain. Retreat and
 flourish. Re-enter RICHMOND, DERBY bearing the
-crown, with divers other Lords</para>
+crown, with divers other Lords</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">RICHMOND</speaker>
@@ -8547,7 +8547,7 @@ crown, with divers other Lords</para>
 <line remap="LINE">That she may long live here, God say amen!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 </chapter>
 </book>

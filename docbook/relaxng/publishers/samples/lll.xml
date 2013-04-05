@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">Love's Labour's Lost</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">Love's Labour's Lost</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Love's Labour's Lost</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -26,17 +26,17 @@
 
 <para><personname remap="PERSONA">JAQUENETTA, a country wench.</personname></para>
 <para><personname remap="PERSONA">Lords, Attendants, &amp;c.</personname></para>
-    <para remap="SCNDESCR">SCENE  Navarre.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  Navarre.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  The king of Navarre's park.</title>
-<para remap="STAGEDIR">Enter FERDINAND king of Navarre, BIRON, LONGAVILLE
-and DUMAIN</para>
+<stagedir remap="STAGEDIR">Enter FERDINAND king of Navarre, BIRON, LONGAVILLE
+and DUMAIN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
@@ -268,7 +268,7 @@ and DUMAIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'Item, That no woman shall come within a</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'Item, That no woman shall come within a</line>
 <line remap="LINE">mile of my court:' Hath this been proclaimed?</line>
 </linegroup></dialogue>
 
@@ -280,7 +280,7 @@ and DUMAIN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
 <line remap="LINE">Let's see the penalty.</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">'On pain of losing her tongue.' Who devised this penalty?</line>
 </linegroup></dialogue>
 
@@ -302,7 +302,7 @@ and DUMAIN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
 <line remap="LINE">A dangerous law against gentility!</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">'Item, If any man be seen to talk with a woman</line>
 <line remap="LINE">within the term of three years, he shall endure such</line>
 <line remap="LINE">public shame as the rest of the court can possibly devise.'</line>
@@ -345,7 +345,7 @@ and DUMAIN</para>
 <line remap="LINE">If I break faith, this word shall speak for me;</line>
 <line remap="LINE">I am forsworn on 'mere necessity.'</line>
 <line remap="LINE">So to the laws at large I write my name:</line>
-<para remap="STAGEDIR">Subscribes</para>
+<stagedir remap="STAGEDIR">Subscribes</stagedir>
 <line remap="LINE">And he that breaks them in the least degree</line>
 <line remap="LINE">Stands in attainder of eternal shame:</line>
 <line remap="LINE">Suggestions are to other as to me;</line>
@@ -385,7 +385,7 @@ and DUMAIN</para>
 <line remap="LINE">And so to study, three years is but short.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DULL with a letter, and COSTARD</para>
+<stagedir remap="STAGEDIR">Enter DULL with a letter, and COSTARD</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DULL</speaker>
@@ -502,7 +502,7 @@ and DUMAIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'Great deputy, the welkin's vicegerent and</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'Great deputy, the welkin's vicegerent and</line>
 <line remap="LINE">sole dominator of Navarre, my soul's earth's god,</line>
 <line remap="LINE">and body's fostering patron.'</line>
 </linegroup></dialogue>
@@ -514,7 +514,7 @@ and DUMAIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'So it is,'--</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'So it is,'--</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -545,7 +545,7 @@ and DUMAIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'So it is, besieged with sable-coloured</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'So it is, besieged with sable-coloured</line>
 <line remap="LINE">melancholy, I did commend the black-oppressing humour</line>
 <line remap="LINE">to the most wholesome physic of thy health-giving</line>
 <line remap="LINE">air; and, as I am a gentleman, betook myself to</line>
@@ -571,7 +571,7 @@ and DUMAIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'that unlettered small-knowing soul,'--</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'that unlettered small-knowing soul,'--</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -581,7 +581,7 @@ and DUMAIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'that shallow vassal,'--</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'that shallow vassal,'--</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -591,7 +591,7 @@ and DUMAIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'which, as I remember, hight Costard,'--</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'which, as I remember, hight Costard,'--</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -601,7 +601,7 @@ and DUMAIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'sorted and consorted, contrary to thy</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'sorted and consorted, contrary to thy</line>
 <line remap="LINE">established proclaimed edict and continent canon,</line>
 <line remap="LINE">which with,--O, with--but with this I passion to say</line>
 <line remap="LINE">wherewith,--</line>
@@ -614,7 +614,7 @@ and DUMAIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'with a child of our grandmother Eve, a</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'with a child of our grandmother Eve, a</line>
 <line remap="LINE">female; or, for thy more sweet understanding, a</line>
 <line remap="LINE">woman. Him I, as my ever-esteemed duty pricks me on,</line>
 <line remap="LINE">have sent to thee, to receive the meed of</line>
@@ -630,7 +630,7 @@ and DUMAIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'For Jaquenetta,--so is the weaker vessel</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'For Jaquenetta,--so is the weaker vessel</line>
 <line remap="LINE">called which I apprehended with the aforesaid</line>
 <line remap="LINE">swain,--I keep her as a vessel of the law's fury;</line>
 <line remap="LINE">and shall, at the least of thy sweet notice, bring</line>
@@ -727,7 +727,7 @@ and DUMAIN</para>
 <line remap="LINE">Which each to other hath so strongly sworn.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt FERDINAND, LONGAVILLE, and DUMAIN</para>
+<stagedir remap="STAGEDIR">Exeunt FERDINAND, LONGAVILLE, and DUMAIN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
@@ -745,11 +745,11 @@ and DUMAIN</para>
 <line remap="LINE">till then, sit thee down, sorrow!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same.</title>
-<para remap="STAGEDIR">Enter DON ADRIANO DE ARMADO and MOTH</para>
+<stagedir remap="STAGEDIR">Enter DON ADRIANO DE ARMADO and MOTH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON ADRIANO DE ARMADO</speaker>
@@ -874,7 +874,7 @@ and DUMAIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MOTH</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  He speaks the mere contrary; crosses love not him.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  He speaks the mere contrary; crosses love not him.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1104,7 +1104,7 @@ and DUMAIN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MOTH</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  To be whipped; and yet a better love than</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  To be whipped; and yet a better love than</line>
 <line remap="LINE">my master.</line>
 </linegroup></dialogue>
 
@@ -1128,7 +1128,7 @@ and DUMAIN</para>
 <line remap="LINE">Forbear till this company be past.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DULL, COSTARD, and JAQUENETTA</para>
+<stagedir remap="STAGEDIR">Enter DULL, COSTARD, and JAQUENETTA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DULL</speaker>
@@ -1204,7 +1204,7 @@ and DUMAIN</para>
 <line remap="LINE">Come, Jaquenetta, away!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt DULL and JAQUENETTA</para>
+<stagedir remap="STAGEDIR">Exeunt DULL and JAQUENETTA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON ADRIANO DE ARMADO</speaker>
@@ -1269,7 +1269,7 @@ and DUMAIN</para>
 <line remap="LINE">therefore I can be quiet.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt MOTH and COSTARD</para>
+<stagedir remap="STAGEDIR">Exeunt MOTH and COSTARD</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON ADRIANO DE ARMADO</speaker>
@@ -1294,7 +1294,7 @@ and DUMAIN</para>
 <line remap="LINE">write, pen; for I am for whole volumes in folio.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -1302,8 +1302,8 @@ and DUMAIN</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  The same.</title>
-<para remap="STAGEDIR">Enter the PRINCESS of France, ROSALINE, MARIA,
-KATHARINE, BOYET, Lords, and other Attendants</para>
+<stagedir remap="STAGEDIR">Enter the PRINCESS of France, ROSALINE, MARIA,
+KATHARINE, BOYET, Lords, and other Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BOYET</speaker>
@@ -1355,7 +1355,7 @@ KATHARINE, BOYET, Lords, and other Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRINCESS</speaker>
 <line remap="LINE">All pride is willing pride, and yours is so.</line>
-<para remap="STAGEDIR">Exit BOYET</para>
+<stagedir remap="STAGEDIR">Exit BOYET</stagedir>
 <line remap="LINE">Who are the votaries, my loving lords,</line>
 <line remap="LINE">That are vow-fellows with this virtuous duke?</line>
 </linegroup></dialogue>
@@ -1443,7 +1443,7 @@ KATHARINE, BOYET, Lords, and other Attendants</para>
 <line remap="LINE">Here comes Boyet.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter BOYET</para>
+<stagedir remap="STAGEDIR">Re-enter BOYET</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRINCESS</speaker>
@@ -1463,8 +1463,8 @@ KATHARINE, BOYET, Lords, and other Attendants</para>
 <line remap="LINE">Here comes Navarre.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter FERDINAND, LONGAVILLE, DUMAIN, BIRON, and
-Attendants</para>
+<stagedir remap="STAGEDIR">Enter FERDINAND, LONGAVILLE, DUMAIN, BIRON, and
+Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
@@ -1701,7 +1701,7 @@ Attendants</para>
 <line remap="LINE">Thy own wish wish I thee in every place!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
@@ -1768,7 +1768,7 @@ Attendants</para>
 <line remap="LINE">I cannot stay thanksgiving.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Retiring</para>
+<stagedir remap="STAGEDIR">Retiring</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUMAIN</speaker>
@@ -1785,7 +1785,7 @@ Attendants</para>
 <line remap="LINE">A gallant lady. Monsieur, fare you well.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LONGAVILLE</speaker>
@@ -1839,7 +1839,7 @@ Attendants</para>
 <line remap="LINE">Not unlike, sir, that may be.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit LONGAVILLE</para>
+<stagedir remap="STAGEDIR">Exit LONGAVILLE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
@@ -1871,7 +1871,7 @@ Attendants</para>
 <line remap="LINE">Farewell to me, sir, and welcome to you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit BIRON</para>
+<stagedir remap="STAGEDIR">Exit BIRON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARIA</speaker>
@@ -1915,7 +1915,7 @@ Attendants</para>
 <line remap="LINE">So you grant pasture for me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Offering to kiss her</para>
+<stagedir remap="STAGEDIR">Offering to kiss her</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARIA</speaker>
@@ -2035,7 +2035,7 @@ Attendants</para>
 <line remap="LINE">You are too hard for me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -2043,7 +2043,7 @@ Attendants</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  The same.</title>
-<para remap="STAGEDIR">Enter DON ADRIANO DE ARMADO and MOTH</para>
+<stagedir remap="STAGEDIR">Enter DON ADRIANO DE ARMADO and MOTH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON ADRIANO DE ARMADO</speaker>
@@ -2055,7 +2055,7 @@ Attendants</para>
 <line remap="LINE">Concolinel.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Singing</para>
+<stagedir remap="STAGEDIR">Singing</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON ADRIANO DE ARMADO</speaker>
@@ -2236,7 +2236,7 @@ Attendants</para>
 <line remap="LINE">Thump then and I flee.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON ADRIANO DE ARMADO</speaker>
@@ -2246,7 +2246,7 @@ Attendants</para>
 <line remap="LINE">My herald is return'd.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter MOTH with COSTARD</para>
+<stagedir remap="STAGEDIR">Re-enter MOTH with COSTARD</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MOTH</speaker>
@@ -2404,13 +2404,13 @@ Attendants</para>
 <line remap="LINE">I give thee thy liberty, set thee from durance; and,</line>
 <line remap="LINE">in lieu thereof, impose on thee nothing but this:</line>
 <line remap="LINE">bear this significant</line>
-<para remap="STAGEDIR">Giving a letter</para>
+<stagedir remap="STAGEDIR">Giving a letter</stagedir>
 <line remap="LINE">to the country maid Jaquenetta:</line>
 <line remap="LINE">there is remuneration; for the best ward of mine</line>
 <line remap="LINE">honour is rewarding my dependents. Moth, follow.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MOTH</speaker>
@@ -2420,7 +2420,7 @@ Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">COSTARD</speaker>
 <line remap="LINE">My sweet ounce of man's flesh! my incony Jew!</line>
-<para remap="STAGEDIR">Exit MOTH</para>
+<stagedir remap="STAGEDIR">Exit MOTH</stagedir>
 <line remap="LINE">Now will I look to his remuneration. Remuneration!</line>
 <line remap="LINE">O, that's the Latin word for three farthings: three</line>
 <line remap="LINE">farthings--remuneration.--'What's the price of this</line>
@@ -2430,7 +2430,7 @@ Attendants</para>
 <line remap="LINE">never buy and sell out of this word.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BIRON</para>
+<stagedir remap="STAGEDIR">Enter BIRON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
@@ -2517,7 +2517,7 @@ Attendants</para>
 <line remap="LINE">This seal'd-up counsel. There's thy guerdon; go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Giving him a shilling</para>
+<stagedir remap="STAGEDIR">Giving him a shilling</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">COSTARD</speaker>
@@ -2526,7 +2526,7 @@ Attendants</para>
 <line remap="LINE">will do it sir, in print. Gardon! Remuneration!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
@@ -2564,7 +2564,7 @@ Attendants</para>
 <line remap="LINE">Some men must love my lady and some Joan.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -2572,8 +2572,8 @@ Attendants</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  The same.</title>
-<para remap="STAGEDIR">Enter the PRINCESS, and her train, a Forester,
-BOYET, ROSALINE, MARIA, and KATHARINE</para>
+<stagedir remap="STAGEDIR">Enter the PRINCESS, and her train, a Forester,
+BOYET, ROSALINE, MARIA, and KATHARINE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRINCESS</speaker>
@@ -2673,7 +2673,7 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <line remap="LINE">Here comes a member of the commonwealth.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter COSTARD</para>
+<stagedir remap="STAGEDIR">Enter COSTARD</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">COSTARD</speaker>
@@ -2733,7 +2733,7 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <line remap="LINE">Break the neck of the wax, and every one give ear.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BOYET</speaker>
@@ -2832,11 +2832,11 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRINCESS</speaker>
 <line remap="LINE">Thou hast mistaken his letter. Come, lords, away.</line>
-<para remap="STAGEDIR">To ROSALINE</para>
+<stagedir remap="STAGEDIR">To ROSALINE</stagedir>
 <line remap="LINE">Here, sweet, put up this: 'twill be thine another day.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt PRINCESS and train</para>
+<stagedir remap="STAGEDIR">Exeunt PRINCESS and train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BOYET</speaker>
@@ -2919,7 +2919,7 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <line remap="LINE">An I cannot, another can.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt ROSALINE and KATHARINE</para>
+<stagedir remap="STAGEDIR">Exeunt ROSALINE and KATHARINE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">COSTARD</speaker>
@@ -2972,7 +2972,7 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <line remap="LINE">I fear too much rubbing. Good night, my good owl.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt BOYET and MARIA</para>
+<stagedir remap="STAGEDIR">Exeunt BOYET and MARIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">COSTARD</speaker>
@@ -2991,12 +2991,12 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <line remap="LINE">Sola, sola!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Shout within</para>
-<para remap="STAGEDIR">Exit COSTARD, running</para>
+<stagedir remap="STAGEDIR">Shout within</stagedir>
+<stagedir remap="STAGEDIR">Exit COSTARD, running</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same.</title>
-<para remap="STAGEDIR">Enter HOLOFERNES, SIR NATHANIEL, and DULL</para>
+<stagedir remap="STAGEDIR">Enter HOLOFERNES, SIR NATHANIEL, and DULL</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR NATHANIEL</speaker>
@@ -3153,7 +3153,7 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DULL</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  If a talent be a claw, look how he claws</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  If a talent be a claw, look how he claws</line>
 <line remap="LINE">him with a talent.</line>
 </linegroup></dialogue>
 
@@ -3185,7 +3185,7 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <line remap="LINE">loquitur; a soul feminine saluteth us.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter JAQUENETTA and COSTARD</para>
+<stagedir remap="STAGEDIR">Enter JAQUENETTA and COSTARD</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JAQUENETTA</speaker>
@@ -3242,7 +3242,7 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR NATHANIEL</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir></line>
 <line remap="LINE">If love make me forsworn, how shall I swear to love?</line>
 <line remap="LINE">Ah, never faith could hold, if not to beauty vow'd!</line>
 <line remap="LINE">Though to myself forsworn, to thee I'll faithful prove:</line>
@@ -3308,7 +3308,7 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <line remap="LINE">Have with thee, my girl.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt COSTARD and JAQUENETTA</para>
+<stagedir remap="STAGEDIR">Exeunt COSTARD and JAQUENETTA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR NATHANIEL</speaker>
@@ -3349,17 +3349,17 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HOLOFERNES</speaker>
 <line remap="LINE">And, certes, the text most infallibly concludes it.</line>
-<para remap="STAGEDIR">To DULL</para>
+<stagedir remap="STAGEDIR">To DULL</stagedir>
 <line remap="LINE">Sir, I do invite you too; you shall not</line>
 <line remap="LINE">say me nay: pauca verba. Away! the gentles are at</line>
 <line remap="LINE">their game, and we will to our recreation.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The same.</title>
-<para remap="STAGEDIR">Enter BIRON, with a paper</para>
+<stagedir remap="STAGEDIR">Enter BIRON, with a paper</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
@@ -3385,8 +3385,8 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <line remap="LINE">with a paper: God give him grace to groan!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Stands aside</para>
-<para remap="STAGEDIR">Enter FERDINAND, with a paper</para>
+<stagedir remap="STAGEDIR">Stands aside</stagedir>
+<stagedir remap="STAGEDIR">Enter FERDINAND, with a paper</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
@@ -3395,14 +3395,14 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Shot, by heaven! Proceed, sweet Cupid:</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Shot, by heaven! Proceed, sweet Cupid:</line>
 <line remap="LINE">thou hast thumped him with thy bird-bolt under the</line>
 <line remap="LINE">left pap. In faith, secrets!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir></line>
 <line remap="LINE">So sweet a kiss the golden sun gives not</line>
 <line remap="LINE">To those fresh morning drops upon the rose,</line>
 <line remap="LINE">As thy eye-beams, when their fresh rays have smote</line>
@@ -3421,7 +3421,7 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <line remap="LINE">No thought can think, nor tongue of mortal tell.</line>
 <line remap="LINE">How shall she know my griefs? I'll drop the paper:</line>
 <line remap="LINE">Sweet leaves, shade folly. Who is he comes here?</line>
-<para remap="STAGEDIR">Steps aside</para>
+<stagedir remap="STAGEDIR">Steps aside</stagedir>
 <line remap="LINE">What, Longaville! and reading! listen, ear.</line>
 </linegroup></dialogue>
 
@@ -3430,7 +3430,7 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <line remap="LINE">Now, in thy likeness, one more fool appear!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LONGAVILLE, with a paper</para>
+<stagedir remap="STAGEDIR">Enter LONGAVILLE, with a paper</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LONGAVILLE</speaker>
@@ -3480,7 +3480,7 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LONGAVILLE</speaker>
 <line remap="LINE">This same shall go.</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">Did not the heavenly rhetoric of thine eye,</line>
 <line remap="LINE">'Gainst whom the world cannot hold argument,</line>
 <line remap="LINE">Persuade my heart to this false perjury?</line>
@@ -3509,7 +3509,7 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <line remap="LINE">By whom shall I send this?--Company! stay.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Steps aside</para>
+<stagedir remap="STAGEDIR">Steps aside</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
@@ -3517,7 +3517,7 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <line remap="LINE">Like a demigod here sit I in the sky.</line>
 <line remap="LINE">And wretched fools' secrets heedfully o'ereye.</line>
 <line remap="LINE">More sacks to the mill! O heavens, I have my wish!</line>
-<para remap="STAGEDIR">Enter DUMAIN, with a paper</para>
+<stagedir remap="STAGEDIR">Enter DUMAIN, with a paper</stagedir>
 <line remap="LINE">Dumain transform'd! four woodcocks in a dish!</line>
 </linegroup></dialogue>
 
@@ -3616,7 +3616,7 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUMAIN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir></line>
 <line remap="LINE">On a day--alack the day!--</line>
 <line remap="LINE">Love, whose month is ever May,</line>
 <line remap="LINE">Spied a blossom passing fair</line>
@@ -3647,14 +3647,14 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LONGAVILLE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Advancing</phrase>  Dumain, thy love is far from charity.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Advancing</inlinestagedir>  Dumain, thy love is far from charity.</line>
 <line remap="LINE">You may look pale, but I should blush, I know,</line>
 <line remap="LINE">To be o'erheard and taken napping so.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Advancing</phrase>  Come, sir, you blush; as his your case is such;</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Advancing</inlinestagedir>  Come, sir, you blush; as his your case is such;</line>
 <line remap="LINE">You chide at him, offending twice as much;</line>
 <line remap="LINE">You do not love Maria; Longaville</line>
 <line remap="LINE">Did never sonnet for her sake compile,</line>
@@ -3666,9 +3666,9 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <line remap="LINE">Saw sighs reek from you, noted well your passion:</line>
 <line remap="LINE">Ay me! says one; O Jove! the other cries;</line>
 <line remap="LINE">One, her hairs were gold, crystal the other's eyes:</line>
-<para remap="STAGEDIR">To LONGAVILLE</para>
+<stagedir remap="STAGEDIR">To LONGAVILLE</stagedir>
 <line remap="LINE">You would for paradise break faith, and troth;</line>
-<para remap="STAGEDIR">To DUMAIN</para>
+<stagedir remap="STAGEDIR">To DUMAIN</stagedir>
 <line remap="LINE">And Jove, for your love, would infringe an oath.</line>
 <line remap="LINE">What will Biron say when that he shall hear</line>
 <line remap="LINE">Faith so infringed, which such zeal did swear?</line>
@@ -3681,7 +3681,7 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
 <line remap="LINE">Now step I forth to whip hypocrisy.</line>
-<para remap="STAGEDIR">Advancing</para>
+<stagedir remap="STAGEDIR">Advancing</stagedir>
 <line remap="LINE">Ah, good my liege, I pray thee, pardon me!</line>
 <line remap="LINE">Good heart, what grace hast thou, thus to reprove</line>
 <line remap="LINE">These worms for loving, that art most in love?</line>
@@ -3739,7 +3739,7 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <line remap="LINE">I post from love: good lover, let me go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter JAQUENETTA and COSTARD</para>
+<stagedir remap="STAGEDIR">Enter JAQUENETTA and COSTARD</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JAQUENETTA</speaker>
@@ -3781,7 +3781,7 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
 <line remap="LINE">Biron, read it over.</line>
-<para remap="STAGEDIR">Giving him the paper</para>
+<stagedir remap="STAGEDIR">Giving him the paper</stagedir>
 <line remap="LINE">Where hadst thou it?</line>
 </linegroup></dialogue>
 
@@ -3800,7 +3800,7 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <line remap="LINE">Of Dun Adramadio, Dun Adramadio.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">BIRON tears the letter</para>
+<stagedir remap="STAGEDIR">BIRON tears the letter</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
@@ -3822,11 +3822,11 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <line remap="LINE">It is Biron's writing, and here is his name.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Gathering up the pieces</para>
+<stagedir remap="STAGEDIR">Gathering up the pieces</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To COSTARD</phrase>  Ah, you whoreson loggerhead! you were</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To COSTARD</inlinestagedir>  Ah, you whoreson loggerhead! you were</line>
 <line remap="LINE">born to do me shame.</line>
 <line remap="LINE">Guilty, my lord, guilty! I confess, I confess.</line>
 </linegroup></dialogue>
@@ -3865,7 +3865,7 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <line remap="LINE">Walk aside the true folk, and let the traitors stay.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt COSTARD and JAQUENETTA</para>
+<stagedir remap="STAGEDIR">Exeunt COSTARD and JAQUENETTA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
@@ -4066,9 +4066,9 @@ BOYET, ROSALINE, MARIA, and KATHARINE</para>
 <line remap="LINE">For when would you, my lord, or you, or you,</line>
 <line remap="LINE">Have found the ground of study's excellence</line>
 <line remap="LINE">Without the beauty of a woman's face?</line>
-<para remap="STAGEDIR">From women's eyes this doctrine I derive;
+<stagedir remap="STAGEDIR">From women's eyes this doctrine I derive;
 They are the ground, the books, the academes
-From whence doth spring the true Promethean fire</para>
+From whence doth spring the true Promethean fire</stagedir>
 <line remap="LINE">Why, universal plodding poisons up</line>
 <line remap="LINE">The nimble spirits in the arteries,</line>
 <line remap="LINE">As motion and long-during action tires</line>
@@ -4181,7 +4181,7 @@ From whence doth spring the true Promethean fire</para>
 <line remap="LINE">If so, our copper buys no better treasure.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -4189,7 +4189,7 @@ From whence doth spring the true Promethean fire</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  The same.</title>
-<para remap="STAGEDIR">Enter HOLOFERNES, SIR NATHANIEL, and DULL</para>
+<stagedir remap="STAGEDIR">Enter HOLOFERNES, SIR NATHANIEL, and DULL</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HOLOFERNES</speaker>
@@ -4222,7 +4222,7 @@ From whence doth spring the true Promethean fire</para>
 <line remap="LINE">A most singular and choice epithet.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Draws out his table-book</para>
+<stagedir remap="STAGEDIR">Draws out his table-book</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HOLOFERNES</speaker>
@@ -4260,14 +4260,14 @@ From whence doth spring the true Promethean fire</para>
 <line remap="LINE">Video, et gaudeo.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DON ADRIANO DE ARMADO, MOTH, and COSTARD</para>
+<stagedir remap="STAGEDIR">Enter DON ADRIANO DE ARMADO, MOTH, and COSTARD</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON ADRIANO DE ARMADO</speaker>
 <line remap="LINE">Chirrah!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">To MOTH</para>
+<stagedir remap="STAGEDIR">To MOTH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HOLOFERNES</speaker>
@@ -4286,7 +4286,7 @@ From whence doth spring the true Promethean fire</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MOTH</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to COSTARD</phrase>  They have been at a great feast</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to COSTARD</inlinestagedir>  They have been at a great feast</line>
 <line remap="LINE">of languages, and stolen the scraps.</line>
 </linegroup></dialogue>
 
@@ -4306,7 +4306,7 @@ From whence doth spring the true Promethean fire</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON ADRIANO DE ARMADO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To HOLOFERNES</phrase>  Monsieur, are you not lettered?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To HOLOFERNES</inlinestagedir>  Monsieur, are you not lettered?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -4563,11 +4563,11 @@ From whence doth spring the true Promethean fire</para>
 <line remap="LINE">Most dull, honest Dull! To our sport, away!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same.</title>
-<para remap="STAGEDIR">Enter the PRINCESS, KATHARINE, ROSALINE, and MARIA</para>
+<stagedir remap="STAGEDIR">Enter the PRINCESS, KATHARINE, ROSALINE, and MARIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRINCESS</speaker>
@@ -4798,7 +4798,7 @@ From whence doth spring the true Promethean fire</para>
 <line remap="LINE">Here comes Boyet, and mirth is in his face.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BOYET</para>
+<stagedir remap="STAGEDIR">Enter BOYET</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BOYET</speaker>
@@ -4938,17 +4938,17 @@ From whence doth spring the true Promethean fire</para>
 <line remap="LINE">And they, well mock'd, depart away with shame.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Trumpets sound within</para>
+<stagedir remap="STAGEDIR">Trumpets sound within</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BOYET</speaker>
 <line remap="LINE">The trumpet sounds: be mask'd; the maskers come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The Ladies mask</para>
-<para remap="STAGEDIR">Enter Blackamoors with music; MOTH; FERDINAND,
+<stagedir remap="STAGEDIR">The Ladies mask</stagedir>
+<stagedir remap="STAGEDIR">Enter Blackamoors with music; MOTH; FERDINAND,
 BIRON, LONGAVILLE, and DUMAIN, in Russian habits,
-and masked</para>
+and masked</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MOTH</speaker>
@@ -4963,13 +4963,13 @@ and masked</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MOTH</speaker>
 <line remap="LINE">A holy parcel of the fairest dames.</line>
-<para remap="STAGEDIR">The Ladies turn their backs to him</para>
+<stagedir remap="STAGEDIR">The Ladies turn their backs to him</stagedir>
 <line remap="LINE">That ever turn'd their--backs--to mortal views!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to MOTH</phrase>  Their eyes, villain, their eyes!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to MOTH</inlinestagedir>  Their eyes, villain, their eyes!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -4990,7 +4990,7 @@ and masked</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to MOTH</phrase>  Once to behold, rogue.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to MOTH</inlinestagedir>  Once to behold, rogue.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5015,7 +5015,7 @@ and masked</para>
 <line remap="LINE">Is this your perfectness? be gone, you rogue!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit MOTH</para>
+<stagedir remap="STAGEDIR">Exit MOTH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALINE</speaker>
@@ -5134,7 +5134,7 @@ and masked</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSALINE</speaker>
 <line remap="LINE">Play, music, then! Nay, you must do it soon.</line>
-<para remap="STAGEDIR">Music plays</para>
+<stagedir remap="STAGEDIR">Music plays</stagedir>
 <line remap="LINE">Not yet! no dance! Thus change I like the moon.</line>
 </linegroup></dialogue>
 
@@ -5227,7 +5227,7 @@ and masked</para>
 <line remap="LINE">I am best pleased with that.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They converse apart</para>
+<stagedir remap="STAGEDIR">They converse apart</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
@@ -5277,7 +5277,7 @@ and masked</para>
 <line remap="LINE">Therefore meet.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They converse apart</para>
+<stagedir remap="STAGEDIR">They converse apart</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUMAIN</speaker>
@@ -5306,7 +5306,7 @@ and masked</para>
 <line remap="LINE">As much in private, and I'll bid adieu.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They converse apart</para>
+<stagedir remap="STAGEDIR">They converse apart</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KATHARINE</speaker>
@@ -5376,7 +5376,7 @@ and masked</para>
 <line remap="LINE">Bleat softly then; the butcher hears you cry.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They converse apart</para>
+<stagedir remap="STAGEDIR">They converse apart</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BOYET</speaker>
@@ -5406,7 +5406,7 @@ and masked</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRINCESS</speaker>
 <line remap="LINE">Twenty adieus, my frozen Muscovits.</line>
-<para remap="STAGEDIR">Exeunt FERDINAND, Lords, and Blackamoors</para>
+<stagedir remap="STAGEDIR">Exeunt FERDINAND, Lords, and Blackamoors</stagedir>
 <line remap="LINE">Are these the breed of wits so wonder'd at?</line>
 </linegroup></dialogue>
 
@@ -5548,9 +5548,9 @@ and masked</para>
 <line remap="LINE">Whip to our tents, as roes run o'er land.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt PRINCESS, ROSALINE, KATHARINE, and MARIA</para>
-<para remap="STAGEDIR">Re-enter FERDINAND, BIRON, LONGAVILLE, and DUMAIN,
-in their proper habits</para>
+<stagedir remap="STAGEDIR">Exeunt PRINCESS, ROSALINE, KATHARINE, and MARIA</stagedir>
+<stagedir remap="STAGEDIR">Re-enter FERDINAND, BIRON, LONGAVILLE, and DUMAIN,
+in their proper habits</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
@@ -5573,7 +5573,7 @@ in their proper habits</para>
 <line remap="LINE">I will; and so will she, I know, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
@@ -5611,8 +5611,8 @@ in their proper habits</para>
 <line remap="LINE">Till this madman show'd thee? and what art thou now?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter the PRINCESS, ushered by BOYET, ROSALINE,
-MARIA, and KATHARINE</para>
+<stagedir remap="STAGEDIR">Re-enter the PRINCESS, ushered by BOYET, ROSALINE,
+MARIA, and KATHARINE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
@@ -5973,7 +5973,7 @@ MARIA, and KATHARINE</para>
 <line remap="LINE">Now, to our perjury to add more terror,</line>
 <line remap="LINE">We are again forsworn, in will and error.</line>
 <line remap="LINE">Much upon this it is: and might not you</line>
-<para remap="STAGEDIR">To BOYET</para>
+<stagedir remap="STAGEDIR">To BOYET</stagedir>
 <line remap="LINE">Forestall our sport, to make us thus untrue?</line>
 <line remap="LINE">Do not you know my lady's foot by the squier,</line>
 <line remap="LINE">And laugh upon the apple of her eye?</line>
@@ -5994,7 +5994,7 @@ MARIA, and KATHARINE</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
 <line remap="LINE">Lo, he is tilting straight! Peace! I have done.</line>
-<para remap="STAGEDIR">Enter COSTARD</para>
+<stagedir remap="STAGEDIR">Enter COSTARD</stagedir>
 <line remap="LINE">Welcome, pure wit! thou partest a fair fray.</line>
 </linegroup></dialogue>
 
@@ -6085,7 +6085,7 @@ MARIA, and KATHARINE</para>
 <line remap="LINE">some care.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
@@ -6118,7 +6118,7 @@ MARIA, and KATHARINE</para>
 <line remap="LINE">A right description of our sport, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DON ADRIANO DE ARMADO</para>
+<stagedir remap="STAGEDIR">Enter DON ADRIANO DE ARMADO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON ADRIANO DE ARMADO</speaker>
@@ -6126,7 +6126,7 @@ MARIA, and KATHARINE</para>
 <line remap="LINE">sweet breath as will utter a brace of words.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Converses apart with FERDINAND, and delivers him a paper</para>
+<stagedir remap="STAGEDIR">Converses apart with FERDINAND, and delivers him a paper</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRINCESS</speaker>
@@ -6152,7 +6152,7 @@ MARIA, and KATHARINE</para>
 <line remap="LINE">I wish you the peace of mind, most royal couplement!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
@@ -6187,7 +6187,7 @@ MARIA, and KATHARINE</para>
 <line remap="LINE">The ship is under sail, and here she comes amain.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter COSTARD, for Pompey</para>
+<stagedir remap="STAGEDIR">Enter COSTARD, for Pompey</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">COSTARD</speaker>
@@ -6252,7 +6252,7 @@ MARIA, and KATHARINE</para>
 <line remap="LINE">My hat to a halfpenny, Pompey proves the best Worthy.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SIR NATHANIEL, for Alexander</para>
+<stagedir remap="STAGEDIR">Enter SIR NATHANIEL, for Alexander</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR NATHANIEL</speaker>
@@ -6306,13 +6306,13 @@ MARIA, and KATHARINE</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">COSTARD</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To SIR NATHANIEL</phrase>  O, sir, you have overthrown</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To SIR NATHANIEL</inlinestagedir>  O, sir, you have overthrown</line>
 <line remap="LINE">Alisander the conqueror! You will be scraped out of</line>
 <line remap="LINE">the painted cloth for this: your lion, that holds</line>
 <line remap="LINE">his poll-axe sitting on a close-stool, will be given</line>
 <line remap="LINE">to Ajax: he will be the ninth Worthy. A conqueror,</line>
 <line remap="LINE">and afeard to speak! run away for shame, Alisander.</line>
-<para remap="STAGEDIR">SIR NATHANIEL retires</para>
+<stagedir remap="STAGEDIR">SIR NATHANIEL retires</stagedir>
 <line remap="LINE">There, an't shall please you; a foolish mild man; an</line>
 <line remap="LINE">honest man, look you, and soon dashed. He is a</line>
 <line remap="LINE">marvellous good neighbour, faith, and a very good</line>
@@ -6321,7 +6321,7 @@ MARIA, and KATHARINE</para>
 <line remap="LINE">a-coming will speak their mind in some other sort.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HOLOFERNES, for Judas; and MOTH, for Hercules</para>
+<stagedir remap="STAGEDIR">Enter HOLOFERNES, for Judas; and MOTH, for Hercules</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HOLOFERNES</speaker>
@@ -6332,7 +6332,7 @@ MARIA, and KATHARINE</para>
 <line remap="LINE">Quoniam he seemeth in minority,</line>
 <line remap="LINE">Ergo I come with this apology.</line>
 <line remap="LINE">Keep some state in thy exit, and vanish.</line>
-<para remap="STAGEDIR">MOTH retires</para>
+<stagedir remap="STAGEDIR">MOTH retires</stagedir>
 <line remap="LINE">Judas I am,--</line>
 </linegroup></dialogue>
 
@@ -6494,14 +6494,14 @@ MARIA, and KATHARINE</para>
 <line remap="LINE">A light for Monsieur Judas! it grows dark, he may stumble.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">HOLOFERNES retires</para>
+<stagedir remap="STAGEDIR">HOLOFERNES retires</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRINCESS</speaker>
 <line remap="LINE">Alas, poor Maccabaeus, how hath he been baited!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DON ADRIANO DE ARMADO, for Hector</para>
+<stagedir remap="STAGEDIR">Enter DON ADRIANO DE ARMADO, for Hector</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIRON</speaker>
@@ -6619,7 +6619,7 @@ MARIA, and KATHARINE</para>
 <line remap="LINE">The sweet war-man is dead and rotten; sweet chucks,</line>
 <line remap="LINE">beat not the bones of the buried: when he breathed,</line>
 <line remap="LINE">he was a man. But I will forward with my device.</line>
-<para remap="STAGEDIR">To the PRINCESS</para>
+<stagedir remap="STAGEDIR">To the PRINCESS</stagedir>
 <line remap="LINE">Sweet royalty, bestow on me the sense of hearing.</line>
 </linegroup></dialogue>
 
@@ -6635,12 +6635,12 @@ MARIA, and KATHARINE</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BOYET</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to DUMAIN</phrase>  Loves her by the foot,--</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to DUMAIN</inlinestagedir>  Loves her by the foot,--</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUMAIN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to BOYET</phrase>  He may not by the yard.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to BOYET</inlinestagedir>  He may not by the yard.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -6786,7 +6786,7 @@ MARIA, and KATHARINE</para>
 <line remap="LINE">his heart for a favour.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MERCADE</para>
+<stagedir remap="STAGEDIR">Enter MERCADE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MERCADE</speaker>
@@ -6827,7 +6827,7 @@ MARIA, and KATHARINE</para>
 <line remap="LINE">discretion, and I will right myself like a soldier.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Worthies</para>
+<stagedir remap="STAGEDIR">Exeunt Worthies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
@@ -7104,7 +7104,7 @@ MARIA, and KATHARINE</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRINCESS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To FERDINAND</phrase>  Ay, sweet my lord; and so I take my leave.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To FERDINAND</inlinestagedir>  Ay, sweet my lord; and so I take my leave.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -7130,7 +7130,7 @@ MARIA, and KATHARINE</para>
 <line remap="LINE">That's too long for a play.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter DON ADRIANO DE ARMADO</para>
+<stagedir remap="STAGEDIR">Re-enter DON ADRIANO DE ARMADO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON ADRIANO DE ARMADO</speaker>
@@ -7166,12 +7166,12 @@ MARIA, and KATHARINE</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON ADRIANO DE ARMADO</speaker>
 <line remap="LINE">Holla! approach.</line>
-<para remap="STAGEDIR">Re-enter HOLOFERNES, SIR NATHANIEL, MOTH, COSTARD,
-and others</para>
+<stagedir remap="STAGEDIR">Re-enter HOLOFERNES, SIR NATHANIEL, MOTH, COSTARD,
+and others</stagedir>
 <line remap="LINE">This side is Hiems, Winter, this Ver, the Spring;</line>
 <line remap="LINE">the one maintained by the owl, the other by the</line>
 <line remap="LINE">cuckoo. Ver, begin.</line>
-<para remap="STAGEDIR">THE SONG</para>
+<stagedir remap="STAGEDIR">THE SONG</stagedir>
 <bridgehead remap="SUBHEAD">SPRING.</bridgehead>
 <line remap="LINE">When daisies pied and violets blue</line>
 <line remap="LINE">And lady-smocks all silver-white</line>
@@ -7214,7 +7214,7 @@ and others</para>
 <line remap="LINE">Apollo. You that way: we this way.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 </chapter>
 </book>

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">The Tragedy of King Richard the Second</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">The Tragedy of King Richard the Second</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The Tragedy of King Richard the Second</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -37,17 +37,17 @@
 <para><personname remap="PERSONA">DUCHESS OF GLOUCESTER</personname></para>
 <para><personname remap="PERSONA">Lady attending on the Queen. </personname></para>
 <para><personname remap="PERSONA">Lords, Heralds, Officers, Soldiers, two Gardeners, Keeper, Messenger, Groom, and other Attendants. </personname></para>
-    <para remap="SCNDESCR">SCENE  England and Wales.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  England and Wales.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  London. KING RICHARD II's palace.</title>
-<para remap="STAGEDIR">Enter KING RICHARD II, JOHN OF GAUNT, with other
-Nobles and Attendants</para>
+<stagedir remap="STAGEDIR">Enter KING RICHARD II, JOHN OF GAUNT, with other
+Nobles and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD II</speaker>
@@ -88,7 +88,7 @@ Nobles and Attendants</para>
 <line remap="LINE">In rage deaf as the sea, hasty as fire.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HENRY BOLINGBROKE and THOMAS MOWBRAY</para>
+<stagedir remap="STAGEDIR">Enter HENRY BOLINGBROKE and THOMAS MOWBRAY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HENRY BOLINGBROKE</speaker>
@@ -360,7 +360,7 @@ Nobles and Attendants</para>
 <line remap="LINE">Where shame doth harbour, even in Mowbray's face.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit JOHN OF GAUNT</para>
+<stagedir remap="STAGEDIR">Exit JOHN OF GAUNT</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD II</speaker>
@@ -376,11 +376,11 @@ Nobles and Attendants</para>
 <line remap="LINE">Be ready to direct these home alarms.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The DUKE OF LANCASTER'S palace.</title>
-<para remap="STAGEDIR">Enter JOHN OF GAUNT with DUCHESS</para>
+<stagedir remap="STAGEDIR">Enter JOHN OF GAUNT with DUCHESS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JOHN OF GAUNT</speaker>
@@ -488,11 +488,11 @@ Nobles and Attendants</para>
 <line remap="LINE">The last leave of thee takes my weeping eye.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The lists at Coventry.</title>
-<para remap="STAGEDIR">Enter the Lord Marshal and the DUKE OF AUMERLE</para>
+<stagedir remap="STAGEDIR">Enter the Lord Marshal and the DUKE OF AUMERLE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lord Marshal</speaker>
@@ -516,10 +516,10 @@ Nobles and Attendants</para>
 <line remap="LINE">For nothing but his majesty's approach.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The trumpets sound, and KING RICHARD enters with
+<stagedir remap="STAGEDIR">The trumpets sound, and KING RICHARD enters with
 his nobles, JOHN OF GAUNT, BUSHY, BAGOT, GREEN, and
 others. When they are set, enter THOMAS MOWBRAY in
-arms, defendant, with a Herald</para>
+arms, defendant, with a Herald</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD II</speaker>
@@ -552,8 +552,8 @@ arms, defendant, with a Herald</para>
 <line remap="LINE">And as I truly fight, defend me heaven!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The trumpets sound. Enter HENRY BOLINGBROKE,
-appellant, in armour, with a Herald</para>
+<stagedir remap="STAGEDIR">The trumpets sound. Enter HENRY BOLINGBROKE,
+appellant, in armour, with a Herald</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD II</speaker>
@@ -717,7 +717,7 @@ appellant, in armour, with a Herald</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lord Marshal</speaker>
 <line remap="LINE">Sound, trumpets; and set forward, combatants.</line>
-<para remap="STAGEDIR">A charge sounded</para>
+<stagedir remap="STAGEDIR">A charge sounded</stagedir>
 <line remap="LINE">Stay, the king hath thrown his warder down.</line>
 </linegroup></dialogue>
 
@@ -727,7 +727,7 @@ appellant, in armour, with a Herald</para>
 <line remap="LINE">And both return back to their chairs again:</line>
 <line remap="LINE">Withdraw with us: and let the trumpets sound</line>
 <line remap="LINE">While we return these dukes what we decree.</line>
-<para remap="STAGEDIR">A long flourish</para>
+<stagedir remap="STAGEDIR">A long flourish</stagedir>
 <line remap="LINE">Draw near,</line>
 <line remap="LINE">And list what with our council we have done.</line>
 <line remap="LINE">For that our kingdom's earth should not be soil'd</line>
@@ -855,7 +855,7 @@ appellant, in armour, with a Herald</para>
 <line remap="LINE">Save back to England, all the world's my way.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD II</speaker>
@@ -863,7 +863,7 @@ appellant, in armour, with a Herald</para>
 <line remap="LINE">I see thy grieved heart: thy sad aspect</line>
 <line remap="LINE">Hath from the number of his banish'd years</line>
 <line remap="LINE">Pluck'd four away.</line>
-<para remap="STAGEDIR">To HENRY BOLINGBROKE</para>
+<stagedir remap="STAGEDIR">To HENRY BOLINGBROKE</stagedir>
 <line remap="LINE">Six frozen winter spent,</line>
 <line remap="LINE">Return with welcome home from banishment.</line>
 </linegroup></dialogue>
@@ -932,7 +932,7 @@ appellant, in armour, with a Herald</para>
 <line remap="LINE">Six years we banish him, and he shall go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish. Exeunt KING RICHARD II and train</para>
+<stagedir remap="STAGEDIR">Flourish. Exeunt KING RICHARD II and train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE OF AUMERLE</speaker>
@@ -1059,12 +1059,12 @@ appellant, in armour, with a Herald</para>
 <line remap="LINE">Though banish'd, yet a trueborn Englishman.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  The court.</title>
-<para remap="STAGEDIR">Enter KING RICHARD II, with BAGOT and GREEN at one
-door; and the DUKE OF AUMERLE at another</para>
+<stagedir remap="STAGEDIR">Enter KING RICHARD II, with BAGOT and GREEN at one
+door; and the DUKE OF AUMERLE at another</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD II</speaker>
@@ -1152,7 +1152,7 @@ door; and the DUKE OF AUMERLE at another</para>
 <line remap="LINE">They shall subscribe them for large sums of gold</line>
 <line remap="LINE">And send them after to supply our wants;</line>
 <line remap="LINE">For we will make for Ireland presently.</line>
-<para remap="STAGEDIR">Enter BUSHY</para>
+<stagedir remap="STAGEDIR">Enter BUSHY</stagedir>
 <line remap="LINE">Bushy, what news?</line>
 </linegroup></dialogue>
 
@@ -1188,7 +1188,7 @@ door; and the DUKE OF AUMERLE at another</para>
 <line remap="LINE">Amen.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -1196,8 +1196,8 @@ door; and the DUKE OF AUMERLE at another</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Ely House.</title>
-<para remap="STAGEDIR">Enter JOHN OF GAUNT sick, with the DUKE OF YORK,
-&amp;c</para>
+<stagedir remap="STAGEDIR">Enter JOHN OF GAUNT sick, with the DUKE OF YORK,
+&amp;c</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JOHN OF GAUNT</speaker>
@@ -1287,9 +1287,9 @@ door; and the DUKE OF AUMERLE at another</para>
 <line remap="LINE">How happy then were my ensuing death!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter KING RICHARD II and QUEEN, DUKE OF AUMERLE,
+<stagedir remap="STAGEDIR">Enter KING RICHARD II and QUEEN, DUKE OF AUMERLE,
 BUSHY, GREEN, BAGOT, LORD ROSS, and LORD
-WILLOUGHBY</para>
+WILLOUGHBY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE OF YORK</speaker>
@@ -1417,7 +1417,7 @@ WILLOUGHBY</para>
 <line remap="LINE">Love they to live that love and honour have.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit, borne off by his Attendants</para>
+<stagedir remap="STAGEDIR">Exit, borne off by his Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD II</speaker>
@@ -1439,7 +1439,7 @@ WILLOUGHBY</para>
 <line remap="LINE">As theirs, so mine; and all be as it is.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter NORTHUMBERLAND</para>
+<stagedir remap="STAGEDIR">Enter NORTHUMBERLAND</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NORTHUMBERLAND</speaker>
@@ -1551,7 +1551,7 @@ WILLOUGHBY</para>
 <line remap="LINE">That their events can never fall out good.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD II</speaker>
@@ -1566,8 +1566,8 @@ WILLOUGHBY</para>
 <line remap="LINE">Be merry, for our time of stay is short</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish. Exeunt KING RICHARD II, QUEEN, DUKE OF
-AUMERLE, BUSHY, GREEN, and BAGOT</para>
+<stagedir remap="STAGEDIR">Flourish. Exeunt KING RICHARD II, QUEEN, DUKE OF
+AUMERLE, BUSHY, GREEN, and BAGOT</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NORTHUMBERLAND</speaker>
@@ -1741,11 +1741,11 @@ AUMERLE, BUSHY, GREEN, and BAGOT</para>
 <line remap="LINE">Hold out my horse, and I will first be there.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The palace.</title>
-<para remap="STAGEDIR">Enter QUEEN, BUSHY, and BAGOT</para>
+<stagedir remap="STAGEDIR">Enter QUEEN, BUSHY, and BAGOT</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BUSHY</speaker>
@@ -1811,7 +1811,7 @@ AUMERLE, BUSHY, GREEN, and BAGOT</para>
 <line remap="LINE">I cannot name; 'tis nameless woe, I wot.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter GREEN</para>
+<stagedir remap="STAGEDIR">Enter GREEN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GREEN</speaker>
@@ -1887,7 +1887,7 @@ AUMERLE, BUSHY, GREEN, and BAGOT</para>
 <line remap="LINE">Which false hope lingers in extremity.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DUKE OF YORK</para>
+<stagedir remap="STAGEDIR">Enter DUKE OF YORK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GREEN</speaker>
@@ -1914,7 +1914,7 @@ AUMERLE, BUSHY, GREEN, and BAGOT</para>
 <line remap="LINE">Now shall he try his friends that flatter'd him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Servant</para>
+<stagedir remap="STAGEDIR">Enter a Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Servant</speaker>
@@ -1960,7 +1960,7 @@ AUMERLE, BUSHY, GREEN, and BAGOT</para>
 <line remap="LINE">Come, sister,--cousin, I would say--pray, pardon me.</line>
 <line remap="LINE">Go, fellow, get thee home, provide some carts</line>
 <line remap="LINE">And bring away the armour that is there.</line>
-<para remap="STAGEDIR">Exit Servant</para>
+<stagedir remap="STAGEDIR">Exit Servant</stagedir>
 <line remap="LINE">Gentlemen, will you go muster men?</line>
 <line remap="LINE">If I know how or which way to order these affairs</line>
 <line remap="LINE">Thus thrust disorderly into my hands,</line>
@@ -1978,7 +1978,7 @@ AUMERLE, BUSHY, GREEN, and BAGOT</para>
 <line remap="LINE">And every thing is left at six and seven.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt DUKE OF YORK and QUEEN</para>
+<stagedir remap="STAGEDIR">Exeunt DUKE OF YORK and QUEEN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BUSHY</speaker>
@@ -2056,11 +2056,11 @@ AUMERLE, BUSHY, GREEN, and BAGOT</para>
 <line remap="LINE">I fear me, never.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Wilds in Gloucestershire.</title>
-<para remap="STAGEDIR">Enter HENRY BOLINGBROKE and NORTHUMBERLAND, with Forces</para>
+<stagedir remap="STAGEDIR">Enter HENRY BOLINGBROKE and NORTHUMBERLAND, with Forces</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HENRY BOLINGBROKE</speaker>
@@ -2094,7 +2094,7 @@ AUMERLE, BUSHY, GREEN, and BAGOT</para>
 <line remap="LINE">Than your good words. But who comes here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HENRY PERCY</para>
+<stagedir remap="STAGEDIR">Enter HENRY PERCY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NORTHUMBERLAND</speaker>
@@ -2185,7 +2185,7 @@ AUMERLE, BUSHY, GREEN, and BAGOT</para>
 <line remap="LINE">None else of name and noble estimate.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LORD ROSS and LORD WILLOUGHBY</para>
+<stagedir remap="STAGEDIR">Enter LORD ROSS and LORD WILLOUGHBY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NORTHUMBERLAND</speaker>
@@ -2218,7 +2218,7 @@ AUMERLE, BUSHY, GREEN, and BAGOT</para>
 <line remap="LINE">Stands for my bounty. But who comes here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LORD BERKELEY</para>
+<stagedir remap="STAGEDIR">Enter LORD BERKELEY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NORTHUMBERLAND</speaker>
@@ -2249,7 +2249,7 @@ AUMERLE, BUSHY, GREEN, and BAGOT</para>
 <line remap="LINE">And fright our native peace with self-born arms.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DUKE OF YORK attended</para>
+<stagedir remap="STAGEDIR">Enter DUKE OF YORK attended</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HENRY BOLINGBROKE</speaker>
@@ -2257,7 +2257,7 @@ AUMERLE, BUSHY, GREEN, and BAGOT</para>
 <line remap="LINE">Here comes his grace in person. My noble uncle!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Kneels</para>
+<stagedir remap="STAGEDIR">Kneels</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE OF YORK</speaker>
@@ -2404,11 +2404,11 @@ AUMERLE, BUSHY, GREEN, and BAGOT</para>
 <line remap="LINE">Things past redress are now with me past care.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  A camp in Wales.</title>
-<para remap="STAGEDIR">Enter EARL OF SALISBURY and a Welsh Captain</para>
+<stagedir remap="STAGEDIR">Enter EARL OF SALISBURY and a Welsh Captain</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Captain</speaker>
@@ -2439,7 +2439,7 @@ AUMERLE, BUSHY, GREEN, and BAGOT</para>
 <line remap="LINE">As well assured Richard their king is dead.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EARL OF SALISBURY</speaker>
@@ -2452,7 +2452,7 @@ AUMERLE, BUSHY, GREEN, and BAGOT</para>
 <line remap="LINE">And crossly to thy good all fortune goes.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -2460,9 +2460,9 @@ AUMERLE, BUSHY, GREEN, and BAGOT</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Bristol. Before the castle.</title>
-<para remap="STAGEDIR">Enter HENRY BOLINGBROKE, DUKE OF YORK,
+<stagedir remap="STAGEDIR">Enter HENRY BOLINGBROKE, DUKE OF YORK,
 NORTHUMBERLAND, LORD ROSS, HENRY PERCY, LORD
-WILLOUGHBY, with BUSHY and GREEN, prisoners</para>
+WILLOUGHBY, with BUSHY and GREEN, prisoners</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HENRY BOLINGBROKE</speaker>
@@ -2513,8 +2513,8 @@ WILLOUGHBY, with BUSHY and GREEN, prisoners</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HENRY BOLINGBROKE</speaker>
 <line remap="LINE">My Lord Northumberland, see them dispatch'd.</line>
-<para remap="STAGEDIR">Exeunt NORTHUMBERLAND and others, with the
-prisoners</para>
+<stagedir remap="STAGEDIR">Exeunt NORTHUMBERLAND and others, with the
+prisoners</stagedir>
 <line remap="LINE">Uncle, you say the queen is at your house;</line>
 <line remap="LINE">For God's sake, fairly let her be entreated:</line>
 <line remap="LINE">Tell her I send to her my kind commends;</line>
@@ -2534,12 +2534,12 @@ prisoners</para>
 <line remap="LINE">Awhile to work, and after holiday.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The coast of Wales. A castle in view.</title>
-<para remap="STAGEDIR">Drums; flourish and colours. Enter KING RICHARD
-II, the BISHOP OF CARLISLE, DUKE OF AUMERLE, and Soldiers</para>
+<stagedir remap="STAGEDIR">Drums; flourish and colours. Enter KING RICHARD
+II, the BISHOP OF CARLISLE, DUKE OF AUMERLE, and Soldiers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD II</speaker>
@@ -2625,7 +2625,7 @@ II, the BISHOP OF CARLISLE, DUKE OF AUMERLE, and Soldiers</para>
 <line remap="LINE">God for his Richard hath in heavenly pay</line>
 <line remap="LINE">A glorious angel: then, if angels fight,</line>
 <line remap="LINE">Weak men must fall, for heaven still guards the right.</line>
-<para remap="STAGEDIR">Enter EARL OF SALISBURY</para>
+<stagedir remap="STAGEDIR">Enter EARL OF SALISBURY</stagedir>
 <line remap="LINE">Welcome, my lord how far off lies your power?</line>
 </linegroup></dialogue>
 
@@ -2676,7 +2676,7 @@ II, the BISHOP OF CARLISLE, DUKE OF AUMERLE, and Soldiers</para>
 <line remap="LINE">Hath power enough to serve our turn. But who comes here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SIR STEPHEN SCROOP</para>
+<stagedir remap="STAGEDIR">Enter SIR STEPHEN SCROOP</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIR STEPHEN SCROOP</speaker>
@@ -2855,7 +2855,7 @@ II, the BISHOP OF CARLISLE, DUKE OF AUMERLE, and Soldiers</para>
 <speaker remap="SPEAKER">KING RICHARD II</speaker>
 <line remap="LINE">Thou hast said enough.</line>
 <line remap="LINE">Beshrew thee, cousin, which didst lead me forth</line>
-<para remap="STAGEDIR">To DUKE OF AUMERLE</para>
+<stagedir remap="STAGEDIR">To DUKE OF AUMERLE</stagedir>
 <line remap="LINE">Of that sweet way I was in to despair!</line>
 <line remap="LINE">What say you now? what comfort have we now?</line>
 <line remap="LINE">By heaven, I'll hate him everlastingly</line>
@@ -2881,12 +2881,12 @@ II, the BISHOP OF CARLISLE, DUKE OF AUMERLE, and Soldiers</para>
 <line remap="LINE">From Richard's night to Bolingbroke's fair day.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Wales. Before Flint castle.</title>
-<para remap="STAGEDIR">Enter, with drum and colours, HENRY BOLINGBROKE,
-DUKE OF YORK, NORTHUMBERLAND, Attendants, and forces</para>
+<stagedir remap="STAGEDIR">Enter, with drum and colours, HENRY BOLINGBROKE,
+DUKE OF YORK, NORTHUMBERLAND, Attendants, and forces</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HENRY BOLINGBROKE</speaker>
@@ -2938,7 +2938,7 @@ DUKE OF YORK, NORTHUMBERLAND, Attendants, and forces</para>
 <speaker remap="SPEAKER">HENRY BOLINGBROKE</speaker>
 <line remap="LINE">I know it, uncle, and oppose not myself</line>
 <line remap="LINE">Against their will. But who comes here?</line>
-<para remap="STAGEDIR">Enter HENRY PERCY</para>
+<stagedir remap="STAGEDIR">Enter HENRY PERCY</stagedir>
 <line remap="LINE">Welcome, Harry: what, will not this castle yield?</line>
 </linegroup></dialogue>
 
@@ -3002,10 +3002,10 @@ DUKE OF YORK, NORTHUMBERLAND, Attendants, and forces</para>
 <line remap="LINE">The rage be his, whilst on the earth I rain</line>
 <line remap="LINE">My waters; on the earth, and not on him.</line>
 <line remap="LINE">March on, and mark King Richard how he looks.</line>
-<para remap="STAGEDIR">Parle without, and answer within. Then a flourish.
+<stagedir remap="STAGEDIR">Parle without, and answer within. Then a flourish.
 Enter on the walls, KING RICHARD II, the BISHOP OF
 CARLISLE, DUKE OF AUMERLE, SIR STEPHEN SCROOP, and
-EARL OF SALISBURY</para>
+EARL OF SALISBURY</stagedir>
 <line remap="LINE">See, see, King Richard doth himself appear,</line>
 <line remap="LINE">As doth the blushing discontented sun</line>
 <line remap="LINE">From out the fiery portal of the east,</line>
@@ -3026,7 +3026,7 @@ EARL OF SALISBURY</para>
 <speaker remap="SPEAKER">KING RICHARD II</speaker>
 <line remap="LINE">We are amazed; and thus long have we stood</line>
 <line remap="LINE">To watch the fearful bending of thy knee,</line>
-<para remap="STAGEDIR">To NORTHUMBERLAND</para>
+<stagedir remap="STAGEDIR">To NORTHUMBERLAND</stagedir>
 <line remap="LINE">Because we thought ourself thy lawful king:</line>
 <line remap="LINE">And if we be, how dare thy joints forget</line>
 <line remap="LINE">To pay their awful duty to our presence?</line>
@@ -3089,7 +3089,7 @@ EARL OF SALISBURY</para>
 <line remap="LINE">With all the gracious utterance thou hast</line>
 <line remap="LINE">Speak to his gentle hearing kind commends.</line>
 <line remap="LINE">We do debase ourselves, cousin, do we not,</line>
-<para remap="STAGEDIR">To DUKE OF AUMERLE</para>
+<stagedir remap="STAGEDIR">To DUKE OF AUMERLE</stagedir>
 <line remap="LINE">To look so poorly and to speak so fair?</line>
 <line remap="LINE">Shall we call back Northumberland, and send</line>
 <line remap="LINE">Defiance to the traitor, and so die?</line>
@@ -3174,7 +3174,7 @@ EARL OF SALISBURY</para>
 <line remap="LINE">should sing.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt from above</para>
+<stagedir remap="STAGEDIR">Exeunt from above</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HENRY BOLINGBROKE</speaker>
@@ -3188,13 +3188,13 @@ EARL OF SALISBURY</para>
 <line remap="LINE">Yet he is come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter KING RICHARD and his attendants below</para>
+<stagedir remap="STAGEDIR">Enter KING RICHARD and his attendants below</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HENRY BOLINGBROKE</speaker>
 <line remap="LINE">Stand all apart,</line>
 <line remap="LINE">And show fair duty to his majesty.</line>
-<para remap="STAGEDIR">He kneels down</para>
+<stagedir remap="STAGEDIR">He kneels down</stagedir>
 <line remap="LINE">My gracious lord,--</line>
 </linegroup></dialogue>
 
@@ -3247,11 +3247,11 @@ EARL OF SALISBURY</para>
 <line remap="LINE">Then I must not say no.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish. Exeunt</para>
+<stagedir remap="STAGEDIR">Flourish. Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  LANGLEY. The DUKE OF YORK's garden.</title>
-<para remap="STAGEDIR">Enter the QUEEN and two Ladies</para>
+<stagedir remap="STAGEDIR">Enter the QUEEN and two Ladies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN</speaker>
@@ -3328,7 +3328,7 @@ EARL OF SALISBURY</para>
 <speaker remap="SPEAKER">QUEEN</speaker>
 <line remap="LINE">And I could sing, would weeping do me good,</line>
 <line remap="LINE">And never borrow any tear of thee.</line>
-<para remap="STAGEDIR">Enter a Gardener, and two Servants</para>
+<stagedir remap="STAGEDIR">Enter a Gardener, and two Servants</stagedir>
 <line remap="LINE">But stay, here come the gardeners:</line>
 <line remap="LINE">Let's step into the shadow of these trees.</line>
 <line remap="LINE">My wretchedness unto a row of pins,</line>
@@ -3336,7 +3336,7 @@ EARL OF SALISBURY</para>
 <line remap="LINE">Against a change; woe is forerun with woe.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">QUEEN and Ladies retire</para>
+<stagedir remap="STAGEDIR">QUEEN and Ladies retire</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Gardener</speaker>
@@ -3414,7 +3414,7 @@ EARL OF SALISBURY</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN</speaker>
 <line remap="LINE">O, I am press'd to death through want of speaking!</line>
-<para remap="STAGEDIR">Coming forward</para>
+<stagedir remap="STAGEDIR">Coming forward</stagedir>
 <line remap="LINE">Thou, old Adam's likeness, set to dress this garden,</line>
 <line remap="LINE">How dares thy harsh rude tongue sound this unpleasing news?</line>
 <line remap="LINE">What Eve, what serpent, hath suggested thee</line>
@@ -3454,7 +3454,7 @@ EARL OF SALISBURY</para>
 <line remap="LINE">Pray God the plants thou graft'st may never grow.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt QUEEN and Ladies</para>
+<stagedir remap="STAGEDIR">Exeunt QUEEN and Ladies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GARDENER</speaker>
@@ -3466,7 +3466,7 @@ EARL OF SALISBURY</para>
 <line remap="LINE">In the remembrance of a weeping queen.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -3474,11 +3474,11 @@ EARL OF SALISBURY</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Westminster Hall.</title>
-<para remap="STAGEDIR">Enter, as to the Parliament, HENRY BOLINGBROKE,
+<stagedir remap="STAGEDIR">Enter, as to the Parliament, HENRY BOLINGBROKE,
 DUKE OF AUMERLE, NORTHUMBERLAND, HENRY PERCY, LORD
 FITZWATER, DUKE OF SURREY, the BISHOP OF CARLISLE,
 the Abbot Of Westminster, and another Lord, Herald,
-Officers, and BAGOT</para>
+Officers, and BAGOT</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HENRY BOLINGBROKE</speaker>
@@ -3696,7 +3696,7 @@ Officers, and BAGOT</para>
 <line remap="LINE">Till we assign you to your days of trial.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DUKE OF YORK, attended</para>
+<stagedir remap="STAGEDIR">Enter DUKE OF YORK, attended</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE OF YORK</speaker>
@@ -3774,7 +3774,7 @@ Officers, and BAGOT</para>
 <line remap="LINE">I will be his conduct.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HENRY BOLINGBROKE</speaker>
@@ -3784,8 +3784,8 @@ Officers, and BAGOT</para>
 <line remap="LINE">And little look'd for at your helping hands.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter DUKE OF YORK, with KING RICHARD II, and
-Officers bearing the regalia</para>
+<stagedir remap="STAGEDIR">Re-enter DUKE OF YORK, with KING RICHARD II, and
+Officers bearing the regalia</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD II</speaker>
@@ -3959,7 +3959,7 @@ Officers bearing the regalia</para>
 <line remap="LINE">Go some of you and fetch a looking-glass.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit an attendant</para>
+<stagedir remap="STAGEDIR">Exit an attendant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NORTHUMBERLAND</speaker>
@@ -3986,7 +3986,7 @@ Officers bearing the regalia</para>
 <line remap="LINE">They shall be satisfied: I'll read enough,</line>
 <line remap="LINE">When I do see the very book indeed</line>
 <line remap="LINE">Where all my sins are writ, and that's myself.</line>
-<para remap="STAGEDIR">Re-enter Attendant, with a glass</para>
+<stagedir remap="STAGEDIR">Re-enter Attendant, with a glass</stagedir>
 <line remap="LINE">Give me the glass, and therein will I read.</line>
 <line remap="LINE">No deeper wrinkles yet? hath sorrow struck</line>
 <line remap="LINE">So many blows upon this face of mine,</line>
@@ -4000,7 +4000,7 @@ Officers bearing the regalia</para>
 <line remap="LINE">And was at last out-faced by Bolingbroke?</line>
 <line remap="LINE">A brittle glory shineth in this face:</line>
 <line remap="LINE">As brittle as the glory is the face;</line>
-<para remap="STAGEDIR">Dashes the glass against the ground</para>
+<stagedir remap="STAGEDIR">Dashes the glass against the ground</stagedir>
 <line remap="LINE">For there it is, crack'd in a hundred shivers.</line>
 <line remap="LINE">Mark, silent king, the moral of this sport,</line>
 <line remap="LINE">How soon my sorrow hath destroy'd my face.</line>
@@ -4083,7 +4083,7 @@ Officers bearing the regalia</para>
 <line remap="LINE">That rise thus nimbly by a true king's fall.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt KING RICHARD II, some Lords, and a Guard</para>
+<stagedir remap="STAGEDIR">Exeunt KING RICHARD II, some Lords, and a Guard</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HENRY BOLINGBROKE</speaker>
@@ -4091,8 +4091,8 @@ Officers bearing the regalia</para>
 <line remap="LINE">Our coronation: lords, prepare yourselves.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all except the BISHOP OF CARLISLE, the Abbot
-of Westminster, and DUKE OF AUMERLE</para>
+<stagedir remap="STAGEDIR">Exeunt all except the BISHOP OF CARLISLE, the Abbot
+of Westminster, and DUKE OF AUMERLE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Abbot</speaker>
@@ -4124,7 +4124,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">A plot shall show us all a merry day.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -4132,7 +4132,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  London. A street leading to the Tower.</title>
-<para remap="STAGEDIR">Enter QUEEN and Ladies</para>
+<stagedir remap="STAGEDIR">Enter QUEEN and Ladies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN</speaker>
@@ -4142,7 +4142,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">Is doom'd a prisoner by proud Bolingbroke:</line>
 <line remap="LINE">Here let us rest, if this rebellious earth</line>
 <line remap="LINE">Have any resting for her true king's queen.</line>
-<para remap="STAGEDIR">Enter KING RICHARD II and Guard</para>
+<stagedir remap="STAGEDIR">Enter KING RICHARD II and Guard</stagedir>
 <line remap="LINE">But soft, but see, or rather do not see,</line>
 <line remap="LINE">My fair rose wither: yet look up, behold,</line>
 <line remap="LINE">That you in pity may dissolve to dew,</line>
@@ -4201,7 +4201,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">For the deposing of a rightful king.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter NORTHUMBERLAND and others</para>
+<stagedir remap="STAGEDIR">Enter NORTHUMBERLAND and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NORTHUMBERLAND</speaker>
@@ -4311,11 +4311,11 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">Once more, adieu; the rest let sorrow say.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The DUKE OF YORK's palace.</title>
-<para remap="STAGEDIR">Enter DUKE OF YORK and DUCHESS OF YORK</para>
+<stagedir remap="STAGEDIR">Enter DUKE OF YORK and DUCHESS OF YORK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUCHESS OF YORK</speaker>
@@ -4397,7 +4397,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">And lasting fealty to the new-made king.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DUKE OF AUMERLE</para>
+<stagedir remap="STAGEDIR">Enter DUKE OF AUMERLE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUCHESS OF YORK</speaker>
@@ -4485,7 +4485,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE OF YORK</speaker>
 <line remap="LINE">I will be satisfied; let me see it, I say.</line>
-<para remap="STAGEDIR">He plucks it out of his bosom and reads it</para>
+<stagedir remap="STAGEDIR">He plucks it out of his bosom and reads it</stagedir>
 <line remap="LINE">Treason! foul treason! Villain! traitor! slave!</line>
 </linegroup></dialogue>
 
@@ -4497,7 +4497,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE OF YORK</speaker>
 <line remap="LINE">Ho! who is within there?</line>
-<para remap="STAGEDIR">Enter a Servant</para>
+<stagedir remap="STAGEDIR">Enter a Servant</stagedir>
 <line remap="LINE">Saddle my horse.</line>
 <line remap="LINE">God for his mercy, what treachery is here!</line>
 </linegroup></dialogue>
@@ -4545,7 +4545,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">Bring me my boots: I will unto the king.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter Servant with boots</para>
+<stagedir remap="STAGEDIR">Re-enter Servant with boots</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUCHESS OF YORK</speaker>
@@ -4608,7 +4608,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">Make way, unruly woman!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUCHESS OF YORK</speaker>
@@ -4621,11 +4621,11 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">Till Bolingbroke have pardon'd thee. Away, be gone!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A royal palace.</title>
-<para remap="STAGEDIR">Enter HENRY BOLINGBROKE, HENRY PERCY, and other Lords</para>
+<stagedir remap="STAGEDIR">Enter HENRY BOLINGBROKE, HENRY PERCY, and other Lords</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HENRY BOLINGBROKE</speaker>
@@ -4669,7 +4669,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">May happily bring forth. But who comes here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DUKE OF AUMERLE</para>
+<stagedir remap="STAGEDIR">Enter DUKE OF AUMERLE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE OF AUMERLE</speaker>
@@ -4691,7 +4691,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HENRY BOLINGBROKE</speaker>
 <line remap="LINE">Withdraw yourselves, and leave us here alone.</line>
-<para remap="STAGEDIR">Exeunt HENRY PERCY and Lords</para>
+<stagedir remap="STAGEDIR">Exeunt HENRY PERCY and Lords</stagedir>
 <line remap="LINE">What is the matter with our cousin now?</line>
 </linegroup></dialogue>
 
@@ -4722,7 +4722,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE OF YORK</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  My liege, beware; look to thyself;</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  My liege, beware; look to thyself;</line>
 <line remap="LINE">Thou hast a traitor in thy presence there.</line>
 </linegroup></dialogue>
 
@@ -4731,7 +4731,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">Villain, I'll make thee safe.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Drawing</para>
+<stagedir remap="STAGEDIR">Drawing</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE OF AUMERLE</speaker>
@@ -4740,12 +4740,12 @@ of Westminster, and DUKE OF AUMERLE</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE OF YORK</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Open the door, secure, foolhardy king:</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Open the door, secure, foolhardy king:</line>
 <line remap="LINE">Shall I for love speak treason to thy face?</line>
 <line remap="LINE">Open the door, or I will break it open.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DUKE OF YORK</para>
+<stagedir remap="STAGEDIR">Enter DUKE OF YORK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HENRY BOLINGBROKE</speaker>
@@ -4801,7 +4801,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUCHESS OF YORK</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  What ho, my liege! for God's sake,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  What ho, my liege! for God's sake,</line>
 <line remap="LINE">let me in.</line>
 </linegroup></dialogue>
 
@@ -4833,7 +4833,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">This let alone will all the rest confound.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DUCHESS OF YORK</para>
+<stagedir remap="STAGEDIR">Enter DUCHESS OF YORK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUCHESS OF YORK</speaker>
@@ -4852,7 +4852,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">Sweet York, be patient. Hear me, gentle liege.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Kneels</para>
+<stagedir remap="STAGEDIR">Kneels</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HENRY BOLINGBROKE</speaker>
@@ -4982,11 +4982,11 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">Come, my old son: I pray God make thee new.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  The same.</title>
-<para remap="STAGEDIR">Enter EXTON and Servant</para>
+<stagedir remap="STAGEDIR">Enter EXTON and Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EXTON</speaker>
@@ -5020,11 +5020,11 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">I am the king's friend, and will rid his foe.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Pomfret castle.</title>
-<para remap="STAGEDIR">Enter KING RICHARD</para>
+<stagedir remap="STAGEDIR">Enter KING RICHARD</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD II</speaker>
@@ -5069,7 +5069,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">Nor I nor any man that but man is</line>
 <line remap="LINE">With nothing shall be pleased, till he be eased</line>
 <line remap="LINE">With being nothing. Music do I hear?</line>
-<para remap="STAGEDIR">Music</para>
+<stagedir remap="STAGEDIR">Music</stagedir>
 <line remap="LINE">Ha, ha! keep time: how sour sweet music is,</line>
 <line remap="LINE">When time is broke and no proportion kept!</line>
 <line remap="LINE">So is it in the music of men's lives.</line>
@@ -5097,7 +5097,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">Is a strange brooch in this all-hating world.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Groom of the Stable</para>
+<stagedir remap="STAGEDIR">Enter a Groom of the Stable</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Groom</speaker>
@@ -5152,7 +5152,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">Spurr'd, gall'd and tired by jouncing Bolingbroke.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Keeper, with a dish</para>
+<stagedir remap="STAGEDIR">Enter Keeper, with a dish</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Keeper</speaker>
@@ -5169,7 +5169,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">What my tongue dares not, that my heart shall say.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Keeper</speaker>
@@ -5193,22 +5193,22 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">Patience is stale, and I am weary of it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Beats the keeper</para>
+<stagedir remap="STAGEDIR">Beats the keeper</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Keeper</speaker>
 <line remap="LINE">Help, help, help!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter EXTON and Servants, armed</para>
+<stagedir remap="STAGEDIR">Enter EXTON and Servants, armed</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING RICHARD II</speaker>
 <line remap="LINE">How now! what means death in this rude assault?</line>
 <line remap="LINE">Villain, thy own hand yields thy death's instrument.</line>
-<para remap="STAGEDIR">Snatching an axe from a Servant and killing him</para>
+<stagedir remap="STAGEDIR">Snatching an axe from a Servant and killing him</stagedir>
 <line remap="LINE">Go thou, and fill another room in hell.</line>
-<para remap="STAGEDIR">He kills another. Then Exton strikes him down</para>
+<stagedir remap="STAGEDIR">He kills another. Then Exton strikes him down</stagedir>
 <line remap="LINE">That hand shall burn in never-quenching fire</line>
 <line remap="LINE">That staggers thus my person. Exton, thy fierce hand</line>
 <line remap="LINE">Hath with the king's blood stain'd the king's own land.</line>
@@ -5216,7 +5216,7 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">Whilst my gross flesh sinks downward, here to die.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Dies</para>
+<stagedir remap="STAGEDIR">Dies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EXTON</speaker>
@@ -5228,12 +5228,12 @@ of Westminster, and DUKE OF AUMERLE</para>
 <line remap="LINE">Take hence the rest, and give them burial here.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  Windsor castle.</title>
-<para remap="STAGEDIR">Flourish. Enter HENRY BOLINGBROKE, DUKE OF YORK,
-with other Lords, and Attendants</para>
+<stagedir remap="STAGEDIR">Flourish. Enter HENRY BOLINGBROKE, DUKE OF YORK,
+with other Lords, and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HENRY BOLINGBROKE</speaker>
@@ -5241,7 +5241,7 @@ with other Lords, and Attendants</para>
 <line remap="LINE">Is that the rebels have consumed with fire</line>
 <line remap="LINE">Our town of Cicester in Gloucestershire;</line>
 <line remap="LINE">But whether they be ta'en or slain we hear not.</line>
-<para remap="STAGEDIR">Enter NORTHUMBERLAND</para>
+<stagedir remap="STAGEDIR">Enter NORTHUMBERLAND</stagedir>
 <line remap="LINE">Welcome, my lord what is the news?</line>
 </linegroup></dialogue>
 
@@ -5260,7 +5260,7 @@ with other Lords, and Attendants</para>
 <line remap="LINE">And to thy worth will add right worthy gains.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LORD FITZWATER</para>
+<stagedir remap="STAGEDIR">Enter LORD FITZWATER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD FITZWATER</speaker>
@@ -5276,7 +5276,7 @@ with other Lords, and Attendants</para>
 <line remap="LINE">Right noble is thy merit, well I wot.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HENRY PERCY, and the BISHOP OF CARLISLE</para>
+<stagedir remap="STAGEDIR">Enter HENRY PERCY, and the BISHOP OF CARLISLE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HENRY PERCY</speaker>
@@ -5297,7 +5297,7 @@ with other Lords, and Attendants</para>
 <line remap="LINE">High sparks of honour in thee have I seen.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter EXTON, with persons bearing a coffin</para>
+<stagedir remap="STAGEDIR">Enter EXTON, with persons bearing a coffin</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EXTON</speaker>
@@ -5338,7 +5338,7 @@ with other Lords, and Attendants</para>
 <line remap="LINE">In weeping after this untimely bier.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 </chapter>
 </book>

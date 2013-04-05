@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">The Tragedy of Macbeth</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">The Tragedy of Macbeth</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The Tragedy of Macbeth</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -32,16 +32,16 @@
 <para><personname remap="PERSONA">Three Witches.</personname></para>
 <para><personname remap="PERSONA">Apparitions.</personname></para>
 <para><personname remap="PERSONA">Lords, Gentlemen, Officers, Soldiers, Murderers, Attendants, and Messengers. </personname></para>
-    <para remap="SCNDESCR">SCENE  Scotland: England.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  Scotland: England.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A desert place.</title>
-<para remap="STAGEDIR">Thunder and lightning. Enter three Witches</para>
+<stagedir remap="STAGEDIR">Thunder and lightning. Enter three Witches</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Witch</speaker>
@@ -96,12 +96,12 @@
 <line remap="LINE">Hover through the fog and filthy air.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A camp near Forres.</title>
-<para remap="STAGEDIR">Alarum within. Enter DUNCAN, MALCOLM, DONALBAIN,
-LENNOX, with Attendants, meeting a bleeding Sergeant</para>
+<stagedir remap="STAGEDIR">Alarum within. Enter DUNCAN, MALCOLM, DONALBAIN,
+LENNOX, with Attendants, meeting a bleeding Sergeant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUNCAN</speaker>
@@ -181,11 +181,11 @@ LENNOX, with Attendants, meeting a bleeding Sergeant</para>
 <speaker remap="SPEAKER">DUNCAN</speaker>
 <line remap="LINE">So well thy words become thee as thy wounds;</line>
 <line remap="LINE">They smack of honour both. Go get him surgeons.</line>
-<para remap="STAGEDIR">Exit Sergeant, attended</para>
+<stagedir remap="STAGEDIR">Exit Sergeant, attended</stagedir>
 <line remap="LINE">Who comes here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ROSS</para>
+<stagedir remap="STAGEDIR">Enter ROSS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALCOLM</speaker>
@@ -254,11 +254,11 @@ LENNOX, with Attendants, meeting a bleeding Sergeant</para>
 <line remap="LINE">What he hath lost noble Macbeth hath won.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A heath near Forres.</title>
-<para remap="STAGEDIR">Thunder. Enter the three Witches</para>
+<stagedir remap="STAGEDIR">Thunder. Enter the three Witches</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Witch</speaker>
@@ -330,7 +330,7 @@ LENNOX, with Attendants, meeting a bleeding Sergeant</para>
 <line remap="LINE">Wreck'd as homeward he did come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Drum within</para>
+<stagedir remap="STAGEDIR">Drum within</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Third Witch</speaker>
@@ -348,7 +348,7 @@ LENNOX, with Attendants, meeting a bleeding Sergeant</para>
 <line remap="LINE">Peace! the charm's wound up.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MACBETH and BANQUO</para>
+<stagedir remap="STAGEDIR">Enter MACBETH and BANQUO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -452,7 +452,7 @@ LENNOX, with Attendants, meeting a bleeding Sergeant</para>
 <line remap="LINE">With such prophetic greeting? Speak, I charge you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Witches vanish</para>
+<stagedir remap="STAGEDIR">Witches vanish</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BANQUO</speaker>
@@ -493,7 +493,7 @@ LENNOX, with Attendants, meeting a bleeding Sergeant</para>
 <line remap="LINE">To the selfsame tune and words. Who's here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ROSS and ANGUS</para>
+<stagedir remap="STAGEDIR">Enter ROSS and ANGUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSS</speaker>
@@ -552,11 +552,11 @@ LENNOX, with Attendants, meeting a bleeding Sergeant</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Glamis, and thane of Cawdor!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Glamis, and thane of Cawdor!</line>
 <line remap="LINE">The greatest is behind.</line>
-<para remap="STAGEDIR">To ROSS and ANGUS</para>
+<stagedir remap="STAGEDIR">To ROSS and ANGUS</stagedir>
 <line remap="LINE">Thanks for your pains.</line>
-<para remap="STAGEDIR">To BANQUO</para>
+<stagedir remap="STAGEDIR">To BANQUO</stagedir>
 <line remap="LINE">Do you not hope your children shall be kings,</line>
 <line remap="LINE">When those that gave the thane of Cawdor to me</line>
 <line remap="LINE">Promised no less to them?</line>
@@ -576,10 +576,10 @@ LENNOX, with Attendants, meeting a bleeding Sergeant</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase> Two truths are told,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir> Two truths are told,</line>
 <line remap="LINE">As happy prologues to the swelling act</line>
 <line remap="LINE">Of the imperial theme.--I thank you, gentlemen.</line>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  This supernatural soliciting</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  This supernatural soliciting</line>
 <line remap="LINE">Cannot be ill, cannot be good: if ill,</line>
 <line remap="LINE">Why hath it given me earnest of success,</line>
 <line remap="LINE">Commencing in a truth? I am thane of Cawdor:</line>
@@ -601,7 +601,7 @@ LENNOX, with Attendants, meeting a bleeding Sergeant</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  If chance will have me king, why, chance may crown me,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  If chance will have me king, why, chance may crown me,</line>
 <line remap="LINE">Without my stir.</line>
 </linegroup></dialogue>
 
@@ -614,7 +614,7 @@ LENNOX, with Attendants, meeting a bleeding Sergeant</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>                Come what come may,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>                Come what come may,</line>
 <line remap="LINE">Time and the hour runs through the roughest day.</line>
 </linegroup></dialogue>
 
@@ -644,12 +644,12 @@ LENNOX, with Attendants, meeting a bleeding Sergeant</para>
 <line remap="LINE">Till then, enough. Come, friends.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Forres. The palace.</title>
-<para remap="STAGEDIR">Flourish. Enter DUNCAN, MALCOLM, DONALBAIN, LENNOX,
-and Attendants</para>
+<stagedir remap="STAGEDIR">Flourish. Enter DUNCAN, MALCOLM, DONALBAIN, LENNOX,
+and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUNCAN</speaker>
@@ -677,7 +677,7 @@ and Attendants</para>
 <line remap="LINE">To find the mind's construction in the face:</line>
 <line remap="LINE">He was a gentleman on whom I built</line>
 <line remap="LINE">An absolute trust.</line>
-<para remap="STAGEDIR">Enter MACBETH, BANQUO, ROSS, and ANGUS</para>
+<stagedir remap="STAGEDIR">Enter MACBETH, BANQUO, ROSS, and ANGUS</stagedir>
 <line remap="LINE">O worthiest cousin!</line>
 <line remap="LINE">The sin of my ingratitude even now</line>
 <line remap="LINE">Was heavy on me: thou art so far before</line>
@@ -744,7 +744,7 @@ and Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  The Prince of Cumberland! that is a step</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  The Prince of Cumberland! that is a step</line>
 <line remap="LINE">On which I must fall down, or else o'erleap,</line>
 <line remap="LINE">For in my way it lies. Stars, hide your fires;</line>
 <line remap="LINE">Let not light see my black and deep desires:</line>
@@ -752,7 +752,7 @@ and Attendants</para>
 <line remap="LINE">Which the eye fears, when it is done, to see.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUNCAN</speaker>
@@ -763,11 +763,11 @@ and Attendants</para>
 <line remap="LINE">It is a peerless kinsman.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish. Exeunt</para>
+<stagedir remap="STAGEDIR">Flourish. Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Inverness. Macbeth's castle.</title>
-<para remap="STAGEDIR">Enter LADY MACBETH, reading a letter</para>
+<stagedir remap="STAGEDIR">Enter LADY MACBETH, reading a letter</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LADY MACBETH</speaker>
@@ -801,7 +801,7 @@ and Attendants</para>
 <line remap="LINE">All that impedes thee from the golden round,</line>
 <line remap="LINE">Which fate and metaphysical aid doth seem</line>
 <line remap="LINE">To have thee crown'd withal.</line>
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 <line remap="LINE">What is your tidings?</line>
 </linegroup></dialogue>
 
@@ -829,7 +829,7 @@ and Attendants</para>
 <speaker remap="SPEAKER">LADY MACBETH</speaker>
 <line remap="LINE">Give him tending;</line>
 <line remap="LINE">He brings great news.</line>
-<para remap="STAGEDIR">Exit Messenger</para>
+<stagedir remap="STAGEDIR">Exit Messenger</stagedir>
 <line remap="LINE">The raven himself is hoarse</line>
 <line remap="LINE">That croaks the fatal entrance of Duncan</line>
 <line remap="LINE">Under my battlements. Come, you spirits</line>
@@ -847,7 +847,7 @@ and Attendants</para>
 <line remap="LINE">That my keen knife see not the wound it makes,</line>
 <line remap="LINE">Nor heaven peep through the blanket of the dark,</line>
 <line remap="LINE">To cry 'Hold, hold!'</line>
-<para remap="STAGEDIR">Enter MACBETH</para>
+<stagedir remap="STAGEDIR">Enter MACBETH</stagedir>
 <line remap="LINE">Great Glamis! worthy Cawdor!</line>
 <line remap="LINE">Greater than both, by the all-hail hereafter!</line>
 <line remap="LINE">Thy letters have transported me beyond</line>
@@ -898,13 +898,13 @@ and Attendants</para>
 <line remap="LINE">Leave all the rest to me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  Before Macbeth's castle.</title>
-<para remap="STAGEDIR">Hautboys and torches. Enter DUNCAN, MALCOLM,
+<stagedir remap="STAGEDIR">Hautboys and torches. Enter DUNCAN, MALCOLM,
 DONALBAIN, BANQUO, LENNOX, MACDUFF, ROSS, ANGUS,
-and Attendants</para>
+and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUNCAN</speaker>
@@ -925,7 +925,7 @@ and Attendants</para>
 <line remap="LINE">The air is delicate.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LADY MACBETH</para>
+<stagedir remap="STAGEDIR">Enter LADY MACBETH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUNCAN</speaker>
@@ -973,13 +973,13 @@ and Attendants</para>
 <line remap="LINE">By your leave, hostess.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VII.  Macbeth's castle.</title>
-<para remap="STAGEDIR">Hautboys and torches. Enter a Sewer, and divers
+<stagedir remap="STAGEDIR">Hautboys and torches. Enter a Sewer, and divers
 Servants with dishes and service, and pass over the
-stage. Then enter MACBETH</para>
+stage. Then enter MACBETH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -1011,7 +1011,7 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">To prick the sides of my intent, but only</line>
 <line remap="LINE">Vaulting ambition, which o'erleaps itself</line>
 <line remap="LINE">And falls on the other.</line>
-<para remap="STAGEDIR">Enter LADY MACBETH</para>
+<stagedir remap="STAGEDIR">Enter LADY MACBETH</stagedir>
 <line remap="LINE">How now! what news?</line>
 </linegroup></dialogue>
 
@@ -1126,7 +1126,7 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">False face must hide what the false heart doth know.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -1134,7 +1134,7 @@ stage. Then enter MACBETH</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Court of Macbeth's castle.</title>
-<para remap="STAGEDIR">Enter BANQUO, and FLEANCE bearing a torch before him</para>
+<stagedir remap="STAGEDIR">Enter BANQUO, and FLEANCE bearing a torch before him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BANQUO</speaker>
@@ -1164,7 +1164,7 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">And yet I would not sleep: merciful powers,</line>
 <line remap="LINE">Restrain in me the cursed thoughts that nature</line>
 <line remap="LINE">Gives way to in repose!</line>
-<para remap="STAGEDIR">Enter MACBETH, and a Servant with a torch</para>
+<stagedir remap="STAGEDIR">Enter MACBETH, and a Servant with a torch</stagedir>
 <line remap="LINE">Give me my sword.</line>
 <line remap="LINE">Who's there?</line>
 </linegroup></dialogue>
@@ -1235,13 +1235,13 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">Thanks, sir: the like to you!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt BANQUO and FLEANCE</para>
+<stagedir remap="STAGEDIR">Exeunt BANQUO and FLEANCE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
 <line remap="LINE">Go bid thy mistress, when my drink is ready,</line>
 <line remap="LINE">She strike upon the bell. Get thee to bed.</line>
-<para remap="STAGEDIR">Exit Servant</para>
+<stagedir remap="STAGEDIR">Exit Servant</stagedir>
 <line remap="LINE">Is this a dagger which I see before me,</line>
 <line remap="LINE">The handle toward my hand? Come, let me clutch thee.</line>
 <line remap="LINE">I have thee not, and yet I see thee still.</line>
@@ -1271,17 +1271,17 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">And take the present horror from the time,</line>
 <line remap="LINE">Which now suits with it. Whiles I threat, he lives:</line>
 <line remap="LINE">Words to the heat of deeds too cold breath gives.</line>
-<para remap="STAGEDIR">A bell rings</para>
+<stagedir remap="STAGEDIR">A bell rings</stagedir>
 <line remap="LINE">I go, and it is done; the bell invites me.</line>
 <line remap="LINE">Hear it not, Duncan; for it is a knell</line>
 <line remap="LINE">That summons thee to heaven or to hell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same.</title>
-<para remap="STAGEDIR">Enter LADY MACBETH</para>
+<stagedir remap="STAGEDIR">Enter LADY MACBETH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LADY MACBETH</speaker>
@@ -1299,7 +1299,7 @@ stage. Then enter MACBETH</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Who's there? what, ho!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Who's there? what, ho!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1309,7 +1309,7 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">Confounds us. Hark! I laid their daggers ready;</line>
 <line remap="LINE">He could not miss 'em. Had he not resembled</line>
 <line remap="LINE">My father as he slept, I had done't.</line>
-<para remap="STAGEDIR">Enter MACBETH</para>
+<stagedir remap="STAGEDIR">Enter MACBETH</stagedir>
 <line remap="LINE">My husband!</line>
 </linegroup></dialogue>
 
@@ -1360,7 +1360,7 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">This is a sorry sight.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Looking on his hands</para>
+<stagedir remap="STAGEDIR">Looking on his hands</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LADY MACBETH</speaker>
@@ -1457,7 +1457,7 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">For it must seem their guilt.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit. Knocking within</para>
+<stagedir remap="STAGEDIR">Exit. Knocking within</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -1470,19 +1470,19 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">Making the green one red.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter LADY MACBETH</para>
+<stagedir remap="STAGEDIR">Re-enter LADY MACBETH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LADY MACBETH</speaker>
 <line remap="LINE">My hands are of your colour; but I shame</line>
 <line remap="LINE">To wear a heart so white.</line>
-<para remap="STAGEDIR">Knocking within</para>
+<stagedir remap="STAGEDIR">Knocking within</stagedir>
 <line remap="LINE">I hear a knocking</line>
 <line remap="LINE">At the south entry: retire we to our chamber;</line>
 <line remap="LINE">A little water clears us of this deed:</line>
 <line remap="LINE">How easy is it, then! Your constancy</line>
 <line remap="LINE">Hath left you unattended.</line>
-<para remap="STAGEDIR">Knocking within</para>
+<stagedir remap="STAGEDIR">Knocking within</stagedir>
 <line remap="LINE">Hark! more knocking.</line>
 <line remap="LINE">Get on your nightgown, lest occasion call us,</line>
 <line remap="LINE">And show us to be watchers. Be not lost</line>
@@ -1492,29 +1492,29 @@ stage. Then enter MACBETH</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
 <line remap="LINE">To know my deed, 'twere best not know myself.</line>
-<para remap="STAGEDIR">Knocking within</para>
+<stagedir remap="STAGEDIR">Knocking within</stagedir>
 <line remap="LINE">Wake Duncan with thy knocking! I would thou couldst!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The same.</title>
-<para remap="STAGEDIR">Knocking within. Enter a Porter</para>
+<stagedir remap="STAGEDIR">Knocking within. Enter a Porter</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Porter</speaker>
 <line remap="LINE">Here's a knocking indeed! If a</line>
 <line remap="LINE">man were porter of hell-gate, he should have</line>
 <line remap="LINE">old turning the key.</line>
-<para remap="STAGEDIR">Knocking within</para>
+<stagedir remap="STAGEDIR">Knocking within</stagedir>
 <line remap="LINE">Knock,</line>
 <line remap="LINE">knock, knock! Who's there, i' the name of</line>
 <line remap="LINE">Beelzebub? Here's a farmer, that hanged</line>
 <line remap="LINE">himself on the expectation of plenty: come in</line>
 <line remap="LINE">time; have napkins enow about you; here</line>
 <line remap="LINE">you'll sweat for't.</line>
-<para remap="STAGEDIR">Knocking within</para>
+<stagedir remap="STAGEDIR">Knocking within</stagedir>
 <line remap="LINE">Knock,</line>
 <line remap="LINE">knock! Who's there, in the other devil's</line>
 <line remap="LINE">name? Faith, here's an equivocator, that could</line>
@@ -1522,25 +1522,25 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">who committed treason enough for God's sake,</line>
 <line remap="LINE">yet could not equivocate to heaven: O, come</line>
 <line remap="LINE">in, equivocator.</line>
-<para remap="STAGEDIR">Knocking within</para>
+<stagedir remap="STAGEDIR">Knocking within</stagedir>
 <line remap="LINE">Knock,</line>
 <line remap="LINE">knock, knock! Who's there? Faith, here's an</line>
 <line remap="LINE">English tailor come hither, for stealing out of</line>
 <line remap="LINE">a French hose: come in, tailor; here you may</line>
 <line remap="LINE">roast your goose.</line>
-<para remap="STAGEDIR">Knocking within</para>
+<stagedir remap="STAGEDIR">Knocking within</stagedir>
 <line remap="LINE">Knock,</line>
 <line remap="LINE">knock; never at quiet! What are you? But</line>
 <line remap="LINE">this place is too cold for hell. I'll devil-porter</line>
 <line remap="LINE">it no further: I had thought to have let in</line>
 <line remap="LINE">some of all professions that go the primrose</line>
 <line remap="LINE">way to the everlasting bonfire.</line>
-<para remap="STAGEDIR">Knocking within</para>
+<stagedir remap="STAGEDIR">Knocking within</stagedir>
 <line remap="LINE">Anon, anon! I pray you, remember the porter.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Opens the gate</para>
-<para remap="STAGEDIR">Enter MACDUFF and LENNOX</para>
+<stagedir remap="STAGEDIR">Opens the gate</stagedir>
+<stagedir remap="STAGEDIR">Enter MACDUFF and LENNOX</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACDUFF</speaker>
@@ -1591,7 +1591,7 @@ stage. Then enter MACBETH</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACDUFF</speaker>
 <line remap="LINE">Is thy master stirring?</line>
-<para remap="STAGEDIR">Enter MACBETH</para>
+<stagedir remap="STAGEDIR">Enter MACBETH</stagedir>
 <line remap="LINE">Our knocking has awaked him; here he comes.</line>
 </linegroup></dialogue>
 
@@ -1644,7 +1644,7 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">For 'tis my limited service.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LENNOX</speaker>
@@ -1679,7 +1679,7 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">A fellow to it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter MACDUFF</para>
+<stagedir remap="STAGEDIR">Re-enter MACDUFF</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACDUFF</speaker>
@@ -1716,7 +1716,7 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">Approach the chamber, and destroy your sight</line>
 <line remap="LINE">With a new Gorgon: do not bid me speak;</line>
 <line remap="LINE">See, and then speak yourselves.</line>
-<para remap="STAGEDIR">Exeunt MACBETH and LENNOX</para>
+<stagedir remap="STAGEDIR">Exeunt MACBETH and LENNOX</stagedir>
 <line remap="LINE">Awake, awake!</line>
 <line remap="LINE">Ring the alarum-bell. Murder and treason!</line>
 <line remap="LINE">Banquo and Donalbain! Malcolm! awake!</line>
@@ -1727,8 +1727,8 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">To countenance this horror! Ring the bell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Bell rings</para>
-<para remap="STAGEDIR">Enter LADY MACBETH</para>
+<stagedir remap="STAGEDIR">Bell rings</stagedir>
+<stagedir remap="STAGEDIR">Enter LADY MACBETH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LADY MACBETH</speaker>
@@ -1743,7 +1743,7 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">'Tis not for you to hear what I can speak:</line>
 <line remap="LINE">The repetition, in a woman's ear,</line>
 <line remap="LINE">Would murder as it fell.</line>
-<para remap="STAGEDIR">Enter BANQUO</para>
+<stagedir remap="STAGEDIR">Enter BANQUO</stagedir>
 <line remap="LINE">O Banquo, Banquo,</line>
 <line remap="LINE">Our royal master 's murder'd!</line>
 </linegroup></dialogue>
@@ -1761,7 +1761,7 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">And say it is not so.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter MACBETH and LENNOX, with ROSS</para>
+<stagedir remap="STAGEDIR">Re-enter MACBETH and LENNOX, with ROSS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -1773,7 +1773,7 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">Is left this vault to brag of.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MALCOLM and DONALBAIN</para>
+<stagedir remap="STAGEDIR">Enter MALCOLM and DONALBAIN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DONALBAIN</speaker>
@@ -1845,13 +1845,13 @@ stage. Then enter MACBETH</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALCOLM</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to DONALBAIN</phrase>  Why do we hold our tongues,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to DONALBAIN</inlinestagedir>  Why do we hold our tongues,</line>
 <line remap="LINE">That most may claim this argument for ours?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DONALBAIN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to MALCOLM</phrase>  What should be spoken here,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to MALCOLM</inlinestagedir>  What should be spoken here,</line>
 <line remap="LINE">where our fate,</line>
 <line remap="LINE">Hid in an auger-hole, may rush, and seize us?</line>
 <line remap="LINE">Let 's away;</line>
@@ -1860,14 +1860,14 @@ stage. Then enter MACBETH</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALCOLM</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to DONALBAIN</phrase>        Nor our strong sorrow</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to DONALBAIN</inlinestagedir>        Nor our strong sorrow</line>
 <line remap="LINE">Upon the foot of motion.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BANQUO</speaker>
 <line remap="LINE">Look to the lady:</line>
-<para remap="STAGEDIR">LADY MACBETH is carried out</para>
+<stagedir remap="STAGEDIR">LADY MACBETH is carried out</stagedir>
 <line remap="LINE">And when we have our naked frailties hid,</line>
 <line remap="LINE">That suffer in exposure, let us meet,</line>
 <line remap="LINE">And question this most bloody piece of work,</line>
@@ -1898,7 +1898,7 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">Well contented.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but Malcolm and Donalbain</para>
+<stagedir remap="STAGEDIR">Exeunt all but Malcolm and Donalbain</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALCOLM</speaker>
@@ -1925,11 +1925,11 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">Which steals itself, when there's no mercy left.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Outside Macbeth's castle.</title>
-<para remap="STAGEDIR">Enter ROSS and an old Man</para>
+<stagedir remap="STAGEDIR">Enter ROSS and an old Man</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Old Man</speaker>
@@ -1976,7 +1976,7 @@ stage. Then enter MACBETH</para>
 <speaker remap="SPEAKER">ROSS</speaker>
 <line remap="LINE">They did so, to the amazement of mine eyes</line>
 <line remap="LINE">That look'd upon't. Here comes the good Macduff.</line>
-<para remap="STAGEDIR">Enter MACDUFF</para>
+<stagedir remap="STAGEDIR">Enter MACDUFF</stagedir>
 <line remap="LINE">How goes the world, sir, now?</line>
 </linegroup></dialogue>
 
@@ -2067,7 +2067,7 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">That would make good of bad, and friends of foes!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -2075,7 +2075,7 @@ stage. Then enter MACBETH</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Forres. The palace.</title>
-<para remap="STAGEDIR">Enter BANQUO</para>
+<stagedir remap="STAGEDIR">Enter BANQUO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BANQUO</speaker>
@@ -2091,9 +2091,9 @@ stage. Then enter MACBETH</para>
 <line remap="LINE">And set me up in hope? But hush! no more.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Sennet sounded. Enter MACBETH, as king, LADY
+<stagedir remap="STAGEDIR">Sennet sounded. Enter MACBETH, as king, LADY
 MACBETH, as queen, LENNOX, ROSS, Lords, Ladies, and
-Attendants</para>
+Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -2177,12 +2177,12 @@ Attendants</para>
 <speaker remap="SPEAKER">MACBETH</speaker>
 <line remap="LINE">I wish your horses swift and sure of foot;</line>
 <line remap="LINE">And so I do commend you to their backs. Farewell.</line>
-<para remap="STAGEDIR">Exit BANQUO</para>
+<stagedir remap="STAGEDIR">Exit BANQUO</stagedir>
 <line remap="LINE">Let every man be master of his time</line>
 <line remap="LINE">Till seven at night: to make society</line>
 <line remap="LINE">The sweeter welcome, we will keep ourself</line>
 <line remap="LINE">Till supper-time alone: while then, God be with you!</line>
-<para remap="STAGEDIR">Exeunt all but MACBETH, and an attendant</para>
+<stagedir remap="STAGEDIR">Exeunt all but MACBETH, and an attendant</stagedir>
 <line remap="LINE">Sirrah, a word with you: attend those men</line>
 <line remap="LINE">Our pleasure?</line>
 </linegroup></dialogue>
@@ -2195,7 +2195,7 @@ Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
 <line remap="LINE">Bring them before us.</line>
-<para remap="STAGEDIR">Exit Attendant</para>
+<stagedir remap="STAGEDIR">Exit Attendant</stagedir>
 <line remap="LINE">To be thus is nothing;</line>
 <line remap="LINE">But to be safely thus.--Our fears in Banquo</line>
 <line remap="LINE">Stick deep; and in his royalty of nature</line>
@@ -2221,9 +2221,9 @@ Attendants</para>
 <line remap="LINE">To make them kings, the seed of Banquo kings!</line>
 <line remap="LINE">Rather than so, come fate into the list.</line>
 <line remap="LINE">And champion me to the utterance! Who's there!</line>
-<para remap="STAGEDIR">Re-enter Attendant, with two Murderers</para>
+<stagedir remap="STAGEDIR">Re-enter Attendant, with two Murderers</stagedir>
 <line remap="LINE">Now go to the door, and stay there till we call.</line>
-<para remap="STAGEDIR">Exit Attendant</para>
+<stagedir remap="STAGEDIR">Exit Attendant</stagedir>
 <line remap="LINE">Was it not yesterday we spoke together?</line>
 </linegroup></dialogue>
 
@@ -2366,16 +2366,16 @@ Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
 <line remap="LINE">I'll call upon you straight: abide within.</line>
-<para remap="STAGEDIR">Exeunt Murderers</para>
+<stagedir remap="STAGEDIR">Exeunt Murderers</stagedir>
 <line remap="LINE">It is concluded. Banquo, thy soul's flight,</line>
 <line remap="LINE">If it find heaven, must find it out to-night.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The palace.</title>
-<para remap="STAGEDIR">Enter LADY MACBETH and a Servant</para>
+<stagedir remap="STAGEDIR">Enter LADY MACBETH and a Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LADY MACBETH</speaker>
@@ -2398,7 +2398,7 @@ Attendants</para>
 <line remap="LINE">Madam, I will.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LADY MACBETH</speaker>
@@ -2406,7 +2406,7 @@ Attendants</para>
 <line remap="LINE">Where our desire is got without content:</line>
 <line remap="LINE">'Tis safer to be that which we destroy</line>
 <line remap="LINE">Than by destruction dwell in doubtful joy.</line>
-<para remap="STAGEDIR">Enter MACBETH</para>
+<stagedir remap="STAGEDIR">Enter MACBETH</stagedir>
 <line remap="LINE">How now, my lord! why do you keep alone,</line>
 <line remap="LINE">Of sorriest fancies your companions making,</line>
 <line remap="LINE">Using those thoughts which should indeed have died</line>
@@ -2498,11 +2498,11 @@ Attendants</para>
 <line remap="LINE">So, prithee, go with me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A park near the palace.</title>
-<para remap="STAGEDIR">Enter three Murderers</para>
+<stagedir remap="STAGEDIR">Enter three Murderers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Murderer</speaker>
@@ -2537,7 +2537,7 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BANQUO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Give us a light there, ho!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Give us a light there, ho!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -2564,7 +2564,7 @@ Attendants</para>
 <line remap="LINE">A light, a light!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BANQUO, and FLEANCE with a torch</para>
+<stagedir remap="STAGEDIR">Enter BANQUO, and FLEANCE with a torch</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Third Murderer</speaker>
@@ -2586,7 +2586,7 @@ Attendants</para>
 <line remap="LINE">Let it come down.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They set upon BANQUO</para>
+<stagedir remap="STAGEDIR">They set upon BANQUO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BANQUO</speaker>
@@ -2594,7 +2594,7 @@ Attendants</para>
 <line remap="LINE">Thou mayst revenge. O slave!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Dies. FLEANCE escapes</para>
+<stagedir remap="STAGEDIR">Dies. FLEANCE escapes</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Third Murderer</speaker>
@@ -2622,12 +2622,12 @@ Attendants</para>
 <line remap="LINE">Well, let's away, and say how much is done.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  The same. Hall in the palace.</title>
-<para remap="STAGEDIR">A banquet prepared. Enter MACBETH, LADY MACBETH,
-ROSS, LENNOX, Lords, and Attendants</para>
+<stagedir remap="STAGEDIR">A banquet prepared. Enter MACBETH, LADY MACBETH,
+ROSS, LENNOX, Lords, and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -2654,7 +2654,7 @@ ROSS, LENNOX, Lords, and Attendants</para>
 <line remap="LINE">For my heart speaks they are welcome.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">First Murderer appears at the door</para>
+<stagedir remap="STAGEDIR">First Murderer appears at the door</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -2662,7 +2662,7 @@ ROSS, LENNOX, Lords, and Attendants</para>
 <line remap="LINE">Both sides are even: here I'll sit i' the midst:</line>
 <line remap="LINE">Be large in mirth; anon we'll drink a measure</line>
 <line remap="LINE">The table round.</line>
-<para remap="STAGEDIR">Approaching the door</para>
+<stagedir remap="STAGEDIR">Approaching the door</stagedir>
 <line remap="LINE">There's blood on thy face.</line>
 </linegroup></dialogue>
 
@@ -2720,7 +2720,7 @@ ROSS, LENNOX, Lords, and Attendants</para>
 <line remap="LINE">We'll hear, ourselves, again.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Murderer</para>
+<stagedir remap="STAGEDIR">Exit Murderer</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LADY MACBETH</speaker>
@@ -2744,8 +2744,8 @@ ROSS, LENNOX, Lords, and Attendants</para>
 <line remap="LINE">May't please your highness sit.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The GHOST OF BANQUO enters, and sits in
-MACBETH's place</para>
+<stagedir remap="STAGEDIR">The GHOST OF BANQUO enters, and sits in
+MACBETH's place</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -2842,7 +2842,7 @@ MACBETH's place</para>
 <line remap="LINE">Shall be the maws of kites.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">GHOST OF BANQUO vanishes</para>
+<stagedir remap="STAGEDIR">GHOST OF BANQUO vanishes</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LADY MACBETH</speaker>
@@ -2896,7 +2896,7 @@ MACBETH's place</para>
 <line remap="LINE">Our duties, and the pledge.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter GHOST OF BANQUO</para>
+<stagedir remap="STAGEDIR">Re-enter GHOST OF BANQUO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -2924,7 +2924,7 @@ MACBETH's place</para>
 <line remap="LINE">If trembling I inhabit then, protest me</line>
 <line remap="LINE">The baby of a girl. Hence, horrible shadow!</line>
 <line remap="LINE">Unreal mockery, hence!</line>
-<para remap="STAGEDIR">GHOST OF BANQUO vanishes</para>
+<stagedir remap="STAGEDIR">GHOST OF BANQUO vanishes</stagedir>
 <line remap="LINE">Why, so: being gone,</line>
 <line remap="LINE">I am a man again. Pray you, sit still.</line>
 </linegroup></dialogue>
@@ -2970,7 +2970,7 @@ MACBETH's place</para>
 <line remap="LINE">A kind good night to all!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but MACBETH and LADY MACBETH</para>
+<stagedir remap="STAGEDIR">Exeunt all but MACBETH and LADY MACBETH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -3024,11 +3024,11 @@ MACBETH's place</para>
 <line remap="LINE">We are yet but young in deed.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  A Heath.</title>
-<para remap="STAGEDIR">Thunder. Enter the three Witches meeting HECATE</para>
+<stagedir remap="STAGEDIR">Thunder. Enter the three Witches meeting HECATE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Witch</speaker>
@@ -3069,24 +3069,24 @@ MACBETH's place</para>
 <line remap="LINE">He hopes 'bove wisdom, grace and fear:</line>
 <line remap="LINE">And you all know, security</line>
 <line remap="LINE">Is mortals' chiefest enemy.</line>
-<para remap="STAGEDIR">Music and a song within: 'Come away, come
-away,' &amp;c</para>
+<stagedir remap="STAGEDIR">Music and a song within: 'Come away, come
+away,' &amp;c</stagedir>
 <line remap="LINE">Hark! I am call'd; my little spirit, see,</line>
 <line remap="LINE">Sits in a foggy cloud, and stays for me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Witch</speaker>
 <line remap="LINE">Come, let's make haste; she'll soon be back again.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  Forres. The palace.</title>
-<para remap="STAGEDIR">Enter LENNOX and another Lord</para>
+<stagedir remap="STAGEDIR">Enter LENNOX and another Lord</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LENNOX</speaker>
@@ -3167,7 +3167,7 @@ away,' &amp;c</para>
 <line remap="LINE">I'll send my prayers with him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -3175,7 +3175,7 @@ away,' &amp;c</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A cavern. In the middle, a boiling cauldron.</title>
-<para remap="STAGEDIR">Thunder. Enter the three Witches</para>
+<stagedir remap="STAGEDIR">Thunder. Enter the three Witches</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Witch</speaker>
@@ -3255,7 +3255,7 @@ away,' &amp;c</para>
 <line remap="LINE">Then the charm is firm and good.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HECATE to the other three Witches</para>
+<stagedir remap="STAGEDIR">Enter HECATE to the other three Witches</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HECATE</speaker>
@@ -3266,8 +3266,8 @@ away,' &amp;c</para>
 <line remap="LINE">Enchanting all that you put in.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Music and a song: 'Black spirits,' &amp;c</para>
-<para remap="STAGEDIR">HECATE retires</para>
+<stagedir remap="STAGEDIR">Music and a song: 'Black spirits,' &amp;c</stagedir>
+<stagedir remap="STAGEDIR">HECATE retires</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Witch</speaker>
@@ -3277,7 +3277,7 @@ away,' &amp;c</para>
 <line remap="LINE">Whoever knocks!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MACBETH</para>
+<stagedir remap="STAGEDIR">Enter MACBETH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -3346,7 +3346,7 @@ away,' &amp;c</para>
 <line remap="LINE">Thyself and office deftly show!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Thunder. First Apparition: an armed Head</para>
+<stagedir remap="STAGEDIR">Thunder. First Apparition: an armed Head</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -3365,7 +3365,7 @@ away,' &amp;c</para>
 <line remap="LINE">Beware the thane of Fife. Dismiss me. Enough.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Descends</para>
+<stagedir remap="STAGEDIR">Descends</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -3380,7 +3380,7 @@ away,' &amp;c</para>
 <line remap="LINE">More potent than the first.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Thunder. Second Apparition: A bloody Child</para>
+<stagedir remap="STAGEDIR">Thunder. Second Apparition: A bloody Child</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Apparition</speaker>
@@ -3399,7 +3399,7 @@ away,' &amp;c</para>
 <line remap="LINE">Shall harm Macbeth.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Descends</para>
+<stagedir remap="STAGEDIR">Descends</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -3408,8 +3408,8 @@ away,' &amp;c</para>
 <line remap="LINE">And take a bond of fate: thou shalt not live;</line>
 <line remap="LINE">That I may tell pale-hearted fear it lies,</line>
 <line remap="LINE">And sleep in spite of thunder.</line>
-<para remap="STAGEDIR">Thunder. Third Apparition: a Child crowned,
-with a tree in his hand</para>
+<stagedir remap="STAGEDIR">Thunder. Third Apparition: a Child crowned,
+with a tree in his hand</stagedir>
 <line remap="LINE">What is this</line>
 <line remap="LINE">That rises like the issue of a king,</line>
 <line remap="LINE">And wears upon his baby-brow the round</line>
@@ -3430,7 +3430,7 @@ with a tree in his hand</para>
 <line remap="LINE">Shall come against him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Descends</para>
+<stagedir remap="STAGEDIR">Descends</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -3458,7 +3458,7 @@ with a tree in his hand</para>
 <line remap="LINE">Why sinks that cauldron? and what noise is this?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Hautboys</para>
+<stagedir remap="STAGEDIR">Hautboys</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Witch</speaker>
@@ -3481,8 +3481,8 @@ with a tree in his hand</para>
 <line remap="LINE">Come like shadows, so depart!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">A show of Eight Kings, the last with a glass in
-his hand; GHOST OF BANQUO following</para>
+<stagedir remap="STAGEDIR">A show of Eight Kings, the last with a glass in
+his hand; GHOST OF BANQUO following</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -3499,7 +3499,7 @@ his hand; GHOST OF BANQUO following</para>
 <line remap="LINE">Horrible sight! Now, I see, 'tis true;</line>
 <line remap="LINE">For the blood-bolter'd Banquo smiles upon me,</line>
 <line remap="LINE">And points at them for his.</line>
-<para remap="STAGEDIR">Apparitions vanish</para>
+<stagedir remap="STAGEDIR">Apparitions vanish</stagedir>
 <line remap="LINE">What, is this so?</line>
 </linegroup></dialogue>
 
@@ -3515,8 +3515,8 @@ his hand; GHOST OF BANQUO following</para>
 <line remap="LINE">Our duties did his welcome pay.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Music. The witches dance and then vanish,
-with HECATE</para>
+<stagedir remap="STAGEDIR">Music. The witches dance and then vanish,
+with HECATE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -3525,7 +3525,7 @@ with HECATE</para>
 <line remap="LINE">Come in, without there!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LENNOX</para>
+<stagedir remap="STAGEDIR">Enter LENNOX</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LENNOX</speaker>
@@ -3592,11 +3592,11 @@ with HECATE</para>
 <line remap="LINE">Come, bring me where they are.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Fife. Macduff's castle.</title>
-<para remap="STAGEDIR">Enter LADY MACDUFF, her Son, and ROSS</para>
+<stagedir remap="STAGEDIR">Enter LADY MACDUFF, her Son, and ROSS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LADY MACDUFF</speaker>
@@ -3664,7 +3664,7 @@ with HECATE</para>
 <line remap="LINE">I take my leave at once.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LADY MACDUFF</speaker>
@@ -3800,7 +3800,7 @@ with HECATE</para>
 <line remap="LINE">Poor prattler, how thou talk'st!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
@@ -3815,7 +3815,7 @@ with HECATE</para>
 <line remap="LINE">I dare abide no longer.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LADY MACDUFF</speaker>
@@ -3826,7 +3826,7 @@ with HECATE</para>
 <line remap="LINE">Accounted dangerous folly: why then, alas,</line>
 <line remap="LINE">Do I put up that womanly defence,</line>
 <line remap="LINE">To say I have done no harm?</line>
-<para remap="STAGEDIR">Enter Murderers</para>
+<stagedir remap="STAGEDIR">Enter Murderers</stagedir>
 <line remap="LINE">What are these faces?</line>
 </linegroup></dialogue>
 
@@ -3854,7 +3854,7 @@ with HECATE</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Murderer</speaker>
 <line remap="LINE">What, you egg!</line>
-<para remap="STAGEDIR">Stabbing him</para>
+<stagedir remap="STAGEDIR">Stabbing him</stagedir>
 <line remap="LINE">Young fry of treachery!</line>
 </linegroup></dialogue>
 
@@ -3864,13 +3864,13 @@ with HECATE</para>
 <line remap="LINE">Run away, I pray you!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Dies</para>
-<para remap="STAGEDIR">Exit LADY MACDUFF, crying 'Murder!' Exeunt
-Murderers, following her</para>
+<stagedir remap="STAGEDIR">Dies</stagedir>
+<stagedir remap="STAGEDIR">Exit LADY MACDUFF, crying 'Murder!' Exeunt
+Murderers, following her</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  England. Before the King's palace.</title>
-<para remap="STAGEDIR">Enter MALCOLM and MACDUFF</para>
+<stagedir remap="STAGEDIR">Enter MALCOLM and MACDUFF</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALCOLM</speaker>
@@ -4117,7 +4117,7 @@ Murderers, following her</para>
 <line remap="LINE">'Tis hard to reconcile.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Doctor</para>
+<stagedir remap="STAGEDIR">Enter a Doctor</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALCOLM</speaker>
@@ -4138,7 +4138,7 @@ Murderers, following her</para>
 <line remap="LINE">I thank you, doctor.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Doctor</para>
+<stagedir remap="STAGEDIR">Exit Doctor</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACDUFF</speaker>
@@ -4163,7 +4163,7 @@ Murderers, following her</para>
 <line remap="LINE">That speak him full of grace.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ROSS</para>
+<stagedir remap="STAGEDIR">Enter ROSS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACDUFF</speaker>
@@ -4419,7 +4419,7 @@ Murderers, following her</para>
 <line remap="LINE">The night is long that never finds the day.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -4427,7 +4427,7 @@ Murderers, following her</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Dunsinane. Ante-room in the castle.</title>
-<para remap="STAGEDIR">Enter a Doctor of Physic and a Waiting-Gentlewoman</para>
+<stagedir remap="STAGEDIR">Enter a Doctor of Physic and a Waiting-Gentlewoman</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Doctor</speaker>
@@ -4467,7 +4467,7 @@ Murderers, following her</para>
 <speaker remap="SPEAKER">Gentlewoman</speaker>
 <line remap="LINE">Neither to you nor any one; having no witness to</line>
 <line remap="LINE">confirm my speech.</line>
-<para remap="STAGEDIR">Enter LADY MACBETH, with a taper</para>
+<stagedir remap="STAGEDIR">Enter LADY MACBETH, with a taper</stagedir>
 <line remap="LINE">Lo you, here she comes! This is her very guise;</line>
 <line remap="LINE">and, upon my life, fast asleep. Observe her; stand close.</line>
 </linegroup></dialogue>
@@ -4604,7 +4604,7 @@ Murderers, following her</para>
 <line remap="LINE">done cannot be undone.--To bed, to bed, to bed!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Doctor</speaker>
@@ -4634,12 +4634,12 @@ Murderers, following her</para>
 <line remap="LINE">Good night, good doctor.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The country near Dunsinane.</title>
-<para remap="STAGEDIR">Drum and colours. Enter MENTEITH, CAITHNESS, ANGUS,
-LENNOX, and Soldiers</para>
+<stagedir remap="STAGEDIR">Drum and colours. Enter MENTEITH, CAITHNESS, ANGUS,
+LENNOX, and Soldiers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENTEITH</speaker>
@@ -4718,11 +4718,11 @@ LENNOX, and Soldiers</para>
 <line remap="LINE">Make we our march towards Birnam.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt, marching</para>
+<stagedir remap="STAGEDIR">Exeunt, marching</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Dunsinane. A room in the castle.</title>
-<para remap="STAGEDIR">Enter MACBETH, Doctor, and Attendants</para>
+<stagedir remap="STAGEDIR">Enter MACBETH, Doctor, and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -4737,7 +4737,7 @@ LENNOX, and Soldiers</para>
 <line remap="LINE">And mingle with the English epicures:</line>
 <line remap="LINE">The mind I sway by and the heart I bear</line>
 <line remap="LINE">Shall never sag with doubt nor shake with fear.</line>
-<para remap="STAGEDIR">Enter a Servant</para>
+<stagedir remap="STAGEDIR">Enter a Servant</stagedir>
 <line remap="LINE">The devil damn thee black, thou cream-faced loon!</line>
 <line remap="LINE">Where got'st thou that goose look?</line>
 </linegroup></dialogue>
@@ -4773,7 +4773,7 @@ LENNOX, and Soldiers</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
 <line remap="LINE">Take thy face hence.</line>
-<para remap="STAGEDIR">Exit Servant</para>
+<stagedir remap="STAGEDIR">Exit Servant</stagedir>
 <line remap="LINE">Seyton!--I am sick at heart,</line>
 <line remap="LINE">When I behold--Seyton, I say!--This push</line>
 <line remap="LINE">Will cheer me ever, or disseat me now.</line>
@@ -4786,7 +4786,7 @@ LENNOX, and Soldiers</para>
 <line remap="LINE">Which the poor heart would fain deny, and dare not. Seyton!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SEYTON</para>
+<stagedir remap="STAGEDIR">Enter SEYTON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SEYTON</speaker>
@@ -4875,17 +4875,17 @@ LENNOX, and Soldiers</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Doctor</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Were I from Dunsinane away and clear,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Were I from Dunsinane away and clear,</line>
 <line remap="LINE">Profit again should hardly draw me here.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Country near Birnam wood.</title>
-<para remap="STAGEDIR">Drum and colours. Enter MALCOLM, SIWARD and YOUNG
+<stagedir remap="STAGEDIR">Drum and colours. Enter MALCOLM, SIWARD and YOUNG
 SIWARD, MACDUFF, MENTEITH, CAITHNESS, ANGUS,
-LENNOX, ROSS, and Soldiers, marching</para>
+LENNOX, ROSS, and Soldiers, marching</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALCOLM</speaker>
@@ -4954,12 +4954,12 @@ LENNOX, ROSS, and Soldiers, marching</para>
 <line remap="LINE">Towards which advance the war.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt, marching</para>
+<stagedir remap="STAGEDIR">Exeunt, marching</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Dunsinane. Within the castle.</title>
-<para remap="STAGEDIR">Enter MACBETH, SEYTON, and Soldiers, with drum
-and colours</para>
+<stagedir remap="STAGEDIR">Enter MACBETH, SEYTON, and Soldiers, with drum
+and colours</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -4970,7 +4970,7 @@ and colours</para>
 <line remap="LINE">Were they not forced with those that should be ours,</line>
 <line remap="LINE">We might have met them dareful, beard to beard,</line>
 <line remap="LINE">And beat them backward home.</line>
-<para remap="STAGEDIR">A cry of women within</para>
+<stagedir remap="STAGEDIR">A cry of women within</stagedir>
 <line remap="LINE">What is that noise?</line>
 </linegroup></dialogue>
 
@@ -4979,7 +4979,7 @@ and colours</para>
 <line remap="LINE">It is the cry of women, my good lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -4990,7 +4990,7 @@ and colours</para>
 <line remap="LINE">As life were in't: I have supp'd full with horrors;</line>
 <line remap="LINE">Direness, familiar to my slaughterous thoughts</line>
 <line remap="LINE">Cannot once start me.</line>
-<para remap="STAGEDIR">Re-enter SEYTON</para>
+<stagedir remap="STAGEDIR">Re-enter SEYTON</stagedir>
 <line remap="LINE">Wherefore was that cry?</line>
 </linegroup></dialogue>
 
@@ -5013,7 +5013,7 @@ and colours</para>
 <line remap="LINE">And then is heard no more: it is a tale</line>
 <line remap="LINE">Told by an idiot, full of sound and fury,</line>
 <line remap="LINE">Signifying nothing.</line>
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 <line remap="LINE">Thou comest to use thy tongue; thy story quickly.</line>
 </linegroup></dialogue>
 
@@ -5067,12 +5067,12 @@ and colours</para>
 <line remap="LINE">At least we'll die with harness on our back.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  Dunsinane. Before the castle.</title>
-<para remap="STAGEDIR">Drum and colours. Enter MALCOLM, SIWARD, MACDUFF,
-and their Army, with boughs</para>
+<stagedir remap="STAGEDIR">Drum and colours. Enter MALCOLM, SIWARD, MACDUFF,
+and their Army, with boughs</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALCOLM</speaker>
@@ -5097,11 +5097,11 @@ and their Army, with boughs</para>
 <line remap="LINE">Those clamorous harbingers of blood and death.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VII.  Another part of the field.</title>
-<para remap="STAGEDIR">Alarums. Enter MACBETH</para>
+<stagedir remap="STAGEDIR">Alarums. Enter MACBETH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -5111,7 +5111,7 @@ and their Army, with boughs</para>
 <line remap="LINE">Am I to fear, or none.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter YOUNG SIWARD</para>
+<stagedir remap="STAGEDIR">Enter YOUNG SIWARD</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">YOUNG SIWARD</speaker>
@@ -5151,7 +5151,7 @@ and their Army, with boughs</para>
 <line remap="LINE">I'll prove the lie thou speak'st.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They fight and YOUNG SIWARD is slain</para>
+<stagedir remap="STAGEDIR">They fight and YOUNG SIWARD is slain</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -5160,8 +5160,8 @@ and their Army, with boughs</para>
 <line remap="LINE">Brandish'd by man that's of a woman born.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Alarums. Enter MACDUFF</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Alarums. Enter MACDUFF</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACDUFF</speaker>
@@ -5177,8 +5177,8 @@ and their Army, with boughs</para>
 <line remap="LINE">And more I beg not.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit. Alarums</para>
-<para remap="STAGEDIR">Enter MALCOLM and SIWARD</para>
+<stagedir remap="STAGEDIR">Exit. Alarums</stagedir>
+<stagedir remap="STAGEDIR">Enter MALCOLM and SIWARD</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIWARD</speaker>
@@ -5200,11 +5200,11 @@ and their Army, with boughs</para>
 <line remap="LINE">Enter, sir, the castle.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt. Alarums</para>
+<stagedir remap="STAGEDIR">Exeunt. Alarums</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VIII.  Another part of the field.</title>
-<para remap="STAGEDIR">Enter MACBETH</para>
+<stagedir remap="STAGEDIR">Enter MACBETH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -5213,7 +5213,7 @@ and their Army, with boughs</para>
 <line remap="LINE">Do better upon them.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MACDUFF</para>
+<stagedir remap="STAGEDIR">Enter MACDUFF</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACDUFF</speaker>
@@ -5234,7 +5234,7 @@ and their Army, with boughs</para>
 <line remap="LINE">Than terms can give thee out!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They fight</para>
+<stagedir remap="STAGEDIR">They fight</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACBETH</speaker>
@@ -5285,9 +5285,9 @@ and their Army, with boughs</para>
 <line remap="LINE">And damn'd be him that first cries, 'Hold, enough!'</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt, fighting. Alarums</para>
-<para remap="STAGEDIR">Retreat. Flourish. Enter, with drum and colours,
-MALCOLM, SIWARD, ROSS, the other Thanes, and Soldiers</para>
+<stagedir remap="STAGEDIR">Exeunt, fighting. Alarums</stagedir>
+<stagedir remap="STAGEDIR">Retreat. Flourish. Enter, with drum and colours,
+MALCOLM, SIWARD, ROSS, the other Thanes, and Soldiers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALCOLM</speaker>
@@ -5357,7 +5357,7 @@ MALCOLM, SIWARD, ROSS, the other Thanes, and Soldiers</para>
 <line remap="LINE">And so, God be with him! Here comes newer comfort.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter MACDUFF, with MACBETH's head</para>
+<stagedir remap="STAGEDIR">Re-enter MACDUFF, with MACBETH's head</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MACDUFF</speaker>
@@ -5374,7 +5374,7 @@ MALCOLM, SIWARD, ROSS, the other Thanes, and Soldiers</para>
 <line remap="LINE">Hail, King of Scotland!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish</para>
+<stagedir remap="STAGEDIR">Flourish</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MALCOLM</speaker>
@@ -5396,7 +5396,7 @@ MALCOLM, SIWARD, ROSS, the other Thanes, and Soldiers</para>
 <line remap="LINE">Whom we invite to see us crown'd at Scone.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish. Exeunt</para>
+<stagedir remap="STAGEDIR">Flourish. Exeunt</stagedir>
 </section>
 </chapter>
 </book>

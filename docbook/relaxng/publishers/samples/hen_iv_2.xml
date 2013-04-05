@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">The Second Part of Henry the Fourth</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">The Second Part of Henry the Fourth</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The Second Part of Henry the Fourth</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -50,15 +50,15 @@
 <para><personname remap="PERSONA">DOLL TEARSHEET</personname></para>
 <para><personname remap="PERSONA">Lords and Attendants; Porter, Drawers, Beadles, Grooms, &amp;c.</personname></para>
 <para><personname remap="PERSONA">A Dancer, speaker of the epilogue.</personname></para>
-    <para remap="SCNDESCR">SCENE  England.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  England.</para>
 
 
 
 <chapter remap="INDUCT"><title remap="TITLE">INDUCTION</title>
-<para remap="STAGEDIR">Warkworth. Before the castle</para>
-<para remap="STAGEDIR">Enter RUMOUR, painted full of tongues</para>
+<stagedir remap="STAGEDIR">Warkworth. Before the castle</stagedir>
+<stagedir remap="STAGEDIR">Enter RUMOUR, painted full of tongues</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">RUMOUR</speaker>
@@ -104,18 +104,18 @@
 <line remap="LINE">They bring smooth comforts false, worse than</line>
 <line remap="LINE">true wrongs.</line>
 </linegroup></dialogue>
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </chapter>
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  The same.</title>
-<para remap="STAGEDIR">Enter LORD BARDOLPH</para>
+<stagedir remap="STAGEDIR">Enter LORD BARDOLPH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD BARDOLPH</speaker>
 <line remap="LINE">Who keeps the gate here, ho?</line>
-<para remap="STAGEDIR">The Porter opens the gate</para>
+<stagedir remap="STAGEDIR">The Porter opens the gate</stagedir>
 <line remap="LINE">Where is the earl?</line>
 </linegroup></dialogue>
 
@@ -137,14 +137,14 @@
 <line remap="LINE">And he himself wilt answer.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter NORTHUMBERLAND</para>
+<stagedir remap="STAGEDIR">Enter NORTHUMBERLAND</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD BARDOLPH</speaker>
 <line remap="LINE">Here comes the earl.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Porter</para>
+<stagedir remap="STAGEDIR">Exit Porter</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NORTHUMBERLAND</speaker>
@@ -200,7 +200,7 @@
 <line remap="LINE">On Tuesday last to listen after news.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter TRAVERS</para>
+<stagedir remap="STAGEDIR">Enter TRAVERS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD BARDOLPH</speaker>
@@ -263,7 +263,7 @@
 <line remap="LINE">Spoke at a venture. Look, here comes more news.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MORTON</para>
+<stagedir remap="STAGEDIR">Enter MORTON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NORTHUMBERLAND</speaker>
@@ -487,12 +487,12 @@
 <line remap="LINE">Never so few, and never yet more need.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  London. A street.</title>
-<para remap="STAGEDIR">Enter FALSTAFF, with his Page bearing his sword
-and buckler</para>
+<stagedir remap="STAGEDIR">Enter FALSTAFF, with his Page bearing his sword
+and buckler</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -575,7 +575,7 @@ and buckler</para>
 <line remap="LINE">stews, I were manned, horsed, and wived.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter the Lord Chief-Justice and Servant</para>
+<stagedir remap="STAGEDIR">Enter the Lord Chief-Justice and Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Page</speaker>
@@ -984,7 +984,7 @@ and buckler</para>
 <line remap="LINE">cousin Westmoreland.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Chief-Justice and Servant</para>
+<stagedir remap="STAGEDIR">Exeunt Chief-Justice and Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -1020,7 +1020,7 @@ and buckler</para>
 <line remap="LINE">Mistress Ursula, whom I have weekly sworn to marry</line>
 <line remap="LINE">since I perceived the first white hair on my chin.</line>
 <line remap="LINE">About it: you know where to find me.</line>
-<para remap="STAGEDIR">Exit Page</para>
+<stagedir remap="STAGEDIR">Exit Page</stagedir>
 <line remap="LINE">A pox of this gout! or, a gout of this pox! for</line>
 <line remap="LINE">the one or the other plays the rogue with my great</line>
 <line remap="LINE">toe. 'Tis no matter if I do halt; I have the wars</line>
@@ -1029,12 +1029,12 @@ and buckler</para>
 <line remap="LINE">I will turn diseases to commodity.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  York. The Archbishop's palace.</title>
-<para remap="STAGEDIR">Enter the ARCHBISHOP OF YORK, the Lords HASTINGS,
-MOWBRAY, and BARDOLPH</para>
+<stagedir remap="STAGEDIR">Enter the ARCHBISHOP OF YORK, the Lords HASTINGS,
+MOWBRAY, and BARDOLPH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ARCHBISHOP OF YORK</speaker>
@@ -1230,7 +1230,7 @@ MOWBRAY, and BARDOLPH</para>
 <line remap="LINE">We are time's subjects, and time bids be gone.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -1238,8 +1238,8 @@ MOWBRAY, and BARDOLPH</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  London. A street.</title>
-<para remap="STAGEDIR">Enter MISTRESS QUICKLY, FANG and his Boy with her,
-and SNARE following.</para>
+<stagedir remap="STAGEDIR">Enter MISTRESS QUICKLY, FANG and his Boy with her,
+and SNARE following.</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
@@ -1339,7 +1339,7 @@ and SNARE following.</para>
 <line remap="LINE">do me your offices.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">[Enter FALSTAFF, Page, and BARDOLPH]</para>
+<stagedir remap="STAGEDIR">[Enter FALSTAFF, Page, and BARDOLPH]</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -1390,7 +1390,7 @@ and SNARE following.</para>
 <line remap="LINE">fustilarian! I'll tickle your catastrophe.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter the Lord Chief-Justice, and his men</para>
+<stagedir remap="STAGEDIR">Enter the Lord Chief-Justice, and his men</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lord Chief-Justice</speaker>
@@ -1530,7 +1530,7 @@ and SNARE following.</para>
 <line remap="LINE">Come hither, hostess.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter GOWER</para>
+<stagedir remap="STAGEDIR">Enter GOWER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lord Chief-Justice</speaker>
@@ -1601,7 +1601,7 @@ and SNARE following.</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
 <line remap="LINE">Will I live?</line>
-<para remap="STAGEDIR">To BARDOLPH</para>
+<stagedir remap="STAGEDIR">To BARDOLPH</stagedir>
 <line remap="LINE">Go, with her, with her; hook on, hook on.</line>
 </linegroup></dialogue>
 
@@ -1615,7 +1615,7 @@ and SNARE following.</para>
 <line remap="LINE">No more words; let's have her.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt MISTRESS QUICKLY, BARDOLPH, Officers and Boy</para>
+<stagedir remap="STAGEDIR">Exeunt MISTRESS QUICKLY, BARDOLPH, Officers and Boy</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lord Chief-Justice</speaker>
@@ -1714,11 +1714,11 @@ and SNARE following.</para>
 <line remap="LINE">Now the Lord lighten thee! thou art a great fool.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  London. Another street.</title>
-<para remap="STAGEDIR">Enter PRINCE HENRY and POINS</para>
+<stagedir remap="STAGEDIR">Enter PRINCE HENRY and POINS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRINCE HENRY</speaker>
@@ -1866,7 +1866,7 @@ and SNARE following.</para>
 <line remap="LINE">confess, I cannot help. By the mass, here comes Bardolph.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BARDOLPH and Page</para>
+<stagedir remap="STAGEDIR">Enter BARDOLPH and Page</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRINCE HENRY</speaker>
@@ -1983,7 +1983,7 @@ and SNARE following.</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POINS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'John Falstaff, knight,'--every man must</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'John Falstaff, knight,'--every man must</line>
 <line remap="LINE">know that, as oft as he has occasion to name</line>
 <line remap="LINE">himself: even like those that are kin to the king;</line>
 <line remap="LINE">for they never prick their finger but they say,</line>
@@ -2001,7 +2001,7 @@ and SNARE following.</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POINS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'Sir John Falstaff, knight, to the son of</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'Sir John Falstaff, knight, to the son of</line>
 <line remap="LINE">the king, nearest his father, Harry Prince of</line>
 <line remap="LINE">Wales, greeting.' Why, this is a certificate.</line>
 </linegroup></dialogue>
@@ -2013,7 +2013,7 @@ and SNARE following.</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POINS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'I will imitate the honourable Romans in</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'I will imitate the honourable Romans in</line>
 <line remap="LINE">brevity:' he sure means brevity in breath,</line>
 <line remap="LINE">short-winded. 'I commend me to thee, I commend</line>
 <line remap="LINE">thee, and I leave thee. Be not too familiar with</line>
@@ -2122,7 +2122,7 @@ and SNARE following.</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRINCE HENRY</speaker>
 <line remap="LINE">Fare you well; go.</line>
-<para remap="STAGEDIR">Exeunt BARDOLPH and Page</para>
+<stagedir remap="STAGEDIR">Exeunt BARDOLPH and Page</stagedir>
 <line remap="LINE">This Doll Tearsheet should be some road.</line>
 </linegroup></dialogue>
 
@@ -2153,11 +2153,11 @@ and SNARE following.</para>
 <line remap="LINE">Follow me, Ned.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Warkworth. Before the castle.</title>
-<para remap="STAGEDIR">Enter NORTHUMBERLAND, LADY NORTHUMBERLAND, and LADY PERCY</para>
+<stagedir remap="STAGEDIR">Enter NORTHUMBERLAND, LADY NORTHUMBERLAND, and LADY PERCY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NORTHUMBERLAND</speaker>
@@ -2261,11 +2261,11 @@ and SNARE following.</para>
 <line remap="LINE">Till time and vantage crave my company.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  London. The Boar's-head Tavern in Eastcheap.</title>
-<para remap="STAGEDIR">Enter two Drawers</para>
+<stagedir remap="STAGEDIR">Enter two Drawers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Drawer</speaker>
@@ -2310,8 +2310,8 @@ and SNARE following.</para>
 <line remap="LINE">I'll see if I can find out Sneak.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter MISTRESS QUICKLY and DOLL TEARSHEET</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter MISTRESS QUICKLY and DOLL TEARSHEET</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
@@ -2336,14 +2336,14 @@ and SNARE following.</para>
 <line remap="LINE">Lo, here comes Sir John.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter FALSTAFF</para>
+<stagedir remap="STAGEDIR">Enter FALSTAFF</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Singing</phrase>  'When Arthur first in court,'</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Singing</inlinestagedir>  'When Arthur first in court,'</line>
 <line remap="LINE">--Empty the jordan.</line>
-<para remap="STAGEDIR">Exit First Drawer</para>
-<para remap="STAGEDIR">Singing</para>
+<stagedir remap="STAGEDIR">Exit First Drawer</stagedir>
+<stagedir remap="STAGEDIR">Singing</stagedir>
 <line remap="LINE">--'And was a worthy king.' How now, Mistress Doll!</line>
 </linegroup></dialogue>
 
@@ -2421,7 +2421,7 @@ and SNARE following.</para>
 <line remap="LINE">nobody cares.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter First Drawer</para>
+<stagedir remap="STAGEDIR">Re-enter First Drawer</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Drawer</speaker>
@@ -2488,7 +2488,7 @@ and SNARE following.</para>
 <line remap="LINE">Call him up, drawer.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit First Drawer</para>
+<stagedir remap="STAGEDIR">Exit First Drawer</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
@@ -2510,7 +2510,7 @@ and SNARE following.</para>
 <line remap="LINE">leaf: I cannot abide swaggerers.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PISTOL, BARDOLPH, and Page</para>
+<stagedir remap="STAGEDIR">Enter PISTOL, BARDOLPH, and Page</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PISTOL</speaker>
@@ -2678,7 +2678,7 @@ and SNARE following.</para>
 <line remap="LINE">'Si fortune me tormente, sperato me contento.'</line>
 <line remap="LINE">Fear we broadsides? no, let the fiend give fire:</line>
 <line remap="LINE">Give me some sack: and, sweetheart, lie thou there.</line>
-<para remap="STAGEDIR">Laying down his sword</para>
+<stagedir remap="STAGEDIR">Laying down his sword</stagedir>
 <line remap="LINE">Come we to full points here; and are etceteras nothing?</line>
 </linegroup></dialogue>
 
@@ -2719,7 +2719,7 @@ and SNARE following.</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PISTOL</speaker>
 <line remap="LINE">What! shall we have incision? shall we imbrue?</line>
-<para remap="STAGEDIR">Snatching up his sword</para>
+<stagedir remap="STAGEDIR">Snatching up his sword</stagedir>
 <line remap="LINE">Then death rock me asleep, abridge my doleful days!</line>
 <line remap="LINE">Why, then, let grievous, ghastly, gaping wounds</line>
 <line remap="LINE">Untwine the Sisters Three! Come, Atropos, I say!</line>
@@ -2745,7 +2745,7 @@ and SNARE following.</para>
 <line remap="LINE">Get you down stairs.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Drawing, and driving PISTOL out</para>
+<stagedir remap="STAGEDIR">Drawing, and driving PISTOL out</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
@@ -2755,7 +2755,7 @@ and SNARE following.</para>
 <line remap="LINE">your naked weapons, put up your naked weapons.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt PISTOL and BARDOLPH</para>
+<stagedir remap="STAGEDIR">Exeunt PISTOL and BARDOLPH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOLL TEARSHEET</speaker>
@@ -2769,7 +2769,7 @@ and SNARE following.</para>
 <line remap="LINE">shrewd thrust at your belly.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter BARDOLPH</para>
+<stagedir remap="STAGEDIR">Re-enter BARDOLPH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -2808,7 +2808,7 @@ and SNARE following.</para>
 <line remap="LINE">I'll canvass thee between a pair of sheets.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Music</para>
+<stagedir remap="STAGEDIR">Enter Music</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Page</speaker>
@@ -2830,7 +2830,7 @@ and SNARE following.</para>
 <line remap="LINE">o' nights, and begin to patch up thine old body for heaven?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter, behind, PRINCE HENRY and POINS, disguised</para>
+<stagedir remap="STAGEDIR">Enter, behind, PRINCE HENRY and POINS, disguised</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -2969,7 +2969,7 @@ and SNARE following.</para>
 <line remap="LINE">Anon, anon, sir.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Coming forward</para>
+<stagedir remap="STAGEDIR">Coming forward</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -3154,14 +3154,14 @@ and SNARE following.</para>
 <line remap="LINE">His grace says that which his flesh rebels against.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Knocking within</para>
+<stagedir remap="STAGEDIR">Knocking within</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
 <line remap="LINE">Who knocks so loud at door? Look to the door there, Francis.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PETO</para>
+<stagedir remap="STAGEDIR">Enter PETO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRINCE HENRY</speaker>
@@ -3188,15 +3188,15 @@ and SNARE following.</para>
 <line remap="LINE">Give me my sword and cloak. Falstaff, good night.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt PRINCE HENRY, POINS, PETO and BARDOLPH</para>
+<stagedir remap="STAGEDIR">Exeunt PRINCE HENRY, POINS, PETO and BARDOLPH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
 <line remap="LINE">Now comes in the sweetest morsel of the night, and</line>
 <line remap="LINE">we must hence and leave it unpicked.</line>
-<para remap="STAGEDIR">Knocking within</para>
+<stagedir remap="STAGEDIR">Knocking within</stagedir>
 <line remap="LINE">More knocking at the door!</line>
-<para remap="STAGEDIR">Re-enter BARDOLPH</para>
+<stagedir remap="STAGEDIR">Re-enter BARDOLPH</stagedir>
 <line remap="LINE">How now! what's the matter?</line>
 </linegroup></dialogue>
 
@@ -3208,7 +3208,7 @@ and SNARE following.</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To the Page</phrase>  Pay the musicians, sirrah. Farewell,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To the Page</inlinestagedir>  Pay the musicians, sirrah. Farewell,</line>
 <line remap="LINE">hostess; farewell, Doll. You see, my good wenches,</line>
 <line remap="LINE">how men of merit are sought after: the undeserver</line>
 <line remap="LINE">may sleep, when the man of action is called on.</line>
@@ -3227,7 +3227,7 @@ and SNARE following.</para>
 <line remap="LINE">Farewell, farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt FALSTAFF and BARDOLPH</para>
+<stagedir remap="STAGEDIR">Exeunt FALSTAFF and BARDOLPH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
@@ -3238,7 +3238,7 @@ and SNARE following.</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BARDOLPH</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Mistress Tearsheet!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Mistress Tearsheet!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -3248,17 +3248,17 @@ and SNARE following.</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BARDOLPH</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Good Mistress Tearsheet, come to my master.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Good Mistress Tearsheet, come to my master.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
 <line remap="LINE">O, run, Doll, run; run, good Doll: come.</line>
-<para remap="STAGEDIR">She comes blubbered</para>
+<stagedir remap="STAGEDIR">She comes blubbered</stagedir>
 <line remap="LINE">Yea, will you come, Doll?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -3266,14 +3266,14 @@ and SNARE following.</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Westminster. The palace.</title>
-<para remap="STAGEDIR">Enter KING HENRY IV in his nightgown, with a Page</para>
+<stagedir remap="STAGEDIR">Enter KING HENRY IV in his nightgown, with a Page</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING HENRY IV</speaker>
 <line remap="LINE">Go call the Earls of Surrey and of Warwick;</line>
 <line remap="LINE">But, ere they come, bid them o'er-read these letters,</line>
 <line remap="LINE">And well consider of them; make good speed.</line>
-<para remap="STAGEDIR">Exit Page</para>
+<stagedir remap="STAGEDIR">Exit Page</stagedir>
 <line remap="LINE">How many thousand of my poorest subjects</line>
 <line remap="LINE">Are at this hour asleep! O sleep, O gentle sleep,</line>
 <line remap="LINE">Nature's soft nurse, how have I frighted thee,</line>
@@ -3304,7 +3304,7 @@ and SNARE following.</para>
 <line remap="LINE">Uneasy lies the head that wears a crown.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter WARWICK and SURREY</para>
+<stagedir remap="STAGEDIR">Enter WARWICK and SURREY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">WARWICK</speaker>
@@ -3371,7 +3371,7 @@ and SNARE following.</para>
 <line remap="LINE">Yea, for my sake, even to the eyes of Richard</line>
 <line remap="LINE">Gave him defiance. But which of you was by--</line>
 <line remap="LINE">You, cousin Nevil, as I may remember--</line>
-<para remap="STAGEDIR">To WARWICK</para>
+<stagedir remap="STAGEDIR">To WARWICK</stagedir>
 <line remap="LINE">When Richard, with his eye brimful of tears,</line>
 <line remap="LINE">Then cheque'd and rated by Northumberland,</line>
 <line remap="LINE">Did speak these words, now proved a prophecy?</line>
@@ -3435,13 +3435,13 @@ and SNARE following.</para>
 <line remap="LINE">We would, dear lords, unto the Holy Land.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Gloucestershire. Before SHALLOW'S house.</title>
-<para remap="STAGEDIR">Enter SHALLOW and SILENCE, meeting; MOULDY,
+<stagedir remap="STAGEDIR">Enter SHALLOW and SILENCE, meeting; MOULDY,
 SHADOW, WART, FEEBLE, BULLCALF, a Servant or two
-with them</para>
+with them</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHALLOW</speaker>
@@ -3574,7 +3574,7 @@ with them</para>
 <line remap="LINE">Here come two of Sir John Falstaff's men, as I think.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BARDOLPH and one with him</para>
+<stagedir remap="STAGEDIR">Enter BARDOLPH and one with him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BARDOLPH</speaker>
@@ -3633,7 +3633,7 @@ with them</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHALLOW</speaker>
 <line remap="LINE">It is very just.</line>
-<para remap="STAGEDIR">Enter FALSTAFF</para>
+<stagedir remap="STAGEDIR">Enter FALSTAFF</stagedir>
 <line remap="LINE">Look, here comes good Sir John. Give me your good</line>
 <line remap="LINE">hand, give me your worship's good hand: by my</line>
 <line remap="LINE">troth, you like well and bear your years very well:</line>
@@ -4050,7 +4050,7 @@ with them</para>
 <line remap="LINE">Jesus, the days that we have seen! Come, come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt FALSTAFF and Justices</para>
+<stagedir remap="STAGEDIR">Exeunt FALSTAFF and Justices</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BULLCALF</speaker>
@@ -4101,7 +4101,7 @@ with them</para>
 <line remap="LINE">Faith, I'll bear no base mind.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter FALSTAFF and the Justices</para>
+<stagedir remap="STAGEDIR">Re-enter FALSTAFF and the Justices</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -4227,9 +4227,9 @@ with them</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
 <line remap="LINE">Fare you well, gentle gentlemen.</line>
-<para remap="STAGEDIR">Exeunt Justices</para>
+<stagedir remap="STAGEDIR">Exeunt Justices</stagedir>
 <line remap="LINE">On, Bardolph; lead the men away.</line>
-<para remap="STAGEDIR">Exeunt BARDOLPH, Recruits, &amp;c</para>
+<stagedir remap="STAGEDIR">Exeunt BARDOLPH, Recruits, &amp;c</stagedir>
 <line remap="LINE">As I return, I will fetch off these justices: I do</line>
 <line remap="LINE">see the bottom of Justice Shallow. Lord, Lord, how</line>
 <line remap="LINE">subject we old men are to this vice of lying! This</line>
@@ -4265,7 +4265,7 @@ with them</para>
 <line remap="LINE">may snap at him. Let time shape, and there an end.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -4273,8 +4273,8 @@ with them</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Yorkshire. Gaultree Forest.</title>
-<para remap="STAGEDIR">Enter the ARCHBISHOP OF YORK, MOWBRAY, LORD
-HASTINGS, and others</para>
+<stagedir remap="STAGEDIR">Enter the ARCHBISHOP OF YORK, MOWBRAY, LORD
+HASTINGS, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ARCHBISHOP OF YORK</speaker>
@@ -4319,7 +4319,7 @@ HASTINGS, and others</para>
 <line remap="LINE">And dash themselves to pieces.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HASTINGS</speaker>
@@ -4345,7 +4345,7 @@ HASTINGS, and others</para>
 <line remap="LINE">What well-appointed leader fronts us here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter WESTMORELAND</para>
+<stagedir remap="STAGEDIR">Enter WESTMORELAND</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MOWBRAY</speaker>
@@ -4591,7 +4591,7 @@ HASTINGS, and others</para>
 <line remap="LINE">My lord, we will do so.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit WESTMORELAND</para>
+<stagedir remap="STAGEDIR">Exit WESTMORELAND</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MOWBRAY</speaker>
@@ -4665,7 +4665,7 @@ HASTINGS, and others</para>
 <line remap="LINE">Here is return'd my Lord of Westmoreland.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter WESTMORELAND</para>
+<stagedir remap="STAGEDIR">Re-enter WESTMORELAND</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">WESTMORELAND</speaker>
@@ -4683,14 +4683,14 @@ HASTINGS, and others</para>
 <line remap="LINE">Before, and greet his grace: my lord, we come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Another part of the forest.</title>
-<para remap="STAGEDIR">Enter, from one side, MOWBRAY, attended; afterwards
+<stagedir remap="STAGEDIR">Enter, from one side, MOWBRAY, attended; afterwards
 the ARCHBISHOP OF YORK, HASTINGS, and others: from
 the other side, Prince John of LANCASTER, and
-WESTMORELAND; Officers, and others with them</para>
+WESTMORELAND; Officers, and others with them</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LANCASTER</speaker>
@@ -4805,7 +4805,7 @@ WESTMORELAND; Officers, and others with them</para>
 <line remap="LINE">I know it will well please them. Hie thee, captain.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Officer</para>
+<stagedir remap="STAGEDIR">Exit Officer</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ARCHBISHOP OF YORK</speaker>
@@ -4860,7 +4860,7 @@ WESTMORELAND; Officers, and others with them</para>
 <line remap="LINE">So much the worse, if your own rule be true.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Shouts within</para>
+<stagedir remap="STAGEDIR">Shouts within</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LANCASTER</speaker>
@@ -4883,7 +4883,7 @@ WESTMORELAND; Officers, and others with them</para>
 <speaker remap="SPEAKER">LANCASTER</speaker>
 <line remap="LINE">Go, my lord,</line>
 <line remap="LINE">And let our army be discharged too.</line>
-<para remap="STAGEDIR">Exit WESTMORELAND</para>
+<stagedir remap="STAGEDIR">Exit WESTMORELAND</stagedir>
 <line remap="LINE">And, good my lord, so please you, let our trains</line>
 <line remap="LINE">March, by us, that we may peruse the men</line>
 <line remap="LINE">We should have coped withal.</line>
@@ -4895,12 +4895,12 @@ WESTMORELAND; Officers, and others with them</para>
 <line remap="LINE">And, ere they be dismissed, let them march by.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit HASTINGS</para>
+<stagedir remap="STAGEDIR">Exit HASTINGS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LANCASTER</speaker>
 <line remap="LINE">I trust, lords, we shall lie to-night together.</line>
-<para remap="STAGEDIR">Re-enter WESTMORELAND</para>
+<stagedir remap="STAGEDIR">Re-enter WESTMORELAND</stagedir>
 <line remap="LINE">Now, cousin, wherefore stands our army still?</line>
 </linegroup></dialogue>
 
@@ -4915,7 +4915,7 @@ WESTMORELAND; Officers, and others with them</para>
 <line remap="LINE">They know their duties.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter HASTINGS</para>
+<stagedir remap="STAGEDIR">Re-enter HASTINGS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HASTINGS</speaker>
@@ -4964,11 +4964,11 @@ WESTMORELAND; Officers, and others with them</para>
 <line remap="LINE">Treason's true bed and yielder up of breath.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Another part of the forest.</title>
-<para remap="STAGEDIR">Alarum. Excursions. Enter FALSTAFF and COLEVILE, meeting</para>
+<stagedir remap="STAGEDIR">Alarum. Excursions. Enter FALSTAFF and COLEVILE, meeting</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -5020,14 +5020,14 @@ WESTMORELAND; Officers, and others with them</para>
 <line remap="LINE">Here comes our general.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PRINCE JOHN OF LANCASTER, WESTMORELAND,
-BLUNT, and others</para>
+<stagedir remap="STAGEDIR">Enter PRINCE JOHN OF LANCASTER, WESTMORELAND,
+BLUNT, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LANCASTER</speaker>
 <line remap="LINE">The heat is past; follow no further now:</line>
 <line remap="LINE">Call in the powers, good cousin Westmoreland.</line>
-<para remap="STAGEDIR">Exit WESTMORELAND</para>
+<stagedir remap="STAGEDIR">Exit WESTMORELAND</stagedir>
 <line remap="LINE">Now, Falstaff, where have you been all this while?</line>
 <line remap="LINE">When every thing is ended, then you come:</line>
 <line remap="LINE">These tardy tricks of yours will, on my life,</line>
@@ -5127,7 +5127,7 @@ BLUNT, and others</para>
 <line remap="LINE">thank thee for thee.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter WESTMORELAND</para>
+<stagedir remap="STAGEDIR">Re-enter WESTMORELAND</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LANCASTER</speaker>
@@ -5144,7 +5144,7 @@ BLUNT, and others</para>
 <line remap="LINE">Send Colevile with his confederates</line>
 <line remap="LINE">To York, to present execution:</line>
 <line remap="LINE">Blunt, lead him hence; and see you guard him sure.</line>
-<para remap="STAGEDIR">Exeunt BLUNT and others with COLEVILE</para>
+<stagedir remap="STAGEDIR">Exeunt BLUNT and others with COLEVILE</stagedir>
 <line remap="LINE">And now dispatch we toward the court, my lords:</line>
 <line remap="LINE">I hear the king my father is sore sick:</line>
 <line remap="LINE">Our news shall go before us to his majesty,</line>
@@ -5165,7 +5165,7 @@ BLUNT, and others</para>
 <line remap="LINE">Shall better speak of you than you deserve.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but Falstaff</para>
+<stagedir remap="STAGEDIR">Exeunt all but Falstaff</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -5211,7 +5211,7 @@ BLUNT, and others</para>
 <line remap="LINE">I had a thousand sons, the first humane principle I</line>
 <line remap="LINE">would teach them should be, to forswear thin</line>
 <line remap="LINE">potations and to addict themselves to sack.</line>
-<para remap="STAGEDIR">Enter BARDOLPH</para>
+<stagedir remap="STAGEDIR">Enter BARDOLPH</stagedir>
 <line remap="LINE">How now Bardolph?</line>
 </linegroup></dialogue>
 
@@ -5228,12 +5228,12 @@ BLUNT, and others</para>
 <line remap="LINE">my thumb, and shortly will I seal with him. Come away.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Westminster. The Jerusalem Chamber.</title>
-<para remap="STAGEDIR">Enter KING HENRY IV, the Princes Thomas of CLARENCE
-and Humphrey of GLOUCESTER, WARWICK, and others</para>
+<stagedir remap="STAGEDIR">Enter KING HENRY IV, the Princes Thomas of CLARENCE
+and Humphrey of GLOUCESTER, WARWICK, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING HENRY IV</speaker>
@@ -5387,7 +5387,7 @@ and Humphrey of GLOUCESTER, WARWICK, and others</para>
 <speaker remap="SPEAKER">KING HENRY IV</speaker>
 <line remap="LINE">'Tis seldom when the bee doth leave her comb</line>
 <line remap="LINE">In the dead carrion.</line>
-<para remap="STAGEDIR">Enter WESTMORELAND</para>
+<stagedir remap="STAGEDIR">Enter WESTMORELAND</stagedir>
 <line remap="LINE">Who's here? Westmoreland?</line>
 </linegroup></dialogue>
 
@@ -5410,7 +5410,7 @@ and Humphrey of GLOUCESTER, WARWICK, and others</para>
 <line remap="LINE">O Westmoreland, thou art a summer bird,</line>
 <line remap="LINE">Which ever in the haunch of winter sings</line>
 <line remap="LINE">The lifting up of day.</line>
-<para remap="STAGEDIR">Enter HARCOURT</para>
+<stagedir remap="STAGEDIR">Enter HARCOURT</stagedir>
 <line remap="LINE">Look, here's more news.</line>
 </linegroup></dialogue>
 
@@ -5505,8 +5505,8 @@ and Humphrey of GLOUCESTER, WARWICK, and others</para>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Another chamber.</title>
-<para remap="STAGEDIR">KING HENRY IV lying on a bed: CLARENCE,
-GLOUCESTER, WARWICK, and others in attendance</para>
+<stagedir remap="STAGEDIR">KING HENRY IV lying on a bed: CLARENCE,
+GLOUCESTER, WARWICK, and others in attendance</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING HENRY IV</speaker>
@@ -5535,7 +5535,7 @@ GLOUCESTER, WARWICK, and others in attendance</para>
 <line remap="LINE">Less noise, less noise!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PRINCE HENRY</para>
+<stagedir remap="STAGEDIR">Enter PRINCE HENRY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRINCE HENRY</speaker>
@@ -5594,7 +5594,7 @@ GLOUCESTER, WARWICK, and others in attendance</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRINCE HENRY</speaker>
 <line remap="LINE">No; I will sit and watch here by the king.</line>
-<para remap="STAGEDIR">Exeunt all but PRINCE HENRY</para>
+<stagedir remap="STAGEDIR">Exeunt all but PRINCE HENRY</stagedir>
 <line remap="LINE">Why doth the crown lie there upon his pillow,</line>
 <line remap="LINE">Being so troublesome a bedfellow?</line>
 <line remap="LINE">O polish'd perturbation! golden care!</line>
@@ -5624,14 +5624,14 @@ GLOUCESTER, WARWICK, and others in attendance</para>
 <line remap="LINE">Will I to mine leave, as 'tis left to me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING HENRY IV</speaker>
 <line remap="LINE">Warwick! Gloucester! Clarence!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter WARWICK, GLOUCESTER, CLARENCE, and the rest</para>
+<stagedir remap="STAGEDIR">Re-enter WARWICK, GLOUCESTER, CLARENCE, and the rest</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLARENCE</speaker>
@@ -5686,7 +5686,7 @@ GLOUCESTER, WARWICK, and others in attendance</para>
 <line remap="LINE">Is he so hasty that he doth suppose</line>
 <line remap="LINE">My sleep my death?</line>
 <line remap="LINE">Find him, my Lord of Warwick; chide him hither.</line>
-<para remap="STAGEDIR">Exit WARWICK</para>
+<stagedir remap="STAGEDIR">Exit WARWICK</stagedir>
 <line remap="LINE">This part of his conjoins with my disease,</line>
 <line remap="LINE">And helps to end me. See, sons, what things you are!</line>
 <line remap="LINE">How quickly nature falls into revolt</line>
@@ -5704,7 +5704,7 @@ GLOUCESTER, WARWICK, and others in attendance</para>
 <line remap="LINE">We bring it to the hive, and, like the bees,</line>
 <line remap="LINE">Are murdered for our pains. This bitter taste</line>
 <line remap="LINE">Yield his engrossments to the ending father.</line>
-<para remap="STAGEDIR">Re-enter WARWICK</para>
+<stagedir remap="STAGEDIR">Re-enter WARWICK</stagedir>
 <line remap="LINE">Now, where is he that will not stay so long</line>
 <line remap="LINE">Till his friend sickness hath determined me?</line>
 </linegroup></dialogue>
@@ -5722,12 +5722,12 @@ GLOUCESTER, WARWICK, and others in attendance</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING HENRY IV</speaker>
 <line remap="LINE">But wherefore did he take away the crown?</line>
-<para remap="STAGEDIR">Re-enter PRINCE HENRY</para>
+<stagedir remap="STAGEDIR">Re-enter PRINCE HENRY</stagedir>
 <line remap="LINE">Lo, where he comes. Come hither to me, Harry.</line>
 <line remap="LINE">Depart the chamber, leave us here alone.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt WARWICK and the rest</para>
+<stagedir remap="STAGEDIR">Exeunt WARWICK and the rest</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRINCE HENRY</speaker>
@@ -5883,7 +5883,7 @@ GLOUCESTER, WARWICK, and others in attendance</para>
 <line remap="LINE">'Gainst all the world will rightfully maintain.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Lord John of LANCASTER</para>
+<stagedir remap="STAGEDIR">Enter Lord John of LANCASTER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING HENRY IV</speaker>
@@ -5909,7 +5909,7 @@ GLOUCESTER, WARWICK, and others in attendance</para>
 <line remap="LINE">My Lord of Warwick!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter WARWICK, and others</para>
+<stagedir remap="STAGEDIR">Enter WARWICK, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING HENRY IV</speaker>
@@ -5932,7 +5932,7 @@ GLOUCESTER, WARWICK, and others in attendance</para>
 <line remap="LINE">In that Jerusalem shall Harry die.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -5940,7 +5940,7 @@ GLOUCESTER, WARWICK, and others in attendance</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Gloucestershire. SHALLOW'S house.</title>
-<para remap="STAGEDIR">Enter SHALLOW, FALSTAFF, BARDOLPH, and Page</para>
+<stagedir remap="STAGEDIR">Enter SHALLOW, FALSTAFF, BARDOLPH, and Page</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHALLOW</speaker>
@@ -5960,7 +5960,7 @@ GLOUCESTER, WARWICK, and others in attendance</para>
 <line remap="LINE">shall serve; you shall not be excused. Why, Davy!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DAVY</para>
+<stagedir remap="STAGEDIR">Enter DAVY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DAVY</speaker>
@@ -6064,7 +6064,7 @@ GLOUCESTER, WARWICK, and others in attendance</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHALLOW</speaker>
 <line remap="LINE">Go to; I say he shall have no wrong. Look about, Davy.</line>
-<para remap="STAGEDIR">Exit DAVY</para>
+<stagedir remap="STAGEDIR">Exit DAVY</stagedir>
 <line remap="LINE">Where are you, Sir John? Come, come, come, off</line>
 <line remap="LINE">with your boots. Give me your hand, Master Bardolph.</line>
 </linegroup></dialogue>
@@ -6078,16 +6078,16 @@ GLOUCESTER, WARWICK, and others in attendance</para>
 <speaker remap="SPEAKER">SHALLOW</speaker>
 <line remap="LINE">I thank thee with all my heart, kind</line>
 <line remap="LINE">Master Bardolph: and welcome, my tall fellow.</line>
-<para remap="STAGEDIR">To the Page</para>
+<stagedir remap="STAGEDIR">To the Page</stagedir>
 <line remap="LINE">Come, Sir John.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
 <line remap="LINE">I'll follow you, good Master Robert Shallow.</line>
-<para remap="STAGEDIR">Exit SHALLOW</para>
+<stagedir remap="STAGEDIR">Exit SHALLOW</stagedir>
 <line remap="LINE">Bardolph, look to our horses.</line>
-<para remap="STAGEDIR">Exeunt BARDOLPH and Page</para>
+<stagedir remap="STAGEDIR">Exeunt BARDOLPH and Page</stagedir>
 <line remap="LINE">If I were sawed into quantities, I should make four</line>
 <line remap="LINE">dozen of such bearded hermits' staves as Master</line>
 <line remap="LINE">Shallow. It is a wonderful thing to see the</line>
@@ -6117,7 +6117,7 @@ GLOUCESTER, WARWICK, and others in attendance</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHALLOW</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Sir John!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Sir John!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -6125,11 +6125,11 @@ GLOUCESTER, WARWICK, and others in attendance</para>
 <line remap="LINE">I come, Master Shallow; I come, Master Shallow.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Westminster. The palace.</title>
-<para remap="STAGEDIR">Enter WARWICK and the Lord Chief-Justice, meeting</para>
+<stagedir remap="STAGEDIR">Enter WARWICK and the Lord Chief-Justice, meeting</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">WARWICK</speaker>
@@ -6177,8 +6177,8 @@ GLOUCESTER, WARWICK, and others in attendance</para>
 <line remap="LINE">Than I have drawn it in my fantasy.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LANCASTER, CLARENCE, GLOUCESTER,
-WESTMORELAND, and others</para>
+<stagedir remap="STAGEDIR">Enter LANCASTER, CLARENCE, GLOUCESTER,
+WESTMORELAND, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">WARWICK</speaker>
@@ -6262,7 +6262,7 @@ WESTMORELAND, and others</para>
 <line remap="LINE">Here comes the prince.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter KING HENRY V, attended</para>
+<stagedir remap="STAGEDIR">Enter KING HENRY V, attended</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lord Chief-Justice</speaker>
@@ -6399,12 +6399,12 @@ WESTMORELAND, and others</para>
 <line remap="LINE">God shorten Harry's happy life one day!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Gloucestershire. SHALLOW'S orchard.</title>
-<para remap="STAGEDIR">Enter FALSTAFF, SHALLOW, SILENCE, DAVY, BARDOLPH,
-and the Page</para>
+<stagedir remap="STAGEDIR">Enter FALSTAFF, SHALLOW, SILENCE, DAVY, BARDOLPH,
+and the Page</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHALLOW</speaker>
@@ -6444,7 +6444,7 @@ and the Page</para>
 <speaker remap="SPEAKER">SILENCE</speaker>
 <line remap="LINE">Ah, sirrah! quoth-a, we shall</line>
 <line remap="LINE">Do nothing but eat, and make good cheer,</line>
-<para remap="STAGEDIR">Singing</para>
+<stagedir remap="STAGEDIR">Singing</stagedir>
 <line remap="LINE">And praise God for the merry year;</line>
 <line remap="LINE">When flesh is cheap and females dear,</line>
 <line remap="LINE">And lusty lads roam here and there</line>
@@ -6471,7 +6471,7 @@ and the Page</para>
 <line remap="LINE">but you must bear; the heart's all.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHALLOW</speaker>
@@ -6482,7 +6482,7 @@ and the Page</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SILENCE</speaker>
 <line remap="LINE">Be merry, be merry, my wife has all;</line>
-<para remap="STAGEDIR">Singing</para>
+<stagedir remap="STAGEDIR">Singing</stagedir>
 <line remap="LINE">For women are shrews, both short and tall:</line>
 <line remap="LINE">'Tis merry in hall when beards wag all,</line>
 <line remap="LINE">And welcome merry Shrove-tide.</line>
@@ -6500,14 +6500,14 @@ and the Page</para>
 <line remap="LINE">Who, I? I have been merry twice and once ere now.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter DAVY</para>
+<stagedir remap="STAGEDIR">Re-enter DAVY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DAVY</speaker>
 <line remap="LINE">There's a dish of leather-coats for you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">To BARDOLPH</para>
+<stagedir remap="STAGEDIR">To BARDOLPH</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHALLOW</speaker>
@@ -6517,14 +6517,14 @@ and the Page</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DAVY</speaker>
 <line remap="LINE">Your worship! I'll be with you straight.</line>
-<para remap="STAGEDIR">To BARDOLPH</para>
+<stagedir remap="STAGEDIR">To BARDOLPH</stagedir>
 <line remap="LINE">A cup of wine, sir?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SILENCE</speaker>
 <line remap="LINE">A cup of wine that's brisk and fine,</line>
-<para remap="STAGEDIR">Singing</para>
+<stagedir remap="STAGEDIR">Singing</stagedir>
 <line remap="LINE">And drink unto the leman mine;</line>
 <line remap="LINE">And a merry heart lives long-a.</line>
 </linegroup></dialogue>
@@ -6547,7 +6547,7 @@ and the Page</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SILENCE</speaker>
 <line remap="LINE">Fill the cup, and let it come;</line>
-<para remap="STAGEDIR">Singing</para>
+<stagedir remap="STAGEDIR">Singing</stagedir>
 <line remap="LINE">I'll pledge you a mile to the bottom.</line>
 </linegroup></dialogue>
 
@@ -6556,7 +6556,7 @@ and the Page</para>
 <line remap="LINE">Honest Bardolph, welcome: if thou wantest any</line>
 <line remap="LINE">thing, and wilt not call, beshrew thy heart.</line>
 <line remap="LINE">Welcome, my little tiny thief.</line>
-<para remap="STAGEDIR">To the Page</para>
+<stagedir remap="STAGEDIR">To the Page</stagedir>
 <line remap="LINE">And welcome indeed too. I'll drink to Master</line>
 <line remap="LINE">Bardolph, and to all the cavaleros about London.</line>
 </linegroup></dialogue>
@@ -6597,22 +6597,22 @@ and the Page</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SHALLOW</speaker>
 <line remap="LINE">Why, there spoke a king. Lack nothing: be merry.</line>
-<para remap="STAGEDIR">Knocking within</para>
+<stagedir remap="STAGEDIR">Knocking within</stagedir>
 <line remap="LINE">Look who's at door there, ho! who knocks?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit DAVY</para>
+<stagedir remap="STAGEDIR">Exit DAVY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
 <line remap="LINE">Why, now you have done me right.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">To SILENCE, seeing him take off a bumper</para>
+<stagedir remap="STAGEDIR">To SILENCE, seeing him take off a bumper</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SILENCE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Singing</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Singing</inlinestagedir></line>
 <line remap="LINE">Do me right,</line>
 <line remap="LINE">And dub me knight: Samingo.</line>
 <line remap="LINE">Is't not so?</line>
@@ -6628,7 +6628,7 @@ and the Page</para>
 <line remap="LINE">Is't so? Why then, say an old man can do somewhat.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter DAVY</para>
+<stagedir remap="STAGEDIR">Re-enter DAVY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DAVY</speaker>
@@ -6639,7 +6639,7 @@ and the Page</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
 <line remap="LINE">From the court! let him come in.</line>
-<para remap="STAGEDIR">Enter PISTOL</para>
+<stagedir remap="STAGEDIR">Enter PISTOL</stagedir>
 <line remap="LINE">How now, Pistol!</line>
 </linegroup></dialogue>
 
@@ -6696,7 +6696,7 @@ and the Page</para>
 <line remap="LINE">And Robin Hood, Scarlet, and John.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Singing</para>
+<stagedir remap="STAGEDIR">Singing</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PISTOL</speaker>
@@ -6786,7 +6786,7 @@ and the Page</para>
 <line remap="LINE">Lord Shallow,--be what thou wilt; I am fortune's</line>
 <line remap="LINE">steward--get on thy boots: we'll ride all night.</line>
 <line remap="LINE">O sweet Pistol! Away, Bardolph!</line>
-<para remap="STAGEDIR">Exit BARDOLPH</para>
+<stagedir remap="STAGEDIR">Exit BARDOLPH</stagedir>
 <line remap="LINE">Come, Pistol, utter more to me; and withal devise</line>
 <line remap="LINE">something to do thyself good. Boot, boot, Master</line>
 <line remap="LINE">Shallow: I know the young king is sick for me. Let</line>
@@ -6802,12 +6802,12 @@ and the Page</para>
 <line remap="LINE">Why, here it is; welcome these pleasant days!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  London. A street.</title>
-<para remap="STAGEDIR">Enter Beadles, dragging in HOSTESS QUICKLY
-and DOLL TEARSHEET</para>
+<stagedir remap="STAGEDIR">Enter Beadles, dragging in HOSTESS QUICKLY
+and DOLL TEARSHEET</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS QUICKLY</speaker>
@@ -6896,11 +6896,11 @@ and DOLL TEARSHEET</para>
 <line remap="LINE">Very well.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  A public place near Westminster Abbey.</title>
-<para remap="STAGEDIR">Enter two Grooms, strewing rushes</para>
+<stagedir remap="STAGEDIR">Enter two Grooms, strewing rushes</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Groom</speaker>
@@ -6918,9 +6918,9 @@ and DOLL TEARSHEET</para>
 <line remap="LINE">coronation: dispatch, dispatch.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
-<para remap="STAGEDIR">Enter FALSTAFF, SHALLOW, PISTOL,
-BARDOLPH, and Page</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
+<stagedir remap="STAGEDIR">Enter FALSTAFF, SHALLOW, PISTOL,
+BARDOLPH, and Page</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -7018,15 +7018,15 @@ BARDOLPH, and Page</para>
 <line remap="LINE">I will deliver her.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Shouts within, and the trumpets sound</para>
+<stagedir remap="STAGEDIR">Shouts within, and the trumpets sound</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PISTOL</speaker>
 <line remap="LINE">There roar'd the sea, and trumpet-clangor sounds.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter KING HENRY V and his train, the Lord Chief-
-Justice among them</para>
+<stagedir remap="STAGEDIR">Enter KING HENRY V and his train, the Lord Chief-
+Justice among them</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -7087,7 +7087,7 @@ Justice among them</para>
 <line remap="LINE">To see perform'd the tenor of our word. Set on.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt KING HENRY V, &amp;c</para>
+<stagedir remap="STAGEDIR">Exeunt KING HENRY V, &amp;c</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FALSTAFF</speaker>
@@ -7135,8 +7135,8 @@ Justice among them</para>
 <line remap="LINE">for soon at night.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter Prince John of LANCASTER, the Lord
-Chief-Justice; Officers with them</para>
+<stagedir remap="STAGEDIR">Re-enter Prince John of LANCASTER, the Lord
+Chief-Justice; Officers with them</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lord Chief-Justice</speaker>
@@ -7160,8 +7160,8 @@ Chief-Justice; Officers with them</para>
 <line remap="LINE">Si fortune me tormenta, spero contenta.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but PRINCE JOHN and the Lord
-Chief-Justice</para>
+<stagedir remap="STAGEDIR">Exeunt all but PRINCE JOHN and the Lord
+Chief-Justice</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LANCASTER</speaker>
@@ -7195,11 +7195,11 @@ Chief-Justice</para>
 <line remap="LINE">Whose music, to my thinking, pleased the king.</line>
 <line remap="LINE">Come, will you hence?</line>
 </linegroup></dialogue>
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="EPILOGUE"><title remap="TITLE">EPILOGUE</title>
-<para remap="STAGEDIR">Spoken by a Dancer</para>
+<stagedir remap="STAGEDIR">Spoken by a Dancer</stagedir>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER"/>
 <line remap="LINE">First my fear; then my courtesy; last my speech.</line>

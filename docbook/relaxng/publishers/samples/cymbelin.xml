@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">Cymbeline</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">Cymbeline</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Cymbeline</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -30,16 +30,16 @@
 <para><personname remap="PERSONA">HELEN, a lady attending on Imogen.</personname></para>
 <para><personname remap="PERSONA">Lords, Ladies, Roman Senators, Tribunes, a Soothsayer, a Dutchman, a Spaniard, Musicians, Officers, Captains, Soldiers, Messengers, and other Attendants.</personname></para>
 <para><personname remap="PERSONA">Apparitions.</personname></para>
-    <para remap="SCNDESCR">SCENE  Britain; Rome.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  Britain; Rome.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Britain. The garden of Cymbeline's palace.</title>
-<para remap="STAGEDIR">Enter two Gentlemen</para>
+<stagedir remap="STAGEDIR">Enter two Gentlemen</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Gentleman</speaker>
@@ -197,8 +197,8 @@
 <line remap="LINE">The queen, and princess.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
-<para remap="STAGEDIR">Enter the QUEEN, POSTHUMUS LEONATUS, and IMOGEN</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
+<stagedir remap="STAGEDIR">Enter the QUEEN, POSTHUMUS LEONATUS, and IMOGEN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN</speaker>
@@ -228,7 +228,7 @@
 <line remap="LINE">Hath charged you should not speak together.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
@@ -258,21 +258,21 @@
 <line remap="LINE">Though ink be made of gall.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter QUEEN</para>
+<stagedir remap="STAGEDIR">Re-enter QUEEN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN</speaker>
 <line remap="LINE">Be brief, I pray you:</line>
 <line remap="LINE">If the king come, I shall incur I know not</line>
 <line remap="LINE">How much of his displeasure.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">Yet I'll move him</line>
 <line remap="LINE">To walk this way: I never do him wrong,</line>
 <line remap="LINE">But he does buy my injuries, to be friends;</line>
 <line remap="LINE">Pays dear for my offences.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POSTHUMUS LEONATUS</speaker>
@@ -297,7 +297,7 @@
 <line remap="LINE">You gentle gods, give me but this I have,</line>
 <line remap="LINE">And sear up my embracements from a next</line>
 <line remap="LINE">With bonds of death!</line>
-<para remap="STAGEDIR">Putting on the ring</para>
+<stagedir remap="STAGEDIR">Putting on the ring</stagedir>
 <line remap="LINE">Remain, remain thou here</line>
 <line remap="LINE">While sense can keep it on. And, sweetest, fairest,</line>
 <line remap="LINE">As I my poor self did exchange for you,</line>
@@ -307,7 +307,7 @@
 <line remap="LINE">Upon this fairest prisoner.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Putting a bracelet upon her arm</para>
+<stagedir remap="STAGEDIR">Putting a bracelet upon her arm</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
@@ -315,7 +315,7 @@
 <line remap="LINE">When shall we see again?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CYMBELINE and Lords</para>
+<stagedir remap="STAGEDIR">Enter CYMBELINE and Lords</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POSTHUMUS LEONATUS</speaker>
@@ -336,7 +336,7 @@
 <line remap="LINE">And bless the good remainders of the court! I am gone.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
@@ -421,7 +421,7 @@
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CYMBELINE</speaker>
 <line remap="LINE">Thou foolish thing!</line>
-<para remap="STAGEDIR">Re-enter QUEEN</para>
+<stagedir remap="STAGEDIR">Re-enter QUEEN</stagedir>
 <line remap="LINE">They were again together: you have done</line>
 <line remap="LINE">Not after our command. Away with her,</line>
 <line remap="LINE">And pen her up.</line>
@@ -442,12 +442,12 @@
 <line remap="LINE">Die of this folly!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt CYMBELINE and Lords</para>
+<stagedir remap="STAGEDIR">Exeunt CYMBELINE and Lords</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN</speaker>
 <line remap="LINE">Fie! you must give way.</line>
-<para remap="STAGEDIR">Enter PISANIO</para>
+<stagedir remap="STAGEDIR">Enter PISANIO</stagedir>
 <line remap="LINE">Here is your servant. How now, sir! What news?</line>
 </linegroup></dialogue>
 
@@ -516,11 +516,11 @@
 <line remap="LINE">Go see my lord aboard: for this time leave me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same. A public place.</title>
-<para remap="STAGEDIR">Enter CLOTEN and two Lords</para>
+<stagedir remap="STAGEDIR">Enter CLOTEN and two Lords</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Lord</speaker>
@@ -537,7 +537,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Lord</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  No, 'faith; not so much as his patience.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  No, 'faith; not so much as his patience.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -548,7 +548,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Lord</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  His steel was in debt; it went o' the</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  His steel was in debt; it went o' the</line>
 <line remap="LINE">backside the town.</line>
 </linegroup></dialogue>
 
@@ -559,7 +559,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Lord</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  No; but he fled forward still, toward your face.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  No; but he fled forward still, toward your face.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -570,7 +570,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Lord</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  As many inches as you have oceans. Puppies!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  As many inches as you have oceans. Puppies!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -580,7 +580,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Lord</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  So would I, till you had measured how long</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  So would I, till you had measured how long</line>
 <line remap="LINE">a fool you were upon the ground.</line>
 </linegroup></dialogue>
 
@@ -591,7 +591,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Lord</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  If it be a sin to make a true election, she</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  If it be a sin to make a true election, she</line>
 <line remap="LINE">is damned.</line>
 </linegroup></dialogue>
 
@@ -604,7 +604,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Lord</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  She shines not upon fools, lest the</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  She shines not upon fools, lest the</line>
 <line remap="LINE">reflection should hurt her.</line>
 </linegroup></dialogue>
 
@@ -616,7 +616,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Lord</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  I wish not so; unless it had been the fall</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  I wish not so; unless it had been the fall</line>
 <line remap="LINE">of an ass, which is no great hurt.</line>
 </linegroup></dialogue>
 
@@ -640,11 +640,11 @@
 <line remap="LINE">Well, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A room in Cymbeline's palace.</title>
-<para remap="STAGEDIR">Enter IMOGEN and PISANIO</para>
+<stagedir remap="STAGEDIR">Enter IMOGEN and PISANIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
@@ -733,7 +733,7 @@
 <line remap="LINE">Shakes all our buds from growing.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Lady</para>
+<stagedir remap="STAGEDIR">Enter a Lady</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lady</speaker>
@@ -752,12 +752,12 @@
 <line remap="LINE">Madam, I shall.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Rome. Philario's house.</title>
-<para remap="STAGEDIR">Enter PHILARIO, IACHIMO, a Frenchman, a
-Dutchman, and a Spaniard</para>
+<stagedir remap="STAGEDIR">Enter PHILARIO, IACHIMO, a Frenchman, a
+Dutchman, and a Spaniard</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IACHIMO</speaker>
@@ -811,7 +811,7 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">Here comes the Briton: let him be so entertained</line>
 <line remap="LINE">amongst you as suits, with gentlemen of your</line>
 <line remap="LINE">knowing, to a stranger of his quality.</line>
-<para remap="STAGEDIR">Enter POSTHUMUS LEONATUS</para>
+<stagedir remap="STAGEDIR">Enter POSTHUMUS LEONATUS</stagedir>
 <line remap="LINE">I beseech you all, be better known to this</line>
 <line remap="LINE">gentleman; whom I commend to you as a noble friend</line>
 <line remap="LINE">of mine: how worthy he is I will leave to appear</line>
@@ -1121,7 +1121,7 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">Agreed.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt POSTHUMUS LEONATUS and IACHIMO</para>
+<stagedir remap="STAGEDIR">Exeunt POSTHUMUS LEONATUS and IACHIMO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Frenchman</speaker>
@@ -1134,11 +1134,11 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">Pray, let us follow 'em.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Britain. A room in Cymbeline's palace.</title>
-<para remap="STAGEDIR">Enter QUEEN, Ladies, and CORNELIUS</para>
+<stagedir remap="STAGEDIR">Enter QUEEN, Ladies, and CORNELIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN</speaker>
@@ -1154,14 +1154,14 @@ Dutchman, and a Spaniard</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN</speaker>
 <line remap="LINE">Dispatch.</line>
-<para remap="STAGEDIR">Exeunt Ladies</para>
+<stagedir remap="STAGEDIR">Exeunt Ladies</stagedir>
 <line remap="LINE">Now, master doctor, have you brought those drugs?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORNELIUS</speaker>
 <line remap="LINE">Pleaseth your highness, ay: here they are, madam:</line>
-<para remap="STAGEDIR">Presenting a small box</para>
+<stagedir remap="STAGEDIR">Presenting a small box</stagedir>
 <line remap="LINE">But I beseech your grace, without offence,--</line>
 <line remap="LINE">My conscience bids me ask--wherefore you have</line>
 <line remap="LINE">Commanded of me those most poisonous compounds,</line>
@@ -1198,8 +1198,8 @@ Dutchman, and a Spaniard</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN</speaker>
 <line remap="LINE">O, content thee.</line>
-<para remap="STAGEDIR">Enter PISANIO</para>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Enter PISANIO</stagedir>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">Here comes a flattering rascal; upon him</line>
 <line remap="LINE">Will I first work: he's for his master,</line>
 <line remap="LINE">An enemy to my son. How now, Pisanio!</line>
@@ -1209,18 +1209,18 @@ Dutchman, and a Spaniard</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORNELIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>          I do suspect you, madam;</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>          I do suspect you, madam;</line>
 <line remap="LINE">But you shall do no harm.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To PISANIO</phrase>            Hark thee, a word.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To PISANIO</inlinestagedir>            Hark thee, a word.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORNELIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  I do not like her. She doth think she has</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  I do not like her. She doth think she has</line>
 <line remap="LINE">Strange lingering poisons: I do know her spirit,</line>
 <line remap="LINE">And will not trust one of her malice with</line>
 <line remap="LINE">A drug of such damn'd nature. Those she has</line>
@@ -1246,7 +1246,7 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">I humbly take my leave.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN</speaker>
@@ -1265,7 +1265,7 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">To be depender on a thing that leans,</line>
 <line remap="LINE">Who cannot be new built, nor has no friends,</line>
 <line remap="LINE">So much as but to prop him?</line>
-<para remap="STAGEDIR">The QUEEN drops the box: PISANIO takes it up</para>
+<stagedir remap="STAGEDIR">The QUEEN drops the box: PISANIO takes it up</stagedir>
 <line remap="LINE">Thou takest up</line>
 <line remap="LINE">Thou know'st not what; but take it for thy labour:</line>
 <line remap="LINE">It is a thing I made, which hath the king</line>
@@ -1282,7 +1282,7 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">That set thee on to this desert, am bound</line>
 <line remap="LINE">To load thy merit richly. Call my women:</line>
 <line remap="LINE">Think on my words.</line>
-<para remap="STAGEDIR">Exit PISANIO</para>
+<stagedir remap="STAGEDIR">Exit PISANIO</stagedir>
 <line remap="LINE">A sly and constant knave,</line>
 <line remap="LINE">Not to be shaked; the agent for his master</line>
 <line remap="LINE">And the remembrancer of her to hold</line>
@@ -1291,14 +1291,14 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">Of liegers for her sweet, and which she after,</line>
 <line remap="LINE">Except she bend her humour, shall be assured</line>
 <line remap="LINE">To taste of too.</line>
-<para remap="STAGEDIR">Re-enter PISANIO and Ladies</para>
+<stagedir remap="STAGEDIR">Re-enter PISANIO and Ladies</stagedir>
 <line remap="LINE">So, so: well done, well done:</line>
 <line remap="LINE">The violets, cowslips, and the primroses,</line>
 <line remap="LINE">Bear to my closet. Fare thee well, Pisanio;</line>
 <line remap="LINE">Think on my words.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt QUEEN and Ladies</para>
+<stagedir remap="STAGEDIR">Exeunt QUEEN and Ladies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PISANIO</speaker>
@@ -1307,11 +1307,11 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">I'll choke myself: there's all I'll do for you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  The same. Another room in the palace.</title>
-<para remap="STAGEDIR">Enter IMOGEN</para>
+<stagedir remap="STAGEDIR">Enter IMOGEN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
@@ -1326,7 +1326,7 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">Which seasons comfort. Who may this be? Fie!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PISANIO and IACHIMO</para>
+<stagedir remap="STAGEDIR">Enter PISANIO and IACHIMO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PISANIO</speaker>
@@ -1341,7 +1341,7 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">And greets your highness dearly.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Presents a letter</para>
+<stagedir remap="STAGEDIR">Presents a letter</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
@@ -1351,7 +1351,7 @@ Dutchman, and a Spaniard</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IACHIMO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  All of her that is out of door most rich!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  All of her that is out of door most rich!</line>
 <line remap="LINE">If she be furnish'd with a mind so rare,</line>
 <line remap="LINE">She is alone the Arabian bird, and I</line>
 <line remap="LINE">Have lost the wager. Boldness be my friend!</line>
@@ -1362,7 +1362,7 @@ Dutchman, and a Spaniard</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'He is one of the noblest note, to whose</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'He is one of the noblest note, to whose</line>
 <line remap="LINE">kindnesses I am most infinitely tied. Reflect upon</line>
 <line remap="LINE">him accordingly, as you value your trust--</line>
 <line remap="LINE">LEONATUS.'</line>
@@ -1425,7 +1425,7 @@ Dutchman, and a Spaniard</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IACHIMO</speaker>
 <line remap="LINE">Thanks, madam; well.</line>
-<para remap="STAGEDIR">To PISANIO</para>
+<stagedir remap="STAGEDIR">To PISANIO</stagedir>
 <line remap="LINE">Beseech you, sir, desire</line>
 <line remap="LINE">My man's abode where I did leave him: he</line>
 <line remap="LINE">Is strange and peevish.</line>
@@ -1437,7 +1437,7 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">To give him welcome.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
@@ -1783,7 +1783,7 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">And truly yielded you. You're very welcome.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -1791,7 +1791,7 @@ Dutchman, and a Spaniard</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Britain. Before Cymbeline's palace.</title>
-<para remap="STAGEDIR">Enter CLOTEN and two Lords</para>
+<stagedir remap="STAGEDIR">Enter CLOTEN and two Lords</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLOTEN</speaker>
@@ -1810,7 +1810,7 @@ Dutchman, and a Spaniard</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Lord</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  If his wit had been like him that broke it,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  If his wit had been like him that broke it,</line>
 <line remap="LINE">it would have run all out.</line>
 </linegroup></dialogue>
 
@@ -1823,7 +1823,7 @@ Dutchman, and a Spaniard</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Lord</speaker>
 <line remap="LINE">No my lord;</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">nor crop the ears of them.</line>
 </linegroup></dialogue>
 
@@ -1835,7 +1835,7 @@ Dutchman, and a Spaniard</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Lord</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  To have smelt like a fool.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  To have smelt like a fool.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1850,7 +1850,7 @@ Dutchman, and a Spaniard</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Lord</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  You are cock and capon too; and you crow,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  You are cock and capon too; and you crow,</line>
 <line remap="LINE">cock, with your comb on.</line>
 </linegroup></dialogue>
 
@@ -1893,7 +1893,7 @@ Dutchman, and a Spaniard</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Lord</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  He's a strange fellow himself, and knows it</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  He's a strange fellow himself, and knows it</line>
 <line remap="LINE">not.</line>
 </linegroup></dialogue>
 
@@ -1932,7 +1932,7 @@ Dutchman, and a Spaniard</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Lord</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  You are a fool granted; therefore your</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  You are a fool granted; therefore your</line>
 <line remap="LINE">issues, being foolish, do not derogate.</line>
 </linegroup></dialogue>
 
@@ -1945,7 +1945,7 @@ Dutchman, and a Spaniard</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Lord</speaker>
 <line remap="LINE">I'll attend your lordship.</line>
-<para remap="STAGEDIR">Exeunt CLOTEN and First Lord</para>
+<stagedir remap="STAGEDIR">Exeunt CLOTEN and First Lord</stagedir>
 <line remap="LINE">That such a crafty devil as is his mother</line>
 <line remap="LINE">Should yield the world this ass! a woman that</line>
 <line remap="LINE">Bears all down with her brain; and this her son</line>
@@ -1962,12 +1962,12 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">To enjoy thy banish'd lord and this great land!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Imogen's bedchamber in Cymbeline's palace: a trunk in one corner of it.</title>
 
-<para remap="STAGEDIR">IMOGEN in bed, reading; a Lady attending</para>
+<stagedir remap="STAGEDIR">IMOGEN in bed, reading; a Lady attending</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
@@ -1996,13 +1996,13 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">Take not away the taper, leave it burning;</line>
 <line remap="LINE">And if thou canst awake by four o' the clock,</line>
 <line remap="LINE">I prithee, call me. Sleep hath seized me wholly</line>
-<para remap="STAGEDIR">Exit Lady</para>
+<stagedir remap="STAGEDIR">Exit Lady</stagedir>
 <line remap="LINE">To your protection I commend me, gods.</line>
 <line remap="LINE">From fairies and the tempters of the night</line>
 <line remap="LINE">Guard me, beseech ye.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Sleeps. IACHIMO comes from the trunk</para>
+<stagedir remap="STAGEDIR">Sleeps. IACHIMO comes from the trunk</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IACHIMO</speaker>
@@ -2029,7 +2029,7 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">O sleep, thou ape of death, lie dull upon her!</line>
 <line remap="LINE">And be her sense but as a monument,</line>
 <line remap="LINE">Thus in a chapel lying! Come off, come off:</line>
-<para remap="STAGEDIR">Taking off her bracelet</para>
+<stagedir remap="STAGEDIR">Taking off her bracelet</stagedir>
 <line remap="LINE">As slippery as the Gordian knot was hard!</line>
 <line remap="LINE">'Tis mine; and this will witness outwardly,</line>
 <line remap="LINE">As strongly as the conscience does within,</line>
@@ -2047,16 +2047,16 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">Swift, swift, you dragons of the night, that dawning</line>
 <line remap="LINE">May bare the raven's eye! I lodge in fear;</line>
 <line remap="LINE">Though this a heavenly angel, hell is here.</line>
-<para remap="STAGEDIR">Clock strikes</para>
+<stagedir remap="STAGEDIR">Clock strikes</stagedir>
 <line remap="LINE">One, two, three: time, time!</line>
-<para remap="STAGEDIR">Goes into the trunk. The scene closes</para>
+<stagedir remap="STAGEDIR">Goes into the trunk. The scene closes</stagedir>
 </linegroup></dialogue>
 </section>
 
 <section remap="SCENE">
 <title remap="TITLE">Scene III  An ante-chamber adjoining Imogen's apartments.</title>
 
-<para remap="STAGEDIR">Enter CLOTEN and Lords</para>
+<stagedir remap="STAGEDIR">Enter CLOTEN and Lords</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Lord</speaker>
@@ -2091,14 +2091,14 @@ Dutchman, and a Spaniard</para>
 <speaker remap="SPEAKER">CLOTEN</speaker>
 <line remap="LINE">I would this music would come: I am advised to give</line>
 <line remap="LINE">her music o' mornings; they say it will penetrate.</line>
-<para remap="STAGEDIR">Enter Musicians</para>
+<stagedir remap="STAGEDIR">Enter Musicians</stagedir>
 <line remap="LINE">Come on; tune: if you can penetrate her with your</line>
 <line remap="LINE">fingering, so; we'll try with tongue too: if none</line>
 <line remap="LINE">will do, let her remain; but I'll never give o'er.</line>
 <line remap="LINE">First, a very excellent good-conceited thing;</line>
 <line remap="LINE">after, a wonderful sweet air, with admirable rich</line>
 <line remap="LINE">words to it: and then let her consider.</line>
-<para remap="STAGEDIR">SONG</para>
+<stagedir remap="STAGEDIR">SONG</stagedir>
 <line remap="LINE">Hark, hark! the lark at heaven's gate sings,</line>
 <line remap="LINE">And Phoebus 'gins arise,</line>
 <line remap="LINE">His steeds to water at those springs</line>
@@ -2119,7 +2119,7 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">boot, can never amend.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Musicians</para>
+<stagedir remap="STAGEDIR">Exeunt Musicians</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Lord</speaker>
@@ -2131,7 +2131,7 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">I am glad I was up so late; for that's the reason I</line>
 <line remap="LINE">was up so early: he cannot choose but take this</line>
 <line remap="LINE">service I have done fatherly.</line>
-<para remap="STAGEDIR">Enter CYMBELINE and QUEEN</para>
+<stagedir remap="STAGEDIR">Enter CYMBELINE and QUEEN</stagedir>
 <line remap="LINE">Good morrow to your majesty and to my gracious mother.</line>
 </linegroup></dialogue>
 
@@ -2173,7 +2173,7 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">Senseless! not so.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
@@ -2194,13 +2194,13 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">To employ you towards this Roman. Come, our queen.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but CLOTEN</para>
+<stagedir remap="STAGEDIR">Exeunt all but CLOTEN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLOTEN</speaker>
 <line remap="LINE">If she be up, I'll speak with her; if not,</line>
 <line remap="LINE">Let her lie still and dream.</line>
-<para remap="STAGEDIR">Knocks</para>
+<stagedir remap="STAGEDIR">Knocks</stagedir>
 <line remap="LINE">By your leave, ho!</line>
 <line remap="LINE">I Know her women are about her: what</line>
 <line remap="LINE">If I do line one of their hands? 'Tis gold</line>
@@ -2212,11 +2212,11 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">Can it not do and undo? I will make</line>
 <line remap="LINE">One of her women lawyer to me, for</line>
 <line remap="LINE">I yet not understand the case myself.</line>
-<para remap="STAGEDIR">Knocks</para>
+<stagedir remap="STAGEDIR">Knocks</stagedir>
 <line remap="LINE">By your leave.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Lady</para>
+<stagedir remap="STAGEDIR">Enter a Lady</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lady</speaker>
@@ -2268,14 +2268,14 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">What I shall think is good?--The princess!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter IMOGEN</para>
+<stagedir remap="STAGEDIR">Enter IMOGEN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLOTEN</speaker>
 <line remap="LINE">Good morrow, fairest: sister, your sweet hand.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Lady</para>
+<stagedir remap="STAGEDIR">Exit Lady</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
@@ -2385,7 +2385,7 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">Were they all made such men. How now, Pisanio!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PISANIO</para>
+<stagedir remap="STAGEDIR">Enter PISANIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLOTEN</speaker>
@@ -2426,7 +2426,7 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">I hope so: go and search.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit PISANIO</para>
+<stagedir remap="STAGEDIR">Exit PISANIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLOTEN</speaker>
@@ -2453,7 +2453,7 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">To the worst of discontent.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLOTEN</speaker>
@@ -2461,12 +2461,12 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">'His meanest garment!' Well.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Rome. Philario's house.</title>
-<para remap="STAGEDIR">Enter POSTHUMUS and PHILARIO</para>
+<stagedir remap="STAGEDIR">Enter POSTHUMUS and PHILARIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POSTHUMUS LEONATUS</speaker>
@@ -2517,7 +2517,7 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">That mend upon the world.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter IACHIMO</para>
+<stagedir remap="STAGEDIR">Enter IACHIMO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PHILARIO</speaker>
@@ -2725,7 +2725,7 @@ Dutchman, and a Spaniard</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IACHIMO</speaker>
 <line remap="LINE">Then, if you can,</line>
-<para remap="STAGEDIR">Showing the bracelet</para>
+<stagedir remap="STAGEDIR">Showing the bracelet</stagedir>
 <line remap="LINE">Be pale: I beg but leave to air this jewel; see!</line>
 <line remap="LINE">And now 'tis up again: it must be married</line>
 <line remap="LINE">To that your diamond; I'll keep them.</line>
@@ -2761,7 +2761,7 @@ Dutchman, and a Spaniard</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POSTHUMUS LEONATUS</speaker>
 <line remap="LINE">O, no, no, no! 'tis true. Here, take this too;</line>
-<para remap="STAGEDIR">Gives the ring</para>
+<stagedir remap="STAGEDIR">Gives the ring</stagedir>
 <line remap="LINE">It is a basilisk unto mine eye,</line>
 <line remap="LINE">Kills me to look on't. Let there be no honour</line>
 <line remap="LINE">Where there is beauty; truth, where semblance; love,</line>
@@ -2874,7 +2874,7 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">Her father. I'll do something--</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PHILARIO</speaker>
@@ -2889,11 +2889,11 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">With an my heart.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Another room in Philario's house.</title>
-<para remap="STAGEDIR">Enter POSTHUMUS LEONATUS</para>
+<stagedir remap="STAGEDIR">Enter POSTHUMUS LEONATUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POSTHUMUS LEONATUS</speaker>
@@ -2934,7 +2934,7 @@ Dutchman, and a Spaniard</para>
 <line remap="LINE">The very devils cannot plague them better.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -2942,9 +2942,9 @@ Dutchman, and a Spaniard</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Britain. A hall in Cymbeline's palace.</title>
-<para remap="STAGEDIR">Enter in state, CYMBELINE, QUEEN, CLOTEN,
+<stagedir remap="STAGEDIR">Enter in state, CYMBELINE, QUEEN, CLOTEN,
 and Lords at one door, and at another,
-CAIUS LUCIUS and Attendants</para>
+CAIUS LUCIUS and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CYMBELINE</speaker>
@@ -3110,11 +3110,11 @@ CAIUS LUCIUS and Attendants</para>
 <line remap="LINE">All the remain is 'Welcome!'</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Another room in the palace.</title>
-<para remap="STAGEDIR">Enter PISANIO, with a letter</para>
+<stagedir remap="STAGEDIR">Enter PISANIO, with a letter</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PISANIO</speaker>
@@ -3135,7 +3135,7 @@ CAIUS LUCIUS and Attendants</para>
 <line remap="LINE">Let me be counted serviceable. How look I,</line>
 <line remap="LINE">That I should seem to lack humanity</line>
 <line remap="LINE">so much as this fact comes to?</line>
-<para remap="STAGEDIR">Reading</para>
+<stagedir remap="STAGEDIR">Reading</stagedir>
 <line remap="LINE">'Do't: the letter</line>
 <line remap="LINE">that I have sent her, by her own command</line>
 <line remap="LINE">Shall give thee opportunity.' O damn'd paper!</line>
@@ -3145,7 +3145,7 @@ CAIUS LUCIUS and Attendants</para>
 <line remap="LINE">I am ignorant in what I am commanded.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter IMOGEN</para>
+<stagedir remap="STAGEDIR">Enter IMOGEN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
@@ -3173,7 +3173,7 @@ CAIUS LUCIUS and Attendants</para>
 <line remap="LINE">And men in dangerous bonds pray not alike:</line>
 <line remap="LINE">Though forfeiters you cast in prison, yet</line>
 <line remap="LINE">You clasp young Cupid's tables. Good news, gods!</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">'Justice, and your father's wrath, should he take me</line>
 <line remap="LINE">in his dominion, could not be so cruel to me, as</line>
 <line remap="LINE">you, O the dearest of creatures, would even renew me</line>
@@ -3210,7 +3210,7 @@ CAIUS LUCIUS and Attendants</para>
 <speaker remap="SPEAKER">PISANIO</speaker>
 <line remap="LINE">One score 'twixt sun and sun,</line>
 <line remap="LINE">Madam, 's enough for you:</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">and too much too.</line>
 </linegroup></dialogue>
 
@@ -3241,12 +3241,12 @@ CAIUS LUCIUS and Attendants</para>
 <line remap="LINE">Accessible is none but Milford way.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Wales: a mountainous country with a cave.</title>
-<para remap="STAGEDIR">Enter, from the cave, BELARIUS; GUIDERIUS,
-and ARVIRAGUS following</para>
+<stagedir remap="STAGEDIR">Enter, from the cave, BELARIUS; GUIDERIUS,
+and ARVIRAGUS following</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BELARIUS</speaker>
@@ -3366,7 +3366,7 @@ and ARVIRAGUS following</para>
 <line remap="LINE">To him the other two shall minister;</line>
 <line remap="LINE">And we will fear no poison, which attends</line>
 <line remap="LINE">In place of greater state. I'll meet you in the valleys.</line>
-<para remap="STAGEDIR">Exeunt GUIDERIUS and ARVIRAGUS</para>
+<stagedir remap="STAGEDIR">Exeunt GUIDERIUS and ARVIRAGUS</stagedir>
 <line remap="LINE">How hard it is to hide the sparks of nature!</line>
 <line remap="LINE">These boys know little they are sons to the king;</line>
 <line remap="LINE">Nor Cymbeline dreams that they are alive.</line>
@@ -3400,11 +3400,11 @@ and ARVIRAGUS following</para>
 <line remap="LINE">They take for natural father. The game is up.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Country near Milford-Haven.</title>
-<para remap="STAGEDIR">Enter PISANIO and IMOGEN</para>
+<stagedir remap="STAGEDIR">Enter PISANIO and IMOGEN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
@@ -3437,7 +3437,7 @@ and ARVIRAGUS following</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'Thy mistress, Pisanio, hath played the</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'Thy mistress, Pisanio, hath played the</line>
 <line remap="LINE">strumpet in my bed; the testimonies whereof lie</line>
 <line remap="LINE">bleeding in me. I speak not out of weak surmises,</line>
 <line remap="LINE">but from proof as strong as my grief and as certain</line>
@@ -3767,12 +3767,12 @@ and ARVIRAGUS following</para>
 <line remap="LINE">Amen: I thank thee.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt, severally</para>
+<stagedir remap="STAGEDIR">Exeunt, severally</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  A room in Cymbeline's palace.</title>
-<para remap="STAGEDIR">Enter CYMBELINE, QUEEN, CLOTEN, LUCIUS,
-Lords, and Attendants</para>
+<stagedir remap="STAGEDIR">Enter CYMBELINE, QUEEN, CLOTEN, LUCIUS,
+Lords, and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CYMBELINE</speaker>
@@ -3837,7 +3837,7 @@ Lords, and Attendants</para>
 <line remap="LINE">Till he have cross'd the Severn. Happiness!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt LUCIUS and Lords</para>
+<stagedir remap="STAGEDIR">Exeunt LUCIUS and Lords</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN</speaker>
@@ -3879,7 +3879,7 @@ Lords, and Attendants</para>
 <line remap="LINE">We have been too slight in sufferance.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit an Attendant</para>
+<stagedir remap="STAGEDIR">Exit an Attendant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN</speaker>
@@ -3892,7 +3892,7 @@ Lords, and Attendants</para>
 <line remap="LINE">And strokes death to her.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter Attendant</para>
+<stagedir remap="STAGEDIR">Re-enter Attendant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CYMBELINE</speaker>
@@ -3925,7 +3925,7 @@ Lords, and Attendants</para>
 <line remap="LINE">Prove false!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN</speaker>
@@ -3941,7 +3941,7 @@ Lords, and Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN</speaker>
 <line remap="LINE">Go, look after.</line>
-<para remap="STAGEDIR">Exit CLOTEN</para>
+<stagedir remap="STAGEDIR">Exit CLOTEN</stagedir>
 <line remap="LINE">Pisanio, thou that stand'st so for Posthumus!</line>
 <line remap="LINE">He hath a drug of mine; I pray his absence</line>
 <line remap="LINE">Proceed by swallowing that, for he believes</line>
@@ -3952,7 +3952,7 @@ Lords, and Attendants</para>
 <line remap="LINE">To death or to dishonour; and my end</line>
 <line remap="LINE">Can make good use of either: she being down,</line>
 <line remap="LINE">I have the placing of the British crown.</line>
-<para remap="STAGEDIR">Re-enter CLOTEN</para>
+<stagedir remap="STAGEDIR">Re-enter CLOTEN</stagedir>
 <line remap="LINE">How now, my son!</line>
 </linegroup></dialogue>
 
@@ -3965,11 +3965,11 @@ Lords, and Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>            All the better: may</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>            All the better: may</line>
 <line remap="LINE">This night forestall him of the coming day!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLOTEN</speaker>
@@ -3983,7 +3983,7 @@ Lords, and Attendants</para>
 <line remap="LINE">That what's else rare is choked; and in that point</line>
 <line remap="LINE">I will conclude to hate her, nay, indeed,</line>
 <line remap="LINE">To be revenged upon her. For when fools Shall--</line>
-<para remap="STAGEDIR">Enter PISANIO</para>
+<stagedir remap="STAGEDIR">Enter PISANIO</stagedir>
 <line remap="LINE">Who is here? What, are you packing, sirrah?</line>
 <line remap="LINE">Come hither: ah, you precious pander! Villain,</line>
 <line remap="LINE">Where is thy lady? In a word; or else</line>
@@ -4040,7 +4040,7 @@ Lords, and Attendants</para>
 <line remap="LINE">Touching her flight.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Presenting a letter</para>
+<stagedir remap="STAGEDIR">Presenting a letter</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLOTEN</speaker>
@@ -4050,7 +4050,7 @@ Lords, and Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PISANIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>                 Or this, or perish.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>                 Or this, or perish.</line>
 <line remap="LINE">She's far enough; and what he learns by this</line>
 <line remap="LINE">May prove his travel, not her danger.</line>
 </linegroup></dialogue>
@@ -4062,7 +4062,7 @@ Lords, and Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PISANIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  I'll write to my lord she's dead. O Imogen,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  I'll write to my lord she's dead. O Imogen,</line>
 <line remap="LINE">Safe mayst thou wander, safe return again!</line>
 </linegroup></dialogue>
 
@@ -4130,7 +4130,7 @@ Lords, and Attendants</para>
 <line remap="LINE">I shall, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLOTEN</speaker>
@@ -4151,7 +4151,7 @@ Lords, and Attendants</para>
 <line remap="LINE">praised,--to the court I'll knock her back, foot</line>
 <line remap="LINE">her home again. She hath despised me rejoicingly,</line>
 <line remap="LINE">and I'll be merry in my revenge.</line>
-<para remap="STAGEDIR">Re-enter PISANIO, with the clothes</para>
+<stagedir remap="STAGEDIR">Re-enter PISANIO, with the clothes</stagedir>
 <line remap="LINE">Be those the garments?</line>
 </linegroup></dialogue>
 
@@ -4180,7 +4180,7 @@ Lords, and Attendants</para>
 <line remap="LINE">wings to follow it! Come, and be true.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PISANIO</speaker>
@@ -4192,11 +4192,11 @@ Lords, and Attendants</para>
 <line remap="LINE">Be cross'd with slowness; labour be his meed!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  Wales. Before the cave of Belarius.</title>
-<para remap="STAGEDIR">Enter IMOGEN, in boy's clothes</para>
+<stagedir remap="STAGEDIR">Enter IMOGEN, in boy's clothes</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
@@ -4230,8 +4230,8 @@ Lords, and Attendants</para>
 <line remap="LINE">Such a foe, good heavens!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit, to the cave</para>
-<para remap="STAGEDIR">Enter BELARIUS, GUIDERIUS, and ARVIRAGUS</para>
+<stagedir remap="STAGEDIR">Exit, to the cave</stagedir>
+<stagedir remap="STAGEDIR">Enter BELARIUS, GUIDERIUS, and ARVIRAGUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BELARIUS</speaker>
@@ -4264,7 +4264,7 @@ Lords, and Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BELARIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Looking into the cave</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Looking into the cave</inlinestagedir></line>
 <line remap="LINE">Stay; come not in.</line>
 <line remap="LINE">But that it eats our victuals, I should think</line>
 <line remap="LINE">Here were a fairy.</line>
@@ -4282,7 +4282,7 @@ Lords, and Attendants</para>
 <line remap="LINE">No elder than a boy!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter IMOGEN</para>
+<stagedir remap="STAGEDIR">Re-enter IMOGEN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
@@ -4369,7 +4369,7 @@ Lords, and Attendants</para>
 <speaker remap="SPEAKER">IMOGEN</speaker>
 <line remap="LINE">'Mongst friends,</line>
 <line remap="LINE">If brothers.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">Would it had been so, that they</line>
 <line remap="LINE">Had been my father's sons! then had my prize</line>
 <line remap="LINE">Been less, and so more equal ballasting</line>
@@ -4397,7 +4397,7 @@ Lords, and Attendants</para>
 <line remap="LINE">Hark, boys.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Whispering</para>
+<stagedir remap="STAGEDIR">Whispering</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
@@ -4441,11 +4441,11 @@ Lords, and Attendants</para>
 <line remap="LINE">I pray, draw near.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VII.  Rome. A public place.</title>
-<para remap="STAGEDIR">Enter two Senators and Tribunes</para>
+<stagedir remap="STAGEDIR">Enter two Senators and Tribunes</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Senator</speaker>
@@ -4490,7 +4490,7 @@ Lords, and Attendants</para>
 <line remap="LINE">We will discharge our duty.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -4498,7 +4498,7 @@ Lords, and Attendants</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Wales: near the cave of Belarius.</title>
-<para remap="STAGEDIR">Enter CLOTEN</para>
+<stagedir remap="STAGEDIR">Enter CLOTEN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLOTEN</speaker>
@@ -4530,22 +4530,22 @@ Lords, and Attendants</para>
 <line remap="LINE">the fellow dares not deceive me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Before the cave of Belarius.</title>
-<para remap="STAGEDIR">Enter, from the cave, BELARIUS, GUIDERIUS,
-ARVIRAGUS, and IMOGEN</para>
+<stagedir remap="STAGEDIR">Enter, from the cave, BELARIUS, GUIDERIUS,
+ARVIRAGUS, and IMOGEN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BELARIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To IMOGEN</phrase>  You are not well: remain here in the cave;</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To IMOGEN</inlinestagedir>  You are not well: remain here in the cave;</line>
 <line remap="LINE">We'll come to you after hunting.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ARVIRAGUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To IMOGEN</phrase> Brother, stay here</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To IMOGEN</inlinestagedir> Brother, stay here</line>
 <line remap="LINE">Are we not brothers?</line>
 </linegroup></dialogue>
 
@@ -4599,7 +4599,7 @@ ARVIRAGUS, and IMOGEN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BELARIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase> O noble strain!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir> O noble strain!</line>
 <line remap="LINE">O worthiness of nature! breed of greatness!</line>
 <line remap="LINE">Cowards father cowards and base things sire base:</line>
 <line remap="LINE">Nature hath meal and bran, contempt and grace.</line>
@@ -4625,7 +4625,7 @@ ARVIRAGUS, and IMOGEN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  These are kind creatures. Gods, what lies</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  These are kind creatures. Gods, what lies</line>
 <line remap="LINE">I have heard!</line>
 <line remap="LINE">Our courtiers say all's savage but at court:</line>
 <line remap="LINE">Experience, O, thou disprovest report!</line>
@@ -4635,7 +4635,7 @@ ARVIRAGUS, and IMOGEN</para>
 <line remap="LINE">I'll now taste of thy drug.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Swallows some</para>
+<stagedir remap="STAGEDIR">Swallows some</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GUIDERIUS</speaker>
@@ -4676,7 +4676,7 @@ ARVIRAGUS, and IMOGEN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BELARIUS</speaker>
 <line remap="LINE">And shalt be ever.</line>
-<para remap="STAGEDIR">Exit IMOGEN, to the cave</para>
+<stagedir remap="STAGEDIR">Exit IMOGEN, to the cave</stagedir>
 <line remap="LINE">This youth, how'er distress'd, appears he hath had</line>
 <line remap="LINE">Good ancestors.</line>
 </linegroup></dialogue>
@@ -4724,7 +4724,7 @@ ARVIRAGUS, and IMOGEN</para>
 <line remap="LINE">Who's there?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CLOTEN</para>
+<stagedir remap="STAGEDIR">Enter CLOTEN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLOTEN</speaker>
@@ -4748,7 +4748,7 @@ ARVIRAGUS, and IMOGEN</para>
 <line remap="LINE">Let me alone with him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt BELARIUS and ARVIRAGUS</para>
+<stagedir remap="STAGEDIR">Exeunt BELARIUS and ARVIRAGUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLOTEN</speaker>
@@ -4862,8 +4862,8 @@ ARVIRAGUS, and IMOGEN</para>
 <line remap="LINE">Yield, rustic mountaineer.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt, fighting</para>
-<para remap="STAGEDIR">Re-enter BELARIUS and ARVIRAGUS</para>
+<stagedir remap="STAGEDIR">Exeunt, fighting</stagedir>
+<stagedir remap="STAGEDIR">Re-enter BELARIUS and ARVIRAGUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BELARIUS</speaker>
@@ -4899,7 +4899,7 @@ ARVIRAGUS, and IMOGEN</para>
 <line remap="LINE">Is oft the cause of fear. But, see, thy brother.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter GUIDERIUS, with CLOTEN'S head</para>
+<stagedir remap="STAGEDIR">Re-enter GUIDERIUS, with CLOTEN'S head</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GUIDERIUS</speaker>
@@ -4985,7 +4985,7 @@ ARVIRAGUS, and IMOGEN</para>
 <line remap="LINE">That's all I reck.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BELARIUS</speaker>
@@ -5022,7 +5022,7 @@ ARVIRAGUS, and IMOGEN</para>
 <line remap="LINE">And praise myself for charity.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BELARIUS</speaker>
@@ -5043,7 +5043,7 @@ ARVIRAGUS, and IMOGEN</para>
 <line remap="LINE">Or what his death will bring us.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter GUIDERIUS</para>
+<stagedir remap="STAGEDIR">Re-enter GUIDERIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GUIDERIUS</speaker>
@@ -5053,7 +5053,7 @@ ARVIRAGUS, and IMOGEN</para>
 <line remap="LINE">For his return.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Solemn music</para>
+<stagedir remap="STAGEDIR">Solemn music</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BELARIUS</speaker>
@@ -5089,8 +5089,8 @@ ARVIRAGUS, and IMOGEN</para>
 <line remap="LINE">Of what we blame him for.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter ARVIRAGUS, with IMOGEN, as dead,
-bearing her in his arms</para>
+<stagedir remap="STAGEDIR">Re-enter ARVIRAGUS, with IMOGEN, as dead,
+bearing her in his arms</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ARVIRAGUS</speaker>
@@ -5233,7 +5233,7 @@ bearing her in his arms</para>
 <line remap="LINE">We'll say our song the whilst. Brother, begin.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit BELARIUS</para>
+<stagedir remap="STAGEDIR">Exit BELARIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GUIDERIUS</speaker>
@@ -5256,7 +5256,7 @@ bearing her in his arms</para>
 <line remap="LINE">So. Begin.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">SONG</para>
+<stagedir remap="STAGEDIR">SONG</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GUIDERIUS</speaker>
@@ -5332,7 +5332,7 @@ bearing her in his arms</para>
 <line remap="LINE">And renowned be thy grave!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter BELARIUS, with the body of CLOTEN</para>
+<stagedir remap="STAGEDIR">Re-enter BELARIUS, with the body of CLOTEN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GUIDERIUS</speaker>
@@ -5351,17 +5351,17 @@ bearing her in his arms</para>
 <line remap="LINE">Their pleasures here are past, so is their pain.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt BELARIUS, GUIDERIUS, and ARVIRAGUS</para>
+<stagedir remap="STAGEDIR">Exeunt BELARIUS, GUIDERIUS, and ARVIRAGUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Awaking</phrase>  Yes, sir, to Milford-Haven; which is</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Awaking</inlinestagedir>  Yes, sir, to Milford-Haven; which is</line>
 <line remap="LINE">the way?--</line>
 <line remap="LINE">I thank you.--By yond bush?--Pray, how far thither?</line>
 <line remap="LINE">'Ods pittikins! can it be six mile yet?--</line>
 <line remap="LINE">I have gone all night. 'Faith, I'll lie down and sleep.</line>
 <line remap="LINE">But, soft! no bedfellow!--O gods and goddesses!</line>
-<para remap="STAGEDIR">Seeing the body of CLOTEN</para>
+<stagedir remap="STAGEDIR">Seeing the body of CLOTEN</stagedir>
 <line remap="LINE">These flowers are like the pleasures of the world;</line>
 <line remap="LINE">This bloody man, the care on't. I hope I dream;</line>
 <line remap="LINE">For so I thought I was a cave-keeper,</line>
@@ -5402,9 +5402,9 @@ bearing her in his arms</para>
 <line remap="LINE">Which chance to find us: O, my lord, my lord!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Falls on the body</para>
-<para remap="STAGEDIR">Enter LUCIUS, a Captain and other Officers,
-and a Soothsayer</para>
+<stagedir remap="STAGEDIR">Falls on the body</stagedir>
+<stagedir remap="STAGEDIR">Enter LUCIUS, a Captain and other Officers,
+and a Soothsayer</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Captain</speaker>
@@ -5508,7 +5508,7 @@ and a Soothsayer</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
 <line remap="LINE">Richard du Champ.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">If I do lie and do</line>
 <line remap="LINE">No harm by it, though the gods hear, I hope</line>
 <line remap="LINE">They'll pardon it.--Say you, sir?</line>
@@ -5561,16 +5561,16 @@ and a Soothsayer</para>
 <line remap="LINE">Some falls are means the happier to arise.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A room in Cymbeline's palace.</title>
-<para remap="STAGEDIR">Enter CYMBELINE, Lords, PISANIO, and Attendants</para>
+<stagedir remap="STAGEDIR">Enter CYMBELINE, Lords, PISANIO, and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CYMBELINE</speaker>
 <line remap="LINE">Again; and bring me word how 'tis with her.</line>
-<para remap="STAGEDIR">Exit an Attendant</para>
+<stagedir remap="STAGEDIR">Exit an Attendant</stagedir>
 <line remap="LINE">A fever with the absence of her son,</line>
 <line remap="LINE">A madness, of which her life's in danger. Heavens,</line>
 <line remap="LINE">How deeply you at once do touch me! Imogen,</line>
@@ -5606,7 +5606,7 @@ and a Soothsayer</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CYMBELINE</speaker>
 <line remap="LINE">The time is troublesome.</line>
-<para remap="STAGEDIR">To PISANIO</para>
+<stagedir remap="STAGEDIR">To PISANIO</stagedir>
 <line remap="LINE">We'll slip you for a season; but our jealousy</line>
 <line remap="LINE">Does yet depend.</line>
 </linegroup></dialogue>
@@ -5643,7 +5643,7 @@ and a Soothsayer</para>
 <line remap="LINE">We grieve at chances here. Away!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but PISANIO</para>
+<stagedir remap="STAGEDIR">Exeunt all but PISANIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PISANIO</speaker>
@@ -5660,11 +5660,11 @@ and a Soothsayer</para>
 <line remap="LINE">Fortune brings in some boats that are not steer'd.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Wales: before the cave of Belarius.</title>
-<para remap="STAGEDIR">Enter BELARIUS, GUIDERIUS, and ARVIRAGUS.</para>
+<stagedir remap="STAGEDIR">Enter BELARIUS, GUIDERIUS, and ARVIRAGUS.</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GUIDERIUS</speaker>
@@ -5779,13 +5779,13 @@ and a Soothsayer</para>
 <line remap="LINE">If in your country wars you chance to die,</line>
 <line remap="LINE">That is my bed too, lads, an there I'll lie:</line>
 <line remap="LINE">Lead, lead.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">The time seems long; their blood</line>
 <line remap="LINE">thinks scorn,</line>
 <line remap="LINE">Till it fly out and show them princes born.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -5793,7 +5793,7 @@ and a Soothsayer</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Britain. The Roman camp.</title>
-<para remap="STAGEDIR">Enter POSTHUMUS, with a bloody handkerchief</para>
+<stagedir remap="STAGEDIR">Enter POSTHUMUS, with a bloody handkerchief</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POSTHUMUS LEONATUS</speaker>
@@ -5832,17 +5832,17 @@ and a Soothsayer</para>
 <line remap="LINE">The fashion, less without and more within.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Field of battle between the British and Roman camps.</title>
-<para remap="STAGEDIR">Enter, from one side, LUCIUS, IACHIMO, and
+<stagedir remap="STAGEDIR">Enter, from one side, LUCIUS, IACHIMO, and
 the Roman Army: from the other side, the
 British Army; POSTHUMUS LEONATUS following,
 like a poor soldier. They march over and go
 out. Then enter again, in skirmish, IACHIMO
 and POSTHUMUS LEONATUS he vanquisheth and disarmeth
-IACHIMO, and then leaves him</para>
+IACHIMO, and then leaves him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IACHIMO</speaker>
@@ -5858,10 +5858,10 @@ IACHIMO, and then leaves him</para>
 <line remap="LINE">Is that we scarce are men and you are gods.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">The battle continues; the Britons fly; CYMBELINE is
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">The battle continues; the Britons fly; CYMBELINE is
 taken: then enter, to his rescue, BELARIUS,
-GUIDERIUS, and ARVIRAGUS</para>
+GUIDERIUS, and ARVIRAGUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BELARIUS</speaker>
@@ -5876,9 +5876,9 @@ GUIDERIUS, and ARVIRAGUS</para>
 <line remap="LINE">Stand, stand, and fight!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter POSTHUMUS LEONATUS, and seconds the
+<stagedir remap="STAGEDIR">Re-enter POSTHUMUS LEONATUS, and seconds the
 Britons: they rescue CYMBELINE, and exeunt. Then
-re-enter LUCIUS, and IACHIMO, with IMOGEN</para>
+re-enter LUCIUS, and IACHIMO, with IMOGEN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CAIUS LUCIUS</speaker>
@@ -5898,11 +5898,11 @@ re-enter LUCIUS, and IACHIMO, with IMOGEN</para>
 <line remap="LINE">Let's reinforce, or fly.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Another part of the field.</title>
-<para remap="STAGEDIR">Enter POSTHUMUS LEONATUS and a British Lord</para>
+<stagedir remap="STAGEDIR">Enter POSTHUMUS LEONATUS and a British Lord</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lord</speaker>
@@ -6022,7 +6022,7 @@ re-enter LUCIUS, and IACHIMO, with IMOGEN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POSTHUMUS LEONATUS</speaker>
 <line remap="LINE">Still going?</line>
-<para remap="STAGEDIR">Exit Lord</para>
+<stagedir remap="STAGEDIR">Exit Lord</stagedir>
 <line remap="LINE">This is a lord! O noble misery,</line>
 <line remap="LINE">To be i' the field, and ask 'what news?' of me!</line>
 <line remap="LINE">To-day how many would have given their honours</line>
@@ -6045,7 +6045,7 @@ re-enter LUCIUS, and IACHIMO, with IMOGEN</para>
 <line remap="LINE">But end it by some means for Imogen.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter two British Captains and Soldiers</para>
+<stagedir remap="STAGEDIR">Enter two British Captains and Soldiers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Captain</speaker>
@@ -6081,15 +6081,15 @@ re-enter LUCIUS, and IACHIMO, with IMOGEN</para>
 <line remap="LINE">As if he were of note: bring him to the king.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CYMBELINE, BELARIUS, GUIDERIUS, ARVIRAGUS,
+<stagedir remap="STAGEDIR">Enter CYMBELINE, BELARIUS, GUIDERIUS, ARVIRAGUS,
 PISANIO, Soldiers, Attendants, and Roman Captives.
 The Captains present POSTHUMUS LEONATUS to
 CYMBELINE, who delivers him over to a Gaoler:
-then exeunt omnes</para>
+then exeunt omnes</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  A British prison.</title>
-<para remap="STAGEDIR">Enter POSTHUMUS LEONATUS and two Gaolers</para>
+<stagedir remap="STAGEDIR">Enter POSTHUMUS LEONATUS and two Gaolers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Gaoler</speaker>
@@ -6102,7 +6102,7 @@ then exeunt omnes</para>
 <line remap="LINE">Ay, or a stomach.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Gaolers</para>
+<stagedir remap="STAGEDIR">Exeunt Gaolers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POSTHUMUS LEONATUS</speaker>
@@ -6135,8 +6135,8 @@ then exeunt omnes</para>
 <line remap="LINE">I'll speak to thee in silence.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Sleeps</para>
-<para remap="STAGEDIR">Solemn music. Enter, as in an apparition,
+<stagedir remap="STAGEDIR">Sleeps</stagedir>
+<stagedir remap="STAGEDIR">Solemn music. Enter, as in an apparition,
 SICILIUS LEONATUS, father to Posthumus Leonatus,
 an old man, attired like a warrior; leading in
 his hand an ancient matron, his wife, and mother
@@ -6144,7 +6144,7 @@ to Posthumus Leonatus, with music before them:
 then, after other music, follow the two young
 Leonati, brothers to Posthumus Leonatus, with
 wounds as they died in the wars. They circle
-Posthumus Leonatus round, as he lies sleeping</para>
+Posthumus Leonatus round, as he lies sleeping</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Sicilius Leonatus</speaker>
@@ -6258,9 +6258,9 @@ Posthumus Leonatus round, as he lies sleeping</para>
 <line remap="LINE">And from thy justice fly.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Jupiter descends in thunder and lightning, sitting
+<stagedir remap="STAGEDIR">Jupiter descends in thunder and lightning, sitting
 upon an eagle: he throws a thunderbolt. The
-Apparitions fall on their knees</para>
+Apparitions fall on their knees</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Jupiter</speaker>
@@ -6287,7 +6287,7 @@ Apparitions fall on their knees</para>
 <line remap="LINE">Mount, eagle, to my palace crystalline.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Ascends</para>
+<stagedir remap="STAGEDIR">Ascends</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Sicilius Leonatus</speaker>
@@ -6311,11 +6311,11 @@ Apparitions fall on their knees</para>
 <line remap="LINE">Let us with care perform his great behest.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The Apparitions vanish</para>
+<stagedir remap="STAGEDIR">The Apparitions vanish</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Posthumus Leonatus</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Waking</phrase>  Sleep, thou hast been a grandsire, and begot</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Waking</inlinestagedir>  Sleep, thou hast been a grandsire, and begot</line>
 <line remap="LINE">A father to me; and thou hast created</line>
 <line remap="LINE">A mother and two brothers: but, O scorn!</line>
 <line remap="LINE">Gone! they went hence so soon as they were born:</line>
@@ -6330,7 +6330,7 @@ Apparitions fall on their knees</para>
 <line remap="LINE">Nobler than that it covers: let thy effects</line>
 <line remap="LINE">So follow, to be most unlike our courtiers,</line>
 <line remap="LINE">As good as promise.</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">'When as a lion's whelp shall, to himself unknown,</line>
 <line remap="LINE">without seeking find, and be embraced by a piece of</line>
 <line remap="LINE">tender air; and when from a stately cedar shall be</line>
@@ -6346,7 +6346,7 @@ Apparitions fall on their knees</para>
 <line remap="LINE">I'll keep, if but for sympathy.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter First Gaoler</para>
+<stagedir remap="STAGEDIR">Re-enter First Gaoler</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Gaoler</speaker>
@@ -6433,7 +6433,7 @@ Apparitions fall on their knees</para>
 <line remap="LINE">blindness! I am sure hanging's the way of winking.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
@@ -6455,7 +6455,7 @@ Apparitions fall on their knees</para>
 <line remap="LINE">Thou shalt be then freer than a gaoler; no bolts for the dead.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt POSTHUMUS LEONATUS and Messenger</para>
+<stagedir remap="STAGEDIR">Exeunt POSTHUMUS LEONATUS and Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Gaoler</speaker>
@@ -6470,12 +6470,12 @@ Apparitions fall on their knees</para>
 <line remap="LINE">my wish hath a preferment in 't.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Cymbeline's tent.</title>
-<para remap="STAGEDIR">Enter CYMBELINE, BELARIUS, GUIDERIUS, ARVIRAGUS,
-PISANIO, Lords, Officers, and Attendants</para>
+<stagedir remap="STAGEDIR">Enter CYMBELINE, BELARIUS, GUIDERIUS, ARVIRAGUS,
+PISANIO, Lords, Officers, and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CYMBELINE</speaker>
@@ -6511,7 +6511,7 @@ PISANIO, Lords, Officers, and Attendants</para>
 <speaker remap="SPEAKER">CYMBELINE</speaker>
 <line remap="LINE">To my grief, I am</line>
 <line remap="LINE">The heir of his reward;</line>
-<para remap="STAGEDIR">To BELARIUS, GUIDERIUS, and ARVIRAGUS</para>
+<stagedir remap="STAGEDIR">To BELARIUS, GUIDERIUS, and ARVIRAGUS</stagedir>
 <line remap="LINE">which I will add</line>
 <line remap="LINE">To you, the liver, heart and brain of Britain,</line>
 <line remap="LINE">By whom I grant she lives. 'Tis now the time</line>
@@ -6532,7 +6532,7 @@ PISANIO, Lords, Officers, and Attendants</para>
 <line remap="LINE">Arise my knights o' the battle: I create you</line>
 <line remap="LINE">Companions to our person and will fit you</line>
 <line remap="LINE">With dignities becoming your estates.</line>
-<para remap="STAGEDIR">Enter CORNELIUS and Ladies</para>
+<stagedir remap="STAGEDIR">Enter CORNELIUS and Ladies</stagedir>
 <line remap="LINE">There's business in these faces. Why so sadly</line>
 <line remap="LINE">Greet you our victory? you look like Romans,</line>
 <line remap="LINE">And not o' the court of Britain.</line>
@@ -6635,9 +6635,9 @@ PISANIO, Lords, Officers, and Attendants</para>
 <line remap="LINE">To have mistrusted her: yet, O my daughter!</line>
 <line remap="LINE">That it was folly in me, thou mayst say,</line>
 <line remap="LINE">And prove it in thy feeling. Heaven mend all!</line>
-<para remap="STAGEDIR">Enter LUCIUS, IACHIMO, the Soothsayer, and other
+<stagedir remap="STAGEDIR">Enter LUCIUS, IACHIMO, the Soothsayer, and other
 Roman Prisoners, guarded; POSTHUMUS LEONATUS
-behind, and IMOGEN</para>
+behind, and IMOGEN</stagedir>
 <line remap="LINE">Thou comest not, Caius, now for tribute that</line>
 <line remap="LINE">The Britons have razed out, though with the loss</line>
 <line remap="LINE">Of many a bold one; whose kinsmen have made suit</line>
@@ -6752,7 +6752,7 @@ behind, and IMOGEN</para>
 <line remap="LINE">I'll be thy master: walk with me; speak freely.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">CYMBELINE and IMOGEN converse apart</para>
+<stagedir remap="STAGEDIR">CYMBELINE and IMOGEN converse apart</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BELARIUS</speaker>
@@ -6790,18 +6790,18 @@ behind, and IMOGEN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PISANIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase> It is my mistress:</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir> It is my mistress:</line>
 <line remap="LINE">Since she is living, let the time run on</line>
 <line remap="LINE">To good or bad.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">CYMBELINE and IMOGEN come forward</para>
+<stagedir remap="STAGEDIR">CYMBELINE and IMOGEN come forward</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CYMBELINE</speaker>
 <line remap="LINE">Come, stand thou by our side;</line>
 <line remap="LINE">Make thy demand aloud.</line>
-<para remap="STAGEDIR">To IACHIMO</para>
+<stagedir remap="STAGEDIR">To IACHIMO</stagedir>
 <line remap="LINE">Sir, step you forth;</line>
 <line remap="LINE">Give answer to this boy, and do it freely;</line>
 <line remap="LINE">Or, by our greatness and the grace of it,</line>
@@ -6817,7 +6817,7 @@ behind, and IMOGEN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POSTHUMUS LEONATUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>                 What's that to him?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>                 What's that to him?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -6950,7 +6950,7 @@ behind, and IMOGEN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POSTHUMUS LEONATUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Advancing</phrase>             Ay, so thou dost,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Advancing</inlinestagedir>             Ay, so thou dost,</line>
 <line remap="LINE">Italian fiend! Ay me, most credulous fool,</line>
 <line remap="LINE">Egregious murderer, thief, any thing</line>
 <line remap="LINE">That's due to all the villains past, in being,</line>
@@ -6982,7 +6982,7 @@ behind, and IMOGEN</para>
 <line remap="LINE">There lie thy part.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Striking her: she falls</para>
+<stagedir remap="STAGEDIR">Striking her: she falls</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PISANIO</speaker>
@@ -7100,7 +7100,7 @@ behind, and IMOGEN</para>
 <line remap="LINE">Throw me again.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Embracing him</para>
+<stagedir remap="STAGEDIR">Embracing him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POSTHUMUS LEONATUS</speaker>
@@ -7117,12 +7117,12 @@ behind, and IMOGEN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IMOGEN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Kneeling</phrase>               Your blessing, sir.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Kneeling</inlinestagedir>               Your blessing, sir.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BELARIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To GUIDERIUS and ARVIRAGUS</phrase>  Though you did love</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To GUIDERIUS and ARVIRAGUS</inlinestagedir>  Though you did love</line>
 <line remap="LINE">this youth, I blame ye not:</line>
 <line remap="LINE">You had a motive for't.</line>
 </linegroup></dialogue>
@@ -7224,7 +7224,7 @@ behind, and IMOGEN</para>
 <line remap="LINE">As well descended as thyself; and hath</line>
 <line remap="LINE">More of thee merited than a band of Clotens</line>
 <line remap="LINE">Had ever scar for.</line>
-<para remap="STAGEDIR">To the Guard</para>
+<stagedir remap="STAGEDIR">To the Guard</stagedir>
 <line remap="LINE">Let his arms alone;</line>
 <line remap="LINE">They were not born for bondage.</line>
 </linegroup></dialogue>
@@ -7444,7 +7444,7 @@ behind, and IMOGEN</para>
 <line remap="LINE">Each object with a joy: the counterchange</line>
 <line remap="LINE">Is severally in all. Let's quit this ground,</line>
 <line remap="LINE">And smoke the temple with our sacrifices.</line>
-<para remap="STAGEDIR">To BELARIUS</para>
+<stagedir remap="STAGEDIR">To BELARIUS</stagedir>
 <line remap="LINE">Thou art my brother; so we'll hold thee ever.</line>
 </linegroup></dialogue>
 
@@ -7491,7 +7491,7 @@ behind, and IMOGEN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IACHIMO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Kneeling</phrase>          I am down again:</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Kneeling</inlinestagedir>          I am down again:</line>
 <line remap="LINE">But now my heavy conscience sinks my knee,</line>
 <line remap="LINE">As then your force did. Take that life, beseech you,</line>
 <line remap="LINE">Which I so often owe: but your ring first;</line>
@@ -7551,7 +7551,7 @@ behind, and IMOGEN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Soothsayer</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'When as a lion's whelp shall, to himself</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'When as a lion's whelp shall, to himself</line>
 <line remap="LINE">unknown, without seeking find, and be embraced by a</line>
 <line remap="LINE">piece of tender air; and when from a stately cedar</line>
 <line remap="LINE">shall be lopped branches, which, being dead many</line>
@@ -7562,7 +7562,7 @@ behind, and IMOGEN</para>
 <line remap="LINE">Thou, Leonatus, art the lion's whelp;</line>
 <line remap="LINE">The fit and apt construction of thy name,</line>
 <line remap="LINE">Being Leonatus, doth import so much.</line>
-<para remap="STAGEDIR">To CYMBELINE</para>
+<stagedir remap="STAGEDIR">To CYMBELINE</stagedir>
 <line remap="LINE">The piece of tender air, thy virtuous daughter,</line>
 <line remap="LINE">Which we call 'mollis aer;' and 'mollis aer'</line>
 <line remap="LINE">We term it 'mulier:' which 'mulier' I divine</line>
@@ -7628,7 +7628,7 @@ behind, and IMOGEN</para>
 <line remap="LINE">Ere bloody hands were wash'd, with such a peace.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 </chapter>
 </book>

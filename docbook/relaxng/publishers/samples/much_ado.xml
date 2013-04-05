@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">Much Ado about Nothing</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">Much Ado about Nothing</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Much Ado about Nothing</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -28,17 +28,17 @@
 <simplelist columns="2" remap="PGROUP"><member><personname remap="PERSONA">MARGARET</personname><personname remap="PERSONA">URSULA</personname></member><member>gentlewomen attending on Hero.</member></simplelist>
 
 <para><personname remap="PERSONA">Messengers, Watch, Attendants, &amp;c. </personname></para>
-    <para remap="SCNDESCR">SCENE  Messina.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  Messina.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Before LEONATO'S house.</title>
-<para remap="STAGEDIR">Enter LEONATO, HERO, and BEATRICE, with a
-Messenger</para>
+<stagedir remap="STAGEDIR">Enter LEONATO, HERO, and BEATRICE, with a
+Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LEONATO</speaker>
@@ -270,8 +270,8 @@ Messenger</para>
 <line remap="LINE">Don Pedro is approached.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DON PEDRO, DON JOHN, CLAUDIO, BENEDICK,
-and BALTHASAR</para>
+<stagedir remap="STAGEDIR">Enter DON PEDRO, DON JOHN, CLAUDIO, BENEDICK,
+and BALTHASAR</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON PEDRO</speaker>
@@ -408,7 +408,7 @@ and BALTHASAR</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LEONATO</speaker>
 <line remap="LINE">If you swear, my lord, you shall not be forsworn.</line>
-<para remap="STAGEDIR">To DON JOHN</para>
+<stagedir remap="STAGEDIR">To DON JOHN</stagedir>
 <line remap="LINE">Let me bid you welcome, my lord: being reconciled to</line>
 <line remap="LINE">the prince your brother, I owe you all duty.</line>
 </linegroup></dialogue>
@@ -429,7 +429,7 @@ and BALTHASAR</para>
 <line remap="LINE">Your hand, Leonato; we will go together.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all except BENEDICK and CLAUDIO</para>
+<stagedir remap="STAGEDIR">Exeunt all except BENEDICK and CLAUDIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLAUDIO</speaker>
@@ -524,7 +524,7 @@ and BALTHASAR</para>
 <line remap="LINE">Sundays. Look Don Pedro is returned to seek you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter DON PEDRO</para>
+<stagedir remap="STAGEDIR">Re-enter DON PEDRO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON PEDRO</speaker>
@@ -730,7 +730,7 @@ and BALTHASAR</para>
 <line remap="LINE">conscience: and so I leave you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLAUDIO</speaker>
@@ -804,11 +804,11 @@ and BALTHASAR</para>
 <line remap="LINE">In practise let us put it presently.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A room in LEONATO's house.</title>
-<para remap="STAGEDIR">Enter LEONATO and ANTONIO, meeting</para>
+<stagedir remap="STAGEDIR">Enter LEONATO and ANTONIO, meeting</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LEONATO</speaker>
@@ -857,17 +857,17 @@ and BALTHASAR</para>
 <line remap="LINE">itself: but I will acquaint my daughter withal,</line>
 <line remap="LINE">that she may be the better prepared for an answer,</line>
 <line remap="LINE">if peradventure this be true. Go you and tell her of it.</line>
-<para remap="STAGEDIR">Enter Attendants</para>
+<stagedir remap="STAGEDIR">Enter Attendants</stagedir>
 <line remap="LINE">Cousins, you know what you have to do. O, I cry you</line>
 <line remap="LINE">mercy, friend; go you with me, and I will use your</line>
 <line remap="LINE">skill. Good cousin, have a care this busy time.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The same.</title>
-<para remap="STAGEDIR">Enter DON JOHN and CONRADE</para>
+<stagedir remap="STAGEDIR">Enter DON JOHN and CONRADE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CONRADE</speaker>
@@ -944,7 +944,7 @@ and BALTHASAR</para>
 <speaker remap="SPEAKER">DON JOHN</speaker>
 <line remap="LINE">I make all use of it, for I use it only.</line>
 <line remap="LINE">Who comes here?</line>
-<para remap="STAGEDIR">Enter BORACHIO</para>
+<stagedir remap="STAGEDIR">Enter BORACHIO</stagedir>
 <line remap="LINE">What news, Borachio?</line>
 </linegroup></dialogue>
 
@@ -1028,7 +1028,7 @@ and BALTHASAR</para>
 <line remap="LINE">We'll wait upon your lordship.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -1036,7 +1036,7 @@ and BALTHASAR</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A hall in LEONATO'S house.</title>
-<para remap="STAGEDIR">Enter LEONATO, ANTONIO, HERO, BEATRICE, and others</para>
+<stagedir remap="STAGEDIR">Enter LEONATO, ANTONIO, HERO, BEATRICE, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LEONATO</speaker>
@@ -1147,7 +1147,7 @@ and BALTHASAR</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTONIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To HERO</phrase>  Well, niece, I trust you will be ruled</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To HERO</inlinestagedir>  Well, niece, I trust you will be ruled</line>
 <line remap="LINE">by your father.</line>
 </linegroup></dialogue>
 
@@ -1211,9 +1211,9 @@ and BALTHASAR</para>
 <line remap="LINE">The revellers are entering, brother: make good room.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">All put on their masks</para>
-<para remap="STAGEDIR">Enter DON PEDRO, CLAUDIO, BENEDICK, BALTHASAR,
-DON JOHN, BORACHIO, MARGARET, URSULA and others, masked</para>
+<stagedir remap="STAGEDIR">All put on their masks</stagedir>
+<stagedir remap="STAGEDIR">Enter DON PEDRO, CLAUDIO, BENEDICK, BALTHASAR,
+DON JOHN, BORACHIO, MARGARET, URSULA and others, masked</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON PEDRO</speaker>
@@ -1262,7 +1262,7 @@ DON JOHN, BORACHIO, MARGARET, URSULA and others, masked</para>
 <line remap="LINE">Speak low, if you speak love.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Drawing her aside</para>
+<stagedir remap="STAGEDIR">Drawing her aside</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BALTHASAR</speaker>
@@ -1426,7 +1426,7 @@ DON JOHN, BORACHIO, MARGARET, URSULA and others, masked</para>
 <line remap="LINE">strikes him into melancholy; and then there's a</line>
 <line remap="LINE">partridge wing saved, for the fool will eat no</line>
 <line remap="LINE">supper that night.</line>
-<para remap="STAGEDIR">Music</para>
+<stagedir remap="STAGEDIR">Music</stagedir>
 <line remap="LINE">We must follow the leaders.</line>
 </linegroup></dialogue>
 
@@ -1441,8 +1441,8 @@ DON JOHN, BORACHIO, MARGARET, URSULA and others, masked</para>
 <line remap="LINE">the next turning.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Dance. Then exeunt all except DON JOHN, BORACHIO,
-and CLAUDIO</para>
+<stagedir remap="STAGEDIR">Dance. Then exeunt all except DON JOHN, BORACHIO,
+and CLAUDIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON JOHN</speaker>
@@ -1494,7 +1494,7 @@ and CLAUDIO</para>
 <line remap="LINE">Come, let us to the banquet.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt DON JOHN and BORACHIO</para>
+<stagedir remap="STAGEDIR">Exeunt DON JOHN and BORACHIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLAUDIO</speaker>
@@ -1511,7 +1511,7 @@ and CLAUDIO</para>
 <line remap="LINE">Which I mistrusted not. Farewell, therefore, Hero!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter BENEDICK</para>
+<stagedir remap="STAGEDIR">Re-enter BENEDICK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BENEDICK</speaker>
@@ -1570,7 +1570,7 @@ and CLAUDIO</para>
 <line remap="LINE">If it will not be, I'll leave you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BENEDICK</speaker>
@@ -1584,7 +1584,7 @@ and CLAUDIO</para>
 <line remap="LINE">out. Well, I'll be revenged as I may.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter DON PEDRO</para>
+<stagedir remap="STAGEDIR">Re-enter DON PEDRO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON PEDRO</speaker>
@@ -1678,7 +1678,7 @@ and CLAUDIO</para>
 <line remap="LINE">Look, here she comes.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CLAUDIO, BEATRICE, HERO, and LEONATO</para>
+<stagedir remap="STAGEDIR">Enter CLAUDIO, BEATRICE, HERO, and LEONATO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BENEDICK</speaker>
@@ -1704,7 +1704,7 @@ and CLAUDIO</para>
 <line remap="LINE">endure my Lady Tongue.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON PEDRO</speaker>
@@ -1868,7 +1868,7 @@ and CLAUDIO</para>
 <line remap="LINE">I cry you mercy, uncle. By your grace's pardon.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON PEDRO</speaker>
@@ -1973,11 +1973,11 @@ and CLAUDIO</para>
 <line remap="LINE">and I will tell you my drift.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same.</title>
-<para remap="STAGEDIR">Enter DON JOHN and BORACHIO</para>
+<stagedir remap="STAGEDIR">Enter DON JOHN and BORACHIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON JOHN</speaker>
@@ -2097,18 +2097,18 @@ and CLAUDIO</para>
 <line remap="LINE">I will presently go learn their day of marriage.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  LEONATO'S orchard.</title>
-<para remap="STAGEDIR">Enter BENEDICK</para>
+<stagedir remap="STAGEDIR">Enter BENEDICK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BENEDICK</speaker>
 <line remap="LINE">Boy!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Boy</para>
+<stagedir remap="STAGEDIR">Enter Boy</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Boy</speaker>
@@ -2129,7 +2129,7 @@ and CLAUDIO</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BENEDICK</speaker>
 <line remap="LINE">I know that; but I would have thee hence, and here again.</line>
-<para remap="STAGEDIR">Exit Boy</para>
+<stagedir remap="STAGEDIR">Exit Boy</stagedir>
 <line remap="LINE">I do much wonder that one man, seeing how much</line>
 <line remap="LINE">another man is a fool when he dedicates his</line>
 <line remap="LINE">behaviors to love, will, after he hath laughed at</line>
@@ -2161,8 +2161,8 @@ and CLAUDIO</para>
 <line remap="LINE">Monsieur Love! I will hide me in the arbour.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Withdraws</para>
-<para remap="STAGEDIR">Enter DON PEDRO, CLAUDIO, and LEONATO</para>
+<stagedir remap="STAGEDIR">Withdraws</stagedir>
+<stagedir remap="STAGEDIR">Enter DON PEDRO, CLAUDIO, and LEONATO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON PEDRO</speaker>
@@ -2186,7 +2186,7 @@ and CLAUDIO</para>
 <line remap="LINE">We'll fit the kid-fox with a pennyworth.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BALTHASAR with Music</para>
+<stagedir remap="STAGEDIR">Enter BALTHASAR with Music</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON PEDRO</speaker>
@@ -2233,7 +2233,7 @@ and CLAUDIO</para>
 <line remap="LINE">Note, notes, forsooth, and nothing.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Air</para>
+<stagedir remap="STAGEDIR">Air</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BENEDICK</speaker>
@@ -2243,7 +2243,7 @@ and CLAUDIO</para>
 <line remap="LINE">all's done.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The Song</para>
+<stagedir remap="STAGEDIR">The Song</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BALTHASAR</speaker>
@@ -2301,7 +2301,7 @@ and CLAUDIO</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON PEDRO</speaker>
 <line remap="LINE">Do so: farewell.</line>
-<para remap="STAGEDIR">Exit BALTHASAR</para>
+<stagedir remap="STAGEDIR">Exit BALTHASAR</stagedir>
 <line remap="LINE">Come hither, Leonato. What was it you told me of</line>
 <line remap="LINE">to-day, that your niece Beatrice was in love with</line>
 <line remap="LINE">Signior Benedick?</line>
@@ -2616,11 +2616,11 @@ and CLAUDIO</para>
 <line remap="LINE">dumb-show. Let us send her to call him in to dinner.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt DON PEDRO, CLAUDIO, and LEONATO</para>
+<stagedir remap="STAGEDIR">Exeunt DON PEDRO, CLAUDIO, and LEONATO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BENEDICK</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Coming forward</phrase>  This can be no trick: the</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Coming forward</inlinestagedir>  This can be no trick: the</line>
 <line remap="LINE">conference was sadly borne. They have the truth of</line>
 <line remap="LINE">this from Hero. They seem to pity the lady: it</line>
 <line remap="LINE">seems her affections have their full bent. Love me!</line>
@@ -2649,7 +2649,7 @@ and CLAUDIO</para>
 <line remap="LINE">her.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BEATRICE</para>
+<stagedir remap="STAGEDIR">Enter BEATRICE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BEATRICE</speaker>
@@ -2680,7 +2680,7 @@ and CLAUDIO</para>
 <line remap="LINE">signior: fare you well.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BENEDICK</speaker>
@@ -2693,7 +2693,7 @@ and CLAUDIO</para>
 <line remap="LINE">love her, I am a Jew. I will go get her picture.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -2701,7 +2701,7 @@ and CLAUDIO</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  LEONATO'S garden.</title>
-<para remap="STAGEDIR">Enter HERO, MARGARET, and URSULA</para>
+<stagedir remap="STAGEDIR">Enter HERO, MARGARET, and URSULA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HERO</speaker>
@@ -2725,7 +2725,7 @@ and CLAUDIO</para>
 <line remap="LINE">I'll make her come, I warrant you, presently.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HERO</speaker>
@@ -2738,7 +2738,7 @@ and CLAUDIO</para>
 <line remap="LINE">Is sick in love with Beatrice. Of this matter</line>
 <line remap="LINE">Is little Cupid's crafty arrow made,</line>
 <line remap="LINE">That only wounds by hearsay.</line>
-<para remap="STAGEDIR">Enter BEATRICE, behind</para>
+<stagedir remap="STAGEDIR">Enter BEATRICE, behind</stagedir>
 <line remap="LINE">Now begin;</line>
 <line remap="LINE">For look where Beatrice, like a lapwing, runs</line>
 <line remap="LINE">Close by the ground, to hear our conference.</line>
@@ -2758,7 +2758,7 @@ and CLAUDIO</para>
 <speaker remap="SPEAKER">HERO</speaker>
 <line remap="LINE">Then go we near her, that her ear lose nothing</line>
 <line remap="LINE">Of the false sweet bait that we lay for it.</line>
-<para remap="STAGEDIR">Approaching the bower</para>
+<stagedir remap="STAGEDIR">Approaching the bower</stagedir>
 <line remap="LINE">No, truly, Ursula, she is too disdainful;</line>
 <line remap="LINE">I know her spirits are as coy and wild</line>
 <line remap="LINE">As haggerds of the rock.</line>
@@ -2916,11 +2916,11 @@ and CLAUDIO</para>
 <line remap="LINE">Some Cupid kills with arrows, some with traps.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt HERO and URSULA</para>
+<stagedir remap="STAGEDIR">Exeunt HERO and URSULA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BEATRICE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Coming forward</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Coming forward</inlinestagedir></line>
 <line remap="LINE">What fire is in mine ears? Can this be true?</line>
 <line remap="LINE">Stand I condemn'd for pride and scorn so much?</line>
 <line remap="LINE">Contempt, farewell! and maiden pride, adieu!</line>
@@ -2933,11 +2933,11 @@ and CLAUDIO</para>
 <line remap="LINE">Believe it better than reportingly.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A room in LEONATO'S house</title>
-<para remap="STAGEDIR">Enter DON PEDRO, CLAUDIO, BENEDICK, and LEONATO</para>
+<stagedir remap="STAGEDIR">Enter DON PEDRO, CLAUDIO, BENEDICK, and LEONATO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON PEDRO</speaker>
@@ -3132,7 +3132,7 @@ and CLAUDIO</para>
 <line remap="LINE">hobby-horses must not hear.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt BENEDICK and LEONATO</para>
+<stagedir remap="STAGEDIR">Exeunt BENEDICK and LEONATO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON PEDRO</speaker>
@@ -3146,7 +3146,7 @@ and CLAUDIO</para>
 <line remap="LINE">bears will not bite one another when they meet.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DON JOHN</para>
+<stagedir remap="STAGEDIR">Enter DON JOHN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON JOHN</speaker>
@@ -3181,7 +3181,7 @@ and CLAUDIO</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON JOHN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To CLAUDIO</phrase>  Means your lordship to be married</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To CLAUDIO</inlinestagedir>  Means your lordship to be married</line>
 <line remap="LINE">to-morrow?</line>
 </linegroup></dialogue>
 
@@ -3303,11 +3303,11 @@ and CLAUDIO</para>
 <line remap="LINE">you have seen the sequel.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A street.</title>
-<para remap="STAGEDIR">Enter DOGBERRY and VERGES with the Watch</para>
+<stagedir remap="STAGEDIR">Enter DOGBERRY and VERGES with the Watch</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOGBERRY</speaker>
@@ -3531,8 +3531,8 @@ and CLAUDIO</para>
 <line remap="LINE">Adieu: be vigitant, I beseech you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt DOGBERRY and VERGES</para>
-<para remap="STAGEDIR">Enter BORACHIO and CONRADE</para>
+<stagedir remap="STAGEDIR">Exeunt DOGBERRY and VERGES</stagedir>
+<stagedir remap="STAGEDIR">Enter BORACHIO and CONRADE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BORACHIO</speaker>
@@ -3541,7 +3541,7 @@ and CLAUDIO</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Watchman</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Peace! stir not.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Peace! stir not.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -3575,7 +3575,7 @@ and CLAUDIO</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Watchman</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Some treason, masters: yet stand close.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Some treason, masters: yet stand close.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -3632,7 +3632,7 @@ and CLAUDIO</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Watchman</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  I know that Deformed; a' has been a vile</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  I know that Deformed; a' has been a vile</line>
 <line remap="LINE">thief this seven year; a' goes up and down like a</line>
 <line remap="LINE">gentleman: I remember his name.</line>
 </linegroup></dialogue>
@@ -3747,11 +3747,11 @@ and CLAUDIO</para>
 <line remap="LINE">A commodity in question, I warrant you. Come, we'll obey you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  HERO's apartment.</title>
-<para remap="STAGEDIR">Enter HERO, MARGARET, and URSULA</para>
+<stagedir remap="STAGEDIR">Enter HERO, MARGARET, and URSULA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HERO</speaker>
@@ -3774,7 +3774,7 @@ and CLAUDIO</para>
 <line remap="LINE">Well.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARGARET</speaker>
@@ -3850,7 +3850,7 @@ and CLAUDIO</para>
 <line remap="LINE">heavy: ask my Lady Beatrice else; here she comes.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BEATRICE</para>
+<stagedir remap="STAGEDIR">Enter BEATRICE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HERO</speaker>
@@ -3999,7 +3999,7 @@ and CLAUDIO</para>
 <line remap="LINE">Not a false gallop.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter URSULA</para>
+<stagedir remap="STAGEDIR">Re-enter URSULA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">URSULA</speaker>
@@ -4013,11 +4013,11 @@ and CLAUDIO</para>
 <line remap="LINE">Help to dress me, good coz, good Meg, good Ursula.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Another room in LEONATO'S house.</title>
-<para remap="STAGEDIR">Enter LEONATO, with DOGBERRY and VERGES</para>
+<stagedir remap="STAGEDIR">Enter LEONATO, with DOGBERRY and VERGES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LEONATO</speaker>
@@ -4162,7 +4162,7 @@ and CLAUDIO</para>
 <line remap="LINE">Drink some wine ere you go: fare you well.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
@@ -4175,7 +4175,7 @@ and CLAUDIO</para>
 <line remap="LINE">I'll wait upon them: I am ready.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt LEONATO and Messenger</para>
+<stagedir remap="STAGEDIR">Exeunt LEONATO and Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOGBERRY</speaker>
@@ -4197,7 +4197,7 @@ and CLAUDIO</para>
 <line remap="LINE">excommunication and meet me at the gaol.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -4205,8 +4205,8 @@ and CLAUDIO</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A church.</title>
-<para remap="STAGEDIR">Enter DON PEDRO, DON JOHN, LEONATO, FRIAR FRANCIS,
-CLAUDIO, BENEDICK, HERO, BEATRICE, and Attendants</para>
+<stagedir remap="STAGEDIR">Enter DON PEDRO, DON JOHN, LEONATO, FRIAR FRANCIS,
+CLAUDIO, BENEDICK, HERO, BEATRICE, and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LEONATO</speaker>
@@ -4494,7 +4494,7 @@ CLAUDIO, BENEDICK, HERO, BEATRICE, and Attendants</para>
 <line remap="LINE">Hath no man's dagger here a point for me?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">HERO swoons</para>
+<stagedir remap="STAGEDIR">HERO swoons</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BEATRICE</speaker>
@@ -4507,7 +4507,7 @@ CLAUDIO, BENEDICK, HERO, BEATRICE, and Attendants</para>
 <line remap="LINE">Smother her spirits up.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt DON PEDRO, DON JOHN, and CLAUDIO</para>
+<stagedir remap="STAGEDIR">Exeunt DON PEDRO, DON JOHN, and CLAUDIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BENEDICK</speaker>
@@ -4762,7 +4762,7 @@ CLAUDIO, BENEDICK, HERO, BEATRICE, and Attendants</para>
 <line remap="LINE">Perhaps is but prolong'd: have patience and endure.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but BENEDICK and BEATRICE</para>
+<stagedir remap="STAGEDIR">Exeunt all but BENEDICK and BEATRICE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BENEDICK</speaker>
@@ -5016,12 +5016,12 @@ CLAUDIO, BENEDICK, HERO, BEATRICE, and Attendants</para>
 <line remap="LINE">cousin: I must say she is dead: and so, farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A prison.</title>
-<para remap="STAGEDIR">Enter DOGBERRY, VERGES, and Sexton, in gowns; and
-the Watch, with CONRADE and BORACHIO</para>
+<stagedir remap="STAGEDIR">Enter DOGBERRY, VERGES, and Sexton, in gowns; and
+the Watch, with CONRADE and BORACHIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOGBERRY</speaker>
@@ -5216,7 +5216,7 @@ the Watch, with CONRADE and BORACHIO</para>
 <line remap="LINE">him their examination.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOGBERRY</speaker>
@@ -5263,7 +5263,7 @@ the Watch, with CONRADE and BORACHIO</para>
 <line remap="LINE">I had been writ down an ass!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -5271,7 +5271,7 @@ the Watch, with CONRADE and BORACHIO</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Before LEONATO'S house.</title>
-<para remap="STAGEDIR">Enter LEONATO and ANTONIO</para>
+<stagedir remap="STAGEDIR">Enter LEONATO and ANTONIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTONIO</speaker>
@@ -5347,7 +5347,7 @@ the Watch, with CONRADE and BORACHIO</para>
 <line remap="LINE">Here comes the prince and Claudio hastily.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DON PEDRO and CLAUDIO</para>
+<stagedir remap="STAGEDIR">Enter DON PEDRO and CLAUDIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON PEDRO</speaker>
@@ -5537,14 +5537,14 @@ the Watch, with CONRADE and BORACHIO</para>
 <line remap="LINE">And shall, or some of us will smart for it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt LEONATO and ANTONIO</para>
+<stagedir remap="STAGEDIR">Exeunt LEONATO and ANTONIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON PEDRO</speaker>
 <line remap="LINE">See, see; here comes the man we went to seek.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BENEDICK</para>
+<stagedir remap="STAGEDIR">Enter BENEDICK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLAUDIO</speaker>
@@ -5651,7 +5651,7 @@ the Watch, with CONRADE and BORACHIO</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BENEDICK</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to CLAUDIO</phrase>  You are a villain; I jest not:</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to CLAUDIO</inlinestagedir>  You are a villain; I jest not:</line>
 <line remap="LINE">I will make it good how you dare, with what you</line>
 <line remap="LINE">dare, and when you dare. Do me right, or I will</line>
 <line remap="LINE">protest your cowardice. You have killed a sweet</line>
@@ -5744,7 +5744,7 @@ the Watch, with CONRADE and BORACHIO</para>
 <line remap="LINE">then, peace be with him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON PEDRO</speaker>
@@ -5785,8 +5785,8 @@ the Watch, with CONRADE and BORACHIO</para>
 <line remap="LINE">be sad. Did he not say, my brother was fled?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DOGBERRY, VERGES, and the Watch, with CONRADE
-and BORACHIO</para>
+<stagedir remap="STAGEDIR">Enter DOGBERRY, VERGES, and the Watch, with CONRADE
+and BORACHIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOGBERRY</speaker>
@@ -5905,7 +5905,7 @@ and BORACHIO</para>
 <line remap="LINE">Sexton too.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter LEONATO and ANTONIO, with the Sexton</para>
+<stagedir remap="STAGEDIR">Re-enter LEONATO and ANTONIO, with the Sexton</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LEONATO</speaker>
@@ -6049,7 +6049,7 @@ and BORACHIO</para>
 <line remap="LINE">meeting may be wished, God prohibit it! Come, neighbour.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt DOGBERRY and VERGES</para>
+<stagedir remap="STAGEDIR">Exeunt DOGBERRY and VERGES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LEONATO</speaker>
@@ -6073,16 +6073,16 @@ and BORACHIO</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LEONATO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To the Watch</phrase>  Bring you these fellows on. We'll</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To the Watch</inlinestagedir>  Bring you these fellows on. We'll</line>
 <line remap="LINE">talk with Margaret,</line>
 <line remap="LINE">How her acquaintance grew with this lewd fellow.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt, severally</para>
+<stagedir remap="STAGEDIR">Exeunt, severally</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  LEONATO'S garden.</title>
-<para remap="STAGEDIR">Enter BENEDICK and MARGARET, meeting</para>
+<stagedir remap="STAGEDIR">Enter BENEDICK and MARGARET, meeting</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BENEDICK</speaker>
@@ -6145,8 +6145,8 @@ and BORACHIO</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BENEDICK</speaker>
 <line remap="LINE">And therefore will come.</line>
-<para remap="STAGEDIR">Exit MARGARET</para>
-<para remap="STAGEDIR">Sings</para>
+<stagedir remap="STAGEDIR">Exit MARGARET</stagedir>
+<stagedir remap="STAGEDIR">Sings</stagedir>
 <line remap="LINE">The god of love,</line>
 <line remap="LINE">That sits above,</line>
 <line remap="LINE">And knows me, and knows me,</line>
@@ -6163,7 +6163,7 @@ and BORACHIO</para>
 <line remap="LINE">'school,' 'fool,' a babbling rhyme; very ominous</line>
 <line remap="LINE">endings: no, I was not born under a rhyming planet,</line>
 <line remap="LINE">nor I cannot woo in festival terms.</line>
-<para remap="STAGEDIR">Enter BEATRICE</para>
+<stagedir remap="STAGEDIR">Enter BEATRICE</stagedir>
 <line remap="LINE">Sweet Beatrice, wouldst thou come when I called thee?</line>
 </linegroup></dialogue>
 
@@ -6284,7 +6284,7 @@ and BORACHIO</para>
 <line remap="LINE">you too, for here comes one in haste.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter URSULA</para>
+<stagedir remap="STAGEDIR">Enter URSULA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">URSULA</speaker>
@@ -6307,12 +6307,12 @@ and BORACHIO</para>
 <line remap="LINE">thee to thy uncle's.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A church.</title>
-<para remap="STAGEDIR">Enter DON PEDRO, CLAUDIO, and three or four
-with tapers</para>
+<stagedir remap="STAGEDIR">Enter DON PEDRO, CLAUDIO, and three or four
+with tapers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLAUDIO</speaker>
@@ -6326,7 +6326,7 @@ with tapers</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLAUDIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reading out of a scroll</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reading out of a scroll</inlinestagedir></line>
 <line remap="LINE">Done to death by slanderous tongues</line>
 <line remap="LINE">Was the Hero that here lies:</line>
 <line remap="LINE">Death, in guerdon of her wrongs,</line>
@@ -6381,12 +6381,12 @@ with tapers</para>
 <line remap="LINE">Than this for whom we render'd up this woe.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  A room in LEONATO'S house.</title>
-<para remap="STAGEDIR">Enter LEONATO, ANTONIO, BENEDICK, BEATRICE,
-MARGARET, URSULA, FRIAR FRANCIS, and HERO</para>
+<stagedir remap="STAGEDIR">Enter LEONATO, ANTONIO, BENEDICK, BEATRICE,
+MARGARET, URSULA, FRIAR FRANCIS, and HERO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FRIAR FRANCIS</speaker>
@@ -6418,7 +6418,7 @@ MARGARET, URSULA, FRIAR FRANCIS, and HERO</para>
 <line remap="LINE">Well, daughter, and you gentle-women all,</line>
 <line remap="LINE">Withdraw into a chamber by yourselves,</line>
 <line remap="LINE">And when I send for you, come hither mask'd.</line>
-<para remap="STAGEDIR">Exeunt Ladies</para>
+<stagedir remap="STAGEDIR">Exeunt Ladies</stagedir>
 <line remap="LINE">The prince and Claudio promised by this hour</line>
 <line remap="LINE">To visit me. You know your office, brother:</line>
 <line remap="LINE">You must be father to your brother's daughter</line>
@@ -6483,8 +6483,8 @@ MARGARET, URSULA, FRIAR FRANCIS, and HERO</para>
 <line remap="LINE">Here comes the prince and Claudio.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DON PEDRO and CLAUDIO, and two or
-three others</para>
+<stagedir remap="STAGEDIR">Enter DON PEDRO and CLAUDIO, and two or
+three others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON PEDRO</speaker>
@@ -6508,7 +6508,7 @@ three others</para>
 <line remap="LINE">Call her forth, brother; here's the friar ready.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit ANTONIO</para>
+<stagedir remap="STAGEDIR">Exit ANTONIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON PEDRO</speaker>
@@ -6537,7 +6537,7 @@ three others</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLAUDIO</speaker>
 <line remap="LINE">For this I owe you: here comes other reckonings.</line>
-<para remap="STAGEDIR">Re-enter ANTONIO, with the Ladies masked</para>
+<stagedir remap="STAGEDIR">Re-enter ANTONIO, with the Ladies masked</stagedir>
 <line remap="LINE">Which is the lady I must seize upon?</line>
 </linegroup></dialogue>
 
@@ -6566,7 +6566,7 @@ three others</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HERO</speaker>
 <line remap="LINE">And when I lived, I was your other wife:</line>
-<para remap="STAGEDIR">Unmasking</para>
+<stagedir remap="STAGEDIR">Unmasking</stagedir>
 <line remap="LINE">And when you loved, you were my other husband.</line>
 </linegroup></dialogue>
 
@@ -6608,7 +6608,7 @@ three others</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BEATRICE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Unmasking</phrase>  I answer to that name. What is your will?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Unmasking</inlinestagedir>  I answer to that name. What is your will?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -6702,7 +6702,7 @@ three others</para>
 <line remap="LINE">Peace! I will stop your mouth.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Kissing her</para>
+<stagedir remap="STAGEDIR">Kissing her</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DON PEDRO</speaker>
@@ -6753,7 +6753,7 @@ three others</para>
 <line remap="LINE">there is no staff more reverend than one tipped with horn.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
@@ -6768,8 +6768,8 @@ three others</para>
 <line remap="LINE">Strike up, pipers.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Dance</para>
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Dance</stagedir>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 </chapter>
 </book>

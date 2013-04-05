@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">The Tragedy of Titus Andronicus</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">The Tragedy of Titus Andronicus</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The Tragedy of Titus Andronicus</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -30,19 +30,19 @@
 <para><personname remap="PERSONA">LAVINIA, daughter of Titus Andronicus.</personname></para>
 <para><personname remap="PERSONA">A Nurse. </personname></para>
 <para><personname remap="PERSONA">Senators, Tribunes, Officers, Soldiers, anAttendants.</personname></para>
-    <para remap="SCNDESCR">SCENE  Rome, and the country near it.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  Rome, and the country near it.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Rome. Before the Capitol.</title>
-<para remap="STAGEDIR">The Tomb of the ANDRONICI appearing; the Tribunes
+<stagedir remap="STAGEDIR">The Tomb of the ANDRONICI appearing; the Tribunes
 and Senators aloft. Enter, below, from one side,
 SATURNINUS and his Followers; and, from the other
-side, BASSIANUS and his Followers; with drum and colours</para>
+side, BASSIANUS and his Followers; with drum and colours</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SATURNINUS</speaker>
@@ -69,7 +69,7 @@ side, BASSIANUS and his Followers; with drum and colours</para>
 <line remap="LINE">And, Romans, fight for freedom in your choice.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MARCUS ANDRONICUS, aloft, with the crown</para>
+<stagedir remap="STAGEDIR">Enter MARCUS ANDRONICUS, aloft, with the crown</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCUS ANDRONICUS</speaker>
@@ -121,7 +121,7 @@ side, BASSIANUS and his Followers; with drum and colours</para>
 <line remap="LINE">Commit my cause in balance to be weigh'd.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt the followers of BASSIANUS</para>
+<stagedir remap="STAGEDIR">Exeunt the followers of BASSIANUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SATURNINUS</speaker>
@@ -129,7 +129,7 @@ side, BASSIANUS and his Followers; with drum and colours</para>
 <line remap="LINE">I thank you all and here dismiss you all,</line>
 <line remap="LINE">And to the love and favor of my country</line>
 <line remap="LINE">Commit myself, my person and the cause.</line>
-<para remap="STAGEDIR">Exeunt the followers of SATURNINUS</para>
+<stagedir remap="STAGEDIR">Exeunt the followers of SATURNINUS</stagedir>
 <line remap="LINE">Rome, be as just and gracious unto me</line>
 <line remap="LINE">As I am confident and kind to thee.</line>
 <line remap="LINE">Open the gates, and let me in.</line>
@@ -140,8 +140,8 @@ side, BASSIANUS and his Followers; with drum and colours</para>
 <line remap="LINE">Tribunes, and me, a poor competitor.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish. SATURNINUS and BASSIANUS go up into the Capitol</para>
-<para remap="STAGEDIR">Enter a Captain</para>
+<stagedir remap="STAGEDIR">Flourish. SATURNINUS and BASSIANUS go up into the Capitol</stagedir>
+<stagedir remap="STAGEDIR">Enter a Captain</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Captain</speaker>
@@ -153,13 +153,13 @@ side, BASSIANUS and his Followers; with drum and colours</para>
 <line remap="LINE">And brought to yoke, the enemies of Rome.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Drums and trumpets sounded. Enter MARTIUS and
+<stagedir remap="STAGEDIR">Drums and trumpets sounded. Enter MARTIUS and
 MUTIUS; After them, two Men bearing a coffin
 covered with black; then LUCIUS and QUINTUS. After
 them, TITUS ANDRONICUS; and then TAMORA, with
 ALARBUS, DEMETRIUS, CHIRON, AARON, and other Goths,
 prisoners; Soldiers and people following. The
-Bearers set down the coffin, and TITUS speaks</para>
+Bearers set down the coffin, and TITUS speaks</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
@@ -183,7 +183,7 @@ Bearers set down the coffin, and TITUS speaks</para>
 <line remap="LINE">Why suffer'st thou thy sons, unburied yet,</line>
 <line remap="LINE">To hover on the dreadful shore of Styx?</line>
 <line remap="LINE">Make way to lay them by their brethren.</line>
-<para remap="STAGEDIR">The tomb is opened</para>
+<stagedir remap="STAGEDIR">The tomb is opened</stagedir>
 <line remap="LINE">There greet in silence, as the dead are wont,</line>
 <line remap="LINE">And sleep in peace, slain in your country's wars!</line>
 <line remap="LINE">O sacred receptacle of my joys,</line>
@@ -246,7 +246,7 @@ Bearers set down the coffin, and TITUS speaks</para>
 <line remap="LINE">Let's hew his limbs till they be clean consumed.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt LUCIUS, QUINTUS, MARTIUS, and MUTIUS, with ALARBUS</para>
+<stagedir remap="STAGEDIR">Exeunt LUCIUS, QUINTUS, MARTIUS, and MUTIUS, with ALARBUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TAMORA</speaker>
@@ -272,8 +272,8 @@ Bearers set down the coffin, and TITUS speaks</para>
 <line remap="LINE">To quit the bloody wrongs upon her foes.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter LUCIUS, QUINTUS, MARTIUS and MUTIUS, with
-their swords bloody</para>
+<stagedir remap="STAGEDIR">Re-enter LUCIUS, QUINTUS, MARTIUS and MUTIUS, with
+their swords bloody</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIUS</speaker>
@@ -289,7 +289,7 @@ their swords bloody</para>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
 <line remap="LINE">Let it be so; and let Andronicus</line>
 <line remap="LINE">Make this his latest farewell to their souls.</line>
-<para remap="STAGEDIR">Trumpets sounded, and the coffin laid in the tomb</para>
+<stagedir remap="STAGEDIR">Trumpets sounded, and the coffin laid in the tomb</stagedir>
 <line remap="LINE">In peace and honour rest you here, my sons;</line>
 <line remap="LINE">Rome's readiest champions, repose you here in rest,</line>
 <line remap="LINE">Secure from worldly chances and mishaps!</line>
@@ -299,7 +299,7 @@ their swords bloody</para>
 <line remap="LINE">In peace and honour rest you here, my sons!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LAVINIA</para>
+<stagedir remap="STAGEDIR">Enter LAVINIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAVINIA</speaker>
@@ -321,8 +321,8 @@ their swords bloody</para>
 <line remap="LINE">And fame's eternal date, for virtue's praise!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter, below, MARCUS ANDRONICUS and Tribunes;
-re-enter SATURNINUS and BASSIANUS, attended</para>
+<stagedir remap="STAGEDIR">Enter, below, MARCUS ANDRONICUS and Tribunes;
+re-enter SATURNINUS and BASSIANUS, attended</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCUS ANDRONICUS</speaker>
@@ -450,7 +450,7 @@ re-enter SATURNINUS and BASSIANUS, attended</para>
 <line remap="LINE">And say 'Long live our Emperor Saturnine!'</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">A long flourish till they come down</para>
+<stagedir remap="STAGEDIR">A long flourish till they come down</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SATURNINUS</speaker>
@@ -490,7 +490,7 @@ re-enter SATURNINUS and BASSIANUS, attended</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To TAMORA</phrase>  Now, madam, are you prisoner to</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To TAMORA</inlinestagedir>  Now, madam, are you prisoner to</line>
 <line remap="LINE">an emperor;</line>
 <line remap="LINE">To him that, for your honour and your state,</line>
 <line remap="LINE">Will use you nobly and your followers.</line>
@@ -523,14 +523,14 @@ re-enter SATURNINUS and BASSIANUS, attended</para>
 <line remap="LINE">Proclaim our honours, lords, with trump and drum.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish. SATURNINUS courts TAMORA in dumb show</para>
+<stagedir remap="STAGEDIR">Flourish. SATURNINUS courts TAMORA in dumb show</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BASSIANUS</speaker>
 <line remap="LINE">Lord Titus, by your leave, this maid is mine.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Seizing LAVINIA</para>
+<stagedir remap="STAGEDIR">Seizing LAVINIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
@@ -571,7 +571,7 @@ re-enter SATURNINUS and BASSIANUS, attended</para>
 <line remap="LINE">Bear his betroth'd from all the world away.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt BASSIANUS and MARCUS with LAVINIA</para>
+<stagedir remap="STAGEDIR">Exeunt BASSIANUS and MARCUS with LAVINIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MUTIUS</speaker>
@@ -579,7 +579,7 @@ re-enter SATURNINUS and BASSIANUS, attended</para>
 <line remap="LINE">And with my sword I'll keep this door safe.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt LUCIUS, QUINTUS, and MARTIUS</para>
+<stagedir remap="STAGEDIR">Exeunt LUCIUS, QUINTUS, and MARTIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
@@ -597,17 +597,17 @@ re-enter SATURNINUS and BASSIANUS, attended</para>
 <line remap="LINE">Barr'st me my way in Rome?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Stabbing MUTIUS</para>
+<stagedir remap="STAGEDIR">Stabbing MUTIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MUTIUS</speaker>
 <line remap="LINE">Help, Lucius, help!</line>
-<para remap="STAGEDIR">Dies</para>
+<stagedir remap="STAGEDIR">Dies</stagedir>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">During the fray, SATURNINUS, TAMORA, DEMETRIUS,
-CHIRON and AARON go out and re-enter, above</para>
-<para remap="STAGEDIR">Re-enter LUCIUS</para>
+<stagedir remap="STAGEDIR">During the fray, SATURNINUS, TAMORA, DEMETRIUS,
+CHIRON and AARON go out and re-enter, above</stagedir>
+<stagedir remap="STAGEDIR">Re-enter LUCIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIUS</speaker>
@@ -628,7 +628,7 @@ CHIRON and AARON go out and re-enter, above</para>
 <line remap="LINE">That is another's lawful promised love.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SATURNINUS</speaker>
@@ -697,7 +697,7 @@ CHIRON and AARON go out and re-enter, above</para>
 <line remap="LINE">There shall we consummate our spousal rites.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but TITUS</para>
+<stagedir remap="STAGEDIR">Exeunt all but TITUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
@@ -706,7 +706,7 @@ CHIRON and AARON go out and re-enter, above</para>
 <line remap="LINE">Dishonour'd thus, and challenged of wrongs?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter MARCUS, LUCIUS, QUINTUS, and MARTIUS</para>
+<stagedir remap="STAGEDIR">Re-enter MARCUS, LUCIUS, QUINTUS, and MARTIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCUS ANDRONICUS</speaker>
@@ -791,7 +791,7 @@ CHIRON and AARON go out and re-enter, above</para>
 <line remap="LINE">Not I, till Mutius' bones be buried.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">MARCUS and the Sons of TITUS kneel</para>
+<stagedir remap="STAGEDIR">MARCUS and the Sons of TITUS kneel</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCUS ANDRONICUS</speaker>
@@ -839,7 +839,7 @@ CHIRON and AARON go out and re-enter, above</para>
 <line remap="LINE">Well, bury him, and bury me the next.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">MUTIUS is put into the tomb</para>
+<stagedir remap="STAGEDIR">MUTIUS is put into the tomb</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIUS</speaker>
@@ -849,7 +849,7 @@ CHIRON and AARON go out and re-enter, above</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">All</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Kneeling</phrase>  No man shed tears for noble Mutius;</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Kneeling</inlinestagedir>  No man shed tears for noble Mutius;</line>
 <line remap="LINE">He lives in fame that died in virtue's cause.</line>
 </linegroup></dialogue>
 
@@ -869,9 +869,9 @@ CHIRON and AARON go out and re-enter, above</para>
 <line remap="LINE">Yes, and will nobly him remunerate.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish. Re-enter, from one side, SATURNINUS
+<stagedir remap="STAGEDIR">Flourish. Re-enter, from one side, SATURNINUS
 attended, TAMORA, DEMETRIUS, CHIRON and AARON; from
-the other, BASSIANUS, LAVINIA, and others</para>
+the other, BASSIANUS, LAVINIA, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SATURNINUS</speaker>
@@ -954,7 +954,7 @@ the other, BASSIANUS, LAVINIA, and others</para>
 <line remap="LINE">Then, at my suit, look graciously on him;</line>
 <line remap="LINE">Lose not so noble a friend on vain suppose,</line>
 <line remap="LINE">Nor with sour looks afflict his gentle heart.</line>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to SATURNINUS</phrase>  My lord, be ruled by me,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to SATURNINUS</inlinestagedir>  My lord, be ruled by me,</line>
 <line remap="LINE">be won at last;</line>
 <line remap="LINE">Dissemble all your griefs and discontents:</line>
 <line remap="LINE">You are but newly planted in your throne;</line>
@@ -969,7 +969,7 @@ the other, BASSIANUS, LAVINIA, and others</para>
 <line remap="LINE">To whom I sued for my dear son's life,</line>
 <line remap="LINE">And make them know what 'tis to let a queen</line>
 <line remap="LINE">Kneel in the streets and beg for grace in vain.</line>
-<para remap="STAGEDIR">Aloud</para>
+<stagedir remap="STAGEDIR">Aloud</stagedir>
 <line remap="LINE">Come, come, sweet emperor; come, Andronicus;</line>
 <line remap="LINE">Take up this good old man, and cheer the heart</line>
 <line remap="LINE">That dies in tempest of thy angry frown.</line>
@@ -1051,7 +1051,7 @@ the other, BASSIANUS, LAVINIA, and others</para>
 <line remap="LINE">Be it so, Titus, and gramercy too.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish. Exeunt</para>
+<stagedir remap="STAGEDIR">Flourish. Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -1059,7 +1059,7 @@ the other, BASSIANUS, LAVINIA, and others</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Rome. Before the Palace.</title>
-<para remap="STAGEDIR">Enter AARON</para>
+<stagedir remap="STAGEDIR">Enter AARON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AARON</speaker>
@@ -1090,7 +1090,7 @@ the other, BASSIANUS, LAVINIA, and others</para>
 <line remap="LINE">Holloa! what storm is this?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DEMETRIUS and CHIRON, braving</para>
+<stagedir remap="STAGEDIR">Enter DEMETRIUS and CHIRON, braving</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DEMETRIUS</speaker>
@@ -1113,7 +1113,7 @@ the other, BASSIANUS, LAVINIA, and others</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AARON</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Clubs, clubs! these lovers will not keep</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Clubs, clubs! these lovers will not keep</line>
 <line remap="LINE">the peace.</line>
 </linegroup></dialogue>
 
@@ -1137,11 +1137,11 @@ the other, BASSIANUS, LAVINIA, and others</para>
 <line remap="LINE">Ay, boy, grow ye so brave?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They draw</para>
+<stagedir remap="STAGEDIR">They draw</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AARON</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Coming forward</phrase>  Why, how now, lords!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Coming forward</inlinestagedir>  Why, how now, lords!</line>
 <line remap="LINE">So near the emperor's palace dare you draw,</line>
 <line remap="LINE">And maintain such a quarrel openly?</line>
 <line remap="LINE">Full well I wot the ground of all this grudge:</line>
@@ -1229,7 +1229,7 @@ the other, BASSIANUS, LAVINIA, and others</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AARON</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Ay, and as good as Saturninus may.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Ay, and as good as Saturninus may.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1321,12 +1321,12 @@ the other, BASSIANUS, LAVINIA, and others</para>
 <line remap="LINE">Per Styga, per manes vehor.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A forest near Rome. Horns and cry of hounds heard.</title>
-<para remap="STAGEDIR">Enter TITUS ANDRONICUS, with Hunters, &amp;c., MARCUS,
-LUCIUS, QUINTUS, and MARTIUS</para>
+<stagedir remap="STAGEDIR">Enter TITUS ANDRONICUS, with Hunters, &amp;c., MARCUS,
+LUCIUS, QUINTUS, and MARTIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
@@ -1340,9 +1340,9 @@ LUCIUS, QUINTUS, and MARTIUS</para>
 <line remap="LINE">To attend the emperor's person carefully:</line>
 <line remap="LINE">I have been troubled in my sleep this night,</line>
 <line remap="LINE">But dawning day new comfort hath inspired.</line>
-<para remap="STAGEDIR">A cry of hounds and horns, winded in a peal. Enter
+<stagedir remap="STAGEDIR">A cry of hounds and horns, winded in a peal. Enter
 SATURNINUS, TAMORA, BASSIANUS, LAVINIA, DEMETRIUS,
-CHIRON, and Attendants</para>
+CHIRON, and Attendants</stagedir>
 <line remap="LINE">Many good morrows to your majesty;</line>
 <line remap="LINE">Madam, to you as many and as good:</line>
 <line remap="LINE">I promised your grace a hunter's peal.</line>
@@ -1369,7 +1369,7 @@ CHIRON, and Attendants</para>
 <speaker remap="SPEAKER">SATURNINUS</speaker>
 <line remap="LINE">Come on, then; horse and chariots let us have,</line>
 <line remap="LINE">And to our sport.</line>
-<para remap="STAGEDIR">To TAMORA</para>
+<stagedir remap="STAGEDIR">To TAMORA</stagedir>
 <line remap="LINE">Madam, now shall ye see</line>
 <line remap="LINE">Our Roman hunting.</line>
 </linegroup></dialogue>
@@ -1393,11 +1393,11 @@ CHIRON, and Attendants</para>
 <line remap="LINE">But hope to pluck a dainty doe to ground.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A lonely part of the forest.</title>
-<para remap="STAGEDIR">Enter AARON, with a bag of gold</para>
+<stagedir remap="STAGEDIR">Enter AARON, with a bag of gold</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AARON</speaker>
@@ -1409,11 +1409,11 @@ CHIRON, and Attendants</para>
 <line remap="LINE">Which, cunningly effected, will beget</line>
 <line remap="LINE">A very excellent piece of villany:</line>
 <line remap="LINE">And so repose, sweet gold, for their unrest</line>
-<para remap="STAGEDIR">Hides the gold</para>
+<stagedir remap="STAGEDIR">Hides the gold</stagedir>
 <line remap="LINE">That have their alms out of the empress' chest.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter TAMORA</para>
+<stagedir remap="STAGEDIR">Enter TAMORA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TAMORA</speaker>
@@ -1476,8 +1476,8 @@ CHIRON, and Attendants</para>
 <line remap="LINE">To back thy quarrels, whatsoe'er they be.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter BASSIANUS and LAVINIA</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter BASSIANUS and LAVINIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BASSIANUS</speaker>
@@ -1545,7 +1545,7 @@ CHIRON, and Attendants</para>
 <line remap="LINE">Why have I patience to endure all this?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DEMETRIUS and CHIRON</para>
+<stagedir remap="STAGEDIR">Enter DEMETRIUS and CHIRON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DEMETRIUS</speaker>
@@ -1587,14 +1587,14 @@ CHIRON, and Attendants</para>
 <line remap="LINE">This is a witness that I am thy son.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Stabs BASSIANUS</para>
+<stagedir remap="STAGEDIR">Stabs BASSIANUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CHIRON</speaker>
 <line remap="LINE">And this for me, struck home to show my strength.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Also stabs BASSIANUS, who dies</para>
+<stagedir remap="STAGEDIR">Also stabs BASSIANUS, who dies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAVINIA</speaker>
@@ -1667,7 +1667,7 @@ CHIRON, and Attendants</para>
 <line remap="LINE">The milk thou suck'dst from her did turn to marble;</line>
 <line remap="LINE">Even at thy teat thou hadst thy tyranny.</line>
 <line remap="LINE">Yet every mother breeds not sons alike:</line>
-<para remap="STAGEDIR">To CHIRON</para>
+<stagedir remap="STAGEDIR">To CHIRON</stagedir>
 <line remap="LINE">Do thou entreat her show a woman pity.</line>
 </linegroup></dialogue>
 
@@ -1759,9 +1759,9 @@ CHIRON, and Attendants</para>
 <line remap="LINE">This is the hole where Aaron bid us hide him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">DEMETRIUS throws the body of BASSIANUS into the
+<stagedir remap="STAGEDIR">DEMETRIUS throws the body of BASSIANUS into the
 pit; then exeunt DEMETRIUS and CHIRON, dragging
-off LAVINIA</para>
+off LAVINIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TAMORA</speaker>
@@ -1772,8 +1772,8 @@ off LAVINIA</para>
 <line remap="LINE">And let my spleenful sons this trull deflow'r.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Re-enter AARON, with QUINTUS and MARTIUS</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Re-enter AARON, with QUINTUS and MARTIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AARON</speaker>
@@ -1793,7 +1793,7 @@ off LAVINIA</para>
 <line remap="LINE">Well could I leave our sport to sleep awhile.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Falls into the pit</para>
+<stagedir remap="STAGEDIR">Falls into the pit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUINTUS</speaker>
@@ -1813,12 +1813,12 @@ off LAVINIA</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AARON</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Now will I fetch the king to find them here,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Now will I fetch the king to find them here,</line>
 <line remap="LINE">That he thereby may give a likely guess</line>
 <line remap="LINE">How these were they that made away his brother.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARTIUS</speaker>
@@ -1897,8 +1897,8 @@ off LAVINIA</para>
 <line remap="LINE">Thou canst not come to me: I come to thee.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Falls in</para>
-<para remap="STAGEDIR">Enter SATURNINUS with AARON</para>
+<stagedir remap="STAGEDIR">Falls in</stagedir>
+<stagedir remap="STAGEDIR">Enter SATURNINUS with AARON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SATURNINUS</speaker>
@@ -1929,8 +1929,8 @@ off LAVINIA</para>
 <line remap="LINE">But, out, alas! here have we found him dead.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter TAMORA, with Attendants; TITUS
-ANDRONICUS, and Lucius</para>
+<stagedir remap="STAGEDIR">Re-enter TAMORA, with Attendants; TITUS
+ANDRONICUS, and Lucius</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TAMORA</speaker>
@@ -1961,11 +1961,11 @@ ANDRONICUS, and Lucius</para>
 <line remap="LINE">In pleasing smiles such murderous tyranny.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">She giveth SATURNINUS a letter</para>
+<stagedir remap="STAGEDIR">She giveth SATURNINUS a letter</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SATURNINUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'An if we miss to meet him handsomely--</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'An if we miss to meet him handsomely--</line>
 <line remap="LINE">Sweet huntsman, Bassianus 'tis we mean--</line>
 <line remap="LINE">Do thou so much as dig the grave for him:</line>
 <line remap="LINE">Thou know'st our meaning. Look for thy reward</line>
@@ -1986,7 +1986,7 @@ ANDRONICUS, and Lucius</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SATURNINUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To TITUS</phrase>  Two of thy whelps, fell curs of</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To TITUS</inlinestagedir>  Two of thy whelps, fell curs of</line>
 <line remap="LINE">bloody kind,</line>
 <line remap="LINE">Have here bereft my brother of his life.</line>
 <line remap="LINE">Sirs, drag them from the pit unto the prison:</line>
@@ -2047,12 +2047,12 @@ ANDRONICUS, and Lucius</para>
 <line remap="LINE">Come, Lucius, come; stay not to talk with them.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Another part of the forest.</title>
-<para remap="STAGEDIR">Enter DEMETRIUS and CHIRON with LAVINIA, ravished;
-her hands cut off, and her tongue cut out</para>
+<stagedir remap="STAGEDIR">Enter DEMETRIUS and CHIRON with LAVINIA, ravished;
+her hands cut off, and her tongue cut out</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DEMETRIUS</speaker>
@@ -2092,8 +2092,8 @@ her hands cut off, and her tongue cut out</para>
 <line remap="LINE">If thou hadst hands to help thee knit the cord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt DEMETRIUS and CHIRON</para>
-<para remap="STAGEDIR">Enter MARCUS</para>
+<stagedir remap="STAGEDIR">Exeunt DEMETRIUS and CHIRON</stagedir>
+<stagedir remap="STAGEDIR">Enter MARCUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCUS</speaker>
@@ -2146,7 +2146,7 @@ her hands cut off, and her tongue cut out</para>
 <line remap="LINE">O, could our mourning ease thy misery!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -2154,9 +2154,9 @@ her hands cut off, and her tongue cut out</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Rome. A street.</title>
-<para remap="STAGEDIR">Enter Judges, Senators and Tribunes, with MARTIUS
+<stagedir remap="STAGEDIR">Enter Judges, Senators and Tribunes, with MARTIUS
 and QUINTUS, bound, passing on to the place of
-execution; TITUS going before, pleading</para>
+execution; TITUS going before, pleading</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
@@ -2171,7 +2171,7 @@ execution; TITUS going before, pleading</para>
 <line remap="LINE">Whose souls are not corrupted as 'tis thought.</line>
 <line remap="LINE">For two and twenty sons I never wept,</line>
 <line remap="LINE">Because they died in honour's lofty bed.</line>
-<para remap="STAGEDIR">Lieth down; the Judges, &amp;c., pass by him, and Exeunt</para>
+<stagedir remap="STAGEDIR">Lieth down; the Judges, &amp;c., pass by him, and Exeunt</stagedir>
 <line remap="LINE">For these, these, tribunes, in the dust I write</line>
 <line remap="LINE">My heart's deep languor and my soul's sad tears:</line>
 <line remap="LINE">Let my tears stanch the earth's dry appetite;</line>
@@ -2183,7 +2183,7 @@ execution; TITUS going before, pleading</para>
 <line remap="LINE">In winter with warm tears I'll melt the snow</line>
 <line remap="LINE">And keep eternal spring-time on thy face,</line>
 <line remap="LINE">So thou refuse to drink my dear sons' blood.</line>
-<para remap="STAGEDIR">Enter LUCIUS, with his sword drawn</para>
+<stagedir remap="STAGEDIR">Enter LUCIUS, with his sword drawn</stagedir>
 <line remap="LINE">O reverend tribunes! O gentle, aged men!</line>
 <line remap="LINE">Unbind my sons, reverse the doom of death;</line>
 <line remap="LINE">And let me say, that never wept before,</line>
@@ -2225,7 +2225,7 @@ execution; TITUS going before, pleading</para>
 <line remap="LINE">A stone is soft as wax,--tribunes more hard than stones;</line>
 <line remap="LINE">A stone is silent, and offendeth not,</line>
 <line remap="LINE">And tribunes with their tongues doom men to death.</line>
-<para remap="STAGEDIR">Rises</para>
+<stagedir remap="STAGEDIR">Rises</stagedir>
 <line remap="LINE">But wherefore stand'st thou with thy weapon drawn?</line>
 </linegroup></dialogue>
 
@@ -2247,7 +2247,7 @@ execution; TITUS going before, pleading</para>
 <line remap="LINE">But who comes with our brother Marcus here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MARCUS and LAVINIA</para>
+<stagedir remap="STAGEDIR">Enter MARCUS and LAVINIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCUS ANDRONICUS</speaker>
@@ -2413,7 +2413,7 @@ execution; TITUS going before, pleading</para>
 <line remap="LINE">As far from help as Limbo is from bliss!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter AARON</para>
+<stagedir remap="STAGEDIR">Enter AARON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AARON</speaker>
@@ -2504,7 +2504,7 @@ execution; TITUS going before, pleading</para>
 <line remap="LINE">But I will use the axe.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt LUCIUS and MARCUS</para>
+<stagedir remap="STAGEDIR">Exeunt LUCIUS and MARCUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
@@ -2514,14 +2514,14 @@ execution; TITUS going before, pleading</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AARON</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  If that be call'd deceit, I will be honest,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  If that be call'd deceit, I will be honest,</line>
 <line remap="LINE">And never, whilst I live, deceive men so:</line>
 <line remap="LINE">But I'll deceive you in another sort,</line>
 <line remap="LINE">And that you'll say, ere half an hour pass.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Cuts off TITUS's hand</para>
-<para remap="STAGEDIR">Re-enter LUCIUS and MARCUS</para>
+<stagedir remap="STAGEDIR">Cuts off TITUS's hand</stagedir>
+<stagedir remap="STAGEDIR">Re-enter LUCIUS and MARCUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
@@ -2539,14 +2539,14 @@ execution; TITUS going before, pleading</para>
 <speaker remap="SPEAKER">AARON</speaker>
 <line remap="LINE">I go, Andronicus: and for thy hand</line>
 <line remap="LINE">Look by and by to have thy sons with thee.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">Their heads, I mean. O, how this villany</line>
 <line remap="LINE">Doth fat me with the very thoughts of it!</line>
 <line remap="LINE">Let fools do good, and fair men call for grace.</line>
 <line remap="LINE">Aaron will have his soul black like his face.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
@@ -2554,7 +2554,7 @@ execution; TITUS going before, pleading</para>
 <line remap="LINE">And bow this feeble ruin to the earth:</line>
 <line remap="LINE">If any power pities wretched tears,</line>
 <line remap="LINE">To that I call!</line>
-<para remap="STAGEDIR">To LAVINIA</para>
+<stagedir remap="STAGEDIR">To LAVINIA</stagedir>
 <line remap="LINE">What, wilt thou kneel with me?</line>
 <line remap="LINE">Do, then, dear heart; for heaven shall hear our prayers;</line>
 <line remap="LINE">Or with our sighs we'll breathe the welkin dim,</line>
@@ -2598,7 +2598,7 @@ execution; TITUS going before, pleading</para>
 <line remap="LINE">To ease their stomachs with their bitter tongues.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Messenger, with two heads and a hand</para>
+<stagedir remap="STAGEDIR">Enter a Messenger, with two heads and a hand</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
@@ -2611,7 +2611,7 @@ execution; TITUS going before, pleading</para>
 <line remap="LINE">More than remembrance of my father's death.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCUS ANDRONICUS</speaker>
@@ -2630,7 +2630,7 @@ execution; TITUS going before, pleading</para>
 <line remap="LINE">Where life hath no more interest but to breathe!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">LAVINIA kisses TITUS</para>
+<stagedir remap="STAGEDIR">LAVINIA kisses TITUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCUS ANDRONICUS</speaker>
@@ -2694,7 +2694,7 @@ execution; TITUS going before, pleading</para>
 <line remap="LINE">Let's kiss and part, for we have much to do.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt TITUS, MARCUS, and LAVINIA</para>
+<stagedir remap="STAGEDIR">Exeunt TITUS, MARCUS, and LAVINIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIUS</speaker>
@@ -2713,11 +2713,11 @@ execution; TITUS going before, pleading</para>
 <line remap="LINE">To be revenged on Rome and Saturnine.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A room in Titus's house. A banquet set out.</title>
-<para remap="STAGEDIR">Enter TITUS, MARCUS, LAVINIA and Young LUCIUS, a boy</para>
+<stagedir remap="STAGEDIR">Enter TITUS, MARCUS, LAVINIA and Young LUCIUS, a boy</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
@@ -2732,7 +2732,7 @@ execution; TITUS going before, pleading</para>
 <line remap="LINE">Who, when my heart, all mad with misery,</line>
 <line remap="LINE">Beats in this hollow prison of my flesh,</line>
 <line remap="LINE">Then thus I thump it down.</line>
-<para remap="STAGEDIR">To LAVINIA</para>
+<stagedir remap="STAGEDIR">To LAVINIA</stagedir>
 <line remap="LINE">Thou map of woe, that thus dost talk in signs!</line>
 <line remap="LINE">When thy poor heart beats with outrageous beating,</line>
 <line remap="LINE">Thou canst not strike it thus to make it still.</line>
@@ -2793,7 +2793,7 @@ execution; TITUS going before, pleading</para>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
 <line remap="LINE">Peace, tender sapling; thou art made of tears,</line>
 <line remap="LINE">And tears will quickly melt thy life away.</line>
-<para remap="STAGEDIR">MARCUS strikes the dish with a knife</para>
+<stagedir remap="STAGEDIR">MARCUS strikes the dish with a knife</stagedir>
 <line remap="LINE">What dost thou strike at, Marcus, with thy knife?</line>
 </linegroup></dialogue>
 
@@ -2863,7 +2863,7 @@ execution; TITUS going before, pleading</para>
 <line remap="LINE">And thou shalt read when mine begin to dazzle.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -2871,9 +2871,9 @@ execution; TITUS going before, pleading</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Rome. Titus's garden.</title>
-<para remap="STAGEDIR">Enter young LUCIUS, and LAVINIA running after him,
+<stagedir remap="STAGEDIR">Enter young LUCIUS, and LAVINIA running after him,
 and the boy flies from her, with books under his
-arm. Then enter TITUS and MARCUS</para>
+arm. Then enter TITUS and MARCUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Young LUCIUS</speaker>
@@ -2940,8 +2940,8 @@ arm. Then enter TITUS and MARCUS</para>
 <line remap="LINE">Lucius, I will.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">LAVINIA turns over with her stumps the books which
-LUCIUS has let fall</para>
+<stagedir remap="STAGEDIR">LAVINIA turns over with her stumps the books which
+LUCIUS has let fall</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
@@ -2982,7 +2982,7 @@ LUCIUS has let fall</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
 <line remap="LINE">Soft! see how busily she turns the leaves!</line>
-<para remap="STAGEDIR">Helping her</para>
+<stagedir remap="STAGEDIR">Helping her</stagedir>
 <line remap="LINE">What would she find? Lavinia, shall I read?</line>
 <line remap="LINE">This is the tragic tale of Philomel,</line>
 <line remap="LINE">And treats of Tereus' treason and his rape:</line>
@@ -3029,8 +3029,8 @@ LUCIUS has let fall</para>
 <line remap="LINE">This sandy plot is plain; guide, if thou canst</line>
 <line remap="LINE">This after me, when I have writ my name</line>
 <line remap="LINE">Without the help of any hand at all.</line>
-<para remap="STAGEDIR">He writes his name with his staff, and guides it
-with feet and mouth</para>
+<stagedir remap="STAGEDIR">He writes his name with his staff, and guides it
+with feet and mouth</stagedir>
 <line remap="LINE">Cursed be that heart that forced us to this shift!</line>
 <line remap="LINE">Write thou good niece; and here display, at last,</line>
 <line remap="LINE">What God will have discover'd for revenge;</line>
@@ -3038,8 +3038,8 @@ with feet and mouth</para>
 <line remap="LINE">That we may know the traitors and the truth!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">She takes the staff in her mouth, and guides it
-with her stumps, and writes</para>
+<stagedir remap="STAGEDIR">She takes the staff in her mouth, and guides it
+with her stumps, and writes</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
@@ -3131,7 +3131,7 @@ with her stumps, and writes</para>
 <line remap="LINE">Ay, marry, will we, sir; and we'll be waited on.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt TITUS, LAVINIA, and Young LUCIUS</para>
+<stagedir remap="STAGEDIR">Exeunt TITUS, LAVINIA, and Young LUCIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCUS ANDRONICUS</speaker>
@@ -3144,14 +3144,14 @@ with her stumps, and writes</para>
 <line remap="LINE">Revenge, ye heavens, for old Andronicus!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same. A room in the palace.</title>
-<para remap="STAGEDIR">Enter, from one side, AARON, DEMETRIUS, and
+<stagedir remap="STAGEDIR">Enter, from one side, AARON, DEMETRIUS, and
 CHIRON; from the other side, Young LUCIUS, and an
 Attendant, with a bundle of weapons, and verses
-writ upon them</para>
+writ upon them</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CHIRON</speaker>
@@ -3168,7 +3168,7 @@ writ upon them</para>
 <speaker remap="SPEAKER">Young LUCIUS</speaker>
 <line remap="LINE">My lords, with all the humbleness I may,</line>
 <line remap="LINE">I greet your honours from Andronicus.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">And pray the Roman gods confound you both!</line>
 </linegroup></dialogue>
 
@@ -3179,7 +3179,7 @@ writ upon them</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Young LUCIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  That you are both decipher'd, that's the news,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  That you are both decipher'd, that's the news,</line>
 <line remap="LINE">For villains mark'd with rape.--May it please you,</line>
 <line remap="LINE">My grandsire, well advised, hath sent by me</line>
 <line remap="LINE">The goodliest weapons of his armoury</line>
@@ -3189,17 +3189,17 @@ writ upon them</para>
 <line remap="LINE">Your lordships, that, whenever you have need,</line>
 <line remap="LINE">You may be armed and appointed well:</line>
 <line remap="LINE">And so I leave you both:</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">like bloody villains.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Young LUCIUS, and Attendant</para>
+<stagedir remap="STAGEDIR">Exeunt Young LUCIUS, and Attendant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DEMETRIUS</speaker>
 <line remap="LINE">What's here? A scroll; and written round about?</line>
 <line remap="LINE">Let's see;</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">'Integer vitae, scelerisque purus,</line>
 <line remap="LINE">Non eget Mauri jaculis, nec arcu.'</line>
 </linegroup></dialogue>
@@ -3213,7 +3213,7 @@ writ upon them</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AARON</speaker>
 <line remap="LINE">Ay, just; a verse in Horace; right, you have it.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">Now, what a thing it is to be an ass!</line>
 <line remap="LINE">Here's no sound jest! the old man hath found their guilt;</line>
 <line remap="LINE">And sends them weapons wrapped about with lines,</line>
@@ -3269,10 +3269,10 @@ writ upon them</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AARON</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Pray to the devils; the gods have given us over.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Pray to the devils; the gods have given us over.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Trumpets sound within</para>
+<stagedir remap="STAGEDIR">Trumpets sound within</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DEMETRIUS</speaker>
@@ -3289,7 +3289,7 @@ writ upon them</para>
 <line remap="LINE">Soft! who comes here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Nurse, with a blackamoor Child in her arms</para>
+<stagedir remap="STAGEDIR">Enter a Nurse, with a blackamoor Child in her arms</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Nurse</speaker>
@@ -3419,7 +3419,7 @@ writ upon them</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AARON</speaker>
 <line remap="LINE">Sooner this sword shall plough thy bowels up.</line>
-<para remap="STAGEDIR">Takes the Child from the Nurse, and draws</para>
+<stagedir remap="STAGEDIR">Takes the Child from the Nurse, and draws</stagedir>
 <line remap="LINE">Stay, murderous villains! will you kill your brother?</line>
 <line remap="LINE">Now, by the burning tapers of the sky,</line>
 <line remap="LINE">That shone so brightly when this boy was got,</line>
@@ -3509,7 +3509,7 @@ writ upon them</para>
 <line remap="LINE">Keep there: now talk at pleasure of your safety.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They sit</para>
+<stagedir remap="STAGEDIR">They sit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DEMETRIUS</speaker>
@@ -3536,7 +3536,7 @@ writ upon them</para>
 <line remap="LINE">The empress, the midwife, and yourself:</line>
 <line remap="LINE">Two may keep counsel when the third's away:</line>
 <line remap="LINE">Go to the empress, tell her this I said.</line>
-<para remap="STAGEDIR">He kills the nurse</para>
+<stagedir remap="STAGEDIR">He kills the nurse</stagedir>
 <line remap="LINE">Weke, weke! so cries a pig prepared to the spit.</line>
 </linegroup></dialogue>
 
@@ -3562,7 +3562,7 @@ writ upon them</para>
 <line remap="LINE">To calm this tempest whirling in the court;</line>
 <line remap="LINE">And let the emperor dandle him for his own.</line>
 <line remap="LINE">Hark ye, lords; ye see I have given her physic,</line>
-<para remap="STAGEDIR">Pointing to the nurse</para>
+<stagedir remap="STAGEDIR">Pointing to the nurse</stagedir>
 <line remap="LINE">And you must needs bestow her funeral;</line>
 <line remap="LINE">The fields are near, and you are gallant grooms:</line>
 <line remap="LINE">This done, see that you take no longer days,</line>
@@ -3583,8 +3583,8 @@ writ upon them</para>
 <line remap="LINE">Herself and hers are highly bound to thee.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt DEMETRIUS and CHIRON bearing off the
-Nurse's body</para>
+<stagedir remap="STAGEDIR">Exeunt DEMETRIUS and CHIRON bearing off the
+Nurse's body</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AARON</speaker>
@@ -3599,14 +3599,14 @@ Nurse's body</para>
 <line remap="LINE">To be a warrior, and command a camp.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The same. A public place.</title>
-<para remap="STAGEDIR">Enter TITUS, bearing arrows with letters at the
+<stagedir remap="STAGEDIR">Enter TITUS, bearing arrows with letters at the
 ends of them; with him, MARCUS, Young LUCIUS,
 PUBLIUS, SEMPRONIUS, CAIUS, and other Gentlemen,
-with bows</para>
+with bows</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
@@ -3686,7 +3686,7 @@ with bows</para>
 <line remap="LINE">We will solicit heaven and move the gods</line>
 <line remap="LINE">To send down Justice for to wreak our wrongs.</line>
 <line remap="LINE">Come, to this gear. You are a good archer, Marcus;</line>
-<para remap="STAGEDIR">He gives them the arrows</para>
+<stagedir remap="STAGEDIR">He gives them the arrows</stagedir>
 <line remap="LINE">'Ad Jovem,' that's for you: here, 'Ad Apollinem:'</line>
 <line remap="LINE">'Ad Martem,' that's for myself:</line>
 <line remap="LINE">Here, boy, to Pallas: here, to Mercury:</line>
@@ -3706,7 +3706,7 @@ with bows</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
 <line remap="LINE">Now, masters, draw.</line>
-<para remap="STAGEDIR">They shoot</para>
+<stagedir remap="STAGEDIR">They shoot</stagedir>
 <line remap="LINE">O, well said, Lucius!</line>
 <line remap="LINE">Good boy, in Virgo's lap; give it Pallas.</line>
 </linegroup></dialogue>
@@ -3737,8 +3737,8 @@ with bows</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
 <line remap="LINE">Why, there it goes: God give his lordship joy!</line>
-<para remap="STAGEDIR">Enter a Clown, with a basket, and two pigeons in
-it</para>
+<stagedir remap="STAGEDIR">Enter a Clown, with a basket, and two pigeons in
+it</stagedir>
 <line remap="LINE">News, news from heaven! Marcus, the post is come.</line>
 <line remap="LINE">Sirrah, what tidings? have you any letters?</line>
 <line remap="LINE">Shall I have justice? what says Jupiter?</line>
@@ -3852,13 +3852,13 @@ it</para>
 <line remap="LINE">Come, Marcus, let us go. Publius, follow me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  The same. Before the palace.</title>
-<para remap="STAGEDIR">Enter SATURNINUS, TAMORA, DEMETRIUS, CHIRON,
+<stagedir remap="STAGEDIR">Enter SATURNINUS, TAMORA, DEMETRIUS, CHIRON,
 Lords, and others; SATURNINUS with the arrows in
-his hand that TITUS shot</para>
+his hand that TITUS shot</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SATURNINUS</speaker>
@@ -3900,13 +3900,13 @@ his hand that TITUS shot</para>
 <line remap="LINE">And rather comfort his distressed plight</line>
 <line remap="LINE">Than prosecute the meanest or the best</line>
 <line remap="LINE">For these contempts.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">Why, thus it shall become</line>
 <line remap="LINE">High-witted Tamora to gloze with all:</line>
 <line remap="LINE">But, Titus, I have touched thee to the quick,</line>
 <line remap="LINE">Thy life-blood out: if Aaron now be wise,</line>
 <line remap="LINE">Then is all safe, the anchor's in the port.</line>
-<para remap="STAGEDIR">Enter Clown</para>
+<stagedir remap="STAGEDIR">Enter Clown</stagedir>
 <line remap="LINE">How now, good fellow! wouldst thou speak with us?</line>
 </linegroup></dialogue>
 
@@ -3926,7 +3926,7 @@ his hand that TITUS shot</para>
 <line remap="LINE">I have brought you a letter and a couple of pigeons here.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">SATURNINUS reads the letter</para>
+<stagedir remap="STAGEDIR">SATURNINUS reads the letter</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SATURNINUS</speaker>
@@ -3949,7 +3949,7 @@ his hand that TITUS shot</para>
 <line remap="LINE">a fair end.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit, guarded</para>
+<stagedir remap="STAGEDIR">Exit, guarded</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SATURNINUS</speaker>
@@ -3964,7 +3964,7 @@ his hand that TITUS shot</para>
 <line remap="LINE">For this proud mock I'll be thy slaughterman;</line>
 <line remap="LINE">Sly frantic wretch, that holp'st to make me great,</line>
 <line remap="LINE">In hope thyself should govern Rome and me.</line>
-<para remap="STAGEDIR">Enter AEMILIUS</para>
+<stagedir remap="STAGEDIR">Enter AEMILIUS</stagedir>
 <line remap="LINE">What news with thee, AEmilius?</line>
 </linegroup></dialogue>
 
@@ -4032,7 +4032,7 @@ his hand that TITUS shot</para>
 <line remap="LINE">With golden promises; that, were his heart</line>
 <line remap="LINE">Almost impregnable, his old ears deaf,</line>
 <line remap="LINE">Yet should both ear and heart obey my tongue.</line>
-<para remap="STAGEDIR">To AEmilius</para>
+<stagedir remap="STAGEDIR">To AEmilius</stagedir>
 <line remap="LINE">Go thou before, be our ambassador:</line>
 <line remap="LINE">Say that the emperor requests a parley</line>
 <line remap="LINE">Of warlike Lucius, and appoint the meeting</line>
@@ -4051,7 +4051,7 @@ his hand that TITUS shot</para>
 <line remap="LINE">Your bidding shall I do effectually.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TAMORA</speaker>
@@ -4067,7 +4067,7 @@ his hand that TITUS shot</para>
 <line remap="LINE">Then go successantly, and plead to him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -4075,7 +4075,7 @@ his hand that TITUS shot</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Plains near Rome.</title>
-<para remap="STAGEDIR">Enter LUCIUS with an army of Goths, with drum and colours</para>
+<stagedir remap="STAGEDIR">Enter LUCIUS with an army of Goths, with drum and colours</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIUS</speaker>
@@ -4112,7 +4112,7 @@ his hand that TITUS shot</para>
 <line remap="LINE">But who comes here, led by a lusty Goth?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Goth, leading AARON with his Child in his arms</para>
+<stagedir remap="STAGEDIR">Enter a Goth, leading AARON with his Child in his arms</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Goth</speaker>
@@ -4165,7 +4165,7 @@ his hand that TITUS shot</para>
 <line remap="LINE">Get me a ladder.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">A ladder brought, which AARON is made to ascend</para>
+<stagedir remap="STAGEDIR">A ladder brought, which AARON is made to ascend</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AARON</speaker>
@@ -4354,7 +4354,7 @@ his hand that TITUS shot</para>
 <line remap="LINE">Sirs, stop his mouth, and let him speak no more.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Goth</para>
+<stagedir remap="STAGEDIR">Enter a Goth</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Third Goth</speaker>
@@ -4365,7 +4365,7 @@ his hand that TITUS shot</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIUS</speaker>
 <line remap="LINE">Let him come near.</line>
-<para remap="STAGEDIR">Enter AEMILIUS</para>
+<stagedir remap="STAGEDIR">Enter AEMILIUS</stagedir>
 <line remap="LINE">Welcome, AEmilius what's the news from Rome?</line>
 </linegroup></dialogue>
 
@@ -4391,11 +4391,11 @@ his hand that TITUS shot</para>
 <line remap="LINE">And we will come. March away.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Rome. Before TITUS's house.</title>
-<para remap="STAGEDIR">Enter TAMORA, DEMETRIUS, and CHIRON, disguised</para>
+<stagedir remap="STAGEDIR">Enter TAMORA, DEMETRIUS, and CHIRON, disguised</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TAMORA</speaker>
@@ -4409,8 +4409,8 @@ his hand that TITUS shot</para>
 <line remap="LINE">And work confusion on his enemies.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They knock</para>
-<para remap="STAGEDIR">Enter TITUS, above</para>
+<stagedir remap="STAGEDIR">They knock</stagedir>
+<stagedir remap="STAGEDIR">Enter TITUS, above</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
@@ -4525,7 +4525,7 @@ his hand that TITUS shot</para>
 <line remap="LINE">I will embrace thee in it by and by.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit above</para>
+<stagedir remap="STAGEDIR">Exit above</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TAMORA</speaker>
@@ -4542,7 +4542,7 @@ his hand that TITUS shot</para>
 <line remap="LINE">See, here he comes, and I must ply my theme.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter TITUS below</para>
+<stagedir remap="STAGEDIR">Enter TITUS below</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
@@ -4615,7 +4615,7 @@ his hand that TITUS shot</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
 <line remap="LINE">Marcus, my brother! 'tis sad Titus calls.</line>
-<para remap="STAGEDIR">Enter MARCUS</para>
+<stagedir remap="STAGEDIR">Enter MARCUS</stagedir>
 <line remap="LINE">Go, gentle Marcus, to thy nephew Lucius;</line>
 <line remap="LINE">Thou shalt inquire him out among the Goths:</line>
 <line remap="LINE">Bid him repair to me, and bring with him</line>
@@ -4632,7 +4632,7 @@ his hand that TITUS shot</para>
 <line remap="LINE">This will I do, and soon return again.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TAMORA</speaker>
@@ -4649,7 +4649,7 @@ his hand that TITUS shot</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TAMORA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to her sons</phrase>  What say you, boys? will you</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to her sons</inlinestagedir>  What say you, boys? will you</line>
 <line remap="LINE">bide with him,</line>
 <line remap="LINE">Whiles I go tell my lord the emperor</line>
 <line remap="LINE">How I have govern'd our determined jest?</line>
@@ -4659,7 +4659,7 @@ his hand that TITUS shot</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  I know them all, though they suppose me mad,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  I know them all, though they suppose me mad,</line>
 <line remap="LINE">And will o'erreach them in their own devices:</line>
 <line remap="LINE">A pair of cursed hell-hounds and their dam!</line>
 </linegroup></dialogue>
@@ -4680,7 +4680,7 @@ his hand that TITUS shot</para>
 <line remap="LINE">I know thou dost; and, sweet Revenge, farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit TAMORA</para>
+<stagedir remap="STAGEDIR">Exit TAMORA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CHIRON</speaker>
@@ -4693,7 +4693,7 @@ his hand that TITUS shot</para>
 <line remap="LINE">Publius, come hither, Caius, and Valentine!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PUBLIUS and others</para>
+<stagedir remap="STAGEDIR">Enter PUBLIUS and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PUBLIUS</speaker>
@@ -4721,8 +4721,8 @@ his hand that TITUS shot</para>
 <line remap="LINE">And stop their mouths, if they begin to cry.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">PUBLIUS, &amp;c. lay hold on CHIRON and DEMETRIUS</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">PUBLIUS, &amp;c. lay hold on CHIRON and DEMETRIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CHIRON</speaker>
@@ -4736,8 +4736,8 @@ his hand that TITUS shot</para>
 <line remap="LINE">Is he sure bound? look that you bind them fast.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter TITUS, with LAVINIA; he bearing a knife,
-and she a basin</para>
+<stagedir remap="STAGEDIR">Re-enter TITUS, with LAVINIA; he bearing a knife,
+and she a basin</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
@@ -4772,7 +4772,7 @@ and she a basin</para>
 <line remap="LINE">For worse than Philomel you used my daughter,</line>
 <line remap="LINE">And worse than Progne I will be revenged:</line>
 <line remap="LINE">And now prepare your throats. Lavinia, come,</line>
-<para remap="STAGEDIR">He cuts their throats</para>
+<stagedir remap="STAGEDIR">He cuts their throats</stagedir>
 <line remap="LINE">Receive the blood: and when that they are dead,</line>
 <line remap="LINE">Let me go grind their bones to powder small</line>
 <line remap="LINE">And with this hateful liquor temper it;</line>
@@ -4784,11 +4784,11 @@ and she a basin</para>
 <line remap="LINE">And see them ready 'gainst their mother comes.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt, bearing the dead bodies</para>
+<stagedir remap="STAGEDIR">Exeunt, bearing the dead bodies</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Court of TITUS's house. A banquet set out.</title>
-<para remap="STAGEDIR">Enter LUCIUS, MARCUS, and Goths, with AARON prisoner</para>
+<stagedir remap="STAGEDIR">Enter LUCIUS, MARCUS, and Goths, with AARON prisoner</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIUS</speaker>
@@ -4823,12 +4823,12 @@ and she a basin</para>
 <speaker remap="SPEAKER">LUCIUS</speaker>
 <line remap="LINE">Away, inhuman dog! unhallow'd slave!</line>
 <line remap="LINE">Sirs, help our uncle to convey him in.</line>
-<para remap="STAGEDIR">Exeunt Goths, with AARON. Flourish within</para>
+<stagedir remap="STAGEDIR">Exeunt Goths, with AARON. Flourish within</stagedir>
 <line remap="LINE">The trumpets show the emperor is at hand.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SATURNINUS and TAMORA, with AEMILIUS,
-Tribunes, Senators, and others</para>
+<stagedir remap="STAGEDIR">Enter SATURNINUS and TAMORA, with AEMILIUS,
+Tribunes, Senators, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SATURNINUS</speaker>
@@ -4855,10 +4855,10 @@ Tribunes, Senators, and others</para>
 <line remap="LINE">Marcus, we will.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Hautboys sound. The Company sit down at table</para>
-<para remap="STAGEDIR">Enter TITUS dressed like a Cook, LAVINIA veiled,
+<stagedir remap="STAGEDIR">Hautboys sound. The Company sit down at table</stagedir>
+<stagedir remap="STAGEDIR">Enter TITUS dressed like a Cook, LAVINIA veiled,
 Young LUCIUS, and others. TITUS places the dishes
-on the table</para>
+on the table</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS ANDRONICUS</speaker>
@@ -4915,7 +4915,7 @@ on the table</para>
 <line remap="LINE">A pattern, precedent, and lively warrant,</line>
 <line remap="LINE">For me, most wretched, to perform the like.</line>
 <line remap="LINE">Die, die, Lavinia, and thy shame with thee;</line>
-<para remap="STAGEDIR">Kills LAVINIA</para>
+<stagedir remap="STAGEDIR">Kills LAVINIA</stagedir>
 <line remap="LINE">And, with thy shame, thy father's sorrow die!</line>
 </linegroup></dialogue>
 
@@ -4968,14 +4968,14 @@ on the table</para>
 <line remap="LINE">'Tis true, 'tis true; witness my knife's sharp point.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Kills TAMORA</para>
+<stagedir remap="STAGEDIR">Kills TAMORA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SATURNINUS</speaker>
 <line remap="LINE">Die, frantic wretch, for this accursed deed!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Kills TITUS</para>
+<stagedir remap="STAGEDIR">Kills TITUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIUS</speaker>
@@ -4983,8 +4983,8 @@ on the table</para>
 <line remap="LINE">There's meed for meed, death for a deadly deed!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Kills SATURNINUS. A great tumult. LUCIUS, MARCUS,
-and others go up into the balcony</para>
+<stagedir remap="STAGEDIR">Kills SATURNINUS. A great tumult. LUCIUS, MARCUS,
+and others go up into the balcony</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCUS ANDRONICUS</speaker>
@@ -5001,7 +5001,7 @@ and others go up into the balcony</para>
 <line remap="LINE">But if my frosty signs and chaps of age,</line>
 <line remap="LINE">Grave witnesses of true experience,</line>
 <line remap="LINE">Cannot induce you to attend my words,</line>
-<para remap="STAGEDIR">To LUCIUS</para>
+<stagedir remap="STAGEDIR">To LUCIUS</stagedir>
 <line remap="LINE">Speak, Rome's dear friend, as erst our ancestor,</line>
 <line remap="LINE">When with his solemn tongue he did discourse</line>
 <line remap="LINE">To love-sick Dido's sad attending ear</line>
@@ -5050,7 +5050,7 @@ and others go up into the balcony</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCUS ANDRONICUS</speaker>
 <line remap="LINE">Now is my turn to speak. Behold this child:</line>
-<para remap="STAGEDIR">Pointing to the Child in the arms of an Attendant</para>
+<stagedir remap="STAGEDIR">Pointing to the Child in the arms of an Attendant</stagedir>
 <line remap="LINE">Of this was Tamora delivered;</line>
 <line remap="LINE">The issue of an irreligious Moor,</line>
 <line remap="LINE">Chief architect and plotter of these woes:</line>
@@ -5086,14 +5086,14 @@ and others go up into the balcony</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCUS ANDRONICUS</speaker>
 <line remap="LINE">Go, go into old Titus' sorrowful house,</line>
-<para remap="STAGEDIR">To Attendants</para>
+<stagedir remap="STAGEDIR">To Attendants</stagedir>
 <line remap="LINE">And hither hale that misbelieving Moor,</line>
 <line remap="LINE">To be adjudged some direful slaughtering death,</line>
 <line remap="LINE">As punishment for his most wicked life.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Attendants</para>
-<para remap="STAGEDIR">LUCIUS, MARCUS, and the others descend</para>
+<stagedir remap="STAGEDIR">Exeunt Attendants</stagedir>
+<stagedir remap="STAGEDIR">LUCIUS, MARCUS, and the others descend</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">All</speaker>
@@ -5109,7 +5109,7 @@ and others go up into the balcony</para>
 <line remap="LINE">Stand all aloof: but, uncle, draw you near,</line>
 <line remap="LINE">To shed obsequious tears upon this trunk.</line>
 <line remap="LINE">O, take this warm kiss on thy pale cold lips,</line>
-<para remap="STAGEDIR">Kissing TITUS</para>
+<stagedir remap="STAGEDIR">Kissing TITUS</stagedir>
 <line remap="LINE">These sorrowful drops upon thy blood-stain'd face,</line>
 <line remap="LINE">The last true duties of thy noble son!</line>
 </linegroup></dialogue>
@@ -5146,7 +5146,7 @@ and others go up into the balcony</para>
 <line remap="LINE">My tears will choke me, if I ope my mouth.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter Attendants with AARON</para>
+<stagedir remap="STAGEDIR">Re-enter Attendants with AARON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AEMILIUS</speaker>
@@ -5193,7 +5193,7 @@ and others go up into the balcony</para>
 <line remap="LINE">That like events may ne'er it ruinate.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 </chapter>
 </book>

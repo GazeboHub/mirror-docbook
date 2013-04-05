@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">The Tragedy of Antony and Cleopatra</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">The Tragedy of Antony and Cleopatra</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The Tragedy of Antony and Cleopatra</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -32,16 +32,16 @@
 <simplelist columns="2" remap="PGROUP"><member><personname remap="PERSONA">CHARMIAN</personname><personname remap="PERSONA">IRAS</personname></member><member>attendants on Cleopatra.</member></simplelist>
 
 <para><personname remap="PERSONA">Officers, Soldiers, Messengers, and other Attendants.</personname></para>
-    <para remap="SCNDESCR">SCENE  In several parts of the Roman empire.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  In several parts of the Roman empire.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Alexandria. A room in CLEOPATRA's palace.</title>
-<para remap="STAGEDIR">Enter DEMETRIUS and PHILO</para>
+<stagedir remap="STAGEDIR">Enter DEMETRIUS and PHILO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PHILO</speaker>
@@ -55,8 +55,8 @@
 <line remap="LINE">The buckles on his breast, reneges all temper,</line>
 <line remap="LINE">And is become the bellows and the fan</line>
 <line remap="LINE">To cool a gipsy's lust.</line>
-<para remap="STAGEDIR">Flourish. Enter ANTONY, CLEOPATRA, her Ladies,
-the Train, with Eunuchs fanning her</para>
+<stagedir remap="STAGEDIR">Flourish. Enter ANTONY, CLEOPATRA, her Ladies,
+the Train, with Eunuchs fanning her</stagedir>
 <line remap="LINE">Look, where they come:</line>
 <line remap="LINE">Take but good note, and you shall see in him.</line>
 <line remap="LINE">The triple pillar of the world transform'd</line>
@@ -83,7 +83,7 @@ the Train, with Eunuchs fanning her</para>
 <line remap="LINE">Then must thou needs find out new heaven, new earth.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter an Attendant</para>
+<stagedir remap="STAGEDIR">Enter an Attendant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Attendant</speaker>
@@ -129,7 +129,7 @@ the Train, with Eunuchs fanning her</para>
 <line remap="LINE">Kingdoms are clay: our dungy earth alike</line>
 <line remap="LINE">Feeds beast as man: the nobleness of life</line>
 <line remap="LINE">Is to do thus; when such a mutual pair</line>
-<para remap="STAGEDIR">Embracing</para>
+<stagedir remap="STAGEDIR">Embracing</stagedir>
 <line remap="LINE">And such a twain can do't, in which I bind,</line>
 <line remap="LINE">On pain of punishment, the world to weet</line>
 <line remap="LINE">We stand up peerless.</line>
@@ -169,8 +169,8 @@ the Train, with Eunuchs fanning her</para>
 <line remap="LINE">Last night you did desire it: speak not to us.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt MARK ANTONY and CLEOPATRA with
-their train</para>
+<stagedir remap="STAGEDIR">Exeunt MARK ANTONY and CLEOPATRA with
+their train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DEMETRIUS</speaker>
@@ -192,11 +192,11 @@ their train</para>
 <line remap="LINE">Of better deeds to-morrow. Rest you happy!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same. Another room.</title>
-<para remap="STAGEDIR">Enter CHARMIAN, IRAS, ALEXAS, and a Soothsayer</para>
+<stagedir remap="STAGEDIR">Enter CHARMIAN, IRAS, ALEXAS, and a Soothsayer</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CHARMIAN</speaker>
@@ -233,7 +233,7 @@ their train</para>
 <line remap="LINE">Show him your hand.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DOMITIUS ENOBARBUS</para>
+<stagedir remap="STAGEDIR">Enter DOMITIUS ENOBARBUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
@@ -460,7 +460,7 @@ their train</para>
 <line remap="LINE">Not he; the queen.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CLEOPATRA</para>
+<stagedir remap="STAGEDIR">Enter CLEOPATRA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -509,8 +509,8 @@ their train</para>
 <line remap="LINE">We will not look upon him: go with us.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
-<para remap="STAGEDIR">Enter MARK ANTONY with a Messenger and Attendants</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
+<stagedir remap="STAGEDIR">Enter MARK ANTONY with a Messenger and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
@@ -584,7 +584,7 @@ their train</para>
 <line remap="LINE">At your noble pleasure.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -606,7 +606,7 @@ their train</para>
 <line remap="LINE">Let him appear.</line>
 <line remap="LINE">These strong Egyptian fetters I must break,</line>
 <line remap="LINE">Or lose myself in dotage.</line>
-<para remap="STAGEDIR">Enter another Messenger</para>
+<stagedir remap="STAGEDIR">Enter another Messenger</stagedir>
 <line remap="LINE">What are you?</line>
 </linegroup></dialogue>
 
@@ -627,12 +627,12 @@ their train</para>
 <line remap="LINE">Importeth thee to know, this bears.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Gives a letter</para>
+<stagedir remap="STAGEDIR">Gives a letter</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
 <line remap="LINE">Forbear me.</line>
-<para remap="STAGEDIR">Exit Second Messenger</para>
+<stagedir remap="STAGEDIR">Exit Second Messenger</stagedir>
 <line remap="LINE">There's a great spirit gone! Thus did I desire it:</line>
 <line remap="LINE">What our contempt doth often hurl from us,</line>
 <line remap="LINE">We wish it ours again; the present pleasure,</line>
@@ -644,7 +644,7 @@ their train</para>
 <line remap="LINE">My idleness doth hatch. How now! Enobarbus!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter DOMITIUS ENOBARBUS</para>
+<stagedir remap="STAGEDIR">Re-enter DOMITIUS ENOBARBUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
@@ -685,7 +685,7 @@ their train</para>
 <line remap="LINE">She is cunning past man's thought.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit ALEXAS</para>
+<stagedir remap="STAGEDIR">Exit ALEXAS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
@@ -791,11 +791,11 @@ their train</para>
 <line remap="LINE">I shall do't.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The same. Another room.</title>
-<para remap="STAGEDIR">Enter CLEOPATRA, CHARMIAN, IRAS, and ALEXAS</para>
+<stagedir remap="STAGEDIR">Enter CLEOPATRA, CHARMIAN, IRAS, and ALEXAS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -815,7 +815,7 @@ their train</para>
 <line remap="LINE">That I am sudden sick: quick, and return.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit ALEXAS</para>
+<stagedir remap="STAGEDIR">Exit ALEXAS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CHARMIAN</speaker>
@@ -846,7 +846,7 @@ their train</para>
 <line remap="LINE">But here comes Antony.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MARK ANTONY</para>
+<stagedir remap="STAGEDIR">Enter MARK ANTONY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -1085,12 +1085,12 @@ their train</para>
 <line remap="LINE">And I, hence fleeting, here remain with thee. Away!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Rome. OCTAVIUS CAESAR's house.</title>
-<para remap="STAGEDIR">Enter OCTAVIUS CAESAR, reading a letter, LEPIDUS,
-and their Train</para>
+<stagedir remap="STAGEDIR">Enter OCTAVIUS CAESAR, reading a letter, LEPIDUS,
+and their Train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OCTAVIUS CAESAR</speaker>
@@ -1139,7 +1139,7 @@ and their Train</para>
 <line remap="LINE">And so rebel to judgment.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LEPIDUS</speaker>
@@ -1244,11 +1244,11 @@ and their Train</para>
 <line remap="LINE">I knew it for my bond.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Alexandria. CLEOPATRA's palace.</title>
-<para remap="STAGEDIR">Enter CLEOPATRA, CHARMIAN, IRAS, and MARDIAN</para>
+<stagedir remap="STAGEDIR">Enter CLEOPATRA, CHARMIAN, IRAS, and MARDIAN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -1349,7 +1349,7 @@ and their Train</para>
 <line remap="LINE">With looking on his life.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ALEXAS, from OCTAVIUS CAESAR</para>
+<stagedir remap="STAGEDIR">Enter ALEXAS, from OCTAVIUS CAESAR</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ALEXAS</speaker>
@@ -1467,7 +1467,7 @@ and their Train</para>
 <line remap="LINE">Or I'll unpeople Egypt.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -1475,8 +1475,8 @@ and their Train</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Messina. POMPEY's house.</title>
-<para remap="STAGEDIR">Enter POMPEY, MENECRATES, and MENAS, in
-warlike manner</para>
+<stagedir remap="STAGEDIR">Enter POMPEY, MENECRATES, and MENAS, in
+warlike manner</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POMPEY</speaker>
@@ -1544,7 +1544,7 @@ warlike manner</para>
 <line remap="LINE">Sharpen with cloyless sauce his appetite;</line>
 <line remap="LINE">That sleep and feeding may prorogue his honour</line>
 <line remap="LINE">Even till a Lethe'd dulness!</line>
-<para remap="STAGEDIR">Enter VARRIUS</para>
+<stagedir remap="STAGEDIR">Enter VARRIUS</stagedir>
 <line remap="LINE">How now, Varrius!</line>
 </linegroup></dialogue>
 
@@ -1593,11 +1593,11 @@ warlike manner</para>
 <line remap="LINE">Come, Menas.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Rome. The house of LEPIDUS.</title>
-<para remap="STAGEDIR">Enter DOMITIUS ENOBARBUS and LEPIDUS</para>
+<stagedir remap="STAGEDIR">Enter DOMITIUS ENOBARBUS and LEPIDUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LEPIDUS</speaker>
@@ -1645,14 +1645,14 @@ warlike manner</para>
 <line remap="LINE">The noble Antony.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MARK ANTONY and VENTIDIUS</para>
+<stagedir remap="STAGEDIR">Enter MARK ANTONY and VENTIDIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
 <line remap="LINE">And yonder, Caesar.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter OCTAVIUS CAESAR, MECAENAS, and AGRIPPA</para>
+<stagedir remap="STAGEDIR">Enter OCTAVIUS CAESAR, MECAENAS, and AGRIPPA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -1686,7 +1686,7 @@ warlike manner</para>
 <line remap="LINE">I should do thus.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish</para>
+<stagedir remap="STAGEDIR">Flourish</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OCTAVIUS CAESAR</speaker>
@@ -2083,8 +2083,8 @@ warlike manner</para>
 <line remap="LINE">Not sickness should detain me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish. Exeunt OCTAVIUS CAESAR, MARK ANTONY,
-and LEPIDUS</para>
+<stagedir remap="STAGEDIR">Flourish. Exeunt OCTAVIUS CAESAR, MARK ANTONY,
+and LEPIDUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MECAENAS</speaker>
@@ -2254,12 +2254,12 @@ and LEPIDUS</para>
 <line remap="LINE">Humbly, sir, I thank you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The same. OCTAVIUS CAESAR's house.</title>
-<para remap="STAGEDIR">Enter MARK ANTONY, OCTAVIUS CAESAR, OCTAVIA between
-them, and Attendants</para>
+<stagedir remap="STAGEDIR">Enter MARK ANTONY, OCTAVIUS CAESAR, OCTAVIA between
+them, and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -2288,8 +2288,8 @@ them, and Attendants</para>
 <line remap="LINE">Good night.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt OCTAVIUS CAESAR and OCTAVIA</para>
-<para remap="STAGEDIR">Enter Soothsayer</para>
+<stagedir remap="STAGEDIR">Exeunt OCTAVIUS CAESAR and OCTAVIA</stagedir>
+<stagedir remap="STAGEDIR">Enter Soothsayer</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -2350,7 +2350,7 @@ them, and Attendants</para>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
 <line remap="LINE">Get thee gone:</line>
 <line remap="LINE">Say to Ventidius I would speak with him:</line>
-<para remap="STAGEDIR">Exit Soothsayer</para>
+<stagedir remap="STAGEDIR">Exit Soothsayer</stagedir>
 <line remap="LINE">He shall to Parthia. Be it art or hap,</line>
 <line remap="LINE">He hath spoken true: the very dice obey him;</line>
 <line remap="LINE">And in our sports my better cunning faints</line>
@@ -2360,17 +2360,17 @@ them, and Attendants</para>
 <line remap="LINE">Beat mine, inhoop'd, at odds. I will to Egypt:</line>
 <line remap="LINE">And though I make this marriage for my peace,</line>
 <line remap="LINE">I' the east my pleasure lies.</line>
-<para remap="STAGEDIR">Enter VENTIDIUS</para>
+<stagedir remap="STAGEDIR">Enter VENTIDIUS</stagedir>
 <line remap="LINE">O, come, Ventidius,</line>
 <line remap="LINE">You must to Parthia: your commission's ready;</line>
 <line remap="LINE">Follow me, and receive't.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  The same. A street.</title>
-<para remap="STAGEDIR">Enter LEPIDUS, MECAENAS, and AGRIPPA</para>
+<stagedir remap="STAGEDIR">Enter LEPIDUS, MECAENAS, and AGRIPPA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LEPIDUS</speaker>
@@ -2415,11 +2415,11 @@ them, and Attendants</para>
 <line remap="LINE">Farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Alexandria. CLEOPATRA's palace.</title>
-<para remap="STAGEDIR">Enter CLEOPATRA, CHARMIAN, IRAS, and ALEXAS</para>
+<stagedir remap="STAGEDIR">Enter CLEOPATRA, CHARMIAN, IRAS, and ALEXAS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -2432,7 +2432,7 @@ them, and Attendants</para>
 <line remap="LINE">The music, ho!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MARDIAN</para>
+<stagedir remap="STAGEDIR">Enter MARDIAN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -2484,7 +2484,7 @@ them, and Attendants</para>
 <line remap="LINE">Ere the ninth hour, I drunk him to his bed;</line>
 <line remap="LINE">Then put my tires and mantles on him, whilst</line>
 <line remap="LINE">I wore his sword Philippan.</line>
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 <line remap="LINE">O, from Italy</line>
 <line remap="LINE">Ram thou thy fruitful tidings in mine ears,</line>
 <line remap="LINE">That long time have been barren.</line>
@@ -2624,7 +2624,7 @@ them, and Attendants</para>
 <line remap="LINE">The most infectious pestilence upon thee!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Strikes him down</para>
+<stagedir remap="STAGEDIR">Strikes him down</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
@@ -2634,10 +2634,10 @@ them, and Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
 <line remap="LINE">What say you? Hence,</line>
-<para remap="STAGEDIR">Strikes him again</para>
+<stagedir remap="STAGEDIR">Strikes him again</stagedir>
 <line remap="LINE">Horrible villain! or I'll spurn thine eyes</line>
 <line remap="LINE">Like balls before me; I'll unhair thy head:</line>
-<para remap="STAGEDIR">She hales him up and down</para>
+<stagedir remap="STAGEDIR">She hales him up and down</stagedir>
 <line remap="LINE">Thou shalt be whipp'd with wire, and stew'd in brine,</line>
 <line remap="LINE">Smarting in lingering pickle.</line>
 </linegroup></dialogue>
@@ -2667,7 +2667,7 @@ them, and Attendants</para>
 <line remap="LINE">Rogue, thou hast lived too long.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Draws a knife</para>
+<stagedir remap="STAGEDIR">Draws a knife</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
@@ -2675,7 +2675,7 @@ them, and Attendants</para>
 <line remap="LINE">What mean you, madam? I have made no fault.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CHARMIAN</speaker>
@@ -2699,11 +2699,11 @@ them, and Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
 <line remap="LINE">I will not hurt him.</line>
-<para remap="STAGEDIR">Exit CHARMIAN</para>
+<stagedir remap="STAGEDIR">Exit CHARMIAN</stagedir>
 <line remap="LINE">These hands do lack nobility, that they strike</line>
 <line remap="LINE">A meaner than myself; since I myself</line>
 <line remap="LINE">Have given myself the cause.</line>
-<para remap="STAGEDIR">Re-enter CHARMIAN and Messenger</para>
+<stagedir remap="STAGEDIR">Re-enter CHARMIAN and Messenger</stagedir>
 <line remap="LINE">Come hither, sir.</line>
 <line remap="LINE">Though it be honest, it is never good</line>
 <line remap="LINE">To bring bad news: give to a gracious message.</line>
@@ -2773,7 +2773,7 @@ them, and Attendants</para>
 <line remap="LINE">And be undone by 'em!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Messenger</para>
+<stagedir remap="STAGEDIR">Exit Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CHARMIAN</speaker>
@@ -2799,23 +2799,23 @@ them, and Attendants</para>
 <line remap="LINE">Report the feature of Octavia, her years,</line>
 <line remap="LINE">Her inclination, let him not leave out</line>
 <line remap="LINE">The colour of her hair: bring me word quickly.</line>
-<para remap="STAGEDIR">Exit ALEXAS</para>
+<stagedir remap="STAGEDIR">Exit ALEXAS</stagedir>
 <line remap="LINE">Let him for ever go:--let him not--Charmian,</line>
 <line remap="LINE">Though he be painted one way like a Gorgon,</line>
 <line remap="LINE">The other way's a Mars. Bid you Alexas</line>
-<para remap="STAGEDIR">To MARDIAN</para>
+<stagedir remap="STAGEDIR">To MARDIAN</stagedir>
 <line remap="LINE">Bring me word how tall she is. Pity me, Charmian,</line>
 <line remap="LINE">But do not speak to me. Lead me to my chamber.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  Near Misenum.</title>
-<para remap="STAGEDIR">Flourish. Enter POMPEY and MENAS at one door,
+<stagedir remap="STAGEDIR">Flourish. Enter POMPEY and MENAS at one door,
 with drum and trumpet: at another, OCTAVIUS CAESAR,
 MARK ANTONY, LEPIDUS, DOMITIUS ENOBARBUS, MECAENAS,
-with Soldiers marching</para>
+with Soldiers marching</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POMPEY</speaker>
@@ -3080,11 +3080,11 @@ with Soldiers marching</para>
 <line remap="LINE">Come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but MENAS and ENOBARBUS</para>
+<stagedir remap="STAGEDIR">Exeunt all but MENAS and ENOBARBUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENAS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Thy father, Pompey, would ne'er have</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Thy father, Pompey, would ne'er have</line>
 <line remap="LINE">made this treaty.--You and I have known, sir.</line>
 </linegroup></dialogue>
 
@@ -3256,12 +3256,12 @@ with Soldiers marching</para>
 <line remap="LINE">Come, let's away.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VII.  On board POMPEY's galley, off Misenum.</title>
-<para remap="STAGEDIR">Music plays. Enter two or three Servants with
-a banquet</para>
+<stagedir remap="STAGEDIR">Music plays. Enter two or three Servants with
+a banquet</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Servant</speaker>
@@ -3307,13 +3307,13 @@ a banquet</para>
 <line remap="LINE">which pitifully disaster the cheeks.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">A sennet sounded. Enter OCTAVIUS CAESAR, MARK
+<stagedir remap="STAGEDIR">A sennet sounded. Enter OCTAVIUS CAESAR, MARK
 ANTONY, LEPIDUS, POMPEY, AGRIPPA, MECAENAS,
-DOMITIUS ENOBARBUS, MENAS, with other captains</para>
+DOMITIUS ENOBARBUS, MENAS, with other captains</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To OCTAVIUS CAESAR</phrase>  Thus do they, sir: they take</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To OCTAVIUS CAESAR</inlinestagedir>  Thus do they, sir: they take</line>
 <line remap="LINE">the flow o' the Nile</line>
 <line remap="LINE">By certain scales i' the pyramid; they know,</line>
 <line remap="LINE">By the height, the lowness, or the mean, if dearth</line>
@@ -3368,25 +3368,25 @@ DOMITIUS ENOBARBUS, MENAS, with other captains</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENAS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to POMPEY</phrase>  Pompey, a word.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to POMPEY</inlinestagedir>  Pompey, a word.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POMPEY</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to MENAS</phrase>                 Say in mine ear:</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to MENAS</inlinestagedir>                 Say in mine ear:</line>
 <line remap="LINE">what is't?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENAS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to POMPEY</phrase>  Forsake thy seat, I do beseech</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to POMPEY</inlinestagedir>  Forsake thy seat, I do beseech</line>
 <line remap="LINE">thee, captain,</line>
 <line remap="LINE">And hear me speak a word.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POMPEY</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to MENAS</phrase>  Forbear me till anon.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to MENAS</inlinestagedir>  Forbear me till anon.</line>
 <line remap="LINE">This wine for Lepidus!</line>
 </linegroup></dialogue>
 
@@ -3437,25 +3437,25 @@ DOMITIUS ENOBARBUS, MENAS, with other captains</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POMPEY</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to MENAS</phrase>  Go hang, sir, hang! Tell me of</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to MENAS</inlinestagedir>  Go hang, sir, hang! Tell me of</line>
 <line remap="LINE">that? away!</line>
 <line remap="LINE">Do as I bid you. Where's this cup I call'd for?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENAS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to POMPEY</phrase>  If for the sake of merit thou</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to POMPEY</inlinestagedir>  If for the sake of merit thou</line>
 <line remap="LINE">wilt hear me,</line>
 <line remap="LINE">Rise from thy stool.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POMPEY</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to MENAS</phrase>  I think thou'rt mad.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to MENAS</inlinestagedir>  I think thou'rt mad.</line>
 <line remap="LINE">The matter?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Rises, and walks aside</para>
+<stagedir remap="STAGEDIR">Rises, and walks aside</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENAS</speaker>
@@ -3541,7 +3541,7 @@ DOMITIUS ENOBARBUS, MENAS, with other captains</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENAS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  For this,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  For this,</line>
 <line remap="LINE">I'll never follow thy pall'd fortunes more.</line>
 <line remap="LINE">Who seeks, and will not take when once 'tis offer'd,</line>
 <line remap="LINE">Shall never find it more.</line>
@@ -3577,7 +3577,7 @@ DOMITIUS ENOBARBUS, MENAS, with other captains</para>
 <line remap="LINE">There's a strong fellow, Menas.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Pointing to the Attendant who carries off LEPIDUS</para>
+<stagedir remap="STAGEDIR">Pointing to the Attendant who carries off LEPIDUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENAS</speaker>
@@ -3639,7 +3639,7 @@ DOMITIUS ENOBARBUS, MENAS, with other captains</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
 <line remap="LINE">Ha, my brave emperor!</line>
-<para remap="STAGEDIR">To MARK ANTONY</para>
+<stagedir remap="STAGEDIR">To MARK ANTONY</stagedir>
 <line remap="LINE">Shall we dance now the Egyptian Bacchanals,</line>
 <line remap="LINE">And celebrate our drink?</line>
 </linegroup></dialogue>
@@ -3663,8 +3663,8 @@ DOMITIUS ENOBARBUS, MENAS, with other captains</para>
 <line remap="LINE">The while I'll place you: then the boy shall sing;</line>
 <line remap="LINE">The holding every man shall bear as loud</line>
 <line remap="LINE">As his strong sides can volley.</line>
-<para remap="STAGEDIR">Music plays. DOMITIUS ENOBARBUS places them
-hand in hand</para>
+<stagedir remap="STAGEDIR">Music plays. DOMITIUS ENOBARBUS places them
+hand in hand</stagedir>
 <bridgehead remap="SUBHEAD">THE SONG.</bridgehead>
 <line remap="LINE">Come, thou monarch of the vine,</line>
 <line remap="LINE">Plumpy Bacchus with pink eyne!</line>
@@ -3706,7 +3706,7 @@ hand in hand</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
 <line remap="LINE">Take heed you fall not.</line>
-<para remap="STAGEDIR">Exeunt all but DOMITIUS ENOBARBUS and MENAS</para>
+<stagedir remap="STAGEDIR">Exeunt all but DOMITIUS ENOBARBUS and MENAS</stagedir>
 <line remap="LINE">Menas, I'll not on shore.</line>
 </linegroup></dialogue>
 
@@ -3718,7 +3718,7 @@ hand in hand</para>
 <line remap="LINE">To these great fellows: sound and be hang'd, sound out!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Sound a flourish, with drums</para>
+<stagedir remap="STAGEDIR">Sound a flourish, with drums</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
@@ -3730,7 +3730,7 @@ hand in hand</para>
 <line remap="LINE">Ho! Noble captain, come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -3738,9 +3738,9 @@ hand in hand</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A plain in Syria.</title>
-<para remap="STAGEDIR">Enter VENTIDIUS as it were in triumph, with SILIUS,
+<stagedir remap="STAGEDIR">Enter VENTIDIUS as it were in triumph, with SILIUS,
 and other Romans, Officers, and Soldiers; the dead
-body of PACORUS borne before him</para>
+body of PACORUS borne before him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VENTIDIUS</speaker>
@@ -3812,12 +3812,12 @@ body of PACORUS borne before him</para>
 <line remap="LINE">We shall appear before him. On there; pass along!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Rome. An ante-chamber in OCTAVIUS CAESAR's house.</title>
-<para remap="STAGEDIR">Enter AGRIPPA at one door, DOMITIUS ENOBARBUS
-at another</para>
+<stagedir remap="STAGEDIR">Enter AGRIPPA at one door, DOMITIUS ENOBARBUS
+at another</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AGRIPPA</speaker>
@@ -3896,7 +3896,7 @@ at another</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
 <line remap="LINE">They are his shards, and he their beetle.</line>
-<para remap="STAGEDIR">Trumpets within</para>
+<stagedir remap="STAGEDIR">Trumpets within</stagedir>
 <line remap="LINE">So;</line>
 <line remap="LINE">This is to horse. Adieu, noble Agrippa.</line>
 </linegroup></dialogue>
@@ -3906,7 +3906,7 @@ at another</para>
 <line remap="LINE">Good fortune, worthy soldier; and farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter OCTAVIUS CAESAR, MARK ANTONY, LEPIDUS, and OCTAVIA</para>
+<stagedir remap="STAGEDIR">Enter OCTAVIUS CAESAR, MARK ANTONY, LEPIDUS, and OCTAVIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -3991,24 +3991,24 @@ at another</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to AGRIPPA</phrase>  Will Caesar weep?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to AGRIPPA</inlinestagedir>  Will Caesar weep?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AGRIPPA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to DOMITIUS ENOBARBUS</phrase>  He has a cloud in 's face.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to DOMITIUS ENOBARBUS</inlinestagedir>  He has a cloud in 's face.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to AGRIPPA</phrase>  He were the worse for that,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to AGRIPPA</inlinestagedir>  He were the worse for that,</line>
 <line remap="LINE">were he a horse;</line>
 <line remap="LINE">So is he, being a man.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AGRIPPA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to DOMITIUS ENOBARBUS</phrase>  Why, Enobarbus,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to DOMITIUS ENOBARBUS</inlinestagedir>  Why, Enobarbus,</line>
 <line remap="LINE">When Antony found Julius Caesar dead,</line>
 <line remap="LINE">He cried almost to roaring; and he wept</line>
 <line remap="LINE">When at Philippi he found Brutus slain.</line>
@@ -4016,7 +4016,7 @@ at another</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to AGRIPPA</phrase>  That year, indeed, he was</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to AGRIPPA</inlinestagedir>  That year, indeed, he was</line>
 <line remap="LINE">troubled with a rheum;</line>
 <line remap="LINE">What willingly he did confound he wail'd,</line>
 <line remap="LINE">Believe't, till I wept too.</line>
@@ -4053,18 +4053,18 @@ at another</para>
 <line remap="LINE">Farewell, farewell!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Kisses OCTAVIA</para>
+<stagedir remap="STAGEDIR">Kisses OCTAVIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
 <line remap="LINE">Farewell!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Trumpets sound. Exeunt</para>
+<stagedir remap="STAGEDIR">Trumpets sound. Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Alexandria. CLEOPATRA's palace.</title>
-<para remap="STAGEDIR">Enter CLEOPATRA, CHARMIAN, IRAS, and ALEXAS</para>
+<stagedir remap="STAGEDIR">Enter CLEOPATRA, CHARMIAN, IRAS, and ALEXAS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -4079,7 +4079,7 @@ at another</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
 <line remap="LINE">Go to, go to.</line>
-<para remap="STAGEDIR">Enter the Messenger as before</para>
+<stagedir remap="STAGEDIR">Enter the Messenger as before</stagedir>
 <line remap="LINE">Come hither, sir.</line>
 </linegroup></dialogue>
 
@@ -4249,7 +4249,7 @@ at another</para>
 <line remap="LINE">Our letters are prepared.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Messenger</para>
+<stagedir remap="STAGEDIR">Exit Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CHARMIAN</speaker>
@@ -4291,11 +4291,11 @@ at another</para>
 <line remap="LINE">I warrant you, madam.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Athens. A room in MARK ANTONY's house.</title>
-<para remap="STAGEDIR">Enter MARK ANTONY and OCTAVIA</para>
+<stagedir remap="STAGEDIR">Enter MARK ANTONY and OCTAVIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -4358,11 +4358,11 @@ at another</para>
 <line remap="LINE">Your heart has mind to.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  The same. Another room.</title>
-<para remap="STAGEDIR">Enter DOMITIUS ENOBARBUS and EROS, meeting</para>
+<stagedir remap="STAGEDIR">Enter DOMITIUS ENOBARBUS and EROS, meeting</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
@@ -4437,11 +4437,11 @@ at another</para>
 <line remap="LINE">Come, sir.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  Rome. OCTAVIUS CAESAR's house.</title>
-<para remap="STAGEDIR">Enter OCTAVIUS CAESAR, AGRIPPA, and MECAENAS</para>
+<stagedir remap="STAGEDIR">Enter OCTAVIUS CAESAR, AGRIPPA, and MECAENAS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OCTAVIUS CAESAR</speaker>
@@ -4534,7 +4534,7 @@ at another</para>
 <line remap="LINE">Nor must not then be yielded to in this.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter OCTAVIA with her train</para>
+<stagedir remap="STAGEDIR">Enter OCTAVIA with her train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OCTAVIA</speaker>
@@ -4668,11 +4668,11 @@ at another</para>
 <line remap="LINE">Be ever known to patience: my dear'st sister!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VII.  Near Actium. MARK ANTONY's camp.</title>
-<para remap="STAGEDIR">Enter CLEOPATRA and DOMITIUS ENOBARBUS</para>
+<stagedir remap="STAGEDIR">Enter CLEOPATRA and DOMITIUS ENOBARBUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -4703,7 +4703,7 @@ at another</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Well, I could reply:</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Well, I could reply:</line>
 <line remap="LINE">If we should serve with horse and mares together,</line>
 <line remap="LINE">The horse were merely lost; the mares would bear</line>
 <line remap="LINE">A soldier and his horse.</line>
@@ -4740,7 +4740,7 @@ at another</para>
 <line remap="LINE">Here comes the emperor.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MARK ANTONY and CANIDIUS</para>
+<stagedir remap="STAGEDIR">Enter MARK ANTONY and CANIDIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -4836,7 +4836,7 @@ at another</para>
 <line remap="LINE">And, with the rest full-mann'd, from the head of Actium</line>
 <line remap="LINE">Beat the approaching Caesar. But if we fail,</line>
 <line remap="LINE">We then can do't at land.</line>
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 <line remap="LINE">Thy business?</line>
 </linegroup></dialogue>
 
@@ -4853,7 +4853,7 @@ at another</para>
 <line remap="LINE">Our nineteen legions thou shalt hold by land,</line>
 <line remap="LINE">And our twelve thousand horse. We'll to our ship:</line>
 <line remap="LINE">Away, my Thetis!</line>
-<para remap="STAGEDIR">Enter a Soldier</para>
+<stagedir remap="STAGEDIR">Enter a Soldier</stagedir>
 <line remap="LINE">How now, worthy soldier?</line>
 </linegroup></dialogue>
 
@@ -4872,8 +4872,8 @@ at another</para>
 <line remap="LINE">Well, well: away!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt MARK ANTONY, QUEEN CLEOPATRA, and DOMITIUS
-ENOBARBUS</para>
+<stagedir remap="STAGEDIR">Exeunt MARK ANTONY, QUEEN CLEOPATRA, and DOMITIUS
+ENOBARBUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Soldier</speaker>
@@ -4923,7 +4923,7 @@ ENOBARBUS</para>
 <line remap="LINE">Well I know the man.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
@@ -4936,11 +4936,11 @@ ENOBARBUS</para>
 <line remap="LINE">Each minute, some.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VIII.  A plain near Actium.</title>
-<para remap="STAGEDIR">Enter OCTAVIUS CAESAR, and TAURUS, with his army, marching</para>
+<stagedir remap="STAGEDIR">Enter OCTAVIUS CAESAR, and TAURUS, with his army, marching</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OCTAVIUS CAESAR</speaker>
@@ -4960,11 +4960,11 @@ ENOBARBUS</para>
 <line remap="LINE">Upon this jump.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IX.  Another part of the plain.</title>
-<para remap="STAGEDIR">Enter MARK ANTONY and DOMITIUS ENOBARBUS</para>
+<stagedir remap="STAGEDIR">Enter MARK ANTONY and DOMITIUS ENOBARBUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -4974,15 +4974,15 @@ ENOBARBUS</para>
 <line remap="LINE">And so proceed accordingly.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE X.  Another part of the plain.</title>
-<para remap="STAGEDIR">CANIDIUS marcheth with his land army one way over
+<stagedir remap="STAGEDIR">CANIDIUS marcheth with his land army one way over
 the stage; and TAURUS, the lieutenant of OCTAVIUS
 CAESAR, the other way. After their going in, is
-heard the noise of a sea-fight</para>
-<para remap="STAGEDIR">Alarum. Enter DOMITIUS ENOBARBUS</para>
+heard the noise of a sea-fight</stagedir>
+<stagedir remap="STAGEDIR">Alarum. Enter DOMITIUS ENOBARBUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
@@ -4992,7 +4992,7 @@ heard the noise of a sea-fight</para>
 <line remap="LINE">To see't mine eyes are blasted.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SCARUS</para>
+<stagedir remap="STAGEDIR">Enter SCARUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SCARUS</speaker>
@@ -5051,7 +5051,7 @@ heard the noise of a sea-fight</para>
 <line remap="LINE">Alack, alack!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CANIDIUS</para>
+<stagedir remap="STAGEDIR">Enter CANIDIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CANIDIUS</speaker>
@@ -5093,11 +5093,11 @@ heard the noise of a sea-fight</para>
 <line remap="LINE">Sits in the wind against me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE XI.  Alexandria. CLEOPATRA's palace.</title>
-<para remap="STAGEDIR">Enter MARK ANTONY with Attendants</para>
+<stagedir remap="STAGEDIR">Enter MARK ANTONY with Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -5136,9 +5136,9 @@ heard the noise of a sea-fight</para>
 <line remap="LINE">Therefore I pray you: I'll see you by and by.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Sits down</para>
-<para remap="STAGEDIR">Enter CLEOPATRA led by CHARMIAN and IRAS; EROS
-following</para>
+<stagedir remap="STAGEDIR">Sits down</stagedir>
+<stagedir remap="STAGEDIR">Enter CLEOPATRA led by CHARMIAN and IRAS; EROS
+following</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EROS</speaker>
@@ -5296,11 +5296,11 @@ following</para>
 <line remap="LINE">We scorn her most when most she offers blows.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE XII.  Egypt. OCTAVIUS CAESAR's camp.</title>
-<para remap="STAGEDIR">Enter OCTAVIUS CAESAR, DOLABELLA, THYREUS, with others</para>
+<stagedir remap="STAGEDIR">Enter OCTAVIUS CAESAR, DOLABELLA, THYREUS, with others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OCTAVIUS CAESAR</speaker>
@@ -5317,7 +5317,7 @@ following</para>
 <line remap="LINE">Not many moons gone by.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter EUPHRONIUS, ambassador from MARK ANTONY</para>
+<stagedir remap="STAGEDIR">Enter EUPHRONIUS, ambassador from MARK ANTONY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OCTAVIUS CAESAR</speaker>
@@ -5368,8 +5368,8 @@ following</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OCTAVIUS CAESAR</speaker>
 <line remap="LINE">Bring him through the bands.</line>
-<para remap="STAGEDIR">Exit EUPHRONIUS</para>
-<line remap="LINE"><phrase remap="STAGEDIR">To THYREUS</phrase>  To try eloquence, now 'tis time: dispatch;</line>
+<stagedir remap="STAGEDIR">Exit EUPHRONIUS</stagedir>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To THYREUS</inlinestagedir>  To try eloquence, now 'tis time: dispatch;</line>
 <line remap="LINE">From Antony win Cleopatra: promise,</line>
 <line remap="LINE">And in our name, what she requires; add more,</line>
 <line remap="LINE">From thine invention, offers: women are not</line>
@@ -5396,11 +5396,11 @@ following</para>
 <line remap="LINE">Caesar, I shall.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE XIII.  Alexandria. CLEOPATRA's palace.</title>
-<para remap="STAGEDIR">Enter CLEOPATRA, DOMITIUS ENOBARBUS, CHARMIAN, and IRAS</para>
+<stagedir remap="STAGEDIR">Enter CLEOPATRA, DOMITIUS ENOBARBUS, CHARMIAN, and IRAS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -5436,7 +5436,7 @@ following</para>
 <line remap="LINE">Prithee, peace.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MARK ANTONY with EUPHRONIUS, the Ambassador</para>
+<stagedir remap="STAGEDIR">Enter MARK ANTONY with EUPHRONIUS, the Ambassador</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -5485,11 +5485,11 @@ following</para>
 <line remap="LINE">Ourselves alone. I'll write it: follow me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt MARK ANTONY and EUPHRONIUS</para>
+<stagedir remap="STAGEDIR">Exeunt MARK ANTONY and EUPHRONIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Yes, like enough, high-battled Caesar will</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Yes, like enough, high-battled Caesar will</line>
 <line remap="LINE">Unstate his happiness, and be staged to the show,</line>
 <line remap="LINE">Against a sworder! I see men's judgments are</line>
 <line remap="LINE">A parcel of their fortunes; and things outward</line>
@@ -5500,7 +5500,7 @@ following</para>
 <line remap="LINE">His judgment too.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter an Attendant</para>
+<stagedir remap="STAGEDIR">Enter an Attendant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Attendant</speaker>
@@ -5514,11 +5514,11 @@ following</para>
 <line remap="LINE">That kneel'd unto the buds. Admit him, sir.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Attendant</para>
+<stagedir remap="STAGEDIR">Exit Attendant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Mine honesty and I begin to square.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Mine honesty and I begin to square.</line>
 <line remap="LINE">The loyalty well held to fools does make</line>
 <line remap="LINE">Our faith mere folly: yet he that can endure</line>
 <line remap="LINE">To follow with allegiance a fall'n lord</line>
@@ -5526,7 +5526,7 @@ following</para>
 <line remap="LINE">And earns a place i' the story.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter THYREUS</para>
+<stagedir remap="STAGEDIR">Enter THYREUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -5596,13 +5596,13 @@ following</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>             To be sure of that,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>             To be sure of that,</line>
 <line remap="LINE">I will ask Antony. Sir, sir, thou art so leaky,</line>
 <line remap="LINE">That we must leave thee to thy sinking, for</line>
 <line remap="LINE">Thy dearest quit thee.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THYREUS</speaker>
@@ -5653,7 +5653,7 @@ following</para>
 <line remap="LINE">As it rain'd kisses.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter MARK ANTONY and DOMITIUS ENOBARBUS</para>
+<stagedir remap="STAGEDIR">Re-enter MARK ANTONY and DOMITIUS ENOBARBUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -5670,7 +5670,7 @@ following</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>               You will be whipp'd.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>               You will be whipp'd.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5681,13 +5681,13 @@ following</para>
 <line remap="LINE">Like boys unto a muss, kings would start forth,</line>
 <line remap="LINE">And cry 'Your will?' Have you no ears? I am</line>
 <line remap="LINE">Antony yet.</line>
-<para remap="STAGEDIR">Enter Attendants</para>
+<stagedir remap="STAGEDIR">Enter Attendants</stagedir>
 <line remap="LINE">Take hence this Jack, and whip him.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  'Tis better playing with a lion's whelp</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  'Tis better playing with a lion's whelp</line>
 <line remap="LINE">Than with an old one dying.</line>
 </linegroup></dialogue>
 
@@ -5712,7 +5712,7 @@ following</para>
 <line remap="LINE">Tug him away: being whipp'd,</line>
 <line remap="LINE">Bring him again: this Jack of Caesar's shall</line>
 <line remap="LINE">Bear us an errand to him.</line>
-<para remap="STAGEDIR">Exeunt Attendants with THYREUS</para>
+<stagedir remap="STAGEDIR">Exeunt Attendants with THYREUS</stagedir>
 <line remap="LINE">You were half blasted ere I knew you: ha!</line>
 <line remap="LINE">Have I my pillow left unpress'd in Rome,</line>
 <line remap="LINE">Forborne the getting of a lawful race,</line>
@@ -5767,7 +5767,7 @@ following</para>
 <line remap="LINE">And to proclaim it civilly, were like</line>
 <line remap="LINE">A halter'd neck which does the hangman thank</line>
 <line remap="LINE">For being yare about him.</line>
-<para remap="STAGEDIR">Re-enter Attendants with THYREUS</para>
+<stagedir remap="STAGEDIR">Re-enter Attendants with THYREUS</stagedir>
 <line remap="LINE">Is he whipp'd?</line>
 </linegroup></dialogue>
 
@@ -5809,7 +5809,7 @@ following</para>
 <line remap="LINE">Hence with thy stripes, begone!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit THYREUS</para>
+<stagedir remap="STAGEDIR">Exit THYREUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -5915,7 +5915,7 @@ following</para>
 <line remap="LINE">Even with his pestilent scythe.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but DOMITIUS ENOBARBUS</para>
+<stagedir remap="STAGEDIR">Exeunt all but DOMITIUS ENOBARBUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
@@ -5928,7 +5928,7 @@ following</para>
 <line remap="LINE">Some way to leave him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -5936,8 +5936,8 @@ following</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Before Alexandria. OCTAVIUS CAESAR's camp.</title>
-<para remap="STAGEDIR">Enter OCTAVIUS CAESAR, AGRIPPA, and MECAENAS, with
-his Army; OCTAVIUS CAESAR reading a letter</para>
+<stagedir remap="STAGEDIR">Enter OCTAVIUS CAESAR, AGRIPPA, and MECAENAS, with
+his Army; OCTAVIUS CAESAR reading a letter</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OCTAVIUS CAESAR</speaker>
@@ -5969,12 +5969,12 @@ his Army; OCTAVIUS CAESAR reading a letter</para>
 <line remap="LINE">And they have earn'd the waste. Poor Antony!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Alexandria. CLEOPATRA's palace.</title>
-<para remap="STAGEDIR">Enter MARK ANTONY, CLEOPATRA, DOMITIUS ENOBARBUS,
-CHARMIAN, IRAS, ALEXAS, with others</para>
+<stagedir remap="STAGEDIR">Enter MARK ANTONY, CLEOPATRA, DOMITIUS ENOBARBUS,
+CHARMIAN, IRAS, ALEXAS, with others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -6015,7 +6015,7 @@ CHARMIAN, IRAS, ALEXAS, with others</para>
 <line remap="LINE">Well said; come on.</line>
 <line remap="LINE">Call forth my household servants: let's to-night</line>
 <line remap="LINE">Be bounteous at our meal.</line>
-<para remap="STAGEDIR">Enter three or four Servitors</para>
+<stagedir remap="STAGEDIR">Enter three or four Servitors</stagedir>
 <line remap="LINE">Give me thy hand,</line>
 <line remap="LINE">Thou hast been rightly honest;--so hast thou;--</line>
 <line remap="LINE">Thou,--and thou,--and thou:--you have served me well,</line>
@@ -6024,12 +6024,12 @@ CHARMIAN, IRAS, ALEXAS, with others</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to DOMITIUS ENOBARBUS</phrase>  What means this?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to DOMITIUS ENOBARBUS</inlinestagedir>  What means this?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to CLEOPATRA</phrase>  'Tis one of those odd</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to CLEOPATRA</inlinestagedir>  'Tis one of those odd</line>
 <line remap="LINE">tricks which sorrow shoots</line>
 <line remap="LINE">Out of the mind.</line>
 </linegroup></dialogue>
@@ -6058,12 +6058,12 @@ CHARMIAN, IRAS, ALEXAS, with others</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to DOMITIUS ENOBARBUS</phrase>  What does he mean?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to DOMITIUS ENOBARBUS</inlinestagedir>  What does he mean?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to CLEOPATRA</phrase>  To make his followers weep.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to CLEOPATRA</inlinestagedir>  To make his followers weep.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -6103,11 +6103,11 @@ CHARMIAN, IRAS, ALEXAS, with others</para>
 <line remap="LINE">And drown consideration.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The same. Before the palace.</title>
-<para remap="STAGEDIR">Enter two Soldiers to their guard</para>
+<stagedir remap="STAGEDIR">Enter two Soldiers to their guard</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Soldier</speaker>
@@ -6135,7 +6135,7 @@ CHARMIAN, IRAS, ALEXAS, with others</para>
 <line remap="LINE">Well, sir, good night.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter two other Soldiers</para>
+<stagedir remap="STAGEDIR">Enter two other Soldiers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Soldier</speaker>
@@ -6147,7 +6147,7 @@ CHARMIAN, IRAS, ALEXAS, with others</para>
 <line remap="LINE">And you. Good night, good night.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They place themselves in every corner of the stage</para>
+<stagedir remap="STAGEDIR">They place themselves in every corner of the stage</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Fourth Soldier</speaker>
@@ -6162,7 +6162,7 @@ CHARMIAN, IRAS, ALEXAS, with others</para>
 <line remap="LINE">And full of purpose.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Music of the hautboys as under the stage</para>
+<stagedir remap="STAGEDIR">Music of the hautboys as under the stage</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Fourth Soldier</speaker>
@@ -6217,7 +6217,7 @@ CHARMIAN, IRAS, ALEXAS, with others</para>
 <line remap="LINE">Do hear what we do?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They advance to another post</para>
+<stagedir remap="STAGEDIR">They advance to another post</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Soldier</speaker>
@@ -6226,7 +6226,7 @@ CHARMIAN, IRAS, ALEXAS, with others</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">All</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Speaking together</phrase>  How now!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Speaking together</inlinestagedir>  How now!</line>
 <line remap="LINE">How now! do you hear this?</line>
 </linegroup></dialogue>
 
@@ -6251,12 +6251,12 @@ CHARMIAN, IRAS, ALEXAS, with others</para>
 <line remap="LINE">Content. 'Tis strange.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  The same. A room in the palace.</title>
-<para remap="STAGEDIR">Enter MARK ANTONY and CLEOPATRA, CHARMIAN, and
-others attending</para>
+<stagedir remap="STAGEDIR">Enter MARK ANTONY and CLEOPATRA, CHARMIAN, and
+others attending</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -6271,7 +6271,7 @@ others attending</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
 <line remap="LINE">No, my chuck. Eros, come; mine armour, Eros!</line>
-<para remap="STAGEDIR">Enter EROS with armour</para>
+<stagedir remap="STAGEDIR">Enter EROS with armour</stagedir>
 <line remap="LINE">Come good fellow, put mine iron on:</line>
 <line remap="LINE">If fortune be not ours to-day, it is</line>
 <line remap="LINE">Because we brave her: come.</line>
@@ -6321,7 +6321,7 @@ others attending</para>
 <line remap="LINE">That thou couldst see my wars to-day, and knew'st</line>
 <line remap="LINE">The royal occupation! thou shouldst see</line>
 <line remap="LINE">A workman in't.</line>
-<para remap="STAGEDIR">Enter an armed Soldier</para>
+<stagedir remap="STAGEDIR">Enter an armed Soldier</stagedir>
 <line remap="LINE">Good morrow to thee; welcome:</line>
 <line remap="LINE">Thou look'st like him that knows a warlike charge:</line>
 <line remap="LINE">To business that we love we rise betime,</line>
@@ -6335,8 +6335,8 @@ others attending</para>
 <line remap="LINE">And at the port expect you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Shout. Trumpets flourish</para>
-<para remap="STAGEDIR">Enter Captains and Soldiers</para>
+<stagedir remap="STAGEDIR">Shout. Trumpets flourish</stagedir>
+<stagedir remap="STAGEDIR">Enter Captains and Soldiers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Captain</speaker>
@@ -6356,14 +6356,14 @@ others attending</para>
 <line remap="LINE">So, so; come, give me that: this way; well said.</line>
 <line remap="LINE">Fare thee well, dame, whate'er becomes of me:</line>
 <line remap="LINE">This is a soldier's kiss: rebukeable</line>
-<para remap="STAGEDIR">Kisses her</para>
+<stagedir remap="STAGEDIR">Kisses her</stagedir>
 <line remap="LINE">And worthy shameful cheque it were, to stand</line>
 <line remap="LINE">On more mechanic compliment; I'll leave thee</line>
 <line remap="LINE">Now, like a man of steel. You that will fight,</line>
 <line remap="LINE">Follow me close; I'll bring you to't. Adieu.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt MARK ANTONY, EROS, Captains, and Soldiers</para>
+<stagedir remap="STAGEDIR">Exeunt MARK ANTONY, EROS, Captains, and Soldiers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CHARMIAN</speaker>
@@ -6378,12 +6378,12 @@ others attending</para>
 <line remap="LINE">Then Antony,--but now--Well, on.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Alexandria. MARK ANTONY's camp.</title>
-<para remap="STAGEDIR">Trumpets sound. Enter MARK ANTONY and EROS; a
-Soldier meeting them</para>
+<stagedir remap="STAGEDIR">Trumpets sound. Enter MARK ANTONY and EROS; a
+Soldier meeting them</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Soldier</speaker>
@@ -6454,12 +6454,12 @@ Soldier meeting them</para>
 <line remap="LINE">Corrupted honest men! Dispatch.--Enobarbus!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  Alexandria. OCTAVIUS CAESAR's camp.</title>
-<para remap="STAGEDIR">Flourish. Enter OCTAVIUS CAESAR, AGRIPPA, with
-DOMITIUS ENOBARBUS, and others</para>
+<stagedir remap="STAGEDIR">Flourish. Enter OCTAVIUS CAESAR, AGRIPPA, with
+DOMITIUS ENOBARBUS, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OCTAVIUS CAESAR</speaker>
@@ -6473,7 +6473,7 @@ DOMITIUS ENOBARBUS, and others</para>
 <line remap="LINE">Caesar, I shall.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OCTAVIUS CAESAR</speaker>
@@ -6482,7 +6482,7 @@ DOMITIUS ENOBARBUS, and others</para>
 <line remap="LINE">Shall bear the olive freely.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
@@ -6498,7 +6498,7 @@ DOMITIUS ENOBARBUS, and others</para>
 <line remap="LINE">Upon himself.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but DOMITIUS ENOBARBUS</para>
+<stagedir remap="STAGEDIR">Exeunt all but DOMITIUS ENOBARBUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
@@ -6513,7 +6513,7 @@ DOMITIUS ENOBARBUS, and others</para>
 <line remap="LINE">That I will joy no more.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Soldier of CAESAR's</para>
+<stagedir remap="STAGEDIR">Enter a Soldier of CAESAR's</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Soldier</speaker>
@@ -6538,7 +6538,7 @@ DOMITIUS ENOBARBUS, and others</para>
 <line remap="LINE">Continues still a Jove.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
@@ -6554,12 +6554,12 @@ DOMITIUS ENOBARBUS, and others</para>
 <line remap="LINE">My latter part of life.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VII.  Field of battle between the camps.</title>
-<para remap="STAGEDIR">Alarum. Drums and trumpets. Enter AGRIPPA
-and others</para>
+<stagedir remap="STAGEDIR">Alarum. Drums and trumpets. Enter AGRIPPA
+and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AGRIPPA</speaker>
@@ -6568,8 +6568,8 @@ and others</para>
 <line remap="LINE">Exceeds what we expected.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
-<para remap="STAGEDIR">Alarums. Enter MARK ANTONY and SCARUS wounded</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
+<stagedir remap="STAGEDIR">Alarums. Enter MARK ANTONY and SCARUS wounded</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SCARUS</speaker>
@@ -6600,7 +6600,7 @@ and others</para>
 <line remap="LINE">Room for six scotches more.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter EROS</para>
+<stagedir remap="STAGEDIR">Enter EROS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EROS</speaker>
@@ -6627,12 +6627,12 @@ and others</para>
 <line remap="LINE">I'll halt after.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VIII.  Under the walls of Alexandria.</title>
-<para remap="STAGEDIR">Alarum. Enter MARK ANTONY, in a march; SCARUS,
-with others</para>
+<stagedir remap="STAGEDIR">Alarum. Enter MARK ANTONY, in a march; SCARUS,
+with others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -6647,12 +6647,12 @@ with others</para>
 <line remap="LINE">Tell them your feats; whilst they with joyful tears</line>
 <line remap="LINE">Wash the congealment from your wounds, and kiss</line>
 <line remap="LINE">The honour'd gashes whole.</line>
-<para remap="STAGEDIR">To SCARUS</para>
+<stagedir remap="STAGEDIR">To SCARUS</stagedir>
 <line remap="LINE">Give me thy hand</line>
-<para remap="STAGEDIR">Enter CLEOPATRA, attended</para>
+<stagedir remap="STAGEDIR">Enter CLEOPATRA, attended</stagedir>
 <line remap="LINE">To this great fairy I'll commend thy acts,</line>
 <line remap="LINE">Make her thanks bless thee.</line>
-<para remap="STAGEDIR">To CLEOPATRA</para>
+<stagedir remap="STAGEDIR">To CLEOPATRA</stagedir>
 <line remap="LINE">O thou day o' the world,</line>
 <line remap="LINE">Chain mine arm'd neck; leap thou, attire and all,</line>
 <line remap="LINE">Through proof of harness to my heart, and there</line>
@@ -6702,11 +6702,11 @@ with others</para>
 <line remap="LINE">Applauding our approach.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IX.  OCTAVIUS CAESAR's camp.</title>
-<para remap="STAGEDIR">Sentinels at their post</para>
+<stagedir remap="STAGEDIR">Sentinels at their post</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Soldier</speaker>
@@ -6722,7 +6722,7 @@ with others</para>
 <line remap="LINE">A shrewd one to's.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DOMITIUS ENOBARBUS</para>
+<stagedir remap="STAGEDIR">Enter DOMITIUS ENOBARBUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOMITIUS ENOBARBUS</speaker>
@@ -6774,7 +6774,7 @@ with others</para>
 <line remap="LINE">O Antony! O Antony!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Dies</para>
+<stagedir remap="STAGEDIR">Dies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Soldier</speaker>
@@ -6816,7 +6816,7 @@ with others</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Soldier</speaker>
 <line remap="LINE">The hand of death hath raught him.</line>
-<para remap="STAGEDIR">Drums afar off</para>
+<stagedir remap="STAGEDIR">Drums afar off</stagedir>
 <line remap="LINE">Hark! the drums</line>
 <line remap="LINE">Demurely wake the sleepers. Let us bear him</line>
 <line remap="LINE">To the court of guard; he is of note: our hour</line>
@@ -6829,11 +6829,11 @@ with others</para>
 <line remap="LINE">He may recover yet.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt with the body</para>
+<stagedir remap="STAGEDIR">Exeunt with the body</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE X.  Between the two camps.</title>
-<para remap="STAGEDIR">Enter MARK ANTONY and SCARUS, with their Army</para>
+<stagedir remap="STAGEDIR">Enter MARK ANTONY and SCARUS, with their Army</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -6857,11 +6857,11 @@ with others</para>
 <line remap="LINE">And look on their endeavour.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE XI.  Another part of the same.</title>
-<para remap="STAGEDIR">Enter OCTAVIUS CAESAR, and his Army</para>
+<stagedir remap="STAGEDIR">Enter OCTAVIUS CAESAR, and his Army</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OCTAVIUS CAESAR</speaker>
@@ -6871,11 +6871,11 @@ with others</para>
 <line remap="LINE">And hold our best advantage.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE XII.  Another part of the same.</title>
-<para remap="STAGEDIR">Enter MARK ANTONY and SCARUS</para>
+<stagedir remap="STAGEDIR">Enter MARK ANTONY and SCARUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -6885,7 +6885,7 @@ with others</para>
 <line remap="LINE">Straight, how 'tis like to go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SCARUS</speaker>
@@ -6898,8 +6898,8 @@ with others</para>
 <line remap="LINE">Of what he has, and has not.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Alarum afar off, as at a sea-fight</para>
-<para remap="STAGEDIR">Re-enter MARK ANTONY</para>
+<stagedir remap="STAGEDIR">Alarum afar off, as at a sea-fight</stagedir>
+<stagedir remap="STAGEDIR">Re-enter MARK ANTONY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -6913,7 +6913,7 @@ with others</para>
 <line remap="LINE">Makes only wars on thee. Bid them all fly;</line>
 <line remap="LINE">For when I am revenged upon my charm,</line>
 <line remap="LINE">I have done all. Bid them all fly; begone.</line>
-<para remap="STAGEDIR">Exit SCARUS</para>
+<stagedir remap="STAGEDIR">Exit SCARUS</stagedir>
 <line remap="LINE">O sun, thy uprise shall I see no more:</line>
 <line remap="LINE">Fortune and Antony part here; even here</line>
 <line remap="LINE">Do we shake hands. All come to this? The hearts</line>
@@ -6927,7 +6927,7 @@ with others</para>
 <line remap="LINE">Like a right gipsy, hath, at fast and loose,</line>
 <line remap="LINE">Beguiled me to the very heart of loss.</line>
 <line remap="LINE">What, Eros, Eros!</line>
-<para remap="STAGEDIR">Enter CLEOPATRA</para>
+<stagedir remap="STAGEDIR">Enter CLEOPATRA</stagedir>
 <line remap="LINE">Ah, thou spell! Avaunt!</line>
 </linegroup></dialogue>
 
@@ -6946,7 +6946,7 @@ with others</para>
 <line remap="LINE">For poor'st diminutives, for doits; and let</line>
 <line remap="LINE">Patient Octavia plough thy visage up</line>
 <line remap="LINE">With her prepared nails.</line>
-<para remap="STAGEDIR">Exit CLEOPATRA</para>
+<stagedir remap="STAGEDIR">Exit CLEOPATRA</stagedir>
 <line remap="LINE">'Tis well thou'rt gone,</line>
 <line remap="LINE">If it be well to live; but better 'twere</line>
 <line remap="LINE">Thou fell'st into my fury, for one death</line>
@@ -6960,11 +6960,11 @@ with others</para>
 <line remap="LINE">Under this plot; she dies for't. Eros, ho!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE XIII.  Alexandria. Cleopatra's palace.</title>
-<para remap="STAGEDIR">Enter CLEOPATRA, CHARMIAN, IRAS, and MARDIAN</para>
+<stagedir remap="STAGEDIR">Enter CLEOPATRA, CHARMIAN, IRAS, and MARDIAN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -6991,11 +6991,11 @@ with others</para>
 <line remap="LINE">To the monument!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE XIV.  The same. Another room.</title>
-<para remap="STAGEDIR">Enter MARK ANTONY and EROS</para>
+<stagedir remap="STAGEDIR">Enter MARK ANTONY and EROS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -7049,7 +7049,7 @@ with others</para>
 <line remap="LINE">Unto an enemy's triumph.</line>
 <line remap="LINE">Nay, weep not, gentle Eros; there is left us</line>
 <line remap="LINE">Ourselves to end ourselves.</line>
-<para remap="STAGEDIR">Enter MARDIAN</para>
+<stagedir remap="STAGEDIR">Enter MARDIAN</stagedir>
 <line remap="LINE">O! thy vile lady!</line>
 <line remap="LINE">She has robb'd me of my sword.</line>
 </linegroup></dialogue>
@@ -7093,10 +7093,10 @@ with others</para>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
 <line remap="LINE">Unarm, Eros; the long day's task is done,</line>
 <line remap="LINE">And we must sleep.</line>
-<para remap="STAGEDIR">To MARDIAN</para>
+<stagedir remap="STAGEDIR">To MARDIAN</stagedir>
 <line remap="LINE">That thou depart'st hence safe,</line>
 <line remap="LINE">Does pay thy labour richly; go.</line>
-<para remap="STAGEDIR">Exit MARDIAN</para>
+<stagedir remap="STAGEDIR">Exit MARDIAN</stagedir>
 <line remap="LINE">Off, pluck off:</line>
 <line remap="LINE">The seven-fold shield of Ajax cannot keep</line>
 <line remap="LINE">The battery from my heart. O, cleave, my sides!</line>
@@ -7104,7 +7104,7 @@ with others</para>
 <line remap="LINE">Crack thy frail case! Apace, Eros, apace.</line>
 <line remap="LINE">No more a soldier: bruised pieces, go;</line>
 <line remap="LINE">You have been nobly borne. From me awhile.</line>
-<para remap="STAGEDIR">Exit EROS</para>
+<stagedir remap="STAGEDIR">Exit EROS</stagedir>
 <line remap="LINE">I will o'ertake thee, Cleopatra, and</line>
 <line remap="LINE">Weep for my pardon. So it must be, for now</line>
 <line remap="LINE">All length is torture: since the torch is out,</line>
@@ -7118,7 +7118,7 @@ with others</para>
 <line remap="LINE">And all the haunt be ours. Come, Eros, Eros!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter EROS</para>
+<stagedir remap="STAGEDIR">Re-enter EROS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EROS</speaker>
@@ -7198,7 +7198,7 @@ with others</para>
 <line remap="LINE">Lo thee!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Turning from him</para>
+<stagedir remap="STAGEDIR">Turning from him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EROS</speaker>
@@ -7239,7 +7239,7 @@ with others</para>
 <line remap="LINE">Of Antony's death.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Kills himself</para>
+<stagedir remap="STAGEDIR">Kills himself</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -7251,12 +7251,12 @@ with others</para>
 <line remap="LINE">A bridegroom in my death, and run into't</line>
 <line remap="LINE">As to a lover's bed. Come, then; and, Eros,</line>
 <line remap="LINE">Thy master dies thy scholar: to do thus</line>
-<para remap="STAGEDIR">Falling on his sword</para>
+<stagedir remap="STAGEDIR">Falling on his sword</stagedir>
 <line remap="LINE">I learn'd of thee. How! not dead? not dead?</line>
 <line remap="LINE">The guard, ho! O, dispatch me!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DERCETAS and Guard</para>
+<stagedir remap="STAGEDIR">Enter DERCETAS and Guard</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Guard</speaker>
@@ -7304,7 +7304,7 @@ with others</para>
 <line remap="LINE">Nor any one.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Guard</para>
+<stagedir remap="STAGEDIR">Exeunt Guard</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DERCETAS</speaker>
@@ -7313,7 +7313,7 @@ with others</para>
 <line remap="LINE">Shall enter me with him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DIOMEDES</para>
+<stagedir remap="STAGEDIR">Enter DIOMEDES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DIOMEDES</speaker>
@@ -7331,7 +7331,7 @@ with others</para>
 <line remap="LINE">Wilt thou not answer, man?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit DERCETAS</para>
+<stagedir remap="STAGEDIR">Exit DERCETAS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -7383,7 +7383,7 @@ with others</para>
 <line remap="LINE">Come, your lord calls!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter four or five of the Guard of MARK ANTONY</para>
+<stagedir remap="STAGEDIR">Enter four or five of the Guard of MARK ANTONY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARK ANTONY</speaker>
@@ -7412,12 +7412,12 @@ with others</para>
 <line remap="LINE">And have my thanks for all.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt, bearing MARK ANTONY</para>
+<stagedir remap="STAGEDIR">Exeunt, bearing MARK ANTONY</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE XV.  The same. A monument.</title>
-<para remap="STAGEDIR">Enter CLEOPATRA and her maids aloft, with
-CHARMIAN and IRAS</para>
+<stagedir remap="STAGEDIR">Enter CLEOPATRA and her maids aloft, with
+CHARMIAN and IRAS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -7436,7 +7436,7 @@ CHARMIAN and IRAS</para>
 <line remap="LINE">But comforts we despise; our size of sorrow,</line>
 <line remap="LINE">Proportion'd to our cause, must be as great</line>
 <line remap="LINE">As that which makes it.</line>
-<para remap="STAGEDIR">Enter, below, DIOMEDES</para>
+<stagedir remap="STAGEDIR">Enter, below, DIOMEDES</stagedir>
 <line remap="LINE">How now! is he dead?</line>
 </linegroup></dialogue>
 
@@ -7447,7 +7447,7 @@ CHARMIAN and IRAS</para>
 <line remap="LINE">His guard have brought him thither.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter, below, MARK ANTONY, borne by the Guard</para>
+<stagedir remap="STAGEDIR">Enter, below, MARK ANTONY, borne by the Guard</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -7509,7 +7509,7 @@ CHARMIAN and IRAS</para>
 <line remap="LINE">The strong-wing'd Mercury should fetch thee up,</line>
 <line remap="LINE">And set thee by Jove's side. Yet come a little,--</line>
 <line remap="LINE">Wishes were ever fools,--O, come, come, come;</line>
-<para remap="STAGEDIR">They heave MARK ANTONY aloft to CLEOPATRA</para>
+<stagedir remap="STAGEDIR">They heave MARK ANTONY aloft to CLEOPATRA</stagedir>
 <line remap="LINE">And welcome, welcome! die where thou hast lived:</line>
 <line remap="LINE">Quicken with kissing: had my lips that power,</line>
 <line remap="LINE">Thus would I wear them out.</line>
@@ -7575,7 +7575,7 @@ CHARMIAN and IRAS</para>
 <line remap="LINE">Hast thou no care of me? shall I abide</line>
 <line remap="LINE">In this dull world, which in thy absence is</line>
 <line remap="LINE">No better than a sty? O, see, my women,</line>
-<para remap="STAGEDIR">MARK ANTONY dies</para>
+<stagedir remap="STAGEDIR">MARK ANTONY dies</stagedir>
 <line remap="LINE">The crown o' the earth doth melt. My lord!</line>
 <line remap="LINE">O, wither'd is the garland of the war,</line>
 <line remap="LINE">The soldier's pole is fall'n: young boys and girls</line>
@@ -7584,7 +7584,7 @@ CHARMIAN and IRAS</para>
 <line remap="LINE">Beneath the visiting moon.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Faints</para>
+<stagedir remap="STAGEDIR">Faints</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CHARMIAN</speaker>
@@ -7645,7 +7645,7 @@ CHARMIAN and IRAS</para>
 <line remap="LINE">But resolution, and the briefest end.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt; those above bearing off MARK ANTONY's body</para>
+<stagedir remap="STAGEDIR">Exeunt; those above bearing off MARK ANTONY's body</stagedir>
 </section>
 
 </chapter>
@@ -7653,8 +7653,8 @@ CHARMIAN and IRAS</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Alexandria. OCTAVIUS CAESAR's camp.</title>
-<para remap="STAGEDIR">Enter OCTAVIUS CAESAR, AGRIPPA, DOLABELLA, MECAENAS,
-GALLUS, PROCULEIUS, and others, his council of war</para>
+<stagedir remap="STAGEDIR">Enter OCTAVIUS CAESAR, AGRIPPA, DOLABELLA, MECAENAS,
+GALLUS, PROCULEIUS, and others, his council of war</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OCTAVIUS CAESAR</speaker>
@@ -7668,8 +7668,8 @@ GALLUS, PROCULEIUS, and others, his council of war</para>
 <line remap="LINE">Caesar, I shall.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter DERCETAS, with the sword of MARK ANTONY</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter DERCETAS, with the sword of MARK ANTONY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OCTAVIUS CAESAR</speaker>
@@ -7771,7 +7771,7 @@ GALLUS, PROCULEIUS, and others, his council of war</para>
 <line remap="LINE">Unreconciliable, should divide</line>
 <line remap="LINE">Our equalness to this. Hear me, good friends--</line>
 <line remap="LINE">But I will tell you at some meeter season:</line>
-<para remap="STAGEDIR">Enter an Egyptian</para>
+<stagedir remap="STAGEDIR">Enter an Egyptian</stagedir>
 <line remap="LINE">The business of this man looks out of him;</line>
 <line remap="LINE">We'll hear him what he says. Whence are you?</line>
 </linegroup></dialogue>
@@ -7799,7 +7799,7 @@ GALLUS, PROCULEIUS, and others, his council of war</para>
 <line remap="LINE">So the gods preserve thee!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OCTAVIUS CAESAR</speaker>
@@ -7818,12 +7818,12 @@ GALLUS, PROCULEIUS, and others, his council of war</para>
 <line remap="LINE">Caesar, I shall.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OCTAVIUS CAESAR</speaker>
 <line remap="LINE">Gallus, go you along.</line>
-<para remap="STAGEDIR">Exit GALLUS</para>
+<stagedir remap="STAGEDIR">Exit GALLUS</stagedir>
 <line remap="LINE">Where's Dolabella,</line>
 <line remap="LINE">To second Proculeius?</line>
 </linegroup></dialogue>
@@ -7844,11 +7844,11 @@ GALLUS, PROCULEIUS, and others, his council of war</para>
 <line remap="LINE">What I can show in this.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Alexandria. A room in the monument.</title>
-<para remap="STAGEDIR">Enter CLEOPATRA, CHARMIAN, and IRAS</para>
+<stagedir remap="STAGEDIR">Enter CLEOPATRA, CHARMIAN, and IRAS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -7862,8 +7862,8 @@ GALLUS, PROCULEIUS, and others, his council of war</para>
 <line remap="LINE">The beggar's nurse and Caesar's.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter, to the gates of the monument, PROCULEIUS,
-GALLUS and Soldiers</para>
+<stagedir remap="STAGEDIR">Enter, to the gates of the monument, PROCULEIUS,
+GALLUS and Soldiers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROCULEIUS</speaker>
@@ -7927,15 +7927,15 @@ GALLUS and Soldiers</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GALLUS</speaker>
 <line remap="LINE">You see how easily she may be surprised:</line>
-<para remap="STAGEDIR">Here PROCULEIUS and two of the Guard ascend the
+<stagedir remap="STAGEDIR">Here PROCULEIUS and two of the Guard ascend the
 monument by a ladder placed against a window, and,
 having descended, come behind CLEOPATRA. Some of
-the Guard unbar and open the gates</para>
-<para remap="STAGEDIR">To PROCULEIUS and the Guard</para>
+the Guard unbar and open the gates</stagedir>
+<stagedir remap="STAGEDIR">To PROCULEIUS and the Guard</stagedir>
 <line remap="LINE">Guard her till Caesar come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IRAS</speaker>
@@ -7952,12 +7952,12 @@ the Guard unbar and open the gates</para>
 <line remap="LINE">Quick, quick, good hands.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Drawing a dagger</para>
+<stagedir remap="STAGEDIR">Drawing a dagger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROCULEIUS</speaker>
 <line remap="LINE">Hold, worthy lady, hold:</line>
-<para remap="STAGEDIR">Seizes and disarms her</para>
+<stagedir remap="STAGEDIR">Seizes and disarms her</stagedir>
 <line remap="LINE">Do not yourself such wrong, who are in this</line>
 <line remap="LINE">Relieved, but not betray'd.</line>
 </linegroup></dialogue>
@@ -8014,7 +8014,7 @@ the Guard unbar and open the gates</para>
 <line remap="LINE">Find cause in Caesar.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DOLABELLA</para>
+<stagedir remap="STAGEDIR">Enter DOLABELLA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOLABELLA</speaker>
@@ -8028,7 +8028,7 @@ the Guard unbar and open the gates</para>
 <speaker remap="SPEAKER">PROCULEIUS</speaker>
 <line remap="LINE">So, Dolabella,</line>
 <line remap="LINE">It shall content me best: be gentle to her.</line>
-<para remap="STAGEDIR">To CLEOPATRA</para>
+<stagedir remap="STAGEDIR">To CLEOPATRA</stagedir>
 <line remap="LINE">To Caesar I will speak what you shall please,</line>
 <line remap="LINE">If you'll employ me to him.</line>
 </linegroup></dialogue>
@@ -8038,7 +8038,7 @@ the Guard unbar and open the gates</para>
 <line remap="LINE">Say, I would die.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt PROCULEIUS and Soldiers</para>
+<stagedir remap="STAGEDIR">Exeunt PROCULEIUS and Soldiers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOLABELLA</speaker>
@@ -8174,10 +8174,10 @@ the Guard unbar and open the gates</para>
 <line remap="LINE">Madam, he will; I know't.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish, and shout within, 'Make way there:
-Octavius Caesar!'</para>
-<para remap="STAGEDIR">Enter OCTAVIUS CAESAR, GALLUS, PROCULEIUS,
-MECAENAS, SELEUCUS, and others of his Train</para>
+<stagedir remap="STAGEDIR">Flourish, and shout within, 'Make way there:
+Octavius Caesar!'</stagedir>
+<stagedir remap="STAGEDIR">Enter OCTAVIUS CAESAR, GALLUS, PROCULEIUS,
+MECAENAS, SELEUCUS, and others of his Train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OCTAVIUS CAESAR</speaker>
@@ -8189,7 +8189,7 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <line remap="LINE">It is the emperor, madam.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">CLEOPATRA kneels</para>
+<stagedir remap="STAGEDIR">CLEOPATRA kneels</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OCTAVIUS CAESAR</speaker>
@@ -8323,7 +8323,7 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <line remap="LINE">Their mediation; must I be unfolded</line>
 <line remap="LINE">With one that I have bred? The gods! it smites me</line>
 <line remap="LINE">Beneath the fall I have.</line>
-<para remap="STAGEDIR">To SELEUCUS</para>
+<stagedir remap="STAGEDIR">To SELEUCUS</stagedir>
 <line remap="LINE">Prithee, go hence;</line>
 <line remap="LINE">Or I shall show the cinders of my spirits</line>
 <line remap="LINE">Through the ashes of my chance: wert thou a man,</line>
@@ -8335,7 +8335,7 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <line remap="LINE">Forbear, Seleucus.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit SELEUCUS</para>
+<stagedir remap="STAGEDIR">Exit SELEUCUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -8370,7 +8370,7 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <line remap="LINE">Not so. Adieu.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish. Exeunt OCTAVIUS CAESAR and his train</para>
+<stagedir remap="STAGEDIR">Flourish. Exeunt OCTAVIUS CAESAR and his train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -8378,7 +8378,7 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <line remap="LINE">Be noble to myself: but, hark thee, Charmian.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Whispers CHARMIAN</para>
+<stagedir remap="STAGEDIR">Whispers CHARMIAN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IRAS</speaker>
@@ -8398,7 +8398,7 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <line remap="LINE">Madam, I will.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter DOLABELLA</para>
+<stagedir remap="STAGEDIR">Re-enter DOLABELLA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOLABELLA</speaker>
@@ -8410,7 +8410,7 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <line remap="LINE">Behold, sir.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -8443,7 +8443,7 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
 <line remap="LINE">Farewell, and thanks.</line>
-<para remap="STAGEDIR">Exit DOLABELLA</para>
+<stagedir remap="STAGEDIR">Exit DOLABELLA</stagedir>
 <line remap="LINE">Now, Iras, what think'st thou?</line>
 <line remap="LINE">Thou, an Egyptian puppet, shalt be shown</line>
 <line remap="LINE">In Rome, as well as I mechanic slaves</line>
@@ -8491,7 +8491,7 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <line remap="LINE">Why, that's the way</line>
 <line remap="LINE">To fool their preparation, and to conquer</line>
 <line remap="LINE">Their most absurd intents.</line>
-<para remap="STAGEDIR">Re-enter CHARMIAN</para>
+<stagedir remap="STAGEDIR">Re-enter CHARMIAN</stagedir>
 <line remap="LINE">Now, Charmian!</line>
 <line remap="LINE">Show me, my women, like a queen: go fetch</line>
 <line remap="LINE">My best attires: I am again for Cydnus,</line>
@@ -8502,8 +8502,8 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <line remap="LINE">Wherefore's this noise?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit IRAS. A noise within</para>
-<para remap="STAGEDIR">Enter a Guardsman</para>
+<stagedir remap="STAGEDIR">Exit IRAS. A noise within</stagedir>
+<stagedir remap="STAGEDIR">Enter a Guardsman</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Guard</speaker>
@@ -8515,7 +8515,7 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
 <line remap="LINE">Let him come in.</line>
-<para remap="STAGEDIR">Exit Guardsman</para>
+<stagedir remap="STAGEDIR">Exit Guardsman</stagedir>
 <line remap="LINE">What poor an instrument</line>
 <line remap="LINE">May do a noble deed! he brings me liberty.</line>
 <line remap="LINE">My resolution's placed, and I have nothing</line>
@@ -8524,7 +8524,7 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <line remap="LINE">No planet is of mine.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter Guardsman, with Clown bringing in a basket</para>
+<stagedir remap="STAGEDIR">Re-enter Guardsman, with Clown bringing in a basket</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Guard</speaker>
@@ -8534,7 +8534,7 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
 <line remap="LINE">Avoid, and leave him.</line>
-<para remap="STAGEDIR">Exit Guardsman</para>
+<stagedir remap="STAGEDIR">Exit Guardsman</stagedir>
 <line remap="LINE">Hast thou the pretty worm of Nilus there,</line>
 <line remap="LINE">That kills and pains not?</line>
 </linegroup></dialogue>
@@ -8575,7 +8575,7 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <line remap="LINE">I wish you all joy of the worm.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Setting down his basket</para>
+<stagedir remap="STAGEDIR">Setting down his basket</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -8636,8 +8636,8 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <line remap="LINE">Yes, forsooth: I wish you joy o' the worm.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Re-enter IRAS with a robe, crown, &amp;c</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Re-enter IRAS with a robe, crown, &amp;c</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
@@ -8654,7 +8654,7 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <line remap="LINE">I give to baser life. So; have you done?</line>
 <line remap="LINE">Come then, and take the last warmth of my lips.</line>
 <line remap="LINE">Farewell, kind Charmian; Iras, long farewell.</line>
-<para remap="STAGEDIR">Kisses them. IRAS falls and dies</para>
+<stagedir remap="STAGEDIR">Kisses them. IRAS falls and dies</stagedir>
 <line remap="LINE">Have I the aspic in my lips? Dost fall?</line>
 <line remap="LINE">If thou and nature can so gently part,</line>
 <line remap="LINE">The stroke of death is as a lover's pinch,</line>
@@ -8676,7 +8676,7 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <line remap="LINE">He'll make demand of her, and spend that kiss</line>
 <line remap="LINE">Which is my heaven to have. Come, thou</line>
 <line remap="LINE">mortal wretch,</line>
-<para remap="STAGEDIR">To an asp, which she applies to her breast</para>
+<stagedir remap="STAGEDIR">To an asp, which she applies to her breast</stagedir>
 <line remap="LINE">With thy sharp teeth this knot intrinsicate</line>
 <line remap="LINE">Of life at once untie: poor venomous fool</line>
 <line remap="LINE">Be angry, and dispatch. O, couldst thou speak,</line>
@@ -8705,11 +8705,11 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <speaker remap="SPEAKER">CLEOPATRA</speaker>
 <line remap="LINE">As sweet as balm, as soft as air, as gentle,--</line>
 <line remap="LINE">O Antony!--Nay, I will take thee too.</line>
-<para remap="STAGEDIR">Applying another asp to her arm</para>
+<stagedir remap="STAGEDIR">Applying another asp to her arm</stagedir>
 <line remap="LINE">What should I stay--</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Dies</para>
+<stagedir remap="STAGEDIR">Dies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CHARMIAN</speaker>
@@ -8721,7 +8721,7 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <line remap="LINE">I'll mend it, and then play.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter the Guard, rushing in</para>
+<stagedir remap="STAGEDIR">Enter the Guard, rushing in</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Guard</speaker>
@@ -8741,7 +8741,7 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CHARMIAN</speaker>
 <line remap="LINE">Too slow a messenger.</line>
-<para remap="STAGEDIR">Applies an asp</para>
+<stagedir remap="STAGEDIR">Applies an asp</stagedir>
 <line remap="LINE">O, come apace, dispatch! I partly feel thee.</line>
 </linegroup></dialogue>
 
@@ -8767,8 +8767,8 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <line remap="LINE">Ah, soldier!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Dies</para>
-<para remap="STAGEDIR">Re-enter DOLABELLA</para>
+<stagedir remap="STAGEDIR">Dies</stagedir>
+<stagedir remap="STAGEDIR">Re-enter DOLABELLA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOLABELLA</speaker>
@@ -8788,8 +8788,8 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <line remap="LINE">So sought'st to hinder.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Within  'A way there, a way for Caesar!'</para>
-<para remap="STAGEDIR">Re-enter OCTAVIUS CAESAR and all his train marching</para>
+<stagedir remap="STAGEDIR">Within  'A way there, a way for Caesar!'</stagedir>
+<stagedir remap="STAGEDIR">Re-enter OCTAVIUS CAESAR and all his train marching</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOLABELLA</speaker>
@@ -8871,7 +8871,7 @@ MECAENAS, SELEUCUS, and others of his Train</para>
 <line remap="LINE">High order in this great solemnity.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 </chapter>
 </book>

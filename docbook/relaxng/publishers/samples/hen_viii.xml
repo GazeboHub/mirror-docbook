@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">The Famous History of the Life of Henry the Eighth</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">The Famous History of the Life of Henry the Eighth</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The Famous History of the Life of Henry the Eighth</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -45,9 +45,9 @@
 <para><personname remap="PERSONA">PATIENCE, woman to Queen Katharine.</personname></para>
 <para><personname remap="PERSONA">Several Lords and Ladies in the Dumb Shows; Women attending upon the Queen; Scribes, Officers, Guards, and other Attendants.</personname></para>
 <para><personname remap="PERSONA">Spirits.</personname></para>
-    <para remap="SCNDESCR">SCENE  London; Westminster; Kimbolton</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  London; Westminster; Kimbolton</para>
 
 
 <preface remap="PROLOGUE"><title remap="TITLE">THE PROLOGUE</title>
@@ -90,8 +90,8 @@
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  London. An ante-chamber in the palace.</title>
-<para remap="STAGEDIR">Enter NORFOLK at one door; at the other, BUCKINGHAM
-and ABERGAVENNY</para>
+<stagedir remap="STAGEDIR">Enter NORFOLK at one door; at the other, BUCKINGHAM
+and ABERGAVENNY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BUCKINGHAM</speaker>
@@ -331,11 +331,11 @@ and ABERGAVENNY</para>
 <line remap="LINE">That I advise your shunning.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CARDINAL WOLSEY, the purse borne before him,
+<stagedir remap="STAGEDIR">Enter CARDINAL WOLSEY, the purse borne before him,
 certain of the Guard, and two Secretaries with
 papers. CARDINAL WOLSEY in his passage fixeth his
 eye on BUCKINGHAM, and BUCKINGHAM on him, both full
-of disdain</para>
+of disdain</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CARDINAL WOLSEY</speaker>
@@ -364,7 +364,7 @@ of disdain</para>
 <line remap="LINE">Shall lessen this big look.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt CARDINAL WOLSEY and his Train</para>
+<stagedir remap="STAGEDIR">Exeunt CARDINAL WOLSEY and his Train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BUCKINGHAM</speaker>
@@ -506,8 +506,8 @@ of disdain</para>
 <line remap="LINE">He shall appear in proof.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BRANDON, a Sergeant-at-arms before him, and
-two or three of the Guard</para>
+<stagedir remap="STAGEDIR">Enter BRANDON, a Sergeant-at-arms before him, and
+two or three of the Guard</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BRANDON</speaker>
@@ -550,7 +550,7 @@ two or three of the Guard</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BRANDON</speaker>
 <line remap="LINE">Nay, he must bear you company. The king</line>
-<para remap="STAGEDIR">To ABERGAVENNY</para>
+<stagedir remap="STAGEDIR">To ABERGAVENNY</stagedir>
 <line remap="LINE">Is pleased you shall to the Tower, till you know</line>
 <line remap="LINE">How he determines further.</line>
 </linegroup></dialogue>
@@ -600,14 +600,14 @@ two or three of the Guard</para>
 <line remap="LINE">By darkening my clear sun. My lord, farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same. The council-chamber.</title>
-<para remap="STAGEDIR">Cornets. Enter KING HENRY VIII, leaning on
+<stagedir remap="STAGEDIR">Cornets. Enter KING HENRY VIII, leaning on
 CARDINAL WOLSEY's shoulder, the Nobles, and LOVELL;
 CARDINAL WOLSEY places himself under KING HENRY
-VIII's feet on his right side</para>
+VIII's feet on his right side</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING HENRY VIII</speaker>
@@ -621,10 +621,10 @@ VIII's feet on his right side</para>
 <line remap="LINE">He shall again relate.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">A noise within, crying 'Room for the Queen!' Enter
+<stagedir remap="STAGEDIR">A noise within, crying 'Room for the Queen!' Enter
 QUEEN KATHARINE, ushered by NORFOLK, and SUFFOLK:
 she kneels. KING HENRY VIII riseth from his state,
-takes her up, kisses and placeth her by him</para>
+takes her up, kisses and placeth her by him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN KATHARINE</speaker>
@@ -791,7 +791,7 @@ takes her up, kisses and placeth her by him</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CARDINAL WOLSEY</speaker>
 <line remap="LINE">A word with you.</line>
-<para remap="STAGEDIR">To the Secretary</para>
+<stagedir remap="STAGEDIR">To the Secretary</stagedir>
 <line remap="LINE">Let there be letters writ to every shire,</line>
 <line remap="LINE">Of the king's grace and pardon. The grieved commons</line>
 <line remap="LINE">Hardly conceive of me; let it be noised</line>
@@ -800,8 +800,8 @@ takes her up, kisses and placeth her by him</para>
 <line remap="LINE">Further in the proceeding.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Secretary</para>
-<para remap="STAGEDIR">Enter Surveyor</para>
+<stagedir remap="STAGEDIR">Exit Secretary</stagedir>
+<stagedir remap="STAGEDIR">Enter Surveyor</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN KATHARINE</speaker>
@@ -1039,11 +1039,11 @@ takes her up, kisses and placeth her by him</para>
 <line remap="LINE">He's traitor to the height.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  An ante-chamber in the palace.</title>
-<para remap="STAGEDIR">Enter Chamberlain and SANDS</para>
+<stagedir remap="STAGEDIR">Enter Chamberlain and SANDS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Chamberlain</speaker>
@@ -1080,7 +1080,7 @@ takes her up, kisses and placeth her by him</para>
 <line remap="LINE">Death! my lord,</line>
 <line remap="LINE">Their clothes are after such a pagan cut too,</line>
 <line remap="LINE">That, sure, they've worn out Christendom.</line>
-<para remap="STAGEDIR">Enter LOVELL</para>
+<stagedir remap="STAGEDIR">Enter LOVELL</stagedir>
 <line remap="LINE">How now!</line>
 <line remap="LINE">What news, Sir Thomas Lovell?</line>
 </linegroup></dialogue>
@@ -1225,15 +1225,15 @@ takes her up, kisses and placeth her by him</para>
 <line remap="LINE">I am your lordship's.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  A Hall in York Place.</title>
-<para remap="STAGEDIR">Hautboys. A small table under a state for CARDINAL
+<stagedir remap="STAGEDIR">Hautboys. A small table under a state for CARDINAL
 WOLSEY, a longer table for the guests. Then enter
 ANNE and divers other Ladies and Gentlemen as
 guests, at one door; at another door, enter
-GUILDFORD</para>
+GUILDFORD</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GUILDFORD</speaker>
@@ -1244,7 +1244,7 @@ GUILDFORD</para>
 <line remap="LINE">One care abroad; he would have all as merry</line>
 <line remap="LINE">As, first, good company, good wine, good welcome,</line>
 <line remap="LINE">Can make good people. O, my lord, you're tardy:</line>
-<para remap="STAGEDIR">Enter Chamberlain, SANDS, and LOVELL</para>
+<stagedir remap="STAGEDIR">Enter Chamberlain, SANDS, and LOVELL</stagedir>
 <line remap="LINE">The very thought of this fair company</line>
 <line remap="LINE">Clapp'd wings to me.</line>
 </linegroup></dialogue>
@@ -1315,7 +1315,7 @@ GUILDFORD</para>
 <line remap="LINE">He would kiss you twenty with a breath.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Kisses her</para>
+<stagedir remap="STAGEDIR">Kisses her</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Chamberlain</speaker>
@@ -1331,7 +1331,7 @@ GUILDFORD</para>
 <line remap="LINE">Let me alone.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Hautboys. Enter CARDINAL WOLSEY, and takes his state</para>
+<stagedir remap="STAGEDIR">Hautboys. Enter CARDINAL WOLSEY, and takes his state</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CARDINAL WOLSEY</speaker>
@@ -1341,7 +1341,7 @@ GUILDFORD</para>
 <line remap="LINE">And to you all, good health.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Drinks</para>
+<stagedir remap="STAGEDIR">Drinks</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SANDS</speaker>
@@ -1388,7 +1388,7 @@ GUILDFORD</para>
 <line remap="LINE">I told your grace they would talk anon.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Drum and trumpet, chambers discharged</para>
+<stagedir remap="STAGEDIR">Drum and trumpet, chambers discharged</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CARDINAL WOLSEY</speaker>
@@ -1400,7 +1400,7 @@ GUILDFORD</para>
 <line remap="LINE">Look out there, some of ye.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Servant</para>
+<stagedir remap="STAGEDIR">Exit Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CARDINAL WOLSEY</speaker>
@@ -1409,7 +1409,7 @@ GUILDFORD</para>
 <line remap="LINE">By all the laws of war you're privileged.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter Servant</para>
+<stagedir remap="STAGEDIR">Re-enter Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Chamberlain</speaker>
@@ -1431,14 +1431,14 @@ GUILDFORD</para>
 <line remap="LINE">And, pray, receive 'em nobly, and conduct 'em</line>
 <line remap="LINE">Into our presence, where this heaven of beauty</line>
 <line remap="LINE">Shall shine at full upon them. Some attend him.</line>
-<para remap="STAGEDIR">Exit Chamberlain, attended. All rise, and tables removed</para>
+<stagedir remap="STAGEDIR">Exit Chamberlain, attended. All rise, and tables removed</stagedir>
 <line remap="LINE">You have now a broken banquet; but we'll mend it.</line>
 <line remap="LINE">A good digestion to you all: and once more</line>
 <line remap="LINE">I shower a welcome on ye; welcome all.</line>
-<para remap="STAGEDIR">Hautboys. Enter KING HENRY VIII and others, as
+<stagedir remap="STAGEDIR">Hautboys. Enter KING HENRY VIII and others, as
 masquers, habited like shepherds, ushered by the
 Chamberlain. They pass directly before CARDINAL
-WOLSEY, and gracefully salute him</para>
+WOLSEY, and gracefully salute him</stagedir>
 <line remap="LINE">A noble company! what are their pleasures?</line>
 </linegroup></dialogue>
 
@@ -1461,8 +1461,8 @@ WOLSEY, and gracefully salute him</para>
 <line remap="LINE">A thousand thanks, and pray 'em take their pleasures.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They choose Ladies for the dance. KING HENRY VIII
-chooses ANNE</para>
+<stagedir remap="STAGEDIR">They choose Ladies for the dance. KING HENRY VIII
+chooses ANNE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING HENRY VIII</speaker>
@@ -1470,7 +1470,7 @@ chooses ANNE</para>
 <line remap="LINE">Till now I never knew thee!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Music. Dance</para>
+<stagedir remap="STAGEDIR">Music. Dance</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CARDINAL WOLSEY</speaker>
@@ -1496,7 +1496,7 @@ chooses ANNE</para>
 <line remap="LINE">I will, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Whispers the Masquers</para>
+<stagedir remap="STAGEDIR">Whispers the Masquers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CARDINAL WOLSEY</speaker>
@@ -1520,7 +1520,7 @@ chooses ANNE</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING HENRY VIII</speaker>
 <line remap="LINE">Ye have found him, cardinal:</line>
-<para remap="STAGEDIR">Unmasking</para>
+<stagedir remap="STAGEDIR">Unmasking</stagedir>
 <line remap="LINE">You hold a fair assembly; you do well, lord:</line>
 <line remap="LINE">You are a churchman, or, I'll tell you, cardinal,</line>
 <line remap="LINE">I should judge now unhappily.</line>
@@ -1590,7 +1590,7 @@ chooses ANNE</para>
 <line remap="LINE">Who's best in favour. Let the music knock it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt with trumpets</para>
+<stagedir remap="STAGEDIR">Exeunt with trumpets</stagedir>
 </section>
 
 </chapter>
@@ -1598,7 +1598,7 @@ chooses ANNE</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Westminster. A street.</title>
-<para remap="STAGEDIR">Enter two Gentlemen, meeting</para>
+<stagedir remap="STAGEDIR">Enter two Gentlemen, meeting</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Gentleman</speaker>
@@ -1769,10 +1769,10 @@ chooses ANNE</para>
 <line remap="LINE">And see the noble ruin'd man you speak of.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BUCKINGHAM from his arraignment; tip-staves
+<stagedir remap="STAGEDIR">Enter BUCKINGHAM from his arraignment; tip-staves
 before him; the axe with the edge towards him;
 halberds on each side: accompanied with LOVELL,
-VAUX, SANDS, and common people</para>
+VAUX, SANDS, and common people</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Gentleman</speaker>
@@ -1887,7 +1887,7 @@ VAUX, SANDS, and common people</para>
 <line remap="LINE">Speak how I fell. I have done; and God forgive me!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt BUCKINGHAM and Train</para>
+<stagedir remap="STAGEDIR">Exeunt BUCKINGHAM and Train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Gentleman</speaker>
@@ -1974,11 +1974,11 @@ VAUX, SANDS, and common people</para>
 <line remap="LINE">Let's think in private more.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  An ante-chamber in the palace.</title>
-<para remap="STAGEDIR">Enter Chamberlain, reading a letter</para>
+<stagedir remap="STAGEDIR">Enter Chamberlain, reading a letter</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Chamberlain</speaker>
@@ -1995,7 +1995,7 @@ VAUX, SANDS, and common people</para>
 <line remap="LINE">He will have all, I think.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter, to Chamberlain, NORFOLK and SUFFOLK</para>
+<stagedir remap="STAGEDIR">Enter, to Chamberlain, NORFOLK and SUFFOLK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NORFOLK</speaker>
@@ -2124,8 +2124,8 @@ VAUX, SANDS, and common people</para>
 <line remap="LINE">Thanks, my good lord chamberlain.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Chamberlain; and KING HENRY VIII draws the
-curtain, and sits reading pensively</para>
+<stagedir remap="STAGEDIR">Exit Chamberlain; and KING HENRY VIII draws the
+curtain, and sits reading pensively</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SUFFOLK</speaker>
@@ -2162,16 +2162,16 @@ curtain, and sits reading pensively</para>
 <line remap="LINE">Ye are too bold:</line>
 <line remap="LINE">Go to; I'll make ye know your times of business:</line>
 <line remap="LINE">Is this an hour for temporal affairs, ha?</line>
-<para remap="STAGEDIR">Enter CARDINAL WOLSEY and CARDINAL CAMPEIUS, with
-a commission</para>
+<stagedir remap="STAGEDIR">Enter CARDINAL WOLSEY and CARDINAL CAMPEIUS, with
+a commission</stagedir>
 <line remap="LINE">Who's there? my good lord cardinal? O my Wolsey,</line>
 <line remap="LINE">The quiet of my wounded conscience;</line>
 <line remap="LINE">Thou art a cure fit for a king.</line>
-<para remap="STAGEDIR">To CARDINAL CAMPEIUS</para>
+<stagedir remap="STAGEDIR">To CARDINAL CAMPEIUS</stagedir>
 <line remap="LINE">You're welcome,</line>
 <line remap="LINE">Most learned reverend sir, into our kingdom:</line>
 <line remap="LINE">Use us and it.</line>
-<para remap="STAGEDIR">To CARDINAL WOLSEY</para>
+<stagedir remap="STAGEDIR">To CARDINAL WOLSEY</stagedir>
 <line remap="LINE">My good lord, have great care</line>
 <line remap="LINE">I be not found a talker.</line>
 </linegroup></dialogue>
@@ -2185,35 +2185,35 @@ a commission</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING HENRY VIII</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To NORFOLK and SUFFOLK</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To NORFOLK and SUFFOLK</inlinestagedir></line>
 <line remap="LINE">We are busy; go.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NORFOLK</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to SUFFOLK</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to SUFFOLK</inlinestagedir></line>
 <line remap="LINE">This priest has no pride in him?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SUFFOLK</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to NORFOLK</phrase>             Not to speak of:</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to NORFOLK</inlinestagedir>             Not to speak of:</line>
 <line remap="LINE">I would not be so sick though for his place:</line>
 <line remap="LINE">But this cannot continue.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NORFOLK</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to SUFFOLK</phrase>      If it do,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to SUFFOLK</inlinestagedir>      If it do,</line>
 <line remap="LINE">I'll venture one have-at-him.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SUFFOLK</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to NORFOLK</phrase>          I another.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to NORFOLK</inlinestagedir>          I another.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt NORFOLK and SUFFOLK</para>
+<stagedir remap="STAGEDIR">Exeunt NORFOLK and SUFFOLK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CARDINAL WOLSEY</speaker>
@@ -2271,19 +2271,19 @@ a commission</para>
 <line remap="LINE">I find him a fit fellow.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit CARDINAL WOLSEY</para>
-<para remap="STAGEDIR">Re-enter CARDINAL WOLSEY, with GARDINER</para>
+<stagedir remap="STAGEDIR">Exit CARDINAL WOLSEY</stagedir>
+<stagedir remap="STAGEDIR">Re-enter CARDINAL WOLSEY, with GARDINER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CARDINAL WOLSEY</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to GARDINER</phrase>  Give me your hand much joy and</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to GARDINER</inlinestagedir>  Give me your hand much joy and</line>
 <line remap="LINE">favour to you;</line>
 <line remap="LINE">You are the king's now.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GARDINER</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to CARDINAL WOLSEY</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to CARDINAL WOLSEY</inlinestagedir></line>
 <line remap="LINE">But to be commanded</line>
 <line remap="LINE">For ever by your grace, whose hand has raised me.</line>
 </linegroup></dialogue>
@@ -2293,7 +2293,7 @@ a commission</para>
 <line remap="LINE">Come hither, Gardiner.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Walks and whispers</para>
+<stagedir remap="STAGEDIR">Walks and whispers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CARDINAL CAMPEIUS</speaker>
@@ -2349,7 +2349,7 @@ a commission</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING HENRY VIII</speaker>
 <line remap="LINE">Deliver this with modesty to the queen.</line>
-<para remap="STAGEDIR">Exit GARDINER</para>
+<stagedir remap="STAGEDIR">Exit GARDINER</stagedir>
 <line remap="LINE">The most convenient place that I can think of</line>
 <line remap="LINE">For such receipt of learning is Black-Friars;</line>
 <line remap="LINE">There ye shall meet about this weighty business.</line>
@@ -2359,11 +2359,11 @@ a commission</para>
 <line remap="LINE">O, 'tis a tender place; and I must leave her.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  An ante-chamber of the QUEEN'S apartments.</title>
-<para remap="STAGEDIR">Enter ANNE and an Old Lady</para>
+<stagedir remap="STAGEDIR">Enter ANNE and an Old Lady</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANNE</speaker>
@@ -2489,7 +2489,7 @@ a commission</para>
 <line remap="LINE">No more to the crown but that. Lo, who comes here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Chamberlain</para>
+<stagedir remap="STAGEDIR">Enter Chamberlain</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Chamberlain</speaker>
@@ -2547,7 +2547,7 @@ a commission</para>
 <line remap="LINE">Lady,</line>
 <line remap="LINE">I shall not fail to approve the fair conceit</line>
 <line remap="LINE">The king hath of you.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">I have perused her well;</line>
 <line remap="LINE">Beauty and honour in her are so mingled</line>
 <line remap="LINE">That they have caught the king: and who knows yet</line>
@@ -2556,7 +2556,7 @@ a commission</para>
 <line remap="LINE">And say I spoke with you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Chamberlain</para>
+<stagedir remap="STAGEDIR">Exit Chamberlain</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANNE</speaker>
@@ -2622,11 +2622,11 @@ a commission</para>
 <line remap="LINE">What do you think me?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  A hall in Black-Friars.</title>
-<para remap="STAGEDIR">Trumpets, sennet, and cornets. Enter two Vergers,
+<stagedir remap="STAGEDIR">Trumpets, sennet, and cornets. Enter two Vergers,
 with short silver wands; next them, two Scribes, in
 the habit of doctors; after them, CANTERBURY alone;
 after him, LINCOLN, Ely, Rochester, and Saint
@@ -2646,7 +2646,7 @@ HENRY VIII. The Bishops place themselves on each
 side the court, in manner of a consistory; below
 them, the Scribes. The Lords sit next the Bishops.
 The rest of the Attendants stand in convenient
-order about the stage</para>
+order about the stage</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CARDINAL WOLSEY</speaker>
@@ -2692,9 +2692,9 @@ order about the stage</para>
 <line remap="LINE">Katharine Queen of England, &amp;c.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">QUEEN KATHARINE makes no answer, rises out of her
+<stagedir remap="STAGEDIR">QUEEN KATHARINE makes no answer, rises out of her
 chair, goes about the court, comes to KING HENRY
-VIII, and kneels at his feet; then speaks</para>
+VIII, and kneels at his feet; then speaks</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN KATHARINE</speaker>
@@ -2854,7 +2854,7 @@ VIII, and kneels at his feet; then speaks</para>
 <line remap="LINE">And to be judged by him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">She curtsies to KING HENRY VIII, and offers to depart</para>
+<stagedir remap="STAGEDIR">She curtsies to KING HENRY VIII, and offers to depart</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CARDINAL CAMPEIUS</speaker>
@@ -2889,7 +2889,7 @@ VIII, and kneels at his feet; then speaks</para>
 <line remap="LINE">In any of their courts.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt QUEEN KATHARINE and her Attendants</para>
+<stagedir remap="STAGEDIR">Exeunt QUEEN KATHARINE and her Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING HENRY VIII</speaker>
@@ -3034,7 +3034,7 @@ VIII, and kneels at his feet; then speaks</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING HENRY VIII</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase> I may perceive</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir> I may perceive</line>
 <line remap="LINE">These cardinals trifle with me: I abhor</line>
 <line remap="LINE">This dilatory sloth and tricks of Rome.</line>
 <line remap="LINE">My learn'd and well-beloved servant, Cranmer,</line>
@@ -3043,7 +3043,7 @@ VIII, and kneels at his feet; then speaks</para>
 <line remap="LINE">I say, set on.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt in manner as they entered</para>
+<stagedir remap="STAGEDIR">Exeunt in manner as they entered</stagedir>
 </section>
 
 </chapter>
@@ -3051,13 +3051,13 @@ VIII, and kneels at his feet; then speaks</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  London. QUEEN KATHARINE's apartments.</title>
-<para remap="STAGEDIR">Enter QUEEN KATHARINE and her Women, as at work</para>
+<stagedir remap="STAGEDIR">Enter QUEEN KATHARINE and her Women, as at work</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN KATHARINE</speaker>
 <line remap="LINE">Take thy lute, wench: my soul grows sad with troubles;</line>
 <line remap="LINE">Sing, and disperse 'em, if thou canst: leave working.</line>
-<para remap="STAGEDIR">SONG</para>
+<stagedir remap="STAGEDIR">SONG</stagedir>
 <line remap="LINE">Orpheus with his lute made trees,</line>
 <line remap="LINE">And the mountain tops that freeze,</line>
 <line remap="LINE">Bow themselves when he did sing:</line>
@@ -3072,7 +3072,7 @@ VIII, and kneels at his feet; then speaks</para>
 <line remap="LINE">Fall asleep, or hearing, die.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Gentleman</para>
+<stagedir remap="STAGEDIR">Enter a Gentleman</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN KATHARINE</speaker>
@@ -3099,7 +3099,7 @@ VIII, and kneels at his feet; then speaks</para>
 <speaker remap="SPEAKER">QUEEN KATHARINE</speaker>
 <line remap="LINE">Pray their graces</line>
 <line remap="LINE">To come near.</line>
-<para remap="STAGEDIR">Exit Gentleman</para>
+<stagedir remap="STAGEDIR">Exit Gentleman</stagedir>
 <line remap="LINE">What can be their business</line>
 <line remap="LINE">With me, a poor weak woman, fall'n from favour?</line>
 <line remap="LINE">I do not like their coming. Now I think on't,</line>
@@ -3107,7 +3107,7 @@ VIII, and kneels at his feet; then speaks</para>
 <line remap="LINE">But all hoods make not monks.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CARDINAL WOLSEY and CARDINAL CAMPEIUS</para>
+<stagedir remap="STAGEDIR">Enter CARDINAL WOLSEY and CARDINAL CAMPEIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CARDINAL WOLSEY</speaker>
@@ -3192,7 +3192,7 @@ VIII, and kneels at his feet; then speaks</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN KATHARINE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase> To betray me.--</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir> To betray me.--</line>
 <line remap="LINE">My lords, I thank you both for your good wills;</line>
 <line remap="LINE">Ye speak like honest men; pray God, ye prove so!</line>
 <line remap="LINE">But how to make ye suddenly an answer,</line>
@@ -3401,11 +3401,11 @@ VIII, and kneels at his feet; then speaks</para>
 <line remap="LINE">She should have bought her dignities so dear.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Ante-chamber to KING HENRY VIII's apartment.</title>
-<para remap="STAGEDIR">Enter NORFOLK, SUFFOLK, SURREY, and Chamberlain</para>
+<stagedir remap="STAGEDIR">Enter NORFOLK, SUFFOLK, SURREY, and Chamberlain</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NORFOLK</speaker>
@@ -3630,7 +3630,7 @@ VIII, and kneels at his feet; then speaks</para>
 <line remap="LINE">The cardinal!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CARDINAL WOLSEY and CROMWELL</para>
+<stagedir remap="STAGEDIR">Enter CARDINAL WOLSEY and CROMWELL</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NORFOLK</speaker>
@@ -3676,8 +3676,8 @@ VIII, and kneels at his feet; then speaks</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CARDINAL WOLSEY</speaker>
 <line remap="LINE">Leave me awhile.</line>
-<para remap="STAGEDIR">Exit CROMWELL</para>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Exit CROMWELL</stagedir>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">It shall be to the Duchess of Alencon,</line>
 <line remap="LINE">The French king's sister: he shall marry her.</line>
 <line remap="LINE">Anne Bullen! No; I'll no Anne Bullens for him:</line>
@@ -3705,7 +3705,7 @@ VIII, and kneels at his feet; then speaks</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CARDINAL WOLSEY</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  The late queen's gentlewoman,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  The late queen's gentlewoman,</line>
 <line remap="LINE">a knight's daughter,</line>
 <line remap="LINE">To be her mistress' mistress! the queen's queen!</line>
 <line remap="LINE">This candle burns not clear: 'tis I must snuff it;</line>
@@ -3730,7 +3730,7 @@ VIII, and kneels at his feet; then speaks</para>
 <line remap="LINE">The master-cord on's heart!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter KING HENRY VIII, reading of a schedule, and LOVELL</para>
+<stagedir remap="STAGEDIR">Enter KING HENRY VIII, reading of a schedule, and LOVELL</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SUFFOLK</speaker>
@@ -3790,8 +3790,8 @@ VIII, and kneels at his feet; then speaks</para>
 <line remap="LINE">His serious considering.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">King HENRY VIII takes his seat; whispers LOVELL,
-who goes to CARDINAL WOLSEY</para>
+<stagedir remap="STAGEDIR">King HENRY VIII takes his seat; whispers LOVELL,
+who goes to CARDINAL WOLSEY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CARDINAL WOLSEY</speaker>
@@ -3849,12 +3849,12 @@ who goes to CARDINAL WOLSEY</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CARDINAL WOLSEY</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>             What should this mean?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>             What should this mean?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SURREY</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  The Lord increase this business!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  The Lord increase this business!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -3919,13 +3919,13 @@ who goes to CARDINAL WOLSEY</para>
 <line remap="LINE">'Tis nobly spoken:</line>
 <line remap="LINE">Take notice, lords, he has a loyal breast,</line>
 <line remap="LINE">For you have seen him open't. Read o'er this;</line>
-<para remap="STAGEDIR">Giving him papers</para>
+<stagedir remap="STAGEDIR">Giving him papers</stagedir>
 <line remap="LINE">And after, this: and then to breakfast with</line>
 <line remap="LINE">What appetite you have.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit KING HENRY VIII, frowning upon CARDINAL WOLSEY:
-the Nobles throng after him, smiling and whispering</para>
+<stagedir remap="STAGEDIR">Exit KING HENRY VIII, frowning upon CARDINAL WOLSEY:
+the Nobles throng after him, smiling and whispering</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CARDINAL WOLSEY</speaker>
@@ -3956,8 +3956,8 @@ the Nobles throng after him, smiling and whispering</para>
 <line remap="LINE">And no man see me more.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter to CARDINAL WOLSEY, NORFOLK and SUFFOLK, SURREY,
-and the Chamberlain</para>
+<stagedir remap="STAGEDIR">Re-enter to CARDINAL WOLSEY, NORFOLK and SUFFOLK, SURREY,
+and the Chamberlain</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NORFOLK</speaker>
@@ -4209,7 +4209,7 @@ and the Chamberlain</para>
 <line remap="LINE">So fare you well, my little good lord cardinal.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but CARDINAL WOLSEY</para>
+<stagedir remap="STAGEDIR">Exeunt all but CARDINAL WOLSEY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CARDINAL WOLSEY</speaker>
@@ -4236,7 +4236,7 @@ and the Chamberlain</para>
 <line remap="LINE">More pangs and fears than wars or women have:</line>
 <line remap="LINE">And when he falls, he falls like Lucifer,</line>
 <line remap="LINE">Never to hope again.</line>
-<para remap="STAGEDIR">Enter CROMWELL, and stands amazed</para>
+<stagedir remap="STAGEDIR">Enter CROMWELL, and stands amazed</stagedir>
 <line remap="LINE">Why, how now, Cromwell!</line>
 </linegroup></dialogue>
 
@@ -4409,7 +4409,7 @@ and the Chamberlain</para>
 <line remap="LINE">The hopes of court! my hopes in heaven do dwell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -4417,7 +4417,7 @@ and the Chamberlain</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A street in Westminster.</title>
-<para remap="STAGEDIR">Enter two Gentlemen, meeting one another</para>
+<stagedir remap="STAGEDIR">Enter two Gentlemen, meeting one another</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Gentleman</speaker>
@@ -4505,25 +4505,25 @@ and the Chamberlain</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Gentleman</speaker>
 <line remap="LINE">Alas, good lady!</line>
-<para remap="STAGEDIR">Trumpets</para>
+<stagedir remap="STAGEDIR">Trumpets</stagedir>
 <line remap="LINE">The trumpets sound: stand close, the queen is coming.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Hautboys</para>
-<para remap="STAGEDIR">THE ORDER OF THE CORONATION</para>
-<para remap="STAGEDIR">1. A lively flourish of Trumpets.</para>
-<para remap="STAGEDIR">2. Then, two Judges.</para>
-<para remap="STAGEDIR">3. Lord Chancellor, with the purse and mace before him.</para>
-<para remap="STAGEDIR">4. Choristers, singing.</para>
-<para remap="STAGEDIR">Music</para>
-<para remap="STAGEDIR">5. Mayor of London, bearing the mace. Then Garter, in his coat of arms, and on his head a gilt copper crown.</para>
-<para remap="STAGEDIR">6. Marquess Dorset, bearing a sceptre of gold, on his head a demi-coronal of gold. With him, SURREY, bearing the rod of silver with the dove, crowned with an earl's coronet. Collars of SS.</para>
-<para remap="STAGEDIR">7. SUFFOLK, in his robe of estate, his coronet on his head, bearing a long white wand, as high-steward. With him, NORFOLK, with the rod of marshalship, a coronet on his head. Collars of SS.</para>
-<para remap="STAGEDIR">8. A canopy borne by four of the Cinque-ports; under it, QUEEN ANNE in her robe; in her hair richly adorned with pearl, crowned. On each side her, the Bishops of London and Winchester.</para>
-<para remap="STAGEDIR">9. The old Duchess of Norfolk, in a coronal of gold, wrought with flowers, bearing QUEEN ANNE's train.</para>
-<para remap="STAGEDIR">10. Certain Ladies or Countesses, with plain circlets of gold without flowers.</para>
+<stagedir remap="STAGEDIR">Hautboys</stagedir>
+<stagedir remap="STAGEDIR">THE ORDER OF THE CORONATION</stagedir>
+<stagedir remap="STAGEDIR">1. A lively flourish of Trumpets.</stagedir>
+<stagedir remap="STAGEDIR">2. Then, two Judges.</stagedir>
+<stagedir remap="STAGEDIR">3. Lord Chancellor, with the purse and mace before him.</stagedir>
+<stagedir remap="STAGEDIR">4. Choristers, singing.</stagedir>
+<stagedir remap="STAGEDIR">Music</stagedir>
+<stagedir remap="STAGEDIR">5. Mayor of London, bearing the mace. Then Garter, in his coat of arms, and on his head a gilt copper crown.</stagedir>
+<stagedir remap="STAGEDIR">6. Marquess Dorset, bearing a sceptre of gold, on his head a demi-coronal of gold. With him, SURREY, bearing the rod of silver with the dove, crowned with an earl's coronet. Collars of SS.</stagedir>
+<stagedir remap="STAGEDIR">7. SUFFOLK, in his robe of estate, his coronet on his head, bearing a long white wand, as high-steward. With him, NORFOLK, with the rod of marshalship, a coronet on his head. Collars of SS.</stagedir>
+<stagedir remap="STAGEDIR">8. A canopy borne by four of the Cinque-ports; under it, QUEEN ANNE in her robe; in her hair richly adorned with pearl, crowned. On each side her, the Bishops of London and Winchester.</stagedir>
+<stagedir remap="STAGEDIR">9. The old Duchess of Norfolk, in a coronal of gold, wrought with flowers, bearing QUEEN ANNE's train.</stagedir>
+<stagedir remap="STAGEDIR">10. Certain Ladies or Countesses, with plain circlets of gold without flowers.</stagedir>
 
-<para remap="STAGEDIR">They pass over the stage in order and state</para>
+<stagedir remap="STAGEDIR">They pass over the stage in order and state</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Gentleman</speaker>
@@ -4561,7 +4561,7 @@ and the Chamberlain</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Gentleman</speaker>
 <line remap="LINE">Heaven bless thee!</line>
-<para remap="STAGEDIR">Looking on QUEEN ANNE</para>
+<stagedir remap="STAGEDIR">Looking on QUEEN ANNE</stagedir>
 <line remap="LINE">Thou hast the sweetest face I ever look'd on.</line>
 <line remap="LINE">Sir, as I have a soul, she is an angel;</line>
 <line remap="LINE">Our king has all the Indies in his arms,</line>
@@ -4599,8 +4599,8 @@ and the Chamberlain</para>
 <line remap="LINE">No more of that.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit procession, and then a great flourish of trumpets</para>
-<para remap="STAGEDIR">Enter a third Gentleman</para>
+<stagedir remap="STAGEDIR">Exit procession, and then a great flourish of trumpets</stagedir>
+<stagedir remap="STAGEDIR">Enter a third Gentleman</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Gentleman</speaker>
@@ -4761,12 +4761,12 @@ and the Chamberlain</para>
 <line remap="LINE">You may command us, sir.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Kimbolton.</title>
-<para remap="STAGEDIR">Enter KATHARINE, Dowager, sick; led between
-GRIFFITH, her gentleman usher, and PATIENCE, her woman</para>
+<stagedir remap="STAGEDIR">Enter KATHARINE, Dowager, sick; led between
+GRIFFITH, her gentleman usher, and PATIENCE, her woman</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GRIFFITH</speaker>
@@ -4902,7 +4902,7 @@ GRIFFITH, her gentleman usher, and PATIENCE, her woman</para>
 <line remap="LINE">On that celestial harmony I go to.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Sad and solemn music</para>
+<stagedir remap="STAGEDIR">Sad and solemn music</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GRIFFITH</speaker>
@@ -4910,7 +4910,7 @@ GRIFFITH, her gentleman usher, and PATIENCE, her woman</para>
 <line remap="LINE">For fear we wake her: softly, gentle Patience.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The vision. Enter, solemnly tripping one after
+<stagedir remap="STAGEDIR">The vision. Enter, solemnly tripping one after
 another, six personages, clad in white robes,
 wearing on their heads garlands of bays, and golden
 vizards on their faces; branches of bays or palm in
@@ -4926,7 +4926,7 @@ likewise observe the same order: at which, as it
 were by inspiration, she makes in her sleep signs
 of rejoicing, and holdeth up her hands to heaven:
 and so in their dancing vanish, carrying the
-garland with them. The music continues</para>
+garland with them. The music continues</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KATHARINE</speaker>
@@ -4972,7 +4972,7 @@ garland with them. The music continues</para>
 <line remap="LINE">They are harsh and heavy to me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Music ceases</para>
+<stagedir remap="STAGEDIR">Music ceases</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PATIENCE</speaker>
@@ -4992,7 +4992,7 @@ garland with them. The music continues</para>
 <line remap="LINE">Heaven comfort her!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
@@ -5023,8 +5023,8 @@ garland with them. The music continues</para>
 <speaker remap="SPEAKER">KATHARINE</speaker>
 <line remap="LINE">Admit him entrance, Griffith: but this fellow</line>
 <line remap="LINE">Let me ne'er see again.</line>
-<para remap="STAGEDIR">Exeunt GRIFFITH and Messenger</para>
-<para remap="STAGEDIR">Re-enter GRIFFITH, with CAPUCIUS</para>
+<stagedir remap="STAGEDIR">Exeunt GRIFFITH and Messenger</stagedir>
+<stagedir remap="STAGEDIR">Re-enter GRIFFITH, with CAPUCIUS</stagedir>
 <line remap="LINE">If my sight fail not,</line>
 <line remap="LINE">You should be lord ambassador from the emperor,</line>
 <line remap="LINE">My royal nephew, and your name Capucius.</line>
@@ -5080,7 +5080,7 @@ garland with them. The music continues</para>
 <line remap="LINE">No, madam.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Giving it to KATHARINE</para>
+<stagedir remap="STAGEDIR">Giving it to KATHARINE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KATHARINE</speaker>
@@ -5149,7 +5149,7 @@ garland with them. The music continues</para>
 <line remap="LINE">I can no more.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt, leading KATHARINE</para>
+<stagedir remap="STAGEDIR">Exeunt, leading KATHARINE</stagedir>
 </section>
 
 </chapter>
@@ -5157,8 +5157,8 @@ garland with them. The music continues</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  London. A gallery in the palace.</title>
-<para remap="STAGEDIR">Enter GARDINER, Bishop of Winchester, a Page with a
-torch before him, met by LOVELL</para>
+<stagedir remap="STAGEDIR">Enter GARDINER, Bishop of Winchester, a Page with a
+torch before him, met by LOVELL</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GARDINER</speaker>
@@ -5280,8 +5280,8 @@ torch before him, met by LOVELL</para>
 <line remap="LINE">Many good nights, my lord: I rest your servant.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt GARDINER and Page</para>
-<para remap="STAGEDIR">Enter KING HENRY VIII and SUFFOLK</para>
+<stagedir remap="STAGEDIR">Exeunt GARDINER and Page</stagedir>
+<stagedir remap="STAGEDIR">Enter KING HENRY VIII and SUFFOLK</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING HENRY VIII</speaker>
@@ -5353,8 +5353,8 @@ torch before him, met by LOVELL</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING HENRY VIII</speaker>
 <line remap="LINE">Charles, good night.</line>
-<para remap="STAGEDIR">Exit SUFFOLK</para>
-<para remap="STAGEDIR">Enter DENNY</para>
+<stagedir remap="STAGEDIR">Exit SUFFOLK</stagedir>
+<stagedir remap="STAGEDIR">Enter DENNY</stagedir>
 <line remap="LINE">Well, sir, what follows?</line>
 </linegroup></dialogue>
 
@@ -5384,28 +5384,28 @@ torch before him, met by LOVELL</para>
 <line remap="LINE">He attends your highness' pleasure.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit DENNY</para>
+<stagedir remap="STAGEDIR">Exit DENNY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LOVELL</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  This is about that which the bishop spake:</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  This is about that which the bishop spake:</line>
 <line remap="LINE">I am happily come hither.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter DENNY, with CRANMER</para>
+<stagedir remap="STAGEDIR">Re-enter DENNY, with CRANMER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING HENRY VIII</speaker>
 <line remap="LINE">Avoid the gallery.</line>
-<para remap="STAGEDIR">LOVELL seems to stay</para>
+<stagedir remap="STAGEDIR">LOVELL seems to stay</stagedir>
 <line remap="LINE">Ha! I have said. Be gone. What!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt LOVELL and DENNY</para>
+<stagedir remap="STAGEDIR">Exeunt LOVELL and DENNY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CRANMER</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir></line>
 <line remap="LINE">I am fearful: wherefore frowns he thus?</line>
 <line remap="LINE">'Tis his aspect of terror. All's not well.</line>
 </linegroup></dialogue>
@@ -5418,7 +5418,7 @@ torch before him, met by LOVELL</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CRANMER</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Kneeling</phrase>              It is my duty</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Kneeling</inlinestagedir>              It is my duty</line>
 <line remap="LINE">To attend your highness' pleasure.</line>
 </linegroup></dialogue>
 
@@ -5446,7 +5446,7 @@ torch before him, met by LOVELL</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CRANMER</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Kneeling</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Kneeling</inlinestagedir></line>
 <line remap="LINE">I humbly thank your highness;</line>
 <line remap="LINE">And am right glad to catch this good occasion</line>
 <line remap="LINE">Most throughly to be winnow'd, where my chaff</line>
@@ -5521,16 +5521,16 @@ torch before him, met by LOVELL</para>
 <line remap="LINE">I swear he is true--hearted; and a soul</line>
 <line remap="LINE">None better in my kingdom. Get you gone,</line>
 <line remap="LINE">And do as I have bid you.</line>
-<para remap="STAGEDIR">Exit CRANMER</para>
+<stagedir remap="STAGEDIR">Exit CRANMER</stagedir>
 <line remap="LINE">He has strangled</line>
 <line remap="LINE">His language in his tears.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Old Lady, LOVELL following</para>
+<stagedir remap="STAGEDIR">Enter Old Lady, LOVELL following</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Gentleman</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>                 Come back: what mean you?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>                 Come back: what mean you?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5574,7 +5574,7 @@ torch before him, met by LOVELL</para>
 <line remap="LINE">Give her an hundred marks. I'll to the queen.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Old Lady</speaker>
@@ -5586,12 +5586,12 @@ torch before him, met by LOVELL</para>
 <line remap="LINE">While it is hot, I'll put it to the issue.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Before the council-chamber. Pursuivants, Pages, &amp;c. attending.</title>
 
-<para remap="STAGEDIR">Enter CRANMER</para>
+<stagedir remap="STAGEDIR">Enter CRANMER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CRANMER</speaker>
@@ -5601,7 +5601,7 @@ torch before him, met by LOVELL</para>
 <line remap="LINE">Who waits there? Sure, you know me?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Keeper</para>
+<stagedir remap="STAGEDIR">Enter Keeper</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Keeper</speaker>
@@ -5614,7 +5614,7 @@ torch before him, met by LOVELL</para>
 <line remap="LINE">Why?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DOCTOR BUTTS</para>
+<stagedir remap="STAGEDIR">Enter DOCTOR BUTTS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Keeper</speaker>
@@ -5628,16 +5628,16 @@ torch before him, met by LOVELL</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOCTOR BUTTS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  This is a piece of malice. I am glad</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  This is a piece of malice. I am glad</line>
 <line remap="LINE">I came this way so happily: the king</line>
 <line remap="LINE">Shall understand it presently.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CRANMER</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase> 'Tis Butts,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir> 'Tis Butts,</line>
 <line remap="LINE">The king's physician: as he pass'd along,</line>
 <line remap="LINE">How earnestly he cast his eyes upon me!</line>
 <line remap="LINE">Pray heaven, he sound not my disgrace! For certain,</line>
@@ -5649,7 +5649,7 @@ torch before him, met by LOVELL</para>
 <line remap="LINE">Must be fulfill'd, and I attend with patience.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter the KING HENRY VIII and DOCTOR BUTTS at a window above</para>
+<stagedir remap="STAGEDIR">Enter the KING HENRY VIII and DOCTOR BUTTS at a window above</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DOCTOR BUTTS</speaker>
@@ -5694,16 +5694,16 @@ torch before him, met by LOVELL</para>
 <line remap="LINE">We shall hear more anon.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The Council-Chamber.</title>
-<para remap="STAGEDIR">Enter Chancellor; places himself at the upper end
+<stagedir remap="STAGEDIR">Enter Chancellor; places himself at the upper end
 of the table on the left hand; a seat being left
 void above him, as for CRANMER's seat. SUFFOLK,
 NORFOLK, SURREY, Chamberlain, GARDINER, seat
 themselves in order on each side. CROMWELL at
-lower end, as secretary. Keeper at the door</para>
+lower end, as secretary. Keeper at the door</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Chancellor</speaker>
@@ -5758,7 +5758,7 @@ lower end, as secretary. Keeper at the door</para>
 <line remap="LINE">Your grace may enter now.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">CRANMER enters and approaches the council-table</para>
+<stagedir remap="STAGEDIR">CRANMER enters and approaches the council-table</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Chancellor</speaker>
@@ -5951,7 +5951,7 @@ lower end, as secretary. Keeper at the door</para>
 <line remap="LINE">Let some o' the guard be ready there.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Guard</para>
+<stagedir remap="STAGEDIR">Enter Guard</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CRANMER</speaker>
@@ -6014,7 +6014,7 @@ lower end, as secretary. Keeper at the door</para>
 <line remap="LINE">Ye blew the fire that burns ye: now have at ye!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter KING, frowning on them; takes his seat</para>
+<stagedir remap="STAGEDIR">Enter KING, frowning on them; takes his seat</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GARDINER</speaker>
@@ -6038,7 +6038,7 @@ lower end, as secretary. Keeper at the door</para>
 <line remap="LINE">And think with wagging of your tongue to win me;</line>
 <line remap="LINE">But, whatsoe'er thou takest me for, I'm sure</line>
 <line remap="LINE">Thou hast a cruel nature and a bloody.</line>
-<para remap="STAGEDIR">To CRANMER</para>
+<stagedir remap="STAGEDIR">To CRANMER</stagedir>
 <line remap="LINE">Good man, sit down. Now let me see the proudest</line>
 <line remap="LINE">He, that dares most, but wag his finger at thee:</line>
 <line remap="LINE">By all that's holy, he had better starve</line>
@@ -6135,18 +6135,18 @@ lower end, as secretary. Keeper at the door</para>
 <line remap="LINE">So I grow stronger, you more honour gain.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  The palace yard.</title>
-<para remap="STAGEDIR">Noise and tumult within. Enter Porter and his Man</para>
+<stagedir remap="STAGEDIR">Noise and tumult within. Enter Porter and his Man</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Porter</speaker>
 <line remap="LINE">You'll leave your noise anon, ye rascals: do you</line>
 <line remap="LINE">take the court for Paris-garden? ye rude slaves,</line>
 <line remap="LINE">leave your gaping.</line>
-<para remap="STAGEDIR">Within</para>
+<stagedir remap="STAGEDIR">Within</stagedir>
 <line remap="LINE">Good master porter, I belong to the larder.</line>
 </linegroup></dialogue>
 
@@ -6195,7 +6195,7 @@ lower end, as secretary. Keeper at the door</para>
 <line remap="LINE">He or she, cuckold or cuckold-maker,</line>
 <line remap="LINE">Let me ne'er hope to see a chine again</line>
 <line remap="LINE">And that I would not for a cow, God save her!</line>
-<para remap="STAGEDIR">Within</para>
+<stagedir remap="STAGEDIR">Within</stagedir>
 <line remap="LINE">Do you hear, master porter?</line>
 </linegroup></dialogue>
 
@@ -6258,7 +6258,7 @@ lower end, as secretary. Keeper at the door</para>
 <line remap="LINE">running banquet of two beadles that is to come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Chamberlain</para>
+<stagedir remap="STAGEDIR">Enter Chamberlain</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Chamberlain</speaker>
@@ -6312,11 +6312,11 @@ lower end, as secretary. Keeper at the door</para>
 <line remap="LINE">I'll peck you o'er the pales else.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  The palace.</title>
-<para remap="STAGEDIR">Enter trumpets, sounding; then two Aldermen, Lord
+<stagedir remap="STAGEDIR">Enter trumpets, sounding; then two Aldermen, Lord
 Mayor, Garter, CRANMER, NORFOLK with his marshal's
 staff, SUFFOLK, two Noblemen bearing great
 standing-bowls for the christening-gifts; then
@@ -6325,7 +6325,7 @@ Duchess of Norfolk, godmother, bearing the child
 richly habited in a mantle, &amp;c., train borne by a
 Lady; then follows the Marchioness Dorset, the
 other godmother, and Ladies. The troop pass once
-about the stage, and Garter speaks</para>
+about the stage, and Garter speaks</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Garter</speaker>
@@ -6334,11 +6334,11 @@ about the stage, and Garter speaks</para>
 <line remap="LINE">princess of England, Elizabeth!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish. Enter KING HENRY VIII and Guard</para>
+<stagedir remap="STAGEDIR">Flourish. Enter KING HENRY VIII and Guard</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CRANMER</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Kneeling</phrase> And to your royal grace, and the good queen,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Kneeling</inlinestagedir> And to your royal grace, and the good queen,</line>
 <line remap="LINE">My noble partners, and myself, thus pray:</line>
 <line remap="LINE">All comfort, joy, in this most gracious lady,</line>
 <line remap="LINE">Heaven ever laid up to make parents happy,</line>
@@ -6359,7 +6359,7 @@ about the stage, and Garter speaks</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING HENRY VIII</speaker>
 <line remap="LINE">Stand up, lord.</line>
-<para remap="STAGEDIR">KING HENRY VIII kisses the child</para>
+<stagedir remap="STAGEDIR">KING HENRY VIII kisses the child</stagedir>
 <line remap="LINE">With this kiss take my blessing: God protect thee!</line>
 <line remap="LINE">Into whose hand I give thy life.</line>
 </linegroup></dialogue>
@@ -6455,7 +6455,7 @@ about the stage, and Garter speaks</para>
 <line remap="LINE">Has business at his house; for all shall stay:</line>
 <line remap="LINE">This little one shall make it holiday.</line>
 </linegroup></dialogue>
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="EPILOGUE"><title remap="TITLE">EPILOGUE</title>

@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?>
-<book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">Measure for Measure</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">Measure for Measure</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Measure for Measure</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -32,17 +30,17 @@
 <para><personname remap="PERSONA">FRANCISCA, a nun.</personname></para>
 <para><personname remap="PERSONA">MISTRESS OVERDONE, a bawd.</personname></para>
 <para><personname remap="PERSONA">Lords, Officers, Citizens, Boy, and Attendant.</personname></para>
-    <para remap="SCNDESCR">SCENE  Vienna.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  Vienna.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  An apartment in the DUKE'S palace.</title>
-<para remap="STAGEDIR">Enter DUKE VINCENTIO, ESCALUS, Lords and
-Attendants</para>
+<stagedir remap="STAGEDIR">Enter DUKE VINCENTIO, ESCALUS, Lords and
+Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
@@ -69,7 +67,7 @@ Attendants</para>
 <line remap="LINE">That we remember. There is our commission,</line>
 <line remap="LINE">From which we would not have you warp. Call hither,</line>
 <line remap="LINE">I say, bid come before us Angelo.</line>
-<para remap="STAGEDIR">Exit an Attendant</para>
+<stagedir remap="STAGEDIR">Exit an Attendant</stagedir>
 <line remap="LINE">What figure of us think you he will bear?</line>
 <line remap="LINE">For you must know, we have with special soul</line>
 <line remap="LINE">Elected him our absence to supply,</line>
@@ -90,7 +88,7 @@ Attendants</para>
 <line remap="LINE">Look where he comes.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ANGELO</para>
+<stagedir remap="STAGEDIR">Enter ANGELO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANGELO</speaker>
@@ -183,7 +181,7 @@ Attendants</para>
 <line remap="LINE">I thank you. Fare you well.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ESCALUS</speaker>
@@ -206,11 +204,11 @@ Attendants</para>
 <line remap="LINE">I'll wait upon your honour.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A Street.</title>
-<para remap="STAGEDIR">Enter LUCIO and two Gentlemen</para>
+<stagedir remap="STAGEDIR">Enter LUCIO and two Gentlemen</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIO</speaker>
@@ -376,7 +374,7 @@ Attendants</para>
 <line remap="LINE">impiety has made a feast of thee.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MISTRESS OVERDONE</para>
+<stagedir remap="STAGEDIR">Enter MISTRESS OVERDONE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Gentleman</speaker>
@@ -446,14 +444,14 @@ Attendants</para>
 <line remap="LINE">Away! let's go learn the truth of it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt LUCIO and Gentlemen</para>
+<stagedir remap="STAGEDIR">Exeunt LUCIO and Gentlemen</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MISTRESS OVERDONE</speaker>
 <line remap="LINE">Thus, what with the war, what with the sweat, what</line>
 <line remap="LINE">with the gallows and what with poverty, I am</line>
 <line remap="LINE">custom-shrunk.</line>
-<para remap="STAGEDIR">Enter POMPEY</para>
+<stagedir remap="STAGEDIR">Enter POMPEY</stagedir>
 <line remap="LINE">How now! what's the news with you?</line>
 </linegroup></dialogue>
 
@@ -552,8 +550,8 @@ Attendants</para>
 <line remap="LINE">prison; and there's Madam Juliet.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
-<para remap="STAGEDIR">Enter Provost, CLAUDIO, JULIET, and Officers</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
+<stagedir remap="STAGEDIR">Enter Provost, CLAUDIO, JULIET, and Officers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLAUDIO</speaker>
@@ -575,7 +573,7 @@ Attendants</para>
 <line remap="LINE">On whom it will not, so; yet still 'tis just.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter LUCIO and two Gentlemen</para>
+<stagedir remap="STAGEDIR">Re-enter LUCIO and two Gentlemen</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIO</speaker>
@@ -730,11 +728,11 @@ Attendants</para>
 <line remap="LINE">Come, officer, away!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A monastery.</title>
-<para remap="STAGEDIR">Enter DUKE VINCENTIO and FRIAR THOMAS</para>
+<stagedir remap="STAGEDIR">Enter DUKE VINCENTIO and FRIAR THOMAS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
@@ -821,11 +819,11 @@ Attendants</para>
 <line remap="LINE">If power change purpose, what our seemers be.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  A nunnery.</title>
-<para remap="STAGEDIR">Enter ISABELLA and FRANCISCA</para>
+<stagedir remap="STAGEDIR">Enter ISABELLA and FRANCISCA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ISABELLA</speaker>
@@ -846,7 +844,7 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Ho! Peace be in this place!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Ho! Peace be in this place!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -866,14 +864,14 @@ Attendants</para>
 <line remap="LINE">He calls again; I pray you, answer him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ISABELLA</speaker>
 <line remap="LINE">Peace and prosperity! Who is't that calls</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LUCIO</para>
+<stagedir remap="STAGEDIR">Enter LUCIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIO</speaker>
@@ -1062,7 +1060,7 @@ Attendants</para>
 <line remap="LINE">Good sir, adieu.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -1070,8 +1068,8 @@ Attendants</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A hall In ANGELO's house.</title>
-<para remap="STAGEDIR">Enter ANGELO, ESCALUS, and a Justice, Provost,
-Officers, and other Attendants, behind</para>
+<stagedir remap="STAGEDIR">Enter ANGELO, ESCALUS, and a Justice, Provost,
+Officers, and other Attendants, behind</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANGELO</speaker>
@@ -1140,17 +1138,17 @@ Officers, and other Attendants, behind</para>
 <line remap="LINE">For that's the utmost of his pilgrimage.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Provost</para>
+<stagedir remap="STAGEDIR">Exit Provost</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ESCALUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Well, heaven forgive him! and forgive us all!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Well, heaven forgive him! and forgive us all!</line>
 <line remap="LINE">Some rise by sin, and some by virtue fall:</line>
 <line remap="LINE">Some run from brakes of ice, and answer none:</line>
 <line remap="LINE">And some condemned for a fault alone.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ELBOW, and Officers with FROTH and POMPEY</para>
+<stagedir remap="STAGEDIR">Enter ELBOW, and Officers with FROTH and POMPEY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ELBOW</speaker>
@@ -1409,7 +1407,7 @@ Officers, and other Attendants, behind</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ESCALUS</speaker>
 <line remap="LINE">I think no less. Good morrow to your lordship.</line>
-<para remap="STAGEDIR">Exit ANGELO</para>
+<stagedir remap="STAGEDIR">Exit ANGELO</stagedir>
 <line remap="LINE">Now, sir, come on: what was done to Elbow's wife, once more?</line>
 </linegroup></dialogue>
 
@@ -1616,7 +1614,7 @@ Officers, and other Attendants, behind</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ESCALUS</speaker>
 <line remap="LINE">Well, no more of it, Master Froth: farewell.</line>
-<para remap="STAGEDIR">Exit FROTH</para>
+<stagedir remap="STAGEDIR">Exit FROTH</stagedir>
 <line remap="LINE">Come you hither to me, Master tapster. What's your</line>
 <line remap="LINE">name, Master tapster?</line>
 </linegroup></dialogue>
@@ -1715,14 +1713,14 @@ Officers, and other Attendants, behind</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POMPEY</speaker>
 <line remap="LINE">I thank your worship for your good counsel:</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">but I shall follow it as the flesh and fortune shall</line>
 <line remap="LINE">better determine.</line>
 <line remap="LINE">Whip me? No, no; let carman whip his jade:</line>
 <line remap="LINE">The valiant heart is not whipt out of his trade.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ESCALUS</speaker>
@@ -1775,7 +1773,7 @@ Officers, and other Attendants, behind</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ESCALUS</speaker>
 <line remap="LINE">To my house. Fare you well.</line>
-<para remap="STAGEDIR">Exit ELBOW</para>
+<stagedir remap="STAGEDIR">Exit ELBOW</stagedir>
 <line remap="LINE">What's o'clock, think you?</line>
 </linegroup></dialogue>
 
@@ -1814,11 +1812,11 @@ Officers, and other Attendants, behind</para>
 <line remap="LINE">Come, sir.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Another room in the same.</title>
-<para remap="STAGEDIR">Enter Provost and a Servant</para>
+<stagedir remap="STAGEDIR">Enter Provost and a Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Servant</speaker>
@@ -1829,7 +1827,7 @@ Officers, and other Attendants, behind</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Provost</speaker>
 <line remap="LINE">Pray you, do.</line>
-<para remap="STAGEDIR">Exit Servant</para>
+<stagedir remap="STAGEDIR">Exit Servant</stagedir>
 <line remap="LINE">I'll know</line>
 <line remap="LINE">His pleasure; may be he will relent. Alas,</line>
 <line remap="LINE">He hath but as offended in a dream!</line>
@@ -1837,7 +1835,7 @@ Officers, and other Attendants, behind</para>
 <line remap="LINE">To die for't!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ANGELO</para>
+<stagedir remap="STAGEDIR">Enter ANGELO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANGELO</speaker>
@@ -1883,7 +1881,7 @@ Officers, and other Attendants, behind</para>
 <line remap="LINE">To some more fitter place, and that with speed.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter Servant</para>
+<stagedir remap="STAGEDIR">Re-enter Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Servant</speaker>
@@ -1906,13 +1904,13 @@ Officers, and other Attendants, behind</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANGELO</speaker>
 <line remap="LINE">Well, let her be admitted.</line>
-<para remap="STAGEDIR">Exit Servant</para>
+<stagedir remap="STAGEDIR">Exit Servant</stagedir>
 <line remap="LINE">See you the fornicatress be removed:</line>
 <line remap="LINE">Let have needful, but not lavish, means;</line>
 <line remap="LINE">There shall be order for't.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ISABELLA and LUCIO</para>
+<stagedir remap="STAGEDIR">Enter ISABELLA and LUCIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Provost</speaker>
@@ -1922,7 +1920,7 @@ Officers, and other Attendants, behind</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANGELO</speaker>
 <line remap="LINE">Stay a little while.</line>
-<para remap="STAGEDIR">To ISABELLA</para>
+<stagedir remap="STAGEDIR">To ISABELLA</stagedir>
 <line remap="LINE">You're welcome: what's your will?</line>
 </linegroup></dialogue>
 
@@ -1960,7 +1958,7 @@ Officers, and other Attendants, behind</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Provost</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Heaven give thee moving graces!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Heaven give thee moving graces!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1980,7 +1978,7 @@ Officers, and other Attendants, behind</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to ISABELLA</phrase>  Give't not o'er so: to him</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to ISABELLA</inlinestagedir>  Give't not o'er so: to him</line>
 <line remap="LINE">again, entreat him;</line>
 <line remap="LINE">Kneel down before him, hang upon his gown:</line>
 <line remap="LINE">You are too cold; if you should need a pin,</line>
@@ -2033,7 +2031,7 @@ Officers, and other Attendants, behind</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to ISABELLA</phrase>  You are too cold.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to ISABELLA</inlinestagedir>  You are too cold.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -2065,7 +2063,7 @@ Officers, and other Attendants, behind</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to ISABELLA</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to ISABELLA</inlinestagedir></line>
 <line remap="LINE">Ay, touch him; there's the vein.</line>
 </linegroup></dialogue>
 
@@ -2108,7 +2106,7 @@ Officers, and other Attendants, behind</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to ISABELLA</phrase>           Ay, well said.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to ISABELLA</inlinestagedir>           Ay, well said.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -2150,7 +2148,7 @@ Officers, and other Attendants, behind</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to ISABELLA</phrase>   That's well said.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to ISABELLA</inlinestagedir>   That's well said.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -2173,14 +2171,14 @@ Officers, and other Attendants, behind</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to ISABELLA</phrase>  O, to him, to him, wench! he</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to ISABELLA</inlinestagedir>  O, to him, to him, wench! he</line>
 <line remap="LINE">will relent;</line>
 <line remap="LINE">He's coming; I perceive 't.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Provost</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Pray heaven she win him!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Pray heaven she win him!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -2203,7 +2201,7 @@ Officers, and other Attendants, behind</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to ISABELLA</phrase>  Art avised o' that? more on 't.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to ISABELLA</inlinestagedir>  Art avised o' that? more on 't.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -2225,7 +2223,7 @@ Officers, and other Attendants, behind</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANGELO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>                  She speaks, and 'tis</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>                  She speaks, and 'tis</line>
 <line remap="LINE">Such sense, that my sense breeds with it. Fare you well.</line>
 </linegroup></dialogue>
 
@@ -2256,7 +2254,7 @@ Officers, and other Attendants, behind</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to ISABELLA</phrase>  You had marr'd all else.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to ISABELLA</inlinestagedir>  You had marr'd all else.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -2277,7 +2275,7 @@ Officers, and other Attendants, behind</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to ISABELLA</phrase>  Go to; 'tis well; away!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to ISABELLA</inlinestagedir>  Go to; 'tis well; away!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -2287,7 +2285,7 @@ Officers, and other Attendants, behind</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANGELO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase> Amen:</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir> Amen:</line>
 <line remap="LINE">For I am that way going to temptation,</line>
 <line remap="LINE">Where prayers cross.</line>
 </linegroup></dialogue>
@@ -2308,7 +2306,7 @@ Officers, and other Attendants, behind</para>
 <line remap="LINE">'Save your honour!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt ISABELLA, LUCIO, and Provost</para>
+<stagedir remap="STAGEDIR">Exeunt ISABELLA, LUCIO, and Provost</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANGELO</speaker>
@@ -2341,12 +2339,12 @@ Officers, and other Attendants, behind</para>
 <line remap="LINE">When men were fond, I smiled and wonder'd how.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A room in a prison.</title>
-<para remap="STAGEDIR">Enter, severally, DUKE VINCENTIO disguised as a
-friar, and Provost</para>
+<stagedir remap="STAGEDIR">Enter, severally, DUKE VINCENTIO disguised as a
+friar, and Provost</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
@@ -2371,7 +2369,7 @@ friar, and Provost</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Provost</speaker>
 <line remap="LINE">I would do more than that, if more were needful.</line>
-<para remap="STAGEDIR">Enter JULIET</para>
+<stagedir remap="STAGEDIR">Enter JULIET</stagedir>
 <line remap="LINE">Look, here comes one: a gentlewoman of mine,</line>
 <line remap="LINE">Who, falling in the flaws of her own youth,</line>
 <line remap="LINE">Hath blister'd her report: she is with child;</line>
@@ -2389,7 +2387,7 @@ friar, and Provost</para>
 <speaker remap="SPEAKER">Provost</speaker>
 <line remap="LINE">As I do think, to-morrow.</line>
 <line remap="LINE">I have provided for you: stay awhile,</line>
-<para remap="STAGEDIR">To JULIET</para>
+<stagedir remap="STAGEDIR">To JULIET</stagedir>
 <line remap="LINE">And you shall be conducted.</line>
 </linegroup></dialogue>
 
@@ -2469,7 +2467,7 @@ friar, and Provost</para>
 <line remap="LINE">Grace go with you, Benedicite!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JULIET</speaker>
@@ -2483,11 +2481,11 @@ friar, and Provost</para>
 <line remap="LINE">'Tis pity of him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  A room in ANGELO's house.</title>
-<para remap="STAGEDIR">Enter ANGELO</para>
+<stagedir remap="STAGEDIR">Enter ANGELO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANGELO</speaker>
@@ -2508,7 +2506,7 @@ friar, and Provost</para>
 <line remap="LINE">To thy false seeming! Blood, thou art blood:</line>
 <line remap="LINE">Let's write good angel on the devil's horn:</line>
 <line remap="LINE">'Tis not the devil's crest.</line>
-<para remap="STAGEDIR">Enter a Servant</para>
+<stagedir remap="STAGEDIR">Enter a Servant</stagedir>
 <line remap="LINE">How now! who's there?</line>
 </linegroup></dialogue>
 
@@ -2520,7 +2518,7 @@ friar, and Provost</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANGELO</speaker>
 <line remap="LINE">Teach her the way.</line>
-<para remap="STAGEDIR">Exit Servant</para>
+<stagedir remap="STAGEDIR">Exit Servant</stagedir>
 <line remap="LINE">O heavens!</line>
 <line remap="LINE">Why does my blood thus muster to my heart,</line>
 <line remap="LINE">Making both it unable for itself,</line>
@@ -2533,7 +2531,7 @@ friar, and Provost</para>
 <line remap="LINE">Quit their own part, and in obsequious fondness</line>
 <line remap="LINE">Crowd to his presence, where their untaught love</line>
 <line remap="LINE">Must needs appear offence.</line>
-<para remap="STAGEDIR">Enter ISABELLA</para>
+<stagedir remap="STAGEDIR">Enter ISABELLA</stagedir>
 <line remap="LINE">How now, fair maid?</line>
 </linegroup></dialogue>
 
@@ -2862,7 +2860,7 @@ friar, and Provost</para>
 <line remap="LINE">Say what you can, my false o'erweighs your true.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ISABELLA</speaker>
@@ -2885,7 +2883,7 @@ friar, and Provost</para>
 <line remap="LINE">And fit his mind to death, for his soul's rest.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -2893,8 +2891,8 @@ friar, and Provost</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A room in the prison.</title>
-<para remap="STAGEDIR">Enter DUKE VINCENTIO disguised as before, CLAUDIO,
-and Provost</para>
+<stagedir remap="STAGEDIR">Enter DUKE VINCENTIO disguised as before, CLAUDIO,
+and Provost</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
@@ -2958,7 +2956,7 @@ and Provost</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ISABELLA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  What, ho! Peace here; grace and good company!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  What, ho! Peace here; grace and good company!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -2976,7 +2974,7 @@ and Provost</para>
 <line remap="LINE">Most holy sir, I thank you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ISABELLA</para>
+<stagedir remap="STAGEDIR">Enter ISABELLA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ISABELLA</speaker>
@@ -3003,7 +3001,7 @@ and Provost</para>
 <line remap="LINE">Bring me to hear them speak, where I may be concealed.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt DUKE VINCENTIO and Provost</para>
+<stagedir remap="STAGEDIR">Exeunt DUKE VINCENTIO and Provost</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLAUDIO</speaker>
@@ -3258,7 +3256,7 @@ and Provost</para>
 <line remap="LINE">O hear me, Isabella!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter DUKE VINCENTIO</para>
+<stagedir remap="STAGEDIR">Re-enter DUKE VINCENTIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
@@ -3283,7 +3281,7 @@ and Provost</para>
 <line remap="LINE">stolen out of other affairs; but I will attend you awhile.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Walks apart</para>
+<stagedir remap="STAGEDIR">Walks apart</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
@@ -3309,11 +3307,11 @@ and Provost</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
 <line remap="LINE">Hold you there: farewell.</line>
-<para remap="STAGEDIR">Exit CLAUDIO</para>
+<stagedir remap="STAGEDIR">Exit CLAUDIO</stagedir>
 <line remap="LINE">Provost, a word with you!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter Provost</para>
+<stagedir remap="STAGEDIR">Re-enter Provost</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Provost</speaker>
@@ -3332,7 +3330,7 @@ and Provost</para>
 <line remap="LINE">In good time.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Provost. ISABELLA comes forward</para>
+<stagedir remap="STAGEDIR">Exit Provost. ISABELLA comes forward</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
@@ -3486,12 +3484,12 @@ and Provost</para>
 <line remap="LINE">I thank you for this comfort. Fare you well, good father.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt severally</para>
+<stagedir remap="STAGEDIR">Exeunt severally</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The street before the prison.</title>
-<para remap="STAGEDIR">Enter, on one side, DUKE VINCENTIO disguised as
-before; on the other, ELBOW, and Officers with POMPEY</para>
+<stagedir remap="STAGEDIR">Enter, on one side, DUKE VINCENTIO disguised as
+before; on the other, ELBOW, and Officers with POMPEY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ELBOW</speaker>
@@ -3585,7 +3583,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">friend of mine.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LUCIO</para>
+<stagedir remap="STAGEDIR">Enter LUCIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIO</speaker>
@@ -3699,7 +3697,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIO</speaker>
 <line remap="LINE">Go to kennel, Pompey; go.</line>
-<para remap="STAGEDIR">Exeunt ELBOW, POMPEY and Officers</para>
+<stagedir remap="STAGEDIR">Exeunt ELBOW, POMPEY and Officers</stagedir>
 <line remap="LINE">What news, friar, of the duke?</line>
 </linegroup></dialogue>
 
@@ -3932,7 +3930,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">bread and garlic: say that I said so. Farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
@@ -3943,7 +3941,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">But who comes here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ESCALUS, Provost, and Officers with MISTRESS OVERDONE</para>
+<stagedir remap="STAGEDIR">Enter ESCALUS, Provost, and Officers with MISTRESS OVERDONE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ESCALUS</speaker>
@@ -3983,7 +3981,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">That fellow is a fellow of much licence: let him be</line>
 <line remap="LINE">called before us. Away with her to prison! Go to;</line>
 <line remap="LINE">no more words.</line>
-<para remap="STAGEDIR">Exeunt Officers with MISTRESS OVERDONE</para>
+<stagedir remap="STAGEDIR">Exeunt Officers with MISTRESS OVERDONE</stagedir>
 <line remap="LINE">Provost, my brother Angelo will not be altered;</line>
 <line remap="LINE">Claudio must die to-morrow: let him be furnished</line>
 <line remap="LINE">with divines, and have all charitable preparation.</line>
@@ -4097,7 +4095,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
 <line remap="LINE">Peace be with you!</line>
-<para remap="STAGEDIR">Exeunt ESCALUS and Provost</para>
+<stagedir remap="STAGEDIR">Exeunt ESCALUS and Provost</stagedir>
 <line remap="LINE">He who the sword of heaven will bear</line>
 <line remap="LINE">Should be as holy as severe;</line>
 <line remap="LINE">Pattern in himself to know,</line>
@@ -4122,7 +4120,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">And perform an old contracting.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -4130,8 +4128,8 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  The moated grange at ST. LUKE's.</title>
-<para remap="STAGEDIR">Enter MARIANA and a Boy</para>
-<para remap="STAGEDIR">Boy sings</para>
+<stagedir remap="STAGEDIR">Enter MARIANA and a Boy</stagedir>
+<stagedir remap="STAGEDIR">Boy sings</stagedir>
 <dialogue remap="SPEECH"><linegroup><speaker remap="SPEAKER"/>
 <line remap="LINE">Take, O, take those lips away,</line>
 <line remap="LINE">That so sweetly were forsworn;</line>
@@ -4146,8 +4144,8 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">Break off thy song, and haste thee quick away:</line>
 <line remap="LINE">Here comes a man of comfort, whose advice</line>
 <line remap="LINE">Hath often still'd my brawling discontent.</line>
-<para remap="STAGEDIR">Exit Boy</para>
-<para remap="STAGEDIR">Enter DUKE VINCENTIO disguised as before</para>
+<stagedir remap="STAGEDIR">Exit Boy</stagedir>
+<stagedir remap="STAGEDIR">Enter DUKE VINCENTIO disguised as before</stagedir>
 <line remap="LINE">I cry you mercy, sir; and well could wish</line>
 <line remap="LINE">You had not found me here so musical:</line>
 <line remap="LINE">Let me excuse me, and believe me so,</line>
@@ -4169,7 +4167,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">I have sat here all day.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ISABELLA</para>
+<stagedir remap="STAGEDIR">Enter ISABELLA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
@@ -4183,7 +4181,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">I am always bound to you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
@@ -4238,7 +4236,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">'Tis well borne up.</line>
 <line remap="LINE">I have not yet made known to Mariana</line>
 <line remap="LINE">A word of this. What, ho! within! come forth!</line>
-<para remap="STAGEDIR">Re-enter MARIANA</para>
+<stagedir remap="STAGEDIR">Re-enter MARIANA</stagedir>
 <line remap="LINE">I pray you, be acquainted with this maid;</line>
 <line remap="LINE">She comes to do you good.</line>
 </linegroup></dialogue>
@@ -4271,7 +4269,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">Will't please you walk aside?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt MARIANA and ISABELLA</para>
+<stagedir remap="STAGEDIR">Exeunt MARIANA and ISABELLA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
@@ -4281,7 +4279,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">Upon thy doings: thousand escapes of wit</line>
 <line remap="LINE">Make thee the father of their idle dreams</line>
 <line remap="LINE">And rack thee in their fancies.</line>
-<para remap="STAGEDIR">Re-enter MARIANA and ISABELLA</para>
+<stagedir remap="STAGEDIR">Re-enter MARIANA and ISABELLA</stagedir>
 <line remap="LINE">Welcome, how agreed?</line>
 </linegroup></dialogue>
 
@@ -4319,11 +4317,11 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">Our corn's to reap, for yet our tithe's to sow.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A room in the prison.</title>
-<para remap="STAGEDIR">Enter Provost and POMPEY</para>
+<stagedir remap="STAGEDIR">Enter Provost and POMPEY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Provost</speaker>
@@ -4363,7 +4361,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">What, ho! Abhorson! Where's Abhorson, there?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ABHORSON</para>
+<stagedir remap="STAGEDIR">Enter ABHORSON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ABHORSON</speaker>
@@ -4390,7 +4388,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">the scale.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POMPEY</speaker>
@@ -4432,7 +4430,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">apparel fits your thief.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter Provost</para>
+<stagedir remap="STAGEDIR">Re-enter Provost</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Provost</speaker>
@@ -4468,10 +4466,10 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Provost</speaker>
 <line remap="LINE">Call hither Barnardine and Claudio:</line>
-<para remap="STAGEDIR">Exeunt POMPEY and ABHORSON</para>
+<stagedir remap="STAGEDIR">Exeunt POMPEY and ABHORSON</stagedir>
 <line remap="LINE">The one has my pity; not a jot the other,</line>
 <line remap="LINE">Being a murderer, though he were my brother.</line>
-<para remap="STAGEDIR">Enter CLAUDIO</para>
+<stagedir remap="STAGEDIR">Enter CLAUDIO</stagedir>
 <line remap="LINE">Look, here's the warrant, Claudio, for thy death:</line>
 <line remap="LINE">'Tis now dead midnight, and by eight to-morrow</line>
 <line remap="LINE">Thou must be made immortal. Where's Barnardine?</line>
@@ -4488,14 +4486,14 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <speaker remap="SPEAKER">Provost</speaker>
 <line remap="LINE">Who can do good on him?</line>
 <line remap="LINE">Well, go, prepare yourself.</line>
-<para remap="STAGEDIR">Knocking within</para>
+<stagedir remap="STAGEDIR">Knocking within</stagedir>
 <line remap="LINE">But, hark, what noise?</line>
 <line remap="LINE">Heaven give your spirits comfort!</line>
-<para remap="STAGEDIR">Exit CLAUDIO</para>
+<stagedir remap="STAGEDIR">Exit CLAUDIO</stagedir>
 <line remap="LINE">By and by.</line>
 <line remap="LINE">I hope it is some pardon or reprieve</line>
 <line remap="LINE">For the most gentle Claudio.</line>
-<para remap="STAGEDIR">Enter DUKE VINCENTIO disguised as before</para>
+<stagedir remap="STAGEDIR">Enter DUKE VINCENTIO disguised as before</stagedir>
 <line remap="LINE">Welcome father.</line>
 </linegroup></dialogue>
 
@@ -4549,17 +4547,17 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">To qualify in others: were he meal'd with that</line>
 <line remap="LINE">Which he corrects, then were he tyrannous;</line>
 <line remap="LINE">But this being so, he's just.</line>
-<para remap="STAGEDIR">Knocking within</para>
+<stagedir remap="STAGEDIR">Knocking within</stagedir>
 <line remap="LINE">Now are they come.</line>
-<para remap="STAGEDIR">Exit Provost</para>
+<stagedir remap="STAGEDIR">Exit Provost</stagedir>
 <line remap="LINE">This is a gentle provost: seldom when</line>
 <line remap="LINE">The steeled gaoler is the friend of men.</line>
-<para remap="STAGEDIR">Knocking within</para>
+<stagedir remap="STAGEDIR">Knocking within</stagedir>
 <line remap="LINE">How now! what noise? That spirit's possessed with haste</line>
 <line remap="LINE">That wounds the unsisting postern with these strokes.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter Provost</para>
+<stagedir remap="STAGEDIR">Re-enter Provost</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Provost</speaker>
@@ -4592,7 +4590,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">Besides, upon the very siege of justice</line>
 <line remap="LINE">Lord Angelo hath to the public ear</line>
 <line remap="LINE">Profess'd the contrary.</line>
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 <line remap="LINE">This is his lordship's man.</line>
 </linegroup></dialogue>
 
@@ -4603,7 +4601,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Giving a paper</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Giving a paper</inlinestagedir></line>
 <line remap="LINE">My lord hath sent you this note; and by me this</line>
 <line remap="LINE">further charge, that you swerve not from the</line>
 <line remap="LINE">smallest article of it, neither in time, matter, or</line>
@@ -4616,11 +4614,11 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">I shall obey him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Messenger</para>
+<stagedir remap="STAGEDIR">Exit Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  This is his pardon, purchased by such sin</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  This is his pardon, purchased by such sin</line>
 <line remap="LINE">For which the pardoner himself is in.</line>
 <line remap="LINE">Hence hath offence his quick celerity,</line>
 <line remap="LINE">When it is born in high authority:</line>
@@ -4643,7 +4641,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Provost</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir></line>
 <line remap="LINE">'Whatsoever you may hear to the contrary, let</line>
 <line remap="LINE">Claudio be executed by four of the clock; and in the</line>
 <line remap="LINE">afternoon Barnardine: for my better satisfaction,</line>
@@ -4835,11 +4833,11 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">Come away; it is almost clear dawn.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Another room in the same.</title>
-<para remap="STAGEDIR">Enter POMPEY</para>
+<stagedir remap="STAGEDIR">Enter POMPEY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">POMPEY</speaker>
@@ -4864,7 +4862,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">our trade, and are now 'for the Lord's sake.'</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ABHORSON</para>
+<stagedir remap="STAGEDIR">Enter ABHORSON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ABHORSON</speaker>
@@ -4884,7 +4882,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BARNARDINE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  A pox o' your throats! Who makes that</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  A pox o' your throats! Who makes that</line>
 <line remap="LINE">noise there? What are you?</line>
 </linegroup></dialogue>
 
@@ -4896,7 +4894,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BARNARDINE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Away, you rogue, away! I am sleepy.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Away, you rogue, away! I am sleepy.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -4930,7 +4928,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">Very ready, sir.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BARNARDINE</para>
+<stagedir remap="STAGEDIR">Enter BARNARDINE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BARNARDINE</speaker>
@@ -4962,7 +4960,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">we jest now, think you?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DUKE VINCENTIO disguised as before</para>
+<stagedir remap="STAGEDIR">Enter DUKE VINCENTIO disguised as before</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
@@ -5002,7 +5000,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">come to my ward; for thence will not I to-day.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
@@ -5010,8 +5008,8 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">After him, fellows; bring him to the block.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt ABHORSON and POMPEY</para>
-<para remap="STAGEDIR">Re-enter Provost</para>
+<stagedir remap="STAGEDIR">Exeunt ABHORSON and POMPEY</stagedir>
+<stagedir remap="STAGEDIR">Re-enter Provost</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Provost</speaker>
@@ -5072,7 +5070,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
 <line remap="LINE">Quick, dispatch, and send the head to Angelo.</line>
-<para remap="STAGEDIR">Exit Provost</para>
+<stagedir remap="STAGEDIR">Exit Provost</stagedir>
 <line remap="LINE">Now will I write letters to Angelo,--</line>
 <line remap="LINE">The provost, he shall bear them, whose contents</line>
 <line remap="LINE">Shall witness to him I am near at home,</line>
@@ -5084,7 +5082,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">We shall proceed with Angelo.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter Provost</para>
+<stagedir remap="STAGEDIR">Re-enter Provost</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Provost</speaker>
@@ -5103,11 +5101,11 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">I'll make all speed.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ISABELLA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Peace, ho, be here!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Peace, ho, be here!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5119,7 +5117,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">When it is least expected.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ISABELLA</para>
+<stagedir remap="STAGEDIR">Enter ISABELLA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ISABELLA</speaker>
@@ -5209,7 +5207,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">If I pervert your course. Who's here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LUCIO</para>
+<stagedir remap="STAGEDIR">Enter LUCIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCIO</speaker>
@@ -5233,7 +5231,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">at home, he had lived.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit ISABELLA</para>
+<stagedir remap="STAGEDIR">Exit ISABELLA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
@@ -5292,11 +5290,11 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">it. Nay, friar, I am a kind of burr; I shall stick.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  A room in ANGELO's house.</title>
-<para remap="STAGEDIR">Enter ANGELO and ESCALUS</para>
+<stagedir remap="STAGEDIR">Enter ANGELO and ESCALUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ESCALUS</speaker>
@@ -5347,7 +5345,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANGELO</speaker>
 <line remap="LINE">Good night.</line>
-<para remap="STAGEDIR">Exit ESCALUS</para>
+<stagedir remap="STAGEDIR">Exit ESCALUS</stagedir>
 <line remap="LINE">This deed unshapes me quite, makes me unpregnant</line>
 <line remap="LINE">And dull to all proceedings. A deflower'd maid!</line>
 <line remap="LINE">And by an eminent body that enforced</line>
@@ -5365,16 +5363,16 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">Nothing goes right: we would, and we would not.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Fields without the town.</title>
-<para remap="STAGEDIR">Enter DUKE VINCENTIO in his own habit, and FRIAR PETER</para>
+<stagedir remap="STAGEDIR">Enter DUKE VINCENTIO in his own habit, and FRIAR PETER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
 <line remap="LINE">These letters at fit time deliver me</line>
-<para remap="STAGEDIR">Giving letters</para>
+<stagedir remap="STAGEDIR">Giving letters</stagedir>
 <line remap="LINE">The provost knows our purpose and our plot.</line>
 <line remap="LINE">The matter being afoot, keep your instruction,</line>
 <line remap="LINE">And hold you ever to our special drift;</line>
@@ -5391,8 +5389,8 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">It shall be speeded well.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter VARRIUS</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter VARRIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
@@ -5401,11 +5399,11 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">Will greet us here anon, my gentle Varrius.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  Street near the city gate.</title>
-<para remap="STAGEDIR">Enter ISABELLA and MARIANA</para>
+<stagedir remap="STAGEDIR">Enter ISABELLA and MARIANA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ISABELLA</speaker>
@@ -5438,7 +5436,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">O, peace! the friar is come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter FRIAR PETER</para>
+<stagedir remap="STAGEDIR">Enter FRIAR PETER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FRIAR PETER</speaker>
@@ -5450,7 +5448,7 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <line remap="LINE">The duke is entering: therefore, hence, away!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -5458,10 +5456,10 @@ before; on the other, ELBOW, and Officers with POMPEY</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  The city gate.</title>
-<para remap="STAGEDIR">MARIANA veiled, ISABELLA, and FRIAR PETER, at their
+<stagedir remap="STAGEDIR">MARIANA veiled, ISABELLA, and FRIAR PETER, at their
 stand. Enter DUKE VINCENTIO, VARRIUS, Lords,
 ANGELO, ESCALUS, LUCIO, Provost, Officers, and
-Citizens, at several doors</para>
+Citizens, at several doors</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
@@ -5503,7 +5501,7 @@ Citizens, at several doors</para>
 <line remap="LINE">And good supporters are you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">FRIAR PETER and ISABELLA come forward</para>
+<stagedir remap="STAGEDIR">FRIAR PETER and ISABELLA come forward</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FRIAR PETER</speaker>
@@ -5853,7 +5851,7 @@ Citizens, at several doors</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
 <line remap="LINE">Good friar, let's hear it.</line>
-<para remap="STAGEDIR">ISABELLA is carried off guarded; and MARIANA comes forward</para>
+<stagedir remap="STAGEDIR">ISABELLA is carried off guarded; and MARIANA comes forward</stagedir>
 <line remap="LINE">Do you not smile at this, Lord Angelo?</line>
 <line remap="LINE">O heaven, the vanity of wretched fools!</line>
 <line remap="LINE">Give us some seats. Come, cousin Angelo;</line>
@@ -5988,7 +5986,7 @@ Citizens, at several doors</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARIANA</speaker>
 <line remap="LINE">My husband bids me; now I will unmask.</line>
-<para remap="STAGEDIR">Unveiling</para>
+<stagedir remap="STAGEDIR">Unveiling</stagedir>
 <line remap="LINE">This is that face, thou cruel Angelo,</line>
 <line remap="LINE">Which once thou sworest was worth the looking on;</line>
 <line remap="LINE">This is the hand which, with a vow'd contract,</line>
@@ -6082,7 +6080,7 @@ Citizens, at several doors</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
 <line remap="LINE">Go do it instantly.</line>
-<para remap="STAGEDIR">Exit Provost</para>
+<stagedir remap="STAGEDIR">Exit Provost</stagedir>
 <line remap="LINE">And you, my noble and well-warranted cousin,</line>
 <line remap="LINE">Whom it concerns to hear this matter forth,</line>
 <line remap="LINE">Do with your injuries as seems you best,</line>
@@ -6094,7 +6092,7 @@ Citizens, at several doors</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ESCALUS</speaker>
 <line remap="LINE">My lord, we'll do it throughly.</line>
-<para remap="STAGEDIR">Exit DUKE</para>
+<stagedir remap="STAGEDIR">Exit DUKE</stagedir>
 <line remap="LINE">Signior Lucio, did not you say you knew that</line>
 <line remap="LINE">Friar Lodowick to be a dishonest person?</line>
 </linegroup></dialogue>
@@ -6121,7 +6119,7 @@ Citizens, at several doors</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ESCALUS</speaker>
 <line remap="LINE">Call that same Isabel here once again; I would speak with her.</line>
-<para remap="STAGEDIR">Exit an Attendant</para>
+<stagedir remap="STAGEDIR">Exit an Attendant</stagedir>
 <line remap="LINE">Pray you, my lord, give me leave to question; you</line>
 <line remap="LINE">shall see how I'll handle her.</line>
 </linegroup></dialogue>
@@ -6153,8 +6151,8 @@ Citizens, at several doors</para>
 <line remap="LINE">That's the way; for women are light at midnight.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter Officers with ISABELLA; and Provost with
-the DUKE VINCENTIO in his friar's habit</para>
+<stagedir remap="STAGEDIR">Re-enter Officers with ISABELLA; and Provost with
+the DUKE VINCENTIO in his friar's habit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ESCALUS</speaker>
@@ -6325,7 +6323,7 @@ the DUKE VINCENTIO in his friar's habit</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To Provost</phrase>  Stay, sir; stay awhile.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To Provost</inlinestagedir>  Stay, sir; stay awhile.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -6342,14 +6340,14 @@ the DUKE VINCENTIO in his friar's habit</para>
 <line remap="LINE">Will't not off?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Pulls off the friar's hood, and discovers DUKE
-VINCENTIO</para>
+<stagedir remap="STAGEDIR">Pulls off the friar's hood, and discovers DUKE
+VINCENTIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
 <line remap="LINE">Thou art the first knave that e'er madest a duke.</line>
 <line remap="LINE">First, provost, let me bail these gentle three.</line>
-<para remap="STAGEDIR">To LUCIO</para>
+<stagedir remap="STAGEDIR">To LUCIO</stagedir>
 <line remap="LINE">Sneak not away, sir; for the friar and you</line>
 <line remap="LINE">Must have a word anon. Lay hold on him.</line>
 </linegroup></dialogue>
@@ -6361,9 +6359,9 @@ VINCENTIO</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To ESCALUS</phrase>  What you have spoke I pardon: sit you down:</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To ESCALUS</inlinestagedir>  What you have spoke I pardon: sit you down:</line>
 <line remap="LINE">We'll borrow place of him.</line>
-<para remap="STAGEDIR">To ANGELO</para>
+<stagedir remap="STAGEDIR">To ANGELO</stagedir>
 <line remap="LINE">Sir, by your leave.</line>
 <line remap="LINE">Hast thou or word, or wit, or impudence,</line>
 <line remap="LINE">That yet can do thee office? If thou hast,</line>
@@ -6402,7 +6400,7 @@ VINCENTIO</para>
 <line remap="LINE">Return him here again. Go with him, provost.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt ANGELO, MARIANA, FRIAR PETER and Provost</para>
+<stagedir remap="STAGEDIR">Exeunt ANGELO, MARIANA, FRIAR PETER and Provost</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ESCALUS</speaker>
@@ -6448,7 +6446,7 @@ VINCENTIO</para>
 <line remap="LINE">I do, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter ANGELO, MARIANA, FRIAR PETER, and Provost</para>
+<stagedir remap="STAGEDIR">Re-enter ANGELO, MARIANA, FRIAR PETER, and Provost</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
@@ -6505,13 +6503,13 @@ VINCENTIO</para>
 <line remap="LINE">Gentle my liege,--</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Kneeling</para>
+<stagedir remap="STAGEDIR">Kneeling</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
 <line remap="LINE">You do but lose your labour.</line>
 <line remap="LINE">Away with him to death!</line>
-<para remap="STAGEDIR">To LUCIO</para>
+<stagedir remap="STAGEDIR">To LUCIO</stagedir>
 <line remap="LINE">Now, sir, to you.</line>
 </linegroup></dialogue>
 
@@ -6549,7 +6547,7 @@ VINCENTIO</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ISABELLA</speaker>
 <line remap="LINE">Most bounteous sir,</line>
-<para remap="STAGEDIR">Kneeling</para>
+<stagedir remap="STAGEDIR">Kneeling</stagedir>
 <line remap="LINE">Look, if it please you, on this man condemn'd,</line>
 <line remap="LINE">As if my brother lived: I partly think</line>
 <line remap="LINE">A due sincerity govern'd his deeds,</line>
@@ -6623,7 +6621,7 @@ VINCENTIO</para>
 <line remap="LINE">Go fetch him hither; let me look upon him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Provost</para>
+<stagedir remap="STAGEDIR">Exit Provost</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ESCALUS</speaker>
@@ -6641,8 +6639,8 @@ VINCENTIO</para>
 <line remap="LINE">'Tis my deserving, and I do entreat it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter Provost, with BARNARDINE, CLAUDIO muffled,
-and JULIET</para>
+<stagedir remap="STAGEDIR">Re-enter Provost, with BARNARDINE, CLAUDIO muffled,
+and JULIET</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
@@ -6673,11 +6671,11 @@ and JULIET</para>
 <line remap="LINE">As like almost to Claudio as himself.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Unmuffles CLAUDIO</para>
+<stagedir remap="STAGEDIR">Unmuffles CLAUDIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To ISABELLA</phrase>  If he be like your brother, for his sake</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To ISABELLA</inlinestagedir>  If he be like your brother, for his sake</line>
 <line remap="LINE">Is he pardon'd; and, for your lovely sake,</line>
 <line remap="LINE">Give me your hand and say you will be mine.</line>
 <line remap="LINE">He is my brother too: but fitter time for that.</line>
@@ -6687,7 +6685,7 @@ and JULIET</para>
 <line remap="LINE">Look that you love your wife; her worth worth yours.</line>
 <line remap="LINE">I find an apt remission in myself;</line>
 <line remap="LINE">And yet here's one in place I cannot pardon.</line>
-<para remap="STAGEDIR">To LUCIO</para>
+<stagedir remap="STAGEDIR">To LUCIO</stagedir>
 <line remap="LINE">You, sirrah, that knew me for a fool, a coward,</line>
 <line remap="LINE">One all of luxury, an ass, a madman;</line>
 <line remap="LINE">Wherein have I so deserved of you,</line>
@@ -6736,7 +6734,7 @@ and JULIET</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE VINCENTIO</speaker>
 <line remap="LINE">Slandering a prince deserves it.</line>
-<para remap="STAGEDIR">Exit Officers with LUCIO</para>
+<stagedir remap="STAGEDIR">Exit Officers with LUCIO</stagedir>
 <line remap="LINE">She, Claudio, that you wrong'd, look you restore.</line>
 <line remap="LINE">Joy to you, Mariana! Love her, Angelo:</line>
 <line remap="LINE">I have confess'd her and I know her virtue.</line>
@@ -6754,7 +6752,7 @@ and JULIET</para>
 <line remap="LINE">What's yet behind, that's meet you all should know.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 </chapter>
 </book>

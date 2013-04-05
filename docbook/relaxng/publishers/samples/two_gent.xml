@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">The Two Gentlemen of Verona</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">The Two Gentlemen of Verona</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The Two Gentlemen of Verona</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -23,16 +23,16 @@
 <para><personname remap="PERSONA">SILVIA, beloved of Valentine.</personname></para>
 <para><personname remap="PERSONA">LUCETTA, waiting-woman to Julia.</personname></para>
 <para><personname remap="PERSONA">Servants, Musicians.</personname></para>
-    <para remap="SCNDESCR">SCENE  Verona; Milan; the frontiers of Mantua.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  Verona; Milan; the frontiers of Mantua.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Verona. An open place.</title>
-<para remap="STAGEDIR">Enter VALENTINE and PROTEUS</para>
+<stagedir remap="STAGEDIR">Enter VALENTINE and PROTEUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VALENTINE</speaker>
@@ -181,7 +181,7 @@
 <line remap="LINE">As much to you at home! and so, farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROTEUS</speaker>
@@ -194,7 +194,7 @@
 <line remap="LINE">Made wit with musing weak, heart sick with thought.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SPEED</para>
+<stagedir remap="STAGEDIR">Enter SPEED</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SPEED</speaker>
@@ -331,7 +331,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SPEED</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">First nodding</phrase>  Ay.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">First nodding</inlinestagedir>  Ay.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -441,17 +441,17 @@
 <line remap="LINE">Go, go, be gone, to save your ship from wreck,</line>
 <line remap="LINE">Which cannot perish having thee aboard,</line>
 <line remap="LINE">Being destined to a drier death on shore.</line>
-<para remap="STAGEDIR">Exit SPEED</para>
+<stagedir remap="STAGEDIR">Exit SPEED</stagedir>
 <line remap="LINE">I must go send some better messenger:</line>
 <line remap="LINE">I fear my Julia would not deign my lines,</line>
 <line remap="LINE">Receiving them from such a worthless post.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same. Garden of JULIA's house.</title>
-<para remap="STAGEDIR">Enter JULlA and LUCETTA</para>
+<stagedir remap="STAGEDIR">Enter JULlA and LUCETTA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JULIA</speaker>
@@ -639,7 +639,7 @@
 <line remap="LINE">That you may ruminate.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JULIA</speaker>
@@ -662,7 +662,7 @@
 <line remap="LINE">What ho! Lucetta!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter LUCETTA</para>
+<stagedir remap="STAGEDIR">Re-enter LUCETTA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCETTA</speaker>
@@ -811,7 +811,7 @@
 <speaker remap="SPEAKER">JULIA</speaker>
 <line remap="LINE">This babble shall not henceforth trouble me.</line>
 <line remap="LINE">Here is a coil with protestation!</line>
-<para remap="STAGEDIR">Tears the letter</para>
+<stagedir remap="STAGEDIR">Tears the letter</stagedir>
 <line remap="LINE">Go get you gone, and let the papers lie:</line>
 <line remap="LINE">You would be fingering them, to anger me.</line>
 </linegroup></dialogue>
@@ -822,7 +822,7 @@
 <line remap="LINE">To be so anger'd with another letter.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JULIA</speaker>
@@ -854,7 +854,7 @@
 <line remap="LINE">Now kiss, embrace, contend, do what you will.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter LUCETTA</para>
+<stagedir remap="STAGEDIR">Re-enter LUCETTA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCETTA</speaker>
@@ -899,11 +899,11 @@
 <line remap="LINE">Come, come; will't please you go?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The same. ANTONIO's house.</title>
-<para remap="STAGEDIR">Enter ANTONIO and PANTHINO</para>
+<stagedir remap="STAGEDIR">Enter ANTONIO and PANTHINO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTONIO</speaker>
@@ -994,7 +994,7 @@
 <line remap="LINE">And, in good time! now will we break with him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PROTEUS</para>
+<stagedir remap="STAGEDIR">Enter PROTEUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROTEUS</speaker>
@@ -1069,7 +1069,7 @@
 <line remap="LINE">To hasten on his expedition.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt ANTONIO and PANTHINO</para>
+<stagedir remap="STAGEDIR">Exeunt ANTONIO and PANTHINO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROTEUS</speaker>
@@ -1085,7 +1085,7 @@
 <line remap="LINE">And by and by a cloud takes all away!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter PANTHINO</para>
+<stagedir remap="STAGEDIR">Re-enter PANTHINO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANTHINO</speaker>
@@ -1099,7 +1099,7 @@
 <line remap="LINE">And yet a thousand times it answers 'no.'</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -1107,7 +1107,7 @@
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Milan. The DUKE's palace.</title>
-<para remap="STAGEDIR">Enter VALENTINE and SPEED</para>
+<stagedir remap="STAGEDIR">Enter VALENTINE and SPEED</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SPEED</speaker>
@@ -1406,11 +1406,11 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SPEED</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  O excellent motion! O exceeding puppet!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  O excellent motion! O exceeding puppet!</line>
 <line remap="LINE">Now will he interpret to her.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SILVIA</para>
+<stagedir remap="STAGEDIR">Enter SILVIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VALENTINE</speaker>
@@ -1419,7 +1419,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SPEED</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  O, give ye good even! here's a million of manners.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  O, give ye good even! here's a million of manners.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1429,7 +1429,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SPEED</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  He should give her interest and she gives it him.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  He should give her interest and she gives it him.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1473,7 +1473,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SPEED</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  And yet you will; and yet another 'yet.'</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  And yet you will; and yet another 'yet.'</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1522,7 +1522,7 @@
 <line remap="LINE">And so, good morrow, servant.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SPEED</speaker>
@@ -1647,11 +1647,11 @@
 <line remap="LINE">your mistress; be moved, be moved.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Verona. JULIA'S house.</title>
-<para remap="STAGEDIR">Enter PROTEUS and JULIA</para>
+<stagedir remap="STAGEDIR">Enter PROTEUS and JULIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROTEUS</speaker>
@@ -1674,7 +1674,7 @@
 <line remap="LINE">Keep this remembrance for thy Julia's sake.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Giving a ring</para>
+<stagedir remap="STAGEDIR">Giving a ring</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROTEUS</speaker>
@@ -1697,13 +1697,13 @@
 <line remap="LINE">The tide is now: nay, not thy tide of tears;</line>
 <line remap="LINE">That tide will stay me longer than I should.</line>
 <line remap="LINE">Julia, farewell!</line>
-<para remap="STAGEDIR">Exit JULIA</para>
+<stagedir remap="STAGEDIR">Exit JULIA</stagedir>
 <line remap="LINE">What, gone without a word?</line>
 <line remap="LINE">Ay, so true love should do: it cannot speak;</line>
 <line remap="LINE">For truth hath better deeds than words to grace it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PANTHINO</para>
+<stagedir remap="STAGEDIR">Enter PANTHINO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANTHINO</speaker>
@@ -1716,11 +1716,11 @@
 <line remap="LINE">Alas! this parting strikes poor lovers dumb.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The same. A street.</title>
-<para remap="STAGEDIR">Enter LAUNCE, leading a dog</para>
+<stagedir remap="STAGEDIR">Enter LAUNCE, leading a dog</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAUNCE</speaker>
@@ -1759,7 +1759,7 @@
 <line remap="LINE">word; but see how I lay the dust with my tears.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PANTHINO</para>
+<stagedir remap="STAGEDIR">Enter PANTHINO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PANTHINO</speaker>
@@ -1842,11 +1842,11 @@
 <line remap="LINE">Well, I will go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Milan. The DUKE's palace.</title>
-<para remap="STAGEDIR">Enter SILVIA, VALENTINE, THURIO, and SPEED</para>
+<stagedir remap="STAGEDIR">Enter SILVIA, VALENTINE, THURIO, and SPEED</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SILVIA</speaker>
@@ -1883,7 +1883,7 @@
 <line remap="LINE">'Twere good you knocked him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SILVIA</speaker>
@@ -2032,7 +2032,7 @@
 <line remap="LINE">No more, gentlemen, no more:--here comes my father.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DUKE</para>
+<stagedir remap="STAGEDIR">Enter DUKE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE</speaker>
@@ -2117,7 +2117,7 @@
 <line remap="LINE">I will send him hither to you presently.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VALENTINE</speaker>
@@ -2164,8 +2164,8 @@
 <line remap="LINE">Have done, have done; here comes the gentleman.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit THURIO</para>
-<para remap="STAGEDIR">Enter PROTEUS</para>
+<stagedir remap="STAGEDIR">Exit THURIO</stagedir>
+<stagedir remap="STAGEDIR">Enter PROTEUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VALENTINE</speaker>
@@ -2228,7 +2228,7 @@
 <line remap="LINE">That you are worthless.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter THURIO</para>
+<stagedir remap="STAGEDIR">Re-enter THURIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THURIO</speaker>
@@ -2248,7 +2248,7 @@
 <line remap="LINE">We'll both attend upon your ladyship.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt SILVIA and THURIO</para>
+<stagedir remap="STAGEDIR">Exeunt SILVIA and THURIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VALENTINE</speaker>
@@ -2435,7 +2435,7 @@
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROTEUS</speaker>
 <line remap="LINE">I will.</line>
-<para remap="STAGEDIR">Exit VALENTINE</para>
+<stagedir remap="STAGEDIR">Exit VALENTINE</stagedir>
 <line remap="LINE">Even as one heat another heat expels,</line>
 <line remap="LINE">Or as one nail by strength drives out another,</line>
 <line remap="LINE">So the remembrance of my former love</line>
@@ -2461,11 +2461,11 @@
 <line remap="LINE">If not, to compass her I'll use my skill.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  The same. A street.</title>
-<para remap="STAGEDIR">Enter SPEED and LAUNCE severally</para>
+<stagedir remap="STAGEDIR">Enter SPEED and LAUNCE severally</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SPEED</speaker>
@@ -2649,11 +2649,11 @@
 <line remap="LINE">At thy service.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  The same. The DUKE'S palace.</title>
-<para remap="STAGEDIR">Enter PROTEUS</para>
+<stagedir remap="STAGEDIR">Enter PROTEUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROTEUS</speaker>
@@ -2702,11 +2702,11 @@
 <line remap="LINE">As thou hast lent me wit to plot this drift!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VII.  Verona. JULIA'S house.</title>
-<para remap="STAGEDIR">Enter JULIA and LUCETTA</para>
+<stagedir remap="STAGEDIR">Enter JULIA and LUCETTA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JULIA</speaker>
@@ -2898,7 +2898,7 @@
 <line remap="LINE">I am impatient of my tarriance.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -2906,13 +2906,13 @@
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Milan. The DUKE's palace.</title>
-<para remap="STAGEDIR">Enter DUKE, THURIO, and PROTEUS</para>
+<stagedir remap="STAGEDIR">Enter DUKE, THURIO, and PROTEUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE</speaker>
 <line remap="LINE">Sir Thurio, give us leave, I pray, awhile;</line>
 <line remap="LINE">We have some secrets to confer about.</line>
-<para remap="STAGEDIR">Exit THURIO</para>
+<stagedir remap="STAGEDIR">Exit THURIO</stagedir>
 <line remap="LINE">Now, tell me, Proteus, what's your will with me?</line>
 </linegroup></dialogue>
 
@@ -2983,8 +2983,8 @@
 <line remap="LINE">Adieu, my Lord; Sir Valentine is coming.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter VALENTINE</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter VALENTINE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE</speaker>
@@ -3190,7 +3190,7 @@
 <line remap="LINE">What letter is this same? What's here? 'To Silvia'!</line>
 <line remap="LINE">And here an engine fit for my proceeding.</line>
 <line remap="LINE">I'll be so bold to break the seal for once.</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">'My thoughts do harbour with my Silvia nightly,</line>
 <line remap="LINE">And slaves they are to me that send them flying:</line>
 <line remap="LINE">O, could their master come and go as lightly,</line>
@@ -3223,7 +3223,7 @@
 <line remap="LINE">But, as thou lovest thy life, make speed from hence.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VALENTINE</speaker>
@@ -3247,7 +3247,7 @@
 <line remap="LINE">But, fly I hence, I fly away from life.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PROTEUS and LAUNCE</para>
+<stagedir remap="STAGEDIR">Enter PROTEUS and LAUNCE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROTEUS</speaker>
@@ -3450,7 +3450,7 @@
 <line remap="LINE">O my dear Silvia! Hapless Valentine!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt VALENTINE and PROTEUS</para>
+<stagedir remap="STAGEDIR">Exeunt VALENTINE and PROTEUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAUNCE</speaker>
@@ -3465,7 +3465,7 @@
 <line remap="LINE">a maid, for she is her master's maid, and serves for</line>
 <line remap="LINE">wages. She hath more qualities than a water-spaniel;</line>
 <line remap="LINE">which is much in a bare Christian.</line>
-<para remap="STAGEDIR">Pulling out a paper</para>
+<stagedir remap="STAGEDIR">Pulling out a paper</stagedir>
 <line remap="LINE">Here is the cate-log of her condition.</line>
 <line remap="LINE">'Imprimis: She can fetch and carry.' Why, a horse</line>
 <line remap="LINE">can do no more: nay, a horse cannot fetch, but only</line>
@@ -3474,7 +3474,7 @@
 <line remap="LINE">with clean hands.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SPEED</para>
+<stagedir remap="STAGEDIR">Enter SPEED</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SPEED</speaker>
@@ -3551,7 +3551,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SPEED</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'Imprimis: She can milk.'</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'Imprimis: She can milk.'</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -3819,7 +3819,7 @@
 <line remap="LINE">Why didst not tell me sooner? pox of your love letters!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAUNCE</speaker>
@@ -3828,11 +3828,11 @@
 <line remap="LINE">secrets! I'll after, to rejoice in the boy's correction.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same. The DUKE's palace.</title>
-<para remap="STAGEDIR">Enter DUKE and THURIO</para>
+<stagedir remap="STAGEDIR">Enter DUKE and THURIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE</speaker>
@@ -3854,7 +3854,7 @@
 <line remap="LINE">Dissolves to water and doth lose his form.</line>
 <line remap="LINE">A little time will melt her frozen thoughts</line>
 <line remap="LINE">And worthless Valentine shall be forgot.</line>
-<para remap="STAGEDIR">Enter PROTEUS</para>
+<stagedir remap="STAGEDIR">Enter PROTEUS</stagedir>
 <line remap="LINE">How now, Sir Proteus! Is your countryman</line>
 <line remap="LINE">According to our proclamation gone?</line>
 </linegroup></dialogue>
@@ -4053,7 +4053,7 @@
 <line remap="LINE">Even now about it! I will pardon you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -4061,7 +4061,7 @@
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  The frontiers of Mantua. A forest.</title>
-<para remap="STAGEDIR">Enter certain Outlaws</para>
+<stagedir remap="STAGEDIR">Enter certain Outlaws</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Outlaw</speaker>
@@ -4073,7 +4073,7 @@
 <line remap="LINE">If there be ten, shrink not, but down with 'em.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter VALENTINE and SPEED</para>
+<stagedir remap="STAGEDIR">Enter VALENTINE and SPEED</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Third Outlaw</speaker>
@@ -4292,11 +4292,11 @@
 <line remap="LINE">Which, with ourselves, all rest at thy dispose.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Milan. Outside the DUKE's palace, under SILVIA's chamber.</title>
-<para remap="STAGEDIR">Enter PROTEUS</para>
+<stagedir remap="STAGEDIR">Enter PROTEUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROTEUS</speaker>
@@ -4319,7 +4319,7 @@
 <line remap="LINE">And give some evening music to her ear.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter THURIO and Musicians</para>
+<stagedir remap="STAGEDIR">Enter THURIO and Musicians</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THURIO</speaker>
@@ -4358,7 +4358,7 @@
 <line remap="LINE">Let's tune, and to it lustily awhile.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter, at a distance, Host, and JULIA in boy's clothes</para>
+<stagedir remap="STAGEDIR">Enter, at a distance, Host, and JULIA in boy's clothes</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Host</speaker>
@@ -4392,7 +4392,7 @@
 <line remap="LINE">That will be music.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Music plays</para>
+<stagedir remap="STAGEDIR">Music plays</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Host</speaker>
@@ -4542,8 +4542,8 @@
 <line remap="LINE">Farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt THURIO and Musicians</para>
-<para remap="STAGEDIR">Enter SILVIA above</para>
+<stagedir remap="STAGEDIR">Exeunt THURIO and Musicians</stagedir>
+<stagedir remap="STAGEDIR">Enter SILVIA above</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROTEUS</speaker>
@@ -4606,7 +4606,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JULIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>        'Twere false, if I should speak it;</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>        'Twere false, if I should speak it;</line>
 <line remap="LINE">For I am sure she is not buried.</line>
 </linegroup></dialogue>
 
@@ -4642,7 +4642,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JULIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  He heard not that.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  He heard not that.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -4658,7 +4658,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JULIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  If 'twere a substance, you would, sure,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  If 'twere a substance, you would, sure,</line>
 <line remap="LINE">deceive it,</line>
 <line remap="LINE">And make it but a shadow, as I am.</line>
 </linegroup></dialogue>
@@ -4678,7 +4678,7 @@
 <line remap="LINE">That wait for execution in the morn.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt PROTEUS and SILVIA severally</para>
+<stagedir remap="STAGEDIR">Exeunt PROTEUS and SILVIA severally</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JULIA</speaker>
@@ -4707,11 +4707,11 @@
 <line remap="LINE">That e'er I watch'd and the most heaviest.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The same.</title>
-<para remap="STAGEDIR">Enter EGLAMOUR</para>
+<stagedir remap="STAGEDIR">Enter EGLAMOUR</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EGLAMOUR</speaker>
@@ -4721,7 +4721,7 @@
 <line remap="LINE">Madam, madam!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter SILVIA above</para>
+<stagedir remap="STAGEDIR">Enter SILVIA above</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SILVIA</speaker>
@@ -4813,11 +4813,11 @@
 <line remap="LINE">Good morrow, kind Sir Eglamour.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt severally</para>
+<stagedir remap="STAGEDIR">Exeunt severally</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  The same.</title>
-<para remap="STAGEDIR">Enter LAUNCE, with his his Dog</para>
+<stagedir remap="STAGEDIR">Enter LAUNCE, with his his Dog</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAUNCE</speaker>
@@ -4862,7 +4862,7 @@
 <line remap="LINE">thou ever see me do such a trick?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PROTEUS and JULIA</para>
+<stagedir remap="STAGEDIR">Enter PROTEUS and JULIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROTEUS</speaker>
@@ -4878,7 +4878,7 @@
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROTEUS</speaker>
 <line remap="LINE">I hope thou wilt.</line>
-<para remap="STAGEDIR">To LAUNCE</para>
+<stagedir remap="STAGEDIR">To LAUNCE</stagedir>
 <line remap="LINE">How now, you whoreson peasant!</line>
 <line remap="LINE">Where have you been these two days loitering?</line>
 </linegroup></dialogue>
@@ -4928,7 +4928,7 @@
 <line remap="LINE">Go get thee hence, and find my dog again,</line>
 <line remap="LINE">Or ne'er return again into my sight.</line>
 <line remap="LINE">Away, I say! stay'st thou to vex me here?</line>
-<para remap="STAGEDIR">Exit LAUNCE</para>
+<stagedir remap="STAGEDIR">Exit LAUNCE</stagedir>
 <line remap="LINE">A slave, that still an end turns me to shame!</line>
 <line remap="LINE">Sebastian, I have entertained thee,</line>
 <line remap="LINE">Partly that I have need of such a youth</line>
@@ -4994,7 +4994,7 @@
 <line remap="LINE">Where thou shalt find me, sad and solitary.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JULIA</speaker>
@@ -5016,7 +5016,7 @@
 <line remap="LINE">Unless I prove false traitor to myself.</line>
 <line remap="LINE">Yet will I woo for him, but yet so coldly</line>
 <line remap="LINE">As, heaven it knows, I would not have him speed.</line>
-<para remap="STAGEDIR">Enter SILVIA, attended</para>
+<stagedir remap="STAGEDIR">Enter SILVIA, attended</stagedir>
 <line remap="LINE">Gentlewoman, good day! I pray you, be my mean</line>
 <line remap="LINE">To bring me where to speak with Madam Silvia.</line>
 </linegroup></dialogue>
@@ -5190,7 +5190,7 @@
 <line remap="LINE">Farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit SILVIA, with attendants</para>
+<stagedir remap="STAGEDIR">Exit SILVIA, with attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JULIA</speaker>
@@ -5223,7 +5223,7 @@
 <line remap="LINE">To make my master out of love with thee!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -5231,7 +5231,7 @@
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Milan. An abbey.</title>
-<para remap="STAGEDIR">Enter EGLAMOUR</para>
+<stagedir remap="STAGEDIR">Enter EGLAMOUR</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EGLAMOUR</speaker>
@@ -5242,7 +5242,7 @@
 <line remap="LINE">Unless it be to come before their time;</line>
 <line remap="LINE">So much they spur their expedition.</line>
 <line remap="LINE">See where she comes.</line>
-<para remap="STAGEDIR">Enter SILVIA</para>
+<stagedir remap="STAGEDIR">Enter SILVIA</stagedir>
 <line remap="LINE">Lady, a happy evening!</line>
 </linegroup></dialogue>
 
@@ -5259,11 +5259,11 @@
 <line remap="LINE">If we recover that, we are sure enough.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same. The DUKE's palace.</title>
-<para remap="STAGEDIR">Enter THURIO, PROTEUS, and JULIA</para>
+<stagedir remap="STAGEDIR">Enter THURIO, PROTEUS, and JULIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THURIO</speaker>
@@ -5293,7 +5293,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JULIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  But love will not be spurr'd to what</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  But love will not be spurr'd to what</line>
 <line remap="LINE">it loathes.</line>
 </linegroup></dialogue>
 
@@ -5320,7 +5320,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JULIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  'Tis true; such pearls as put out</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  'Tis true; such pearls as put out</line>
 <line remap="LINE">ladies' eyes;</line>
 <line remap="LINE">For I had rather wink than look on them.</line>
 </linegroup></dialogue>
@@ -5342,7 +5342,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JULIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  But better, indeed, when you hold your peace.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  But better, indeed, when you hold your peace.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5357,7 +5357,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JULIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  She needs not, when she knows it cowardice.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  She needs not, when she knows it cowardice.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5372,7 +5372,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JULIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  True; from a gentleman to a fool.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  True; from a gentleman to a fool.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5392,7 +5392,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JULIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  That such an ass should owe them.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  That such an ass should owe them.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5405,7 +5405,7 @@
 <line remap="LINE">Here comes the duke.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DUKE</para>
+<stagedir remap="STAGEDIR">Enter DUKE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE</speaker>
@@ -5452,7 +5452,7 @@
 <line remap="LINE">Dispatch, sweet gentlemen, and follow me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THURIO</speaker>
@@ -5462,7 +5462,7 @@
 <line remap="LINE">Than for the love of reckless Silvia.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROTEUS</speaker>
@@ -5470,7 +5470,7 @@
 <line remap="LINE">Than hate of Eglamour that goes with her.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JULIA</speaker>
@@ -5478,11 +5478,11 @@
 <line remap="LINE">Than hate for Silvia that is gone for love.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The frontiers of Mantua. The forest.</title>
-<para remap="STAGEDIR">Enter Outlaws with SILVIA</para>
+<stagedir remap="STAGEDIR">Enter Outlaws with SILVIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Outlaw</speaker>
@@ -5527,11 +5527,11 @@
 <line remap="LINE">O Valentine, this I endure for thee!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Another part of the forest.</title>
-<para remap="STAGEDIR">Enter VALENTINE</para>
+<stagedir remap="STAGEDIR">Enter VALENTINE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VALENTINE</speaker>
@@ -5555,7 +5555,7 @@
 <line remap="LINE">Withdraw thee, Valentine: who's this comes here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PROTEUS, SILVIA, and JULIA</para>
+<stagedir remap="STAGEDIR">Enter PROTEUS, SILVIA, and JULIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROTEUS</speaker>
@@ -5570,7 +5570,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VALENTINE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  How like a dream is this I see and hear!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  How like a dream is this I see and hear!</line>
 <line remap="LINE">Love, lend me patience to forbear awhile.</line>
 </linegroup></dialogue>
 
@@ -5592,7 +5592,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JULIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  And me, when he approacheth to your presence.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  And me, when he approacheth to your presence.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5708,7 +5708,7 @@
 <line remap="LINE">O me unhappy!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Swoons</para>
+<stagedir remap="STAGEDIR">Swoons</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROTEUS</speaker>
@@ -5807,7 +5807,7 @@
 <line remap="LINE">And I mine.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Outlaws, with DUKE and THURIO</para>
+<stagedir remap="STAGEDIR">Enter Outlaws, with DUKE and THURIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Outlaws</speaker>
@@ -5927,7 +5927,7 @@
 <line remap="LINE">One feast, one house, one mutual happiness.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 </chapter>
 </book>

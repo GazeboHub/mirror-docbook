@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">The Taming of the Shrew</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">The Taming of the Shrew</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The Taming of the Shrew</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -26,16 +26,16 @@
 
 <para><personname remap="PERSONA">Widow.</personname></para>
 <para><personname remap="PERSONA">Tailor, Haberdasher, and Servants attending on Baptista and Petruchio.</personname></para>
-    <para remap="SCNDESCR">SCENE  Padua, and Petruchio's country house.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  Padua, and Petruchio's country house.</para>
 
 
 
 <chapter remap="INDUCT"><title remap="TITLE">INDUCTION</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Before an alehouse on a heath.</title>
-<para remap="STAGEDIR">Enter Hostess and SLY</para>
+<stagedir remap="STAGEDIR">Enter Hostess and SLY</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SLY</speaker>
@@ -71,7 +71,7 @@
 <line remap="LINE">third--borough.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SLY</speaker>
@@ -80,8 +80,8 @@
 <line remap="LINE">and kindly.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Falls asleep</para>
-<para remap="STAGEDIR">Horns winded. Enter a Lord from hunting, with his train</para>
+<stagedir remap="STAGEDIR">Falls asleep</stagedir>
+<stagedir remap="STAGEDIR">Horns winded. Enter a Lord from hunting, with his train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lord</speaker>
@@ -187,12 +187,12 @@
 <speaker remap="SPEAKER">Lord</speaker>
 <line remap="LINE">Take him up gently and to bed with him;</line>
 <line remap="LINE">And each one to his office when he wakes.</line>
-<para remap="STAGEDIR">Some bear out SLY. A trumpet sounds</para>
+<stagedir remap="STAGEDIR">Some bear out SLY. A trumpet sounds</stagedir>
 <line remap="LINE">Sirrah, go see what trumpet 'tis that sounds:</line>
-<para remap="STAGEDIR">Exit Servingman</para>
+<stagedir remap="STAGEDIR">Exit Servingman</stagedir>
 <line remap="LINE">Belike, some noble gentleman that means,</line>
 <line remap="LINE">Travelling some journey, to repose him here.</line>
-<para remap="STAGEDIR">Re-enter Servingman</para>
+<stagedir remap="STAGEDIR">Re-enter Servingman</stagedir>
 <line remap="LINE">How now! who is it?</line>
 </linegroup></dialogue>
 
@@ -205,7 +205,7 @@
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lord</speaker>
 <line remap="LINE">Bid them come near.</line>
-<para remap="STAGEDIR">Enter Players</para>
+<stagedir remap="STAGEDIR">Enter Players</stagedir>
 <line remap="LINE">Now, fellows, you are welcome.</line>
 </linegroup></dialogue>
 
@@ -264,7 +264,7 @@
 <line remap="LINE">Go, sirrah, take them to the buttery,</line>
 <line remap="LINE">And give them friendly welcome every one:</line>
 <line remap="LINE">Let them want nothing that my house affords.</line>
-<para remap="STAGEDIR">Exit one with the Players</para>
+<stagedir remap="STAGEDIR">Exit one with the Players</stagedir>
 <line remap="LINE">Sirrah, go you to Barthol'mew my page,</line>
 <line remap="LINE">And see him dress'd in all suits like a lady:</line>
 <line remap="LINE">That done, conduct him to the drunkard's chamber;</line>
@@ -291,7 +291,7 @@
 <line remap="LINE">Shall in despite enforce a watery eye.</line>
 <line remap="LINE">See this dispatch'd with all the haste thou canst:</line>
 <line remap="LINE">Anon I'll give thee more instructions.</line>
-<para remap="STAGEDIR">Exit a Servingman</para>
+<stagedir remap="STAGEDIR">Exit a Servingman</stagedir>
 <line remap="LINE">I know the boy will well usurp the grace,</line>
 <line remap="LINE">Voice, gait and action of a gentlewoman:</line>
 <line remap="LINE">I long to hear him call the drunkard husband,</line>
@@ -301,12 +301,12 @@
 <line remap="LINE">May well abate the over-merry spleen</line>
 <line remap="LINE">Which otherwise would grow into extremes.</line>
 </linegroup></dialogue>
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A bedchamber in the Lord's house.</title>
-<para remap="STAGEDIR">Enter aloft SLY, with Attendants; some with apparel,
-others with basin and ewer and appurtenances; and Lord</para>
+<stagedir remap="STAGEDIR">Enter aloft SLY, with Attendants; some with apparel,
+others with basin and ewer and appurtenances; and Lord</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SLY</speaker>
@@ -381,7 +381,7 @@ others with basin and ewer and appurtenances; and Lord</para>
 <line remap="LINE">Look how thy servants do attend on thee,</line>
 <line remap="LINE">Each in his office ready at thy beck.</line>
 <line remap="LINE">Wilt thou have music? hark! Apollo plays,</line>
-<para remap="STAGEDIR">Music</para>
+<stagedir remap="STAGEDIR">Music</stagedir>
 <line remap="LINE">And twenty caged nightingales do sing:</line>
 <line remap="LINE">Or wilt thou sleep? we'll have thee to a couch</line>
 <line remap="LINE">Softer and sweeter than the lustful bed</line>
@@ -508,7 +508,7 @@ others with basin and ewer and appurtenances; and Lord</para>
 <line remap="LINE">I thank thee: thou shalt not lose by it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter the Page as a lady, with attendants</para>
+<stagedir remap="STAGEDIR">Enter the Page as a lady, with attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Page</speaker>
@@ -596,7 +596,7 @@ others with basin and ewer and appurtenances; and Lord</para>
 <line remap="LINE">despite of the flesh and the blood.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
@@ -636,14 +636,14 @@ others with basin and ewer and appurtenances; and Lord</para>
 <line remap="LINE">Well, well see't. Come, madam wife, sit by my side</line>
 <line remap="LINE">and let the world slip: we shall ne'er be younger.</line>
 </linegroup></dialogue>
-<para remap="STAGEDIR">Flourish</para>
+<stagedir remap="STAGEDIR">Flourish</stagedir>
 </section>
 </chapter>
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Padua. A public place.</title>
-<para remap="STAGEDIR">Enter LUCENTIO and his man TRANIO</para>
+<stagedir remap="STAGEDIR">Enter LUCENTIO and his man TRANIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCENTIO</speaker>
@@ -708,8 +708,8 @@ others with basin and ewer and appurtenances; and Lord</para>
 <line remap="LINE">Master, some show to welcome us to town.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BAPTISTA, KATHARINA, BIANCA, GREMIO, and
-HORTENSIO. LUCENTIO and TRANIO stand by</para>
+<stagedir remap="STAGEDIR">Enter BAPTISTA, KATHARINA, BIANCA, GREMIO, and
+HORTENSIO. LUCENTIO and TRANIO stand by</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BAPTISTA</speaker>
@@ -724,7 +724,7 @@ HORTENSIO. LUCENTIO and TRANIO stand by</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GREMIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  To cart her rather: she's too rough for me.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  To cart her rather: she's too rough for me.</line>
 <line remap="LINE">There, There, Hortensio, will you any wife?</line>
 </linegroup></dialogue>
 
@@ -822,7 +822,7 @@ HORTENSIO. LUCENTIO and TRANIO stand by</para>
 <speaker remap="SPEAKER">BAPTISTA</speaker>
 <line remap="LINE">Gentlemen, content ye; I am resolved:</line>
 <line remap="LINE">Go in, Bianca:</line>
-<para remap="STAGEDIR">Exit BIANCA</para>
+<stagedir remap="STAGEDIR">Exit BIANCA</stagedir>
 <line remap="LINE">And for I know she taketh most delight</line>
 <line remap="LINE">In music, instruments and poetry,</line>
 <line remap="LINE">Schoolmasters will I keep within my house,</line>
@@ -835,7 +835,7 @@ HORTENSIO. LUCENTIO and TRANIO stand by</para>
 <line remap="LINE">For I have more to commune with Bianca.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KATHARINA</speaker>
@@ -844,7 +844,7 @@ HORTENSIO. LUCENTIO and TRANIO stand by</para>
 <line remap="LINE">knew not what to take and what to leave, ha?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GREMIO</speaker>
@@ -930,7 +930,7 @@ HORTENSIO. LUCENTIO and TRANIO stand by</para>
 <line remap="LINE">house of her! Come on.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt GREMIO and HORTENSIO</para>
+<stagedir remap="STAGEDIR">Exeunt GREMIO and HORTENSIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TRANIO</speaker>
@@ -1089,7 +1089,7 @@ HORTENSIO. LUCENTIO and TRANIO stand by</para>
 <line remap="LINE">And let me be a slave, to achieve that maid</line>
 <line remap="LINE">Whose sudden sight hath thrall'd my wounded eye.</line>
 <line remap="LINE">Here comes the rogue.</line>
-<para remap="STAGEDIR">Enter BIONDELLO</para>
+<stagedir remap="STAGEDIR">Enter BIONDELLO</stagedir>
 <line remap="LINE">Sirrah, where have you been?</line>
 </linegroup></dialogue>
 
@@ -1148,8 +1148,8 @@ HORTENSIO. LUCENTIO and TRANIO stand by</para>
 <line remap="LINE">and weighty.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
-<para remap="STAGEDIR">The presenters above speak</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
+<stagedir remap="STAGEDIR">The presenters above speak</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Servant</speaker>
@@ -1173,11 +1173,11 @@ HORTENSIO. LUCENTIO and TRANIO stand by</para>
 <line remap="LINE">would 'twere done!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They sit and mark</para>
+<stagedir remap="STAGEDIR">They sit and mark</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Padua. Before HORTENSIO'S house.</title>
-<para remap="STAGEDIR">Enter PETRUCHIO and his man GRUMIO</para>
+<stagedir remap="STAGEDIR">Enter PETRUCHIO and his man GRUMIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
@@ -1225,7 +1225,7 @@ HORTENSIO. LUCENTIO and TRANIO stand by</para>
 <line remap="LINE">I'll try how you can sol, fa, and sing it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">He wrings him by the ears</para>
+<stagedir remap="STAGEDIR">He wrings him by the ears</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GRUMIO</speaker>
@@ -1237,7 +1237,7 @@ HORTENSIO. LUCENTIO and TRANIO stand by</para>
 <line remap="LINE">Now, knock when I bid you, sirrah villain!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HORTENSIO</para>
+<stagedir remap="STAGEDIR">Enter HORTENSIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORTENSIO</speaker>
@@ -1438,7 +1438,7 @@ HORTENSIO. LUCENTIO and TRANIO stand by</para>
 <speaker remap="SPEAKER">GRUMIO</speaker>
 <line remap="LINE">Here's no knavery! See, to beguile the old folks,</line>
 <line remap="LINE">how the young folks lay their heads together!</line>
-<para remap="STAGEDIR">Enter GREMIO, and LUCENTIO disguised</para>
+<stagedir remap="STAGEDIR">Enter GREMIO, and LUCENTIO disguised</stagedir>
 <line remap="LINE">Master, master, look about you: who goes there, ha?</line>
 </linegroup></dialogue>
 
@@ -1625,7 +1625,7 @@ HORTENSIO. LUCENTIO and TRANIO stand by</para>
 <line remap="LINE">I would I were as sure of a good dinner.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter TRANIO brave, and BIONDELLO</para>
+<stagedir remap="STAGEDIR">Enter TRANIO brave, and BIONDELLO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TRANIO</speaker>
@@ -1814,7 +1814,7 @@ HORTENSIO. LUCENTIO and TRANIO stand by</para>
 <line remap="LINE">Petruchio, I shall be your ben venuto.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -1822,7 +1822,7 @@ HORTENSIO. LUCENTIO and TRANIO stand by</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Padua. A room in BAPTISTA'S house.</title>
-<para remap="STAGEDIR">Enter KATHARINA and BIANCA</para>
+<stagedir remap="STAGEDIR">Enter KATHARINA and BIANCA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIANCA</speaker>
@@ -1879,8 +1879,8 @@ HORTENSIO. LUCENTIO and TRANIO stand by</para>
 <line remap="LINE">If that be jest, then all the rest was so.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Strikes her</para>
-<para remap="STAGEDIR">Enter BAPTISTA</para>
+<stagedir remap="STAGEDIR">Strikes her</stagedir>
+<stagedir remap="STAGEDIR">Enter BAPTISTA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BAPTISTA</speaker>
@@ -1897,14 +1897,14 @@ HORTENSIO. LUCENTIO and TRANIO stand by</para>
 <line remap="LINE">Her silence flouts me, and I'll be revenged.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flies after BIANCA</para>
+<stagedir remap="STAGEDIR">Flies after BIANCA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BAPTISTA</speaker>
 <line remap="LINE">What, in my sight? Bianca, get thee in.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit BIANCA</para>
+<stagedir remap="STAGEDIR">Exit BIANCA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KATHARINA</speaker>
@@ -1916,7 +1916,7 @@ HORTENSIO. LUCENTIO and TRANIO stand by</para>
 <line remap="LINE">Till I can find occasion of revenge.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BAPTISTA</speaker>
@@ -1924,9 +1924,9 @@ HORTENSIO. LUCENTIO and TRANIO stand by</para>
 <line remap="LINE">But who comes here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter GREMIO, LUCENTIO in the habit of a mean man;
+<stagedir remap="STAGEDIR">Enter GREMIO, LUCENTIO in the habit of a mean man;
 PETRUCHIO, with HORTENSIO as a musician; and TRANIO,
-with BIONDELLO bearing a lute and books</para>
+with BIONDELLO bearing a lute and books</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GREMIO</speaker>
@@ -1967,7 +1967,7 @@ with BIONDELLO bearing a lute and books</para>
 <line remap="LINE">Of that report which I so oft have heard.</line>
 <line remap="LINE">And, for an entrance to my entertainment,</line>
 <line remap="LINE">I do present you with a man of mine,</line>
-<para remap="STAGEDIR">Presenting HORTENSIO</para>
+<stagedir remap="STAGEDIR">Presenting HORTENSIO</stagedir>
 <line remap="LINE">Cunning in music and the mathematics,</line>
 <line remap="LINE">To instruct her fully in those sciences,</line>
 <line remap="LINE">Whereof I know she is not ignorant:</line>
@@ -2024,7 +2024,7 @@ with BIONDELLO bearing a lute and books</para>
 <line remap="LINE">sure of it. To express the like kindness, myself,</line>
 <line remap="LINE">that have been more kindly beholding to you than</line>
 <line remap="LINE">any, freely give unto you this young scholar,</line>
-<para remap="STAGEDIR">Presenting LUCENTIO</para>
+<stagedir remap="STAGEDIR">Presenting LUCENTIO</stagedir>
 <line remap="LINE">that hath been long studying at Rheims; as cunning</line>
 <line remap="LINE">in Greek, Latin, and other languages, as the other</line>
 <line remap="LINE">in music and mathematics: his name is Cambio; pray,</line>
@@ -2035,7 +2035,7 @@ with BIONDELLO bearing a lute and books</para>
 <speaker remap="SPEAKER">BAPTISTA</speaker>
 <line remap="LINE">A thousand thanks, Signior Gremio.</line>
 <line remap="LINE">Welcome, good Cambio.</line>
-<para remap="STAGEDIR">To TRANIO</para>
+<stagedir remap="STAGEDIR">To TRANIO</stagedir>
 <line remap="LINE">But, gentle sir, methinks you walk like a stranger:</line>
 <line remap="LINE">may I be so bold to know the cause of your coming?</line>
 </linegroup></dialogue>
@@ -2075,12 +2075,12 @@ with BIONDELLO bearing a lute and books</para>
 <line remap="LINE">Take you the lute, and you the set of books;</line>
 <line remap="LINE">You shall go see your pupils presently.</line>
 <line remap="LINE">Holla, within!</line>
-<para remap="STAGEDIR">Enter a Servant</para>
+<stagedir remap="STAGEDIR">Enter a Servant</stagedir>
 <line remap="LINE">Sirrah, lead these gentlemen</line>
 <line remap="LINE">To my daughters; and tell them both,</line>
 <line remap="LINE">These are their tutors: bid them use them well.</line>
-<para remap="STAGEDIR">Exit Servant, with LUCENTIO and HORTENSIO,
-BIONDELLO following</para>
+<stagedir remap="STAGEDIR">Exit Servant, with LUCENTIO and HORTENSIO,
+BIONDELLO following</stagedir>
 <line remap="LINE">We will go walk a little in the orchard,</line>
 <line remap="LINE">And then to dinner. You are passing welcome,</line>
 <line remap="LINE">And so I pray you all to think yourselves.</line>
@@ -2142,7 +2142,7 @@ BIONDELLO following</para>
 <line remap="LINE">That shake not, though they blow perpetually.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter HORTENSIO, with his head broke</para>
+<stagedir remap="STAGEDIR">Re-enter HORTENSIO, with his head broke</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BAPTISTA</speaker>
@@ -2206,7 +2206,7 @@ BIONDELLO following</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
 <line remap="LINE">I pray you do.</line>
-<para remap="STAGEDIR">Exeunt all but PETRUCHIO</para>
+<stagedir remap="STAGEDIR">Exeunt all but PETRUCHIO</stagedir>
 <line remap="LINE">I will attend her here,</line>
 <line remap="LINE">And woo her with some spirit when she comes.</line>
 <line remap="LINE">Say that she rail; why then I'll tell her plain</line>
@@ -2221,7 +2221,7 @@ BIONDELLO following</para>
 <line remap="LINE">If she deny to wed, I'll crave the day</line>
 <line remap="LINE">When I shall ask the banns and when be married.</line>
 <line remap="LINE">But here she comes; and now, Petruchio, speak.</line>
-<para remap="STAGEDIR">Enter KATHARINA</para>
+<stagedir remap="STAGEDIR">Enter KATHARINA</stagedir>
 <line remap="LINE">Good morrow, Kate; for that's your name, I hear.</line>
 </linegroup></dialogue>
 
@@ -2366,7 +2366,7 @@ BIONDELLO following</para>
 <line remap="LINE">That I'll try.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">She strikes him</para>
+<stagedir remap="STAGEDIR">She strikes him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
@@ -2545,7 +2545,7 @@ BIONDELLO following</para>
 <line remap="LINE">I must and will have Katharina to my wife.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter BAPTISTA, GREMIO, and TRANIO</para>
+<stagedir remap="STAGEDIR">Re-enter BAPTISTA, GREMIO, and TRANIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BAPTISTA</speaker>
@@ -2641,7 +2641,7 @@ BIONDELLO following</para>
 <line remap="LINE">And kiss me, Kate, we will be married o'Sunday.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt PETRUCHIO and KATHARINA severally</para>
+<stagedir remap="STAGEDIR">Exeunt PETRUCHIO and KATHARINA severally</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GREMIO</speaker>
@@ -2805,7 +2805,7 @@ BIONDELLO following</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GREMIO</speaker>
 <line remap="LINE">Adieu, good neighbour.</line>
-<para remap="STAGEDIR">Exit BAPTISTA</para>
+<stagedir remap="STAGEDIR">Exit BAPTISTA</stagedir>
 <line remap="LINE">Now I fear thee not:</line>
 <line remap="LINE">Sirrah young gamester, your father were a fool</line>
 <line remap="LINE">To give thee all, and in his waning age</line>
@@ -2813,7 +2813,7 @@ BIONDELLO following</para>
 <line remap="LINE">An old Italian fox is not so kind, my boy.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TRANIO</speaker>
@@ -2827,7 +2827,7 @@ BIONDELLO following</para>
 <line remap="LINE">A child shall get a sire, if I fail not of my cunning.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -2835,7 +2835,7 @@ BIONDELLO following</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Padua. BAPTISTA'S house.</title>
-<para remap="STAGEDIR">Enter LUCENTIO, HORTENSIO, and BIANCA</para>
+<stagedir remap="STAGEDIR">Enter LUCENTIO, HORTENSIO, and BIANCA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCENTIO</speaker>
@@ -2955,7 +2955,7 @@ BIONDELLO following</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORTENSIO</speaker>
 <line remap="LINE">The base is right; 'tis the base knave that jars.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">How fiery and forward our pedant is!</line>
 <line remap="LINE">Now, for my life, the knave doth court my love:</line>
 <line remap="LINE">Pedascule, I'll watch you better yet.</line>
@@ -2990,7 +2990,7 @@ BIONDELLO following</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCENTIO</speaker>
 <line remap="LINE">Are you so formal, sir? well, I must wait,</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">And watch withal; for, but I be deceived,</line>
 <line remap="LINE">Our fine musician groweth amorous.</line>
 </linegroup></dialogue>
@@ -3018,7 +3018,7 @@ BIONDELLO following</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIANCA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  ''Gamut' I am, the ground of all accord,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  ''Gamut' I am, the ground of all accord,</line>
 <line remap="LINE">'A re,' to Plead Hortensio's passion;</line>
 <line remap="LINE">'B mi,' Bianca, take him for thy lord,</line>
 <line remap="LINE">'C fa ut,' that loves with all affection:</line>
@@ -3029,7 +3029,7 @@ BIONDELLO following</para>
 <line remap="LINE">To change true rules for old inventions.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Servant</para>
+<stagedir remap="STAGEDIR">Enter a Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Servant</speaker>
@@ -3043,14 +3043,14 @@ BIONDELLO following</para>
 <line remap="LINE">Farewell, sweet masters both; I must be gone.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt BIANCA and Servant</para>
+<stagedir remap="STAGEDIR">Exeunt BIANCA and Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCENTIO</speaker>
 <line remap="LINE">Faith, mistress, then I have no cause to stay.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORTENSIO</speaker>
@@ -3062,16 +3062,16 @@ BIONDELLO following</para>
 <line remap="LINE">Hortensio will be quit with thee by changing.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Padua. Before BAPTISTA'S house.</title>
-<para remap="STAGEDIR">Enter BAPTISTA, GREMIO, TRANIO, KATHARINA, BIANCA,
-LUCENTIO, and others, attendants</para>
+<stagedir remap="STAGEDIR">Enter BAPTISTA, GREMIO, TRANIO, KATHARINA, BIANCA,
+LUCENTIO, and others, attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BAPTISTA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To TRANIO</phrase>  Signior Lucentio, this is the</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To TRANIO</inlinestagedir>  Signior Lucentio, this is the</line>
 <line remap="LINE">'pointed day.</line>
 <line remap="LINE">That Katharina and Petruchio should be married,</line>
 <line remap="LINE">And yet we hear not of our son-in-law.</line>
@@ -3112,7 +3112,7 @@ LUCENTIO, and others, attendants</para>
 <line remap="LINE">Would Katharina had never seen him though!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit weeping, followed by BIANCA and others</para>
+<stagedir remap="STAGEDIR">Exit weeping, followed by BIANCA and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BAPTISTA</speaker>
@@ -3121,7 +3121,7 @@ LUCENTIO, and others, attendants</para>
 <line remap="LINE">Much more a shrew of thy impatient humour.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BIONDELLO</para>
+<stagedir remap="STAGEDIR">Enter BIONDELLO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIONDELLO</speaker>
@@ -3264,7 +3264,7 @@ LUCENTIO, and others, attendants</para>
 <line remap="LINE">And yet not many.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PETRUCHIO and GRUMIO</para>
+<stagedir remap="STAGEDIR">Enter PETRUCHIO and GRUMIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
@@ -3357,7 +3357,7 @@ LUCENTIO, and others, attendants</para>
 <line remap="LINE">And seal the title with a lovely kiss!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt PETRUCHIO and GRUMIO</para>
+<stagedir remap="STAGEDIR">Exeunt PETRUCHIO and GRUMIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TRANIO</speaker>
@@ -3371,7 +3371,7 @@ LUCENTIO, and others, attendants</para>
 <line remap="LINE">I'll after him, and see the event of this.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt BAPTISTA, GREMIO, and attendants</para>
+<stagedir remap="STAGEDIR">Exeunt BAPTISTA, GREMIO, and attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TRANIO</speaker>
@@ -3404,7 +3404,7 @@ LUCENTIO, and others, attendants</para>
 <line remap="LINE">The narrow-prying father, Minola,</line>
 <line remap="LINE">The quaint musician, amorous Licio;</line>
 <line remap="LINE">All for my master's sake, Lucentio.</line>
-<para remap="STAGEDIR">Re-enter GREMIO</para>
+<stagedir remap="STAGEDIR">Re-enter GREMIO</stagedir>
 <line remap="LINE">Signior Gremio, came you from the church?</line>
 </linegroup></dialogue>
 
@@ -3478,9 +3478,9 @@ LUCENTIO, and others, attendants</para>
 <line remap="LINE">Hark, hark! I hear the minstrels play.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Music</para>
-<para remap="STAGEDIR">Re-enter PETRUCHIO, KATHARINA, BIANCA, BAPTISTA,
-HORTENSIO, GRUMIO, and Train</para>
+<stagedir remap="STAGEDIR">Music</stagedir>
+<stagedir remap="STAGEDIR">Re-enter PETRUCHIO, KATHARINA, BIANCA, BAPTISTA,
+HORTENSIO, GRUMIO, and Train</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
@@ -3622,7 +3622,7 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">I'll buckler thee against a million.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt PETRUCHIO, KATHARINA, and GRUMIO</para>
+<stagedir remap="STAGEDIR">Exeunt PETRUCHIO, KATHARINA, and GRUMIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BAPTISTA</speaker>
@@ -3674,7 +3674,7 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">She shall, Lucentio. Come, gentlemen, let's go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -3682,7 +3682,7 @@ HORTENSIO, GRUMIO, and Train</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  PETRUCHIO'S country house.</title>
-<para remap="STAGEDIR">Enter GRUMIO</para>
+<stagedir remap="STAGEDIR">Enter GRUMIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GRUMIO</speaker>
@@ -3699,7 +3699,7 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">take cold. Holla, ho! Curtis.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CURTIS</para>
+<stagedir remap="STAGEDIR">Enter CURTIS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CURTIS</speaker>
@@ -3832,7 +3832,7 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">There.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Strikes him</para>
+<stagedir remap="STAGEDIR">Strikes him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CURTIS</speaker>
@@ -3938,7 +3938,7 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">Why, she comes to borrow nothing of them.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter four or five Serving-men</para>
+<stagedir remap="STAGEDIR">Enter four or five Serving-men</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NATHANIEL</speaker>
@@ -3983,7 +3983,7 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">not--Cock's passion, silence! I hear my master.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PETRUCHIO and KATHARINA</para>
+<stagedir remap="STAGEDIR">Enter PETRUCHIO and KATHARINA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
@@ -4031,31 +4031,31 @@ HORTENSIO, GRUMIO, and Train</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
 <line remap="LINE">Go, rascals, go, and fetch my supper in.</line>
-<para remap="STAGEDIR">Exeunt Servants</para>
-<para remap="STAGEDIR">Singing</para>
+<stagedir remap="STAGEDIR">Exeunt Servants</stagedir>
+<stagedir remap="STAGEDIR">Singing</stagedir>
 <line remap="LINE">Where is the life that late I led--</line>
 <line remap="LINE">Where are those--Sit down, Kate, and welcome.--</line>
 <line remap="LINE">Sound, sound, sound, sound!</line>
-<para remap="STAGEDIR">Re-enter Servants with supper</para>
+<stagedir remap="STAGEDIR">Re-enter Servants with supper</stagedir>
 <line remap="LINE">Why, when, I say? Nay, good sweet Kate, be merry.</line>
 <line remap="LINE">Off with my boots, you rogues! you villains, when?</line>
-<para remap="STAGEDIR">Sings</para>
+<stagedir remap="STAGEDIR">Sings</stagedir>
 <line remap="LINE">It was the friar of orders grey,</line>
 <line remap="LINE">As he forth walked on his way:--</line>
 <line remap="LINE">Out, you rogue! you pluck my foot awry:</line>
 <line remap="LINE">Take that, and mend the plucking off the other.</line>
-<para remap="STAGEDIR">Strikes him</para>
+<stagedir remap="STAGEDIR">Strikes him</stagedir>
 <line remap="LINE">Be merry, Kate. Some water, here; what, ho!</line>
 <line remap="LINE">Where's my spaniel Troilus? Sirrah, get you hence,</line>
 <line remap="LINE">And bid my cousin Ferdinand come hither:</line>
 <line remap="LINE">One, Kate, that you must kiss, and be acquainted with.</line>
 <line remap="LINE">Where are my slippers? Shall I have some water?</line>
-<para remap="STAGEDIR">Enter one with water</para>
+<stagedir remap="STAGEDIR">Enter one with water</stagedir>
 <line remap="LINE">Come, Kate, and wash, and welcome heartily.</line>
 <line remap="LINE">You whoreson villain! will you let it fall?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Strikes him</para>
+<stagedir remap="STAGEDIR">Strikes him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KATHARINA</speaker>
@@ -4092,7 +4092,7 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">How durst you, villains, bring it from the dresser,</line>
 <line remap="LINE">And serve it thus to me that love it not?</line>
 <line remap="LINE">Theretake it to you, trenchers, cups, and all;</line>
-<para remap="STAGEDIR">Throws the meat, &amp;c. about the stage</para>
+<stagedir remap="STAGEDIR">Throws the meat, &amp;c. about the stage</stagedir>
 <line remap="LINE">You heedless joltheads and unmanner'd slaves!</line>
 <line remap="LINE">What, do you grumble? I'll be with you straight.</line>
 </linegroup></dialogue>
@@ -4116,8 +4116,8 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">Come, I will bring thee to thy bridal chamber.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
-<para remap="STAGEDIR">Re-enter Servants severally</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
+<stagedir remap="STAGEDIR">Re-enter Servants severally</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">NATHANIEL</speaker>
@@ -4129,7 +4129,7 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">He kills her in her own humour.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter CURTIS</para>
+<stagedir remap="STAGEDIR">Re-enter CURTIS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GRUMIO</speaker>
@@ -4145,8 +4145,8 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">Away, away! for he is coming hither.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
-<para remap="STAGEDIR">Re-enter PETRUCHIO</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
+<stagedir remap="STAGEDIR">Re-enter PETRUCHIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
@@ -4176,11 +4176,11 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">Now let him speak: 'tis charity to show.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Padua. Before BAPTISTA'S house.</title>
-<para remap="STAGEDIR">Enter TRANIO and HORTENSIO</para>
+<stagedir remap="STAGEDIR">Enter TRANIO and HORTENSIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TRANIO</speaker>
@@ -4195,7 +4195,7 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">Stand by and mark the manner of his teaching.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BIANCA and LUCENTIO</para>
+<stagedir remap="STAGEDIR">Enter BIANCA and LUCENTIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCENTIO</speaker>
@@ -4283,7 +4283,7 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">In resolution as I swore before.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TRANIO</speaker>
@@ -4346,7 +4346,7 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">To tame a shrew and charm her chattering tongue.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BIONDELLO</para>
+<stagedir remap="STAGEDIR">Enter BIONDELLO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIONDELLO</speaker>
@@ -4382,8 +4382,8 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">Take in your love, and then let me alone.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt LUCENTIO and BIANCA</para>
-<para remap="STAGEDIR">Enter a Pedant</para>
+<stagedir remap="STAGEDIR">Exeunt LUCENTIO and BIANCA</stagedir>
+<stagedir remap="STAGEDIR">Enter a Pedant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Pedant</speaker>
@@ -4474,7 +4474,7 @@ HORTENSIO, GRUMIO, and Train</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIONDELLO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  As much as an apple doth an oyster,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  As much as an apple doth an oyster,</line>
 <line remap="LINE">and all one.</line>
 </linegroup></dialogue>
 
@@ -4509,11 +4509,11 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">Go with me to clothe you as becomes you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A room in PETRUCHIO'S house.</title>
-<para remap="STAGEDIR">Enter KATHARINA and GRUMIO</para>
+<stagedir remap="STAGEDIR">Enter KATHARINA and GRUMIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GRUMIO</speaker>
@@ -4600,14 +4600,14 @@ HORTENSIO, GRUMIO, and Train</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KATHARINA</speaker>
 <line remap="LINE">Go, get thee gone, thou false deluding slave,</line>
-<para remap="STAGEDIR">Beats him</para>
+<stagedir remap="STAGEDIR">Beats him</stagedir>
 <line remap="LINE">That feed'st me with the very name of meat:</line>
 <line remap="LINE">Sorrow on thee and all the pack of you,</line>
 <line remap="LINE">That triumph thus upon my misery!</line>
 <line remap="LINE">Go, get thee gone, I say.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PETRUCHIO and HORTENSIO with meat</para>
+<stagedir remap="STAGEDIR">Enter PETRUCHIO and HORTENSIO with meat</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
@@ -4659,7 +4659,7 @@ HORTENSIO, GRUMIO, and Train</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Eat it up all, Hortensio, if thou lovest me.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Eat it up all, Hortensio, if thou lovest me.</line>
 <line remap="LINE">Much good do it unto thy gentle heart!</line>
 <line remap="LINE">Kate, eat apace: and now, my honey love,</line>
 <line remap="LINE">Will we return unto thy father's house</line>
@@ -4670,10 +4670,10 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">With amber bracelets, beads and all this knavery.</line>
 <line remap="LINE">What, hast thou dined? The tailor stays thy leisure,</line>
 <line remap="LINE">To deck thy body with his ruffling treasure.</line>
-<para remap="STAGEDIR">Enter Tailor</para>
+<stagedir remap="STAGEDIR">Enter Tailor</stagedir>
 <line remap="LINE">Come, tailor, let us see these ornaments;</line>
 <line remap="LINE">Lay forth the gown.</line>
-<para remap="STAGEDIR">Enter Haberdasher</para>
+<stagedir remap="STAGEDIR">Enter Haberdasher</stagedir>
 <line remap="LINE">What news with you, sir?</line>
 </linegroup></dialogue>
 
@@ -4705,7 +4705,7 @@ HORTENSIO, GRUMIO, and Train</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORTENSIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  That will not be in haste.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  That will not be in haste.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -4733,7 +4733,7 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">And it I will have, or I will have none.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Haberdasher</para>
+<stagedir remap="STAGEDIR">Exit Haberdasher</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
@@ -4748,7 +4748,7 @@ HORTENSIO, GRUMIO, and Train</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORTENSIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  I see she's like to have neither cap nor gown.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  I see she's like to have neither cap nor gown.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -4859,7 +4859,7 @@ HORTENSIO, GRUMIO, and Train</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Tailor</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'Imprimis, a loose-bodied gown:'</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'Imprimis, a loose-bodied gown:'</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -4876,7 +4876,7 @@ HORTENSIO, GRUMIO, and Train</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Tailor</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'With a small compassed cape:'</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'With a small compassed cape:'</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -4886,7 +4886,7 @@ HORTENSIO, GRUMIO, and Train</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Tailor</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'With a trunk sleeve:'</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'With a trunk sleeve:'</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -4896,7 +4896,7 @@ HORTENSIO, GRUMIO, and Train</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Tailor</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'The sleeves curiously cut.'</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'The sleeves curiously cut.'</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -4964,7 +4964,7 @@ HORTENSIO, GRUMIO, and Train</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Hortensio, say thou wilt see the tailor paid.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Hortensio, say thou wilt see the tailor paid.</line>
 <line remap="LINE">Go take it hence; be gone, and say no more.</line>
 </linegroup></dialogue>
 
@@ -4975,7 +4975,7 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">Away! I say; commend me to thy master.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Tailor</para>
+<stagedir remap="STAGEDIR">Exit Tailor</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
@@ -5018,14 +5018,14 @@ HORTENSIO, GRUMIO, and Train</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORTENSIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Why, so this gallant will command the sun.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Why, so this gallant will command the sun.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Padua. Before BAPTISTA'S house.</title>
-<para remap="STAGEDIR">Enter TRANIO, and the Pedant dressed like VINCENTIO</para>
+<stagedir remap="STAGEDIR">Enter TRANIO, and the Pedant dressed like VINCENTIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TRANIO</speaker>
@@ -5049,7 +5049,7 @@ HORTENSIO, GRUMIO, and Train</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Pedant</speaker>
 <line remap="LINE">I warrant you.</line>
-<para remap="STAGEDIR">Enter BIONDELLO</para>
+<stagedir remap="STAGEDIR">Enter BIONDELLO</stagedir>
 <line remap="LINE">But, sir, here comes your boy;</line>
 <line remap="LINE">'Twere good he were school'd.</line>
 </linegroup></dialogue>
@@ -5081,9 +5081,9 @@ HORTENSIO, GRUMIO, and Train</para>
 <speaker remap="SPEAKER">TRANIO</speaker>
 <line remap="LINE">Thou'rt a tall fellow: hold thee that to drink.</line>
 <line remap="LINE">Here comes Baptista: set your countenance, sir.</line>
-<para remap="STAGEDIR">Enter BAPTISTA and LUCENTIO</para>
+<stagedir remap="STAGEDIR">Enter BAPTISTA and LUCENTIO</stagedir>
 <line remap="LINE">Signior Baptista, you are happily met.</line>
-<para remap="STAGEDIR">To the Pedant</para>
+<stagedir remap="STAGEDIR">To the Pedant</stagedir>
 <line remap="LINE">Sir, this is the gentleman I told you of:</line>
 <line remap="LINE">I pray you stand good father to me now,</line>
 <line remap="LINE">Give me Bianca for my patrimony.</line>
@@ -5165,7 +5165,7 @@ HORTENSIO, GRUMIO, and Train</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TRANIO</speaker>
 <line remap="LINE">Dally not with the gods, but get thee gone.</line>
-<para remap="STAGEDIR">Exit BIONDELLO</para>
+<stagedir remap="STAGEDIR">Exit BIONDELLO</stagedir>
 <line remap="LINE">Signior Baptista, shall I lead the way?</line>
 <line remap="LINE">Welcome! one mess is like to be your cheer:</line>
 <line remap="LINE">Come, sir; we will better it in Pisa.</line>
@@ -5176,8 +5176,8 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">I follow you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt TRANIO, Pedant, and BAPTISTA</para>
-<para remap="STAGEDIR">Re-enter BIONDELLO</para>
+<stagedir remap="STAGEDIR">Exeunt TRANIO, Pedant, and BAPTISTA</stagedir>
+<stagedir remap="STAGEDIR">Re-enter BIONDELLO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIONDELLO</speaker>
@@ -5268,7 +5268,7 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">you come with your appendix.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCENTIO</speaker>
@@ -5278,11 +5278,11 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">It shall go hard if Cambio go without her.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  A public road.</title>
-<para remap="STAGEDIR">Enter PETRUCHIO, KATHARINA, HORTENSIO, and Servants</para>
+<stagedir remap="STAGEDIR">Enter PETRUCHIO, KATHARINA, HORTENSIO, and Servants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
@@ -5361,8 +5361,8 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">Well, forward, forward! thus the bowl should run,</line>
 <line remap="LINE">And not unluckily against the bias.</line>
 <line remap="LINE">But, soft! company is coming here.</line>
-<para remap="STAGEDIR">Enter VINCENTIO</para>
-<para remap="STAGEDIR">To VINCENTIO</para>
+<stagedir remap="STAGEDIR">Enter VINCENTIO</stagedir>
+<stagedir remap="STAGEDIR">To VINCENTIO</stagedir>
 <line remap="LINE">Good morrow, gentle mistress: where away?</line>
 <line remap="LINE">Tell me, sweet Kate, and tell me truly too,</line>
 <line remap="LINE">Hast thou beheld a fresher gentlewoman?</line>
@@ -5463,7 +5463,7 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">For our first merriment hath made thee jealous.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but HORTENSIO</para>
+<stagedir remap="STAGEDIR">Exeunt all but HORTENSIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORTENSIO</speaker>
@@ -5472,7 +5472,7 @@ HORTENSIO, GRUMIO, and Train</para>
 <line remap="LINE">Then hast thou taught Hortensio to be untoward.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -5480,8 +5480,8 @@ HORTENSIO, GRUMIO, and Train</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Padua. Before LUCENTIO'S house.</title>
-<para remap="STAGEDIR">GREMIO discovered. Enter behind BIONDELLO,
-LUCENTIO, and BIANCA</para>
+<stagedir remap="STAGEDIR">GREMIO discovered. Enter behind BIONDELLO,
+LUCENTIO, and BIANCA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIONDELLO</speaker>
@@ -5500,15 +5500,15 @@ LUCENTIO, and BIANCA</para>
 <line remap="LINE">then come back to my master's as soon as I can.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt LUCENTIO, BIANCA, and BIONDELLO</para>
+<stagedir remap="STAGEDIR">Exeunt LUCENTIO, BIANCA, and BIONDELLO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GREMIO</speaker>
 <line remap="LINE">I marvel Cambio comes not all this while.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PETRUCHIO, KATHARINA, VINCENTIO, GRUMIO,
-with Attendants</para>
+<stagedir remap="STAGEDIR">Enter PETRUCHIO, KATHARINA, VINCENTIO, GRUMIO,
+with Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
@@ -5524,14 +5524,14 @@ with Attendants</para>
 <line remap="LINE">And, by all likelihood, some cheer is toward.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Knocks</para>
+<stagedir remap="STAGEDIR">Knocks</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GREMIO</speaker>
 <line remap="LINE">They're busy within; you were best knock louder.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Pedant looks out of the window</para>
+<stagedir remap="STAGEDIR">Pedant looks out of the window</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Pedant</speaker>
@@ -5586,7 +5586,7 @@ with Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To VINCENTIO</phrase>  Why, how now, gentleman! why, this</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To VINCENTIO</inlinestagedir>  Why, how now, gentleman! why, this</line>
 <line remap="LINE">is flat knavery, to take upon you another man's name.</line>
 </linegroup></dialogue>
 
@@ -5596,7 +5596,7 @@ with Attendants</para>
 <line remap="LINE">cozen somebody in this city under my countenance.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter BIONDELLO</para>
+<stagedir remap="STAGEDIR">Re-enter BIONDELLO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIONDELLO</speaker>
@@ -5607,7 +5607,7 @@ with Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VINCENTIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Seeing BIONDELLO</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Seeing BIONDELLO</inlinestagedir></line>
 <line remap="LINE">Come hither, crack-hemp.</line>
 </linegroup></dialogue>
 
@@ -5644,21 +5644,21 @@ with Attendants</para>
 <line remap="LINE">Is't so, indeed.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Beats BIONDELLO</para>
+<stagedir remap="STAGEDIR">Beats BIONDELLO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIONDELLO</speaker>
 <line remap="LINE">Help, help, help! here's a madman will murder me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Pedant</speaker>
 <line remap="LINE">Help, son! help, Signior Baptista!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit from above</para>
+<stagedir remap="STAGEDIR">Exit from above</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
@@ -5666,8 +5666,8 @@ with Attendants</para>
 <line remap="LINE">this controversy.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They retire</para>
-<para remap="STAGEDIR">Re-enter Pedant below; TRANIO, BAPTISTA, and Servants</para>
+<stagedir remap="STAGEDIR">They retire</stagedir>
+<stagedir remap="STAGEDIR">Re-enter Pedant below; TRANIO, BAPTISTA, and Servants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TRANIO</speaker>
@@ -5736,7 +5736,7 @@ with Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TRANIO</speaker>
 <line remap="LINE">Call forth an officer.</line>
-<para remap="STAGEDIR">Enter one with an Officer</para>
+<stagedir remap="STAGEDIR">Enter one with an Officer</stagedir>
 <line remap="LINE">Carry this mad knave to the gaol. Father Baptista,</line>
 <line remap="LINE">I charge you see that he be forthcoming.</line>
 </linegroup></dialogue>
@@ -5794,7 +5794,7 @@ with Attendants</para>
 <line remap="LINE">monstrous villain!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter BIONDELLO, with LUCENTIO and BIANCA</para>
+<stagedir remap="STAGEDIR">Re-enter BIONDELLO, with LUCENTIO and BIANCA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIONDELLO</speaker>
@@ -5804,7 +5804,7 @@ with Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCENTIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Kneeling</phrase>  Pardon, sweet father.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Kneeling</inlinestagedir>  Pardon, sweet father.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5812,8 +5812,8 @@ with Attendants</para>
 <line remap="LINE">Lives my sweet son?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt BIONDELLO, TRANIO, and Pedant, as fast
-as may be</para>
+<stagedir remap="STAGEDIR">Exeunt BIONDELLO, TRANIO, and Pedant, as fast
+as may be</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIANCA</speaker>
@@ -5884,21 +5884,21 @@ as may be</para>
 <line remap="LINE">I will in, to be revenged for this villany.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BAPTISTA</speaker>
 <line remap="LINE">And I, to sound the depth of this knavery.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCENTIO</speaker>
 <line remap="LINE">Look not pale, Bianca; thy father will not frown.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt LUCENTIO and BIANCA</para>
+<stagedir remap="STAGEDIR">Exeunt LUCENTIO and BIANCA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GREMIO</speaker>
@@ -5906,7 +5906,7 @@ as may be</para>
 <line remap="LINE">Out of hope of all, but my share of the feast.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KATHARINA</speaker>
@@ -5949,14 +5949,14 @@ as may be</para>
 <line remap="LINE">Better once than never, for never too late.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Padua. LUCENTIO'S house.</title>
-<para remap="STAGEDIR">Enter BAPTISTA, VINCENTIO, GREMIO, the Pedant,
+<stagedir remap="STAGEDIR">Enter BAPTISTA, VINCENTIO, GREMIO, the Pedant,
 LUCENTIO, BIANCA, PETRUCHIO, KATHARINA, HORTENSIO,
 and Widow, TRANIO, BIONDELLO, and GRUMIO the
-Serving-men with Tranio bringing in a banquet</para>
+Serving-men with Tranio bringing in a banquet</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCENTIO</speaker>
@@ -6097,7 +6097,7 @@ Serving-men with Tranio bringing in a banquet</para>
 <line remap="LINE">Spoke like an officer; ha' to thee, lad!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Drinks to HORTENSIO</para>
+<stagedir remap="STAGEDIR">Drinks to HORTENSIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BAPTISTA</speaker>
@@ -6138,7 +6138,7 @@ Serving-men with Tranio bringing in a banquet</para>
 <line remap="LINE">You are welcome all.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt BIANCA, KATHARINA, and Widow</para>
+<stagedir remap="STAGEDIR">Exeunt BIANCA, KATHARINA, and Widow</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
@@ -6249,7 +6249,7 @@ Serving-men with Tranio bringing in a banquet</para>
 <line remap="LINE">I go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BAPTISTA</speaker>
@@ -6259,7 +6259,7 @@ Serving-men with Tranio bringing in a banquet</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCENTIO</speaker>
 <line remap="LINE">I'll have no halves; I'll bear it all myself.</line>
-<para remap="STAGEDIR">Re-enter BIONDELLO</para>
+<stagedir remap="STAGEDIR">Re-enter BIONDELLO</stagedir>
 <line remap="LINE">How now! what news?</line>
 </linegroup></dialogue>
 
@@ -6292,7 +6292,7 @@ Serving-men with Tranio bringing in a banquet</para>
 <line remap="LINE">To come to me forthwith.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit BIONDELLO</para>
+<stagedir remap="STAGEDIR">Exit BIONDELLO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
@@ -6304,7 +6304,7 @@ Serving-men with Tranio bringing in a banquet</para>
 <speaker remap="SPEAKER">HORTENSIO</speaker>
 <line remap="LINE">I am afraid, sir,</line>
 <line remap="LINE">Do what you can, yours will not be entreated.</line>
-<para remap="STAGEDIR">Re-enter BIONDELLO</para>
+<stagedir remap="STAGEDIR">Re-enter BIONDELLO</stagedir>
 <line remap="LINE">Now, where's my wife?</line>
 </linegroup></dialogue>
 
@@ -6322,7 +6322,7 @@ Serving-men with Tranio bringing in a banquet</para>
 <line remap="LINE">Say, I command her to come to me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit GRUMIO</para>
+<stagedir remap="STAGEDIR">Exit GRUMIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORTENSIO</speaker>
@@ -6349,7 +6349,7 @@ Serving-men with Tranio bringing in a banquet</para>
 <line remap="LINE">Now, by my holidame, here comes Katharina!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter KATARINA</para>
+<stagedir remap="STAGEDIR">Re-enter KATARINA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KATHARINA</speaker>
@@ -6373,7 +6373,7 @@ Serving-men with Tranio bringing in a banquet</para>
 <line remap="LINE">Away, I say, and bring them hither straight.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit KATHARINA</para>
+<stagedir remap="STAGEDIR">Exit KATHARINA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LUCENTIO</speaker>
@@ -6408,7 +6408,7 @@ Serving-men with Tranio bringing in a banquet</para>
 <line remap="LINE">Her new-built virtue and obedience.</line>
 <line remap="LINE">See where she comes and brings your froward wives</line>
 <line remap="LINE">As prisoners to her womanly persuasion.</line>
-<para remap="STAGEDIR">Re-enter KATHARINA, with BIANCA and Widow</para>
+<stagedir remap="STAGEDIR">Re-enter KATHARINA, with BIANCA and Widow</stagedir>
 <line remap="LINE">Katharina, that cap of yours becomes you not:</line>
 <line remap="LINE">Off with that bauble, throw it under-foot.</line>
 </linegroup></dialogue>
@@ -6534,12 +6534,12 @@ Serving-men with Tranio bringing in a banquet</para>
 <speaker remap="SPEAKER">PETRUCHIO</speaker>
 <line remap="LINE">Come, Kate, we'll to bed.</line>
 <line remap="LINE">We three are married, but you two are sped.</line>
-<para remap="STAGEDIR">To LUCENTIO</para>
+<stagedir remap="STAGEDIR">To LUCENTIO</stagedir>
 <line remap="LINE">'Twas I won the wager, though you hit the white;</line>
 <line remap="LINE">And, being a winner, God give you good night!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt PETRUCHIO and KATHARINA</para>
+<stagedir remap="STAGEDIR">Exeunt PETRUCHIO and KATHARINA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORTENSIO</speaker>
@@ -6551,7 +6551,7 @@ Serving-men with Tranio bringing in a banquet</para>
 <line remap="LINE">'Tis a wonder, by your leave, she will be tamed so.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 </chapter>
 </book>

@@ -19,6 +19,7 @@
 				* Revision History:
 					06.06.2006 [Jim E.] - Initial release
 					05.29.2008 [Scott Hudson] - created shakespeare2docbook.
+					04.04.2013 [Scott Hudson] - updated for DocBook Publishers v1.1
 -->
     <xsl:template match="/"><xsl:processing-instruction name="oxygen">RNGSchema="../publishers/publishers.rnc" type="compact"</xsl:processing-instruction>
         <xsl:apply-templates/></xsl:template>
@@ -67,8 +68,8 @@
     <xsl:template match="SPEAKER"><speaker remap="SPEAKER"><xsl:apply-templates /></speaker></xsl:template>
     <xsl:template match="SPEECH"><dialogue remap="SPEECH"><linegroup><xsl:apply-templates /></linegroup></dialogue></xsl:template>
    <xsl:template match="STAGEDIR"><xsl:choose>
-       <xsl:when test="parent::LINE"><phrase remap="STAGEDIR"><xsl:apply-templates/></phrase></xsl:when>
-       <xsl:otherwise><para remap="STAGEDIR"><xsl:apply-templates/></para></xsl:otherwise>
+       <xsl:when test="parent::LINE"><inlinestagedir remap="STAGEDIR"><xsl:apply-templates/></inlinestagedir></xsl:when>
+       <xsl:otherwise><stagedir remap="STAGEDIR"><xsl:apply-templates/></stagedir></xsl:otherwise>
    </xsl:choose></xsl:template>
     <xsl:template match="SUBHEAD"><bridgehead remap="SUBHEAD"><xsl:apply-templates /></bridgehead></xsl:template>
     <xsl:template match="SUBTITLE"><subtitle remap="SUBTITLE"><xsl:apply-templates /></subtitle></xsl:template>

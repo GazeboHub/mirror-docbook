@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">The Tragedy of Hamlet, Prince of Denmark</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">The Tragedy of Hamlet, Prince of Denmark</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The Tragedy of Hamlet, Prince of Denmark</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -32,16 +32,16 @@
 <para><personname remap="PERSONA">OPHELIA, daughter to Polonius.</personname></para>
 <para><personname remap="PERSONA">Lords, Ladies, Officers, Soldiers, Sailors, Messengers, and other Attendants.</personname></para>
 <para><personname remap="PERSONA">Ghost of Hamlet's Father. </personname></para>
-    <para remap="SCNDESCR">SCENE  Denmark.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  Denmark.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Elsinore. A platform before the castle.</title>
-<para remap="STAGEDIR">FRANCISCO at his post. Enter to him BERNARDO</para>
+<stagedir remap="STAGEDIR">FRANCISCO at his post. Enter to him BERNARDO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BERNARDO</speaker>
@@ -106,7 +106,7 @@
 <line remap="LINE">I think I hear them. Stand, ho! Who's there?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HORATIO and MARCELLUS</para>
+<stagedir remap="STAGEDIR">Enter HORATIO and MARCELLUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORATIO</speaker>
@@ -135,7 +135,7 @@
 <line remap="LINE">Give you good night.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCELLUS</speaker>
@@ -207,7 +207,7 @@
 <line remap="LINE">The bell then beating one,--</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Ghost</para>
+<stagedir remap="STAGEDIR">Enter Ghost</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCELLUS</speaker>
@@ -267,7 +267,7 @@
 <line remap="LINE">Stay! speak, speak! I charge thee, speak!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Ghost</para>
+<stagedir remap="STAGEDIR">Exit Ghost</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCELLUS</speaker>
@@ -388,14 +388,14 @@
 <line remap="LINE">Have heaven and earth together demonstrated</line>
 <line remap="LINE">Unto our climatures and countrymen.--</line>
 <line remap="LINE">But soft, behold! lo, where it comes again!</line>
-<para remap="STAGEDIR">Re-enter Ghost</para>
+<stagedir remap="STAGEDIR">Re-enter Ghost</stagedir>
 <line remap="LINE">I'll cross it, though it blast me. Stay, illusion!</line>
 <line remap="LINE">If thou hast any sound, or use of voice,</line>
 <line remap="LINE">Speak to me:</line>
 <line remap="LINE">If there be any good thing to be done,</line>
 <line remap="LINE">That may to thee do ease and grace to me,</line>
 <line remap="LINE">Speak to me:</line>
-<para remap="STAGEDIR">Cock crows</para>
+<stagedir remap="STAGEDIR">Cock crows</stagedir>
 <line remap="LINE">If thou art privy to thy country's fate,</line>
 <line remap="LINE">Which, happily, foreknowing may avoid, O, speak!</line>
 <line remap="LINE">Or if thou hast uphoarded in thy life</line>
@@ -427,7 +427,7 @@
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCELLUS</speaker>
 <line remap="LINE">'Tis gone!</line>
-<para remap="STAGEDIR">Exit Ghost</para>
+<stagedir remap="STAGEDIR">Exit Ghost</stagedir>
 <line remap="LINE">We do it wrong, being so majestical,</line>
 <line remap="LINE">To offer it the show of violence;</line>
 <line remap="LINE">For it is, as the air, invulnerable,</line>
@@ -483,13 +483,13 @@
 <line remap="LINE">Where we shall find him most conveniently.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A room of state in the castle.</title>
-<para remap="STAGEDIR">Enter KING CLAUDIUS, QUEEN GERTRUDE, HAMLET,
+<stagedir remap="STAGEDIR">Enter KING CLAUDIUS, QUEEN GERTRUDE, HAMLET,
 POLONIUS, LAERTES, VOLTIMAND, CORNELIUS, Lords,
-and Attendants</para>
+and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
@@ -543,7 +543,7 @@ and Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
 <line remap="LINE">We doubt it nothing: heartily farewell.</line>
-<para remap="STAGEDIR">Exeunt VOLTIMAND and CORNELIUS</para>
+<stagedir remap="STAGEDIR">Exeunt VOLTIMAND and CORNELIUS</stagedir>
 <line remap="LINE">And now, Laertes, what's the news with you?</line>
 <line remap="LINE">You told us of some suit; what is't, Laertes?</line>
 <line remap="LINE">You cannot speak of reason to the Dane,</line>
@@ -588,7 +588,7 @@ and Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  A little more than kin, and less than kind.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  A little more than kin, and less than kind.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -695,7 +695,7 @@ and Attendants</para>
 <line remap="LINE">Re-speaking earthly thunder. Come away.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but HAMLET</para>
+<stagedir remap="STAGEDIR">Exeunt all but HAMLET</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -732,7 +732,7 @@ and Attendants</para>
 <line remap="LINE">But break, my heart; for I must hold my tongue.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HORATIO, MARCELLUS, and BERNARDO</para>
+<stagedir remap="STAGEDIR">Enter HORATIO, MARCELLUS, and BERNARDO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORATIO</speaker>
@@ -1069,18 +1069,18 @@ and Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
 <line remap="LINE">Your loves, as mine to you: farewell.</line>
-<para remap="STAGEDIR">Exeunt all but HAMLET</para>
+<stagedir remap="STAGEDIR">Exeunt all but HAMLET</stagedir>
 <line remap="LINE">My father's spirit in arms! all is not well;</line>
 <line remap="LINE">I doubt some foul play: would the night were come!</line>
 <line remap="LINE">Till then sit still, my soul: foul deeds will rise,</line>
 <line remap="LINE">Though all the earth o'erwhelm them, to men's eyes.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A room in Polonius' house.</title>
-<para remap="STAGEDIR">Enter LAERTES and OPHELIA</para>
+<stagedir remap="STAGEDIR">Enter LAERTES and OPHELIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAERTES</speaker>
@@ -1163,7 +1163,7 @@ and Attendants</para>
 <speaker remap="SPEAKER">LAERTES</speaker>
 <line remap="LINE">O, fear me not.</line>
 <line remap="LINE">I stay too long: but here my father comes.</line>
-<para remap="STAGEDIR">Enter POLONIUS</para>
+<stagedir remap="STAGEDIR">Enter POLONIUS</stagedir>
 <line remap="LINE">A double blessing is a double grace,</line>
 <line remap="LINE">Occasion smiles upon a second leave.</line>
 </linegroup></dialogue>
@@ -1226,7 +1226,7 @@ and Attendants</para>
 <line remap="LINE">Farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
@@ -1325,11 +1325,11 @@ and Attendants</para>
 <line remap="LINE">I shall obey, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  The platform.</title>
-<para remap="STAGEDIR">Enter HAMLET, HORATIO, and MARCELLUS</para>
+<stagedir remap="STAGEDIR">Enter HAMLET, HORATIO, and MARCELLUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -1360,7 +1360,7 @@ and Attendants</para>
 <speaker remap="SPEAKER">HORATIO</speaker>
 <line remap="LINE">Indeed? I heard it not: then it draws near the season</line>
 <line remap="LINE">Wherein the spirit held his wont to walk.</line>
-<para remap="STAGEDIR">A flourish of trumpets, and ordnance shot off, within</para>
+<stagedir remap="STAGEDIR">A flourish of trumpets, and ordnance shot off, within</stagedir>
 <line remap="LINE">What does this mean, my lord?</line>
 </linegroup></dialogue>
 
@@ -1413,7 +1413,7 @@ and Attendants</para>
 <line remap="LINE">Look, my lord, it comes!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Ghost</para>
+<stagedir remap="STAGEDIR">Enter Ghost</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -1438,7 +1438,7 @@ and Attendants</para>
 <line remap="LINE">Say, why is this? wherefore? what should we do?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Ghost beckons HAMLET</para>
+<stagedir remap="STAGEDIR">Ghost beckons HAMLET</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORATIO</speaker>
@@ -1523,7 +1523,7 @@ and Attendants</para>
 <line remap="LINE">I say, away! Go on; I'll follow thee.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Ghost and HAMLET</para>
+<stagedir remap="STAGEDIR">Exeunt Ghost and HAMLET</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORATIO</speaker>
@@ -1555,11 +1555,11 @@ and Attendants</para>
 <line remap="LINE">Nay, let's follow him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Another part of the platform.</title>
-<para remap="STAGEDIR">Enter GHOST and HAMLET</para>
+<stagedir remap="STAGEDIR">Enter GHOST and HAMLET</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -1729,7 +1729,7 @@ and Attendants</para>
 <line remap="LINE">Adieu, adieu! Hamlet, remember me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -1751,7 +1751,7 @@ and Attendants</para>
 <line remap="LINE">My tables,--meet it is I set it down,</line>
 <line remap="LINE">That one may smile, and smile, and be a villain;</line>
 <line remap="LINE">At least I'm sure it may be so in Denmark:</line>
-<para remap="STAGEDIR">Writing</para>
+<stagedir remap="STAGEDIR">Writing</stagedir>
 <line remap="LINE">So, uncle, there you are. Now to my word;</line>
 <line remap="LINE">It is 'Adieu, adieu! remember me.'</line>
 <line remap="LINE">I have sworn 't.</line>
@@ -1760,17 +1760,17 @@ and Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCELLUS</speaker>
 <speaker remap="SPEAKER">HORATIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  My lord, my lord,--</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  My lord, my lord,--</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCELLUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase> Lord Hamlet,--</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir> Lord Hamlet,--</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORATIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase> Heaven secure him!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir> Heaven secure him!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1780,7 +1780,7 @@ and Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORATIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Hillo, ho, ho, my lord!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Hillo, ho, ho, my lord!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1788,7 +1788,7 @@ and Attendants</para>
 <line remap="LINE">Hillo, ho, ho, boy! come, bird, come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HORATIO and MARCELLUS</para>
+<stagedir remap="STAGEDIR">Enter HORATIO and MARCELLUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCELLUS</speaker>
@@ -1936,7 +1936,7 @@ and Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Ghost</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Beneath</phrase>  Swear.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Beneath</inlinestagedir>  Swear.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1960,7 +1960,7 @@ and Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Ghost</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Beneath</phrase>  Swear.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Beneath</inlinestagedir>  Swear.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1974,7 +1974,7 @@ and Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Ghost</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Beneath</phrase>  Swear.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Beneath</inlinestagedir>  Swear.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -2009,13 +2009,13 @@ and Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Ghost</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Beneath</phrase>  Swear.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Beneath</inlinestagedir>  Swear.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
 <line remap="LINE">Rest, rest, perturbed spirit!</line>
-<para remap="STAGEDIR">They swear</para>
+<stagedir remap="STAGEDIR">They swear</stagedir>
 <line remap="LINE">So, gentlemen,</line>
 <line remap="LINE">With all my love I do commend me to you:</line>
 <line remap="LINE">And what so poor a man as Hamlet is</line>
@@ -2027,7 +2027,7 @@ and Attendants</para>
 <line remap="LINE">Nay, come, let's go together.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -2035,7 +2035,7 @@ and Attendants</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A room in POLONIUS' house.</title>
-<para remap="STAGEDIR">Enter POLONIUS and REYNALDO</para>
+<stagedir remap="STAGEDIR">Enter POLONIUS and REYNALDO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
@@ -2224,8 +2224,8 @@ and Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
 <line remap="LINE">Farewell!</line>
-<para remap="STAGEDIR">Exit REYNALDO</para>
-<para remap="STAGEDIR">Enter OPHELIA</para>
+<stagedir remap="STAGEDIR">Exit REYNALDO</stagedir>
+<stagedir remap="STAGEDIR">Enter OPHELIA</stagedir>
 <line remap="LINE">How now, Ophelia! what's the matter?</line>
 </linegroup></dialogue>
 
@@ -2318,12 +2318,12 @@ and Attendants</para>
 <line remap="LINE">More grief to hide than hate to utter love.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A room in the castle.</title>
-<para remap="STAGEDIR">Enter KING CLAUDIUS, QUEEN GERTRUDE, ROSENCRANTZ,
-GUILDENSTERN, and Attendants</para>
+<stagedir remap="STAGEDIR">Enter KING CLAUDIUS, QUEEN GERTRUDE, ROSENCRANTZ,
+GUILDENSTERN, and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
@@ -2399,9 +2399,9 @@ GUILDENSTERN, and Attendants</para>
 <line remap="LINE">Ay, amen!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt ROSENCRANTZ, GUILDENSTERN, and some
-Attendants</para>
-<para remap="STAGEDIR">Enter POLONIUS</para>
+<stagedir remap="STAGEDIR">Exeunt ROSENCRANTZ, GUILDENSTERN, and some
+Attendants</stagedir>
+<stagedir remap="STAGEDIR">Enter POLONIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
@@ -2439,7 +2439,7 @@ Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
 <line remap="LINE">Thyself do grace to them, and bring them in.</line>
-<para remap="STAGEDIR">Exit POLONIUS</para>
+<stagedir remap="STAGEDIR">Exit POLONIUS</stagedir>
 <line remap="LINE">He tells me, my dear Gertrude, he hath found</line>
 <line remap="LINE">The head and source of all your son's distemper.</line>
 </linegroup></dialogue>
@@ -2453,7 +2453,7 @@ Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
 <line remap="LINE">Well, we shall sift him.</line>
-<para remap="STAGEDIR">Re-enter POLONIUS, with VOLTIMAND and CORNELIUS</para>
+<stagedir remap="STAGEDIR">Re-enter POLONIUS, with VOLTIMAND and CORNELIUS</stagedir>
 <line remap="LINE">Welcome, my good friends!</line>
 <line remap="LINE">Say, Voltimand, what from our brother Norway?</line>
 </linegroup></dialogue>
@@ -2477,7 +2477,7 @@ Attendants</para>
 <line remap="LINE">And his commission to employ those soldiers,</line>
 <line remap="LINE">So levied as before, against the Polack:</line>
 <line remap="LINE">With an entreaty, herein further shown,</line>
-<para remap="STAGEDIR">Giving a paper</para>
+<stagedir remap="STAGEDIR">Giving a paper</stagedir>
 <line remap="LINE">That it might please you to give quiet pass</line>
 <line remap="LINE">Through your dominions for this enterprise,</line>
 <line remap="LINE">On such regards of safety and allowance</line>
@@ -2494,7 +2494,7 @@ Attendants</para>
 <line remap="LINE">Most welcome home!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt VOLTIMAND and CORNELIUS</para>
+<stagedir remap="STAGEDIR">Exeunt VOLTIMAND and CORNELIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
@@ -2530,12 +2530,12 @@ Attendants</para>
 <line remap="LINE">I have a daughter--have while she is mine--</line>
 <line remap="LINE">Who, in her duty and obedience, mark,</line>
 <line remap="LINE">Hath given me this: now gather, and surmise.</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">'To the celestial and my soul's idol, the most</line>
 <line remap="LINE">beautified Ophelia,'--</line>
 <line remap="LINE">That's an ill phrase, a vile phrase; 'beautified' is</line>
 <line remap="LINE">a vile phrase: but you shall hear. Thus:</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">'In her excellent white bosom, these, &amp;c.'</line>
 </linegroup></dialogue>
 
@@ -2547,7 +2547,7 @@ Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
 <line remap="LINE">Good madam, stay awhile; I will be faithful.</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">'Doubt thou the stars are fire;</line>
 <line remap="LINE">Doubt that the sun doth move;</line>
 <line remap="LINE">Doubt truth to be a liar;</line>
@@ -2628,7 +2628,7 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Pointing to his head and shoulder</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Pointing to his head and shoulder</inlinestagedir></line>
 <line remap="LINE">Take this from this, if this be otherwise:</line>
 <line remap="LINE">If circumstances lead me, I will find</line>
 <line remap="LINE">Where truth is hid, though it were hid indeed</line>
@@ -2675,9 +2675,9 @@ Attendants</para>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
 <line remap="LINE">Away, I do beseech you, both away:</line>
 <line remap="LINE">I'll board him presently.</line>
-<para remap="STAGEDIR">Exeunt KING CLAUDIUS, QUEEN GERTRUDE, and
-Attendants</para>
-<para remap="STAGEDIR">Enter HAMLET, reading</para>
+<stagedir remap="STAGEDIR">Exeunt KING CLAUDIUS, QUEEN GERTRUDE, and
+Attendants</stagedir>
+<stagedir remap="STAGEDIR">Enter HAMLET, reading</stagedir>
 <line remap="LINE">O, give me leave:</line>
 <line remap="LINE">How does my good Lord Hamlet?</line>
 </linegroup></dialogue>
@@ -2743,7 +2743,7 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  How say you by that? Still harping on my</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  How say you by that? Still harping on my</line>
 <line remap="LINE">daughter: yet he knew me not at first; he said I</line>
 <line remap="LINE">was a fishmonger: he is far gone, far gone: and</line>
 <line remap="LINE">truly in my youth I suffered much extremity for</line>
@@ -2786,7 +2786,7 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Though this be madness, yet there is method</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Though this be madness, yet there is method</line>
 <line remap="LINE">in 't. Will you walk out of the air, my lord?</line>
 </linegroup></dialogue>
 
@@ -2798,7 +2798,7 @@ Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
 <line remap="LINE">Indeed, that is out o' the air.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">How pregnant sometimes his replies are! a happiness</line>
 <line remap="LINE">that often madness hits on, which reason and sanity</line>
 <line remap="LINE">could not so prosperously be delivered of. I will</line>
@@ -2824,7 +2824,7 @@ Attendants</para>
 <line remap="LINE">These tedious old fools!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ROSENCRANTZ and GUILDENSTERN</para>
+<stagedir remap="STAGEDIR">Enter ROSENCRANTZ and GUILDENSTERN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
@@ -2833,10 +2833,10 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSENCRANTZ</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To POLONIUS</phrase>  God save you, sir!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To POLONIUS</inlinestagedir>  God save you, sir!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit POLONIUS</para>
+<stagedir remap="STAGEDIR">Exit POLONIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GUILDENSTERN</speaker>
@@ -3033,12 +3033,12 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSENCRANTZ</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to GUILDENSTERN</phrase>  What say you?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to GUILDENSTERN</inlinestagedir>  What say you?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Nay, then, I have an eye of you.--If you</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Nay, then, I have an eye of you.--If you</line>
 <line remap="LINE">love me, hold not off.</line>
 </linegroup></dialogue>
 
@@ -3195,7 +3195,7 @@ Attendants</para>
 <line remap="LINE">natural, if philosophy could find it out.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish of trumpets within</para>
+<stagedir remap="STAGEDIR">Flourish of trumpets within</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GUILDENSTERN</speaker>
@@ -3224,7 +3224,7 @@ Attendants</para>
 <line remap="LINE">southerly I know a hawk from a handsaw.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter POLONIUS</para>
+<stagedir remap="STAGEDIR">Enter POLONIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
@@ -3312,7 +3312,7 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Still on my daughter.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Still on my daughter.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -3344,7 +3344,7 @@ Attendants</para>
 <line remap="LINE">'It came to pass, as most like it was,'--</line>
 <line remap="LINE">the first row of the pious chanson will show you</line>
 <line remap="LINE">more; for look, where my abridgement comes.</line>
-<para remap="STAGEDIR">Enter four or five Players</para>
+<stagedir remap="STAGEDIR">Enter four or five Players</stagedir>
 <line remap="LINE">You are welcome, masters; welcome, all. I am glad</line>
 <line remap="LINE">to see thee well. Welcome, good friends. O, my old</line>
 <line remap="LINE">friend! thy face is valenced since I saw thee last:</line>
@@ -3525,7 +3525,7 @@ Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
 <line remap="LINE">Follow him, friends: we'll hear a play to-morrow.</line>
-<para remap="STAGEDIR">Exit POLONIUS with all the Players but the First</para>
+<stagedir remap="STAGEDIR">Exit POLONIUS with all the Players but the First</stagedir>
 <line remap="LINE">Dost thou hear me, old friend; can you play the</line>
 <line remap="LINE">Murder of Gonzago?</line>
 </linegroup></dialogue>
@@ -3551,7 +3551,7 @@ Attendants</para>
 <speaker remap="SPEAKER">HAMLET</speaker>
 <line remap="LINE">Very well. Follow that lord; and look you mock him</line>
 <line remap="LINE">not.</line>
-<para remap="STAGEDIR">Exit First Player</para>
+<stagedir remap="STAGEDIR">Exit First Player</stagedir>
 <line remap="LINE">My good friends, I'll leave you till night: you are</line>
 <line remap="LINE">welcome to Elsinore.</line>
 </linegroup></dialogue>
@@ -3564,7 +3564,7 @@ Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
 <line remap="LINE">Ay, so, God be wi' ye;</line>
-<para remap="STAGEDIR">Exeunt ROSENCRANTZ and GUILDENSTERN</para>
+<stagedir remap="STAGEDIR">Exeunt ROSENCRANTZ and GUILDENSTERN</stagedir>
 <line remap="LINE">Now I am alone.</line>
 <line remap="LINE">O, what a rogue and peasant slave am I!</line>
 <line remap="LINE">Is it not monstrous that this player here,</line>
@@ -3626,7 +3626,7 @@ Attendants</para>
 <line remap="LINE">Wherein I'll catch the conscience of the king.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -3634,8 +3634,8 @@ Attendants</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A room in the castle.</title>
-<para remap="STAGEDIR">Enter KING CLAUDIUS, QUEEN GERTRUDE, POLONIUS,
-OPHELIA, ROSENCRANTZ, and GUILDENSTERN</para>
+<stagedir remap="STAGEDIR">Enter KING CLAUDIUS, QUEEN GERTRUDE, POLONIUS,
+OPHELIA, ROSENCRANTZ, and GUILDENSTERN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
@@ -3716,7 +3716,7 @@ OPHELIA, ROSENCRANTZ, and GUILDENSTERN</para>
 <line remap="LINE">We shall, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt ROSENCRANTZ and GUILDENSTERN</para>
+<stagedir remap="STAGEDIR">Exeunt ROSENCRANTZ and GUILDENSTERN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
@@ -3747,13 +3747,13 @@ OPHELIA, ROSENCRANTZ, and GUILDENSTERN</para>
 <line remap="LINE">Madam, I wish it may.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit QUEEN GERTRUDE</para>
+<stagedir remap="STAGEDIR">Exit QUEEN GERTRUDE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
 <line remap="LINE">Ophelia, walk you here. Gracious, so please you,</line>
 <line remap="LINE">We will bestow ourselves.</line>
-<para remap="STAGEDIR">To OPHELIA</para>
+<stagedir remap="STAGEDIR">To OPHELIA</stagedir>
 <line remap="LINE">Read on this book;</line>
 <line remap="LINE">That show of such an exercise may colour</line>
 <line remap="LINE">Your loneliness. We are oft to blame in this,--</line>
@@ -3764,7 +3764,7 @@ OPHELIA, ROSENCRANTZ, and GUILDENSTERN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>          O, 'tis too true!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>          O, 'tis too true!</line>
 <line remap="LINE">How smart a lash that speech doth give my conscience!</line>
 <line remap="LINE">The harlot's cheek, beautied with plastering art,</line>
 <line remap="LINE">Is not more ugly to the thing that helps it</line>
@@ -3777,8 +3777,8 @@ OPHELIA, ROSENCRANTZ, and GUILDENSTERN</para>
 <line remap="LINE">I hear him coming: let's withdraw, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt KING CLAUDIUS and POLONIUS</para>
-<para remap="STAGEDIR">Enter HAMLET</para>
+<stagedir remap="STAGEDIR">Exeunt KING CLAUDIUS and POLONIUS</stagedir>
+<stagedir remap="STAGEDIR">Enter HAMLET</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -3971,7 +3971,7 @@ OPHELIA, ROSENCRANTZ, and GUILDENSTERN</para>
 <line remap="LINE">nunnery, go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OPHELIA</speaker>
@@ -3989,7 +3989,7 @@ OPHELIA, ROSENCRANTZ, and GUILDENSTERN</para>
 <line remap="LINE">To have seen what I have seen, see what I see!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter KING CLAUDIUS and POLONIUS</para>
+<stagedir remap="STAGEDIR">Re-enter KING CLAUDIUS and POLONIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
@@ -4031,11 +4031,11 @@ OPHELIA, ROSENCRANTZ, and GUILDENSTERN</para>
 <line remap="LINE">Madness in great ones must not unwatch'd go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A hall in the castle.</title>
-<para remap="STAGEDIR">Enter HAMLET and Players</para>
+<stagedir remap="STAGEDIR">Enter HAMLET and Players</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -4101,8 +4101,8 @@ OPHELIA, ROSENCRANTZ, and GUILDENSTERN</para>
 <line remap="LINE">question of the play be then to be considered:</line>
 <line remap="LINE">that's villanous, and shows a most pitiful ambition</line>
 <line remap="LINE">in the fool that uses it. Go, make you ready.</line>
-<para remap="STAGEDIR">Exeunt Players</para>
-<para remap="STAGEDIR">Enter POLONIUS, ROSENCRANTZ, and GUILDENSTERN</para>
+<stagedir remap="STAGEDIR">Exeunt Players</stagedir>
+<stagedir remap="STAGEDIR">Enter POLONIUS, ROSENCRANTZ, and GUILDENSTERN</stagedir>
 <line remap="LINE">How now, my lord! I will the king hear this piece of work?</line>
 </linegroup></dialogue>
 
@@ -4114,7 +4114,7 @@ OPHELIA, ROSENCRANTZ, and GUILDENSTERN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
 <line remap="LINE">Bid the players make haste.</line>
-<para remap="STAGEDIR">Exit POLONIUS</para>
+<stagedir remap="STAGEDIR">Exit POLONIUS</stagedir>
 <line remap="LINE">Will you two help to hasten them?</line>
 </linegroup></dialogue>
 
@@ -4124,14 +4124,14 @@ OPHELIA, ROSENCRANTZ, and GUILDENSTERN</para>
 <line remap="LINE">We will, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt ROSENCRANTZ and GUILDENSTERN</para>
+<stagedir remap="STAGEDIR">Exeunt ROSENCRANTZ and GUILDENSTERN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
 <line remap="LINE">What ho! Horatio!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HORATIO</para>
+<stagedir remap="STAGEDIR">Enter HORATIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORATIO</speaker>
@@ -4198,9 +4198,9 @@ OPHELIA, ROSENCRANTZ, and GUILDENSTERN</para>
 <line remap="LINE">Get you a place.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Danish march. A flourish. Enter KING CLAUDIUS,
+<stagedir remap="STAGEDIR">Danish march. A flourish. Enter KING CLAUDIUS,
 QUEEN GERTRUDE, POLONIUS, OPHELIA, ROSENCRANTZ,
-GUILDENSTERN, and others</para>
+GUILDENSTERN, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
@@ -4222,7 +4222,7 @@ GUILDENSTERN, and others</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
 <line remap="LINE">No, nor mine now.</line>
-<para remap="STAGEDIR">To POLONIUS</para>
+<stagedir remap="STAGEDIR">To POLONIUS</stagedir>
 <line remap="LINE">My lord, you played once i' the university, you say?</line>
 </linegroup></dialogue>
 
@@ -4265,7 +4265,7 @@ GUILDENSTERN, and others</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To KING CLAUDIUS</phrase>  O, ho! do you mark that?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To KING CLAUDIUS</inlinestagedir>  O, ho! do you mark that?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -4273,7 +4273,7 @@ GUILDENSTERN, and others</para>
 <line remap="LINE">Lady, shall I lie in your lap?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Lying down at OPHELIA's feet</para>
+<stagedir remap="STAGEDIR">Lying down at OPHELIA's feet</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OPHELIA</speaker>
@@ -4352,10 +4352,10 @@ GUILDENSTERN, and others</para>
 <line remap="LINE">then; or else shall he suffer not thinking on, with</line>
 <line remap="LINE">the hobby-horse, whose epitaph is 'For, O, for, O,</line>
 <line remap="LINE">the hobby-horse is forgot.'</line>
-<para remap="STAGEDIR">Hautboys play. The dumb-show enters</para>
+<stagedir remap="STAGEDIR">Hautboys play. The dumb-show enters</stagedir>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a King and a Queen very lovingly; the Queen
+<stagedir remap="STAGEDIR">Enter a King and a Queen very lovingly; the Queen
 embracing him, and he her. She kneels, and makes
 show of protestation unto him. He takes her up,
 and declines his head upon her neck: lays him down
@@ -4368,8 +4368,8 @@ with some two or three Mutes, comes in again,
 seeming to lament with her. The dead body is
 carried away. The Poisoner wooes the Queen with
 gifts: she seems loath and unwilling awhile, but
-in the end accepts his love</para>
-<para remap="STAGEDIR">Exeunt</para>
+in the end accepts his love</stagedir>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OPHELIA</speaker>
@@ -4386,7 +4386,7 @@ in the end accepts his love</para>
 <line remap="LINE">Belike this show imports the argument of the play.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Prologue</para>
+<stagedir remap="STAGEDIR">Enter Prologue</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -4417,7 +4417,7 @@ in the end accepts his love</para>
 <line remap="LINE">We beg your hearing patiently.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -4434,7 +4434,7 @@ in the end accepts his love</para>
 <line remap="LINE">As woman's love.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter two Players, King and Queen</para>
+<stagedir remap="STAGEDIR">Enter two Players, King and Queen</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Player King</speaker>
@@ -4481,7 +4481,7 @@ in the end accepts his love</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Wormwood, wormwood.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Wormwood, wormwood.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -4550,7 +4550,7 @@ in the end accepts his love</para>
 <line remap="LINE">The tedious day with sleep.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Sleeps</para>
+<stagedir remap="STAGEDIR">Sleeps</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Player Queen</speaker>
@@ -4558,7 +4558,7 @@ in the end accepts his love</para>
 <line remap="LINE">And never come mischance between us twain!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -4600,7 +4600,7 @@ in the end accepts his love</para>
 <line remap="LINE">that? your majesty and we that have free souls, it</line>
 <line remap="LINE">touches us not: let the galled jade wince, our</line>
 <line remap="LINE">withers are unwrung.</line>
-<para remap="STAGEDIR">Enter LUCIANUS</para>
+<stagedir remap="STAGEDIR">Enter LUCIANUS</stagedir>
 <line remap="LINE">This is one Lucianus, nephew to the king.</line>
 </linegroup></dialogue>
 
@@ -4647,7 +4647,7 @@ in the end accepts his love</para>
 <line remap="LINE">On wholesome life usurp immediately.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Pours the poison into the sleeper's ears</para>
+<stagedir remap="STAGEDIR">Pours the poison into the sleeper's ears</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -4687,7 +4687,7 @@ in the end accepts his love</para>
 <line remap="LINE">Lights, lights, lights!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but HAMLET and HORATIO</para>
+<stagedir remap="STAGEDIR">Exeunt all but HAMLET and HORATIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -4749,7 +4749,7 @@ in the end accepts his love</para>
 <line remap="LINE">Come, some music!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter ROSENCRANTZ and GUILDENSTERN</para>
+<stagedir remap="STAGEDIR">Re-enter ROSENCRANTZ and GUILDENSTERN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GUILDENSTERN</speaker>
@@ -4900,7 +4900,7 @@ in the end accepts his love</para>
 <speaker remap="SPEAKER">HAMLET</speaker>
 <line remap="LINE">Ay, but sir, 'While the grass grows,'--the proverb</line>
 <line remap="LINE">is something musty.</line>
-<para remap="STAGEDIR">Re-enter Players with recorders</para>
+<stagedir remap="STAGEDIR">Re-enter Players with recorders</stagedir>
 <line remap="LINE">O, the recorders! let me see one. To withdraw with</line>
 <line remap="LINE">you:--why do you go about to recover the wind of me,</line>
 <line remap="LINE">as if you would drive me into a toil?</line>
@@ -4969,7 +4969,7 @@ in the end accepts his love</para>
 <line remap="LINE">easier to be played on than a pipe? Call me what</line>
 <line remap="LINE">instrument you will, though you can fret me, yet you</line>
 <line remap="LINE">cannot play upon me.</line>
-<para remap="STAGEDIR">Enter POLONIUS</para>
+<stagedir remap="STAGEDIR">Enter POLONIUS</stagedir>
 <line remap="LINE">God bless you, sir!</line>
 </linegroup></dialogue>
 
@@ -5023,9 +5023,9 @@ in the end accepts his love</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
 <line remap="LINE">By and by is easily said.</line>
-<para remap="STAGEDIR">Exit POLONIUS</para>
+<stagedir remap="STAGEDIR">Exit POLONIUS</stagedir>
 <line remap="LINE">Leave me, friends.</line>
-<para remap="STAGEDIR">Exeunt all but HAMLET</para>
+<stagedir remap="STAGEDIR">Exeunt all but HAMLET</stagedir>
 <line remap="LINE">Tis now the very witching time of night,</line>
 <line remap="LINE">When churchyards yawn and hell itself breathes out</line>
 <line remap="LINE">Contagion to this world: now could I drink hot blood,</line>
@@ -5040,11 +5040,11 @@ in the end accepts his love</para>
 <line remap="LINE">To give them seals never, my soul, consent!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A room in the castle.</title>
-<para remap="STAGEDIR">Enter KING CLAUDIUS, ROSENCRANTZ, and GUILDENSTERN</para>
+<stagedir remap="STAGEDIR">Enter KING CLAUDIUS, ROSENCRANTZ, and GUILDENSTERN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
@@ -5095,8 +5095,8 @@ in the end accepts his love</para>
 <line remap="LINE">We will haste us.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt ROSENCRANTZ and GUILDENSTERN</para>
-<para remap="STAGEDIR">Enter POLONIUS</para>
+<stagedir remap="STAGEDIR">Exeunt ROSENCRANTZ and GUILDENSTERN</stagedir>
+<stagedir remap="STAGEDIR">Enter POLONIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
@@ -5114,7 +5114,7 @@ in the end accepts his love</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
 <line remap="LINE">Thanks, dear my lord.</line>
-<para remap="STAGEDIR">Exit POLONIUS</para>
+<stagedir remap="STAGEDIR">Exit POLONIUS</stagedir>
 <line remap="LINE">O, my offence is rank it smells to heaven;</line>
 <line remap="LINE">It hath the primal eldest curse upon't,</line>
 <line remap="LINE">A brother's murder. Pray can I not,</line>
@@ -5154,8 +5154,8 @@ in the end accepts his love</para>
 <line remap="LINE">All may be well.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Retires and kneels</para>
-<para remap="STAGEDIR">Enter HAMLET</para>
+<stagedir remap="STAGEDIR">Retires and kneels</stagedir>
+<stagedir remap="STAGEDIR">Enter HAMLET</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -5185,19 +5185,19 @@ in the end accepts his love</para>
 <line remap="LINE">This physic but prolongs thy sickly days.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Rising</phrase>  My words fly up, my thoughts remain below:</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Rising</inlinestagedir>  My words fly up, my thoughts remain below:</line>
 <line remap="LINE">Words without thoughts never to heaven go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  The Queen's closet.</title>
-<para remap="STAGEDIR">Enter QUEEN MARGARET and POLONIUS</para>
+<stagedir remap="STAGEDIR">Enter QUEEN MARGARET and POLONIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
@@ -5210,7 +5210,7 @@ in the end accepts his love</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Mother, mother, mother!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Mother, mother, mother!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5219,8 +5219,8 @@ in the end accepts his love</para>
 <line remap="LINE">Fear me not: withdraw, I hear him coming.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">POLONIUS hides behind the arras</para>
-<para remap="STAGEDIR">Enter HAMLET</para>
+<stagedir remap="STAGEDIR">POLONIUS hides behind the arras</stagedir>
+<stagedir remap="STAGEDIR">Enter HAMLET</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -5289,22 +5289,22 @@ in the end accepts his love</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Behind</phrase>  What, ho! help, help, help!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Behind</inlinestagedir>  What, ho! help, help, help!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Drawing</phrase>  How now! a rat? Dead, for a ducat, dead!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Drawing</inlinestagedir>  How now! a rat? Dead, for a ducat, dead!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Makes a pass through the arras</para>
+<stagedir remap="STAGEDIR">Makes a pass through the arras</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LORD POLONIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Behind</phrase>  O, I am slain!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Behind</inlinestagedir>  O, I am slain!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Falls and dies</para>
+<stagedir remap="STAGEDIR">Falls and dies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN GERTRUDE</speaker>
@@ -5336,7 +5336,7 @@ in the end accepts his love</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
 <line remap="LINE">Ay, lady, 'twas my word.</line>
-<para remap="STAGEDIR">Lifts up the array and discovers POLONIUS</para>
+<stagedir remap="STAGEDIR">Lifts up the array and discovers POLONIUS</stagedir>
 <line remap="LINE">Thou wretched, rash, intruding fool, farewell!</line>
 <line remap="LINE">I took thee for thy better: take thy fortune;</line>
 <line remap="LINE">Thou find'st to be too busy is some danger.</line>
@@ -5456,7 +5456,7 @@ in the end accepts his love</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
 <line remap="LINE">A king of shreds and patches,--</line>
-<para remap="STAGEDIR">Enter Ghost</para>
+<stagedir remap="STAGEDIR">Enter Ghost</stagedir>
 <line remap="LINE">Save me, and hover o'er me with your wings,</line>
 <line remap="LINE">You heavenly guards! What would your gracious figure?</line>
 </linegroup></dialogue>
@@ -5543,7 +5543,7 @@ in the end accepts his love</para>
 <line remap="LINE">Look, where he goes, even now, out at the portal!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Ghost</para>
+<stagedir remap="STAGEDIR">Exit Ghost</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN GERTRUDE</speaker>
@@ -5596,7 +5596,7 @@ in the end accepts his love</para>
 <line remap="LINE">With wondrous potency. Once more, good night:</line>
 <line remap="LINE">And when you are desirous to be bless'd,</line>
 <line remap="LINE">I'll blessing beg of you. For this same lord,</line>
-<para remap="STAGEDIR">Pointing to POLONIUS</para>
+<stagedir remap="STAGEDIR">Pointing to POLONIUS</stagedir>
 <line remap="LINE">I do repent: but heaven hath pleased it so,</line>
 <line remap="LINE">To punish me with this and this with me,</line>
 <line remap="LINE">That I must be their scourge and minister.</line>
@@ -5670,7 +5670,7 @@ in the end accepts his love</para>
 <line remap="LINE">Good night, mother.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt severally; HAMLET dragging in POLONIUS</para>
+<stagedir remap="STAGEDIR">Exeunt severally; HAMLET dragging in POLONIUS</stagedir>
 </section>
 
 </chapter>
@@ -5678,8 +5678,8 @@ in the end accepts his love</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A room in the castle.</title>
-<para remap="STAGEDIR">Enter KING CLAUDIUS, QUEEN GERTRUDE, ROSENCRANTZ,
-and GUILDENSTERN</para>
+<stagedir remap="STAGEDIR">Enter KING CLAUDIUS, QUEEN GERTRUDE, ROSENCRANTZ,
+and GUILDENSTERN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
@@ -5691,7 +5691,7 @@ and GUILDENSTERN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN GERTRUDE</speaker>
 <line remap="LINE">Bestow this place on us a little while.</line>
-<para remap="STAGEDIR">Exeunt ROSENCRANTZ and GUILDENSTERN</para>
+<stagedir remap="STAGEDIR">Exeunt ROSENCRANTZ and GUILDENSTERN</stagedir>
 <line remap="LINE">Ah, my good lord, what have I seen to-night!</line>
 </linegroup></dialogue>
 
@@ -5741,13 +5741,13 @@ and GUILDENSTERN</para>
 <line remap="LINE">But we will ship him hence: and this vile deed</line>
 <line remap="LINE">We must, with all our majesty and skill,</line>
 <line remap="LINE">Both countenance and excuse. Ho, Guildenstern!</line>
-<para remap="STAGEDIR">Re-enter ROSENCRANTZ and GUILDENSTERN</para>
+<stagedir remap="STAGEDIR">Re-enter ROSENCRANTZ and GUILDENSTERN</stagedir>
 <line remap="LINE">Friends both, go join you with some further aid:</line>
 <line remap="LINE">Hamlet in madness hath Polonius slain,</line>
 <line remap="LINE">And from his mother's closet hath he dragg'd him:</line>
 <line remap="LINE">Go seek him out; speak fair, and bring the body</line>
 <line remap="LINE">Into the chapel. I pray you, haste in this.</line>
-<para remap="STAGEDIR">Exeunt ROSENCRANTZ and GUILDENSTERN</para>
+<stagedir remap="STAGEDIR">Exeunt ROSENCRANTZ and GUILDENSTERN</stagedir>
 <line remap="LINE">Come, Gertrude, we'll call up our wisest friends;</line>
 <line remap="LINE">And let them know, both what we mean to do,</line>
 <line remap="LINE">And what's untimely done...</line>
@@ -5758,11 +5758,11 @@ and GUILDENSTERN</para>
 <line remap="LINE">My soul is full of discord and dismay.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Another room in the castle.</title>
-<para remap="STAGEDIR">Enter HAMLET</para>
+<stagedir remap="STAGEDIR">Enter HAMLET</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -5772,7 +5772,7 @@ and GUILDENSTERN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSENCRANTZ</speaker>
 <speaker remap="SPEAKER">GUILDENSTERN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  Hamlet! Lord Hamlet!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  Hamlet! Lord Hamlet!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5781,7 +5781,7 @@ and GUILDENSTERN</para>
 <line remap="LINE">O, here they come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ROSENCRANTZ and GUILDENSTERN</para>
+<stagedir remap="STAGEDIR">Enter ROSENCRANTZ and GUILDENSTERN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSENCRANTZ</speaker>
@@ -5865,11 +5865,11 @@ and GUILDENSTERN</para>
 <line remap="LINE">Of nothing: bring me to him. Hide fox, and all after.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Another room in the castle.</title>
-<para remap="STAGEDIR">Enter KING CLAUDIUS, attended</para>
+<stagedir remap="STAGEDIR">Enter KING CLAUDIUS, attended</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
@@ -5884,7 +5884,7 @@ and GUILDENSTERN</para>
 <line remap="LINE">Deliberate pause: diseases desperate grown</line>
 <line remap="LINE">By desperate appliance are relieved,</line>
 <line remap="LINE">Or not at all.</line>
-<para remap="STAGEDIR">Enter ROSENCRANTZ</para>
+<stagedir remap="STAGEDIR">Enter ROSENCRANTZ</stagedir>
 <line remap="LINE">How now! what hath befall'n?</line>
 </linegroup></dialogue>
 
@@ -5914,7 +5914,7 @@ and GUILDENSTERN</para>
 <line remap="LINE">Ho, Guildenstern! bring in my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HAMLET and GUILDENSTERN</para>
+<stagedir remap="STAGEDIR">Enter HAMLET and GUILDENSTERN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
@@ -5983,14 +5983,14 @@ and GUILDENSTERN</para>
 <line remap="LINE">Go seek him there.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">To some Attendants</para>
+<stagedir remap="STAGEDIR">To some Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
 <line remap="LINE">He will stay till ye come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Attendants</para>
+<stagedir remap="STAGEDIR">Exeunt Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
@@ -6040,7 +6040,7 @@ and GUILDENSTERN</para>
 <line remap="LINE">and wife is one flesh; and so, my mother. Come, for England!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
@@ -6048,7 +6048,7 @@ and GUILDENSTERN</para>
 <line remap="LINE">Delay it not; I'll have him hence to-night:</line>
 <line remap="LINE">Away! for every thing is seal'd and done</line>
 <line remap="LINE">That else leans on the affair: pray you, make haste.</line>
-<para remap="STAGEDIR">Exeunt ROSENCRANTZ and GUILDENSTERN</para>
+<stagedir remap="STAGEDIR">Exeunt ROSENCRANTZ and GUILDENSTERN</stagedir>
 <line remap="LINE">And, England, if my love thou hold'st at aught--</line>
 <line remap="LINE">As my great power thereof may give thee sense,</line>
 <line remap="LINE">Since yet thy cicatrice looks raw and red</line>
@@ -6062,11 +6062,11 @@ and GUILDENSTERN</para>
 <line remap="LINE">Howe'er my haps, my joys were ne'er begun.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  A plain in Denmark.</title>
-<para remap="STAGEDIR">Enter FORTINBRAS, a Captain, and Soldiers, marching</para>
+<stagedir remap="STAGEDIR">Enter FORTINBRAS, a Captain, and Soldiers, marching</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRINCE FORTINBRAS</speaker>
@@ -6089,8 +6089,8 @@ and GUILDENSTERN</para>
 <line remap="LINE">Go softly on.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt FORTINBRAS and Soldiers</para>
-<para remap="STAGEDIR">Enter HAMLET, ROSENCRANTZ, GUILDENSTERN, and others</para>
+<stagedir remap="STAGEDIR">Exeunt FORTINBRAS and Soldiers</stagedir>
+<stagedir remap="STAGEDIR">Enter HAMLET, ROSENCRANTZ, GUILDENSTERN, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -6162,7 +6162,7 @@ and GUILDENSTERN</para>
 <line remap="LINE">God be wi' you, sir.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ROSENCRANTZ</speaker>
@@ -6172,7 +6172,7 @@ and GUILDENSTERN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
 <line remap="LINE">I'll be with you straight go a little before.</line>
-<para remap="STAGEDIR">Exeunt all except HAMLET</para>
+<stagedir remap="STAGEDIR">Exeunt all except HAMLET</stagedir>
 <line remap="LINE">How all occasions do inform against me,</line>
 <line remap="LINE">And spur my dull revenge! What is a man,</line>
 <line remap="LINE">If his chief good and market of his time</line>
@@ -6210,11 +6210,11 @@ and GUILDENSTERN</para>
 <line remap="LINE">My thoughts be bloody, or be nothing worth!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Elsinore. A room in the castle.</title>
-<para remap="STAGEDIR">Enter QUEEN GERTRUDE, HORATIO, and a Gentleman</para>
+<stagedir remap="STAGEDIR">Enter QUEEN GERTRUDE, HORATIO, and a Gentleman</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN GERTRUDE</speaker>
@@ -6256,14 +6256,14 @@ and GUILDENSTERN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN GERTRUDE</speaker>
 <line remap="LINE">Let her come in.</line>
-<para remap="STAGEDIR">Exit HORATIO</para>
+<stagedir remap="STAGEDIR">Exit HORATIO</stagedir>
 <line remap="LINE">To my sick soul, as sin's true nature is,</line>
 <line remap="LINE">Each toy seems prologue to some great amiss:</line>
 <line remap="LINE">So full of artless jealousy is guilt,</line>
 <line remap="LINE">It spills itself in fearing to be spilt.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter HORATIO, with OPHELIA</para>
+<stagedir remap="STAGEDIR">Re-enter HORATIO, with OPHELIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OPHELIA</speaker>
@@ -6277,7 +6277,7 @@ and GUILDENSTERN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OPHELIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Sings</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Sings</inlinestagedir></line>
 <line remap="LINE">How should I your true love know</line>
 <line remap="LINE">From another one?</line>
 <line remap="LINE">By his cockle hat and staff,</line>
@@ -6292,7 +6292,7 @@ and GUILDENSTERN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OPHELIA</speaker>
 <line remap="LINE">Say you? nay, pray you, mark.</line>
-<para remap="STAGEDIR">Sings</para>
+<stagedir remap="STAGEDIR">Sings</stagedir>
 <line remap="LINE">He is dead and gone, lady,</line>
 <line remap="LINE">He is dead and gone;</line>
 <line remap="LINE">At his head a grass-green turf,</line>
@@ -6307,11 +6307,11 @@ and GUILDENSTERN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OPHELIA</speaker>
 <line remap="LINE">Pray you, mark.</line>
-<para remap="STAGEDIR">Sings</para>
+<stagedir remap="STAGEDIR">Sings</stagedir>
 <line remap="LINE">White his shroud as the mountain snow,--</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter KING CLAUDIUS</para>
+<stagedir remap="STAGEDIR">Enter KING CLAUDIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN GERTRUDE</speaker>
@@ -6320,7 +6320,7 @@ and GUILDENSTERN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OPHELIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Sings</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Sings</inlinestagedir></line>
 <line remap="LINE">Larded with sweet flowers</line>
 <line remap="LINE">Which bewept to the grave did go</line>
 <line remap="LINE">With true-love showers.</line>
@@ -6347,7 +6347,7 @@ and GUILDENSTERN</para>
 <speaker remap="SPEAKER">OPHELIA</speaker>
 <line remap="LINE">Pray you, let's have no words of this; but when they</line>
 <line remap="LINE">ask you what it means, say you this:</line>
-<para remap="STAGEDIR">Sings</para>
+<stagedir remap="STAGEDIR">Sings</stagedir>
 <line remap="LINE">To-morrow is Saint Valentine's day,</line>
 <line remap="LINE">All in the morning betime,</line>
 <line remap="LINE">And I a maid at your window,</line>
@@ -6366,7 +6366,7 @@ and GUILDENSTERN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OPHELIA</speaker>
 <line remap="LINE">Indeed, la, without an oath, I'll make an end on't:</line>
-<para remap="STAGEDIR">Sings</para>
+<stagedir remap="STAGEDIR">Sings</stagedir>
 <line remap="LINE">By Gis and by Saint Charity,</line>
 <line remap="LINE">Alack, and fie for shame!</line>
 <line remap="LINE">Young men will do't, if they come to't;</line>
@@ -6392,13 +6392,13 @@ and GUILDENSTERN</para>
 <line remap="LINE">good night, good night.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
 <line remap="LINE">Follow her close; give her good watch,</line>
 <line remap="LINE">I pray you.</line>
-<para remap="STAGEDIR">Exit HORATIO</para>
+<stagedir remap="STAGEDIR">Exit HORATIO</stagedir>
 <line remap="LINE">O, this is the poison of deep grief; it springs</line>
 <line remap="LINE">All from her father's death. O Gertrude, Gertrude,</line>
 <line remap="LINE">When sorrows come, they come not single spies</line>
@@ -6422,7 +6422,7 @@ and GUILDENSTERN</para>
 <line remap="LINE">Gives me superfluous death.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">A noise within</para>
+<stagedir remap="STAGEDIR">A noise within</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN GERTRUDE</speaker>
@@ -6432,7 +6432,7 @@ and GUILDENSTERN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
 <line remap="LINE">Where are my Switzers? Let them guard the door.</line>
-<para remap="STAGEDIR">Enter another Gentleman</para>
+<stagedir remap="STAGEDIR">Enter another Gentleman</stagedir>
 <line remap="LINE">What is the matter?</line>
 </linegroup></dialogue>
 
@@ -6462,8 +6462,8 @@ and GUILDENSTERN</para>
 <line remap="LINE">The doors are broke.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Noise within</para>
-<para remap="STAGEDIR">Enter LAERTES, armed; Danes following</para>
+<stagedir remap="STAGEDIR">Noise within</stagedir>
+<stagedir remap="STAGEDIR">Enter LAERTES, armed; Danes following</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAERTES</speaker>
@@ -6485,7 +6485,7 @@ and GUILDENSTERN</para>
 <line remap="LINE">We will, we will.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They retire without the door</para>
+<stagedir remap="STAGEDIR">They retire without the door</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAERTES</speaker>
@@ -6599,13 +6599,13 @@ and GUILDENSTERN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Danes</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>                Let her come in.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>                Let her come in.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAERTES</speaker>
 <line remap="LINE">How now! what noise is that?</line>
-<para remap="STAGEDIR">Re-enter OPHELIA</para>
+<stagedir remap="STAGEDIR">Re-enter OPHELIA</stagedir>
 <line remap="LINE">O heat, dry up my brains! tears seven times salt,</line>
 <line remap="LINE">Burn out the sense and virtue of mine eye!</line>
 <line remap="LINE">By heaven, thy madness shall be paid by weight,</line>
@@ -6620,7 +6620,7 @@ and GUILDENSTERN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OPHELIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Sings</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Sings</inlinestagedir></line>
 <line remap="LINE">They bore him barefaced on the bier;</line>
 <line remap="LINE">Hey non nonny, nonny, hey nonny;</line>
 <line remap="LINE">And in his grave rain'd many a tear:--</line>
@@ -6635,7 +6635,7 @@ and GUILDENSTERN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OPHELIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Sings</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Sings</inlinestagedir></line>
 <line remap="LINE">You must sing a-down a-down,</line>
 <line remap="LINE">An you call him a-down-a.</line>
 <line remap="LINE">O, how the wheel becomes it! It is the false</line>
@@ -6666,7 +6666,7 @@ and GUILDENSTERN</para>
 <line remap="LINE">a difference. There's a daisy: I would give you</line>
 <line remap="LINE">some violets, but they withered all when my father</line>
 <line remap="LINE">died: they say he made a good end,--</line>
-<para remap="STAGEDIR">Sings</para>
+<stagedir remap="STAGEDIR">Sings</stagedir>
 <line remap="LINE">For bonny sweet Robin is all my joy.</line>
 </linegroup></dialogue>
 
@@ -6678,7 +6678,7 @@ and GUILDENSTERN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OPHELIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Sings</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Sings</inlinestagedir></line>
 <line remap="LINE">And will he not come again?</line>
 <line remap="LINE">And will he not come again?</line>
 <line remap="LINE">No, no, he is dead:</line>
@@ -6692,7 +6692,7 @@ and GUILDENSTERN</para>
 <line remap="LINE">And of all Christian souls, I pray God. God be wi' ye.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAERTES</speaker>
@@ -6731,11 +6731,11 @@ and GUILDENSTERN</para>
 <line remap="LINE">I pray you, go with me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  Another room in the castle.</title>
-<para remap="STAGEDIR">Enter HORATIO and a Servant</para>
+<stagedir remap="STAGEDIR">Enter HORATIO and a Servant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORATIO</speaker>
@@ -6750,12 +6750,12 @@ and GUILDENSTERN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORATIO</speaker>
 <line remap="LINE">Let them come in.</line>
-<para remap="STAGEDIR">Exit Servant</para>
+<stagedir remap="STAGEDIR">Exit Servant</stagedir>
 <line remap="LINE">I do not know from what part of the world</line>
 <line remap="LINE">I should be greeted, if not from Lord Hamlet.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Sailors</para>
+<stagedir remap="STAGEDIR">Enter Sailors</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Sailor</speaker>
@@ -6777,7 +6777,7 @@ and GUILDENSTERN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORATIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'Horatio, when thou shalt have overlooked</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'Horatio, when thou shalt have overlooked</line>
 <line remap="LINE">this, give these fellows some means to the king:</line>
 <line remap="LINE">they have letters for him. Ere we were two days old</line>
 <line remap="LINE">at sea, a pirate of very warlike appointment gave us</line>
@@ -6801,11 +6801,11 @@ and GUILDENSTERN</para>
 <line remap="LINE">To him from whom you brought them.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VII.  Another room in the castle.</title>
-<para remap="STAGEDIR">Enter KING CLAUDIUS and LAERTES</para>
+<stagedir remap="STAGEDIR">Enter KING CLAUDIUS and LAERTES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
@@ -6862,7 +6862,7 @@ and GUILDENSTERN</para>
 <line remap="LINE">And think it pastime. You shortly shall hear more:</line>
 <line remap="LINE">I loved your father, and we love ourself;</line>
 <line remap="LINE">And that, I hope, will teach you to imagine--</line>
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 <line remap="LINE">How now! what news?</line>
 </linegroup></dialogue>
 
@@ -6887,8 +6887,8 @@ and GUILDENSTERN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
 <line remap="LINE">Laertes, you shall hear them. Leave us.</line>
-<para remap="STAGEDIR">Exit Messenger</para>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Exit Messenger</stagedir>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">'High and mighty, You shall know I am set naked on</line>
 <line remap="LINE">your kingdom. To-morrow shall I beg leave to see</line>
 <line remap="LINE">your kingly eyes: when I shall, first asking your</line>
@@ -7116,7 +7116,7 @@ and GUILDENSTERN</para>
 <line remap="LINE">A chalice for the nonce, whereon but sipping,</line>
 <line remap="LINE">If he by chance escape your venom'd stuck,</line>
 <line remap="LINE">Our purpose may hold there.</line>
-<para remap="STAGEDIR">Enter QUEEN GERTRUDE</para>
+<stagedir remap="STAGEDIR">Enter QUEEN GERTRUDE</stagedir>
 <line remap="LINE">How now, sweet queen!</line>
 </linegroup></dialogue>
 
@@ -7174,7 +7174,7 @@ and GUILDENSTERN</para>
 <line remap="LINE">But that this folly douts it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
@@ -7184,7 +7184,7 @@ and GUILDENSTERN</para>
 <line remap="LINE">Therefore let's follow.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -7192,7 +7192,7 @@ and GUILDENSTERN</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A churchyard.</title>
-<para remap="STAGEDIR">Enter two Clowns, with spades, &amp;c</para>
+<stagedir remap="STAGEDIR">Enter two Clowns, with spades, &amp;c</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Clown</speaker>
@@ -7345,7 +7345,7 @@ and GUILDENSTERN</para>
 <line remap="LINE">Mass, I cannot tell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HAMLET and HORATIO, at a distance</para>
+<stagedir remap="STAGEDIR">Enter HAMLET and HORATIO, at a distance</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Clown</speaker>
@@ -7355,8 +7355,8 @@ and GUILDENSTERN</para>
 <line remap="LINE">grave-maker: 'the houses that he makes last till</line>
 <line remap="LINE">doomsday. Go, get thee to Yaughan: fetch me a</line>
 <line remap="LINE">stoup of liquor.</line>
-<para remap="STAGEDIR">Exit Second Clown</para>
-<para remap="STAGEDIR">He digs and sings</para>
+<stagedir remap="STAGEDIR">Exit Second Clown</stagedir>
+<stagedir remap="STAGEDIR">He digs and sings</stagedir>
 <line remap="LINE">In youth, when I did love, did love,</line>
 <line remap="LINE">Methought it was very sweet,</line>
 <line remap="LINE">To contract, O, the time, for, ah, my behove,</line>
@@ -7382,14 +7382,14 @@ and GUILDENSTERN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Clown</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Sings</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Sings</inlinestagedir></line>
 <line remap="LINE">But age, with his stealing steps,</line>
 <line remap="LINE">Hath claw'd me in his clutch,</line>
 <line remap="LINE">And hath shipped me intil the land,</line>
 <line remap="LINE">As if I had never been such.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Throws up a skull</para>
+<stagedir remap="STAGEDIR">Throws up a skull</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -7430,14 +7430,14 @@ and GUILDENSTERN</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Clown</speaker>
-<para remap="STAGEDIR">Sings</para>
+<stagedir remap="STAGEDIR">Sings</stagedir>
 <line remap="LINE">A pick-axe, and a spade, a spade,</line>
 <line remap="LINE">For and a shrouding sheet:</line>
 <line remap="LINE">O, a pit of clay for to be made</line>
 <line remap="LINE">For such a guest is meet.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Throws up another skull</para>
+<stagedir remap="STAGEDIR">Throws up another skull</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -7483,7 +7483,7 @@ and GUILDENSTERN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Clown</speaker>
 <line remap="LINE">Mine, sir.</line>
-<para remap="STAGEDIR">Sings</para>
+<stagedir remap="STAGEDIR">Sings</stagedir>
 <line remap="LINE">O, a pit of clay for to be made</line>
 <line remap="LINE">For such a guest is meet.</line>
 </linegroup></dialogue>
@@ -7685,7 +7685,7 @@ and GUILDENSTERN</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
 <line remap="LINE">Let me see.</line>
-<para remap="STAGEDIR">Takes the skull</para>
+<stagedir remap="STAGEDIR">Takes the skull</stagedir>
 <line remap="LINE">Alas, poor Yorick! I knew him, Horatio: a fellow</line>
 <line remap="LINE">of infinite jest, of most excellent fancy: he hath</line>
 <line remap="LINE">borne me on his back a thousand times; and now, how</line>
@@ -7722,7 +7722,7 @@ and GUILDENSTERN</para>
 <line remap="LINE">And smelt so? pah!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Puts down the skull</para>
+<stagedir remap="STAGEDIR">Puts down the skull</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORATIO</speaker>
@@ -7754,9 +7754,9 @@ and GUILDENSTERN</para>
 <line remap="LINE">O, that that earth, which kept the world in awe,</line>
 <line remap="LINE">Should patch a wall to expel the winter flaw!</line>
 <line remap="LINE">But soft! but soft! aside: here comes the king.</line>
-<para remap="STAGEDIR">Enter Priest, &amp;c. in procession; the Corpse of
+<stagedir remap="STAGEDIR">Enter Priest, &amp;c. in procession; the Corpse of
 OPHELIA, LAERTES and Mourners following; KING
-CLAUDIUS, QUEEN GERTRUDE, their trains, &amp;c</para>
+CLAUDIUS, QUEEN GERTRUDE, their trains, &amp;c</stagedir>
 <line remap="LINE">The queen, the courtiers: who is this they follow?</line>
 <line remap="LINE">And with such maimed rites? This doth betoken</line>
 <line remap="LINE">The corse they follow did with desperate hand</line>
@@ -7764,7 +7764,7 @@ CLAUDIUS, QUEEN GERTRUDE, their trains, &amp;c</para>
 <line remap="LINE">Couch we awhile, and mark.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Retiring with HORATIO</para>
+<stagedir remap="STAGEDIR">Retiring with HORATIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAERTES</speaker>
@@ -7825,7 +7825,7 @@ CLAUDIUS, QUEEN GERTRUDE, their trains, &amp;c</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">QUEEN GERTRUDE</speaker>
 <line remap="LINE">Sweets to the sweet: farewell!</line>
-<para remap="STAGEDIR">Scattering flowers</para>
+<stagedir remap="STAGEDIR">Scattering flowers</stagedir>
 <line remap="LINE">I hoped thou shouldst have been my Hamlet's wife;</line>
 <line remap="LINE">I thought thy bride-bed to have deck'd, sweet maid,</line>
 <line remap="LINE">And not have strew'd thy grave.</line>
@@ -7838,7 +7838,7 @@ CLAUDIUS, QUEEN GERTRUDE, their trains, &amp;c</para>
 <line remap="LINE">Whose wicked deed thy most ingenious sense</line>
 <line remap="LINE">Deprived thee of! Hold off the earth awhile,</line>
 <line remap="LINE">Till I have caught her once more in mine arms:</line>
-<para remap="STAGEDIR">Leaps into the grave</para>
+<stagedir remap="STAGEDIR">Leaps into the grave</stagedir>
 <line remap="LINE">Now pile your dust upon the quick and dead,</line>
 <line remap="LINE">Till of this flat a mountain you have made,</line>
 <line remap="LINE">To o'ertop old Pelion, or the skyish head</line>
@@ -7847,21 +7847,21 @@ CLAUDIUS, QUEEN GERTRUDE, their trains, &amp;c</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Advancing</phrase>     What is he whose grief</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Advancing</inlinestagedir>     What is he whose grief</line>
 <line remap="LINE">Bears such an emphasis? whose phrase of sorrow</line>
 <line remap="LINE">Conjures the wandering stars, and makes them stand</line>
 <line remap="LINE">Like wonder-wounded hearers? This is I,</line>
 <line remap="LINE">Hamlet the Dane.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Leaps into the grave</para>
+<stagedir remap="STAGEDIR">Leaps into the grave</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAERTES</speaker>
 <line remap="LINE">The devil take thy soul!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Grappling with him</para>
+<stagedir remap="STAGEDIR">Grappling with him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -7892,7 +7892,7 @@ CLAUDIUS, QUEEN GERTRUDE, their trains, &amp;c</para>
 <line remap="LINE">Good my lord, be quiet.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The Attendants part them, and they come out of the grave</para>
+<stagedir remap="STAGEDIR">The Attendants part them, and they come out of the grave</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -7955,13 +7955,13 @@ CLAUDIUS, QUEEN GERTRUDE, their trains, &amp;c</para>
 <line remap="LINE">The cat will mew and dog will have his day.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
 <line remap="LINE">I pray you, good Horatio, wait upon him.</line>
-<para remap="STAGEDIR">Exit HORATIO</para>
-<para remap="STAGEDIR">To LAERTES</para>
+<stagedir remap="STAGEDIR">Exit HORATIO</stagedir>
+<stagedir remap="STAGEDIR">To LAERTES</stagedir>
 <line remap="LINE">Strengthen your patience in our last night's speech;</line>
 <line remap="LINE">We'll put the matter to the present push.</line>
 <line remap="LINE">Good Gertrude, set some watch over your son.</line>
@@ -7970,11 +7970,11 @@ CLAUDIUS, QUEEN GERTRUDE, their trains, &amp;c</para>
 <line remap="LINE">Till then, in patience our proceeding be.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A hall in the castle.</title>
-<para remap="STAGEDIR">Enter HAMLET and HORATIO</para>
+<stagedir remap="STAGEDIR">Enter HAMLET and HORATIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -8142,7 +8142,7 @@ CLAUDIUS, QUEEN GERTRUDE, their trains, &amp;c</para>
 <line remap="LINE">Peace! who comes here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter OSRIC</para>
+<stagedir remap="STAGEDIR">Enter OSRIC</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OSRIC</speaker>
@@ -8215,7 +8215,7 @@ CLAUDIUS, QUEEN GERTRUDE, their trains, &amp;c</para>
 <line remap="LINE">I beseech you, remember--</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">HAMLET moves him to put on his hat</para>
+<stagedir remap="STAGEDIR">HAMLET moves him to put on his hat</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OSRIC</speaker>
@@ -8409,7 +8409,7 @@ CLAUDIUS, QUEEN GERTRUDE, their trains, &amp;c</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
 <line remap="LINE">Yours, yours.</line>
-<para remap="STAGEDIR">Exit OSRIC</para>
+<stagedir remap="STAGEDIR">Exit OSRIC</stagedir>
 <line remap="LINE">He does well to commend it himself; there are no</line>
 <line remap="LINE">tongues else for's turn.</line>
 </linegroup></dialogue>
@@ -8430,7 +8430,7 @@ CLAUDIUS, QUEEN GERTRUDE, their trains, &amp;c</para>
 <line remap="LINE">but blow them to their trial, the bubbles are out.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Lord</para>
+<stagedir remap="STAGEDIR">Enter a Lord</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lord</speaker>
@@ -8468,7 +8468,7 @@ CLAUDIUS, QUEEN GERTRUDE, their trains, &amp;c</para>
 <line remap="LINE">She well instructs me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Lord</para>
+<stagedir remap="STAGEDIR">Exit Lord</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORATIO</speaker>
@@ -8511,15 +8511,15 @@ CLAUDIUS, QUEEN GERTRUDE, their trains, &amp;c</para>
 <line remap="LINE">leaves, what is't to leave betimes?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter KING CLAUDIUS, QUEEN GERTRUDE, LAERTES,
-Lords, OSRIC, and Attendants with foils, &amp;c</para>
+<stagedir remap="STAGEDIR">Enter KING CLAUDIUS, QUEEN GERTRUDE, LAERTES,
+Lords, OSRIC, and Attendants with foils, &amp;c</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
 <line remap="LINE">Come, Hamlet, come, and take this hand from me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">KING CLAUDIUS puts LAERTES' hand into HAMLET's</para>
+<stagedir remap="STAGEDIR">KING CLAUDIUS puts LAERTES' hand into HAMLET's</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -8614,7 +8614,7 @@ Lords, OSRIC, and Attendants with foils, &amp;c</para>
 <line remap="LINE">This likes me well. These foils have all a length?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They prepare to play</para>
+<stagedir remap="STAGEDIR">They prepare to play</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OSRIC</speaker>
@@ -8648,7 +8648,7 @@ Lords, OSRIC, and Attendants with foils, &amp;c</para>
 <line remap="LINE">Come, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They play</para>
+<stagedir remap="STAGEDIR">They play</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -8679,14 +8679,14 @@ Lords, OSRIC, and Attendants with foils, &amp;c</para>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
 <line remap="LINE">Stay; give me drink. Hamlet, this pearl is thine;</line>
 <line remap="LINE">Here's to thy health.</line>
-<para remap="STAGEDIR">Trumpets sound, and cannon shot off within</para>
+<stagedir remap="STAGEDIR">Trumpets sound, and cannon shot off within</stagedir>
 <line remap="LINE">Give him the cup.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
 <line remap="LINE">I'll play this bout first; set it by awhile. Come.</line>
-<para remap="STAGEDIR">They play</para>
+<stagedir remap="STAGEDIR">They play</stagedir>
 <line remap="LINE">Another hit; what say you?</line>
 </linegroup></dialogue>
 
@@ -8724,7 +8724,7 @@ Lords, OSRIC, and Attendants with foils, &amp;c</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  It is the poison'd cup: it is too late.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  It is the poison'd cup: it is too late.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -8749,7 +8749,7 @@ Lords, OSRIC, and Attendants with foils, &amp;c</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAERTES</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  And yet 'tis almost 'gainst my conscience.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  And yet 'tis almost 'gainst my conscience.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -8764,7 +8764,7 @@ Lords, OSRIC, and Attendants with foils, &amp;c</para>
 <line remap="LINE">Say you so? come on.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They play</para>
+<stagedir remap="STAGEDIR">They play</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OSRIC</speaker>
@@ -8776,8 +8776,8 @@ Lords, OSRIC, and Attendants with foils, &amp;c</para>
 <line remap="LINE">Have at you now!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">LAERTES wounds HAMLET; then in scuffling, they
-change rapiers, and HAMLET wounds LAERTES</para>
+<stagedir remap="STAGEDIR">LAERTES wounds HAMLET; then in scuffling, they
+change rapiers, and HAMLET wounds LAERTES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">KING CLAUDIUS</speaker>
@@ -8789,7 +8789,7 @@ change rapiers, and HAMLET wounds LAERTES</para>
 <line remap="LINE">Nay, come, again.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">QUEEN GERTRUDE falls</para>
+<stagedir remap="STAGEDIR">QUEEN GERTRUDE falls</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OSRIC</speaker>
@@ -8828,7 +8828,7 @@ change rapiers, and HAMLET wounds LAERTES</para>
 <line remap="LINE">The drink, the drink! I am poison'd.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Dies</para>
+<stagedir remap="STAGEDIR">Dies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -8854,7 +8854,7 @@ change rapiers, and HAMLET wounds LAERTES</para>
 <line remap="LINE">Then, venom, to thy work.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Stabs KING CLAUDIUS</para>
+<stagedir remap="STAGEDIR">Stabs KING CLAUDIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">All</speaker>
@@ -8873,7 +8873,7 @@ change rapiers, and HAMLET wounds LAERTES</para>
 <line remap="LINE">Follow my mother.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">KING CLAUDIUS dies</para>
+<stagedir remap="STAGEDIR">KING CLAUDIUS dies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LAERTES</speaker>
@@ -8884,7 +8884,7 @@ change rapiers, and HAMLET wounds LAERTES</para>
 <line remap="LINE">Nor thine on me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Dies</para>
+<stagedir remap="STAGEDIR">Dies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HAMLET</speaker>
@@ -8916,7 +8916,7 @@ change rapiers, and HAMLET wounds LAERTES</para>
 <line remap="LINE">Absent thee from felicity awhile,</line>
 <line remap="LINE">And in this harsh world draw thy breath in pain,</line>
 <line remap="LINE">To tell my story.</line>
-<para remap="STAGEDIR">March afar off, and shot within</para>
+<stagedir remap="STAGEDIR">March afar off, and shot within</stagedir>
 <line remap="LINE">What warlike noise is this?</line>
 </linegroup></dialogue>
 
@@ -8938,7 +8938,7 @@ change rapiers, and HAMLET wounds LAERTES</para>
 <line remap="LINE">Which have solicited. The rest is silence.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Dies</para>
+<stagedir remap="STAGEDIR">Dies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HORATIO</speaker>
@@ -8947,9 +8947,9 @@ change rapiers, and HAMLET wounds LAERTES</para>
 <line remap="LINE">Why does the drum come hither?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">March within</para>
-<para remap="STAGEDIR">Enter FORTINBRAS, the English Ambassadors,
-and others</para>
+<stagedir remap="STAGEDIR">March within</stagedir>
+<stagedir remap="STAGEDIR">Enter FORTINBRAS, the English Ambassadors,
+and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PRINCE FORTINBRAS</speaker>
@@ -9030,8 +9030,8 @@ and others</para>
 <line remap="LINE">Go, bid the soldiers shoot.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">A dead march. Exeunt, bearing off the dead
-bodies; after which a peal of ordnance is shot off</para>
+<stagedir remap="STAGEDIR">A dead march. Exeunt, bearing off the dead
+bodies; after which a peal of ordnance is shot off</stagedir>
 </section>
 </chapter>
 </book>

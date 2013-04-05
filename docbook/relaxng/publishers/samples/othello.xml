@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">The Tragedy of Othello, the Moor of Venice</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">The Tragedy of Othello, the Moor of Venice</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The Tragedy of Othello, the Moor of Venice</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -22,16 +22,16 @@
 <para><personname remap="PERSONA">EMILIA, wife to Iago.</personname></para>
 <para><personname remap="PERSONA">BIANCA, mistress to Cassio.</personname></para>
 <para><personname remap="PERSONA">Sailor, Messenger, Herald, Officers, Gentlemen, Musicians, and Attendants.</personname></para>
-    <para remap="SCNDESCR">SCENE  Venice: a Sea-port in Cyprus.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  Venice: a Sea-port in Cyprus.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Venice. A street.</title>
-<para remap="STAGEDIR">Enter RODERIGO and IAGO</para>
+<stagedir remap="STAGEDIR">Enter RODERIGO and IAGO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">RODERIGO</speaker>
@@ -172,7 +172,7 @@
 <line remap="LINE">Thieves! thieves!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">BRABANTIO appears above, at a window</para>
+<stagedir remap="STAGEDIR">BRABANTIO appears above, at a window</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BRABANTIO</speaker>
@@ -337,7 +337,7 @@
 <line remap="LINE">Light, I say! light!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit above</para>
+<stagedir remap="STAGEDIR">Exit above</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
@@ -359,8 +359,8 @@
 <line remap="LINE">And there will I be with him. So, farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter, below, BRABANTIO, and Servants with torches</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter, below, BRABANTIO, and Servants with torches</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BRABANTIO</speaker>
@@ -415,11 +415,11 @@
 <line remap="LINE">On, good Roderigo: I'll deserve your pains.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Another street.</title>
-<para remap="STAGEDIR">Enter OTHELLO, IAGO, and Attendants with torches</para>
+<stagedir remap="STAGEDIR">Enter OTHELLO, IAGO, and Attendants with torches</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
@@ -485,7 +485,7 @@
 <line remap="LINE">By Janus, I think no.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CASSIO, and certain Officers with torches</para>
+<stagedir remap="STAGEDIR">Enter CASSIO, and certain Officers with torches</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
@@ -527,7 +527,7 @@
 <line remap="LINE">And go with you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSIO</speaker>
@@ -555,7 +555,7 @@
 <line remap="LINE">To who?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter OTHELLO</para>
+<stagedir remap="STAGEDIR">Re-enter OTHELLO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
@@ -578,8 +578,8 @@
 <line remap="LINE">He comes to bad intent.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BRABANTIO, RODERIGO, and Officers with
-torches and weapons</para>
+<stagedir remap="STAGEDIR">Enter BRABANTIO, RODERIGO, and Officers with
+torches and weapons</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
@@ -596,7 +596,7 @@ torches and weapons</para>
 <line remap="LINE">Down with him, thief!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They draw on both sides</para>
+<stagedir remap="STAGEDIR">They draw on both sides</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
@@ -677,12 +677,12 @@ torches and weapons</para>
 <line remap="LINE">Bond-slaves and pagans shall our statesmen be.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A council-chamber.</title>
-<para remap="STAGEDIR">The DUKE and Senators sitting at a table; Officers
-attending</para>
+<stagedir remap="STAGEDIR">The DUKE and Senators sitting at a table; Officers
+attending</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE OF VENICE</speaker>
@@ -720,7 +720,7 @@ attending</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Sailor</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  What, ho! what, ho! what, ho!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  What, ho! what, ho! what, ho!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -728,7 +728,7 @@ attending</para>
 <line remap="LINE">A messenger from the galleys.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Sailor</para>
+<stagedir remap="STAGEDIR">Enter a Sailor</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE OF VENICE</speaker>
@@ -775,7 +775,7 @@ attending</para>
 <line remap="LINE">Here is more news.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
@@ -820,13 +820,13 @@ attending</para>
 <line remap="LINE">Here comes Brabantio and the valiant Moor.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BRABANTIO, OTHELLO, IAGO, RODERIGO, and Officers</para>
+<stagedir remap="STAGEDIR">Enter BRABANTIO, OTHELLO, IAGO, RODERIGO, and Officers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE OF VENICE</speaker>
 <line remap="LINE">Valiant Othello, we must straight employ you</line>
 <line remap="LINE">Against the general enemy Ottoman.</line>
-<para remap="STAGEDIR">To BRABANTIO</para>
+<stagedir remap="STAGEDIR">To BRABANTIO</stagedir>
 <line remap="LINE">I did not see you; welcome, gentle signior;</line>
 <line remap="LINE">We lack'd your counsel and your help tonight.</line>
 </linegroup></dialogue>
@@ -894,7 +894,7 @@ attending</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE OF VENICE</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To OTHELLO</phrase>  What, in your own part, can you say to this?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To OTHELLO</inlinestagedir>  What, in your own part, can you say to this?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -978,7 +978,7 @@ attending</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
 <line remap="LINE">Ancient, conduct them: you best know the place.</line>
-<para remap="STAGEDIR">Exeunt IAGO and Attendants</para>
+<stagedir remap="STAGEDIR">Exeunt IAGO and Attendants</stagedir>
 <line remap="LINE">And, till she come, as truly as to heaven</line>
 <line remap="LINE">I do confess the vices of my blood,</line>
 <line remap="LINE">So justly to your grave ears I'll present</line>
@@ -1038,7 +1038,7 @@ attending</para>
 <line remap="LINE">Here comes the lady; let her witness it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DESDEMONA, IAGO, and Attendants</para>
+<stagedir remap="STAGEDIR">Enter DESDEMONA, IAGO, and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DUKE OF VENICE</speaker>
@@ -1249,7 +1249,7 @@ attending</para>
 <speaker remap="SPEAKER">DUKE OF VENICE</speaker>
 <line remap="LINE">Let it be so.</line>
 <line remap="LINE">Good night to every one.</line>
-<para remap="STAGEDIR">To BRABANTIO</para>
+<stagedir remap="STAGEDIR">To BRABANTIO</stagedir>
 <line remap="LINE">And, noble signior,</line>
 <line remap="LINE">If virtue no delighted beauty lack,</line>
 <line remap="LINE">Your son-in-law is far more fair than black.</line>
@@ -1266,7 +1266,7 @@ attending</para>
 <line remap="LINE">She has deceived her father, and may thee.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt DUKE OF VENICE, Senators, Officers, &amp;c</para>
+<stagedir remap="STAGEDIR">Exeunt DUKE OF VENICE, Senators, Officers, &amp;c</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
@@ -1279,7 +1279,7 @@ attending</para>
 <line remap="LINE">To spend with thee: we must obey the time.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt OTHELLO and DESDEMONA</para>
+<stagedir remap="STAGEDIR">Exeunt OTHELLO and DESDEMONA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">RODERIGO</speaker>
@@ -1444,7 +1444,7 @@ attending</para>
 <line remap="LINE">I am changed: I'll go sell all my land.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
@@ -1472,7 +1472,7 @@ attending</para>
 <line remap="LINE">Must bring this monstrous birth to the world's light.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -1480,7 +1480,7 @@ attending</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  A Sea-port in Cyprus. An open place near the quay.</title>
-<para remap="STAGEDIR">Enter MONTANO and two Gentlemen</para>
+<stagedir remap="STAGEDIR">Enter MONTANO and two Gentlemen</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MONTANO</speaker>
@@ -1522,7 +1522,7 @@ attending</para>
 <line remap="LINE">It is impossible they bear it out.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a third Gentleman</para>
+<stagedir remap="STAGEDIR">Enter a third Gentleman</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Third Gentleman</speaker>
@@ -1578,7 +1578,7 @@ attending</para>
 <line remap="LINE">Of more arrivance.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CASSIO</para>
+<stagedir remap="STAGEDIR">Enter CASSIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSIO</speaker>
@@ -1601,8 +1601,8 @@ attending</para>
 <line remap="LINE">Stand in bold cure.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">A cry within 'A sail, a sail, a sail!'</para>
-<para remap="STAGEDIR">Enter a fourth Gentleman</para>
+<stagedir remap="STAGEDIR">A cry within 'A sail, a sail, a sail!'</stagedir>
+<stagedir remap="STAGEDIR">Enter a fourth Gentleman</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSIO</speaker>
@@ -1620,7 +1620,7 @@ attending</para>
 <line remap="LINE">My hopes do shape him for the governor.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Guns heard</para>
+<stagedir remap="STAGEDIR">Guns heard</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Gentlemen</speaker>
@@ -1639,7 +1639,7 @@ attending</para>
 <line remap="LINE">I shall.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MONTANO</speaker>
@@ -1653,7 +1653,7 @@ attending</para>
 <line remap="LINE">One that excels the quirks of blazoning pens,</line>
 <line remap="LINE">And in the essential vesture of creation</line>
 <line remap="LINE">Does tire the ingener.</line>
-<para remap="STAGEDIR">Re-enter second Gentleman</para>
+<stagedir remap="STAGEDIR">Re-enter second Gentleman</stagedir>
 <line remap="LINE">How now! who has put in?</line>
 </linegroup></dialogue>
 
@@ -1689,8 +1689,8 @@ attending</para>
 <line remap="LINE">Make love's quick pants in Desdemona's arms,</line>
 <line remap="LINE">Give renew'd fire to our extincted spirits</line>
 <line remap="LINE">And bring all Cyprus comfort!</line>
-<para remap="STAGEDIR">Enter DESDEMONA, EMILIA, IAGO, RODERIGO, and
-Attendants</para>
+<stagedir remap="STAGEDIR">Enter DESDEMONA, EMILIA, IAGO, RODERIGO, and
+Attendants</stagedir>
 <line remap="LINE">O, behold,</line>
 <line remap="LINE">The riches of the ship is come on shore!</line>
 <line remap="LINE">Ye men of Cyprus, let her have your knees.</line>
@@ -1722,7 +1722,7 @@ Attendants</para>
 <line remap="LINE">Parted our fellowship--But, hark! a sail.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Within 'A sail, a sail!' Guns heard</para>
+<stagedir remap="STAGEDIR">Within 'A sail, a sail!' Guns heard</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Gentleman</speaker>
@@ -1733,16 +1733,16 @@ Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSIO</speaker>
 <line remap="LINE">See for the news.</line>
-<para remap="STAGEDIR">Exit Gentleman</para>
+<stagedir remap="STAGEDIR">Exit Gentleman</stagedir>
 <line remap="LINE">Good ancient, you are welcome.</line>
-<para remap="STAGEDIR">To EMILIA</para>
+<stagedir remap="STAGEDIR">To EMILIA</stagedir>
 <line remap="LINE">Welcome, mistress.</line>
 <line remap="LINE">Let it not gall your patience, good Iago,</line>
 <line remap="LINE">That I extend my manners; 'tis my breeding</line>
 <line remap="LINE">That gives me this bold show of courtesy.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Kissing her</para>
+<stagedir remap="STAGEDIR">Kissing her</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
@@ -1927,7 +1927,7 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  He takes her by the palm: ay, well said,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  He takes her by the palm: ay, well said,</line>
 <line remap="LINE">whisper: with as little a web as this will I</line>
 <line remap="LINE">ensnare as great a fly as Cassio. Ay, smile upon</line>
 <line remap="LINE">her, do; I will gyve thee in thine own courtship.</line>
@@ -1938,7 +1938,7 @@ Attendants</para>
 <line remap="LINE">sir in. Very good; well kissed! an excellent</line>
 <line remap="LINE">courtesy! 'tis so, indeed. Yet again your fingers</line>
 <line remap="LINE">to your lips? would they were clyster-pipes for your sake!</line>
-<para remap="STAGEDIR">Trumpet within</para>
+<stagedir remap="STAGEDIR">Trumpet within</stagedir>
 <line remap="LINE">The Moor! I know his trumpet.</line>
 </linegroup></dialogue>
 
@@ -1957,7 +1957,7 @@ Attendants</para>
 <line remap="LINE">Lo, where he comes!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter OTHELLO and Attendants</para>
+<stagedir remap="STAGEDIR">Enter OTHELLO and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
@@ -1997,13 +1997,13 @@ Attendants</para>
 <line remap="LINE">I cannot speak enough of this content;</line>
 <line remap="LINE">It stops me here; it is too much of joy:</line>
 <line remap="LINE">And this, and this, the greatest discords be</line>
-<para remap="STAGEDIR">Kissing her</para>
+<stagedir remap="STAGEDIR">Kissing her</stagedir>
 <line remap="LINE">That e'er our hearts shall make!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  O, you are well tuned now!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  O, you are well tuned now!</line>
 <line remap="LINE">But I'll set down the pegs that make this music,</line>
 <line remap="LINE">As honest as I am.</line>
 </linegroup></dialogue>
@@ -2025,7 +2025,7 @@ Attendants</para>
 <line remap="LINE">Once more, well met at Cyprus.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt OTHELLO, DESDEMONA, and Attendants</para>
+<stagedir remap="STAGEDIR">Exeunt OTHELLO, DESDEMONA, and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
@@ -2150,7 +2150,7 @@ Attendants</para>
 <line remap="LINE">Adieu.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
@@ -2183,12 +2183,12 @@ Attendants</para>
 <line remap="LINE">Knavery's plain face is never seen tin used.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A street.</title>
-<para remap="STAGEDIR">Enter a Herald with a proclamation; People
-following</para>
+<stagedir remap="STAGEDIR">Enter a Herald with a proclamation; People
+following</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Herald</speaker>
@@ -2206,11 +2206,11 @@ following</para>
 <line remap="LINE">isle of Cyprus and our noble general Othello!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A hall in the castle.</title>
-<para remap="STAGEDIR">Enter OTHELLO, DESDEMONA, CASSIO, and Attendants</para>
+<stagedir remap="STAGEDIR">Enter OTHELLO, DESDEMONA, CASSIO, and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
@@ -2231,15 +2231,15 @@ following</para>
 <line remap="LINE">Iago is most honest.</line>
 <line remap="LINE">Michael, good night: to-morrow with your earliest</line>
 <line remap="LINE">Let me have speech with you.</line>
-<para remap="STAGEDIR">To DESDEMONA</para>
+<stagedir remap="STAGEDIR">To DESDEMONA</stagedir>
 <line remap="LINE">Come, my dear love,</line>
 <line remap="LINE">The purchase made, the fruits are to ensue;</line>
 <line remap="LINE">That profit's yet to come 'tween me and you.</line>
 <line remap="LINE">Good night.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt OTHELLO, DESDEMONA, and Attendants</para>
-<para remap="STAGEDIR">Enter IAGO</para>
+<stagedir remap="STAGEDIR">Exeunt OTHELLO, DESDEMONA, and Attendants</stagedir>
+<stagedir remap="STAGEDIR">Enter IAGO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSIO</speaker>
@@ -2342,7 +2342,7 @@ following</para>
 <line remap="LINE">I'll do't; but it dislikes me.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
@@ -2364,8 +2364,8 @@ following</para>
 <line remap="LINE">My boat sails freely, both with wind and stream.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter CASSIO; with him MONTANO and Gentlemen;
-servants following with wine</para>
+<stagedir remap="STAGEDIR">Re-enter CASSIO; with him MONTANO and Gentlemen;
+servants following with wine</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSIO</speaker>
@@ -2381,7 +2381,7 @@ servants following with wine</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
 <line remap="LINE">Some wine, ho!</line>
-<para remap="STAGEDIR">Sings</para>
+<stagedir remap="STAGEDIR">Sings</stagedir>
 <line remap="LINE">And let me the canakin clink, clink;</line>
 <line remap="LINE">And let me the canakin clink</line>
 <line remap="LINE">A soldier's a man;</line>
@@ -2495,7 +2495,7 @@ servants following with wine</para>
 <line remap="LINE">Why, very well then; you must not think then that I am drunk.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MONTANO</speaker>
@@ -2535,15 +2535,15 @@ servants following with wine</para>
 <line remap="LINE">And looks not on his evils: is not this true?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter RODERIGO</para>
+<stagedir remap="STAGEDIR">Enter RODERIGO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to him</phrase>  How now, Roderigo!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to him</inlinestagedir>  How now, Roderigo!</line>
 <line remap="LINE">I pray you, after the lieutenant; go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit RODERIGO</para>
+<stagedir remap="STAGEDIR">Exit RODERIGO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MONTANO</speaker>
@@ -2561,8 +2561,8 @@ servants following with wine</para>
 <line remap="LINE">To cure him of this evil--But, hark! what noise?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Cry within: 'Help! help!'</para>
-<para remap="STAGEDIR">Re-enter CASSIO, driving in RODERIGO</para>
+<stagedir remap="STAGEDIR">Cry within: 'Help! help!'</stagedir>
+<stagedir remap="STAGEDIR">Re-enter CASSIO, driving in RODERIGO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSIO</speaker>
@@ -2590,12 +2590,12 @@ servants following with wine</para>
 <line remap="LINE">Dost thou prate, rogue?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Striking RODERIGO</para>
+<stagedir remap="STAGEDIR">Striking RODERIGO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MONTANO</speaker>
 <line remap="LINE">Nay, good lieutenant;</line>
-<para remap="STAGEDIR">Staying him</para>
+<stagedir remap="STAGEDIR">Staying him</stagedir>
 <line remap="LINE">I pray you, sir, hold your hand.</line>
 </linegroup></dialogue>
 
@@ -2616,22 +2616,22 @@ servants following with wine</para>
 <line remap="LINE">Drunk!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They fight</para>
+<stagedir remap="STAGEDIR">They fight</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to RODERIGO</phrase>  Away, I say; go out, and cry a mutiny.</line>
-<para remap="STAGEDIR">Exit RODERIGO</para>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to RODERIGO</inlinestagedir>  Away, I say; go out, and cry a mutiny.</line>
+<stagedir remap="STAGEDIR">Exit RODERIGO</stagedir>
 <line remap="LINE">Nay, good lieutenant,--alas, gentlemen;--</line>
 <line remap="LINE">Help, ho!--Lieutenant,--sir,--Montano,--sir;</line>
 <line remap="LINE">Help, masters!--Here's a goodly watch indeed!</line>
-<para remap="STAGEDIR">Bell rings</para>
+<stagedir remap="STAGEDIR">Bell rings</stagedir>
 <line remap="LINE">Who's that which rings the bell?--Diablo, ho!</line>
 <line remap="LINE">The town will rise: God's will, lieutenant, hold!</line>
 <line remap="LINE">You will be shamed for ever.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter OTHELLO and Attendants</para>
+<stagedir remap="STAGEDIR">Re-enter OTHELLO and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
@@ -2643,7 +2643,7 @@ servants following with wine</para>
 <line remap="LINE">'Zounds, I bleed still; I am hurt to the death.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Faints</para>
+<stagedir remap="STAGEDIR">Faints</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
@@ -2780,7 +2780,7 @@ servants following with wine</para>
 <line remap="LINE">Thy honesty and love doth mince this matter,</line>
 <line remap="LINE">Making it light to Cassio. Cassio, I love thee</line>
 <line remap="LINE">But never more be officer of mine.</line>
-<para remap="STAGEDIR">Re-enter DESDEMONA, attended</para>
+<stagedir remap="STAGEDIR">Re-enter DESDEMONA, attended</stagedir>
 <line remap="LINE">Look, if my gentle love be not raised up!</line>
 <line remap="LINE">I'll make thee an example.</line>
 </linegroup></dialogue>
@@ -2795,14 +2795,14 @@ servants following with wine</para>
 <line remap="LINE">All's well now, sweeting; come away to bed.</line>
 <line remap="LINE">Sir, for your hurts, myself will be your surgeon:</line>
 <line remap="LINE">Lead him off.</line>
-<para remap="STAGEDIR">To MONTANO, who is led off</para>
+<stagedir remap="STAGEDIR">To MONTANO, who is led off</stagedir>
 <line remap="LINE">Iago, look with care about the town,</line>
 <line remap="LINE">And silence those whom this vile brawl distracted.</line>
 <line remap="LINE">Come, Desdemona: 'tis the soldiers' life</line>
 <line remap="LINE">To have their balmy slumbers waked with strife.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but IAGO and CASSIO</para>
+<stagedir remap="STAGEDIR">Exeunt all but IAGO and CASSIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
@@ -2966,7 +2966,7 @@ servants following with wine</para>
 <line remap="LINE">Good night, honest Iago.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
@@ -2997,7 +2997,7 @@ servants following with wine</para>
 <line remap="LINE">So will I turn her virtue into pitch,</line>
 <line remap="LINE">And out of her own goodness make the net</line>
 <line remap="LINE">That shall enmesh them all.</line>
-<para remap="STAGEDIR">Re-enter RODERIGO</para>
+<stagedir remap="STAGEDIR">Re-enter RODERIGO</stagedir>
 <line remap="LINE">How now, Roderigo!</line>
 </linegroup></dialogue>
 
@@ -3026,7 +3026,7 @@ servants following with wine</para>
 <line remap="LINE">Retire thee; go where thou art billeted:</line>
 <line remap="LINE">Away, I say; thou shalt know more hereafter:</line>
 <line remap="LINE">Nay, get thee gone.</line>
-<para remap="STAGEDIR">Exit RODERIGO</para>
+<stagedir remap="STAGEDIR">Exit RODERIGO</stagedir>
 <line remap="LINE">Two things are to be done:</line>
 <line remap="LINE">My wife must move for Cassio to her mistress;</line>
 <line remap="LINE">I'll set her on;</line>
@@ -3036,7 +3036,7 @@ servants following with wine</para>
 <line remap="LINE">Dull not device by coldness and delay.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 </chapter>
@@ -3044,7 +3044,7 @@ servants following with wine</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Before the castle.</title>
-<para remap="STAGEDIR">Enter CASSIO and some Musicians</para>
+<stagedir remap="STAGEDIR">Enter CASSIO and some Musicians</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSIO</speaker>
@@ -3052,8 +3052,8 @@ servants following with wine</para>
 <line remap="LINE">Something that's brief; and bid 'Good morrow, general.'</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Music</para>
-<para remap="STAGEDIR">Enter Clown</para>
+<stagedir remap="STAGEDIR">Music</stagedir>
+<stagedir remap="STAGEDIR">Enter Clown</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Clown</speaker>
@@ -3117,7 +3117,7 @@ servants following with wine</para>
 <line remap="LINE">go; vanish into air; away!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Musicians</para>
+<stagedir remap="STAGEDIR">Exeunt Musicians</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSIO</speaker>
@@ -3147,8 +3147,8 @@ servants following with wine</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSIO</speaker>
 <line remap="LINE">Do, good my friend.</line>
-<para remap="STAGEDIR">Exit Clown</para>
-<para remap="STAGEDIR">Enter IAGO</para>
+<stagedir remap="STAGEDIR">Exit Clown</stagedir>
+<stagedir remap="STAGEDIR">Enter IAGO</stagedir>
 <line remap="LINE">In happy time, Iago.</line>
 </linegroup></dialogue>
 
@@ -3177,12 +3177,12 @@ servants following with wine</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSIO</speaker>
 <line remap="LINE">I humbly thank you for't.</line>
-<para remap="STAGEDIR">Exit IAGO</para>
+<stagedir remap="STAGEDIR">Exit IAGO</stagedir>
 <line remap="LINE">I never knew</line>
 <line remap="LINE">A Florentine more kind and honest.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter EMILIA</para>
+<stagedir remap="STAGEDIR">Enter EMILIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EMILIA</speaker>
@@ -3218,11 +3218,11 @@ servants following with wine</para>
 <line remap="LINE">I am much bound to you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A room in the castle.</title>
-<para remap="STAGEDIR">Enter OTHELLO, IAGO, and Gentlemen</para>
+<stagedir remap="STAGEDIR">Enter OTHELLO, IAGO, and Gentlemen</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
@@ -3247,11 +3247,11 @@ servants following with wine</para>
 <line remap="LINE">We'll wait upon your lordship.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The garden of the castle.</title>
-<para remap="STAGEDIR">Enter DESDEMONA, CASSIO, and EMILIA</para>
+<stagedir remap="STAGEDIR">Enter DESDEMONA, CASSIO, and EMILIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DESDEMONA</speaker>
@@ -3337,8 +3337,8 @@ servants following with wine</para>
 <line remap="LINE">Well, do your discretion.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit CASSIO</para>
-<para remap="STAGEDIR">Enter OTHELLO and IAGO</para>
+<stagedir remap="STAGEDIR">Exit CASSIO</stagedir>
+<stagedir remap="STAGEDIR">Enter OTHELLO and IAGO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
@@ -3503,7 +3503,7 @@ servants following with wine</para>
 <line remap="LINE">Whate'er you be, I am obedient.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt DESDEMONA and EMILIA</para>
+<stagedir remap="STAGEDIR">Exeunt DESDEMONA and EMILIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
@@ -3891,7 +3891,7 @@ servants following with wine</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Going</phrase>  My lord, I take my leave.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Going</inlinestagedir>  My lord, I take my leave.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -3902,7 +3902,7 @@ servants following with wine</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Returning</phrase>  My lord, I would I might entreat</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Returning</inlinestagedir>  My lord, I would I might entreat</line>
 <line remap="LINE">your honour</line>
 <line remap="LINE">To scan this thing no further; leave it to time:</line>
 <line remap="LINE">Though it be fit that Cassio have his place,</line>
@@ -3927,7 +3927,7 @@ servants following with wine</para>
 <line remap="LINE">I once more take my leave.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
@@ -3951,7 +3951,7 @@ servants following with wine</para>
 <line remap="LINE">'Tis destiny unshunnable, like death:</line>
 <line remap="LINE">Even then this forked plague is fated to us</line>
 <line remap="LINE">When we do quicken. Desdemona comes:</line>
-<para remap="STAGEDIR">Re-enter DESDEMONA and EMILIA</para>
+<stagedir remap="STAGEDIR">Re-enter DESDEMONA and EMILIA</stagedir>
 <line remap="LINE">If she be false, O, then heaven mocks itself!</line>
 <line remap="LINE">I'll not believe't.</line>
 </linegroup></dialogue>
@@ -3989,7 +3989,7 @@ servants following with wine</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
 <line remap="LINE">Your napkin is too little:</line>
-<para remap="STAGEDIR">He puts the handkerchief from him; and it drops</para>
+<stagedir remap="STAGEDIR">He puts the handkerchief from him; and it drops</stagedir>
 <line remap="LINE">Let it alone. Come, I'll go in with you.</line>
 </linegroup></dialogue>
 
@@ -3998,7 +3998,7 @@ servants following with wine</para>
 <line remap="LINE">I am very sorry that you are not well.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt OTHELLO and DESDEMONA</para>
+<stagedir remap="STAGEDIR">Exeunt OTHELLO and DESDEMONA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EMILIA</speaker>
@@ -4014,7 +4014,7 @@ servants following with wine</para>
 <line remap="LINE">I nothing but to please his fantasy.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter Iago</para>
+<stagedir remap="STAGEDIR">Re-enter Iago</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
@@ -4085,7 +4085,7 @@ servants following with wine</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Snatching it</phrase>  Why, what's that to you?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Snatching it</inlinestagedir>  Why, what's that to you?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -4099,7 +4099,7 @@ servants following with wine</para>
 <speaker remap="SPEAKER">IAGO</speaker>
 <line remap="LINE">Be not acknown on 't; I have use for it.</line>
 <line remap="LINE">Go, leave me.</line>
-<para remap="STAGEDIR">Exit EMILIA</para>
+<stagedir remap="STAGEDIR">Exit EMILIA</stagedir>
 <line remap="LINE">I will in Cassio's lodging lose this napkin,</line>
 <line remap="LINE">And let him find it. Trifles light as air</line>
 <line remap="LINE">Are to the jealous confirmations strong</line>
@@ -4110,7 +4110,7 @@ servants following with wine</para>
 <line remap="LINE">But with a little act upon the blood.</line>
 <line remap="LINE">Burn like the mines of Sulphur. I did say so:</line>
 <line remap="LINE">Look, where he comes!</line>
-<para remap="STAGEDIR">Re-enter OTHELLO</para>
+<stagedir remap="STAGEDIR">Re-enter OTHELLO</stagedir>
 <line remap="LINE">Not poppy, nor mandragora,</line>
 <line remap="LINE">Nor all the drowsy syrups of the world,</line>
 <line remap="LINE">Shall ever medicine thee to that sweet sleep</line>
@@ -4409,7 +4409,7 @@ servants following with wine</para>
 <line remap="LINE">Shall ne'er look back, ne'er ebb to humble love,</line>
 <line remap="LINE">Till that a capable and wide revenge</line>
 <line remap="LINE">Swallow them up. Now, by yond marble heaven,</line>
-<para remap="STAGEDIR">Kneels</para>
+<stagedir remap="STAGEDIR">Kneels</stagedir>
 <line remap="LINE">In the due reverence of a sacred vow</line>
 <line remap="LINE">I here engage my words.</line>
 </linegroup></dialogue>
@@ -4417,7 +4417,7 @@ servants following with wine</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
 <line remap="LINE">Do not rise yet.</line>
-<para remap="STAGEDIR">Kneels</para>
+<stagedir remap="STAGEDIR">Kneels</stagedir>
 <line remap="LINE">Witness, you ever-burning lights above,</line>
 <line remap="LINE">You elements that clip us round about,</line>
 <line remap="LINE">Witness that here Iago doth give up</line>
@@ -4427,7 +4427,7 @@ servants following with wine</para>
 <line remap="LINE">What bloody business ever.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They rise</para>
+<stagedir remap="STAGEDIR">They rise</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
@@ -4457,11 +4457,11 @@ servants following with wine</para>
 <line remap="LINE">I am your own for ever.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Before the castle.</title>
-<para remap="STAGEDIR">Enter DESDEMONA, EMILIA, and Clown</para>
+<stagedir remap="STAGEDIR">Enter DESDEMONA, EMILIA, and Clown</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DESDEMONA</speaker>
@@ -4529,7 +4529,7 @@ servants following with wine</para>
 <line remap="LINE">therefore I will attempt the doing it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DESDEMONA</speaker>
@@ -4570,14 +4570,14 @@ servants following with wine</para>
 <speaker remap="SPEAKER">DESDEMONA</speaker>
 <line remap="LINE">I will not leave him now till Cassio</line>
 <line remap="LINE">Be call'd to him.</line>
-<para remap="STAGEDIR">Enter OTHELLO</para>
+<stagedir remap="STAGEDIR">Enter OTHELLO</stagedir>
 <line remap="LINE">How is't with you, my lord</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
 <line remap="LINE">Well, my good lady.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">O, hardness to dissemble!--</line>
 <line remap="LINE">How do you, Desdemona?</line>
 </linegroup></dialogue>
@@ -4818,7 +4818,7 @@ servants following with wine</para>
 <line remap="LINE">Away!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EMILIA</speaker>
@@ -4840,7 +4840,7 @@ servants following with wine</para>
 <line remap="LINE">They belch us. Look you, Cassio and my husband!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CASSIO and IAGO</para>
+<stagedir remap="STAGEDIR">Enter CASSIO and IAGO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
@@ -4908,7 +4908,7 @@ servants following with wine</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DESDEMONA</speaker>
 <line remap="LINE">I prithee, do so.</line>
-<para remap="STAGEDIR">Exit IAGO</para>
+<stagedir remap="STAGEDIR">Exit IAGO</stagedir>
 <line remap="LINE">Something, sure, of state,</line>
 <line remap="LINE">Either from Venice, or some unhatch'd practise</line>
 <line remap="LINE">Made demonstrable here in Cyprus to him,</line>
@@ -4968,8 +4968,8 @@ servants following with wine</para>
 <line remap="LINE">I humbly thank your ladyship.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt DESDEMONA and EMILIA</para>
-<para remap="STAGEDIR">Enter BIANCA</para>
+<stagedir remap="STAGEDIR">Exeunt DESDEMONA and EMILIA</stagedir>
+<stagedir remap="STAGEDIR">Enter BIANCA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIANCA</speaker>
@@ -4998,7 +4998,7 @@ servants following with wine</para>
 <line remap="LINE">I have this while with leaden thoughts been press'd:</line>
 <line remap="LINE">But I shall, in a more continuate time,</line>
 <line remap="LINE">Strike off this score of absence. Sweet Bianca,</line>
-<para remap="STAGEDIR">Giving her DESDEMONA's handkerchief</para>
+<stagedir remap="STAGEDIR">Giving her DESDEMONA's handkerchief</stagedir>
 <line remap="LINE">Take me this work out.</line>
 </linegroup></dialogue>
 
@@ -5072,7 +5072,7 @@ servants following with wine</para>
 <line remap="LINE">'Tis very good; I must be circumstanced.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -5080,7 +5080,7 @@ servants following with wine</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Cyprus. Before the castle.</title>
-<para remap="STAGEDIR">Enter OTHELLO and IAGO</para>
+<stagedir remap="STAGEDIR">Enter OTHELLO and IAGO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
@@ -5230,7 +5230,7 @@ servants following with wine</para>
 <line remap="LINE">--Is't possible?--Confess--handkerchief!--O devil!--</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Falls in a trance</para>
+<stagedir remap="STAGEDIR">Falls in a trance</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
@@ -5239,7 +5239,7 @@ servants following with wine</para>
 <line remap="LINE">And many worthy and chaste dames even thus,</line>
 <line remap="LINE">All guiltless, meet reproach. What, ho! my lord!</line>
 <line remap="LINE">My lord, I say! Othello!</line>
-<para remap="STAGEDIR">Enter CASSIO</para>
+<stagedir remap="STAGEDIR">Enter CASSIO</stagedir>
 <line remap="LINE">How now, Cassio!</line>
 </linegroup></dialogue>
 
@@ -5268,7 +5268,7 @@ servants following with wine</para>
 <line remap="LINE">Do you withdraw yourself a little while,</line>
 <line remap="LINE">He will recover straight: when he is gone,</line>
 <line remap="LINE">I would on great occasion speak with you.</line>
-<para remap="STAGEDIR">Exit CASSIO</para>
+<stagedir remap="STAGEDIR">Exit CASSIO</stagedir>
 <line remap="LINE">How is it, general? have you not hurt your head?</line>
 </linegroup></dialogue>
 
@@ -5348,7 +5348,7 @@ servants following with wine</para>
 <speaker remap="SPEAKER">IAGO</speaker>
 <line remap="LINE">That's not amiss;</line>
 <line remap="LINE">But yet keep time in all. Will you withdraw?</line>
-<para remap="STAGEDIR">OTHELLO retires</para>
+<stagedir remap="STAGEDIR">OTHELLO retires</stagedir>
 <line remap="LINE">Now will I question Cassio of Bianca,</line>
 <line remap="LINE">A housewife that by selling her desires</line>
 <line remap="LINE">Buys herself bread and clothes: it is a creature</line>
@@ -5356,7 +5356,7 @@ servants following with wine</para>
 <line remap="LINE">To beguile many and be beguiled by one:</line>
 <line remap="LINE">He, when he hears of her, cannot refrain</line>
 <line remap="LINE">From the excess of laughter. Here he comes:</line>
-<para remap="STAGEDIR">Re-enter CASSIO</para>
+<stagedir remap="STAGEDIR">Re-enter CASSIO</stagedir>
 <line remap="LINE">As he shall smile, Othello shall go mad;</line>
 <line remap="LINE">And his unbookish jealousy must construe</line>
 <line remap="LINE">Poor Cassio's smiles, gestures and light behavior,</line>
@@ -5372,7 +5372,7 @@ servants following with wine</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
 <line remap="LINE">Ply Desdemona well, and you are sure on't.</line>
-<para remap="STAGEDIR">Speaking lower</para>
+<stagedir remap="STAGEDIR">Speaking lower</stagedir>
 <line remap="LINE">Now, if this suit lay in Bianco's power,</line>
 <line remap="LINE">How quickly should you speed!</line>
 </linegroup></dialogue>
@@ -5513,7 +5513,7 @@ servants following with wine</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSIO</speaker>
 <line remap="LINE">'Tis such another fitchew! marry a perfumed one.</line>
-<para remap="STAGEDIR">Enter BIANCA</para>
+<stagedir remap="STAGEDIR">Enter BIANCA</stagedir>
 <line remap="LINE">What do you mean by this haunting of me?</line>
 </linegroup></dialogue>
 
@@ -5545,7 +5545,7 @@ servants following with wine</para>
 <line remap="LINE">will not, come when you are next prepared for.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
@@ -5583,11 +5583,11 @@ servants following with wine</para>
 <line remap="LINE">Go to; say no more.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit CASSIO</para>
+<stagedir remap="STAGEDIR">Exit CASSIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Advancing</phrase>  How shall I murder him, Iago?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Advancing</inlinestagedir>  How shall I murder him, Iago?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5726,7 +5726,7 @@ servants following with wine</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
 <line remap="LINE">Excellent good.</line>
-<para remap="STAGEDIR">A trumpet within</para>
+<stagedir remap="STAGEDIR">A trumpet within</stagedir>
 <line remap="LINE">What trumpet is that same?</line>
 </linegroup></dialogue>
 
@@ -5736,7 +5736,7 @@ servants following with wine</para>
 <line remap="LINE">Come from the duke: and, see, your wife is with him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LODOVICO, DESDEMONA, and Attendants</para>
+<stagedir remap="STAGEDIR">Enter LODOVICO, DESDEMONA, and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LODOVICO</speaker>
@@ -5753,14 +5753,14 @@ servants following with wine</para>
 <line remap="LINE">The duke and senators of Venice greet you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Gives him a letter</para>
+<stagedir remap="STAGEDIR">Gives him a letter</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
 <line remap="LINE">I kiss the instrument of their pleasures.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Opens the letter, and reads</para>
+<stagedir remap="STAGEDIR">Opens the letter, and reads</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DESDEMONA</speaker>
@@ -5801,7 +5801,7 @@ servants following with wine</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Reads</phrase>  'This fail you not to do, as you will--'</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Reads</inlinestagedir>  'This fail you not to do, as you will--'</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5870,7 +5870,7 @@ servants following with wine</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Striking her</phrase>  Devil!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Striking her</inlinestagedir>  Devil!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -5898,7 +5898,7 @@ servants following with wine</para>
 <line remap="LINE">I will not stay to offend you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Going</para>
+<stagedir remap="STAGEDIR">Going</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LODOVICO</speaker>
@@ -5937,13 +5937,13 @@ servants following with wine</para>
 <line remap="LINE">I am commanded home. Get you away;</line>
 <line remap="LINE">I'll send for you anon. Sir, I obey the mandate,</line>
 <line remap="LINE">And will return to Venice. Hence, avaunt!</line>
-<para remap="STAGEDIR">Exit DESDEMONA</para>
+<stagedir remap="STAGEDIR">Exit DESDEMONA</stagedir>
 <line remap="LINE">Cassio shall have my place. And, sir, tonight,</line>
 <line remap="LINE">I do entreat that we may sup together:</line>
 <line remap="LINE">You are welcome, sir, to Cyprus.--Goats and monkeys!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LODOVICO</speaker>
@@ -6004,11 +6004,11 @@ servants following with wine</para>
 <line remap="LINE">I am sorry that I am deceived in him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A room in the castle.</title>
-<para remap="STAGEDIR">Enter OTHELLO and EMILIA</para>
+<stagedir remap="STAGEDIR">Enter OTHELLO and EMILIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
@@ -6081,14 +6081,14 @@ servants following with wine</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
 <line remap="LINE">Bid her come hither: go.</line>
-<para remap="STAGEDIR">Exit EMILIA</para>
+<stagedir remap="STAGEDIR">Exit EMILIA</stagedir>
 <line remap="LINE">She says enough; yet she's a simple bawd</line>
 <line remap="LINE">That cannot say as much. This is a subtle whore,</line>
 <line remap="LINE">A closet lock and key of villanous secrets</line>
 <line remap="LINE">And yet she'll kneel and pray; I have seen her do't.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter DESDEMONA with EMILIA</para>
+<stagedir remap="STAGEDIR">Enter DESDEMONA with EMILIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DESDEMONA</speaker>
@@ -6118,13 +6118,13 @@ servants following with wine</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To EMILIA</phrase>  Some of your function, mistress;</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To EMILIA</inlinestagedir>  Some of your function, mistress;</line>
 <line remap="LINE">Leave procreants alone and shut the door;</line>
 <line remap="LINE">Cough, or cry 'hem,' if any body come:</line>
 <line remap="LINE">Your mystery, your mystery: nay, dispatch.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit EMILIA</para>
+<stagedir remap="STAGEDIR">Exit EMILIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DESDEMONA</speaker>
@@ -6281,17 +6281,17 @@ servants following with wine</para>
 <line remap="LINE">I cry you mercy, then:</line>
 <line remap="LINE">I took you for that cunning whore of Venice</line>
 <line remap="LINE">That married with Othello.</line>
-<para remap="STAGEDIR">Raising his voice</para>
+<stagedir remap="STAGEDIR">Raising his voice</stagedir>
 <line remap="LINE">You, mistress,</line>
 <line remap="LINE">That have the office opposite to Saint Peter,</line>
 <line remap="LINE">And keep the gate of hell!</line>
-<para remap="STAGEDIR">Re-enter EMILIA</para>
+<stagedir remap="STAGEDIR">Re-enter EMILIA</stagedir>
 <line remap="LINE">You, you, ay, you!</line>
 <line remap="LINE">We have done our course; there's money for your pains:</line>
 <line remap="LINE">I pray you, turn the key and keep our counsel.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EMILIA</speaker>
@@ -6343,7 +6343,7 @@ servants following with wine</para>
 <line remap="LINE">Here's a change indeed!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DESDEMONA</speaker>
@@ -6352,7 +6352,7 @@ servants following with wine</para>
 <line remap="LINE">The small'st opinion on my least misuse?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter EMILIA with IAGO</para>
+<stagedir remap="STAGEDIR">Re-enter EMILIA with IAGO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
@@ -6523,12 +6523,12 @@ servants following with wine</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
 <line remap="LINE">'Tis but so, I warrant.</line>
-<para remap="STAGEDIR">Trumpets within</para>
+<stagedir remap="STAGEDIR">Trumpets within</stagedir>
 <line remap="LINE">Hark, how these instruments summon to supper!</line>
 <line remap="LINE">The messengers of Venice stay the meat;</line>
 <line remap="LINE">Go in, and weep not; all things shall be well.</line>
-<para remap="STAGEDIR">Exeunt DESDEMONA and EMILIA</para>
-<para remap="STAGEDIR">Enter RODERIGO</para>
+<stagedir remap="STAGEDIR">Exeunt DESDEMONA and EMILIA</stagedir>
+<stagedir remap="STAGEDIR">Enter RODERIGO</stagedir>
 <line remap="LINE">How now, Roderigo!</line>
 </linegroup></dialogue>
 
@@ -6707,12 +6707,12 @@ servants following with wine</para>
 <line remap="LINE">And you shall be satisfied.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Another room In the castle.</title>
-<para remap="STAGEDIR">Enter OTHELLO, LODOVICO, DESDEMONA, EMILIA and
-Attendants</para>
+<stagedir remap="STAGEDIR">Enter OTHELLO, LODOVICO, DESDEMONA, EMILIA and
+Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LODOVICO</speaker>
@@ -6756,7 +6756,7 @@ Attendants</para>
 <line remap="LINE">I will, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt OTHELLO, LODOVICO, and Attendants</para>
+<stagedir remap="STAGEDIR">Exeunt OTHELLO, LODOVICO, and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EMILIA</speaker>
@@ -6852,7 +6852,7 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DESDEMONA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Singing</phrase>  The poor soul sat sighing by a sycamore tree,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Singing</inlinestagedir>  The poor soul sat sighing by a sycamore tree,</line>
 <line remap="LINE">Sing all a green willow:</line>
 <line remap="LINE">Her hand on her bosom, her head on her knee,</line>
 <line remap="LINE">Sing willow, willow, willow:</line>
@@ -6860,10 +6860,10 @@ Attendants</para>
 <line remap="LINE">Sing willow, willow, willow;</line>
 <line remap="LINE">Her salt tears fell from her, and soften'd the stones;</line>
 <line remap="LINE">Lay by these:--</line>
-<para remap="STAGEDIR">Singing</para>
+<stagedir remap="STAGEDIR">Singing</stagedir>
 <line remap="LINE">Sing willow, willow, willow;</line>
 <line remap="LINE">Prithee, hie thee; he'll come anon:--</line>
-<para remap="STAGEDIR">Singing</para>
+<stagedir remap="STAGEDIR">Singing</stagedir>
 <line remap="LINE">Sing all a green willow must be my garland.</line>
 <line remap="LINE">Let nobody blame him; his scorn I approve,-</line>
 <line remap="LINE">Nay, that's not next.--Hark! who is't that knocks?</line>
@@ -6876,7 +6876,7 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DESDEMONA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Singing</phrase>  I call'd my love false love; but what</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Singing</inlinestagedir>  I call'd my love false love; but what</line>
 <line remap="LINE">said he then?</line>
 <line remap="LINE">Sing willow, willow, willow:</line>
 <line remap="LINE">If I court moe women, you'll couch with moe men!</line>
@@ -6998,7 +6998,7 @@ Attendants</para>
 <line remap="LINE">Not to pick bad from bad, but by bad mend!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -7006,7 +7006,7 @@ Attendants</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Cyprus. A street.</title>
-<para remap="STAGEDIR">Enter IAGO and RODERIGO</para>
+<stagedir remap="STAGEDIR">Enter IAGO and RODERIGO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
@@ -7027,7 +7027,7 @@ Attendants</para>
 <line remap="LINE">Here, at thy hand: be bold, and take thy stand.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Retires</para>
+<stagedir remap="STAGEDIR">Retires</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">RODERIGO</speaker>
@@ -7052,14 +7052,14 @@ Attendants</para>
 <line remap="LINE">No, he must die. But so: I hear him coming.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CASSIO</para>
+<stagedir remap="STAGEDIR">Enter CASSIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">RODERIGO</speaker>
 <line remap="LINE">I know his gait, 'tis he.--Villain, thou diest!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Makes a pass at CASSIO</para>
+<stagedir remap="STAGEDIR">Makes a pass at CASSIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSIO</speaker>
@@ -7068,22 +7068,22 @@ Attendants</para>
 <line remap="LINE">I will make proof of thine.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Draws, and wounds RODERIGO</para>
+<stagedir remap="STAGEDIR">Draws, and wounds RODERIGO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">RODERIGO</speaker>
 <line remap="LINE">O, I am slain!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">IAGO from behind wounds CASSIO in the leg, and exit</para>
+<stagedir remap="STAGEDIR">IAGO from behind wounds CASSIO in the leg, and exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSIO</speaker>
 <line remap="LINE">I am maim'd for ever. Help, ho! murder! murder!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Falls</para>
-<para remap="STAGEDIR">Enter OTHELLO</para>
+<stagedir remap="STAGEDIR">Falls</stagedir>
+<stagedir remap="STAGEDIR">Enter OTHELLO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
@@ -7115,8 +7115,8 @@ Attendants</para>
 <line remap="LINE">Thy bed, lust-stain'd, shall with lust's blood be spotted.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter LODOVICO and GRATIANO</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter LODOVICO and GRATIANO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSIO</speaker>
@@ -7160,7 +7160,7 @@ Attendants</para>
 <line remap="LINE">Hark!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter IAGO, with a light</para>
+<stagedir remap="STAGEDIR">Re-enter IAGO, with a light</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GRATIANO</speaker>
@@ -7230,7 +7230,7 @@ Attendants</para>
 <line remap="LINE">What are you there? come in, and give some help.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">To LODOVICO and GRATIANO</para>
+<stagedir remap="STAGEDIR">To LODOVICO and GRATIANO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">RODERIGO</speaker>
@@ -7247,7 +7247,7 @@ Attendants</para>
 <line remap="LINE">O murderous slave! O villain!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Stabs RODERIGO</para>
+<stagedir remap="STAGEDIR">Stabs RODERIGO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">RODERIGO</speaker>
@@ -7302,7 +7302,7 @@ Attendants</para>
 <line remap="LINE">Light, gentlemen; I'll bind it with my shirt.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter BIANCA</para>
+<stagedir remap="STAGEDIR">Enter BIANCA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BIANCA</speaker>
@@ -7397,7 +7397,7 @@ Attendants</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
 <line remap="LINE">He, he 'tis he.</line>
-<para remap="STAGEDIR">A chair brought in</para>
+<stagedir remap="STAGEDIR">A chair brought in</stagedir>
 <line remap="LINE">O, that's well said; the chair!</line>
 </linegroup></dialogue>
 
@@ -7405,7 +7405,7 @@ Attendants</para>
 <speaker remap="SPEAKER">GRATIANO</speaker>
 <line remap="LINE">Some good man bear him carefully from hence;</line>
 <line remap="LINE">I'll fetch the general's surgeon.</line>
-<para remap="STAGEDIR">To BIANCA</para>
+<stagedir remap="STAGEDIR">To BIANCA</stagedir>
 <line remap="LINE">For you, mistress,</line>
 <line remap="LINE">Save you your labour. He that lies slain</line>
 <line remap="LINE">here, Cassio,</line>
@@ -7419,9 +7419,9 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IAGO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To BIANCA</phrase>  What, look you pale? O, bear him out</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To BIANCA</inlinestagedir>  What, look you pale? O, bear him out</line>
 <line remap="LINE">o' the air.</line>
-<para remap="STAGEDIR">CASSIO and RODERIGO are borne off</para>
+<stagedir remap="STAGEDIR">CASSIO and RODERIGO are borne off</stagedir>
 <line remap="LINE">Stay you, good gentlemen. Look you pale, mistress?</line>
 <line remap="LINE">Do you perceive the gastness of her eye?</line>
 <line remap="LINE">Nay, if you stare, we shall hear more anon.</line>
@@ -7430,7 +7430,7 @@ Attendants</para>
 <line remap="LINE">Though tongues were out of use.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter EMILIA</para>
+<stagedir remap="STAGEDIR">Enter EMILIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EMILIA</speaker>
@@ -7453,7 +7453,7 @@ Attendants</para>
 <speaker remap="SPEAKER">IAGO</speaker>
 <line remap="LINE">This is the fruit of whoring. Prithee, Emilia,</line>
 <line remap="LINE">Go know of Cassio where he supp'd to-night.</line>
-<para remap="STAGEDIR">To BIANCA</para>
+<stagedir remap="STAGEDIR">To BIANCA</stagedir>
 <line remap="LINE">What, do you shake at that?</line>
 </linegroup></dialogue>
 
@@ -7490,17 +7490,17 @@ Attendants</para>
 <line remap="LINE">Emilia run you to the citadel,</line>
 <line remap="LINE">And tell my lord and lady what hath happ'd.</line>
 <line remap="LINE">Will you go on? I pray.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">This is the night</line>
 <line remap="LINE">That either makes me or fordoes me quite.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A bedchamber in the castle: DESDEMONA in bed asleep; a light burning.</title>
 
-<para remap="STAGEDIR">Enter OTHELLO</para>
+<stagedir remap="STAGEDIR">Enter OTHELLO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
@@ -7519,7 +7519,7 @@ Attendants</para>
 <line remap="LINE">That can thy light relume. When I have pluck'd the rose,</line>
 <line remap="LINE">I cannot give it vital growth again.</line>
 <line remap="LINE">It must needs wither: I'll smell it on the tree.</line>
-<para remap="STAGEDIR">Kissing her</para>
+<stagedir remap="STAGEDIR">Kissing her</stagedir>
 <line remap="LINE">Ah balmy breath, that dost almost persuade</line>
 <line remap="LINE">Justice to break her sword! One more, one more.</line>
 <line remap="LINE">Be thus when thou art dead, and I will kill thee,</line>
@@ -7808,11 +7808,11 @@ Attendants</para>
 <line remap="LINE">It is too late.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">He stifles her</para>
+<stagedir remap="STAGEDIR">He stifles her</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EMILIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  My lord, my lord! what, ho! my lord, my lord!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  My lord, my lord! what, ho! my lord, my lord!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -7824,7 +7824,7 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EMILIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  What, ho! my lord, my lord!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  What, ho! my lord, my lord!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -7834,7 +7834,7 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EMILIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  O, good my lord, I would speak a word with you!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  O, good my lord, I would speak a word with you!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -7854,7 +7854,7 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EMILIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  I do beseech you</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  I do beseech you</line>
 <line remap="LINE">That I may speak with you, O, good my lord!</line>
 </linegroup></dialogue>
 
@@ -7863,8 +7863,8 @@ Attendants</para>
 <line remap="LINE">I had forgot thee: O, come in, Emilia;</line>
 <line remap="LINE">Soft; by and by. Let me the curtains draw.</line>
 <line remap="LINE">Where art thou?</line>
-<para remap="STAGEDIR">Unlocks the door</para>
-<para remap="STAGEDIR">Enter EMILIA</para>
+<stagedir remap="STAGEDIR">Unlocks the door</stagedir>
+<stagedir remap="STAGEDIR">Enter EMILIA</stagedir>
 <line remap="LINE">What's the matter with thee now?</line>
 </linegroup></dialogue>
 
@@ -7951,7 +7951,7 @@ Attendants</para>
 <line remap="LINE">Commend me to my kind lord: O, farewell!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Dies</para>
+<stagedir remap="STAGEDIR">Dies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
@@ -8106,7 +8106,7 @@ Attendants</para>
 <line remap="LINE">The Moor hath kill'd my mistress! Murder! murder!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MONTANO, GRATIANO, IAGO, and others</para>
+<stagedir remap="STAGEDIR">Enter MONTANO, GRATIANO, IAGO, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MONTANO</speaker>
@@ -8216,7 +8216,7 @@ Attendants</para>
 <line remap="LINE">O! O! O!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">He falls on the bed</para>
+<stagedir remap="STAGEDIR">He falls on the bed</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">EMILIA</speaker>
@@ -8227,7 +8227,7 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Rising</phrase>  O, she was foul!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Rising</inlinestagedir>  O, she was foul!</line>
 <line remap="LINE">I scarce did know you, uncle: there lies your niece,</line>
 <line remap="LINE">Whose breath, indeed, these hands have newly stopp'd:</line>
 <line remap="LINE">I know this act shows horrible and grim.</line>
@@ -8283,7 +8283,7 @@ Attendants</para>
 <line remap="LINE">I will not.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">IAGO offers to stab EMILIA</para>
+<stagedir remap="STAGEDIR">IAGO offers to stab EMILIA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GRATIANO</speaker>
@@ -8329,7 +8329,7 @@ Attendants</para>
 <line remap="LINE">But what serve for the thunder?--Precious villain!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">He runs at IAGO  IAGO, from behind, stabs EMILIA, and exit</para>
+<stagedir remap="STAGEDIR">He runs at IAGO  IAGO, from behind, stabs EMILIA, and exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GRATIANO</speaker>
@@ -8355,7 +8355,7 @@ Attendants</para>
 <line remap="LINE">For 'tis a damned slave.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt MONTANO and GRATIANO</para>
+<stagedir remap="STAGEDIR">Exeunt MONTANO and GRATIANO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
@@ -8370,14 +8370,14 @@ Attendants</para>
 <line remap="LINE">What did thy song bode, lady?</line>
 <line remap="LINE">Hark, canst thou hear me? I will play the swan.</line>
 <line remap="LINE">And die in music.</line>
-<para remap="STAGEDIR">Singing</para>
+<stagedir remap="STAGEDIR">Singing</stagedir>
 <line remap="LINE">Willow, willow, willow,--</line>
 <line remap="LINE">Moor, she was chaste; she loved thee, cruel Moor;</line>
 <line remap="LINE">So come my soul to bliss, as I speak true;</line>
 <line remap="LINE">So speaking as I think, I die, I die.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Dies</para>
+<stagedir remap="STAGEDIR">Dies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">OTHELLO</speaker>
@@ -8388,7 +8388,7 @@ Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GRATIANO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  If thou attempt it, it will cost thee dear:</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  If thou attempt it, it will cost thee dear:</line>
 <line remap="LINE">Thou hast no weapon, and perforce must suffer.</line>
 </linegroup></dialogue>
 
@@ -8398,7 +8398,7 @@ Attendants</para>
 <line remap="LINE">Or, naked as I am, I will assault thee.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter GRATIANO</para>
+<stagedir remap="STAGEDIR">Re-enter GRATIANO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GRATIANO</speaker>
@@ -8433,8 +8433,8 @@ Attendants</para>
 <line remap="LINE">Oh! Oh! Oh!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LODOVICO. MONTANO, CASSIO carried in a chair,
-and Officers with IAGO, prisoner</para>
+<stagedir remap="STAGEDIR">Enter LODOVICO. MONTANO, CASSIO carried in a chair,
+and Officers with IAGO, prisoner</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LODOVICO</speaker>
@@ -8457,7 +8457,7 @@ and Officers with IAGO, prisoner</para>
 <line remap="LINE">If that thou best a devil, I cannot kill thee.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Wounds IAGO</para>
+<stagedir remap="STAGEDIR">Wounds IAGO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LODOVICO</speaker>
@@ -8627,7 +8627,7 @@ and Officers with IAGO, prisoner</para>
 <line remap="LINE">And smote him, thus.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Stabs himself</para>
+<stagedir remap="STAGEDIR">Stabs himself</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LODOVICO</speaker>
@@ -8645,7 +8645,7 @@ and Officers with IAGO, prisoner</para>
 <line remap="LINE">Killing myself, to die upon a kiss.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Falls on the bed, and dies</para>
+<stagedir remap="STAGEDIR">Falls on the bed, and dies</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CASSIO</speaker>
@@ -8655,7 +8655,7 @@ and Officers with IAGO, prisoner</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LODOVICO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To IAGO</phrase>  O Spartan dog,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To IAGO</inlinestagedir>  O Spartan dog,</line>
 <line remap="LINE">More fell than anguish, hunger, or the sea!</line>
 <line remap="LINE">Look on the tragic loading of this bed;</line>
 <line remap="LINE">This is thy work: the object poisons sight;</line>
@@ -8668,7 +8668,7 @@ and Officers with IAGO, prisoner</para>
 <line remap="LINE">This heavy act with heavy heart relate.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 </chapter>
 </book>

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">The Tempest</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">The Tempest</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The Tempest</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -28,9 +28,9 @@
 <simplelist columns="2" remap="PGROUP"><member><personname remap="PERSONA">IRIS</personname><personname remap="PERSONA">CERES</personname><personname remap="PERSONA">JUNO</personname><personname remap="PERSONA">Nymphs</personname><personname remap="PERSONA">Reapers</personname></member><member>presented by Spirits.</member></simplelist>
 
 <para><personname remap="PERSONA">Other Spirits attending on Prospero.</personname></para>
-    <para remap="SCNDESCR">SCENE  A ship at Sea: an island.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  A ship at Sea: an island.</para>
 
 
 
@@ -38,7 +38,7 @@
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  On a ship at sea: a tempestuous noise of thunder and lightning heard.</title>
 
-<para remap="STAGEDIR">Enter a Master and a Boatswain</para>
+<stagedir remap="STAGEDIR">Enter a Master and a Boatswain</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Master</speaker>
@@ -56,8 +56,8 @@
 <line remap="LINE">or we run ourselves aground: bestir, bestir.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter Mariners</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter Mariners</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Boatswain</speaker>
@@ -67,8 +67,8 @@
 <line remap="LINE">if room enough!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ALONSO, SEBASTIAN, ANTONIO, FERDINAND,
-GONZALO, and others</para>
+<stagedir remap="STAGEDIR">Enter ALONSO, SEBASTIAN, ANTONIO, FERDINAND,
+GONZALO, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ALONSO</speaker>
@@ -120,7 +120,7 @@ GONZALO, and others</para>
 <line remap="LINE">of our way, I say.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GONZALO</speaker>
@@ -132,17 +132,17 @@ GONZALO, and others</para>
 <line remap="LINE">born to be hanged, our case is miserable.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
-<para remap="STAGEDIR">Re-enter Boatswain</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
+<stagedir remap="STAGEDIR">Re-enter Boatswain</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Boatswain</speaker>
 <line remap="LINE">Down with the topmast! yare! lower, lower! Bring</line>
 <line remap="LINE">her to try with main-course.</line>
-<para remap="STAGEDIR">A cry within</para>
+<stagedir remap="STAGEDIR">A cry within</stagedir>
 <line remap="LINE">A plague upon this howling! they are louder than</line>
 <line remap="LINE">the weather or our office.</line>
-<para remap="STAGEDIR">Re-enter SEBASTIAN, ANTONIO, and GONZALO</para>
+<stagedir remap="STAGEDIR">Re-enter SEBASTIAN, ANTONIO, and GONZALO</stagedir>
 <line remap="LINE">Yet again! what do you here? Shall we give o'er</line>
 <line remap="LINE">and drown? Have you a mind to sink?</line>
 </linegroup></dialogue>
@@ -177,7 +177,7 @@ GONZALO, and others</para>
 <line remap="LINE">sea again; lay her off.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter Mariners wet</para>
+<stagedir remap="STAGEDIR">Enter Mariners wet</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Mariners</speaker>
@@ -214,10 +214,10 @@ GONZALO, and others</para>
 <line remap="LINE">And gape at widest to glut him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">A confused noise within:   'Mercy on us!'--
+<stagedir remap="STAGEDIR">A confused noise within:   'Mercy on us!'--
 'We split, we split!'--'Farewell, my wife and
 children!'--
-'Farewell, brother!'--'We split, we split, we split!'</para>
+'Farewell, brother!'--'We split, we split, we split!'</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTONIO</speaker>
@@ -229,7 +229,7 @@ children!'--
 <line remap="LINE">Let's take leave of him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt ANTONIO and SEBASTIAN</para>
+<stagedir remap="STAGEDIR">Exeunt ANTONIO and SEBASTIAN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GONZALO</speaker>
@@ -239,11 +239,11 @@ children!'--
 <line remap="LINE">die a dry death.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The island. Before PROSPERO'S cell.</title>
-<para remap="STAGEDIR">Enter PROSPERO and MIRANDA</para>
+<stagedir remap="STAGEDIR">Enter PROSPERO and MIRANDA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MIRANDA</speaker>
@@ -296,7 +296,7 @@ children!'--
 <line remap="LINE">'Tis time</line>
 <line remap="LINE">I should inform thee farther. Lend thy hand,</line>
 <line remap="LINE">And pluck my magic garment from me. So:</line>
-<para remap="STAGEDIR">Lays down his mantle</para>
+<stagedir remap="STAGEDIR">Lays down his mantle</stagedir>
 <line remap="LINE">Lie there, my art. Wipe thou thine eyes; have comfort.</line>
 <line remap="LINE">The direful spectacle of the wreck, which touch'd</line>
 <line remap="LINE">The very virtue of compassion in thee,</line>
@@ -602,7 +602,7 @@ children!'--
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
 <line remap="LINE">Now I arise:</line>
-<para remap="STAGEDIR">Resumes his mantle</para>
+<stagedir remap="STAGEDIR">Resumes his mantle</stagedir>
 <line remap="LINE">Sit still, and hear the last of our sea-sorrow.</line>
 <line remap="LINE">Here in this island we arrived; and here</line>
 <line remap="LINE">Have I, thy schoolmaster, made thee more profit</line>
@@ -629,12 +629,12 @@ children!'--
 <line remap="LINE">Will ever after droop. Here cease more questions:</line>
 <line remap="LINE">Thou art inclined to sleep; 'tis a good dulness,</line>
 <line remap="LINE">And give it way: I know thou canst not choose.</line>
-<para remap="STAGEDIR">MIRANDA sleeps</para>
+<stagedir remap="STAGEDIR">MIRANDA sleeps</stagedir>
 <line remap="LINE">Come away, servant, come. I am ready now.</line>
 <line remap="LINE">Approach, my Ariel, come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ARIEL</para>
+<stagedir remap="STAGEDIR">Enter ARIEL</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ARIEL</speaker>
@@ -925,7 +925,7 @@ children!'--
 <line remap="LINE">To no sight but thine and mine, invisible</line>
 <line remap="LINE">To every eyeball else. Go take this shape</line>
 <line remap="LINE">And hither come in't: go, hence with diligence!</line>
-<para remap="STAGEDIR">Exit ARIEL</para>
+<stagedir remap="STAGEDIR">Exit ARIEL</stagedir>
 <line remap="LINE">Awake, dear heart, awake! thou hast slept well; Awake!</line>
 </linegroup></dialogue>
 
@@ -959,14 +959,14 @@ children!'--
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CALIBAN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>  There's wood enough within.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>  There's wood enough within.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
 <line remap="LINE">Come forth, I say! there's other business for thee:</line>
 <line remap="LINE">Come, thou tortoise! when?</line>
-<para remap="STAGEDIR">Re-enter ARIEL like a water-nymph</para>
+<stagedir remap="STAGEDIR">Re-enter ARIEL like a water-nymph</stagedir>
 <line remap="LINE">Fine apparition! My quaint Ariel,</line>
 <line remap="LINE">Hark in thine ear.</line>
 </linegroup></dialogue>
@@ -976,7 +976,7 @@ children!'--
 <line remap="LINE">My lord it shall be done.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
@@ -984,7 +984,7 @@ children!'--
 <line remap="LINE">Upon thy wicked dam, come forth!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CALIBAN</para>
+<stagedir remap="STAGEDIR">Enter CALIBAN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CALIBAN</speaker>
@@ -1077,7 +1077,7 @@ children!'--
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CALIBAN</speaker>
 <line remap="LINE">No, pray thee.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">I must obey: his art is of such power,</line>
 <line remap="LINE">It would control my dam's god, Setebos,</line>
 <line remap="LINE">and make a vassal of him.</line>
@@ -1086,9 +1086,9 @@ children!'--
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
 <line remap="LINE">So, slave; hence!</line>
-<para remap="STAGEDIR">Exit CALIBAN</para>
-<para remap="STAGEDIR">Re-enter ARIEL, invisible, playing and singing;
-FERDINAND following</para>
+<stagedir remap="STAGEDIR">Exit CALIBAN</stagedir>
+<stagedir remap="STAGEDIR">Re-enter ARIEL, invisible, playing and singing;
+FERDINAND following</stagedir>
 <bridgehead remap="SUBHEAD">ARIEL'S song.</bridgehead>
 <line remap="LINE">Come unto these yellow sands,</line>
 <line remap="LINE">And then take hands:</line>
@@ -1097,9 +1097,9 @@ FERDINAND following</para>
 <line remap="LINE">Foot it featly here and there;</line>
 <line remap="LINE">And, sweet sprites, the burthen bear.</line>
 <line remap="LINE">Hark, hark!</line>
-<line remap="LINE"><phrase remap="STAGEDIR">Burthen (dispersedly, within) Bow-wow</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Burthen (dispersedly, within) Bow-wow</inlinestagedir></line>
 <line remap="LINE">The watch-dogs bark!</line>
-<para remap="STAGEDIR">Burthen Bow-wow</para>
+<stagedir remap="STAGEDIR">Burthen Bow-wow</stagedir>
 <line remap="LINE">Hark, hark! I hear</line>
 <line remap="LINE">The strain of strutting chanticleer</line>
 <line remap="LINE">Cry, Cock-a-diddle-dow.</line>
@@ -1116,7 +1116,7 @@ FERDINAND following</para>
 <line remap="LINE">With its sweet air: thence I have follow'd it,</line>
 <line remap="LINE">Or it hath drawn me rather. But 'tis gone.</line>
 <line remap="LINE">No, it begins again.</line>
-<para remap="STAGEDIR">ARIEL sings</para>
+<stagedir remap="STAGEDIR">ARIEL sings</stagedir>
 <line remap="LINE">Full fathom five thy father lies;</line>
 <line remap="LINE">Of his bones are coral made;</line>
 <line remap="LINE">Those are pearls that were his eyes:</line>
@@ -1124,7 +1124,7 @@ FERDINAND following</para>
 <line remap="LINE">But doth suffer a sea-change</line>
 <line remap="LINE">Into something rich and strange.</line>
 <line remap="LINE">Sea-nymphs hourly ring his knell</line>
-<para remap="STAGEDIR">Burthen Ding-dong</para>
+<stagedir remap="STAGEDIR">Burthen Ding-dong</stagedir>
 <line remap="LINE">Hark! now I hear them,--Ding-dong, bell.</line>
 </linegroup></dialogue>
 
@@ -1167,7 +1167,7 @@ FERDINAND following</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase> It goes on, I see,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir> It goes on, I see,</line>
 <line remap="LINE">As my soul prompts it. Spirit, fine spirit! I'll free thee</line>
 <line remap="LINE">Within two days for this.</line>
 </linegroup></dialogue>
@@ -1224,12 +1224,12 @@ FERDINAND following</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase> The Duke of Milan</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir> The Duke of Milan</line>
 <line remap="LINE">And his more braver daughter could control thee,</line>
 <line remap="LINE">If now 'twere fit to do't. At the first sight</line>
 <line remap="LINE">They have changed eyes. Delicate Ariel,</line>
 <line remap="LINE">I'll set thee free for this.</line>
-<para remap="STAGEDIR">To FERDINAND</para>
+<stagedir remap="STAGEDIR">To FERDINAND</stagedir>
 <line remap="LINE">A word, good sir;</line>
 <line remap="LINE">I fear you have done yourself some wrong: a word.</line>
 </linegroup></dialogue>
@@ -1252,11 +1252,11 @@ FERDINAND following</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
 <line remap="LINE">Soft, sir! one word more.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">They are both in either's powers; but this swift business</line>
 <line remap="LINE">I must uneasy make, lest too light winning</line>
 <line remap="LINE">Make the prize light.</line>
-<para remap="STAGEDIR">To FERDINAND</para>
+<stagedir remap="STAGEDIR">To FERDINAND</stagedir>
 <line remap="LINE">One word more; I charge thee</line>
 <line remap="LINE">That thou attend me: thou dost here usurp</line>
 <line remap="LINE">The name thou owest not; and hast put thyself</line>
@@ -1293,7 +1293,7 @@ FERDINAND following</para>
 <line remap="LINE">Mine enemy has more power.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Draws, and is charmed from moving</para>
+<stagedir remap="STAGEDIR">Draws, and is charmed from moving</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MIRANDA</speaker>
@@ -1368,13 +1368,13 @@ FERDINAND following</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>                It works.</line>
-<para remap="STAGEDIR">To FERDINAND</para>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>                It works.</line>
+<stagedir remap="STAGEDIR">To FERDINAND</stagedir>
 <line remap="LINE">Come on.</line>
 <line remap="LINE">Thou hast done well, fine Ariel!</line>
-<para remap="STAGEDIR">To FERDINAND</para>
+<stagedir remap="STAGEDIR">To FERDINAND</stagedir>
 <line remap="LINE">Follow me.</line>
-<para remap="STAGEDIR">To ARIEL</para>
+<stagedir remap="STAGEDIR">To ARIEL</stagedir>
 <line remap="LINE">Hark what thou else shalt do me.</line>
 </linegroup></dialogue>
 
@@ -1403,7 +1403,7 @@ FERDINAND following</para>
 <line remap="LINE">Come, follow. Speak not for him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -1411,8 +1411,8 @@ FERDINAND following</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Another part of the island.</title>
-<para remap="STAGEDIR">Enter ALONSO, SEBASTIAN, ANTONIO, GONZALO,
-ADRIAN, FRANCISCO, and others</para>
+<stagedir remap="STAGEDIR">Enter ALONSO, SEBASTIAN, ANTONIO, GONZALO,
+ADRIAN, FRANCISCO, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GONZALO</speaker>
@@ -2024,7 +2024,7 @@ ADRIAN, FRANCISCO, and others</para>
 <line remap="LINE">in it five weeks without changing.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ARIEL, invisible, playing solemn music</para>
+<stagedir remap="STAGEDIR">Enter ARIEL, invisible, playing solemn music</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SEBASTIAN</speaker>
@@ -2048,7 +2048,7 @@ ADRIAN, FRANCISCO, and others</para>
 <line remap="LINE">Go sleep, and hear us.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">All sleep except ALONSO, SEBASTIAN, and ANTONIO</para>
+<stagedir remap="STAGEDIR">All sleep except ALONSO, SEBASTIAN, and ANTONIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ALONSO</speaker>
@@ -2077,7 +2077,7 @@ ADRIAN, FRANCISCO, and others</para>
 <line remap="LINE">Thank you. Wondrous heavy.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">ALONSO sleeps. Exit ARIEL</para>
+<stagedir remap="STAGEDIR">ALONSO sleeps. Exit ARIEL</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SEBASTIAN</speaker>
@@ -2333,15 +2333,15 @@ ADRIAN, FRANCISCO, and others</para>
 <line remap="LINE">O, but one word.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They talk apart</para>
-<para remap="STAGEDIR">Re-enter ARIEL, invisible</para>
+<stagedir remap="STAGEDIR">They talk apart</stagedir>
+<stagedir remap="STAGEDIR">Re-enter ARIEL, invisible</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ARIEL</speaker>
 <line remap="LINE">My master through his art foresees the danger</line>
 <line remap="LINE">That you, his friend, are in; and sends me forth--</line>
 <line remap="LINE">For else his project dies--to keep them living.</line>
-<para remap="STAGEDIR">Sings in GONZALO's ear</para>
+<stagedir remap="STAGEDIR">Sings in GONZALO's ear</stagedir>
 <line remap="LINE">While you here do snoring lie,</line>
 <line remap="LINE">Open-eyed conspiracy</line>
 <line remap="LINE">His time doth take.</line>
@@ -2361,7 +2361,7 @@ ADRIAN, FRANCISCO, and others</para>
 <line remap="LINE">Preserve the king.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They wake</para>
+<stagedir remap="STAGEDIR">They wake</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ALONSO</speaker>
@@ -2432,12 +2432,12 @@ ADRIAN, FRANCISCO, and others</para>
 <line remap="LINE">So, king, go safely on to seek thy son.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Another part of the island.</title>
-<para remap="STAGEDIR">Enter CALIBAN with a burden of wood. A noise of
-thunder heard</para>
+<stagedir remap="STAGEDIR">Enter CALIBAN with a burden of wood. A noise of
+thunder heard</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CALIBAN</speaker>
@@ -2455,7 +2455,7 @@ thunder heard</para>
 <line remap="LINE">Their pricks at my footfall; sometime am I</line>
 <line remap="LINE">All wound with adders who with cloven tongues</line>
 <line remap="LINE">Do hiss me into madness.</line>
-<para remap="STAGEDIR">Enter TRINCULO</para>
+<stagedir remap="STAGEDIR">Enter TRINCULO</stagedir>
 <line remap="LINE">Lo, now, lo!</line>
 <line remap="LINE">Here comes a spirit of his, and to torment me</line>
 <line remap="LINE">For bringing wood in slowly. I'll fall flat;</line>
@@ -2487,7 +2487,7 @@ thunder heard</para>
 <line remap="LINE">my opinion; hold it no longer: this is no fish,</line>
 <line remap="LINE">but an islander, that hath lately suffered by a</line>
 <line remap="LINE">thunderbolt.</line>
-<para remap="STAGEDIR">Thunder</para>
+<stagedir remap="STAGEDIR">Thunder</stagedir>
 <line remap="LINE">Alas, the storm is come again! my best way is to</line>
 <line remap="LINE">creep under his gaberdine; there is no other</line>
 <line remap="LINE">shelter hereabouts: misery acquaints a man with</line>
@@ -2495,15 +2495,15 @@ thunder heard</para>
 <line remap="LINE">dregs of the storm be past.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter STEPHANO, singing: a bottle in his hand</para>
+<stagedir remap="STAGEDIR">Enter STEPHANO, singing: a bottle in his hand</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">STEPHANO</speaker>
 <line remap="LINE">I shall no more to sea, to sea,</line>
 <line remap="LINE">Here shall I die ashore--</line>
 <line remap="LINE">This is a very scurvy tune to sing at a man's</line>
-<line remap="LINE">funeral: well, here's my comfort. <phrase remap="STAGEDIR">Drinks</phrase></line>
-<para remap="STAGEDIR">Sings</para>
+<line remap="LINE">funeral: well, here's my comfort. <inlinestagedir remap="STAGEDIR">Drinks</inlinestagedir></line>
+<stagedir remap="STAGEDIR">Sings</stagedir>
 <line remap="LINE">The master, the swabber, the boatswain and I,</line>
 <line remap="LINE">The gunner and his mate</line>
 <line remap="LINE">Loved Mall, Meg and Marian and Margery,</line>
@@ -2516,7 +2516,7 @@ thunder heard</para>
 <line remap="LINE">This is a scurvy tune too: but here's my comfort.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Drinks</para>
+<stagedir remap="STAGEDIR">Drinks</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CALIBAN</speaker>
@@ -2640,7 +2640,7 @@ thunder heard</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CALIBAN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  These be fine things, an if they be</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  These be fine things, an if they be</line>
 <line remap="LINE">not sprites.</line>
 <line remap="LINE">That's a brave god and bears celestial liquor.</line>
 <line remap="LINE">I will kneel to him.</line>
@@ -2797,7 +2797,7 @@ thunder heard</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CALIBAN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Sings drunkenly</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Sings drunkenly</inlinestagedir></line>
 <line remap="LINE">Farewell master; farewell, farewell!</line>
 </linegroup></dialogue>
 
@@ -2823,7 +2823,7 @@ thunder heard</para>
 <line remap="LINE">O brave monster! Lead the way.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -2831,7 +2831,7 @@ thunder heard</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Before PROSPERO'S Cell.</title>
-<para remap="STAGEDIR">Enter FERDINAND, bearing a log</para>
+<stagedir remap="STAGEDIR">Enter FERDINAND, bearing a log</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">FERDINAND</speaker>
@@ -2852,7 +2852,7 @@ thunder heard</para>
 <line remap="LINE">Most busy lest, when I do it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MIRANDA; and PROSPERO at a distance, unseen</para>
+<stagedir remap="STAGEDIR">Enter MIRANDA; and PROSPERO at a distance, unseen</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MIRANDA</speaker>
@@ -3040,7 +3040,7 @@ thunder heard</para>
 <line remap="LINE">A thousand thousand!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt FERDINAND and MIRANDA severally</para>
+<stagedir remap="STAGEDIR">Exeunt FERDINAND and MIRANDA severally</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
@@ -3051,11 +3051,11 @@ thunder heard</para>
 <line remap="LINE">Much business appertaining.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Another part of the island.</title>
-<para remap="STAGEDIR">Enter CALIBAN, STEPHANO, and TRINCULO</para>
+<stagedir remap="STAGEDIR">Enter CALIBAN, STEPHANO, and TRINCULO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">STEPHANO</speaker>
@@ -3164,7 +3164,7 @@ thunder heard</para>
 <line remap="LINE">and so shall Trinculo.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ARIEL, invisible</para>
+<stagedir remap="STAGEDIR">Enter ARIEL, invisible</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CALIBAN</speaker>
@@ -3270,7 +3270,7 @@ thunder heard</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">STEPHANO</speaker>
 <line remap="LINE">Do I so? take thou that.</line>
-<para remap="STAGEDIR">Beats TRINCULO</para>
+<stagedir remap="STAGEDIR">Beats TRINCULO</stagedir>
 <line remap="LINE">As you like this, give me the lie another time.</line>
 </linegroup></dialogue>
 
@@ -3382,7 +3382,7 @@ thunder heard</para>
 <speaker remap="SPEAKER">STEPHANO</speaker>
 <line remap="LINE">At thy request, monster, I will do reason, any</line>
 <line remap="LINE">reason. Come on, Trinculo, let us sing.</line>
-<para remap="STAGEDIR">Sings</para>
+<stagedir remap="STAGEDIR">Sings</stagedir>
 <line remap="LINE">Flout 'em and scout 'em</line>
 <line remap="LINE">And scout 'em and flout 'em</line>
 <line remap="LINE">Thought is free.</line>
@@ -3393,7 +3393,7 @@ thunder heard</para>
 <line remap="LINE">That's not the tune.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Ariel plays the tune on a tabour and pipe</para>
+<stagedir remap="STAGEDIR">Ariel plays the tune on a tabour and pipe</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">STEPHANO</speaker>
@@ -3478,12 +3478,12 @@ thunder heard</para>
 <line remap="LINE">Wilt come? I'll follow, Stephano.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Another part of the island.</title>
-<para remap="STAGEDIR">Enter ALONSO, SEBASTIAN, ANTONIO, GONZALO,
-ADRIAN, FRANCISCO, and others</para>
+<stagedir remap="STAGEDIR">Enter ALONSO, SEBASTIAN, ANTONIO, GONZALO,
+ADRIAN, FRANCISCO, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GONZALO</speaker>
@@ -3506,7 +3506,7 @@ ADRIAN, FRANCISCO, and others</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTONIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to SEBASTIAN</phrase>  I am right glad that he's so</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to SEBASTIAN</inlinestagedir>  I am right glad that he's so</line>
 <line remap="LINE">out of hope.</line>
 <line remap="LINE">Do not, for one repulse, forego the purpose</line>
 <line remap="LINE">That you resolved to effect.</line>
@@ -3514,13 +3514,13 @@ ADRIAN, FRANCISCO, and others</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SEBASTIAN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to ANTONIO</phrase>  The next advantage</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to ANTONIO</inlinestagedir>  The next advantage</line>
 <line remap="LINE">Will we take throughly.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTONIO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to SEBASTIAN</phrase>  Let it be to-night;</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to SEBASTIAN</inlinestagedir>  Let it be to-night;</line>
 <line remap="LINE">For, now they are oppress'd with travel, they</line>
 <line remap="LINE">Will not, nor cannot, use such vigilance</line>
 <line remap="LINE">As when they are fresh.</line>
@@ -3528,10 +3528,10 @@ ADRIAN, FRANCISCO, and others</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SEBASTIAN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to ANTONIO</phrase>  I say, to-night: no more.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to ANTONIO</inlinestagedir>  I say, to-night: no more.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Solemn and strange music</para>
+<stagedir remap="STAGEDIR">Solemn and strange music</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ALONSO</speaker>
@@ -3543,11 +3543,11 @@ ADRIAN, FRANCISCO, and others</para>
 <line remap="LINE">Marvellous sweet music!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PROSPERO above, invisible. Enter several
+<stagedir remap="STAGEDIR">Enter PROSPERO above, invisible. Enter several
 strange Shapes, bringing in a banquet;
 they dance about it with gentle actions of
 salutation; and, inviting the King, &amp;c. to
-eat, they depart</para>
+eat, they depart</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ALONSO</speaker>
@@ -3585,7 +3585,7 @@ eat, they depart</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>              Honest lord,</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>              Honest lord,</line>
 <line remap="LINE">Thou hast said well; for some of you there present</line>
 <line remap="LINE">Are worse than devils.</line>
 </linegroup></dialogue>
@@ -3600,7 +3600,7 @@ eat, they depart</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase> Praise in departing.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir> Praise in departing.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -3639,9 +3639,9 @@ eat, they depart</para>
 <line remap="LINE">Stand to and do as we.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Thunder and lightning. Enter ARIEL, like a
+<stagedir remap="STAGEDIR">Thunder and lightning. Enter ARIEL, like a
 harpy; claps his wings upon the table; and,
-with a quaint device, the banquet vanishes</para>
+with a quaint device, the banquet vanishes</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ARIEL</speaker>
@@ -3653,7 +3653,7 @@ with a quaint device, the banquet vanishes</para>
 <line remap="LINE">Being most unfit to live. I have made you mad;</line>
 <line remap="LINE">And even with such-like valour men hang and drown</line>
 <line remap="LINE">Their proper selves.</line>
-<para remap="STAGEDIR">ALONSO, SEBASTIAN &amp;c. draw their swords</para>
+<stagedir remap="STAGEDIR">ALONSO, SEBASTIAN &amp;c. draw their swords</stagedir>
 <line remap="LINE">You fools! I and my fellows</line>
 <line remap="LINE">Are ministers of Fate: the elements,</line>
 <line remap="LINE">Of whom your swords are temper'd, may as well</line>
@@ -3679,9 +3679,9 @@ with a quaint device, the banquet vanishes</para>
 <line remap="LINE">And a clear life ensuing.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">He vanishes in thunder; then, to soft music
+<stagedir remap="STAGEDIR">He vanishes in thunder; then, to soft music
 enter the Shapes again, and dance, with
-mocks and mows, and carrying out the table</para>
+mocks and mows, and carrying out the table</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
@@ -3698,7 +3698,7 @@ mocks and mows, and carrying out the table</para>
 <line remap="LINE">And his and mine loved darling.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit above</para>
+<stagedir remap="STAGEDIR">Exit above</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GONZALO</speaker>
@@ -3718,7 +3718,7 @@ mocks and mows, and carrying out the table</para>
 <line remap="LINE">And with him there lie mudded.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SEBASTIAN</speaker>
@@ -3731,7 +3731,7 @@ mocks and mows, and carrying out the table</para>
 <line remap="LINE">I'll be thy second.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt SEBASTIAN, and ANTONIO</para>
+<stagedir remap="STAGEDIR">Exeunt SEBASTIAN, and ANTONIO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GONZALO</speaker>
@@ -3748,7 +3748,7 @@ mocks and mows, and carrying out the table</para>
 <line remap="LINE">Follow, I pray you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -3756,7 +3756,7 @@ mocks and mows, and carrying out the table</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Before PROSPERO'S cell.</title>
-<para remap="STAGEDIR">Enter PROSPERO, FERDINAND, and MIRANDA</para>
+<stagedir remap="STAGEDIR">Enter PROSPERO, FERDINAND, and MIRANDA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
@@ -3814,7 +3814,7 @@ mocks and mows, and carrying out the table</para>
 <line remap="LINE">What, Ariel! my industrious servant, Ariel!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ARIEL</para>
+<stagedir remap="STAGEDIR">Enter ARIEL</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ARIEL</speaker>
@@ -3863,7 +3863,7 @@ mocks and mows, and carrying out the table</para>
 <line remap="LINE">Well, I conceive.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
@@ -3888,8 +3888,8 @@ mocks and mows, and carrying out the table</para>
 <line remap="LINE">No tongue! all eyes! be silent.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Soft music</para>
-<para remap="STAGEDIR">Enter IRIS</para>
+<stagedir remap="STAGEDIR">Soft music</stagedir>
+<stagedir remap="STAGEDIR">Enter IRIS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">IRIS</speaker>
@@ -3911,7 +3911,7 @@ mocks and mows, and carrying out the table</para>
 <line remap="LINE">Approach, rich Ceres, her to entertain.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CERES</para>
+<stagedir remap="STAGEDIR">Enter CERES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CERES</speaker>
@@ -3963,7 +3963,7 @@ mocks and mows, and carrying out the table</para>
 <line remap="LINE">Great Juno, comes; I know her by her gait.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter JUNO</para>
+<stagedir remap="STAGEDIR">Enter JUNO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JUNO</speaker>
@@ -3972,7 +3972,7 @@ mocks and mows, and carrying out the table</para>
 <line remap="LINE">And honour'd in their issue.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They sing:</para>
+<stagedir remap="STAGEDIR">They sing:</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">JUNO</speaker>
@@ -4015,8 +4015,8 @@ mocks and mows, and carrying out the table</para>
 <line remap="LINE">Makes this place Paradise.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Juno and Ceres whisper, and send Iris on
-employment</para>
+<stagedir remap="STAGEDIR">Juno and Ceres whisper, and send Iris on
+employment</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
@@ -4034,7 +4034,7 @@ employment</para>
 <line remap="LINE">Answer your summons; Juno does command:</line>
 <line remap="LINE">Come, temperate nymphs, and help to celebrate</line>
 <line remap="LINE">A contract of true love; be not too late.</line>
-<para remap="STAGEDIR">Enter certain Nymphs</para>
+<stagedir remap="STAGEDIR">Enter certain Nymphs</stagedir>
 <line remap="LINE">You sunburnt sicklemen, of August weary,</line>
 <line remap="LINE">Come hither from the furrow and be merry:</line>
 <line remap="LINE">Make holiday; your rye-straw hats put on</line>
@@ -4042,20 +4042,20 @@ employment</para>
 <line remap="LINE">In country footing.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter certain Reapers, properly habited: they
+<stagedir remap="STAGEDIR">Enter certain Reapers, properly habited: they
 join with the Nymphs in a graceful dance;
 towards the end whereof PROSPERO starts
 suddenly, and speaks; after which, to a
 strange, hollow, and confused noise, they
-heavily vanish</para>
+heavily vanish</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  I had forgot that foul conspiracy</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  I had forgot that foul conspiracy</line>
 <line remap="LINE">Of the beast Caliban and his confederates</line>
 <line remap="LINE">Against my life: the minute of their plot</line>
 <line remap="LINE">Is almost come.</line>
-<para remap="STAGEDIR">To the Spirits</para>
+<stagedir remap="STAGEDIR">To the Spirits</stagedir>
 <line remap="LINE">Well done! avoid; no more!</line>
 </linegroup></dialogue>
 
@@ -4099,14 +4099,14 @@ heavily vanish</para>
 <line remap="LINE">We wish your peace.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
 <line remap="LINE">Come with a thought I thank thee, Ariel: come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter ARIEL</para>
+<stagedir remap="STAGEDIR">Enter ARIEL</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ARIEL</speaker>
@@ -4163,7 +4163,7 @@ heavily vanish</para>
 <line remap="LINE">I go, I go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
@@ -4173,12 +4173,12 @@ heavily vanish</para>
 <line remap="LINE">And as with age his body uglier grows,</line>
 <line remap="LINE">So his mind cankers. I will plague them all,</line>
 <line remap="LINE">Even to roaring.</line>
-<para remap="STAGEDIR">Re-enter ARIEL, loaden with glistering apparel, &amp;c</para>
+<stagedir remap="STAGEDIR">Re-enter ARIEL, loaden with glistering apparel, &amp;c</stagedir>
 <line remap="LINE">Come, hang them on this line.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">PROSPERO and ARIEL remain invisible. Enter
-CALIBAN, STEPHANO, and TRINCULO, all wet</para>
+<stagedir remap="STAGEDIR">PROSPERO and ARIEL remain invisible. Enter
+CALIBAN, STEPHANO, and TRINCULO, all wet</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CALIBAN</speaker>
@@ -4343,9 +4343,9 @@ CALIBAN, STEPHANO, and TRINCULO, all wet</para>
 <line remap="LINE">Ay, and this.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">A noise of hunters heard. Enter divers Spirits,
+<stagedir remap="STAGEDIR">A noise of hunters heard. Enter divers Spirits,
 in shape of dogs and hounds, and hunt them about,
-PROSPERO and ARIEL setting them on</para>
+PROSPERO and ARIEL setting them on</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
@@ -4360,8 +4360,8 @@ PROSPERO and ARIEL setting them on</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
 <line remap="LINE">Fury, Fury! there, Tyrant, there! hark! hark!</line>
-<para remap="STAGEDIR">CALIBAN, STEPHANO, and TRINCULO, are
-driven out</para>
+<stagedir remap="STAGEDIR">CALIBAN, STEPHANO, and TRINCULO, are
+driven out</stagedir>
 <line remap="LINE">Go charge my goblins that they grind their joints</line>
 <line remap="LINE">With dry convulsions, shorten up their sinews</line>
 <line remap="LINE">With aged cramps, and more pinch-spotted make them</line>
@@ -4382,7 +4382,7 @@ driven out</para>
 <line remap="LINE">Follow, and do me service.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -4390,7 +4390,7 @@ driven out</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Before PROSPERO'S cell.</title>
-<para remap="STAGEDIR">Enter PROSPERO in his magic robes, and ARIEL</para>
+<stagedir remap="STAGEDIR">Enter PROSPERO in his magic robes, and ARIEL</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
@@ -4461,7 +4461,7 @@ driven out</para>
 <line remap="LINE">I'll fetch them, sir.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
@@ -4490,14 +4490,14 @@ driven out</para>
 <line remap="LINE">Bury it certain fathoms in the earth,</line>
 <line remap="LINE">And deeper than did ever plummet sound</line>
 <line remap="LINE">I'll drown my book.</line>
-<para remap="STAGEDIR">Solemn music</para>
-<para remap="STAGEDIR">Re-enter ARIEL before: then ALONSO, with a
+<stagedir remap="STAGEDIR">Solemn music</stagedir>
+<stagedir remap="STAGEDIR">Re-enter ARIEL before: then ALONSO, with a
 frantic gesture, attended by GONZALO;
 SEBASTIAN and ANTONIO in like manner,
 attended by ADRIAN and FRANCISCO   they all
 enter the circle which PROSPERO had made,
 and there stand charmed; which PROSPERO
-observing, speaks:</para>
+observing, speaks:</stagedir>
 <line remap="LINE">A solemn air and the best comforter</line>
 <line remap="LINE">To an unsettled fancy cure thy brains,</line>
 <line remap="LINE">Now useless, boil'd within thy skull! There stand,</line>
@@ -4528,7 +4528,7 @@ observing, speaks:</para>
 <line remap="LINE">I will discase me, and myself present</line>
 <line remap="LINE">As I was sometime Milan: quickly, spirit;</line>
 <line remap="LINE">Thou shalt ere long be free.</line>
-<para remap="STAGEDIR">ARIEL sings and helps to attire him</para>
+<stagedir remap="STAGEDIR">ARIEL sings and helps to attire him</stagedir>
 <line remap="LINE">Where the bee sucks. there suck I:</line>
 <line remap="LINE">In a cowslip's bell I lie;</line>
 <line remap="LINE">There I couch when owls do cry.</line>
@@ -4555,7 +4555,7 @@ observing, speaks:</para>
 <line remap="LINE">Or ere your pulse twice beat.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GONZALO</speaker>
@@ -4606,7 +4606,7 @@ observing, speaks:</para>
 <line remap="LINE">You do yet taste</line>
 <line remap="LINE">Some subtilties o' the isle, that will not let you</line>
 <line remap="LINE">Believe things certain. Welcome, my friends all!</line>
-<para remap="STAGEDIR">Aside to SEBASTIAN and ANTONIO</para>
+<stagedir remap="STAGEDIR">Aside to SEBASTIAN and ANTONIO</stagedir>
 <line remap="LINE">But you, my brace of lords, were I so minded,</line>
 <line remap="LINE">I here could pluck his highness' frown upon you</line>
 <line remap="LINE">And justify you traitors: at this time</line>
@@ -4615,7 +4615,7 @@ observing, speaks:</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SEBASTIAN</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  The devil speaks in him.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  The devil speaks in him.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -4702,8 +4702,8 @@ observing, speaks:</para>
 <line remap="LINE">As much as me my dukedom.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Here PROSPERO discovers FERDINAND and MIRANDA
-playing at chess</para>
+<stagedir remap="STAGEDIR">Here PROSPERO discovers FERDINAND and MIRANDA
+playing at chess</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MIRANDA</speaker>
@@ -4740,7 +4740,7 @@ playing at chess</para>
 <line remap="LINE">I have cursed them without cause.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Kneels</para>
+<stagedir remap="STAGEDIR">Kneels</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ALONSO</speaker>
@@ -4826,7 +4826,7 @@ playing at chess</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ALONSO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To FERDINAND and MIRANDA</phrase>  Give me your hands:</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To FERDINAND and MIRANDA</inlinestagedir>  Give me your hands:</line>
 <line remap="LINE">Let grief and sorrow still embrace his heart</line>
 <line remap="LINE">That doth not wish you joy!</line>
 </linegroup></dialogue>
@@ -4834,8 +4834,8 @@ playing at chess</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GONZALO</speaker>
 <line remap="LINE">Be it so! Amen!</line>
-<para remap="STAGEDIR">Re-enter ARIEL, with the Master and Boatswain
-amazedly following</para>
+<stagedir remap="STAGEDIR">Re-enter ARIEL, with the Master and Boatswain
+amazedly following</stagedir>
 <line remap="LINE">O, look, sir, look, sir! here is more of us:</line>
 <line remap="LINE">I prophesied, if a gallows were on land,</line>
 <line remap="LINE">This fellow could not drown. Now, blasphemy,</line>
@@ -4854,13 +4854,13 @@ amazedly following</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ARIEL</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to PROSPERO</phrase>  Sir, all this service</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to PROSPERO</inlinestagedir>  Sir, all this service</line>
 <line remap="LINE">Have I done since I went.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to ARIEL</phrase>  My tricksy spirit!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to ARIEL</inlinestagedir>  My tricksy spirit!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -4887,12 +4887,12 @@ amazedly following</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ARIEL</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to PROSPERO</phrase>          Was't well done?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to PROSPERO</inlinestagedir>          Was't well done?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside to ARIEL</phrase>  Bravely, my diligence. Thou shalt be free.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside to ARIEL</inlinestagedir>  Bravely, my diligence. Thou shalt be free.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -4912,18 +4912,18 @@ amazedly following</para>
 <line remap="LINE">Which to you shall seem probable, of every</line>
 <line remap="LINE">These happen'd accidents; till when, be cheerful</line>
 <line remap="LINE">And think of each thing well.</line>
-<para remap="STAGEDIR">Aside to ARIEL</para>
+<stagedir remap="STAGEDIR">Aside to ARIEL</stagedir>
 <line remap="LINE">Come hither, spirit:</line>
 <line remap="LINE">Set Caliban and his companions free;</line>
 <line remap="LINE">Untie the spell.</line>
-<para remap="STAGEDIR">Exit ARIEL</para>
+<stagedir remap="STAGEDIR">Exit ARIEL</stagedir>
 <line remap="LINE">How fares my gracious sir?</line>
 <line remap="LINE">There are yet missing of your company</line>
 <line remap="LINE">Some few odd lads that you remember not.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter ARIEL, driving in CALIBAN, STEPHANO
-and TRINCULO, in their stolen apparel</para>
+<stagedir remap="STAGEDIR">Re-enter ARIEL, driving in CALIBAN, STEPHANO
+and TRINCULO, in their stolen apparel</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">STEPHANO</speaker>
@@ -5026,7 +5026,7 @@ and TRINCULO, in their stolen apparel</para>
 <line remap="LINE">This is a strange thing as e'er I look'd on.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Pointing to Caliban</para>
+<stagedir remap="STAGEDIR">Pointing to Caliban</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
@@ -5059,7 +5059,7 @@ and TRINCULO, in their stolen apparel</para>
 <line remap="LINE">Or stole it, rather.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt CALIBAN, STEPHANO, and TRINCULO</para>
+<stagedir remap="STAGEDIR">Exeunt CALIBAN, STEPHANO, and TRINCULO</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PROSPERO</speaker>
@@ -5090,12 +5090,12 @@ and TRINCULO, in their stolen apparel</para>
 <line remap="LINE">And promise you calm seas, auspicious gales</line>
 <line remap="LINE">And sail so expeditious that shall catch</line>
 <line remap="LINE">Your royal fleet far off.</line>
-<para remap="STAGEDIR">Aside to ARIEL</para>
+<stagedir remap="STAGEDIR">Aside to ARIEL</stagedir>
 <line remap="LINE">My Ariel, chick,</line>
 <line remap="LINE">That is thy charge: then to the elements</line>
 <line remap="LINE">Be free, and fare thou well! Please you, draw near.</line>
 </linegroup></dialogue>
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="EPILOGUE"><title remap="TITLE">EPILOGUE</title>

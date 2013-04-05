@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">Pericles, Prince of Tyre</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">Pericles, Prince of Tyre</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Pericles, Prince of Tyre</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -31,17 +31,17 @@
 <para><personname remap="PERSONA">Lords, Knights, Gentlemen, Sailors, Pirates, Fishermen, and Messengers. </personname></para>
 <para><personname remap="PERSONA">DIANA</personname></para>
 <para><personname remap="PERSONA">GOWER, as Chorus.</personname></para>
-    <para remap="SCNDESCR">SCENE  Dispersedly in various countries.</para>
-    
 </preface>
+
+<para remap="SCNDESCR">SCENE  Dispersedly in various countries.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="PROLOGUE"><title remap="TITLE">[Prologue]</title>
-<para remap="STAGEDIR">Enter GOWER</para>
-<para remap="STAGEDIR">Before the palace of Antioch</para>
+<stagedir remap="STAGEDIR">Enter GOWER</stagedir>
+<stagedir remap="STAGEDIR">Before the palace of Antioch</stagedir>
 <dialogue remap="SPEECH"><linegroup><speaker remap="SPEAKER">[GOWER]</speaker>
 <line remap="LINE">To sing a song that old was sung,</line>
 <line remap="LINE">From ashes ancient Gower is come;</line>
@@ -86,11 +86,11 @@
 <line remap="LINE">What now ensues, to the judgment of your eye</line>
 <line remap="LINE">I give, my cause who best can justify.</line>
 </linegroup></dialogue>
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Antioch. A room in the palace.</title>
-<para remap="STAGEDIR">Enter ANTIOCHUS, Prince PERICLES, and followers</para>
+<stagedir remap="STAGEDIR">Enter ANTIOCHUS, Prince PERICLES, and followers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTIOCHUS</speaker>
@@ -115,7 +115,7 @@
 <line remap="LINE">To knit in her their best perfections.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Music. Enter the Daughter of ANTIOCHUS</para>
+<stagedir remap="STAGEDIR">Music. Enter the Daughter of ANTIOCHUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
@@ -177,7 +177,7 @@
 <line remap="LINE">And all good men, as every prince should do;</line>
 <line remap="LINE">My riches to the earth from whence they came;</line>
 <line remap="LINE">But my unspotted fire of love to you.</line>
-<para remap="STAGEDIR">To the Daughter of ANTIOCHUS</para>
+<stagedir remap="STAGEDIR">To the Daughter of ANTIOCHUS</stagedir>
 <line remap="LINE">Thus ready for the way of life or death,</line>
 <line remap="LINE">I wait the sharpest blow, Antiochus.</line>
 </linegroup></dialogue>
@@ -200,7 +200,7 @@
 <line remap="LINE">Like a bold champion, I assume the lists,</line>
 <line remap="LINE">Nor ask advice of any other thought</line>
 <line remap="LINE">But faithfulness and courage.</line>
-<para remap="STAGEDIR">He reads the riddle</para>
+<stagedir remap="STAGEDIR">He reads the riddle</stagedir>
 <line remap="LINE">I am no viper, yet I feed</line>
 <line remap="LINE">On mother's flesh which did me breed.</line>
 <line remap="LINE">I sought a husband, in which labour</line>
@@ -214,7 +214,7 @@
 <line remap="LINE">Why cloud they not their sights perpetually,</line>
 <line remap="LINE">If this be true, which makes me pale to read it?</line>
 <line remap="LINE">Fair glass of light, I loved you, and could still,</line>
-<para remap="STAGEDIR">Takes hold of the hand of the Daughter of ANTIOCHUS</para>
+<stagedir remap="STAGEDIR">Takes hold of the hand of the Daughter of ANTIOCHUS</stagedir>
 <line remap="LINE">Were not this glorious casket stored with ill:</line>
 <line remap="LINE">But I must tell you, now my thoughts revolt</line>
 <line remap="LINE">For he's no man on whom perfections wait</line>
@@ -260,7 +260,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTIOCHUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Heaven, that I had thy head! he has found</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Heaven, that I had thy head! he has found</line>
 <line remap="LINE">the meaning:</line>
 <line remap="LINE">But I will gloze with him.--Young prince of Tyre,</line>
 <line remap="LINE">Though by the tenor of our strict edict,</line>
@@ -275,7 +275,7 @@
 <line remap="LINE">As doth befit our honour and your worth.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but PERICLES</para>
+<stagedir remap="STAGEDIR">Exeunt all but PERICLES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
@@ -303,8 +303,8 @@
 <line remap="LINE">By flight I'll shun the danger which I fear.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Re-enter ANTIOCHUS</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Re-enter ANTIOCHUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTIOCHUS</speaker>
@@ -318,7 +318,7 @@
 <line remap="LINE">Who attends us there?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter THALIARD</para>
+<stagedir remap="STAGEDIR">Enter THALIARD</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THALIARD</speaker>
@@ -346,7 +346,7 @@
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTIOCHUS</speaker>
 <line remap="LINE">Enough.</line>
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 <line remap="LINE">Let your breath cool yourself, telling your haste.</line>
 </linegroup></dialogue>
 
@@ -355,7 +355,7 @@
 <line remap="LINE">My lord, prince Pericles is fled.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTIOCHUS</speaker>
@@ -376,20 +376,20 @@
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">ANTIOCHUS</speaker>
 <line remap="LINE">Thaliard, adieu!</line>
-<para remap="STAGEDIR">Exit THALIARD</para>
+<stagedir remap="STAGEDIR">Exit THALIARD</stagedir>
 <line remap="LINE">Till Pericles be dead,</line>
 <line remap="LINE">My heart can lend no succor to my head.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Tyre. A room in the palace.</title>
-<para remap="STAGEDIR">Enter PERICLES</para>
+<stagedir remap="STAGEDIR">Enter PERICLES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To Lords without</phrase>  Let none disturb us.--Why should</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To Lords without</inlinestagedir>  Let none disturb us.--Why should</line>
 <line remap="LINE">this change of thoughts,</line>
 <line remap="LINE">The sad companion, dull-eyed melancholy,</line>
 <line remap="LINE">Be my so used a guest as not an hour,</line>
@@ -425,7 +425,7 @@
 <line remap="LINE">And punish that before that he would punish.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HELICANUS, with other Lords</para>
+<stagedir remap="STAGEDIR">Enter HELICANUS, with other Lords</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Lord</speaker>
@@ -458,7 +458,7 @@
 <line remap="LINE">All leave us else; but let your cares o'erlook</line>
 <line remap="LINE">What shipping and what lading's in our haven,</line>
 <line remap="LINE">And then return to us.</line>
-<para remap="STAGEDIR">Exeunt Lords</para>
+<stagedir remap="STAGEDIR">Exeunt Lords</stagedir>
 <line remap="LINE">Helicanus, thou</line>
 <line remap="LINE">Hast moved us: what seest thou in our looks?</line>
 </linegroup></dialogue>
@@ -488,7 +488,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HELICANUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Kneeling</phrase></line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Kneeling</inlinestagedir></line>
 <line remap="LINE">I have ground the axe myself;</line>
 <line remap="LINE">Do you but strike the blow.</line>
 </linegroup></dialogue>
@@ -599,11 +599,11 @@
 <line remap="LINE">Thou show'dst a subject's shine, I a true prince.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Tyre. An ante-chamber in the palace.</title>
-<para remap="STAGEDIR">Enter THALIARD</para>
+<stagedir remap="STAGEDIR">Enter THALIARD</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THALIARD</speaker>
@@ -618,7 +618,7 @@
 <line remap="LINE">be one! Hush! here come the lords of Tyre.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter HELICANUS and ESCANES, with other Lords of Tyre</para>
+<stagedir remap="STAGEDIR">Enter HELICANUS and ESCANES, with other Lords of Tyre</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HELICANUS</speaker>
@@ -630,7 +630,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THALIARD</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  How! the king gone!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  How! the king gone!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -643,7 +643,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THALIARD</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>          What from Antioch?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>          What from Antioch?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -658,7 +658,7 @@
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THALIARD</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Well, I perceive</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Well, I perceive</line>
 <line remap="LINE">I shall not be hang'd now, although I would;</line>
 <line remap="LINE">But since he's gone, the king's seas must please:</line>
 <line remap="LINE">He 'scaped the land, to perish at the sea.</line>
@@ -687,12 +687,12 @@
 <line remap="LINE">As friends to Antioch, we may feast in Tyre.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Tarsus. A room in the Governor's house.</title>
-<para remap="STAGEDIR">Enter CLEON, the governor of Tarsus, with DIONYZA,
-and others</para>
+<stagedir remap="STAGEDIR">Enter CLEON, the governor of Tarsus, with DIONYZA,
+and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEON</speaker>
@@ -785,7 +785,7 @@ and others</para>
 <line remap="LINE">The misery of Tarsus may be theirs.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Lord</para>
+<stagedir remap="STAGEDIR">Enter a Lord</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lord</speaker>
@@ -842,7 +842,7 @@ and others</para>
 <line remap="LINE">I go, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CLEON</speaker>
@@ -850,7 +850,7 @@ and others</para>
 <line remap="LINE">If wars, we are unable to resist.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PERICLES with Attendants</para>
+<stagedir remap="STAGEDIR">Enter PERICLES with Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
@@ -896,14 +896,14 @@ and others</para>
 <line remap="LINE">Which welcome we'll accept; feast here awhile,</line>
 <line remap="LINE">Until our stars that frown lend us a smile.</line>
 </linegroup></dialogue>
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 </chapter>
 
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="PROLOGUE"><title remap="TITLE">[Prologue]</title>
-<para remap="STAGEDIR">Enter GOWER</para>
+<stagedir remap="STAGEDIR">Enter GOWER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GOWER</speaker>
@@ -924,12 +924,12 @@ and others</para>
 <line remap="LINE">But tidings to the contrary</line>
 <line remap="LINE">Are brought your eyes; what need speak I?</line>
 <bridgehead remap="SUBHEAD">DUMB SHOW.</bridgehead>
-<para remap="STAGEDIR">Enter at one door PERICLES talking with CLEON; all
+<stagedir remap="STAGEDIR">Enter at one door PERICLES talking with CLEON; all
 the train with them. Enter at another door a
 Gentleman, with a letter to PERICLES; PERICLES
 shows the letter to CLEON; gives the Messenger a
 reward, and knights him. Exit PERICLES at one
-door, and CLEON at another</para>
+door, and CLEON at another</stagedir>
 <line remap="LINE">Good Helicane, that stay'd at home,</line>
 <line remap="LINE">Not to eat honey like a drone</line>
 <line remap="LINE">From others' labours; for though he strive</line>
@@ -956,11 +956,11 @@ door, and CLEON at another</para>
 <line remap="LINE">Pardon old Gower,--this longs the text.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Pentapolis. An open place by the sea-side.</title>
-<para remap="STAGEDIR">Enter PERICLES, wet</para>
+<stagedir remap="STAGEDIR">Enter PERICLES, wet</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
@@ -977,7 +977,7 @@ door, and CLEON at another</para>
 <line remap="LINE">Here to have death in peace is all he'll crave.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter three FISHERMEN</para>
+<stagedir remap="STAGEDIR">Enter three FISHERMEN</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Fisherman</speaker>
@@ -1041,7 +1041,7 @@ door, and CLEON at another</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  A pretty moral.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  A pretty moral.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1067,7 +1067,7 @@ door, and CLEON at another</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Simonides!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Simonides!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1078,7 +1078,7 @@ door, and CLEON at another</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  How from the finny subject of the sea</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  How from the finny subject of the sea</line>
 <line remap="LINE">These fishers tell the infirmities of men;</line>
 <line remap="LINE">And from their watery empire recollect</line>
 <line remap="LINE">All that may men approve or men detect!</line>
@@ -1189,11 +1189,11 @@ door, and CLEON at another</para>
 <line remap="LINE">net.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit with Third Fisherman</para>
+<stagedir remap="STAGEDIR">Exit with Third Fisherman</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  How well this honest mirth becomes their labour!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  How well this honest mirth becomes their labour!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1250,7 +1250,7 @@ door, and CLEON at another</para>
 <line remap="LINE">cannot get, he may lawfully deal for--his wife's soul.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter Second and Third Fishermen, drawing up a net</para>
+<stagedir remap="STAGEDIR">Re-enter Second and Third Fishermen, drawing up a net</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Fisherman</speaker>
@@ -1346,12 +1346,12 @@ door, and CLEON at another</para>
 <line remap="LINE">This day I'll rise, or else add ill to ill.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same. A public way or platform leading to the lists. A pavilion by the side of it for the reception of King, Princess, Lords, &amp;c.</title>
 
-<para remap="STAGEDIR">Enter SIMONIDES, THAISA, Lords, and Attendants</para>
+<stagedir remap="STAGEDIR">Enter SIMONIDES, THAISA, Lords, and Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIMONIDES</speaker>
@@ -1372,7 +1372,7 @@ door, and CLEON at another</para>
 <line remap="LINE">For men to see, and seeing wonder at.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit a Lord</para>
+<stagedir remap="STAGEDIR">Exit a Lord</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THAISA</speaker>
@@ -1395,8 +1395,8 @@ door, and CLEON at another</para>
 <line remap="LINE">Which, to preserve mine honour, I'll perform.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Knight; he passes over, and his Squire
-presents his shield to the Princess</para>
+<stagedir remap="STAGEDIR">Enter a Knight; he passes over, and his Squire
+presents his shield to the Princess</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIMONIDES</speaker>
@@ -1414,7 +1414,7 @@ presents his shield to the Princess</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIMONIDES</speaker>
 <line remap="LINE">He loves you well that holds his life of you.</line>
-<para remap="STAGEDIR">The Second Knight passes over</para>
+<stagedir remap="STAGEDIR">The Second Knight passes over</stagedir>
 <line remap="LINE">Who is the second that presents himself?</line>
 </linegroup></dialogue>
 
@@ -1426,7 +1426,7 @@ presents his shield to the Princess</para>
 <line remap="LINE">The motto thus, in Spanish, 'Piu por dulzura que por fuerza.'</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The Third Knight passes over</para>
+<stagedir remap="STAGEDIR">The Third Knight passes over</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIMONIDES</speaker>
@@ -1440,7 +1440,7 @@ presents his shield to the Princess</para>
 <line remap="LINE">The word, 'Me pompae provexit apex.'</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The Fourth Knight passes over</para>
+<stagedir remap="STAGEDIR">The Fourth Knight passes over</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIMONIDES</speaker>
@@ -1459,7 +1459,7 @@ presents his shield to the Princess</para>
 <line remap="LINE">Which can as well inflame as it can kill.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The Fifth Knight passes over</para>
+<stagedir remap="STAGEDIR">The Fifth Knight passes over</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THAISA</speaker>
@@ -1468,7 +1468,7 @@ presents his shield to the Princess</para>
 <line remap="LINE">The motto thus, 'Sic spectanda fides.'</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The Sixth Knight, PERICLES, passes over</para>
+<stagedir remap="STAGEDIR">The Sixth Knight, PERICLES, passes over</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIMONIDES</speaker>
@@ -1519,13 +1519,13 @@ presents his shield to the Princess</para>
 <line remap="LINE">Into the gallery.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
-<para remap="STAGEDIR">Great shouts within and all cry 'The mean knight!'</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
+<stagedir remap="STAGEDIR">Great shouts within and all cry 'The mean knight!'</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The same. A hall of state: a banquet prepared.</title>
-<para remap="STAGEDIR">Enter SIMONIDES, THAISA, Lords, Attendants, and
-Knights, from tilting</para>
+<stagedir remap="STAGEDIR">Enter SIMONIDES, THAISA, Lords, Attendants, and
+Knights, from tilting</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIMONIDES</speaker>
@@ -1706,7 +1706,7 @@ Knights, from tilting</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THAISA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Now, by the gods, he could not please me better.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Now, by the gods, he could not please me better.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1769,7 +1769,7 @@ Knights, from tilting</para>
 <line remap="LINE">I will not have excuse, with saying this</line>
 <line remap="LINE">Loud music is too harsh for ladies' heads,</line>
 <line remap="LINE">Since they love men in arms as well as beds.</line>
-<para remap="STAGEDIR">The Knights dance</para>
+<stagedir remap="STAGEDIR">The Knights dance</stagedir>
 <line remap="LINE">So, this was well ask'd,'twas so well perform'd.</line>
 <line remap="LINE">Come, sir;</line>
 <line remap="LINE">Here is a lady that wants breathing too:</line>
@@ -1787,13 +1787,13 @@ Knights, from tilting</para>
 <speaker remap="SPEAKER">SIMONIDES</speaker>
 <line remap="LINE">O, that's as much as you would be denied</line>
 <line remap="LINE">Of your fair courtesy.</line>
-<para remap="STAGEDIR">The Knights and Ladies dance</para>
+<stagedir remap="STAGEDIR">The Knights and Ladies dance</stagedir>
 <line remap="LINE">Unclasp, unclasp:</line>
 <line remap="LINE">Thanks, gentlemen, to all; all have done well.</line>
-<para remap="STAGEDIR">To PERICLES</para>
+<stagedir remap="STAGEDIR">To PERICLES</stagedir>
 <line remap="LINE">But you the best. Pages and lights, to conduct</line>
 <line remap="LINE">These knights unto their several lodgings!</line>
-<para remap="STAGEDIR">To PERICLES</para>
+<stagedir remap="STAGEDIR">To PERICLES</stagedir>
 <line remap="LINE">Yours, sir,</line>
 <line remap="LINE">We have given order to be next our own.</line>
 </linegroup></dialogue>
@@ -1811,11 +1811,11 @@ Knights, from tilting</para>
 <line remap="LINE">To-morrow all for speeding do their best.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Tyre. A room in the Governor's house.</title>
-<para remap="STAGEDIR">Enter HELICANUS and ESCANES</para>
+<stagedir remap="STAGEDIR">Enter HELICANUS and ESCANES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HELICANUS</speaker>
@@ -1850,7 +1850,7 @@ Knights, from tilting</para>
 <line remap="LINE">'Tis very true.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter two or three Lords</para>
+<stagedir remap="STAGEDIR">Enter two or three Lords</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Lord</speaker>
@@ -1946,12 +1946,12 @@ Knights, from tilting</para>
 <line remap="LINE">When peers thus knit, a kingdom ever stands.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Pentapolis. A room in the palace.</title>
-<para remap="STAGEDIR">Enter SIMONIDES, reading a letter, at one door:
-the Knights meet him</para>
+<stagedir remap="STAGEDIR">Enter SIMONIDES, reading a letter, at one door:
+the Knights meet him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Knight</speaker>
@@ -1986,7 +1986,7 @@ the Knights meet him</para>
 <line remap="LINE">Loath to bid farewell, we take our leaves.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Knights</para>
+<stagedir remap="STAGEDIR">Exeunt Knights</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIMONIDES</speaker>
@@ -2002,7 +2002,7 @@ the Knights meet him</para>
 <line remap="LINE">Soft! here he comes: I must dissemble it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PERICLES</para>
+<stagedir remap="STAGEDIR">Enter PERICLES</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
@@ -2073,7 +2073,7 @@ the Knights meet him</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  What's here?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  What's here?</line>
 <line remap="LINE">A letter, that she loves the knight of Tyre!</line>
 <line remap="LINE">'Tis the king's subtlety to have my life.</line>
 <line remap="LINE">O, seek not to entrap me, gracious lord,</line>
@@ -2119,7 +2119,7 @@ the Knights meet him</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIMONIDES</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  Now, by the gods, I do applaud his courage.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  Now, by the gods, I do applaud his courage.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -2138,7 +2138,7 @@ the Knights meet him</para>
 <line remap="LINE">Here comes my daughter, she can witness it.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter THAISA</para>
+<stagedir remap="STAGEDIR">Enter THAISA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
@@ -2157,13 +2157,13 @@ the Knights meet him</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SIMONIDES</speaker>
 <line remap="LINE">Yea, mistress, are you so peremptory?</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">I am glad on't with all my heart.--</line>
 <line remap="LINE">I'll tame you; I'll bring you in subjection.</line>
 <line remap="LINE">Will you, not having my consent,</line>
 <line remap="LINE">Bestow your love and your affections</line>
 <line remap="LINE">Upon a stranger?</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">who, for aught I know,</line>
 <line remap="LINE">May be, nor can I think the contrary,</line>
 <line remap="LINE">As great in blood as I myself.--</line>
@@ -2202,14 +2202,14 @@ the Knights meet him</para>
 <line remap="LINE">It pleaseth me so well, that I will see you wed;</line>
 <line remap="LINE">And then with what haste you can get you to bed.</line>
 </linegroup></dialogue>
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 </chapter>
 
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="PROLOGUE"><title remap="TITLE">[Prologue]</title>
-<para remap="STAGEDIR">Enter GOWER</para>
+<stagedir remap="STAGEDIR">Enter GOWER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GOWER</speaker>
@@ -2228,7 +2228,7 @@ the Knights meet him</para>
 <line remap="LINE">With your fine fancies quaintly eche:</line>
 <line remap="LINE">What's dumb in show I'll plain with speech.</line>
 <bridgehead remap="SUBHEAD">DUMB SHOW.</bridgehead>
-<para remap="STAGEDIR">Enter, PERICLES and SIMONIDES at one door, with
+<stagedir remap="STAGEDIR">Enter, PERICLES and SIMONIDES at one door, with
 Attendants; a Messenger meets them, kneels, and
 gives PERICLES a letter: PERICLES shows it
 SIMONIDES; the Lords kneel to him. Then enter
@@ -2236,7 +2236,7 @@ THAISA with child, with LYCHORIDA a nurse. The
 KING shows her the letter; she rejoices: she and
 PERICLES takes leave of her father, and depart with
 LYCHORIDA and their Attendants. Then exeunt
-SIMONIDES and the rest</para>
+SIMONIDES and the rest</stagedir>
 <line remap="LINE">By many a dern and painful perch</line>
 <line remap="LINE">Of Pericles the careful search,</line>
 <line remap="LINE">By the four opposing coigns</line>
@@ -2285,11 +2285,11 @@ SIMONIDES and the rest</para>
 <line remap="LINE">The sea-tost Pericles appears to speak.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I</title>
-<para remap="STAGEDIR">Enter PERICLES, on shipboard</para>
+<stagedir remap="STAGEDIR">Enter PERICLES, on shipboard</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
@@ -2307,7 +2307,7 @@ SIMONIDES and the rest</para>
 <line remap="LINE">To those that cry by night, convey thy deity</line>
 <line remap="LINE">Aboard our dancing boat; make swift the pangs</line>
 <line remap="LINE">Of my queen's travails!</line>
-<para remap="STAGEDIR">Enter LYCHORIDA, with an Infant</para>
+<stagedir remap="STAGEDIR">Enter LYCHORIDA, with an Infant</stagedir>
 <line remap="LINE">Now, Lychorida!</line>
 </linegroup></dialogue>
 
@@ -2362,7 +2362,7 @@ SIMONIDES and the rest</para>
 <line remap="LINE">Throw their best eyes upon't!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter two Sailors</para>
+<stagedir remap="STAGEDIR">Enter two Sailors</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Sailor</speaker>
@@ -2436,7 +2436,7 @@ SIMONIDES and the rest</para>
 <line remap="LINE">A priestly farewell to her: suddenly, woman.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit LYCHORIDA</para>
+<stagedir remap="STAGEDIR">Exit LYCHORIDA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Sailor</speaker>
@@ -2474,19 +2474,19 @@ SIMONIDES and the rest</para>
 <line remap="LINE">I'll bring the body presently.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Ephesus. A room in CERIMON's house.</title>
-<para remap="STAGEDIR">Enter CERIMON, with a Servant, and some Persons who
-have been shipwrecked</para>
+<stagedir remap="STAGEDIR">Enter CERIMON, with a Servant, and some Persons who
+have been shipwrecked</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CERIMON</speaker>
 <line remap="LINE">Philemon, ho!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter PHILEMON</para>
+<stagedir remap="STAGEDIR">Enter PHILEMON</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PHILEMON</speaker>
@@ -2510,13 +2510,13 @@ have been shipwrecked</para>
 <line remap="LINE">Your master will be dead ere you return;</line>
 <line remap="LINE">There's nothing can be minister'd to nature</line>
 <line remap="LINE">That can recover him.</line>
-<para remap="STAGEDIR">To PHILEMON</para>
+<stagedir remap="STAGEDIR">To PHILEMON</stagedir>
 <line remap="LINE">Give this to the 'pothecary,</line>
 <line remap="LINE">And tell me how it works.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but CERIMON</para>
-<para remap="STAGEDIR">Enter two Gentlemen</para>
+<stagedir remap="STAGEDIR">Exeunt all but CERIMON</stagedir>
+<stagedir remap="STAGEDIR">Enter two Gentlemen</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Gentleman</speaker>
@@ -2596,7 +2596,7 @@ have been shipwrecked</para>
 <line remap="LINE">Such strong renown as time shall ne'er decay.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter two or three Servants with a chest</para>
+<stagedir remap="STAGEDIR">Enter two or three Servants with a chest</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Servant</speaker>
@@ -2677,7 +2677,7 @@ have been shipwrecked</para>
 <line remap="LINE">Shrouded in cloth of state; balm'd and entreasured</line>
 <line remap="LINE">With full bags of spices! A passport too!</line>
 <line remap="LINE">Apollo, perfect me in the characters!</line>
-<para remap="STAGEDIR">Reads from a scroll</para>
+<stagedir remap="STAGEDIR">Reads from a scroll</stagedir>
 <line remap="LINE">'Here I give to understand,</line>
 <line remap="LINE">If e'er this coffin drive a-land,</line>
 <line remap="LINE">I, King Pericles, have lost</line>
@@ -2701,13 +2701,13 @@ have been shipwrecked</para>
 <line remap="LINE">For look how fresh she looks! They were too rough</line>
 <line remap="LINE">That threw her in the sea. Make a fire within:</line>
 <line remap="LINE">Fetch hither all my boxes in my closet.</line>
-<para remap="STAGEDIR">Exit a Servant</para>
+<stagedir remap="STAGEDIR">Exit a Servant</stagedir>
 <line remap="LINE">Death may usurp on nature many hours,</line>
 <line remap="LINE">And yet the fire of life kindle again</line>
 <line remap="LINE">The o'erpress'd spirits. I heard of an Egyptian</line>
 <line remap="LINE">That had nine hours lien dead,</line>
 <line remap="LINE">Who was by good appliance recovered.</line>
-<para remap="STAGEDIR">Re-enter a Servant, with boxes, napkins, and fire</para>
+<stagedir remap="STAGEDIR">Re-enter a Servant, with boxes, napkins, and fire</stagedir>
 <line remap="LINE">Well said, well said; the fire and cloths.</line>
 <line remap="LINE">The rough and woeful music that we have,</line>
 <line remap="LINE">Cause it to sound, beseech you.</line>
@@ -2739,7 +2739,7 @@ have been shipwrecked</para>
 <line remap="LINE">Rare as you seem to be.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">She moves</para>
+<stagedir remap="STAGEDIR">She moves</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">THAISA</speaker>
@@ -2766,12 +2766,12 @@ have been shipwrecked</para>
 <line remap="LINE">And AEsculapius guide us!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt, carrying her away</para>
+<stagedir remap="STAGEDIR">Exeunt, carrying her away</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Tarsus. A room in CLEON's house.</title>
-<para remap="STAGEDIR">Enter PERICLES, CLEON, DIONYZA, and LYCHORIDA with
-MARINA in her arms</para>
+<stagedir remap="STAGEDIR">Enter PERICLES, CLEON, DIONYZA, and LYCHORIDA with
+MARINA in her arms</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
@@ -2861,11 +2861,11 @@ MARINA in her arms</para>
 <line remap="LINE">You may depend hereafter. Come, my lord.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Ephesus. A room in CERIMON's house.</title>
-<para remap="STAGEDIR">Enter CERIMON and THAISA</para>
+<stagedir remap="STAGEDIR">Enter CERIMON and THAISA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CERIMON</speaker>
@@ -2900,14 +2900,14 @@ MARINA in her arms</para>
 <line remap="LINE">My recompense is thanks, that's all;</line>
 <line remap="LINE">Yet my good will is great, though the gift small.</line>
 </linegroup></dialogue>
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 </chapter>
 
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="PROLOGUE"><title remap="TITLE">[Prologue]</title>
-<para remap="STAGEDIR">Enter GOWER</para>
+<stagedir remap="STAGEDIR">Enter GOWER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GOWER</speaker>
@@ -2965,11 +2965,11 @@ MARINA in her arms</para>
 <line remap="LINE">With Leonine, a murderer.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Tarsus. An open place near the sea-shore.</title>
-<para remap="STAGEDIR">Enter DIONYZA and LEONINE</para>
+<stagedir remap="STAGEDIR">Enter DIONYZA and LEONINE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DIONYZA</speaker>
@@ -3000,7 +3000,7 @@ MARINA in her arms</para>
 <line remap="LINE">I am resolved.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MARINA, with a basket of flowers</para>
+<stagedir remap="STAGEDIR">Enter MARINA, with a basket of flowers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARINA</speaker>
@@ -3077,7 +3077,7 @@ MARINA in her arms</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARINA</speaker>
 <line remap="LINE">My thanks, sweet madam.</line>
-<para remap="STAGEDIR">Exit DIONYZA</para>
+<stagedir remap="STAGEDIR">Exit DIONYZA</stagedir>
 <line remap="LINE">Is this wind westerly that blows?</line>
 </linegroup></dialogue>
 
@@ -3186,15 +3186,15 @@ MARINA in her arms</para>
 <line remap="LINE">And will dispatch.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">He seizes her</para>
-<para remap="STAGEDIR">Enter Pirates</para>
+<stagedir remap="STAGEDIR">He seizes her</stagedir>
+<stagedir remap="STAGEDIR">Enter Pirates</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Pirate</speaker>
 <line remap="LINE">Hold, villain!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">LEONINE runs away</para>
+<stagedir remap="STAGEDIR">LEONINE runs away</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Pirate</speaker>
@@ -3207,8 +3207,8 @@ MARINA in her arms</para>
 <line remap="LINE">Come, let's have her aboard suddenly.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Pirates with MARINA</para>
-<para remap="STAGEDIR">Re-enter LEONINE</para>
+<stagedir remap="STAGEDIR">Exeunt Pirates with MARINA</stagedir>
+<stagedir remap="STAGEDIR">Re-enter LEONINE</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LEONINE</speaker>
@@ -3222,11 +3222,11 @@ MARINA in her arms</para>
 <line remap="LINE">Whom they have ravish'd must by me be slain.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Mytilene. A room in a brothel.</title>
-<para remap="STAGEDIR">Enter Pandar, Bawd, and BOULT</para>
+<stagedir remap="STAGEDIR">Enter Pandar, Bawd, and BOULT</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Pandar</speaker>
@@ -3290,7 +3290,7 @@ MARINA in her arms</para>
 <line remap="LINE">for worms. But I'll go search the market.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Pandar</speaker>
@@ -3326,11 +3326,11 @@ MARINA in her arms</para>
 <line remap="LINE">calling. But here comes Boult.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter BOULT, with the Pirates and MARINA</para>
+<stagedir remap="STAGEDIR">Re-enter BOULT, with the Pirates and MARINA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BOULT</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To MARINA</phrase>  Come your ways. My masters, you say</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To MARINA</inlinestagedir>  Come your ways. My masters, you say</line>
 <line remap="LINE">she's a virgin?</line>
 </linegroup></dialogue>
 
@@ -3375,7 +3375,7 @@ MARINA in her arms</para>
 <line remap="LINE">entertainment.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Pandar and Pirates</para>
+<stagedir remap="STAGEDIR">Exeunt Pandar and Pirates</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Bawd</speaker>
@@ -3392,7 +3392,7 @@ MARINA in her arms</para>
 <line remap="LINE">Performance shall follow.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARINA</speaker>
@@ -3483,7 +3483,7 @@ MARINA in her arms</para>
 <line remap="LINE">If it please the gods to defend you by men, then men</line>
 <line remap="LINE">must comfort you, men must feed you, men must stir</line>
 <line remap="LINE">you up. Boult's returned.</line>
-<para remap="STAGEDIR">Re-enter BOULT</para>
+<stagedir remap="STAGEDIR">Re-enter BOULT</stagedir>
 <line remap="LINE">Now, sir, hast thou cried her through the market?</line>
 </linegroup></dialogue>
 
@@ -3546,7 +3546,7 @@ MARINA in her arms</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Bawd</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To MARINA</phrase>  Pray you, come hither awhile. You</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To MARINA</inlinestagedir>  Pray you, come hither awhile. You</line>
 <line remap="LINE">have fortunes coming upon you. Mark me: you must</line>
 <line remap="LINE">seem to do that fearfully which you commit</line>
 <line remap="LINE">willingly, despise profit where you have most gain.</line>
@@ -3633,11 +3633,11 @@ MARINA in her arms</para>
 <line remap="LINE">What have we to do with Diana? Pray you, will you go with us?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Tarsus. A room in CLEON's house.</title>
-<para remap="STAGEDIR">Enter CLEON and DIONYZA</para>
+<stagedir remap="STAGEDIR">Enter CLEON and DIONYZA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DIONYZA</speaker>
@@ -3749,12 +3749,12 @@ MARINA in her arms</para>
 <line remap="LINE">But yet I know you'll do as I advise.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV</title>
 
-<para remap="STAGEDIR">Enter GOWER, before the monument of MARINA at Tarsus</para>
+<stagedir remap="STAGEDIR">Enter GOWER, before the monument of MARINA at Tarsus</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GOWER</speaker>
@@ -3781,11 +3781,11 @@ MARINA in her arms</para>
 <line remap="LINE">Like motes and shadows see them move awhile;</line>
 <line remap="LINE">Your ears unto your eyes I'll reconcile.</line>
 <bridgehead remap="SUBHEAD">DUMB SHOW.</bridgehead>
-<para remap="STAGEDIR">Enter PERICLES, at one door, with all his train;
+<stagedir remap="STAGEDIR">Enter PERICLES, at one door, with all his train;
 CLEON and DIONYZA, at the other. CLEON shows
 PERICLES the tomb; whereat PERICLES makes
 lamentation, puts on sackcloth, and in a mighty
-passion departs. Then exeunt CLEON and DIONYZA</para>
+passion departs. Then exeunt CLEON and DIONYZA</stagedir>
 <line remap="LINE">See how belief may suffer by foul show!</line>
 <line remap="LINE">This borrow'd passion stands for true old woe;</line>
 <line remap="LINE">And Pericles, in sorrow all devour'd,</line>
@@ -3798,7 +3798,7 @@ passion departs. Then exeunt CLEON and DIONYZA</para>
 <line remap="LINE">And yet he rides it out. Now please you wit.</line>
 <line remap="LINE">The epitaph is for Marina writ</line>
 <line remap="LINE">By wicked Dionyza.</line>
-<para remap="STAGEDIR">Reads the inscription on MARINA's monument</para>
+<stagedir remap="STAGEDIR">Reads the inscription on MARINA's monument</stagedir>
 <line remap="LINE">'The fairest, sweet'st, and best lies here,</line>
 <line remap="LINE">Who wither'd in her spring of year.</line>
 <line remap="LINE">She was of Tyrus the king's daughter,</line>
@@ -3819,11 +3819,11 @@ passion departs. Then exeunt CLEON and DIONYZA</para>
 <line remap="LINE">And think you now are all in Mytilene.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Mytilene. A street before the brothel.</title>
-<para remap="STAGEDIR">Enter, from the brothel, two Gentlemen</para>
+<stagedir remap="STAGEDIR">Enter, from the brothel, two Gentlemen</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Gentleman</speaker>
@@ -3854,11 +3854,11 @@ passion departs. Then exeunt CLEON and DIONYZA</para>
 <line remap="LINE">am out of the road of rutting for ever.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  The same. A room in the brothel.</title>
-<para remap="STAGEDIR">Enter Pandar, Bawd, and BOULT</para>
+<stagedir remap="STAGEDIR">Enter Pandar, Bawd, and BOULT</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Pandar</speaker>
@@ -3901,7 +3901,7 @@ passion departs. Then exeunt CLEON and DIONYZA</para>
 <line remap="LINE">baggage would but give way to customers.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter LYSIMACHUS</para>
+<stagedir remap="STAGEDIR">Enter LYSIMACHUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LYSIMACHUS</speaker>
@@ -3969,13 +3969,13 @@ passion departs. Then exeunt CLEON and DIONYZA</para>
 <line remap="LINE">gives a good report to a number to be chaste.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit BOULT</para>
+<stagedir remap="STAGEDIR">Exit BOULT</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Bawd</speaker>
 <line remap="LINE">Here comes that which grows to the stalk; never</line>
 <line remap="LINE">plucked yet, I can assure you.</line>
-<para remap="STAGEDIR">Re-enter BOULT with MARINA</para>
+<stagedir remap="STAGEDIR">Re-enter BOULT with MARINA</stagedir>
 <line remap="LINE">Is she not a fair creature?</line>
 </linegroup></dialogue>
 
@@ -3998,7 +3998,7 @@ passion departs. Then exeunt CLEON and DIONYZA</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Bawd</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To MARINA</phrase>  First, I would have you note, this is</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To MARINA</inlinestagedir>  First, I would have you note, this is</line>
 <line remap="LINE">an honourable man.</line>
 </linegroup></dialogue>
 
@@ -4042,7 +4042,7 @@ passion departs. Then exeunt CLEON and DIONYZA</para>
 <line remap="LINE">leave his honour and her together. Go thy ways.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Bawd, Pandar, and BOULT</para>
+<stagedir remap="STAGEDIR">Exeunt Bawd, Pandar, and BOULT</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LYSIMACHUS</speaker>
@@ -4171,7 +4171,7 @@ passion departs. Then exeunt CLEON and DIONYZA</para>
 <line remap="LINE">Hear from me, it shall be for thy good.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter BOULT</para>
+<stagedir remap="STAGEDIR">Re-enter BOULT</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BOULT</speaker>
@@ -4185,7 +4185,7 @@ passion departs. Then exeunt CLEON and DIONYZA</para>
 <line remap="LINE">Would sink and overwhelm you. Away!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BOULT</speaker>
@@ -4208,7 +4208,7 @@ passion departs. Then exeunt CLEON and DIONYZA</para>
 <line remap="LINE">have no more gentlemen driven away. Come your ways, I say.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter Bawd</para>
+<stagedir remap="STAGEDIR">Re-enter Bawd</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Bawd</speaker>
@@ -4269,7 +4269,7 @@ passion departs. Then exeunt CLEON and DIONYZA</para>
 <line remap="LINE">Marry, come up, my dish of chastity with rosemary and bays!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BOULT</speaker>
@@ -4377,7 +4377,7 @@ passion departs. Then exeunt CLEON and DIONYZA</para>
 <line remap="LINE">doubt not but I shall find them tractable enough.</line>
 <line remap="LINE">Come, I'll do for thee what I can; come your ways.</line>
 </linegroup></dialogue>
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -4385,7 +4385,7 @@ passion departs. Then exeunt CLEON and DIONYZA</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="PROLOGUE"><title remap="TITLE">[Prologue]</title>
-<para remap="STAGEDIR">Enter GOWER</para>
+<stagedir remap="STAGEDIR">Enter GOWER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GOWER</speaker>
@@ -4414,17 +4414,17 @@ passion departs. Then exeunt CLEON and DIONYZA</para>
 <line remap="LINE">Where what is done in action, more, if might,</line>
 <line remap="LINE">Shall be discover'd; please you, sit and hark.</line>
 </linegroup></dialogue>
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  On board PERICLES' ship, off Mytilene. A close pavilion on deck, with a curtain before it; PERICLES within it, reclined on a couch. A barge lying beside the Tyrian vessel.</title>
 
-<para remap="STAGEDIR">Enter two Sailors, one belonging to the Tyrian
-vessel, the other to the barge; to them HELICANUS</para>
+<stagedir remap="STAGEDIR">Enter two Sailors, one belonging to the Tyrian
+vessel, the other to the barge; to them HELICANUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Tyrian Sailor</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To the Sailor of Mytilene</phrase>  Where is lord Helicanus?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To the Sailor of Mytilene</inlinestagedir>  Where is lord Helicanus?</line>
 <line remap="LINE">he can resolve you.</line>
 <line remap="LINE">O, here he is.</line>
 <line remap="LINE">Sir, there's a barge put off from Mytilene,</line>
@@ -4442,7 +4442,7 @@ vessel, the other to the barge; to them HELICANUS</para>
 <line remap="LINE">Ho, gentlemen! my lord calls.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter two or three Gentlemen</para>
+<stagedir remap="STAGEDIR">Enter two or three Gentlemen</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Gentleman</speaker>
@@ -4455,10 +4455,10 @@ vessel, the other to the barge; to them HELICANUS</para>
 <line remap="LINE">I pray ye, greet them fairly.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The Gentlemen and the two Sailors descend, and go
-on board the barge</para>
-<para remap="STAGEDIR">Enter, from thence, LYSIMACHUS and Lords; with the
-Gentlemen and the two Sailors</para>
+<stagedir remap="STAGEDIR">The Gentlemen and the two Sailors descend, and go
+on board the barge</stagedir>
+<stagedir remap="STAGEDIR">Enter, from thence, LYSIMACHUS and Lords; with the
+Gentlemen and the two Sailors</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Tyrian Sailor</speaker>
@@ -4536,7 +4536,7 @@ Gentlemen and the two Sailors</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HELICANUS</speaker>
 <line remap="LINE">Behold him.</line>
-<para remap="STAGEDIR">PERICLES discovered</para>
+<stagedir remap="STAGEDIR">PERICLES discovered</stagedir>
 <line remap="LINE">This was a goodly person,</line>
 <line remap="LINE">Till the disaster that, one mortal night,</line>
 <line remap="LINE">Drove him to this.</line>
@@ -4573,8 +4573,8 @@ Gentlemen and the two Sailors</para>
 <line remap="LINE">The island's side.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Whispers a Lord, who goes off in the barge of
-LYSIMACHUS</para>
+<stagedir remap="STAGEDIR">Whispers a Lord, who goes off in the barge of
+LYSIMACHUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HELICANUS</speaker>
@@ -4602,8 +4602,8 @@ LYSIMACHUS</para>
 <line remap="LINE">But, see, I am prevented.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter, from the barge, Lord, with MARINA, and a
-young Lady</para>
+<stagedir remap="STAGEDIR">Re-enter, from the barge, Lord, with MARINA, and a
+young Lady</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LYSIMACHUS</speaker>
@@ -4644,7 +4644,7 @@ young Lady</para>
 <line remap="LINE">And the gods make her prosperous!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">MARINA sings</para>
+<stagedir remap="STAGEDIR">MARINA sings</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LYSIMACHUS</speaker>
@@ -4684,7 +4684,7 @@ young Lady</para>
 <line remap="LINE">But time hath rooted out my parentage,</line>
 <line remap="LINE">And to the world and awkward casualties</line>
 <line remap="LINE">Bound me in servitude.</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">I will desist;</line>
 <line remap="LINE">But there is something glows upon my cheek,</line>
 <line remap="LINE">And whispers in mine ear, 'Go not till he speak.'</line>
@@ -4869,7 +4869,7 @@ young Lady</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
 <line remap="LINE">O, stop there a little!</line>
-<para remap="STAGEDIR">Aside</para>
+<stagedir remap="STAGEDIR">Aside</stagedir>
 <line remap="LINE">This is the rarest dream that e'er dull sleep</line>
 <line remap="LINE">Did mock sad fools withal: this cannot be:</line>
 <line remap="LINE">My daughter's buried. Well: where were you bred?</line>
@@ -5029,7 +5029,7 @@ young Lady</para>
 <line remap="LINE">My lord, I hear.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Music</para>
+<stagedir remap="STAGEDIR">Music</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
@@ -5038,7 +5038,7 @@ young Lady</para>
 <line remap="LINE">Hangs upon mine eyes: let me rest.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Sleeps</para>
+<stagedir remap="STAGEDIR">Sleeps</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LYSIMACHUS</speaker>
@@ -5048,8 +5048,8 @@ young Lady</para>
 <line remap="LINE">I'll well remember you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt all but PERICLES</para>
-<para remap="STAGEDIR">DIANA appears to PERICLES as in a vision</para>
+<stagedir remap="STAGEDIR">Exeunt all but PERICLES</stagedir>
+<stagedir remap="STAGEDIR">DIANA appears to PERICLES as in a vision</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">DIANA</speaker>
@@ -5065,7 +5065,7 @@ young Lady</para>
 <line remap="LINE">Awake, and tell thy dream.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Disappears</para>
+<stagedir remap="STAGEDIR">Disappears</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
@@ -5073,7 +5073,7 @@ young Lady</para>
 <line remap="LINE">I will obey thee. Helicanus!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter HELICANUS, LYSIMACHUS, and MARINA</para>
+<stagedir remap="STAGEDIR">Re-enter HELICANUS, LYSIMACHUS, and MARINA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">HELICANUS</speaker>
@@ -5086,7 +5086,7 @@ young Lady</para>
 <line remap="LINE">The inhospitable Cleon; but I am</line>
 <line remap="LINE">For other service first: toward Ephesus</line>
 <line remap="LINE">Turn our blown sails; eftsoons I'll tell thee why.</line>
-<para remap="STAGEDIR">To LYSIMACHUS</para>
+<stagedir remap="STAGEDIR">To LYSIMACHUS</stagedir>
 <line remap="LINE">Shall we refresh us, sir, upon your shore,</line>
 <line remap="LINE">And give you gold for such provision</line>
 <line remap="LINE">As our intents will need?</line>
@@ -5116,11 +5116,11 @@ young Lady</para>
 <line remap="LINE">Come, my Marina.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II</title>
-<para remap="STAGEDIR">Enter GOWER, before the temple of DIANA at Ephesus</para>
+<stagedir remap="STAGEDIR">Enter GOWER, before the temple of DIANA at Ephesus</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GOWER</speaker>
@@ -5146,13 +5146,13 @@ young Lady</para>
 <line remap="LINE">Is by your fancy's thankful doom.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The temple of Diana at Ephesus; THAISA standing near the altar, as high priestess; a number of Virgins on each side; CERIMON and other Inhabitants of Ephesus attending.</title>
 
-<para remap="STAGEDIR">Enter PERICLES, with his train; LYSIMACHUS,
-HELICANUS, MARINA, and a Lady</para>
+<stagedir remap="STAGEDIR">Enter PERICLES, with his train; LYSIMACHUS,
+HELICANUS, MARINA, and a Lady</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
@@ -5177,7 +5177,7 @@ HELICANUS, MARINA, and a Lady</para>
 <line remap="LINE">You are, you are--O royal Pericles!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Faints</para>
+<stagedir remap="STAGEDIR">Faints</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
@@ -5261,7 +5261,7 @@ HELICANUS, MARINA, and a Lady</para>
 <line remap="LINE">The king my father gave you such a ring.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Shows a ring</para>
+<stagedir remap="STAGEDIR">Shows a ring</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
@@ -5278,7 +5278,7 @@ HELICANUS, MARINA, and a Lady</para>
 <line remap="LINE">Leaps to be gone into my mother's bosom.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Kneels to THAISA</para>
+<stagedir remap="STAGEDIR">Kneels to THAISA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">PERICLES</speaker>
@@ -5376,9 +5376,9 @@ HELICANUS, MARINA, and a Lady</para>
 <line remap="LINE">To hear the rest untold: sir, lead's the way.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 
-<para remap="STAGEDIR">Enter GOWER</para>
+<stagedir remap="STAGEDIR">Enter GOWER</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">GOWER</speaker>
@@ -5402,7 +5402,7 @@ HELICANUS, MARINA, and a Lady</para>
 <line remap="LINE">New joy wait on you! Here our play has ending.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 </chapter>
 </book>

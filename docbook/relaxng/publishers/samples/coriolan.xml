@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="../publishers/publishers.rnc" type="compact"?><book xmlns="http://docbook.org/ns/docbook" version="5.0" remap="PLAY">
 <title remap="TITLE">The Tragedy of Coriolanus</title>
 
-<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/terms/">The Tragedy of Coriolanus</dc:title><dc:creator xmlns:dc="http://purl.org/dc/terms/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/terms/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/terms/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
-            (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/terms/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
+<info remap="FM"><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The Tragedy of Coriolanus</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">William Shakespeare</dc:creator><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">ASCII text placed in the public domain by Moby Lexical Tools, 1992.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">SGML markup by Jon Bosak, 1992-1994.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">XML version by Jon Bosak, 1996-1999.</dc:contributor><dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">DocBook version by Scott Hudson, 2008.</dc:contributor><dcterms:license xmlns:dcterms="http://purl.org/dc/terms/">Bosak and Hudson license this work for worldwide use under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. 
+                (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).</dcterms:license><dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://metalab.unc.edu/bosak/xml/eg/shaks200.zip</dc:source></info>
 
 <preface remap="PERSONAE">
 <title remap="TITLE">Dramatis Personae</title>
@@ -27,17 +27,17 @@
 <para><personname remap="PERSONA">VALERIA, friend to Virgilia.</personname></para>
 <para><personname remap="PERSONA">Gentlewoman, attending on Virgilia. </personname></para>
 <para><personname remap="PERSONA">Roman and Volscian Senators, Patricians, Aediles, Lictors, Soldiers, Citizens, Messengers, Servants to Aufidius, and other Attendants.</personname></para>
-    <para remap="SCNDESCR">SCENE  Rome and the neighbourhood; Corioli and the neighbourhood; Antium.</para>
 </preface>
 
+<para remap="SCNDESCR">SCENE  Rome and the neighbourhood; Corioli and the neighbourhood; Antium.</para>
 
 
 
 <chapter remap="ACT"><title remap="TITLE">ACT I</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Rome. A street.</title>
-<para remap="STAGEDIR">Enter a company of mutinous Citizens, with staves,
-clubs, and other weapons</para>
+<stagedir remap="STAGEDIR">Enter a company of mutinous Citizens, with staves,
+clubs, and other weapons</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Citizen</speaker>
@@ -144,7 +144,7 @@ clubs, and other weapons</para>
 <speaker remap="SPEAKER">First Citizen</speaker>
 <line remap="LINE">If I must not, I need not be barren of accusations;</line>
 <line remap="LINE">he hath faults, with surplus, to tire in repetition.</line>
-<para remap="STAGEDIR">Shouts within</para>
+<stagedir remap="STAGEDIR">Shouts within</stagedir>
 <line remap="LINE">What shouts are these? The other side o' the city</line>
 <line remap="LINE">is risen: why stay we prating here? to the Capitol!</line>
 </linegroup></dialogue>
@@ -159,7 +159,7 @@ clubs, and other weapons</para>
 <line remap="LINE">Soft! who comes here?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MENENIUS AGRIPPA</para>
+<stagedir remap="STAGEDIR">Enter MENENIUS AGRIPPA</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Citizen</speaker>
@@ -385,7 +385,7 @@ clubs, and other weapons</para>
 <line remap="LINE">But make you ready your stiff bats and clubs:</line>
 <line remap="LINE">Rome and her rats are at the point of battle;</line>
 <line remap="LINE">The one side must have bale.</line>
-<para remap="STAGEDIR">Enter CAIUS MARCIUS</para>
+<stagedir remap="STAGEDIR">Enter CAIUS MARCIUS</stagedir>
 <line remap="LINE">Hail, noble Marcius!</line>
 </linegroup></dialogue>
 
@@ -500,7 +500,7 @@ clubs, and other weapons</para>
 <line remap="LINE">Go, get you home, you fragments!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Messenger, hastily</para>
+<stagedir remap="STAGEDIR">Enter a Messenger, hastily</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
@@ -523,8 +523,8 @@ clubs, and other weapons</para>
 <line remap="LINE">Our musty superfluity. See, our best elders.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter COMINIUS, TITUS LARTIUS, and other Senators;
-JUNIUS BRUTUS and SICINIUS VELUTUS</para>
+<stagedir remap="STAGEDIR">Enter COMINIUS, TITUS LARTIUS, and other Senators;
+JUNIUS BRUTUS and SICINIUS VELUTUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Senator</speaker>
@@ -593,8 +593,8 @@ JUNIUS BRUTUS and SICINIUS VELUTUS</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">TITUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To COMINIUS</phrase>                Lead you on.</line>
-<line remap="LINE"><phrase remap="STAGEDIR">To MARCIUS</phrase>  Follow Cominius; we must follow you;</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To COMINIUS</inlinestagedir>                Lead you on.</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To MARCIUS</inlinestagedir>  Follow Cominius; we must follow you;</line>
 <line remap="LINE">Right worthy you priority.</line>
 </linegroup></dialogue>
 
@@ -605,7 +605,7 @@ JUNIUS BRUTUS and SICINIUS VELUTUS</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Senator</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To the Citizens</phrase>  Hence to your homes; be gone!</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To the Citizens</inlinestagedir>  Hence to your homes; be gone!</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -616,8 +616,8 @@ JUNIUS BRUTUS and SICINIUS VELUTUS</para>
 <line remap="LINE">Your valour puts well forth: pray, follow.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Citizens steal away. Exeunt all but SICINIUS
-and BRUTUS</para>
+<stagedir remap="STAGEDIR">Citizens steal away. Exeunt all but SICINIUS
+and BRUTUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SICINIUS</speaker>
@@ -710,11 +710,11 @@ and BRUTUS</para>
 <line remap="LINE">Lets along.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Corioli. The Senate-house.</title>
-<para remap="STAGEDIR">Enter TULLUS AUFIDIUS and certain Senators</para>
+<stagedir remap="STAGEDIR">Enter TULLUS AUFIDIUS and certain Senators</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Senator</speaker>
@@ -731,7 +731,7 @@ and BRUTUS</para>
 <line remap="LINE">Had circumvention? 'Tis not four days gone</line>
 <line remap="LINE">Since I heard thence; these are the words: I think</line>
 <line remap="LINE">I have the letter here; yes, here it is.</line>
-<para remap="STAGEDIR">Reads</para>
+<stagedir remap="STAGEDIR">Reads</stagedir>
 <line remap="LINE">'They have press'd a power, but it is not known</line>
 <line remap="LINE">Whether for east or west: the dearth is great;</line>
 <line remap="LINE">The people mutinous; and it is rumour'd,</line>
@@ -808,12 +808,12 @@ and BRUTUS</para>
 <line remap="LINE">Farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  Rome. A room in Marcius' house.</title>
-<para remap="STAGEDIR">Enter VOLUMNIA and VIRGILIA they set them down
-on two low stools, and sew</para>
+<stagedir remap="STAGEDIR">Enter VOLUMNIA and VIRGILIA they set them down
+on two low stools, and sew</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VOLUMNIA</speaker>
@@ -852,7 +852,7 @@ on two low stools, and sew</para>
 <line remap="LINE">country than one voluptuously surfeit out of action.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Gentlewoman</para>
+<stagedir remap="STAGEDIR">Enter a Gentlewoman</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Gentlewoman</speaker>
@@ -893,7 +893,7 @@ on two low stools, and sew</para>
 <line remap="LINE">We are fit to bid her welcome.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit Gentlewoman</para>
+<stagedir remap="STAGEDIR">Exit Gentlewoman</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VIRGILIA</speaker>
@@ -906,7 +906,7 @@ on two low stools, and sew</para>
 <line remap="LINE">And tread upon his neck.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter VALERIA, with an Usher and Gentlewoman</para>
+<stagedir remap="STAGEDIR">Enter VALERIA, with an Usher and Gentlewoman</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VALERIA</speaker>
@@ -1096,13 +1096,13 @@ on two low stools, and sew</para>
 <line remap="LINE">Well, then, farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Before Corioli.</title>
-<para remap="STAGEDIR">Enter, with drum and colours, MARCIUS, TITUS
+<stagedir remap="STAGEDIR">Enter, with drum and colours, MARCIUS, TITUS
 LARTIUS, Captains and Soldiers. To them a
-Messenger</para>
+Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCIUS</speaker>
@@ -1166,8 +1166,8 @@ Messenger</para>
 <line remap="LINE">Now, Mars, I prithee, make us quick in work,</line>
 <line remap="LINE">That we with smoking swords may march from hence,</line>
 <line remap="LINE">To help our fielded friends! Come, blow thy blast.</line>
-<para remap="STAGEDIR">They sound a parley. Enter two Senators with others
-on the walls</para>
+<stagedir remap="STAGEDIR">They sound a parley. Enter two Senators with others
+on the walls</stagedir>
 <line remap="LINE">Tutus Aufidius, is he within your walls?</line>
 </linegroup></dialogue>
 
@@ -1175,13 +1175,13 @@ on the walls</para>
 <speaker remap="SPEAKER">First Senator</speaker>
 <line remap="LINE">No, nor a man that fears you less than he,</line>
 <line remap="LINE">That's lesser than a little.</line>
-<para remap="STAGEDIR">Drums afar off</para>
+<stagedir remap="STAGEDIR">Drums afar off</stagedir>
 <line remap="LINE">Hark! our drums</line>
 <line remap="LINE">Are bringing forth our youth. We'll break our walls,</line>
 <line remap="LINE">Rather than they shall pound us up: our gates,</line>
 <line remap="LINE">Which yet seem shut, we, have but pinn'd with rushes;</line>
 <line remap="LINE">They'll open of themselves.</line>
-<para remap="STAGEDIR">Alarum afar off</para>
+<stagedir remap="STAGEDIR">Alarum afar off</stagedir>
 <line remap="LINE">Hark you. far off!</line>
 <line remap="LINE">There is Aufidius; list, what work he makes</line>
 <line remap="LINE">Amongst your cloven army.</line>
@@ -1197,7 +1197,7 @@ on the walls</para>
 <line remap="LINE">Their noise be our instruction. Ladders, ho!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter the army of the Volsces</para>
+<stagedir remap="STAGEDIR">Enter the army of the Volsces</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCIUS</speaker>
@@ -1211,8 +1211,8 @@ on the walls</para>
 <line remap="LINE">And he shall feel mine edge.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Alarum. The Romans are beat back to their
-trenches. Re-enter MARCIUS cursing</para>
+<stagedir remap="STAGEDIR">Alarum. The Romans are beat back to their
+trenches. Re-enter MARCIUS cursing</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCIUS</speaker>
@@ -1229,14 +1229,14 @@ trenches. Re-enter MARCIUS cursing</para>
 <line remap="LINE">And make my wars on you: look to't: come on;</line>
 <line remap="LINE">If you'll stand fast, we'll beat them to their wives,</line>
 <line remap="LINE">As they us to our trenches followed.</line>
-<para remap="STAGEDIR">Another alarum. The Volsces fly, and MARCIUS
-follows them to the gates</para>
+<stagedir remap="STAGEDIR">Another alarum. The Volsces fly, and MARCIUS
+follows them to the gates</stagedir>
 <line remap="LINE">So, now the gates are ope: now prove good seconds:</line>
 <line remap="LINE">'Tis for the followers fortune widens them,</line>
 <line remap="LINE">Not for the fliers: mark me, and do the like.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enters the gates</para>
+<stagedir remap="STAGEDIR">Enters the gates</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Soldier</speaker>
@@ -1248,7 +1248,7 @@ follows them to the gates</para>
 <line remap="LINE">Nor I.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">MARCIUS is shut in</para>
+<stagedir remap="STAGEDIR">MARCIUS is shut in</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Soldier</speaker>
@@ -1260,8 +1260,8 @@ follows them to the gates</para>
 <line remap="LINE">To the pot, I warrant him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Alarum continues</para>
-<para remap="STAGEDIR">Re-enter TITUS LARTIUS</para>
+<stagedir remap="STAGEDIR">Alarum continues</stagedir>
+<stagedir remap="STAGEDIR">Re-enter TITUS LARTIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LARTIUS</speaker>
@@ -1295,7 +1295,7 @@ follows them to the gates</para>
 <line remap="LINE">Were feverous and did tremble.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter MARCIUS, bleeding, assaulted by the enemy</para>
+<stagedir remap="STAGEDIR">Re-enter MARCIUS, bleeding, assaulted by the enemy</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Soldier</speaker>
@@ -1308,11 +1308,11 @@ follows them to the gates</para>
 <line remap="LINE">Let's fetch him off, or make remain alike.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">They fight, and all enter the city</para>
+<stagedir remap="STAGEDIR">They fight, and all enter the city</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  Corioli. A street.</title>
-<para remap="STAGEDIR">Enter certain Romans, with spoils</para>
+<stagedir remap="STAGEDIR">Enter certain Romans, with spoils</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Roman</speaker>
@@ -1329,8 +1329,8 @@ follows them to the gates</para>
 <line remap="LINE">A murrain on't! I took this for silver.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Alarum continues still afar off</para>
-<para remap="STAGEDIR">Enter MARCIUS and TITUS LARTIUS with a trumpet</para>
+<stagedir remap="STAGEDIR">Alarum continues still afar off</stagedir>
+<stagedir remap="STAGEDIR">Enter MARCIUS and TITUS LARTIUS with a trumpet</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCIUS</speaker>
@@ -1380,18 +1380,18 @@ follows them to the gates</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LARTIUS</speaker>
 <line remap="LINE">Thou worthiest Marcius!</line>
-<para remap="STAGEDIR">Exit MARCIUS</para>
+<stagedir remap="STAGEDIR">Exit MARCIUS</stagedir>
 <line remap="LINE">Go, sound thy trumpet in the market-place;</line>
 <line remap="LINE">Call thither all the officers o' the town,</line>
 <line remap="LINE">Where they shall know our mind: away!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  Near the camp of Cominius.</title>
-<para remap="STAGEDIR">Enter COMINIUS, as it were in retire,
-with soldiers</para>
+<stagedir remap="STAGEDIR">Enter COMINIUS, as it were in retire,
+with soldiers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">COMINIUS</speaker>
@@ -1406,7 +1406,7 @@ with soldiers</para>
 <line remap="LINE">That both our powers, with smiling</line>
 <line remap="LINE">fronts encountering,</line>
 <line remap="LINE">May give you thankful sacrifice.</line>
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 <line remap="LINE">Thy news?</line>
 </linegroup></dialogue>
 
@@ -1455,7 +1455,7 @@ with soldiers</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Within</phrase>                 Come I too late?</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Within</inlinestagedir>                 Come I too late?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
@@ -1465,7 +1465,7 @@ with soldiers</para>
 <line remap="LINE">From every meaner man.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MARCIUS</para>
+<stagedir remap="STAGEDIR">Enter MARCIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCIUS</speaker>
@@ -1584,8 +1584,8 @@ with soldiers</para>
 <line remap="LINE">Let him alone, or so many so minded,</line>
 <line remap="LINE">Wave thus, to express his disposition,</line>
 <line remap="LINE">And follow Marcius.</line>
-<para remap="STAGEDIR">They all shout and wave their swords, take him up in
-their arms, and cast up their caps</para>
+<stagedir remap="STAGEDIR">They all shout and wave their swords, take him up in
+their arms, and cast up their caps</stagedir>
 <line remap="LINE">O, me alone! make you a sword of me?</line>
 <line remap="LINE">If these shows be not outward, which of you</line>
 <line remap="LINE">But is four Volsces? none of you but is</line>
@@ -1606,14 +1606,14 @@ their arms, and cast up their caps</para>
 <line remap="LINE">Divide in all with us.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VII.  The gates of Corioli.</title>
-<para remap="STAGEDIR">TITUS LARTIUS, having set a guard upon
+<stagedir remap="STAGEDIR">TITUS LARTIUS, having set a guard upon
 Corioli, going with drum and trumpet toward
 COMINIUS and CAIUS MARCIUS, enters with
-Lieutenant, other Soldiers, and a Scout</para>
+Lieutenant, other Soldiers, and a Scout</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LARTIUS</speaker>
@@ -1635,12 +1635,12 @@ Lieutenant, other Soldiers, and a Scout</para>
 <line remap="LINE">Our guider, come; to the Roman camp conduct us.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VIII.  A field of battle.</title>
-<para remap="STAGEDIR">Alarum as in battle. Enter, from opposite sides,
-MARCIUS and AUFIDIUS</para>
+<stagedir remap="STAGEDIR">Alarum as in battle. Enter, from opposite sides,
+MARCIUS and AUFIDIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCIUS</speaker>
@@ -1681,20 +1681,20 @@ MARCIUS and AUFIDIUS</para>
 <line remap="LINE">Wert thou the Hector</line>
 <line remap="LINE">That was the whip of your bragg'd progeny,</line>
 <line remap="LINE">Thou shouldst not scape me here.</line>
-<para remap="STAGEDIR">They fight, and certain Volsces come to the aid of
+<stagedir remap="STAGEDIR">They fight, and certain Volsces come to the aid of
 AUFIDIUS. MARCIUS fights till they be driven in
-breathless</para>
+breathless</stagedir>
 <line remap="LINE">Officious, and not valiant, you have shamed me</line>
 <line remap="LINE">In your condemned seconds.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IX.  The Roman camp.</title>
-<para remap="STAGEDIR">Flourish. Alarum. A retreat is sounded. Flourish.
+<stagedir remap="STAGEDIR">Flourish. Alarum. A retreat is sounded. Flourish.
 Enter, from one side, COMINIUS with the Romans; from
-the other side, MARCIUS, with his arm in a scarf</para>
+the other side, MARCIUS, with his arm in a scarf</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">COMINIUS</speaker>
@@ -1712,8 +1712,8 @@ the other side, MARCIUS, with his arm in a scarf</para>
 <line remap="LINE">Having fully dined before.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter TITUS LARTIUS, with his power,
-from the pursuit</para>
+<stagedir remap="STAGEDIR">Enter TITUS LARTIUS, with his power,
+from the pursuit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">LARTIUS</speaker>
@@ -1773,9 +1773,9 @@ from the pursuit</para>
 <line remap="LINE">That have beheld the doing.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">A long flourish. They all cry 'Marcius! Marcius!'
+<stagedir remap="STAGEDIR">A long flourish. They all cry 'Marcius! Marcius!'
 cast up their caps and lances: COMINIUS and LARTIUS
-stand bare</para>
+stand bare</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MARCIUS</speaker>
@@ -1812,7 +1812,7 @@ stand bare</para>
 <line remap="LINE">The addition nobly ever!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish. Trumpets sound, and drums</para>
+<stagedir remap="STAGEDIR">Flourish. Trumpets sound, and drums</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">All</speaker>
@@ -1892,12 +1892,12 @@ stand bare</para>
 <line remap="LINE">It should be look'd to: come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE X.  The camp of the Volsces.</title>
-<para remap="STAGEDIR">A flourish. Cornets. Enter TULLUS AUFIDIUS,
-bloody, with two or three Soldiers</para>
+<stagedir remap="STAGEDIR">A flourish. Cornets. Enter TULLUS AUFIDIUS,
+bloody, with two or three Soldiers</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AUFIDIUS</speaker>
@@ -1967,7 +1967,7 @@ bloody, with two or three Soldiers</para>
 <line remap="LINE">I shall, sir.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -1975,8 +1975,8 @@ bloody, with two or three Soldiers</para>
 <chapter remap="ACT"><title remap="TITLE">ACT II</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Rome. A public place.</title>
-<para remap="STAGEDIR">Enter MENENIUS with the two Tribunes of the people,
-SICINIUS and BRUTUS.</para>
+<stagedir remap="STAGEDIR">Enter MENENIUS with the two Tribunes of the people,
+SICINIUS and BRUTUS.</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENENIUS</speaker>
@@ -2186,8 +2186,8 @@ SICINIUS and BRUTUS.</para>
 <line remap="LINE">your worships: more of your conversation would</line>
 <line remap="LINE">infect my brain, being the herdsmen of the beastly</line>
 <line remap="LINE">plebeians: I will be bold to take my leave of you.</line>
-<para remap="STAGEDIR">BRUTUS and SICINIUS go aside</para>
-<para remap="STAGEDIR">Enter VOLUMNIA, VIRGILIA, and VALERIA</para>
+<stagedir remap="STAGEDIR">BRUTUS and SICINIUS go aside</stagedir>
+<stagedir remap="STAGEDIR">Enter VOLUMNIA, VIRGILIA, and VALERIA</stagedir>
 <line remap="LINE">How now, my as fair as noble ladies,--and the moon,</line>
 <line remap="LINE">were she earthly, no nobler,--whither do you follow</line>
 <line remap="LINE">your eyes so fast?</line>
@@ -2324,7 +2324,7 @@ SICINIUS and BRUTUS.</para>
 <speaker remap="SPEAKER">MENENIUS</speaker>
 <line remap="LINE">True! I'll be sworn they are true.</line>
 <line remap="LINE">Where is he wounded?</line>
-<para remap="STAGEDIR">To the Tribunes</para>
+<stagedir remap="STAGEDIR">To the Tribunes</stagedir>
 <line remap="LINE">God save your good worships! Marcius is coming</line>
 <line remap="LINE">home: he has more cause to be proud. Where is he wounded?</line>
 </linegroup></dialogue>
@@ -2352,7 +2352,7 @@ SICINIUS and BRUTUS.</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENENIUS</speaker>
 <line remap="LINE">Now it's twenty-seven: every gash was an enemy's grave.</line>
-<para remap="STAGEDIR">A shout and flourish</para>
+<stagedir remap="STAGEDIR">A shout and flourish</stagedir>
 <line remap="LINE">Hark! the trumpets.</line>
 </linegroup></dialogue>
 
@@ -2364,10 +2364,10 @@ SICINIUS and BRUTUS.</para>
 <line remap="LINE">Which, being advanced, declines, and then men die.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">A sennet. Trumpets sound. Enter COMINIUS the
+<stagedir remap="STAGEDIR">A sennet. Trumpets sound. Enter COMINIUS the
 general, and TITUS LARTIUS; between them, CORIOLANUS,
 crowned with an oaken garland; with Captains and
-Soldiers, and a Herald</para>
+Soldiers, and a Herald</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Herald</speaker>
@@ -2378,7 +2378,7 @@ Soldiers, and a Herald</para>
 <line remap="LINE">Welcome to Rome, renowned Coriolanus!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish</para>
+<stagedir remap="STAGEDIR">Flourish</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">All</speaker>
@@ -2403,7 +2403,7 @@ Soldiers, and a Herald</para>
 <line remap="LINE">For my prosperity!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Kneels</para>
+<stagedir remap="STAGEDIR">Kneels</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VOLUMNIA</speaker>
@@ -2431,7 +2431,7 @@ Soldiers, and a Herald</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
 <line remap="LINE">And live you yet?</line>
-<para remap="STAGEDIR">To VALERIA</para>
+<stagedir remap="STAGEDIR">To VALERIA</stagedir>
 <line remap="LINE">O my sweet lady, pardon.</line>
 </linegroup></dialogue>
 
@@ -2472,7 +2472,7 @@ Soldiers, and a Herald</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To VOLUMNIA and VIRGILIA</phrase>  Your hand, and yours:</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To VOLUMNIA and VIRGILIA</inlinestagedir>  Your hand, and yours:</line>
 <line remap="LINE">Ere in our own house I do shade my head,</line>
 <line remap="LINE">The good patricians must be visited;</line>
 <line remap="LINE">From whom I have received not only greetings,</line>
@@ -2500,8 +2500,8 @@ Soldiers, and a Herald</para>
 <line remap="LINE">On, to the Capitol!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish. Cornets. Exeunt in state, as before.
-BRUTUS and SICINIUS come forward</para>
+<stagedir remap="STAGEDIR">Flourish. Cornets. Exeunt in state, as before.
+BRUTUS and SICINIUS come forward</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BRUTUS</speaker>
@@ -2624,7 +2624,7 @@ BRUTUS and SICINIUS come forward</para>
 <line remap="LINE">Shall darken him for ever.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BRUTUS</speaker>
@@ -2656,11 +2656,11 @@ BRUTUS and SICINIUS come forward</para>
 <line remap="LINE">Have with you.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE  II.  The same. The Capitol.</title>
-<para remap="STAGEDIR">Enter two Officers, to lay cushions</para>
+<stagedir remap="STAGEDIR">Enter two Officers, to lay cushions</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Officer</speaker>
@@ -2726,11 +2726,11 @@ BRUTUS and SICINIUS come forward</para>
 <line remap="LINE">are coming.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">A sennet. Enter, with actors before them, COMINIUS
+<stagedir remap="STAGEDIR">A sennet. Enter, with actors before them, COMINIUS
 the consul, MENENIUS, CORIOLANUS, Senators,
 SICINIUS and BRUTUS. The Senators take their
 places; the Tribunes take their Places by
-themselves. CORIOLANUS stands</para>
+themselves. CORIOLANUS stands</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENENIUS</speaker>
@@ -2755,7 +2755,7 @@ themselves. CORIOLANUS stands</para>
 <line remap="LINE">Leave nothing out for length, and make us think</line>
 <line remap="LINE">Rather our state's defective for requital</line>
 <line remap="LINE">Than we to stretch it out.</line>
-<para remap="STAGEDIR">To the Tribunes</para>
+<stagedir remap="STAGEDIR">To the Tribunes</stagedir>
 <line remap="LINE">Masters o' the people,</line>
 <line remap="LINE">We do request your kindest ears, and after,</line>
 <line remap="LINE">Your loving motion toward the common body,</line>
@@ -2797,7 +2797,7 @@ themselves. CORIOLANUS stands</para>
 <line remap="LINE">He loves your people</line>
 <line remap="LINE">But tie him not to be their bedfellow.</line>
 <line remap="LINE">Worthy Cominius, speak.</line>
-<para remap="STAGEDIR">CORIOLANUS offers to go away</para>
+<stagedir remap="STAGEDIR">CORIOLANUS offers to go away</stagedir>
 <line remap="LINE">Nay, keep your place.</line>
 </linegroup></dialogue>
 
@@ -2841,7 +2841,7 @@ themselves. CORIOLANUS stands</para>
 <line remap="LINE">To hear my nothings monster'd.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENENIUS</speaker>
@@ -2934,7 +2934,7 @@ themselves. CORIOLANUS stands</para>
 <line remap="LINE">He doth appear.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter CORIOLANUS</para>
+<stagedir remap="STAGEDIR">Re-enter CORIOLANUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENENIUS</speaker>
@@ -3011,8 +3011,8 @@ themselves. CORIOLANUS stands</para>
 <line remap="LINE">To Coriolanus come all joy and honour!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Flourish of cornets. Exeunt all but SICINIUS
-and BRUTUS</para>
+<stagedir remap="STAGEDIR">Flourish of cornets. Exeunt all but SICINIUS
+and BRUTUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BRUTUS</speaker>
@@ -3033,11 +3033,11 @@ and BRUTUS</para>
 <line remap="LINE">I know, they do attend us.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The same. The Forum.</title>
-<para remap="STAGEDIR">Enter seven or eight Citizens</para>
+<stagedir remap="STAGEDIR">Enter seven or eight Citizens</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Citizen</speaker>
@@ -3117,7 +3117,7 @@ and BRUTUS</para>
 <line remap="LINE">that's no matter, the greater part carries it. I</line>
 <line remap="LINE">say, if he would incline to the people, there was</line>
 <line remap="LINE">never a worthier man.</line>
-<para remap="STAGEDIR">Enter CORIOLANUS in a gown of humility, with MENENIUS</para>
+<stagedir remap="STAGEDIR">Enter CORIOLANUS in a gown of humility, with MENENIUS</stagedir>
 <line remap="LINE">Here he comes, and in the gown of humility: mark his</line>
 <line remap="LINE">behavior. We are not to stay all together, but to</line>
 <line remap="LINE">come by him where he stands, by ones, by twos, and</line>
@@ -3133,7 +3133,7 @@ and BRUTUS</para>
 <line remap="LINE">Content, content.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Citizens</para>
+<stagedir remap="STAGEDIR">Exeunt Citizens</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENENIUS</speaker>
@@ -3172,15 +3172,15 @@ and BRUTUS</para>
 <line remap="LINE">In wholesome manner.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
 <line remap="LINE">Bid them wash their faces</line>
 <line remap="LINE">And keep their teeth clean.</line>
-<para remap="STAGEDIR">Re-enter two of the Citizens</para>
+<stagedir remap="STAGEDIR">Re-enter two of the Citizens</stagedir>
 <line remap="LINE">So, here comes a brace.</line>
-<para remap="STAGEDIR">Re-enter a third Citizen</para>
+<stagedir remap="STAGEDIR">Re-enter a third Citizen</stagedir>
 <line remap="LINE">You know the cause, air, of my standing here.</line>
 </linegroup></dialogue>
 
@@ -3259,8 +3259,8 @@ and BRUTUS</para>
 <line remap="LINE">An 'twere to give again,--but 'tis no matter.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt the three Citizens</para>
-<para remap="STAGEDIR">Re-enter two other Citizens</para>
+<stagedir remap="STAGEDIR">Exeunt the three Citizens</stagedir>
+<stagedir remap="STAGEDIR">Re-enter two other Citizens</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
@@ -3324,7 +3324,7 @@ and BRUTUS</para>
 <line remap="LINE">The gods give you joy, sir, heartily!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
@@ -3341,7 +3341,7 @@ and BRUTUS</para>
 <line remap="LINE">Let the high office and the honour go</line>
 <line remap="LINE">To one that would do thus. I am half through;</line>
 <line remap="LINE">The one part suffer'd, the other will I do.</line>
-<para remap="STAGEDIR">Re-enter three Citizens more</para>
+<stagedir remap="STAGEDIR">Re-enter three Citizens more</stagedir>
 <line remap="LINE">Here come more voices.</line>
 <line remap="LINE">Your voices: for your voices I have fought;</line>
 <line remap="LINE">Watch'd for your voices; for Your voices bear</line>
@@ -3368,14 +3368,14 @@ and BRUTUS</para>
 <line remap="LINE">Amen, amen. God save thee, noble consul!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
 <line remap="LINE">Worthy voices!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter MENENIUS, with BRUTUS and SICINIUS</para>
+<stagedir remap="STAGEDIR">Re-enter MENENIUS, with BRUTUS and SICINIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENENIUS</speaker>
@@ -3436,7 +3436,7 @@ and BRUTUS</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SICINIUS</speaker>
 <line remap="LINE">Fare you well.</line>
-<para remap="STAGEDIR">Exeunt CORIOLANUS and MENENIUS</para>
+<stagedir remap="STAGEDIR">Exeunt CORIOLANUS and MENENIUS</stagedir>
 <line remap="LINE">He has it now, and by his looks methink</line>
 <line remap="LINE">'Tis warm at 's heart.</line>
 </linegroup></dialogue>
@@ -3447,7 +3447,7 @@ and BRUTUS</para>
 <line remap="LINE">will you dismiss the people?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter Citizens</para>
+<stagedir remap="STAGEDIR">Re-enter Citizens</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SICINIUS</speaker>
@@ -3638,8 +3638,8 @@ and BRUTUS</para>
 <line remap="LINE">Who, after great Hostilius, here was king;</line>
 <line remap="LINE">Of the same house Publius and Quintus were,</line>
 <line remap="LINE">That our beat water brought by conduits hither;</line>
-<line remap="LINE">And  <phrase remap="STAGEDIR">Censorinus,</phrase>  nobly named so,</line>
-<line remap="LINE">Twice being  <phrase remap="STAGEDIR">by the people chosen</phrase>  censor,</line>
+<line remap="LINE">And  <inlinestagedir remap="STAGEDIR">Censorinus,</inlinestagedir>  nobly named so,</line>
+<line remap="LINE">Twice being  <inlinestagedir remap="STAGEDIR">by the people chosen</inlinestagedir>  censor,</line>
 <line remap="LINE">Was his great ancestor.</line>
 </linegroup></dialogue>
 
@@ -3668,7 +3668,7 @@ and BRUTUS</para>
 <line remap="LINE">Repent in their election.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Citizens</para>
+<stagedir remap="STAGEDIR">Exeunt Citizens</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BRUTUS</speaker>
@@ -3688,7 +3688,7 @@ and BRUTUS</para>
 <line remap="LINE">Which we have goaded onward.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -3696,8 +3696,8 @@ and BRUTUS</para>
 <chapter remap="ACT"><title remap="TITLE">ACT III</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Rome. A street.</title>
-<para remap="STAGEDIR">Cornets. Enter CORIOLANUS, MENENIUS, all the
-Gentry, COMINIUS, TITUS LARTIUS, and other Senators</para>
+<stagedir remap="STAGEDIR">Cornets. Enter CORIOLANUS, MENENIUS, all the
+Gentry, COMINIUS, TITUS LARTIUS, and other Senators</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
@@ -3774,7 +3774,7 @@ Gentry, COMINIUS, TITUS LARTIUS, and other Senators</para>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
 <line remap="LINE">I wish I had a cause to seek him there,</line>
 <line remap="LINE">To oppose his hatred fully. Welcome home.</line>
-<para remap="STAGEDIR">Enter SICINIUS and BRUTUS</para>
+<stagedir remap="STAGEDIR">Enter SICINIUS and BRUTUS</stagedir>
 <line remap="LINE">Behold, these are the tribunes of the people,</line>
 <line remap="LINE">The tongues o' the common mouth: I do despise them;</line>
 <line remap="LINE">For they do prank them in authority,</line>
@@ -4181,14 +4181,14 @@ Gentry, COMINIUS, TITUS LARTIUS, and other Senators</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BRUTUS</speaker>
 <line remap="LINE">The aediles, ho!</line>
-<para remap="STAGEDIR">Enter an AEdile</para>
+<stagedir remap="STAGEDIR">Enter an AEdile</stagedir>
 <line remap="LINE">Let him be apprehended.</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SICINIUS</speaker>
 <line remap="LINE">Go, call the people:</line>
-<para remap="STAGEDIR">Exit AEdile</para>
+<stagedir remap="STAGEDIR">Exit AEdile</stagedir>
 <line remap="LINE">in whose name myself</line>
 <line remap="LINE">Attach thee as a traitorous innovator,</line>
 <line remap="LINE">A foe to the public weal: obey, I charge thee,</line>
@@ -4221,8 +4221,8 @@ Gentry, COMINIUS, TITUS LARTIUS, and other Senators</para>
 <line remap="LINE">Help, ye citizens!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a rabble of Citizens (Plebeians), with
-the AEdiles</para>
+<stagedir remap="STAGEDIR">Enter a rabble of Citizens (Plebeians), with
+the AEdiles</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENENIUS</speaker>
@@ -4247,7 +4247,7 @@ the AEdiles</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Senators, &amp;C</speaker>
 <line remap="LINE">Weapons, weapons, weapons!</line>
-<para remap="STAGEDIR">They all bustle about CORIOLANUS, crying</para>
+<stagedir remap="STAGEDIR">They all bustle about CORIOLANUS, crying</stagedir>
 <line remap="LINE">'Tribunes!' 'Patricians!' 'Citizens!' 'What, ho!'</line>
 <line remap="LINE">'Sicinius!' 'Brutus!' 'Coriolanus!' 'Citizens!'</line>
 <line remap="LINE">'Peace, peace, peace!' 'Stay, hold, peace!'</line>
@@ -4368,7 +4368,7 @@ the AEdiles</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENENIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To BRUTUS</phrase>  Be that you seem, truly your</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To BRUTUS</inlinestagedir>  Be that you seem, truly your</line>
 <line remap="LINE">country's friend,</line>
 <line remap="LINE">And temperately proceed to what you would</line>
 <line remap="LINE">Thus violently redress.</line>
@@ -4385,7 +4385,7 @@ the AEdiles</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
 <line remap="LINE">No, I'll die here.</line>
-<para remap="STAGEDIR">Drawing his sword</para>
+<stagedir remap="STAGEDIR">Drawing his sword</stagedir>
 <line remap="LINE">There's some among you have beheld me fighting:</line>
 <line remap="LINE">Come, try upon yourselves what you have seen me.</line>
 </linegroup></dialogue>
@@ -4411,8 +4411,8 @@ the AEdiles</para>
 <line remap="LINE">Down with him, down with him!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">In this mutiny, the Tribunes, the AEdiles, and the
-People, are beat in</para>
+<stagedir remap="STAGEDIR">In this mutiny, the Tribunes, the AEdiles, and the
+People, are beat in</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENENIUS</speaker>
@@ -4500,7 +4500,7 @@ People, are beat in</para>
 <line remap="LINE">Nay, come away.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt CORIOLANUS, COMINIUS, and others</para>
+<stagedir remap="STAGEDIR">Exeunt CORIOLANUS, COMINIUS, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">A Patrician</speaker>
@@ -4515,7 +4515,7 @@ People, are beat in</para>
 <line remap="LINE">What his breast forges, that his tongue must vent;</line>
 <line remap="LINE">And, being angry, does forget that ever</line>
 <line remap="LINE">He heard the name of death.</line>
-<para remap="STAGEDIR">A noise within</para>
+<stagedir remap="STAGEDIR">A noise within</stagedir>
 <line remap="LINE">Here's goodly work!</line>
 </linegroup></dialogue>
 
@@ -4530,7 +4530,7 @@ People, are beat in</para>
 <line remap="LINE">Could he not speak 'em fair?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter BRUTUS and SICINIUS, with the rabble</para>
+<stagedir remap="STAGEDIR">Re-enter BRUTUS and SICINIUS, with the rabble</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SICINIUS</speaker>
@@ -4748,7 +4748,7 @@ People, are beat in</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENENIUS</speaker>
 <line remap="LINE">I'll bring him to you.</line>
-<para remap="STAGEDIR">To the Senators</para>
+<stagedir remap="STAGEDIR">To the Senators</stagedir>
 <line remap="LINE">Let me desire your company: he must come,</line>
 <line remap="LINE">Or what is worst will follow.</line>
 </linegroup></dialogue>
@@ -4758,11 +4758,11 @@ People, are beat in</para>
 <line remap="LINE">Pray you, let's to him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  A room in CORIOLANUS'S house.</title>
-<para remap="STAGEDIR">Enter CORIOLANUS with Patricians</para>
+<stagedir remap="STAGEDIR">Enter CORIOLANUS with Patricians</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
@@ -4788,7 +4788,7 @@ People, are beat in</para>
 <line remap="LINE">In congregations, to yawn, be still and wonder,</line>
 <line remap="LINE">When one but of my ordinance stood up</line>
 <line remap="LINE">To speak of peace or war.</line>
-<para remap="STAGEDIR">Enter VOLUMNIA</para>
+<stagedir remap="STAGEDIR">Enter VOLUMNIA</stagedir>
 <line remap="LINE">I talk of you:</line>
 <line remap="LINE">Why did you wish me milder? would you have me</line>
 <line remap="LINE">False to my nature? Rather say I play</line>
@@ -4826,7 +4826,7 @@ People, are beat in</para>
 <line remap="LINE">Ay, and burn too.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter MENENIUS and Senators</para>
+<stagedir remap="STAGEDIR">Enter MENENIUS and Senators</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENENIUS</speaker>
@@ -4986,7 +4986,7 @@ People, are beat in</para>
 <line remap="LINE">Than flatter him in a bower. Here is Cominius.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter COMINIUS</para>
+<stagedir remap="STAGEDIR">Enter COMINIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">COMINIUS</speaker>
@@ -5084,7 +5084,7 @@ People, are beat in</para>
 <line remap="LINE">Do your will.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">COMINIUS</speaker>
@@ -5111,11 +5111,11 @@ People, are beat in</para>
 <line remap="LINE">Well, mildly be it then. Mildly!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The same. The Forum.</title>
-<para remap="STAGEDIR">Enter SICINIUS and BRUTUS</para>
+<stagedir remap="STAGEDIR">Enter SICINIUS and BRUTUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BRUTUS</speaker>
@@ -5124,7 +5124,7 @@ People, are beat in</para>
 <line remap="LINE">Enforce him with his envy to the people,</line>
 <line remap="LINE">And that the spoil got on the Antiates</line>
 <line remap="LINE">Was ne'er distributed.</line>
-<para remap="STAGEDIR">Enter an AEdile</para>
+<stagedir remap="STAGEDIR">Enter an AEdile</stagedir>
 <line remap="LINE">What, will he come?</line>
 </linegroup></dialogue>
 
@@ -5204,7 +5204,7 @@ People, are beat in</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BRUTUS</speaker>
 <line remap="LINE">Go about it.</line>
-<para remap="STAGEDIR">Exit AEdile</para>
+<stagedir remap="STAGEDIR">Exit AEdile</stagedir>
 <line remap="LINE">Put him to choler straight: he hath been used</line>
 <line remap="LINE">Ever to conquer, and to have his worth</line>
 <line remap="LINE">Of contradiction: being once chafed, he cannot</line>
@@ -5218,8 +5218,8 @@ People, are beat in</para>
 <line remap="LINE">Well, here he comes.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CORIOLANUS, MENENIUS, and COMINIUS,
-with Senators and Patricians</para>
+<stagedir remap="STAGEDIR">Enter CORIOLANUS, MENENIUS, and COMINIUS,
+with Senators and Patricians</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENENIUS</speaker>
@@ -5246,7 +5246,7 @@ with Senators and Patricians</para>
 <line remap="LINE">A noble wish.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter AEdile, with Citizens</para>
+<stagedir remap="STAGEDIR">Re-enter AEdile, with Citizens</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SICINIUS</speaker>
@@ -5510,8 +5510,8 @@ with Senators and Patricians</para>
 <line remap="LINE">There is a world elsewhere.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt CORIOLANUS, COMINIUS, MENENIUS, Senators,
-and Patricians</para>
+<stagedir remap="STAGEDIR">Exeunt CORIOLANUS, COMINIUS, MENENIUS, Senators,
+and Patricians</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AEdile</speaker>
@@ -5523,7 +5523,7 @@ and Patricians</para>
 <line remap="LINE">Our enemy is banish'd! he is gone! Hoo! hoo!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Shouting, and throwing up their caps</para>
+<stagedir remap="STAGEDIR">Shouting, and throwing up their caps</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SICINIUS</speaker>
@@ -5539,7 +5539,7 @@ and Patricians</para>
 <line remap="LINE">The gods preserve our noble tribunes! Come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -5547,8 +5547,8 @@ and Patricians</para>
 <chapter remap="ACT"><title remap="TITLE">ACT IV</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Rome. Before a gate of the city.</title>
-<para remap="STAGEDIR">Enter CORIOLANUS, VOLUMNIA, VIRGILIA, MENENIUS,
-COMINIUS, with the young Nobility of Rome</para>
+<stagedir remap="STAGEDIR">Enter CORIOLANUS, VOLUMNIA, VIRGILIA, MENENIUS,
+COMINIUS, with the young Nobility of Rome</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
@@ -5658,11 +5658,11 @@ COMINIUS, with the young Nobility of Rome</para>
 <line remap="LINE">Give me thy hand: Come.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  The same. A  street near the gate.</title>
-<para remap="STAGEDIR">Enter SICINIUS, BRUTUS, and an AEdile</para>
+<stagedir remap="STAGEDIR">Enter SICINIUS, BRUTUS, and an AEdile</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SICINIUS</speaker>
@@ -5688,7 +5688,7 @@ COMINIUS, with the young Nobility of Rome</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BRUTUS</speaker>
 <line remap="LINE">Dismiss them home.</line>
-<para remap="STAGEDIR">Exit AEdile</para>
+<stagedir remap="STAGEDIR">Exit AEdile</stagedir>
 <line remap="LINE">Here comes his mother.</line>
 </linegroup></dialogue>
 
@@ -5712,7 +5712,7 @@ COMINIUS, with the young Nobility of Rome</para>
 <line remap="LINE">They have ta'en note of us: keep on your way.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter VOLUMNIA, VIRGILIA, and MENENIUS</para>
+<stagedir remap="STAGEDIR">Enter VOLUMNIA, VIRGILIA, and MENENIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VOLUMNIA</speaker>
@@ -5729,13 +5729,13 @@ COMINIUS, with the young Nobility of Rome</para>
 <speaker remap="SPEAKER">VOLUMNIA</speaker>
 <line remap="LINE">If that I could for weeping, you should hear,--</line>
 <line remap="LINE">Nay, and you shall hear some.</line>
-<para remap="STAGEDIR">To BRUTUS</para>
+<stagedir remap="STAGEDIR">To BRUTUS</stagedir>
 <line remap="LINE">Will you be gone?</line>
 </linegroup></dialogue>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VIRGILIA</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">To SICINIUS</phrase>  You shall stay too: I would I had the power</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">To SICINIUS</inlinestagedir>  You shall stay too: I would I had the power</line>
 <line remap="LINE">To say so to my husband.</line>
 </linegroup></dialogue>
 
@@ -5837,7 +5837,7 @@ COMINIUS, with the young Nobility of Rome</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VOLUMNIA</speaker>
 <line remap="LINE">Take my prayers with you.</line>
-<para remap="STAGEDIR">Exeunt Tribunes</para>
+<stagedir remap="STAGEDIR">Exeunt Tribunes</stagedir>
 <line remap="LINE">I would the gods had nothing else to do</line>
 <line remap="LINE">But to confirm my curses! Could I meet 'em</line>
 <line remap="LINE">But once a-day, it would unclog my heart</line>
@@ -5863,11 +5863,11 @@ COMINIUS, with the young Nobility of Rome</para>
 <line remap="LINE">Fie, fie, fie!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  A highway between Rome and Antium.</title>
-<para remap="STAGEDIR">Enter a Roman and a Volsce, meeting</para>
+<stagedir remap="STAGEDIR">Enter a Roman and a Volsce, meeting</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Roman</speaker>
@@ -5994,12 +5994,12 @@ COMINIUS, with the young Nobility of Rome</para>
 <line remap="LINE">Well, let us go together.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Antium. Before Aufidius's house.</title>
-<para remap="STAGEDIR">Enter CORIOLANUS in mean apparel, disguised
-and muffled</para>
+<stagedir remap="STAGEDIR">Enter CORIOLANUS in mean apparel, disguised
+and muffled</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
@@ -6009,7 +6009,7 @@ and muffled</para>
 <line remap="LINE">Have I heard groan and drop: then know me not,</line>
 <line remap="LINE">Lest that thy wives with spits and boys with stones</line>
 <line remap="LINE">In puny battle slay me.</line>
-<para remap="STAGEDIR">Enter a Citizen</para>
+<stagedir remap="STAGEDIR">Enter a Citizen</stagedir>
 <line remap="LINE">Save you, sir.</line>
 </linegroup></dialogue>
 
@@ -6043,7 +6043,7 @@ and muffled</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
 <line remap="LINE">Thank you, sir: farewell.</line>
-<para remap="STAGEDIR">Exit Citizen</para>
+<stagedir remap="STAGEDIR">Exit Citizen</stagedir>
 <line remap="LINE">O world, thy slippery turns! Friends now fast sworn,</line>
 <line remap="LINE">Whose double bosoms seem to wear one heart,</line>
 <line remap="LINE">Whose house, whose bed, whose meal, and exercise,</line>
@@ -6061,11 +6061,11 @@ and muffled</para>
 <line remap="LINE">I'll do his country service.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  The same. A hall in Aufidius's house.</title>
-<para remap="STAGEDIR">Music within. Enter a Servingman</para>
+<stagedir remap="STAGEDIR">Music within. Enter a Servingman</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Servingman</speaker>
@@ -6073,8 +6073,8 @@ and muffled</para>
 <line remap="LINE">is here! I think our fellows are asleep.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter a second Servingman</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter a second Servingman</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Servingman</speaker>
@@ -6082,8 +6082,8 @@ and muffled</para>
 <line remap="LINE">for him. Cotus!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
-<para remap="STAGEDIR">Enter CORIOLANUS</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
+<stagedir remap="STAGEDIR">Enter CORIOLANUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
@@ -6091,7 +6091,7 @@ and muffled</para>
 <line remap="LINE">Appear not like a guest.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter the first Servingman</para>
+<stagedir remap="STAGEDIR">Re-enter the first Servingman</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Servingman</speaker>
@@ -6099,7 +6099,7 @@ and muffled</para>
 <line remap="LINE">Here's no place for you: pray, go to the door.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
@@ -6107,7 +6107,7 @@ and muffled</para>
 <line remap="LINE">In being Coriolanus.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter second Servingman</para>
+<stagedir remap="STAGEDIR">Re-enter second Servingman</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Servingman</speaker>
@@ -6136,7 +6136,7 @@ and muffled</para>
 <line remap="LINE">Are you so brave? I'll have you talked with anon.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a third Servingman. The first meets him</para>
+<stagedir remap="STAGEDIR">Enter a third Servingman. The first meets him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Third Servingman</speaker>
@@ -6149,7 +6149,7 @@ and muffled</para>
 <line remap="LINE">out of the house: prithee, call my master to him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Retires</para>
+<stagedir remap="STAGEDIR">Retires</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Third Servingman</speaker>
@@ -6193,7 +6193,7 @@ and muffled</para>
 <line remap="LINE">Follow your function, go, and batten on cold bits.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Pushes him away</para>
+<stagedir remap="STAGEDIR">Pushes him away</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Third Servingman</speaker>
@@ -6206,7 +6206,7 @@ and muffled</para>
 <line remap="LINE">And I shall.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Third Servingman</speaker>
@@ -6261,8 +6261,8 @@ and muffled</para>
 <line remap="LINE">trencher, hence!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Beats him away. Exit third Servingman</para>
-<para remap="STAGEDIR">Enter AUFIDIUS with the second Servingman</para>
+<stagedir remap="STAGEDIR">Beats him away. Exit third Servingman</stagedir>
+<stagedir remap="STAGEDIR">Enter AUFIDIUS with the second Servingman</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AUFIDIUS</speaker>
@@ -6275,7 +6275,7 @@ and muffled</para>
 <line remap="LINE">disturbing the lords within.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Retires</para>
+<stagedir remap="STAGEDIR">Retires</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AUFIDIUS</speaker>
@@ -6286,7 +6286,7 @@ and muffled</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
 <line remap="LINE">If, Tullus,</line>
-<para remap="STAGEDIR">Unmuffling</para>
+<stagedir remap="STAGEDIR">Unmuffling</stagedir>
 <line remap="LINE">Not yet thou knowest me, and, seeing me, dost not</line>
 <line remap="LINE">Think me for the man I am, necessity</line>
 <line remap="LINE">Commands me name myself.</line>
@@ -6424,8 +6424,8 @@ and muffled</para>
 <line remap="LINE">Yet, Marcius, that was much. Your hand: most welcome!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt CORIOLANUS and AUFIDIUS. The two
-Servingmen come forward</para>
+<stagedir remap="STAGEDIR">Exeunt CORIOLANUS and AUFIDIUS. The two
+Servingmen come forward</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Servingman</speaker>
@@ -6501,7 +6501,7 @@ Servingmen come forward</para>
 <line remap="LINE">Ay, and for an assault too.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Re-enter third Servingman</para>
+<stagedir remap="STAGEDIR">Re-enter third Servingman</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Third Servingman</speaker>
@@ -6662,11 +6662,11 @@ Servingmen come forward</para>
 <line remap="LINE">In, in, in, in!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  Rome. A public place.</title>
-<para remap="STAGEDIR">Enter SICINIUS and BRUTUS</para>
+<stagedir remap="STAGEDIR">Enter SICINIUS and BRUTUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SICINIUS</speaker>
@@ -6684,7 +6684,7 @@ Servingmen come forward</para>
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BRUTUS</speaker>
 <line remap="LINE">We stood to't in good time.</line>
-<para remap="STAGEDIR">Enter MENENIUS</para>
+<stagedir remap="STAGEDIR">Enter MENENIUS</stagedir>
 <line remap="LINE">Is this Menenius?</line>
 </linegroup></dialogue>
 
@@ -6728,7 +6728,7 @@ Servingmen come forward</para>
 <line remap="LINE">Hear nothing from him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter three or four Citizens</para>
+<stagedir remap="STAGEDIR">Enter three or four Citizens</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Citizens</speaker>
@@ -6772,7 +6772,7 @@ Servingmen come forward</para>
 <line remap="LINE">Farewell, farewell.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Citizens</para>
+<stagedir remap="STAGEDIR">Exeunt Citizens</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SICINIUS</speaker>
@@ -6812,7 +6812,7 @@ Servingmen come forward</para>
 <line remap="LINE">Sits safe and still without him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter an AEdile</para>
+<stagedir remap="STAGEDIR">Enter an AEdile</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AEdile</speaker>
@@ -6868,7 +6868,7 @@ Servingmen come forward</para>
 <line remap="LINE">Not possible.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
@@ -6928,7 +6928,7 @@ Servingmen come forward</para>
 <line remap="LINE">Than violentest contrariety.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a second Messenger</para>
+<stagedir remap="STAGEDIR">Enter a second Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Second Messenger</speaker>
@@ -6940,7 +6940,7 @@ Servingmen come forward</para>
 <line remap="LINE">What lay before them.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter COMINIUS</para>
+<stagedir remap="STAGEDIR">Enter COMINIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">COMINIUS</speaker>
@@ -7080,7 +7080,7 @@ Servingmen come forward</para>
 <line remap="LINE">That Rome can make against them.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a troop of Citizens</para>
+<stagedir remap="STAGEDIR">Enter a troop of Citizens</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENENIUS</speaker>
@@ -7137,7 +7137,7 @@ Servingmen come forward</para>
 <line remap="LINE">O, ay, what else?</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt COMINIUS and MENENIUS</para>
+<stagedir remap="STAGEDIR">Exeunt COMINIUS and MENENIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SICINIUS</speaker>
@@ -7159,7 +7159,7 @@ Servingmen come forward</para>
 <line remap="LINE">So did we all. But, come, let's home.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt Citizens</para>
+<stagedir remap="STAGEDIR">Exeunt Citizens</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">BRUTUS</speaker>
@@ -7182,11 +7182,11 @@ Servingmen come forward</para>
 <line remap="LINE">Pray, let us go.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VII.  A camp, at a small distance from Rome.</title>
-<para remap="STAGEDIR">Enter AUFIDIUS and his Lieutenant</para>
+<stagedir remap="STAGEDIR">Enter AUFIDIUS and his Lieutenant</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AUFIDIUS</speaker>
@@ -7275,7 +7275,7 @@ Servingmen come forward</para>
 <line remap="LINE">Thou art poor'st of all; then shortly art thou mine.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 </chapter>
@@ -7283,8 +7283,8 @@ Servingmen come forward</para>
 <chapter remap="ACT"><title remap="TITLE">ACT V</title>
 
 <section remap="SCENE"><title remap="TITLE">SCENE I.  Rome. A public place.</title>
-<para remap="STAGEDIR">Enter MENENIUS, COMINIUS, SICINIUS, BRUTUS,
-and others</para>
+<stagedir remap="STAGEDIR">Enter MENENIUS, COMINIUS, SICINIUS, BRUTUS,
+and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENENIUS</speaker>
@@ -7434,7 +7434,7 @@ and others</para>
 <line remap="LINE">Of my success.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">COMINIUS</speaker>
@@ -7462,11 +7462,11 @@ and others</para>
 <line remap="LINE">And with our fair entreaties haste them on.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE II.  Entrance of the Volscian camp before Rome. Two Sentinels on guard.</title>
-<para remap="STAGEDIR">Enter to them, MENENIUS</para>
+<stagedir remap="STAGEDIR">Enter to them, MENENIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Senator</speaker>
@@ -7618,7 +7618,7 @@ and others</para>
 <line remap="LINE">Nay, but, fellow, fellow,--</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CORIOLANUS and AUFIDIUS</para>
+<stagedir remap="STAGEDIR">Enter CORIOLANUS and AUFIDIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
@@ -7635,7 +7635,7 @@ and others</para>
 <line remap="LINE">hanging, or of some death more long in</line>
 <line remap="LINE">spectatorship, and crueller in suffering; behold now</line>
 <line remap="LINE">presently, and swoon for what's to come upon thee.</line>
-<para remap="STAGEDIR">To CORIOLANUS</para>
+<stagedir remap="STAGEDIR">To CORIOLANUS</stagedir>
 <line remap="LINE">The glorious gods sit in hourly synod about thy</line>
 <line remap="LINE">particular prosperity, and love thee no worse than</line>
 <line remap="LINE">thy old father Menenius does! O my son, my son!</line>
@@ -7671,7 +7671,7 @@ and others</para>
 <line remap="LINE">Mine ears against your suits are stronger than</line>
 <line remap="LINE">Your gates against my force. Yet, for I loved thee,</line>
 <line remap="LINE">Take this along; I writ it for thy sake</line>
-<para remap="STAGEDIR">Gives a letter</para>
+<stagedir remap="STAGEDIR">Gives a letter</stagedir>
 <line remap="LINE">And would have rent it. Another word, Menenius,</line>
 <line remap="LINE">I will not hear thee speak. This man, Aufidius,</line>
 <line remap="LINE">Was my beloved in Rome: yet thou behold'st!</line>
@@ -7682,7 +7682,7 @@ and others</para>
 <line remap="LINE">You keep a constant temper.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt CORIOLANUS and AUFIDIUS</para>
+<stagedir remap="STAGEDIR">Exeunt CORIOLANUS and AUFIDIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Senator</speaker>
@@ -7717,7 +7717,7 @@ and others</para>
 <line remap="LINE">as I was said to, Away!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exit</para>
+<stagedir remap="STAGEDIR">Exit</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Senator</speaker>
@@ -7730,11 +7730,11 @@ and others</para>
 <line remap="LINE">oak not to be wind-shaken.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE III.  The tent of Coriolanus.</title>
-<para remap="STAGEDIR">Enter CORIOLANUS, AUFIDIUS, and others</para>
+<stagedir remap="STAGEDIR">Enter CORIOLANUS, AUFIDIUS, and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
@@ -7767,11 +7767,11 @@ and others</para>
 <line remap="LINE">I have yielded to: fresh embassies and suits,</line>
 <line remap="LINE">Nor from the state nor private friends, hereafter</line>
 <line remap="LINE">Will I lend ear to. Ha! what shout is this?</line>
-<para remap="STAGEDIR">Shout within</para>
+<stagedir remap="STAGEDIR">Shout within</stagedir>
 <line remap="LINE">Shall I be tempted to infringe my vow</line>
 <line remap="LINE">In the same time 'tis made? I will not.</line>
-<para remap="STAGEDIR">Enter in mourning habits, VIRGILIA, VOLUMNIA,
-leading young MARCIUS, VALERIA, and Attendants</para>
+<stagedir remap="STAGEDIR">Enter in mourning habits, VIRGILIA, VOLUMNIA,
+leading young MARCIUS, VALERIA, and Attendants</stagedir>
 <line remap="LINE">My wife comes foremost; then the honour'd mould</line>
 <line remap="LINE">Wherein this trunk was framed, and in her hand</line>
 <line remap="LINE">The grandchild to her blood. But, out, affection!</line>
@@ -7819,7 +7819,7 @@ leading young MARCIUS, VALERIA, and Attendants</para>
 <line remap="LINE">Hath virgin'd it e'er since. You gods! I prate,</line>
 <line remap="LINE">And the most noble mother of the world</line>
 <line remap="LINE">Leave unsaluted: sink, my knee, i' the earth;</line>
-<para remap="STAGEDIR">Kneels</para>
+<stagedir remap="STAGEDIR">Kneels</stagedir>
 <line remap="LINE">Of thy deep duty more impression show</line>
 <line remap="LINE">Than that of common sons.</line>
 </linegroup></dialogue>
@@ -7833,7 +7833,7 @@ leading young MARCIUS, VALERIA, and Attendants</para>
 <line remap="LINE">Between the child and parent.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Kneels</para>
+<stagedir remap="STAGEDIR">Kneels</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
@@ -7980,7 +7980,7 @@ leading young MARCIUS, VALERIA, and Attendants</para>
 <line remap="LINE">I have sat too long.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Rising</para>
+<stagedir remap="STAGEDIR">Rising</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">VOLUMNIA</speaker>
@@ -8038,7 +8038,7 @@ leading young MARCIUS, VALERIA, and Attendants</para>
 <line remap="LINE">And then I'll speak a little.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">He holds her by the hand, silent</para>
+<stagedir remap="STAGEDIR">He holds her by the hand, silent</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
@@ -8073,18 +8073,18 @@ leading young MARCIUS, VALERIA, and Attendants</para>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AUFIDIUS</speaker>
-<line remap="LINE"><phrase remap="STAGEDIR">Aside</phrase>  I am glad thou hast set thy mercy and</line>
+<line remap="LINE"><inlinestagedir remap="STAGEDIR">Aside</inlinestagedir>  I am glad thou hast set thy mercy and</line>
 <line remap="LINE">thy honour</line>
 <line remap="LINE">At difference in thee: out of that I'll work</line>
 <line remap="LINE">Myself a former fortune.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The Ladies make signs to CORIOLANUS</para>
+<stagedir remap="STAGEDIR">The Ladies make signs to CORIOLANUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
 <line remap="LINE">Ay, by and by;</line>
-<para remap="STAGEDIR">To VOLUMNIA, VIRGILIA, &amp;c</para>
+<stagedir remap="STAGEDIR">To VOLUMNIA, VIRGILIA, &amp;c</stagedir>
 <line remap="LINE">But we will drink together; and you shall bear</line>
 <line remap="LINE">A better witness back than words, which we,</line>
 <line remap="LINE">On like conditions, will have counter-seal'd.</line>
@@ -8094,11 +8094,11 @@ leading young MARCIUS, VALERIA, and Attendants</para>
 <line remap="LINE">Could not have made this peace.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE IV.  Rome. A public place.</title>
-<para remap="STAGEDIR">Enter MENENIUS and SICINIUS</para>
+<stagedir remap="STAGEDIR">Enter MENENIUS and SICINIUS</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENENIUS</speaker>
@@ -8179,7 +8179,7 @@ leading young MARCIUS, VALERIA, and Attendants</para>
 <line remap="LINE">and, he returning to break our necks, they respect not us.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a Messenger</para>
+<stagedir remap="STAGEDIR">Enter a Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Messenger</speaker>
@@ -8190,7 +8190,7 @@ leading young MARCIUS, VALERIA, and Attendants</para>
 <line remap="LINE">They'll give him death by inches.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter a second Messenger</para>
+<stagedir remap="STAGEDIR">Enter a second Messenger</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SICINIUS</speaker>
@@ -8217,13 +8217,13 @@ leading young MARCIUS, VALERIA, and Attendants</para>
 <line remap="LINE">Where have you lurk'd, that you make doubt of it?</line>
 <line remap="LINE">Ne'er through an arch so hurried the blown tide,</line>
 <line remap="LINE">As the recomforted through the gates. Why, hark you!</line>
-<para remap="STAGEDIR">Trumpets; hautboys; drums beat; all together</para>
+<stagedir remap="STAGEDIR">Trumpets; hautboys; drums beat; all together</stagedir>
 <line remap="LINE">The trumpets, sackbuts, psalteries and fifes,</line>
 <line remap="LINE">Tabours and cymbals and the shouting Romans,</line>
 <line remap="LINE">Make the sun dance. Hark you!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">A shout within</para>
+<stagedir remap="STAGEDIR">A shout within</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">MENENIUS</speaker>
@@ -8236,7 +8236,7 @@ leading young MARCIUS, VALERIA, and Attendants</para>
 <line remap="LINE">I'd not have given a doit. Hark, how they joy!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Music still, with shouts</para>
+<stagedir remap="STAGEDIR">Music still, with shouts</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">SICINIUS</speaker>
@@ -8266,13 +8266,13 @@ leading young MARCIUS, VALERIA, and Attendants</para>
 <line remap="LINE">And help the joy.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt</para>
+<stagedir remap="STAGEDIR">Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE V.  The same. A street near the gate.</title>
-<para remap="STAGEDIR">Enter two Senators with VOLUMNIA, VIRGILIA,
+<stagedir remap="STAGEDIR">Enter two Senators with VOLUMNIA, VIRGILIA,
 VALERIA, &amp;c. passing over the stage,
-followed by Patricians and others</para>
+followed by Patricians and others</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Senator</speaker>
@@ -8289,11 +8289,11 @@ followed by Patricians and others</para>
 <line remap="LINE">Welcome, ladies, Welcome!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">A flourish with drums and trumpets. Exeunt</para>
+<stagedir remap="STAGEDIR">A flourish with drums and trumpets. Exeunt</stagedir>
 </section>
 
 <section remap="SCENE"><title remap="TITLE">SCENE VI.  Antium. A public place.</title>
-<para remap="STAGEDIR">Enter TULLUS AUFIDIUS, with Attendants</para>
+<stagedir remap="STAGEDIR">Enter TULLUS AUFIDIUS, with Attendants</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">AUFIDIUS</speaker>
@@ -8305,8 +8305,8 @@ followed by Patricians and others</para>
 <line remap="LINE">The city ports by this hath enter'd and</line>
 <line remap="LINE">Intends to appear before the people, hoping</line>
 <line remap="LINE">To purge herself with words: dispatch.</line>
-<para remap="STAGEDIR">Exeunt Attendants</para>
-<para remap="STAGEDIR">Enter three or four Conspirators of AUFIDIUS' faction</para>
+<stagedir remap="STAGEDIR">Exeunt Attendants</stagedir>
+<stagedir remap="STAGEDIR">Enter three or four Conspirators of AUFIDIUS' faction</stagedir>
 <line remap="LINE">Most welcome!</line>
 </linegroup></dialogue>
 
@@ -8397,8 +8397,8 @@ followed by Patricians and others</para>
 <line remap="LINE">And I'll renew me in his fall. But, hark!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Drums and trumpets sound, with great shouts of
-the People</para>
+<stagedir remap="STAGEDIR">Drums and trumpets sound, with great shouts of
+the People</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">First Conspirator</speaker>
@@ -8430,7 +8430,7 @@ the People</para>
 <line remap="LINE">Here come the lords.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter the Lords of the city</para>
+<stagedir remap="STAGEDIR">Enter the Lords of the city</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">All The Lords</speaker>
@@ -8465,8 +8465,8 @@ the People</para>
 <line remap="LINE">He approaches: you shall hear him.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Enter CORIOLANUS, marching with drum and
-colours; commoners being with him</para>
+<stagedir remap="STAGEDIR">Enter CORIOLANUS, marching with drum and
+colours; commoners being with him</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">CORIOLANUS</speaker>
@@ -8618,8 +8618,8 @@ colours; commoners being with him</para>
 <line remap="LINE">Kill, kill, kill, kill, kill him!</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">The Conspirators draw, and kill CORIOLANUS:
-AUFIDIUS stands on his body</para>
+<stagedir remap="STAGEDIR">The Conspirators draw, and kill CORIOLANUS:
+AUFIDIUS stands on his body</stagedir>
 
 <dialogue remap="SPEECH"><linegroup>
 <speaker remap="SPEAKER">Lords</speaker>
@@ -8685,8 +8685,8 @@ AUFIDIUS stands on his body</para>
 <line remap="LINE">Yet he shall have a noble memory. Assist.</line>
 </linegroup></dialogue>
 
-<para remap="STAGEDIR">Exeunt, bearing the body of CORIOLANUS. A dead
-march sounded</para>
+<stagedir remap="STAGEDIR">Exeunt, bearing the body of CORIOLANUS. A dead
+march sounded</stagedir>
 </section>
 </chapter>
 </book>
