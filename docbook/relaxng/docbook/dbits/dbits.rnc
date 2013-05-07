@@ -81,13 +81,14 @@ include "../src/docbook.rnc"
           | text
           | db._any)*
       }
-
-   # Disable ITS directionality
-   its-attribute.dir = empty
 }
 
 # Include base ITS schema
 include "its20.rnc"
+{
+   # Disable ITS directionality
+   its-attribute.dir = empty
+}
 
 # Add local ITS attributes to all DocBook elements
 db.common.base.attributes &= its-local.attributes

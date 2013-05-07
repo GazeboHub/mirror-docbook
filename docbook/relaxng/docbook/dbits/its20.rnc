@@ -213,8 +213,8 @@ its-local.attributes =
   (its-attribute.term, its-attribute.termInfoRef?, its-attribute.termConfidence?)? &
   its-attribute.withinText? &
   (its-attribute.taConfidence? &
-   (its-attribute.taClassRef |
-    ((its-attribute.taSource, its-attribute.taIdent) | its-attribute.taIdentRef))+)? &
+   (its-attribute.taClassRef? &
+    ((its-attribute.taSource, its-attribute.taIdent) | its-attribute.taIdentRef)?))? &
   (its-attribute.localeFilterList, its-attribute.localeFilterType?)? &
   ((
    (its-attribute.person | its-attribute.personRef )? &
@@ -228,7 +228,7 @@ its-local.attributes =
    its-attribute.provenanceRecordsRef)? &
   (its-attribute.locQualityIssuesRef
   | 
-  ((its-attribute.locQualityIssueType | its-attribute.locQualityIssueComment)+ & its-attribute.locQualityIssueSeverity? & its-attribute.locQualityIssueProfileRef? & its-attribute.locQualityIssueEnabled?)
+  ((its-attribute.locQualityIssueType? & its-attribute.locQualityIssueComment?) & its-attribute.locQualityIssueSeverity? & its-attribute.locQualityIssueProfileRef? & its-attribute.locQualityIssueEnabled?)
   )? &
   (((its-attribute.locQualityRatingScore, its-attribute.locQualityRatingScoreThreshold?) | (its-attribute.locQualityRatingVote, its-attribute.locQualityRatingVoteThreshold?)), its-attribute.locQualityRatingProfileRef?)? &
   its-attribute.mtConfidence? &
@@ -243,8 +243,8 @@ its-local.nons.attributes =
   (its-attribute.term.nons, its-attribute.termInfoRef.nons?, its-attribute.termConfidence.nons?)? &
   its-attribute.withinText.nons? &
   (its-attribute.taConfidence.nons? &
-   (its-attribute.taClassRef.nons |
-    ((its-attribute.taSource.nons, its-attribute.taIdent.nons) | its-attribute.taIdentRef.nons))+)? &
+   (its-attribute.taClassRef.nons? &
+    ((its-attribute.taSource.nons, its-attribute.taIdent.nons) | its-attribute.taIdentRef.nons)?))? &
   (its-attribute.localeFilterList.nons, its-attribute.localeFilterType.nons?)? &
   ((
    (its-attribute.person.nons | its-attribute.personRef.nons )? &
@@ -254,10 +254,10 @@ its-local.nons.attributes =
    (its-attribute.revOrg.nons | its-attribute.revOrgRef.nons )? &
    (its-attribute.revTool.nons | its-attribute.revToolRef.nons )? &
     its-attribute.provRef.nons?)
-   | its-attribute.provenanceRecordsRef)? &
+   | its-attribute.provenanceRecordsRef.nons)? &
   (its-attribute.locQualityIssuesRef.nons
   | 
-  ((its-attribute.locQualityIssueType.nons | its-attribute.locQualityIssueComment.nons)+ & its-attribute.locQualityIssueSeverity.nons? & its-attribute.locQualityIssueProfileRef.nons? & its-attribute.locQualityIssueEnabled.nons?)
+  ((its-attribute.locQualityIssueType.nons? & its-attribute.locQualityIssueComment.nons?) & its-attribute.locQualityIssueSeverity.nons? & its-attribute.locQualityIssueProfileRef.nons? & its-attribute.locQualityIssueEnabled.nons?)
   )? &
   (((its-attribute.locQualityRatingScore.nons, its-attribute.locQualityRatingScoreThreshold.nons?) | (its-attribute.locQualityRatingVote.nons, its-attribute.locQualityRatingVoteThreshold.nons?)), its-attribute.locQualityRatingProfileRef.nons?)? &
   its-attribute.mtConfidence.nons? &

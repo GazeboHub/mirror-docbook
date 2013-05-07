@@ -8,7 +8,7 @@ all:: dbits.rng dbits.rnc
 
 clean:: ; rm -f dbits.rng dbits.rnc
 
-$(_OUTTOP)/its/dbits.rng: its/its.rnc \
+$(_OUTTOP)/its/dbits.rng: its/its20.rnc its/its20-types.rnc \
              src/annotations.rnc src/bibliography.rnc \
              src/callouts.rnc src/calstbl.rnc \
              src/docbook.rnc src/ebnf.rnc src/glossary.rnc \
