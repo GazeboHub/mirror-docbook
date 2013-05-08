@@ -6,6 +6,8 @@
 # 
 # Schema adds the following ITS elements into DocBook schema: 
 #  * rules
+#  * provenanceRecords
+#  * locQualityIssues
 #
 # Schema adds the following local ITS attributes into DocBook schema:
 # * translate
@@ -94,4 +96,4 @@ include "its20.rnc"
 db.common.base.attributes &= its-local.attributes
 
 # Allow its:rules inside info element
-db.info.extension |= its-rules
+db.info.extension |= its-rules | its-standoff
